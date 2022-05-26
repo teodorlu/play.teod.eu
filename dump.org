@@ -1,0 +1,58 @@
+#+title: Playground - dump
+
+* 2022-05-26
+** From #teodor-discuss (Iterate slack)
+Hva vil jeg egentlig å få ut av en nettside?
+
+Effektivt å skrive tekst. Kan gjøre det i vanlige tekstformater.
+Frittstående sider. Løs kobling, trenger ikke samme struktur overalt.
+Gjenbrukbare komponenter.
+Hele greia funker som en statisk side.
+Statisk html er sjekket inn i git.
+Lynraske bygg.
+Effektivt å jobbe med hiccup.
+
+Effektivt å jobbe med ideer.
+Effektivt å lenke mellom ideer.
+
+Lett å få inn ting jeg har tegnet. Feks på papir, remarkable eller i figma
+
+Twitter... Trenger jeg å tenke på det?
+Kommentarer. Webmentions? Systemet jeg bruker i dag? Hacker news? Twitter?
+Jeg ønsker jo å kunne diskutere ting på Twitter
+Og det gir mening å ha invitasjoner til diskusjon på Twitter, samt invitasjon til å diskutere på Twitter på nettsiden.
+
+Hva med unicad og blogging og artikler for sånt?
+
+Approach: embed unicad I noe annet.
+Approach: bygg skriving rett inn i unicad.
+:thinking_face:
+
+Hva får jeg egentlig ut av en nettside som jeg ikke får her i #teodor-discuss?
+Tilgjengelig for folk utenfra
+Bedre på å redigere store ting
+Mer kontroll på presentasjon (også mer jobb)
+
+Oddmund:
+Har du vurdert å bare skrive nettsida di i HTML?
+
+Det er jo cirka det jeg gjør på subcons.teod.eu. Bare via hiccup
+
+Kan laste opp rå html også, og det funker fint.
+
+Ting jeg ønsker å skrive om:
+Ortogonalitet
+Feedback-loop + API-design + hvordan ting funker
+Eksempler på bruk av watchexec
+Noe dataviz
+
+@oddmunds jeg har prøvd å skrive html direkte, men det føles som å gå i gjørme. Med hiccup har jeg i alle fall en skikkelig editor. Men jeg liker bedre å redigere tekst i gode formater for tekst (feks org-mode, eller markdown, til en viss grad)
+
+Enda en side:
+Konvertering mellom Roam / html / hiccup / org-mode
+Litt usikker på om jeg får til det rett i browser. Trenger kanskje en tjeneste. En backend. Med pandoc og Clojure bør det ikke være alt for vanskelig.
+Men hvis jeg får opp noe sånt, kan jeg lett gå mellom formater.
+
+Enda en side:
+Signaler, starting av prosesser, stopping av prosesser. Sigterm, sigkill, sighup (?)
+Kan lage en side i stedet for å lage presentasjon eller noe annet.

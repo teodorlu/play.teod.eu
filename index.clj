@@ -18,8 +18,5 @@
             (for [target targets]
               (str "- [[file:./" target "][" target "]]"))))
 
-(defn pandoc [{:keys []}])
-
-(println
- (slurp (:out
-         @(p/process '[pandoc --from org --to html --standalone] {:in org-markup}))))
+(spit "index.html" (slurp (:out
+                           @(p/process '[pandoc --from org --to html --standalone] {:in org-markup}))))

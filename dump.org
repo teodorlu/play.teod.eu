@@ -58,3 +58,40 @@ Men hvis jeg får opp noe sånt, kan jeg lett gå mellom formater.
 Enda en side:
 Signaler, starting av prosesser, stopping av prosesser. Sigterm, sigkill, sighup (?)
 Kan lage en side i stedet for å lage presentasjon eller noe annet.
+** Principles collected
+*** Effektivt å skrive tekst. Kan gjøre det i vanlige tekstformater.
+*** Frittstående sider. Løs kobling, trenger ikke samme struktur overalt.
+*** Gjenbrukbare komponenter.
+*** Hele greia funker som en statisk side.
+*** Statisk html er sjekket inn i git.
+*** Lynraske bygg.
+*** Effektivt å jobbe med hiccup.
+*** Effektivt å jobbe med ideer.
+*** Effektivt å lenke mellom ideer.
+*** (Kanskje) mulig å bruke sammen med Clerk.
+** RANT
+Man, I hate Mac stealing cmd+h. I want it to move stuff left in a hierarchy. But
+mac steals it to hide windows.
+** Outline collected
+*** Ortogonalitet
+*** Feedback-loop + API-design + hvordan ting funker
+*** Eksempler på bruk av watchexec
+*** Unix-terminalen gir deg superkrefter
+relatert til ortogonalitet
+relatert til watchexec
+relatert til signaler, starting av prosesser, stopping av prosesser, sigterm,
+sigkill, sighub
+*** Noe dataviz
+*** Konvertering mellom Roam / hiccup / html / org-mode
+*** Signaler, starting av prosesser, stopping av prosesser. Sigterm, sigkill, sighup (?)
+**** Kartlegging av interesse 2022-05-13
+Kilde: https://garasjen.slack.com/archives/C2K35RDNJ/p1652440860308049
+
+Likes: :raised_hands: * 5
+***** Pitch
+Idé til fagopplegg - graceful startup, graceful shutdown.
+Forklare signaler (SIGTERM, SIGKILL, …), håndtering av signaler, reagere på Ctrl+C. Eventuelt også liveness og readiness i Kubernetes.
+Hvis det hadde blitt arrangert noe sånt, ville du deltatt? (edited)
+***** Kommentarer
+Eilef - oh yes please!
+Henrik - kill -9 <pid>

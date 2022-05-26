@@ -129,3 +129,23 @@ revert all changes I might be making.
 ** Actionables - today
 1. Actually write a single piece (Org-mode), quickly compile to HTML
 2. Try move that domain over. Quickly roll back if anything breaks.
+** Let's try move the domain
+I was able to export a zone file from Gandi, and import for Cloudflare. Not
+everything worked.
+
+| Gandi line                                                                             | What?                     | Imported?     | Reason                           |
+|----------------------------------------------------------------------------------------+---------------------------+---------------+----------------------------------|
+| @ 86400 IN SOA ns1.gandi.net. hostmaster.gandi.net. 1653576353 10800 3600 604800 10800 | Authority record          | Not imported. | Should't be exported.            |
+| @ 1800 IN ALIAS pedantic-minsky-8c3ffb.netlify.com.                                    |                           | Not imported. | Cloudflare doesn't support ALIAS |
+| @ 10800 IN MX 10 in1-smtp.messagingengine.com.                                         | Fastmail setup            | Imported.     |                                  |
+| @ 10800 IN MX 20 in2-smtp.messagingengine.com.                                         | Fastmail setup            | Imported.     |                                  |
+| @ 10800 IN TXT "v=spf1 include:spf.messagingengine.com ?all"                           | Fastmail setup            | Imported.     |                                  |
+| b 10800 IN A 81.166.30.74                                                              | Bakkemoen server          | Imported.     |                                  |
+| bakkemoen 1800 IN A 81.166.30.74                                                       | Bakkemoen server          | Imported.     |                                  |
+| fm1._domainkey 1800 IN CNAME fm1.teod.eu.dkim.fmhosted.com.                            | Fastmail setup            | Imported.     |                                  |
+| fm2._domainkey 1800 IN CNAME fm2.teod.eu.dkim.fmhosted.com                             | Fastmail setup            | Imported.     |                                  |
+| fm3._domainkey 1800 IN CNAME fm3.teod.eu.dkim.fmhosted.com.                            | Fastmail setup            | Imported.     |                                  |
+| sandbox 1800 IN CNAME determined-heyrovsky-a0a386.netlify.app.                         | Subdomain for static site | Imported.     |                                  |
+| subcons 10800 IN CNAME trusting-tereshkova-c5f46b.netlify.app.                         | Subdomain for static site | Imported.     |                                  |
+| workman 1800 IN CNAME jovial-jang-37d250.netlify.app.                                  | Subdomain for static site | Imported.     |                                  |
+| www 1800 IN CNAME pedantic-minsky-8c3ffb.netlify.com.                                  | Subdomain for static site | Imported.     |                                  |

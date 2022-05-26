@@ -126,3 +126,6 @@ Options:
 
 If I just move over, what's the worst thing that can happen? I can (I think)
 revert all changes I might be making.
+** Actionables - today
+1. Actually write a single piece (Org-mode), quickly compile to HTML
+2. Try move that domain over. Quickly roll back if anything breaks.

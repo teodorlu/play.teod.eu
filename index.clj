@@ -27,7 +27,7 @@
 
              ["Possible next steps:
 
-- Write actual content
+- Write real content
 - Organize build with normal makefile. I could use .pandoc.org for the stuff I just want to build with pandoc."]
              )))
 

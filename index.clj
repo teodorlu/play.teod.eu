@@ -16,7 +16,7 @@
 (def org-markup
   (str/join "\n"
             (for [target targets]
-              (str "- [[" target "]]"))))
+              (str "- [[file:./" target "][" target "]]"))))
 
 (defn pandoc [{:keys []}])
 

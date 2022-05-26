@@ -23,7 +23,13 @@
               "Pages:"]
 
              (for [target targets]
-               (str "- [[file:./" target "][" target "]]")))))
+               (str "- [[file:./" target "][" target "]]"))
+
+             ["Possible next steps:
+
+- Write actual content
+- Organize build with normal makefile. I could use .pandoc.org for the stuff I just want to build with pandoc."]
+             )))
 
 (spit "index.html" (slurp (:out
                            @(p/process '[pandoc --from org --to html --standalone] {:in org-markup}))))

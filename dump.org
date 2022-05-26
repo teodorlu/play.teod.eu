@@ -95,3 +95,16 @@ Hvis det hadde blitt arrangert noe sånt, ville du deltatt? (edited)
 ***** Kommentarer
 Eilef - oh yes please!
 Henrik - kill -9 <pid>
+*** Innovasjon - som forstått gjennom bundling og unbundling
+eksempler på bundling
+eksempler på unbundling
+
+verdi - arbeidsflyter
+verktøy - prismodeller
+
+ortogonalitet
+** See also - curated links
+I hate pure URLs without context. But ideas are meant to be understood in
+context! So what's the context? "Where can we go from here"? I want the
+relationships to be rich; a way of navigating in itself. An interaction mode, if
+you will.

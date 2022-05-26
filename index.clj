@@ -16,7 +16,12 @@
 (def org-markup
   (str/join "\n"
             (concat
-             [(str "#+title: Teodor's playground")]
+             ["#+title: Teodor's playground"
+              ""
+              "Intent: bring ideas to life. Discuss, sharpen."
+              ""
+              "Pages:"]
+
              (for [target targets]
                (str "- [[file:./" target "][" target "]]")))))
 

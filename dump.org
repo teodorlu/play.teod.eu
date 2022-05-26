@@ -108,3 +108,18 @@ I hate pure URLs without context. But ideas are meant to be understood in
 context! So what's the context? "Where can we go from here"? I want the
 relationships to be rich; a way of navigating in itself. An interaction mode, if
 you will.
+** Domains?
+Ideally, I want to use cloudflare pages for this. I'd like to use Cloudflare
+pages.
+
+Buuut
+
+That requires some major changes, some changes that might break my email setup.
+So those are a bit dangerous, for now.
+
+Options:
+
+1. Slowly move to Cloudflare for teod.eu - but don't do anything too rash to
+   early.
+2. Just move over and see what happens, check whether mail breaks down or not.
+3. Don't do it. Just keep the existing stuff.

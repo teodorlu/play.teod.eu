@@ -123,3 +123,6 @@ Options:
    early.
 2. Just move over and see what happens, check whether mail breaks down or not.
 3. Don't do it. Just keep the existing stuff.
+
+If I just move over, what's the worst thing that can happen? I can (I think)
+revert all changes I might be making.

@@ -1,0 +1,7 @@
+#+title: Orthogonality enables optionality
+
+orthogonal infrastructure + indirection -> orthogonal features
+
+orthononal team skills -> optionality + speed -> success
+
+orthogonality > SRP

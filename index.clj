@@ -15,8 +15,10 @@
 
 (def org-markup
   (str/join "\n"
-            (for [target targets]
-              (str "- [[file:./" target "][" target "]]"))))
+            (concat
+             [(str "#+title: Teodor's playground")]
+             (for [target targets]
+               (str "- [[file:./" target "][" target "]]")))))
 
 (spit "index.html" (slurp (:out
                            @(p/process '[pandoc --from org --to html --standalone] {:in org-markup}))))

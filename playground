@@ -10,7 +10,7 @@ Usage: ./playground <subcommand> <options>
 
 Subcommands:
 
-create-page
+create-page [PAGE-NAME] [OPTIONS]*
 
     Options:
 

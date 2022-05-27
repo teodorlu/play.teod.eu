@@ -22,13 +22,19 @@
 (println "\t./index.clj")
 (println "")
 
+(def css false)
+
 ;; Generate target for each page
 (println
  (str/join "\n\n"
            (for [t targets]
              (str (html t) ": " (org t)
                   "\n\t"
-                  "pandoc -s -i " (org t) " -o " (html t)))))
+                  "pandoc -s -i " (org t)
+                  (if css
+                    " --css=../pandoc.css"
+                      "")
+                  " -o " (html t)))))
 
 ;; Generate phony target for pages
 (println "")

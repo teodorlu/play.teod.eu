@@ -1,4 +1,4 @@
-index.html: index.clj feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html truth-descriptive-prescriptive/index.html website-so-what/index.html
+index.html: index.clj feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html website-so-what/index.html
 	./index.clj
 
 feedback-loops-api-design-how-it-works/index.html: feedback-loops-api-design-how-it-works/index.org
@@ -19,9 +19,12 @@ pandoc-codeblocks/index.html: pandoc-codeblocks/index.org
 truth-descriptive-prescriptive/index.html: truth-descriptive-prescriptive/index.org
 	pandoc -s -i truth-descriptive-prescriptive/index.org -o truth-descriptive-prescriptive/index.html
 
+unix-signals-crash-course/index.html: unix-signals-crash-course/index.org
+	pandoc -s -i unix-signals-crash-course/index.org -o unix-signals-crash-course/index.html
+
 website-so-what/index.html: website-so-what/index.org
 	pandoc -s -i website-so-what/index.org -o website-so-what/index.html
 
 @PHONY: pages
-pages:  feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html truth-descriptive-prescriptive/index.html website-so-what/index.html
+pages:  feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html website-so-what/index.html
 

@@ -1,0 +1,70 @@
+#+title: Unix signals: a crash course
+
+* Goals
+
+1. Learn to send and handle common Unix signals
+2. Be able to handle sigterm and sigint while cleaning up temporary processes
+
+Common signals:
+
+| Signal  | Code | Effect                               |
+|---------+------+--------------------------------------|
+| SIGTERM |      | Terminate process, allow for cleanup |
+| SIGINT  |      | Terminate process, allow for cleanup |
+| SIGHUP  |      | Reload configuration (hack!)         |
+| SIGKILL |      | Terminate immediately - no cleanup   |
+
+* How to list running processes
+
+- ps :: Show some running processes
+- ps aux :: Show lots of running processes
+
+=ps= and =ps aux= pair great with fuzzy-finders - such as grep and fzf. To find
+a running process interactively, =ps | fzf= or =ps aux | fzf= are good options.
+
+But what can we do with a process? Other than killing it, I don't think there's
+much exciting things to do. So let's do that.
+
+* How do I kill a process?
+
+In a new terminal, run:
+
+#+begin_src bash
+sleep 9999
+#+end_src
+
+For killing processes, we can use =kill= or =pkill=. Kill requires a process ID
+(number).
+
+#+begin_src bash :exports both
+ps | grep sleep
+#+end_src
+
+#+RESULTS:
+: 33312 ttys003    0:00.00 sleep 9999999
+
+33312 is our ID. Kill it!
+
+#+begin_src bash
+kill 33312
+#+end_src
+
+#+RESULTS:
+
+With =pkill=, we can give a /pattern/ - or just the full process name.
+
+#+begin_src bash
+# In the other terminal -- again
+sleep 9999999
+#+end_src
+
+#+begin_src bash
+pkill sleep
+#+end_src
+
+#+RESULTS:
+
+* Interactive tools to work with running processes:
+
+- top ::
+- proced :: Interactive process editor for Emacs

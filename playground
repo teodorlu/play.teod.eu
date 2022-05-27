@@ -10,11 +10,9 @@ Usage: ./playground <subcommand> <options>
 
 Subcommands:
 
-create-page [PAGE-NAME] [OPTION]...
+page PAGE_NAME
 
-    Options:
-
-    :name - short, unique name for URLs and file paths.
+    Create a new Org-mode page, with a tiny Pandoc build system.
 ")))
 
 (defn parse-opts [opts]
@@ -23,7 +21,7 @@ create-page [PAGE-NAME] [OPTION]...
           (for [[arg-name arg-val] (partition 2 opts)]
             [(keyword (subs arg-name 1)) arg-val]))))
 
-(defn create-page [args]
+(defn page [args]
   (let [opts (parse-opts args)
         page (or (:name opts)
                  (first (:cmds opts)))
@@ -46,7 +44,7 @@ watchexec -f '*.html' -- pandoc -s -i index.org -o index.html")
 (defn -main []
   (let [[subcommand & args] *command-line-args*]
     (case subcommand
-      "create-page" (create-page args)
+      "page" (page args)
       (print-help))))
 
 (when (= *file* (System/getProperty "babashka.file"))

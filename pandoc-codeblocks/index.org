@@ -1,0 +1,24 @@
+#+title: Pandoc Code blocks
+
+We explore how Pandoc supports embedded code.
+
+We can write Clojure:
+
+#+begin_src clojure
+(defn act [& commands])
+#+end_src
+
+Or Python:
+
+#+begin_src python
+def act(*commands):
+    pass
+#+end_src
+
+Or even javascript:
+
+#+begin_src javascript
+function act(commands...) {
+
+}
+#+end_src

@@ -149,7 +149,6 @@ everything worked.
 | subcons 10800 IN CNAME trusting-tereshkova-c5f46b.netlify.app.                         | Subdomain for static site | Imported.     |                                  |
 | workman 1800 IN CNAME jovial-jang-37d250.netlify.app.                                  | Subdomain for static site | Imported.     |                                  |
 | www 1800 IN CNAME pedantic-minsky-8c3ffb.netlify.com.                                  | Subdomain for static site | Imported.     |                                  |
-
 * 2022-05-27
 ** Models and metamodels
 Today:
@@ -157,11 +156,9 @@ Today:
 1. I want an effective makefile
 2. That requires a model of how my stuff fits together
 3. That model should be explicit! In data. So that I can work on it.
-
 ** Idea
 Idea: =playground.edn= file in each folder. Contains information on how to
 build, and what dependencies we have.
-
 ** More ideas
 More ideas: Put declarative files around. =playground.edn= or something else.
 Use those to build up a model of how everything fits together. From that model

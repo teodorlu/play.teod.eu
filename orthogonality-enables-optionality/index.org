@@ -2,6 +2,17 @@
 
 [[./..][..]]
 
+Approach: compose each layer of your app so that its part are orthogonal. That
+enables flexibility and optionality in the layer above. Above layers can move
+around without the base layer needing changes.
+
+In some applications, we might have these layers:
+
+1. Infrastructure. Problems to be solved.
+2. Product features.
+3. User workflows.
+
+* Notes :noexport:
 orthogonal infrastructure + indirection -> orthogonal features
 
 orthononal team skills -> optionality + speed -> success

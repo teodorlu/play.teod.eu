@@ -1,5 +1,7 @@
 #+title: Hourglass architecture
 
+[[./..][..]]
+
 Hourglass architecture, flexiblity, optionality and orthogonality are related!
 
 By building /layered/ applications where each layer builds on a lowere level,
@@ -10,3 +12,10 @@ Layers:
 1. Infrastructure. Problems to be solved.
 2. Product features.
 3. User workflows.
+
+* Ideas :noexport:
+"multilayer" hourglass architecture?
+
+pandoc - intermediate format
+
+perhaps this is just the "depend on interface" thing?

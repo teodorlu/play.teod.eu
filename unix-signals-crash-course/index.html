@@ -510,6 +510,22 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="
 <div class="sourceCode" id="cb6"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then kill it off.</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> sleep</span></code></pre></div>
+<h1 id="how-do-i-kill-a-process-with-a-specific-signal">How do I kill a
+process with a specific signal?</h1>
+<p><code class="verbatim">kill</code> and <code
+class="verbatim">pkill</code> accept a first argument as signal code. To
+kill with SIGINT, use <code class="verbatim">kill -2 PID</code> or <code
+class="verbatim">pkill -2 PNAME</code>.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Again ..</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sleep</span> 9999999</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Now, try SIGHUP, SIGINT, SIGKILL or SIGKILL and see what happens.</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-1</span> sleep</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-2</span> sleep</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-9</span> sleep</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-15</span> sleep</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Does the sleep process stop? Does it print anything?</span></span></code></pre></div>
 <h1 id="interactive-tools-to-work-with-running-processes">Interactive
 tools to work with running processes:</h1>
 <dl class="incremental">

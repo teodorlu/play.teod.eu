@@ -107,6 +107,24 @@ pkill sleep
 #+end_src
 
 #+RESULTS:
+* How do I kill a process with a specific signal?
+
+=kill= and =pkill= accept a first argument as signal code. To kill with SIGINT,
+use =kill -2 PID= or =pkill -2 PNAME=.
+
+#+begin_src bash
+# Again ..
+sleep 9999999
+#+end_src
+
+#+begin_src bash
+# Now, try SIGHUP, SIGINT, SIGKILL or SIGKILL and see what happens.
+pkill -1 sleep
+pkill -2 sleep
+pkill -9 sleep
+pkill -15 sleep
+# Does the sleep process stop? Does it print anything?
+#+end_src
 
 * Interactive tools to work with running processes:
 

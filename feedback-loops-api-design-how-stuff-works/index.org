@@ -1,5 +1,7 @@
 #+title: Feedback loops, API design and how stuff works
 
+[[./..][..]]
+
 * Perspective
 * Figure
 * Specifics - software development process

@@ -37,7 +37,8 @@ page PAGE_NAME
     (when-not (fs/exists? watch-file)
       (spit watch-file "#!/usr/bin/env bash
 
-watchexec -f '*.org' -- 'printf \"reloading @ \" && date && pandoc -s -i index.org -o index.html'")
+watchexec -f '*.org' -- 'printf \"reloading @ \" && date && pandoc -s -i index.org -o index.html'
+")
       (fs/set-posix-file-permissions watch-file "rwxr-xr-x"))
 
     nil

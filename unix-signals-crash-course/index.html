@@ -246,7 +246,7 @@ id="toc-how-to-handle-unix-signals-with-other-languages">How to handle
 Unix signals with other languages</a></li>
 <li><a href="#interactive-tools-to-work-with-running-processes"
 id="toc-interactive-tools-to-work-with-running-processes">Interactive
-tools to work with running processes:</a></li>
+tools to work with running processes</a></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -257,7 +257,7 @@ tools to work with running processes:</a></li>
 processes</li>
 </ol>
 <h1 id="list-of-unix-signals">List of Unix signals</h1>
-<p>We're going to focus on four signals:</p>
+<p>We’re going to focus on four signals:</p>
 <table>
 <thead>
 <tr class="header">
@@ -509,7 +509,7 @@ grep and fzf. To find a running process interactively, try <code
 class="verbatim">ps | fzf</code> or <code
 class="verbatim">ps aux | fzf</code>.</p>
 <p>But what can we do with a process? Well, we can kill it. And … I must
-reluctantly admit I don't know anything else we can do with it.</p>
+reluctantly admit I don’t know anything else we can do with it.</p>
 <h1 id="how-do-i-kill-a-process">How do I kill a process?</h1>
 <p>First, we need something to kill. ☠️</p>
 <div class="sourceCode" id="cb1"><pre
@@ -543,14 +543,16 @@ kill with SIGINT, use <code class="verbatim">kill -2 PID</code> or <code
 class="verbatim">pkill -2 PNAME</code>.</p>
 <div class="sourceCode" id="cb7"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Again ..</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sleep</span> 9999999</span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Now, try SIGHUP, SIGINT, SIGKILL or SIGKILL and see what happens.</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-1</span> sleep</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-2</span> sleep</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-9</span> sleep</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-15</span> sleep</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Does the sleep process stop? Does it print anything?</span></span></code></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sleep</span> 9999999</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Now, try SIGHUP, SIGINT, SIGKILL or SIGKILL and see what happens.</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-1</span> sleep</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-2</span> sleep</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-9</span> sleep</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> <span class="at">-15</span> sleep</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Or with kill if you want.</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Does the sleep process stop? Does it print anything?</span></span></code></pre></div>
 <h1 id="how-to-handle-unix-signals-with-python">How to handle Unix
 signals with Python</h1>
 <p>TODO!</p>
@@ -558,11 +560,15 @@ signals with Python</h1>
 Unix signals with other languages</h1>
 <p>Perhaps?</p>
 <h1 id="interactive-tools-to-work-with-running-processes">Interactive
-tools to work with running processes:</h1>
+tools to work with running processes</h1>
 <dl class="incremental">
 <dt>top</dt>
 <dd>
-
+VERY Primitive TUI for process management
+</dd>
+<dt>htop</dt>
+<dd>
+Primitive TUI for process management
 </dd>
 <dt>proced</dt>
 <dd>

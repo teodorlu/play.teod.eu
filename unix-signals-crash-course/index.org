@@ -64,7 +64,6 @@ a running process interactively, try =ps | fzf= or =ps aux | fzf=.
 
 But what can we do with a process? Well, we can kill it. And ... I must
 reluctantly admit I don't know anything else we can do with it.
-
 * How do I kill a process?
 
 First, we need something to kill. ☠️
@@ -116,14 +115,14 @@ use =kill -2 PID= or =pkill -2 PNAME=.
 #+begin_src bash
 # Again ..
 sleep 9999999
-#+end_src
 
-#+begin_src bash
 # Now, try SIGHUP, SIGINT, SIGKILL or SIGKILL and see what happens.
 pkill -1 sleep
 pkill -2 sleep
 pkill -9 sleep
 pkill -15 sleep
+# Or with kill if you want.
+
 # Does the sleep process stop? Does it print anything?
 #+end_src
 * How to handle Unix signals with Python
@@ -134,7 +133,8 @@ TODO!
 
 Perhaps?
 
-* Interactive tools to work with running processes:
+* Interactive tools to work with running processes
 
-- top ::
+- top :: VERY Primitive TUI for process management
+- htop :: Primitive TUI for process management
 - proced :: Interactive process editor for Emacs

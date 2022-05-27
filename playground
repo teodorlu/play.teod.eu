@@ -30,13 +30,15 @@ page PAGE_NAME
     (fs/create-dirs page)
 
     ;; Org file
-    (spit org-file (str "#+title: " page))
+    (when-not (fs/exists? org-file)
+      (spit org-file (str "#+title: " page)))
 
     ;; Watch file
-    (spit watch-file "#!/usr/bin/env bash
+    (when-not (fs/exists? watch-file)
+      (spit watch-file "#!/usr/bin/env bash
 
-watchexec -f '*.html' -- pandoc -s -i index.org -o index.html")
-    (fs/set-posix-file-permissions watch-file "rwxr-xr-x")
+watchexec -f '*.org' -- 'printf \"reloading @ \" && date && pandoc -s -i index.org -o index.html'")
+      (fs/set-posix-file-permissions watch-file "rwxr-xr-x"))
 
     nil
     ))

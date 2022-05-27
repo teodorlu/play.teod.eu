@@ -61,7 +61,7 @@ Fra Teodors forrige lyntale:
 #+begin_quote
   En deskriptiv sannhet stemmer overens med observasjoner
 
-  En preskriptiv sannhet gjør at gode ting skjer rund deg
+  En preskriptiv sannhet får gode ting til å skje
 #+end_quote
 
 Det er forskjell på å /kunne ting/ og å /smakfullt kunne få de rette

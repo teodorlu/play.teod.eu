@@ -2,6 +2,8 @@
 
 [[./..][..]]
 
+Status: WIP.
+
 Hourglass architecture, flexiblity, optionality and orthogonality are related!
 
 By building /layered/ applications where each layer builds on a lowere level,

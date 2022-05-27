@@ -2,6 +2,11 @@
 
 [[./..][..]]
 
+Status: WIP.
+
+Alternative titles: /Full stack orthogonality/, /Orthogonality enables
+optionality/, /Orthogonality enables agility/, /Orthogonality enables speed/.
+
 Approach: compose each layer of your app so that its part are orthogonal. That
 enables flexibility and optionality in the layer above. Above layers can move
 around without the base layer needing changes.
@@ -9,8 +14,28 @@ around without the base layer needing changes.
 In some applications, we might have these layers:
 
 1. Infrastructure. Problems to be solved.
-2. Product features.
+2. Product functionality.
 3. User workflows.
+4. Market positioning.
+
+If we design our infrastructure layer as a collection of orthogonal pieces, we
+can easily compose those pieces when we move up a layer.
+
+Composable, orthogonal infrastructure makes it easy to build product
+functionality. We're not restricted by stuff that's missing.
+
+But infrastructure doesn't make a product. It enables a product. A product is a
+set of features. For good products, the features are orthogonal. Each feature
+does something different.
+
+-----
+
+MORE WIP:
+
+They solve different problems, provide
+different pieces of value. They can be used together, and should be used together.
+
+
 
 * Notes :noexport:
 orthogonal infrastructure + indirection -> orthogonal features

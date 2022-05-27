@@ -1,3 +1,5 @@
+#+TITLE: Descriptive truth, prescriptive truth
+
 # -*- fill-column: 60; -*-
 
 * Deskriptiv sannhet, preskriptiv sannhet

@@ -1,0 +1,12 @@
+#+title: Hourglass architecture
+
+Hourglass architecture, flexiblity, optionality and orthogonality are related!
+
+By building /layered/ applications where each layer builds on a lowere level,
+designed orthogonally, we gain power in each level.
+
+Layers:
+
+1. Infrastructure. Problems to be solved.
+2. Product features.
+3. User workflows.

@@ -17,7 +17,12 @@
 (defn html [target]
   (str target "/index.html"))
 
-;; Generate makefile target for each page
+;; Generate target for root index
+(println (str/join " " (concat ["index.html:" "index.clj"] (map html targets))))
+(println "\t./index.clj")
+(println "")
+
+;; Generate target for each page
 (println
  (str/join "\n\n"
            (for [t targets]
@@ -25,7 +30,7 @@
                   "\n\t"
                   "pandoc -s -i " (org t) " -o " (html t)))))
 
-;; Generate makefile target for all pages
+;; Generate phony target for pages
 (println "")
 (println "@PHONY: pages")
 (println "pages: " (str/join " " (map html targets)))

@@ -7,3 +7,5 @@ orthogonal infrastructure + indirection -> orthogonal features
 orthononal team skills -> optionality + speed -> success
 
 orthogonality > SRP
+
+I like orthogonality

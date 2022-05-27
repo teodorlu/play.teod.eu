@@ -1,5 +1,4 @@
-@PHONY: index.html
-index.html:
+index.html: index.clj feedback-loops-api-design-how-stuff-works/index.html orthogonality-enables-optionality/index.html website-so-what/index.html
 	./index.clj
 
 feedback-loops-api-design-how-stuff-works/index.html: feedback-loops-api-design-how-stuff-works/index.org

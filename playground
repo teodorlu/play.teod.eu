@@ -23,12 +23,6 @@ create-page [PAGE-NAME] [OPTIONS]*
           (for [[arg-name arg-val] (partition 2 opts)]
             [(keyword (subs arg-name 1)) arg-val]))))
 
-(defn add [args]
-  (prn "add" args))
-
-(defn dep [args]
-  (prn "dep" args))
-
 (defn create-page [args]
   (let [opts (parse-opts args)
         page (or (:name opts)
@@ -52,8 +46,6 @@ watchexec -f '*.html' -- pandoc -s -i index.org -o index.html")
 (defn -main []
   (let [[subcommand & args] *command-line-args*]
     (case subcommand
-      "add" (add args)
-      "dep" (dep args)
       "create-page" (create-page args)
       (print-help))))
 

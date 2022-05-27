@@ -2,7 +2,25 @@
 
 [[./..][..]]
 
-* Perspective
-* Figure
-* Specifics - software development process
-* Specifics - product design process
+As software developers, we make decisions all day. How do I approach this
+problem? How do I start carving off its unknown pieces? How can I know where to
+direct my attention?
+
+I've found that most (all) of my effort as a software developers can be reduced
+to:
+
+1. Designing, creating and using feedback loops
+2. Designing APIs
+3. Discovering how stuff works.
+
+Curious? Read on.
+
+-----
+
+The rest of the article has not been written.
+
+* Outline draft :noexport:
+** Perspective
+** Figure
+** Specifics - software development process
+** Specifics - product design process

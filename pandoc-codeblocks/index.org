@@ -1,5 +1,7 @@
 #+title: Pandoc Code blocks
 
+[[file:..][..]]
+
 We explore how Pandoc supports embedded code.
 
 We can write Clojure:

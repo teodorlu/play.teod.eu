@@ -1,0 +1,150 @@
+# -*- fill-column: 60; -*-
+
+* Deskriptiv sannhet, preskriptiv sannhet
+Litt epistemologi i hverdagen.
+
+---
+
+... med en fantastisk fin introduksjon av Camilla!
+CONTROLLING IDEA har deskriptive og preskriptive aspekter.
+STORY VALUE ~ opplevd sannhet / intersubjektiv sannhet;
+preskriptive aspekter.
+
+Carlo: DM er ansvarlig for preskriptiv sannhet.
+
+Finn: "Kodeløypa" var preskriptivt definert -> gjør det som
+oppnår X.
+
+
+* Agenda
+Talens fag er FILOSOFI!
+
+    <enten øredøvende jubel eller øredøvende stillhet>
+
+1. Hvorfor snakke sant?
+2. Hva er deskriptiv?
+3. Hva er preskriptiv?
+4. Hva er eksempler på dekskriptive definisjoner?
+5. Hva er eksempler på preskriptive definisjoner?
+
+* Kommentarer underveis?
+*Whereby* er raskt og enkelt,
+
+Eller *Slack*, hvis vi skal beholde diskusjon. I så fall:
+
+    #teodor-stream
+    https://garasjen.slack.com/archives/C01KB5RSAU9/p1623913168093200
+
+Spam er lov+bra.
+* Hva er nytteverdien i sannhet?
+Spørsmål å tygge på!
+
+Én hypotese: sannhet bygger opp språk, og språk muliggjør
+koordinering.
+* Deskriptiv
+> "serving or aiming to describe," 1751, from Late Latin
+  descriptivus, from descript-, past-participle stem of
+  describere "to write down, copy; sketch, represent," from
+  de "down" (see de-) + scribere "to write" (from PIE root
+  *skribh- "to cut").[1]
+
+Med litt godvilje:
+
+> som ned(de) skrevet(skript)
+
+Altså:
+
+  ting har skjedd     ->      vi skriver ned hva
+
+[1]: https://www.etymonline.com/word/descriptive
+* Preskriptiv
+> 1748, "giving definite, precise directions;" 1765 as
+  "arising from established usage or opinion, customary,"
+  1748, from Late Latin praescriptivus, from praescript-,
+  past-participle stem of praescribere "ordain, determine in
+  advance; write before" (see prescription). Or formed in
+  English from archaic prescript "a direction" (1530s), from
+  Latin praescriptum. An adjective prescript "ordained,
+  appointed" is attested in English from early 15c. In
+  linguistics by 1933; opposed to descriptive.
+
+uff, vi kutter litt.
+
+[2]: https://www.etymonline.com/word/prescriptive
+* Preskriptiv (2)
+> 1748, "giving definite, precise directions;" 1748, from
+  Late Latin praescriptivus, from praescript-,
+  past-participle stem of praescribere "ordain, determine in
+  advance; write before" (see prescription).
+
+Liberalt til norsk:
+
+> foreskrevet
+
+Altså:
+
+  vi skriver noe ned   ->           hendelse
+* Så, noen deskriptive og preskriptive definisjoner.
+Ønsker at dere fokuserer på
+
+  /forskjell mellom definisjoner/
+
+heller enn
+
+  /hvorvidt definisjonene er korrekte/.
+* Hva er `standup´?
+*Deskriptivt*:
+
+  > fortell (1) hva du gjorde i går, (2) hva du har tenkt
+    til å gjøre i dag, og (3) blockers.
+
+*Preskriptivt*:
+
+  > svar på "hvordan er det mest nyttig for teamet ditt at
+    du bruker tiden din akkurat nå?"
+* Hva er `religion´?
+*Deskriptivt*:
+
+  > en virkelighetsmodell som er litt "staere" enn vitenskap
+    i respons til nye eksempler
+
+*Preskriptivt*:
+
+  > en samling arbeidsflyter og historier som maksimerer vår
+    evne til å jobbe sammen
+* Hva er `Iterate´?
+*Deskriptivt*:
+
+  > Et konsulenthus som satser på ventures[3]
+
+*Preskriptivt*:
+
+  > Det Iterate burde være for å kunne gi oss en meningsfull
+    hverdag, og evne til å velge selv over lang sikt[4]
+
+[3]: Anders er sikkert uenig!
+[4]: Mange er sikkert uenige i denne også.
+* Hva velger du i dag?
+Hva gjør du nå?
+
+Beskriver status quo presist?
+
+Gjør det du burde gjøre for at det du vil at skal skje skal
+skje?
+
+Hva er det som trengs?
+* Referanser
+Sulten på mer?
+
+1. Prøv Antifragile[5], som bok eller lydbok.
+2. Undersøk hva fenomenologi[6][7] er, for eksempel av Heidegger.
+3. Undersøk hva intersubjektivitet[8] er.
+
+[5]: https://en.wikipedia.org/wiki/Antifragile
+[6]: https://en.wikipedia.org/wiki/Phenomenology_(philosophy)
+[7]: https://www.philosophizethis.org/podcast/heidegger-dasein
+[8]: https://en.wikipedia.org/wiki/Intersubjectivity
+* Har vi tid til spørsmål?
+
+Spam i chat er også lov!
+* Takk for meg!

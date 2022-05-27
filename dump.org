@@ -183,3 +183,9 @@ Perhaps I can create a CLI. =./playground=.
 **** AESTHETIC REFLECTION
 *** What now?
 Try to keep integrating it. Be grateful. Keep it simple. Reflect on taste.
+** I found my previous slide sources
+Descriptive truth, presciptive truth was on github.com/teodorlu/log:
+https://github.com/teodorlu/log/tree/c7fe172064cb5448cda47abe2fb5b74d16979320/2021-06-14/iterate/slides-descriptive-prescriptive.org
+
+Options to the max:
+https://github.com/teodorlu/reflect.teod.eu/tree/2ef748baaed2e753ffbb1c4630f31f0b8d4882e9/options-to-the-max/article.org

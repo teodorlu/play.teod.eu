@@ -1,0 +1,69 @@
+#+title: Work in progress
+
+* Ting jeg ønsker å skrve om
+** Samlet 2022-05-27
+*** Ortogonalitet
+*** Feedback-loop + API-design + hvordan ting funker
+*** Eksempler på bruk av watchexec
+*** Unix-terminalen gir deg superkrefter
+relatert til ortogonalitet
+relatert til watchexec
+relatert til signaler, starting av prosesser, stopping av prosesser, sigterm,
+sigkill, sighub
+*** Noe dataviz
+*** Konvertering mellom Roam / hiccup / html / org-mode
+*** Signaler, starting av prosesser, stopping av prosesser. Sigterm, sigkill, sighup (?)
+**** Kartlegging av interesse 2022-05-13
+Kilde: https://garasjen.slack.com/archives/C2K35RDNJ/p1652440860308049
+
+Likes: :raised_hands: * 5 (per 2022-05-26)
+***** Pitch
+Idé til fagopplegg - graceful startup, graceful shutdown.
+Forklare signaler (SIGTERM, SIGKILL, …), håndtering av signaler, reagere på Ctrl+C. Eventuelt også liveness og readiness i Kubernetes.
+Hvis det hadde blitt arrangert noe sånt, ville du deltatt? (edited)
+***** Kommentarer
+Eilef - oh yes please!
+Henrik - kill -9 <pid>
+*** Innovasjon - som forstått gjennom bundling og unbundling
+eksempler på bundling
+eksempler på unbundling
+
+verdi - arbeidsflyter
+verktøy - prismodeller
+
+ortogonalitet
+* Ting jeg ønsker å jobbe med
+** Samlet 2022-05-27
+Hva?
+
+1. Kanskje jeg skal representere noe struktur i data
+2. Kanskje opt-in skal være via en fil (feks =playground.edn=)
+3. Kanskje syntese fra filer rundt omkring skal være i en SQLite-base
+4. I så fall kan jeg autogenerere Makefile
+5. I så fall kan jeg autogenerere index
+*** Models and metamodels
+Today:
+
+1. I want an effective makefile
+2. That requires a model of how my stuff fits together
+3. That model should be explicit! In data. So that I can work on it.
+*** Idea
+Idea: =playground.edn= file in each folder. Contains information on how to
+build, and what dependencies we have.
+*** More ideas
+More ideas: Put declarative files around. =playground.edn= or something else.
+Use those to build up a model of how everything fits together. From that model
+(sqlite databse, plain file, etc), generate a makefile. Then we can just use the
+makefile.
+
+Consider supporting compiling to a different folder than root. That way, we can
+separate cleanly between build artefacts that should be served, and all the
+other stuff. But that's not for now.
+*** Friction
+I wanted to make a new page to explore what happens to code blocks. I was ...
+well, I didn't like it. There was friction. I couldn't just create a new page
+and start writing. I had to think, consider, remember.
+
+Perhaps I can create a CLI. =./playground=.
+
+=./playground create-page explore=

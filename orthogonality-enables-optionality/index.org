@@ -8,4 +8,4 @@ orthononal team skills -> optionality + speed -> success
 
 orthogonality > SRP
 
-I like orthogonality
+I like orthogonality.

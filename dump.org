@@ -158,9 +158,11 @@ Today:
 2. That requires a model of how my stuff fits together
 3. That model should be explicit! In data. So that I can work on it.
 
+** Idea
 Idea: =playground.edn= file in each folder. Contains information on how to
 build, and what dependencies we have.
 
+** More ideas
 More ideas: Put declarative files around. =playground.edn= or something else.
 Use those to build up a model of how everything fits together. From that model
 (sqlite databse, plain file, etc), generate a makefile. Then we can just use the

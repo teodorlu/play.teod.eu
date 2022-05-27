@@ -67,7 +67,7 @@ much exciting things to do. So let's do that.
 
 * How do I kill a process?
 
-First, we need something to kill.
+First, we need something to kill. ☠️
 
 #+begin_src bash
 # Leave this running in a terminal
@@ -107,6 +107,7 @@ pkill sleep
 #+end_src
 
 #+RESULTS:
+
 * How do I kill a process with a specific signal?
 
 =kill= and =pkill= accept a first argument as signal code. To kill with SIGINT,
@@ -125,6 +126,9 @@ pkill -9 sleep
 pkill -15 sleep
 # Does the sleep process stop? Does it print anything?
 #+end_src
+* How to handle Unix signals with Python
+
+
 
 * Interactive tools to work with running processes:
 

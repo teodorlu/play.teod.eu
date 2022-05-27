@@ -30,12 +30,7 @@ does something different.
 
 -----
 
-MORE WIP:
-
-They solve different problems, provide
-different pieces of value. They can be used together, and should be used together.
-
-
+Not complete.
 
 * Notes :noexport:
 orthogonal infrastructure + indirection -> orthogonal features

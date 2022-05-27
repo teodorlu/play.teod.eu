@@ -225,6 +225,30 @@
 <header id="title-block-header">
 <h1 class="title">Unix signals: a crash course</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#goals" id="toc-goals">Goals</a></li>
+<li><a href="#list-of-unix-signals" id="toc-list-of-unix-signals">List
+of Unix signals</a></li>
+<li><a href="#how-to-list-running-processes"
+id="toc-how-to-list-running-processes">How to list running
+processes</a></li>
+<li><a href="#how-do-i-kill-a-process"
+id="toc-how-do-i-kill-a-process">How do I kill a process?</a></li>
+<li><a href="#how-do-i-kill-a-process-with-a-specific-signal"
+id="toc-how-do-i-kill-a-process-with-a-specific-signal">How do I kill a
+process with a specific signal?</a></li>
+<li><a href="#how-to-handle-unix-signals-with-python"
+id="toc-how-to-handle-unix-signals-with-python">How to handle Unix
+signals with Python</a></li>
+<li><a href="#how-to-handle-unix-signals-with-other-languages"
+id="toc-how-to-handle-unix-signals-with-other-languages">How to handle
+Unix signals with other languages</a></li>
+<li><a href="#interactive-tools-to-work-with-running-processes"
+id="toc-interactive-tools-to-work-with-running-processes">Interactive
+tools to work with running processes:</a></li>
+</ul>
+</nav>
 <p><a href="./..">..</a></p>
 <h1 id="goals">Goals</h1>
 <ol class="incremental">
@@ -232,9 +256,8 @@
 <li>Be able to handle sigterm and sigint while cleaning up temporary
 processes</li>
 </ol>
-<h1 id="unix-signals-from-the-manual">Unix signals – from the
-manual</h1>
-<p>Common signals:</p>
+<h1 id="list-of-unix-signals">List of Unix signals</h1>
+<p>We're going to focus on four signals:</p>
 <table>
 <thead>
 <tr class="header">
@@ -266,8 +289,8 @@ manual</h1>
 </tr>
 </tbody>
 </table>
-<p>All the signals - from <code class="verbatim">man 3 signal</code> on
-a Mac:</p>
+<p>The manual (<code class="verbatim">man signal</code>) contains a
+longer list.</p>
 <table>
 <thead>
 <tr class="header">
@@ -468,23 +491,25 @@ a Mac:</p>
 </table>
 <h1 id="how-to-list-running-processes">How to list running
 processes</h1>
-<dl class="incremental">
-<dt>ps</dt>
-<dd>
-Show some running processes
-</dd>
-<dt>ps aux</dt>
-<dd>
-Show lots of running processes
-</dd>
-</dl>
+<table>
+<tbody>
+<tr class="odd">
+<td><code class="verbatim">ps</code></td>
+<td>Show some running processes</td>
+</tr>
+<tr class="even">
+<td><code class="verbatim">ps aux</code></td>
+<td>Show lots of running processes</td>
+</tr>
+</tbody>
+</table>
 <p><code class="verbatim">ps</code> and <code
-class="verbatim">ps aux</code> pair great with fuzzy-finders - such as
-grep and fzf. To find a running process interactively, <code
+class="verbatim">ps aux</code> pair great with fuzzy-finders — such as
+grep and fzf. To find a running process interactively, try <code
 class="verbatim">ps | fzf</code> or <code
-class="verbatim">ps aux | fzf</code> are good options.</p>
-<p>But what can we do with a process? Other than killing it, I don't
-think there's much exciting things to do. So let's do that.</p>
+class="verbatim">ps aux | fzf</code>.</p>
+<p>But what can we do with a process? Well, we can kill it. And … I must
+reluctantly admit I don't know anything else we can do with it.</p>
 <h1 id="how-do-i-kill-a-process">How do I kill a process?</h1>
 <p>First, we need something to kill. ☠️</p>
 <div class="sourceCode" id="cb1"><pre
@@ -528,6 +553,10 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Does the sleep process stop? Does it print anything?</span></span></code></pre></div>
 <h1 id="how-to-handle-unix-signals-with-python">How to handle Unix
 signals with Python</h1>
+<p>TODO!</p>
+<h1 id="how-to-handle-unix-signals-with-other-languages">How to handle
+Unix signals with other languages</h1>
+<p>Perhaps?</p>
 <h1 id="interactive-tools-to-work-with-running-processes">Interactive
 tools to work with running processes:</h1>
 <dl class="incremental">

@@ -7,9 +7,9 @@
 1. Learn to send and handle common Unix signals
 2. Be able to handle sigterm and sigint while cleaning up temporary processes
 
-* Unix signals -- from the manual
+* List of Unix signals
 
-Common signals:
+We're going to focus on four signals:
 
 | Signal | Name    | Effect                               |
 |--------+---------+--------------------------------------|
@@ -18,7 +18,7 @@ Common signals:
 |      9 | SIGKILL | Terminate immediately - no cleanup   |
 |     15 | SIGTERM | Terminate process, allow for cleanup |
 
-All the signals - from =man 3 signal= on a Mac:
+The manual (=man signal=) contains a longer list.
 
 | Signal | Name      | Default Action    | Description                                     |
 |--------+-----------+-------------------+-------------------------------------------------|
@@ -56,14 +56,14 @@ All the signals - from =man 3 signal= on a Mac:
 
 * How to list running processes
 
-- ps :: Show some running processes
-- ps aux :: Show lots of running processes
+| =ps=     | Show some running processes    |
+| =ps aux= | Show lots of running processes |
 
-=ps= and =ps aux= pair great with fuzzy-finders - such as grep and fzf. To find
-a running process interactively, =ps | fzf= or =ps aux | fzf= are good options.
+=ps= and =ps aux= pair great with fuzzy-finders --- such as grep and fzf. To find
+a running process interactively, try =ps | fzf= or =ps aux | fzf=.
 
-But what can we do with a process? Other than killing it, I don't think there's
-much exciting things to do. So let's do that.
+But what can we do with a process? Well, we can kill it. And ... I must
+reluctantly admit I don't know anything else we can do with it.
 
 * How do I kill a process?
 
@@ -128,7 +128,11 @@ pkill -15 sleep
 #+end_src
 * How to handle Unix signals with Python
 
+TODO!
 
+* How to handle Unix signals with other languages
+
+Perhaps?
 
 * Interactive tools to work with running processes:
 

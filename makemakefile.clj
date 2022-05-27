@@ -30,7 +30,7 @@
            (for [t targets]
              (str (html t) ": " (org t)
                   "\n\t"
-                  "pandoc -s -i " (org t)
+                  "pandoc -s --toc -i " (org t)
                   (if css
                     " --css=../pandoc.css"
                       "")

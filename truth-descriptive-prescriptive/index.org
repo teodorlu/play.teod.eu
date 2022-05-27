@@ -2,6 +2,8 @@
 
 # -*- fill-column: 60; -*-
 
+[[file:..][..]]
+
 * Deskriptiv sannhet, preskriptiv sannhet
 Litt epistemologi i hverdagen.
 

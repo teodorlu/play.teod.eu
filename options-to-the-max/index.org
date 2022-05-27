@@ -2,6 +2,8 @@
 
 # *-* fill-column: 70 *-*
 
+[[file:..][..]]
+
 * Frame -- nå skal vi titte på en presentasjon noen har skrevet
 
 

@@ -225,41 +225,244 @@
 <header id="title-block-header">
 <h1 class="title">Unix signals: a crash course</h1>
 </header>
+<p><a href="./..">..</a></p>
 <h1 id="goals">Goals</h1>
 <ol class="incremental">
 <li>Learn to send and handle common Unix signals</li>
 <li>Be able to handle sigterm and sigint while cleaning up temporary
 processes</li>
 </ol>
+<h1 id="unix-signals-from-the-manual">Unix signals – from the
+manual</h1>
 <p>Common signals:</p>
 <table>
 <thead>
 <tr class="header">
 <th>Signal</th>
-<th>Code</th>
+<th>Name</th>
 <th>Effect</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>SIGTERM</td>
-<td></td>
-<td>Terminate process, allow for cleanup</td>
-</tr>
-<tr class="even">
-<td>SIGINT</td>
-<td></td>
-<td>Terminate process, allow for cleanup</td>
-</tr>
-<tr class="odd">
+<td>1</td>
 <td>SIGHUP</td>
-<td></td>
 <td>Reload configuration (hack!)</td>
 </tr>
 <tr class="even">
+<td>2</td>
+<td>SIGINT</td>
+<td>Terminate process, allow for cleanup</td>
+</tr>
+<tr class="odd">
+<td>9</td>
 <td>SIGKILL</td>
-<td></td>
 <td>Terminate immediately - no cleanup</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>SIGTERM</td>
+<td>Terminate process, allow for cleanup</td>
+</tr>
+</tbody>
+</table>
+<p>All the signals - from <code class="verbatim">man 3 signal</code> on
+a Mac:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Signal</th>
+<th>Name</th>
+<th>Default Action</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>SIGHUP</td>
+<td>terminate process</td>
+<td>terminal line hangup</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>SIGINT</td>
+<td>terminate process</td>
+<td>interrupt program</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>SIGQUIT</td>
+<td>create core image</td>
+<td>quit program</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>SIGILL</td>
+<td>create core image</td>
+<td>illegal instruction</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>SIGTRAP</td>
+<td>create core image</td>
+<td>trace trap</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>SIGABRT</td>
+<td>create core image</td>
+<td>abort program (formerly SIGIOT)</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>SIGEMT</td>
+<td>create core image</td>
+<td>emulate instruction executed</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>SIGFPE</td>
+<td>create core image</td>
+<td>floating-point exception</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>SIGKILL</td>
+<td>terminate process</td>
+<td>kill program</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>SIGBUS</td>
+<td>create core image</td>
+<td>bus error</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>SIGSEGV</td>
+<td>create core image</td>
+<td>segmentation violation</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>SIGSYS</td>
+<td>create core image</td>
+<td>non-existent system call invoked</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>SIGPIPE</td>
+<td>terminate process</td>
+<td>write on a pipe with no reader</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>SIGALRM</td>
+<td>terminate process</td>
+<td>real-time timer expired</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>SIGTERM</td>
+<td>terminate process</td>
+<td>software termination signal</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>SIGURG</td>
+<td>discard signal</td>
+<td>urgent condition present on socket</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>SIGSTOP</td>
+<td>stop process</td>
+<td>stop (cannot be caught or ignored)</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>SIGTSTP</td>
+<td>stop process</td>
+<td>stop signal generated from keyboard</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>SIGCONT</td>
+<td>discard signal</td>
+<td>continue after stop</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>SIGCHLD</td>
+<td>discard signal</td>
+<td>child status has changed</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>SIGTTIN</td>
+<td>stop process</td>
+<td>background read attempted from control terminal</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>SIGTTOU</td>
+<td>stop process</td>
+<td>background write attempted to control terminal</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>SIGIO</td>
+<td>discard signal</td>
+<td>I/O is possible on a descriptor (see fcntl(2))</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>SIGXCPU</td>
+<td>terminate process</td>
+<td>cpu time limit exceeded (see setrlimit(2))</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>SIGXFSZ</td>
+<td>terminate process</td>
+<td>file size limit exceeded (see setrlimit(2))</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>SIGVTALRM</td>
+<td>terminate process</td>
+<td>virtual time alarm (see setitimer(2))</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>SIGPROF</td>
+<td>terminate process</td>
+<td>profiling timer alarm (see setitimer(2))</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>SIGWINCH</td>
+<td>discard signal</td>
+<td>Window size change</td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>SIGINFO</td>
+<td>discard signal</td>
+<td>status request from keyboard</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>SIGUSR1</td>
+<td>terminate process</td>
+<td>User defined signal 1</td>
+</tr>
+<tr class="odd">
+<td>31</td>
+<td>SIGUSR2</td>
+<td>terminate process</td>
+<td>User defined signal 2</td>
 </tr>
 </tbody>
 </table>
@@ -283,41 +486,32 @@ class="verbatim">ps aux | fzf</code> are good options.</p>
 <p>But what can we do with a process? Other than killing it, I don't
 think there's much exciting things to do. So let's do that.</p>
 <h1 id="how-do-i-kill-a-process">How do I kill a process?</h1>
-<p>In a new terminal, run:</p>
+<p>First, we need something to kill.</p>
 <div class="sourceCode" id="cb1"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sleep</span> 9999</span></code></pre></div>
-<p>For killing processes, we can use <code class="verbatim">kill</code>
-or <code class="verbatim">pkill</code>. Kill requires a process ID
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Leave this running in a terminal</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sleep</span> 9999</span></code></pre></div>
+<p>To kill a process, we can use <code class="verbatim">kill</code> or
+<code class="verbatim">pkill</code>. Kill requires a process ID
 (number).</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">man</span> kill <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 10</span></code></pre></div>
-<pre><code>KILL(1)                      General Commands Manual                     KILL(1)
-
-NAME
-     kill – terminate or signal a process
-
-SYNOPSIS
-     kill [-s signal_name] pid ...
-     kill -l [exit_status]
-     kill -signal_name pid ...
-     kill -signal_number pid ...
+<div class="sourceCode" id="cb2" data-exports="both"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find the process ID with `ps` and `grep`</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ps</span> <span class="kw">|</span> <span class="fu">grep</span> sleep</span></code></pre></div>
+<pre class="example"><code>33312 ttys003    0:00.00 sleep 9999999
 </code></pre>
+<p>33312 is our ID.</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Now kill it!</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">kill</span> 33312</span></code></pre></div>
 <p>With <code class="verbatim">pkill</code>, we can give a
 <em>pattern</em> - or just the full process name.</p>
-<pre><code>man pkill | head -n 10
-</code></pre>
-<pre><code>PKILL(1)                     General Commands Manual                    PKILL(1)
-
-NAME
-     pgrep, pkill – find or signal processes by name
-
-SYNOPSIS
-     pgrep [-Lafilnoqvx] [-F pidfile] [-G gid] [-P ppid] [-U uid] [-d delim]
-           [-g pgrp] [-t tty] [-u euid] pattern ...
-     pkill [-signal] [-ILafilnovx] [-F pidfile] [-G gid] [-P ppid] [-U uid]
-           [-g pgrp] [-t tty] [-u euid] pattern ...
-</code></pre>
-<p>Interactive tools to work with running processes:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Start a long running process in another terminal</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sleep</span> 9999999</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then kill it off.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> sleep</span></code></pre></div>
+<h1 id="interactive-tools-to-work-with-running-processes">Interactive
+tools to work with running processes:</h1>
 <dl class="incremental">
 <dt>top</dt>
 <dd>

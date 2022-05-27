@@ -160,3 +160,12 @@ Today:
 
 Idea: =playground.edn= file in each folder. Contains information on how to
 build, and what dependencies we have.
+
+More ideas: Put declarative files around. =playground.edn= or something else.
+Use those to build up a model of how everything fits together. From that model
+(sqlite databse, plain file, etc), generate a makefile. Then we can just use the
+makefile.
+
+Consider supporting compiling to a different folder than root. That way, we can
+separate cleanly between build artefacts that should be served, and all the
+other stuff. But that's not for now.

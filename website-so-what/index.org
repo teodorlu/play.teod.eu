@@ -1,5 +1,7 @@
 #+title: A website — so what?
 
+[[file:~/dev/teodorlu/playground.teod.eu][..]]
+
 * Why bother with a website?
 Not much content yet I'm afraid.
 

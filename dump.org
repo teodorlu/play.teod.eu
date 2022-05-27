@@ -168,3 +168,11 @@ makefile.
 Consider supporting compiling to a different folder than root. That way, we can
 separate cleanly between build artefacts that should be served, and all the
 other stuff. But that's not for now.
+** Friction
+I wanted to make a new page to explore what happens to code blocks. I was ...
+well, I didn't like it. There was friction. I couldn't just create a new page
+and start writing. I had to think, consider, remember.
+
+Perhaps I can create a CLI. =./playground=.
+
+=./playground create-page explore=

@@ -1,0 +1,61 @@
+#!/usr/bin/env bb
+
+(require '[clojure.string :as str]
+         '[clojure.java.shell :refer [sh]]
+         '[babashka.fs :as fs])
+
+(defn print-help []
+  (println (str/trim "
+Usage: ./playground <subcommand> <options>
+
+Subcommands:
+
+create-page
+
+    Options:
+
+    :name - short, unique name for URLs and file paths.
+")))
+
+(defn parse-opts [opts]
+  (let [[cmds opts] (split-with #(not (str/starts-with? % ":")) opts)]
+    (into {:cmds cmds}
+          (for [[arg-name arg-val] (partition 2 opts)]
+            [(keyword (subs arg-name 1)) arg-val]))))
+
+(defn add [args]
+  (prn "add" args))
+
+(defn dep [args]
+  (prn "dep" args))
+
+(defn create-page [args]
+  (let [opts (parse-opts args)
+        page (or (:name opts)
+                 (first (:cmds opts)))
+        org-file (str page "/index.org")
+        watch-file (str page "/watchbuild.sh")]
+    (fs/create-dirs page)
+
+    ;; Org file
+    (spit org-file (str "#+title: " page))
+
+    ;; Watch file
+    (spit watch-file "#!/usr/bin/env bash
+
+watchexec -f '*.html' -- pandoc -s -i index.org -o index.html")
+    (fs/set-posix-file-permissions watch-file "rwxr-xr-x")
+
+    nil
+    ))
+
+(defn -main []
+  (let [[subcommand & args] *command-line-args*]
+    (case subcommand
+      "add" (add args)
+      "dep" (dep args)
+      "create-page" (create-page args)
+      (print-help))))
+
+(when (= *file* (System/getProperty "babashka.file"))
+  (-main))

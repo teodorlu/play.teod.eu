@@ -10,7 +10,7 @@
       :out))
 
 (def targets
-  (->> (bash "ls **/index.html | grep -v '^index.html$' | sed 's|/index.html||g'")
+  (->> (bash "ls **/index.html | grep -v '^index.html$' | sort | sed 's|/index.html||g'")
        (str/split-lines)))
 
 (def org-markup

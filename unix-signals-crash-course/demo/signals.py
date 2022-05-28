@@ -6,7 +6,7 @@ print("In python")
 
 ################################################################################
 #
-# Here's how we can handle a single interrupt:
+# Here's how we can handle a single interrupt
 
 try:
     time.sleep(10)
@@ -14,10 +14,17 @@ except Exception:
     print("We're handling an exception!")
 except KeyboardInterrupt:
     print("Handling keybaord interrupt")
+
+try:
+    time.sleep(10)
 except BaseException:
-    print("Catching base exception")
+    print("Base exceptions include keyboard interrupts.")
+
+try:
+    time.sleep(10)
 except:
-    print("We're swallowing any exception now!")
+    print("Or we can use an empty except - that catches anything.")
+    print("Tired of trying to exit soon?")
 
 ################################################################################
 #

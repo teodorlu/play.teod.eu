@@ -2,7 +2,7 @@
 
 import time
 
-print("In python")
+print("Python has started!")
 
 ################################################################################
 #
@@ -13,18 +13,18 @@ try:
 except Exception:
     print("We're handling an exception!")
 except KeyboardInterrupt:
-    print("Handling keybaord interrupt")
+    print(" Handling keybaord interrupt")
 
 try:
     time.sleep(10)
 except BaseException:
-    print("Base exceptions include keyboard interrupts.")
+    print(" Base exceptions include keyboard interrupts.")
 
 try:
     time.sleep(10)
 except:
-    print("Or we can use an empty except - that catches anything.")
-    print("Tired of trying to exit soon?")
+    print(" Or we can use an empty except - that catches anything.")
+    print("   Tired of trying to exit soon?")
 
 ################################################################################
 #
@@ -67,13 +67,28 @@ def annoy2():
     signal.signal(signal.SIGTERM, exit_hook)
     signal.signal(signal.SIGINT, exit_hook)
 
+    while True:
+        time.sleep(10)
 
 # annoy2()
-
-while True:
-    time.sleep(10)
 
 # Expected behavior:
 #
 #   Sigint / C-c gets us into the annoy loop
 #   Sigterm gets us into the annoy2 loop.
+
+
+try:
+    time.sleep(10)
+except KeyboardInterrupt:
+    print(" Are you really sure you want to unsubscribe?")
+
+try:
+    time.sleep(10)
+except KeyboardInterrupt:
+    print(" Absolutely sure? You can have a discount. 20 % off your next Unix signal.")
+
+try:
+    time.sleep(10)
+except KeyboardInterrupt:
+    print(" I give up. Have it your way.")

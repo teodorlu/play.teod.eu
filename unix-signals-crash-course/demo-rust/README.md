@@ -35,6 +35,20 @@ http-server.
 cargo run --bin http_channels
 ```
 
+## Reloading config on SIGHUP
+
+A signal-pattern is reloading the config when receiving a SIGHUP. This is impleented in config.rs
+
+```
+cargo run --bin config
+```
+
+To reload the config, look at the PID printed by the config, and then run:
+
+```
+kill -HUP $PID
+```
+
 ## Lower level handling of all unix signals using tokio
 
 It's possible to listen to all signals, not just sigint. However that is not cross-platform and will

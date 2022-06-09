@@ -1,0 +1,14 @@
+#+title: Opt-in to hiererchies
+
+State: DRAFT / INCOMPLETE
+
+Idea - "monohierarchical" approaches are sticky, and often bad. Humans
+understand things in terms of hierarchies. This understanding is often copied
+straight over to organization.
+
+An alternative approach is to organize things in flat structures, and instead
+present a hierarchy as a mental model when that's useful.
+
+In the long run, this increases agility. It's easier to change both the
+organization (due to its flatness) and the hierarchies, because the hierarcies
+are views.

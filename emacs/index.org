@@ -90,7 +90,7 @@ Signature for =add-hook=:
 (add-hook HOOK FUNCTION &optional DEPTH LOCAL)
 #+end_src
 
-And there's a =after-save-hook= that I can use.
+And there's an =after-save-hook= that I can use.
 
 In my case, I think I can use the following:
 

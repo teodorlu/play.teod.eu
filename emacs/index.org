@@ -4,7 +4,7 @@
 
 Hey! Reading this document from start to end might not be useful. So why put it
 here if the intent isn't consumption?
-
+* Prelude
 My learning process works something like this:
 
 1. Identify something I value that I'd like to explore
@@ -24,8 +24,8 @@ For my ease of reading, and for easily sharing with others. The web is
 accessible :)
 
 * 2022-06-12
-Morning.
-** Improving Clerk workflow with hooks
+'Morning.
+** Improving my Clerk workflow with hooks
 **Problem statement**. I've been trying out Jack Rusher's recommendation to bind
   a key to save document and refresh with Clerk. That lead to really fast
   refreshes, which I enjoyed. However, I coudn't get past my muscle memory of
@@ -165,3 +165,8 @@ Yaaay!
 3. Perhaps post in #clerk on Clojurians.
 
 Also need to eat breakfast and not miss my plans.
+** More clerk - startup and files.
+Idea:
+
+1. Ensure Clerk has been required in user.clj
+2. Set the clerk auto stuff on opening files with file-local variables.

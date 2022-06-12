@@ -1,0 +1,172 @@
+#+title: Learning Emacs
+
+[[./..][..]]
+
+Hey! Reading this document from start to end might not be useful. So why put it
+here if the intent isn't consumption?
+
+My learning process works something like this:
+
+1. Identify something I value that I'd like to explore
+2. In the unexplored territory, would exploring enable me to /do/ something new
+   and interesting?
+3. If yes - try do it, and write down the process.
+
+This document is the written record of the process of me exploring Emacs, and
+what learning Emacs can do for me.
+
+I index on date, then topic. That means /adding/ information is easy. What about
+digesting a topic? Then I can create a different document.
+
+So ... why even keep this public?
+
+For my ease of reading, and for easily sharing with others. The web is
+accessible :)
+
+* 2022-06-12
+Morning.
+** Improving Clerk workflow with hooks
+**Problem statement**. I've been trying out Jack Rusher's recommendation to bind
+  a key to save document and refresh with Clerk. That lead to really fast
+  refreshes, which I enjoyed. However, I coudn't get past my muscle memory of
+  pressing the wrong key. On my Norwegian keyboard, pressing =C-ø= is really
+  convenient. On a US ANSI layout, that would be =C-;=. I've bound this to
+  =save-buffer=, to avoid the sequence of having to press =ESC SPC f s i= to
+  exit to normal mode, save and re-enter insert mode (with Evil and Doom Emacs).
+
+Interlude -- Writing this down feels really good. I think it will help me avoid
+getting distracted. Back to Emacs.
+
+**Let's give this a shot!**
+
+I had a look at the Emacs Lisp, and it simply saves and messages Clerk to
+reload!
+
+#+begin_src emacs-lisp
+(defun clerk-show ()
+  (interactive)
+  (save-buffer)
+  (let
+      ((filename
+        (buffer-file-name)))
+    (when filename
+      (cider-interactive-eval
+       (concat "(nextjournal.clerk/show! \"" filename "\")")))))
+
+(define-key clojure-mode-map (kbd "<M-return>") 'clerk-show)
+#+end_src
+
+Source: [[https://github.com/nextjournal/clerk/blob/a5e60412c812bd348e61d8a02377edf1960e89ba/README.md#L77][Clerk README]].
+
+See? It saves the buffer, then runs =nextjournal.clerk/show!= in the current
+Cider repl.
+
+Let's extract a function for the save hook.
+
+#+begin_src emacs-lisp
+(defun teod/clerk-show ()
+  (interactive)
+  (let
+      ((filename
+        (buffer-file-name)))
+    (when filename
+      (cider-interactive-eval
+       (concat "(nextjournal.clerk/show! \"" filename "\")")))))
+#+end_src
+
+But ... how do we run this?
+
+My original ideas:
+
+- Use Emacs' /advice/ mechanism to patch =save-buffer= to also sync to clerk on save
+- Define a minor mode for =clerk=.
+
+But I didn't know where I should start. I asked on the Clojurians Slack - in the
+#doom-emacs channel, and got some much appreciated pointers.
+
+In essence:
+
+- Advice is very powerful - it can patch any function
+- What I wanted to achieve could be solved more simply with a hook.
+
+Signature for =add-hook=:
+
+#+begin_src emacs-lisp
+(add-hook HOOK FUNCTION &optional DEPTH LOCAL)
+#+end_src
+
+And there's a =after-save-hook= that I can use.
+
+In my case, I think I can use the following:
+
+#+begin_src emacs-lisp
+(add-hook after-save-hook teod/clerk-show 0 't)
+#+end_src
+
+Though I admit I don't really understand when I should use different function
+reference styles.
+
+#+begin_src emacs-lisp
+teod/clerk-show ; like this?
+'teod/clerk-show ; or this?
+#'teod/clerk-show ; or this?
+#+end_src
+
+Let's try the simplest.
+
+#+begin_src emacs-lisp
+(defun teod/clerk-autoshow ()
+  (interactive)
+  (add-hook after-save-hook teod/clerk-show 0 't))
+#+end_src
+
+Nope! That didn't work. I got the following in the =*Messages*= buffer:
+
+#+begin_quote
+clerk-autoshow: Symbol’s value as variable is void: teod/clerk-show
+apply
+#+end_quote
+
+Let's try =#'=.
+
+Didn't work. Bah!
+
+OK, found the manual: https://www.gnu.org/software/emacs/manual/html_node/elisp/Setting-Hooks.html
+
+Example from manual:
+
+#+begin_src emacs-lisp
+(add-hook 'lisp-interaction-mode-hook 'auto-fill-mode)
+#+end_src
+
+So .. both should be qoted. OK! (interlude: I'm not super comfortable with
+/when/ to use symbols. Clojure has some different idioms here.)
+
+Let's try the following:
+
+#+begin_src emacs-lisp
+(defun teod/clerk-autoshow ()
+  (interactive)
+  (add-hook 'after-save-hook 'teod/clerk-show 0 't))
+#+end_src
+
+Yaaay!
+
+**Reflection**. Really enjoyable. I was able to achieve what I wanted. I got
+  stuck first, asking got me unstuck. And asking also allowed me to nail a way
+  simpler solution than just pushing ahead.
+
+**Future work**.
+
+1. I want to add some =;; ... run the clerk autosave thing ...= on top of Clerk
+   Clojure files
+2. Still think a minor mode could be useful - but this really solves what I
+   needed now.
+
+**Actionables now.**
+
+1. Commit and push this doc.
+2. Report back to the kind person i Clojurians
+3. Perhaps post in #clerk on Clojurians.
+
+Also need to eat breakfast and not miss my plans.

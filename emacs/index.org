@@ -1,4 +1,4 @@
-#+title: Learning Emacs
+#+title: Emacs learning journal
 
 [[./..][..]]
 
@@ -15,8 +15,9 @@ My learning process works something like this:
 This document is the written record of the process of me exploring Emacs, and
 what learning Emacs can do for me.
 
-I index on date, then topic. That means /adding/ information is easy. What about
-digesting a topic? Then I can create a different document.
+I index on date, then topic. That means /adding/ information is easy. "But is
+that nice to read?" Perhaps. This journal is optimized for writing, not reading.
+Other documents can be read-optimized.
 
 So ... why even keep this public?
 

@@ -1,5 +1,14 @@
 #+title: Intent
 
+Aim your intent - explore - refactor towards orthogonality
+
+**Hva er forskjellen på wip.org og intent.org?**
+
+|        | intent.org             | wip.org                                  |
+|--------+------------------------+------------------------------------------|
+| Format | temporær braindump     | liste av ting å lære og ting å skrive om |
+| Formål | første touch / capture | andre touch / curation / categorization  |
+
 * 2022-05-27
 ** remix culture, the internet
 knowledge garden
@@ -9,3 +18,15 @@ Iterate Knowledge Garden
 Iterate Garden
 
 Iterate Knowledge Playground
+
+* 2022-06-12
+** Feeling the need for opt-in structure
+Right now, I have multilpe separate files & folders - each separate, living on
+its own.
+
+I'm feeling that the need for playground.edn has come.
+
+Why?
+
+Specifically - it could deliver a title for the main index. And I could separate
+drafts and incomplete work from other stuff.

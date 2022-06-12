@@ -30,3 +30,13 @@ Why?
 
 Specifically - it could deliver a title for the main index. And I could separate
 drafts and incomplete work from other stuff.
+** If I was going to publish a Clerk document, how would I do it?
+Ideas:
+
+1. make all of this a clojure project
+2. create a clojure project for clerk notebooks in a subdirectory - then copy
+   the files out on demand
+   1. Could perhaps have placeholder =playground.edn= files that point to the source
+   2. Or =notebooks/= could mirror "/" - so that =notebooks/pendulum.clj= is
+      compiled into =pendulum/index.html=.
+   3. 🤔

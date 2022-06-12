@@ -65,7 +65,6 @@ Let's extract a function for the save hook.
 
 #+begin_src emacs-lisp
 (defun teod/clerk-show ()
-  (interactive)
   (let
       ((filename
         (buffer-file-name)))

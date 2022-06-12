@@ -46,9 +46,7 @@ reload!
 (defun clerk-show ()
   (interactive)
   (save-buffer)
-  (let
-      ((filename
-        (buffer-file-name)))
+  (let ((filename (buffer-file-name)))
     (when filename
       (cider-interactive-eval
        (concat "(nextjournal.clerk/show! \"" filename "\")")))))
@@ -65,9 +63,7 @@ Let's extract a function for the save hook.
 
 #+begin_src emacs-lisp
 (defun teod/clerk-show ()
-  (let
-      ((filename
-        (buffer-file-name)))
+  (let ((filename (buffer-file-name)))
     (when filename
       (cider-interactive-eval
        (concat "(nextjournal.clerk/show! \"" filename "\")")))))

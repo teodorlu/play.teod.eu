@@ -266,14 +266,12 @@ Clerk to reload!</p>
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> clerk-show </span>()</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  (save-buffer)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      ((filename</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        (buffer-file-name)))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">when</span> filename</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      (cider-interactive-eval</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>       (concat <span class="st">&quot;(nextjournal.clerk/show! </span><span class="sc">\&quot;</span><span class="st">&quot;</span> filename <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">)&quot;</span>)))))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>(define-key clojure-mode-map (kbd <span class="st">&quot;&lt;M-return&gt;&quot;</span>) &#39;clerk-show)</span></code></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> ((filename (buffer-file-name)))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">when</span> filename</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      (cider-interactive-eval</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>       (concat <span class="st">&quot;(nextjournal.clerk/show! </span><span class="sc">\&quot;</span><span class="st">&quot;</span> filename <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">)&quot;</span>)))))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>(define-key clojure-mode-map (kbd <span class="st">&quot;&lt;M-return&gt;&quot;</span>) &#39;clerk-show)</span></code></pre></div>
 <p>Source: <a
 href="https://github.com/nextjournal/clerk/blob/a5e60412c812bd348e61d8a02377edf1960e89ba/README.md#L77">Clerk
 README</a>.</p>
@@ -283,12 +281,10 @@ repl.</p>
 <p>Let's extract a function for the save hook.</p>
 <div class="sourceCode" id="cb2" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/clerk-show </span>()</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>      ((filename</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        (buffer-file-name)))</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">when</span> filename</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>      (cider-interactive-eval</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>       (concat <span class="st">&quot;(nextjournal.clerk/show! </span><span class="sc">\&quot;</span><span class="st">&quot;</span> filename <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">)&quot;</span>)))))</span></code></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> ((filename (buffer-file-name)))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">when</span> filename</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>      (cider-interactive-eval</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>       (concat <span class="st">&quot;(nextjournal.clerk/show! </span><span class="sc">\&quot;</span><span class="st">&quot;</span> filename <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">)&quot;</span>)))))</span></code></pre></div>
 <p>But … how do we run this?</p>
 <p>My original ideas:</p>
 <ul class="incremental">

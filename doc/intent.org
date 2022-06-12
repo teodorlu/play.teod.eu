@@ -4,10 +4,10 @@ Aim your intent - explore - refactor towards orthogonality
 
 **Hva er forskjellen på wip.org og intent.org?**
 
-|        | intent.org             | wip.org                                  |
-|--------+------------------------+------------------------------------------|
-| Format | temporær braindump     | liste av ting å lære og ting å skrive om |
-| Formål | første touch / capture | andre touch / curation / categorization  |
+|        | dump.org            | intent.org     | wip.org                                  |
+|--------+---------------------+----------------+------------------------------------------|
+| Format | start her           | konsist om mål | liste av ting å lære og ting å skrive om |
+| Formål | ha et sted å starte | sikte rett     | curation / categorization                |
 
 * 2022-05-27
 ** remix culture, the internet

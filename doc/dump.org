@@ -1,9 +1,9 @@
 #+title: Playground - dump
 
-|        | intent.org             | wip.org                                  | dump.org |
-|--------+------------------------+------------------------------------------+----------|
-| Format | temporær braindump     | liste av ting å lære og ting å skrive om | ❤️‍🔥       |
-| Formål | første touch / capture | andre touch / curation / categorization  | ❤️‍🔥       |
+|        | dump.org            | intent.org     | wip.org                                  |
+|--------+---------------------+----------------+------------------------------------------|
+| Format | start her           | konsist om mål | liste av ting å lære og ting å skrive om |
+| Formål | ha et sted å starte | sikte rett     | curation / categorization                |
 
 * 2022-05-26
 ** From #teodor-discuss (Iterate slack)

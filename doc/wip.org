@@ -41,6 +41,25 @@ verdi - arbeidsflyter
 verktøy - prismodeller
 
 ortogonalitet
+** Samlet 2022-06-12
+*** Good architecture
+1. Good namespace design
+2. Not more indirection than necessary
+3. Orthogonal capabilities
+
+Would be interesting to compare this to Zach Tellman's book.
+**** Elements of Clojure
+Source: https://elementsofclojure.com/
+
+#+begin_quote
+The first chapter, Names, explains why names define the structure of our software, and how to judge whether a name is any good.
+
+The second chapter, Idioms, provides specific, syntactic advice for writing Clojure which is clean and readable.
+
+The third chapter, Indirection, looks at how code can be made simpler and more robust through separation.
+
+The final chapter, Composition, explores how the constituent pieces of our code can be combined into an effective whole.
+#+end_quote
 * Ting jeg ønsker å jobbe med
 ** Samlet 2022-05-27
 Hva?

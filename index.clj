@@ -16,9 +16,9 @@
 (def org-markup
   (str/join "\n"
             (concat
-             ["#+title: Teodor's playground"
+             ["#+title: Towards an iterated game"
               ""
-              "Intent: bring ideas to life. Discuss, sharpen."
+              "Intent: bring ideas to life. Discuss, sharpen, play."
               ""
               "Pages:"]
 

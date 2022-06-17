@@ -95,3 +95,6 @@ and start writing. I had to think, consider, remember.
 Perhaps I can create a CLI. =./playground=.
 
 =./playground create-page explore=
+** Samlet 2022-06-17
+*** Lag en AUR-PKGBUILD for "installer neil fra siste git"
+*** Lag en AUR-PKGBUILD for "installer siste stabile neil fra git"

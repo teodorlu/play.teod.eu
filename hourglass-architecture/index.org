@@ -13,7 +13,14 @@ follow?
 
 Source: https://tonsky.me/blog/utils/
 ** Oil shell author is as obsessed with hourglass architectures as I am
+- [[https://www.oilshell.org/blog/2022/03/middle-out.html][Oil Is Being Implemented "Middle Out"]]
+- [[https://www.oilshell.org/blog/2022/03/backlog-arch.html][A Sketch of the Biggest Idea in Software Architecture]]
+** Connection to product
+Workflow design (collection of problems, flows) - Product design (collection of
+features, intended use, composition) - Capability design (what are we able to
+do, what is our oportunity space)
 
+vague.
 * Hourglass architecture in products
 By building /layered/ applications where each layer builds on a lower level,
 designed orthogonally, we gain power in each level.

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Emacs learning journal</title>
+  <title>(Doom) Emacs learning journal</title>
   <style>
     html {
       line-height: 1.5;
@@ -223,15 +223,32 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Emacs learning journal</h1>
+<h1 class="title">(Doom) Emacs learning journal</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#prelude">Prelude</a></li>
+<li><a href="#section">2022-06-12</a>
+<ul class="incremental">
+<li><a href="#improving-my-clerk-workflow-with-hooks">Improving my Clerk
+workflow with hooks</a></li>
+<li><a href="#more-clerk---startup-and-files.">More clerk - startup and
+files.</a></li>
+<li><a href="#outcome">Outcome</a></li>
+</ul></li>
+<li><a href="#section-1">2022-06-21</a>
+<ul class="incremental">
+<li><a href="#fast-font-configuration">Fast font configuration</a></li>
+</ul></li>
+</ul>
+</nav>
 <p><a href="./..">..</a></p>
 <p>Hey! Reading this document from start to end might not be useful. So
-why put it here if the intent isn't consumption?</p>
+why put it here if the intent isn’t consumption?</p>
 <h1 id="prelude">Prelude</h1>
 <p>My learning process works something like this:</p>
 <ol class="incremental">
-<li>Identify something I value that I'd like to explore</li>
+<li>Identify something I value that I’d like to explore</li>
 <li>In the unexplored territory, would exploring enable me to
 <em>do</em> something new and interesting?</li>
 <li>If yes - try do it, and write down the process.</li>
@@ -239,28 +256,28 @@ why put it here if the intent isn't consumption?</p>
 <p>This document is the written record of the process of me exploring
 Emacs, and what learning Emacs can do for me.</p>
 <p>I index on date, then topic. That means <em>adding</em> information
-is easy. "But is that nice to read?" Perhaps. This journal is optimized
+is easy. “But is that nice to read?” Perhaps. This journal is optimized
 for writing, not reading. Other documents can be read-optimized.</p>
 <p>So … why even keep this public?</p>
 <p>For my ease of reading, and for easily sharing with others. The web
 is accessible :)</p>
 <h1 id="section">2022-06-12</h1>
-<p>'Morning.</p>
+<p>’Morning.</p>
 <h2 id="improving-my-clerk-workflow-with-hooks">Improving my Clerk
 workflow with hooks</h2>
-<p><strong><strong>Problem statement</strong></strong>. I've been trying
-out Jack Rusher's recommendation to bind a key to save document and
+<p><strong><strong>Problem statement</strong></strong>. I’ve been trying
+out Jack Rusher’s recommendation to bind a key to save document and
 refresh with Clerk. That lead to really fast refreshes, which I enjoyed.
-However, I coudn't get past my muscle memory of pressing the wrong key.
+However, I coudn’t get past my muscle memory of pressing the wrong key.
 On my Norwegian keyboard, pressing <code class="verbatim">C-ø</code> is
 really convenient. On a US ANSI layout, that would be <code
-class="verbatim">C-;</code>. I've bound this to <code
+class="verbatim">C-;</code>. I’ve bound this to <code
 class="verbatim">save-buffer</code>, to avoid the sequence of having to
 press <code class="verbatim">ESC SPC f s i</code> to exit to normal
 mode, save and re-enter insert mode (with Evil and Doom Emacs).</p>
 <p>Interlude – Writing this down feels really good. I think it will help
 me avoid getting distracted. Back to Emacs.</p>
-<p><strong><strong>Let's give this a shot!</strong></strong></p>
+<p><strong><strong>Let’s give this a shot!</strong></strong></p>
 <p>I had a look at the Emacs Lisp, and it simply saves and messages
 Clerk to reload!</p>
 <div class="sourceCode" id="cb1" data-org-language="emacs-lisp"><pre
@@ -279,7 +296,7 @@ README</a>.</p>
 <p>See? It saves the buffer, then runs <code
 class="verbatim">nextjournal.clerk/show!</code> in the current Cider
 repl.</p>
-<p>Let's extract a function for the save hook.</p>
+<p>Let’s extract a function for the save hook.</p>
 <div class="sourceCode" id="cb2" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/clerk-show </span>()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> ((filename (buffer-file-name)))</span>
@@ -289,11 +306,11 @@ class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb2-
 <p>But … how do we run this?</p>
 <p>My original ideas:</p>
 <ul class="incremental">
-<li>Use Emacs' <em>advice</em> mechanism to patch <code
+<li>Use Emacs’ <em>advice</em> mechanism to patch <code
 class="verbatim">save-buffer</code> to also sync to clerk on save</li>
 <li>Define a minor mode for <code class="verbatim">clerk</code>.</li>
 </ul>
-<p>But I didn't know where I should start. I asked on the Clojurians
+<p>But I didn’t know where I should start. I asked on the Clojurians
 Slack - in the #doom-emacs channel, and got some much appreciated
 pointers.</p>
 <p>In essence:</p>
@@ -305,39 +322,39 @@ hook.</li>
 <p>Signature for <code class="verbatim">add-hook</code>:</p>
 <div class="sourceCode" id="cb3" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(add-hook HOOK FUNCTION &amp;optional DEPTH LOCAL)</span></code></pre></div>
-<p>And there's an <code class="verbatim">after-save-hook</code> that I
+<p>And there’s an <code class="verbatim">after-save-hook</code> that I
 can use.</p>
 <p>In my case, I think I can use the following:</p>
 <div class="sourceCode" id="cb4" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(add-hook after-save-hook teod/clerk-show <span class="dv">0</span> &#39;t)</span></code></pre></div>
-<p>Though I admit I don't really understand when I should use different
+<p>Though I admit I don’t really understand when I should use different
 function reference styles.</p>
 <div class="sourceCode" id="cb5" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>teod/clerk-show <span class="co">; like this?</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>&#39;teod/clerk-show <span class="co">; or this?</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>#&#39;teod/clerk-show <span class="co">; or this?</span></span></code></pre></div>
-<p>Let's try the simplest.</p>
+<p>Let’s try the simplest.</p>
 <div class="sourceCode" id="cb6" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/clerk-autoshow </span>()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  (add-hook after-save-hook teod/clerk-show <span class="dv">0</span> &#39;t))</span></code></pre></div>
-<p>Nope! That didn't work. I got the following in the <code
+<p>Nope! That didn’t work. I got the following in the <code
 class="verbatim">*Messages*</code> buffer:</p>
 <blockquote>
 <p>clerk-autoshow: Symbol’s value as variable is void: teod/clerk-show
 apply</p>
 </blockquote>
-<p>Let's try <code class="verbatim">#'</code>.</p>
-<p>Didn't work. Bah!</p>
+<p>Let’s try <code class="verbatim">#'</code>.</p>
+<p>Didn’t work. Bah!</p>
 <p>OK, found the manual: <a
 href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Setting-Hooks.html">https://www.gnu.org/software/emacs/manual/html_node/elisp/Setting-Hooks.html</a></p>
 <p>Example from manual:</p>
 <div class="sourceCode" id="cb7" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(add-hook &#39;lisp-interaction-mode-hook &#39;auto-fill-mode)</span></code></pre></div>
-<p>So .. both should be qoted. OK! (interlude: I'm not super comfortable
+<p>So .. both should be qoted. OK! (interlude: I’m not super comfortable
 with <em>when</em> to use symbols. Clojure has some different idioms
 here.)</p>
-<p>Let's try the following:</p>
+<p>Let’s try the following:</p>
 <div class="sourceCode" id="cb8" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/clerk-autoshow </span>()</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
@@ -373,28 +390,41 @@ variables.</li>
 <h2 id="outcome">Outcome</h2>
 <p>Writing this at 21:22. Wanting to summarize a bit.</p>
 <p>Deciding to dig into Clerk workflow rather than simply working was a
-decision that didn't come natrually to me. Is this right? Should I be
+decision that didn’t come natrually to me. Is this right? Should I be
 working on this?</p>
 <p>I keep saying to myself that half of what I do should make long term
 sense, and half should make short term sense. This makes long term
-sense. And it's a blocker for getting some reasonable value out short
+sense. And it’s a blocker for getting some reasonable value out short
 term. But … why does it feel like cheating? Imposter syndrome perhaps,
-I'm not worthy to make tooling? Not sure.</p>
-<p>Anyway - I never came to the "more clerk - startup and files" part.
-I'll probably scrap that work. I tried getting a minor mode up, but when
+I’m not worthy to make tooling? Not sure.</p>
+<p>Anyway - I never came to the “more clerk - startup and files” part.
+I’ll probably scrap that work. I tried getting a minor mode up, but when
 I set <code class="verbatim">mode:
 clerk-auto</code> in my file, I got <em>just</em> clerk-auto-mode and
 not clojure-mode. So back to the drawing board.</p>
 <p>In summary:</p>
 <ol class="incremental">
 <li>Prioritizing long term tooling investments felt … weird at first,
-but I'm happy I did.</li>
+but I’m happy I did.</li>
 <li>Asking on Clojurians was great.</li>
-<li>I stopped exploring when I didn't have more time – which was good in
+<li>I stopped exploring when I didn’t have more time – which was good in
 the end. So … tooling work makes sense as short spikes that can land in
 a sitting.</li>
 </ol>
-<p>Now, I'm going to try <em>use</em> clerk a bit. See you later!</p>
+<p>Now, I’m going to try <em>use</em> clerk a bit. See you later!</p>
 <p>Teodor</p>
+<h1 id="section-1">2022-06-21</h1>
+<p>’Afternoon</p>
+<h2 id="fast-font-configuration">Fast font configuration</h2>
+<p>Use case: need to use a big screen, want to change font size without
+an Emacs restart.</p>
+<p>First, re-evaluate the form setting the font.</p>
+<div class="sourceCode" id="cb9" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">setq</span> doom-font (font-spec :family <span class="st">&quot;monospace&quot;</span> :size <span class="dv">16</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>      )</span></code></pre></div>
+<p>Then, reload the font.</p>
+<pre><code>M-x doom/reload-font
+</code></pre>
+<p>Done!</p>
 </body>
 </html>

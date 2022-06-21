@@ -12,6 +12,8 @@ follow?
 [[file:deps.png]]
 
 Source: https://tonsky.me/blog/utils/
+** Oil shell author is as obsessed with hourglass architectures as I am
+
 * Hourglass architecture in products
 By building /layered/ applications where each layer builds on a lower level,
 designed orthogonally, we gain power in each level.

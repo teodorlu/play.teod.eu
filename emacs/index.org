@@ -1,4 +1,4 @@
-#+title: Emacs learning journal
+#+title: (Doom) Emacs learning journal
 
 [[./..][..]]
 
@@ -200,3 +200,23 @@ In summary:
 Now, I'm going to try /use/ clerk a bit. See you later!
 
 Teodor
+* 2022-06-21
+'Afternoon
+** Fast font configuration
+Use case: need to use a big screen, want to change font size without an Emacs
+restart.
+
+First, re-evaluate the form setting the font.
+
+#+begin_src emacs-lisp
+(setq doom-font (font-spec :family "monospace" :size 16)
+      )
+#+end_src
+
+Then, reload the font.
+
+#+begin_src
+M-x doom/reload-font
+#+end_src
+
+Done!

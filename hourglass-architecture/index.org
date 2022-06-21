@@ -5,17 +5,21 @@
 Status: WIP.
 
 Hourglass architecture, flexiblity, optionality and orthogonality are related!
+* List of references
+How do other people describe hourglass architectures? What are threads to
+follow?
+** Nikita Tonsky falls backwards into an hourglass architecture fighting "utils"
+[[file:deps.png]]
 
-By building /layered/ applications where each layer builds on a lowere level,
+Source: https://tonsky.me/blog/utils/
+* Hourglass architecture in products
+By building /layered/ applications where each layer builds on a lower level,
 designed orthogonally, we gain power in each level.
-
-Layers:
 
 1. Infrastructure. Problems to be solved.
 2. Product features.
 3. User workflows.
-
-* Ideas :noexport:
+* Ideas
 "multilayer" hourglass architecture?
 
 pandoc - intermediate format

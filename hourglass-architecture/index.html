@@ -162,17 +162,46 @@
 <header id="title-block-header">
 <h1 class="title">Hourglass architecture</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#list-of-references">List of references</a>
+<ul class="incremental">
+<li><a
+href="#nikita-tonsky-falls-backwards-into-an-hourglass-architecture-fighting-utils">Nikita
+Tonsky falls backwards into an hourglass architecture fighting
+“utils”</a></li>
+</ul></li>
+<li><a href="#hourglass-architecture-in-products">Hourglass architecture
+in products</a></li>
+<li><a href="#ideas">Ideas</a></li>
+</ul>
+</nav>
 <p><a href="./..">..</a></p>
 <p>Status: WIP.</p>
 <p>Hourglass architecture, flexiblity, optionality and orthogonality are
 related!</p>
+<h1 id="list-of-references">List of references</h1>
+<p>How do other people describe hourglass architectures? What are
+threads to follow?</p>
+<h2
+id="nikita-tonsky-falls-backwards-into-an-hourglass-architecture-fighting-utils">Nikita
+Tonsky falls backwards into an hourglass architecture fighting
+“utils”</h2>
+<p><img src="deps.png" /></p>
+<p>Source: <a
+href="https://tonsky.me/blog/utils/">https://tonsky.me/blog/utils/</a></p>
+<h1 id="hourglass-architecture-in-products">Hourglass architecture in
+products</h1>
 <p>By building <em>layered</em> applications where each layer builds on
-a lowere level, designed orthogonally, we gain power in each level.</p>
-<p>Layers:</p>
+a lower level, designed orthogonally, we gain power in each level.</p>
 <ol class="incremental">
 <li>Infrastructure. Problems to be solved.</li>
 <li>Product features.</li>
 <li>User workflows.</li>
 </ol>
+<h1 id="ideas">Ideas</h1>
+<p>“multilayer” hourglass architecture?</p>
+<p>pandoc - intermediate format</p>
+<p>perhaps this is just the “depend on interface” thing?</p>
 </body>
 </html>

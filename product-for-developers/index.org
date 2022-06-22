@@ -53,7 +53,7 @@ todo
 - in what context would an hour of our time be maximally effective?
 - who should we be in touch with?
 - what friction are we experiencing right now?
-* Application in the lens of feedback-API-implementation
+* Application in the lens of the feedback-API-implementation model of development
 Model - feedback loop / API-design / how does it work.
 
 How does feedback-API-implementation synthesize with this? How do they look

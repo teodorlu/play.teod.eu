@@ -1,5 +1,7 @@
 #+title: Product discovery for software developers
 
+[[./..][..]]
+
 Status: DRAFT
 
 Working with product discovery has changed how I view programming.

@@ -5,7 +5,7 @@ Status: DRAFT
 Working with product discovery has changed how I view programming.
 I've slowed down.
 I write less code.
-I write code for other reasons.
+When I write code, I write code for different reasons.
 
 Why?
 Coding it up might not be the hard part.

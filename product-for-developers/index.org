@@ -31,10 +31,10 @@ My answer often takes one of three forms:
 
 1. Work towards a valuable outcome
 2. Reduce the right product risk
-   - Business viability risk - does it align with business goals?
-   - Value risk - is solving this valuable for the end user?
-   - Usaibility risk - is this an ergonomic solution to the user's problem?
-   - Feasibility risk - are we able to make this? How hard is it?
+   - Business viability risk -- does it align with business goals?
+   - Value risk -- is solving this valuable for the end user?
+   - Usaibility risk -- is this an ergonomic solution to the user's problem?
+   - Feasibility risk -- are we able to make this? How hard is it?
 3. Create a high-leverage context for our effort.
 * Work towards a valuable outcome
 todo

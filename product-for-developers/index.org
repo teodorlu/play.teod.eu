@@ -49,7 +49,7 @@ todo
 
 - unkownness management
 - good way of talking about where we're going without assuming a big plan
-* Create a high-leverage context for our effort
+* Create a high-leverage context for our team effort
 todo
 
 - in what context would an hour of our time be maximally effective?

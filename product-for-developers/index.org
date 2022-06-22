@@ -1,0 +1,48 @@
+#+title: Product discovery for software developers
+
+Status: DRAFT
+
+Working with product discovery has changed how I view programming.
+I've slowed down.
+I write less code.
+I write code for other reasons.
+
+Why?
+Coding it up might not be the hard part.
+Then what's the hard part?
+Let me share my perspective.
+
+* Slow is smooth. Smooth is fast.
+Your value as a human being is not determined by the code you write.
+If you don't code now, that doesn't mean you're doing a bad job.
+A part of you already knows this.
+More code isn't better.
+
+Then, what's valuable?
+That is the important question.
+I ask myself "what's important" every morning.
+I don't have a canned answer.
+Well, actually, I do have a canned answer.
+Help the people around you.
+But then what?
+
+The job of good product management is to provide a good answer to "And then what?".
+My answer often takes one of three forms:
+
+1. Work towards a valuable outcome
+2. Reduce the right product risk
+   - Business viability risk - does it align with business goals?
+   - Value risk - is solving this valuable for the end user?
+   - Usaibility risk - is this an ergonomic solution to the user's problem?
+   - Feasibility risk - are we able to make this? How hard is it?
+3. Create a high-leverage context for our effort.
+* Work towards a valuable outcome
+todo
+* Reduce the right product risk
+todo
+* Create a high-leverage context for our effort
+todo
+* Some kind of conclusion / synthesis
+Knowledge management?
+Intent management?
+Peter Drucker and Andy Grove come to mind.

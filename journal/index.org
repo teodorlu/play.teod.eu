@@ -1,0 +1,28 @@
+#+title: My public journal
+
+[[./..][..]]
+
+Q: Hey! Should I read this?
+
+A: Perhaps not. Perhaps. I use this page as a low-filter, low-threshold way to
+get ideas out. Capture ideas, not process them. The reading experience might
+feel like a stream-of-consciousness endeavor --- with less flow, less feelings,
+less poetic content. In other words, messy, without the good sides of messy.
+Still, I choose to make this public, because I believe public should be the
+norm, not the exception.
+
+🐉
+
+
+* 2022-06-23
+** On product and indirection.
+I feel shackled by pressure for specificity.
+Always be specific.
+Specific is better.
+Don't be vague.
+
+Specificity expels indirection.
+Indirection is core to design.
+
+If we lazer-focus on the specific, we'll ignore problems with a longer feedback
+cycle time than some arbitrary limit.

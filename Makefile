@@ -1,4 +1,4 @@
-index.html: index.clj emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html opt-in-hierarchy/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html product-for-developers/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html website-so-what/index.html
+index.html: index.clj emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html opt-in-hierarchy/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html product-for-developers/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html website-so-what/index.html
 	./index.clj
 
 emacs/index.html: emacs/index.org
@@ -9,6 +9,9 @@ feedback-loops-api-design-how-it-works/index.html: feedback-loops-api-design-how
 
 hourglass-architecture/index.html: hourglass-architecture/index.org
 	pandoc -s --toc --from=org+smart -i hourglass-architecture/index.org -o hourglass-architecture/index.html
+
+journal/index.html: journal/index.org
+	pandoc -s --toc --from=org+smart -i journal/index.org -o journal/index.html
 
 opt-in-hierarchy/index.html: opt-in-hierarchy/index.org
 	pandoc -s --toc --from=org+smart -i opt-in-hierarchy/index.org -o opt-in-hierarchy/index.html
@@ -35,5 +38,5 @@ website-so-what/index.html: website-so-what/index.org
 	pandoc -s --toc --from=org+smart -i website-so-what/index.org -o website-so-what/index.html
 
 @PHONY: pages
-pages:  emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html opt-in-hierarchy/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html product-for-developers/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html website-so-what/index.html
+pages:  emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html opt-in-hierarchy/index.html options-to-the-max/index.html orthogonality-enables-optionality/index.html pandoc-codeblocks/index.html product-for-developers/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html website-so-what/index.html
 

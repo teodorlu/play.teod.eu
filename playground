@@ -31,7 +31,9 @@ page PAGE_NAME
 
     ;; Org file
     (when-not (fs/exists? org-file)
-      (spit org-file (str "#+title: " page)))
+      (spit org-file (str "#+title: " page
+                          "\n\n"
+                          "[[./..][..]]")))
 
     ;; Watch file
     (when-not (fs/exists? watch-file)

@@ -34,3 +34,9 @@ Don't force your users into your workflow.
 Doing it for yourself is not workflow design - it's capability design."
 
 By building in flexibility --- indirection --- at the right layer, we decouple the product, and give ourselves leverage.
+** On fun
+I'm better when I have fun.
+
+I have fun when I build stuff for myself /and/ others.
+
+∴ I should build stuff for myself.

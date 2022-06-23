@@ -26,3 +26,11 @@ Indirection is core to design.
 
 If we lazer-focus on the specific, we'll ignore problems with a longer feedback
 cycle time than some arbitrary limit.
+** Emacs ⟂ Product
+Statement: "don't build something for yourself -- you'll ignore users"
+
+Response: "no -- DO build product for yourself -- but design in the flexibility as indirection.
+Don't force your users into your workflow.
+Doing it for yourself is not workflow design - it's capability design."
+
+By building in flexibility --- indirection --- at the right layer, we decouple the product, and give ourselves leverage.

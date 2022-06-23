@@ -40,3 +40,14 @@ I'm better when I have fun.
 I have fun when I build stuff for myself /and/ others.
 
 ∴ I should build stuff for myself.
+** Fully integrated feedback loops
+Commonly discussed feedback loops:
+
+1. Cycle time for recompilation
+2. Cycle time for running the tests
+3. Cycle time for a deploy
+
+Uncommonly discussed feedback loops:
+
+1. Idea-to-sharable-paper
+2. Idea-to-team

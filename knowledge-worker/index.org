@@ -1,0 +1,20 @@
+#+title: You are a knowledge worker
+
+[[./..][..]]
+
+1. Heterarchical knowledge models - mental models as opt-in / useful
+   1. you'll learn a collection of mental models.
+      1. mental models should be useful - "mental models as prescriptive truth"
+         (see "truth-descriptitve-prescriptive")
+      2. mental models are options (see "optionality to the max")
+         1. Interlude please ignore - I want to refer to articles by name, and
+            not ID. If possible.
+            1. But I can live with referring to ID if I have to.
+   2. This talk is an option you can choose to take.
+   3. You don't have to agree.
+2. "What is your job?"
+   1. Collect answers
+3. Actually, no. You are a person. And that's fine. You are not your work.
+4. Propose "You are a knowledge worker"
+5. Optimize for learning speed
+6. Journaling is retrospectives for your own mind

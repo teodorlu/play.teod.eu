@@ -1,4 +1,4 @@
-#+title: Opt-in to hiererchies
+#+title: Opt-in hiererchies
 
 State: DRAFT / INCOMPLETE
 

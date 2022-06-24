@@ -46,3 +46,5 @@ Where is legibility?
 
     You might not be able to read something purely from the hierarchy
     But you'll know for sure that there aren't architectural layers that don't do anything
+* Hourglass architecture are only possible for suitable problems
+If the problem is messy, a clean "narrow waist" solution might not be possible.

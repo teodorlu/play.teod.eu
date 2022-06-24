@@ -2,6 +2,10 @@
 
 [[./..][..]]
 
+State: DRAFT
+
+Outline (DRAFT):
+
 1. Heterarchical knowledge models - mental models as opt-in / useful
    1. you'll learn a collection of mental models.
       1. mental models should be useful - "mental models as prescriptive truth"

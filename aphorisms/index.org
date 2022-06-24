@@ -1,0 +1,7 @@
+#+title: aphorisms
+
+[[./..][..]]
+
+1 - Fewer moving pieces is better.
+
+2 - (stronger) - Less than minimum number of moving pieces is bad.

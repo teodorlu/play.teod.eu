@@ -20,6 +20,8 @@
               ""
               "Intent: bring ideas to life. Discuss, sharpen, play."
               ""
+              "Status: very much work in progress. Please advance at your own peril."
+              ""
               "Pages:"]
 
              (for [target targets]

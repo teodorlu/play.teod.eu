@@ -51,3 +51,33 @@ Uncommonly discussed feedback loops:
 
 1. Idea-to-sharable-paper
 2. Idea-to-team
+
+* 2022-06-24
+** Pandoc code blocks
+(moved from separate page)
+
+We explore how Pandoc supports embedded code.
+
+We can write Clojure:
+
+#+begin_src clojure
+(defn act [& commands]
+  ;; code
+  )
+#+end_src
+
+Or Python:
+
+#+begin_src python
+def act(*commands):
+    # code
+    pass
+#+end_src
+
+Or even javascript:
+
+#+begin_src javascript
+function act(commands...) {
+    // code
+}
+#+end_src

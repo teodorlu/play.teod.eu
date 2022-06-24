@@ -22,3 +22,4 @@ Outline (DRAFT):
 4. Propose "You are a knowledge worker"
 5. Optimize for learning speed
 6. Journaling is retrospectives for your own mind
+7. Chase intent. Ask why. Make decisions. See if they work out.

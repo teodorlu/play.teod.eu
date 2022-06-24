@@ -6,4 +6,4 @@
 
 2 - (stronger) - More than minimum number of moving pieces is bad.
 
-3 - Chase intent.
+3 - Chase intent. Ask why.

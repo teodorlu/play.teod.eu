@@ -4,7 +4,7 @@
 
 Status: WIP.
 
-Hourglass architecture, flexiblity, optionality and orthogonality are related!
+Hourglass architecture, flexibility, optionality and orthogonality are related!
 * List of references
 How do other people describe hourglass architectures? What are threads to
 follow?
@@ -34,3 +34,15 @@ designed orthogonally, we gain power in each level.
 pandoc - intermediate format
 
 perhaps this is just the "depend on interface" thing?
+* Principle - high fan out
+Ref Osterhout's "Philosophy of Software Design"
+
+"prefer creating a new deletable module to creating layers"
+
+Application - teod.eu subdomains. "There are many - but they can be deleted".
+Application - play.teod.eu pages - "They are many - but they can be deleted".
+
+Where is legibility?
+
+    You might not be able to read something purely from the hierarchy
+    But you'll know for sure that there aren't architectural layers that don't do anything

@@ -21,6 +21,12 @@ page PAGE_NAME
           (for [[arg-name arg-val] (partition 2 opts)]
             [(keyword (subs arg-name 1)) arg-val]))))
 
+(defn org-doc [{:keys [title]}]
+  (str "#+title: " title
+       "\n\n"
+       "[[./..][..]]"
+       "\n"))
+
 (defn page [args]
   (let [opts (parse-opts args)
         page (or (:name opts)
@@ -31,9 +37,7 @@ page PAGE_NAME
 
     ;; Org file
     (when-not (fs/exists? org-file)
-      (spit org-file (str "#+title: " page
-                          "\n\n"
-                          "[[./..][..]]")))
+      (spit org-file (org-doc {:title page}) ))
 
     ;; Watch file
     (when-not (fs/exists? watch-file)

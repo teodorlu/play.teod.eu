@@ -27,10 +27,10 @@
               {:id id}))))
 
 (defn category [{:keys [lang] :as page}]
-  )
+  :page)
 
 (defn add-category [page]
-  page)
+  (assoc page :category (category page)))
 
 (defn pages []
   (->> (pages-raw)

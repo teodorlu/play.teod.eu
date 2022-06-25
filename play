@@ -21,12 +21,21 @@ page PAGE_NAME
           (for [[arg-name arg-val] (partition 2 opts)]
             [(keyword (subs arg-name 1)) arg-val]))))
 
-(defn org-doc [{:keys [title]}]
+(defn org-doc [{:keys [title trailing-blank-lines]}]
   (str/join "\n"
-            (concat [(str "#+title: " title)
-                     ""
-                     "[[./..][..]]"
-                     ""])))
+            (concat
+             ;; Header, title, link up
+             [(str "#+title: " title)
+              ""
+              "[[./..][..]]"
+              ""]
+
+             ;; Trailing whitespace.
+             (when trailing-blank-lines
+               (concat ["#+begin_verse"]
+                       (repeat trailing-blank-lines "")
+                       ["#+end_verse"
+                        ""])))))
 
 (defn page [args]
   (let [opts (parse-opts args)
@@ -38,7 +47,8 @@ page PAGE_NAME
 
     ;; Org file
     (when-not (fs/exists? org-file)
-      (spit org-file (org-doc {:title page}) ))
+      (spit org-file (org-doc {:title page
+                               :trailing-blank-lines 20})))
 
     ;; Watch file
     (when-not (fs/exists? watch-file)

@@ -29,8 +29,7 @@
 
              ["Possible next steps:
 
-- Write real content
-- Organize build with normal makefile. I could just use pandoc and org-mode for the stuff I just want to build with pandoc."]
+- Write real content"]
              )))
 
 (spit "index.html" (slurp (:out

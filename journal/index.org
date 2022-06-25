@@ -81,5 +81,3 @@ function act(commands...) {
     // code
 }
 #+end_src
-* 2022-06-25
-Teodor og Tjerand ser på tekstoppsett.

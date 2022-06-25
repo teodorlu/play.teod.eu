@@ -90,7 +90,51 @@ Possible solutions:
 2. Lol, I can just use a big verse.
    Problem solved.
    See the bottom of this file.
+** What about tags?
+Outcome - less messy front page.
 
+Right now we've got this:
+
+#+begin_quote
+Intent: bring ideas to life. Discuss, sharpen, play.
+
+Status: very much work in progress. Please advance at your own peril.
+
+Pages:
+
+- aphorisms
+- emacs
+- feedback-loops-api-design-how-it-works
+- hourglass-architecture
+- journal
+- knowledge-worker
+- opt-in-hierarchy
+- options-to-the-max
+- orthogonality-enables-optionality
+- product-for-developers
+- truth-descriptive-prescriptive
+- unix-signals-crash-course
+- website-so-what
+
+Possible next steps:
+
+- Write real content
+#+end_quote
+
+Possible improvements:
+
+1. Get real title out, don't use file name as link name.
+2. Separate into sections with tags
+   1. "Quite finished stuff" up top
+   2. Then categorized content
+   3. Then "draft" content
+   4. Then untagged pages.
+3. Considerations
+   1. Perhaps hide untagged content
+   2. Perhaps introduce a tag for content that should not be indexed
+      1. Or just ignore content without a =play.edn= file?
+
+* Trailing whitespace
 #+begin_verse
 
 

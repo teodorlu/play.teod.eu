@@ -27,7 +27,9 @@
               {:id id}))))
 
 (defn category [{:keys [lang] :as page}]
-  :page)
+  (if lang
+    [:lang lang]
+    :page))
 
 (defn add-category [page]
   (assoc page :category (category page)))

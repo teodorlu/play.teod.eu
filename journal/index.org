@@ -91,7 +91,6 @@ Possible solutions:
    Problem solved.
    See the bottom of this file.
 
-
 #+begin_verse
 
 

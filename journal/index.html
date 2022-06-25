@@ -245,6 +245,9 @@ loops</a></li>
 <li><a href="#i-want-trailing-whitespace.">I want trailing
 whitespace.</a></li>
 <li><a href="#what-about-tags">What about tags?</a></li>
+<li><a href="#migration-path---opt-in.">Migration path - opt
+in.</a></li>
+<li><a href="#concern---performance.">Concern - performance.</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
@@ -368,6 +371,14 @@ class="verbatim">play.edn</code> file?</li>
 </ol></li>
 </ol></li>
 </ol>
+<h2 id="migration-path---opt-in.">Migration path - opt in.</h2>
+<p>Backwards compatible path - existing behavior prevails, title is
+“settable” from play.edn.</p>
+<h2 id="concern---performance.">Concern - performance.</h2>
+<p>The root HTML file will now depend on all the <code
+class="verbatim">play.edn</code> files. Perhaps use SQLite for caching?
+Not now. I want good performance under scale. Performance is important.
+I can just opt for manual indexing if the need arises.</p>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

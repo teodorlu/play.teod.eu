@@ -133,6 +133,16 @@ Possible improvements:
    1. Perhaps hide untagged content
    2. Perhaps introduce a tag for content that should not be indexed
       1. Or just ignore content without a =play.edn= file?
+** Migration path - opt in.
+Backwards compatible path - existing behavior prevails, title is "settable" from
+play.edn.
+** Concern - performance.
+The root HTML file will now depend on all the =play.edn= files.
+Perhaps use SQLite for caching?
+Not now.
+I want good performance under scale.
+Performance is important.
+I can just opt for manual indexing if the need arises.
 
 * Trailing whitespace
 #+begin_verse

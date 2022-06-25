@@ -2,16 +2,36 @@
 
 (require '[clojure.string :as str]
          '[babashka.process :as p]
+         '[babashka.fs :as fs]
          '[clojure.java.shell :refer [sh]]
-         '[hiccup2.core :as hiccup])
+         '[hiccup2.core :as hiccup]
+         '[clojure.pprint :refer [pprint]]
+         '[clojure.edn :as edn])
 
 (defn bash [cmd]
   (-> (sh "bash" "-c" cmd)
       :out))
 
-(defn pages []
+(prn
+ (fs/exists? "journal/play.edn"))
+
+(defn lookup-title [{:keys [id] :as page}]
+  (if (fs/exists? (str id "/play.edn"))
+    (assoc page :title (:title (edn/read-string (slurp (str id "/play.edn")))))
+    page))
+
+(defn pages-raw []
   (->> (bash "ls **/index.html | grep -v '^index.html$' | sort | sed 's|/index.html||g'")
-       (str/split-lines)))
+       (str/split-lines)
+       (map (fn [id]
+              {:id id}))))
+
+(defn pages []
+  (->> (pages-raw)
+       (map lookup-title)))
+
+(defn link [{:keys [id title] :as page}]
+  (str "- [[file:./" id "][" id "]]"))
 
 (defn org-markup [{:keys [pages]}]
   (str/join "\n"
@@ -24,8 +44,8 @@
               ""
               "Pages:"]
 
-             (for [target pages]
-               (str "- [[file:./" target "][" target "]]"))
+             (for [page pages]
+               (link page))
 
              ["Possible next steps:
 
@@ -46,6 +66,8 @@
 
   Functions should be modularized / parameterized to allow for reasonable experience in dev."
   []
+  (pprint (pages))
+  #_#_
   (println (org-markup {:pages (pages)}))
   (prn (System/getenv "ALT")))
 

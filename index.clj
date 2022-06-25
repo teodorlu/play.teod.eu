@@ -41,7 +41,11 @@
 ;;
 ;;   ./index.clj
 
-(defn alt []
+(defn alt
+  "Feel free to change this to whatever during dev.
+
+  Functions should be modularized / parameterized to allow for reasonable experience in dev."
+  []
   (println (org-markup {:pages (pages)}))
   (prn (System/getenv "ALT")))
 

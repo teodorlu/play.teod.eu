@@ -12,9 +12,6 @@
   (-> (sh "bash" "-c" cmd)
       :out))
 
-(prn
- (fs/exists? "journal/play.edn"))
-
 (defn lookup-title [{:keys [id] :as page}]
   (if (fs/exists? (str id "/play.edn"))
     (assoc page :title (:title (edn/read-string (slurp (str id "/play.edn")))))

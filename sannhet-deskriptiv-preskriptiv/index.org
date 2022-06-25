@@ -1,4 +1,4 @@
-#+TITLE: Descriptive truth, prescriptive truth
+#+TITLE: Deskriptiv sannhet, preskriptiv sannhet
 
 # -*- fill-column: 60; -*-
 

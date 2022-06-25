@@ -1,4 +1,4 @@
-index.html: index.clj aphorisms/index.html emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html
+index.html: index.clj aphorisms/index.html emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
 	./index.clj
 
 aphorisms/index.html: aphorisms/index.org
@@ -31,12 +31,12 @@ orthogonality-enables-optionality/index.html: orthogonality-enables-optionality/
 product-for-developers/index.html: product-for-developers/index.org
 	pandoc -s --toc --from=org+smart -i product-for-developers/index.org -o product-for-developers/index.html
 
-truth-descriptive-prescriptive/index.html: truth-descriptive-prescriptive/index.org
-	pandoc -s --toc --from=org+smart -i truth-descriptive-prescriptive/index.org -o truth-descriptive-prescriptive/index.html
+sannhet-deskriptiv-preskriptiv/index.html: sannhet-deskriptiv-preskriptiv/index.org
+	pandoc -s --toc --from=org+smart -i sannhet-deskriptiv-preskriptiv/index.org -o sannhet-deskriptiv-preskriptiv/index.html
 
 unix-signals-crash-course/index.html: unix-signals-crash-course/index.org
 	pandoc -s --toc --from=org+smart -i unix-signals-crash-course/index.org -o unix-signals-crash-course/index.html
 
 @PHONY: pages
-pages:  aphorisms/index.html emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html truth-descriptive-prescriptive/index.html unix-signals-crash-course/index.html
+pages:  aphorisms/index.html emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
 

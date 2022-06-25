@@ -12,13 +12,14 @@
   (-> (sh "bash" "-c" cmd)
       :out))
 
-(defn lookup-title [{:keys [id] :as page}]
+(defn lookup-meta [{:keys [id] :as page}]
   (if (fs/exists? (str id "/play.edn"))
     ;; if there's a title set, we use it
-    (assoc page :title (:title (edn/read-string (slurp (str id "/play.edn")))))
+    (merge page (edn/read-string (slurp (str id "/play.edn"))))
+    page))
 
-    ;; Otherwise we just use the page id
-    (assoc page :title id)))
+(defn add-defaults [{:keys [id title] :as page}]
+  (assoc page :title (or title id)))
 
 (defn pages-raw []
   (->> (bash "ls **/index.html | grep -v '^index.html$' | sort | sed 's|/index.html||g'")
@@ -28,7 +29,8 @@
 
 (defn pages []
   (->> (pages-raw)
-       (map lookup-title)
+       (map lookup-meta)
+       (map add-defaults)
        (sort-by :title)))
 
 (defn link [{:keys [id title] :as _page}]

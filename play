@@ -22,10 +22,11 @@ page PAGE_NAME
             [(keyword (subs arg-name 1)) arg-val]))))
 
 (defn org-doc [{:keys [title]}]
-  (str "#+title: " title
-       "\n\n"
-       "[[./..][..]]"
-       "\n"))
+  (str/join "\n"
+            (concat [(str "#+title: " title)
+                     ""
+                     "[[./..][..]]"
+                     ""])))
 
 (defn page [args]
   (let [opts (parse-opts args)

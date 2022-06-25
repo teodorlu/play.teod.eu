@@ -18,6 +18,8 @@
   (str target "/index.html"))
 
 ;; Generate target for root index
+;;
+;; TODO root index also depends on all the play.edn files found
 (println (str/join " " (concat ["index.html:" "index.clj"] (map html targets))))
 (println "\t./index.clj")
 (println "")

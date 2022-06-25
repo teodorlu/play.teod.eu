@@ -30,8 +30,8 @@
   (->> (pages-raw)
        (map lookup-title)))
 
-(defn link [{:keys [id title] :as page}]
-  (str "- [[file:./" id "][" id "]]"))
+(defn link [{:keys [id title] :as _page}]
+  (str "- [[file:./" id "][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
   (str/join "\n"

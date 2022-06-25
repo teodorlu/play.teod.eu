@@ -149,7 +149,24 @@ Order.
 First create a =play.edn= file manually.
 Then create the proper title for that file.
 Run =index.clj= by hand.
+** On reactivity, speed and whole-system changes
+Dump:
 
+1. Having a fast Makefile is super nice for when I'm working on a single piece of content.
+2. Just rerunning the whole system is preferable when I'm changing the system.
+   Also keeping track of changes at the same time is probably not required.
+3. When I'm changing the whole system, I don't really want a file watcher.
+   I'd rather apply the change manually.
+
+So ...
+
+I'd like a =teod/apply-on-save-mode=.
+
+Perhaps I made it work?
+
+Or?
+
+Nope. Back to manual teod/apply it is.
 * Trailing whitespace
 #+begin_verse
 

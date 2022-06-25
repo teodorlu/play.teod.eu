@@ -249,6 +249,8 @@ whitespace.</a></li>
 in.</a></li>
 <li><a href="#concern---performance.">Concern - performance.</a></li>
 <li><a href="#implementation-path">Implementation path</a></li>
+<li><a href="#on-reactivity-speed-and-whole-system-changes">On
+reactivity, speed and whole-system changes</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
@@ -385,6 +387,23 @@ I can just opt for manual indexing if the need arises.</p>
 class="verbatim">play.edn</code> file manually. Then create the proper
 title for that file. Run <code class="verbatim">index.clj</code> by
 hand.</p>
+<h2 id="on-reactivity-speed-and-whole-system-changes">On reactivity,
+speed and whole-system changes</h2>
+<p>Dump:</p>
+<ol class="incremental">
+<li>Having a fast Makefile is super nice for when I’m working on a
+single piece of content.</li>
+<li>Just rerunning the whole system is preferable when I’m changing the
+system. Also keeping track of changes at the same time is probably not
+required.</li>
+<li>When I’m changing the whole system, I don’t really want a file
+watcher. I’d rather apply the change manually.</li>
+</ol>
+<p>So …</p>
+<p>I’d like a <code class="verbatim">teod/apply-on-save-mode</code>.</p>
+<p>Perhaps I made it work?</p>
+<p>Or?</p>
+<p>Nope. Back to manual teod/apply it is.</p>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

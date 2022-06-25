@@ -1,4 +1,4 @@
-#+title: Hourglass architecture
+#+title: Hourglass architecture - concept caputure and references
 
 [[./..][..]]
 

@@ -81,3 +81,39 @@ function act(commands...) {
     // code
 }
 #+end_src
+* 2022-06-25
+Another morning.
+** I want trailing whitespace.
+Possible solutions:
+
+1. Find org-mode native solution
+2. Lol, I can just use a big verse.
+   Problem solved.
+   See the bottom of this file.
+
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse
+
+I like trailing whitespace - so that I can center content vertically when
+writing, and avoid it moving around :)

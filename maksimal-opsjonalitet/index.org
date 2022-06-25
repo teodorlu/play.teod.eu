@@ -1,4 +1,4 @@
-#+TITLE: OPTIONS TO THE MAX
+#+TITLE: MAKSIMAL OPSJONALITET
 
 # *-* fill-column: 70 *-*
 

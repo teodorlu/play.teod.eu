@@ -27,9 +27,9 @@
               {:id id}))))
 
 (defn category [{:keys [lang] :as page}]
-  (if lang
-    [:lang lang]
-    :page))
+  (cond
+    (= lang :no) :norwegian
+    :else :just-page))
 
 (defn add-category [page]
   (assoc page :category (category page)))
@@ -45,23 +45,29 @@
   (str "- [[file:./" id "][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
-  (str/join "\n"
-            (concat
-             ["#+title: Towards an iterated game"
-              ""
-              "Intent: bring ideas to life. Discuss, sharpen, play."
-              ""
-              "Status: very much work in progress. Please advance at your own peril."
-              ""
-              "Pages:"]
+  (let [{:keys [just-page norwegian]} (group-by :category pages)]
+    (str/join "\n"
+              (concat
+               ["#+title: Towards an iterated game"
+                ""
+                "Intent: bring ideas to life. Discuss, sharpen, play."
+                ""
+                "Status: very much work in progress. Please advance at your own peril."
+                ""
+                "Pages:"]
 
-             (for [page pages]
-               (link page))
+               (for [page just-page]
+                 (link page))
 
-             ["Possible next steps:
+               [""
+                "Norwegian content:"]
+               (for [page norwegian]
+                 (link page))
+
+               ["Possible next steps:
 
 - Write real content"]
-             )))
+               ))))
 
 ;; For development:
 ;;
@@ -77,7 +83,7 @@
 
   Functions should be modularized / parameterized to allow for reasonable experience in dev."
   []
-  (pprint (pages))
+  (pprint (group-by :category (pages)))
   #_#_
   (println (org-markup {:pages (pages)}))
   (prn (System/getenv "ALT")))

@@ -14,8 +14,11 @@
 
 (defn lookup-title [{:keys [id] :as page}]
   (if (fs/exists? (str id "/play.edn"))
+    ;; if there's a title set, we use it
     (assoc page :title (:title (edn/read-string (slurp (str id "/play.edn")))))
-    page))
+
+    ;; Otherwise we just use the page id
+    (assoc page :title id)))
 
 (defn pages-raw []
   (->> (bash "ls **/index.html | grep -v '^index.html$' | sort | sed 's|/index.html||g'")
@@ -25,7 +28,8 @@
 
 (defn pages []
   (->> (pages-raw)
-       (map lookup-title)))
+       (map lookup-title)
+       (sort-by :title)))
 
 (defn link [{:keys [id title] :as _page}]
   (str "- [[file:./" id "][" (or title id) "]]"))

@@ -1,4 +1,4 @@
-#+title: aphorisms
+#+title: Aphorisms
 
 [[./..][..]]
 

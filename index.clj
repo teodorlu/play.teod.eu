@@ -4,7 +4,6 @@
          '[babashka.process :as p]
          '[babashka.fs :as fs]
          '[clojure.java.shell :refer [sh]]
-         '[hiccup2.core :as hiccup]
          '[clojure.pprint :refer [pprint]]
          '[clojure.edn :as edn])
 
@@ -27,10 +26,17 @@
        (map (fn [id]
               {:id id}))))
 
+(defn category [{:keys [lang] :as page}]
+  )
+
+(defn add-category [page]
+  page)
+
 (defn pages []
   (->> (pages-raw)
        (map lookup-meta)
        (map add-defaults)
+       (map add-category)
        (sort-by :title)))
 
 (defn link [{:keys [id title] :as _page}]

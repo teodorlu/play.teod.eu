@@ -209,8 +209,7 @@ restart.
 First, re-evaluate the form setting the font.
 
 #+begin_src emacs-lisp
-(setq doom-font (font-spec :family "monospace" :size 16)
-      )
+(setq doom-font (font-spec :family "monospace" :size 16))
 #+end_src
 
 Then, reload the font.

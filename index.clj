@@ -9,11 +9,11 @@
   (-> (sh "bash" "-c" cmd)
       :out))
 
-(def targets
+(defn pages []
   (->> (bash "ls **/index.html | grep -v '^index.html$' | sort | sed 's|/index.html||g'")
        (str/split-lines)))
 
-(def org-markup
+(defn org-markup [{:keys [pages]}]
   (str/join "\n"
             (concat
              ["#+title: Towards an iterated game"
@@ -24,7 +24,7 @@
               ""
               "Pages:"]
 
-             (for [target targets]
+             (for [target pages]
                (str "- [[file:./" target "][" target "]]"))
 
              ["Possible next steps:
@@ -32,5 +32,25 @@
 - Write real content"]
              )))
 
-(spit "index.html" (slurp (:out
-                           @(p/process '[pandoc --from org --to html --standalone] {:in org-markup}))))
+;; For development:
+;;
+;;   export ALT=1
+;;   watchexec -c -- ./index.clj
+;;
+;; For prod:
+;;
+;;   ./index.clj
+
+(defn alt []
+  (println (org-markup {:pages (pages)}))
+  (prn (System/getenv "ALT")))
+
+(defn main []
+  (spit "index.html" (slurp (:out
+                             @(p/process '[pandoc --from org --to html --standalone]
+                                         {:in (org-markup {:pages (pages)})})))))
+
+(if (= (System/getenv "ALT")
+       "1")
+  (alt)
+  (main))

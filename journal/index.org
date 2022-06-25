@@ -143,6 +143,12 @@ Not now.
 I want good performance under scale.
 Performance is important.
 I can just opt for manual indexing if the need arises.
+** Implementation path
+Outcome - better titles.
+Order.
+First create a =play.edn= file manually.
+Then create the proper title for that file.
+Run =index.clj= by hand.
 
 * Trailing whitespace
 #+begin_verse

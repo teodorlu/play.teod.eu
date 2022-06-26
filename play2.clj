@@ -46,6 +46,6 @@
 ;;
 ;; Action - edit tags
 ;;
-;;   ./play relations :from :files :to :edn-lines > lines.txt
+;;   ./play relations :from :files :to :lines > lines.txt
 ;;   # edit lines.txt - do stuff in batch ...
-;;   ./play relations :from :edn-lines :to :files < lines.txt
+;;   ./play relations :from :lines :to :files < lines.txt

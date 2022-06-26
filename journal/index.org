@@ -287,7 +287,7 @@ Idea
 #+end_verse
 ** =./play= API draft
 #+begin_src
-$ ./play2.clj relations :from :files :to :edn-lines
+$ ./play2.clj relations :from :files :to :lines
 :id "emacs" :title "(Doom) Emacs learning journal" :form :rambling :readiness :in-progress
 :id "feedback-design-impl" :title "Feedback loops, API design and how stuff works"
 ...

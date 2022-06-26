@@ -43,17 +43,17 @@
   :id emacs, :title \"(Doom) Emacs learning journal\", :form :rambling, :readiness :in-progress
   "
   [rels]
-  (->> (vals rels)
-       (map pr-str)))
+  (doseq [l (vals rels)]
+    (prn l)))
 
 (defn relations [{:keys [opts]}]
-  (let [{:keys [from to]} opts]
-    (assert (#{:files} from))
-    (assert (#{:lines} to))
-    (let [rels (files->relations {})
-          lines (relations->lines rels)]
-      (doseq [l lines]
-        (println l)))))
+  (let [sources {:files files->relations}
+        targets {:lines relations->lines}
+        {:keys [from to]} opts]
+    (assert (sources from))
+    (assert (targets to))
+    (let [rels ((sources from) {})]
+      ((targets to) rels))))
 
 (defn main [& args]
   (cli/dispatch [{:cmds ["relations"] :fn relations}]

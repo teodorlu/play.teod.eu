@@ -285,7 +285,13 @@ Idea
                 "app"
                     ?link=LINK_ID that redirects
 #+end_verse
-
+** =./play= API draft
+#+begin_src
+$ ./play2.clj relations :from :files :to :edn-lines
+:id "emacs" :title "(Doom) Emacs learning journal" :form :rambling :readiness :in-progress
+:id "feedback-design-impl" :title "Feedback loops, API design and how stuff works"
+...
+#+end_src
 * Trailing whitespace
 #+begin_verse
 

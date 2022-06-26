@@ -123,7 +123,7 @@
                       (drop 1) (drop-last 1)
                       (map str/trim)
                       (map (fn [key value] [key value]) header)
-                      (filter (fn [[key value]]
+                      (filter (fn [[_ value]]
                                 (not= value "")))
                       (map (fn [[key value]]
                              [key (edn/read-string value)]))

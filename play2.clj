@@ -54,12 +54,10 @@
 (defn lines->relations
   "Relations from lines on stdin"
   [{}]
-  (let [stdin (slurp *in*)]
-    (->> (for [line (str/split-lines stdin)]
-           (edn/read-string line)
-           )
-         (map (fn [{:keys [id] :as page}] {id page}))
-         (into {}))))
+  (->> (str/split-lines (slurp *in*))
+       (map edn/read-string)
+       (map (fn [{:keys [id] :as page}] {id page}))
+       (into {})))
 
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations

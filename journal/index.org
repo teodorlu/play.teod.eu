@@ -202,6 +202,25 @@ Next steps?
 | https://play.teod.eu/unix-signals-crash-course/              | Article draft   |              |
 | https://play.teod.eu/knowledge-worker/                       | Article draft   |              |
 
+How do we tag?
+
+By form:
+
+| :form :rambling |
+| :form :article  |
+| :form :explore  |
+| :form :unknown  |
+
+By readiness:
+
+| :readiness :in-progress |
+| :readiness :published   |
+
+By language:
+
+| :lang :no |
+| :lang :en |
+
 * Trailing whitespace
 #+begin_verse
 

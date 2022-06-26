@@ -1,4 +1,4 @@
-#+title: Opt-in hiererchies
+#+title: Opt-in hierarchies
 
 [[./..][..]]
 

@@ -244,8 +244,30 @@ What are nice ways of batch editing?
 
 How should lines be deleted?
 
-    In dired, simply =d= the line, then =x= to apply with confirmation
-    In magit, =c c= to commit, =C-c C-c= to apply
+    In Dired, simply =d= the line, then =x= to apply with confirmation
+    In Magit, =c c= to commit, =C-c C-c= to apply
+
+I could simply try dumping all the data into SQLite and see how that works out.
+
+I have:
+
+    Metadata per page
+    some pages
+
+So - simple, flat model.
+
+I could build
+
+    Files -> SQLite
+    SQLite -> files
+
+Do I want "apply everything" or "apply partial"?
+
+I could implement "apply everything" in terms of "apply partial"
+
+    First delete all the =play.edn= files
+    Then apply partial
+    And confirm changes in Git.
 * Trailing whitespace
 #+begin_verse
 

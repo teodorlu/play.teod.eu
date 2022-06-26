@@ -565,10 +565,21 @@ are “near” to the article (nice), but tedious to batch edit</p>
 <p>What are nice ways of batch editing?</p>
 <p>One big text file Excel table SQLite?</p>
 <p>How should lines be deleted?</p>
-<p>In dired, simply <code class="verbatim">d</code> the line, then <code
-class="verbatim">x</code> to apply with confirmation In magit, <code
+<p>In Dired, simply <code class="verbatim">d</code> the line, then <code
+class="verbatim">x</code> to apply with confirmation In Magit, <code
 class="verbatim">c c</code> to commit, <code
 class="verbatim">C-c C-c</code> to apply</p>
+<p>I could simply try dumping all the data into SQLite and see how that
+works out.</p>
+<p>I have:</p>
+<p>Metadata per page some pages</p>
+<p>So - simple, flat model.</p>
+<p>I could build</p>
+<p>Files -&gt; SQLite SQLite -&gt; files</p>
+<p>Do I want “apply everything” or “apply partial”?</p>
+<p>I could implement “apply everything” in terms of “apply partial”</p>
+<p>First delete all the <code class="verbatim">play.edn</code> files
+Then apply partial And confirm changes in Git.</p>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

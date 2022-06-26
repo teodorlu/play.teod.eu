@@ -269,19 +269,23 @@ I could implement "apply everything" in terms of "apply partial"
     Then apply partial
     And confirm changes in Git.
 ** I can use =play.edn= to ensure link integrity
+#+begin_src text
 Idea.
 
-#+begin_verse
     play.edn is a module declaration
-    it declares dependencies and binds them for use in source code. Maps to root.
+    it declares dependencies
+       And binds them to targets
+        Maps to root.
     Challenge - link resolution.
-        Do I need a redirect "service"? Yeah, perhaps I can use redirects.
+        Do I need a redirect "service"?
+            Yeah, perhaps I can use redirects.
             🤔
-        I thought I needed magic to ensure outbound links went to the right place
+        I thought I needed magic to rewrite links to target
             But I can generate a companion link site
                 "app"
                     ?link=LINK_ID that redirects
-#+end_verse
+#+end_src
+
 * Trailing whitespace
 #+begin_verse
 

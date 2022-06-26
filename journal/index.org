@@ -298,7 +298,7 @@ Created the lines mode - and more.
 | Mode    | Read? | Write? | Purpose                            |
 |---------+-------+--------+------------------------------------|
 | :files  | y     | y      | play.edn files is the main storage |
-| :lines  | y     | y      | lines give a consise overview      |
+| :lines  | y     | y      | lines give a concise overview      |
 | :table  | y     | y      | table is great for batch editing   |
 | :pretty | n     | y      | nice debug target                  |
 

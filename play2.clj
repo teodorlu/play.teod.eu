@@ -1,51 +1,69 @@
 #!/usr/bin/env bb
 
+
+
+;; Action - edit tags
+;;
+;;   ./play relations :from :files :to :lines > lines.txt
+;;   # edit lines.txt - do stuff in batch ...
+;;   ./play relations :from :lines :to :files < lines.txt
+
 (require '[babashka.deps :as deps])
+(deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.30"}}})
+(require '[babashka.cli :as cli]
+         '[clojure.java.shell]
+         '[clojure.string :as str]
+         '[clojure.edn :as edn])
 
-(deps/add-deps '{:deps {#_#_ borkdude/rewrite-edn {:mvn/version "0.2.0"}
-                        org.babashka/cli {:mvn/version "0.3.28"}}})
-
-(require '[clojure.string :as str]
-         '[clojure.java.shell :refer [sh]]
-         '[babashka.fs :as fs])
-
-;; idea
-;;
-;; consolidate the babashka scripts I've created in this repo in a CLI
-;;
-;; provide --dry-run options to use instead of the (System/getenv "ALT") env var I used for that previously
-;;
-;; expose the knowledge model of this repo through entrypoints into that script
-;;
-;;     tags : play.edn files to flat file
-;;            flat file to play.edn files
-;;                apply partial with tags
-;;            flat file to SQLite
-;;            SQLite from flat file
-;;
-;; generate makefile from deps graph
-
-;; more ideas
-;;
-;; load the tag data into a big map
-
+;; relations example
 {"emacs" {:id "emacs"
           :title "(Doom) Emacs learning journal"
           :form :rambling
           :readiness :in-progress}
  "feedback-design-impl" {:title "Feedback loops, API design and how stuff works"}}
 
-;; relations from fs to EDN
-;;
-;;   ./play relations :from :files :to :edn-str
-;;   ./play relations :from :edn-str :to :files
-;;
-;;   :from :sqlite :to :files
-;;
-;;   ./play relations :in file.edn :out relations.sqlite
-;;
-;; Action - edit tags
-;;
-;;   ./play relations :from :files :to :lines > lines.txt
-;;   # edit lines.txt - do stuff in batch ...
-;;   ./play relations :from :lines :to :files < lines.txt
+(defn pages []
+  (let [bash (fn [cmd] (:out (clojure.java.shell/sh "bash" "-c" cmd)))]
+    (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
+         (str/split-lines)
+         (map (fn [id] {:id id})))))
+
+(defn files->relations
+  "Read relations from play.edn files on disk"
+  [{}]
+  (->> (pages)
+       (map (fn [{:keys [id] :as p}]
+              (merge p (edn/read-string (slurp (str id "/play.edn"))))))
+       (map (juxt :id identity))
+       (into {})))
+
+(defn relations->lines
+  "Produce a list of strings looking like
+
+  :id emacs, :title \"(Doom) Emacs learning journal\", :form :rambling, :readiness :in-progress
+  "
+  [rels]
+  (->> (vals rels)
+       (map pr-str)))
+
+(defn relations [{:keys [opts]}]
+  (let [{:keys [from to]} opts]
+    (assert (#{:files} from))
+    (assert (#{:lines} to))
+    (let [rels (files->relations {})
+          lines (relations->lines rels)]
+      (doseq [l lines]
+        (println l)))))
+
+(defn main [& args]
+  (cli/dispatch [{:cmds ["relations"] :fn relations}]
+                args
+                {:coerce {:from :keyword
+                          :to :keyword
+                          :dry-run :boolean}}))
+
+(apply main *command-line-args*)
+
+ ;; How to run:
+ ;;
+ ;;   ./play2.clj relations :from :files :to :lines

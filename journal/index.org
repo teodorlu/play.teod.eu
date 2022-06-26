@@ -167,6 +167,41 @@ Perhaps I made it work?
 Or?
 
 Nope. Back to manual teod/apply it is.
+* 2022-06-26
+Morning / afternoon / whatever.
+
+🤠
+** Retrospective - play.teod.eu
+How are we coming along?
+
+1. I like working with Babashka
+2. But the current process of multiple "thingies" is getting painful
+   1. Perhaps I need to consolidate into a single =play.clj= script with a CLI.
+3. Tags are nice
+   1. It's nice to always think outcome.
+      What do we want to achieve right now?
+
+Next steps?
+
+1. Have the =page= command automatically categorize stuff as "don't mind me"
+2. Group the remaining English content
+3. I kinda wanna explore SQLite
+4. I wanna try out portal
+5. Do I want to be able to run my stuff with both JVM Clojure and Babashka?
+** Current pages
+| Page                                                         | Category        | aka          |
+|--------------------------------------------------------------+-----------------+--------------|
+| https://play.teod.eu/emacs/                                  | Rambling        |              |
+| https://play.teod.eu/aphorisms/                              | Page            |              |
+| https://play.teod.eu/feedback-loops-api-design-how-it-works/ | Article draft   |              |
+| https://play.teod.eu/hourglass-architecture/                 | Ideas & capture | Narrow waist |
+| https://play.teod.eu/opt-in-hierarchies/                     | Ideas & capture |              |
+| https://play.teod.eu/orthogonality-enables-optionality/      | Article draft   |              |
+| https://play.teod.eu/product-for-developers/                 | Article draft   |              |
+| https://play.teod.eu/journal/                                | Rambling        |              |
+| https://play.teod.eu/unix-signals-crash-course/              | Article draft   |              |
+| https://play.teod.eu/knowledge-worker/                       | Article draft   |              |
+
 * Trailing whitespace
 #+begin_verse
 

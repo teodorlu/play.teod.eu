@@ -269,9 +269,8 @@ I could implement "apply everything" in terms of "apply partial"
     Then apply partial
     And confirm changes in Git.
 ** I can use =play.edn= to ensure link integrity
-#+begin_src text
-Idea.
-
+#+begin_verse
+Idea
     play.edn is a module declaration
     it declares dependencies
        And binds them to targets
@@ -284,7 +283,7 @@ Idea.
             But I can generate a companion link site
                 "app"
                     ?link=LINK_ID that redirects
-#+end_src
+#+end_verse
 
 * Trailing whitespace
 #+begin_verse

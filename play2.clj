@@ -65,12 +65,39 @@
           (with-out-str
             (pprint (dissoc page :id))))))
 
+(defn relations->table
+  "Produce a table of relations
+
+  | id | title |
+  | ----- | ----- |
+  | emacs | A (Doom Emacs) learning journey |
+  "
+  [rels]
+  (let [pr-value (fn [value]
+                   (if (= value ::missing)
+                     ""
+                     (pr-str value)))
+        columns (keys (apply merge (vals rels)))
+        value-row (fn [items]
+                    (str "| " (str/join " | " (map pr-value items)) " |"))
+        string-row (fn [items]
+                    (str "|" (str/join "|" items) "|"))]
+    ;; print header
+    (println (value-row columns))
+    (println (string-row (map (fn [_] "-----") columns)))
+    (doseq [page (vals rels)]
+      (println (value-row
+                (map (fn [column]
+                       (get page column ::missing))
+                     columns))))))
+
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations
                  :lines lines->relations}
         targets {:lines relations->lines
                  :pretty relations->pretty
-                 :files relations->files}
+                 :files relations->files
+                 :table relations->table}
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))

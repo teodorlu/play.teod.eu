@@ -4,6 +4,8 @@
 
 Hey! Reading this document from start to end might not be useful. So why put it
 here if the intent isn't consumption?
+
+Keep reading if you'd like. Or stop here. 🐉
 * Prelude
 My learning process works something like this:
 
@@ -58,7 +60,7 @@ reload!
 Source: [[https://github.com/nextjournal/clerk/blob/a5e60412c812bd348e61d8a02377edf1960e89ba/README.md#L77][Clerk README]].
 
 See? It saves the buffer, then runs =nextjournal.clerk/show!= in the current
-Cider repl.
+Cider REPL.
 
 Let's extract a function for the save hook.
 

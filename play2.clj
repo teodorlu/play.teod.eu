@@ -59,11 +59,18 @@
        (map (fn [{:keys [id] :as page}] {id page}))
        (into {})))
 
+(defn relations->files [rels]
+  (doseq [[id page] rels]
+    (spit (str id "/play.edn")
+          (with-out-str
+            (pprint (dissoc page :id))))))
+
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations
                  :lines lines->relations}
         targets {:lines relations->lines
-                 :pretty relations->pretty}
+                 :pretty relations->pretty
+                 :files relations->files}
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))

@@ -56,9 +56,8 @@
   [{}]
   (let [stdin (slurp *in*)]
     (->> (for [line (str/split-lines stdin)]
-           (let [{:keys [id] :as page} (edn/read-string line)]
-             page
-             ))
+           (edn/read-string line)
+           )
          (map (fn [{:keys [id] :as page}] {id page}))
          (into {}))))
 

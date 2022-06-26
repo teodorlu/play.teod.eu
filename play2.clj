@@ -13,7 +13,8 @@
 (require '[babashka.cli :as cli]
          '[clojure.java.shell]
          '[clojure.string :as str]
-         '[clojure.edn :as edn])
+         '[clojure.edn :as edn]
+         '[clojure.pprint :refer [pprint]])
 
 ;; relations example
 {"emacs" {:id "emacs"
@@ -46,9 +47,26 @@
   (doseq [l (vals rels)]
     (prn l)))
 
+(defn relations->pretty
+  [rels]
+  (pprint rels))
+
+(defn lines->relations
+  "Relations from lines on stdin"
+  [{}]
+  (let [stdin (slurp *in*)]
+    (->> (for [line (str/split-lines stdin)]
+           (let [{:keys [id] :as page} (edn/read-string line)]
+             page
+             ))
+         (map (fn [{:keys [id] :as page}] {id page}))
+         (into {}))))
+
 (defn relations [{:keys [opts]}]
-  (let [sources {:files files->relations}
-        targets {:lines relations->lines}
+  (let [sources {:files files->relations
+                 :lines lines->relations}
+        targets {:lines relations->lines
+                 :pretty relations->pretty}
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))

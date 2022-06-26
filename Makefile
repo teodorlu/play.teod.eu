@@ -1,4 +1,4 @@
-index.html: index.clj aphorisms/index.html emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
+index.html: index.clj aphorisms/index.html emacs/index.html feedback-design-impl/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
 	./index.clj
 
 aphorisms/index.html: aphorisms/index.org
@@ -7,8 +7,8 @@ aphorisms/index.html: aphorisms/index.org
 emacs/index.html: emacs/index.org
 	pandoc -s --toc --from=org+smart -i emacs/index.org -o emacs/index.html
 
-feedback-loops-api-design-how-it-works/index.html: feedback-loops-api-design-how-it-works/index.org
-	pandoc -s --toc --from=org+smart -i feedback-loops-api-design-how-it-works/index.org -o feedback-loops-api-design-how-it-works/index.html
+feedback-design-impl/index.html: feedback-design-impl/index.org
+	pandoc -s --toc --from=org+smart -i feedback-design-impl/index.org -o feedback-design-impl/index.html
 
 hourglass-architecture/index.html: hourglass-architecture/index.org
 	pandoc -s --toc --from=org+smart -i hourglass-architecture/index.org -o hourglass-architecture/index.html
@@ -38,5 +38,5 @@ unix-signals-crash-course/index.html: unix-signals-crash-course/index.org
 	pandoc -s --toc --from=org+smart -i unix-signals-crash-course/index.org -o unix-signals-crash-course/index.html
 
 @PHONY: pages
-pages:  aphorisms/index.html emacs/index.html feedback-loops-api-design-how-it-works/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
+pages:  aphorisms/index.html emacs/index.html feedback-design-impl/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
 

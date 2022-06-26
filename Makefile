@@ -1,4 +1,4 @@
-index.html: index.clj aphorisms/index.html emacs/index.html feedback-design-impl/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
+index.html: index.clj aphorisms/index.html emacs/index.html feedback-design-impl/index.html heterarchies/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
 	./index.clj
 
 aphorisms/index.html: aphorisms/index.org
@@ -10,8 +10,8 @@ emacs/index.html: emacs/index.org
 feedback-design-impl/index.html: feedback-design-impl/index.org
 	pandoc -s --toc --from=org+smart -i feedback-design-impl/index.org -o feedback-design-impl/index.html
 
-hourglass-architecture/index.html: hourglass-architecture/index.org
-	pandoc -s --toc --from=org+smart -i hourglass-architecture/index.org -o hourglass-architecture/index.html
+heterarchies/index.html: heterarchies/index.org
+	pandoc -s --toc --from=org+smart -i heterarchies/index.org -o heterarchies/index.html
 
 journal/index.html: journal/index.org
 	pandoc -s --toc --from=org+smart -i journal/index.org -o journal/index.html
@@ -22,8 +22,8 @@ knowledge-worker/index.html: knowledge-worker/index.org
 maksimal-opsjonalitet/index.html: maksimal-opsjonalitet/index.org
 	pandoc -s --toc --from=org+smart -i maksimal-opsjonalitet/index.org -o maksimal-opsjonalitet/index.html
 
-opt-in-hierarchies/index.html: opt-in-hierarchies/index.org
-	pandoc -s --toc --from=org+smart -i opt-in-hierarchies/index.org -o opt-in-hierarchies/index.html
+narrow-waist/index.html: narrow-waist/index.org
+	pandoc -s --toc --from=org+smart -i narrow-waist/index.org -o narrow-waist/index.html
 
 orthogonality-enables-optionality/index.html: orthogonality-enables-optionality/index.org
 	pandoc -s --toc --from=org+smart -i orthogonality-enables-optionality/index.org -o orthogonality-enables-optionality/index.html
@@ -34,9 +34,9 @@ product-for-developers/index.html: product-for-developers/index.org
 sannhet-deskriptiv-preskriptiv/index.html: sannhet-deskriptiv-preskriptiv/index.org
 	pandoc -s --toc --from=org+smart -i sannhet-deskriptiv-preskriptiv/index.org -o sannhet-deskriptiv-preskriptiv/index.html
 
-unix-signals-crash-course/index.html: unix-signals-crash-course/index.org
-	pandoc -s --toc --from=org+smart -i unix-signals-crash-course/index.org -o unix-signals-crash-course/index.html
+unix-signals-intro/index.html: unix-signals-intro/index.org
+	pandoc -s --toc --from=org+smart -i unix-signals-intro/index.org -o unix-signals-intro/index.html
 
 @PHONY: pages
-pages:  aphorisms/index.html emacs/index.html feedback-design-impl/index.html hourglass-architecture/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html opt-in-hierarchies/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-crash-course/index.html
+pages:  aphorisms/index.html emacs/index.html feedback-design-impl/index.html heterarchies/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
 

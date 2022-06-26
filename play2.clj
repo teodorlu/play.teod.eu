@@ -116,7 +116,6 @@
                     (map str/trim)
                     (map edn/read-string))
         body-raw (drop 2 lines)
-
         parse-line (fn [s]
                      (->>
                       (str/split s #"\|")

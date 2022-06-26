@@ -1,7 +1,5 @@
 #!/usr/bin/env bb
 
-
-
 ;; Action - edit tags
 ;;
 ;;   ./play relations :from :files :to :lines > lines.txt
@@ -68,9 +66,12 @@
 (defn relations->table
   "Produce a table of relations
 
-  | id | title |
-  | ----- | ----- |
-  | emacs | A (Doom Emacs) learning journey |
+  Example table:
+
+  | :id                    | :title                           |
+  |------------------------+----------------------------------|
+  | \"unix-signals-intro\" | \"Unix signals: a crash course\" |
+  | \"aphorisms\"          | \"Aphorisms\"                    |
   "
   [rels]
   (let [pr-value (fn [value]
@@ -91,13 +92,56 @@
                        (get page column ::missing))
                      columns))))))
 
+(defn relations->nil
+  "Nil target - does nothing
+
+  Useful for developing sources"
+  [_rels])
+
+(defn table->relations
+  "Read relations from a table on stdin
+
+  Example table:
+
+  | :id                    | :title                           |
+  |------------------------+----------------------------------|
+  | \"unix-signals-intro\" | \"Unix signals: a crash course\" |
+  | \"aphorisms\"          | \"Aphorisms\"                    |
+  "
+  [{}]
+  (let [lines (into [] (str/split-lines (slurp *in*)))
+        header-raw (first lines)
+        header (->> (str/split header-raw #"\|") ; | is column sep
+                    (drop 1) (drop-last 1)       ; first and last is sole |
+                    (map str/trim)
+                    (map edn/read-string))
+        body-raw (drop 2 lines)
+
+        parse-line (fn [s]
+                     (->>
+                      (str/split s #"\|")
+                      (drop 1) (drop-last 1)
+                      (map str/trim)
+                      (map (fn [key value] [key value]) header)
+                      (filter (fn [[key value]]
+                                (not= value "")))
+                      (map (fn [[key value]]
+                             [key (edn/read-string value)]))
+                      (into {})))]
+    (->> body-raw
+         (map parse-line)
+         (map (fn [{:keys [id] :as page}] {id page}))
+         (into {}))))
+
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations
-                 :lines lines->relations}
+                 :lines lines->relations
+                 :table table->relations}
         targets {:lines relations->lines
                  :pretty relations->pretty
                  :files relations->files
-                 :table relations->table}
+                 :table relations->table
+                 :nil relations->nil}
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))

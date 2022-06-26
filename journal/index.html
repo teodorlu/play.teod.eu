@@ -252,6 +252,12 @@ in.</a></li>
 <li><a href="#on-reactivity-speed-and-whole-system-changes">On
 reactivity, speed and whole-system changes</a></li>
 </ul></li>
+<li><a href="#section-3">2022-06-26</a>
+<ul class="incremental">
+<li><a href="#retrospective---play.teod.eu">Retrospective -
+play.teod.eu</a></li>
+<li><a href="#current-pages">Current pages</a></li>
+</ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
 </nav>
@@ -404,6 +410,146 @@ watcher. I’d rather apply the change manually.</li>
 <p>Perhaps I made it work?</p>
 <p>Or?</p>
 <p>Nope. Back to manual teod/apply it is.</p>
+<h1 id="section-3">2022-06-26</h1>
+<p>Morning / afternoon / whatever.</p>
+<p>🤠</p>
+<h2 id="retrospective---play.teod.eu">Retrospective - play.teod.eu</h2>
+<p>How are we coming along?</p>
+<ol class="incremental">
+<li>I like working with Babashka</li>
+<li>But the current process of multiple “thingies” is getting painful
+<ol class="incremental">
+<li>Perhaps I need to consolidate into a single <code
+class="verbatim">play.clj</code> script with a CLI.</li>
+</ol></li>
+<li>Tags are nice
+<ol class="incremental">
+<li>It’s nice to always think outcome. What do we want to achieve right
+now?</li>
+</ol></li>
+</ol>
+<p>Next steps?</p>
+<ol class="incremental">
+<li>Have the <code class="verbatim">page</code> command automatically
+categorize stuff as “don’t mind me”</li>
+<li>Group the remaining English content</li>
+<li>I kinda wanna explore SQLite</li>
+<li>I wanna try out portal</li>
+<li>Do I want to be able to run my stuff with both JVM Clojure and
+Babashka?</li>
+</ol>
+<h2 id="current-pages">Current pages</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Page</th>
+<th>Category</th>
+<th>aka</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://play.teod.eu/emacs/">https://play.teod.eu/emacs/</a></td>
+<td>Rambling</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="https://play.teod.eu/aphorisms/">https://play.teod.eu/aphorisms/</a></td>
+<td>Page</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://play.teod.eu/feedback-loops-api-design-how-it-works/">https://play.teod.eu/feedback-loops-api-design-how-it-works/</a></td>
+<td>Article draft</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="https://play.teod.eu/hourglass-architecture/">https://play.teod.eu/hourglass-architecture/</a></td>
+<td>Ideas &amp; capture</td>
+<td>Narrow waist</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://play.teod.eu/opt-in-hierarchies/">https://play.teod.eu/opt-in-hierarchies/</a></td>
+<td>Ideas &amp; capture</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="https://play.teod.eu/orthogonality-enables-optionality/">https://play.teod.eu/orthogonality-enables-optionality/</a></td>
+<td>Article draft</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://play.teod.eu/product-for-developers/">https://play.teod.eu/product-for-developers/</a></td>
+<td>Article draft</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="https://play.teod.eu/journal/">https://play.teod.eu/journal/</a></td>
+<td>Rambling</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://play.teod.eu/unix-signals-crash-course/">https://play.teod.eu/unix-signals-crash-course/</a></td>
+<td>Article draft</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="https://play.teod.eu/knowledge-worker/">https://play.teod.eu/knowledge-worker/</a></td>
+<td>Article draft</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>How do we tag?</p>
+<p>By form:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>:form :rambling</td>
+</tr>
+<tr class="even">
+<td>:form :article</td>
+</tr>
+<tr class="odd">
+<td>:form :explore</td>
+</tr>
+<tr class="even">
+<td>:form :unknown</td>
+</tr>
+</tbody>
+</table>
+<p>By readiness:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>:readiness :in-progress</td>
+</tr>
+<tr class="even">
+<td>:readiness :published</td>
+</tr>
+</tbody>
+</table>
+<p>By language:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>:lang :no</td>
+</tr>
+<tr class="even">
+<td>:lang :en</td>
+</tr>
+</tbody>
+</table>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

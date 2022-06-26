@@ -1,1 +1,3 @@
-{:title "Deskriptiv sannhet, preskriptiv sannhet", :lang :no}
+{:title "Deskriptiv sannhet, preskriptiv sannhet",
+ :lang :no,
+ :form :presentation}

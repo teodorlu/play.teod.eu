@@ -13,7 +13,6 @@ norm, not the exception.
 
 🐉
 
-
 * 2022-06-23
 ** On product and indirection.
 I feel shackled by pressure for specificity.
@@ -220,7 +219,33 @@ By language:
 
 | :lang :no |
 | :lang :en |
+** Batch editing tags?
+Dump -
 
+distributed =${ARTICLE}/play.edn= files are "near" to the article (nice), but tedious to batch edit
+
+batch editing is nice in a table
+
+A normalized model is EAV.
+
+EAV example:
+
+#+begin_src
+:id "emacs" :title "(Doom) Emacs learning journal"
+:id "emacs" :form :rambling
+:id "emacs" :readiness :in-progress
+#+end_src
+
+What are nice ways of batch editing?
+
+    One big text file
+    Excel table
+    SQLite?
+
+How should lines be deleted?
+
+    In dired, simply =d= the line, then =x= to apply with confirmation
+    In magit, =c c= to commit, =C-c C-c= to apply
 * Trailing whitespace
 #+begin_verse
 

@@ -257,6 +257,7 @@ reactivity, speed and whole-system changes</a></li>
 <li><a href="#retrospective---play.teod.eu">Retrospective -
 play.teod.eu</a></li>
 <li><a href="#current-pages">Current pages</a></li>
+<li><a href="#batch-editing-tags">Batch editing tags?</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
@@ -550,6 +551,24 @@ href="https://play.teod.eu/knowledge-worker/">https://play.teod.eu/knowledge-wor
 </tr>
 </tbody>
 </table>
+<h2 id="batch-editing-tags">Batch editing tags?</h2>
+<p>Dump -</p>
+<p>distributed <code class="verbatim">${ARTICLE}/play.edn</code> files
+are “near” to the article (nice), but tedious to batch edit</p>
+<p>batch editing is nice in a table</p>
+<p>A normalized model is EAV.</p>
+<p>EAV example:</p>
+<pre><code>:id &quot;emacs&quot; :title &quot;(Doom) Emacs learning journal&quot;
+:id &quot;emacs&quot; :form :rambling
+:id &quot;emacs&quot; :readiness :in-progress
+</code></pre>
+<p>What are nice ways of batch editing?</p>
+<p>One big text file Excel table SQLite?</p>
+<p>How should lines be deleted?</p>
+<p>In dired, simply <code class="verbatim">d</code> the line, then <code
+class="verbatim">x</code> to apply with confirmation In magit, <code
+class="verbatim">c c</code> to commit, <code
+class="verbatim">C-c C-c</code> to apply</p>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

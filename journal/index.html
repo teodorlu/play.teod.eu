@@ -258,6 +258,8 @@ reactivity, speed and whole-system changes</a></li>
 play.teod.eu</a></li>
 <li><a href="#current-pages">Current pages</a></li>
 <li><a href="#batch-editing-tags">Batch editing tags?</a></li>
+<li><a href="#i-can-use-play.edn-to-ensure-link-integrity">I can use
+<code class="verbatim">play.edn</code> to ensure link integrity</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
@@ -580,6 +582,21 @@ works out.</p>
 <p>I could implement “apply everything” in terms of “apply partial”</p>
 <p>First delete all the <code class="verbatim">play.edn</code> files
 Then apply partial And confirm changes in Git.</p>
+<h2 id="i-can-use-play.edn-to-ensure-link-integrity">I can use <code
+class="verbatim">play.edn</code> to ensure link integrity</h2>
+<p>Idea.</p>
+<div class="line-block">play.edn is a module declaration<br />
+it declares dependencies and binds them for use in source code. Maps to
+root.<br />
+Challenge - link resolution.<br />
+    Do I need a redirect “service”? Yeah, perhaps I can use
+redirects.<br />
+        🤔<br />
+    I thought I needed magic to ensure outbound links went to the right
+place<br />
+        But I can generate a companion link site<br />
+            “app”<br />
+                ?link=LINK<sub>ID</sub> that redirects</div>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

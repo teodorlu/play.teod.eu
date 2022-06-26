@@ -262,6 +262,7 @@ play.teod.eu</a></li>
 <code class="verbatim">play.edn</code> to ensure link integrity</a></li>
 <li><a href="#play-api-draft"><code class="verbatim">./play</code> API
 draft</a></li>
+<li><a href="#retrospective">Retrospective</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
@@ -606,6 +607,47 @@ draft</h2>
 :id &quot;feedback-design-impl&quot; :title &quot;Feedback loops, API design and how stuff works&quot;
 ...
 </code></pre>
+<h2 id="retrospective">Retrospective</h2>
+<p>Created the lines mode - and more.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mode</th>
+<th>Read?</th>
+<th>Write?</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>:files</td>
+<td>y</td>
+<td>y</td>
+<td>play.edn files is the main storage</td>
+</tr>
+<tr class="even">
+<td>:lines</td>
+<td>y</td>
+<td>y</td>
+<td>lines give a consise overview</td>
+</tr>
+<tr class="odd">
+<td>:table</td>
+<td>y</td>
+<td>y</td>
+<td>table is great for batch editing</td>
+</tr>
+<tr class="even">
+<td>:pretty</td>
+<td>n</td>
+<td>y</td>
+<td>nice debug target</td>
+</tr>
+</tbody>
+</table>
+<p>This almost looks like an hourglass architecture :)</p>
+<p>relations interface in the middle.</p>
+<p>I’m happy with the design.</p>
 <h1 id="trailing-whitespace">Trailing whitespace</h1>
 <div class="line-block"><br />
 <br />

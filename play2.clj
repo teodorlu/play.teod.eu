@@ -15,6 +15,8 @@
          '[clojure.pprint :refer [pprint]])
 
 ;; relations example
+;;
+;; page id -> page metadata
 {"emacs" {:id "emacs"
           :title "(Doom) Emacs learning journal"
           :form :rambling
@@ -92,12 +94,6 @@
                        (get page column ::missing))
                      columns))))))
 
-(defn relations->nil
-  "Nil target - does nothing
-
-  Useful for developing sources"
-  [_rels])
-
 (defn table->relations
   "Read relations from a table on stdin
 
@@ -139,8 +135,7 @@
         targets {:lines relations->lines
                  :pretty relations->pretty
                  :files relations->files
-                 :table relations->table
-                 :nil relations->nil}
+                 :table relations->table}
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))

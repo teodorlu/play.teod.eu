@@ -292,6 +292,21 @@ $ ./play2.clj relations :from :files :to :lines
 :id "feedback-design-impl" :title "Feedback loops, API design and how stuff works"
 ...
 #+end_src
+** Retrospective
+Created the lines mode - and more.
+
+| Mode    | Read? | Write? | Purpose                            |
+|---------+-------+--------+------------------------------------|
+| :files  | y     | y      | play.edn files is the main storage |
+| :lines  | y     | y      | lines give a consise overview      |
+| :table  | y     | y      | table is great for batch editing   |
+| :pretty | n     | y      | nice debug target                  |
+
+This almost looks like an hourglass architecture :)
+
+relations interface in the middle.
+
+I'm happy with the design.
 * Trailing whitespace
 #+begin_verse
 

@@ -295,12 +295,12 @@ $ ./play2.clj relations :from :files :to :lines
 ** Retrospective
 Created the lines mode - and more.
 
-| Mode    | Read? | Write? | Purpose                            |
-|---------+-------+--------+------------------------------------|
-| :files  | y     | y      | play.edn files is the main storage |
-| :lines  | y     | y      | lines give a concise overview      |
-| :table  | y     | y      | table is great for batch editing   |
-| :pretty | n     | y      | nice debug target                  |
+| Mode    | Read? | Write? | Purpose                                       |
+|---------+-------+--------+-----------------------------------------------|
+| :files  | y     | y      | play.edn files is the main storage            |
+| :lines  | y     | y      | lines give a concise overview                 |
+| :table  | y     | y      | table is great for batch editing              |
+| :pretty | n     | y      | :to :pretty is great when devleoping a reader |
 
 This almost looks like an hourglass architecture :)
 

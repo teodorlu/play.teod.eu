@@ -307,6 +307,30 @@ This almost looks like an hourglass architecture :)
 relations interface in the middle.
 
 I'm happy with the design.
+* 2022-06-28
+** Possible talk - dynamic programming
+idea - dynaimc programming isn't lack of types.
+Dynamic programming is options to do flexible stuff.
+
+Option - work on data structures rather than types.
+    XML - static types for everything, or a dynamic tree?
+    JSON - types for everything?
+Alternative formulation - serialization for free
+
+Option - dynamic runtime.
+    Dynamic languages often support interpretation / dynamic recompilation
+
+Option - extend language when required.
+    Embedded DSLs are just data
+        (Or macros, but macros can be complex)
+
+Option - use schemas directly for validation rather than types
+
+Examples?
+    Hmm
+    Python?
+    Clojure?
+    Javascript?
 * Trailing whitespace
 #+begin_verse
 

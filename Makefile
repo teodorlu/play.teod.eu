@@ -1,4 +1,4 @@
-index.html: index.clj aphorisms/index.html emacs/index.html feedback-design-impl/index.html heterarchies/index.html iterate-knowledge-garden/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
+index.html: index.clj aphorisms/index.html emacs/index.html feedback-design-impl/index.html grow-knowlege-together/index.html heterarchies/index.html iterate-knowledge-garden/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
 	./index.clj
 
 aphorisms/index.html: aphorisms/index.org
@@ -9,6 +9,9 @@ emacs/index.html: emacs/index.org
 
 feedback-design-impl/index.html: feedback-design-impl/index.org
 	pandoc -s --toc --from=org+smart -i feedback-design-impl/index.org -o feedback-design-impl/index.html
+
+grow-knowlege-together/index.html: grow-knowlege-together/index.org
+	pandoc -s --toc --from=org+smart -i grow-knowlege-together/index.org -o grow-knowlege-together/index.html
 
 heterarchies/index.html: heterarchies/index.org
 	pandoc -s --toc --from=org+smart -i heterarchies/index.org -o heterarchies/index.html
@@ -41,5 +44,5 @@ unix-signals-intro/index.html: unix-signals-intro/index.org
 	pandoc -s --toc --from=org+smart -i unix-signals-intro/index.org -o unix-signals-intro/index.html
 
 @PHONY: pages
-pages:  aphorisms/index.html emacs/index.html feedback-design-impl/index.html heterarchies/index.html iterate-knowledge-garden/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
+pages:  aphorisms/index.html emacs/index.html feedback-design-impl/index.html grow-knowlege-together/index.html heterarchies/index.html iterate-knowledge-garden/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
 

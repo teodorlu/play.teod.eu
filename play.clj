@@ -60,7 +60,7 @@ watchexec -f '*.org' -- 'printf \"reloading @ \" && date && pandoc -s -i index.o
       (fs/set-posix-file-permissions watch-file "rwxr-xr-x"))
 
     (when-not (fs/exists? play-page)
-      (spit play-page (pr-str {:title page})))
+      (spit play-page (pr-str {:title page :readiness :wtf-is-this})))
 
     nil
     ))

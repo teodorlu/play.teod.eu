@@ -42,7 +42,7 @@
        (sort-by :title)))
 
 (defn link [{:keys [id title] :as _page}]
-  (str "- [[file:./" id "][" (or title id) "]]"))
+  (str "- [[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
   (let [{:keys [just-page norwegian]} (group-by :category pages)]

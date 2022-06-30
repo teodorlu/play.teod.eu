@@ -9,3 +9,5 @@
 3 - Chase intent. Ask why.
 
 4 - Late binding is awesome.
+
+5 - Never link to content without enriching the intent of linking with context.

@@ -1,5 +1,11 @@
 #+title: How to grow knowledge together
 
+[[./..][..]]
+
+Status: DRAFT
+
+Short answer: not quite sure yet. But the solution involves creating and discussing ideas.
+
 I posted in the Iterate (workplace) internal Slack about growing knowledge together today (2022-06-30).
 The response was lacking.
 Well, lacking is a vague word.
@@ -21,8 +27,6 @@ What do I do?
 I require intent.
 Where is the intent?
 Where is the intent!!!
-
-[[./..][..]]
 
 #+begin_verse
 

@@ -1,3 +1,4 @@
 {:title "Orthogonality enables optionality",
  :form :article,
- :readiness :wtf-is-this}
+ :readiness :wtf-is-this,
+ :lang :en}

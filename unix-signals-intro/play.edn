@@ -1,4 +1,5 @@
 {:title "Unix signals: a crash course",
  :form :article,
  :status :wip,
- :readiness :ready-for-comments}
+ :readiness :ready-for-comments,
+ :lang :en}

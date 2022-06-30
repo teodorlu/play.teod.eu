@@ -1,3 +1,4 @@
 {:title "Product discovery for software developers",
  :form :article,
- :readiness :ready-for-comments}
+ :readiness :ready-for-comments,
+ :lang :en}

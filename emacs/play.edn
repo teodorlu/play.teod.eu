@@ -1,3 +1,4 @@
 {:title "(Doom) Emacs learning journal",
  :form :rambling,
- :readiness :forever-incomplete}
+ :readiness :forever-incomplete,
+ :lang :en}

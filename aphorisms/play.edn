@@ -1,1 +1,4 @@
-{:title "Aphorisms", :form :unknown, :readiness :ready-for-comments}
+{:title "Aphorisms",
+ :form :unknown,
+ :readiness :ready-for-comments,
+ :lang :en}

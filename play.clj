@@ -42,7 +42,8 @@ page PAGE_NAME
         page (or (:name opts)
                  (first (:cmds opts)))
         org-file (str page "/index.org")
-        watch-file (str page "/watchbuild.sh")]
+        watch-file (str page "/watchbuild.sh")
+        play-page (str page "/play.edn")]
     (fs/create-dirs page)
 
     ;; Org file
@@ -57,6 +58,9 @@ page PAGE_NAME
 watchexec -f '*.org' -- 'printf \"reloading @ \" && date && pandoc -s -i index.org -o index.html'
 ")
       (fs/set-posix-file-permissions watch-file "rwxr-xr-x"))
+
+    (when-not (fs/exists? play-page)
+      (spit play-page (pr-str {:title page})))
 
     nil
     ))

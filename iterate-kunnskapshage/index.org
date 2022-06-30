@@ -3,7 +3,12 @@
 [[./..][..]]
 
 * Innhold fra andre folk
-- Kent beck: https://geekincentives.substack.com/?utm_source=account-card&utm_content=reads
+- Kent Beck: https://geekincentives.substack.com/?utm_source=account-card&utm_content=reads
+- Henrik om GraphQL: https://vimeo.com/181948165
+- Anders på Substack: https://substack.com/profile/27961793-anders-haugeto
+- Kim på Medium: https://medium.com/@handyman-kim
+- Sean: https://seanpercival.com/category/featured/
+- Oddmund: https://blog.oddmundo.com/
 * 2022-06-30
 Yo!
 

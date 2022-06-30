@@ -9,7 +9,7 @@ direct my attention?
 I've found that most of my effort as a software developer can be reduced to:
 
 1. Designing, creating and using feedback loops
-2. Designing APIs
+2. Designing abstractions
 3. Discovering how stuff works.
 
 Curious? Read on.

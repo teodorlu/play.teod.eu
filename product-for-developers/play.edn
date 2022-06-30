@@ -1,1 +1,3 @@
-{:title "Product discovery for software developers", :form :article}
+{:title "Product discovery for software developers",
+ :form :article,
+ :readiness :ready-for-comments}

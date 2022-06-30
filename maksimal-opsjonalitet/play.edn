@@ -1,1 +1,4 @@
-{:title "MAKSIMAL OPSJONALITET", :lang :no, :form :presentation}
+{:title "MAKSIMAL OPSJONALITET",
+ :lang :no,
+ :form :presentation,
+ :readiness :wtf-is-this}

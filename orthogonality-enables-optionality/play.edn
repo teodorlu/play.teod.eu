@@ -1,1 +1,3 @@
-{:title "Orthogonality enables optionality", :form :article}
+{:title "Orthogonality enables optionality",
+ :form :article,
+ :readiness :wtf-is-this}

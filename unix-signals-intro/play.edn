@@ -1,1 +1,4 @@
-{:title "Unix signals: a crash course", :form :article}
+{:title "Unix signals: a crash course",
+ :form :article,
+ :status :wip,
+ :readiness :ready-for-comments}

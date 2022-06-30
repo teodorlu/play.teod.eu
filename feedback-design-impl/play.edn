@@ -1,2 +1,3 @@
 {:title "Feedback loops, API design and how stuff works",
- :form :explore}
+ :form :explore,
+ :readiness :wtf-is-this}

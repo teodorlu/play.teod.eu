@@ -1,1 +1,1 @@
-{:title "Public journal", :form :rambling}
+{:title "Public journal", :form :rambling, :readiness :forever-incomplete}

@@ -6,7 +6,7 @@ Status: DRAFT
 
 Short answer: not quite sure yet. But the solution involves creating and discussing ideas.
 
-I posted in the Iterate (workplace) internal Slack about growing knowledge together today (2022-06-30).
+I posted in the Iterate internal Slack internal Slack about growing knowledge together today (2022-06-30, my workplace).
 The response was lacking.
 Well, lacking is a vague word.
 Correction: the response was /zero/.

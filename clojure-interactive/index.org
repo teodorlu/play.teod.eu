@@ -1,0 +1,26 @@
+#+title: An interactive Clojure journey
+
+[[./..][..]]
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

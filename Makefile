@@ -7,55 +7,54 @@ index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn clojure-i
 
 
 aphorisms/index.html: aphorisms/index.org
-	pandoc -s --toc --from=org+smart -i aphorisms/index.org -o aphorisms/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i aphorisms/index.org -o aphorisms/index.html
 
 bitemporal-worldview/index.html: bitemporal-worldview/index.org
-	pandoc -s --toc --from=org+smart -i bitemporal-worldview/index.org -o bitemporal-worldview/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i bitemporal-worldview/index.org -o bitemporal-worldview/index.html
 
 clojure-interactive/index.html: clojure-interactive/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i clojure-interactive/index.org -o clojure-interactive/index.html
 
 emacs/index.html: emacs/index.org
-	pandoc -s --toc --from=org+smart -i emacs/index.org -o emacs/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i emacs/index.org -o emacs/index.html
 
 feedback-design-impl/index.html: feedback-design-impl/index.org
-	pandoc -s --toc --from=org+smart -i feedback-design-impl/index.org -o feedback-design-impl/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i feedback-design-impl/index.org -o feedback-design-impl/index.html
 
 grow-knowlege-together/index.html: grow-knowlege-together/index.org
-	pandoc -s --toc --from=org+smart -i grow-knowlege-together/index.org -o grow-knowlege-together/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i grow-knowlege-together/index.org -o grow-knowlege-together/index.html
 
 heterarchies/index.html: heterarchies/index.org
-	pandoc -s --toc --from=org+smart -i heterarchies/index.org -o heterarchies/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i heterarchies/index.org -o heterarchies/index.html
 
 iterate-knowledge-archipelago/index.html: iterate-knowledge-archipelago/index.org
-	pandoc -s --toc --from=org+smart -i iterate-knowledge-archipelago/index.org -o iterate-knowledge-archipelago/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i iterate-knowledge-archipelago/index.org -o iterate-knowledge-archipelago/index.html
 
 journal/index.html: journal/index.org
-	pandoc -s --toc --from=org+smart -i journal/index.org -o journal/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i journal/index.org -o journal/index.html
 
 knowledge-worker/index.html: knowledge-worker/index.org
-	pandoc -s --toc --from=org+smart -i knowledge-worker/index.org -o knowledge-worker/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i knowledge-worker/index.org -o knowledge-worker/index.html
 
 maksimal-opsjonalitet/index.html: maksimal-opsjonalitet/index.org
-	pandoc -s --toc --from=org+smart -i maksimal-opsjonalitet/index.org -o maksimal-opsjonalitet/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i maksimal-opsjonalitet/index.org -o maksimal-opsjonalitet/index.html
 
 narrow-waist/index.html: narrow-waist/index.org
-	pandoc -s --toc --from=org+smart -i narrow-waist/index.org -o narrow-waist/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i narrow-waist/index.org -o narrow-waist/index.html
 
 orthogonality-enables-optionality/index.html: orthogonality-enables-optionality/index.org
-	pandoc -s --toc --from=org+smart -i orthogonality-enables-optionality/index.org -o orthogonality-enables-optionality/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i orthogonality-enables-optionality/index.org -o orthogonality-enables-optionality/index.html
 
 product-for-developers/index.html: product-for-developers/index.org
-	pandoc -s --toc --from=org+smart -i product-for-developers/index.org -o product-for-developers/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i product-for-developers/index.org -o product-for-developers/index.html
 
 sannhet-deskriptiv-preskriptiv/index.html: sannhet-deskriptiv-preskriptiv/index.org
-	pandoc -s --toc --from=org+smart -i sannhet-deskriptiv-preskriptiv/index.org -o sannhet-deskriptiv-preskriptiv/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i sannhet-deskriptiv-preskriptiv/index.org -o sannhet-deskriptiv-preskriptiv/index.html
 
 unix-signals-intro/index.html: unix-signals-intro/index.org
-	pandoc -s --toc --from=org+smart -i unix-signals-intro/index.org -o unix-signals-intro/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i unix-signals-intro/index.org -o unix-signals-intro/index.html
 
 
 .PHONY: clean
 clean:
 	rm index.html
-	rm **/index.html

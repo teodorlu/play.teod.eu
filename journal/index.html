@@ -282,14 +282,14 @@ messy, without the good sides of messy. Still, I choose to make this
 public, because I believe public should be the norm, not the
 exception.</p>
 <p>🐉</p>
-<h1 id="section">2022-06-23</h1>
-<h2 id="on-product-and-indirection.">On product and indirection.</h2>
+<h2 id="section">2022-06-23</h2>
+<h3 id="on-product-and-indirection.">On product and indirection.</h3>
 <p>I feel shackled by pressure for specificity. Always be specific.
 Specific is better. Don’t be vague.</p>
 <p>Specificity expels indirection. Indirection is core to design.</p>
 <p>If we lazer-focus on the specific, we’ll ignore problems with a
 longer feedback cycle time than some arbitrary limit.</p>
-<h2 id="emacs-product">Emacs ⟂ Product</h2>
+<h3 id="emacs-product">Emacs ⟂ Product</h3>
 <p>Statement: “don’t build something for yourself – you’ll ignore
 users”</p>
 <p>Response: “no – DO build product for yourself – but design in the
@@ -298,12 +298,12 @@ Doing it for yourself is not workflow design - it’s capability
 design.”</p>
 <p>By building in flexibility — indirection — at the right layer, we
 decouple the product, and give ourselves leverage.</p>
-<h2 id="on-fun">On fun</h2>
+<h3 id="on-fun">On fun</h3>
 <p>I’m better when I have fun.</p>
 <p>I have fun when I build stuff for myself <em>and</em> others.</p>
 <p>∴ I should build stuff for myself.</p>
-<h2 id="fully-integrated-feedback-loops">Fully integrated feedback
-loops</h2>
+<h3 id="fully-integrated-feedback-loops">Fully integrated feedback
+loops</h3>
 <p>Commonly discussed feedback loops:</p>
 <ol class="incremental">
 <li>Cycle time for recompilation</li>
@@ -315,8 +315,8 @@ loops</h2>
 <li>Idea-to-sharable-paper</li>
 <li>Idea-to-team</li>
 </ol>
-<h1 id="section-1">2022-06-24</h1>
-<h2 id="pandoc-code-blocks">Pandoc code blocks</h2>
+<h2 id="section-1">2022-06-24</h2>
+<h3 id="pandoc-code-blocks">Pandoc code blocks</h3>
 <p>(moved from separate page)</p>
 <p>We explore how Pandoc supports embedded code.</p>
 <p>We can write Clojure:</p>
@@ -334,16 +334,16 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a hr
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">act</span>(commands<span class="op">...</span>) {</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">// code</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<h1 id="section-2">2022-06-25</h1>
+<h2 id="section-2">2022-06-25</h2>
 <p>Another morning.</p>
-<h2 id="i-want-trailing-whitespace.">I want trailing whitespace.</h2>
+<h3 id="i-want-trailing-whitespace.">I want trailing whitespace.</h3>
 <p>Possible solutions:</p>
 <ol class="incremental">
 <li>Find org-mode native solution</li>
 <li>Lol, I can just use a big verse. Problem solved. See the bottom of
 this file.</li>
 </ol>
-<h2 id="what-about-tags">What about tags?</h2>
+<h3 id="what-about-tags">What about tags?</h3>
 <p>Outcome - less messy front page.</p>
 <p>Right now we’ve got this:</p>
 <blockquote>
@@ -391,21 +391,21 @@ class="verbatim">play.edn</code> file?</li>
 </ol></li>
 </ol></li>
 </ol>
-<h2 id="migration-path---opt-in.">Migration path - opt in.</h2>
+<h3 id="migration-path---opt-in.">Migration path - opt in.</h3>
 <p>Backwards compatible path - existing behavior prevails, title is
 “settable” from play.edn.</p>
-<h2 id="concern---performance.">Concern - performance.</h2>
+<h3 id="concern---performance.">Concern - performance.</h3>
 <p>The root HTML file will now depend on all the <code
 class="verbatim">play.edn</code> files. Perhaps use SQLite for caching?
 Not now. I want good performance under scale. Performance is important.
 I can just opt for manual indexing if the need arises.</p>
-<h2 id="implementation-path">Implementation path</h2>
+<h3 id="implementation-path">Implementation path</h3>
 <p>Outcome - better titles. Order. First create a <code
 class="verbatim">play.edn</code> file manually. Then create the proper
 title for that file. Run <code class="verbatim">index.clj</code> by
 hand.</p>
-<h2 id="on-reactivity-speed-and-whole-system-changes">On reactivity,
-speed and whole-system changes</h2>
+<h3 id="on-reactivity-speed-and-whole-system-changes">On reactivity,
+speed and whole-system changes</h3>
 <p>Dump:</p>
 <ol class="incremental">
 <li>Having a fast Makefile is super nice for when I’m working on a
@@ -421,10 +421,10 @@ watcher. I’d rather apply the change manually.</li>
 <p>Perhaps I made it work?</p>
 <p>Or?</p>
 <p>Nope. Back to manual teod/apply it is.</p>
-<h1 id="section-3">2022-06-26</h1>
+<h2 id="section-3">2022-06-26</h2>
 <p>Morning / afternoon / whatever.</p>
 <p>🤠</p>
-<h2 id="retrospective---play.teod.eu">Retrospective - play.teod.eu</h2>
+<h3 id="retrospective---play.teod.eu">Retrospective - play.teod.eu</h3>
 <p>How are we coming along?</p>
 <ol class="incremental">
 <li>I like working with Babashka</li>
@@ -449,7 +449,7 @@ categorize stuff as “don’t mind me”</li>
 <li>Do I want to be able to run my stuff with both JVM Clojure and
 Babashka?</li>
 </ol>
-<h2 id="current-pages">Current pages</h2>
+<h3 id="current-pages">Current pages</h3>
 <table>
 <thead>
 <tr class="header">
@@ -561,7 +561,7 @@ href="https://play.teod.eu/knowledge-worker/">https://play.teod.eu/knowledge-wor
 </tr>
 </tbody>
 </table>
-<h2 id="batch-editing-tags">Batch editing tags?</h2>
+<h3 id="batch-editing-tags">Batch editing tags?</h3>
 <p>Dump -</p>
 <p>distributed <code class="verbatim">${ARTICLE}/play.edn</code> files
 are “near” to the article (nice), but tedious to batch edit</p>
@@ -590,8 +590,8 @@ works out.</p>
 <p>I could implement “apply everything” in terms of “apply partial”</p>
 <p>First delete all the <code class="verbatim">play.edn</code> files
 Then apply partial And confirm changes in Git.</p>
-<h2 id="i-can-use-play.edn-to-ensure-link-integrity">I can use <code
-class="verbatim">play.edn</code> to ensure link integrity</h2>
+<h3 id="i-can-use-play.edn-to-ensure-link-integrity">I can use <code
+class="verbatim">play.edn</code> to ensure link integrity</h3>
 <div class="line-block">Idea<br />
     play.edn is a module declaration<br />
     it declares dependencies<br />
@@ -605,14 +605,14 @@ class="verbatim">play.edn</code> to ensure link integrity</h2>
             But I can generate a companion link site<br />
                 “app”<br />
                     ?link=LINK_ID that redirects</div>
-<h2 id="play-api-draft"><code class="verbatim">./play</code> API
-draft</h2>
+<h3 id="play-api-draft"><code class="verbatim">./play</code> API
+draft</h3>
 <pre><code>$ ./play2.clj relations :from :files :to :lines
 :id &quot;emacs&quot; :title &quot;(Doom) Emacs learning journal&quot; :form :rambling :readiness :in-progress
 :id &quot;feedback-design-impl&quot; :title &quot;Feedback loops, API design and how stuff works&quot;
 ...
 </code></pre>
-<h2 id="retrospective">Retrospective</h2>
+<h3 id="retrospective">Retrospective</h3>
 <p>Created the lines mode - and more.</p>
 <table>
 <thead>
@@ -653,9 +653,9 @@ draft</h2>
 <p>This almost looks like an hourglass architecture :)</p>
 <p>relations interface in the middle.</p>
 <p>I’m happy with the design.</p>
-<h1 id="section-4">2022-06-28</h1>
-<h2 id="possible-talk---dynamic-programming">Possible talk - dynamic
-programming</h2>
+<h2 id="section-4">2022-06-28</h2>
+<h3 id="possible-talk---dynamic-programming">Possible talk - dynamic
+programming</h3>
 <p>idea - dynaimc programming isn’t lack of types. Dynamic programming
 is options to do flexible stuff.</p>
 <p>Option - work on data structures rather than types. XML - static
@@ -667,7 +667,7 @@ interpretation / dynamic recompilation</p>
 (Or macros, but macros can be complex)</p>
 <p>Option - use schemas directly for validation rather than types</p>
 <p>Examples? Hmm Python? Clojure? Javascript?</p>
-<h1 id="trailing-whitespace">Trailing whitespace</h1>
+<h2 id="trailing-whitespace">Trailing whitespace</h2>
 <div class="line-block"><br />
 <br />
 <br />

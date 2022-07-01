@@ -227,36 +227,30 @@
 </header>
 <nav id="TOC" role="doc-toc">
 <ul class="incremental">
-<li><a href="#goals" id="toc-goals">Goals</a></li>
-<li><a href="#list-of-unix-signals" id="toc-list-of-unix-signals">List
-of Unix signals</a></li>
-<li><a href="#how-to-list-running-processes"
-id="toc-how-to-list-running-processes">How to list running
+<li><a href="#goals">Goals</a></li>
+<li><a href="#list-of-unix-signals">List of Unix signals</a></li>
+<li><a href="#how-to-list-running-processes">How to list running
 processes</a></li>
-<li><a href="#how-do-i-kill-a-process"
-id="toc-how-do-i-kill-a-process">How do I kill a process?</a></li>
-<li><a href="#how-do-i-kill-a-process-with-a-specific-signal"
-id="toc-how-do-i-kill-a-process-with-a-specific-signal">How do I kill a
-process with a specific signal?</a></li>
-<li><a href="#how-to-handle-unix-signals-with-python"
-id="toc-how-to-handle-unix-signals-with-python">How to handle Unix
+<li><a href="#how-do-i-kill-a-process">How do I kill a process?</a></li>
+<li><a href="#how-do-i-kill-a-process-with-a-specific-signal">How do I
+kill a process with a specific signal?</a></li>
+<li><a href="#how-to-handle-unix-signals-with-python">How to handle Unix
 signals with Python</a></li>
-<li><a href="#how-to-handle-unix-signals-with-other-languages"
-id="toc-how-to-handle-unix-signals-with-other-languages">How to handle
-Unix signals with other languages</a></li>
-<li><a href="#interactive-tools-to-work-with-running-processes"
-id="toc-interactive-tools-to-work-with-running-processes">Interactive
+<li><a href="#how-to-handle-unix-signals-with-other-languages">How to
+handle Unix signals with other languages</a></li>
+<li><a
+href="#interactive-tools-to-work-with-running-processes">Interactive
 tools to work with running processes</a></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
-<h1 id="goals">Goals</h1>
+<h2 id="goals">Goals</h2>
 <ol class="incremental">
 <li>Learn to send and handle common Unix signals</li>
 <li>Be able to handle sigterm and sigint while cleaning up temporary
 processes</li>
 </ol>
-<h1 id="list-of-unix-signals">List of Unix signals</h1>
+<h2 id="list-of-unix-signals">List of Unix signals</h2>
 <p>We’re going to focus on four signals:</p>
 <table>
 <thead>
@@ -489,8 +483,8 @@ longer list.</p>
 </tr>
 </tbody>
 </table>
-<h1 id="how-to-list-running-processes">How to list running
-processes</h1>
+<h2 id="how-to-list-running-processes">How to list running
+processes</h2>
 <table>
 <tbody>
 <tr class="odd">
@@ -510,7 +504,7 @@ class="verbatim">ps | fzf</code> or <code
 class="verbatim">ps aux | fzf</code>.</p>
 <p>But what can we do with a process? Well, we can kill it. And … I must
 reluctantly admit I don’t know anything else we can do with it.</p>
-<h1 id="how-do-i-kill-a-process">How do I kill a process?</h1>
+<h2 id="how-do-i-kill-a-process">How do I kill a process?</h2>
 <p>First, we need something to kill. ☠️</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Leave this running in a terminal</span></span>
@@ -535,8 +529,8 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="
 <div class="sourceCode" id="cb6"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then kill it off.</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pkill</span> sleep</span></code></pre></div>
-<h1 id="how-do-i-kill-a-process-with-a-specific-signal">How do I kill a
-process with a specific signal?</h1>
+<h2 id="how-do-i-kill-a-process-with-a-specific-signal">How do I kill a
+process with a specific signal?</h2>
 <p><code class="verbatim">kill</code> and <code
 class="verbatim">pkill</code> accept a first argument as signal code. To
 kill with SIGINT, use <code class="verbatim">kill -2 PID</code> or <code
@@ -553,14 +547,14 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Or with kill if you want.</span></span>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Does the sleep process stop? Does it print anything?</span></span></code></pre></div>
-<h1 id="how-to-handle-unix-signals-with-python">How to handle Unix
-signals with Python</h1>
+<h2 id="how-to-handle-unix-signals-with-python">How to handle Unix
+signals with Python</h2>
 <p>TODO!</p>
-<h1 id="how-to-handle-unix-signals-with-other-languages">How to handle
-Unix signals with other languages</h1>
+<h2 id="how-to-handle-unix-signals-with-other-languages">How to handle
+Unix signals with other languages</h2>
 <p>Perhaps?</p>
-<h1 id="interactive-tools-to-work-with-running-processes">Interactive
-tools to work with running processes</h1>
+<h2 id="interactive-tools-to-work-with-running-processes">Interactive
+tools to work with running processes</h2>
 <dl class="incremental">
 <dt>top</dt>
 <dd>

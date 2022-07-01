@@ -26,10 +26,12 @@
        (map (fn [id]
               {:id id}))))
 
-(defn category [{:keys [lang] :as page}]
+(defn category [{:keys [lang readiness] :as page}]
   (cond
     (= lang :no) :norwegian
-    :else :just-page))
+    (= readiness :ready-for-comments) :ready-for-comments
+    (= readiness :wtf-is-this) :wtf-is-this
+    :else :other))
 
 (defn add-category [page]
   (assoc page :category (category page)))
@@ -42,10 +44,10 @@
        (sort-by :title)))
 
 (defn link [{:keys [id title readiness] :as _page}]
-  (str "- [[file:./" id "/][" (or title id) "]] =:readiness " readiness "="))
+  (str "- [[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
-  (let [{:keys [just-page norwegian]} (group-by :category pages)]
+  (let [{:keys [ready-for-comments norwegian wtf-is-this other]} (group-by :category pages)]
     (str/join "\n"
               (concat
                ["#+title: Towards an iterated game"
@@ -53,10 +55,18 @@
                 "Intent: bring ideas to life. Discuss, sharpen, play."
                 ""
                 "Status: very much work in progress. Please advance at your own peril."
-                ""
-                "Pages:"]
+                ""]
 
-               (for [page just-page]
+               ["Ready for comments:"]
+               (for [page ready-for-comments]
+                 (link page))
+
+               ["Uncategorized:"]
+               (for [page other]
+                 (link page))
+
+               ["Messy notes, probably not useful:"]
+               (for [page wtf-is-this]
                  (link page))
 
                [""
@@ -64,10 +74,7 @@
                (for [page norwegian]
                  (link page))
 
-               ["Possible next steps:
-
-- Write real content"]
-               ))))
+               ["Comments? Hit me up! See [[https://teod.eu][teod.eu]] for details."]))))
 
 ;; For development:
 ;;

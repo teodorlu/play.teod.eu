@@ -42,7 +42,7 @@
            (for [t targets]
              (str (html t) ": " (org t)
                   "\n\t"
-                  "pandoc -s --toc --from=org+smart -i " (org t)
+                  "pandoc -s --shift-heading-level-by --toc --from=org+smart -i " (org t)
                   (if css
                     " --css=../pandoc.css"
                       "")

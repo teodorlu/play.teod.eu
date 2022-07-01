@@ -13,7 +13,7 @@ bitemporal-worldview/index.html: bitemporal-worldview/index.org
 	pandoc -s --toc --from=org+smart -i bitemporal-worldview/index.org -o bitemporal-worldview/index.html
 
 clojure-interactive/index.html: clojure-interactive/index.org
-	pandoc -s --toc --from=org+smart -i clojure-interactive/index.org -o clojure-interactive/index.html
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i clojure-interactive/index.org -o clojure-interactive/index.html
 
 emacs/index.html: emacs/index.org
 	pandoc -s --toc --from=org+smart -i emacs/index.org -o emacs/index.html
@@ -58,3 +58,4 @@ unix-signals-intro/index.html: unix-signals-intro/index.org
 .PHONY: clean
 clean:
 	rm index.html
+	rm **/index.html

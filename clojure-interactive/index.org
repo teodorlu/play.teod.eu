@@ -1,12 +1,73 @@
 #+title: An interactive Clojure journey
 
+[[./..][..]]
+
 Welcome!
 
 This document is primarily an aide to an evening of learning focused on Clojure.
 However, ideas want to spread.
 The second objective is therefore to help you explore Clojure on your own.
 
-[[./..][..]]
+* Why Clojure?
+
+I like Clojure because:
+
+1. It has great support for interactive programming
+2. It has a great standard library
+3. It is a great tool for building your own abstractions.
+
+If Clojure is so great, why doesn't more people learn Clojure?
+
+Clojure is not easy.
+Getting started with Python, Javascript, Java, Go, Rust, Haskell or Elm is easier.
+
+Clojure is also /more different/ from other common languages than the common languages are different from each other.
+
+Here's a very subjective chart:
+
+#+begin_src text
+less different                                          more different
+
+------+----+---+---+-----+----------+----+------------------+--------+
+      .    .   .   .     .          .    .                  .        .
+      .    . Java  .     .         Elm   .                  .        .
+      .    .      Go     .            Haskell               .        .
+Javascript .            Rust                             Clojure     .
+        Python                                                  Prolog
+#+end_src
+
+I tried learning Clojure myself in 2014.
+You know what I thought?
+It sucked.
+No types.
+Mismatching parentheses.
+Who would ever like this crap?
+
+But revisiting the language in 2017 made me fall in love.
+What happened?
+
+In 2014 I thought I was done learning how to work.
+I expected to write reasonably correct code at once.
+No iteration needed.
+Long strides, in [[https://twitter.com/GeePawHill][GeePaw's]] words.
+I was also far from humble enough.
+Heck, I had studies stuff.
+Hard math.
+Programming languages.
+
+In 2017, my approach was different.
+Curiosity over entitlement.
+I had had started to get into Emacs, without really understanding why.
+I guess I was missing something from Vim and Sublime.
+A kind of mobility.
+A flexible context.
+An ability to move fast around, to see.
+Then I got to watch an experienced Clojure programmer using the REPL to its full potential.
+He assembled his system on the fly, changing the pieces as required.
+He /saw/.
+What's on this HTTP request?
+What's in this JSON payload?
+He saw, he coded, he changed the system, he observed the new system behavior.
 
 #+begin_verse
 

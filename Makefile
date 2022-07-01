@@ -1,7 +1,7 @@
 .PHONY: everything
-everything:  aphorisms/index.html bitemporal-worldview/index.html emacs/index.html feedback-design-impl/index.html grow-knowlege-together/index.html heterarchies/index.html iterate-kunnskapshage/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
+everything:  aphorisms/index.html bitemporal-worldview/index.html emacs/index.html feedback-design-impl/index.html grow-knowlege-together/index.html heterarchies/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-waist/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html sannhet-deskriptiv-preskriptiv/index.html unix-signals-intro/index.html
 
-index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn emacs/play.edn feedback-design-impl/play.edn grow-knowlege-together/play.edn heterarchies/play.edn iterate-kunnskapshage/play.edn journal/play.edn knowledge-worker/play.edn maksimal-opsjonalitet/play.edn narrow-waist/play.edn orthogonality-enables-optionality/play.edn product-for-developers/play.edn sannhet-deskriptiv-preskriptiv/play.edn unix-signals-intro/play.edn
+index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn emacs/play.edn feedback-design-impl/play.edn grow-knowlege-together/play.edn heterarchies/play.edn iterate-knowledge-archipelago/play.edn journal/play.edn knowledge-worker/play.edn maksimal-opsjonalitet/play.edn narrow-waist/play.edn orthogonality-enables-optionality/play.edn product-for-developers/play.edn sannhet-deskriptiv-preskriptiv/play.edn unix-signals-intro/play.edn
 	./index.clj
 
 aphorisms/index.html: aphorisms/index.org
@@ -22,8 +22,8 @@ grow-knowlege-together/index.html: grow-knowlege-together/index.org
 heterarchies/index.html: heterarchies/index.org
 	pandoc -s --toc --from=org+smart -i heterarchies/index.org -o heterarchies/index.html
 
-iterate-kunnskapshage/index.html: iterate-kunnskapshage/index.org
-	pandoc -s --toc --from=org+smart -i iterate-kunnskapshage/index.org -o iterate-kunnskapshage/index.html
+iterate-knowledge-archipelago/index.html: iterate-knowledge-archipelago/index.org
+	pandoc -s --toc --from=org+smart -i iterate-knowledge-archipelago/index.org -o iterate-knowledge-archipelago/index.html
 
 journal/index.html: journal/index.org
 	pandoc -s --toc --from=org+smart -i journal/index.org -o journal/index.html

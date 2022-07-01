@@ -1,5 +1,11 @@
 #+title: An interactive Clojure journey
 
+Welcome!
+
+This document is primarily an aide to an evening of learning focused on Clojure.
+However, ideas want to spread.
+The second objective is therefore to help you explore Clojure on your own.
+
 [[./..][..]]
 
 #+begin_verse

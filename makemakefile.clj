@@ -20,6 +20,11 @@
 (defn play-edn [target]
   (str target "/play.edn"))
 
+;; Generate phony target for pages
+(println ".PHONY: everything")
+(println "everything: " (str/join " " (map html targets)))
+(println "")
+
 ;; Generate target for root index
 ;;
 ;; TODO root index also depends on all the play.edn files found
@@ -41,8 +46,3 @@
                       "")
                   " -o " (html t)))))
 
-;; Generate phony target for pages
-(println "")
-(println "@PHONY: pages")
-(println "pages: " (str/join " " (map html targets)))
-(println "")

@@ -10,6 +10,10 @@ Timeline 2 - sequence of changes to an artifact.
 Timeline 1 - new pages are added, the system changes, contributors change.
 
 Timeline 2 - changelog for an article.
+* Application to play.teod.eu
+Timeline 1 - git log.
+
+Timeline 2 - if specific articles are going to undergo thorough changes, a changelog may be embedded.
 
 #+begin_verse
 

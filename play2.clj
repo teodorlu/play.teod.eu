@@ -5,6 +5,11 @@
 ;;   ./play relations :from :files :to :lines > lines.txt
 ;;   # edit lines.txt - do stuff in batch ...
 ;;   ./play relations :from :lines :to :files < lines.txt
+;;
+;; Wantlist:
+;;
+;;   ./play index # generate index.html
+;;   ./play makefile # generate makefile
 
 (require '[babashka.deps :as deps])
 (deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.30"}}})

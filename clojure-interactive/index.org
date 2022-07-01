@@ -6,7 +6,7 @@ Welcome!
 
 This document is primarily an aide to an evening of learning focused on Clojure.
 However, ideas want to spread.
-The second objective is therefore to help you explore Clojure on your own.
+The second objective is therefore to share a Clojure experience with any reader.
 
 * Why Clojure?
 
@@ -68,6 +68,16 @@ He /saw/.
 What's on this HTTP request?
 What's in this JSON payload?
 He saw, he coded, he changed the system, he observed the new system behavior.
+
+I wanted that.
+
+"So, should everyone code in Clojure?"
+
+🤷
+
+I like providing options.
+I don't like forcing things stuff down throats.
+If I can aide a curious mind, I'd be happy.
 
 #+begin_verse
 

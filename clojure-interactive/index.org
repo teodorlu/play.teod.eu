@@ -102,6 +102,24 @@ What kind of messages?
 Just data, really.
 I'm hoping we can play with doing interesting stuff with messages!
 
+* Step - running server
+
+There needs to be a server.
+To host websocket connections.
+So that clients can connect.
+And ... subscribe?
+Or should everyone just get every message?
+That's easiest.
+
+We're going to use HTTP-kit, compojure and Chord (because Zombie CLJ uses that).
+Also perhaps integrant, integrant is nice.
+
+#+begin_src clojure
+        http-kit/http-kit {:mvn/version "2.5.3"}   ; HTTP server
+        compojure/compojure {:mvn/version "1.6.2"} ; Routing
+        jarohen/chord {:mvn/version "0.8.1"}       ; Websockets
+        integrant/integrant {:mvn/version "0.8.0"} ; System (optional?)
+#+end_src
 
 #+begin_verse
 

@@ -221,3 +221,10 @@ M-x doom/reload-font
 #+end_src
 
 Done!
+* 2022-07-01
+Guten Morgen. Dobre utro.
+** Weird freezes when saving Org-mode files
+I just tried saving my journal, which is quite big.
+Emacs froze.
+Not sure why.
+Happens both when I use my own =C-ø= binding, and with the built-in =SPC f s=.

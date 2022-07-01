@@ -23,7 +23,7 @@ Getting started with Python, Javascript, Java, Go, Rust, Haskell or Elm is easie
 
 Clojure is also /more different/ from other common languages than the common languages are different from each other.
 
-Here's a very subjective chart:
+Here's a very subjective chart of languages:
 
 #+begin_src text
 less different                                          more different

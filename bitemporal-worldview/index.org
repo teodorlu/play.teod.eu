@@ -1,0 +1,30 @@
+#+title: A bitemporal worldview
+
+Timeline 1 - sequence of artifacts. Each artifact has a publication time.
+
+Timeline 2 - sequence of changes to an artifact.
+
+[[./..][..]]
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

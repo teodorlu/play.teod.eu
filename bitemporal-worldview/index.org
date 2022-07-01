@@ -1,10 +1,15 @@
 #+title: A bitemporal worldview
 
+[[./..][..]]
+
+* Definition
 Timeline 1 - sequence of artifacts. Each artifact has a publication time.
 
 Timeline 2 - sequence of changes to an artifact.
+* Application to Wikipedia
+Timeline 1 - new pages are added, the system changes, contributors change.
 
-[[./..][..]]
+Timeline 2 - changelog for an article.
 
 #+begin_verse
 

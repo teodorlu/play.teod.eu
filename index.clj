@@ -74,7 +74,7 @@
                (for [page norwegian]
                  (link page))
 
-               ["Comments? Hit me up! See [[https://teod.eu][teod.eu]] for details."]))))
+               ["Comments? Hit me up! Details on [[https://teod.eu][teod.eu]]."]))))
 
 ;; For development:
 ;;

@@ -22,7 +22,8 @@
 
 ;; Generate phony target for pages
 (println ".PHONY: everything")
-(println "everything: " (str/join " " (map html targets)))
+(println "everything: " (str/join " " (concat ["index.html"] (map html targets))))
+(println "")
 (println "")
 
 ;; Generate target for root index
@@ -30,6 +31,7 @@
 ;; TODO root index also depends on all the play.edn files found
 (println (str/join " " (concat ["index.html:" "index.clj"] (map play-edn targets))))
 (println "\t./index.clj")
+(println "")
 (println "")
 
 (def css false)
@@ -45,4 +47,10 @@
                     " --css=../pandoc.css"
                       "")
                   " -o " (html t)))))
+(println "")
+(println "")
 
+;; Clean target
+(println ".PHONY: clean")
+(println "clean:")
+(println "\trm index.html")

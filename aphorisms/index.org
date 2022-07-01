@@ -11,3 +11,5 @@
 4 - Late binding is awesome.
 
 5 - Never link to content without enriching the intent of linking with context.
+
+6 - Consider modeling /all possible states/ as one data structure. That can reduce edge cases.

@@ -56,27 +56,3 @@ I can ask Ole Jacob to help design an UI / view for the collected works of every
 I can ask Richard for content.
 
 Which things should I ask for?
-* .
-
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse

@@ -2,7 +2,7 @@
 
 [[./..][..]]
 
-* Content from people:
+* Where is other people's content?
 - Henrik om GraphQL: https://vimeo.com/181948165
 - Anders på Substack: https://substack.com/profile/27961793-anders-haugeto
 - Kim på Medium: https://medium.com/@handyman-kim

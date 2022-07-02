@@ -57,7 +57,8 @@ There's two mount commands mentioned - both =mount.fuse= and =mount.fuse3=.
 - =man 1 fusermount=
 - =man 8 mount=
 - =man 4 fuse=
-* Exploring https://github.com/libfuse/libfuse
+* Exploring libfuse
+Source. https://github.com/libfuse/libfuse
 ** libfuse is using pytest for testing
 https://docs.pytest.org/en/7.1.x/
 
@@ -75,3 +76,22 @@ Assert with =assert caputred.out == "on stdout"= or =assert captured.err == "on 
 Reading the Pytest documentation impresses me.
 It provides value without introducing coupling or dependencies.
 This is awesome.
+** Exploring http://libfuse.github.io/doxygen/
+Libfuse provides a low-level async API and a high-level synchronous API.
+
+From the documentation:
+
+#+begin_quote
+libfuse offers two APIs: a "high-level", synchronous API, and a "low-level"
+asynchronous API. In both cases, incoming requests from the kernel are passed to
+the main program using callbacks. When using the high-level API, the callbacks
+may work with file names and paths instead of inodes, and processing of a
+request finishes when the callback function returns. When using the low-level
+API, the callbacks must work with inodes and responses must be sent explicitly
+using a separate set of API functions.
+
+The high-level API that is primarily specified in fuse.h. The low-level API that
+is primarily documented in fuse_lowlevel.h.
+#+end_quote
+
+Smells hourglassy to me.

@@ -173,11 +173,12 @@ class="verbatim">man fuse</code></a>
 <li><a href="#options">Options</a></li>
 <li><a href="#see-also">See also</a></li>
 </ul></li>
-<li><a href="#exploring-httpsgithub.comlibfuselibfuse">Exploring
-<span>https://github.com/libfuse/libfuse</span></a>
+<li><a href="#exploring-libfuse">Exploring libfuse</a>
 <ul class="incremental">
 <li><a href="#libfuse-is-using-pytest-for-testing">libfuse is using
 pytest for testing</a></li>
+<li><a href="#exploring-httplibfuse.github.iodoxygen">Exploring
+<span>http://libfuse.github.io/doxygen/</span></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -266,8 +267,9 @@ class="verbatim">mount.fuse3</code>.</p>
 <li><code class="verbatim">man 8 mount</code></li>
 <li><code class="verbatim">man 4 fuse</code></li>
 </ul>
-<h2 id="exploring-httpsgithub.comlibfuselibfuse">Exploring <a
-href="https://github.com/libfuse/libfuse">https://github.com/libfuse/libfuse</a></h2>
+<h2 id="exploring-libfuse">Exploring libfuse</h2>
+<p>Source. <a
+href="https://github.com/libfuse/libfuse">https://github.com/libfuse/libfuse</a></p>
 <h3 id="libfuse-is-using-pytest-for-testing">libfuse is using pytest for
 testing</h3>
 <p><a
@@ -285,5 +287,24 @@ printed something. Read from <code class="verbatim">capfd</code> with
 <code class="verbatim">assert captured.err =</code> “on stderr”=.</p>
 <p>Reading the Pytest documentation impresses me. It provides value
 without introducing coupling or dependencies. This is awesome.</p>
+<h3 id="exploring-httplibfuse.github.iodoxygen">Exploring <a
+href="http://libfuse.github.io/doxygen/">http://libfuse.github.io/doxygen/</a></h3>
+<p>Libfuse provides a low-level async API and a high-level synchronous
+API.</p>
+<p>From the documentation:</p>
+<blockquote>
+<p>libfuse offers two APIs: a “high-level”, synchronous API, and a
+“low-level” asynchronous API. In both cases, incoming requests from the
+kernel are passed to the main program using callbacks. When using the
+high-level API, the callbacks may work with file names and paths instead
+of inodes, and processing of a request finishes when the callback
+function returns. When using the low-level API, the callbacks must work
+with inodes and responses must be sent explicitly using a separate set
+of API functions.</p>
+<p>The high-level API that is primarily specified in fuse.h. The
+low-level API that is primarily documented in
+fuse<sub>lowlevel</sub>.h.</p>
+</blockquote>
+<p>Smells hourglassy to me.</p>
 </body>
 </html>

@@ -339,6 +339,25 @@ Examples?
 - Provide context for introducing RDF
 - Build tools to redefine Engineering
 - Build argument for why engineering companies should lean into computational engineering
+
+-----
+
+I want to give Ole Jacob a big JSON file he can build UIs on top of
+
+=play.teod.eu/iterate-knowledge-archipelago.json=
+
+rich entity semantics - "url" "title"
+
+& filter on tags
+
+-----
+
+I want to get more info when I generate pages.
+This should be possible:
+
+  ./play.clj page compuational-engineering :title "Computational Engineering"
+
+And it should also write :author-url and :created-at.
 * Trailing whitespace
 #+begin_verse
 

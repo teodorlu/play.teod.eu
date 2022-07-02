@@ -75,7 +75,25 @@
                (for [page norwegian]
                  (link page))
 
-               ["Comments? Hit me up! Details on [[https://teod.eu][teod.eu]]."]))))
+               ["Comments? Hit me up! Details on [[https://teod.eu][teod.eu]]."]
+               [""
+                "Included for importance:"
+                ""
+
+                "** Efforts at \"writing things down together\" commonly fail because:
+
+1. Prematurely putting things into large hierarchies
+2. The inability to critique the hierarchy itself --- and iterate on the hierarchy
+3. The inability to have separate hierarchies
+4. More abstractly --- we need a /fractal/ structure, not a hierarchical one.
+5. Poor authority separation
+6. Bad effects from intermixing drafts and completed stuff
+7. Hard to find the good stuff
+8. Hard to search --- index
+9. Hard to build views
+10. Hard to embed small things we'd want to share
+"]
+               ))))
 
 ;; For development:
 ;;

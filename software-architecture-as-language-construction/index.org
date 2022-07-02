@@ -24,6 +24,8 @@ Principles for applying language to solve business problems
 
   straightforward is best - avoid indirection
 
+  solving business problems when the right modules / words / namespaces are provided should be trivial
+
 [[./..][..]]
 
 #+begin_verse

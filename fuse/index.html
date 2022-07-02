@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Towards an iterated game</title>
+  <title>FUSE</title>
   <style>
     html {
       line-height: 1.5;
@@ -160,74 +160,97 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Towards an iterated game</h1>
+<h1 class="title">FUSE</h1>
 </header>
-<p>Intent: bring ideas to life. Discuss, sharpen, play.</p>
-<p>Status: very much work in progress. Please advance at your own
-peril.</p>
-<p>Ready for comments:</p>
-<ul>
-<li><a href="./aphorisms/">Aphorisms</a></li>
-<li><a href="./product-for-developers/">Product discovery for software
-developers</a></li>
-<li><a href="./unix-signals-intro/">Unix signals: a crash
-course</a></li>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#definitions">Definitions</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#options">Options</a></li>
+<li><a href="#see-also">See also</a></li>
 </ul>
-<p>Uncategorized:</p>
-<ul>
-<li><a href="./emacs/">(Doom) Emacs learning journal</a></li>
-<li><a href="./journal/">Public journal</a></li>
+</nav>
+<p><a href="./..">..</a></p>
+<p>Finally, notes on an actual topic! Something I’m interested in
+learning. FUSE allows a program to provide a virtual file system. A
+virtual file system looks like a file system on the outside. But when a
+file is saved in the virtual file system, the program providing the file
+system can do whatever it wants.</p>
+<p>I decided to start out the “right place” - <code
+class="verbatim">man fuse</code>. I got redirected to <code
+class="verbatim">man 8 fuse</code>. Curious about what <code
+class="verbatim">man 8</code> stuff is, I haven’t seen that before. But
+no distractions now.</p>
+<p>I’ll start by simply reading and annotating the manual.</p>
+<h2 id="definitions">Definitions</h2>
+<p>What? <code class="verbatim">DEFINITIONS</code> contains the
+terminology in use in the FUSE manual. Understanding those terms is
+nice.</p>
+<p>Source: <code class="verbatim">man 8 fuse</code>, section
+DEFINITIONS.</p>
+<p>My definitions:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><code class="verbatim">MyProgram</code></td>
+<td>my program providing the virtual filesystem</td>
+</tr>
+</tbody>
+</table>
+<p>Manual definitions:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>FUSE</td>
+<td>kernel thing. Responds to “create file”, forwards requests to <code
+class="verbatim">MyProgram</code></td>
+</tr>
+<tr class="even">
+<td>filesystem</td>
+<td><code class="verbatim">MyProgram</code></td>
+</tr>
+<tr class="odd">
+<td>libfuse</td>
+<td>shared library. Makes writing <code
+class="verbatim">MyProgram</code> easy (or just possible)</td>
+</tr>
+<tr class="even">
+<td>filesystem owner</td>
+<td>The Unix user running <code class="verbatim">MyProgram</code>, and
+later mounting it with <code class="verbatim">fusermount3</code></td>
+</tr>
+<tr class="odd">
+<td>client</td>
+<td>A program that writes files, reads files, etc, from the virtual file
+system</td>
+</tr>
+</tbody>
+</table>
+<p>More details: <code class="verbatim">man 1 fusermount3</code>
+explains how to mount a virtual filesystem.</p>
+<h2 id="configuration">Configuration</h2>
+<p>What? This manual is written for me. It is my system — I control the
+system. Therefore, I choose. The <code
+class="verbatim">CONFIGURATION</code> section explains to me how I
+choose.</p>
+<p>Two options are present. <code class="verbatim">mount_max</code>
+controls the number of filesystems a user can create.</p>
+<h2 id="options">Options</h2>
+<p>What? There’s lots of options.</p>
+<p>There are options related to caching: <code
+class="verbatim">kernel_cache</code> and <code
+class="verbatim">auto_cache</code>. So … it looks like there’s some way
+of speeding up recurring actions built in. Network file systems are
+mentioned.</p>
+<p>There’s two mount commands mentioned - both <code
+class="verbatim">mount.fuse</code> and <code
+class="verbatim">mount.fuse3</code>.</p>
+<h2 id="see-also">See also</h2>
+<ul class="incremental">
+<li><code class="verbatim">man 1 fusermount3</code></li>
+<li><code class="verbatim">man 1 fusermount</code></li>
+<li><code class="verbatim">man 8 mount</code></li>
+<li><code class="verbatim">man 4 fuse</code></li>
 </ul>
-<p>Messy notes, probably not useful. But still open – information wants
-to be free:</p>
-<ul>
-<li><a href="./bitemporal-worldview/">A bitemporal worldview</a></li>
-<li><a href="./clojure-interactive/">An interactive Clojure
-journey</a></li>
-<li><a href="./fuse/">FUSE</a></li>
-<li><a href="./feedback-design-impl/">Feedback loops, API design and how
-stuff works</a></li>
-<li><a href="./narrow-waist/">Hourglass architecture - concept capture
-and references</a></li>
-<li><a href="./grow-knowlege-together/">How to grow knowledge
-together</a></li>
-<li><a href="./iterate-knowledge-archipelago/">Iterate Knowledge
-Archipelago</a></li>
-<li><a href="./heterarchies/">Opt-in hierarchies</a></li>
-<li><a href="./orthogonality-enables-optionality/">Orthogonality enables
-optionality</a></li>
-<li><a href="./knowledge-worker/">You are a knowledge worker</a></li>
-<li><a href="./narrow-statements/">narrow-statements</a></li>
-<li><a href="./oggpo/">oggpo</a></li>
-<li><a href="./rdf-intro/">rdf-intro</a></li>
-<li><a
-href="./software-architecture-as-language-construction/">software-architecture-as-language-construction</a></li>
-</ul>
-<p>Norwegian content:</p>
-<ul>
-<li><a href="./sannhet-deskriptiv-preskriptiv/">Deskriptiv sannhet,
-preskriptiv sannhet</a></li>
-<li><a href="./maksimal-opsjonalitet/">MAKSIMAL OPSJONALITET</a></li>
-</ul>
-<p>Comments? Hit me up! Details on <a
-href="https://teod.eu">teod.eu</a>.</p>
-<p>Included for importance:</p>
-<h2
-id="efforts-at-writing-things-down-together-commonly-fail-because">Efforts
-at "writing things down together" commonly fail because:</h2>
-<ol>
-<li>Prematurely putting things into large hierarchies</li>
-<li>The inability to critique the hierarchy itself — and iterate on the
-hierarchy</li>
-<li>The inability to have separate hierarchies</li>
-<li>More abstractly — we need a <em>fractal</em> structure, not a
-hierarchical one.</li>
-<li>Poor authority separation</li>
-<li>Bad effects from intermixing drafts and completed stuff</li>
-<li>Hard to find the good stuff</li>
-<li>Hard to search — index</li>
-<li>Hard to build views</li>
-<li>Hard to embed small things we'd want to share</li>
-</ol>
 </body>
 </html>

@@ -1,0 +1,59 @@
+#+title: FUSE
+
+[[./..][..]]
+
+Finally, notes on an actual topic!
+Something I'm interested in learning.
+FUSE allows a program to provide a virtual file system.
+A virtual file system looks like a file system on the outside.
+But when a file is saved in the virtual file system, the program providing the file system can do whatever it wants.
+
+I decided to start out the "right place" - =man fuse=.
+I got redirected to =man 8 fuse=.
+Curious about what =man 8= stuff is, I haven't seen that before. But no distractions now.
+
+I'll start by simply reading and annotating the manual.
+
+* Definitions
+What?
+=DEFINITIONS= contains the terminology in use in the FUSE manual.
+Understanding those terms is nice.
+
+Source: =man 8 fuse=, section DEFINITIONS.
+
+My definitions:
+
+| =MyProgram= | my program providing the virtual filesystem |
+
+Manual definitions:
+
+| FUSE             | kernel thing. Responds to "create file", forwards requests to =MyProgram=   |
+| filesystem       | =MyProgram=                                                                 |
+| libfuse          | shared library. Makes writing =MyProgram= easy (or just possible)           |
+| filesystem owner | The Unix user running =MyProgram=, and later mounting it with =fusermount3= |
+| client           | A program that writes files, reads files, etc, from the virtual file system |
+
+More details: =man 1 fusermount3= explains how to mount a virtual filesystem.
+* Configuration
+What?
+This manual is written for me.
+It is my system --- I control the system.
+Therefore, I choose.
+The =CONFIGURATION= section explains to me how I choose.
+
+Two options are present.
+=mount_max= controls the number of filesystems a user can create.
+* Options
+What?
+There's lots of options.
+
+There are options related to caching: =kernel_cache= and =auto_cache=.
+So ... it looks like there's some way of speeding up recurring actions built in.
+Network file systems are mentioned.
+
+There's two mount commands mentioned - both =mount.fuse= and =mount.fuse3=.
+* See also
+- =man 1 fusermount3=
+- =man 1 fusermount=
+- =man 8 mount=
+- =man 4 fuse=

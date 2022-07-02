@@ -1,8 +1,8 @@
 .PHONY: everything
-everything:  index.html aphorisms/index.html bitemporal-worldview/index.html clojure-interactive/index.html emacs/index.html feedback-design-impl/index.html grow-knowlege-together/index.html heterarchies/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html software-architecture-as-language-construction/index.html unix-signals-intro/index.html
+everything:  index.html aphorisms/index.html bitemporal-worldview/index.html clojure-interactive/index.html emacs/index.html feedback-design-impl/index.html fuse/index.html grow-knowlege-together/index.html heterarchies/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html product-for-developers/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html software-architecture-as-language-construction/index.html unix-signals-intro/index.html
 
 
-index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn clojure-interactive/play.edn emacs/play.edn feedback-design-impl/play.edn grow-knowlege-together/play.edn heterarchies/play.edn iterate-knowledge-archipelago/play.edn journal/play.edn knowledge-worker/play.edn maksimal-opsjonalitet/play.edn narrow-statements/play.edn narrow-waist/play.edn oggpo/play.edn orthogonality-enables-optionality/play.edn product-for-developers/play.edn rdf-intro/play.edn sannhet-deskriptiv-preskriptiv/play.edn software-architecture-as-language-construction/play.edn unix-signals-intro/play.edn
+index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn clojure-interactive/play.edn emacs/play.edn feedback-design-impl/play.edn fuse/play.edn grow-knowlege-together/play.edn heterarchies/play.edn iterate-knowledge-archipelago/play.edn journal/play.edn knowledge-worker/play.edn maksimal-opsjonalitet/play.edn narrow-statements/play.edn narrow-waist/play.edn oggpo/play.edn orthogonality-enables-optionality/play.edn product-for-developers/play.edn rdf-intro/play.edn sannhet-deskriptiv-preskriptiv/play.edn software-architecture-as-language-construction/play.edn unix-signals-intro/play.edn
 	./index.clj
 
 
@@ -20,6 +20,9 @@ emacs/index.html: emacs/index.org
 
 feedback-design-impl/index.html: feedback-design-impl/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i feedback-design-impl/index.org -o feedback-design-impl/index.html
+
+fuse/index.html: fuse/index.org
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i fuse/index.org -o fuse/index.html
 
 grow-knowlege-together/index.html: grow-knowlege-together/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i grow-knowlege-together/index.org -o grow-knowlege-together/index.html

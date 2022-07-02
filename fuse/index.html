@@ -164,10 +164,21 @@
 </header>
 <nav id="TOC" role="doc-toc">
 <ul class="incremental">
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#exploring-man-fuse">Exploring <code
+class="verbatim">man fuse</code></a>
+<ul class="incremental">
 <li><a href="#definitions">Definitions</a></li>
 <li><a href="#configuration">Configuration</a></li>
 <li><a href="#options">Options</a></li>
 <li><a href="#see-also">See also</a></li>
+</ul></li>
+<li><a href="#exploring-httpsgithub.comlibfuselibfuse">Exploring
+<span>https://github.com/libfuse/libfuse</span></a>
+<ul class="incremental">
+<li><a href="#libfuse-is-using-pytest-for-testing">libfuse is using
+pytest for testing</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -176,13 +187,16 @@ learning. FUSE allows a program to provide a virtual file system. A
 virtual file system looks like a file system on the outside. But when a
 file is saved in the virtual file system, the program providing the file
 system can do whatever it wants.</p>
+<h2 id="introduction">Introduction</h2>
 <p>I decided to start out the “right place” - <code
 class="verbatim">man fuse</code>. I got redirected to <code
 class="verbatim">man 8 fuse</code>. Curious about what <code
 class="verbatim">man 8</code> stuff is, I haven’t seen that before. But
 no distractions now.</p>
 <p>I’ll start by simply reading and annotating the manual.</p>
-<h2 id="definitions">Definitions</h2>
+<h2 id="exploring-man-fuse">Exploring <code
+class="verbatim">man fuse</code></h2>
+<h3 id="definitions">Definitions</h3>
 <p>What? <code class="verbatim">DEFINITIONS</code> contains the
 terminology in use in the FUSE manual. Understanding those terms is
 nice.</p>
@@ -228,14 +242,14 @@ system</td>
 </table>
 <p>More details: <code class="verbatim">man 1 fusermount3</code>
 explains how to mount a virtual filesystem.</p>
-<h2 id="configuration">Configuration</h2>
+<h3 id="configuration">Configuration</h3>
 <p>What? This manual is written for me. It is my system — I control the
 system. Therefore, I choose. The <code
 class="verbatim">CONFIGURATION</code> section explains to me how I
 choose.</p>
 <p>Two options are present. <code class="verbatim">mount_max</code>
 controls the number of filesystems a user can create.</p>
-<h2 id="options">Options</h2>
+<h3 id="options">Options</h3>
 <p>What? There’s lots of options.</p>
 <p>There are options related to caching: <code
 class="verbatim">kernel_cache</code> and <code
@@ -245,12 +259,29 @@ mentioned.</p>
 <p>There’s two mount commands mentioned - both <code
 class="verbatim">mount.fuse</code> and <code
 class="verbatim">mount.fuse3</code>.</p>
-<h2 id="see-also">See also</h2>
+<h3 id="see-also">See also</h3>
 <ul class="incremental">
 <li><code class="verbatim">man 1 fusermount3</code></li>
 <li><code class="verbatim">man 1 fusermount</code></li>
 <li><code class="verbatim">man 8 mount</code></li>
 <li><code class="verbatim">man 4 fuse</code></li>
 </ul>
+<h2 id="exploring-httpsgithub.comlibfuselibfuse">Exploring <a
+href="https://github.com/libfuse/libfuse">https://github.com/libfuse/libfuse</a></h2>
+<h3 id="libfuse-is-using-pytest-for-testing">libfuse is using pytest for
+testing</h3>
+<p><a
+href="https://docs.pytest.org/en/7.1.x/">https://docs.pytest.org/en/7.1.x/</a></p>
+<p>Pytest is lightweight. Very lightweight. There’s no runtime
+dependency on it to get started testing code. Name your tests <code
+class="verbatim">test_...</code>, and it just works. Put asserts in the
+tests. Pytest can inject dependencies into tests with “fixtures”. <code
+class="verbatim">capfd</code> is such a fixture. If your test takes a
+<code class="verbatim">capfd</code> argument, it will capture “file
+descriptors” for stdin and stdout. You can then assert that stdout
+printed something. Read from <code class="verbatim">capfd</code> with
+<code class="verbatim">captured = capfd.readouterr()</code>. Assert with
+<code class="verbatim">assert caputred.out =</code> “on stdout”= or
+<code class="verbatim">assert captured.err =</code> “on stderr”=.</p>
 </body>
 </html>

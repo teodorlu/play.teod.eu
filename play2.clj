@@ -6,10 +6,16 @@
 ;;   # edit lines.txt - do stuff in batch ...
 ;;   ./play relations :from :lines :to :files < lines.txt
 ;;
-;; Wantlist:
+;; Wanted commands:
 ;;
-;;   ./play index # generate index.html
-;;   ./play makefile # generate makefile
+;;   ./play index > index.html # generate index.html
+;;   ./play makefile > makefile # generate makefile
+;;   ./play page rdf-intro :title "Introduction to linked data with RDF and Datalog"
+;;   ./play preview
+;;
+;; Wanted behavior:
+;;
+;;   When I create a new page, I write :author-url and :created-at
 
 (require '[babashka.deps :as deps])
 (deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.30"}}})

@@ -51,14 +51,6 @@ page PAGE_NAME
       (spit org-file (org-doc {:title page
                                :trailing-blank-lines 20})))
 
-    ;; Watch file
-    (when-not (fs/exists? watch-file)
-      (spit watch-file "#!/usr/bin/env bash
-
-watchexec -f '*.org' -- 'printf \"reloading @ \" && date && pandoc -s -i index.org -o index.html'
-")
-      (fs/set-posix-file-permissions watch-file "rwxr-xr-x"))
-
     (when-not (fs/exists? play-page)
       (spit play-page (pr-str {:title page :readiness :wtf-is-this})))
 

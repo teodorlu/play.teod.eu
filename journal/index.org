@@ -422,6 +422,7 @@ Don't be vague.
 
 This feels like a statement that sometimes a bad abstraction is required to get to a good abstraction.
 Also, I hate being forced to do stuff.
+** Emacs is a tool for research that happens to work for code too
 * Trailing whitespace
 #+begin_verse
 

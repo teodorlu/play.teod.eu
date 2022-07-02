@@ -331,6 +331,14 @@ Examples?
     Python?
     Clojure?
     Javascript?
+
+* 2022-07-02
+** Braindump / thought stack
+- Establish iterate knowledge archipelago to improve long-term internal communication
+- Provide context for introducing Clojure
+- Provide context for introducing RDF
+- Build tools to redefine Engineering
+- Build argument for why engineering companies should lean into computational engineering
 * Trailing whitespace
 #+begin_verse
 

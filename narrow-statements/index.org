@@ -1,0 +1,58 @@
+#+title: narrow-statements
+
+Idea
+
+Coordination is easier when statements are narrow
+
+Narrow /interpreted/ statements requires
+
+  Statement is composed of narrow pieces
+
+  Context where statement is interpreted is aware of the pieces
+
+Challenge - building new language.
+
+Should new language pieces be introduced?
+
+  I say yes
+
+  Otherwise there is no improvement
+
+  sharing new language requires communication - interplay - idea movement - idea enrichment
+
+How should a group share knowledge?
+
+  Requirement - narrow statements
+
+  Strategy for achieving narrow statements
+
+    Pre-shared agenda of topics - "is this something you care about?"
+
+    Each topic is introduced by someone
+
+    Then there are questions / criticisms.
+
+[[./..][..]]
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

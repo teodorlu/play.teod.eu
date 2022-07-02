@@ -403,6 +403,12 @@ Why?
     I prefer speaking to writing in conversation
 
         I think? I'm not quite sure.
+** I dislike IDEs because in IDEs, plain text and prose is second class
+That basically means they are missing Org-mode.
+
+So perhaps "I dislike anything that doesn't have Org-mode" is better.
+
+😆
 * Trailing whitespace
 #+begin_verse
 

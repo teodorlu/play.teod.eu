@@ -1,5 +1,7 @@
 #+title: rdf-intro
 
+[[./..][..]]
+
 Intent: introduce RDF for knowledge modeling.
 
 1. Show wikidata
@@ -9,7 +11,24 @@ Intent: introduce RDF for knowledge modeling.
 4. Should I show RDF or datascript?
    1. I know datascript, so perhaps just use that.
 
-[[./..][..]]
+Why?
+
+Better model for knowledge than SQL.
+Provides a layer to /lay on top/ of normal articles.
+Wikipedia --- RDF model (wikidata) drives tables that can be embedded in articles.
+AND assets are also rich. Images are rich.
+
+Do I need an intermediate layer between entities (articles) and assets?
+
+Are links assets?
+
+Are there other kinds of assets?
+
+Should assets be queryable?
+
+Batch readable, batch writeable?
+
+Hmm
 
 #+begin_verse
 

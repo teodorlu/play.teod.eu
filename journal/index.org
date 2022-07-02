@@ -423,6 +423,14 @@ Don't be vague.
 This feels like a statement that sometimes a bad abstraction is required to get to a good abstraction.
 Also, I hate being forced to do stuff.
 ** Emacs is a tool for research that happens to work for code too
+https://irreal.org/blog/?p=10050
+
+refers to
+https://www.ingentaconnect.com/content/matthey/jmtr/2022/00000066/00000002/art00002;jsessionid=2tqj0na4wh7rw.x-ic-live-01
+
+and https://pubs.acs.org/doi/10.1021/acscatal.5b00538
+
+and https://www.technology.matthey.com/article/66/2/122-129/
 * Trailing whitespace
 #+begin_verse
 

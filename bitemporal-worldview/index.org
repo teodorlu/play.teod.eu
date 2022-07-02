@@ -14,6 +14,10 @@ Timeline 2 - changelog for an article.
 Timeline 1 - git log.
 
 Timeline 2 - if specific articles are going to undergo thorough changes, a changelog may be embedded.
+* Example from Eric Raymond
+Revision history up top.
+
+http://catb.org/~esr/faqs/smart-questions.html
 
 #+begin_verse
 

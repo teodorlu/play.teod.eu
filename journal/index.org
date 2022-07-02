@@ -366,6 +366,8 @@ I haven't used any of them in a long time
 Makefile works well
 
 Action: delete em.
+** I deleted the watchbuild files
+☀️
 * Trailing whitespace
 #+begin_verse
 

@@ -368,6 +368,41 @@ Makefile works well
 Action: delete em.
 ** I deleted the watchbuild files
 ☀️
+** Docs fanout factor
+For me:
+
+| Written for myself | 10 |
+| Shared with others |  1 |
+
+Why?
+
+    Working on my own ideas / perception / intent is something I'd like to do with an internal feedback loop.
+
+Why?
+
+    Hmm, good question.
+
+    Well, easy answer. Because I don't get anywhere as fast ahead through conversation with others.
+
+Why?
+
+    No, actually, that's not it.
+
+    And amount of written text is the wrong metric
+
+    Effort is the right metric
+
+    For effort, it's perhaps 50/50
+
+    50 % internal
+
+    50 % external.
+
+    I prefer writing to thinking when iterating internally.
+
+    I prefer speaking to writing in conversation
+
+        I think? I'm not quite sure.
 * Trailing whitespace
 #+begin_verse
 

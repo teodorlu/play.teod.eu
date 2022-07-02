@@ -71,3 +71,7 @@ If your test takes a =capfd= argument, it will capture "file descriptors" for st
 You can then assert that stdout printed something.
 Read from =capfd= with =captured = capfd.readouterr()=.
 Assert with =assert caputred.out == "on stdout"= or =assert captured.err == "on stderr"=.
+
+Reading the Pytest documentation impresses me.
+It provides value without introducing coupling or dependencies.
+This is awesome.

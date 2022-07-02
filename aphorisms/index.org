@@ -15,3 +15,5 @@
 6 - Consider modeling /all possible states/ as one data structure. That can reduce edge cases.
 
 7 - DO - critique your documentation when "How does X work?" is asked.
+
+8 - DON'T require hierarchy to be equal to legibility

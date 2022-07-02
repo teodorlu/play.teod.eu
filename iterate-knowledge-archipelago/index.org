@@ -33,6 +33,15 @@ Lobbied heavily for people to take part
    3. Consider having it work with Iterbart
 ** Possible process name: bottom-up knowledge synthesis
 Me likey.
+** Efforts at "writing things down" commonly fail because of:
+1. Prematurely putting things into large hierarchies
+2. The inability to critique the hierarchy itself
+3. Poor authority separation
+4. Bad effects from intermixing drafts and completed stuff
+5. Hard to find the good stuff
+6. Hard to search --- index
+7. Hard to build views
+8. Hard to embed small things we'd want to share
 ** How/who should I ask for help?
 Richard? Nils? Henrik? Andreas?
 

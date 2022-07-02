@@ -459,4 +459,4 @@ https://gitlab.com/publicvoit/orgdown/-/tree/master
 #+end_verse
 
 I like trailing whitespace - so that I can center content vertically when
-writing, and avoid it moving around :)
+writing, and avoid the text moving as I type!

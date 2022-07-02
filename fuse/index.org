@@ -95,3 +95,5 @@ is primarily documented in fuse_lowlevel.h.
 #+end_quote
 
 Smells hourglassy to me.
+* Perhaps I just need to learn C.
+Aww.

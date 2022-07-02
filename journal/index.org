@@ -431,6 +431,9 @@ https://www.ingentaconnect.com/content/matthey/jmtr/2022/00000066/00000002/art00
 and https://pubs.acs.org/doi/10.1021/acscatal.5b00538
 
 and https://www.technology.matthey.com/article/66/2/122-129/
+
+And "which is the first subset of Org-mode that should be supported?"
+https://gitlab.com/publicvoit/orgdown/-/tree/master
 * Trailing whitespace
 #+begin_verse
 

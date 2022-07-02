@@ -1,0 +1,46 @@
+#+title: One Good Goal Plus Options
+
+[[./..][..]]
+
+Ref aphorism - "more than the minimal number of moving pieces is bad"
+
+What is the minimal amount of product work required for good developer utilization?
+
+I propose: /One Good Goal Plus Options/.
+
+"One good goal" - we have at least one thing we know is valuable.
+"Thing is valuable?"
+We have done sufficient work on business risk, usability risk and value risk to know that this makes sense.
+
+"Plus Options" - set expectations /not/ that devs spend 100 % of their time chasing the single goal.
+Rather - enable optionality.
+
+Optionality requires:
+
+- sufficient Slack for the developer
+- knowledge of other (more fuzzy) goals
+  - either dev-driven - "this is useful"
+  - or other-driven "hey, what about this idea. Any takers?"
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

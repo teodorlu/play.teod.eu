@@ -64,3 +64,7 @@ together?
 Knowledge management?
 Intent management?
 Peter Drucker and Andy Grove come to mind.
+
+It's so weird that we have such strong feelings for the quality of our code.
+Yet --- our intention, our goals are /not/ held to the same scrutiny.
+In fact, they often seem accidental.

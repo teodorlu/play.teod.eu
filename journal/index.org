@@ -412,6 +412,16 @@ That basically means they are missing Org-mode.
 So perhaps "I dislike anything that doesn't have Org-mode" is better.
 
 😆
+** Observation: sometimes vague and general is required
+#+begin_quote
+I feel shackled by pressure for specificity.
+Always be specific.
+Specific is better.
+Don't be vague.
+#+end_quote
+
+This feels like a statement that sometimes a bad abstraction is required to get to a good abstraction.
+Also, I hate being forced to do stuff.
 * Trailing whitespace
 #+begin_verse
 

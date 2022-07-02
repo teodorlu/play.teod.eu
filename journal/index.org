@@ -358,6 +358,14 @@ This should be possible:
   ./play.clj page compuational-engineering :title "Computational Engineering"
 
 And it should also write :author-url and :created-at.
+** I'd like to avoid the watchbuild files
+Are they even required any more?
+
+I haven't used any of them in a long time
+
+Makefile works well
+
+Action: delete em.
 * Trailing whitespace
 #+begin_verse
 

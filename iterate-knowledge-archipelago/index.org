@@ -12,10 +12,11 @@
 
 From friends:
 
-- Kent Beck: https://geekincentives.substack.com/?utm_source=account-card&utm_content=reads
+- Kent Beck: https://geekincentives.substack.com
 - Amos: https://fasterthanli.me/articles
   - Suggested by Christian Duvolt
   - "Follow the rabbit hole" style of storytelling. Curiosity driven.
+- Bret Victor: http://worrydream.com/
 * 2022-06-30
 Initial call to action to start building our knowledge archipelago.
 * 2022-07-01

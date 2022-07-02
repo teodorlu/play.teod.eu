@@ -33,6 +33,10 @@ Lobbied heavily for people to take part
    3. Consider having it work with Iterbart
 ** Possible process name: bottom-up knowledge synthesis
 Me likey.
+** People to ask to collaborate
+Richard? Nils? Henrik? Andreas?
+
+Well, everyone, really. People bring stuff to the table.
 * .
 
 #+begin_verse

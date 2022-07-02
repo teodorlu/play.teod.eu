@@ -139,6 +139,22 @@
          (map (fn [{:keys [id] :as page}] {id page}))
          (into {}))))
 
+(defn page-index-org [{:keys [title trailing-blank-lines]}]
+  (str/join "\n"
+            (concat
+             ;; Header, title, link up
+             [(str "#+title: " title)
+              ""
+              "[[./..][..]]"
+              ""]
+
+             ;; Trailing whitespace.
+             (when trailing-blank-lines
+               (concat ["#+begin_verse"]
+                       (repeat trailing-blank-lines "")
+                       ["#+end_verse"
+                        ""])))))
+
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations
                  :lines lines->relations
@@ -153,12 +169,20 @@
     (let [rels ((sources from) {})]
       ((targets to) rels))))
 
+(defn page [{:keys [opts]}]
+  (prn opts))
+
 (defn main [& args]
-  (cli/dispatch [{:cmds ["relations"] :fn relations}]
+  (cli/dispatch [{:cmds ["relations"] :fn relations}
+                 {:cmds ["page"] :fn page :coerce {:lol :string}}]
                 args
-                {:coerce {:from :keyword
+                {:coerce {;; relations
+                          :from :keyword
                           :to :keyword
-                          :dry-run :boolean}}))
+                          :dry-run :boolean
+                          ;; page
+                          :title :string
+                          }}))
 
 (apply main *command-line-args*)
 

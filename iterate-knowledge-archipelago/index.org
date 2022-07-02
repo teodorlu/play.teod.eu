@@ -20,6 +20,17 @@ From friends:
 Initial call to action to start building our knowledge archipelago.
 * 2022-07-01
 Lobbied heavily for people to take part
+* 2022-07-02
+I want:
+
+1. Separate islands of content
+2. A collaboratively worked-on index into the system
+   1. Ask Ole Jacob to help?
+   2. Can it be just frontend?
+      1. Redeploy to register new sites
+      2. cache index in indexeddb/ localstorage
+      3. refresh index on each new page load
+   3. Consider having it work with Iterbart
 * .
 
 #+begin_verse

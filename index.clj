@@ -65,7 +65,8 @@
                (for [page other]
                  (link page))
 
-               ["Messy notes, probably not useful:"]
+               ["Messy notes, probably not useful."
+                " But still open -- information wants to be free:"]
                (for [page wtf-is-this]
                  (link page))
 

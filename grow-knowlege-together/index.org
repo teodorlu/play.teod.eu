@@ -28,6 +28,8 @@ I require intent.
 Where is the intent?
 Where is the intent!!!
 
+Answer: by "bottom up knowledge synthesis"
+
 #+begin_verse
 
 

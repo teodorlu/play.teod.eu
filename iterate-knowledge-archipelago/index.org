@@ -33,10 +33,18 @@ Lobbied heavily for people to take part
    3. Consider having it work with Iterbart
 ** Possible process name: bottom-up knowledge synthesis
 Me likey.
-** People to ask to collaborate
+** How/who should I ask for help?
 Richard? Nils? Henrik? Andreas?
 
 Well, everyone, really. People bring stuff to the table.
+
+But --- it's easier to help if you're asked about something specific.
+Where --- specifically --- can I ask for help?
+
+I can ask Ole Jacob to help design an UI / view for the collected works of everyone.
+I can ask Richard for content.
+
+Which things should I ask for?
 * .
 
 #+begin_verse

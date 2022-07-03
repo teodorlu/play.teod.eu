@@ -434,6 +434,13 @@ and https://www.technology.matthey.com/article/66/2/122-129/
 
 And "which is the first subset of Org-mode that should be supported?"
 https://gitlab.com/publicvoit/orgdown/-/tree/master
+* 2022-07-03
+** Actionable - SQLite as a file system
+Should be worthy of a page on its own.
+
+Also paves the way for what I can do with play.teod.eu.
+
+Also perhaps worthy of publishing to the Clojurians Slack? Hmm.
 * Trailing whitespace
 #+begin_verse
 

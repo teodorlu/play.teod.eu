@@ -1,0 +1,45 @@
+#+title: Shabakka
+
+[[./..][..]]
+
+Idea - an intermediate representation as a bridge between babashka and bash
+
+Functionality
+
+1. Load bash script into IR
+2. Load babashka script into IR
+3. Write IR to bash script
+4. Write IR to babashka script
+
+Motivation
+
+Ease migration from bash to babashka.
+
+Strategy
+
+Middle-out -- support a small subset of bash and babashka (starting out)
+
+When hitting something we don't support native translation for, shell out to either babashka or bash.
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

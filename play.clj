@@ -52,7 +52,9 @@ page PAGE_NAME
                                :trailing-blank-lines 20})))
 
     (when-not (fs/exists? play-page)
-      (spit play-page (pr-str {:title page :readiness :wtf-is-this})))
+      (spit play-page (pr-str {:title page
+                               :readiness :wtf-is-this
+                               :author-url "https://teod.eu"})))
 
     nil
     ))

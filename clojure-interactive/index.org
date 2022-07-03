@@ -80,6 +80,17 @@ I don't like forcing things stuff down throats.
 If I can aide a curious mind, I'd be happy.
 Please do keep your own agency.
 And please keep treating yourself as a person.
+* Why Clojure 2
+"We need to conform on languages" predicates that programming languages are like different breeds of horses.
+Different breeds of horses are mostly interchangeable.
+
+What if one programming language is a horse, another one is running shoes?
+One is a bike.
+Another is a lawnmower.
+One an excavator.
+Another a set of Lego bricks for building factories.
+
+If we assume the excavator model of programming languages, there is tremendous risk of only using horses.
 
 * Plan
 

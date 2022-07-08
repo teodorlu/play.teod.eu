@@ -441,6 +441,31 @@ Should be worthy of a page on its own.
 Also paves the way for what I can do with play.teod.eu.
 
 Also perhaps worthy of publishing to the Clojurians Slack? Hmm.
+* 2022-07-08
+Driving in Troms, with Tjerand and Torstein.
+** Problem - npx doesn't work offline
+npx seems to look for new versions on each invocation.
+I can't use the following offline:
+
+#+begin_src shell
+$ cat preview.sh
+#!/usr/bin/env bash
+
+npx live-server --no-browser --port=3000
+#+end_src
+
+So ... what do I want?
+Just having the dependencies available offline would be nice, really.
+
+Options:
+
+1. Something NPM based.
+   Probably means I need =node_modules=, =package.json= and =package-lock.json=.
+2. Something Clojure-JVM-based.
+3. Something Babashka-based.
+4. Just serving raw HTML in firefox, and triggering a hook to refresh on a keystroke - like I'm doing with Clerk
+
+
 * Trailing whitespace
 #+begin_verse
 

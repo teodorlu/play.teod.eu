@@ -1,0 +1,54 @@
+#+title: Discover the difference
+
+[[./..][..]]
+
+DRAFT - UNFINISHED
+
+Alternative titles: /Discover diversity/, /Discover options/, /Option discovery/
+
+# WHY CAN'T WE AGREE ON ANYTHING?
+
+There's friction between the need to discover options and stick to one path.
+Friction between improving optionality and keeping cohesion.
+Are we doing the right thing now?
+Should we be doing something else?
+
+If we want to keep our options open, how large is an option?
+A day?
+A week?
+A three month effort by four people?
+
+When should we improve optionality versus clean up all the paths not taken?
+
+Tension: "we want to experiment" vs "we're fragmented -- our effort is all over the place".
+
+I think this is just me rediscovering design thinking.
+Widen phase: get options down on the table.
+Narrow phase: bring value to completion.
+
+Individual developer: how much execution vs workflow experimentation?
+Individual product manager: "wide net product discovery" vs "does this thing work".
+Two weeks of team effort: what value are we providing now? What's the time frame? Value for whom?
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

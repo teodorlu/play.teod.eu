@@ -294,6 +294,11 @@ is a tool for research that happens to work for code too</a></li>
 <li><a href="#actionable---sqlite-as-a-file-system">Actionable - SQLite
 as a file system</a></li>
 </ul></li>
+<li><a href="#section-7">2022-07-08</a>
+<ul class="incremental">
+<li><a href="#problem---npx-doesnt-work-offline">Problem - npx doesn’t
+work offline</a></li>
+</ul></li>
 <li><a href="#trailing-whitespace">Trailing whitespace</a></li>
 </ul>
 </nav>
@@ -794,6 +799,30 @@ file system</h3>
 <p>Should be worthy of a page on its own.</p>
 <p>Also paves the way for what I can do with play.teod.eu.</p>
 <p>Also perhaps worthy of publishing to the Clojurians Slack? Hmm.</p>
+<h2 id="section-7">2022-07-08</h2>
+<p>Driving in Troms, with Tjerand and Torstein.</p>
+<h3 id="problem---npx-doesnt-work-offline">Problem - npx doesn’t work
+offline</h3>
+<p>npx seems to look for new versions on each invocation. I can’t use
+the following offline:</p>
+<pre class="shell"><code>$ cat preview.sh
+#!/usr/bin/env bash
+
+npx live-server --no-browser --port=3000
+</code></pre>
+<p>So … what do I want? Just having the dependencies available offline
+would be nice, really.</p>
+<p>Options:</p>
+<ol class="incremental">
+<li>Something NPM based. Probably means I need <code
+class="verbatim">node_modules</code>, <code
+class="verbatim">package.json</code> and <code
+class="verbatim">package-lock.json</code>.</li>
+<li>Something Clojure-JVM-based.</li>
+<li>Something Babashka-based.</li>
+<li>Just serving raw HTML in firefox, and triggering a hook to refresh
+on a keystroke - like I’m doing with Clerk</li>
+</ol>
 <h2 id="trailing-whitespace">Trailing whitespace</h2>
 <div class="line-block"><br />
 <br />

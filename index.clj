@@ -61,15 +61,21 @@
                (for [page ready-for-comments]
                  (str "- " (link page)))
 
-               ["Uncategorized:"]
-               (for [page other]
-                 (str "- " (link page)))
+               ["Uncategorized:"
+                ""
+                (str/join " --- "
+                          (for [page other]
+                            (link page)))
+                ""]
 
                ["Vague ideas, please ignore."
                 " Links to these mostly exist for me (Teodor)."
-                " But still open -- information wants to be free:"]
-               (for [page wtf-is-this]
-                 (str "- " (link page)))
+                " But still open -- information wants to be free:"
+                ""
+                (str/join " --- "
+                          (for [page wtf-is-this]
+                            (link page)))
+                ""]
 
                [""
                 "Norwegian content:"]

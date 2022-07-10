@@ -144,9 +144,13 @@
             (concat
              ;; Header, title, link up
              [(str "#+title: " title)
-              ""
-              "[[./..][..]]"
-              ""]
+              "
+
+DRAFT
+
+[[./..][..]]
+"
+              ]
 
              ;; Trailing whitespace.
              (when trailing-blank-lines

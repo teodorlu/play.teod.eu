@@ -76,69 +76,6 @@
           (with-out-str
             (pprint (dissoc page :id))))))
 
-(defn relations->table
-  "Produce a table of relations
-
-  Example table:
-
-  | :id                    | :title                           |
-  |------------------------+----------------------------------|
-  | \"unix-signals-intro\" | \"Unix signals: a crash course\" |
-  | \"aphorisms\"          | \"Aphorisms\"                    |
-  "
-  [rels]
-  (let [pr-value (fn [value]
-                   (if (= value ::missing)
-                     ""
-                     (pr-str value)))
-        columns (keys (apply merge (vals rels)))
-        value-row (fn [items]
-                    (str "| " (str/join " | " (map pr-value items)) " |"))
-        string-row (fn [items]
-                    (str "|" (str/join "|" items) "|"))]
-    ;; print header
-    (println (value-row columns))
-    (println (string-row (map (fn [_] "-----") columns)))
-    (doseq [page (vals rels)]
-      (println (value-row
-                (map (fn [column]
-                       (get page column ::missing))
-                     columns))))))
-
-(defn table->relations
-  "Read relations from a table on stdin
-
-  Example table:
-
-  | :id                    | :title                           |
-  |------------------------+----------------------------------|
-  | \"unix-signals-intro\" | \"Unix signals: a crash course\" |
-  | \"aphorisms\"          | \"Aphorisms\"                    |
-  "
-  [{}]
-  (let [lines (into [] (str/split-lines (slurp *in*)))
-        header-raw (first lines)
-        header (->> (str/split header-raw #"\|") ; | is column sep
-                    (drop 1) (drop-last 1)       ; first and last is sole |
-                    (map str/trim)
-                    (map edn/read-string))
-        body-raw (drop 2 lines)
-        parse-line (fn [s]
-                     (->>
-                      (str/split s #"\|")
-                      (drop 1) (drop-last 1)
-                      (map str/trim)
-                      (map (fn [key value] [key value]) header)
-                      (filter (fn [[_ value]]
-                                (not= value "")))
-                      (map (fn [[key value]]
-                             [key (edn/read-string value)]))
-                      (into {})))]
-    (->> body-raw
-         (map parse-line)
-         (map (fn [{:keys [id] :as page}] {id page}))
-         (into {}))))
-
 (defn page-index-org [{:keys [title trailing-blank-lines]}]
   (str/join "\n"
             (concat
@@ -161,12 +98,10 @@ DRAFT
 
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations
-                 :lines lines->relations
-                 :table table->relations}
+                 :lines lines->relations}
         targets {:lines relations->lines
                  :pretty relations->pretty
-                 :files relations->files
-                 :table relations->table}
+                 :files relations->files}
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))

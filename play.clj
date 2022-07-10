@@ -27,9 +27,13 @@ page PAGE_NAME
              ;; Header, title, link up
              [(str "#+title: " title)
               ""
-              "DRAFT
+              "[[./..][..]]
 
-[[./..][..]]"
+DRAFT
+
+TODO write article
+
+"
               ""]
 
              ;; Trailing whitespace.

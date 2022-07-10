@@ -65,7 +65,8 @@
                (for [page other]
                  (link page))
 
-               ["Messy notes, probably not useful."
+               ["Vague ideas, please ignore."
+                " Links to these mostly exist for me (Teodor)."
                 " But still open -- information wants to be free:"]
                (for [page wtf-is-this]
                  (link page))

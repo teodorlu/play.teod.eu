@@ -5,8 +5,19 @@
 DRAFT
 
 * about play.teod.eu
+
 Name. Should this be "meta"?
 
 No.
 "Meta" is never narrow.
 Go for a single global layer, please.
+
+* I need to "contract" / "narrow" before publishing
+
+The stuff that's published on my site right now is a real mess.
+Mess how?
+In many ways.
+But the big one: the ideas are intertwined.
+There's coupling.
+I could remove that coupling.
+Or at least attempt to remove that coupling.

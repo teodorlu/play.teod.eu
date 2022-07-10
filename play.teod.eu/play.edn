@@ -1,0 +1,5 @@
+{:title "play.teod.eu",
+ :readiness :forever-incomplete,
+ :author-url "https://teod.eu",
+ :form :rambling,
+ :lang :en}

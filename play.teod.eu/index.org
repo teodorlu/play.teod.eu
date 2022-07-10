@@ -1,0 +1,12 @@
+#+title: play.teod.eu
+
+[[./..][..]]
+
+DRAFT
+
+* about play.teod.eu
+Name. Should this be "meta"?
+
+No.
+"Meta" is never narrow.
+Go for a single global layer, please.

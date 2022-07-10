@@ -2,8 +2,6 @@
 
 [[./..][..]]
 
-DRAFT
-
 * about play.teod.eu
 
 Name. Should this be "meta"?

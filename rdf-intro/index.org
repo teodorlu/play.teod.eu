@@ -6,8 +6,8 @@ DRAFT
 
 Intent: introduce RDF for knowledge modeling.
 
-1. Show wikidata
-   1. Show how to query with wikidata
+1. Show Wikidata
+   1. Show how to query with Wikidata
 2. Show that RDF composes EASILY - in contrast to SQL
 3. Consider applying it to play.teod.eu / garden.iterate.no / archipelago.iterate.no
 4. Should I show RDF or datascript?

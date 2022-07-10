@@ -20,6 +20,7 @@
 (require '[babashka.deps :as deps])
 (deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.31"}}})
 (require '[babashka.cli :as cli]
+         '[babashka.fs :as fs]
          '[clojure.java.shell]
          '[clojure.string :as str]
          '[clojure.edn :as edn]
@@ -121,7 +122,24 @@ TODO write article
                     (map :id))))))
 
 (defn create-page [{:keys [opts]}]
-  (prn opts))
+  (let [page (:page opts)]
+    (assert page "Please specify which page to create!")
+    (let [org-file (str page "/index.org")
+          play-file (str page "/play.edn")]
+      (fs/create-dirs page)
+
+      ;; Org file
+      (when-not (fs/exists? org-file)
+        (spit org-file (page-index-org {:title page
+                                        :trailing-blank-lines 20})))
+
+      ;; Play file
+      (when-not (fs/exists? play-file)
+        (spit play-file (pr-str {:title page
+                                 :readiness :wtf-is-this
+                                 :author-url "https://teod.eu"})))
+
+      nil)))
 
 (defn main [& args]
   (cli/dispatch [{:cmds ["relations"] :fn relations}

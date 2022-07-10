@@ -121,7 +121,8 @@ TODO make content
                     (map :id))))))
 
 (defn create-page [{:keys [opts]}]
-  (let [page (:page opts)]
+  (let [page (:page opts)
+        title (or (:title opts) page)]
     (assert page "Please specify which page to create!")
     (let [org-file (str page "/index.org")
           play-file (str page "/play.edn")]
@@ -129,12 +130,12 @@ TODO make content
 
       ;; Org file
       (when-not (fs/exists? org-file)
-        (spit org-file (page-index-org {:title page
+        (spit org-file (page-index-org {:title title
                                         :trailing-blank-lines 20})))
 
       ;; Play file
       (when-not (fs/exists? play-file)
-        (spit play-file (pr-str {:title page
+        (spit play-file (pr-str {:title title
                                  :readiness :wtf-is-this
                                  :author-url "https://teod.eu"})))
 

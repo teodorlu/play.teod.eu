@@ -120,12 +120,13 @@ TODO write article
                     (take n)
                     (map :id))))))
 
-(defn page [{:keys [opts]}]
+(defn create-page [{:keys [opts]}]
   (prn opts))
 
 (defn main [& args]
   (cli/dispatch [{:cmds ["relations"] :fn relations}
-                 {:cmds ["page"] :fn page}
+                 {:cmds ["page"] :fn create-page :cmds-opts [:page]}
+                 {:cmds ["create-page"] :fn create-page :cmds-opts [:page]}
                  {:cmds ["random-page"] :fn random-page}]
                 args
                 {:coerce {;; relations

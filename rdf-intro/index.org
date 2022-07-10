@@ -1,6 +1,8 @@
-#+title: rdf-intro
+#+title: Modeling knowledge with RDF
 
 [[./..][..]]
+
+DRAFT
 
 Intent: introduce RDF for knowledge modeling.
 

@@ -83,9 +83,11 @@
              [(str "#+title: " title)
               "
 
+[[./..][..]]
+
 DRAFT
 
-[[./..][..]]
+TODO write article
 "
               ]
 

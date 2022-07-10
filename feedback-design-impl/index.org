@@ -1,4 +1,4 @@
-#+title: Feedback loops, API design and how stuff works
+#+title: Feedback loops, interface design and how stuff works
 
 [[./..][..]]
 
@@ -9,7 +9,7 @@ direct my attention?
 I've found that most of my effort as a software developer can be reduced to:
 
 1. Designing, creating and using feedback loops
-2. Designing abstractions
+2. Designing interfaces
 3. Discovering how stuff works.
 
 Curious? Read on.

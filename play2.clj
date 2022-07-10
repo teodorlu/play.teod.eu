@@ -173,12 +173,15 @@ DRAFT
     (let [rels ((sources from) {})]
       ((targets to) rels))))
 
-(defn random-page [{:keys [_opts]}]
-  (println
-   (->> (files->relations {})
-        vals
-        rand-nth
-        :id)))
+(defn random-page [{:keys [opts]}]
+  (let [n (or (:n opts) 1)]
+    (println
+     (str/join "\n"
+               (->> (files->relations {})
+                    vals
+                    shuffle
+                    (take n)
+                    (map :id))))))
 
 (defn page [{:keys [opts]}]
   (prn opts))
@@ -194,6 +197,7 @@ DRAFT
                           :dry-run :boolean
                           ;; page
                           :title :string
+                          :n :long
                           }}))
 
 (apply main *command-line-args*)

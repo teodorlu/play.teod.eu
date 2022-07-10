@@ -82,13 +82,12 @@
             (concat
              ;; Header, title, link up
              [(str "#+title: " title)
-              "
-
-[[./..][..]]
+              ""
+              "[[./..][..]]
 
 DRAFT
 
-TODO write article
+TODO make content
 "
               ]
 

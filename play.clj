@@ -42,12 +42,11 @@ TODO write article
                        ["#+end_verse"
                         ""])))))
 
-(defn page [args]
+(defn create-page [args]
   (let [opts (parse-opts args)
         page (or (:name opts)
                  (first (:cmds opts)))
         org-file (str page "/index.org")
-        watch-file (str page "/watchbuild.sh")
         play-page (str page "/play.edn")]
     (fs/create-dirs page)
 
@@ -67,7 +66,7 @@ TODO write article
 (defn -main []
   (let [[subcommand & args] *command-line-args*]
     (case subcommand
-      "page" (page args)
+      "page" (create-page args)
       (print-help))))
 
 (when (= *file* (System/getProperty "babashka.file"))

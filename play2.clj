@@ -18,7 +18,7 @@
 ;;   When I create a new page, I write :author-url and :created-at
 
 (require '[babashka.deps :as deps])
-(deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.30"}}})
+(deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.31"}}})
 (require '[babashka.cli :as cli]
          '[clojure.java.shell]
          '[clojure.string :as str]

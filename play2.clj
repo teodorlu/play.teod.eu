@@ -141,11 +141,24 @@ TODO write article
 
       nil)))
 
+(defn print-help [{}]
+  (println (str/trim "
+Usage: ./playground <subcommand> <options>
+
+Subcommands:
+
+page PAGE_NAME
+
+    Create a new Org-mode page, with a tiny Pandoc build system.
+")))
+
 (defn main [& args]
   (cli/dispatch [{:cmds ["relations"] :fn relations}
                  {:cmds ["page"] :fn create-page :cmds-opts [:page]}
                  {:cmds ["create-page"] :fn create-page :cmds-opts [:page]}
-                 {:cmds ["random-page"] :fn random-page}]
+                 {:cmds ["random-page"] :fn random-page}
+                 {:cmds ["help"] :fn print-help}
+                 {:cmds [] :fn print-help}]
                 args
                 {:coerce {;; relations
                           :from :keyword ;; page relation format

@@ -25,3 +25,9 @@ Or at least attempt to remove that coupling.
 I want metadata for :changed and :created.
 First because I want to filter / sort.
 Then perhaps later because that metadata is nice to have.
+
+* play.teod.eu is some code that generates some HTML
+
+Not more.
+
+Just one layer of indirection - as source, and as published.

@@ -44,7 +44,7 @@
        (sort-by :title)))
 
 (defn link [{:keys [id title readiness] :as _page}]
-  (str "- [[file:./" id "/][" (or title id) "]]"))
+  (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian wtf-is-this other]} (group-by :category pages)]
@@ -59,22 +59,22 @@
 
                ["Ready for comments:"]
                (for [page ready-for-comments]
-                 (link page))
+                 (str "- " (link page)))
 
                ["Uncategorized:"]
                (for [page other]
-                 (link page))
+                 (str "- " (link page)))
 
                ["Vague ideas, please ignore."
                 " Links to these mostly exist for me (Teodor)."
                 " But still open -- information wants to be free:"]
                (for [page wtf-is-this]
-                 (link page))
+                 (str "- " (link page)))
 
                [""
                 "Norwegian content:"]
                (for [page norwegian]
-                 (link page))
+                 (str "- " (link page)))
 
                ["Comments? Hit me up! Details on [[https://teod.eu][teod.eu]]."]
                [""

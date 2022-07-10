@@ -1,0 +1,66 @@
+#+title: Good software architecture
+
+[[./..][..]]
+
+DRAFT
+
+Idea - Good software architecture is:
+
+1. Good namespace design
+2. Not more indirection than necessary
+3. Orthogonal capabilities
+
+/Good namespace design/.
+Path to readable code: language construction, and application of that language.
+[[file:~/dev/teodorlu/play.teod.eu/software-architecture-as-language-construction/][software-architecture-as-language-construction]]
+Bottom layer: language construction.
+Top layer: language application.
+Task of bottom layer: expose capabilities as a good set of primitives.
+Task of top layer: straightforward imperative code that does what it should.
+
+/Not more indirection than necessary/.
+When we humans understand stuff, we create a hierarchy.
+We compartmentalize.
+Software codebases are commonly a manifestation of that hierarchy.
+We create folders, label, stick new stuff near where it belongs.
+I think this is bad.
+Why?
+If everyone has the exact same mental model of the code, it works.
+If the hierarchy is perfect, it works.
+If the hierarchy is imperfect, it starts to crack.
+New stuff is added "near other related stuff".
+Responsibility dilutes.
+After three years, we have multiple layers of cruft covering each thing we cared about.
+I propose that having more than the absolute minimum amount of indirection is bad.
+
+/Orthogonal capabilities/.
+Our strategy to achieve agility for the top layer and the bottom layer is different.
+Top-level modules are coupled to features, and are deletable.
+Bottom-level modules provide a capabilities with few dependencies.
+But how do we know what to put in each bottom-level module?
+I believe the answer is to enable good composition.
+We reach good composition by providing orthogonal capabilities.
+
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

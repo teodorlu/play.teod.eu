@@ -2,6 +2,8 @@
 
 [[./..][..]]
 
+DRAFT.
+
 Idea - an intermediate representation as a bridge between babashka and bash
 
 * Functionality

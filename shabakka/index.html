@@ -162,23 +162,34 @@
 <header id="title-block-header">
 <h1 class="title">Shabakka</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#functionality">Functionality</a></li>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#strategy">Strategy</a></li>
+<li><a href="#platform">Platform</a></li>
+</ul>
+</nav>
 <p><a href="./..">..</a></p>
 <p>Idea - an intermediate representation as a bridge between babashka
 and bash</p>
-<p>Functionality</p>
+<h2 id="functionality">Functionality</h2>
 <ol class="incremental">
 <li>Load bash script into IR</li>
 <li>Load babashka script into IR</li>
 <li>Write IR to bash script</li>
 <li>Write IR to babashka script</li>
 </ol>
-<p>Motivation</p>
+<h2 id="motivation">Motivation</h2>
 <p>Ease migration from bash to babashka.</p>
-<p>Strategy</p>
+<h2 id="strategy">Strategy</h2>
 <p>Middle-out – support a small subset of bash and babashka (starting
 out)</p>
 <p>When hitting something we don’t support native translation for, shell
 out to either babashka or bash.</p>
+<h2 id="platform">Platform</h2>
+<p>Fast shell script with CLI</p>
+<p>Online converter</p>
 <div class="line-block"><br />
 <br />
 <br />

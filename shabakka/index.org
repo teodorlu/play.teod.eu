@@ -4,22 +4,28 @@
 
 Idea - an intermediate representation as a bridge between babashka and bash
 
-Functionality
+* Functionality
 
 1. Load bash script into IR
 2. Load babashka script into IR
 3. Write IR to bash script
 4. Write IR to babashka script
 
-Motivation
+* Motivation
 
 Ease migration from bash to babashka.
 
-Strategy
+* Strategy
 
 Middle-out -- support a small subset of bash and babashka (starting out)
 
 When hitting something we don't support native translation for, shell out to either babashka or bash.
+
+* Platform
+
+Fast shell script with CLI
+
+Online converter
 
 #+begin_verse
 

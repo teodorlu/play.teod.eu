@@ -130,12 +130,12 @@ TODO write article
                  {:cmds ["random-page"] :fn random-page}]
                 args
                 {:coerce {;; relations
-                          :from :keyword
-                          :to :keyword
+                          :from :keyword ;; page relation format
+                          :to :keyword   ;; page relation format
                           :dry-run :boolean
                           ;; page
-                          :title :string
-                          :n :long
+                          :title :string ;; Page title
+                          :n :long       ;; Count - eg random page count
                           }}))
 
 (apply main *command-line-args*)

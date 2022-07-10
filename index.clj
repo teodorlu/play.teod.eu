@@ -91,8 +91,6 @@
                [""
                 "** Efforts at \"writing things down together\" commonly fail because:
 
-(included as a personal reminder)
-
 1. Prematurely putting things into large hierarchies
 2. The inability to critique the hierarchy itself --- and iterate on the hierarchy
 3. The inability to have separate hierarchies
@@ -103,6 +101,8 @@
 8. Hard to search --- index
 9. Hard to build views
 10. Hard to embed small things we'd want to share
+
+(included as a personal reminder)
 "]
                ))))
 

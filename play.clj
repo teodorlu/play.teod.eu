@@ -1,7 +1,6 @@
 #!/usr/bin/env bb
 
 (require '[clojure.string :as str]
-         '[clojure.java.shell :refer [sh]]
          '[babashka.fs :as fs])
 
 (defn print-help []

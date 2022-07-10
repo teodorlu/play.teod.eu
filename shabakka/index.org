@@ -27,6 +27,15 @@ Fast shell script with CLI
 
 Online converter
 
+* Option: other shells too
+
+Once we have an IR, we could support other platforms.
+For the whole IR, or for parts of it.
+When we hit stuff we don't understand, we can produce a comment.
+In the IR, we can represent "don't understand" explicitly.
+Or just as a comment there too.
+Converting the "unsupported comment" back should work fine.
+
 #+begin_verse
 
 

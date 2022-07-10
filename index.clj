@@ -57,20 +57,21 @@
                 "Status: very much work in progress. Please advance at your own peril."
                 ""]
 
-               ["Ready for comments:"]
+               ["** Ready for comments"]
                (for [page ready-for-comments]
                  (str "- " (link page)))
 
-               ["Uncategorized:"
+               ["** Uncategorized"
                 ""
                 (str/join " --- "
                           (for [page other]
                             (link page)))
                 ""]
 
-               ["Vague ideas, please ignore."
+               ["** Vague ideas, please ignore."
+                ""
                 " Links to these mostly exist for me (Teodor)."
-                " But still open -- information wants to be free:"
+                " But still open -- information wants to be free."
                 ""
                 (str/join " --- "
                           (for [page wtf-is-this]
@@ -78,16 +79,19 @@
                 ""]
 
                [""
-                "Norwegian content:"]
+                "** Norwegian content"
+                ""
+                "Not everybody speaks Norwegian."
+                ""]
                (for [page norwegian]
                  (str "- " (link page)))
 
-               ["Comments? Hit me up! Details on [[https://teod.eu][teod.eu]]."]
+               ["** Comments? Hit me up!"
+                "Details on [[https://teod.eu][teod.eu]]."]
                [""
-                "Included for importance:"
-                ""
-
                 "** Efforts at \"writing things down together\" commonly fail because:
+
+(included as a personal reminder)
 
 1. Prematurely putting things into large hierarchies
 2. The inability to critique the hierarchy itself --- and iterate on the hierarchy

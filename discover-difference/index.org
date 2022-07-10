@@ -4,9 +4,11 @@
 
 DRAFT - UNFINISHED
 
-Alternative titles: /Discover diversity/, /Discover options/, /Option discovery/
+Alternative titles: /Discover diversity/, /Discover options/, /Option discovery/, /Expand and contract in design thinking/
 
 # WHY CAN'T WE AGREE ON ANYTHING?
+
+* Notes 1
 
 There's friction between the need to discover options and stick to one path.
 Friction between improving optionality and keeping cohesion.
@@ -30,25 +32,31 @@ Individual developer: how much execution vs workflow experimentation?
 Individual product manager: "wide net product discovery" vs "does this thing work".
 Two weeks of team effort: what value are we providing now? What's the time frame? Value for whom?
 
-#+begin_verse
+* Notes 2
 
+This title is bad.
+Vague.
+"discover the difference" does NOT convey the intent right.
 
+But what should the title be?
+Stochastic thinking?
+Don't narrow too fast?
+Expand / contract in design thinking?
 
+* Where is the pain?
 
+The pain is when we narrow too fast.
+When we seek to add structure too early.
+When the narrow, clear interpretation wins over the uncertain one --- just because it's clearer.
 
+Is there a way out?
 
+1. Talking clearly about objectives / problems helps.
+   If problems and solutions are considered separately, we're able to discuss the what cleanly before honing in on the why.
+2. Ensure that just because there's a developer in the room, the developer is not responsible for having to build the whole thing discussed in a day.
 
+* More titles
 
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
+1. What first - then why
+2. Why discuss the what?
+3. What's better - before how better?

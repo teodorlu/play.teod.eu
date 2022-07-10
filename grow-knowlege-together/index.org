@@ -6,13 +6,6 @@ Status: DRAFT
 
 Short answer: not quite sure yet. But the solution involves creating and discussing ideas.
 
-I posted in the Iterate internal Slack internal Slack about growing knowledge together today (2022-06-30, my workplace).
-The response was lacking.
-Well, lacking is a vague word.
-Correction: the response was /zero/.
-MAN SHOUTS AT THE SKY.
-NOTHING HAPPENS.
-
 Why?
 
 I believe curating knowledge together is possible.
@@ -28,27 +21,6 @@ I require intent.
 Where is the intent?
 Where is the intent!!!
 
-Answer: with bottom up knowledge synthesis!
+How?
 
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
+With bottom up knowledge synthesis!

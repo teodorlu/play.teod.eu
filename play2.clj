@@ -173,12 +173,20 @@ DRAFT
     (let [rels ((sources from) {})]
       ((targets to) rels))))
 
+(defn random-page [{:keys [_opts]}]
+  (println
+   (->> (files->relations {})
+        vals
+        rand-nth
+        :id)))
+
 (defn page [{:keys [opts]}]
   (prn opts))
 
 (defn main [& args]
   (cli/dispatch [{:cmds ["relations"] :fn relations}
-                 {:cmds ["page"] :fn page :coerce {:lol :string}}]
+                 {:cmds ["page"] :fn page}
+                 {:cmds ["random-page"] :fn random-page}]
                 args
                 {:coerce {;; relations
                           :from :keyword

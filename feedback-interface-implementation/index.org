@@ -55,7 +55,7 @@ How long is the cycle time from changing product behavior to seeing how the new 
 How /wide/ is the product feedback that we're getting?
 High-resolution feedback is being inside the user's head while they solve a complete product "job to be done".
 Low-resolution feedback is asking the users what they think once in a while.
-** Product interface --- what is the prodct as seen by the user?
+** Product interface --- what is the product as experienced by the user?
 Does the user understand how to use the product?
 How long does it take a new user to get up to speed?
 How effectively can a user solve common tasks?

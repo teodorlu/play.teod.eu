@@ -12,7 +12,12 @@ No.
 "Meta" is never narrow.
 Go for a single global layer, please.
 
+
 * I need to "contract" / "narrow" before publishing
+
+Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?
+
+** Early view
 
 The stuff that's published on my site right now is a real mess.
 Mess how?
@@ -21,6 +26,11 @@ But the big one: the ideas are intertwined.
 There's coupling.
 I could remove that coupling.
 Or at least attempt to remove that coupling.
+
+** 2022-07-12 says hello
+At the time that I wrote the text above, everything was one big lump.
+
+Merely splitting between "feedback welcome", "forever incomplete" and "mess" helps me A LOT personally.
 
 * Date tagging
 

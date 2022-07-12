@@ -174,7 +174,10 @@ Level 3 - industry view.
 The interface is current market best practices.
 Feedback is how effectively the workflows can compete with other workflows.
 Are you enabling better workflows?
-
+* As questions
+| Feedback loop    | How do we know if it works?                            |
+| Interface design | What is the correct behavior?                          |
+| How it works     | Let's bridge the current behavior to correct behavior. |
 * Retrospective on this article
 Right now, I've split the article into sections about feedback loop, interface design and implementation.
 That's clear.

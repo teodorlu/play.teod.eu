@@ -37,9 +37,218 @@ And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
 ** Should this page be journal oriented (indexed first by date?)
 
 Perhaps. Consider moving it over.
-* 2022-07-12
-Case: tags.
+* 2022-05-26
+** From #teodor-discuss (Iterate slack)
+Source: https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869
 
+Hva vil jeg egentlig å få ut av en nettside?
+
+Effektivt å skrive tekst. Kan gjøre det i vanlige tekstformater.
+Frittstående sider. Løs kobling, trenger ikke samme struktur overalt.
+Gjenbrukbare komponenter.
+Hele greia funker som en statisk side.
+Statisk html er sjekket inn i git.
+Lynraske bygg.
+Effektivt å jobbe med hiccup.
+
+Effektivt å jobbe med ideer.
+Effektivt å lenke mellom ideer.
+
+Lett å få inn ting jeg har tegnet. Feks på papir, remarkable eller i figma
+
+Twitter... Trenger jeg å tenke på det?
+Kommentarer. Webmentions? Systemet jeg bruker i dag? Hacker news? Twitter?
+Jeg ønsker jo å kunne diskutere ting på Twitter
+Og det gir mening å ha invitasjoner til diskusjon på Twitter, samt invitasjon til å diskutere på Twitter på nettsiden.
+
+Hva med unicad og blogging og artikler for sånt?
+
+Approach: embed unicad I noe annet.
+Approach: bygg skriving rett inn i unicad.
+:thinking_face:
+
+Hva får jeg egentlig ut av en nettside som jeg ikke får her i #teodor-discuss?
+Tilgjengelig for folk utenfra
+Bedre på å redigere store ting
+Mer kontroll på presentasjon (også mer jobb)
+
+Oddmund:
+Har du vurdert å bare skrive nettsida di i HTML?
+
+Det er jo cirka det jeg gjør på subcons.teod.eu. Bare via hiccup
+
+Kan laste opp rå html også, og det funker fint.
+
+Ting jeg ønsker å skrive om:
+Ortogonalitet
+Feedback-loop + API-design + hvordan ting funker
+Eksempler på bruk av watchexec
+Noe dataviz
+
+@oddmunds jeg har prøvd å skrive html direkte, men det føles som å gå i gjørme. Med hiccup har jeg i alle fall en skikkelig editor. Men jeg liker bedre å redigere tekst i gode formater for tekst (feks org-mode, eller markdown, til en viss grad)
+
+Enda en side:
+Konvertering mellom Roam / html / hiccup / org-mode
+Litt usikker på om jeg får til det rett i browser. Trenger kanskje en tjeneste. En backend. Med pandoc og Clojure bør det ikke være alt for vanskelig.
+Men hvis jeg får opp noe sånt, kan jeg lett gå mellom formater.
+
+Enda en side:
+Signaler, starting av prosesser, stopping av prosesser. Sigterm, sigkill, sighup (?)
+Kan lage en side i stedet for å lage presentasjon eller noe annet.
+** Principles collected
+*** Effektivt å skrive tekst. Kan gjøre det i vanlige tekstformater.
+*** Frittstående sider. Løs kobling, trenger ikke samme struktur overalt.
+*** Gjenbrukbare komponenter.
+*** Hele greia funker som en statisk side.
+*** Statisk html er sjekket inn i git.
+*** Lynraske bygg.
+*** Effektivt å jobbe med hiccup.
+*** Effektivt å jobbe med ideer.
+*** Effektivt å lenke mellom ideer.
+*** (Kanskje) mulig å bruke sammen med Clerk.
+** RANT
+Man, I hate Mac stealing cmd+h. I want it to move stuff left in a hierarchy. But
+mac steals it to hide windows.
+** Outline collected
+*** Ortogonalitet
+*** Feedback-loop + API-design + hvordan ting funker
+*** Eksempler på bruk av watchexec
+*** Unix-terminalen gir deg superkrefter
+relatert til ortogonalitet
+relatert til watchexec
+relatert til signaler, starting av prosesser, stopping av prosesser, sigterm,
+sigkill, sighub
+*** Noe dataviz
+*** Konvertering mellom Roam / hiccup / html / org-mode
+*** Signaler, starting av prosesser, stopping av prosesser. Sigterm, sigkill, sighup (?)
+**** Kartlegging av interesse 2022-05-13
+Kilde: https://garasjen.slack.com/archives/C2K35RDNJ/p1652440860308049
+
+Likes: :raised_hands: * 5
+***** Pitch
+Idé til fagopplegg - graceful startup, graceful shutdown.
+Forklare signaler (SIGTERM, SIGKILL, …), håndtering av signaler, reagere på Ctrl+C. Eventuelt også liveness og readiness i Kubernetes.
+Hvis det hadde blitt arrangert noe sånt, ville du deltatt? (edited)
+***** Kommentarer
+Eilef - oh yes please!
+Henrik - kill -9 <pid>
+*** Innovasjon - som forstått gjennom bundling og unbundling
+eksempler på bundling
+eksempler på unbundling
+
+verdi - arbeidsflyter
+verktøy - prismodeller
+
+ortogonalitet
+** See also - curated links
+I hate pure URLs without context. But ideas are meant to be understood in
+context! So what's the context? "Where can we go from here"? I want the
+relationships to be rich; a way of navigating in itself. An interaction mode, if
+you will.
+** Domains?
+Ideally, I want to use cloudflare pages for this. I'd like to use Cloudflare
+pages.
+
+Buuut
+
+That requires some major changes, some changes that might break my email setup.
+So those are a bit dangerous, for now.
+
+Options:
+
+1. Slowly move to Cloudflare for teod.eu - but don't do anything too rash to
+   early.
+2. Just move over and see what happens, check whether mail breaks down or not.
+3. Don't do it. Just keep the existing stuff.
+
+If I just move over, what's the worst thing that can happen? I can (I think)
+revert all changes I might be making.
+** Actionables - today
+1. Actually write a single piece (Org-mode), quickly compile to HTML
+2. Try move that domain over. Quickly roll back if anything breaks.
+** Let's try move the domain
+I was able to export a zone file from Gandi, and import for Cloudflare. Not
+everything worked.
+
+| Gandi line                                                                             | What?                     | Imported?     | Reason                           |
+|----------------------------------------------------------------------------------------+---------------------------+---------------+----------------------------------|
+| @ 86400 IN SOA ns1.gandi.net. hostmaster.gandi.net. 1653576353 10800 3600 604800 10800 | Authority record          | Not imported. | Should't be exported.            |
+| @ 1800 IN ALIAS pedantic-minsky-8c3ffb.netlify.com.                                    |                           | Not imported. | Cloudflare doesn't support ALIAS |
+| @ 10800 IN MX 10 in1-smtp.messagingengine.com.                                         | Fastmail setup            | Imported.     |                                  |
+| @ 10800 IN MX 20 in2-smtp.messagingengine.com.                                         | Fastmail setup            | Imported.     |                                  |
+| @ 10800 IN TXT "v=spf1 include:spf.messagingengine.com ?all"                           | Fastmail setup            | Imported.     |                                  |
+| b 10800 IN A 81.166.30.74                                                              | Bakkemoen server          | Imported.     |                                  |
+| bakkemoen 1800 IN A 81.166.30.74                                                       | Bakkemoen server          | Imported.     |                                  |
+| fm1._domainkey 1800 IN CNAME fm1.teod.eu.dkim.fmhosted.com.                            | Fastmail setup            | Imported.     |                                  |
+| fm2._domainkey 1800 IN CNAME fm2.teod.eu.dkim.fmhosted.com                             | Fastmail setup            | Imported.     |                                  |
+| fm3._domainkey 1800 IN CNAME fm3.teod.eu.dkim.fmhosted.com.                            | Fastmail setup            | Imported.     |                                  |
+| sandbox 1800 IN CNAME determined-heyrovsky-a0a386.netlify.app.                         | Subdomain for static site | Imported.     |                                  |
+| subcons 10800 IN CNAME trusting-tereshkova-c5f46b.netlify.app.                         | Subdomain for static site | Imported.     |                                  |
+| workman 1800 IN CNAME jovial-jang-37d250.netlify.app.                                  | Subdomain for static site | Imported.     |                                  |
+| www 1800 IN CNAME pedantic-minsky-8c3ffb.netlify.com.                                  | Subdomain for static site | Imported.     |                                  |
+* 2022-05-27
+** Models and metamodels
+Today:
+
+1. I want an effective makefile
+2. That requires a model of how my stuff fits together
+3. That model should be explicit! In data. So that I can work on it.
+** Idea
+Idea: =playground.edn= file in each folder. Contains information on how to
+build, and what dependencies we have.
+** More ideas
+More ideas: Put declarative files around. =playground.edn= or something else.
+Use those to build up a model of how everything fits together. From that model
+(sqlite databse, plain file, etc), generate a makefile. Then we can just use the
+makefile.
+
+Consider supporting compiling to a different folder than root. That way, we can
+separate cleanly between build artefacts that should be served, and all the
+other stuff. But that's not for now.
+** Friction
+I wanted to make a new page to explore what happens to code blocks. I was ...
+well, I didn't like it. There was friction. I couldn't just create a new page
+and start writing. I had to think, consider, remember.
+
+Perhaps I can create a CLI. =./playground=.
+
+=./playground create-page explore=
+** Learning from before
+*** Previous structure:
+**** GRATITUDE
+**** MINIMALISM
+**** AESTHETIC REFLECTION
+*** What now?
+Try to keep integrating it. Be grateful. Keep it simple. Reflect on taste.
+** I found my previous slide sources
+Descriptive truth, presciptive truth was on github.com/teodorlu/log:
+https://github.com/teodorlu/log/tree/c7fe172064cb5448cda47abe2fb5b74d16979320/2021-06-14/iterate/slides-descriptive-prescriptive.org
+
+Options to the max:
+https://github.com/teodorlu/reflect.teod.eu/tree/2ef748baaed2e753ffbb1c4630f31f0b8d4882e9/options-to-the-max/article.org
+* 2022-06-12
+** Feeling the need for opt-in structure
+Right now, I have multilpe separate files & folders - each separate, living on
+its own.
+
+I'm feeling that the need for playground.edn has come.
+
+Why?
+
+Specifically - it could deliver a title for the main index. And I could separate
+drafts and incomplete work from other stuff.
+** If I was going to publish a Clerk document, how would I do it?
+Ideas:
+
+1. make all of this a clojure project
+2. create a clojure project for clerk notebooks in a subdirectory - then copy
+   the files out on demand
+   1. Could perhaps have placeholder =playground.edn= files that point to the source
+   2. Or =notebooks/= could mirror "/" - so that =notebooks/pendulum.clj= is
+      compiled into =pendulum/index.html=.
+   3. 🤔
+* 2022-07-12
+** Case: tags.
 Problem: I want to set =feedback-interface-implementation= to "ready for feedback"
 
 Then I totally. slow. down.
@@ -51,3 +260,8 @@ Perhaps ...
 I could try to make an =M-x teod/play-add-relation= that searches through all the other relations, and can add something similar.
 
 For now, manual.
+** Flattening out the hierarchy
+*** I moved doc/wip.org into its own wip/index.org page.
+Easier to allow exploring everything.
+*** doc/dump.org is going in here
+It's just retrospectives and meta commentary, really.

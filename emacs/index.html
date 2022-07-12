@@ -245,6 +245,11 @@ files.</a></li>
 <li><a href="#weird-freezes-when-saving-org-mode-files">Weird freezes
 when saving Org-mode files</a></li>
 </ul></li>
+<li><a href="#section-3">2022-07-12</a>
+<ul class="incremental">
+<li><a href="#creating-small-user-interfaces-in-emacs">Creating small
+user interfaces in Emacs</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -439,5 +444,112 @@ saving Org-mode files</h3>
 sure why. Happens both when I use my own <code
 class="verbatim">C-ø</code> binding, and with the built-in <code
 class="verbatim">SPC f s</code>.</p>
+<h2 id="section-3">2022-07-12</h2>
+<p>Vacation is whatever I decide it is.</p>
+<h3 id="creating-small-user-interfaces-in-emacs">Creating small user
+interfaces in Emacs</h3>
+<p>Value prop: for small, specific use cases, Emacs can be a better
+choice than a CLI.</p>
+<p>Sneak peak — this is what we’re going to create:</p>
+<p>TODO gif</p>
+<h4 id="when-are-small-emacs-uis-a-nice-fit">When are small Emacs UIs a
+nice fit?</h4>
+<p>When I create something for myself, I usually either make a small CLI
+or something in Emacs.</p>
+<p>CLIs are:</p>
+<ol class="incremental">
+<li>Easy to reuse for anyone</li>
+<li>Easy to script against</li>
+<li>Somewhat easy to use for humans.</li>
+</ol>
+<p>So, what can specific Emacs snippets provide?</p>
+<ol class="incremental">
+<li>Not for everyone.</li>
+<li>Not made to be scripted against. Emacs stuff can be scripted
+against, but what we’ll be making right now will <em>not</em> be
+extensible.</li>
+<li>Very easy to use for humans.</li>
+</ol>
+<p>Let’s get to it!</p>
+<h4 id="feedback-loop-for-working-with-emacs-lisp">Feedback loop for
+working with Emacs lisp</h4>
+<p>I typically write a small interactive Emacs Lisp function that I can
+redefine and test out. I don’t attempt to solve my problem at once –
+first I want to see what I’m doing. For that, I usually print stuff:
+<code>(message "my output")</code></p>
+<h4
+id="prerequisites-understanding-how-completing-read-and-read-string-works.">Prerequisites
+understanding how <code class="verbatim">completing-read</code> and
+<code class="verbatim">read-string</code> works.</h4>
+<p><code class="verbatim">read-string</code> small example:</p>
+<div class="sourceCode" id="cb11" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> ((name (read-string <span class="st">&quot;Please enter your name: &quot;</span>)))</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  (message (s-concat <span class="st">&quot;Hello, &quot;</span> name <span class="st">&quot;!&quot;</span>)))</span></code></pre></div>
+<p><code class="verbatim">read-string</code> big example:</p>
+<div class="sourceCode" id="cb12" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> ((page-id (read-string <span class="st">&quot;Page id: &quot;</span>))</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>      (title (read-string <span class="st">&quot;Page title: &quot;</span>))</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>      (default-directory <span class="st">&quot;~/dev/teodorlu/play.teod.eu&quot;</span>))</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  (shell-command-to-string (s-concat <span class="st">&quot;./play.clj create-page &quot;</span> page-id <span class="st">&quot; :title </span><span class="sc">\&quot;</span><span class="st">&quot;</span> title <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">&quot;</span>))</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  (switch-to-buffer (find-file-noselect page-id)))</span></code></pre></div>
+<p>What about <code class="verbatim">completing read</code>? Doing it
+the emacsy way, I tried the built-in docs first. That seemed to
+work!</p>
+<div class="sourceCode" id="cb13" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/lol </span>()</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">;; read-string&#39;s argument is the text prompt</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> ((name (read-string <span class="st">&quot;What is your name? &quot;</span>)))</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    (message (s-concat <span class="st">&quot;Your name is: &quot;</span> name))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; completing-read&#39;s first two arguments are the text prompt and a list of options</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">let</span> ((dish (completing-read <span class="st">&quot;What is your favourite dish? &quot;</span> &#39;(:pizza :pasta :red-hot-chili-peppers))))</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>      (message (s-concat name <span class="st">&quot; likes: &quot;</span> dish))</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">cond</span> ((<span class="kw">equal</span> dish <span class="st">&quot;:pizza&quot;</span>) (message <span class="st">&quot;I also like pizza!&quot;</span>))</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>            ((<span class="kw">equal</span> dish <span class="st">&quot;:pasta&quot;</span>) (message <span class="st">&quot;Pasta is good.&quot;</span>))</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>            (:else (message (s-concat dish <span class="st">&quot;? Doesn&#39;t sound familiar&quot;</span>)))))))</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co">;; run with M-x teod/lol</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="co">;; depending on your input, it may print:</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="co">;;   Your name is: Teodor</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co">;;   Teodor likes: :pizza</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="co">;;   I also like pizza!</span></span></code></pre></div>
+<h4 id="sidenote---equality-in-emacs">Sidenote - equality in Emacs</h4>
+<p>I want to compare a string input with my of options. What kind of
+comparison should I use? I started to write <code
+class="verbatim">eq</code>, then saw both <code
+class="verbatim">eq</code> and <code class="verbatim">equal</code> show
+up. I read docs for both and tried them out:</p>
+<div class="sourceCode" id="cb14" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">eq</span> :pizza :pizza)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; t</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">eq</span> <span class="st">&quot;pizza&quot;</span> <span class="st">&quot;pizza&quot;</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; nil</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>(<span class="kw">equal</span> :pizza :pizza)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; t</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>(<span class="kw">equal</span> <span class="st">&quot;pizza&quot;</span> <span class="st">&quot;pizza&quot;</span>)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; t</span></span></code></pre></div>
+<p>I wanted string equality, so <code class="verbatim">equal</code> was
+the right choice.</p>
+<h4 id="end-note---struggle.">End note - struggle.</h4>
+<p>… aaaand … this is where I discover that I’m stuck. My <code
+class="verbatim">./play.clj create-page</code> CLI entrypoint currently
+only suports setting title. BUT! Perhaps it should <em>not</em> set
+title. Perhaps that’s best handled externally.</p>
+<p>Other option:</p>
+<ol class="incremental">
+<li>first create new page</li>
+<li>Then invoke babashka to change a play edn directly.</li>
+</ol>
+<p>Here’s what a CLI invocation could look like:</p>
+<pre class="shell"><code>$ cat ./clojure-lightbulb-moments/play.edn | bb &#39;(assoc *input* :thing :thong)&#39;
+{:title &quot;Clojure Lightbulb Moments&quot;, :readiness :forever-incomplete, :author-url &quot;https://teod.eu&quot;, :form :rambling, :lang :en, :thing :thong}
+</code></pre>
+<p>I’m stopping at a point of uncertainty. I really want <em>one
+way</em> to edit tags effectively. Not slap stuff on the CLI on the way
+<em>in</em>. Yet, I just can’t make up my mind.</p>
+<p>Well, I did learn to use <code
+class="verbatim">completing-read</code>. That was easy!</p>
 </body>
 </html>

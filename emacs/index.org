@@ -228,3 +228,118 @@ I just tried saving my journal, which is quite big.
 Emacs froze.
 Not sure why.
 Happens both when I use my own =C-ø= binding, and with the built-in =SPC f s=.
+* 2022-07-12
+Vacation is whatever I decide it is.
+** Creating small user interfaces in Emacs
+Value prop: for small, specific use cases, Emacs can be a better choice than a CLI.
+
+Sneak peak --- this is what we're going to create:
+
+TODO gif
+
+*** When are small Emacs UIs a nice fit?
+When I create something for myself, I usually either make a small CLI or something in Emacs.
+
+CLIs are:
+
+1. Easy to reuse for anyone
+2. Easy to script against
+3. Somewhat easy to use for humans.
+
+So, what can specific Emacs snippets provide?
+
+1. Not for everyone.
+2. Not made to be scripted against. Emacs stuff can be scripted against, but what we'll be making right now will /not/ be extensible.
+3. Very easy to use for humans.
+
+Let's get to it!
+*** Feedback loop for working with Emacs lisp
+I typically write a small interactive Emacs Lisp function that I can redefine and test out.
+I don't attempt to solve my problem at once -- first I want to see what I'm doing.
+For that, I usually print stuff: ~(message "my output")~
+*** Prerequisites understanding how =completing-read= and =read-string= works.
+=read-string= small example:
+
+#+begin_src emacs-lisp
+(let ((name (read-string "Please enter your name: ")))
+  (message (s-concat "Hello, " name "!")))
+#+end_src
+
+=read-string= big example:
+
+#+begin_src emacs-lisp
+(let ((page-id (read-string "Page id: "))
+      (title (read-string "Page title: "))
+      (default-directory "~/dev/teodorlu/play.teod.eu"))
+  (shell-command-to-string (s-concat "./play.clj create-page " page-id " :title \"" title "\""))
+  (switch-to-buffer (find-file-noselect page-id)))
+#+end_src
+
+What about =completing read=?
+Doing it the emacsy way, I tried the built-in docs first.
+That seemed to work!
+
+#+begin_src emacs-lisp
+(defun teod/lol ()
+  (interactive)
+  ;; read-string's argument is the text prompt
+  (let ((name (read-string "What is your name? ")))
+    (message (s-concat "Your name is: " name))
+    ;; completing-read's first two arguments are the text prompt and a list of options
+    (let ((dish (completing-read "What is your favourite dish? " '(:pizza :pasta :red-hot-chili-peppers))))
+      (message (s-concat name " likes: " dish))
+      (cond ((equal dish ":pizza") (message "I also like pizza!"))
+            ((equal dish ":pasta") (message "Pasta is good."))
+            (:else (message (s-concat dish "? Doesn't sound familiar")))))))
+;; run with M-x teod/lol
+;;
+;; depending on your input, it may print:
+;;
+;;   Your name is: Teodor
+;;   Teodor likes: :pizza
+;;   I also like pizza!
+#+end_src
+*** Sidenote - equality in Emacs
+I want to compare a string input with my of options.
+What kind of comparison should I use?
+I started to write =eq=, then saw both =eq= and =equal= show up.
+I read docs for both and tried them out:
+
+#+begin_src emacs-lisp
+(eq :pizza :pizza)
+;; => t
+(eq "pizza" "pizza")
+;; => nil
+
+(equal :pizza :pizza)
+;; => t
+(equal "pizza" "pizza")
+;; => t
+#+end_src
+
+I wanted string equality, so =equal= was the right choice.
+*** End note - struggle.
+... aaaand ... this is where I discover that I'm stuck.
+My =./play.clj create-page= CLI entrypoint currently only suports setting title.
+BUT!
+Perhaps it should /not/ set title.
+Perhaps that's best handled externally.
+
+Other option:
+
+1. first create new page
+2. Then invoke babashka to change a play edn directly.
+
+Here's what a CLI invocation could look like:
+
+#+begin_src shell
+$ cat ./clojure-lightbulb-moments/play.edn | bb '(assoc *input* :thing :thong)'
+{:title "Clojure Lightbulb Moments", :readiness :forever-incomplete, :author-url "https://teod.eu", :form :rambling, :lang :en, :thing :thong}
+#+end_src
+
+I'm stopping at a point of uncertainty.
+I really want /one way/ to edit tags effectively.
+Not slap stuff on the CLI on the way /in/.
+Yet, I just can't make up my mind.
+
+Well, I did learn to use =completing-read=. That was easy!

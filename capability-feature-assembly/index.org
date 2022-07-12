@@ -5,7 +5,6 @@
 DRAFT
 
 * Software architecture
-
 - Capability
   - Minimal dependencies
   - Expose "ability to do something"

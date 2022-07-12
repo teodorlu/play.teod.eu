@@ -1,4 +1,6 @@
-#+title: Work in progress
+#+title: Let the play.teod.eu WIP simmer
+
+[[./..][..]]
 
 /Let the WIP simmer/
 

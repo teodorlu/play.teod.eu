@@ -52,6 +52,16 @@ Sync into play.edn.
 Have play.edn files /partially/ generated.
 Or just pull it out from source at the right time?
 Do the :relations trick?
+*** I really like the idea of just using file modification times.
+buuut I don't think those get checked into git
+*** Can I just use git blame perhaps?
+🤔
+
+Git knows when the file was changed last
+*** Outline --- on page creation + git blame
+On creating a new page, write :created (now)
+
+On creating the metadata table, file edit time by asking Git
 * play.teod.eu is just some code that generates some HTML
 
 Not more.

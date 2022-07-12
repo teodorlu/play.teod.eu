@@ -44,21 +44,35 @@ todo
 - "what do you want to achieve?"
 - think "which effect do I want" rather than "how do I make it"
 - almost just "design"
+
+"focus on what before how"
 * Reduce the right product risk
 todo
 
 - unkownness management
 - good way of talking about where we're going without assuming a big plan
+
+possible risks:
+
+- Business viability risk
+- Value risk
+- Usability risk
+- Feasibility risk
+
+"focus on what before how"
 * Create a high-leverage context for our team effort
 todo
 
 - in what context would an hour of our time be maximally effective?
 - who should we be in touch with?
 - what friction are we experiencing right now?
-* Application in the lens of the feedback-API-implementation model of development
-Model - feedback loop / API-design / how does it work.
 
-How does feedback-API-implementation synthesize with this? How do they look
+synthesis - "leverage"? "help your team?" metric - "am I helping others now?"
+* Application in the lens of the feedback-API-implementation model of development
+Model - feedback loop / interface design / how does it work.
+
+How does feedback-interface-implementation synthesize with this?
+How do they look
 together?
 * Some kind of conclusion / synthesis
 Knowledge management?

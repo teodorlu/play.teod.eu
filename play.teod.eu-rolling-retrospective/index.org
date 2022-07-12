@@ -86,3 +86,10 @@ Why?
 I'm using Pandoc to parse org-mode links, and pandoc doesn't know how to handle id links.
 Perhaps I can solve this myself with a filter?
 Hmm.
+
+Options:
+
+- Work around the ID links to provide =../other-page/=-style links
+- Just use the file links
+  - But the plain file links won't know about which org document is the target -- which is a pain.
+- Perhaps this is finally a case for a pandoc filter with babashka.

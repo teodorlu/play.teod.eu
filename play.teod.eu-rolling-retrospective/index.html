@@ -258,5 +258,17 @@ dir, and add ID properties for each page that should be indexed.</p>
 the web. Why? I’m using Pandoc to parse org-mode links, and pandoc
 doesn’t know how to handle id links. Perhaps I can solve this myself
 with a filter? Hmm.</p>
+<p>Options:</p>
+<ul class="incremental">
+<li>Work around the ID links to provide <code
+class="verbatim">../other-page/</code>-style links</li>
+<li>Just use the file links
+<ul class="incremental">
+<li>But the plain file links won’t know about which org document is the
+target – which is a pain.</li>
+</ul></li>
+<li>Perhaps this is finally a case for a pandoc filter with
+babashka.</li>
+</ul>
 </body>
 </html>

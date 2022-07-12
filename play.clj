@@ -35,11 +35,13 @@
           :readiness :in-progress}
  "feedback-design-impl" {:title "Feedback loops, API design and how stuff works"}}
 
+(defn bash [cmd]
+  (:out (clojure.java.shell/sh "bash" "-c" cmd)))
+
 (defn pages []
-  (let [bash (fn [cmd] (:out (clojure.java.shell/sh "bash" "-c" cmd)))]
-    (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
-         (str/split-lines)
-         (map (fn [id] {:id id})))))
+  (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
+       (str/split-lines)
+       (map (fn [id] {:id id}))))
 
 (defn files->relations
   "Read relations from play.edn files on disk"
@@ -125,7 +127,8 @@ TODO make content
         title (or (:title opts) page)]
     (assert page "Please specify which page to create!")
     (let [org-file (str page "/index.org")
-          play-file (str page "/play.edn")]
+          play-file (str page "/play.edn")
+          make-file "Makefile"]
       (fs/create-dirs page)
 
       ;; Org file
@@ -138,6 +141,9 @@ TODO make content
         (spit play-file (pr-str {:title title
                                  :readiness :wtf-is-this
                                  :author-url "https://teod.eu"})))
+
+      ;; Regenerate the makefile since we've added a new target
+      (bash "./makemakefile.clj > Makefile")
 
       nil)))
 

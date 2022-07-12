@@ -66,3 +66,4 @@
 (println ".PHONY: clean")
 (println "clean:")
 (println "\trm index.html")
+(println "\t./makemakefile.clj > Makefile")

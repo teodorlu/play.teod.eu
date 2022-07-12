@@ -91,3 +91,4 @@ unix-signals-intro/index.html: unix-signals-intro/index.org
 .PHONY: clean
 clean:
 	rm index.html
+	./makemakefile.clj > Makefile

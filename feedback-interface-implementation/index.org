@@ -121,3 +121,15 @@ And ensure that your interface is easy to test --- this means you'll get value o
 
 Would it be better to separate between definitions (what feedback/interface/implementation means in a context) and case-based discussion?
 🤔
+** Potential cases
+- Developing a software module: ?
+  - Example -- my live documentation for Amedia.
+    - Feedback loop is simply =npx live-server=
+    - Module design: pure functions + a react component
+- Developing a user-facing feature: ?
+  - Example -- my live documentation for Amedia.
+    - Feedback loop -- does the docs explain its use case with sufficient detail to real user?
+    - Interface design -- Does the user understand the problem the documentation solves?
+      Is the input field labeling good?
+      Is it clear to the user how the generated output should be consumed?
+      Is the generated output good?

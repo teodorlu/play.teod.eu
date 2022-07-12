@@ -299,6 +299,12 @@ as a file system</a></li>
 <li><a href="#problem---npx-doesnt-work-offline">Problem - npx doesn’t
 work offline</a></li>
 </ul></li>
+<li><a href="#section-8">2022-07-12</a>
+<ul class="incremental">
+<li><a
+href="#discussing-note-taking-systems-on-the-clojurians-slack">Discussing
+note taking systems on the Clojurians Slack</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -822,5 +828,33 @@ class="verbatim">package-lock.json</code>.</li>
 <li>Just serving raw HTML in firefox, and triggering a hook to refresh
 on a keystroke - like I’m doing with Clerk</li>
 </ol>
+<h2 id="section-8">2022-07-12</h2>
+<h3
+id="discussing-note-taking-systems-on-the-clojurians-slack">Discussing
+note taking systems on the Clojurians Slack</h3>
+<p><code class="verbatim">ag</code> is using Org-Roam quite heavily. He
+separates between:</p>
+<ul class="incremental">
+<li>notes</li>
+<li>zettels</li>
+<li>documents</li>
+</ul>
+<p>And says that there’s no semantic difference between those three
+categories and:</p>
+<ul class="incremental">
+<li>fleeting notes</li>
+<li>permanent notes</li>
+<li>project notes</li>
+</ul>
+<p>Hmm, I think I’ve actually landed on that same structure myself in
+Roam. Fleeting notes go on the Daily Notes page. Permanent notes are
+entities. Project notes are one big hierarchy.</p>
+<p>How does that map to play.teod.eu?</p>
+<p>Fleeting notes go into the journal. No new entities. Permanent notes
+get their own page. It should be possible to link to permanent notes!
+Project notes get a page per project. That page is deleteable or
+“removable from index”.</p>
+<p>Question: “in what context do I want to re-discover this piece
+later”. Then – establish links to all those contexts.</p>
 </body>
 </html>

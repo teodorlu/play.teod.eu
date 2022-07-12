@@ -464,3 +464,31 @@ Options:
 2. Something Clojure-JVM-based.
 3. Something Babashka-based.
 4. Just serving raw HTML in firefox, and triggering a hook to refresh on a keystroke - like I'm doing with Clerk
+* 2022-07-12
+** Discussing note taking systems on the Clojurians Slack
+=ag= is using Org-Roam quite heavily.
+He separates between:
+
+- notes
+- zettels
+- documents
+
+And says that there's no semantic difference between those three categories and:
+
+- fleeting notes
+- permanent notes
+- project notes
+
+Hmm, I think I've actually landed on that same structure myself in Roam.
+Fleeting notes go on the Daily Notes page.
+Permanent notes are entities.
+Project notes are one big hierarchy.
+
+How does that map to play.teod.eu?
+
+Fleeting notes go into the journal. No new entities.
+Permanent notes get their own page. It should be possible to link to permanent notes!
+Project notes get a page per project. That page is deleteable or "removable from index".
+
+Question: "in what context do I want to re-discover this piece later".
+Then -- establish links to all those contexts.

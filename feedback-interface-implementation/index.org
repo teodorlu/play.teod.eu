@@ -24,7 +24,8 @@ The rest of the article has not been written.
 # ** Specifics - software development process
 # ** Specifics - product design process
 
-* Feedback loop --- How are you learning as you go?
+* Feedback, interface and implementation in software development
+** Feedback loop --- How are you learning as you go?
 You're going to do the work.
 But what do your increments look like?
 How do you know that an increment works?
@@ -32,7 +33,7 @@ Letting you know whether / how your increments work is the job of your feedback 
 You're going to be checking your feedback loop frequently as you work.
 I prefer /very often/. Every ten seconds of more often.
 Probably bound to some on-save action.
-* Interface design --- How will your thing be used?
+** Interface design --- How will your thing be used?
 The thing you're making.
 How is it going to be used?
 What do you provide?
@@ -41,7 +42,7 @@ A REST endpoint?
 Will your thing be /nice/ to use?
 
 When you're working on interface design, it's your job to ensure that the things you're making are nice to use.
-* Implementation --- Finally, how do you build your thing?
+** Implementation --- Finally, how do you build your thing?
 With a good feedback loop and solid interface design, implementation is often the easy part.
 A good feedback loop lets you know whether / how your thing works at every point in time.
 And good interface design will split your problem into reasonable parts.
@@ -49,3 +50,29 @@ If implementation is hard, consider splitting your problem.
 Splitting your problem /is/ introducing an interface.
 So do a bit of interface design, then come back.
 And ensure that your interface is easy to test --- this means you'll get value out of your feedback loop!
+* Feedback, interface and implementation in product development
+** Feedback loop --- How are you going to learn how well your product solves problems / workflows?
+** Interface design --- What /is/ your product? What should your product /become/?
+** Implementation --- How is the sausage made? How do you slice that future vision into testable increments?
+* Retrospective on this article
+Right now, I've split the article into sections about feedback loop, interface design and implementation.
+That's clear.
+However, the lines get kinda ... blurred sometimes.
+Take the trailing part of the section about implementation in software development:
+
+#+begin_quote
+With a good feedback loop and solid interface design, implementation is often the easy part.
+A good feedback loop lets you know whether / how your thing works at every point in time.
+And good interface design will split your problem into reasonable parts.
+If implementation is hard, consider splitting your problem.
+Splitting your problem /is/ introducing an interface.
+So do a bit of interface design, then come back.
+And ensure that your interface is easy to test --- this means you'll get value out of your feedback loop!
+#+end_quote
+
+It really describes everything.
+
+So ...
+
+Would it be better to separate between definitions (what feedback/interface/impl means in a context) and case-based discussion?
+🤔

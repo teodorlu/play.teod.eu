@@ -107,6 +107,11 @@
 
 (included as a personal reminder)
 "]
+               ["** What is this?"
+                ""
+                "Good question :)"
+                "Source is available on Github: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]"
+                "PRs are probably a bad idea, but feel free to \"get inspired\"."]
                ))))
 
 ;; For development:

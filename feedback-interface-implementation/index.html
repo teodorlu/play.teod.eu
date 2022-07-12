@@ -165,6 +165,9 @@ works</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul class="incremental">
+<li><a
+href="#motivation---my-go-to-mental-model-for-software-development">Motivation
+- my go-to mental model for software development</a></li>
 <li><a href="#in-software-development-design-modules">In software
 development, design modules</a>
 <ul class="incremental">
@@ -213,6 +216,62 @@ reduced to:</p>
 </ol>
 <p>Alternative title: <em>Multiscale design</em>.</p>
 <p>Curious? Read on.</p>
+<h2
+id="motivation---my-go-to-mental-model-for-software-development">Motivation
+- my go-to mental model for software development</h2>
+<p>The most important thing I’ve learned about software development in
+the last three years is to take feedback loops and interface design
+seriously. I feel like I unlocked something. I don’t get stuck the same
+way I used to get stuck. Thinking back, I used to throw brainpower at a
+problem. Thinking that thinking would solve all the problems. A common
+failure mode of mine was getting stuck in my head when the problem was
+too big to fit.</p>
+<p>That can simply happen when all there is is implementation. All there
+is is everything.</p>
+<p>What can we do different?</p>
+<ul class="incremental">
+<li>We can see better</li>
+<li>We can see smaller pieces.</li>
+</ul>
+<p>We achieve seeing better by improving our feedback loop. We reduce
+the problem to smaller pieces by designing interfaces.</p>
+<p>“Then, should I focus on feedback, interface or implementation right
+now?”</p>
+<p>That’s a matter of taste!</p>
+<p>But thinking about it, I definitely have a preference.</p>
+<p>If you don’t have any feedback loop, make sure you have a feedback
+loop. If your feedback loop sucks (&gt;1 second), fix it. (or at least
+try, working without a good feedback loop sucks)</p>
+<p>Depending on your environment, that feedback loop could run tests,
+print stuff or whether your types line up. You should be able to
+introduce an error, watch your feedback loop “go red”, fix the error and
+go back to green.</p>
+<p>Now that you have a feedback loop up and running, good! Interface
+comes next. We’re trying to achieve something. For now, let’s only
+consider the <em>what</em>. Anything we can do to ignore the
+<em>how</em> is good. In typed programming languages, let’s consider
+types. Are we transforming something? From a type to another? What are
+those types? Do we need to write some types? I often like to write the
+types of functions before I even name the function.</p>
+<p>In data-oriented languages, we’ll want to consider some example data.
+What are we transforming to what?</p>
+<p>And in any case, we’ll probably want to use unit tests. The unit
+tests are going to describe what’s <em>actually</em> going to happen.
+While we can peek at some data, the unit tests don’t require peeking at
+all. They have correct/incorrect encoded into the core. That means the
+computer can help us find out which part of the system is failing. So we
+prefer unit tests over eyeballing and examples.</p>
+<p>In all these cases, we want to take our interface design (be it
+interfaces or data models or tests) very seriously. We can completely
+avoid big chunks of problems by picking the right type or data model.
+“How seriously, in time?” Depends 😬 But perhaps 1/3 feedback system,
+1/3 interface design and 1/3 implementation. Note that we don’t spend
+the first hour on feedback, the next on interface and the third on
+implementation! We jump back and forth.</p>
+<p>Finally! We have our feedback loop. We can ask it “does it work now?”
+(feedback) And we have defined what “correct” means (interface design)
+Now, get cracking! Walk a step forwards, see the unit tests go green.
+Celebrate! 🎉</p>
 <h2 id="in-software-development-design-modules">In software development,
 design modules</h2>
 <table>

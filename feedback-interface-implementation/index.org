@@ -19,6 +19,75 @@ Alternative title: /Multiscale design/.
 
 Curious? Read on.
 
+* Motivation - my go-to mental model for software development
+The most important thing I've learned about software development in the last three years is to take feedback loops and interface design seriously.
+I feel like I unlocked something.
+I don't get stuck the same way I used to get stuck.
+Thinking back, I used to throw brainpower at a problem.
+Thinking that thinking would solve all the problems.
+A common failure mode of mine was getting stuck in my head when the problem was too big to fit.
+
+That can simply happen when all there is is implementation.
+All there is is everything.
+
+What can we do different?
+
+- We can see better
+- We can see smaller pieces.
+
+We achieve seeing better by improving our feedback loop.
+We reduce the problem to smaller pieces by designing interfaces.
+
+"Then, should I focus on feedback, interface or implementation right now?"
+
+That's a matter of taste!
+
+But thinking about it, I definitely have a preference.
+
+If you don't have any feedback loop, make sure you have a feedback loop.
+If your feedback loop sucks (>1 second), fix it.
+(or at least try, working without a good feedback loop sucks)
+
+Depending on your environment, that feedback loop could run tests, print stuff or whether your types line up.
+You should be able to introduce an error, watch your feedback loop "go red", fix the error and go back to green.
+
+Now that you have a feedback loop up and running, good!
+Interface comes next.
+We're trying to achieve something.
+For now, let's only consider the /what/.
+Anything we can do to ignore the /how/ is good.
+In typed programming languages, let's consider types.
+Are we transforming something?
+From a type to another?
+What are those types?
+Do we need to write some types?
+I often like to write the types of functions before I even name the function.
+
+In data-oriented languages, we'll want to consider some example data.
+What are we transforming to what?
+
+And in any case, we'll probably want to use unit tests.
+The unit tests are going to describe what's /actually/ going to happen.
+While we can peek at some data, the unit tests don't require peeking at all.
+They have correct/incorrect encoded into the core.
+That means the computer can help us find out which part of the system is failing.
+So we prefer unit tests over eyeballing and examples.
+
+In all these cases, we want to take our interface design (be it interfaces or data models or tests) very seriously.
+We can completely avoid big chunks of problems by picking the right type or data model.
+"How seriously, in time?"
+Depends 😬
+But perhaps 1/3 feedback system, 1/3 interface design and 1/3 implementation.
+Note that we don't spend the first hour on feedback, the next on interface and the third on implementation!
+We jump back and forth.
+
+Finally!
+We have our feedback loop.
+We can ask it "does it work now?" (feedback)
+And we have defined what "correct" means (interface design)
+Now, get cracking!
+Walk a step forwards, see the unit tests go green.
+Celebrate! 🎉
 * In software development, design modules
 | Author   | Software developer today |
 | Consumer | Software developer later |

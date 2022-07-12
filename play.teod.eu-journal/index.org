@@ -5,7 +5,7 @@
 
 [[./..][..]]
 
-Companion to play.teod.eu rolling retrospective.
+Companion to [[id:658447a3-00e6-44aa-963e-d2f5938c50d3][play.teod.eu rolling retrospective]].
 
 | play.teod.eu journal               | temporal, dump-oriented. |
 | play.teod.eu rolling retrospective | topic-oriented           |

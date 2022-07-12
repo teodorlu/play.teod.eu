@@ -1,8 +1,11 @@
+:PROPERTIES:
+:ID:       658447a3-00e6-44aa-963e-d2f5938c50d3
+:END:
 #+title: play.teod.eu rolling retrospective
 
 [[./..][..]]
 
-Companion to play.teod.eu journal.
+Companion to [[id:2e428a][play.teod.eu journal]].
 
 | play.teod.eu journal               | temporal, dump-oriented. |
 | play.teod.eu rolling retrospective | topic-oriented           |
@@ -73,3 +76,6 @@ And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
 Option: Comments on Twitter.
 Option: Comments on Hacker News.
 Option: Comments embedded straight into the text - via Github pull requests.
+* Cross site linking with org-roam.
+So ... getting Org-roam to find links here was easy.
+Just set the root dir, and add ID properties for each page that should be indexed.

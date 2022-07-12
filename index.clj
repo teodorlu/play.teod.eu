@@ -54,6 +54,8 @@
                 ""
                 "Intent: bring ideas to life. Discuss, sharpen, play."
                 ""
+                "Process: Aim your intent - explore - refactor towards orthogonality. Embrace remix culture."
+                ""
                 "Status: very much work in progress. Please advance at your own peril."
                 ""]
 

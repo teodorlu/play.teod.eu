@@ -1,0 +1,56 @@
+#+title: Purposeful Software Development
+
+[[./..][..]]
+
+DRAFT
+
+Goal: every day is purposeful.
+
+Means: split work into:
+
+- short term value
+- exploring together
+- exploring individually
+
+* Harvesting short term value
+How:
+
+1. team works together on product discovery
+2. team prioritizes /one/ common goal in terms of value
+3. everyone spend ~50 % of their time chasing this short term goal
+
+Purpose:
+
+Good product teams deliver value incrementally.
+Delivering value informs what's valuable to learn.
+* Exploring together
+Coaching and learning is essential.
+
+By spending lots of time learning together, we:
+
+1. Share skills
+2. Share product knowledge
+3. Share architecture knowledge
+
+Purpose:
+
+You are not alone.
+Your team matters.
+It's nice to be able to help others.
+* Exploring individually
+Cultivate your creativity.
+
+You are not a machine.
+You are a human.
+You have ideas.
+
+How do you know which ones are good?
+You'll have to explore.
+Try.
+Think.
+See what works.
+
+Purpose:
+
+Learn to trust yourself.
+Try things for yourself, before bringing them into the group.

@@ -270,5 +270,22 @@ target – which is a pain.</li>
 <li>Perhaps this is finally a case for a pandoc filter with
 babashka.</li>
 </ul>
+<p>Filter architecture draft:</p>
+<ul class="incremental">
+<li>Need a global links store
+<ul class="incremental">
+<li>I could generate that</li>
+<li>Or I could pull it out of Org-Roam</li>
+</ul></li>
+<li>Given that global link store, mapping for instance <code
+class="verbatim">658447a3-00e6-44aa-963e-d2f5938c50d3</code> to <code
+class="verbatim">../play.teod.eu-rolling-retrospective/</code>, I could
+simply use that global link store for rich links or post processing.
+<ul class="incremental">
+<li>I would want to query links to show relations between pages</li>
+<li>I would want to transform links when converting from org-mode to
+html</li>
+</ul></li>
+</ul>
 </body>
 </html>

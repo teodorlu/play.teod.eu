@@ -93,3 +93,13 @@ Options:
 - Just use the file links
   - But the plain file links won't know about which org document is the target -- which is a pain.
 - Perhaps this is finally a case for a pandoc filter with babashka.
+
+Filter architecture draft:
+
+- Need a global links store
+  - I could generate that
+  - Or I could pull it out of Org-Roam
+- Given that global link store, mapping for instance =658447a3-00e6-44aa-963e-d2f5938c50d3= to
+  =../play.teod.eu-rolling-retrospective/=, I could simply use that global link store for rich links or post processing.
+  - I would want to query links to show relations between pages
+  - I would want to transform links when converting from org-mode to html

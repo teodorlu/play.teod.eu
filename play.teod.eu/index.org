@@ -2,7 +2,8 @@
 
 [[./..][..]]
 
-* about play.teod.eu
+* before timestamps
+** about play.teod.eu
 
 Name. Should this be "meta"?
 
@@ -10,7 +11,7 @@ No.
 "Meta" is never narrow.
 Go for a single global layer, please.
 
-* I need to "contract" / "narrow" before publishing
+** I need to "contract" / "narrow" before publishing
 
 The stuff that's published on my site right now is a real mess.
 Mess how?
@@ -20,19 +21,33 @@ There's coupling.
 I could remove that coupling.
 Or at least attempt to remove that coupling.
 
-* Date tagging
+** Date tagging
 
 I want metadata for :changed and :created.
 First because I want to filter / sort.
 Then perhaps later because that metadata is nice to have.
 
-* play.teod.eu is some code that generates some HTML
+** play.teod.eu is some code that generates some HTML
 
 Not more.
 There's a single indirection boundary.
 Information as written --- indirection --- published HTML.
 And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
 
-* Should this page be journal oriented (indexed first by date?)
+** Should this page be journal oriented (indexed first by date?)
 
 Perhaps. Consider moving it over.
+* 2022-07-12
+Case: tags.
+
+Problem: I want to set =feedback-interface-implementation= to "ready for feedback"
+
+Then I totally. slow. down.
+
+I open =feedback-interface-implementation/play.edn= and ... what do I do?
+What are valid tags?
+Hmm.
+Perhaps ...
+I could try to make an =M-x teod/play-add-relation= that searches through all the other relations, and can add something similar.
+
+For now, manual.

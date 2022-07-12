@@ -1,0 +1,36 @@
+#+title: Capability, feature and assembly
+
+[[./..][..]]
+
+DRAFT
+
+* Software architecture
+
+- Capability
+  - Minimal dependencies
+  - Expose "ability to do something"
+- Feature
+  - Straightforward
+  - "lets the system do something"
+- Assembly
+  - System startup & shutdown
+  - Config
+  - Resource sharing
+* Product development
+*Capability*.
+Skill / knowledge we have.
+No cost.
+Enables options.
+
+*Feature*.
+Thing a user can do.
+
+*Assembly*.
+Hmm, this doesn't really fit.
+Perhaps there's only ... or is this job to be done? "Assemble a bunch of features into a workflow"
+* Capability, feature, workflow
+Capabilities compose into a feature.
+
+Features compose into a workflow.
+
+A workflow provides net value for the product user.

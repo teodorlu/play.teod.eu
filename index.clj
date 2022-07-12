@@ -31,6 +31,7 @@
     (= lang :no) :norwegian
     (= readiness :ready-for-comments) :ready-for-comments
     (= readiness :wtf-is-this) :wtf-is-this
+    (= readiness :forever-incomplete) :forever-incomplete
     :else :other))
 
 (defn add-category [page]
@@ -47,7 +48,7 @@
   (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
-  (let [{:keys [ready-for-comments norwegian wtf-is-this other]} (group-by :category pages)]
+  (let [{:keys [ready-for-comments norwegian wtf-is-this other forever-incomplete]} (group-by :category pages)]
     (str/join "\n"
               (concat
                ["#+title: Towards an iterated game"
@@ -63,21 +64,22 @@
                (for [page ready-for-comments]
                  (str "- " (link page)))
 
-               ["** Uncategorized"
-                ""
-                (str/join " --- "
-                          (for [page other]
-                            (link page)))
-                ""]
+               (when (seq other)
+                 ["** Uncategorized\n"
+                  (str/join " --- " (for [page other] (link page)))
+                  ""])
+
+               (when (seq forever-incomplete)
+                 ["** Forever incomplete\n"
+                  (str/join " --- " (for [page forever-incomplete] (link page)))
+                  ""])
 
                ["** Vague ideas, please ignore."
                 ""
                 " Links to these mostly exist for me (Teodor)."
                 " But still open -- information wants to be free."
                 ""
-                (str/join " --- "
-                          (for [page wtf-is-this]
-                            (link page)))
+                (str/join " --- " (for [page wtf-is-this] (link page)))
                 ""]
 
                [""
@@ -85,8 +87,7 @@
                 ""
                 "Not everybody speaks Norwegian. But some do!"
                 ""]
-               (for [page norwegian]
-                 (str "- " (link page)))
+               (for [page norwegian] (str "- " (link page)))
 
                ["** Comments? Hit me up!"
                 "Details on [[https://teod.eu][teod.eu]]."]

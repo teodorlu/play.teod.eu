@@ -41,7 +41,7 @@ I want metadata for :changed and :created.
 First because I want to filter / sort.
 Then perhaps later because that metadata is nice to have.
 
-** 2022-07-12 says hello
+** 2022-07-12 says pikaboo
 Date tagging would be nice.
 But by what semantics?
 And why?

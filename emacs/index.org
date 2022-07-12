@@ -344,3 +344,26 @@ Not slap stuff on the CLI on the way /in/.
 Yet, I just can't make up my mind.
 
 Well, I did learn to use =completing-read=. That was easy!
+** =let= and =let*=
+This works:
+
+#+begin_src emacs-lisp
+(let* ((x "Hello!")
+       (_ (message x))
+       (_ (message "123"))))
+#+end_src
+
+This crashes:
+
+#+begin_src emacs-lisp
+(let ((x "Hello!")
+      (_ (message x))
+      (_ (message "123"))))
+#+end_src
+
+Why?
+
+| let    | scope      | example                                               |
+|--------+------------+-------------------------------------------------------|
+| =let=  | in         | =(let  ((x 1)            ) (message x))=              |
+| =let*= | in or down | =(let* ((x 1) (y (* x 10)) (message y))=              |

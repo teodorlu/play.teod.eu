@@ -249,6 +249,8 @@ when saving Org-mode files</a></li>
 <ul class="incremental">
 <li><a href="#creating-small-user-interfaces-in-emacs">Creating small
 user interfaces in Emacs</a></li>
+<li><a href="#let-and-let"><code class="verbatim">let</code> and <code
+class="verbatim">let*</code></a></li>
 </ul></li>
 </ul>
 </nav>
@@ -551,5 +553,41 @@ way</em> to edit tags effectively. Not slap stuff on the CLI on the way
 <em>in</em>. Yet, I just can’t make up my mind.</p>
 <p>Well, I did learn to use <code
 class="verbatim">completing-read</code>. That was easy!</p>
+<h3 id="let-and-let"><code class="verbatim">let</code> and <code
+class="verbatim">let*</code></h3>
+<p>This works:</p>
+<div class="sourceCode" id="cb16" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let*</span> ((x <span class="st">&quot;Hello!&quot;</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>       (_ (message x))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>       (_ (message <span class="st">&quot;123&quot;</span>))))</span></code></pre></div>
+<p>This crashes:</p>
+<div class="sourceCode" id="cb17" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> ((x <span class="st">&quot;Hello!&quot;</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>      (_ (message x))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>      (_ (message <span class="st">&quot;123&quot;</span>))))</span></code></pre></div>
+<p>Why?</p>
+<table>
+<thead>
+<tr class="header">
+<th>let</th>
+<th>scope</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code class="verbatim">let</code></td>
+<td>in</td>
+<td><code
+class="verbatim">(let  ((x 1)            ) (message x))</code></td>
+</tr>
+<tr class="even">
+<td><code class="verbatim">let*</code></td>
+<td>in or down</td>
+<td><code
+class="verbatim">(let* ((x 1) (y (* x 10)) (message y))</code></td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>

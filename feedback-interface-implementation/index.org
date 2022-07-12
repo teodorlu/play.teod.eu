@@ -78,6 +78,9 @@ Level 2 - product view.
 The interface is the /product texture/.
 Feedback is how smooth it is to execute a workflow.
 
+Makes sense?
+Now, let's introduce the birds-eye view.
+
 Level 3 - industry view.
 The interface is current market best practices.
 Feedback is how effectively the workflows can compete with other workflows.

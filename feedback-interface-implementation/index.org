@@ -137,7 +137,7 @@ What are the best jobs to be done?
 ** Implementation --- finally, what product increment do we build next?
 Challenge: many features.
 
-- To many features are hard to navigate.
+- Too many features are hard to navigate.
   We want the minimal number of features that can solve a workflow.
 - Features intersect.
   We want features to intersect /orthogonally/.

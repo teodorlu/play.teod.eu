@@ -20,14 +20,18 @@
 (defn play-edn [target]
   (str target "/play.edn"))
 
-;; Generate phony target for pages
+(println "# DO NOT EDIT DIRECTLY -- THIS MAKEFILE IS GENERATED")
+(println "# SEE `make clean` TARGET")
+(println "")
+(println "")
+
+(println "# Generate phony target for all pages - default target")
 (println ".PHONY: everything")
 (println "everything: " (str/join " " (concat ["index.html"] (map html targets))))
 (println "")
 (println "")
 
-;; Generate target for root index
-;;
+(println "# Generate target for root index")
 ;; TODO root index also depends on all the play.edn files found
 (println (str/join " " (concat ["index.html:" "index.clj"] (map play-edn targets))))
 (println "\t./index.clj")
@@ -36,7 +40,7 @@
 
 (def css false)
 
-;; Generate target for each page
+(println  "# Generate target for each page")
 (println
  (str/join "\n\n"
            (for [t targets]
@@ -62,8 +66,8 @@
 ;; (println "")
 ;; (println "")
 
-;; Clean target
+(println "# One `make clean` and then `make` should always give you fresh state")
 (println ".PHONY: clean")
 (println "clean:")
-(println "\trm index.html")
+(println "\trm -f index.html")
 (println "\t./makemakefile.clj > Makefile")

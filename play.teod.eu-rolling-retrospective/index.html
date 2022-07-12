@@ -172,7 +172,11 @@ simply be called “meta”?</a></li>
 <li><a href="#early-view">Early view</a></li>
 <li><a href="#says-hello">2022-07-12 says hello</a></li>
 </ul></li>
-<li><a href="#date-tagging">Date tagging</a></li>
+<li><a href="#date-tagging">Date tagging</a>
+<ul class="incremental">
+<li><a href="#early-view-1">Early view</a></li>
+<li><a href="#says-hello-1">2022-07-12 says hello</a></li>
+</ul></li>
 <li><a
 href="#play.teod.eu-is-just-some-code-that-generates-some-html">play.teod.eu
 is just some code that generates some HTML</a></li>
@@ -211,9 +215,18 @@ lump.</p>
 <p>Merely splitting between “feedback welcome”, “forever incomplete” and
 “mess” helps me A LOT personally.</p>
 <h2 id="date-tagging">Date tagging</h2>
+<p>Problem statement — should I encode dates (created, edited) in the
+metadata model?</p>
+<h3 id="early-view-1">Early view</h3>
 <p>I want metadata for :changed and :created. First because I want to
 filter / sort. Then perhaps later because that metadata is nice to
 have.</p>
+<h3 id="says-hello-1">2022-07-12 says hello</h3>
+<p>Date tagging would be nice. But by what semantics? And why?</p>
+<p>Reasonable question — which vague idea was created when? Which vague
+idea was edited last? I could use OS mtime for editing. Sync into
+play.edn. Have play.edn files <em>partially</em> generated. Or just pull
+it out from source at the right time? Do the :relations trick?</p>
 <h2
 id="play.teod.eu-is-just-some-code-that-generates-some-html">play.teod.eu
 is just some code that generates some HTML</h2>

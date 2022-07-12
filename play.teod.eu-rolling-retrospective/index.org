@@ -34,10 +34,25 @@ Merely splitting between "feedback welcome", "forever incomplete" and "mess" hel
 
 * Date tagging
 
+Problem statement --- should I encode dates (created, edited) in the metadata model?
+
+** Early view
 I want metadata for :changed and :created.
 First because I want to filter / sort.
 Then perhaps later because that metadata is nice to have.
 
+** 2022-07-12 says hello
+Date tagging would be nice.
+But by what semantics?
+And why?
+
+Reasonable question --- which vague idea was created when?
+Which vague idea was edited last?
+I could use OS mtime for editing.
+Sync into play.edn.
+Have play.edn files /partially/ generated.
+Or just pull it out from source at the right time?
+Do the :relations trick?
 * play.teod.eu is just some code that generates some HTML
 
 Not more.

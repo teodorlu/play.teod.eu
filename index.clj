@@ -81,7 +81,7 @@
                [""
                 "** Norwegian content"
                 ""
-                "Not everybody speaks Norwegian."
+                "Not everybody speaks Norwegian. But some do!"
                 ""]
                (for [page norwegian]
                  (str "- " (link page)))

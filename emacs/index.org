@@ -27,6 +27,9 @@ For my ease of reading, and for easily sharing with others. The web is
 accessible :)
 
 * 2022-06-12
+:PROPERTIES:
+:CUSTOM_ID: 2022-06-12
+:END:
 'Morning.
 ** Improving my Clerk workflow with hooks
 **Problem statement**. I've been trying out Jack Rusher's recommendation to bind
@@ -203,6 +206,9 @@ Now, I'm going to try /use/ clerk a bit. See you later!
 
 Teodor
 * 2022-06-21
+:PROPERTIES:
+:CUSTOM_ID: 2022-06-21
+:END:
 'Afternoon
 ** Fast font configuration
 Use case: need to use a big screen, want to change font size without an Emacs
@@ -229,6 +235,10 @@ Emacs froze.
 Not sure why.
 Happens both when I use my own =C-ø= binding, and with the built-in =SPC f s=.
 * 2022-07-12
+:PROPERTIES:
+:CUSTOM_ID: 2022-07-12
+:END:
+
 Vacation is whatever I decide it is.
 ** Creating small user interfaces in Emacs
 Value prop: for small, specific use cases, Emacs can be a better choice than a CLI.
@@ -363,7 +373,7 @@ This crashes:
 
 Why?
 
-| let    | scope      | example                                               |
-|--------+------------+-------------------------------------------------------|
-| =let=  | in         | =(let  ((x 1)            ) (message x))=              |
-| =let*= | in or down | =(let* ((x 1) (y (* x 10)) (message y))=              |
+| let    | scope      | example                                  |
+|--------+------------+------------------------------------------|
+| =let=  | in         | =(let  ((x 1)            ) (message x))= |
+| =let*= | in or down | =(let* ((x 1) (y (* x 10)) (message y))= |

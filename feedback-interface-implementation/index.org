@@ -45,8 +45,35 @@ So do a bit of interface design, then come back.
 And ensure that your interface is easy to test --- this means you'll get value out of your feedback loop!
 * Feedback, interface and implementation in product development
 ** Product feedback --- how do we see how well the product solves problems in context?
+How long is the cycle time from changing product behavior to seeing how the new behavior performs?
+How /wide/ is the product feedback that we're getting?
+High-resolution feedback is being inside the user's head while they solve a complete product "job to be done".
+Low-resolution feedback is asking the users what they think once in a while.
 ** Product interface --- what is the prodct as seen by the user?
+Does the user understand how to use the product?
+How long does it take a new user to get up to speed?
+How effectively can a user solve common tasks?
+Where is the friction?
+Are jobs to be done easier to get done with your product than with options?
+What are the best jobs to be done?
 ** Implementation --- finally, what product increment do we build next?
+* Workflow design --- innovation.
+Finally, the top level.
+Let's recap.
+
+Level 1 - software view.
+The interface is the /module interface/.
+Feedback is how easy it is to work with modules.
+
+Level 2 - product view.
+The interface is the /product texture/.
+Feedback is how smooth it is to execute a workflow.
+
+Level 3 - industry view.
+The interface is current market best practices.
+Feedback is how effectively the workflows can compete with other workflows.
+Are you enabling better workflows?
+
 * Retrospective on this article
 Right now, I've split the article into sections about feedback loop, interface design and implementation.
 That's clear.

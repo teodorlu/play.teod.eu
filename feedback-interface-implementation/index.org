@@ -15,6 +15,8 @@ I've found that most of my effort as a software developer can be reduced to:
 2. Designing interfaces
 3. Discovering how stuff works.
 
+Alternative title: /Multiscale design/.
+
 Curious? Read on.
 
 * In software development, design modules

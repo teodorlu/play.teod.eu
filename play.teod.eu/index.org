@@ -1,4 +1,4 @@
-#+title: play.teod.eu retrospective
+#+title: play.teod.eu perpetual retrospective
 
 [[./..][..]]
 
@@ -31,3 +31,7 @@ Then perhaps later because that metadata is nice to have.
 Not more.
 
 Just one layer of indirection - as source, and as published.
+
+* Should this page be journal oriented (indexed first by date?)
+
+Perhaps. Consider moving it over.

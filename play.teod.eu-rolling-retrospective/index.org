@@ -12,7 +12,6 @@ No.
 "Meta" is never narrow.
 Go for a single global layer, please.
 
-
 * I need to "contract" / "narrow" before publishing
 
 Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?

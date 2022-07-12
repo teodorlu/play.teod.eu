@@ -36,7 +36,7 @@
  "feedback-design-impl" {:title "Feedback loops, API design and how stuff works"}}
 
 (defn bash [cmd]
-  (:out (clojure.java.shell/sh "bash" "-c" cmd)))
+  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd))))
 
 (defn pages []
   (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
@@ -79,9 +79,15 @@
           (with-out-str
             (pprint (dissoc page :id))))))
 
-(defn page-index-org [{:keys [title trailing-blank-lines]}]
+(defn page-index-org [{:keys [title trailing-blank-lines org-id]}]
   (str/join "\n"
             (concat
+             ;; Link for org-roam
+             (when org-id
+               [":PROPERTIES:"
+                (str ":ID: " org-id)
+                ":END:"])
+
              ;; Header, title, link up
              [(str "#+title: " title)
               ""
@@ -127,14 +133,14 @@ TODO make content
         title (or (:title opts) page)]
     (assert page "Please specify which page to create!")
     (let [org-file (str page "/index.org")
-          play-file (str page "/play.edn")
-          make-file "Makefile"]
+          play-file (str page "/play.edn")]
       (fs/create-dirs page)
 
       ;; Org file
       (when-not (fs/exists? org-file)
         (spit org-file (page-index-org {:title title
-                                        :trailing-blank-lines 20})))
+                                        :trailing-blank-lines 20
+                                        :org-id (bash "uuidgen")})))
 
       ;; Play file
       (when-not (fs/exists? play-file)

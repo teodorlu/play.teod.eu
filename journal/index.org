@@ -464,31 +464,3 @@ Options:
 2. Something Clojure-JVM-based.
 3. Something Babashka-based.
 4. Just serving raw HTML in firefox, and triggering a hook to refresh on a keystroke - like I'm doing with Clerk
-
-
-* Trailing whitespace
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
-
-I like trailing whitespace - so that I can center content vertically when
-writing, and avoid the text moving as I type!

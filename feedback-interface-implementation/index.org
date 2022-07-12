@@ -18,7 +18,7 @@ I've found that most of my effort as a software developer can be reduced to:
 Curious? Read on.
 
 * Feedback, interface and implementation in software development
-** Feedback loop --- How are you learning as you go?
+** Software feedback --- is it working now?
 You're going to do the work.
 But what do your increments look like?
 How do you know that an increment works?
@@ -26,7 +26,7 @@ Letting you know whether / how your increments work is the job of your feedback 
 You're going to be checking your feedback loop frequently as you work.
 I prefer /very often/. Every ten seconds of more often.
 Probably bound to some on-save action.
-** Interface design --- How will your thing be used?
+** Software interface design --- the thing you're making, how is it used?
 The thing you're making.
 How is it going to be used?
 What do you provide?
@@ -35,7 +35,7 @@ A REST endpoint?
 Will your thing be /nice/ to use?
 
 When you're working on interface design, it's your job to ensure that the things you're making are nice to use.
-** Implementation --- Finally, how do you build your thing?
+** Software implementation --- now, let's make it work.
 With a good feedback loop and solid interface design, implementation is often the easy part.
 A good feedback loop lets you know whether / how your thing works at every point in time.
 And good interface design will split your problem into reasonable parts.
@@ -44,9 +44,9 @@ Splitting your problem /is/ introducing an interface.
 So do a bit of interface design, then come back.
 And ensure that your interface is easy to test --- this means you'll get value out of your feedback loop!
 * Feedback, interface and implementation in product development
-** Feedback loop --- How are you going to learn how well your product solves problems / workflows?
-** Interface design --- What /is/ your product? What should your product /become/?
-** Implementation --- How is the sausage made? How do you slice that future vision into testable increments?
+** Product feedback --- how do we see how well the product solves problems in context?
+** Product interface --- what is the prodct as seen by the user?
+** Implementation --- finally, what product increment do we build next?
 * Retrospective on this article
 Right now, I've split the article into sections about feedback loop, interface design and implementation.
 That's clear.

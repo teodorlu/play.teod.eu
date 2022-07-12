@@ -1,4 +1,4 @@
-#+title: play.teod.eu perpetual retrospective
+#+title: play.teod.eu rolling retrospective
 
 [[./..][..]]
 
@@ -265,3 +265,7 @@ For now, manual.
 Easier to allow exploring everything.
 *** doc/dump.org is going in here
 It's just retrospectives and meta commentary, really.
+* comment system
+Option: Comments on Twitter.
+Option: Comments on Hacker News.
+Option: Comments embedded straight into the text - via Github pull requests.

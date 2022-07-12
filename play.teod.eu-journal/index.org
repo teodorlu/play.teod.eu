@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       519dbdd4-9894-4f79-91e5-0975c07e039d
+:END:
 #+title: play.teod.eu journal
 
 [[./..][..]]

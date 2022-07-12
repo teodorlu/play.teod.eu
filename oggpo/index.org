@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       4bd41cdf-bf88-4212-9899-fb419eb2273c
+:END:
 #+title: One Good Goal Plus Options
 
 [[./..][..]]

@@ -29,8 +29,9 @@ Then perhaps later because that metadata is nice to have.
 * play.teod.eu is some code that generates some HTML
 
 Not more.
-
-Just one layer of indirection - as source, and as published.
+There's a single indirection boundary.
+Information as written --- indirection --- published HTML.
+And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
 
 * Should this page be journal oriented (indexed first by date?)
 

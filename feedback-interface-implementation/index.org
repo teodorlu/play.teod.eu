@@ -63,6 +63,23 @@ Where is the friction?
 Are jobs to be done easier to get done with your product than with options?
 What are the best jobs to be done?
 ** Implementation --- finally, what product increment do we build next?
+Challenge: many features.
+
+- To many features are hard to navigate.
+  We want the minimal number of features that can solve a workflow.
+- Features intersect.
+  We want features to intersect /orthogonally/.
+
+How do we perpetually add value without ending up in "buttons everywhere hell"?
+
+Challenge: uncertainty.
+
+- We don't really know how well a product works before we see it in action
+- What parts of our product are cheap/expensive to change?
+  - easy changes --- ergonomic affordances --- not structural
+  - hard changes --- primary structure --- don't destroy existing content
+
+How do we know what to make when we don't /really/ know before we're there --- and we might not have a return ticket?
 * In innovation, design workflows
 | Author   | Innovator |
 | Consumer | Industry  |

@@ -277,7 +277,8 @@ For that, I usually print stuff: ~(message "my output")~
 
 What about =completing read=?
 Doing it the emacsy way, I tried the built-in docs first.
-That seemed to work!
+That worked out really well!
+Google not required.
 
 #+begin_src emacs-lisp
 (defun teod/lol ()

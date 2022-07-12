@@ -493,8 +493,8 @@ class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb12
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  (shell-command-to-string (s-concat <span class="st">&quot;./play.clj create-page &quot;</span> page-id <span class="st">&quot; :title </span><span class="sc">\&quot;</span><span class="st">&quot;</span> title <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">&quot;</span>))</span>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  (switch-to-buffer (find-file-noselect page-id)))</span></code></pre></div>
 <p>What about <code class="verbatim">completing read</code>? Doing it
-the emacsy way, I tried the built-in docs first. That seemed to
-work!</p>
+the emacsy way, I tried the built-in docs first. That worked out really
+well! Google not required.</p>
 <div class="sourceCode" id="cb13" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/lol </span>()</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>

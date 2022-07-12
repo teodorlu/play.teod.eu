@@ -77,7 +77,10 @@ In all these cases, we want to take our interface design (be it interfaces or da
 We can completely avoid big chunks of problems by picking the right type or data model.
 "How seriously, in time?"
 Depends 😬
-But perhaps 1/3 feedback system, 1/3 interface design and 1/3 implementation.
+But perhaps 1/3 feedback system, 1/3 interface design and 1/3 implementation?
+Please don't take this as dogma.
+Try to feel your way forward.
+Experiment.
 Note that we don't spend the first hour on feedback, the next on interface and the third on implementation!
 We jump back and forth.
 

@@ -8,11 +8,11 @@ Goal: every day is purposeful.
 
 Means: split work into:
 
-- short term value
+- harvesting short term team value
 - exploring together
 - exploring individually
 
-* Harvesting short term value
+* Harvesting short term team value
 How:
 
 1. team works together on product discovery

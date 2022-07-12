@@ -163,6 +163,17 @@
 <h1 class="title">Feedback loops, interface design and how stuff
 works</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#feedback-loop-how-are-you-learning-as-you-go">Feedback
+loop — How are you learning as you go?</a></li>
+<li><a href="#interface-design-how-will-your-thing-be-used">Interface
+design — How will your thing be used?</a></li>
+<li><a
+href="#implementation-finally-how-do-you-build-your-thing">Implementation
+— Finally, how do you build your thing?</a></li>
+</ul>
+</nav>
 <p><a href="./..">..</a></p>
 <p>As software developers, we make decisions all day. How do I approach
 this problem? How do I start carving off its unknown pieces? How can I
@@ -177,5 +188,31 @@ reduced to:</p>
 <p>Curious? Read on.</p>
 <hr />
 <p>The rest of the article has not been written.</p>
+<h2 id="feedback-loop-how-are-you-learning-as-you-go">Feedback loop —
+How are you learning as you go?</h2>
+<p>You’re going to do the work. But what do your increments look like?
+How do you know that an increment works? Letting you know whether / how
+your increments work is the job of your feedback loop. You’re going to
+be checking your feedback loop frequently as you work. I prefer <em>very
+often</em>. Every ten seconds of more often. Probably bound to some
+on-save action.</p>
+<h2 id="interface-design-how-will-your-thing-be-used">Interface design —
+How will your thing be used?</h2>
+<p>The thing you’re making. How is it going to be used? What do you
+provide? A module with a public interface? A REST endpoint? Will your
+thing be <em>nice</em> to use?</p>
+<p>When you’re working on interface design, it’s your job to ensure that
+the things you’re making are nice to use.</p>
+<h2
+id="implementation-finally-how-do-you-build-your-thing">Implementation —
+Finally, how do you build your thing?</h2>
+<p>With a good feedback loop and solid interface design, implementation
+is often the easy part. A good feedback loop lets you know whether / how
+your thing works at every point in time. And good interface design will
+split your problem into reasonable parts. If implementation is hard,
+consider splitting your problem. Splitting your problem <em>is</em>
+introducing an interface. So do a bit of interface design, then come
+back. And ensure that your interface is easy to test — this means you’ll
+get value out of your feedback loop!</p>
 </body>
 </html>

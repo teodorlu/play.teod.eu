@@ -18,8 +18,34 @@ Curious? Read on.
 
 The rest of the article has not been written.
 
-* Outline draft :noexport:
-** Perspective
-** Figure
-** Specifics - software development process
-** Specifics - product design process
+# * Outline draft
+# ** Perspective
+# ** Figure
+# ** Specifics - software development process
+# ** Specifics - product design process
+
+* Feedback loop --- How are you learning as you go?
+You're going to do the work.
+But what do your increments look like?
+How do you know that an increment works?
+Letting you know whether / how your increments work is the job of your feedback loop.
+You're going to be checking your feedback loop frequently as you work.
+I prefer /very often/. Every ten seconds of more often.
+Probably bound to some on-save action.
+* Interface design --- How will your thing be used?
+The thing you're making.
+How is it going to be used?
+What do you provide?
+A module with a public interface?
+A REST endpoint?
+Will your thing be /nice/ to use?
+
+When you're working on interface design, it's your job to ensure that the things you're making are nice to use.
+* Implementation --- Finally, how do you build your thing?
+With a good feedback loop and solid interface design, implementation is often the easy part.
+A good feedback loop lets you know whether / how your thing works at every point in time.
+And good interface design will split your problem into reasonable parts.
+If implementation is hard, consider splitting your problem.
+Splitting your problem /is/ introducing an interface.
+So do a bit of interface design, then come back.
+And ensure that your interface is easy to test --- this means you'll get value out of your feedback loop!

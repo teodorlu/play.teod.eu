@@ -10,11 +10,6 @@ Companion to [[id:2e428a][play.teod.eu journal]] (link not yet working, sorry.)
 | play.teod.eu journal               | temporal, dump-oriented. |
 | play.teod.eu rolling retrospective | topic-oriented           |
 
-* should this page simply be called "meta"?
-No.
-"Meta" is never narrow.
-Go for a single global layer, please.
-
 * I need to "contract" / "narrow" before publishing
 
 Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?

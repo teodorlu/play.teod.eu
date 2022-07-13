@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 91a1d66d-2132-4acf-994a-e0bec32e8c6a
+:END:
+#+title: Precise, general, novel
+
+[[./..][..]]
+
+Three axes:
+
+| vague      | precise |
+| specific   | general |
+| well-known | novel   |
+
+Pysics: precise, general, well-known.
+
+My engineering experience: precise, quite specific, novel.
+
+Web3 wild speculation: vague, general, novel.
+
+Idea --- always better to move to the right.
+But hard.

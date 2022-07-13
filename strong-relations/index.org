@@ -79,3 +79,25 @@ Noo ... "strong relations" is more vague, context independent.
 Trust is a specific type of relation.
 And it /can be strong/.
 But is trust the most important type of relation?
+* In communities, look for strong centers
+Wat?
+
+If you want to contribute to open source, look for projects that are actively used, and actively maintained.
+
+Why?
+
+Well ...
+
+Hmm.
+* Expert-level skill is characterized by strong relations
+Why?
+
+Expert level skill is measured by effectiveness.
+Effectiveness requires effective execution and effective communication.
+
+Effective communication is
+  deep language knowledge
+  and effective use of language.
+
+Effective use of language requires that each word /hits hard/.
+A hard-hitting word is a strong relation.

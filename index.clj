@@ -110,9 +110,11 @@
                ["** What is this?"
                 ""
                 "Good question :)"
-                "Source is available on Github: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]"
-                "PRs are probably a bad idea, but feel free to \"get inspired\"."]
-               ))))
+                "Source is available on Github: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]."
+                ""
+                "PRs are probably a bad idea."
+                "I prefer a good discussion to rewriting each other's ideas."
+                "And of course, please let yourself \"be inspired\" if you want to create something similar."]))))
 
 ;; For development:
 ;;
@@ -135,7 +137,7 @@
 
 (defn main []
   (spit "index.html" (slurp (:out
-                             @(p/process '[pandoc --from org --to html --standalone]
+                             @(p/process '[pandoc --from org+smart --to html --standalone]
                                          {:in (org-markup {:pages (pages)})})))))
 
 (if (= (System/getenv "ALT")

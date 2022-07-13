@@ -22,7 +22,28 @@ Web3 wild speculation: vague, general, novel.
 Idea --- always better to move to the right.
 But hard.
 
+* From a long long time ago
+Copied over from: https://subcons.teod.eu/specific-precise/
+
+It's possible to be precise about generalities (good philosophy), and it's possible to be precise about specifics (good measurement, good planning).
+
+For example:
+
+|           | *Specific*                                         | *General*                   |
+|-----------+----------------------------------------------------+-----------------------------|
+| *Precise* | Good measurement, solid observation, good planning | Good philosophy             |
+| *Vague*   | Stuff that's plain wrong.                          | Getting lost in abstraction |
+
+Or:
+
+|           | *Specific*                | *General*                    |
+|-----------+---------------------------+------------------------------|
+| *Precise* | Detail                    | Good logic, good mathematics |
+| *Vague*   | Stuff that's plain wrong. | Equivocation                 |
+
+Which set of examples would you prefer? Why?
 * 2D version -- precision and generality
+Easier to draw.
 * My friction -- want to move right.
 I often accept a small loss of precision to gain generality.
 Others are often happy with me when I strive to be specific.

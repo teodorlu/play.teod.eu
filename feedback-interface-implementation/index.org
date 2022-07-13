@@ -2,8 +2,8 @@
 
 [[./..][..]]
 
-State --- draft, but feedback would be good.
-Consider skipping.
+State --- DRAFT, but ready for feedback.
+Some
 
 As software developers, we make decisions all day. How do I approach this
 problem? How do I start carving off its unknown pieces? How can I know where to
@@ -176,7 +176,7 @@ Feedback is how effectively the workflows can compete with other workflows.
 Are you enabling better workflows?
 * As questions
 | Feedback loop    | How do we know if it works?                            |
-| Interface design | What is the correct behavior?                          |
+| Interface design | What is the desired behavior?                          |
 | How it works     | Let's bridge the current behavior to correct behavior. |
 * Retrospective on this article
 Right now, I've split the article into sections about feedback loop, interface design and implementation.

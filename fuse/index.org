@@ -7,14 +7,15 @@ Something I'm interested in learning.
 FUSE allows a program to provide a virtual file system.
 A virtual file system looks like a file system on the outside.
 But when a file is saved in the virtual file system, the program providing the file system can do whatever it wants.
-* Introduction
+* The first exploration
+** Introduction
 I decided to start out the "right place" - =man fuse=.
 I got redirected to =man 8 fuse=.
 Curious about what =man 8= stuff is, I haven't seen that before. But no distractions now.
 
 I'll start by simply reading and annotating the manual.
-* Exploring =man fuse=
-** Definitions
+** Exploring =man fuse=
+*** Definitions
 What?
 =DEFINITIONS= contains the terminology in use in the FUSE manual.
 Understanding those terms is nice.
@@ -34,7 +35,7 @@ Manual definitions:
 | client           | A program that writes files, reads files, etc, from the virtual file system |
 
 More details: =man 1 fusermount3= explains how to mount a virtual filesystem.
-** Configuration
+*** Configuration
 What?
 This manual is written for me.
 It is my system --- I control the system.
@@ -43,7 +44,7 @@ The =CONFIGURATION= section explains to me how I choose.
 
 Two options are present.
 =mount_max= controls the number of filesystems a user can create.
-** Options
+*** Options
 What?
 There's lots of options.
 
@@ -52,14 +53,14 @@ So ... it looks like there's some way of speeding up recurring actions built in.
 Network file systems are mentioned.
 
 There's two mount commands mentioned - both =mount.fuse= and =mount.fuse3=.
-** See also
+*** See also
 - =man 1 fusermount3=
 - =man 1 fusermount=
 - =man 8 mount=
 - =man 4 fuse=
-* Exploring libfuse
+** Exploring libfuse
 Source. https://github.com/libfuse/libfuse
-** libfuse is using pytest for testing
+*** libfuse is using pytest for testing
 https://docs.pytest.org/en/7.1.x/
 
 Pytest is lightweight. Very lightweight.
@@ -76,7 +77,7 @@ Assert with =assert caputred.out == "on stdout"= or =assert captured.err == "on 
 Reading the Pytest documentation impresses me.
 It provides value without introducing coupling or dependencies.
 This is awesome.
-** Exploring http://libfuse.github.io/doxygen/
+*** Exploring http://libfuse.github.io/doxygen/
 Libfuse provides a low-level async API and a high-level synchronous API.
 
 From the documentation:
@@ -95,5 +96,11 @@ is primarily documented in fuse_lowlevel.h.
 #+end_quote
 
 Smells hourglassy to me.
-* Perhaps I just need to learn C.
+** Perhaps I just need to learn C.
 Aww.
+* Realizing that I don't have a good design
+1. I don't /really/ know which problem I want to solve right now
+2. Which means it's even harder to find a solution
+
+Then, what is the right first step?
+I dunno.

@@ -510,3 +510,10 @@ Good.
 Toplevel org-roam.el.
 Then ~(require 'org-id')~ and others.
 ** I want to learn how to create an Emacs minor mode.
+Why?
+
+It's the next step, I think.
+I know how to do basic stuff, I don't know how to do interactive stuff.
+I love how magit works.
+How dired works.
+Dired's view over the file system, the ease of moving around.

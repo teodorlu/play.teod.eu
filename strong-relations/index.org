@@ -7,27 +7,21 @@
 
 DRAFT
 
-TODO make content
+Closely related groups are densely linked with strong relationships.
 
-#+begin_verse
+Deep knowledge of a subject is not knowing all the five line dictionary definitions --- it is being able to navigate the field from node to node, knowing what relates to what.
 
+#+begin_quote
+5 - Never link to content without enriching the intent of linking with context.
+#+end_quote
 
+* I feel like play.teod.eu is too fragmented
+Too hard to connect ideas.
+Too hard to navigate between ideas.
+Too hard to see the whole picture. The composition of ideas.
 
+Visa is using maps for this.
 
+Simon Wardley is using maps for this.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
+Designers are using Figma to connect stuff.

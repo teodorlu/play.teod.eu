@@ -11,6 +11,8 @@ Three axes:
 | specific   | general |
 | well-known | novel   |
 
+Forms a 3D space.
+
 Pysics: precise, general, well-known.
 
 My engineering experience: precise, quite specific, novel.
@@ -19,3 +21,8 @@ Web3 wild speculation: vague, general, novel.
 
 Idea --- always better to move to the right.
 But hard.
+
+* 2D version -- precision and generality
+* My friction -- want to move right.
+I often accept a small loss of precision to gain generality.
+Others are often happy with me when I strive to be specific.

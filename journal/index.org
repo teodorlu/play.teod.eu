@@ -509,3 +509,4 @@ What about https://github.com/org-roam/?
 Good.
 Toplevel org-roam.el.
 Then ~(require 'org-id')~ and others.
+** I want to learn how to create an Emacs minor mode.

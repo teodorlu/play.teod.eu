@@ -16,6 +16,11 @@ I've found that most of my effort as a software developer can be reduced to:
 3. Discovering how stuff works.
 
 Alternative title: /Multiscale design/.
+Why?
+We're really just making design explicit through the stack.
+Is that a better title?
+I don't really think so.
+It's a bit vague.
 
 Curious? Read on.
 

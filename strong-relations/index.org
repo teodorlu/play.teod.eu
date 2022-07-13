@@ -25,3 +25,9 @@ Visa is using maps for this.
 Simon Wardley is using maps for this.
 
 Designers are using Figma to connect stuff.
+
+(and I can't even link to Simon Wardley or Visa because I don't have a system for strong links)
+
+Do I want an entity system?
+
+🤔

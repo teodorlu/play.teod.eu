@@ -377,3 +377,20 @@ Why?
 |--------+------------+------------------------------------------|
 | =let=  | in         | =(let  ((x 1)            ) (message x))= |
 | =let*= | in or down | =(let* ((x 1) (y (* x 10)) (message y))= |
+* 2022-07-13
+I really don't like UPS.
+** My first Emacs Lisp module
+I'm using Doom Emacs.
+I enjoy using Doom Emacs.
+So far, I've leaned heavily into workflows --- how can I get this done?
+I haven't put too much effort into structure.
+That's about to change.
+
+Why?
+This page.
+play.teod.eu.
+I've created quite a few Emacs lisp commands that play nice with the play.teod.eu structure.
+Up until now, all of these have gone into my Doom Emacs config.el.
+
+*** How to create your own modules in Doom Emacs
+Three things

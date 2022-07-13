@@ -4,11 +4,11 @@
 
 # Generate phony target for all pages - default target
 .PHONY: everything
-everything:  index.html aphorisms/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html clojure-interactive/index.html discover-difference/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html unix-signals-intro/index.html wip/index.html
+everything:  index.html aphorisms/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html clojure-interactive/index.html discover-difference/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html intention-relation-action/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html maksimal-opsjonalitet/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html unix-signals-intro/index.html wip/index.html
 
 
 # Generate target for root index
-index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn capability-feature-assembly/play.edn clojure-interactive/play.edn discover-difference/play.edn emacs/play.edn feedback-interface-implementation/play.edn fuse/play.edn grow-knowlege-together/play.edn heterarchies/play.edn inspiration-howto/play.edn iterate-knowledge-archipelago/play.edn journal/play.edn knowledge-worker/play.edn maksimal-opsjonalitet/play.edn narrow-statements/play.edn narrow-waist/play.edn oggpo/play.edn orthogonality-enables-optionality/play.edn play.teod.eu-journal/play.edn play.teod.eu-rolling-retrospective/play.edn product-for-developers/play.edn purposeful-software-development/play.edn rdf-intro/play.edn sannhet-deskriptiv-preskriptiv/play.edn shabakka/play.edn software-architecture-as-language-construction/play.edn software-architecture/play.edn unix-signals-intro/play.edn wip/play.edn
+index.html: index.clj aphorisms/play.edn bitemporal-worldview/play.edn capability-feature-assembly/play.edn clojure-interactive/play.edn discover-difference/play.edn emacs/play.edn feedback-interface-implementation/play.edn fuse/play.edn grow-knowlege-together/play.edn heterarchies/play.edn inspiration-howto/play.edn intention-relation-action/play.edn iterate-knowledge-archipelago/play.edn journal/play.edn knowledge-worker/play.edn maksimal-opsjonalitet/play.edn narrow-statements/play.edn narrow-waist/play.edn oggpo/play.edn orthogonality-enables-optionality/play.edn play.teod.eu-journal/play.edn play.teod.eu-rolling-retrospective/play.edn product-for-developers/play.edn purposeful-software-development/play.edn rdf-intro/play.edn sannhet-deskriptiv-preskriptiv/play.edn shabakka/play.edn software-architecture-as-language-construction/play.edn software-architecture/play.edn unix-signals-intro/play.edn wip/play.edn
 	./index.clj
 
 
@@ -45,6 +45,9 @@ heterarchies/index.html: heterarchies/index.org
 
 inspiration-howto/index.html: inspiration-howto/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i inspiration-howto/index.org -o inspiration-howto/index.html
+
+intention-relation-action/index.html: intention-relation-action/index.org
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i intention-relation-action/index.org -o intention-relation-action/index.html
 
 iterate-knowledge-archipelago/index.html: iterate-knowledge-archipelago/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i iterate-knowledge-archipelago/index.org -o iterate-knowledge-archipelago/index.html

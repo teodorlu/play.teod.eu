@@ -492,3 +492,20 @@ Project notes get a page per project. That page is deleteable or "removable from
 
 Question: "in what context do I want to re-discover this piece later".
 Then -- establish links to all those contexts.
+* 2022-07-13
+I really don't like UPS.
+** Better editing of play.edn files
+I could create some simple Emacs lisp commands for that which shell out to babashka.
+** How do I split my Emacs lisp code into packages?
+Hmm.
+
+How do others do it?
+I tried looking at the Doom Emacs creator dotfiles, but  I didn't find any Emacs config.
+https://github.com/hlissner/dotfiles/tree/0df9027010b424410a4622eba54b979c256f0efb/./
+I guess his Emacs config is just Doom.
+What about https://github.com/tecosaur/?
+He just has a big org-mode file.
+What about https://github.com/org-roam/?
+Good.
+Toplevel org-roam.el.
+Then ~(require 'org-id')~ and others.

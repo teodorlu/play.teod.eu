@@ -305,6 +305,13 @@ work offline</a></li>
 href="#discussing-note-taking-systems-on-the-clojurians-slack">Discussing
 note taking systems on the Clojurians Slack</a></li>
 </ul></li>
+<li><a href="#section-9">2022-07-13</a>
+<ul class="incremental">
+<li><a href="#better-editing-of-play.edn-files">Better editing of
+play.edn files</a></li>
+<li><a href="#how-do-i-split-my-emacs-lisp-code-into-packages">How do I
+split my Emacs lisp code into packages?</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -856,5 +863,23 @@ Project notes get a page per project. That page is deleteable or
 “removable from index”.</p>
 <p>Question: “in what context do I want to re-discover this piece
 later”. Then – establish links to all those contexts.</p>
+<h2 id="section-9">2022-07-13</h2>
+<p>I really don’t like UPS.</p>
+<h3 id="better-editing-of-play.edn-files">Better editing of play.edn
+files</h3>
+<p>I could create some simple Emacs lisp commands for that which shell
+out to babashka.</p>
+<h3 id="how-do-i-split-my-emacs-lisp-code-into-packages">How do I split
+my Emacs lisp code into packages?</h3>
+<p>Hmm.</p>
+<p>How do others do it? I tried looking at the Doom Emacs creator
+dotfiles, but I didn’t find any Emacs config. <a
+href="https://github.com/hlissner/dotfiles/tree/0df9027010b424410a4622eba54b979c256f0efb/./">https://github.com/hlissner/dotfiles/tree/0df9027010b424410a4622eba54b979c256f0efb/./</a>
+I guess his Emacs config is just Doom. What about <a
+href="https://github.com/tecosaur/">https://github.com/tecosaur/</a>? He
+just has a big org-mode file. What about <a
+href="https://github.com/org-roam/">https://github.com/org-roam/</a>?
+Good. Toplevel org-roam.el. Then <code>(require 'org-id')</code> and
+others.</p>
 </body>
 </html>

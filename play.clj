@@ -53,13 +53,27 @@
        (into {})))
 
 (defn relations->lines
-  "Produce a list of strings looking like
+  "Produce one line per page
 
-  :id emacs, :title \"(Doom) Emacs learning journal\", :form :rambling, :readiness :in-progress
-  "
+  Example:
+
+    :id emacs, :title \"(Doom) Emacs learning journal\", :form :rambling, :readiness :in-progress"
   [rels]
   (doseq [l (vals rels)]
     (prn l)))
+
+(defn relations->lines2
+  "Produce one line per relation
+
+  Example:
+
+    [:id \"emacs\"] :title \"(Doom) Emacs learning journal\"
+    [:id \"emacs\"] :form :rambling
+    [:id \"emacs\"] :readiness :in-progress "
+  [rels]
+  (doseq [[id page-meta] rels]
+    (doseq [[attribute value] (dissoc page-meta :id)]
+      (prn [:id id] attribute value))))
 
 (defn relations->pretty
   [rels]
@@ -110,6 +124,7 @@ TODO make content
   (let [sources {:files files->relations
                  :lines lines->relations}
         targets {:lines relations->lines
+                 :lines2 relations->lines2
                  :pretty relations->pretty
                  :files relations->files}
         {:keys [from to]} opts]

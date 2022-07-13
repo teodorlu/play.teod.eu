@@ -72,3 +72,10 @@ That could give a nice interactive experience.
  :back {"swardley" {,,,}
         "figma" {,,,}}}
 #+end_src
+* I'm curious about the crossover between strong relations and trust
+Is it the same?
+
+Noo ... "strong relations" is more vague, context independent.
+Trust is a specific type of relation.
+And it /can be strong/.
+But is trust the most important type of relation?

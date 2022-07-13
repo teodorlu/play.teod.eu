@@ -11,6 +11,8 @@ Closely related groups are densely linked with strong relationships.
 
 Deep knowledge of a subject is not knowing all the five line dictionary definitions --- it is being able to navigate the field from node to node, knowing what relates to what.
 
+From /Aphorisms/:
+
 #+begin_quote
 5 - Never link to content without enriching the intent of linking with context.
 #+end_quote

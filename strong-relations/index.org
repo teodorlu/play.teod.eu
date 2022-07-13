@@ -8,6 +8,8 @@
 DRAFT
 
 Closely related groups are densely linked with strong relationships.
+"Densely linked": there are many links.
+"strong relationships": each link is heavy, carries trust both ways.
 
 Deep knowledge of a subject is not knowing all the five line dictionary definitions --- it is being able to navigate the field from node to node, knowing what relates to what.
 

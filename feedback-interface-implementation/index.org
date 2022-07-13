@@ -92,8 +92,8 @@ Now, get cracking!
 Walk a step forwards, see the unit tests go green.
 Celebrate! 🎉
 * In software development, design modules
-| Author   | Software developer today |
-| Consumer | Software developer later |
+| Author   | Software developer today  |
+| Consumer | Software developers later |
 ** Software feedback --- is it working now?
 You're going to do the work.
 But what do your increments look like?

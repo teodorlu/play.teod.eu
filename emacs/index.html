@@ -256,6 +256,8 @@ class="verbatim">let*</code></a></li>
 <ul class="incremental">
 <li><a href="#my-first-emacs-lisp-module">My first Emacs Lisp
 module</a></li>
+<li><a href="#do-want-bb-edn-playground">Do want: BB EDN
+PLAYGROUND</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -606,5 +608,29 @@ all of these have gone into my Doom Emacs config.el.</p>
 <h4 id="how-to-create-your-own-modules-in-doom-emacs">How to create your
 own modules in Doom Emacs</h4>
 <p>Three things</p>
+<h3 id="do-want-bb-edn-playground">Do want: BB EDN PLAYGROUND</h3>
+<ul class="incremental">
+<li>straight in Emacs</li>
+<li>workflow
+<ul class="incremental">
+<li>has open EDN buffer</li>
+<li>M-x t-bb-edn-playground</li>
+<li>new clojure-mode buffer opens</li>
+<li>C-c C-c takes the clojure in the this buffer uses it as a bb script
+to transform the original EDN buffer writes results back in place.</li>
+</ul></li>
+<li>Hard?
+<ul class="incremental">
+<li>need to connect new buffer back to old buffer</li>
+<li>ideally want to override C-c C-c for just this buffer</li>
+</ul></li>
+<li>Valuable?
+<ul class="incremental">
+<li>Well, kinda nice.</li>
+<li>Not generally applicable, I think.</li>
+<li>Potential for inclusion in <code
+class="verbatim">clojure-mode</code>, perhaps.</li>
+</ul></li>
+</ul>
 </body>
 </html>

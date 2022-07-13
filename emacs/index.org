@@ -397,3 +397,20 @@ Up until now, all of these have gone into my Doom Emacs config.el.
 
 *** How to create your own modules in Doom Emacs
 Three things
+** Do want: BB EDN PLAYGROUND
+- straight in Emacs
+- workflow
+  - has open EDN buffer
+  - M-x t-bb-edn-playground
+  - new clojure-mode buffer opens
+  - C-c C-c takes the clojure in the this buffer
+    uses it as a bb script
+    to transform the original EDN buffer
+    writes results back in place.
+- Hard?
+  - need to connect new buffer back to old buffer
+  - ideally want to override C-c C-c for just this buffer
+- Valuable?
+  - Well, kinda nice.
+  - Not generally applicable, I think.
+  - Potential for inclusion in =clojure-mode=, perhaps.

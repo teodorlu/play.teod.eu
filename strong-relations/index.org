@@ -31,3 +31,40 @@ Designers are using Figma to connect stuff.
 Do I want an entity system?
 
 🤔
+* How can stuff be more connected?
+By making it possible / nice to link between pages
+
+By making some small "hover over this" things, or footnotes, or something like that
+
+By becoming better at publishing not just plain text, but diagrams, figures, you name it.
+* How can stuff be more connected --- specifically, what can I do?
+I could write an article where I use Remarkable drawings actively.
+
+I could use Figma / Miro to illustrate stuff.
+
+I could create static.teod.eu so that "putting up an artifact" is separate from reusing it.
+
+I could create an example of a "fat link" / "rich reference" / "strong relation"
+* Do I want to use some other kind of system as a "reference provider"?
+I could externalize this.
+
+Miro. Roam.
+
+Export relations somehow.
+Make the relations rich, imbue them with context.
+Entity type for "map".
+
+Hmm.
+
+But how would I use this?
+That's the question.
+
+Or just list forward references / back references in the end.
+That could give a nice interactive experience.
+
+#+begin_src clojure
+{:forward {"thinkwert" {,,,}
+           "visa" {,,,}}
+ :back {"swardley" {,,,}
+        "figma" {,,,}}}
+#+end_src

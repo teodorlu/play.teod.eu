@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 276c7103-9366-4326-8cfd-3c0871be3c64
+:END:
+#+title: Strong relations
+
+[[./..][..]]
+
+DRAFT
+
+TODO make content
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

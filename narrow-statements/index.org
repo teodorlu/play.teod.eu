@@ -1,18 +1,21 @@
 #+title: narrow-statements
 
-Idea
+[[./..][..]]
 
-Coordination is easier when statements are narrow
+Idea: Coordination is easier when statements are narrow
 
-Narrow /interpreted/ statements requires
+Narrow /interpreted/ statements requires:
 
-  Statement is composed of narrow pieces
+- Statement is composed of narrow pieces
+- Context where statement is interpreted is aware of the pieces
 
-  Context where statement is interpreted is aware of the pieces
+* Challenge: narrow statements require more precise language than vague statements.
+Changing the way we speak is hard.
+Unfamiliar.
+Moving to precise language from context-laden language is hard!
+Why should others join me?
 
-Challenge - building new language.
-
-Should new language pieces be introduced?
+* Should new language pieces be introduced?
 
   I say yes
 
@@ -20,39 +23,14 @@ Should new language pieces be introduced?
 
   sharing new language requires communication - interplay - idea movement - idea enrichment
 
-How should a group share knowledge?
+* How should a group share knowledge?
 
-  Requirement - narrow statements
+** Requirement - narrow statements
 
-  Strategy for achieving narrow statements
+** Strategy for achieving narrow statements
 
-    Pre-shared agenda of topics - "is this something you care about?"
+Pre-shared agenda of topics - "is this something you care about?"
 
-    Each topic is introduced by someone
+Each topic is introduced by someone
 
-    Then there are questions / criticisms.
-
-[[./..][..]]
-
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
+Then there are questions / criticisms.

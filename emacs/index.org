@@ -416,3 +416,9 @@ Three things
   - Potential for inclusion in =clojure-mode=, perhaps.
 * 2022-07-14
 ** TIL: Org-roam needs an Emacs restart (or something) when moving files around
+** Org-mode stored links
+Org-mode is amazing.
+
+From anywhere, =M-x org-store-link=.
+That link goes into the =org-stored-links= variable.
+Next time a link is added with =org-insert-link=, you can see all the links you've stored.

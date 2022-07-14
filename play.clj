@@ -69,11 +69,22 @@
 (defn relations->lines2
   "Produce one line per relation
 
-  Example:
+  Output format:
 
     [:id \"emacs\"] :title \"(Doom) Emacs learning journal\"
     [:id \"emacs\"] :form :rambling
-    [:id \"emacs\"] :readiness :in-progress "
+    [:id \"emacs\"] :readiness :in-progress
+
+  Example: how many WTF-pages do we have?
+
+    ./play.clj relations :from files :to lines2 | grep -i \":readiness :wtf\" | wc -l
+    30
+
+  Example: how many non-WTF-pages do we have?
+
+    ./play.clj relations :from files :to lines2 | grep :readiness | grep -v \":readiness :wtf\" | wc -l
+    9
+  "
   [rels]
   (doseq [[id page-meta] rels]
     (doseq [[attribute value] (dissoc page-meta :id)]

@@ -220,7 +220,6 @@ Ideas:
    2. Or =notebooks/= could mirror "/" - so that =notebooks/pendulum.clj= is
       compiled into =pendulum/index.html=.
    3. 🤔
-* 2022-07-12
 ** Case: tags.
 Problem: I want to set =feedback-interface-implementation= to "ready for feedback"
 

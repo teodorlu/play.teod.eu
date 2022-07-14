@@ -35,26 +35,3 @@ Should assets be queryable?
 Batch readable, batch writeable?
 
 Hmm
-
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse

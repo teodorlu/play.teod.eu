@@ -79,6 +79,21 @@
     (doseq [[attribute value] (dissoc page-meta :id)]
       (prn [:id id] attribute value))))
 
+(defn relations->lines+recent
+  "Produce one line per relation, recent first
+
+  Example: list recently created pages, with page ID and created date:
+
+    ./play.clj relations :from files :to lines+recent | ./play.clj relations :from lines :to lines2 | grep :created
+  "
+  [rels]
+  (let [recent-lines (->> (vals rels)
+                          (filter :created)
+                          (sort-by :created)
+                          reverse)]
+    (doseq [l recent-lines]
+      (prn l))))
+
 (defn relations->pretty
   [rels]
   (pprint rels))
@@ -129,6 +144,7 @@ TODO make content
                  :lines lines->relations}
         targets {:lines relations->lines
                  :lines2 relations->lines2
+                 :lines+recent relations->lines+recent
                  :pretty relations->pretty
                  :files relations->files}
         {:keys [from to]} opts]

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID: a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86
+:END:
+#+title: Lost in specificity
+
+[[./..][..]]
+
+If everything we do must be specific, there's a limit to the ideas we can have.
+When a two-week sprint is our only tool, we will simply have to disregard anything that doesn't fit in a two week box.
+It's a bed of Procrustes.
+All limbs that don't fit in the bed are cut off.
+Should I re-read that Taleb book?
+Hmm.

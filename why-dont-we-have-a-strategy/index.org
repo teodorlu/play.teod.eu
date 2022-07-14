@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd
+:END:
+#+title: Why don't we have a strategy?
+
+[[./..][..]]
+
+Commentary on /Why Don't We Have a Strategy?/ by John Cutler.
+Reading the [[https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy][original article on The Beautiful Mess]] is probably a good idea.
+
+#+begin_quote
+A product leader recently told me: "The system is not built for me to think. The
+system is built for me to be reactionary." Why? The theory goes that ideas are
+cheap, and execution is everything. We celebrate productivity, output, and
+achieving goals. Consider all the rituals teams have around managing output,
+tracking metrics, forecasting, sharing plans, and boosting productivity.
+#+end_quote
+
+I agree, so much.
+When ideas are cheap and execution expensive, we value execution over everything else.
+And the people working with ideas are ... tossed around, in a sense.
+"WHAT?"
+"Why can't you describe what you worked on yesterday???"
+It's kind of hard to reduce to a three sentence summary.
+"Are you lazy or what???"
+It feels like we're lost in specificity.

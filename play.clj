@@ -6,11 +6,15 @@
 ;;   # edit lines.txt - do stuff in batch ...
 ;;   ./play relations :from :lines :to :files < lines.txt
 ;;
+;; Action - create new page
+;;
+;;   ./play page        rdf-intro :title "Introduction to linked data with RDF and Datalog"
+;;   ./play create-page rdf-intro :title "Introduction to linked data with RDF and Datalog"
+;;
 ;; Wanted commands:
 ;;
 ;;   ./play index > index.html # generate index.html
 ;;   ./play makefile > makefile # generate makefile
-;;   ./play page rdf-intro :title "Introduction to linked data with RDF and Datalog"
 ;;   ./play preview
 ;;
 ;; Wanted behavior:

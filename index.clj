@@ -44,7 +44,7 @@
        (map add-category)
        (sort-by :title)))
 
-(defn link [{:keys [id title readiness] :as _page}]
+(defn link [{:keys [id title] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]

@@ -194,3 +194,50 @@ static size_t writecons(FILE *f, const unsigned char *buf, size_t size) {
 #+end_src
 
 I think the source code too is meant to reach about a 100 characters in width.
+* reified links for play.teod.eu
+I want reified links for play.teod.eu.
+** Why reified links?
+Because I can model and query knowledge.
+
+A good first use case is being able to resolve the id: links I can insert with Org-Roam, like this: [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
+*** Challenges
+Can I get the links out with Pandoc JSON and a Clojure filter with a walk?
+I think so.
+
+And how should I represent the links?
+
+Well, there's not only the links.
+I need to /resolve/ the links.
+Hmm, that could mean extracting links.
+And links could have some kind of ID.
+What if I simply keep the original link target, and use that as an ID?
+But ... linking to the ID of a page and linking to the path of a page is different.
+
+#+begin_src clojure
+;; here's a link to this page:
+{:id   "658447a3-00e6-44aa-963e-d2f5938c50d3"
+ :host "play.teod.eu"
+ :path "play.teod.eu-rolling-retrospective"}
+#+end_src
+
+No, actually, that's not a link.
+That's a link target.
+If I want that as an entity, I'll need ... an ID too?
+Hmm.
+
+What can differentiate the links?
+
+#+begin_src clojure
+;; here is this page:
+{:id   "658447a3-00e6-44aa-963e-d2f5938c50d3"
+ :host "play.teod.eu"
+ :path "play.teod.eu-rolling-retrospective"}
+
+;; What does the link to this page look like?
+{:target/id "658447a3-00e6-44aa-963e-d2f5938c50d3"
+ :source/id "abc123"
+ ;; what's link ID?
+ ;; what's link type?
+ ;; What kind of link types can I have?
+ }
+#+end_src

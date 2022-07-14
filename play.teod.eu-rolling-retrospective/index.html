@@ -261,6 +261,11 @@ narrow</a></li>
 <li><a href="#source-code-blocks-are-too-narrow">Source code blocks are
 too narrow</a></li>
 </ul></li>
+<li><a href="#reified-links-for-play.teod.eu">reified links for
+play.teod.eu</a>
+<ul class="incremental">
+<li><a href="#why-reified-links">Why reified links?</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -452,5 +457,44 @@ lines:</p>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>I think the source code too is meant to reach about a 100 characters
 in width.</p>
+<h2 id="reified-links-for-play.teod.eu">reified links for
+play.teod.eu</h2>
+<p>I want reified links for play.teod.eu.</p>
+<h3 id="why-reified-links">Why reified links?</h3>
+<p>Because I can model and query knowledge.</p>
+<p>A good first use case is being able to resolve the id: links I can
+insert with Org-Roam, like this: <a
+href="id:2e1280a4-a783-4ab7-9f5c-58a7851a8218">Feedback loops, interface
+design and how stuff works</a>.</p>
+<h4 id="challenges">Challenges</h4>
+<p>Can I get the links out with Pandoc JSON and a Clojure filter with a
+walk? I think so.</p>
+<p>And how should I represent the links?</p>
+<p>Well, there’s not only the links. I need to <em>resolve</em> the
+links. Hmm, that could mean extracting links. And links could have some
+kind of ID. What if I simply keep the original link target, and use that
+as an ID? But … linking to the ID of a page and linking to the path of a
+page is different.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here&#39;s a link to this page:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span></code></pre></div>
+<p>No, actually, that’s not a link. That’s a link target. If I want that
+as an entity, I’ll need … an ID too? Hmm.</p>
+<p>What can differentiate the links?</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here is this page:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">;; What does the link to this page look like?</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>{<span class="at">:target/id</span> <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> <span class="at">:source/id</span> <span class="st">&quot;abc123&quot;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link ID?</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link type?</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a> <span class="co">;; What kind of link types can I have?</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a> }</span></code></pre></div>
 </body>
 </html>

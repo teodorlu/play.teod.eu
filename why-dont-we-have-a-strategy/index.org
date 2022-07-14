@@ -8,6 +8,7 @@
 Commentary on /Why Don't We Have a Strategy?/ by John Cutler.
 Reading the [[https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy][original article on The Beautiful Mess]] is probably a good idea.
 
+* "The system is not built for me to think. The system is built for me to be reactionary"
 #+begin_quote
 A product leader recently told me: "The system is not built for me to think. The
 system is built for me to be reactionary." Why? The theory goes that ideas are
@@ -24,3 +25,14 @@ And the people working with ideas are ... tossed around, in a sense.
 It's kind of hard to reduce to a three sentence summary.
 "Are you lazy or what???"
 It feels like we're lost in specificity.
+
+Trust.
+Do we trust ourselves to have good ideas?
+Do we trust others to have even better ideas?
+
+Perhaps 50/50 /must/ be the solution.
+* How do I define strategy?
+Strategy is the tool that allows us to reach the long term goals that we could not otherwise reach.
+
+Cool, that's the outcome.
+We like outcome-based definition.

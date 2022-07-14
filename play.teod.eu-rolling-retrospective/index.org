@@ -137,3 +137,60 @@ I could also hook my logic into Org-Roam's templating system
 Details: https://github.com/org-roam/org-roam/blob/c3867619147175faf89ed8f3e90a1e67a4fd9655/doc/org-roam.org#L896
 * play.teod.eu success metric: strong language
 I want to use play.teod.eu to power up my language.
+* CSS pain points
+** I cannot easily customize the CSS without building everything from scratch.
+Pandoc provides CSS to me.
+But I want to configure stuff myself too.
+Does that mean I have to write all the CSS from scratch?
+
+What is a good first step?
+Should I understand how the existing CSS works first?
+Or should I just remove it all and start from the start?
+
+*** Why just remove it all
+I can be okay with it looking a bit crap.
+I need to take responsibility for writing the CSS myself I want to become good at CSS at any point.
+
+*** Why tweak
+Pandoc's look is good right now.
+And I can move incrementally. I don't have to redo everything.
+** Tables are too narrow
+I cannot use tables effectively.
+They wrap /way/ before they are useful.
+
+Example of a bad table: https://play.teod.eu/git-commit-messages/
+** the whole site is narrow
+Here are two example lines from https://play.teod.eu/git-commit-messages/:
+
+#+begin_quote
+I sometimes write bad commit messages. Here on play.teod.eu, I write
+particularly bad commit messages. See for yourself:
+#+end_quote
+
+That's 68 characters.
+
+Here are some example lines from https://drewdevault.com/2022/07/09/Fediverse-toxicity.html:
+
+#+begin_quote
+Mastodon, inspired by GNU social, together with Pleroma, form the most popular components
+of what we know as the “Fediverse” today. All of them are, in essence, federated, free software
+Twitter clones, interoperable with each other via the ActivityPub protocol.
+#+end_quote
+
+That's up to 95 characters.
+** Source code blocks are too narrow
+And for source code, [[id:de4eab79-8b9a-472b-b22b-ae0441d5fcf5][Drew DeVault]] is using an even smaller font.
+The article [[https://drewdevault.com/2022/07/01/Porting-DOOM-to-Helios.html][Porting Doom to Helios]] has some source code.
+Here are some of the longer lines:
+
+#+begin_src c
+static size_t writecons(FILE *f, const unsigned char *buf, size_t size) {
+	sys_writecons(f->wbase, f->wpos - f->wbase);
+	sys_writecons(buf, size);
+	f->wend = f->buf + f->buf_size;
+	f->wpos = f->wbase = f->buf;
+	return size;
+}
+#+end_src
+
+I think the source code too is meant to reach about a 100 characters in width.

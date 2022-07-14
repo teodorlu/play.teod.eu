@@ -10,7 +10,7 @@ Here on play.teod.eu, I write /particularly/ bad commit messages.
 See for yourself:
 
 #+begin_src
-$ git log --oneline | head -n 20
+$ (cd ~/dev/teodorlu/play.teod.eu && git log --oneline | head -n 20)
 2e62af6 Add foreign resources
 0c6ed67 THink
 79910d8 Documentation

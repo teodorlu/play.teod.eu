@@ -107,7 +107,7 @@
                 ":END:"])
 
              ;; Header, title, link up
-             [(str "#+title: " title)
+             [(str "#+TITLE: " title)
               ""
               "[[./..][..]]
 

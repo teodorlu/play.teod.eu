@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID: 92115e62-f102-4c97-92cc-8c9f52d53c71
+:END:
+#+TITLE: Git commit messages should be good, right?
+
+[[./..][..]]
+
+I sometimes write bad commit messages.
+Here on play.teod.eu, I write /particularly/ bad commit messages.
+See for yourself:
+
+#+begin_src
+$ git log --oneline | head -n 20
+2e62af6 Add foreign resources
+0c6ed67 THink
+79910d8 Documentation
+01ff964 Wanna learn C
+bc032b4 Org-roam needs a restart sometimes
+1a67b49 Shake it up
+d269acd Count WTF pages and non-wtf pages
+e3c3021 List recently changed pages
+cd66293 😁
+955907e Remove double
+975fe76 New global Makefile target
+d7c4c03 Go
+9d7db8f Make makefile
+346e402 Make makefile
+a8a69e8 Regenerate index
+1ac8b21 watchexec make dev
+534bc21 Remove unused variable
+3ad6cbb Comma is better.
+e78ee41 THink
+51befa8 Define strategy
+#+end_src
+
+Why?
+
+In certain contexts, I value a near-zero threshold for changing things more than I value the ledger of changes.
+This is absolutely context dependent.
+Dependent on what?
+
+| factor                           | impact                                                      | action                                                       |
+|----------------------------------+-------------------------------------------------------------+--------------------------------------------------------------|
+| Many people working on project   | One person messing around will cause confusion              | Don't mess around in the commit log                          |
+| Codebase is changed frequently   | You remember what's there                                   | Don't fear, change, try. If bad, revert                      |
+| Codebase is changed infrequently | Effort to get into context outweighs effort to apply change | Prioritize good CI, know the impact of what you're changing. |

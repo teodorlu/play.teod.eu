@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 9dfae94f-677a-49a6-bee3-98a2bb470e48
+:END:
+#+title: A list of problems I want to fix
+
+[[./..][..]]
+
+Structure --- by idea, not by time.
+
+* Working properly with strategic initiatives
+Ever since I went into IT in 2019, I've felt shackled by the time horizon of the teams I've been working with.
+Where is the long term thinking?
+For Unicad, it's vital that we're able to work with what matters long term.
+Research is a better analogy for much of what we do than "coding stuff".
+
+See also: https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy
+
+See also: [[id:b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd][Why don't we have a strategy?]]

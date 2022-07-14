@@ -4,7 +4,7 @@
 
 DRAFT
 
-Idea - Good software architecture is:
+* Idea - Good software architecture is:
 
 1. Good namespace design
 2. Not more indirection than necessary
@@ -41,26 +41,10 @@ But how do we know what to put in each bottom-level module?
 I believe the answer is to enable good composition.
 We reach good composition by providing orthogonal capabilities.
 
+* How does the architecture feel?
+Do you have to act a way that's more and more narrow?
+Or are go getting more freedom to move?
 
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
+Architectures can move both ways.
+They can remove all the friction, allowing you to run.
+Or they can slow you down untill you cannot move.

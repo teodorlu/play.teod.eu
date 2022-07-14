@@ -160,7 +160,8 @@ TODO make content
       (when-not (fs/exists? play-file)
         (spit play-file (pr-str {:title title
                                  :readiness :wtf-is-this
-                                 :author-url "https://teod.eu"})))
+                                 :author-url "https://teod.eu"
+                                 :created (str/trim (bash "date -I"))})))
 
       ;; Regenerate the makefile since we've added a new target
       (bash "./makemakefile.clj > Makefile")

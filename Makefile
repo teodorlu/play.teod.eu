@@ -128,8 +128,12 @@ wip/index.html: wip/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i wip/index.org -o wip/index.html
 
 
+.PHONY: makefile
+makefile:
+	./makemakefile.clj > Makefile
+
+
 # One `make clean` and then `make` should always give you fresh state
 .PHONY: clean
 clean:
 	rm -f index.html
-	./makemakefile.clj > Makefile

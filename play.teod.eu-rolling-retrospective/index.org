@@ -77,6 +77,14 @@ Git knows when the file was changed last
 On creating a new page, write :created (now)
 
 On creating the metadata table, file edit time by asking Git
+** 2022-07-14 👀
+Well --- haven't really taken this any further.
+
+I kinda want dates for my ephemeral stuff.
+So that it's easier to handle the very incomplete stuff.
+Or at least sort by creation date.
+
+Hmm, let's just add a :created timestamp.
 * play.teod.eu is just some code that generates some HTML
 
 Not more.

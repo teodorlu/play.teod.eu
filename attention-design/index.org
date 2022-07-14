@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID: 0cc48734-e933-44cb-a4e8-2678f125f6df
+:END:
+#+TITLE: Attention design
+
+[[./..][..]]
+
+Do: consider thoroughly where you point your attention.
+
+* My approach to attention design: note taking.
+Copied from [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]] at 2022-07-14:
+
+*named ideas* have a deeper meaning.
+They have an URL, and can be linked to.
+
+*project journal* is temporally indexed.
+Date up top, topic below.
+Project-scope rambling.
+
+*project problems* is a mutable approach to attention design.
+It does /not/ function as a ledger.
+Rather, it is meant to be changed.
+Problem-scope attention design.
+
+*journal* is the temporally indexed global catch-all thing.
+Put things here when in doubt.
+Global-scope rambling.
+
+*problems* is a global list of things that want attention.
+Global scope attention design.

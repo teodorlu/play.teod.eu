@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID: 7ec7b6b8-9341-43c0-bd05-b11fb89f2475
+:END:
+#+TITLE: watchexec make dev
+
+[[./..][..]]
+
+I prefer to work in either of two ways:
+
+1. With a REPL
+2. In a =watchexec make dev= loop.
+
+REPL is nice for Clojure and Emacs Lisp.
+I've tried with Python and Haskell, but I didn't really like it.
+
+What about =watchexec make dev=?
+First, this is watchexec: https://watchexec.github.io/
+Another option is =find . | entr make dev=, though entr doesn't pick up files that are added on the fly.
+Here's entr: https://eradman.com/entrproject/
+
+So, what about =watchexec make dev=.
+I want to make tiny steps, and know that each step is working.
+That's what I require from my feedback loop.
+(I define what I mean by feedback loop in [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].)
+
+A good feedback loop has two characteristics:
+
+1. The feedback cycle time is near instant.
+2. The feedback given is /broad/.
+
+We get /narrow feedback/ if we're only able to check the behavior of a narrow piece of our system.
+We get /broad feedback/ when we can know that the whole system works as we want it to.
+
+In a =watchexec make dev= loop, I typically either run the whole system, or run the whole test suite.
+So in practice, it might be =watchexec make test=.
+But those two can be run in parallel :)
+
+Also in practice, I don't pursue 100 % test coverage.
+Thus, I use the unit tests for =broad system coverage=.
+And I can use =make dev= to test what I'm working on specifically.
+Where the output is some printed lines, a file, or something that lets me perceive.
+Then I can refactor the "does this look okay?" logic into tests when I need to.

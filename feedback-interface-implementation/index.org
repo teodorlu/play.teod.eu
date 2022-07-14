@@ -1,4 +1,7 @@
-#+title: Feedback loops, interface design and how stuff works
+:PROPERTIES:
+:ID:       2e1280a4-a783-4ab7-9f5c-58a7851a8218
+:END:
+#+TITLE: Feedback loops, interface design and how stuff works
 
 [[./..][..]]
 

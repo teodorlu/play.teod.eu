@@ -414,3 +414,5 @@ Three things
   - Well, kinda nice.
   - Not generally applicable, I think.
   - Potential for inclusion in =clojure-mode=, perhaps.
+* 2022-07-14
+** TIL: Org-roam needs an Emacs restart (or something) when moving files around

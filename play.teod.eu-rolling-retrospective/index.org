@@ -29,6 +29,23 @@ At the time that I wrote the text above, everything was one big lump.
 
 Merely splitting between "feedback welcome", "forever incomplete" and "mess" helps me A LOT personally.
 
+** 2022-07-14 says hello
+I've recently published two small things on the Clojurians Slack.
+First a bit about Emacs --- how to use =read-string=, =completing-read= and =let*= to write tiny UIs.
+Then a /Interaction value differential/ page.
+
+Am I happy with the results?
+
+Yes.
+
+Very much, actually.
+Every publish-action gave me some nice interactions.
+In the Emacs case, I simply copied from my notes and Emacs config and wrote a small, little Slack message.
+In the /Interaction value differential/ article, I published something.
+And I liked what i published.
+
+😊
+
 * Date tagging
 
 Problem statement --- should I encode dates (created, edited) in the metadata model?

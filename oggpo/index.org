@@ -12,7 +12,7 @@ What is the minimal amount of product work required for good developer utilizati
 I propose: /One Good Goal Plus Options/.
 
 "One good goal" - we have at least one thing we know is valuable.
-"Thing is valuable?"
+What does "Thing is valuable" mean?
 We have done sufficient work on business risk, usability risk and value risk to know that this makes sense.
 
 "Plus Options" - set expectations /not/ that devs spend 100 % of their time chasing the single goal.
@@ -24,26 +24,3 @@ Optionality requires:
 - knowledge of other (more fuzzy) goals
   - either dev-driven - "this is useful"
   - or other-driven "hey, what about this idea. Any takers?"
-
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse

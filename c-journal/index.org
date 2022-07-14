@@ -14,3 +14,9 @@ LOL
 - Perhaps even learn some graphics.
 
 Wait, I did write about this. What pages did I change most recently?
+** Foreign resources
+| Resource                       | Author       | Source            |
+|--------------------------------+--------------+-------------------|
+| /Learn C The Hard Way/         | Zed Shaw     | [[https://learncodethehardway.org/c/][C hard way]]        |
+| /Principles for C programming/ | Drew DeVault | [[https://drewdevault.com/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html][stop worry love C]] |
+| /Lessons to learn from C/      | Drew DeVault | [[https://drewdevault.com/2017/01/30/Lessons-to-learn-from-C.html][learn from C]]      |

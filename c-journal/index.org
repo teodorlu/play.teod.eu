@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 052c1cdc-f2fe-4ba5-b319-d0394be1e184
+:END:
+#+TITLE: C learning journal
+
+[[./..][..]]
+
+* 2022-07-14
+LOL
+** Motivation
+- To learn how computer memory works
+- To learn how to write programs that use the memory effectively, to achieve better performance then when working with objects
+- To learn how to work with big datasets
+- Perhaps even learn some graphics.
+
+Wait, I did write about this. What pages did I change most recently?

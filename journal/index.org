@@ -520,3 +520,15 @@ Dired's view over the file system, the ease of moving around.
 
 So ... I probably want a major mode too.
 Haha.
+* 2022-07-14
+:)
+** How can git tell me when a folder was last changed?
+Git knows this.
+
+I would like: input folder path, output last changed timestamp.
+
+Purpose: sort, enrich :relations.
+
+Treat :changed the same way as I'm treating :id now.
+It's a special tag, and should not be written down.
+When writing lines back to files, =dissoc= the =:changed= property.

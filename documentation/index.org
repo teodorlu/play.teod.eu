@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID: c032492c-c104-4de2-b3eb-6b8097557f25
+:END:
+#+TITLE: Documentation
+
+[[./..][..]]
+
+"Documentation".
+Man, that killed off the conversation quickly, didn't it?
+
+That dead thing that's tedious to write.
+But you gotta do it.
+Fun stuff first, mess around.
+Then kill it and put it in text.
+
+-----
+
+I have had some of the weirdest conversations in my life when the topic of documentation comes up.
+I like writing things down.
+In fact, I find /great/ utility in writing things down.
+Written text extends my mind.
+
+Without writing things down, I either have to remember a bunch of stuff, or just reduce my expectations to quality.
+I choose not to do that.
+So, what happens?
+I use writing as an essential part of my work process.
+I think by writing things down.
+
+When working with others, I sometimes get a feeling that we're following a track towards confusion and vagueness.
+That's when I want to start writing things down.
+To me this makes sense.
+Written text has played a central role in every good thing I've made.
+But others often have a completely different working process.
+They think I want to start producing "documentation".
+And "documentation" is defined by something like "extensive written text that's tedious to write".
+Which is the complete opposite of what I want.
+I want to improve /perception/.
+I want to enable us to see better, so that we can create better.
+
+-----
+
+Can documentation be good?
+
+I can find it motivating to build documentation.
+I approach documentation in the same way as I approach code --- through [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
+I write documentation as the interface between my understanding and your understanding.
+The feedback loop tests how well the documentation explains its topic.
+Can you understand what you've written yourself?
+Are you happy with what you've written?
+Can the documentation you wrote successfully explain the topic to someone else?
+Are others able to find it?
+And do others actually engage with it?
+
+I find it to be a great shame that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never care again.

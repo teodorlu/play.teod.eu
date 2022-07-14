@@ -241,3 +241,10 @@ What can differentiate the links?
  ;; What kind of link types can I have?
  }
 #+end_src
+
+How do we know the difference between one link and another?
+
+Option:
+
+- source, target and increasing number
+- just source and target

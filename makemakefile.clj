@@ -54,20 +54,14 @@
 (println "")
 (println "")
 
-;; Generate target for Makefile (LOL)
-;; Nope, this doesn't work. Or, we'd have to somehow ...
-;; No.
-;; Making the makefile would have to be done in advance of every run, I think.
-;; If it would work
-;; But perhaps I should just automate that as part of the "create new page" action".
-;; 🤔
-;; (println "Makefile: makemakefile.clj")
-;; (println "\t./makemakefile.clj > Makefile")
-;; (println "")
-;; (println "")
+
+(println ".PHONY: makefile")
+(println "makefile:")
+(println "\t./makemakefile.clj > Makefile")
+(println "")
+(println "")
 
 (println "# One `make clean` and then `make` should always give you fresh state")
 (println ".PHONY: clean")
 (println "clean:")
 (println "\trm -f index.html")
-(println "\t./makemakefile.clj > Makefile")

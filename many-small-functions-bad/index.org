@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 0558f6df-21b2-4be5-acbc-8c9377ec3cee
+:END:
+#+TITLE: When having many small functions is bad
+
+[[./..][..]]
+
+I

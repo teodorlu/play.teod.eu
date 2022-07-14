@@ -195,12 +195,14 @@ for opt-in structure</a></li>
 <li><a
 href="#if-i-was-going-to-publish-a-clerk-document-how-would-i-do-it">If
 I was going to publish a Clerk document, how would I do it?</a></li>
-</ul></li>
-<li><a href="#section-3">2022-07-12</a>
-<ul class="incremental">
 <li><a href="#case-tags.">Case: tags.</a></li>
 <li><a href="#flattening-out-the-hierarchy">Flattening out the
 hierarchy</a></li>
+</ul></li>
+<li><a href="#section-3">2022-07-14</a>
+<ul class="incremental">
+<li><a href="#finally-fixed-the-makefile-generation-yay">Finally fixed
+the makefile generation, yay!</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -528,7 +530,6 @@ into <code class="verbatim">pendulum/index.html</code>.</li>
 <li>🤔</li>
 </ol></li>
 </ol>
-<h2 id="section-3">2022-07-12</h2>
 <h3 id="case-tags.">Case: tags.</h3>
 <p>Problem: I want to set <code
 class="verbatim">feedback-interface-implementation</code> to “ready for
@@ -546,5 +547,17 @@ doc/wip.org into its own wip/index.org page.</h4>
 <p>Easier to allow exploring everything.</p>
 <h4 id="docdump.org-is-going-in-here">doc/dump.org is going in here</h4>
 <p>It’s just retrospectives and meta commentary, really.</p>
+<h2 id="section-3">2022-07-14</h2>
+<h3 id="finally-fixed-the-makefile-generation-yay">Finally fixed the
+makefile generation, yay!</h3>
+<ol class="incremental">
+<li>Don’t generate Makefile from Makefile — avoid potential race
+conditions.</li>
+<li>Make global index.html depend explicitly on each tiny
+index.html</li>
+</ol>
+<p>Now, a single <code class="verbatim">M-x teod-play-create-page</code>
+gives me a nice, new place to work.</p>
+<p>😁</p>
 </body>
 </html>

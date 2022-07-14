@@ -237,3 +237,11 @@ For now, manual.
 Easier to allow exploring everything.
 *** doc/dump.org is going in here
 It's just retrospectives and meta commentary, really.
+* 2022-07-14
+** Finally fixed the makefile generation, yay!
+1. Don't generate Makefile from Makefile --- avoid potential race conditions.
+2. Make global index.html depend explicitly on each tiny index.html
+
+Now, a single =M-x teod-play-create-page= gives me a nice, new place to work.
+
+😁

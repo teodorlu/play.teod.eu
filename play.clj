@@ -174,13 +174,13 @@ TODO make content
 
 (defn print-help [{}]
   (println (str/trim "
-Usage: ./playground <subcommand> <options>
+Usage: ./play.clj <subcommand> <options>
 
 Subcommands:
 
-page PAGE_NAME
+page PAGE_ID :title PAGE_TITLE
 
-    Create a new Org-mode page, with a tiny Pandoc build system.
+relations :from :files :to :lines
 ")))
 
 (defn main [& args]

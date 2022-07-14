@@ -532,3 +532,22 @@ Purpose: sort, enrich :relations.
 Treat :changed the same way as I'm treating :id now.
 It's a special tag, and should not be written down.
 When writing lines back to files, =dissoc= the =:changed= property.
+** Note categories
+*named ideas* have a deeper meaning.
+They have an URL, and can be linked to.
+
+*project journal* is temporally indexed.
+Date up top, topic below.
+Project-scope rambling.
+
+*project problems* is a mutable approach to attention design.
+It does /not/ function as a ledger.
+Rather, it is meant to be changed.
+Problem-scope attention design.
+
+*journal* is the temporally indexed global catch-all thing.
+Put things here when in doubt.
+Global-scope rambling.
+
+*problems* is a global list of things that want attention.
+Global scope attention design.

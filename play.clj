@@ -154,7 +154,6 @@ TODO make content
       ;; Org file
       (when-not (fs/exists? org-file)
         (spit org-file (page-index-org {:title title
-                                        :trailing-blank-lines 20
                                         :org-id (bash "uuidgen")})))
 
       ;; Play file

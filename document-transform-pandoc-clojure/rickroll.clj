@@ -67,7 +67,7 @@
 ;;
 ;;   pandoc -i doc.md --filter "bash -c \"jet --from json --keywordize | bb rickroll.clj | jet --to json\" -o doc-no-links.md
 ;;
-;; But pandoc doesn't support command line arguments to filter.
+;; But pandoc doesn't support filters with command line arguments.
 ;; So we need a script to wrap it up.
 ;; More on the wrapper later.
 

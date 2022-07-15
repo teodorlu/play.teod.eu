@@ -422,7 +422,7 @@ the code listing!</p>
 
 <div class="sourceCode" id="cb9"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> rickroll</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [clojure.<span class="kw">walk</span>] <span class="co">; for recursive transformation</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [clojure.<span class="kw">walk</span> <span class="at">:refer</span> [<span class="kw">prewalk</span>]] <span class="co">; for recursive transformation</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>            [clojure.edn]  <span class="co">; for reading pandoc JSON as EDN</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>            ))</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
@@ -434,11 +434,11 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a 
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   3. otherwise, leave it be.</span></span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;</span></span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">;; Example:</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  (clojure.walk/prewalk (<span class="kw">fn</span> [el]</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>                          (<span class="kw">if</span> (<span class="kw">string?</span> el) <span class="co">; touch strings</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>                            (<span class="kw">keyword</span> el)   <span class="co">; do this to strings</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>                            el))           <span class="co">; otherwise let it be</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>                        {<span class="at">:big</span> [<span class="st">&quot;nested&quot;</span> <span class="st">&quot;structure&quot;</span>]}) <span class="co">; big thing in here</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (<span class="kw">string?</span> el) <span class="co">; touch strings</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">keyword</span> el)   <span class="co">; do this to strings</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>               el))           <span class="co">; otherwise let it be</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>           {<span class="at">:big</span> [<span class="st">&quot;nested&quot;</span> <span class="st">&quot;structure&quot;</span>]}) <span class="co">; big thing in here</span></span>
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co">;; Here&#39;s the predicate we&#39;re going to use later:</span></span>
@@ -464,11 +464,11 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a 
 <span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a><span class="co">;;   https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/</span></span>
 <span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> remove-links </span>[pandoc]</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>  (clojure.walk/prewalk (<span class="kw">fn</span> [el]</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>                          (<span class="kw">if</span> (pandoc-link? el)</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>                            (pandoc-empty) <span class="co">; empty object is just empty,</span></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>                            el))</span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>                        pandoc))</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (pandoc-link? el)</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>               (pandoc-empty) <span class="co">; empty object is just empty,</span></span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>               el))</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>           pandoc))</span>
 <span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a><span class="co">;; That worked!</span></span>
 <span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
@@ -486,11 +486,11 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a 
 <span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>        link-to-rick (<span class="kw">fn</span> [el]</span>
 <span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>                       (<span class="kw">assoc-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>] <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>))]</span>
 <span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; now, just follow the walk pattern from above.</span></span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>    (clojure.walk/prewalk (<span class="kw">fn</span> [el]</span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>                            (<span class="kw">if</span> (pandoc-link? el)</span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>                              (link-to-rick el)</span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>                              el))</span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>                          pandoc)))</span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (pandoc-link? el)</span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>                 (link-to-rick el)</span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>                 el))</span>
+<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>             pandoc)))</span>
 <span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="co">;; I first tried running it all at once:</span></span>
 <span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>

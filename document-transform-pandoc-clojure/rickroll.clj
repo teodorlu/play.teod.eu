@@ -1,5 +1,5 @@
 (ns rickroll
-  (:require [clojure.walk] ; for recursive transformation
+  (:require [clojure.walk :refer [prewalk]] ; for recursive transformation
             [clojure.edn]  ; for reading pandoc JSON as EDN
             ))
 
@@ -11,11 +11,11 @@
   ;;   3. otherwise, leave it be.
   ;;
   ;; Example:
-  (clojure.walk/prewalk (fn [el]
-                          (if (string? el) ; touch strings
-                            (keyword el)   ; do this to strings
-                            el))           ; otherwise let it be
-                        {:big ["nested" "structure"]}) ; big thing in here
+  (prewalk (fn [el]
+             (if (string? el) ; touch strings
+               (keyword el)   ; do this to strings
+               el))           ; otherwise let it be
+           {:big ["nested" "structure"]}) ; big thing in here
   )
 
 ;; Here's the predicate we're going to use later:
@@ -41,11 +41,11 @@
 ;;   https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/
 
 (defn remove-links [pandoc]
-  (clojure.walk/prewalk (fn [el]
-                          (if (pandoc-link? el)
-                            (pandoc-empty) ; empty object is just empty,
-                            el))
-                        pandoc))
+  (prewalk (fn [el]
+             (if (pandoc-link? el)
+               (pandoc-empty) ; empty object is just empty,
+               el))
+           pandoc))
 
 ;; That worked!
 ;;
@@ -63,11 +63,11 @@
         link-to-rick (fn [el]
                        (assoc-in el [:c 2 0] "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
     ;; now, just follow the walk pattern from above.
-    (clojure.walk/prewalk (fn [el]
-                            (if (pandoc-link? el)
-                              (link-to-rick el)
-                              el))
-                          pandoc)))
+    (prewalk (fn [el]
+               (if (pandoc-link? el)
+                 (link-to-rick el)
+                 el))
+             pandoc)))
 
 ;; I first tried running it all at once:
 ;;

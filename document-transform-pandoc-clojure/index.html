@@ -330,7 +330,7 @@ class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&quot;Pan-doc&quot; like &quot;pan-Atlantic&quot;, get it?</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>It supports lots of formats.</span></code></pre></div>
-<p>We can call pandoc:</p>
+<p>We can call Pandoc:</p>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -351,7 +351,7 @@ JSON with Pandoc</h3>
 class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>See <span class="co">[</span><span class="ot">teod.eu</span><span class="co">][teod]</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ot">[teod]: https://teod.eu</span></span></code></pre></div>
-<p>We can call pandoc:</p>
+<p>We can call Pandoc:</p>
 <div class="sourceCode" id="cb5"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -399,17 +399,18 @@ href="https://pandoc.org/index.html">https://pandoc.org/index.html</a>)</p>
 <p>So, how do we want to do this? A Pandoc filter takes JSON on stdin
 and produces JSON on stdout.</p>
 <p>We can use <code class="verbatim">jet</code> and <code
-class="verbatim">bb</code> do do this:</p>
+class="verbatim">bb</code> do this:</p>
 <div class="sourceCode" id="cb8"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&#39;{&quot;args&quot;: [1, 2]}&#39;</span> <span class="kw">|</span> <span class="dt">\</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">jet</span> <span class="at">--from</span> json <span class="kw">|</span> <span class="dt">\</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">jet</span> <span class="at">--from</span> json <span class="at">--keywordize</span> <span class="kw">|</span> <span class="dt">\</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">bb</span> <span class="st">&#39;(assoc *input* :sum (reduce + (:args *input*)))&#39;</span> <span class="kw">|</span> <span class="dt">\</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="ex">jet</span> <span class="at">--to</span> json</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="dt">{</span><span class="st">&quot;args&quot;</span><span class="dt">:[1</span><span class="op">,</span><span class="dt">2]</span><span class="op">,</span><span class="st">&quot;sum&quot;</span><span class="dt">:0}</span></span></code></pre></div>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="ex">jet</span> <span class="at">--to</span> json</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;args&quot;</span><span class="fu">:</span><span class="ot">[</span><span class="dv">1</span><span class="ot">,</span><span class="dv">2</span><span class="ot">]</span><span class="fu">,</span><span class="dt">&quot;sum&quot;</span><span class="fu">:</span><span class="dv">3</span><span class="fu">}</span></span></code></pre></div>
 <p>Nice!</p>
 <h2 id="implementing-rickroll.clj">Implementing <code
 class="verbatim">rickroll.clj</code></h2>
-<p>I wanted to work on the pandoc filter incrementally, writing each
+<p>I wanted to work on the Pandoc filter incrementally, writing each
 step. That didn’t happen. I got in the zone, and wrote everything. So
 you’ll get after-the-fact commentary instead. The source code renderer
 on play.teod.eu currently (2022-07-15) demands very short source code
@@ -417,241 +418,241 @@ lines. So you can view rickroll.clj as a <a href="rickroll.clj">raw
 file</a> or <a
 href="https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj">on
 Github</a> if you’d like. Otherwise, keep on scrolling.</p>
-<p>Here comes a full listing for the babashka script. We continue below
+<p>Here comes a full listing for the Babashka script. We continue below
 the code listing!</p>
 <a name="above-rickroll.clj" href="#below-rickroll.clj">Jump below rickroll.clj 👇</a>
 
-<div class="sourceCode" id="cb9"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> rickroll</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>   [clojure.<span class="kw">walk</span> <span class="at">:refer</span> [<span class="kw">prewalk</span>]] <span class="co">; recursive transformation</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>   [clojure.edn]  <span class="co">; read pandoc JSON as EDN</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>   ))</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>(<span class="kw">comment</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">;; a nice pattern for recursive transformation in Clojure:</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   1. walk</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   2. change element if (predicate?)</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   3. otherwise, leave it be.</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>  <span class="co">;; Example:</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (<span class="kw">string?</span> el) <span class="co">; touch strings</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">keyword</span> el)   <span class="co">; do this to strings</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>               el))           <span class="co">; otherwise let it be</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>           {<span class="at">:big</span> [<span class="st">&quot;nested&quot;</span> <span class="st">&quot;structure&quot;</span>]}) <span class="co">; big thing</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="co">;; We must identify pandoc JSON links</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> pandoc-link?</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Is this a valid Pandoc link?&quot;</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>  [pandoc]</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">=</span> <span class="st">&quot;Link&quot;</span> (<span class="at">:t</span> pandoc)))</span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="co">;; What&#39;s the simplest link transform we could do?</span></span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="co">;; Removing links is easy.</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="co">;; For the interested reader, Geepaw Hill provides some</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="co">;; great commentary on you should take small steps.</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="co">;;   https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/</span></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a><span class="co">;; But I digress. Back to our totally serious project.</span></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="co">;; Let&#39;s remove some links.</span></span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> remove-links </span>[pandoc]</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (pandoc-link? el)</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>               {} <span class="co">; emtpy element</span></span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>               el))</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>           pandoc))</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a><span class="co">;; To try, set `transform` to `remove-links` below :)</span></span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a><span class="co">;; Finally, here&#39;s a rickroll pandoc filter:</span></span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> rickroll </span>[pandoc]</span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [<span class="co">;; Inline example of the data we&#39;re working with</span></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>        _link-example {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>                       <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>                           [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>                           [<span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span> <span class="st">&quot;&quot;</span>]]}</span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>        <span class="co">;; which made the assoc-in easy to write:</span></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>        rick-link (<span class="kw">fn</span> [el]</span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>                    (<span class="kw">assoc-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>]</span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>                              <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>))]</span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; now, the (if predicate change no-change) pattern again:</span></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (pandoc-link? el)</span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>                 (rick-link el)</span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>                 el))</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>             pandoc)))</span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a><span class="co">;; I first tried running it all at once:</span></span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a><span class="co">;;   pandoc -i doc.md --filter &quot;bash -c \&quot;jet --from json --keywordize | bb rickroll.clj | jet --to json\&quot; -o doc-no-links.md</span></span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="co">;; But pandoc doesn&#39;t support filters with command line arguments.</span></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="co">;; So we need a script to wrap it up.</span></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="co">;; More on the wrapper later.</span></span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a><span class="co">;; Aaand I hard-code some test data for development.</span></span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> example</span></span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">22</span> <span class="dv">2</span>], <span class="at">:meta</span> {},</span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a>   <span class="at">:blocks</span> [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>,</span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>             <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;See&quot;</span>}</span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}</span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>                  <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>                      [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>                      [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [transform rickroll <span class="co">; choose rickroll or remove-links</span></span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>      input (<span class="kw">try</span></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>              (clojure.edn/read <span class="va">*in*</span>)</span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>              (<span class="kw">catch</span> RuntimeException _ <span class="va">nil</span>))] <span class="co">; if *in* looks right, use that.</span></span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>    (transform input)</span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; otherwise use test data</span></span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>    (transform example)))</span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a><span class="co">;; How to run without pandoc:</span></span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="co">;;   cat link.json \</span></span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --from json --keywordize \</span></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | bb rickroll.clj \</span></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --to json --keywordize</span></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> rickroll</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>   [clojure.<span class="kw">walk</span> <span class="at">:refer</span> [<span class="kw">prewalk</span>]] <span class="co">; recursive transformation</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>   [clojure.edn]  <span class="co">; read pandoc JSON as EDN</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>   ))</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>(<span class="kw">comment</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">;; a nice pattern for recursive transformation in Clojure:</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   1. walk</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   2. change element if (predicate?)</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;   3. otherwise, leave it be.</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">;;</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="co">;; Example:</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (<span class="kw">string?</span> el) <span class="co">; touch strings</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">keyword</span> el)   <span class="co">; do this to strings</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>               el))           <span class="co">; otherwise let it be</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>           {<span class="at">:big</span> [<span class="st">&quot;nested&quot;</span> <span class="st">&quot;structure&quot;</span>]}) <span class="co">; big thing</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="co">;; We must identify pandoc JSON links</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> pandoc-link?</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Is this a valid Pandoc link?&quot;</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>  [pandoc]</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">=</span> <span class="st">&quot;Link&quot;</span> (<span class="at">:t</span> pandoc)))</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="co">;; What&#39;s the simplest link transform we could do?</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="co">;; Removing links is easy.</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a><span class="co">;; For the interested reader, Geepaw Hill provides some</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="co">;; great commentary on you should take small steps.</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co">;;   https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a><span class="co">;; But I digress. Back to our totally serious project.</span></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a><span class="co">;; Let&#39;s remove some links.</span></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> remove-links </span>[pandoc]</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (pandoc-link? el)</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>               {} <span class="co">; emtpy element</span></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>               el))</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>           pandoc))</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a><span class="co">;; To try, set `transform` to `remove-links` below :)</span></span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a><span class="co">;; Finally, here&#39;s a rickroll pandoc filter:</span></span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> rickroll </span>[pandoc]</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [<span class="co">;; Inline example of the data we&#39;re working with</span></span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>        _link-example {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>                       <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>                           [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>                           [<span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span> <span class="st">&quot;&quot;</span>]]}</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a>        <span class="co">;; which made the assoc-in easy to write:</span></span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a>        rick-link (<span class="kw">fn</span> [el]</span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>                    (<span class="kw">assoc-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>]</span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>                              <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>))]</span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; now, the (if predicate change no-change) pattern again:</span></span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (pandoc-link? el)</span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a>                 (rick-link el)</span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>                 el))</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a>             pandoc)))</span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a><span class="co">;; I first tried running it all at once:</span></span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a><span class="co">;;   pandoc -i doc.md --filter &quot;bash -c \&quot;jet --from json --keywordize | bb rickroll.clj | jet --to json\&quot; -o doc-no-links.md</span></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a><span class="co">;; But pandoc doesn&#39;t support filters with command line arguments.</span></span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a><span class="co">;; So we need a script to wrap it up.</span></span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a><span class="co">;; More on the wrapper later.</span></span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a><span class="co">;; Aaand I hard-code some test data for development.</span></span>
+<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> example</span></span>
+<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">22</span> <span class="dv">2</span>], <span class="at">:meta</span> {},</span>
+<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a>   <span class="at">:blocks</span> [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>,</span>
+<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a>             <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;See&quot;</span>}</span>
+<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}</span>
+<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
+<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a>                  <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
+<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a>                      [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
+<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a>                      [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
+<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [transform rickroll <span class="co">; choose rickroll or remove-links</span></span>
+<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a>      input (<span class="kw">try</span></span>
+<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a>              (clojure.edn/read <span class="va">*in*</span>)</span>
+<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a>              (<span class="kw">catch</span> RuntimeException _ <span class="va">nil</span>))] <span class="co">; if *in* looks right, use that.</span></span>
+<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
+<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a>    (transform input)</span>
+<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; otherwise use test data</span></span>
+<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a>    (transform example)))</span>
+<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a><span class="co">;; How to run without pandoc:</span></span>
+<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a><span class="co">;;   cat link.json \</span></span>
+<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --from json --keywordize \</span></span>
+<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | bb rickroll.clj \</span></span>
+<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --to json --keywordize</span></span>
+<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span></code></pre></div>
 <a name="below-rickroll.clj" href="#above-rickroll.clj">Jump above rickroll.clj 👆</a>
 
 <h2 id="bash-wrapper-rickroll.sh">Bash wrapper: <code
 class="verbatim">rickroll.sh</code></h2>
 <p>Pandoc’s <code class="verbatim">--filter</code> requires <em>a single
 script</em>. So here’s <code class="verbatim">rickroll.sh</code>:</p>
-<div class="sourceCode" id="cb10"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">jet</span> <span class="at">--from</span> json <span class="at">--keywordize</span> <span class="dt">\</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> rickroll.clj <span class="dt">\</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">jet</span> <span class="at">--to</span> json <span class="at">--keywordize</span></span></code></pre></div>
-<p>You can use <code class="verbatim">rickroll.sh</code> like this:</p>
 <div class="sourceCode" id="cb11"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./rickroll.sh</span> <span class="op">&lt;</span> link.json</span></code></pre></div>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">jet</span> <span class="at">--from</span> json <span class="at">--keywordize</span> <span class="dt">\</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> rickroll.clj <span class="dt">\</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">jet</span> <span class="at">--to</span> json <span class="at">--keywordize</span></span></code></pre></div>
+<p>You can use <code class="verbatim">rickroll.sh</code> like this:</p>
 <div class="sourceCode" id="cb12"><pre
-class="sourceCode json"><code class="sourceCode json"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;pandoc-api-version&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="dv">1</span><span class="ot">,</span> <span class="dv">22</span><span class="ot">,</span> <span class="dv">2</span><span class="ot">]</span><span class="fu">,</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;meta&quot;</span><span class="fu">:</span> <span class="fu">{},</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;blocks&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Para&quot;</span><span class="fu">,</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Str&quot;</span><span class="fu">,</span> <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="st">&quot;See&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Space&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Link&quot;</span><span class="fu">,</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>            <span class="ot">[</span><span class="st">&quot;&quot;</span><span class="ot">,</span> <span class="ot">[],</span> <span class="ot">[]],</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>            <span class="ot">[</span><span class="fu">{</span><span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Str&quot;</span><span class="fu">,</span> <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="st">&quot;teod.eu&quot;</span><span class="fu">}</span><span class="ot">],</span></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>            <span class="ot">[</span><span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span><span class="ot">,</span> <span class="st">&quot;&quot;</span><span class="ot">]</span></span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>          <span class="ot">]</span></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./rickroll.sh</span> <span class="op">&lt;</span> link.json</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;pandoc-api-version&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="dv">1</span><span class="ot">,</span> <span class="dv">22</span><span class="ot">,</span> <span class="dv">2</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;meta&quot;</span><span class="fu">:</span> <span class="fu">{},</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;blocks&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Para&quot;</span><span class="fu">,</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Str&quot;</span><span class="fu">,</span> <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="st">&quot;See&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Space&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Link&quot;</span><span class="fu">,</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>            <span class="ot">[</span><span class="st">&quot;&quot;</span><span class="ot">,</span> <span class="ot">[],</span> <span class="ot">[]],</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>            <span class="ot">[</span><span class="fu">{</span><span class="dt">&quot;t&quot;</span><span class="fu">:</span> <span class="st">&quot;Str&quot;</span><span class="fu">,</span> <span class="dt">&quot;c&quot;</span><span class="fu">:</span> <span class="st">&quot;teod.eu&quot;</span><span class="fu">}</span><span class="ot">],</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>            <span class="ot">[</span><span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span><span class="ot">,</span> <span class="st">&quot;&quot;</span><span class="ot">]</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>          <span class="ot">]</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
 <p>Look at all those closing parens! 😄 <a
 href="https://github.com/weavejester/hiccup">Hiccup</a> is quite compact
 when you think about it.</p>
-<div class="sourceCode" id="cb13"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>[<span class="at">:p</span> <span class="st">&quot;See &quot;</span> [<span class="at">:a</span> {<span class="at">:href</span> <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>}</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;teod.eu&quot;</span>]]</span></code></pre></div>
-<h2 id="lets-rickroll-ourselves">Let’s rickroll ourselves!</h2>
 <div class="sourceCode" id="cb14"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># We could rickroll from the org file:</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># pandoc --standalone \</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     --from=org+smart \</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     --shift-heading-level-by=1 \</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     --toc \</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     -i index.org \</span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     --filter rickroll.sh \</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     -o rickroll-ourselves.html</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># But that&#39;s too easy, so let&#39;s use the HTML file instead.</span></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
-<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>[<span class="at">:p</span> <span class="st">&quot;See &quot;</span> [<span class="at">:a</span> {<span class="at">:href</span> <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>}</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;teod.eu&quot;</span>]]</span></code></pre></div>
+<h2 id="lets-rickroll-ourselves">Let’s rickroll ourselves!</h2>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># We could rickroll from the org file:</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># pandoc --standalone \</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     --from=org+smart \</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     --shift-heading-level-by=1 \</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     --toc \</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     -i index.org \</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     --filter rickroll.sh \</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     -o rickroll-ourselves.html</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co"># But that&#39;s too easy, so let&#39;s use the HTML file instead.</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
 <p>Have a look at the result: <a
 href="rickroll-ourselves.html">rickroll-ourselves.html</a></p>
 <h2 id="oh-that-edn-file-with-links.-i-almost-forgot.">Oh, that EDN file
 with links. I almost forgot.</h2>
 <p><code class="verbatim">extract_links.clj</code> is <code
 class="verbatim">rickroll.clj</code> with some edits:</p>
-<div class="sourceCode" id="cb15"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> extract-links</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [clojure.<span class="kw">walk</span> <span class="at">:refer</span> [<span class="kw">prewalk</span>]]</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>            [clojure.edn]))</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> link?</span></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Is this a valid Pandoc link?&quot;</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  [pandoc]</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">=</span> <span class="st">&quot;Link&quot;</span> (<span class="at">:t</span> pandoc)))</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> link-href </span>[el]</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">when</span> (link? el)</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">get-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>])))</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> links </span>[pandoc]</span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [links-found (<span class="kw">atom</span> [])]</span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (link? el)</span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>                 (<span class="kw">do</span> (<span class="kw">swap!</span> links-found <span class="kw">conj</span></span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>                            {<span class="at">:href</span> (link-href el)})</span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>                     el)</span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>                 el))</span>
-<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>             pandoc)</span>
-<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">@links-found</span>))</span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> example</span></span>
-<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">22</span> <span class="dv">2</span>], <span class="at">:meta</span> {},</span>
-<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>   <span class="at">:blocks</span> [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>,</span>
-<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>             <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;See&quot;</span>}</span>
-<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}</span>
-<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
-<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>                  <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
-<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>                      [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
-<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>                      [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
-<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [input (<span class="kw">try</span></span>
-<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>        (clojure.edn/read <span class="va">*in*</span>)</span>
-<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>        (<span class="kw">catch</span> RuntimeException _ ()))]</span>
-<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
-<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>    (links input)</span>
-<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>    (links example)))</span></code></pre></div>
-<p>And here’s how to run it:</p>
 <div class="sourceCode" id="cb16"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> index.org <span class="at">--to</span> json <span class="dt">\</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">jet</span> <span class="at">--from</span> json <span class="at">--keywordize</span> <span class="dt">\</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> extract_links.clj <span class="dt">\</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> <span class="st">&#39;(clojure.pprint/pprint *input*)&#39;</span></span></code></pre></div>
-<p>, producing:</p>
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> extract-links</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [clojure.<span class="kw">walk</span> <span class="at">:refer</span> [<span class="kw">prewalk</span>]]</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>            [clojure.edn]))</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> link?</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Is this a valid Pandoc link?&quot;</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  [pandoc]</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">=</span> <span class="st">&quot;Link&quot;</span> (<span class="at">:t</span> pandoc)))</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> link-href </span>[el]</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">when</span> (link? el)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">get-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>])))</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> links </span>[pandoc]</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [links-found (<span class="kw">atom</span> [])]</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (link? el)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>                 (<span class="kw">do</span> (<span class="kw">swap!</span> links-found <span class="kw">conj</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>                            {<span class="at">:href</span> (link-href el)})</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>                     el)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>                 el))</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>             pandoc)</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">@links-found</span>))</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> example</span></span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">22</span> <span class="dv">2</span>], <span class="at">:meta</span> {},</span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>   <span class="at">:blocks</span> [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>,</span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>             <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;See&quot;</span>}</span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}</span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>                 {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>                  <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>                      [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>                      [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [input (<span class="kw">try</span></span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a>        (clojure.edn/read <span class="va">*in*</span>)</span>
+<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a>        (<span class="kw">catch</span> RuntimeException _ ()))]</span>
+<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
+<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a>    (links input)</span>
+<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>    (links example)))</span></code></pre></div>
+<p>And here’s how to run it:</p>
 <div class="sourceCode" id="cb17"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>[{<span class="at">:href</span> <span class="st">&quot;..&quot;</span>}</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://pandoc.org/MANUAL.html#general-options&quot;</span>}</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://clojuredocs.org/clojure.walk&quot;</span>}</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://pandoc.org/filters.html&quot;</span>}</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://babashka.org/&quot;</span>}</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rickroll.clj&quot;</span>}</span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj&quot;</span>}</span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/weavejester/hiccup&quot;</span>}</span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rick.html&quot;</span>}]</span></code></pre></div>
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> index.org <span class="at">--to</span> json <span class="dt">\</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">jet</span> <span class="at">--from</span> json <span class="at">--keywordize</span> <span class="dt">\</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> extract_links.clj <span class="dt">\</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> <span class="st">&#39;(clojure.pprint/pprint *input*)&#39;</span></span></code></pre></div>
+<p>, producing:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>[{<span class="at">:href</span> <span class="st">&quot;..&quot;</span>}</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://pandoc.org/MANUAL.html#general-options&quot;</span>}</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://clojuredocs.org/clojure.walk&quot;</span>}</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://pandoc.org/filters.html&quot;</span>}</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://babashka.org/&quot;</span>}</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rickroll.clj&quot;</span>}</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj&quot;</span>}</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/weavejester/hiccup&quot;</span>}</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rick.html&quot;</span>}]</span></code></pre></div>
 <p>That’s all for now.</p>
 <p>🙌</p>
 </body>

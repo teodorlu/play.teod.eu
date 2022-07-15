@@ -117,14 +117,12 @@ So, by leveraging Pandoc, we can create arbitrary transformations on anything*!
 So, how do we want to do this?
 A Pandoc filter takes JSON on stdin and produces JSON on stdout.
 
-We can use =jet= and =bb= do do this:
+We can use =jet= and =bb= do this:
 
-#+begin_src bash
-echo '{"args": [1, 2]}' | \
-    jet --from json | \
-    bb '(assoc *input* :sum (reduce + (:args *input*)))' | \
-    jet --to json
-{"args":[1,2],"sum":0}
+#+INCLUDE: "jet-bb.sh" src bash
+
+#+begin_src json
+{"args":[1,2],"sum":3}
 #+end_src
 
 Nice!

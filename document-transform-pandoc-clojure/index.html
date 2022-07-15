@@ -607,18 +607,24 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb15-1"><a
 <span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">@links-found</span>))</span>
 <span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> example</span></span>
-<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">22</span> <span class="dv">2</span>], <span class="at">:meta</span> {}, <span class="at">:blocks</span> [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>, <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;See&quot;</span>} {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>} {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>, <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []] [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}] [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
-<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> input</span></span>
-<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
-<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>    (clojure.edn/read <span class="va">*in*</span>)</span>
-<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">catch</span> RuntimeException _</span>
-<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>        ())))</span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">22</span> <span class="dv">2</span>], <span class="at">:meta</span> {},</span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>   <span class="at">:blocks</span> [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>, <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;See&quot;</span>}</span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>                            {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}</span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>                            {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>                             <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>                                 [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>                                 [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>(<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
-<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a>  (links input)</span>
-<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>  (links example))</span></code></pre></div>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> input</span></span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>    (clojure.edn/read <span class="va">*in*</span>)</span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">catch</span> RuntimeException _</span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>        ())))</span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a>(<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
+<span id="cb15-59"><a href="#cb15-59" aria-hidden="true" tabindex="-1"></a>  (links input)</span>
+<span id="cb15-60"><a href="#cb15-60" aria-hidden="true" tabindex="-1"></a>  (links example))</span></code></pre></div>
 <p>And here’s how to run it:</p>
 <div class="sourceCode" id="cb16"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>

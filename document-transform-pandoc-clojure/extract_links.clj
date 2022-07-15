@@ -40,7 +40,13 @@
     @links-found))
 
 (def example
-  {:pandoc-api-version [1 22 2], :meta {}, :blocks [{:t "Para", :c [{:t "Str", :c "See"} {:t "Space"} {:t "Link", :c [["" [] []] [{:t "Str", :c "teod.eu"}] ["https://teod.eu" ""]]}]}]})
+  {:pandoc-api-version [1 22 2], :meta {},
+   :blocks [{:t "Para", :c [{:t "Str", :c "See"}
+                            {:t "Space"}
+                            {:t "Link",
+                             :c [["" [] []]
+                                 [{:t "Str", :c "teod.eu"}]
+                                 ["https://teod.eu" ""]]}]}]})
 
 
 (def input

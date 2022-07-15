@@ -82,16 +82,13 @@
                       [{:t "Str", :c "teod.eu"}]
                       ["https://teod.eu" ""]]}]}]})
 
-;; ... but if *in* looks right, use that.
-(def input
-  (try
-    (clojure.edn/read *in*)
-    (catch RuntimeException _
-        ())))
-
-(let [transform rickroll] ; choose rickroll or remove-links here
+(let [transform rickroll ; choose rickroll or remove-links
+      input (try
+              (clojure.edn/read *in*)
+              (catch RuntimeException _ nil))] ; if *in* looks right, use that.
   (if (map? input)
     (transform input)
+    ;; otherwise use test data
     (transform example)))
 
 ;; How to run without pandoc:

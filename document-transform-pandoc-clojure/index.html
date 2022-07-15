@@ -505,25 +505,22 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a 
 <span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>                      [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
 <span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>                      [<span class="st">&quot;https://teod.eu&quot;</span> <span class="st">&quot;&quot;</span>]]}]}]})</span>
 <span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a><span class="co">;; ... but if *in* looks right, use that.</span></span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> input</span></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>    (clojure.edn/read <span class="va">*in*</span>)</span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">catch</span> RuntimeException _</span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>        ())))</span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [transform rickroll] <span class="co">; choose rickroll or remove-links here</span></span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>    (transform input)</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>    (transform example)))</span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="co">;; How to run without pandoc:</span></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="co">;;   cat link.json \</span></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --from json --keywordize \</span></span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | bb rickroll.clj \</span></span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --to json --keywordize</span></span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span></code></pre></div>
+<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [transform rickroll <span class="co">; choose rickroll or remove-links</span></span>
+<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>      input (<span class="kw">try</span></span>
+<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>              (clojure.edn/read <span class="va">*in*</span>)</span>
+<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>              (<span class="kw">catch</span> RuntimeException _ <span class="va">nil</span>))] <span class="co">; if *in* looks right, use that.</span></span>
+<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">if</span> (<span class="kw">map?</span> input)</span>
+<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a>    (transform input)</span>
+<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; otherwise use test data</span></span>
+<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>    (transform example)))</span>
+<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a><span class="co">;; How to run without pandoc:</span></span>
+<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span>
+<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="co">;;   cat link.json \</span></span>
+<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --from json --keywordize \</span></span>
+<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | bb rickroll.clj \</span></span>
+<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="co">;;       | jet --to json --keywordize</span></span>
+<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="co">;;</span></span></code></pre></div>
 <a name="below-rickroll.clj" href="#above-rickroll.clj">Jump above rickroll.clj 👆</a>
 
 <h2 id="bash-wrapper-rickroll.sh">Bash wrapper: <code

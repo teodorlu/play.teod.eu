@@ -46,17 +46,17 @@
 
 ;; Finally, here's a rickroll pandoc filter:
 (defn rickroll [pandoc]
-  (let [;; I like to see an example of the data
-        ;; structure I'm working with
+
+  (let [;; Inline example of the data we're working with
         _link-example {:t "Link",
                        :c [["" [] []]
                            [{:t "Str", :c "teod.eu"}]
                            ["https://www.youtube.com/watch?v=dQw4w9WgXcQ" ""]]}
-        ;; which made the assoc-in okay to write:
+        ;; which made the assoc-in easy to write:
         rick-link (fn [el]
                     (assoc-in el [:c 2 0]
                               "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
-    ;; now, same (if predicate change no-change) pattern
+    ;; now, the (if predicate change no-change) pattern again:
     (prewalk (fn [el]
                (if (pandoc-link? el)
                  (rick-link el)
@@ -67,10 +67,8 @@
 ;;
 ;;   pandoc -i doc.md --filter "bash -c \"jet --from json --keywordize | bb rickroll.clj | jet --to json\" -o doc-no-links.md
 ;;
-;; But it turns out, pandoc doesn't support this.
-;; A filter must be a single script.
-;; Filters can't take arguments.
-;; So we need a wrapper.
+;; But pandoc doesn't support command line arguments to filter.
+;; So we need a script to wrap it up.
 ;; More on the wrapper later.
 
 ;; I hard-code some example data so that "just running" gives me feedback:

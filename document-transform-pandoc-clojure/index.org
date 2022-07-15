@@ -18,7 +18,7 @@ Clojure is a great tool for general purpose programming.
 
 Here's a list of more specific ways of solving adjacent problems:
 
-1. Use a markdown library API to tramsform a markdown document
+1. Use a markdown library API to transform a markdown document
 2. Use jsoup to transform HTML directly
 3. Just write hiccup instead of a text format like Markdown or Org-mode so that you can work with plain data
 

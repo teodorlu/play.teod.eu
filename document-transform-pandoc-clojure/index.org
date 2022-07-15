@@ -193,11 +193,9 @@ Look at all those closing parens! 😄
             "teod.eu"]]
 #+end_src
 * Let's rickroll ourselves!
-#+begin_src
-pandoc --standalone -i index.html --filter rickroll.sh -o rick.html
-#+end_src
+#+INCLUDE: "rickroll-ourselves.sh" src bash
 
-Please head over to [[file:rick.html][rick.html]]!
+Please head over to [[file:rickroll-ourselves.html][rickroll-ourselves.html]]!
 * Oh, that EDN file with links. I almost forgot.
 =extract_links.clj= is =rickroll.clj= with some edits:
 

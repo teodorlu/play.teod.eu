@@ -585,7 +585,7 @@ with links. I almost forgot.</h2>
 class="verbatim">rickroll.clj</code> with some edits:</p>
 <div class="sourceCode" id="cb15"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">ns</span> extract-links</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [clojure.<span class="kw">walk</span>]</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  (<span class="at">:require</span> [clojure.<span class="kw">walk</span> <span class="at">:refer</span> [<span class="kw">prewalk</span>]]</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>            [clojure.edn]))</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> link?</span></span>
@@ -602,27 +602,27 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb15-1"><a
 <span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> rickroll </span>[pandoc]</span>
 <span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [<span class="co">;; I just copied in an example of what I was going to generate</span></span>
 <span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>        _pandoc-link-example {<span class="at">:t</span> <span class="st">&quot;Link&quot;</span>,</span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>                          [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>                          [<span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span> <span class="st">&quot;&quot;</span>]]}</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>                              <span class="at">:c</span> [[<span class="st">&quot;&quot;</span> [] []]</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>                                  [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;teod.eu&quot;</span>}]</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>                                  [<span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span> <span class="st">&quot;&quot;</span>]]}</span>
 <span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>        <span class="co">;; which made the assoc-in okay to write</span></span>
 <span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>        link-to-rick (<span class="kw">fn</span> [el]</span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>                    (<span class="kw">assoc-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>] <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>))]</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>                       (<span class="kw">assoc-in</span> el [<span class="at">:c</span> <span class="dv">2</span> <span class="dv">0</span>] <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>))]</span>
 <span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">;; now, just follow the walk pattern from above.</span></span>
-<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    (clojure.walk/prewalk (<span class="kw">fn</span> [el]</span>
-<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>                            (<span class="kw">if</span> (link? el)</span>
-<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>                              (link-to-rick el)</span>
-<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>                              el))</span>
-<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>                          pandoc)))</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (link? el)</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>                 (link-to-rick el)</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>                 el))</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>             pandoc)))</span>
 <span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> links </span>[pandoc]</span>
 <span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [links-found (<span class="kw">atom</span> [])]</span>
-<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>    (clojure.walk/prewalk (<span class="kw">fn</span> [el]</span>
-<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>                            (<span class="kw">if</span> (link? el)</span>
-<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>                              (<span class="kw">do</span> (<span class="kw">swap!</span> links-found <span class="kw">conj</span></span>
-<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>                                         {<span class="at">:href</span> (link-href el)}) el)</span>
-<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>                              el))</span>
-<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>                          pandoc)</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">prewalk</span> (<span class="kw">fn</span> [el]</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">if</span> (link? el)</span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>                 (<span class="kw">do</span> (<span class="kw">swap!</span> links-found <span class="kw">conj</span></span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>                            {<span class="at">:href</span> (link-href el)}) el)</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>                 el))</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>             pandoc)</span>
 <span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">@links-found</span>))</span>
 <span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> example</span></span>

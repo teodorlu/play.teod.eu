@@ -1,5 +1,5 @@
 (ns extract-links
-  (:require [clojure.walk]
+  (:require [clojure.walk :refer [prewalk]]
             [clojure.edn]))
 
 (defn link?
@@ -16,27 +16,27 @@
 (defn rickroll [pandoc]
   (let [;; I just copied in an example of what I was going to generate
         _pandoc-link-example {:t "Link",
-                      :c [["" [] []]
-                          [{:t "Str", :c "teod.eu"}]
-                          ["https://www.youtube.com/watch?v=dQw4w9WgXcQ" ""]]}
+                              :c [["" [] []]
+                                  [{:t "Str", :c "teod.eu"}]
+                                  ["https://www.youtube.com/watch?v=dQw4w9WgXcQ" ""]]}
         ;; which made the assoc-in okay to write
         link-to-rick (fn [el]
-                    (assoc-in el [:c 2 0] "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
+                       (assoc-in el [:c 2 0] "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
     ;; now, just follow the walk pattern from above.
-    (clojure.walk/prewalk (fn [el]
-                            (if (link? el)
-                              (link-to-rick el)
-                              el))
-                          pandoc)))
+    (prewalk (fn [el]
+               (if (link? el)
+                 (link-to-rick el)
+                 el))
+             pandoc)))
 
 (defn links [pandoc]
   (let [links-found (atom [])]
-    (clojure.walk/prewalk (fn [el]
-                            (if (link? el)
-                              (do (swap! links-found conj
-                                         {:href (link-href el)}) el)
-                              el))
-                          pandoc)
+    (prewalk (fn [el]
+               (if (link? el)
+                 (do (swap! links-found conj
+                            {:href (link-href el)}) el)
+                 el))
+             pandoc)
     @links-found))
 
 (def example

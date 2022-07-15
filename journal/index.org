@@ -554,3 +554,11 @@ Global-scope rambling.
 
 *problems* is a global list of things that want attention.
 Global scope attention design.
+* 2022-07-15
+** How to get nice-to-copy terminal output with GRML ZSH config
+#+begin_src shell
+teodorlu@teod-t490s ~/tmp/temp-2022-07-15/prompt % prompt off
+% PROMPT="$ "
+$ echo hello there
+hello there
+#+end_src

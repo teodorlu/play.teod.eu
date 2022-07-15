@@ -32,13 +32,9 @@
                       [{:t "Str", :c "teod.eu"}]
                       ["https://teod.eu" ""]]}]}]})
 
-
-(def input
-  (try
-    (clojure.edn/read *in*)
-    (catch RuntimeException _
-        ())))
-
-(if (map? input)
-  (links input)
-  (links example))
+(let [input (try
+        (clojure.edn/read *in*)
+        (catch RuntimeException _ ()))]
+  (if (map? input)
+    (links input)
+    (links example)))

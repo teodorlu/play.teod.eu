@@ -97,6 +97,65 @@ Nice!
 So ...
 I had the idea that I'd work this out incrementally, explaining here each step as I take it.
 Unfortunately, that didn't happen.
-So here's =rickroll.clj=, with a bit of annotation:
+So I decided to annotate the source instead.
+My Clojure source viewer is as per 2022-07-15 not particularly happy with long lines.
+Here's the raw file: [[file:rickroll.clj][rickroll.clj]].
+Or you can view [[https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj][rickroll.clj on Github]].
+
+* Source for =rickroll.clj=
+Here comes a full listing for the babashka script.
+Article continues below!
 
 #+INCLUDE: "rickroll.clj" src clojure
+* Bash wrapper: =rickroll.sh=
+Pandoc's =--filter= requires /a single script/.
+So here's =rickroll.sh=:
+
+#+INCLUDE: "rickroll.sh" src shell-script
+
+Here's an example:
+
+#+begin_src bash
+./rickroll.sh < link.json
+#+end_src
+
+#+begin_src json
+{
+  "pandoc-api-version": [1, 22, 2],
+  "meta": {},
+  "blocks": [
+    {
+      "t": "Para",
+      "c": [
+        {"t": "Str", "c": "See"},
+        {"t": "Space"},
+        {
+          "t": "Link",
+          "c": [
+            ["", [], []],
+            [{"t": "Str", "c": "teod.eu"}],
+            ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", ""]
+          ]
+        }
+      ]
+    }
+  ]
+}
+#+end_src
+
+Look at all those closing parens! 😄
+[[https://github.com/weavejester/hiccup][Hiccup]] is actually quite compact when you think about it.
+
+#+begin_src clojure
+[:p "See " [:a {:href "https://www.youtube.com/watch?v=dQw4w9WgXcQ"} "teod.eu"]]
+#+end_src
+* Let's rickroll ourselves!
+#+begin_src
+pandoc -i index.html --filter rickroll.sh -o rick.html
+#+end_src
+
+Please head over to [[rick.html][rick.html]]!
+
+That's all for now.
+
+🙌

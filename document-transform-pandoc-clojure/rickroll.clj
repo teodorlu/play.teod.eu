@@ -5,9 +5,11 @@
 
 ;; there's going to be some line-end overflowing.
 ;; Sorry about that!
-;; Consider reading the raw file instead:
 ;;
+;; Here are some direct links:
 ;;
+;;   https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj
+;;   https://play.teod.eu/document-transform-pandoc-clojure/rickroll.clj
 
 (comment
   ;; a nice pattern for recursive transformation in Clojure:
@@ -67,13 +69,10 @@
 ;;
 ;;   pandoc -i doc.md --filter "bash -c \"jet --from json --keywordize | bb rickroll.clj | jet --to json\" -o doc-no-links.md
 ;;
-;; Sorry about the overflow. I want to fix that!
+;; Apologies for the horizontal overflow.
 ;;
-;; Here's a
-;;
-;;
-;;
-;; turns out, pandoc doesn't support this. A filter must be a single script.
+;; But it turns out, pandoc doesn't support this. A filter must be a single script.
+;; So the thing above doesn't work.
 ;; Back to this later.
 
 ;; I hard-code some example data so that "just running" gives me feedback
@@ -95,6 +94,6 @@
     (transform input)
     (transform example)))
 
-;; Usage:
+;; Here's how you can run just this script --- no pandoc yet:
 ;;
-;;  cat link.json | jet --from json --keywordize | bb rickroll.clj | jet --to json
+;;  cat link.json | jet --from json --keywordize | bb rickroll.clj | jet --to json --keywordize

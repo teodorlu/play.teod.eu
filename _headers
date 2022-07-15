@@ -2,10 +2,12 @@
     Content-Type: text/plain; charset=utf-8
 /*.clj
     Content-Type: text/plain; charset=utf-8
-*.clj
-    Content-Type: text/plain; charset=utf-8
+
 /*.edn
     Content-Type: text/plain; charset=utf-8
+/_headers
+    Content-Type: text/plain; charset=utf-8
+
 
 /*
     X-Teod: teod/lol2

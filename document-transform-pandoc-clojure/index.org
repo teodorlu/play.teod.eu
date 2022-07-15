@@ -103,8 +103,8 @@ Here:
 
 See?
 It's just data 🙂
-* Babashka as a pandoc filter
-First, recap.
+* Transforming JSON with Babashka
+Recap:
 
 1. Pandoc can convert anything* to JSON
 2. We can transform JSON

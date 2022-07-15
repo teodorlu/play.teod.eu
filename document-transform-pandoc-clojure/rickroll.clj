@@ -5,6 +5,12 @@
 
 (comment
   ;; a nice pattern for recursive transformation in Clojure:
+  ;;
+  ;;   1. walk
+  ;;   2. change element if (predicate?)
+  ;;   3. otherwise, leave it be.
+  ;;
+  ;; Example:
   (clojure.walk/prewalk (fn [el]
                           (if (string? el) ; touch strings
                             (keyword el)   ; do this to strings

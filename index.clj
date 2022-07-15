@@ -96,18 +96,18 @@
                [""
                 "** Efforts at \"writing things down together\" commonly fail because:
 
-1. Prematurely putting things into large hierarchies
+1. We put things prematurely into large hierarchies that collapse
 2. The inability to critique the hierarchy itself --- and iterate on the hierarchy
 3. The inability to have separate hierarchies
 4. More abstractly --- we need a /fractal/ structure, not a hierarchical one.
-5. Unclear content authority --- whose content is this?
-6. Bad effects from intermixing drafts and completed stuff
-7. Hard to find the good stuff
-8. Hard to search --- index
-9. Hard to build views
-10. Hard to embed small things we'd want to share
+5. Unclear content authority --- whose content is this? Whos is responsible?
+6. Mixing good stuff and bad stuff makes it hard to find the good stuff
+7. It's hard to find the good stuff whatsoever
+8. It's hard to search for stuff that's not listed
+9. It's impossible to build new views
+10. It's hard to embed small things that don't really \"fit\"
 
-(included as a personal reminder)
+List included as a personal reminder.
 "]
                ["** What is this?"
                 ""

@@ -73,17 +73,23 @@
 ;;
 ;;   pandoc -i doc.md --filter "bash -c \"jet --from json --keywordize | bb rickroll.clj | jet --to json\" -o doc-no-links.md
 ;;
-;; But it turns out, pandoc doesn't support this. A filter must be a single script.
+;; But it turns out, pandoc doesn't support this.
+;; A filter must be a single script.
 ;; So the thing above doesn't work.
 ;; Back to this later.
 
 ;; I hard-code some example data so that "just running" gives me feedback
 
 (def example
-  {:pandoc-api-version [1 22 2], :meta {}, :blocks [{:t "Para", :c [{:t "Str", :c "See"} {:t "Space"} {:t "Link", :c [["" [] []] [{:t "Str", :c "teod.eu"}] ["https://teod.eu" ""]]}]}]})
+  {:pandoc-api-version [1 22 2], :meta {},
+   :blocks [{:t "Para", :c [{:t "Str", :c "See"}
+                            {:t "Space"}
+                            {:t "Link",
+                             :c [["" [] []]
+                                 [{:t "Str", :c "teod.eu"}]
+                                 ["https://teod.eu" ""]]}]}]})
 
-
-;; ... but if *in* looks like something we can use, use it!
+;; ... but if *in* looks like something we can use, use that instead.
 
 (def input
   (try
@@ -98,4 +104,8 @@
 
 ;; Here's how you can run just this script --- no pandoc yet:
 ;;
-;;  cat link.json | jet --from json --keywordize | bb rickroll.clj | jet --to json --keywordize
+;;   cat link.json \
+;;       | jet --from json --keywordize \
+;;       | bb rickroll.clj \
+;;       | jet --to json --keywordize
+;;

@@ -155,7 +155,7 @@ So here's =rickroll.sh=:
 
 #+INCLUDE: "rickroll.sh" src bash
 
-=rickroll.sh= can be used like this:
+You can use =rickroll.sh= like this:
 
 #+begin_src bash
 ./rickroll.sh < link.json

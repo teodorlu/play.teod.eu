@@ -19,7 +19,7 @@
            {:big ["nested" "structure"]}) ; big thing
   )
 
-;; Here's the predicate we're going to use later:
+;; Our predicate for identifying links:
 (defn pandoc-link?
   "Is this a valid Pandoc link?"
   [pandoc]

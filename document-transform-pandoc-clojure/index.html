@@ -251,7 +251,7 @@ ourselves!</a></li>
 EDN file with links. I almost forgot.</a></li>
 </ul>
 </nav>
-<p><a href="./..">..</a></p>
+<p><a href="..">..</a></p>
 <p>Today, we’re going to use Pandoc and Clojure to produce a nice EDN
 file with all the links from an Markdown file.</p>
 <h2 id="motivation-general-tools">Motivation: general tools</h2>
@@ -658,16 +658,15 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href=
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">|</span> <span class="ex">bb</span> <span class="st">&#39;(clojure.pprint/pprint *input*)&#39;</span></span></code></pre></div>
 <p>, producing:</p>
 <div class="sourceCode" id="cb17"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>[{<span class="at">:href</span> <span class="st">&quot;./..&quot;</span>}</span>
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>[{<span class="at">:href</span> <span class="st">&quot;..&quot;</span>}</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://pandoc.org/MANUAL.html#general-options&quot;</span>}</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://clojuredocs.org/clojure.walk&quot;</span>}</span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://pandoc.org/filters.html&quot;</span>}</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://babashka.org/&quot;</span>}</span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rickroll.clj&quot;</span>}</span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj&quot;</span>}</span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/weavejester/hiccup&quot;</span>}</span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rick.html&quot;</span>}]</span></code></pre></div>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj&quot;</span>}</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;https://github.com/weavejester/hiccup&quot;</span>}</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a> {<span class="at">:href</span> <span class="st">&quot;rick.html&quot;</span>}]</span></code></pre></div>
 <p>That’s all for now.</p>
 <p>🙌</p>
 </body>

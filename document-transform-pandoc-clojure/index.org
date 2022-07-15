@@ -3,7 +3,7 @@
 :END:
 #+TITLE: Recursive document transformations with Pandoc and Clojure
 
-[[./..][..]]
+[[file:..][..]]
 
 Today, we're going to use Pandoc and Clojure to produce a nice EDN file with all the links from an Markdown file.
 
@@ -208,14 +208,13 @@ And here's how to run it:
 , producing:
 
 #+begin_src clojure
-[{:href "./.."}
+[{:href ".."}
  {:href "https://pandoc.org/MANUAL.html#general-options"}
  {:href "https://clojuredocs.org/clojure.walk"}
  {:href "https://pandoc.org/filters.html"}
  {:href "https://babashka.org/"}
  {:href "rickroll.clj"}
- {:href
-  "https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj"}
+ {:href "https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj"}
  {:href "https://github.com/weavejester/hiccup"}
  {:href "rick.html"}]
 #+end_src

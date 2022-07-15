@@ -264,7 +264,7 @@ document formats</a>. Clojure is a great tool for general purpose
 programming.</p>
 <p>Here’s a list of more specific ways of solving adjacent problems:</p>
 <ol class="incremental">
-<li>Use a markdown library API to tramsform a markdown document</li>
+<li>Use a markdown library API to transform a markdown document</li>
 <li>Use jsoup to transform HTML directly</li>
 <li>Just write hiccup instead of a text format like Markdown or Org-mode
 so that you can work with plain data</li>
@@ -439,7 +439,7 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a 
 <span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>             (<span class="kw">if</span> (<span class="kw">string?</span> el) <span class="co">; touch strings</span></span>
 <span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>               (<span class="kw">keyword</span> el)   <span class="co">; do this to strings</span></span>
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>               el))           <span class="co">; otherwise let it be</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>           {<span class="at">:big</span> [<span class="st">&quot;nested&quot;</span> <span class="st">&quot;structure&quot;</span>]}) <span class="co">; big thing in here</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>           {<span class="at">:big</span> [<span class="st">&quot;nested&quot;</span> <span class="st">&quot;structure&quot;</span>]}) <span class="co">; big thing</span></span>
 <span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="co">;; Here&#39;s the predicate we&#39;re going to use later:</span></span>

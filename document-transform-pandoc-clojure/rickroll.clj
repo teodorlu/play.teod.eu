@@ -16,7 +16,7 @@
              (if (string? el) ; touch strings
                (keyword el)   ; do this to strings
                el))           ; otherwise let it be
-           {:big ["nested" "structure"]}) ; big thing in here
+           {:big ["nested" "structure"]}) ; big thing
   )
 
 ;; Here's the predicate we're going to use later:

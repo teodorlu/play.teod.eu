@@ -108,7 +108,7 @@ First, recap.
 
 1. Pandoc can convert anything* to JSON
 2. We can transform JSON
-3. Pandoc can convert anything* from JSON.
+3. Pandoc can convert from JSON to anything*.
 
 So, by leveraging Pandoc, we can create arbitrary transformations on anything*!
 

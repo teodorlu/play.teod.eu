@@ -55,9 +55,11 @@
                 ""
                 "Intent: bring ideas to life. Discuss, sharpen, play."
                 ""
-                "Process: Aim your intent - explore - refactor towards orthogonality. Embrace remix culture."
+                (str "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
+                     " Embrace remix culture.")
+
                 ""
-                "Status: very much work in progress. Please advance at your own peril."
+                "Status: work in progress, lots of rough edges."
                 ""]
 
                ["** Ready for comments"]

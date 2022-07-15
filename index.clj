@@ -100,7 +100,7 @@
 2. The inability to critique the hierarchy itself --- and iterate on the hierarchy
 3. The inability to have separate hierarchies
 4. More abstractly --- we need a /fractal/ structure, not a hierarchical one.
-5. Unclear content authority --- whose content is this? Whos is responsible?
+5. Unclear content authority --- whose content is this? Who is responsible?
 6. Mixing good stuff and bad stuff makes it hard to find the good stuff
 7. It's hard to find the good stuff whatsoever
 8. It's hard to search for stuff that's not listed

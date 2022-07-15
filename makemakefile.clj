@@ -44,7 +44,7 @@
            (for [t targets]
              (str (html t) ": " (org t)
                   "\n\t"
-                  "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i " (org t)
+                  "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
                   " -o " (html t)))))
 (println "")
 (println "")

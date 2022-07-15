@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID: 2c53f531-afdd-4efb-becd-f5d2f220b5ab
+:END:
+#+TITLE: Transform documents with Pandoc and Clojure
+
+[[./..][..]]
+
+Pandoc and Clojure are to exceptionally powerful tools.
+Together, we can quickly make wide changes to any document format that Pandoc supports.
+
+Today, we're going to use Pandoc and Clojure to produce a nice EDN file with all the links from an Markdown file.
+
+* Motivation: general tools
+I strive to learn to use general tools.
+I want to be able to mix and combine my existing toolbox to new problems.
+To achieve that, I'm willing to sacrifice some clarity and some control.
+
+Pandoc and Clojure are general tools.
+Pandoc supports a [[https://pandoc.org/MANUAL.html#general-options][wide range of document formats]].
+Clojure is a great tool for general purpose programming.
+
+Here's a list of more specific ways of solving adjacent problems:
+
+1. Use a markdown library API to tramsform a markdown document
+2. Use jsoup to transform HTML directly
+3. Just write hiccup instead of a text format like Markdown or Org-mode so that you can work with plain data
+
+Specific tools are often easier to get started with than general tools.
+Doing something specific is also a great way to learn.
+By minimizing indirection in what you do, you minimize your chance to get lost.
+
+That's not what we're going to do today!
+Today, we're aiming for general.
+
+Let's get to it.
+* Terminology
+First, let's define the terminology we're going to use.
+
+| Term          | Definition                                   | More details                         |
+|---------------+----------------------------------------------+--------------------------------------|
+| walk          | A way to transform recursive data structures | https://clojuredocs.org/clojure.walk |
+| Pandoc filter | A program that can transform Pandoc JSON     | https://pandoc.org/filters.html      |
+| Babashka      | Clojure runtime for scripting                | https://babashka.org/                |
+
+Note: we could use plain Clojure instead of Babashka.
+But Babashka is a good fit here because of fast startup time, easy STDIN/STDOUT transformation and builtin JSON support.
+* Our example document
+Here's the markdown source:
+
+#+begin_src markdown
+# Pandoc is nice
+
+Pandoc filters: https://pandoc.org/filters.html
+
+Clojure walk: https://clojuredocs.org/clojure.walk
+#+end_src
+
+a change.

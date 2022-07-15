@@ -162,6 +162,29 @@ pandoc --standalone -i index.html --filter rickroll.sh -o rick.html
 #+end_src
 
 Please head over to [[file:rick.html][rick.html]]!
+* Oh, that EDN file with links. I almost forgot.
+=extract_links.clj= is =rickroll.clj= with some edits:
+
+#+INCLUDE: "extract_links.clj" src clojure
+
+And here's how to run it:
+
+#+INCLUDE: "extract-links.sh" src bash
+
+, producing:
+
+#+begin_src clojure
+[{:href "./.."}
+ {:href "https://pandoc.org/MANUAL.html#general-options"}
+ {:href "https://clojuredocs.org/clojure.walk"}
+ {:href "https://pandoc.org/filters.html"}
+ {:href "https://babashka.org/"}
+ {:href "rickroll.clj"}
+ {:href
+  "https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj"}
+ {:href "https://github.com/weavejester/hiccup"}
+ {:href "rick.html"}]
+#+end_src
 
 That's all for now.
 

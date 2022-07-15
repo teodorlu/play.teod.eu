@@ -116,7 +116,12 @@
                 ""
                 "PRs are probably a bad idea."
                 "I prefer a good discussion to rewriting each other's ideas."
-                "And please, let yourself be inspired if you want to create something similar."]))))
+                "And please, let yourself be inspired if you want to create something similar."
+                ""
+                "[[https://play.teod.eu][play.teod.eu]]"
+                ]
+
+               ))))
 
 ;; For development:
 ;;

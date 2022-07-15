@@ -137,7 +137,7 @@ The source code renderer on play.teod.eu currently (2022-07-15) demands very sho
 So you can view rickroll.clj as a [[file:rickroll.clj][raw file]] or [[https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj][on Github]] if you'd like.
 Otherwise, keep on scrolling.
 
-Here comes a full listing for the babashka script.
+Here comes a full listing for the Babashka script.
 We continue below the code listing!
 
 #+BEGIN_EXPORT html

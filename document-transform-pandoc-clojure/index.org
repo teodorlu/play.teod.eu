@@ -52,7 +52,7 @@ Given =doc.md=:
 
 #+INCLUDE: "doc.md" src markdown
 
-We can call pandoc:
+We can call Pandoc:
 
 #+INCLUDE: "doc-html.sh" src bash
 
@@ -66,7 +66,7 @@ Given =link.md=:
 
 #+INCLUDE: "link.md" src markdown
 
-We can call pandoc:
+We can call Pandoc:
 
 #+INCLUDE: "link-json.sh" src bash
 
@@ -129,7 +129,7 @@ echo '{"args": [1, 2]}' | \
 
 Nice!
 * Implementing =rickroll.clj=
-I wanted to work on the pandoc filter incrementally, writing each step.
+I wanted to work on the Pandoc filter incrementally, writing each step.
 That didn't happen.
 I got in the zone, and wrote everything.
 So you'll get after-the-fact commentary instead.

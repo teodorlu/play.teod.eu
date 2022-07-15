@@ -19,17 +19,11 @@
            {:big ["nested" "structure"]}) ; big thing
   )
 
-;; Our predicate for identifying links:
+;; We must identify pandoc JSON links
 (defn pandoc-link?
   "Is this a valid Pandoc link?"
   [pandoc]
   (= "Link" (:t pandoc)))
-
-;; I choose to pull "this is an empty element" out of the walk logic:
-(defn pandoc-empty
-  "Empty Pandoc element"
-  []
-  {})
 
 ;; What's the simplest link transform we could do?
 ;; Removing links is easy.
@@ -45,7 +39,7 @@
 (defn remove-links [pandoc]
   (prewalk (fn [el]
              (if (pandoc-link? el)
-               (pandoc-empty)
+               {} ; emtpy element
                el))
            pandoc))
 

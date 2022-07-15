@@ -1,1 +1,1 @@
-{:title "Transform documents with Pandoc and Clojure", :readiness :wtf-is-this, :author-url "https://teod.eu", :created "2022-07-15"}
+{:title "Recursive document transformations with Pandoc and Clojure", :readiness :wtf-is-this, :author-url "https://teod.eu", :created "2022-07-15"}

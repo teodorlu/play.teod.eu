@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Transform documents with Pandoc and Clojure</title>
+  <title>Recursive document transformations with Pandoc and Clojure</title>
   <style>
     html {
       line-height: 1.5;
@@ -224,7 +224,8 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Transform documents with Pandoc and Clojure</h1>
+<h1 class="title">Recursive document transformations with Pandoc and
+Clojure</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul class="incremental">
@@ -240,8 +241,7 @@ Pandoc</a></li>
 </ul></li>
 <li><a href="#babashka-as-a-pandoc-filter">Babashka as a pandoc
 filter</a></li>
-<li><a href="#implement-the-thing">Implement the thing</a></li>
-<li><a href="#source-for-rickroll.clj">Source for <code
+<li><a href="#implementing-rickroll.clj">Implementing <code
 class="verbatim">rickroll.clj</code></a></li>
 <li><a href="#bash-wrapper-rickroll.sh">Bash wrapper: <code
 class="verbatim">rickroll.sh</code></a></li>
@@ -363,18 +363,16 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="ex">jet</span> <span class="at">--to</span> json</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dt">{</span><span class="st">&quot;args&quot;</span><span class="dt">:[1</span><span class="op">,</span><span class="dt">2]</span><span class="op">,</span><span class="st">&quot;sum&quot;</span><span class="dt">:0}</span></span></code></pre></div>
 <p>Nice!</p>
-<h2 id="implement-the-thing">Implement the thing</h2>
+<h2 id="implementing-rickroll.clj">Implementing <code
+class="verbatim">rickroll.clj</code></h2>
 <p>So … I had the idea that I’d work this out incrementally, explaining
 here each step as I take it. Unfortunately, that didn’t happen. So I
 decided to annotate the source instead. My Clojure source viewer is as
 per 2022-07-15 not particularly happy with long lines. Here’s the raw
 file: <a href="rickroll.clj">rickroll.clj</a>. Or you can view <a
 href="https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj">rickroll.clj
-on Github</a>.</p>
-<h2 id="source-for-rickroll.clj">Source for <code
-class="verbatim">rickroll.clj</code></h2>
-<p>Here comes a full listing for the babashka script. Article continues
-below!</p>
+on Github</a>. Here comes a full listing for the babashka script.
+Article continues below!</p>
 <a name="above-rickroll.clj" href="#below-rickroll.clj">Jump below rickroll.clj 👇</a>
 
 <div class="sourceCode" id="cb8"><pre
@@ -483,7 +481,7 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb8-1"><a 
 class="verbatim">rickroll.sh</code></h2>
 <p>Pandoc’s <code class="verbatim">--filter</code> requires <em>a single
 script</em>. So here’s <code class="verbatim">rickroll.sh</code>:</p>
-<p>Here’s an example:</p>
+<p><code class="verbatim">rickroll.sh</code> can be used like this:</p>
 <div class="sourceCode" id="cb9"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./rickroll.sh</span> <span class="op">&lt;</span> link.json</span></code></pre></div>
 <div class="sourceCode" id="cb10"><pre

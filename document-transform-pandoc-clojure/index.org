@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 2c53f531-afdd-4efb-becd-f5d2f220b5ab
 :END:
-#+TITLE: Transform documents with Pandoc and Clojure
+#+TITLE: Recursive document transformations with Pandoc and Clojure
 
 [[./..][..]]
 
@@ -93,7 +93,7 @@ echo '{"args": [1, 2]}' | \
 #+end_src
 
 Nice!
-* Implement the thing
+* Implementing =rickroll.clj=
 So ...
 I had the idea that I'd work this out incrementally, explaining here each step as I take it.
 Unfortunately, that didn't happen.
@@ -101,8 +101,6 @@ So I decided to annotate the source instead.
 My Clojure source viewer is as per 2022-07-15 not particularly happy with long lines.
 Here's the raw file: [[file:rickroll.clj][rickroll.clj]].
 Or you can view [[https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj][rickroll.clj on Github]].
-
-* Source for =rickroll.clj=
 Here comes a full listing for the babashka script.
 Article continues below!
 
@@ -121,7 +119,7 @@ So here's =rickroll.sh=:
 
 #+INCLUDE: "rickroll.sh" src shell-script
 
-Here's an example:
+=rickroll.sh= can be used like this:
 
 #+begin_src bash
 ./rickroll.sh < link.json

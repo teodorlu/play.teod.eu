@@ -38,8 +38,6 @@
 (println "")
 (println "")
 
-(def css false)
-
 (println  "# Generate target for each page")
 (println
  (str/join "\n\n"
@@ -47,9 +45,6 @@
              (str (html t) ": " (org t)
                   "\n\t"
                   "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -i " (org t)
-                  (if css
-                    " --css=../pandoc.css"
-                      "")
                   " -o " (html t)))))
 (println "")
 (println "")

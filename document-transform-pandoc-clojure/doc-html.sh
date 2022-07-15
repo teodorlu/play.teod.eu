@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-pandoc doc.markdown -o doc.html
+pandoc doc.md -o doc.html

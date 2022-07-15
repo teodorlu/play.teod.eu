@@ -1,5 +1,9 @@
-# Pandoc is nice
+# Pandoc converts
 
-Pandoc filters: https://pandoc.org/filters.html
+> /pan/
+>
+> involving all of a (specified) group or region
 
-Clojure walk: https://clojuredocs.org/clojure.walk
+"Pan-doc" like "pan-Atlantic", get it?
+
+It supports lots of formats.

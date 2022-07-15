@@ -31,16 +31,17 @@ Today, we're aiming for general.
 
 Let's get to it.
 * Terminology
-First, let's define the terminology we're going to use.
+First, let's define our language.
 
 | Term          | Definition                                   | More details                         |
 |---------------+----------------------------------------------+--------------------------------------|
 | walk          | A way to transform recursive data structures | https://clojuredocs.org/clojure.walk |
+| Pandoc        | Document converter                           | https://pandoc.org/                  |
 | Pandoc filter | A program that can transform Pandoc JSON     | https://pandoc.org/filters.html      |
 | Babashka      | Clojure runtime for scripting                | https://babashka.org/                |
 
 Note: we could use plain Clojure instead of Babashka.
-But Babashka is a good fit here because of fast startup time, easy STDIN/STDOUT transformation and builtin JSON support.
+But Babashka is a good fit here because of fast startup time, and easy STDIN/STDOUT transformation.
 * Introduction to Pandoc
 Pandoc provides a common document format abstraction, and transformation from/to a wide range of formats.
 Let's look at an example.
@@ -59,7 +60,7 @@ To produce =doc.html=:
 
 #+INCLUDE: "doc.html" src html
 
-** Markdown to JSON with Pandoc
+** Converting markdown to JSON with Pandoc
 
 Given =link.md=:
 
@@ -72,6 +73,36 @@ We can call pandoc:
 To produce =link.json=:
 
 #+INCLUDE: "link.json" src json
+
+Man, that's hard to read.
+Let's cheat a bit:
+
+#+begin_src json
+{
+  "pandoc-api-version": [1, 22, 2],
+  "meta": {},
+  "blocks": [
+    {
+      "t": "Para",
+      "c": [
+        {"t": "Str", "c": "See"},
+        {"t": "Space"},
+        {
+          "t": "Link",
+          "c": [
+            ["", [], []],
+            [{"t": "Str", "c": "teod.eu"}],
+            ["https://teod.eu", ""]
+          ]
+        }
+      ]
+    }
+  ]
+}
+#+end_src
+
+See?
+It's just data 🙂
 * Babashka as a pandoc filter
 First, recap.
 

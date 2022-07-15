@@ -226,6 +226,30 @@
 <h1 class="title">Recursive document transformations with Pandoc and
 Clojure</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul class="incremental">
+<li><a href="#motivation-general-tools">Motivation: general
+tools</a></li>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#introduction-to-pandoc">Introduction to Pandoc</a>
+<ul class="incremental">
+<li><a href="#converting-markdown-to-html-with-pandoc">Converting
+markdown to HTML with Pandoc</a></li>
+<li><a href="#converting-markdown-to-json-with-pandoc">Converting
+markdown to JSON with Pandoc</a></li>
+</ul></li>
+<li><a href="#babashka-as-a-pandoc-filter">Babashka as a pandoc
+filter</a></li>
+<li><a href="#implementing-rickroll.clj">Implementing <code
+class="verbatim">rickroll.clj</code></a></li>
+<li><a href="#bash-wrapper-rickroll.sh">Bash wrapper: <code
+class="verbatim">rickroll.sh</code></a></li>
+<li><a href="#lets-rickroll-ourselves">Let’s rickroll
+ourselves!</a></li>
+<li><a href="#oh-that-edn-file-with-links.-i-almost-forgot.">Oh, that
+EDN file with links. I almost forgot.</a></li>
+</ul>
+</nav>
 <div id="title-block-header">
 <h1 class="title"
 id="recursive-document-transformations-with-pandoc-and-clojure">Recursive
@@ -609,9 +633,31 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb13-1"><a
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;teod.eu&quot;</span>]]</span></code></pre></div>
 </div>
 <h2 id="lets-rickroll-ourselves">Let’s rickroll ourselves!</h2>
-<pre><code>pandoc --standalone -i index.html --filter rickroll.sh -o rick.html</code></pre>
+<div id="cb14" class="sourceCode">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env bash</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># We could rickroll from the org file:</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># pandoc --standalone \</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#     --from=org+smart \</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     --shift-heading-level-by=1 \</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     --toc \</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co">#     -i index.org \</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">#     --filter rickroll.sh \</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     -o rickroll-ourselves.html</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># But that&#39;s too easy, so let&#39;s use the HTML file instead.</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">--from</span><span class="op">=</span>org+smart <span class="dt">\</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">--toc</span> <span class="dt">\</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
+</div>
 <p>Please head over to <a
-href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">rick.html</a>!</p>
+href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">rickroll-ourselves.html</a>!</p>
 <h2 id="oh-that-edn-file-with-links.-i-almost-forgot.">Oh, that EDN file
 with links. I almost forgot.</h2>
 <p><code class="verbatim">extract_links.clj</code> is <code

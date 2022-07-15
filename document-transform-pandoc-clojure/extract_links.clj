@@ -12,7 +12,6 @@
     (get-in el [:c 2 0])))
 
 ;; Keeping the old =rickroll= function for comparison.
-
 (defn rickroll [pandoc]
   (let [;; I just copied in an example of what I was going to generate
         _pandoc-link-example {:t "Link",

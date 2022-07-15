@@ -59,4 +59,9 @@
 (println "# One `make clean` and then `make` should always give you fresh state")
 (println ".PHONY: clean")
 (println "clean:")
+(println "\t# Root html:")
 (println "\trm -f index.html")
+(println "\t# The other HTML files:")
+(println (str "\t"
+              "rm -f "
+              (str/join " " (map html targets))))

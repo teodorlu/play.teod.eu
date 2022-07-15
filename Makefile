@@ -149,4 +149,7 @@ makefile:
 # One `make clean` and then `make` should always give you fresh state
 .PHONY: clean
 clean:
+	# Root html:
 	rm -f index.html
+	# The other HTML files:
+	rm -f aphorisms/index.html attention-design/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html c-journal/index.html clojure-interactive/index.html discover-difference/index.html documentation/index.html document-transform-pandoc-clojure/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html git-commit-messages/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html intention-relation-action/index.html interaction-value-differential/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html list-of-problems/index.html lost-in-specificity/index.html maksimal-opsjonalitet/index.html many-small-functions-bad/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html precise-general-novel/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html strong-relations/index.html unix-signals-intro/index.html watchexec-make-dev/index.html why-dont-we-have-a-strategy/index.html wip/index.html

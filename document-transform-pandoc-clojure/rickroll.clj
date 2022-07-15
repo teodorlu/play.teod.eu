@@ -32,11 +32,13 @@
   []
   {})
 
-;; and I wrote this as an intermediate step.
+;; What's the simplest link transform we could do?
+;; Removing links is easy.
+;; So let's try that first.
 ;;
-;; take small steps. Ask Geepaw.
+;; For more info on small steps from Gewpaw Hill:
 ;;
-;; https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/
+;;   https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/
 
 (defn remove-links [pandoc]
   (clojure.walk/prewalk (fn [el]
@@ -45,17 +47,21 @@
                             el))
                         pandoc))
 
-;; Here's the thing!
+;; That worked!
+;;
+;; Set `transform` to `remove-links` below to try.
+
+;; Here's the rickroll:
 
 (defn rickroll [pandoc]
   (let [;; I just copied in an example of what I was going to generate
         _pandoc-link-example {:t "Link",
-                      :c [["" [] []]
-                          [{:t "Str", :c "teod.eu"}]
-                          ["https://www.youtube.com/watch?v=dQw4w9WgXcQ" ""]]}
+                              :c [["" [] []]
+                                  [{:t "Str", :c "teod.eu"}]
+                                  ["https://www.youtube.com/watch?v=dQw4w9WgXcQ" ""]]}
         ;; which made the assoc-in okay to write
         link-to-rick (fn [el]
-                    (assoc-in el [:c 2 0] "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
+                       (assoc-in el [:c 2 0] "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
     ;; now, just follow the walk pattern from above.
     (clojure.walk/prewalk (fn [el]
                             (if (pandoc-link? el)
@@ -66,8 +72,6 @@
 ;; I first tried running it all at once:
 ;;
 ;;   pandoc -i doc.md --filter "bash -c \"jet --from json --keywordize | bb rickroll.clj | jet --to json\" -o doc-no-links.md
-;;
-;; Apologies for the horizontal overflow.
 ;;
 ;; But it turns out, pandoc doesn't support this. A filter must be a single script.
 ;; So the thing above doesn't work.

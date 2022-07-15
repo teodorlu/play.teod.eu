@@ -44,15 +44,34 @@ First, let's define the terminology we're going to use.
 
 Note: we could use plain Clojure instead of Babashka.
 But Babashka is a good fit here because of fast startup time, easy STDIN/STDOUT transformation and builtin JSON support.
-* Our example document
-Here's the markdown source:
+* Introduction to Pandoc
+Pandoc provides a common document format abstraction, and transformation from/to a wide range of formats.
+Let's look at an example.
 
-#+begin_src markdown
-# Pandoc is nice
+** Converting markdown to HTML with Pandoc
 
-Pandoc filters: https://pandoc.org/filters.html
+Given =doc.md=:
 
-Clojure walk: https://clojuredocs.org/clojure.walk
-#+end_src
+#+INCLUDE: "doc.md" src markdown
 
-a change.
+We can call pandoc:
+
+#+INCLUDE: "doc-html.sh" src bash
+
+To produce =doc.html=:
+
+#+INCLUDE: "doc.html" src html
+
+** Markdown to JSON with Pandoc
+
+Given =link.md=:
+
+#+INCLUDE: "link.md" src markdown
+
+We can call pandoc:
+
+#+INCLUDE: "link-json.sh" src bash
+
+To produce =link.json=:
+
+#+INCLUDE: "link.json" src json

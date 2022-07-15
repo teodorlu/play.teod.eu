@@ -117,7 +117,7 @@ Article continues below!
 Pandoc's =--filter= requires /a single script/.
 So here's =rickroll.sh=:
 
-#+INCLUDE: "rickroll.sh" src shell-script
+#+INCLUDE: "rickroll.sh" src bash
 
 =rickroll.sh= can be used like this:
 
@@ -153,7 +153,8 @@ Look at all those closing parens! 😄
 [[https://github.com/weavejester/hiccup][Hiccup]] is actually quite compact when you think about it.
 
 #+begin_src clojure
-[:p "See " [:a {:href "https://www.youtube.com/watch?v=dQw4w9WgXcQ"} "teod.eu"]]
+[:p "See " [:a {:href "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+            "teod.eu"]]
 #+end_src
 * Let's rickroll ourselves!
 #+begin_src

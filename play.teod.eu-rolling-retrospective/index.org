@@ -266,3 +266,17 @@ As long as I'm using the =--standalone= stuff, I'm making problems for myself.
 Example: I loose roundtripping.
 If I try to roundtrip with =--standalone=, I get double table of contents and double title.
 I don't want that.
+
+Found a walkaround for roundtripping: avoid writing title info
+
+#+begin_src bash
+pandoc  \
+    --standalone \
+    -V title:"" \
+    -i index.html \
+    --filter rickroll.sh \
+    -o rickroll-ourselves.html
+#+end_src
+
+Specifically, =-V title:""= makes sure the title isn't set twice.
+Regardless, I think I want to control the standalone stuff myself.

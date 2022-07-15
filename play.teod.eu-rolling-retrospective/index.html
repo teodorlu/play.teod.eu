@@ -524,5 +524,16 @@ problems</h2>
 stuff, I’m making problems for myself. Example: I loose roundtripping.
 If I try to roundtrip with <code class="verbatim">--standalone</code>, I
 get double table of contents and double title. I don’t want that.</p>
+<p>Found a walkaround for roundtripping: avoid writing title info</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
+<p>Specifically, <code class="verbatim">-V title:""</code> makes sure
+the title isn’t set twice. Regardless, I think I want to control the
+standalone stuff myself.</p>
 </body>
 </html>

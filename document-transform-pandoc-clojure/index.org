@@ -195,7 +195,7 @@ Look at all those closing parens! 😄
 * Let's rickroll ourselves!
 #+INCLUDE: "rickroll-ourselves.sh" src bash
 
-Please head over to [[file:rickroll-ourselves.html][rickroll-ourselves.html]]!
+Have a look at the result: [[file:rickroll-ourselves.html][rickroll-ourselves.html]]
 * Oh, that EDN file with links. I almost forgot.
 =extract_links.clj= is =rickroll.clj= with some edits:
 

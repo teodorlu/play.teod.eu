@@ -261,3 +261,8 @@ Here's some verbatim org-code:
 
 I tried linking to id:abc123?referrer=123 rather than id:abc123, but to no avail.
 How about linking to id:abc123#referrer-123? Nope.
+* Working with pandoc =--standalone= is causing problems
+As long as I'm using the =--standalone= stuff, I'm making problems for myself.
+Example: I loose roundtripping.
+If I try to roundtrip with =--standalone=, I get double table of contents and double title.
+I don't want that.

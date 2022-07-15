@@ -11,20 +11,14 @@
   (when (link? el)
     (get-in el [:c 2 0])))
 
-;; Keeping the old =rickroll= function for comparison.
+;; Keep the old `rickroll` function for reference:
 (defn rickroll [pandoc]
-  (let [;; I just copied in an example of what I was going to generate
-        _pandoc-link-example {:t "Link",
-                              :c [["" [] []]
-                                  [{:t "Str", :c "teod.eu"}]
-                                  ["https://www.youtube.com/watch?v=dQw4w9WgXcQ" ""]]}
-        ;; which made the assoc-in okay to write
-        link-to-rick (fn [el]
-                       (assoc-in el [:c 2 0] "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
-    ;; now, just follow the walk pattern from above.
+  (let [rick-link (fn [el]
+                    (assoc-in el [:c 2 0]
+                              "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))]
     (prewalk (fn [el]
                (if (link? el)
-                 (link-to-rick el)
+                 (rick-link el)
                  el))
              pandoc)))
 

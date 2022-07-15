@@ -11,9 +11,9 @@
 #     -o rickroll-ourselves.html
 
 # But that's too easy, so let's use the HTML file instead.
-
-pandoc --standalone \
-    --toc \
+pandoc  \
+    --standalone \
+    -V title:"" \
     -i index.html \
     --filter rickroll.sh \
     -o rickroll-ourselves.html

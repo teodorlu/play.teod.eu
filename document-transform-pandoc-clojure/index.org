@@ -106,7 +106,15 @@ Or you can view [[https://github.com/teodorlu/play.teod.eu/blob/master/document-
 Here comes a full listing for the babashka script.
 Article continues below!
 
+#+BEGIN_EXPORT html
+<a name="above-rickroll.clj" href="#below-rickroll.clj">Jump below rickroll.clj 👇</a>
+#+END_EXPORT
+
 #+INCLUDE: "rickroll.clj" src clojure
+
+#+BEGIN_EXPORT html
+<a name="below-rickroll.clj" href="#above-rickroll.clj">Jump above rickroll.clj 👆</a>
+#+END_EXPORT
 * Bash wrapper: =rickroll.sh=
 Pandoc's =--filter= requires /a single script/.
 So here's =rickroll.sh=:

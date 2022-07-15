@@ -280,3 +280,6 @@ pandoc  \
 
 Specifically, =-V title:""= makes sure the title isn't set twice.
 Regardless, I think I want to control the standalone stuff myself.
+* I want - site previews
+When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.

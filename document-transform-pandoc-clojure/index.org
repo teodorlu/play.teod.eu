@@ -41,7 +41,7 @@ First, let's define our language.
 | Babashka      | Clojure runtime for scripting                | https://babashka.org/                |
 
 Note: we could use plain Clojure instead of Babashka.
-But Babashka is a good fit here because of fast startup time, and easy STDIN/STDOUT transformation.
+But Babashka is a good fit here because of fast startup time.
 * Introduction to Pandoc
 Pandoc provides a common document format abstraction, and transformation from/to a wide range of formats.
 Let's look at an example.

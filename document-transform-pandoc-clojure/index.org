@@ -151,10 +151,10 @@ Look at all those closing parens! 😄
 #+end_src
 * Let's rickroll ourselves!
 #+begin_src
-pandoc -i index.html --filter rickroll.sh -o rick.html
+pandoc --standalone -i index.html --filter rickroll.sh -o rick.html
 #+end_src
 
-Please head over to [[rick.html][rick.html]]!
+Please head over to [[file:rick.html][rick.html]]!
 
 That's all for now.
 

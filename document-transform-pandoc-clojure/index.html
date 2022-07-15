@@ -510,10 +510,9 @@ quite compact when you think about it.</p>
 <div class="sourceCode" id="cb11"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>[<span class="at">:p</span> <span class="st">&quot;See &quot;</span> [<span class="at">:a</span> {<span class="at">:href</span> <span class="st">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>} <span class="st">&quot;teod.eu&quot;</span>]]</span></code></pre></div>
 <h2 id="lets-rickroll-ourselves">Let’s rickroll ourselves!</h2>
-<pre><code>pandoc -i index.html --filter rickroll.sh -o rick.html
+<pre><code>pandoc --standalone -i index.html --filter rickroll.sh -o rick.html
 </code></pre>
-<p>Please head over to <span class="spurious-link"
-target="rick.html"><em>rick.html</em></span>!</p>
+<p>Please head over to <a href="rick.html">rick.html</a>!</p>
 <p>That’s all for now.</p>
 <p>🙌</p>
 </body>

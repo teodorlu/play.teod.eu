@@ -75,3 +75,22 @@ We can call pandoc:
 To produce =link.json=:
 
 #+INCLUDE: "link.json" src json
+* Let's rickroll the links
+First, recap.
+
+1. Pandoc can convert anything to JSON
+2. We can transform JSON
+3. Pandoc can convert anything from JSON.
+
+So, how do we want to do this?
+A Pandoc filter takes JSON on stdin and produces JSON on stdout.
+
+We can use =jet= and =bb= do do this:
+
+#+begin_src bash
+echo '{"args": [1, 2]}' | \
+    jet --from json | \
+    bb '(assoc *input* :sum (reduce + (:args *input*)))' | \
+    jet --to json
+{"args":[1,2],"sum":0}
+#+end_src

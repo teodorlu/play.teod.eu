@@ -5,9 +5,6 @@
 
 [[./..][..]]
 
-Pandoc and Clojure are to exceptionally powerful tools.
-Together, we can quickly make wide changes to any document format that Pandoc supports.
-
 Today, we're going to use Pandoc and Clojure to produce a nice EDN file with all the links from an Markdown file.
 
 * Motivation: general tools
@@ -75,7 +72,7 @@ We can call pandoc:
 To produce =link.json=:
 
 #+INCLUDE: "link.json" src json
-* Let's rickroll the links
+* Babashka as a pandoc filter
 First, recap.
 
 1. Pandoc can convert anything to JSON
@@ -95,4 +92,11 @@ echo '{"args": [1, 2]}' | \
 {"args":[1,2],"sum":0}
 #+end_src
 
-First
+Nice!
+* Implement the thing
+So ...
+I had the idea that I'd work this out incrementally, explaining here each step as I take it.
+Unfortunately, that didn't happen.
+So here's =rickroll.clj=, with a bit of annotation:
+
+#+INCLUDE: "rickroll.clj" src clojure

@@ -186,7 +186,7 @@ So here's =rickroll.sh=:
 #+end_src
 
 Look at all those closing parens! 😄
-[[https://github.com/weavejester/hiccup][Hiccup]] is actually quite compact when you think about it.
+[[https://github.com/weavejester/hiccup][Hiccup]] is quite compact when you think about it.
 
 #+begin_src clojure
 [:p "See " [:a {:href "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}

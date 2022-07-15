@@ -3,14 +3,6 @@
             [clojure.edn]  ; for reading pandoc JSON as EDN
             ))
 
-;; there's going to be some line-end overflowing.
-;; Sorry about that!
-;;
-;; Here are some direct links:
-;;
-;;   https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj
-;;   https://play.teod.eu/document-transform-pandoc-clojure/rickroll.clj
-
 (comment
   ;; a nice pattern for recursive transformation in Clojure:
   (clojure.walk/prewalk (fn [el]

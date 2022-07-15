@@ -74,8 +74,8 @@ To produce =link.json=:
 
 #+INCLUDE: "link.json" src json
 
-Man, that's hard to read.
-Let's cheat a bit:
+Man, that's a long line.
+Here:
 
 #+begin_src json
 {
@@ -106,9 +106,13 @@ It's just data 🙂
 * Babashka as a pandoc filter
 First, recap.
 
-1. Pandoc can convert anything to JSON
+1. Pandoc can convert anything* to JSON
 2. We can transform JSON
-3. Pandoc can convert anything from JSON.
+3. Pandoc can convert anything* from JSON.
+
+So, by leveraging Pandoc, we can create arbitrary transformations on anything*!
+
+(*anything: https://pandoc.org/index.html)
 
 So, how do we want to do this?
 A Pandoc filter takes JSON on stdin and produces JSON on stdout.
@@ -125,15 +129,16 @@ echo '{"args": [1, 2]}' | \
 
 Nice!
 * Implementing =rickroll.clj=
-So ...
-I had the idea that I'd work this out incrementally, explaining here each step as I take it.
-Unfortunately, that didn't happen.
-So I decided to annotate the source instead.
-My Clojure source viewer is as per 2022-07-15 not particularly happy with long lines.
-Here's the raw file: [[file:rickroll.clj][rickroll.clj]].
-Or you can view [[https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj][rickroll.clj on Github]].
+I wanted to work on the pandoc filter incrementally, writing each step.
+That didn't happen.
+I got in the zone, and wrote everything.
+So you'll get after-the-fact commentary instead.
+The source code renderer on play.teod.eu currently (2022-07-15) demands very narrow source code lines.
+So you can view rickroll.clj as a [[file:rickroll.clj][raw file]] or [[https://github.com/teodorlu/play.teod.eu/blob/master/document-transform-pandoc-clojure/rickroll.clj][on Github]] if you'd like.
+Otherwise, keep on scrolling.
+
 Here comes a full listing for the babashka script.
-Article continues below!
+We continue below the code listing!
 
 #+BEGIN_EXPORT html
 <a name="above-rickroll.clj" href="#below-rickroll.clj">Jump below rickroll.clj 👇</a>

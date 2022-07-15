@@ -32,10 +32,9 @@
 ;; great commentary on you should take small steps.
 ;;
 ;;   https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/
-;;
+
 ;; But I digress. Back to our totally serious project.
 ;; Let's remove some links.
-
 (defn remove-links [pandoc]
   (prewalk (fn [el]
              (if (pandoc-link? el)

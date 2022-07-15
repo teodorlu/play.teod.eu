@@ -71,7 +71,7 @@
 ;; So we need a script to wrap it up.
 ;; More on the wrapper later.
 
-;; I hard-code some example data so that "just running" gives me feedback:
+;; Aaand I hard-code some test data for development.
 (def example
   {:pandoc-api-version [1 22 2], :meta {},
    :blocks [{:t "Para",

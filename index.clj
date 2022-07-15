@@ -101,7 +101,7 @@
 3. The inability to have separate hierarchies
 4. More abstractly --- we need a /fractal/ structure, not a hierarchical one.
 5. Unclear content authority --- whose content is this? Who is responsible?
-6. Mixing good stuff and bad stuff makes it hard to find the good stuff
+6. Mixing good stuff and bad stuff makes the good stuff hard to find
 7. It's hard to find the good stuff whatsoever
 8. It's hard to search for stuff that's not listed
 9. It's impossible to build new views

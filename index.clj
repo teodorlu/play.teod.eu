@@ -114,7 +114,7 @@
                 ""
                 "PRs are probably a bad idea."
                 "I prefer a good discussion to rewriting each other's ideas."
-                "And of course, please let yourself \"be inspired\" if you want to create something similar."]))))
+                "And please, let yourself be inspired if you want to create something similar."]))))
 
 ;; For development:
 ;;

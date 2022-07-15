@@ -135,7 +135,7 @@
              ;; Header, title, link up
              [(str "#+TITLE: " title)
               ""
-              "[[file:..][..]]
+              "[[file:..]]
 
 DRAFT
 

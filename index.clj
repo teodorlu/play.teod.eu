@@ -89,7 +89,7 @@
                 ""]
                (for [page norwegian] (str "- " (link page)))
 
-               ["** Comments? Hit me up!"
+               ["** Comments? Hit me up."
                 "Details on [[https://teod.eu][teod.eu]]."]
                [""
                 "** Efforts at \"writing things down together\" commonly fail because:

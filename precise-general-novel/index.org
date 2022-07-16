@@ -5,7 +5,7 @@
 
 [[./..][..]]
 
-Three axes:
+* Three axes:
 
 | vague      | precise |
 | specific   | general |
@@ -21,7 +21,8 @@ Web3 wild speculation: vague, general, novel.
 
 Idea --- always better to move to the right.
 But hard.
-
+* or four axes
+generality, novelty, precision, subjectivity
 * From a long long time ago
 Copied over from: https://subcons.teod.eu/specific-precise/
 

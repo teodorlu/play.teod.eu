@@ -47,3 +47,13 @@ Easier to draw.
 * My friction -- want to move right.
 I often accept a small loss of precision to gain generality.
 Others are often happy with me when I strive to be specific.
+* consider :subjectivity
+Here's a table:
+
+| axis          | as 0         | as 1         |
+| :generality   | event        | physical law |
+| :novelty      | known by all | known by 1   |
+| :precision    | dream        | logic        |
+| :subjectivity | event        | taste        |
+* Consider assigning :generality :novelty :precision :subjectivity to all articles
+Then I can query on stuff.

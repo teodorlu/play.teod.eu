@@ -84,3 +84,9 @@ Correlation to value
 | :novelty      | 0.8 |
 | :precision    |   1 |
 | :subjectivity |   0 |
+
+That means I can actually order by "good stuff" 🤔
+
+good := correlation_map^T * article_things
+
+Hmm.

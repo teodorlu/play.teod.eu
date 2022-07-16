@@ -85,6 +85,7 @@ So that it's easier to handle the very incomplete stuff.
 Or at least sort by creation date.
 
 Hmm, let's just add a :created timestamp.
+** I want to derive :last-modified from git history of org-file.
 * play.teod.eu is just some code that generates some HTML
 
 Not more.

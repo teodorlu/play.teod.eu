@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 7bba802d-4788-4858-a6ea-d9eb29ae9e3c
+:END:
+#+TITLE: How to use Twitter
+
+[[file:..][..]]
+
+* TLDR: Apply [[id:0391bd0a-f3cf-4aaa-bc00-24662c71e539][Intention, Relation, Action]].
+What do you want to achieve?
+What personal relations will help you get that?
+Now, which actions do you need to make?
+* Example --- I want playful Twitter
+* Example --- I want deep conversations
+* Example --- I want to follow my domain

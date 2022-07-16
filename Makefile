@@ -3,7 +3,7 @@
 
 
 # Generate target for root index
-index.html: index.clj aphorisms/index.html attention-design/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html c-journal/index.html clojure-interactive/index.html discover-difference/index.html documentation/index.html document-transform-pandoc-clojure/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html git-commit-messages/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html intention-relation-action/index.html interaction-value-differential/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html list-of-problems/index.html lost-in-specificity/index.html maksimal-opsjonalitet/index.html many-small-functions-bad/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html precise-general-novel/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html strong-relations/index.html unix-signals-intro/index.html watchexec-make-dev/index.html why-dont-we-have-a-strategy/index.html wip/index.html
+index.html: index.clj aphorisms/index.html attention-design/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html c-journal/index.html clojure-interactive/index.html discover-difference/index.html documentation/index.html document-transform-pandoc-clojure/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html git-commit-messages/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html intention-relation-action/index.html interaction-value-differential/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html list-of-problems/index.html lost-in-specificity/index.html maksimal-opsjonalitet/index.html many-small-functions-bad/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html precise-general-novel/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html strong-relations/index.html thesis-antithesis-synthesis/index.html twitter-howto/index.html unix-signals-intro/index.html watchexec-make-dev/index.html why-dont-we-have-a-strategy/index.html wip/index.html
 	./index.clj
 
 
@@ -128,6 +128,12 @@ software-architecture/index.html: software-architecture/index.org
 strong-relations/index.html: strong-relations/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i strong-relations/index.org -o strong-relations/index.html
 
+thesis-antithesis-synthesis/index.html: thesis-antithesis-synthesis/index.org
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i thesis-antithesis-synthesis/index.org -o thesis-antithesis-synthesis/index.html
+
+twitter-howto/index.html: twitter-howto/index.org
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i twitter-howto/index.org -o twitter-howto/index.html
+
 unix-signals-intro/index.html: unix-signals-intro/index.org
 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i unix-signals-intro/index.org -o unix-signals-intro/index.html
 
@@ -146,10 +152,13 @@ makefile:
 	./makemakefile.clj > Makefile
 
 
-# One `make clean` and then `make` should always give you fresh state
+# Rengenerate the index
 .PHONY: clean
 clean:
-	# Root html:
 	rm -f index.html
-	# The other HTML files:
-	rm -f aphorisms/index.html attention-design/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html c-journal/index.html clojure-interactive/index.html discover-difference/index.html documentation/index.html document-transform-pandoc-clojure/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html git-commit-messages/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html intention-relation-action/index.html interaction-value-differential/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html list-of-problems/index.html lost-in-specificity/index.html maksimal-opsjonalitet/index.html many-small-functions-bad/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html precise-general-novel/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html strong-relations/index.html unix-signals-intro/index.html watchexec-make-dev/index.html why-dont-we-have-a-strategy/index.html wip/index.html
+
+
+# Regenerate everything
+.PHONY: ultraclean
+ultraclean: clean
+	rm -f aphorisms/index.html attention-design/index.html bitemporal-worldview/index.html capability-feature-assembly/index.html c-journal/index.html clojure-interactive/index.html discover-difference/index.html documentation/index.html document-transform-pandoc-clojure/index.html emacs/index.html feedback-interface-implementation/index.html fuse/index.html git-commit-messages/index.html grow-knowlege-together/index.html heterarchies/index.html inspiration-howto/index.html intention-relation-action/index.html interaction-value-differential/index.html iterate-knowledge-archipelago/index.html journal/index.html knowledge-worker/index.html list-of-problems/index.html lost-in-specificity/index.html maksimal-opsjonalitet/index.html many-small-functions-bad/index.html narrow-statements/index.html narrow-waist/index.html oggpo/index.html orthogonality-enables-optionality/index.html play.teod.eu-journal/index.html play.teod.eu-rolling-retrospective/index.html precise-general-novel/index.html product-for-developers/index.html purposeful-software-development/index.html rdf-intro/index.html sannhet-deskriptiv-preskriptiv/index.html shabakka/index.html software-architecture-as-language-construction/index.html software-architecture/index.html strong-relations/index.html thesis-antithesis-synthesis/index.html twitter-howto/index.html unix-signals-intro/index.html watchexec-make-dev/index.html why-dont-we-have-a-strategy/index.html wip/index.html

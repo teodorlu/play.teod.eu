@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: fb582b97-d921-4e46-a21e-f8fb41b35a95
+:END:
+#+TITLE: Thesis, anitthesis, synthesis
+
+[[file:..][..]]
+
+A nice format for integrating new knowledge.
+
+* Thesis --- current state
+* Antithesis --- what's ideal
+* Synthesis --- unify a piece of "ideal" with "current", apply.

@@ -95,3 +95,7 @@ Hmm.
 | Show me new ideas        | 🤷 | Show me old knowlege       |
 | BE PRECISE!              | 🤷 | the journey is to dream ❤️ |
 | Give me facts.           | 🤷 | What do you like?          |
+
+I can make a nice little UI that works on this.
+Set your preference.
+Load preferences from others.

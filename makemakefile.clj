@@ -56,12 +56,16 @@
 (println "")
 (println "")
 
-(println "# One `make clean` and then `make` should always give you fresh state")
+(println "# Rengenerate the index")
 (println ".PHONY: clean")
 (println "clean:")
-(println "\t# Root html:")
 (println "\trm -f index.html")
-(println "\t# The other HTML files:")
+(println "")
+(println "")
+
+(println "# Regenerate everything")
+(println ".PHONY: ultraclean")
+(println "ultraclean: clean")
 (println (str "\t"
               "rm -f "
               (str/join " " (map html targets))))

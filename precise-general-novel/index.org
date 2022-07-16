@@ -63,3 +63,24 @@ Can either be a 0-1 scale, or :low, :medium, :high
 | :low    | ~0.2 |
 | :medium | ~0.5 |
 | :high   | ~0.8 |
+
+Default values (humble)
+
+| :generality   | :low  |
+| :novelty      | :low  |
+| :precision    | :low  |
+| :subjectivity | :high |
+
+By default, "just saying stuff" does:
+
+- not generalize
+- doesn't provide anything new
+- is vague
+- and subjective.
+
+Correlation to value
+
+| :generality   | 0.8 |
+| :novelty      | 0.8 |
+| :precision    |   1 |
+| :subjectivity |   0 |

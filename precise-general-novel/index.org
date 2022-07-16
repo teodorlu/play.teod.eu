@@ -78,7 +78,7 @@ By default, "just saying stuff" does:
 - is vague
 - and subjective.
 
-Correlation to value
+* Assigning correlation to value allows rich ordering
 
 | :generality   | 0.8 |
 | :novelty      | 0.8 |
@@ -90,3 +90,8 @@ That means I can actually order by "good stuff" 🤔
 good := correlation_map^T * article_things
 
 Hmm.
+* People can bring their own correlation thing
+| Keep it specific, please | 🤷 | I like general theories    |
+| Show me new ideas        | 🤷 | Show me old knowlege       |
+| BE PRECISE!              | 🤷 | the journey is to dream ❤️ |
+| Give me facts.           | 🤷 | What do you like?          |

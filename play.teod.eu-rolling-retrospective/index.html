@@ -248,8 +248,6 @@ want to derive :last-modified from git history of org-file.</a></li>
 href="#play.teod.eu-is-just-some-code-that-generates-some-html">play.teod.eu
 is just some code that generates some HTML</a></li>
 <li><a href="#comment-system">comment system</a></li>
-<li><a href="#cross-site-linking-with-org-roam.">Cross site linking with
-org-roam.</a></li>
 <li><a href="#creating-new-pages">Creating new pages</a></li>
 <li><a href="#play.teod.eu-success-metric-strong-language">play.teod.eu
 success metric: strong language</a></li>
@@ -265,16 +263,22 @@ narrow</a></li>
 <li><a href="#source-code-blocks-are-too-narrow">Source code blocks are
 too narrow</a></li>
 </ul></li>
-<li><a href="#reified-links-for-play.teod.eu">reified links for
-play.teod.eu</a>
-<ul class="incremental">
-<li><a href="#why-reified-links">Why reified links?</a></li>
-</ul></li>
 <li><a
 href="#working-with-pandoc---standalone-is-causing-problems">Working
 with pandoc <code class="verbatim">--standalone</code> is causing
 problems</a></li>
 <li><a href="#i-want---site-previews">I want - site previews</a></li>
+<li><a href="#reified-links">Reified links</a>
+<ul class="incremental">
+<li><a href="#cross-site-linking-with-org-roam.">Cross site linking with
+org-roam.</a></li>
+<li><a href="#reified-links-for-play.teod.eu">reified links for
+play.teod.eu</a></li>
+<li><a
+href="#i-want-to-tag-each-article-with-generality-novelty-precision-subjectivity">I
+want to tag each article with :generality :novelty :precision
+:subjectivity</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -361,50 +365,6 @@ in the CLI/Makefile — not in opaque CI.</p>
 <h2 id="comment-system">comment system</h2>
 <p>Option: Comments on Twitter. Option: Comments on Hacker News. Option:
 Comments embedded straight into the text - via Github pull requests.</p>
-<h2 id="cross-site-linking-with-org-roam.">Cross site linking with
-org-roam.</h2>
-<p>So … getting Org-roam to find links here was easy. Just set the root
-dir, and add ID properties for each page that should be indexed.</p>
-<p>Status: links are working in Emacs. Links are <em>not</em> working on
-the web. Why? I’m using Pandoc to parse org-mode links, and pandoc
-doesn’t know how to handle id links. Perhaps I can solve this myself
-with a filter? Hmm.</p>
-<p>Options:</p>
-<ul class="incremental">
-<li>Work around the ID links to provide <code
-class="verbatim">../other-page/</code>-style links</li>
-<li>Just use the file links
-<ul class="incremental">
-<li>But the plain file links won’t know about which org document is the
-target – which is a pain.</li>
-</ul></li>
-<li>Perhaps this is finally a case for a pandoc filter with
-babashka.</li>
-</ul>
-<p>Filter architecture draft:</p>
-<ul class="incremental">
-<li>Need a global links store
-<ul class="incremental">
-<li>I could generate that</li>
-<li>Or I could pull it out of Org-Roam</li>
-</ul></li>
-<li>Given that global link store, mapping for instance <code
-class="verbatim">658447a3-00e6-44aa-963e-d2f5938c50d3</code> to <code
-class="verbatim">../play.teod.eu-rolling-retrospective/</code>, I could
-simply use that global link store for rich links or post processing.
-<ul class="incremental">
-<li>I would want to query links to show relations between pages</li>
-<li>I would want to transform links when converting from org-mode to
-html</li>
-</ul></li>
-</ul>
-<p>What would the “check in everything” approach mean?</p>
-<ol class="incremental">
-<li>Simply link to folders</li>
-<li>Then simply manage that.</li>
-</ol>
-<p>I wouldn’t be able to get the nice “straight to file” Org-Roam style
-navigation. But do I really need that?</p>
 <h2 id="creating-new-pages">Creating new pages</h2>
 <p>Currently, I hand-roll my own new-page creation. I could also hook my
 logic into Org-Roam’s templating system Details: <a
@@ -468,16 +428,83 @@ lines:</p>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 <p>I think the source code too is meant to reach about a 100 characters
 in width.</p>
-<h2 id="reified-links-for-play.teod.eu">reified links for
-play.teod.eu</h2>
+<h2 id="working-with-pandoc---standalone-is-causing-problems">Working
+with pandoc <code class="verbatim">--standalone</code> is causing
+problems</h2>
+<p>As long as I’m using the <code class="verbatim">--standalone</code>
+stuff, I’m making problems for myself. Example: I loose roundtripping.
+If I try to roundtrip with <code class="verbatim">--standalone</code>, I
+get double table of contents and double title. I don’t want that.</p>
+<p>Found a walkaround for roundtripping: avoid writing title info</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
+<p>Specifically, <code class="verbatim">-V title:""</code> makes sure
+the title isn’t set twice. Regardless, I think I want to control the
+standalone stuff myself.</p>
+<h2 id="i-want---site-previews">I want - site previews</h2>
+<p>When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.</p>
+<h2 id="reified-links">Reified links</h2>
+<h3 id="cross-site-linking-with-org-roam.">Cross site linking with
+org-roam.</h3>
+<p>So … getting Org-roam to find links here was easy. Just set the root
+dir, and add ID properties for each page that should be indexed.</p>
+<p>Status: links are working in Emacs. Links are <em>not</em> working on
+the web. Why? I’m using Pandoc to parse org-mode links, and pandoc
+doesn’t know how to handle id links. Perhaps I can solve this myself
+with a filter? Hmm.</p>
+<p>Options:</p>
+<ul class="incremental">
+<li>Work around the ID links to provide <code
+class="verbatim">../other-page/</code>-style links</li>
+<li>Just use the file links
+<ul class="incremental">
+<li>But the plain file links won’t know about which org document is the
+target – which is a pain.</li>
+</ul></li>
+<li>Perhaps this is finally a case for a pandoc filter with
+babashka.</li>
+</ul>
+<p>Filter architecture draft:</p>
+<ul class="incremental">
+<li>Need a global links store
+<ul class="incremental">
+<li>I could generate that</li>
+<li>Or I could pull it out of Org-Roam</li>
+</ul></li>
+<li>Given that global link store, mapping for instance <code
+class="verbatim">658447a3-00e6-44aa-963e-d2f5938c50d3</code> to <code
+class="verbatim">../play.teod.eu-rolling-retrospective/</code>, I could
+simply use that global link store for rich links or post processing.
+<ul class="incremental">
+<li>I would want to query links to show relations between pages</li>
+<li>I would want to transform links when converting from org-mode to
+html</li>
+</ul></li>
+</ul>
+<p>What would the “check in everything” approach mean?</p>
+<ol class="incremental">
+<li>Simply link to folders</li>
+<li>Then simply manage that.</li>
+</ol>
+<p>I wouldn’t be able to get the nice “straight to file” Org-Roam style
+navigation. But do I really need that?</p>
+<h3 id="reified-links-for-play.teod.eu">reified links for
+play.teod.eu</h3>
 <p>I want reified links for play.teod.eu.</p>
-<h3 id="why-reified-links">Why reified links?</h3>
+<h4 id="why-reified-links">Why reified links?</h4>
 <p>Because I can model and query knowledge.</p>
 <p>A good first use case is being able to resolve the id: links I can
 insert with Org-Roam, like this: <a
 href="id:2e1280a4-a783-4ab7-9f5c-58a7851a8218">Feedback loops, interface
 design and how stuff works</a>.</p>
-<h4 id="challenges">Challenges</h4>
+<ol class="incremental">
+<li><p>Challenges</p>
 <p>Can I get the links out with Pandoc JSON and a Clojure filter with a
 walk? I think so.</p>
 <p>And how should I represent the links?</p>
@@ -486,27 +513,27 @@ links. Hmm, that could mean extracting links. And links could have some
 kind of ID. What if I simply keep the original link target, and use that
 as an ID? But … linking to the ID of a page and linking to the path of a
 page is different.</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here&#39;s a link to this page:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here&#39;s a link to this page:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span></code></pre></div>
 <p>No, actually, that’s not a link. That’s a link target. If I want that
 as an entity, I’ll need … an ID too? Hmm.</p>
 <p>What can differentiate the links?</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here is this page:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">;; What does the link to this page look like?</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>{<span class="at">:target/id</span> <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> <span class="at">:source/id</span> <span class="st">&quot;abc123&quot;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link ID?</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link type?</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a> <span class="co">;; What kind of link types can I have?</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a> }</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here is this page:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">;; What does the link to this page look like?</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>{<span class="at">:target/id</span> <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a> <span class="at">:source/id</span> <span class="st">&quot;abc123&quot;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link ID?</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link type?</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a> <span class="co">;; What kind of link types can I have?</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a> }</span></code></pre></div>
 <p>How do we know the difference between one link and another?</p>
 <p>Option:</p>
 <ul class="incremental">
@@ -518,31 +545,44 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a 
 <li>I don’t control Org-mode’s UI. So I can’t add a link ID there. I
 probably don’t want to keep track of link IDs that detailed either. As
 long as I’m using plain text. Or … add a ?referrer=abc123?</li>
-</ul>
-<h4 id="referrers-not-allowed">referrers not allowed</h4>
+</ul></li>
+<li><p>referrers not allowed</p>
 <p>Here’s some verbatim org-code:</p>
 <p>I tried linking to id:abc123?referrer=123 rather than id:abc123, but
-to no avail. How about linking to id:abc123#referrer-123? Nope.</p>
-<h2 id="working-with-pandoc---standalone-is-causing-problems">Working
-with pandoc <code class="verbatim">--standalone</code> is causing
-problems</h2>
-<p>As long as I’m using the <code class="verbatim">--standalone</code>
-stuff, I’m making problems for myself. Example: I loose roundtripping.
-If I try to roundtrip with <code class="verbatim">--standalone</code>, I
-get double table of contents and double title. I don’t want that.</p>
-<p>Found a walkaround for roundtripping: avoid writing title info</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
-<p>Specifically, <code class="verbatim">-V title:""</code> makes sure
-the title isn’t set twice. Regardless, I think I want to control the
-standalone stuff myself.</p>
-<h2 id="i-want---site-previews">I want - site previews</h2>
-<p>When I post a Twitter link, Slack is able to create a nice preview.
-When I post a play.teod.eu link, there is no preview.</p>
+to no avail. How about linking to id:abc123#referrer-123? Nope.</p></li>
+</ol>
+<h3
+id="i-want-to-tag-each-article-with-generality-novelty-precision-subjectivity">I
+want to tag each article with :generality :novelty :precision
+:subjectivity</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>axis</td>
+<td>as 0</td>
+<td>as 1</td>
+</tr>
+<tr class="even">
+<td>:generality</td>
+<td>event</td>
+<td>physical law</td>
+</tr>
+<tr class="odd">
+<td>:novelty</td>
+<td>known by all</td>
+<td>known by 1</td>
+</tr>
+<tr class="even">
+<td>:precision</td>
+<td>dream</td>
+<td>logic</td>
+</tr>
+<tr class="odd">
+<td>:subjectivity</td>
+<td>event</td>
+<td>taste</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>

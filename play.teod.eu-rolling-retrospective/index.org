@@ -97,41 +97,6 @@ And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
 Option: Comments on Twitter.
 Option: Comments on Hacker News.
 Option: Comments embedded straight into the text - via Github pull requests.
-* Cross site linking with org-roam.
-So ... getting Org-roam to find links here was easy.
-Just set the root dir, and add ID properties for each page that should be indexed.
-
-Status: links are working in Emacs.
-Links are /not/ working on the web.
-Why?
-I'm using Pandoc to parse org-mode links, and pandoc doesn't know how to handle id links.
-Perhaps I can solve this myself with a filter?
-Hmm.
-
-Options:
-
-- Work around the ID links to provide =../other-page/=-style links
-- Just use the file links
-  - But the plain file links won't know about which org document is the target -- which is a pain.
-- Perhaps this is finally a case for a pandoc filter with babashka.
-
-Filter architecture draft:
-
-- Need a global links store
-  - I could generate that
-  - Or I could pull it out of Org-Roam
-- Given that global link store, mapping for instance =658447a3-00e6-44aa-963e-d2f5938c50d3= to
-  =../play.teod.eu-rolling-retrospective/=, I could simply use that global link store for rich links or post processing.
-  - I would want to query links to show relations between pages
-  - I would want to transform links when converting from org-mode to html
-
-What would the "check in everything" approach mean?
-
-1. Simply link to folders
-2. Then simply manage that.
-
-I wouldn't be able to get the nice "straight to file" Org-Roam style navigation.
-But do I really need that?
 * Creating new pages
 Currently, I hand-roll my own new-page creation.
 I could also hook my logic into Org-Roam's templating system
@@ -195,13 +160,71 @@ static size_t writecons(FILE *f, const unsigned char *buf, size_t size) {
 #+end_src
 
 I think the source code too is meant to reach about a 100 characters in width.
-* reified links for play.teod.eu
+* Working with pandoc =--standalone= is causing problems
+As long as I'm using the =--standalone= stuff, I'm making problems for myself.
+Example: I loose roundtripping.
+If I try to roundtrip with =--standalone=, I get double table of contents and double title.
+I don't want that.
+
+Found a walkaround for roundtripping: avoid writing title info
+
+#+begin_src bash
+pandoc  \
+    --standalone \
+    -V title:"" \
+    -i index.html \
+    --filter rickroll.sh \
+    -o rickroll-ourselves.html
+#+end_src
+
+Specifically, =-V title:""= makes sure the title isn't set twice.
+Regardless, I think I want to control the standalone stuff myself.
+* I want - site previews
+When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.
+* Reified links
+** Cross site linking with org-roam.
+So ... getting Org-roam to find links here was easy.
+Just set the root dir, and add ID properties for each page that should be indexed.
+
+Status: links are working in Emacs.
+Links are /not/ working on the web.
+Why?
+I'm using Pandoc to parse org-mode links, and pandoc doesn't know how to handle id links.
+Perhaps I can solve this myself with a filter?
+Hmm.
+
+Options:
+
+- Work around the ID links to provide =../other-page/=-style links
+- Just use the file links
+  - But the plain file links won't know about which org document is the target -- which is a pain.
+- Perhaps this is finally a case for a pandoc filter with babashka.
+
+Filter architecture draft:
+
+- Need a global links store
+  - I could generate that
+  - Or I could pull it out of Org-Roam
+- Given that global link store, mapping for instance =658447a3-00e6-44aa-963e-d2f5938c50d3= to
+  =../play.teod.eu-rolling-retrospective/=, I could simply use that global link store for rich links or post processing.
+  - I would want to query links to show relations between pages
+  - I would want to transform links when converting from org-mode to html
+
+What would the "check in everything" approach mean?
+
+1. Simply link to folders
+2. Then simply manage that.
+
+I wouldn't be able to get the nice "straight to file" Org-Roam style navigation.
+But do I really need that?
+** reified links for play.teod.eu
 I want reified links for play.teod.eu.
-** Why reified links?
+*** Why reified links?
 Because I can model and query knowledge.
 
 A good first use case is being able to resolve the id: links I can insert with Org-Roam, like this: [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
-*** Challenges
+**** Challenges
 Can I get the links out with Pandoc JSON and a Clojure filter with a walk?
 I think so.
 
@@ -257,30 +280,14 @@ Challenge:
   I probably don't want to keep track of link IDs that detailed either.
   As long as I'm using plain text.
   Or ... add a ?referrer=abc123?
-*** referrers not allowed
+**** referrers not allowed
 Here's some verbatim org-code:
 
 I tried linking to id:abc123?referrer=123 rather than id:abc123, but to no avail.
 How about linking to id:abc123#referrer-123? Nope.
-* Working with pandoc =--standalone= is causing problems
-As long as I'm using the =--standalone= stuff, I'm making problems for myself.
-Example: I loose roundtripping.
-If I try to roundtrip with =--standalone=, I get double table of contents and double title.
-I don't want that.
-
-Found a walkaround for roundtripping: avoid writing title info
-
-#+begin_src bash
-pandoc  \
-    --standalone \
-    -V title:"" \
-    -i index.html \
-    --filter rickroll.sh \
-    -o rickroll-ourselves.html
-#+end_src
-
-Specifically, =-V title:""= makes sure the title isn't set twice.
-Regardless, I think I want to control the standalone stuff myself.
-* I want - site previews
-When I post a Twitter link, Slack is able to create a nice preview.
-When I post a play.teod.eu link, there is no preview.
+** I want to tag each article with :generality :novelty :precision :subjectivity
+| axis          | as 0         | as 1         |
+| :generality   | event        | physical law |
+| :novelty      | known by all | known by 1   |
+| :precision    | dream        | logic        |
+| :subjectivity | event        | taste        |

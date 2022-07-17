@@ -48,15 +48,18 @@
   (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
-  (let [{:keys [ready-for-comments norwegian wtf-is-this other forever-incomplete]} (group-by :category pages)]
+  (let [{:keys [ready-for-comments norwegian wtf-is-this other forever-incomplete]} (group-by :category pages)
+        sentences (fn [& ss] (str/join " " ss))]
     (str/join "\n"
               (concat
                ["#+title: Towards an iterated game"
                 ""
-                "Intent: bring ideas to life. Discuss, sharpen, play. Minimize the distance between intent and reality."
+                (sentences "Intent: bring ideas to life."
+                           "Discuss, sharpen, play."
+                           "Minimize the distance between intent and reality.")
                 ""
-                (str "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
-                     " Embrace remix culture.")
+                (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
+                           "Embrace remix culture.")
 
                 ""
                 "Status: work in progress, lots of rough edges."
@@ -78,8 +81,8 @@
 
                ["** Vague ideas, please ignore."
                 ""
-                " Links to these mostly exist for me (Teodor)."
-                " But still open, information wants to be free."
+                "Links to these mostly exist for me (Teodor)."
+                "But still open, information wants to be free."
                 ""
                 (str/join " --- " (for [page wtf-is-this] (link page)))
                 ""]

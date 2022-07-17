@@ -572,3 +572,23 @@ What does such a context look like?
 
 Is it closer to a research lab than a product company?
 Can there be both?
+** Reading Elements of Clojure
+#+begin_src bash
+ec Nextcloud/store/elementsofclojure.pdf
+#+end_src
+
+"Indirection /is/ abstraction"
+
+#+begin_quote
+Indirection, also sometimes called abstraction, is the foundation of the software we write.
+Layers of indirection can be peeled away incrementally, allowing us to work withint a codebase without understanding its entrirety.
+Without indrection, we'd be unable to write software longer than a few hundred lines.
+#+end_quote
+
+Huh, this names something I've seen.
+Python scripts written by civil engineers.
+One big for loop, with some clauses.
+
+Advantage: straightforward.
+Disadvantage: Inflexible.
+Lesson: use indirection / abstraction to make code flexible.

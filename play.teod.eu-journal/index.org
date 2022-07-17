@@ -316,4 +316,10 @@ But ... then I can't just use =clojure.edn/read-string=.
 So yeah, I'm keeping EDN too, at least for now.
 Plus keywords.
 Keywords are great.
-So much easier to read data files when there are keywords too.
+** Getting some kind of "ctrl+k" working too would be neat.
+Behavior:
+
+1. Read sitemap for current site
+   1. Perhaps lazily on page load
+2. Provide a nice command thing launcher for navigation
+3. 🎉

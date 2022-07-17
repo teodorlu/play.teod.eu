@@ -278,6 +278,7 @@ Managment</a></li>
 tiny step – Don’t Produce Links That Don’t Work</a></li>
 <li><a href="#letting-new-links-feature-be-opt-in-is-kinda-nice">Letting
 “new links feature” be opt-in is kinda nice</a></li>
+<li><a href="#org-mode-errors">Org-mode errors</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -668,5 +669,101 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a 
 links feature” be opt-in is kinda nice</h3>
 <p>Then I can experiment “off to the side” without breaking
 everything.</p>
+<h3 id="org-mode-errors">Org-mode errors</h3>
+<p>I’m getting some weird behaviror when I’m saving my org-files.</p>
+<p>I suspect some combination of Org-roam and editing under narrowed
+subtrees.</p>
+<blockquote>
+<p>Warning (org-element-cache): org-element–cache: (nil) Cached element
+is incorrect in play.teod.eu-rolling-retrospective/index.org. (Cache tic
+up to date: “yes”) Resetting. If this warning appears regularly, please
+report the warning text to Org mode mailing list (M-x
+org-submit-bug-report). The element is: “(paragraph (:begin 783 :end 813
+:contents-begin 783 :contents-end 812 :post-blank 1 :post-affiliated 783
+:mode planning :granularity element :org-element–cache-sync-key (181517
+. 783) :cached t :parent (section (:begin 783 :end 813 :contents-begin
+783 :contents-end 812 :robust-begin 783 :robust-end 810 :post-blank 1
+:post-affiliated 783 :mode section :granularity element
+:org-element–cache-sync-key (901 . 1580) :cached t :parent (headline
+…)))))” The real element is: “(paragraph (:begin 783 :end 814
+:contents-begin 783 :contents-end 814 :post-blank 0 :post-affiliated 783
+:mode planning :granularity element :parent (section (:begin 783 :end
+814 :contents-begin 783 :contents-end 814 :robust-begin 783 :robust-end
+812 :post-blank 0 :post-affiliated 783 :mode section :granularity
+element :parent (headline …)))))” Cache around :begin: (headline
+(:raw-value “Second step option: fix the links — rewrite from id: to
+path: and then href: to folder” :begin 690 :end 814 :pre-blank 0
+:contents-begin 783 :contents-end 814 :robust-begin 785 :robust-end 812
+:level 3 :priority nil :tags nil :todo-keyword nil :todo-type nil
+:post-blank 0 :footnote-section-p nil :archivedp nil :commentedp nil
+:post-affiliated 690 :title (#(“Second step option: fix the links —
+rewrite from id: to path: and then href: to folder” 0 88 (:parent
+(headline #1)))) :parent (headline (:raw-value “Org-roam id:… links are
+broken” :begin 478 :end 814 :pre-blank 0 :contents-begin 514
+:contents-end 814 :robust-begin 516 :robust-end 812 :level 2 :priority
+nil :tags nil :todo-keyword nil :todo-type nil :post-blank 0
+:footnote-section-p nil :archivedp nil :commentedp nil :post-affiliated
+478 :title (#(“Org-roam id:… links are broken” 0 32 (:parent (headline
+#3)))) :parent (headline (:raw-value “Synthesis” :begin 341 :end 8211
+:pre-blank 0 :contents-begin 353 :contents-end 8211 :robust-begin 355
+:robust-end 8209 :level 1 :priority nil :tags nil :todo-keyword nil
+:todo-type nil :post-blank 0 :footnote-section-p nil :archivedp nil
+:commentedp nil :post-affiliated 341 :title (#(“Synthesis” 0 9 (:parent
+(headline #5)))) :parent (org-data (:begin 1 :contents-begin 1
+:contents-end 10819 :end 10819 :robust-begin 67 :robust-end 10817
+:post-blank 0 :post-affiliated 1 :path
+“/home/teodorlu/dev/teodorlu/play.teod.eu/play.teod.eu-rolling-retrospective/index.org”
+:mode org-data :ID “658447a3-00e6-44aa-963e-d2f5938c50d3” :CATEGORY
+“index” :parent nil :cached t :org-element–cache-sync-key (729 . -1)))
+:cached t :org-element–cache-sync-key (181517 . 341))) :cached t
+:org-element–cache-sync-key (181517 . 478))) :cached t
+:org-element–cache-sync-key (181517 . 690))) (headline (:raw-value
+“Second step option: fix the links — rewrite from id: to path: and then
+href: to folder” :begin 690 :end 814 :pre-blank 0 :contents-begin 783
+:contents-end 814 :robust-begin 785 :robust-end 812 :level 3 :priority
+nil :tags nil :todo-keyword nil :todo-type nil :post-blank 0
+:footnote-section-p nil :archivedp nil :commentedp nil :post-affiliated
+690 :title (#(“Second step option: fix the links — rewrite from id: to
+path: and then href: to folder” 0 88 (:parent (headline #1)))) :parent
+(headline (:raw-value “Org-roam id:… links are broken” :begin 478 :end
+814 :pre-blank 0 :contents-begin 514 :contents-end 814 :robust-begin 516
+:robust-end 812 :level 2 :priority nil :tags nil :todo-keyword nil
+:todo-type nil :post-blank 0 :footnote-section-p nil :archivedp nil
+:commentedp nil :post-affiliated 478 :title (#(“Org-roam id:… links are
+broken” 0 32 (:parent (headline #3)))) :parent (headline (:raw-value
+“Synthesis” :begin 341 :end 8211 :pre-blank 0 :contents-begin 353
+:contents-end 8211 :robust-begin 355 :robust-end 8209 :level 1 :priority
+nil :tags nil :todo-keyword nil :todo-type nil :post-blank 0
+:footnote-section-p nil :archivedp nil :commentedp nil :post-affiliated
+341 :title (#(“Synthesis” 0 9 (:parent (headline #5)))) :parent
+(org-data (:begin 1 :contents-begin 1 :contents-end 10819 :end 10819
+:robust-begin 67 :robust-end 10817 :post-blank 0 :post-affiliated 1
+:path
+“/home/teodorlu/dev/teodorlu/play.teod.eu/play.teod.eu-rolling-retrospective/index.org”
+:mode org-data :ID “658447a3-00e6-44aa-963e-d2f5938c50d3” :CATEGORY
+“index” :parent nil :cached t :org-element–cache-sync-key (729 . -1)))
+:cached t :org-element–cache-sync-key (181517 . 341))) :cached t
+:org-element–cache-sync-key (181517 . 478))) :cached t
+:org-element–cache-sync-key (181517 . 690))) (headline (:raw-value “CSS
+pain points” :begin 814 :end 2953 :pre-blank 0 :contents-begin 833
+:contents-end 2953 :robust-begin 835 :robust-end 2951 :level 2 :priority
+nil :tags nil :todo-keyword nil :todo-type nil :post-blank 0
+:footnote-section-p nil :archivedp nil :commentedp nil :post-affiliated
+814 :title “CSS pain points” :mode nil :granularity element
+:org-element–cache-sync-key (181517 . 761) :cached t :parent (headline
+(:raw-value “Synthesis” :begin 341 :end 8211 :pre-blank 0
+:contents-begin 353 :contents-end 8211 :robust-begin 355 :robust-end
+8209 :level 1 :priority nil :tags nil :todo-keyword nil :todo-type nil
+:post-blank 0 :footnote-section-p nil :archivedp nil :commentedp nil
+:post-affiliated 341 :title (#(“Synthesis” 0 9 (:parent (headline #3))))
+:parent (org-data (:begin 1 :contents-begin 1 :contents-end 10819 :end
+10819 :robust-begin 67 :robust-end 10817 :post-blank 0 :post-affiliated
+1 :path
+“/home/teodorlu/dev/teodorlu/play.teod.eu/play.teod.eu-rolling-retrospective/index.org”
+:mode org-data :ID “658447a3-00e6-44aa-963e-d2f5938c50d3” :CATEGORY
+“index” :parent nil :cached t :org-element–cache-sync-key (729 . -1)))
+:cached t :org-element–cache-sync-key (181517 . 341))))) Disable showing
+Disable logging</p>
+</blockquote>
 </body>
 </html>

@@ -14,6 +14,15 @@ Companion to [[id:2e428a][play.teod.eu journal]] (link not yet working, sorry.)
 Attention is aimed here.
 ** play.teod.eu success metric: strong language
 I want to use play.teod.eu to power up my language.
+** Org-roam id:... links are broken
+Bad.
+*** Problem definition
+1. They don't link to the right place
+2. They even link to id:... things that don't work
+*** First step option: strip out the links that don't work
+*** Second step option: fix the links --- rewrite from id: to path: and then href: to folder
+Hmm, prehaps href is better.
+🤔
 ** CSS pain points
 *** I cannot easily customize the CSS without building everything from scratch.
 Pandoc provides CSS to me.

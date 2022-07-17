@@ -10,101 +10,12 @@ Companion to [[id:2e428a][play.teod.eu journal]] (link not yet working, sorry.)
 | play.teod.eu journal               | temporal, dump-oriented. |
 | play.teod.eu rolling retrospective | topic-oriented           |
 
-* I need to "contract" / "narrow" before publishing
-
-Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?
-
-** Early view
-
-The stuff that's published on my site right now is a real mess.
-Mess how?
-In many ways.
-But the big one: the ideas are intertwined.
-There's coupling.
-I could remove that coupling.
-Or at least attempt to remove that coupling.
-
-** 2022-07-12 says hello
-At the time that I wrote the text above, everything was one big lump.
-
-Merely splitting between "feedback welcome", "forever incomplete" and "mess" helps me A LOT personally.
-
-** 2022-07-14 says hello
-I've recently published two small things on the Clojurians Slack.
-First a bit about Emacs --- how to use =read-string=, =completing-read= and =let*= to write tiny UIs.
-Then a /Interaction value differential/ page.
-
-Am I happy with the results?
-
-Yes.
-
-Very much, actually.
-Every publish-action gave me some nice interactions.
-In the Emacs case, I simply copied from my notes and Emacs config and wrote a small, little Slack message.
-In the /Interaction value differential/ article, I published something.
-And I liked what i published.
-
-😊
-
-* Date tagging
-
-Problem statement --- should I encode dates (created, edited) in the metadata model?
-
-** Early view
-I want metadata for :changed and :created.
-First because I want to filter / sort.
-Then perhaps later because that metadata is nice to have.
-
-** 2022-07-12 says pikaboo
-Date tagging would be nice.
-But by what semantics?
-And why?
-
-Reasonable question --- which vague idea was created when?
-Which vague idea was edited last?
-I could use OS mtime for editing.
-Sync into play.edn.
-Have play.edn files /partially/ generated.
-Or just pull it out from source at the right time?
-Do the :relations trick?
-*** I really like the idea of just using file modification times.
-buuut I don't think those get checked into git
-*** Can I just use git blame perhaps?
-🤔
-
-Git knows when the file was changed last
-*** Outline --- on page creation + git blame
-On creating a new page, write :created (now)
-
-On creating the metadata table, file edit time by asking Git
-** 2022-07-14 👀
-Well --- haven't really taken this any further.
-
-I kinda want dates for my ephemeral stuff.
-So that it's easier to handle the very incomplete stuff.
-Or at least sort by creation date.
-
-Hmm, let's just add a :created timestamp.
-** I want to derive :last-modified from git history of org-file.
-* play.teod.eu is just some code that generates some HTML
-
-Not more.
-There's a single indirection boundary.
-Information as written --- indirection --- published HTML.
-And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
-
-* comment system
-Option: Comments on Twitter.
-Option: Comments on Hacker News.
-Option: Comments embedded straight into the text - via Github pull requests.
-* Creating new pages
-Currently, I hand-roll my own new-page creation.
-I could also hook my logic into Org-Roam's templating system
-Details: https://github.com/org-roam/org-roam/blob/c3867619147175faf89ed8f3e90a1e67a4fd9655/doc/org-roam.org#L896
-* play.teod.eu success metric: strong language
+* Synthesis
+Attention is aimed here.
+** play.teod.eu success metric: strong language
 I want to use play.teod.eu to power up my language.
-* CSS pain points
-** I cannot easily customize the CSS without building everything from scratch.
+** CSS pain points
+*** I cannot easily customize the CSS without building everything from scratch.
 Pandoc provides CSS to me.
 But I want to configure stuff myself too.
 Does that mean I have to write all the CSS from scratch?
@@ -113,19 +24,19 @@ What is a good first step?
 Should I understand how the existing CSS works first?
 Or should I just remove it all and start from the start?
 
-*** Why just remove it all
+**** Why just remove it all
 I can be okay with it looking a bit crap.
 I need to take responsibility for writing the CSS myself I want to become good at CSS at any point.
 
-*** Why tweak
+**** Why tweak
 Pandoc's look is good right now.
 And I can move incrementally. I don't have to redo everything.
-** Tables are too narrow
+*** Tables are too narrow
 I cannot use tables effectively.
 They wrap /way/ before they are useful.
 
 Example of a bad table: https://play.teod.eu/git-commit-messages/
-** the whole site is narrow
+*** the whole site is narrow
 Here are two example lines from https://play.teod.eu/git-commit-messages/:
 
 #+begin_quote
@@ -144,7 +55,7 @@ Twitter clones, interoperable with each other via the ActivityPub protocol.
 #+end_quote
 
 That's up to 95 characters.
-** Source code blocks are too narrow
+*** Source code blocks are too narrow
 And for source code, [[id:de4eab79-8b9a-472b-b22b-ae0441d5fcf5][Drew DeVault]] is using an even smaller font.
 The article [[https://drewdevault.com/2022/07/01/Porting-DOOM-to-Helios.html][Porting Doom to Helios]] has some source code.
 Here are some of the longer lines:
@@ -160,30 +71,8 @@ static size_t writecons(FILE *f, const unsigned char *buf, size_t size) {
 #+end_src
 
 I think the source code too is meant to reach about a 100 characters in width.
-* Working with pandoc =--standalone= is causing problems
-As long as I'm using the =--standalone= stuff, I'm making problems for myself.
-Example: I loose roundtripping.
-If I try to roundtrip with =--standalone=, I get double table of contents and double title.
-I don't want that.
-
-Found a walkaround for roundtripping: avoid writing title info
-
-#+begin_src bash
-pandoc  \
-    --standalone \
-    -V title:"" \
-    -i index.html \
-    --filter rickroll.sh \
-    -o rickroll-ourselves.html
-#+end_src
-
-Specifically, =-V title:""= makes sure the title isn't set twice.
-Regardless, I think I want to control the standalone stuff myself.
-* I want - site previews
-When I post a Twitter link, Slack is able to create a nice preview.
-When I post a play.teod.eu link, there is no preview.
-* Reified links
-** Cross site linking with org-roam.
+** I want reified links
+*** Cross site linking with org-roam.
 So ... getting Org-roam to find links here was easy.
 Just set the root dir, and add ID properties for each page that should be indexed.
 
@@ -218,13 +107,13 @@ What would the "check in everything" approach mean?
 
 I wouldn't be able to get the nice "straight to file" Org-Roam style navigation.
 But do I really need that?
-** reified links for play.teod.eu
+*** reified links for play.teod.eu
 I want reified links for play.teod.eu.
-*** Why reified links?
+**** Why reified links?
 Because I can model and query knowledge.
 
 A good first use case is being able to resolve the id: links I can insert with Org-Roam, like this: [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
-**** Challenges
+***** Challenges
 Can I get the links out with Pandoc JSON and a Clojure filter with a walk?
 I think so.
 
@@ -280,19 +169,133 @@ Challenge:
   I probably don't want to keep track of link IDs that detailed either.
   As long as I'm using plain text.
   Or ... add a ?referrer=abc123?
-**** referrers not allowed
+***** referrers not allowed
 Here's some verbatim org-code:
 
 I tried linking to id:abc123?referrer=123 rather than id:abc123, but to no avail.
 How about linking to id:abc123#referrer-123? Nope.
-** I want to tag each article with :generality :novelty :precision :subjectivity
+*** I want to tag each article with :generality :novelty :precision :subjectivity
 | axis          | as 0         | as 1         |
 | :generality   | event        | physical law |
 | :novelty      | known by all | known by 1   |
 | :precision    | dream        | logic        |
 | :subjectivity | event        | taste        |
-** Applied reified links example
+*** Applied reified links example
 I believe reified links can model knowledge well.
 And on top of that model, we can build better UIs.
 
 Here's what an UI could look like: https://embed.kumu.io/1feca726268dbbda0f905fb7be844e5e#anxiety-driven-procrastination
+** Date tagging
+
+Problem statement --- should I encode dates (created, edited) in the metadata model?
+
+*** Early view
+I want metadata for :changed and :created.
+First because I want to filter / sort.
+Then perhaps later because that metadata is nice to have.
+
+*** 2022-07-12 says pikaboo
+Date tagging would be nice.
+But by what semantics?
+And why?
+
+Reasonable question --- which vague idea was created when?
+Which vague idea was edited last?
+I could use OS mtime for editing.
+Sync into play.edn.
+Have play.edn files /partially/ generated.
+Or just pull it out from source at the right time?
+Do the :relations trick?
+**** I really like the idea of just using file modification times.
+buuut I don't think those get checked into git
+**** Can I just use git blame perhaps?
+🤔
+
+Git knows when the file was changed last
+**** Outline --- on page creation + git blame
+On creating a new page, write :created (now)
+
+On creating the metadata table, file edit time by asking Git
+*** 2022-07-14 👀
+Well --- haven't really taken this any further.
+
+I kinda want dates for my ephemeral stuff.
+So that it's easier to handle the very incomplete stuff.
+Or at least sort by creation date.
+
+Hmm, let's just add a :created timestamp.
+*** I want to derive :last-modified from git history of org-file.
+* Rest
+Ledger.
+** I need to "contract" / "narrow" before publishing
+
+Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?
+
+*** Early view
+
+The stuff that's published on my site right now is a real mess.
+Mess how?
+In many ways.
+But the big one: the ideas are intertwined.
+There's coupling.
+I could remove that coupling.
+Or at least attempt to remove that coupling.
+
+*** 2022-07-12 says hello
+At the time that I wrote the text above, everything was one big lump.
+
+Merely splitting between "feedback welcome", "forever incomplete" and "mess" helps me A LOT personally.
+
+*** 2022-07-14 says hello
+I've recently published two small things on the Clojurians Slack.
+First a bit about Emacs --- how to use =read-string=, =completing-read= and =let*= to write tiny UIs.
+Then a /Interaction value differential/ page.
+
+Am I happy with the results?
+
+Yes.
+
+Very much, actually.
+Every publish-action gave me some nice interactions.
+In the Emacs case, I simply copied from my notes and Emacs config and wrote a small, little Slack message.
+In the /Interaction value differential/ article, I published something.
+And I liked what i published.
+
+😊
+** play.teod.eu is just some code that generates some HTML
+
+Not more.
+There's a single indirection boundary.
+Information as written --- indirection --- published HTML.
+And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
+
+** comment system
+Option: Comments on Twitter.
+Option: Comments on Hacker News.
+Option: Comments embedded straight into the text - via Github pull requests.
+** Creating new pages
+Currently, I hand-roll my own new-page creation.
+I could also hook my logic into Org-Roam's templating system
+Details: https://github.com/org-roam/org-roam/blob/c3867619147175faf89ed8f3e90a1e67a4fd9655/doc/org-roam.org#L896
+** Working with pandoc =--standalone= is causing problems
+As long as I'm using the =--standalone= stuff, I'm making problems for myself.
+Example: I loose roundtripping.
+If I try to roundtrip with =--standalone=, I get double table of contents and double title.
+I don't want that.
+
+Found a walkaround for roundtripping: avoid writing title info
+
+#+begin_src bash
+pandoc  \
+    --standalone \
+    -V title:"" \
+    -i index.html \
+    --filter rickroll.sh \
+    -o rickroll-ourselves.html
+#+end_src
+
+Specifically, =-V title:""= makes sure the title isn't set twice.
+Regardless, I think I want to control the standalone stuff myself.
+** I want - site previews
+When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.

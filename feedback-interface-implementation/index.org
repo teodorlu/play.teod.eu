@@ -188,7 +188,9 @@ Are you enabling better workflows?
 | Feedback loop    | How do we know if it works?                            |
 | Interface design | What is the desired behavior?                          |
 | How it works     | Let's bridge the current behavior to correct behavior. |
-* Retrospective on this article
+* Appendix
+The article is over!
+** Retrospective on this article
 Right now, I've split the article into sections about feedback loop, interface design and implementation.
 That's clear.
 However, the lines get kinda ... blurred sometimes.
@@ -206,7 +208,7 @@ And ensure that your interface is easy to test --- this means you'll get value o
 
 Would it be better to separate between definitions (what feedback/interface/implementation means in a context) and case-based discussion?
 🤔
-** Potential case studies
+*** Potential case studies
 - Developing a software module: ?
   - Example -- my live documentation for Amedia.
     - Feedback loop is simply =npx live-server=
@@ -218,3 +220,5 @@ Would it be better to separate between definitions (what feedback/interface/impl
       Is the input field labeling good?
       Is it clear to the user how the generated output should be consumed?
       Is the generated output good?
+** Adjacent article: /The Recovering Programmer/
+Source: https://prog21.dadgum.com/56.html

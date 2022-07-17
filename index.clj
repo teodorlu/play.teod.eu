@@ -53,7 +53,7 @@
               (concat
                ["#+title: Towards an iterated game"
                 ""
-                "Intent: bring ideas to life. Discuss, sharpen, play."
+                "Intent: bring ideas to life. Discuss, sharpen, play. Minimize the distance between intent and reality."
                 ""
                 (str "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
                      " Embrace remix culture.")

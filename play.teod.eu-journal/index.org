@@ -323,3 +323,19 @@ Behavior:
    1. Perhaps lazily on page load
 2. Provide a nice command thing launcher for navigation
 3. 🎉
+** What are the steps to get those darn links working?
+xx
+** elisp text
+#+begin_src emacs-lisp
+(message "hello, there")
+#+end_src
+
+#+RESULTS:
+: hello, there
+
+#+BEGIN_SRC emacs-lisp
+(progn)
+(setq some-name "Dustyn")
+(setq some-age 10)
+(1,2, some-name, some-age)
+#+END_SRC

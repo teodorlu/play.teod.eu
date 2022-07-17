@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-* Prelude
+* _ Prelude
 This page is extra different from other places.
 Toplevel is indexed by foreign sources.
 Then, there's temporal organization.
@@ -13,9 +13,6 @@ Why?
 I don't think every other site merits having it's own dedicated page here.
 So why not put it on [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]]?
 Because I want it index by source and /then date/, not the other way around.
-* Site purpose
-This page essentially provides links.
-Hmm.
 * https://prog21.dadgum.com
 ** Why?
 We seem to have very similar perspectives on programming.
@@ -37,3 +34,4 @@ I think that's right.
 | Two Hundred Seventy Five Gallons Of Lube | http://theworstthingsforsale.com/2022/07/12/two-hundred-seventy-five-gallons-of-lube/ |
 
 Man.
+* https://ideolalia.com/

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: 8e72c536-9881-4477-8670-24c78edd82e7
+:END:
+#+TITLE: Literature Notes
+
+[[file:..][..]]
+
+* Prelude
+This page is extra different from other places.
+Toplevel is indexed by foreign sources.
+Then, there's temporal organization.
+Why?
+I don't think every other site merits having it's own dedicated page here.
+So why not put it on [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]]?
+Because I want it index by source and /then date/, not the other way around.
+* Site purpose
+This page essentially provides links.
+Hmm.
+* prog21.dadgum.com
+Source: https://prog21.dadgum.com
+** Why?
+We seem to have very similar perspectives on programming.
+That idea construction / information logistics might have to take the front seat over implementation.
+** Some quick links
+| Programming Without Being Obsessed With Programming | https://prog21.dadgum.com/195.html |
+| You Don't Read Code, You Explore It                 | https://prog21.dadgum.com/194.html |
+| Get Good at Idea Generation                         | https://prog21.dadgum.com/193.html |
+| Organizational Skills Beat Algorithmic Wizardry     | https://prog21.dadgum.com/177.html |

@@ -1,8 +1,13 @@
+:PROPERTIES:
+:ID:       5abac715-d886-4aa8-85d7-d0b877a245d6
+:END:
 #+title: Iterate Knowledge Archipelago
 
 [[./..][..]]
+* Synthesis
+** Where is other people's content?
+Iterate people:
 
-* Where is other people's content?
 - Henrik om GraphQL: https://vimeo.com/181948165
 - Anders på Substack: https://substack.com/profile/27961793-anders-haugeto
 - Kim på Medium: https://medium.com/@handyman-kim
@@ -10,13 +15,22 @@
 - Oddmund: https://blog.oddmundo.com/
 - Neno: http://mindjek.com/
 
-From friends:
+Iterate friends:
 
 - Kent Beck: https://geekincentives.substack.com
 - Amos: https://fasterthanli.me/articles
   - Suggested by Christian Duvolt
   - "Follow the rabbit hole" style of storytelling. Curiosity driven.
 - Bret Victor: http://worrydream.com/
+** Who should I ask for help?
+Richard? Nils? Henrik? Andreas? Mats?
+** What should I ask for?
+*** Guest content on play.teod.eu?
+*** Ask them to create their own stuff?
+*** Contribute "views" on content that follows the Iterate Knowledge Archipelago Protocol?
+IKAP haha
+
+Or just Iterate Knowledge Protocol - IKP
 * 2022-06-30
 Initial call to action to start building our knowledge archipelago.
 * 2022-07-01
@@ -56,3 +70,5 @@ I can ask Ole Jacob to help design an UI / view for the collected works of every
 I can ask Richard for content.
 
 Which things should I ask for?
+* 2022-07-17
+Asked Richard if he wanted to publish own stuff or publish stuff on play.teod.eu.

@@ -562,3 +562,13 @@ teodorlu@teod-t490s ~/tmp/temp-2022-07-15/prompt % prompt off
 $ echo hello there
 hello there
 #+end_src
+* 2022-07-17
+** I'm afraid to stop learning
+I don't want to end up stuck.
+In a context where there's no novelty.
+Where there's nothing I can learn.
+
+What does such a context look like?
+
+Is it closer to a research lab than a product company?
+Can there be both?

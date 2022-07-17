@@ -282,3 +282,5 @@ Or
 #+end_src
 
 🤔
+** Letting "new links feature" be opt-in is kinda nice
+Then I can experiement "off to the side" without breaking everything.

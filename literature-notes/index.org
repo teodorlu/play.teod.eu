@@ -16,8 +16,7 @@ Because I want it index by source and /then date/, not the other way around.
 * Site purpose
 This page essentially provides links.
 Hmm.
-* prog21.dadgum.com
-Source: https://prog21.dadgum.com
+* https://prog21.dadgum.com
 ** Why?
 We seem to have very similar perspectives on programming.
 That idea construction / information logistics might have to take the front seat over implementation.
@@ -26,3 +25,15 @@ That idea construction / information logistics might have to take the front seat
 | You Don't Read Code, You Explore It                 | https://prog21.dadgum.com/194.html |
 | Get Good at Idea Generation                         | https://prog21.dadgum.com/193.html |
 | Organizational Skills Beat Algorithmic Wizardry     | https://prog21.dadgum.com/177.html |
+| Hopefully More Controversial Programming Opinions   | https://prog21.dadgum.com/149.html |
+** Hopefully More Controversial Programming Opinions
+#+begin_quote
+It's a mistake to introduce new programmers to OOP before they understand the
+basics of breaking down problems and turning the solutions into code.
+#+end_quote
+
+I think that's right.
+* http://theworstthingsforsale.com/
+| Two Hundred Seventy Five Gallons Of Lube | http://theworstthingsforsale.com/2022/07/12/two-hundred-seventy-five-gallons-of-lube/ |
+
+Man.

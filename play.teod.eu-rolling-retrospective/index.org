@@ -291,3 +291,8 @@ How about linking to id:abc123#referrer-123? Nope.
 | :novelty      | known by all | known by 1   |
 | :precision    | dream        | logic        |
 | :subjectivity | event        | taste        |
+** Applied reified links example
+I believe reified links can model knowledge well.
+And on top of that model, we can build better UIs.
+
+Here's what an UI could look like: https://embed.kumu.io/1feca726268dbbda0f905fb7be844e5e#anxiety-driven-procrastination

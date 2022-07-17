@@ -103,3 +103,18 @@ Load preferences from others.
 * Data oriented programming is precise, general anv novel
 * Christopher Alexander talks about :liveness
 See: https://dorian.substack.com/p/at-any-given-moment-in-a-process
+
+What is liveness? What is degree of life?
+
+Definitions:
+
+- *Wholeness* is really about treating everything you do as inseparable from a context.
+  Nothing exists in a vacuum.
+  Alexander saw building not as creating something new, but as repairing the surrounding environment.
+- *Life*, in Alexander’s formulation, is a similar process to Schrödinger’s idea of local elimination of entropy.
+  That is, objects that were not strictly biologically alive could still be “alive” through a form of symbiosis with
+  entities that are biologically alive.
+- *Living structure* refers to artifacts that exhibit this kind of life.
+  These are structures that attract people (and animals, and plants, etc.) to come and live their lives within and around them, reinforcing and enriching them.
+  This is not unlike how an anthill is a living structure, as it is constantly being maintained and expanded.
+  Living structure makes you want to take care of it, because it takes care of you.

@@ -279,6 +279,8 @@ tiny step – Don’t Produce Links That Don’t Work</a></li>
 <li><a href="#letting-new-links-feature-be-opt-in-is-kinda-nice">Letting
 “new links feature” be opt-in is kinda nice</a></li>
 <li><a href="#org-mode-errors">Org-mode errors</a></li>
+<li><a href="#do-want---a-rofi-launcher-to-quickly-go-to-a-page">Do want
+- a rofi launcher to quickly go to a page</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -765,5 +767,23 @@ nil :tags nil :todo-keyword nil :todo-type nil :post-blank 0
 :cached t :org-element–cache-sync-key (181517 . 341))))) Disable showing
 Disable logging</p>
 </blockquote>
+<h3 id="do-want---a-rofi-launcher-to-quickly-go-to-a-page">Do want - a
+rofi launcher to quickly go to a page</h3>
+<p>possible architecture:</p>
+<ol class="incremental">
+<li><code class="verbatim">play.teod.eu/sitemap.json</code></li>
+<li><code class="verbatim">play.teod.eu/sitemap.edn</code></li>
+<li><code class="verbatim">play.teod.eu/ikp.json</code> (iterate
+knowledge protocol)</li>
+<li><code class="verbatim">play.teod.eu/ikp.edn</code> (iterate
+knowledge protocol)</li>
+</ol>
+<p>Providing both JSON and EDN is easy — and then it’s nice to consume
+from any language too.</p>
+<p>Note, why do I even want EDN?</p>
+<p>JSON would suffice. But … then I can’t just use <code
+class="verbatim">clojure.edn/read-string</code>. So yeah, I’m keeping
+EDN too, at least for now. Plus keywords. Keywords are great. So much
+easier to read data files when there are keywords too.</p>
 </body>
 </html>

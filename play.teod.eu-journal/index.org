@@ -245,3 +245,40 @@ It's just retrospectives and meta commentary, really.
 Now, a single =M-x teod-play-create-page= gives me a nice, new place to work.
 
 😁
+* 2022-07-17
+Yet another :)
+** I'm nearing proper link management
+POC Pandoc filter -- DONE
+Nice Little UI For Finding Notes -- DONE
+Ideas About ID Management -- Done?
+** Ideas About ID Managment
+1. When creating new pages, put the ID both in the org-mode file and in the play.edn file
+2. ??
+3. Build a toplevel =links.edn=
+4. use that toplevel links.edn to lookup IDs
+** First tiny step -- Don't Produce Links That Don't Work
+Meaning -- we need a Pandoc filter in between our link generation.
+
+Meaning we need to rewrite the builds for all the articles
+
+If we want to do that incrementally, we need to make build system configurable
+
+Perhaps
+
+#+begin_src clojure
+{:build-system :fix-links}
+#+end_src
+
+Or
+
+#+begin_src clojure
+{:filters [:fix-links]}
+#+end_src
+
+🤔
+
+#+begin_src clojure
+{:pandoc-json-filters [:fix-links]}
+#+end_src
+
+🤔

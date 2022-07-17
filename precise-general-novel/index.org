@@ -100,3 +100,4 @@ Hmm.
 I can make a nice little UI that works on this.
 Set your preference.
 Load preferences from others.
+* Data oriented programming is precise, general anv novel

@@ -20,3 +20,12 @@ Wait, I did write about this. What pages did I change most recently?
 | /Learn C The Hard Way/         | Zed Shaw     | [[https://learncodethehardway.org/c/][C hard way]]        |
 | /Principles for C programming/ | Drew DeVault | [[https://drewdevault.com/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html][stop worry love C]] |
 | /Lessons to learn from C/      | Drew DeVault | [[https://drewdevault.com/2017/01/30/Lessons-to-learn-from-C.html][learn from C]]      |
+* 2022-07-17
+LOL 2
+** More motivation
+I could also learn Zig.
+I kinda wanna learn Zig.
+Learning Zig might give me most of the same benefits as learning C, but with less of the old baggage.
+And simple build system and LSP and stuff.
+
+🤔

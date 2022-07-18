@@ -190,7 +190,7 @@
     code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
     code span.at { color: #7d9029; } /* Attribute */
     code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { } /* BuiltIn */
+    code span.bu { color: #008000; } /* BuiltIn */
     code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #4070a0; } /* Char */
     code span.cn { color: #880000; } /* Constant */
@@ -203,7 +203,7 @@
     code span.ex { } /* Extension */
     code span.fl { color: #40a070; } /* Float */
     code span.fu { color: #06287e; } /* Function */
-    code span.im { } /* Import */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
     code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
     code span.kw { color: #007020; font-weight: bold; } /* Keyword */
     code span.op { color: #666666; } /* Operator */
@@ -217,7 +217,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -228,19 +228,25 @@
 </header>
 <nav id="TOC" role="doc-toc">
 <ul class="incremental">
-<li><a href="#goals">Goals</a></li>
-<li><a href="#list-of-unix-signals">List of Unix signals</a></li>
-<li><a href="#how-to-list-running-processes">How to list running
+<li><a href="#goals" id="toc-goals">Goals</a></li>
+<li><a href="#list-of-unix-signals" id="toc-list-of-unix-signals">List
+of Unix signals</a></li>
+<li><a href="#how-to-list-running-processes"
+id="toc-how-to-list-running-processes">How to list running
 processes</a></li>
-<li><a href="#how-do-i-kill-a-process">How do I kill a process?</a></li>
-<li><a href="#how-do-i-kill-a-process-with-a-specific-signal">How do I
-kill a process with a specific signal?</a></li>
-<li><a href="#how-to-handle-unix-signals-with-python">How to handle Unix
+<li><a href="#how-do-i-kill-a-process"
+id="toc-how-do-i-kill-a-process">How do I kill a process?</a></li>
+<li><a href="#how-do-i-kill-a-process-with-a-specific-signal"
+id="toc-how-do-i-kill-a-process-with-a-specific-signal">How do I kill a
+process with a specific signal?</a></li>
+<li><a href="#how-to-handle-unix-signals-with-python"
+id="toc-how-to-handle-unix-signals-with-python">How to handle Unix
 signals with Python</a></li>
-<li><a href="#how-to-handle-unix-signals-with-other-languages">How to
-handle Unix signals with other languages</a></li>
-<li><a
-href="#interactive-tools-to-work-with-running-processes">Interactive
+<li><a href="#how-to-handle-unix-signals-with-other-languages"
+id="toc-how-to-handle-unix-signals-with-other-languages">How to handle
+Unix signals with other languages</a></li>
+<li><a href="#interactive-tools-to-work-with-running-processes"
+id="toc-interactive-tools-to-work-with-running-processes">Interactive
 tools to work with running processes</a></li>
 </ul>
 </nav>

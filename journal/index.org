@@ -592,3 +592,5 @@ One big for loop, with some clauses.
 Advantage: straightforward.
 Disadvantage: Inflexible.
 Lesson: use indirection / abstraction to make code flexible.
+** SJ train Wifi allows SSH traffic
+Grateful.

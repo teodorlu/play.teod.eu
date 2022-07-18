@@ -68,4 +68,4 @@
 (println "ultraclean: clean")
 (println (str "\t"
               "rm -f "
-              (str/join " " (map html targets))))
+              (str/join " " (concat ["index.html"] (map html targets)))))

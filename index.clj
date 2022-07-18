@@ -110,7 +110,7 @@
 9. It's impossible to build other views than the default
 10. It's impossible to embed things that should not be built at all
 
-List included as a personal reminder.
+I include this list as a personal reminder.
 "]
                ["** What is this?"
                 ""

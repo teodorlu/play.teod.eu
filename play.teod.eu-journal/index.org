@@ -386,3 +386,19 @@ Let's try this instead:
 
 That worked.
 Nice!
+** Language, math and programming are enabling skills, and should be treated as such
+You can study the Norwegian language intensely and become a literature professor.
+Digging deeply into math might allow you to understand logic and inference more deeply than with any other field.
+Spending enough effort and reflection on programming and systems can give you an intuition for composition and modularity that's hard to build otherwise.
+
+Yet
+
+Yet, language, math and programming provide
+
+- good value to other domains
+- language, math & prog are /capabilities/ in need of problems / application.
+- understand this when you bring these skills.
+  - lang/math/prog as /frame/ or /lens/ that contributes value to a /problem domain/
+- then, import the frame from the problem domain.
+  - Many frames!
+- But problem domain frame top-down, capability frame bottom up.

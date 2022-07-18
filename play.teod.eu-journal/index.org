@@ -402,3 +402,16 @@ Yet, language, math and programming provide
 - then, import the frame from the problem domain.
   - Many frames!
 - But problem domain frame top-down, capability frame bottom up.
+** Reified links
+status --- my org-roam links don't work at all on the web.
+
+Planned steps:
+
+1. Produce intermediate index.json with pandoc JSON representation of content
+2. This should be reflected in the makefile
+3. Then we can remake everything and be 100 % sure we don't break anything
+
+How is my battery? 91 %. I should probably connect a charger.
+That can wait a bit.
+Man, emacs has both =M-x battery= (interactive) and =M-x battery-display-mode=.
+Wow.

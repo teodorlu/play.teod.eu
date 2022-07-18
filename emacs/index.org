@@ -422,3 +422,7 @@ Org-mode is amazing.
 From anywhere, =M-x org-store-link=.
 That link goes into the =org-stored-links= variable.
 Next time a link is added with =org-insert-link=, you can see all the links you've stored.
+* 2022-07-18
+** Inline battery information
+| =M-x battery=              | Returns / shows battery info                  |
+| =M-x battery-display-mode= | Puts a nice battery indicator in the modeline |

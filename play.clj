@@ -138,8 +138,6 @@
               "[[file:..][..]]
 
 DRAFT
-
-TODO make content
 "
               ]
 

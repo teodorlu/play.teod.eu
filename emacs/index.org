@@ -426,3 +426,7 @@ Next time a link is added with =org-insert-link=, you can see all the links you'
 ** Inline battery information
 | =M-x battery=              | Returns / shows battery info                  |
 | =M-x battery-display-mode= | Puts a nice battery indicator in the modeline |
+** Bind function keys
+I think <f8> is the way to bind stuff.
+
+LOL I already have =<f8>= bound to open an org-roam node, haha

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: e9a97a46-f252-4883-a311-21b20528d14d
+:END:
+#+TITLE: Interface, Perception, Design
+
+[[file:..][..]]
+
+DRAFT

@@ -9,5 +9,4 @@ DRAFT
 
 Alternative titles: /Interface, attention, design/, /{interface,perception} design/,
 
-
 I've found spending effort on interface design and attention design to be tremendously valuable.

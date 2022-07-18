@@ -430,3 +430,7 @@ Next time a link is added with =org-insert-link=, you can see all the links you'
 I think <f8> is the way to bind stuff.
 
 LOL I already have =<f8>= bound to open an org-roam node, haha
+NOPE, that inserts a link to the node. Remove.
+
+Wtf, now it works. I have a wrong model for the =map!= macro somehow.
+Moving stuff up fixed my problems.

@@ -115,7 +115,7 @@ I include this list as a personal reminder.
                ["** What is this?"
                 ""
                 "Good question :)"
-                "Source is available on Github: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]."
+                "Having a look at the source might be useful: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]."
                 ""
                 "PRs are probably a bad idea."
                 "I prefer a good discussion to rewriting each other's ideas."

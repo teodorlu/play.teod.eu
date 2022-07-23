@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: 3c240131-3b44-438c-9e74-ec899c9e2eb7
+:END:
+#+TITLE: Practice deliberately with journals
+
+[[file:..][..]]
+
+Something happened.
+I started to /write/ as a way to think.
+I haven't fully grasped the consequences of that event.
+
+To get good, learning is essential.
+We learn through practice.
+What is practice?
+
+.
+
+My process now:
+
+1. Curate a list of interesting problems.
+   Each problem is something I want to learn about.
+2. For each problem, create a problem journal.
+3. Then, when I'm curious, pick a problem journal at random.
+
+There.
+That's it.

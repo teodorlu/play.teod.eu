@@ -1,7 +1,11 @@
-#+title: software-architecture-as-language-construction
+:PROPERTIES:
+:ID:       07f496f2-7dc3-4155-bbe7-e0f64e054129
+:END:
+#+title: Software architecture as langauge construction
 
 [[./..][..]]
 
+#+begin_verse
 Idea
 
 Language construction as the major metaphor for software architecture
@@ -27,26 +31,4 @@ Principles for applying language to solve business problems
   straightforward is best - avoid indirection
 
   solving business problems when the right modules / words / namespaces are provided should be trivial
-
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #+end_verse

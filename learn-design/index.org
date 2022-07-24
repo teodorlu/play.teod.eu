@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: 5f45c0a1-8713-4066-8339-ad501c5486ac
+:END:
+#+TITLE: I want to learn design
+
+[[file:..][..]]
+
+* Things I want to be able to
+- Pick colors that work nice together
+- Balance colors on a page so that it's not too heavy or too light
+- Space elements on a page properly
+- Set font sizes in a way that looks okay
+- Easily make something with Figma and get it on play.teod.eu
+- Explore different HTML stuff here on play.teod.eu
+- Play with CSS variations on a single play.teod.eu page

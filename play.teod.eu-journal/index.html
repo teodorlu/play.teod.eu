@@ -317,6 +317,13 @@ such</a></li>
 <li><a href="#reified-links" id="toc-reified-links">Reified
 links</a></li>
 </ul></li>
+<li><a href="#section-6" id="toc-section-6">2022-07-24</a>
+<ul class="incremental">
+<li><a
+href="#problem-i-keep-creating-journal-things-that-dont-quite-cut-it"
+id="toc-problem-i-keep-creating-journal-things-that-dont-quite-cut-it">Problem
+— I keep creating journal-things that don’t quite … cut it</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -912,5 +919,74 @@ anything</li>
 can wait a bit. Man, emacs has both <code
 class="verbatim">M-x battery</code> (interactive) and <code
 class="verbatim">M-x battery-display-mode</code>. Wow.</p>
+<h2 id="section-6">2022-07-24</h2>
+<h3
+id="problem-i-keep-creating-journal-things-that-dont-quite-cut-it">Problem
+— I keep creating journal-things that don’t quite … cut it</h3>
+<p>Not sure how I should tag this.</p>
+<p>Here’s a WTF page:</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>{<span class="at">:title</span> <span class="st">&quot;A list of interesting problems&quot;</span>, <span class="at">:readiness</span> <span class="at">:wtf-is-this</span>, <span class="at">:author-url</span> <span class="st">&quot;https://teod.eu&quot;</span>, <span class="at">:created</span> <span class="st">&quot;2022-07-14&quot;</span>}</span></code></pre></div>
+<p>Here’s a journal page:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>{<span class="at">:title</span> <span class="st">&quot;play.teod.eu journal&quot;</span>,  <span class="at">:author-url</span> <span class="st">&quot;https://teod.eu&quot;</span> <span class="at">:readiness</span> <span class="at">:forever-incomplete</span>, <span class="at">:form</span> <span class="at">:rambling</span>}</span></code></pre></div>
+<p>Draft:</p>
+<ul class="incremental">
+<li><code class="verbatim">:readiness :wtf-is-this</code></li>
+</ul>
+<p>Journal:</p>
+<ul class="incremental">
+<li><code class="verbatim">:readiness :forever-incomplete</code></li>
+<li><code class="verbatim">:form :rambling</code></li>
+</ul>
+<p>Why is there no</p>
+<ul class="incremental">
+<li><code class="verbatim">:readiness :wtf-is-this</code></li>
+<li><code class="verbatim">:form :rambling</code></li>
+</ul>
+<p>? I think there should be.</p>
+<p>Actions:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><code class="verbatim">teod-play-form-unset</code></td>
+<td>removes :form</td>
+</tr>
+<tr class="even">
+<td><code class="verbatim">teod-play-form-rambling</code></td>
+<td>sets :form :rambling</td>
+</tr>
+<tr class="odd">
+<td><code class="verbatim">teod-play-readiness-wtf</code></td>
+<td>sets :readiness :wtf-is-this</td>
+</tr>
+<tr class="even">
+<td><code
+class="verbatim">tead-play-readiness-forever-incomplete</code></td>
+<td>sets :readiness :forever-incomplete</td>
+</tr>
+</tbody>
+</table>
+<p>Tag semantics:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>:form UNSET</td>
+<td>Not sure about form yet</td>
+</tr>
+<tr class="even">
+<td>:form :rambling</td>
+<td>Date-oriented</td>
+</tr>
+<tr class="odd">
+<td>:readiness :wtf-is-this</td>
+<td>Personal note</td>
+</tr>
+<tr class="even">
+<td>:readiness :forever-incomplete</td>
+<td>Evergreen</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>

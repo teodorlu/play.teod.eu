@@ -415,3 +415,48 @@ How is my battery? 91 %. I should probably connect a charger.
 That can wait a bit.
 Man, emacs has both =M-x battery= (interactive) and =M-x battery-display-mode=.
 Wow.
+* 2022-07-24
+** Problem --- I keep creating journal-things that don't quite ... cut it
+Not sure how I should tag this.
+
+Here's a WTF page:
+
+#+begin_src clojure
+{:title "A list of interesting problems", :readiness :wtf-is-this, :author-url "https://teod.eu", :created "2022-07-14"}
+#+end_src
+
+Here's a journal page:
+
+#+begin_src clojure
+{:title "play.teod.eu journal",  :author-url "https://teod.eu" :readiness :forever-incomplete, :form :rambling}
+#+end_src
+
+Draft:
+
+- =:readiness :wtf-is-this=
+
+Journal:
+
+- =:readiness :forever-incomplete=
+- =:form :rambling=
+
+Why is there no
+
+- =:readiness :wtf-is-this=
+- =:form :rambling=
+
+? I think there should be.
+
+Actions:
+
+| =teod-play-form-unset=                   | removes :form                       |
+| =teod-play-form-rambling=                | sets :form :rambling                |
+| =teod-play-readiness-wtf=                | sets :readiness :wtf-is-this        |
+| =tead-play-readiness-forever-incomplete= | sets :readiness :forever-incomplete |
+
+Tag semantics:
+
+| :form UNSET                    | Not sure about form yet |
+| :form :rambling                | Date-oriented           |
+| :readiness :wtf-is-this        | Personal note           |
+| :readiness :forever-incomplete | Evergreen               |

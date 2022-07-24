@@ -594,3 +594,44 @@ Disadvantage: Inflexible.
 Lesson: use indirection / abstraction to make code flexible.
 ** SJ train Wifi allows SSH traffic
 Grateful.
+* 2022-07-24
+?
+** Participating in public
+I wrote something I thought was of value:
+
+#+begin_quote
+ 1. Make sure your note taking system supports your goals. My goals: (A) assist my learning, (B) easily share content and get feedback from others.
+
+2. When you produce content, consider (A) what you want to achieve by producing the content, and (B) how you want to find the content later.
+
+3. Use one global namespace for named concepts. Category / taxonomy / tags belongs in metadata.
+
+Why the goals? If your system supports your goals, you will continue to use it and get value from it. If your system doesn't support your goals, it becomes tedious to use, and you'll abandon your notes.
+
+I encourage you to put your notes publicly on the web. Public notes have URLs, and there's no easier way to read content. You're going to remember notes.yourname.com/THING, or just go via notes.yourname.com to list / search.
+
+-----
+
+My information architecture consists of named concepts, journals and metadata.
+
+Named concepts is the top level. Wikipedia uses this structure. There's one global namespace with sufficiently qualified names. You are going to remember your note by this name. Disambiguate in your global names.
+
+Journals are organized by date. The advantage of journals is that you don't have to name anything. In general, it's nice to start with a journal, and collect named concepts on demand. Journals don't have to be discoverable.
+
+Metadata helps you discover and index your notes. Categories and tags go here. But don't go nuts on categorization, think about what those categories should achieve. Remember the fact boxes on Wikipedia? Those are driven by concept metadata. Sometimes it's better to embed a table or a nested list on a concept page than introduce metadata. "Is this helpful to understand the concept?" - put it on the page. "Is this helpful to find/index your content?" - it's metadata.
+
+Let's say you want to learn FUSE (https://en.wikipedia.org/wiki/Filesystem_in_Userspace). Create a journal page for learning FUSE, and tag it as "open problem". Make sure you can list open problems. Each time you've got some time, open your FUSE journal, and work to understand something. Read the man page. Read wikipedia. Read the source. But annotate! Take notes in your journal as you go. When you revisit your FUSE journal, you can easily rediscover where you were last time, and decide where you want to go next.
+#+end_quote
+
+Didn't get any comments.
+
+Am I dissatisfied?
+Doesn't feel that way.
+Am I surprised?
+Yes, perhaps.
+That's imprecise.
+Yes, I'm surprised.
+This is something I believe strongly in.
+
+Am I disappointed?
+No.

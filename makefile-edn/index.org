@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID: 6b942b8f-8930-4c35-bb37-57e225a8518e
+:END:
+#+TITLE: makefile-edn --- A clojure lib
+
+[[file:..][..]]
+
+Idea - provide mappers from/to Makefiles
+
+* Makefile EDN spec
+| :comment      | Makefile comment with #                | string              |
+| :target       | Makefile target                        | string              |
+| :dependencies | Dependencies for makefile target       | sequence of strings |
+| :commands     | Sequence of commands to produce target | sequence of strings |
+* Example makefile as EDN
+#+begin_src clojure
+(def makefile
+  [{:comment "Generate target for root index"}
+   ;; # Generate target for root index
+
+   {:target "index.html"
+    :dependencies ["index.clj" "aphorisms/index.html" "aphorisms/play.edn"]
+    :commands ["./index.clj"]}
+   ;; index.html: index.clj aphorisms/index.html aphorisms/play.edn
+   ;;     ./index.clj
+
+   {:target "aphorisms/index.html"
+    :dependencies ["aphorisms/index.org"]
+    :commands ["pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i aphorisms/index.org -o aphorisms/index.html"]}
+   ;; aphorisms/index.html: aphorisms/index.org
+   ;; 	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i aphorisms/index.org -o aphorisms/index.html
+   ])
+#+end_src
+* Library API
+=makefile-edn/<-makefile-str= - read from makefile string
+=makefile-edn/->makefile-str= - write to makefile string

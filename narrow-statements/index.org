@@ -7,7 +7,7 @@
 
 Idea: Coordination is easier when statements are narrow
 
-Narrow /interpreted/ statements requires:
+Narrow /interpretation/ of statements requires:
 
 - Statement is composed of narrow pieces
 - Context where statement is interpreted is aware of the pieces

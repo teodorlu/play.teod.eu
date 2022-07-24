@@ -8,7 +8,7 @@
       :out))
 
 (def targets
-  (->> (bash "ls **/index.org | grep -v '^index.org$' | sed 's|/index.org||g'")
+  (->> (bash "ls **/play.edn | grep -v '^play.edn$' | sed 's|/play.edn||g'")
        (str/split-lines)))
 
 (defn org [target]

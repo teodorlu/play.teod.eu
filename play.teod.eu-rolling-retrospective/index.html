@@ -260,6 +260,8 @@ with pandoc <code class="verbatim">--standalone</code> is causing
 problems</a></li>
 <li><a href="#i-want---site-previews" id="toc-i-want---site-previews">I
 want - site previews</a></li>
+<li><a href="#toc-is-in-my-face" id="toc-toc-is-in-my-face">TOC is in my
+face</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -594,5 +596,16 @@ standalone stuff myself.</p>
 <h3 id="i-want---site-previews">I want - site previews</h3>
 <p>When I post a Twitter link, Slack is able to create a nice preview.
 When I post a play.teod.eu link, there is no preview.</p>
+<h3 id="toc-is-in-my-face">TOC is in my face</h3>
+<p>Right now, I get this order:</p>
+<pre><code>Badly formatted TOC
+link up
+</code></pre>
+<p>I want:</p>
+<pre><code>link up
+Clear indication that this is table of contents
+TOC
+</code></pre>
+<p>I could solve that with a pandoc filter. Hmm.</p>
 </body>
 </html>

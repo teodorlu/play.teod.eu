@@ -308,3 +308,21 @@ Regardless, I think I want to control the standalone stuff myself.
 ** I want - site previews
 When I post a Twitter link, Slack is able to create a nice preview.
 When I post a play.teod.eu link, there is no preview.
+** TOC is in my face
+Right now, I get this order:
+
+#+begin_src
+Badly formatted TOC
+link up
+#+end_src
+
+I want:
+
+#+begin_src
+link up
+Clear indication that this is table of contents
+TOC
+#+end_src
+
+I could solve that with a pandoc filter.
+Hmm.

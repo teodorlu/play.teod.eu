@@ -34,3 +34,6 @@ Idea - provide mappers from/to Makefiles
 * Library API
 =makefile-edn/<-makefile-str= - read from makefile string
 =makefile-edn/->makefile-str= - write to makefile string
+* Usage
+Either as Clojure library or as babashka script.
+Could perhaps just provide the library --- then babashka pulls in the library as needed.

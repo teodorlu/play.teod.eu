@@ -5,6 +5,7 @@
 
 [[file:..][..]]
 
+* Essay outline
 Something happened.
 I started to /write/ as a way to think.
 I haven't fully grasped the consequences of that event.
@@ -24,3 +25,33 @@ My process now:
 
 There.
 That's it.
+* Rationale
+I want to control where I point my attention.
+I don't want to waste my time.
+I don't want to consume blindly.
+
+I've found this site to be a lovely medium for making that happen.
+Now I'd like to share some workflows.
+** Workflow: I want to share an idea
+1. Name the idea
+2. Make a draft page for the idea
+3. Structure an essay up top, and a journal of exploration below
+4. Share the essay
+5. Merge notes back into the exploration journal below
+
+Should achieve:
+
+1. I can build other stuff on my idea
+2. I get feedback on my idea
+3. I can iterate on the idea itself
+** Aspect --- medium-agnostic
+I've somehow managed to make it very easy to just "put content on here".
+I feel that as a great relief.
+I can focus on any content --- not just "snippets that fit in a blog".
+Why is that important?
+I don't need to fracture my thinking between platforms.
+I don't need to fight the format.
+
+Why is this relevant for deliberate practice?
+Because the way I do deliberate practice should be decided by the /domain/, not the user experience of the writing tool.
+I want a medium that can be tailored to the message.

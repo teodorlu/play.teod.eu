@@ -635,3 +635,9 @@ This is something I believe strongly in.
 
 Am I disappointed?
 No.
+** Got the dots working
+1. create dots
+2. realize build system wasn't yet configurable
+3. try to go for perfect
+4. ditch perfect, go for achievable instead
+5. Be happy.

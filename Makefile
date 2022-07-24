@@ -167,7 +167,7 @@ wip/index.html: wip/index.org
 
 .PHONY: makefile
 makefile:
-	./makemakefile.clj > Makefile
+	./play.clj makefile
 
 
 # Rengenerate the index

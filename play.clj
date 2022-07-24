@@ -193,7 +193,7 @@ DRAFT
                                  :created (str/trim (bash "date -I"))})))
 
       ;; Regenerate the makefile since we've added a new target
-      (bash "./makemakefile.clj > Makefile")
+      (bash "./play.clj makefile")
 
       nil)))
 
@@ -244,7 +244,7 @@ DRAFT
 
                        (println ".PHONY: makefile")
                        (println "makefile:")
-                       (println "\t./makemakefile.clj > Makefile")
+                       (println "\t./play.clj makefile")
                        (println "")
                        (println "")
 

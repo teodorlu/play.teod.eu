@@ -217,12 +217,6 @@ DRAFT
                        (println "")
                        (println "")
 
-                       ;; (println "# Generate phony target for all pages - default target")
-                       ;; (println ".PHONY: everything")
-                       ;; (println "everything: " (str/join " " (concat ["index.html"] (map html targets))))
-                       ;; (println "")
-                       ;; (println "")
-
                        (println "# Generate target for root index")
                        ;; TODO root index also depends on all the play.edn files found
                        (println (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets))))

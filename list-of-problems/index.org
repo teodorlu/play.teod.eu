@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 9dfae94f-677a-49a6-bee3-98a2bb470e48
 :END:
-#+title: A list of problems I want to fix
+#+title: A list of interesting problems
 
 [[./..][..]]
 

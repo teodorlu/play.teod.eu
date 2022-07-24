@@ -309,24 +309,38 @@ Regardless, I think I want to control the standalone stuff myself.
 ** I want - site previews
 When I post a Twitter link, Slack is able to create a nice preview.
 When I post a play.teod.eu link, there is no preview.
-** TOC is in my face
-Right now, I get this order:
+** Table of Content is confusing
+*** Problems
+- Can't see that the TOC is a TOC
+- TOC comes above the link to go up
+*** Solve with Pandoc filter?
+Now, I use the --toc pandoc option:
 
-#+begin_src
-Badly formatted TOC
-link up
+#+begin_src shell-script
+	pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i play.teod.eu-retrospective/index.org -o play.teod.eu-retrospective/index.html
 #+end_src
 
-I want:
+If I create my own filter instead, I can do something else.
 
-#+begin_src
-link up
-Clear indication that this is table of contents
-TOC
+Something like:
+
+#+begin_src shell-script
+pandoc --from org+smart -i play.teod.eu-retrospective/index.org --to json \
+    | ./play.clj transform --generate-toc --link-up  \
+    | pandoc --from json -o play.teod.eu-retrospective/index.html
 #+end_src
 
-I could solve that with a pandoc filter.
-Hmm.
+Questions.
+
+- What about HTML template?
+- How should it be possible to configure the build?
+
+How to?
+
+- It's nice to start with a single page.
+- That means I should make build systems opt-in / configurable, I think.
+*** Examples of nicely formatted table of contents:
+https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter
 * 2022-05-26
 ** From #teodor-discuss (Iterate slack)
 Source: https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869

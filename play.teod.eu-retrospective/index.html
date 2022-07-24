@@ -217,6 +217,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -260,8 +261,9 @@ with pandoc <code class="verbatim">--standalone</code> is causing
 problems</a></li>
 <li><a href="#i-want---site-previews" id="toc-i-want---site-previews">I
 want - site previews</a></li>
-<li><a href="#toc-is-in-my-face" id="toc-toc-is-in-my-face">TOC is in my
-face</a></li>
+<li><a href="#table-of-content-is-confusing"
+id="toc-table-of-content-is-confusing">Table of Content is
+confusing</a></li>
 </ul></li>
 <li><a href="#section-1" id="toc-section-1">2022-05-26</a>
 <ul class="incremental">
@@ -684,17 +686,38 @@ standalone stuff myself.</p>
 <h3 id="i-want---site-previews">I want - site previews</h3>
 <p>When I post a Twitter link, Slack is able to create a nice preview.
 When I post a play.teod.eu link, there is no preview.</p>
-<h3 id="toc-is-in-my-face">TOC is in my face</h3>
-<p>Right now, I get this order:</p>
-<pre><code>Badly formatted TOC
-link up
+<h3 id="table-of-content-is-confusing">Table of Content is
+confusing</h3>
+<h4 id="problems">Problems</h4>
+<ul class="incremental">
+<li>Can’t see that the TOC is a TOC</li>
+<li>TOC comes above the link to go up</li>
+</ul>
+<h4 id="solve-with-pandoc-filter">Solve with Pandoc filter?</h4>
+<p>Now, I use the –toc pandoc option:</p>
+<pre class="shell-script"><code>pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i play.teod.eu-retrospective/index.org -o play.teod.eu-retrospective/index.html
 </code></pre>
-<p>I want:</p>
-<pre><code>link up
-Clear indication that this is table of contents
-TOC
+<p>If I create my own filter instead, I can do something else.</p>
+<p>Something like:</p>
+<pre class="shell-script"><code>pandoc --from org+smart -i play.teod.eu-retrospective/index.org --to json \
+    | ./play.clj transform --generate-toc --link-up  \
+    | pandoc --from json -o play.teod.eu-retrospective/index.html
 </code></pre>
-<p>I could solve that with a pandoc filter. Hmm.</p>
+<p>Questions.</p>
+<ul class="incremental">
+<li>What about HTML template?</li>
+<li>How should it be possible to configure the build?</li>
+</ul>
+<p>How to?</p>
+<ul class="incremental">
+<li>It’s nice to start with a single page.</li>
+<li>That means I should make build systems opt-in / configurable, I
+think.</li>
+</ul>
+<h4 id="examples-of-nicely-formatted-table-of-contents">Examples of
+nicely formatted table of contents:</h4>
+<p><a
+href="https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter">https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter</a></p>
 <h2 id="section-1">2022-05-26</h2>
 <h3 id="from-teodor-discuss-iterate-slack">From #teodor-discuss (Iterate
 slack)</h3>

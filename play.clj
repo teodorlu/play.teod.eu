@@ -197,6 +197,75 @@ DRAFT
 
       nil)))
 
+(defn thing [{:keys [x y]}]
+  (list x y))
+
+(defn makefile [{:keys [opts]}]
+  (let [{:keys [dry-run]} opts
+        targets (->> (files->relations {})
+                     vals
+                     (remove (fn [rel]
+                               (not= nil (:builder rel))))
+                     (map :id)
+                     sort)
+        org (fn [target] (str target "/index.org"))
+        html (fn [target] (str target "/index.html"))
+        play-edn (fn [target] (str target "/play.edn"))
+        makefile-str (with-out-str
+                       (println "# DO NOT EDIT DIRECTLY -- THIS MAKEFILE IS GENERATED")
+                       (println "# SEE `make clean` TARGET")
+                       (println "")
+                       (println "")
+
+                       ;; (println "# Generate phony target for all pages - default target")
+                       ;; (println ".PHONY: everything")
+                       ;; (println "everything: " (str/join " " (concat ["index.html"] (map html targets))))
+                       ;; (println "")
+                       ;; (println "")
+
+                       (println "# Generate target for root index")
+                       ;; TODO root index also depends on all the play.edn files found
+                       (println (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets))))
+                       (println "\t./index.clj")
+                       (println "")
+                       (println "")
+
+                       (println  "# Generate target for each page")
+                       (println
+                        (str/join "\n\n"
+                                  (for [t targets]
+                                    (str (html t) ": " (org t)
+                                         "\n\t"
+                                         "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
+                                         " -o " (html t)))))
+                       (println "")
+                       (println "")
+
+
+                       (println ".PHONY: makefile")
+                       (println "makefile:")
+                       (println "\t./makemakefile.clj > Makefile")
+                       (println "")
+                       (println "")
+
+                       (println "# Rengenerate the index")
+                       (println ".PHONY: clean")
+                       (println "clean:")
+                       (println "\trm -f index.html")
+                       (println "")
+                       (println "")
+
+                       (println "# Regenerate everything")
+                       (println ".PHONY: ultraclean")
+                       (println "ultraclean: clean")
+                       (println (str "\t"
+                                     "rm -f "
+                                     (str/join " " (concat ["index.html"] (map html targets)))))
+                       )]
+    (if dry-run
+      (print makefile-str)
+      (spit "Makefile" makefile-str))))
+
 (defn print-help [{}]
   (println (str/trim "
 Usage: ./play.clj <subcommand> <options>
@@ -205,7 +274,9 @@ Subcommands:
 
 page PAGE_ID :title PAGE_TITLE
 
-relations :from :files :to :lines
+relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
+
+makefile [--dry-run]
 ")))
 
 (defn main [& args]
@@ -213,6 +284,7 @@ relations :from :files :to :lines
                  {:cmds ["page"] :fn create-page :cmds-opts [:page]}
                  {:cmds ["create-page"] :fn create-page :cmds-opts [:page]}
                  {:cmds ["random-page"] :fn random-page}
+                 {:cmds ["makefile"] :fn makefile}
                  {:cmds ["help"] :fn print-help}
                  {:cmds [] :fn print-help}]
                 args

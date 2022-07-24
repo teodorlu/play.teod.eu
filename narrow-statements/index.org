@@ -37,3 +37,14 @@ Pre-shared agenda of topics - "is this something you care about?"
 Each topic is introduced by someone
 
 Then there are questions / criticisms.
+
+* Retrospective
+** 2022-07-24
+This makes no sense:
+#+begin_quote
+- Context where statement is interpreted is aware of the pieces
+#+end_quote
+
+Wait, I remember what I meant.
+Narrow statements use words.
+The meaning of the words must be meaningful for the receiver to understand the meaning.

@@ -283,6 +283,8 @@ And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
 Option: Comments on Twitter.
 Option: Comments on Hacker News.
 Option: Comments embedded straight into the text - via Github pull requests.
+
+Option: Comments as Github issues. Example: https://github.com/matthijscox/Blog/issues/3
 ** Creating new pages
 Currently, I hand-roll my own new-page creation.
 I could also hook my logic into Org-Roam's templating system

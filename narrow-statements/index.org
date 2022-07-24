@@ -1,4 +1,7 @@
-#+title: narrow-statements
+:PROPERTIES:
+:ID:       cd48d901-8e1b-4d10-9b5a-76002e426dc0
+:END:
+#+title: Prefer narrow statements
 
 [[./..][..]]
 

@@ -185,8 +185,8 @@ The interface is current market best practices.
 Feedback is how effectively the workflows can compete with other workflows.
 Are you enabling better workflows?
 * As questions
-| Feedback loop    | How do we know if it works?                            |
-| Interface design | What is the desired behavior?                          |
+| Feedback loop    | How do we know if it works? How does it feel?          |
+| Interface design | How should it work? How should it feel?                |
 | How it works     | Let's bridge the current behavior to correct behavior. |
 * Appendix
 The article is over!

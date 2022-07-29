@@ -277,6 +277,21 @@ DRAFT
       (print makefile-str)
       (spit "Makefile" makefile-str))))
 
+(defn index-by-uuid
+  "INCOMPLETE!
+
+  Currently only supports dry ResourceBundle.Control
+
+    ./play.clj index-by-uuid --dry-run."
+  [{:keys [opts]}]
+  (assert (:dry-run opts))
+  (let [uuid-index (->> (files->relations {})
+                        vals
+                        (map #(select-keys % [:uuid :slug :title :id]))
+                        )]
+    (doseq [page uuid-index]
+      (prn page))))
+
 (defn print-help [{}]
   (println (str/trim "
 Usage: ./play.clj <subcommand> <options>
@@ -297,6 +312,7 @@ makefile [--dry-run]
                  {:cmds ["random-page"] :fn random-page}
                  {:cmds ["makefile"] :fn makefile}
                  {:cmds ["help"] :fn print-help}
+                 {:cmds ["index-by-uuid"] :fn index-by-uuid}
                  {:cmds [] :fn print-help}]
                 args
                 {:coerce {;; relations

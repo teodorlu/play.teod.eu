@@ -278,11 +278,7 @@ DRAFT
       (spit "Makefile" makefile-str))))
 
 (defn index-by-uuid
-  "INCOMPLETE!
-
-  Currently only supports dry ResourceBundle.Control
-
-    ./play.clj index-by-uuid --dry-run."
+  "Create an index from page uuid to slug and title."
   [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
         uuid-index (->> (files->relations {})
@@ -309,6 +305,8 @@ page SLUG :title PAGE_TITLE
 relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
 
 makefile [--dry-run]
+
+index-by-uuid [--dry-run]
 ")))
 
 (defn main [& args]

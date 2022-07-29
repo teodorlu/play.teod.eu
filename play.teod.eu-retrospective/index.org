@@ -793,3 +793,6 @@ Tag semantics:
 | :form :rambling                | Date-oriented           |
 | :readiness :wtf-is-this        | Personal note           |
 | :readiness :forever-incomplete | Evergreen               |
+* 2022-07-29
+:)
+** links are still broken.

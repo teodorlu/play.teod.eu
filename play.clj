@@ -49,12 +49,23 @@
 
 (defn files->relations
   "Read relations from play.edn files on disk"
-  [{}]
-  (->> (pages)
-       (map (fn [{:keys [id] :as p}]
-              (merge p (edn/read-string (slurp (str id "/play.edn"))))))
-       (map (juxt :id identity))
-       (into {})))
+  [{:keys [uuid-from-org]}]
+  (let [enrich (fn [page]
+                 (if (and uuid-from-org (not (:builder page))) ;; only normal org thing builders please
+                   (let [uuid-found-on-org (-> (bash (str "cat " (:id page) "/index.org | grep ID"))
+                                               (str/replace #":ID:\s+" "")
+                                               (str/split #"\s+")
+                                               first)]
+                     (if (str/blank? uuid-found-on-org)
+                       page
+                       (assoc page :uuid uuid-found-on-org)))
+                   page))]
+    (->> (pages)
+         (map (fn [{:keys [id] :as p}]
+                (merge p (edn/read-string (slurp (str id "/play.edn"))))))
+         (map enrich)
+         (map (juxt :id identity))
+         (into {}))))
 
 (defn relations->lines
   "Produce one line per page
@@ -159,7 +170,7 @@ DRAFT
         {:keys [from to]} opts]
     (assert (sources from))
     (assert (targets to))
-    (let [rels ((sources from) {})]
+    (let [rels ((sources from) opts)]
       ((targets to) rels))))
 
 (defn random-page [{:keys [opts]}]

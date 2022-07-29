@@ -2,4 +2,5 @@
  :form :article,
  :status :wip,
  :readiness :ready-for-comments,
- :lang :en}
+ :lang :en,
+ :uuid "9b088c00-804d-4283-a208-f8c489696c71"}

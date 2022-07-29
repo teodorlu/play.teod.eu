@@ -1,4 +1,5 @@
 {:title "Library: makefile-edn",
  :readiness :wtf-is-this,
  :author-url "https://teod.eu",
- :created "2022-07-24"}
+ :created "2022-07-24",
+ :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e"}

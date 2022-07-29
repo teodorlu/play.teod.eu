@@ -1,4 +1,5 @@
 {:title "You are a knowledge worker",
  :form :article,
  :readiness :wtf-is-this,
- :lang :en}
+ :lang :en,
+ :uuid "not"}

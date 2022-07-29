@@ -441,13 +441,13 @@ Yes. Again. I've learned this before.
 
 In vanilla Emacs:
 
-1. =magit-show-refs=
+1. =M-x magit-show-refs=
 2. Mark lines for deletion with normal marking method (C-SPC)
 3. Press =k= to delete
 
 In Doom Emacs:
 
-1. =magit-show-refs=
+1. =M-x magit-show-refs=
 2. Visually select branches with whatever Vim magit you want
 3. Press =x= to delete.
 

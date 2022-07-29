@@ -217,6 +217,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -282,6 +283,12 @@ id="toc-org-mode-stored-links">Org-mode stored links</a></li>
 id="toc-inline-battery-information">Inline battery information</a></li>
 <li><a href="#bind-function-keys" id="toc-bind-function-keys">Bind
 function keys</a></li>
+</ul></li>
+<li><a href="#section-4" id="toc-section-4">2022-07-29</a>
+<ul class="incremental">
+<li><a href="#deleting-branches-with-magit-again"
+id="toc-deleting-branches-with-magit-again">Deleting branches with Magit
+(again)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -690,5 +697,27 @@ Remove.</p>
 <p>Wtf, now it works. I have a wrong model for the <code
 class="verbatim">map!</code> macro somehow. Moving stuff up fixed my
 problems.</p>
+<h2 id="section-4">2022-07-29</h2>
+<h3 id="deleting-branches-with-magit-again">Deleting branches with Magit
+(again)</h3>
+<p>“Again?” Yes. Again. I’ve learned this before.</p>
+<p>In vanilla Emacs:</p>
+<ol class="incremental">
+<li><code class="verbatim">magit-show-refs</code></li>
+<li>Mark lines for deletion with normal marking method (C-SPC)</li>
+<li>Press <code class="verbatim">k</code> to delete</li>
+</ol>
+<p>In Doom Emacs:</p>
+<ol class="incremental">
+<li><code class="verbatim">magit-show-refs</code></li>
+<li>Visually select branches with whatever Vim magit you want</li>
+<li>Press <code class="verbatim">x</code> to delete.</li>
+</ol>
+<p>Beware Dired differences!</p>
+<p>In Dired, a single <code class="verbatim">d</code> press marks a file
+for deletion. In Magit, <code class="verbatim">d</code> sends you off to
+<code class="verbatim">magit-diff</code>. So it’s different! But “select
+lines then press x” does the same, both for Doom Emacs Dired and Doom
+Emacs Magit.</p>
 </body>
 </html>

@@ -434,3 +434,26 @@ NOPE, that inserts a link to the node. Remove.
 
 Wtf, now it works. I have a wrong model for the =map!= macro somehow.
 Moving stuff up fixed my problems.
+* 2022-07-29
+** Deleting branches with Magit (again)
+"Again?"
+Yes. Again. I've learned this before.
+
+In vanilla Emacs:
+
+1. =magit-show-refs=
+2. Mark lines for deletion with normal marking method (C-SPC)
+3. Press =k= to delete
+
+In Doom Emacs:
+
+1. =magit-show-refs=
+2. Visually select branches with whatever Vim magit you want
+3. Press =x= to delete.
+
+Beware Dired differences!
+
+In Dired, a single =d= press marks a file for deletion.
+In Magit, =d= sends you off to =magit-diff=.
+So it's different!
+But "select lines then press x" does the same, both for Doom Emacs Dired and Doom Emacs Magit.

@@ -1,1 +1,4 @@
-{:title "I want to learn design", :readiness :wtf-is-this, :author-url "https://teod.eu", :created "2022-07-24"}
+{:title "I want to learn design",
+ :readiness :wtf-is-this,
+ :author-url "https://teod.eu",
+ :created "2022-07-24"}

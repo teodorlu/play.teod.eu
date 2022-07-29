@@ -1,1 +1,3 @@
-{:title "Shabakka", :readiness :wtf-is-this, :author-url "https://teod.eu"}
+{:title "Shabakka",
+ :readiness :wtf-is-this,
+ :author-url "https://teod.eu"}

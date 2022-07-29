@@ -1,1 +1,4 @@
-{:title "watchexec make dev", :readiness :wtf-is-this, :author-url "https://teod.eu", :created "2022-07-14"}
+{:title "watchexec make dev",
+ :readiness :wtf-is-this,
+ :author-url "https://teod.eu",
+ :created "2022-07-14"}

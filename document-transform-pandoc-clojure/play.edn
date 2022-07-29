@@ -1,1 +1,4 @@
-{:title "Recursive document transformations with Pandoc and Clojure", :readiness :ready-for-comments, :author-url "https://teod.eu", :created "2022-07-15"}
+{:title "Recursive document transformations with Pandoc and Clojure",
+ :readiness :ready-for-comments,
+ :author-url "https://teod.eu",
+ :created "2022-07-15"}

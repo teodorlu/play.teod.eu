@@ -1,1 +1,4 @@
-{:title "Documentation", :readiness :wtf-is-this, :author-url "https://teod.eu", :created "2022-07-14"}
+{:title "Documentation",
+ :readiness :wtf-is-this,
+ :author-url "https://teod.eu",
+ :created "2022-07-14"}

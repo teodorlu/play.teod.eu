@@ -1,1 +1,3 @@
-{:title "Discover the difference", :readiness :wtf-is-this, :author-url "https://teod.eu"}
+{:title "Discover the difference",
+ :readiness :wtf-is-this,
+ :author-url "https://teod.eu"}

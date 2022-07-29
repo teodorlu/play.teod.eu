@@ -659,20 +659,20 @@ How is a perfect day structured?
 - Wake up
 - Walk
 - 09:00 Work start ritual
-    - First review own stuff. Answer [[what's important is what's important]]
+    - First review own stuff. Answer what's important.
     - 09:30 review with team.
     - Goal: surface what is dormant. Continuous strategy work.
-    - Floor: share one tactical goal from [[[[unicad]]: list of tactical initiatives]]
+    - Floor: make progress on one tactical goal from list of tactical initiatives
     - Options
-        - Work on one of [[[[unicad]]: list of strategic initiatives]]
-        - Pair with [[Sindre Johansen]] on his work
+        - Work on a strategic initiative.
+        - Pair with teammate on their work
             - Rust? Production stuff?
-        - Pair with [[Sindre Johansen]] on my work
+        - Pair with teammate on my work
             - Prototyping
 - Deep work
 - Interruptible work
 - 14:30 Work end ritual
-    - Review Floor: share one tactical goal from [[[[unicad]]: list of tactical initiatives]]
+    - Review progress on shared tactical goal
     - Write down what's important for tomorrow.
 - Time at work: 6 hours
 - Afternoon
@@ -694,7 +694,7 @@ Principles to prevent burnout, mess and loss of the strategic picture.
         - Ha felles blikk på felles taktisk fokus
         - Gjøre det mulig for alle å bidra strategisk
         - Ha godt grunnlag for å vurdere hva salgs prototyper vi trenger
-- Sette av en time til parprogrammering med [[Sindre Johansen]] hver dag
+- Pair program on something each day
 - I've been inspired by [[Deep Work (book)]] and [[So good they can't ignore you (book)]]
 - What?
     - One shared tactical goal.

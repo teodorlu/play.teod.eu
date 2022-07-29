@@ -33,7 +33,7 @@
 ;; relations example
 ;;
 ;; page id -> page metadata
-{"emacs" {:id "emacs"
+{"emacs" {:slug "emacs"
           :title "(Doom) Emacs learning journal"
           :form :rambling
           :readiness :in-progress}
@@ -45,7 +45,7 @@
 (defn pages []
   (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
        (str/split-lines)
-       (map (fn [id] {:id id}))))
+       (map (fn [slug] {:slug slug}))))
 
 (defn files->relations
   "Read relations from play.edn files on disk
@@ -55,7 +55,7 @@
   [{:keys [uuid-from-org]}]
   (let [enrich (fn [page]
                  (if (and uuid-from-org (not (:builder page))) ;; only normal org thing builders please
-                   (let [uuid-found-on-org (-> (bash (str "cat " (:id page) "/index.org | grep ID"))
+                   (let [uuid-found-on-org (-> (bash (str "cat " (:slug page) "/index.org | grep ID"))
                                                (str/replace #":ID:\s+" "")
                                                (str/split #"\s+")
                                                first)]
@@ -64,10 +64,10 @@
                        (assoc page :uuid uuid-found-on-org)))
                    page))]
     (->> (pages)
-         (map (fn [{:keys [id] :as p}]
-                (merge p (edn/read-string (slurp (str id "/play.edn"))))))
+         (map (fn [{:keys [slug] :as p}]
+                (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
          (map enrich)
-         (map (juxt :id identity))
+         (map (juxt :slug identity))
          (into {}))))
 
 (defn relations->lines
@@ -75,7 +75,7 @@
 
   Example:
 
-    :id emacs, :title \"(Doom) Emacs learning journal\", :form :rambling, :readiness :in-progress"
+    :slug emacs, :title \"(Doom) Emacs learning journal\", :form :rambling, :readiness :in-progress"
   [rels]
   (doseq [l (vals rels)]
     (prn l)))
@@ -85,9 +85,9 @@
 
   Output format:
 
-    [:id \"emacs\"] :title \"(Doom) Emacs learning journal\"
-    [:id \"emacs\"] :form :rambling
-    [:id \"emacs\"] :readiness :in-progress
+    [:slug \"emacs\"] :title \"(Doom) Emacs learning journal\"
+    [:slug \"emacs\"] :form :rambling
+    [:slug \"emacs\"] :readiness :in-progress
 
   Example: how many WTF-pages do we have?
 
@@ -100,9 +100,9 @@
     9
   "
   [rels]
-  (doseq [[id page-meta] rels]
-    (doseq [[attribute value] (dissoc page-meta :id)]
-      (prn [:id id] attribute value))))
+  (doseq [[slug page-meta] rels]
+    (doseq [[attribute value] (dissoc page-meta :slug)]
+      (prn [:slug slug] attribute value))))
 
 (defn relations->lines+recent
   "Produce one line per relation, recent first
@@ -128,14 +128,14 @@
   [{}]
   (->> (str/split-lines (slurp *in*))
        (map edn/read-string)
-       (map (fn [{:keys [id] :as page}] {id page}))
+       (map (fn [{:keys [slug] :as page}] {slug page}))
        (into {})))
 
 (defn relations->files [rels]
   (doseq [[id page] rels]
     (spit (str id "/play.edn")
           (with-out-str
-            (pprint (dissoc page :id))))))
+            (pprint (dissoc page :slug))))))
 
 (defn page-index-org [{:keys [title trailing-blank-lines uuid]}]
   (str/join "\n"
@@ -184,7 +184,7 @@ DRAFT
                     vals
                     shuffle
                     (take n)
-                    (map :id))))))
+                    (map :slug))))))
 
 (defn create-page [{:keys [opts]}]
   (let [slug (:slug opts)
@@ -223,7 +223,7 @@ DRAFT
                      vals
                      (remove (fn [rel]
                                (not= nil (:builder rel))))
-                     (map :id)
+                     (map :slug)
                      sort)
         org (fn [target] (str target "/index.org"))
         html (fn [target] (str target "/index.html"))

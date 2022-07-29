@@ -48,7 +48,10 @@
        (map (fn [id] {:id id}))))
 
 (defn files->relations
-  "Read relations from play.edn files on disk"
+  "Read relations from play.edn files on disk
+
+  :uuid-from-org - when true, try to crudely find UUIDs from index.org files.
+  "
   [{:keys [uuid-from-org]}]
   (let [enrich (fn [page]
                  (if (and uuid-from-org (not (:builder page))) ;; only normal org thing builders please

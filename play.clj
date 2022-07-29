@@ -266,7 +266,7 @@ Usage: ./play.clj <subcommand> <options>
 
 Subcommands:
 
-page PAGE_ID :title PAGE_TITLE
+page SLUG :title PAGE_TITLE
 
 relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
 

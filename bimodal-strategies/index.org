@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: b7446aab-c31e-4666-bf28-2728a04fd860
+:END:
+#+TITLE: Bimodal strategies
+
+[[file:..][..]]
+
+In a monomodal strategy, we need to reduce tension by finding common ground.
+We seek to reduce extremes.
+
+In a bimodal strategy, we want to keep both extremes.
+Therefore, we divert or effort between one extreme and the other extreme.

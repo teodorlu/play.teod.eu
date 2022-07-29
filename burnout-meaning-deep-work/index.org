@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: b58eff14-c704-4de3-b113-959fb41c0f5a
+:END:
+#+TITLE: Facing burnout, finding meaning and making space for deep work
+
+[[file:..][..]]
+
+* Target audience
+People I want to work with.
+* Context
+Through the spring of 2022, I've gotten gradually more sick of work.
+Even work I used to love.
+I need to fix that.
+This document is for sharing how I faced burnout, my diagnosis, and what I intend to do.
+* In absence of concentrated effort, tactical initiatives will grow, and strategic initiatives will dwindle
+* Bimodal strategies
+* What is strategic work?
+Long time frame.
+Low precision.
+Uncertain value.
+* Continuous strategic work
+* Making space for deep work

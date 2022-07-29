@@ -806,7 +806,7 @@ Hmm.
 But -- I want that metadata in the =play.edn= file.
 
 #+begin_src clojure
-{:id "b722664c-d310-4908-9b57-98ffd73833c9"
+{:uuid "b722664c-d310-4908-9b57-98ffd73833c9"
  :slug "play.teod.eu-retrospective"
  :title "play.teod.eu: Rolling retrospective & list of problems"}
 #+end_src

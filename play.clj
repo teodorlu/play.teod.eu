@@ -284,13 +284,22 @@ DRAFT
 
     ./play.clj index-by-uuid --dry-run."
   [{:keys [opts]}]
-  (assert (:dry-run opts))
-  (let [uuid-index (->> (files->relations {})
-                        vals
-                        (map #(select-keys % [:uuid :slug :title :id]))
-                        )]
-    (doseq [page uuid-index]
-      (prn page))))
+  (let [{:keys [dry-run]} opts]
+    #_
+    (assert dry-run)
+    (let [uuid-index (->> (files->relations {})
+                          vals
+                          (filter :uuid)
+                          (map #(select-keys % [:uuid :slug :title :id])))]
+      (if dry-run
+        ;; just print pages
+        (doseq [page uuid-index]
+          (prn page))
+        ;; otherwise, write to index/by-uuid/$UUID.edn
+        (doseq [page uuid-index]
+          (spit (str "index/by-uuid/" (:uuid page) ".edn")
+                (with-out-str (pprint page))))
+        ))))
 
 (defn print-help [{}]
   (println (str/trim "

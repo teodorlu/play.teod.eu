@@ -1,0 +1,3 @@
+{:uuid "2c53f531-afdd-4efb-becd-f5d2f220b5ab",
+ :slug "document-transform-pandoc-clojure",
+ :title "Recursive document transformations with Pandoc and Clojure"}

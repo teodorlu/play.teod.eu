@@ -188,11 +188,12 @@ DRAFT
 
       ;; Play file
       (when-not (fs/exists? play-file)
-        (spit play-file (pr-str {:title title
-                                 :readiness :wtf-is-this
-                                 :uuid uuid
-                                 :author-url "https://teod.eu"
-                                 :created (str/trim (bash "date -I"))})))
+        (spit play-file (with-out-str
+                          (pprint {:title title
+                                   :readiness :wtf-is-this
+                                   :uuid uuid
+                                   :author-url "https://teod.eu"
+                                   :created (str/trim (bash "date -I"))}))))
 
       ;; Regenerate the makefile since we've added a new target
       (bash "./play.clj makefile")

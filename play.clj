@@ -123,13 +123,13 @@
           (with-out-str
             (pprint (dissoc page :id))))))
 
-(defn page-index-org [{:keys [title trailing-blank-lines org-id]}]
+(defn page-index-org [{:keys [title trailing-blank-lines uuid]}]
   (str/join "\n"
             (concat
              ;; Link for org-roam
-             (when org-id
+             (when uuid
                [":PROPERTIES:"
-                (str ":ID: " org-id)
+                (str ":ID: " uuid)
                 ":END:"])
 
              ;; Header, title, link up
@@ -173,22 +173,24 @@ DRAFT
                     (map :id))))))
 
 (defn create-page [{:keys [opts]}]
-  (let [page (:page opts)
-        title (or (:title opts) page)]
-    (assert page "Please specify which page to create!")
-    (let [org-file (str page "/index.org")
-          play-file (str page "/play.edn")]
-      (fs/create-dirs page)
+  (let [slug (:slug opts)
+        title (or (:title opts) slug)
+        uuid (or (:uuid opts) (bash "uuidgen"))]
+    (assert slug "Page slug is required.")
+    (let [org-file (str slug "/index.org")
+          play-file (str slug "/play.edn")]
+      (fs/create-dirs slug)
 
       ;; Org file
       (when-not (fs/exists? org-file)
         (spit org-file (page-index-org {:title title
-                                        :org-id (bash "uuidgen")})))
+                                        :uuid uuid})))
 
       ;; Play file
       (when-not (fs/exists? play-file)
         (spit play-file (pr-str {:title title
                                  :readiness :wtf-is-this
+                                 :uuid uuid
                                  :author-url "https://teod.eu"
                                  :created (str/trim (bash "date -I"))})))
 
@@ -275,8 +277,8 @@ makefile [--dry-run]
 
 (defn main [& args]
   (cli/dispatch [{:cmds ["relations"] :fn relations}
-                 {:cmds ["page"] :fn create-page :cmds-opts [:page]}
-                 {:cmds ["create-page"] :fn create-page :cmds-opts [:page]}
+                 {:cmds ["page"] :fn create-page :cmds-opts [:slug]}
+                 {:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
                  {:cmds ["random-page"] :fn random-page}
                  {:cmds ["makefile"] :fn makefile}
                  {:cmds ["help"] :fn print-help}
@@ -289,6 +291,7 @@ makefile [--dry-run]
                           ;; page
                           :title :string ;; Page title
                           :n :long       ;; Count - eg random page count
+                          :uuid :string
                           }}))
 
 (apply main *command-line-args*)

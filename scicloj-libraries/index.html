@@ -7,38 +7,26 @@
   <title>Scicloj libraries and tools</title>
 
   <link rel="icon" type="image/x-icon" href="/green.png">
-  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+<!-- <script type="text/javascript" src="https://livejs.com/live.js" async></script> -->
 
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.js" type="application/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.reagent.js" type="application/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
-    <!--
-         Beware hardcoded versions.
+  <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.js" type="application/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+  <!--
+      Beware hardcoded versions.
 
-         I think a a "rewrite-html" library plus a file walk could be nice.
-         Or do I just want to do file generation again?
-         Hmm.
-    -->
-
-    <script type="application/x-scittle">
-      (require '[reagent.core :as r]
-           '[reagent.dom :as rdom])
-
-     ;; (def data (slurp "https://scicloj.github.io/docs/resources/model.edn"))
-
-      (def state (r/atom {:clicks 0}))
-
-      (defn my-component []
-       [:div
-        [:p "Clacks: " (:clicks @state)]
-        [:p [:button {:on-click #(swap! state update :clicks inc)}
-             "Click me!"]]])
-
-      (rdom/render [my-component] (.getElementById js/document "app"))
-    </script>
+      I think a a "rewrite-html" library plus a file walk could be nice.
+      Or do I just want to do file generation again?
+      Hmm.
+  -->
+  <script src="libs.cljs" type="application/x-scittle"></script>
+  <script type="application/x-scittle">
+    (require '[reagent.dom :as rdom])
+    (rdom/render [libs/table] (.getElementById js/document "app"))
+  </script>
 </head>
 <body>
 <h1 class="title">Scicloj libraries and tools</h1>

@@ -9,10 +9,20 @@
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.js" type="application/javascript"></script>
     <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.js" type="application/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.reagent.js" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scittle@0.2.8/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+    <!--
+         Beware hardcoded versions.
+
+         I think a a "rewrite-html" library plus a file walk could be nice.
+         Or do I just want to do file generation again?
+         Hmm.
+    -->
+
     <script type="application/x-scittle">
       (require '[reagent.core :as r]
            '[reagent.dom :as rdom])

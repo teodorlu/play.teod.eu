@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 6a894657-11a7-4342-aa52-4ea776558e95
+:END:
+#+TITLE: How to build ideas
+
+[[file:..][..]]
+
+- apply [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]] to product, development, design
+- generalize to ideas
+
+* Principles:
+
+- Less than the minimal number of moving pieces is bad
+
+* A good capability:
+
+- The language exposed from the capability is well suited to describe the problems it solves for features.
+- The capability interface has a minimal number of moving pieces
+- The capaibility has minimal dependencies
+- Exposes narrow names.
+  - Narrow names are not too general, and not too specific.
+- Exposed names fit well into the language of the consuming feature.
+  - Reading the implementation is not required
+
+* General value prop:
+|            | What | For whom | What's good |
+| Capability |      |          |             |
+| Feature    |      |          |             |
+| Assembly   |      |          |             |
+* Specialized to product management
+* Specialized to design
+* Specialized to development
+* Generalization - idea construction

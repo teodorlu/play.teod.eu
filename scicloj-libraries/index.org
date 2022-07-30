@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825
+:END:
+#+TITLE: Scicloj libraries and tools
+
+[[file:..][..]]
+
+This org file only exists for as a target for Org-Roam!
+
+Idea: take the amazing data from https://scicloj.github.io/docs/resources/libs/ and experiment with content.

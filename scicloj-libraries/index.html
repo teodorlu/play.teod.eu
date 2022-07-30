@@ -17,11 +17,13 @@
       (require '[reagent.core :as r]
            '[reagent.dom :as rdom])
 
+     ;; (def data (slurp "https://scicloj.github.io/docs/resources/model.edn"))
+
       (def state (r/atom {:clicks 0}))
 
       (defn my-component []
        [:div
-        [:p "Clicks: " (:clicks @state)]
+        [:p "Clacks: " (:clicks @state)]
         [:p [:button {:on-click #(swap! state update :clicks inc)}
              "Click me!"]]])
 

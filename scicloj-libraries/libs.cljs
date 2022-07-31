@@ -18,19 +18,25 @@
 (defn view [data]
   [:pre (pr-str data)])
 
-(defn view-table [{:keys [rows header viewers]}]
-  [:table [:thead
+(defn view-table [{:keys [rows header viewers derived-rows]}]
+  (let [prep-row (fn [row]
+                   (reduce (fn [row [row-id create-derived]]
+                             (assoc row row-id (create-derived row)))
+                           row
+                           derived-rows))]
+    [:table [:thead
+             (for [h header]
+               [:th h])]
+     [:tbody
+      (for [r rows]
+        (let [r (prep-row r)]
+          [:tr
            (for [h header]
-             [:th h])]
-   [:tbody
-    (for [r rows]
-      [:tr
-       (for [h header]
-         (let [view (or (h viewers) identity)]
-           [:td (view (h r))]))])]])
+             (let [view (or (h viewers) identity)]
+               [:td (view (h r))]))]))]]))
 
 (defn scicloj-libs-model->table [model]
-  {:header [:lib/name :lib/url #_:lib/category :tags :star]
+  {:header [:library #_#_ :lib/name :lib/url #_:lib/category :tags :star]
    :rows (apply concat (:libs model))
    :viewers {:star (fn [item]
                      (when (= item :star)
@@ -38,7 +44,9 @@
              :lib/url (fn [url]
                         (when url
                           (let [shortname (str/replace url #"https://github.com/" "")]
-                            [:a {:href url} shortname])))}})
+                            [:a {:href url} shortname])))}
+   :derived-rows {:library (fn [row]
+                           [:a {:href (:lib/url row)} (:lib/name row)])}})
 
 (defn table []
   [:div

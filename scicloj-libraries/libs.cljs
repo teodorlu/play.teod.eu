@@ -1,12 +1,8 @@
 (ns libs
   (:require
-    [clojure.edn :as edn]))
-
-(require '[reagent.core :as r]
-         '[reagent.dom :as rdom]
-         '[ajax.core :refer [GET]]
-         '[clojure.edn :as edn]
-         )
+    [clojure.edn :as edn]
+    [reagent.core :as r]
+    [ajax.core :refer [GET]]))
 
 ;; (def data (slurp "https://scicloj.github.io/docs/resources/model.edn"))
 
@@ -17,7 +13,6 @@
 
 (defn set-raw-response! [response]
   (swap! state assoc :raw-response response))
-
 
 (defn table []
   [:div

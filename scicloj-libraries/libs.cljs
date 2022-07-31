@@ -18,15 +18,17 @@
 (defn view [data]
   [:pre (pr-str data)])
 
-(defn view-table [{:keys [rows header viewers derived-rows]}]
+(defn view-table
+  [{:keys [rows header viewers derived-rows id]}]
   (let [prep-row (fn [row]
                    (reduce (fn [row [row-id create-derived]]
                              (assoc row row-id (create-derived row)))
                            row
                            derived-rows))]
-    [:table [:thead
-             (for [h header]
-               [:th h])]
+    [:table {:id id}
+     [:thead
+      (for [h header]
+        [:th h])]
      [:tbody
       (for [r rows]
         (let [r (prep-row r)]
@@ -36,7 +38,7 @@
                [:td (view (h r))]))]))]]))
 
 (defn scicloj-libs-model->table [model]
-  {:header [:library #_#_ :lib/name :lib/url #_:lib/category :tags :star]
+  {:header [:library :star :description #_#_ :lib/name :lib/url #_:lib/category :tags]
    :rows (apply concat (:libs model))
    :viewers {:star (fn [item]
                      (when (= item :star)
@@ -54,16 +56,19 @@
    [:p "Clacks: " (:clicks @state)]
    [:p [:button {:on-click #(swap! state update :clicks inc)}
         "Click me!"]]
-   [:h2 "Plain HTML table"]
    (when-let [response (:raw-response @state)]
      (let [model (edn/read-string response)]
        [:div
-        [view-table (scicloj-libs-model->table model)]
-        ]))
+        [:h2 "What data do we have?"]
+        [view (keys (ffirst (:libs model)))]
+        [:p "Slight problem: description contains markdown."
+         #_" So we should really try to render that properly."]
 
-   [:h2 "Fancy table"]
-   [:p "try that data thing."]
+        [:h2 "Plain HTML table"]
+        [view-table (merge {:id "table1"}
+                           (scicloj-libs-model->table model))]
 
-   ])
+        [:h2 "Fancy table"]
+        [:p "try that data thing."]]))])
 
 (GET "https://scicloj.github.io/docs/resources/model.edn" {:handler set-raw-response!})

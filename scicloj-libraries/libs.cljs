@@ -14,8 +14,7 @@
 
 (defn set-raw-response! [response]
   (swap! state assoc :raw-response response)
-  (.DataTable (js/$ "#table2"))
-  )
+  (.DataTable (js/$ "#table2")))
 
 (defn view [data]
   [:pre (pr-str data)])
@@ -75,7 +74,7 @@
                            (scicloj-libs-model->table model))]
 
         [:h2 {:id "fancy"} "Fancy table"]
-        [:p "try that data thing."]
+        [:p "Try using a " [:a {:href "https://datatables.net/"} "JQuery data table"] "."]
         [view-table (merge {:id "table2"}
                            (scicloj-libs-model->table model))]
         ]))])

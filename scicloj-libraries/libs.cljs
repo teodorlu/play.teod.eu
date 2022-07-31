@@ -13,7 +13,9 @@
                     }))
 
 (defn set-raw-response! [response]
-  (swap! state assoc :raw-response response))
+  (swap! state assoc :raw-response response)
+  (.DataTable (js/$ "#table2"))
+  )
 
 (defn view [data]
   [:pre (pr-str data)])
@@ -56,6 +58,10 @@
    [:p "Clacks: " (:clicks @state)]
    [:p [:button {:on-click #(swap! state update :clicks inc)}
         "Click me!"]]
+   [:h2 "Table of contents"]
+   [:ol
+    [:li [:a {:href "#plain"} "Plain table"]]
+    [:li [:a {:href "#fancy"} "Fancy table"]]]
    (when-let [response (:raw-response @state)]
      (let [model (edn/read-string response)]
        [:div
@@ -64,11 +70,14 @@
         [:p "Slight problem: description contains markdown."
          #_" So we should really try to render that properly."]
 
-        [:h2 "Plain HTML table"]
+        [:h2 {:id "plain"} "Plain HTML table"]
         [view-table (merge {:id "table1"}
                            (scicloj-libs-model->table model))]
 
-        [:h2 "Fancy table"]
-        [:p "try that data thing."]]))])
+        [:h2 {:id "fancy"} "Fancy table"]
+        [:p "try that data thing."]
+        [view-table (merge {:id "table2"}
+                           (scicloj-libs-model->table model))]
+        ]))])
 
 (GET "https://scicloj.github.io/docs/resources/model.edn" {:handler set-raw-response!})

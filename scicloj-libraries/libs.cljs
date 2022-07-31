@@ -17,15 +17,12 @@
 (defn view [data]
   [:pre (pr-str data)])
 
-(defn table2 [{}]
-  [:table [:thead [:th "x"] [:th "y"]]
-   [:tbody [:tr [:td 1] [:td 2]]]])
-
-(defn table3 [{:keys [rows header viewers]}]
+(defn view-table [{:keys [rows header viewers]}]
   [:table [:thead
            (for [h header]
+
              [:th h])]
-   [:tbody [:tr [:td 1] [:td 2]]
+   [:tbody
     (for [r rows]
       [:tr
        (for [h header]
@@ -34,18 +31,15 @@
 
 (defn table []
   [:div
+   #_#_
    [:p "Clacks: " (:clicks @state)]
    [:p [:button {:on-click #(swap! state update :clicks inc)}
         "Click me!"]]
    (when-let [response (:raw-response @state)]
      (let [model (edn/read-string response)]
        [:div
-        [view (keys model)]
-        [view (first (:tags model))]
-        [view (ffirst (:libs model))]
-        [table2]
-        [table3 {:header [:lib/name :lib/url :lib/category :tags :star]
-                 :rows (first (:libs model))
+        [view-table {:header [:lib/name :lib/url #_:lib/category :tags :star]
+                 :rows (apply concat (:libs model))
                  :viewers {:star (fn [item]
                                    (when (= item :star)
                                      "⭐"))}

@@ -39,3 +39,12 @@ What  specifically?
    What does it feel like when there's just me, the computer and its memory?
 3. I want to be able to draw high-performance graphics!
 4. I want to be able to write high-performance code.
+* A generic place to store data
+Possibly =store.teod.eu=.
+
+Why?
+
+- Dump data from different places
+- Experiment with data capture
+
+"Personal information architecture"

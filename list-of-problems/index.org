@@ -53,11 +53,11 @@ Here's the ZSH code:
 
 #+begin_src
 teod_fzf_cd () {
-	root="$1"
-	depth="$2"
-	folders=$(cd "$root" && find . -mindepth "$depth" -maxdepth "$depth" | sed "s|^./||g" | sort )
-	folder=$(echo "$folders" | fzf)
-	cd "$root/$folder"
+    root="$1"
+    depth="$2"
+    folders=$(cd "$root" && find . -mindepth "$depth" -maxdepth "$depth" | sed "s|^./||g" | sort )
+    folder=$(echo "$folders" | fzf)
+    cd "$root/$folder"
 }
 #+end_src
 

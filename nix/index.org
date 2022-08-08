@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: 31e6ddd8-3006-42ee-9c74-68b00a69dee0
+:END:
+#+TITLE: I want to learn Nix
+
+[[file:..][..]]
+
+* I want to learn nix
+** How to started (Kevin)
+- Use experimental flag
+- Use flakes
+** Create dev shell for projects
+#+begin_quote
+I suggest enabling nix flakes, and then, as mentioned, creating a dev shell for one of your projects.
+#+end_quote
+
+Source: https://clojurians.slack.com/archives/C02S1GEKU4C/p1658237327723759?thread_ts=1658231230.656289&cid=C02S1GEKU4C
+** Use Nix to enable cross-Python version testing for =hotload=
+See: https://github.com/jlesquembre/hotload/blob/master/flake.nix

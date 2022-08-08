@@ -9,6 +9,8 @@
 ** How to started (Kevin)
 - Use experimental flag
 - Use flakes
+
+Reference: https://nixos.wiki/wiki/Flakes
 ** Create dev shell for projects
 #+begin_quote
 I suggest enabling nix flakes, and then, as mentioned, creating a dev shell for one of your projects.

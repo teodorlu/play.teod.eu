@@ -5,6 +5,7 @@
 
 [[./..][..]]
 
+* Rant
 "Documentation".
 Man, that killed off the conversation quickly, didn't it?
 
@@ -52,3 +53,10 @@ Are others able to find it?
 And do others actually engage with it?
 
 I find it to be a great shame that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never care again.
+* Rationale
+Why care?
+
+Because understanding how to structure knowledge properly turns situations of total confusion into interesting design problems.
+
+Who knows what?
+Who needs to know what?

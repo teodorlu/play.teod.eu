@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: 56cfb6c9-d78c-44f2-baed-6082654be2f4
+:END:
+#+TITLE: Working with XML on the web
+
+[[file:..][..]]
+
+* Problem statement
+We're working in a browser environment.
+Typescript and react.
+We're getting some XML over the wire.
+It contains HTML we want to preview.
+
+How do we do that?
+
+Idea: just use browser APIs.
+
+So, let's try that.
+* Discover the sandbox
+[[file:xml-content-web.html][SANDBOX]]

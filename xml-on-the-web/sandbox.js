@@ -1,5 +1,5 @@
 const getXml = () => {
-  return `
+  const rawCueXML = `
 <entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:metadata="http://xmlns.escenic.com/2010/atom-metadata">
 
   <id> http://ece5.snapshot.api.no/dala/webservice/escenic/content/498373 </id> <link rel="self" href="http://ece5.snapshot.api.no/dala/webservice/escenic/content/498373" type="application/atom+xml; type=entry"/> <link rel="http://www.vizrt.com/types/relation/lock" href="http://ece5.snapshot.api.no/dala/webservice/escenic/lock/article/498373/24370377" type="application/atom+xml; type=entry"/> <link href="http://ece5.snapshot.api.no/dala/webservice/escenic/publication/dalane-tidende/" rel="http://www.vizrt.com/types/relation/top" type="application/atom+xml; type=entry" title="dalane-tidende"/> <link href="http://ece5.snapshot.api.no/dala/webservice/escenic/publication/dalane-tidende/" rel="http://www.vizrt.com/types/relation/publication" type="application/atom+xml; type=entry" title="dalane-tidende"/> <link rel="http://www.vizrt.com/types/relation/more-info" href="http://ece5.snapshot.api.no/dala/webservice-extensions/core/article-history/?language=%7Blanguage%7D&amp;locale=%7Blocale%7D&amp;url=http://ece5.snapshot.api.no/dala/webservice/escenic/content/498373/log/" type="application/atom+xml; type=entry" title="History"/>
@@ -75,16 +75,24 @@ const getXml = () => {
   <link href="http://ece5.snapshot.api.no/dala/webservice/thumbnail/article/498411" rel="thumbnail" type="image/png"/>
 </entry>
 `
-
+    // the querySelector API doesn't support : in field names, so we replace the fields we need with underscores.
+    const queryableXmlString = rawCueXML.replaceAll("vdf:field", "vdf_field").replaceAll("vdf:value", "vdf_value")
+    return queryableXmlString
 }
 
 const placeholderElementId = "waiting-for-xml"
 
 const xml = document.createElement("div")
 xml.innerHTML = getXml()
-console.log(xml)
+// console.log(xml)
 
 // console.log(xml.querySelector("vdf:field[name=body]"))
-console.log(xml.querySelector("vdf"))
+// console.log(xml.querySelector("vdf"))
 
 document.getElementById(placeholderElementId).innerHTML = xml.innerHTML
+
+// console.log(document.getElementById(placeholderElementId).querySelector("div"))
+// console.log(document.getElementById(placeholderElementId).querySelector("\"vdf:field\""))
+console.log(xml)
+
+console.log(xml.querySelector("vdf_field[name='body'] > vdf_value"))

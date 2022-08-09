@@ -66,3 +66,14 @@ Why babashka?
 1. I prefer to maintain Clojure code to maintain ZSH code.
 2. Wait, I need a wrapper regardless.
    Otherwise =cd= doesn't work.
+* What is the list of concepts a new developer should be introduced to?
+** Motivating context
+A new developer arrives.
+We want to:
+
+- allow the new developer to become effective quickly
+- build a habit of discussing & synthesizing team knowledge
+** Idea
+We build our knowledge as a language.
+We prioritize its words.
+For those words, we write motivating essays.

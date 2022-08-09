@@ -83,3 +83,8 @@ const placeholderElementId = "waiting-for-xml"
 const xml = document.createElement("div")
 xml.innerHTML = getXml()
 console.log(xml)
+
+// console.log(xml.querySelector("vdf:field[name=body]"))
+console.log(xml.querySelector("vdf"))
+
+document.getElementById(placeholderElementId).innerHTML = xml.innerHTML

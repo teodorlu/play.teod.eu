@@ -17,4 +17,4 @@ Idea: just use browser APIs.
 
 So, let's try that.
 * Discover the sandbox
-[[file:sandbox.html][SANDBOX]]
+See [[file:sandbox.html]] or [[file:sandbox.js]].

@@ -130,6 +130,8 @@ const getXml = () => {
 
 }
 
-var xml = document.createElement("div")
+const placeholderElementId = "waiting-for-xml"
+
+const xml = document.createElement("div")
 xml.innerHTML = getXml()
 console.log(xml)

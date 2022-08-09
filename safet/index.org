@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID: 633ba20a-3d16-4f7c-961d-310a74dc91c3
-:END:
-#+TITLE: Hei, Safet!
-
-[[file:..][..]]
-
-Hei på deg!!!!

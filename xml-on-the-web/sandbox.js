@@ -82,17 +82,35 @@ const getXml = () => {
 
 const placeholderElementId = "waiting-for-xml"
 
-const xml = document.createElement("div")
-xml.innerHTML = getXml()
-// console.log(xml)
+const iframePlaceholderId = "xml-frame"
 
-// console.log(xml.querySelector("vdf:field[name=body]"))
-// console.log(xml.querySelector("vdf"))
+// Approach -- edit DOM directly
+const showDirectlyInDom = () => {
+    const xml = document.createElement("div")
+    xml.innerHTML = getXml()
+    // console.log(xml)
 
-document.getElementById(placeholderElementId).innerHTML = xml.innerHTML
+    // console.log(xml.querySelector("vdf:field[name=body]"))
+    // console.log(xml.querySelector("vdf"))
 
-// console.log(document.getElementById(placeholderElementId).querySelector("div"))
-// console.log(document.getElementById(placeholderElementId).querySelector("\"vdf:field\""))
-console.log(xml)
+    document.getElementById(placeholderElementId).innerHTML = xml.innerHTML
 
-console.log(xml.querySelector("vdf_field[name='body'] > vdf_value"))
+    // console.log(document.getElementById(placeholderElementId).querySelector("div"))
+    // console.log(document.getElementById(placeholderElementId).querySelector("\"vdf:field\""))
+    console.log(xml)
+
+    console.log(xml.querySelector("vdf_field[name='body'] > vdf_value"))
+}
+
+// showDirectlyInDom()
+
+// Approach: insert into iframe
+const showInIframe = () => {
+    // document.getElementById(iframePlaceholderId).innerHTML = getXml()
+    document.getElementById(iframePlaceholderId).setAttribute("srcdoc", getXml())
+    console.log(document.getElementById(iframePlaceholderId))
+}
+
+showInIframe()
+document.getElementById(iframePlaceholderId).setAttribute("width", "90%")
+document.getElementById(iframePlaceholderId).setAttribute("height", "600px")

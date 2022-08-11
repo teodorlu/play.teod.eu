@@ -15,7 +15,7 @@ I propose: /One Good Goal Plus Options/.
 What does "Thing is valuable" mean?
 We have done sufficient work on business risk, usability risk and value risk to know that this makes sense.
 
-"Plus Options" - set expectations /not/ that devs spend 100 % of their time chasing the single goal.
+"Plus Options" - set expectations that devs /not/ spend 100 % of their time chasing the single goal.
 Rather - enable optionality.
 
 Optionality requires:

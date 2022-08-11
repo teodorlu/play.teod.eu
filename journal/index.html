@@ -384,7 +384,12 @@ day</a></li>
 <li><a href="#how-do-i-want-to-work" id="toc-how-do-i-want-to-work">How
 do I want to work?</a></li>
 </ul></li>
-<li><a href="#section-15" id="toc-section-15">2022-08-11</a></li>
+<li><a href="#section-15" id="toc-section-15">2022-08-11</a>
+<ul class="incremental">
+<li><a href="#i-want-live.js-to-work-on-this-site"
+id="toc-i-want-live.js-to-work-on-this-site">I want Live.js to work on
+this site</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -1180,5 +1185,22 @@ ignore you (book)</em></span></li>
 <li>OG spør “hva kan jeg gjøre for å hjelpe deg?”</li>
 </ul>
 <h2 id="section-15">2022-08-11</h2>
+<p>Hello.</p>
+<h3 id="i-want-live.js-to-work-on-this-site">I want Live.js to work on
+this site</h3>
+<p>Live.js: <a href="https://livejs.com/">https://livejs.com/</a></p>
+<p>I’m hosting with Cloudflare.</p>
+<p>Problem: there’s no live-reload.</p>
+<p>Diagnosis: Cloudlfare sends the same headers on each request. That’s
+meant to disallow caching. But in my case, it causes cache invalidation
+to never happen – opposite of the intended effect. I could fork live.js
+if I want, it’s small.</p>
+<p>To get Live.js working with Cloudlfare, I need Cloudflare to produce
+correct <code class="verbatim">etag</code> headers. That means I need to
+disable some Cloudflare stuff.</p>
+<p>General Cloudflare Etag docs: <a
+href="https://support.cloudflare.com/hc/en-us/articles/218505467-Using-ETag-Headers-with-Cloudflare">https://support.cloudflare.com/hc/en-us/articles/218505467-Using-ETag-Headers-with-Cloudflare</a></p>
+<p>Cloudflare pages dog, mentions etags: <a
+href="https://developers.cloudflare.com/pages/platform/serving-pages/">https://developers.cloudflare.com/pages/platform/serving-pages/</a></p>
 </body>
 </html>

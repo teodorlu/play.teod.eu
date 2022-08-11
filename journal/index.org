@@ -704,3 +704,22 @@ Principles to prevent burnout, mess and loss of the strategic picture.
     - Demo. Lavterskel, men prøve å gjøre det bra.
 - OG spør "hva kan jeg gjøre for å hjelpe deg?"
 * 2022-08-11
+Hello.
+** I want Live.js to work on this site
+Live.js: https://livejs.com/
+
+I'm hosting with Cloudflare.
+
+Problem: there's no live-reload.
+
+Diagnosis: Cloudlfare sends the same headers on each request.
+That's meant to disallow caching.
+But in my case, it causes cache invalidation to never happen -- opposite of the intended effect.
+I could fork live.js if I want, it's small.
+
+To get Live.js working with Cloudlfare, I need Cloudflare to produce correct =etag= headers.
+That means I need to disable some Cloudflare stuff.
+
+General Cloudflare Etag docs: https://support.cloudflare.com/hc/en-us/articles/218505467-Using-ETag-Headers-with-Cloudflare
+
+Cloudflare pages dog, mentions etags: https://developers.cloudflare.com/pages/platform/serving-pages/

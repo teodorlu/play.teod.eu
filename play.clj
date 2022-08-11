@@ -14,7 +14,6 @@
 ;; Wanted commands:
 ;;
 ;;   ./play index > index.html # generate index.html
-;;   ./play makefile > makefile # generate makefile
 ;;   ./play preview
 ;;
 ;; Wanted behavior:

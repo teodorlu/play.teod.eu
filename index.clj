@@ -49,55 +49,55 @@
 
 (defn org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian wtf-is-this other forever-incomplete]} (group-by :category pages)
-        sentences (fn [& ss] (str/join " " ss))]
-    (str/join "\n"
-              (concat
-               ["#+title: Towards an iterated game"
-                ""
-                (sentences "Intent: bring ideas to life."
-                           "Discuss, sharpen, play."
-                           "Minimize the distance between intent and reality.")
-                ""
-                (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
-                           "Embrace remix culture.")
+        sentences (fn [& ss] (str/join " " ss))
+        lines (fn [& ls] (str/join "\n" (apply concat ls)))]
+    (lines
+     ["#+title: Towards an iterated game"
+      ""
+      (sentences "Intent: bring ideas to life."
+                 "Discuss, sharpen, play."
+                 "Minimize the distance between intent and reality.")
+      ""
+      (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
+                 "Embrace remix culture.")
 
-                ""
-                "Status: work in progress, lots of rough edges."
-                ""]
+      ""
+      "Status: work in progress, lots of rough edges."
+      ""]
 
-               ["** Ready for comments"]
-               (for [page ready-for-comments]
-                 (str "- " (link page)))
+     ["** Ready for comments"]
+     (for [page ready-for-comments]
+       (str "- " (link page)))
 
-               (when (seq other)
-                 ["** Uncategorized\n"
-                  (str/join " --- " (for [page other] (link page)))
-                  ""])
+     (when (seq other)
+       ["** Uncategorized\n"
+        (str/join " --- " (for [page other] (link page)))
+        ""])
 
-               (when (seq forever-incomplete)
-                 ["** Forever incomplete\n"
-                  (str/join " --- " (for [page forever-incomplete] (link page)))
-                  ""])
+     (when (seq forever-incomplete)
+       ["** Forever incomplete\n"
+        (str/join " --- " (for [page forever-incomplete] (link page)))
+        ""])
 
-               ["** Vague ideas, please ignore."
-                ""
-                "Links to these mostly exist for me (Teodor)."
-                "But still open, information wants to be free."
-                ""
-                (str/join " · " (for [page wtf-is-this] (link page)))
-                ""]
+     ["** Vague ideas, please ignore."
+      ""
+      "Links to these mostly exist for me (Teodor)."
+      "But still open, information wants to be free."
+      ""
+      (str/join " · " (for [page wtf-is-this] (link page)))
+      ""]
 
-               [""
-                "** Norwegian content"
-                ""
-                "Not everybody speaks Norwegian. But some do!"
-                ""]
-               (for [page norwegian] (str "- " (link page)))
+     [""
+      "** Norwegian content"
+      ""
+      "Not everybody speaks Norwegian. But some do!"
+      ""]
+     (for [page norwegian] (str "- " (link page)))
 
-               ["** Comments? Hit me up."
-                "Details on [[https://teod.eu][teod.eu]]."]
-               [""
-                "** Efforts at \"writing things down together\" commonly fail because:
+     ["** Comments? Hit me up."
+      "Details on [[https://teod.eu][teod.eu]]."]
+     [""
+      "** Efforts at \"writing things down together\" commonly fail because:
 
 1. We put things prematurely into large hierarchies that collapse
 2. The inability to critique the hierarchy itself --- and iterate on the hierarchy
@@ -112,19 +112,19 @@
 
 I include this list as a personal reminder.
 "]
-               ["** What is this?"
-                ""
-                "Good question :)"
-                "Having a look at the source might be useful: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]."
-                ""
-                "PRs are probably a bad idea."
-                "I prefer a good discussion to rewriting each other's ideas."
-                "And please, let yourself be inspired if you want to create something similar."
-                ""
-                "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
-                ]
+     ["** What is this?"
+      ""
+      "Good question :)"
+      "Having a look at the source might be useful: [[https://github.com/teodorlu/play.teod.eu][teodorlu/play.teod.eu]]."
+      ""
+      "PRs are probably a bad idea."
+      "I prefer a good discussion to rewriting each other's ideas."
+      "And please, let yourself be inspired if you want to create something similar."
+      ""
+      "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
+      ]
 
-               ))))
+     )))
 
 ;; For development:
 ;;

@@ -725,3 +725,5 @@ General Cloudflare Etag docs: https://support.cloudflare.com/hc/en-us/articles/2
 Cloudflare pages dog, mentions etags: https://developers.cloudflare.com/pages/platform/serving-pages/
 ** Do I have live reload in production now?
 Pretty pleeeease
+** Yes!
+!!!

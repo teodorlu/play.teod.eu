@@ -646,7 +646,7 @@ xx
 ** xx
 bimodal strategies
 
-deep work. Tactical initiatives, strategic initiatives.
+deep work, tactical initiatives, strategic initiatives
 
 Applying bimodal strategies to the design of the daily effort.
 ** produce documents
@@ -703,3 +703,4 @@ Principles to prevent burnout, mess and loss of the strategic picture.
     - Her - nå ønsker jeg å vise fram hva jeg har gjort.
     - Demo. Lavterskel, men prøve å gjøre det bra.
 - OG spør "hva kan jeg gjøre for å hjelpe deg?"
+* 2022-08-11

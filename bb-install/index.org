@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0
 :END:
-#+TITLE: =bb-install= - a draft
+#+TITLE: =bb-install= --- a draft
 
 [[file:..][..]]
 

@@ -14,6 +14,6 @@ chmod +x ~/.local/bin/bb-install
 
 To install a script with =bb-install=:
 
-1. Create a Babashka project with a =bb.edn= file, and a clojure namespace with a =main= function.
+1. Create a Babashka project with a =bb.edn= file, and a clojure namespace with a =-main= function.
 2. Install with: =bb-install PATH_TO_BB_EDN --main MAIN_NS=
    - CLI arguments =--dry-run= and =--install-dir= are optional.

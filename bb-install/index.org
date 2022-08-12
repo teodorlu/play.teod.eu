@@ -5,6 +5,10 @@
 
 [[file:..][..]]
 
+Source for =bb-install= draft: https://github.com/teodorlu/play.teod.eu/tree/master/bb-install/bb_install.clj
+Supports local files.
+Does not support installing stuff from the internet.
+
 To install =bb-install=:
 
 #+begin_src

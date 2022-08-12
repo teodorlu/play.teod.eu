@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>bb-install</title>
+  <title>bb-install - a draft</title>
   <style>
     html {
       line-height: 1.5;
@@ -162,9 +162,26 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">bb-install</h1>
+<h1 class="title"><code class="verbatim">bb-install</code> - a
+draft</h1>
 </header>
 <p><a href="..">..</a></p>
-<p>DRAFT</p>
+<p>To install <code class="verbatim">bb-install</code>:</p>
+<pre><code>wget -O ~/.local/bin/bb-install https://play.teod.eu/bb-install/bb-install.clj
+chmod +x ~/.local/bin/bb-install
+</code></pre>
+<p>To install a script with <code
+class="verbatim">bb-install</code>:</p>
+<ol class="incremental">
+<li>Create a Babashka project with a <code
+class="verbatim">bb.edn</code> file, and a clojure namespace with a
+<code class="verbatim">main</code> function.</li>
+<li>Install with: <code
+class="verbatim">bb-install PATH_TO_BB_EDN --main MAIN_NS</code>
+<ul class="incremental">
+<li>CLI arguments <code class="verbatim">--dry-run</code> and <code
+class="verbatim">--install-dir</code> are optional.</li>
+</ul></li>
+</ol>
 </body>
 </html>

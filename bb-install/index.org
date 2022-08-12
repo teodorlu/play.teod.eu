@@ -1,8 +1,19 @@
 :PROPERTIES:
 :ID: 07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0
 :END:
-#+TITLE: bb-install
+#+TITLE: =bb-install= - a draft
 
 [[file:..][..]]
 
-DRAFT
+To install =bb-install=:
+
+#+begin_src
+wget -O ~/.local/bin/bb-install https://play.teod.eu/bb-install/bb-install.clj
+chmod +x ~/.local/bin/bb-install
+#+end_src
+
+To install a script with =bb-install=:
+
+1. Create a Babashka project with a =bb.edn= file, and a clojure namespace with a =main= function.
+2. Install with: =bb-install PATH_TO_BB_EDN --main MAIN_NS=
+   - CLI arguments =--dry-run= and =--install-dir= are optional.

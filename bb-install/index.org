@@ -22,3 +22,35 @@ To install a script with =bb-install=:
 1. Create a Babashka project with a =bb.edn= file, and a clojure namespace with a =-main= function.
 2. Install with: =bb-install PATH_TO_BB_EDN --main MAIN_NS=
    - CLI arguments =--dry-run= and =--install-dir= are optional.
+* Potentially weird stuff
+"main arg as script filename" might be confusing.
+Right now, installing =babashka.neil= would give an executable named =babashka.neil= (I think)
+
+I tried installing Neil with the script.
+That got me into trouble.
+Here's the stacktrace:
+
+#+begin_src shell-script
+$ bb-install ~/dev/teodorlu/neil/bb.edn -m babashka.neil
+$ babashka.neil
+----- Error --------------------------------------------------------------------
+Type:     java.lang.Exception
+Message:  Could not find namespace: borkdude.rewrite-edn.
+Location: /home/teodorlu/dev/teodorlu/neil/src/babashka/neil/project.clj:2:3
+
+----- Context ------------------------------------------------------------------
+1: (ns babashka.neil.project
+2:   (:require
+     ^--- Could not find namespace: borkdude.rewrite-edn.
+3:    [babashka.fs :as fs]
+4:    [borkdude.rewrite-edn :as r]
+5:    [clojure.edn :as edn]))
+6:
+7: (defn resolve-deps-file [dir deps-file]
+
+----- Stack trace --------------------------------------------------------------
+babashka.neil.project - /home/teodorlu/dev/teodorlu/neil/src/babashka/neil/project.clj:2:3
+babashka.neil.new     - /home/teodorlu/dev/teodorlu/neil/src/babashka/neil/new.clj:3:3
+babashka.neil         - /home/teodorlu/dev/teodorlu/neil/src/babashka/neil.clj:3:3
+user                  - <expr>:1:10
+#+end_src

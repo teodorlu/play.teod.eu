@@ -8,7 +8,7 @@
 To install =bb-install=:
 
 #+begin_src
-wget -O ~/.local/bin/bb-install https://play.teod.eu/bb-install/bb-install.clj
+wget -O ~/.local/bin/bb-install https://play.teod.eu/bb-install/bb_install.clj
 chmod +x ~/.local/bin/bb-install
 #+end_src
 

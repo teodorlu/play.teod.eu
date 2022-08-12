@@ -1,3 +1,5 @@
+#!/usr/bin/env bb
+
 (ns bb-install
   (:require [babashka.cli :as cli]
             [babashka.fs :as fs]

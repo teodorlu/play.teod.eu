@@ -832,3 +832,13 @@ echo "$MINIMAL_PANDOC_JSON" \
 #+end_src
 
 Should print some modified JSON.
+
+Hmmm --- realizing that I really want to work on this in terms of a Clojure pandoc library.
+Perhaps just try to work on it as a library from the start?
+
+But should it be as its own thing?
+
+pandop -- stealing a bit of data oriented programming for the name.
+
+yeah, just start in a repo.
+It's easy to import & use that from babashka.

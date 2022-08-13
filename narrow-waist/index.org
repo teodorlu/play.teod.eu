@@ -51,3 +51,5 @@ Where is legibility?
     But you'll know for sure that there aren't architectural layers that don't do anything
 * Hourglass architecture are only possible for suitable problems
 If the problem is messy, a clean "narrow waist" solution might not be possible.
+* Related: eev
+http://angg.twu.net/eev-article.html

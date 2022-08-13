@@ -28,6 +28,7 @@
 
 (defn category [{:keys [lang readiness] :as page}]
   (cond
+    (and (= readiness :wtf-is-this) (= lang :no)) :wtf-is-this-norwegian
     (= lang :no) :norwegian
     (= readiness :ready-for-comments) :ready-for-comments
     (= readiness :wtf-is-this) :wtf-is-this
@@ -48,7 +49,7 @@
   (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
-  (let [{:keys [ready-for-comments norwegian wtf-is-this other forever-incomplete]} (group-by :category pages)
+  (let [{:keys [ready-for-comments norwegian wtf-is-this wtf-is-this-norwegian other forever-incomplete]} (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
         lines (fn [& ls] (str/join "\n" (apply concat ls)))]
     (lines
@@ -79,6 +80,13 @@
         (str/join " --- " (for [page forever-incomplete] (link page)))
         ""])
 
+     ["** Norwegian content"
+      ""
+      "Not everybody speaks Norwegian. But some do!"
+      ""]
+     (for [page norwegian] (str "- " (link page)))
+     [""]
+
      ["** Vague ideas, please ignore."
       ""
       "Links to these mostly exist for me (Teodor)."
@@ -87,12 +95,12 @@
       (str/join " · " (for [page wtf-is-this] (link page)))
       ""]
 
-     [""
-      "** Norwegian content"
+     ["** Vague ideas in Norwegian, please ignore these too."
       ""
-      "Not everybody speaks Norwegian. But some do!"
-      ""]
-     (for [page norwegian] (str "- " (link page)))
+      (str/join " · " (for [page wtf-is-this-norwegian] (link page)))
+      ""
+      ]
+
 
      ["** Comments? Hit me up."
       "Details on [[https://teod.eu][teod.eu]]."]

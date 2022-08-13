@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 32bffa13-d4fb-4ae7-9718-855b0d4130d2
+:END:
+#+TITLE: Terminalen: Hvordan løpe med motorsag
+
+[[file:..][..]]
+
+Potensielt kursopplegg.
+
+* hvordan lære fort
+1. rask feedbackloop
+2. få bevegelige deler

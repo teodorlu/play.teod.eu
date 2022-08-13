@@ -818,3 +818,17 @@ But then I need to start writing the Org IDs to play.edn.
 Does that happen on new pages now?
 
 No, it does not.
+* 2022-08-13
+** I want to fix the links.
+*** how
+define a dry-run command
+
+or, it doesn't have to be a dry-run, it can just output.
+No mutation needed.
+
+#+begin_src shell-script
+echo "$MINIMAL_PANDOC_JSON" \
+    | ./play.clj resolve-links
+#+end_src
+
+Should print some modified JSON.

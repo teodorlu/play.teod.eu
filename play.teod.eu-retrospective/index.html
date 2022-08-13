@@ -367,6 +367,11 @@ id="toc-problem-i-keep-creating-journal-things-that-dont-quite-cut-it">Problem
 <li><a href="#links-are-still-broken."
 id="toc-links-are-still-broken.">links are still broken.</a></li>
 </ul></li>
+<li><a href="#section-9" id="toc-section-9">2022-08-13</a>
+<ul class="incremental">
+<li><a href="#i-want-to-fix-the-links."
+id="toc-i-want-to-fix-the-links.">I want to fix the links.</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -1388,5 +1393,15 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb18-1"><a
 <p>But then I need to start writing the Org IDs to play.edn.</p>
 <p>Does that happen on new pages now?</p>
 <p>No, it does not.</p>
+<h2 id="section-9">2022-08-13</h2>
+<h3 id="i-want-to-fix-the-links.">I want to fix the links.</h3>
+<h4 id="how">how</h4>
+<p>define a dry-run command</p>
+<p>or, it doesn’t have to be a dry-run, it can just output. No mutation
+needed.</p>
+<pre class="shell-script"><code>echo &quot;$MINIMAL_PANDOC_JSON&quot; \
+    | ./play.clj resolve-links
+</code></pre>
+<p>Should print some modified JSON.</p>
 </body>
 </html>

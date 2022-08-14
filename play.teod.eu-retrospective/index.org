@@ -842,3 +842,74 @@ pandop -- stealing a bit of data oriented programming for the name.
 
 yeah, just start in a repo.
 It's easy to import & use that from babashka.
+* 2022-08-14
+** Links AGAIN
+1. Wrote a little Pandoc toolbox: https://github.com/teodorlu/pandoc-toolbox/
+2. Want to consume it
+3. Want that nice subcommand listing, but it ... sucks, really.
+
+#+begin_src
+./play.clj
+Usage: ./play.clj <subcommand> <options>
+
+Subcommands:
+
+page SLUG :title PAGE_TITLE
+
+relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
+
+makefile [--dry-run]
+
+index-by-uuid [--dry-run]
+#+end_src
+
+#+begin_src
+Usage: neil <subcommand> <options>
+
+Most subcommands support the options:
+  --alias      Override alias name.
+  --deps-file  Override deps.edn file name.
+
+Subcommands:
+
+add
+  dep    Alias for `neil dep add`.
+  test   adds cognitect test runner to :test alias.
+  build  adds tools.build build.clj file and :build alias.
+  kaocha adds kaocha test runner to :koacha alias.
+  nrepl  adds nrepl server to :nrepl alias.
+
+dep
+  add: Adds --lib, a fully qualified symbol, to deps.edn :deps.
+    Run neil add dep --help to see all options.
+#+end_src
+
+How does neil's helptext work?
+It's handwritten.
+
+What about the add command?
+Auto-generated!
+
+#+begin_src clojure
+(defn print-dep-add-help []
+  (println "Usage: neil add dep [lib] [options]")
+  (println "Options:")
+  (println (cli/format-opts
+            {:spec spec
+             :order [:lib :version :sha :latest-sha :deps/root :as :alias :deps-file]})))
+#+end_src
+
+Here it is in use:
+
+#+begin_src
+Usage: neil add dep [lib] [options]
+Options:
+  --lib                         Fully qualified library name.
+  --version                     Optional. When not provided, picks newest version [...]
+  --sha                         When provided, assumes lib refers to Github repo.
+  --latest-sha                  When provided, assumes lib refers to Github repo [...]
+  --deps/root                   Sets deps/root to give value.
+  --as                          Use as dependency name in deps.edn
+  --alias      <alias>          Add to alias <alias>.
+  --deps-file  <file>  deps.edn Add to <file> instead of deps.edn.
+#+end_src

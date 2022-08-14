@@ -21,7 +21,8 @@
 ;;   When I create a new page, I write :author-url and :created-at
 
 (require '[babashka.deps :as deps])
-(deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.31"}}})
+(deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.3.31"}
+                        eu.teod/pandoc-toolbox {:local/root "../pandoc-toolbox"}}})
 (require '[babashka.cli :as cli]
          '[babashka.fs :as fs]
          '[clojure.java.shell]

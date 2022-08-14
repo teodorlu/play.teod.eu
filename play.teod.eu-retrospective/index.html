@@ -372,6 +372,10 @@ id="toc-links-are-still-broken.">links are still broken.</a></li>
 <li><a href="#i-want-to-fix-the-links."
 id="toc-i-want-to-fix-the-links.">I want to fix the links.</a></li>
 </ul></li>
+<li><a href="#section-10" id="toc-section-10">2022-08-14</a>
+<ul class="incremental">
+<li><a href="#links-again" id="toc-links-again">Links AGAIN</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -1411,5 +1415,66 @@ the start?</p>
 name.</p>
 <p>yeah, just start in a repo. It’s easy to import &amp; use that from
 babashka.</p>
+<h2 id="section-10">2022-08-14</h2>
+<h3 id="links-again">Links AGAIN</h3>
+<ol class="incremental">
+<li>Wrote a little Pandoc toolbox: <a
+href="https://github.com/teodorlu/pandoc-toolbox/">https://github.com/teodorlu/pandoc-toolbox/</a></li>
+<li>Want to consume it</li>
+<li>Want that nice subcommand listing, but it … sucks, really.</li>
+</ol>
+<pre><code>./play.clj
+Usage: ./play.clj &lt;subcommand&gt; &lt;options&gt;
+
+Subcommands:
+
+page SLUG :title PAGE_TITLE
+
+relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
+
+makefile [--dry-run]
+
+index-by-uuid [--dry-run]
+</code></pre>
+<pre><code>Usage: neil &lt;subcommand&gt; &lt;options&gt;
+
+Most subcommands support the options:
+  --alias      Override alias name.
+  --deps-file  Override deps.edn file name.
+
+Subcommands:
+
+add
+  dep    Alias for `neil dep add`.
+  test   adds cognitect test runner to :test alias.
+  build  adds tools.build build.clj file and :build alias.
+  kaocha adds kaocha test runner to :koacha alias.
+  nrepl  adds nrepl server to :nrepl alias.
+
+dep
+  add: Adds --lib, a fully qualified symbol, to deps.edn :deps.
+    Run neil add dep --help to see all options.
+</code></pre>
+<p>How does neil’s helptext work? It’s handwritten.</p>
+<p>What about the add command? Auto-generated!</p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> print-dep-add-help </span>[]</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">println</span> <span class="st">&quot;Usage: neil add dep [lib] [options]&quot;</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">println</span> <span class="st">&quot;Options:&quot;</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">println</span> (cli/format-opts</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>            {<span class="at">:spec</span> spec</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">:order</span> [<span class="at">:lib</span> <span class="at">:version</span> <span class="at">:sha</span> <span class="at">:latest-sha</span> <span class="at">:deps/root</span> <span class="at">:as</span> <span class="at">:alias</span> <span class="at">:deps-file</span>]})))</span></code></pre></div>
+<p>Here it is in use:</p>
+<pre><code>Usage: neil add dep [lib] [options]
+Options:
+  --lib                         Fully qualified library name.
+  --version                     Optional. When not provided, picks newest version [...]
+  --sha                         When provided, assumes lib refers to Github repo.
+  --latest-sha                  When provided, assumes lib refers to Github repo [...]
+  --deps/root                   Sets deps/root to give value.
+  --as                          Use as dependency name in deps.edn
+  --alias      &lt;alias&gt;          Add to alias &lt;alias&gt;.
+  --deps-file  &lt;file&gt;  deps.edn Add to &lt;file&gt; instead of deps.edn.
+</code></pre>
 </body>
 </html>

@@ -217,16 +217,30 @@ DRAFT
 (defn thing [{:keys [x y]}]
   (list x y))
 
+(defn builder [rel]
+  (:builder rel :pandoc-page))
+
+(defmulti makefile-entry builder)
+
+(defmethod makefile-entry :pandoc-page
+  [rel]
+  (let [t rel
+        org (fn [target] (str target "/index.org"))
+        html (fn [target] (str target "/index.html"))]
+    (str (html t) ": " (org t)
+         "\n\t"
+         "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
+         " -o " (html t))))
+
 (defn makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
         targets (->> (files->relations {})
                      vals
                      ;; For now, /only/ make builders for normal pandoc pages (same as default)
                      (filter (fn [rel]
-                               (= :pandoc-page (:builder rel :pandoc-page))))
+                               (= :pandoc-page (builder rel))))
                      (map :slug)
                      sort)
-        org (fn [target] (str target "/index.org"))
         html (fn [target] (str target "/index.html"))
         play-edn (fn [target] (str target "/play.edn"))
         makefile-str (with-out-str
@@ -246,10 +260,7 @@ DRAFT
                        (println
                         (str/join "\n\n"
                                   (for [t targets]
-                                    (str (html t) ": " (org t)
-                                         "\n\t"
-                                         "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
-                                         " -o " (html t)))))
+                                    (makefile-entry t))))
                        (println "")
                        (println "")
 

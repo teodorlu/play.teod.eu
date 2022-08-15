@@ -221,8 +221,9 @@ DRAFT
   (let [{:keys [dry-run]} opts
         targets (->> (files->relations {})
                      vals
-                     (remove (fn [rel]
-                               (not= nil (:builder rel))))
+                     ;; For now, /only/ make builders for normal pandoc pages (same as default)
+                     (filter (fn [rel]
+                               (= :pandoc-page (:builder rel :pandoc-page))))
                      (map :slug)
                      sort)
         org (fn [target] (str target "/index.org"))

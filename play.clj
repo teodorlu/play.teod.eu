@@ -331,17 +331,10 @@ DRAFT
                                  slug (uuid->slug uuid)]
                              (if slug
                                (assoc-in link pandoc/link-target-path (str "../" slug "/"))
-                               link
-                               )
-                             #_
-
-                             (assoc-in link pandoc/link-target-path "https://teod.eu"))
+                               link))
                            x))
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
-      (println)
-      (println "Pandoc JSON:")
-      (println (json/generate-string resolved))
-      )))
+      (println (json/generate-string resolved)))))
 
 (defn print-help [{}]
   (println (str/trim "

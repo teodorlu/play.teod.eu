@@ -318,14 +318,26 @@ DRAFT
   (when (contains? (set (:rest-cmds opts))
                    "resolve-links")
     (let [pandoc-json (json/parse-string (slurp *in*))
-          resolve-link (fn [x]
+          by-uuid (fn [uuid]
+                    (let [path (str "index/by-uuid/" uuid ".edn")]
+                      (when (fs/regular-file? path)
+                        (edn/read-string (slurp path))))
+                    )
+          uuid->slug (fn [uuid] (:slug (by-uuid uuid)))
+          replace-link (fn [x]
                          (if (pandoc/link? x)
-                           (let [link x]
-                             (prn "link!!!!!!")
-                             (prn x)
+                           (let [link x
+                                 uuid (last (str/split (pandoc/link-target link) #":"))
+                                 slug (uuid->slug uuid)]
+                             (if slug
+                               (assoc-in link pandoc/link-target-path (str "../" slug "/"))
+                               link
+                               )
+                             #_
+
                              (assoc-in link pandoc/link-target-path "https://teod.eu"))
                            x))
-          resolved (pandoc/filter-body-postwalk pandoc-json resolve-link)]
+          resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println)
       (println "Pandoc JSON:")
       (println (json/generate-string resolved))

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 2d60ee76-a193-46fd-a07b-838af66cfcd6
+:END:
+#+TITLE: Kosekode
+
+[[file:..][..]]
+
+Kosekoding er ikke stress.
+Kosekoding er kos.
+
+Kosekoding er ikke på systemer som kan eksplodere og gjøre det kjipt for folk.
+Kosekoding er på små, trivelige ting.
+
+-----
+
+Kanskje kosekoding er et fint alternativ til å bli utbrent?

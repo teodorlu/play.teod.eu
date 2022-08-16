@@ -1,151 +1,11 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>s5 – Terminalen: Hvordan løpe med motorsag</title>
-  <style>
-    html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 1em;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
+  <title>Terminalen: Hvordan løpe med motorsag</title>
+  <style type="text/css">
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -154,19 +14,41 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <!-- configuration parameters -->
+  <meta name="defaultView" content="slideshow" />
+  <meta name="controlVis" content="hidden" />
+  <!-- style sheet links -->
+  <link rel="stylesheet" href="s5/default/slides.css" type="text/css" media="projection" id="slideProj" />
+  <link rel="stylesheet" href="s5/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+  <link rel="stylesheet" href="s5/default/print.css" type="text/css" media="print" id="slidePrint" />
+  <link rel="stylesheet" href="s5/default/opera.css" type="text/css" media="projection" id="operaFix" />
+  <!-- S5 JS -->
+  <script src="s5/default/slides.js" type="text/javascript"></script>
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">Terminalen: Hvordan løpe med motorsag</h1>
-</header>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer">
+  <h1></h1>
+  <h2>Terminalen: Hvordan løpe med motorsag</h2>
+</div>
+</div>
+<div class="presentation">
+<div class="title-slide slide">
+  <h1 class="title">Terminalen: Hvordan løpe med motorsag</h1>
+</div>
+<div class="slide section level1">
+
 <p><a href="..">..</a></p>
 <p>Potensielt kursopplegg.</p>
 <p>Teodors private notater i Roam: <a
 href="https://roamresearch.com/#/app/teod/page/wjKfBoryc">https://roamresearch.com/#/app/teod/page/wjKfBoryc</a></p>
-<h1 id="hvordan-vinne">Hvordan vinne</h1>
+<p>Slides: <a href="slides.html">file:slides.html</a></p>
+</div>
+<div id="hvordan-vinne" class="slide section level1">
+<h1>Hvordan vinne</h1>
 <ol>
 <li>Bygg tillit</li>
 <li>Bygg en rask læringssyklus</li>
@@ -175,19 +57,25 @@ href="https://roamresearch.com/#/app/teod/page/wjKfBoryc">https://roamresearch.c
 av problemer</li>
 <li>Løs problemer fortere enn andre — vinn.</li>
 </ol>
-<h1 id="mål">Mål</h1>
+</div>
+<div id="mål" class="slide section level1">
+<h1>Mål</h1>
 <ol>
 <li>Ha det gøy</li>
 <li>Motivere dere til å lære dere terminalen</li>
 </ol>
-<h1 id="agenda">Agenda</h1>
+</div>
+<div id="agenda" class="slide section level1">
+<h1>Agenda</h1>
 <ol>
 <li>Etablere tillit</li>
 <li>Eksperimentere med terminalen som læringsloop</li>
 <li>Bruke læringsloopen til å bygge et lite HTML-bibliotek med
 Python</li>
 </ol>
-<h1 id="ting-vi-ikke-rekker-i-dag">Ting vi ikke rekker i dag</h1>
+</div>
+<div id="ting-vi-ikke-rekker-i-dag" class="slide section level1">
+<h1>Ting vi ikke rekker i dag</h1>
 <p>Fra <em>Hvordan vinne</em>:</p>
 <blockquote>
 <p>Reflekter på grensesnittet til læringssyklusen din</p>
@@ -197,8 +85,9 @@ Python</li>
 <p>Løs problemer fortere enn andre</p>
 </blockquote>
 <p>Det har dere mer enn nok tid til når dere er ferdig utdannet :)</p>
-<h1 id="vi-må-kunne-stole-på-hverandre.">Vi må kunne stole på
-hverandre.</h1>
+</div>
+<div id="vi-må-kunne-stole-på-hverandre." class="slide section level1">
+<h1>Vi må kunne stole på hverandre.</h1>
 <h2 id="principle-of-charity">Principle of charity</h2>
 <h2 id="ikke-ødelegg-for-andre-i-dag.">Ikke ødelegg for andre i
 dag.</h2>
@@ -208,5 +97,7 @@ dag.</h2>
 </ol>
 <p>Men å skrive kode som ikke funker / krasjer er HELT OK og
 nødvendig.</p>
+</div>
+</div>
 </body>
 </html>

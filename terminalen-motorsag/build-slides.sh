@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-pandoc -T s5 -s ./index.org -o slides.html
+pandoc -t s5 -s --self-contained index.org -o slides.html

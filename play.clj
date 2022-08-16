@@ -28,7 +28,9 @@
          '[clojure.java.shell]
          '[clojure.string :as str]
          '[clojure.edn :as edn]
-         '[clojure.pprint :refer [pprint]])
+         '[clojure.pprint :refer [pprint]]
+         '[cheshire.core :as json]
+         '[teod.pandoc-toolbox :as pandoc])
 
 ;; relations example
 ;;
@@ -306,6 +308,27 @@ DRAFT
         (spit (str "index/by-uuid/" (:uuid page) ".edn")
               (with-out-str (pprint page)))))))
 
+(defn filter-pandoc [{:as opts}]
+  ;; only supported filter for now is resolve-links
+  ;;
+  ;; Test with:
+  ;;
+  ;;   ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
+
+  (when (contains? (set (:rest-cmds opts))
+                   "resolve-links")
+    (let [pandoc-json (json/parse-string (slurp *in*))
+          resolve-link (fn [x]
+                         (when (pandoc/link? x)
+                           (prn "link!!!!!!")
+                           (prn x))
+
+                         x #_ todo)
+          resolved (pandoc/filter-body-postwalk pandoc-json resolve-link)]
+      (println "Pandoc JSON:")
+      (println (json/generate-string resolved))
+      )))
+
 (defn print-help [{}]
   (println (str/trim "
 Usage: ./play.clj <subcommand> <options>
@@ -323,6 +346,7 @@ index-by-uuid [--dry-run]
 
 (def dispatch-table
   [{:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
+   {:cmds ["filter"] :fn filter-pandoc :cmds-opts [:resolve-links]}
    {:cmds ["index-by-uuid"] :fn index-by-uuid}
    {:cmds ["makefile"] :fn makefile}
    {:cmds ["random-page"] :fn random-page}
@@ -349,6 +373,8 @@ index-by-uuid [--dry-run]
                           :title :string ;; Page title
                           :n :long       ;; Count - eg random page count
                           :uuid :string
+                          ;; filter
+                          :resolve-links :boolean
                           }}))
 
 (apply main *command-line-args*)

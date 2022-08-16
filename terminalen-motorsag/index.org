@@ -9,6 +9,41 @@ Potensielt kursopplegg.
 
 Teodors private notater i Roam: https://roamresearch.com/#/app/teod/page/wjKfBoryc
 
-* hvordan lære fort
-1. rask feedbackloop
-2. få bevegelige deler
+Slides: [[file:slides.html]]
+
+* Hvordan vinne
+1. Bygg tillit
+2. Bygg en rask læringssyklus
+3. Reflekter på grensesnittet til læringssyklusen din
+4. Splitt innsatsen din mellom forbedring av læringssyklusen og løsing av problemer
+5. Løs problemer fortere enn andre --- vinn.
+* Mål
+
+1. Ha det gøy
+2. Motivere dere til å lære dere terminalen
+* Agenda
+1. Etablere tillit
+2. Eksperimentere med terminalen som læringsloop
+3. Bruke læringsloopen til å bygge et lite HTML-bibliotek med Python
+* Ting vi ikke rekker i dag
+Fra /Hvordan vinne/:
+
+#+begin_quote
+Reflekter på grensesnittet til læringssyklusen din
+#+end_quote
+
+Scriptene våre muliggjør en læringsloop.
+Funker den bra?
+
+#+begin_quote
+Løs problemer fortere enn andre
+#+end_quote
+
+Det har dere mer enn nok tid til når dere er ferdig utdannet :)
+* Vi må kunne stole på hverandre.
+** Principle of charity
+** Ikke ødelegg for andre i dag.
+1. Ikke les/skriv filer utenfor repoet
+2. Ikke send data til internett
+
+Men å skrive kode som ikke funker / krasjer er HELT OK og nødvendig.

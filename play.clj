@@ -325,6 +325,7 @@ DRAFT
 
                          x #_ todo)
           resolved (pandoc/filter-body-postwalk pandoc-json resolve-link)]
+      (println)
       (println "Pandoc JSON:")
       (println (json/generate-string resolved))
       )))

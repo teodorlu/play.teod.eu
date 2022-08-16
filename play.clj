@@ -319,11 +319,12 @@ DRAFT
                    "resolve-links")
     (let [pandoc-json (json/parse-string (slurp *in*))
           resolve-link (fn [x]
-                         (when (pandoc/link? x)
-                           (prn "link!!!!!!")
-                           (prn x))
-
-                         x #_ todo)
+                         (if (pandoc/link? x)
+                           (let [link x]
+                             (prn "link!!!!!!")
+                             (prn x)
+                             (assoc-in link pandoc/link-target-path "https://teod.eu"))
+                           x))
           resolved (pandoc/filter-body-postwalk pandoc-json resolve-link)]
       (println)
       (println "Pandoc JSON:")

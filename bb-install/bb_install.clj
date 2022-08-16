@@ -68,8 +68,5 @@
                               :args->opts [:bb-edn-path]})]
     (run opts)))
 
-;; Not sure what the equivalent of python's "run the main if this file is run as a main"
-;;
-;; So hack:
-
-(apply -main *command-line-args*)
+(when (= *file* (System/getProperty "babashka.file"))
+  (apply -main *command-line-args*))

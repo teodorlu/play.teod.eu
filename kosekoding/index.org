@@ -19,6 +19,6 @@ Kanskje kosekoding er et fint alternativ til å bli utbrent?
 
 Ting som er fine å kosekode på:
 
-1. Egen config
+1. Konfigurasjon av eget system
 2. Verktøy man bruker dag til dag
 3. Ting man er nysgjerrig på

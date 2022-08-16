@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 2d60ee76-a193-46fd-a07b-838af66cfcd6
 :END:
-#+TITLE: Kosekode
+#+TITLE: Kosekoding
 
 [[file:..][..]]
 
@@ -14,3 +14,11 @@ Kosekoding er på små, trivelige ting.
 -----
 
 Kanskje kosekoding er et fint alternativ til å bli utbrent?
+
+-----
+
+Ting som er fine å kosekode på:
+
+1. Egen config
+2. Verktøy man bruker dag til dag
+3. Ting man er nysgjerrig på

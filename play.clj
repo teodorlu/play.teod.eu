@@ -321,15 +321,25 @@ makefile [--dry-run]
 index-by-uuid [--dry-run]
 ")))
 
+(def dispatch-table
+  [{:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
+   {:cmds ["index-by-uuid"] :fn index-by-uuid}
+   {:cmds ["makefile"] :fn makefile}
+   {:cmds ["random-page"] :fn random-page}
+   {:cmds ["relations"] :fn relations}])
+
+(defn print-subcommands [{}]
+  (println "usage: ./play.clj <command>")
+  (println "")
+  (println "available commands:")
+  (doseq [{:keys [cmds]} dispatch-table]
+    (println (str "  "
+                  (str/join " " cmds)))))
+
 (defn main [& args]
-  (cli/dispatch [{:cmds ["relations"] :fn relations}
-                 {:cmds ["page"] :fn create-page :cmds-opts [:slug]}
-                 {:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
-                 {:cmds ["random-page"] :fn random-page}
-                 {:cmds ["makefile"] :fn makefile}
-                 {:cmds ["help"] :fn print-help}
-                 {:cmds ["index-by-uuid"] :fn index-by-uuid}
-                 {:cmds [] :fn print-help}]
+  (cli/dispatch (concat dispatch-table
+                        [{:cmds ["help"] :fn print-subcommands}
+                         {:cmds [] :fn print-subcommands}])
                 args
                 {:coerce {;; relations
                           :from :keyword ;; page relation format

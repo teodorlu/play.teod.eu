@@ -216,8 +216,7 @@ DRAFT
 
       nil)))
 
-(defn thing [{:keys [x y]}]
-  (list x y))
+(defn words [& args] (str/join " " (map str args)))
 
 (defn builder [rel]
   (:builder rel :pandoc-page))
@@ -231,27 +230,10 @@ DRAFT
         html (fn [target] (str target "/index.html"))]
     (str (html t) ": " (org t)
          "\n\t"
-         "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
-         " -o " (html t))))
-
-(defmethod makefile-entry :pandoc-page-fix-link
-  [rel]
-  (let [t rel
-        org (fn [target] (str target "/index.org"))
-        html (fn [target] (str target "/index.html"))]
-    (str (html t) ": " (org t)
-         "\n\t"
-         "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
-         " -t json"
-         " | "
-         "./play.clj filter resolve-links"
-         " | "
-         "pandoc "
-
-         " -o " (html t)
-         "\n\t#pandoc -s --shift-heading-level-by=1 --from=org+smart -i deliverable/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o deliverable.html --standalone --toc -H live.html"
-         )
-    ))
+         ;; want something like this
+         ;; pandoc -s --shift-heading-level-by=1 --from=org+smart -i deliverable/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o deliverable.html --standalone --toc -H live.html
+         (words "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i" (org t)
+                "-o" (html t)))))
 
 (defn makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
@@ -259,7 +241,9 @@ DRAFT
                      vals
                      ;; For now, /only/ make builders for normal pandoc pages (same as default)
                      (filter (fn [rel]
-                               (= :pandoc-page (builder rel))))
+                               (let [b (builder rel)]
+                                 (or (= b :pandoc-page)
+                                     (= b :smart-pandoc-page)))))
                      (map :slug)
                      sort)
         html (fn [target] (str target "/index.html"))
@@ -281,6 +265,7 @@ DRAFT
                        (println
                         (str/join "\n\n"
                                   (for [t targets]
+                                    ;; Here's the pandoc command I'd like for some pages:
                                     (makefile-entry t))))
                        (println "")
                        (println "")
@@ -304,11 +289,14 @@ DRAFT
                        (println "ultraclean: clean")
                        (println (str "\t"
                                      "rm -f "
+                                     ;; Here's a pandoc command I'd like for some pages
                                      (str/join " " (concat ["index.html"] (map html targets)))))
                        )]
     (if dry-run
       (print makefile-str)
       (spit "Makefile" makefile-str))))
+
+
 
 (defn index-by-uuid
   "Create an index from page uuid to slug and title."

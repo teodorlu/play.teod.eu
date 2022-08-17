@@ -230,8 +230,6 @@ DRAFT
         html (fn [target] (str target "/index.html"))]
     (str (html t) ": " (org t)
          "\n\t"
-         ;; want something like this
-         ;; pandoc -s --shift-heading-level-by=1 --from=org+smart -i deliverable/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o deliverable.html --standalone --toc -H live.html
          (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" (org t) "-t json"
                 "|"
                 "./play.clj filter resolve-links"

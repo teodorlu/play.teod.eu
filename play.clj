@@ -250,52 +250,52 @@ DRAFT
                      sort)
         html (fn [target] (str target "/index.html"))
         play-edn (fn [target] (str target "/play.edn"))
-        makefile-str (lines
-                      "# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED"
-                      "# SEE `make clean` TARGET"
-                      ""
-                      ""
+        makefile (lines
+                  "# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED"
+                  "# SEE `make clean` TARGET"
+                  ""
+                  ""
 
-                      "# Generate target for root index"
-                      ;; TODO root index also depends on all the play.edn files found
-                      (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets)))
-                      "\t./index.clj"
-                      ""
-                      ""
+                  "# Generate target for root index"
+                  ;; TODO root index also depends on all the play.edn files found
+                  (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets)))
+                  "\t./index.clj"
+                  ""
+                  ""
 
-                      "# Generate target for each page"
-                      (str/join "\n\n"
-                                (for [t targets]
-                                  ;; Here's the pandoc command I'd like for some pages:
-                                  (makefile-entry t)))
-                      ""
-                      ""
+                  "# Generate target for each page"
+                  (str/join "\n\n"
+                            (for [t targets]
+                              ;; Here's the pandoc command I'd like for some pages:
+                              (makefile-entry t)))
+                  ""
+                  ""
 
 
-                      ".PHONY: makefile"
-                      "makefile:"
-                      "\t./play.clj makefile"
-                      ""
-                      ""
+                  ".PHONY: makefile"
+                  "makefile:"
+                  "\t./play.clj makefile"
+                  ""
+                  ""
 
-                      "# Rengenerate the index"
-                      ".PHONY: clean"
-                      "clean:"
-                      "\trm -f index.html"
-                      ""
-                      ""
+                  "# Rengenerate the index"
+                  ".PHONY: clean"
+                  "clean:"
+                  "\trm -f index.html"
+                  ""
+                  ""
 
-                      "# Regenerate everything"
-                      ".PHONY: ultraclean"
-                      "ultraclean: clean"
-                      (str "\t"
-                           "rm -f "
-                           ;; Here's a pandoc command I'd like for some pages
-                           (str/join " " (concat ["index.html"] (map html targets))))
-                      )]
+                  "# Regenerate everything"
+                  ".PHONY: ultraclean"
+                  "ultraclean: clean"
+                  (str "\t"
+                       "rm -f "
+                       ;; Here's a pandoc command I'd like for some pages
+                       (str/join " " (concat ["index.html"] (map html targets))))
+                  )]
     (if dry-run
-      (print makefile-str)
-      (spit "Makefile" makefile-str))))
+      (print makefile)
+      (spit "Makefile" makefile))))
 
 
 

@@ -234,6 +234,8 @@ DRAFT
          ;; pandoc -s --shift-heading-level-by=1 --from=org+smart -i deliverable/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o deliverable.html --standalone --toc -H live.html
          (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" (org t) "-t json"
                 "|"
+                "./play.clj filter resolve-links"
+                "|"
                 "pandoc -f json -o" (html t) "--standalone --toc -H live.html"))))
 
 (defn makefile [{:keys [opts]}]

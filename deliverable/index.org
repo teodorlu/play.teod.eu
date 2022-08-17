@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: 9f52d562-4a06-4ea1-a461-2018fca5baf1
+:END:
+#+TITLE: There's always a deliverable
+
+[[file:..][..]]
+
+In tactical work, there's a deliverable.
+In strategic work, there's a deliverable.
+
+Just because realized end user value is further away, that doesn't mean we can't deliver something specific.
+We just have to define our impact in terms of an intermediate goal, not the end state.
+
+Strong values make intermediate goals easier.
+With strong values, simply staying true to your values is a goal in itself.

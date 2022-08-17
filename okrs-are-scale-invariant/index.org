@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID: 26c1cdcc-d949-4d0a-ac74-ca6b7878dbe2
+:END:
+#+TITLE: OKRs are scale invariant
+
+[[file:..][..]]
+
+Common pitfall: forcing everyone to consider an "objective" on the same level.
+
+Rather: A goal can be an objective or a key result dependning on who you ask.
+
+What: Objective.
+How: key results

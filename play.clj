@@ -234,6 +234,25 @@ DRAFT
          "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
          " -o " (html t))))
 
+(defmethod makefile-entry :pandoc-page-fix-link
+  [rel]
+  (let [t rel
+        org (fn [target] (str target "/index.org"))
+        html (fn [target] (str target "/index.html"))]
+    (str (html t) ": " (org t)
+         "\n\t"
+         "pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i " (org t)
+         " -t json"
+         " | "
+         "./play.clj filter resolve-links"
+         " | "
+         "pandoc "
+
+         " -o " (html t)
+         "\n\t#pandoc -s --shift-heading-level-by=1 --from=org+smart -i deliverable/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o deliverable.html --standalone --toc -H live.html"
+         )
+    ))
+
 (defn makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
         targets (->> (files->relations {})

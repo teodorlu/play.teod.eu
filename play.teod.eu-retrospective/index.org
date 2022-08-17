@@ -913,3 +913,9 @@ Options:
   --alias      <alias>          Add to alias <alias>.
   --deps-file  <file>  deps.edn Add to <file> instead of deps.edn.
 #+end_src
+* 2022-08-17
+** LINKS ARE FINALLY WORKING
+I decided to just change the code directly rather than introduce indirection.
+Small, testable steps.
+Really liking that I can regenerate files, and just look at the git diff.
+AMAZING how Git enables incrementalism.

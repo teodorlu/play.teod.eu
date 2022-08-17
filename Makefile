@@ -1,4 +1,4 @@
-# DO NOT EDIT drctlyy -- THIS MAKEFILE IS GENERATED
+# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED
 # SEE `make clean` TARGET
 
 

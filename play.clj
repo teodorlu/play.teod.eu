@@ -217,6 +217,7 @@ DRAFT
       nil)))
 
 (defn words [& args] (str/join " " (map str args)))
+(defn lines [& args] (str/join "\n" (map str args)))
 
 (defn builder [rel]
   (:builder rel :pandoc-page))
@@ -249,50 +250,50 @@ DRAFT
                      sort)
         html (fn [target] (str target "/index.html"))
         play-edn (fn [target] (str target "/play.edn"))
-        makefile-str (with-out-str
-                       (println "# DO NOT EDIT DIRECTLY -- THIS MAKEFILE IS GENERATED")
-                       (println "# SEE `make clean` TARGET")
-                       (println "")
-                       (println "")
+        makefile-str (lines
+                         "# DO NOT EDIT drctlyy -- THIS MAKEFILE IS GENERATED"
+                         (identity "# SEE `make clean` TARGET")
+                         (identity "")
+                         (identity "")
 
-                       (println "# Generate target for root index")
-                       ;; TODO root index also depends on all the play.edn files found
-                       (println (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets))))
-                       (println "\t./index.clj")
-                       (println "")
-                       (println "")
+                         (identity "# Generate target for root index")
+                         ;; TODO root index also depends on all the play.edn files found
+                         (identity (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets))))
+                         (identity "\t./index.clj")
+                         (identity "")
+                         (identity "")
 
-                       (println  "# Generate target for each page")
-                       (println
-                        (str/join "\n\n"
-                                  (for [t targets]
-                                    ;; Here's the pandoc command I'd like for some pages:
-                                    (makefile-entry t))))
-                       (println "")
-                       (println "")
+                         (identity  "# Generate target for each page")
+                         (identity
+                          (str/join "\n\n"
+                                    (for [t targets]
+                                      ;; Here's the pandoc command I'd like for some pages:
+                                      (makefile-entry t))))
+                         (identity "")
+                         (identity "")
 
 
-                       (println ".PHONY: makefile")
-                       (println "makefile:")
-                       (println "\t./play.clj makefile")
-                       (println "")
-                       (println "")
+                         (identity ".PHONY: makefile")
+                         (identity "makefile:")
+                         (identity "\t./play.clj makefile")
+                         (identity "")
+                         (identity "")
 
-                       (println "# Rengenerate the index")
-                       (println ".PHONY: clean")
-                       (println "clean:")
-                       (println "\trm -f index.html")
-                       (println "")
-                       (println "")
+                         (identity "# Rengenerate the index")
+                         (identity ".PHONY: clean")
+                         (identity "clean:")
+                         (identity "\trm -f index.html")
+                         (identity "")
+                         (identity "")
 
-                       (println "# Regenerate everything")
-                       (println ".PHONY: ultraclean")
-                       (println "ultraclean: clean")
-                       (println (str "\t"
-                                     "rm -f "
-                                     ;; Here's a pandoc command I'd like for some pages
-                                     (str/join " " (concat ["index.html"] (map html targets)))))
-                       )]
+                         (identity "# Regenerate everything")
+                         (identity ".PHONY: ultraclean")
+                         (identity "ultraclean: clean")
+                         (identity (str "\t"
+                                       "rm -f "
+                                       ;; Here's a pandoc command I'd like for some pages
+                                       (str/join " " (concat ["index.html"] (map html targets)))))
+                         )]
     (if dry-run
       (print makefile-str)
       (spit "Makefile" makefile-str))))

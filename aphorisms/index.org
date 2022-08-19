@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       93ea907e-9dcb-4c6b-af7d-d9bc22c34d57
+:END:
 #+title: Aphorisms
 
 [[./..][..]]
@@ -12,7 +15,7 @@
 
 5 - Never link to content without enriching the intent of linking with context.
 
-6 - Consider modeling /all possible states/ as one data structure. That can reduce edge cases.
+6 - Consider modeling /all possible states/ as one data structure. Less edge cases give cleaner code structure.
 
 7 - DO - critique your documentation when "How does X work?" is asked.
 

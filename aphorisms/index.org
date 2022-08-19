@@ -5,7 +5,8 @@
 
 [[./..][..]]
 
-1 - Fewer moving pieces is better. Corollary: unnecessary flexibility is bad.
+1 - Fewer moving pieces is better.
+Corollary: unnecessary flexibility is bad.
 
 2 - (stronger) - More than minimum number of moving pieces is bad.
 

@@ -10,7 +10,8 @@ Corollary: unnecessary flexibility is bad.
 
 2 - (stronger) - More than minimum number of moving pieces is bad.
 
-3 - DO care about intent. In code, outside of code.
+3 - DO care about intent.
+In code, outside of code.
 
 4 - Late binding is awesome.
 

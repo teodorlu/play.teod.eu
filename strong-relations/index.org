@@ -107,3 +107,5 @@ A hard-hitting word is a strong relation.
 * random / dump / review
 
 Strong relations between people.
+Good: trust.
+Strong relations are characterized by trust.

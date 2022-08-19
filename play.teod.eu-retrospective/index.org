@@ -13,15 +13,6 @@ Structure:
 
 * Synthesis
 Attention is aimed here.
-** Org-roam id:... links are broken
-Bad.
-*** Problem definition
-1. They don't link to the right place
-2. They even link to id:... things that don't work
-*** First step option: strip out the links that don't work
-*** Second step option: fix the links --- rewrite from id: to path: and then href: to folder
-Hmm, prehaps href is better.
-🤔
 ** play.teod.eu success metric: strong language
 I want to use play.teod.eu to power up my language.
 ** CSS pain points
@@ -343,6 +334,19 @@ How to?
 - That means I should make build systems opt-in / configurable, I think.
 *** Examples of nicely formatted table of contents:
 https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter
+* Solved problems
+** Org-roam id:... links are broken
+Bad.
+*** Problem definition
+1. They don't link to the right place
+2. They even link to id:... things that don't work
+*** First step option: strip out the links that don't work
+*** Second step option: fix the links --- rewrite from id: to path: and then href: to folder
+Hmm, prehaps href is better.
+🤔
+*** 2022-08-19 - solved.
+All org documents now get their links rewritten.
+The link rewrite filter is written so that it only rewrites the links it should rewrite.
 * 2022-05-26
 ** From #teodor-discuss (Iterate slack)
 Source: https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869

@@ -16,6 +16,9 @@ Attention is aimed here.
 ** play.teod.eu success metric: strong language
 I want to use play.teod.eu to power up my language.
 ** CSS pain points
+I want to learn CSS.
+I want to use play.teod.eu to learn CSS.
+As of 2022-08-20, Pandoc controls the CSS, and I don't have too much leverage.
 *** I cannot easily customize the CSS without building everything from scratch.
 Pandoc provides CSS to me.
 But I want to configure stuff myself too.

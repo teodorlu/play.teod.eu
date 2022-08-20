@@ -263,6 +263,8 @@ In the /Interaction value differential/ article, I published something.
 And I liked what i published.
 
 😊
+*** 2022-08-20 consid er this solved!
+I've cleanly separated between stuff that people should consider reading, and stuff that people should ignore.
 ** play.teod.eu is just some code that generates some HTML
 
 Not more.

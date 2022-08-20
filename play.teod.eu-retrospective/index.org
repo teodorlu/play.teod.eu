@@ -76,6 +76,8 @@ static size_t writecons(FILE *f, const unsigned char *buf, size_t size) {
 
 I think the source code too is meant to reach about a 100 characters in width.
 ** I want reified links
+A shallow link just points somewhere.
+A reified link carries meaning and metadata.
 *** Cross site linking with org-roam.
 So ... getting Org-roam to find links here was easy.
 Just set the root dir, and add ID properties for each page that should be indexed.

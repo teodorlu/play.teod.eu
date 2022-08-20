@@ -764,3 +764,5 @@ Target audience: xxx
 - reduce WIP
   - read for example The Goal
 - improve specific and general feedback loops
+** When taking notes, why not just copy-paste from wikipedia?
+Because taking notes is 90 % for the process, and only 10 % for the resulting artifact.

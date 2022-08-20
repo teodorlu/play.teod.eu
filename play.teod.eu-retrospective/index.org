@@ -228,13 +228,6 @@ Hmm, let's just add a :created timestamp.
 *** I want to derive :last-modified from git history of org-file.
 * Rest
 Ledger.
-** play.teod.eu is just some code that generates some HTML
-
-Not more.
-There's a single indirection boundary.
-Information as written --- indirection --- published HTML.
-And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
-
 ** Working with pandoc =--standalone= is causing problems
 As long as I'm using the =--standalone= stuff, I'm making problems for myself.
 Example: I loose roundtripping.
@@ -931,3 +924,10 @@ I decided to just change the code directly rather than introduce indirection.
 Small, testable steps.
 Really liking that I can regenerate files, and just look at the git diff.
 AMAZING how Git enables incrementalism.
+* 2022-08-20
+:)
+** play.teod.eu is just some code that generates some HTML
+Not more.
+There's a single indirection boundary.
+Information as written --- indirection --- published HTML.
+And that indirection is encoded in the CLI/Makefile --- not in opaque CI.

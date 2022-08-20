@@ -191,6 +191,12 @@ I believe reified links can model knowledge well.
 And on top of that model, we can build better UIs.
 
 Here's what an UI could look like: https://embed.kumu.io/1feca726268dbbda0f905fb7be844e5e#anxiety-driven-procrastination
+** how can i improve front page attention design?
+*** i want a new category - not indexed
+Relevant for example for external references.
+
+so perhaps a :type :reference?
+:reference-target #{:book :web-essay ,,,}
 * Rest
 Ledger.
 ** Working with pandoc =--standalone= is causing problems

@@ -302,8 +302,10 @@ Currently, I hand-roll my own new-page creation.
 I could also hook my logic into Org-Roam's templating system
 Details: https://github.com/org-roam/org-roam/blob/c3867619147175faf89ed8f3e90a1e67a4fd9655/doc/org-roam.org#L896
 *** 2022-08-20 I'm happy with how it's working now.
+Solution: write my own Emacs lisp library to control page creation and page search.
+
 Really happy.
-Consider it solved.
+I consider it solved now.
 ** comment system
 Option: Comments on Twitter.
 Option: Comments on Hacker News.

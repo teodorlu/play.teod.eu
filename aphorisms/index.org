@@ -31,3 +31,5 @@ Fewer edge cases are easier to manage.
 11 - When still in doubt, do that which reifies and distributes intent.
 
 12 - When /still/ in doubt, reduce WIP.
+
+13 - When /STILL/ in doubt, improve your specific & general feedback loops.

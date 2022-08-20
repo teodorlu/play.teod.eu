@@ -731,3 +731,36 @@ Still no etag header on the responses.
 is it automatic or not?????
 ** It's actually automatic. It works!!!
 Woah!
+* 2022-08-20
+:)
+** How do contribute when you don't know what you're doing
+Also, "how to help".
+
+From [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aphorisms]]:
+
+#+begin_quote
+10 - When in doubt, do that which builds trust.
+
+11 - When still in doubt, do that which reifies and distributes intent.
+
+12 - When /still/ in doubt, reduce WIP.
+
+13 - When /STILL/ in doubt, improve your specific & general feedback loops.
+#+end_quote
+
+xx
+
+Target audience: xxx
+
+- build trust
+  - with who
+    - charity
+    - integrity
+    - competence
+- reify and distribute intent
+  - what's the plan?
+  - is the plan good?
+  - are people following the same plan?
+- reduce WIP
+  - read for example The Goal
+- improve specific and general feedback loops

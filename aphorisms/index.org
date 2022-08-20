@@ -9,6 +9,7 @@
 Corollary: unnecessary flexibility is bad.
 
 2 - (stronger) - More than minimum number of moving pieces is bad.
+(Assuming the pieces are simple)
 
 3 - DO care about intent.
 In code, outside of code.

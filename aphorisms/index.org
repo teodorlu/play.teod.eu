@@ -33,3 +33,5 @@ Fewer edge cases are easier to manage.
 12 - When /still/ in doubt, reduce WIP.
 
 13 - When /STILL/ in doubt, improve your specific & general feedback loops.
+
+14 - DO - cultivate your taste. Ask yourself what you like. Then ask why.

@@ -186,46 +186,6 @@ I believe reified links can model knowledge well.
 And on top of that model, we can build better UIs.
 
 Here's what an UI could look like: https://embed.kumu.io/1feca726268dbbda0f905fb7be844e5e#anxiety-driven-procrastination
-** Date tagging
-
-Problem statement --- should I encode dates (created, edited) in the metadata model?
-
-*** Early view
-I want metadata for :changed and :created.
-First because I want to filter / sort.
-Then perhaps later because that metadata is nice to have.
-
-*** 2022-07-12 says pikaboo
-Date tagging would be nice.
-But by what semantics?
-And why?
-
-Reasonable question --- which vague idea was created when?
-Which vague idea was edited last?
-I could use OS mtime for editing.
-Sync into play.edn.
-Have play.edn files /partially/ generated.
-Or just pull it out from source at the right time?
-Do the :relations trick?
-**** I really like the idea of just using file modification times.
-buuut I don't think those get checked into git
-**** Can I just use git blame perhaps?
-🤔
-
-Git knows when the file was changed last
-**** Outline --- on page creation + git blame
-On creating a new page, write :created (now)
-
-On creating the metadata table, file edit time by asking Git
-*** 2022-07-14 👀
-Well --- haven't really taken this any further.
-
-I kinda want dates for my ephemeral stuff.
-So that it's easier to handle the very incomplete stuff.
-Or at least sort by creation date.
-
-Hmm, let's just add a :created timestamp.
-*** I want to derive :last-modified from git history of org-file.
 * Rest
 Ledger.
 ** Working with pandoc =--standalone= is causing problems
@@ -348,6 +308,46 @@ Option: Comments as Github issues. Example: https://github.com/matthijscox/Blog/
 *** 2022-08-20 Just share on relevant Slack, where there can be comments
 Comment system /is/ the sharing mechanism.
 Don't expect to find too many people "just cause".
+** Date tagging
+
+Problem statement --- should I encode dates (created, edited) in the metadata model?
+
+*** Early view
+I want metadata for :changed and :created.
+First because I want to filter / sort.
+Then perhaps later because that metadata is nice to have.
+
+*** 2022-07-12 says pikaboo
+Date tagging would be nice.
+But by what semantics?
+And why?
+
+Reasonable question --- which vague idea was created when?
+Which vague idea was edited last?
+I could use OS mtime for editing.
+Sync into play.edn.
+Have play.edn files /partially/ generated.
+Or just pull it out from source at the right time?
+Do the :relations trick?
+**** I really like the idea of just using file modification times.
+buuut I don't think those get checked into git
+**** Can I just use git blame perhaps?
+🤔
+
+Git knows when the file was changed last
+**** Outline --- on page creation + git blame
+On creating a new page, write :created (now)
+
+On creating the metadata table, file edit time by asking Git
+*** 2022-07-14 👀
+Well --- haven't really taken this any further.
+
+I kinda want dates for my ephemeral stuff.
+So that it's easier to handle the very incomplete stuff.
+Or at least sort by creation date.
+
+Hmm, let's just add a :created timestamp.
+*** I want to derive :last-modified from git history of org-file.
 * 2022-05-26
 ** From #teodor-discuss (Iterate slack)
 Source: https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869

@@ -228,43 +228,6 @@ Hmm, let's just add a :created timestamp.
 *** I want to derive :last-modified from git history of org-file.
 * Rest
 Ledger.
-** I need to "contract" / "narrow" before publishing
-
-Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?
-
-*** Early view
-
-The stuff that's published on my site right now is a real mess.
-Mess how?
-In many ways.
-But the big one: the ideas are intertwined.
-There's coupling.
-I could remove that coupling.
-Or at least attempt to remove that coupling.
-
-*** 2022-07-12 says hello
-At the time that I wrote the text above, everything was one big lump.
-
-Merely splitting between "feedback welcome", "forever incomplete" and "mess" helps me A LOT personally.
-
-*** 2022-07-14 says hello
-I've recently published two small things on the Clojurians Slack.
-First a bit about Emacs --- how to use =read-string=, =completing-read= and =let*= to write tiny UIs.
-Then a /Interaction value differential/ page.
-
-Am I happy with the results?
-
-Yes.
-
-Very much, actually.
-Every publish-action gave me some nice interactions.
-In the Emacs case, I simply copied from my notes and Emacs config and wrote a small, little Slack message.
-In the /Interaction value differential/ article, I published something.
-And I liked what i published.
-
-😊
-*** 2022-08-20 consid er this solved!
-I've cleanly separated between stuff that people should consider reading, and stuff that people should ignore.
 ** play.teod.eu is just some code that generates some HTML
 
 Not more.
@@ -349,6 +312,43 @@ Hmm, prehaps href is better.
 *** 2022-08-19 - solved.
 All org documents now get their links rewritten.
 The link rewrite filter is written so that it only rewrites the links it should rewrite.
+** I need to "contract" / "narrow" before publishing
+
+Problem statement --- how can I use this site to grow messy stuff AND share reasonable stuff with others?
+
+*** Early view
+
+The stuff that's published on my site right now is a real mess.
+Mess how?
+In many ways.
+But the big one: the ideas are intertwined.
+There's coupling.
+I could remove that coupling.
+Or at least attempt to remove that coupling.
+
+*** 2022-07-12 says hello
+At the time that I wrote the text above, everything was one big lump.
+
+Merely splitting between "feedback welcome", "forever incomplete" and "mess" helps me A LOT personally.
+
+*** 2022-07-14 says hello
+I've recently published two small things on the Clojurians Slack.
+First a bit about Emacs --- how to use =read-string=, =completing-read= and =let*= to write tiny UIs.
+Then a /Interaction value differential/ page.
+
+Am I happy with the results?
+
+Yes.
+
+Very much, actually.
+Every publish-action gave me some nice interactions.
+In the Emacs case, I simply copied from my notes and Emacs config and wrote a small, little Slack message.
+In the /Interaction value differential/ article, I published something.
+And I liked what i published.
+
+😊
+*** 2022-08-20 consid er this solved!
+I've cleanly separated between stuff that people should consider reading, and stuff that people should ignore.
 * 2022-05-26
 ** From #teodor-discuss (Iterate slack)
 Source: https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869

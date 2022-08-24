@@ -200,17 +200,24 @@ so perhaps a :type :reference?
 ** Cultivate and learn from how others are doing their stuff
 https://til.simonwillison.net/sqlite/enabling-wal-mode
 
-Bra:
+Bra / spennende:
 
-1. Referanser
-2. Ryddig
+1. Godt eksempel på hvordan man kan vise "ting som linker hit" nederst
+2. Veldig oversiktelig struktur
+3. Simon Wilson strukturerer notatene sine i underkategorier.
+   1. Han bruker =til.simonwilson.net= der jeg bruker =play.teod.eu=
+   2. ... men der jeg holder meg til /ett suffiks/ (feks =/maksimal-opsjonalitet=),
+      bruker han kategori først (=sqlite=). Så ... litt som jeg samler tematiske ting i journaler.
+      Tror ikke han har kategorier i kategorier, men det er i alle fall kategori -> ting.
 
 https://memex.marginalia.nu/
 
-Bra:
+Bra / spennende:
 
-1. Podcast-aggregering
-2. Tilsynelatende effektivt å jobbe med
+1. Han bruker siden til aggregering av podcaster.
+   Jeg er interessert i noe sånt for meg selv.
+2. Siden ser ut til å ha login og et redigerings-lag rett i nettleser
+3. Støtter gemini.
 * Rest
 Ledger.
 ** Working with pandoc =--standalone= is causing problems

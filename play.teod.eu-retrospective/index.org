@@ -197,6 +197,20 @@ Relevant for example for external references.
 
 so perhaps a :type :reference?
 :reference-target #{:book :web-essay ,,,}
+** Cultivate and learn from how others are doing their stuff
+https://til.simonwillison.net/sqlite/enabling-wal-mode
+
+Bra:
+
+1. Referanser
+2. Ryddig
+
+https://memex.marginalia.nu/
+
+Bra:
+
+1. Podcast-aggregering
+2. Tilsynelatende effektivt å jobbe med
 * Rest
 Ledger.
 ** Working with pandoc =--standalone= is causing problems

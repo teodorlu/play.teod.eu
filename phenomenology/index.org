@@ -1,13 +1,11 @@
 :PROPERTIES:
 :ID: 6ac830ef-cb3f-48ea-924a-5304384c4b8e
 :END:
-#+TITLE: Phenomenology
+#+TITLE: phenomenology
 
 [[file:..][..]]
 
 DRAFT
-
-Here's what I wrote for [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][Existentialism as a world view]]:
 
 I'd like to understand phenomenology better.
 Why?

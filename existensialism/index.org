@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 0ca0f3d5-ecae-40fe-9e79-2f24e6780079
 :END:
-#+TITLE: Existentialism as a world view
+#+TITLE: existentialism
 
 [[file:..][..]]
 

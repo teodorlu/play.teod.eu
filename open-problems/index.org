@@ -88,4 +88,6 @@ ACTION TIME
    What problems are on top?
    For this, just copy the structure from other places.
 3. New problems!
-   1. Define phenomenology
+   1. Define [[id:6ac830ef-cb3f-48ea-924a-5304384c4b8e][phenomenology]]
+   2. Define [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][existentialism]]
+   2. Define [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][existentialism is LOL]]

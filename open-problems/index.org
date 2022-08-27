@@ -13,6 +13,7 @@ List of problems I want to grapple with.
 Empty here for new.
 Need to brew some more.
 * Brewing problems / problem options / nexus of problems
+Gotta catch them all!
 ** Working properly with strategic initiatives
 Ever since I went into IT in 2019, I've felt shackled by the time horizon of the teams I've been working with.
 Where is the long term thinking?

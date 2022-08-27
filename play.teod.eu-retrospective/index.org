@@ -225,6 +225,18 @@ Bra / spennende:
    Jeg er interessert i noe sånt for meg selv.
 2. Siden ser ut til å ha login og et redigerings-lag rett i nettleser
 3. Støtter gemini.
+** Ideas from others
+*Patrick Dubroy* on how to build ideas in a shared space:
+
+#+BEGIN_EXPORT html
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Like it&#39;s just so much harder to achieve what SPJ describes here with systems work <a href="https://t.co/6ShxWQsAOr">pic.twitter.com/6ShxWQsAOr</a></p>&mdash; Patrick Dubroy (@dubroy) <a href="https://twitter.com/dubroy/status/1563167406008070149?ref_src=twsrc%5Etfw">August 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
+
+White:
+
+#+BEGIN_EXPORT html
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Like it&#39;s just so much harder to achieve what SPJ describes here with systems work <a href="https://t.co/6ShxWQsAOr">pic.twitter.com/6ShxWQsAOr</a></p>&mdash; Patrick Dubroy (@dubroy) <a href="https://twitter.com/dubroy/status/1563167406008070149?ref_src=twsrc%5Etfw">August 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
 * Rest
 Ledger.
 ** Working with pandoc =--standalone= is causing problems

@@ -92,7 +92,7 @@
       "In alphabetical order."
       "I'd prefer a random order of people, but I dislike randomness in Git diffs more."
       ""]
-     (for [{:keys [name href ]}
+     (for [{:keys [name href]}
            (sort-by :name
                     [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
                      {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}])]

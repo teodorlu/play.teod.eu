@@ -38,25 +38,9 @@ In the IR, we can represent "don't understand" explicitly.
 Or just as a comment there too.
 Converting the "unsupported comment" back should work fine.
 
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse
+* Appendix
+** 2022-08-27
+I think simply collecting some kind of bash/babashka rosetta might be a good way to start.
+And the place for that rosetta is ... here!
+This page is the deliverable.
+[[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]].

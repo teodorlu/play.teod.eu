@@ -1,13 +1,21 @@
 :PROPERTIES:
-:ID: 2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b
+:ID: 6ac830ef-cb3f-48ea-924a-5304384c4b8e
 :END:
-#+TITLE: Perception is reality. Perception is not reality.
+#+TITLE: Phenomenology
 
 [[file:..][..]]
 
 DRAFT
 
-1. Perception is reality.
-2. Perception is not reality.
+Here's what I wrote for [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][Existentialism as a world view]]:
 
-Is phenomenology the solution?
+I'd like to understand phenomenology better.
+Why?
+It provides a model between objectivity and perception.
+
+Things to do:
+
+1. Create a list of sources.
+   1. Heidegger?
+2. Find some modern definitions of phenomenology
+3. Figure out what I agree with.

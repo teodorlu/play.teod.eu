@@ -9,7 +9,9 @@ Structure --- by idea, not by time.
 
 List of problems I want to grapple with.
 
-* Working properly with strategic initiatives
+* Front 'n center problems
+* Brewing problems / problem options
+** Working properly with strategic initiatives
 Ever since I went into IT in 2019, I've felt shackled by the time horizon of the teams I've been working with.
 Where is the long term thinking?
 For Unicad, it's vital that we're able to work with what matters long term.
@@ -18,11 +20,11 @@ Research is a better analogy for much of what we do than "coding stuff".
 See also: https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy
 
 See also: [[id:b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd][Why don't we have a strategy?]]
-* Getting cross-article Org-roam links working
+** Getting cross-article Org-roam links working
 I honestly cannot be bothered to maintain links to specific article IDs.
 Especially before I've shared them for public consumption.
 Meaning "Ready for comments" and above.
-* C, OpenGL
+** C, OpenGL
 What?
 Problem?
 Are C and OpenGL problems?
@@ -39,7 +41,7 @@ What  specifically?
    What does it feel like when there's just me, the computer and its memory?
 3. I want to be able to draw high-performance graphics!
 4. I want to be able to write high-performance code.
-* A generic place to store data
+** A generic place to store data
 Possibly =store.teod.eu=.
 
 Why?
@@ -48,7 +50,7 @@ Why?
 - Experiment with data capture
 
 "Personal information architecture"
-* Rewrite =p= and =teod_fzf_cd= to babashka
+** Rewrite =p= and =teod_fzf_cd= to babashka
 Here's the ZSH code:
 
 #+begin_src
@@ -66,14 +68,24 @@ Why babashka?
 1. I prefer to maintain Clojure code to maintain ZSH code.
 2. Wait, I need a wrapper regardless.
    Otherwise =cd= doesn't work.
-* What is the list of concepts a new developer should be introduced to?
-** Motivating context
+** What is the list of concepts a new developer should be introduced to?
+*** Motivating context
 A new developer arrives.
 We want to:
 
 - allow the new developer to become effective quickly
 - build a habit of discussing & synthesizing team knowledge
-** Idea
+*** Idea
 We build our knowledge as a language.
 We prioritize its words.
 For those words, we write motivating essays.
+* 2022-08-27
+ACTION TIME
+
+1. Open problems are nice.
+   I want to continue this path.
+2. [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] is important.
+   What problems are on top?
+   For this, just copy the structure from other places.
+3. New problems!
+   1. Define phenomenology

@@ -116,15 +116,6 @@
       ""
       ]
 
-     ["** Stuff like this from other people:"
-      ""]
-     (let [org-link (fn [{:keys [name href]}]
-                      (str "[[" href "][" name "]]"))]
-       (for [{:keys [name href ]}
-             [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
-              {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}]]
-         (str "- " (org-link {:name name :href href}) " (off-site link)")))
-
      ["** Comments? Hit me up."
       "Details on [[https://teod.eu][teod.eu]]."]
      [""

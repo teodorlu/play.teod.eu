@@ -87,7 +87,7 @@
      (for [page norwegian] (str "- " (link page)))
      [""]
 
-     ["** Vague ideas, please ignore."
+     ["** Fragile seeds, please ignore."
       ""
       "Links to these mostly exist for me (Teodor)."
       "But still open, information wants to be free."
@@ -95,7 +95,7 @@
       (str/join " · " (for [page wtf-is-this] (link page)))
       ""]
 
-     ["** Vague ideas in Norwegian, please ignore these too."
+     ["** Fragile Norwegian seeds, please also ignore."
       ""
       (str/join " · " (for [page wtf-is-this-norwegian] (link page)))
       ""

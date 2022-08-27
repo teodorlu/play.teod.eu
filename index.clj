@@ -91,13 +91,11 @@
       "It shuffles when I happen to rebuild index.html."
       "Which I kinda like 😄"
       ""]
-     (let [org-link (fn [{:keys [name href]}]
-                      (str "[[" href "][" name "]]"))]
-       (for [{:keys [name href ]}
-             (shuffle
-              [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
-               {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}])]
-         (str "- " (org-link {:name name :href href}) " (off-site link)")))
+     (for [{:keys [name href ]}
+           (shuffle
+            [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
+             {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}])]
+       (str "- " (org-link {:name name :href href}) " (off-site link)"))
 
      (when (seq other)
        ["** Uncategorized\n"

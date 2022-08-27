@@ -45,7 +45,9 @@
        (map add-category)
        (sort-by :title)))
 
-(defn link [{:keys [id title] :as _page}]
+(defn page-link
+  "Link to a page on play.teod.eu"
+  [{:keys [id title] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn org-markup [{:keys [pages]}]
@@ -69,7 +71,7 @@
 
      ["** Ready for comments"]
      (for [page ready-for-comments]
-       (str "- " (link page)))
+       (str "- " (page-link page)))
 
      ["** Stuff like this from other people"
       ""
@@ -88,7 +90,7 @@
 
      (when (seq other)
        ["** Uncategorized\n"
-        (str/join " --- " (for [page other] (link page)))
+        (str/join " --- " (for [page other] (page-link page)))
         ""])
 
      (when (seq forever-incomplete)
@@ -100,14 +102,14 @@
         "Old pages aren't destroyed, new pages are written in reference to those of the past."
         "For learning, that's the format I prefer."
         ""
-        (str/join " --- " (for [page forever-incomplete] (link page)))
+        (str/join " --- " (for [page forever-incomplete] (page-link page)))
         ""])
 
      ["** Norwegian content"
       ""
       "Not everybody speaks Norwegian. But some do!"
       ""]
-     (for [page norwegian] (str "- " (link page)))
+     (for [page norwegian] (str "- " (page-link page)))
      [""]
 
      ["** Fragile seeds, please ignore."
@@ -117,12 +119,12 @@
       "Some of these might turn into \"real content\"."
       "Most won't."
       ""
-      (str/join " · " (for [page wtf-is-this] (link page)))
+      (str/join " · " (for [page wtf-is-this] (page-link page)))
       ""]
 
      ["** Fragile Norwegian seeds, please also ignore."
       ""
-      (str/join " · " (for [page wtf-is-this-norwegian] (link page)))
+      (str/join " · " (for [page wtf-is-this-norwegian] (page-link page)))
       ""
       ]
 

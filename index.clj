@@ -90,7 +90,7 @@
      ["** Other people's idea playgrounds"
       ""
       "In alphabetical order."
-      "I'd prefer random, but I don't like random Git diffs."
+      "I'd prefer a random order of people, but I dislike randomness in Git diffs more."
       ""]
      (for [{:keys [name href ]}
            (sort-by :name

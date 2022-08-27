@@ -72,3 +72,11 @@ I can ask Richard for content.
 Which things should I ask for?
 * 2022-07-17
 Asked Richard if he wanted to publish own stuff or publish stuff on play.teod.eu.
+* 2022-08-27
+Progress!
+** Quick status
+- Got go-ahead to try this out for Iterate
+- Going to present at internal conference
+  - Scoping not yet determined
+- Sindre just created his own space: [[https://play.sindre.me/][Random Ramblings]]
+- Rename: from /Iterate Knowledge Archipelago/ to /Iterate Knowledge Improve/ - in short IKI

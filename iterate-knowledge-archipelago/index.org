@@ -4,6 +4,7 @@
 #+title: Iterate Knowledge Archipelago
 
 [[./..][..]]
+
 * Synthesis
 ** Where is other people's content?
 Iterate people:

@@ -60,9 +60,9 @@
     (lines
      ["#+title: Towards an iterated game"
       ""
-      (str "Most content authored by Teodor Heggelund"
+      (str "/Most content authored by Teodor Heggelund"
            " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-           ".")
+           "./")
 
       ""
       (sentences "Intent: bring ideas to life."

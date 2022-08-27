@@ -117,7 +117,7 @@
       "Links to these mostly exist for me (Teodor)."
       "But still open, information wants to be free."
       "Some of these might turn into \"real content\"."
-      "Most won't."
+      "Most will not."
       ""
       (str/join " · " (for [page wtf-is-this] (page-link page)))
       ""]

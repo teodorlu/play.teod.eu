@@ -272,6 +272,7 @@ DRAFT
                   ""
 
 
+                  "# Note: generating the makefile with the makefile is sometimes problematic."
                   ".PHONY: makefile"
                   "makefile:"
                   "\t./play.clj makefile"
@@ -279,6 +280,7 @@ DRAFT
                   ""
 
                   "# Rengenerate the index"
+                  "# Note: we don't remove the makefile, as that gets us ... stuck."
                   ".PHONY: clean"
                   "clean:"
                   "\trm -f index.html"

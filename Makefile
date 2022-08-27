@@ -207,12 +207,14 @@ xml-on-the-web/index.html: xml-on-the-web/index.org
 	pandoc -s --shift-heading-level-by=1 --from=org+smart -i xml-on-the-web/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o xml-on-the-web/index.html --standalone --toc -H header-default-include.html
 
 
+# Note: generating the makefile with the makefile is sometimes problematic.
 .PHONY: makefile
 makefile:
 	./play.clj makefile
 
 
 # Rengenerate the index
+# Note: we don't remove the makefile, as that gets us ... stuck.
 .PHONY: clean
 clean:
 	rm -f index.html

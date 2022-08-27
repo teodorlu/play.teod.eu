@@ -193,7 +193,7 @@ I include this list as a personal reminder.
 
 (defn main []
   (spit "index.html" (slurp (:out
-                             @(p/process '[pandoc --from org+smart -H live.html --to html --standalone]
+                             @(p/process '[pandoc --from org+smart -H header-default-include.html --to html --standalone]
                                          {:in (org-markup {:pages (pages)})})))))
 
 (if (= (System/getenv "ALT")

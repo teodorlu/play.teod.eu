@@ -64,6 +64,7 @@
 
       ""
       "Status: work in progress, lots of rough edges."
+      "But you're /very/ much welcome to have a look around!"
       ""]
 
      ["** Ready for comments"]

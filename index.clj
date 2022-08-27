@@ -101,6 +101,12 @@
       ""
       ]
 
+     ["** Stuff like this from other people:"
+      ""]
+     (let [org-link (fn [{:keys [name href]}]
+                      (str "[[" href "][" name "]]"))]
+       (for [{:keys [name href ]} [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}]]
+         (str "- " (org-link {:name name :href href}) " (off-site link)")))
 
      ["** Comments? Hit me up."
       "Details on [[https://teod.eu][teod.eu]]."]
@@ -131,6 +137,8 @@ I include this list as a personal reminder.
       ""
       "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
       ]
+
+
 
      )))
 

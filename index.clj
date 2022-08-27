@@ -122,7 +122,7 @@
      (for [page norwegian] (str "- " (page-link page)))
      [""]
 
-     ["** Idea seeds, please ignore."
+     ["** Seeds and vague ideas, please ignore."
       ""
       "Links to these mostly exist for me (Teodor)."
       "But still open, information wants to be free."
@@ -132,7 +132,7 @@
       (str/join " · " (for [page wtf-is-this] (page-link page)))
       ""]
 
-     ["** Norwegian seeds, please also ignore."
+     ["** Seeds and vague ideas in Norwegian, please ignore these too."
       ""
       (str/join " · " (for [page wtf-is-this-norwegian] (page-link page)))
       ""

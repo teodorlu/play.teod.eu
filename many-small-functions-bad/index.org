@@ -6,3 +6,9 @@
 [[./..][..]]
 
 I
+
+* Appendix
+** 2022-08-27
+Haha, this is amazing.
+This idea didn't get too far.
+Really love that =M-x teod-play-random= can just send me over here.

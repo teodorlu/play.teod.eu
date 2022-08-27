@@ -87,7 +87,7 @@
      (for [page ready-for-comments]
        (str "- " (page-link page)))
 
-     ["** Stuff like this from other people"
+     ["** Other people's idea playgrounds"
       ""
       "In alphabetical order."
       "I'd prefer random, but I don't like random Git diffs."

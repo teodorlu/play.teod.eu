@@ -10,6 +10,8 @@ Structure --- by idea, not by time.
 List of problems I want to grapple with.
 
 * Front 'n center problems
+Empty here for new.
+Need to brew some more.
 * Brewing problems / problem options
 ** Working properly with strategic initiatives
 Ever since I went into IT in 2019, I've felt shackled by the time horizon of the teams I've been working with.
@@ -90,4 +92,4 @@ ACTION TIME
 3. New problems!
    1. Define [[id:6ac830ef-cb3f-48ea-924a-5304384c4b8e][phenomenology]]
    2. Define [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][existentialism]]
-   2. Define [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][existentialism is LOL]]
+   3. Create a data visualization gallery

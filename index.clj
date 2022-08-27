@@ -45,6 +45,9 @@
        (map add-category)
        (sort-by :title)))
 
+(defn org-link [{:keys [name href]}]
+  (str "[[" href "][" name "]]"))
+
 (defn page-link
   "Link to a page on play.teod.eu"
   [{:keys [id title] :as _page}]
@@ -56,6 +59,8 @@
         lines (fn [& ls] (str/join "\n" (apply concat ls)))]
     (lines
      ["#+title: Towards an iterated game"
+      ""
+      (str "Content by Teodor Heggelund (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ").")
       ""
       (sentences "Intent: bring ideas to life."
                  "Discuss, sharpen, play."

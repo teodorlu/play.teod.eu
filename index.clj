@@ -60,7 +60,9 @@
     (lines
      ["#+title: Towards an iterated game"
       ""
-      (str "Content by Teodor Heggelund (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ").")
+
+      (str "Content by Teodor Heggelund (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")."
+           )
       ""
       (sentences "Intent: bring ideas to life."
                  "Discuss, sharpen, play."
@@ -86,15 +88,12 @@
 
      ["** Stuff like this from other people"
       ""
-      "In random order, actually."
-      "But since the order shuffling happens at build time, it doesn't change around when you refresh this page."
-      "It shuffles when I happen to rebuild index.html."
-      "Which I kinda like 😄"
+      "In no particular order."
+      "I'd prefer random, but I don't like random Git diffs."
       ""]
      (for [{:keys [name href ]}
-           (shuffle
-            [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
-             {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}])]
+           [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
+            {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}]]
        (str "- " (org-link {:name name :href href}) " (off-site link)"))
 
      (when (seq other)

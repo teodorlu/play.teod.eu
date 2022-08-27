@@ -149,7 +149,7 @@
 4. More abstractly --- we need a /fractal/ structure, not a hierarchical one.
 5. Unclear content authority --- whose content is this? Who is responsible?
 6. Mixing good stuff and bad stuff makes the good stuff hard to find
-7. It's hard to find the good stuff whatsoever
+7. It's hard to find any good stuff whatsoever
 8. It's hard to find anything that's not on the front page
 9. It's impossible to build other views than the default
 10. It's impossible to embed things that should not be built at all

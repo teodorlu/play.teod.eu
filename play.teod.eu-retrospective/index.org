@@ -15,6 +15,13 @@ Structure:
 Attention is aimed here.
 ** play.teod.eu success metric: strong language
 I want to use play.teod.eu to power up my language.
+** Source code are BAD
+Just look at [[id:2c53f531-afdd-4efb-becd-f5d2f220b5ab][Recursive document transformations with Pandoc and Clojure]].
+
+1. Hard to disambiguate code listings from text
+2. Code listing syntax highlighting has horrible contrast with the rest of the text.
+
+I feel like I want to ask Oddmund for help / advice.
 ** CSS pain points
 I want to learn CSS.
 I want to use play.teod.eu to learn CSS.

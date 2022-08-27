@@ -70,6 +70,11 @@
       ""]
 
      ["** Ready for comments"]
+     [""
+      "Content that I feel is ready to be read by others."
+      "Really appreciate if you reach out over Twitter / E-mail / other means if you're interested in any of these topics!"
+      "My main motivation for creating play.teod.eu was to push ideas out of my head, into a shared space with others."
+      ""]
      (for [page ready-for-comments]
        (str "- " (page-link page)))
 

@@ -17,3 +17,15 @@ Light, permeating green plants.
 In order to design for solarpunk, I must learn design.̈́
 That's a place I want to go.
 How do I get there?
+* Texture required
+My current background is all green, bland.
+It's not calming, as I wanted.
+It's stressful.
+More neon green than dark wood green.
+
+But perhaps more importantly, it's too even.
+It's too legible.
+No nuance, no detail.
+When zooming in, it's important.
+
+Perhaps what I want is a kind of moving leaves simulation?

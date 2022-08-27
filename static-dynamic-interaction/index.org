@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: c62978a1-8081-4d44-9af4-93327f387085
+:END:
+#+TITLE: Static-dynamic interaction
+
+[[file:..][..]]
+
+Canonical content source: https://www.teodorheggelund.com/posts/static-dynamic-interaction.html
+
+An essay I wrote in 2018 that I still keep returning to.
+There's movement.
+There's immutability.
+
+And we find utility movement enabled by solid foundations.

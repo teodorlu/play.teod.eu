@@ -70,6 +70,21 @@
      (for [page ready-for-comments]
        (str "- " (link page)))
 
+     ["** Stuff like this from other people"
+      ""
+      "In random order, actually."
+      "But since the order shuffling happens at build time, it doesn't change around when you refresh this page."
+      "It shuffles when I happen to rebuild index.html."
+      "Which I kinda like 😄"
+      ""]
+     (let [org-link (fn [{:keys [name href]}]
+                      (str "[[" href "][" name "]]"))]
+       (for [{:keys [name href ]}
+             (shuffle
+              [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
+               {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}])]
+         (str "- " (org-link {:name name :href href}) " (off-site link)")))
+
      (when (seq other)
        ["** Uncategorized\n"
         (str/join " --- " (for [page other] (link page)))

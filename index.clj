@@ -60,18 +60,16 @@
     (lines
      ["#+title: Towards an iterated game"
       ""
-      (str "/Most content authored by Teodor Heggelund"
-           " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-           "./")
-
-      ""
       (sentences "Intent: bring ideas to life."
                  "Discuss, sharpen, play."
                  "Minimize the distance between intent and reality.")
       ""
       (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
                  "Embrace remix culture.")
-
+      ""
+      (str "/Most content authored by Teodor Heggelund"
+           " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
+           "./")
       ""
       "Status: work in progress, lots of rough edges."
       "But you're /very/ much welcome to have a look around!"

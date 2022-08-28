@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: 2dc873d7-b97c-4145-830e-651070d64b3e
+:END:
+#+TITLE: Quantifying where my writing effort goes
+
+[[file:..][..]]
+
+DRAFT
+
+I acquired a writing habit some time in 2017.
+
+(Hmm, I kinda wanna graph my writing activity then too)
+
+I started journaling in org-mode.
+
+In the summer of 2020, Roam Research came along.
+Some time later, I created a "personal channel" (#teod-play) on the company Slack server.
+
+* 2022-08-29
+I want this
+
+So ... I got sidetracked into writing some clojure code that shells out to git in order to do git stuff
+
+In other words, let's shave the yaks.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 93a28014-d70c-4995-b82b-03d25f478338
+:END:
+#+TITLE: Hei hei
+
+[[file:..][..]]
+
+DRAFT
+
+Teodor sier hei!!!

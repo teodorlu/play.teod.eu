@@ -82,3 +82,8 @@ Progress!
   - Scoping not yet determined
 - Sindre just created his own space: [[https://play.sindre.me/][Random Ramblings]]
 - Rename: from /Iterate Knowledge Archipelago/ to /Iterate Knowledge Improve/ - in short IKI
+* 2022-09-01
+More progress!
+** Quick status
+- New name: /iki/ now stands for /iterate knowledge iterate/
+- Search indexer and search API: https://iki-api.iki.app.iterate.no/graphql/playground

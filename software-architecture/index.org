@@ -12,7 +12,7 @@ DRAFT
 
 /Good namespace design/.
 Path to readable code: language construction, and application of that language.
-[[file:~/dev/teodorlu/play.teod.eu/software-architecture-as-language-construction/][software-architecture-as-language-construction]]
+[[id:07f496f2-7dc3-4155-bbe7-e0f64e054129][Software architecture as langauge construction]]
 Bottom layer: language construction.
 Top layer: language application.
 Task of bottom layer: expose capabilities as a good set of primitives.

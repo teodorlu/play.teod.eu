@@ -250,6 +250,7 @@ DRAFT
                      sort)
         html (fn [target] (str target "/index.html"))
         play-edn (fn [target] (str target "/play.edn"))
+        indent (fn [s] (str "\t" s))
         makefile (lines
                   "# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED"
                   "# SEE `make clean` TARGET"
@@ -258,11 +259,19 @@ DRAFT
 
                   "# Generate target for root index"
                   ;; TODO root index also depends on all the play.edn files found
-                  (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets)))
+                  (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets) (list "404.html")))
                   "\t./index.clj"
                   ""
                   ""
 
+                  "# Generate target for 404"
+                  "404.html: 404.org"
+                  (indent
+                   "pandoc --from=org+smart -i 404.org -t json | cat | pandoc -f json -o 404.html --standalone -H header-default-include.html")
+
+
+                  ""
+                  ""
                   "# Generate target for each page"
                   (str/join "\n\n"
                             (for [t targets]

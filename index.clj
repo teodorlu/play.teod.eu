@@ -102,7 +102,7 @@
         ""
         "Some content is /done/ at some point."
         "Journals aren't."
-        "I really enjoy using journals when I'm learning something new."
+        "I like to use journaling as a tool to learn new things."
         ""
         (str/join " --- " (for [page forever-incomplete] (page-link page)))
         ""])

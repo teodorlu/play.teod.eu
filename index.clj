@@ -157,7 +157,6 @@ I include this list as a personal reminder.
       ""
       "It's for playing with ideas."
       "It's for breathing air into the bad ones, and the good ones."
-      "And perhaps some good ones may surface."
       ""
       "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
       ]

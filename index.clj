@@ -102,10 +102,8 @@
        ["** Forever incomplete"
         ""
         "Some content is /done/ at some point."
-        "Journals are not."
-        "They are only extended."
-        "Old pages aren't destroyed, new pages are written in reference to those of the past."
-        "For learning, that's the format I prefer."
+        "Journals aren't."
+        "I really enjoy using journals when I'm learning something new."
         ""
         (str/join " --- " (for [page forever-incomplete] (page-link page)))
         ""])

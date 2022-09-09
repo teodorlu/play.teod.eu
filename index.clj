@@ -100,8 +100,8 @@
      (when (seq forever-incomplete)
        ["** Forever incomplete"
         ""
-        "Some content is /done/ at some point."
-        "Journals aren't."
+        "Some content is eventually /done/."
+        "Not journals."
         ""
         ":)"
         ""

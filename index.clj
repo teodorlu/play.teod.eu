@@ -75,10 +75,9 @@
            ".")
       ""]
 
-     ["** Ready for comments"]
+     ["** Content that's ready for light"]
      [""
-      "Content that I feel is ready to be read by others."
-      "Comments are welcome!"
+      "Feel free to have a look!"
       ""]
      (for [page ready-for-comments]
        (str "- " (page-link page)))

@@ -84,7 +84,7 @@
 
      ["** Other people's idea playgrounds"
       ""
-      "In alphabetical order."
+      "In alphabetical order:"
       ""]
      (for [{:keys [name href]}
            (sort-by :name

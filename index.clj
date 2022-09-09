@@ -131,8 +131,6 @@
       ""
       ]
 
-     ["** Comments? Hit me up."
-      "Details on [[https://teod.eu][teod.eu]]."]
      [""
       "** Efforts at \"writing things down together\" commonly fail because:
 

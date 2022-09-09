@@ -75,7 +75,7 @@
            ".")
       ""]
 
-     ["** Content that's ready for light"]
+     ["** Content that's ready for daylight"]
      [""
       "Feel free to have a look!"
       ""]

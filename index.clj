@@ -67,12 +67,12 @@
       (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
                  "Embrace remix culture.")
       ""
-      (str "/Most content authored by Teodor Heggelund"
-           " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-           "./")
-      ""
       "Status: work in progress, lots of rough edges."
       "But you're /very/ much welcome to have a look around!"
+      ""
+      (str "Most content authored by Teodor Heggelund"
+           " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
+           ".")
       ""]
 
      ["** Ready for comments"]

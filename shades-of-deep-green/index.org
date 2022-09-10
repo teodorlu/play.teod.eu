@@ -38,7 +38,9 @@ I use the same approach for my Linux system.
 Can I improve it?
 I'd rather have incomplete parts than inability to move forward.
 
+A while ago, I slapped together some colors I felt had some sense of calm in them:
 
+[[file:solarpunk1.png]]
 
 
 

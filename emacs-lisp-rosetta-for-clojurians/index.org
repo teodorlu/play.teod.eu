@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: f777f427-209c-4525-aef7-c8ce889018b2
+:END:
+#+TITLE: An Emacs Lisp rosetta for Clojurians
+
+[[file:..][..]]
+
+This document is aimed at Clojure programmers who want to learn some Emacs lisp.
+
+* Looping for side effects
+
+In Clojure, =map= and =for= are intended for iterating over pure functions.
+They are lazy, and may never finish.
+
+For side-effectful code, =doseq= is my goto.
+
+Here's how we can print some numbers:
+
+#+begin_src clojure :results output :exports both
+(doseq [n (range 3)]
+  (println (str  n "? No!!!")
+           "You are not a number! You are a free man!"))
+#+end_src
+
+#+RESULTS:
+: 0? No!!! You are not a number! You are a free man!
+: 1? No!!! You are not a number! You are a free man!
+: 2? No!!! You are not a number! You are a free man!

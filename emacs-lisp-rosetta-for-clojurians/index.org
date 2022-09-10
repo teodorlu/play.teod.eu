@@ -7,7 +7,7 @@
 
 This document is aimed at Clojure programmers who want to learn some Emacs lisp.
 
-* Looping for side effects
+* Loop for side effects
 
 In Clojure, =map= and =for= are intended for iterating over pure functions.
 They are lazy, and may never finish.

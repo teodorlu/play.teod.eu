@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID: 93d32545-91b7-463e-9d61-1e3da190cf64
+:END:
+#+TITLE: Shades of Deep Green
+
+[[file:..][..]]
+
+#+BEGIN_EXPORT html
+<iframe width="720" height="405" src="https://www.youtube.com/embed/qD77LKV2Cpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+I've come to despise creating stress when stress is not required.
+
+I realize that this is context dependent.
+A real pursuit towards zero stress requires extraordinary levels of trust, shared vision and shared sense of quality.
+
+I digress.
+
+Trees don't induce stress.
+They just are.
+Frankly, they remove stress.
+For me, at least.
+
+So, I want that.
+
+
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

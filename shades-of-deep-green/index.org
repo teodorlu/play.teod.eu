@@ -5,9 +5,12 @@
 
 [[file:..][..]]
 
-#+BEGIN_EXPORT html
-<iframe width="720" height="405" src="https://www.youtube.com/embed/qD77LKV2Cpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+END_EXPORT
+TODO remember to comment the video back in when complete.
+While writing, I just want some faster page loads.
+
+# #+BEGIN_EXPORT html
+# <iframe width="720" height="405" src="https://www.youtube.com/embed/qD77LKV2Cpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# #+END_EXPORT
 
 I've come to despise the creation of stress when stress is not required.
 
@@ -24,35 +27,3 @@ For me, at least.
 So, I want that.
 
 I'm fortunate enough to be able to meet great designers around my lunch table.
-
-
-
-#+BEGIN_VERSE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+END_VERSE

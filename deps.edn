@@ -1,2 +1,3 @@
-{:deps {net.mikera/imagez {:mvn/version "0.12.0"}}
+{:deps {net.mikera/imagez {:mvn/version "0.12.0"}
+        org.clojure/clojure {:mvn/version "1.11.1"}}
  :aliases {}}

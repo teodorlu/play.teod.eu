@@ -251,5 +251,95 @@ data-exports="both"><pre class="sourceCode clojure"><code class="sourceCode cloj
 1? No!!! You are not a number! You are a free man!
 2? No!!! You are not a number! You are a free man!
 </code></pre>
+<p>Now, let’s print to <code class="verbatim">*Messages*</code> in Emacs
+Lisp. We can use the <code class="verbatim">cl-loop</code> macro. I
+don’t care too much about idiomatic solutions now — I want to get
+something working first.</p>
+<p>Here is the example from the docs:</p>
+<div class="sourceCode" id="cb3" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(cl-loop for i from <span class="dv">1</span> to <span class="dv">5</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>         collect i)</span></code></pre></div>
+<p>Now, let’s try make that print into <code
+class="verbatim">*Messages*</code>:</p>
+<div class="sourceCode" id="cb4" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(cl-loop for i from <span class="dv">1</span> to <span class="dv">5</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>         (<span class="kw">progn</span> (message i)))</span></code></pre></div>
+<p>Nope, that doesn’t work.</p>
+<p>Reading the docs again, it looks like <code
+class="verbatim">cl-loop</code> supports a <code
+class="verbatim">do EXPRS...</code> clause. Let’s give that a shot.</p>
+<div class="sourceCode" id="cb5" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(cl-loop for i from <span class="dv">1</span> to <span class="dv">3</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>         <span class="kw">do</span> (message (<span class="kw">string</span> i)))</span></code></pre></div>
+<p>Woah, that printed</p>
+<pre><code>^A
+^B
+^C
+</code></pre>
+<p>.</p>
+<p>I had no idea how to use the built in docs to look this up, so I
+ended up searching for “emacs lisp convert int to string”. And I found
+<code class="verbatim">number-to-string</code>.</p>
+<div class="sourceCode" id="cb7" data-org-language="emacs-lisp"
+data-exports="both"><pre class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(number-to-string <span class="dv">123</span>)</span></code></pre></div>
+<pre class="example"><code>123
+</code></pre>
+<p>So! Let’s try again.</p>
+<div class="sourceCode" id="cb9" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(cl-loop for i from <span class="dv">1</span> to <span class="dv">3</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>         <span class="kw">do</span> (message (number-to-string i)))</span></code></pre></div>
+<pre><code>1
+2
+3
+</code></pre>
+<p>Nice!</p>
+<p>To insert into a buffer, we can replace <code
+class="verbatim">message</code> with <code
+class="verbatim">insert</code>.</p>
+<div class="sourceCode" id="cb11" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod-temp-insert-lines-123 </span>()</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  (cl-loop for i from <span class="dv">1</span> to <span class="dv">3</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>           <span class="kw">do</span> (insert (number-to-string i) <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)))</span></code></pre></div>
+<p>Now we can use that function to insert some lines with <code
+class="verbatim">M-x teod-temp-insert-lines-123</code>.</p>
+<pre><code>1
+2
+3
+</code></pre>
+<p>😊</p>
+<p>And I can write the function I really wanted!!!</p>
+<div class="sourceCode" id="cb13" data-org-language="emacs-lisp"><pre
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/insert-empty-lines-in-org-mode </span>()</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  (insert <span class="st">&quot;#+BEGIN_VERSE&quot;</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  (cl-loop for i from <span class="dv">1</span> to <span class="dv">15</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>           <span class="kw">do</span> (insert <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  (insert <span class="st">&quot;#+END_VERSE&quot;</span>))</span></code></pre></div>
+<p>Yay!</p>
+<p>When writing org-mode documents that I export to HTML, I often like
+to have a preview without having to scroll the web browser all the time.
+Adding about half a page height solves this nicely. Sure, I could do it
+with CSS. But I’d rather just have a simple Org-mode document.</p>
+<div class="line-block"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</div>
 </body>
 </html>

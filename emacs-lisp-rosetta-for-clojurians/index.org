@@ -26,3 +26,131 @@ Here's how we can print some numbers:
 : 0? No!!! You are not a number! You are a free man!
 : 1? No!!! You are not a number! You are a free man!
 : 2? No!!! You are not a number! You are a free man!
+
+Now, let's print to =*Messages*= in Emacs Lisp.
+We can use the =cl-loop= macro.
+I don't care too much about idiomatic solutions now --- I want to get something working first.
+
+Here is the example from the docs:
+
+#+begin_src emacs-lisp
+(cl-loop for i from 1 to 5
+         collect i)
+#+end_src
+
+#+RESULTS:
+| 1 | 2 | 3 | 4 | 5 |
+
+Now, let's try make that print into =*Messages*=:
+
+#+begin_src emacs-lisp
+(cl-loop for i from 1 to 5
+         (progn (message i)))
+#+end_src
+
+Nope, that doesn't work.
+
+Reading the docs again, it looks like =cl-loop= supports a =do EXPRS...= clause.
+Let's give that a shot.
+
+#+begin_src emacs-lisp
+(cl-loop for i from 1 to 3
+         do (message (string i)))
+#+end_src
+
+Woah, that printed
+
+#+begin_src
+^A
+^B
+^C
+#+end_src
+
+.
+
+I had no idea how to use the built in docs to look this up, so I ended up searching for "emacs lisp convert int to string".
+And I found =number-to-string=.
+
+#+begin_src emacs-lisp :exports both
+(number-to-string 123)
+#+end_src
+
+#+RESULTS:
+: 123
+
+So! Let's try again.
+
+#+begin_src emacs-lisp
+(cl-loop for i from 1 to 3
+         do (message (number-to-string i)))
+#+end_src
+
+#+RESULTS:
+
+#+begin_src
+1
+2
+3
+#+end_src
+
+Nice!
+
+To insert into a buffer, we can replace =message= with =insert=.
+
+#+begin_src emacs-lisp
+(defun teod-temp-insert-lines-123 ()
+  (interactive)
+  (cl-loop for i from 1 to 3
+           do (insert (number-to-string i) "\n")))
+#+end_src
+
+Now we can use that function to insert some lines with =M-x teod-temp-insert-lines-123=.
+
+#+begin_src
+1
+2
+3
+#+end_src
+
+😊
+
+And I can write the function I really wanted!!!
+
+#+begin_src emacs-lisp
+(defun teod/insert-empty-lines-in-org-mode ()
+  (interactive)
+  (insert "#+BEGIN_VERSE")
+  (cl-loop for i from 1 to 15
+           do (insert "\n"))
+  (insert "#+END_VERSE"))
+#+end_src
+
+Yay!
+
+When writing org-mode documents that I export to HTML, I often like to have a preview without having to scroll the web browser all the time.
+Adding about half a page height solves this nicely.
+Sure, I could do it with CSS.
+But I'd rather just have a simple Org-mode document.
+
+#+begin_verse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_verse

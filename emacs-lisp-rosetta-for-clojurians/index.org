@@ -5,7 +5,10 @@
 
 [[file:..][..]]
 
-This document is aimed at Clojure programmers who want to learn some Emacs lisp.
+This document is aimed at Clojure programmers who want to learn some Emacs Lisp.
+
+It's nowhere near complete, and will probably never be.
+Perhaps can create your own bits and pieces of a rosetta?
 
 * Loop for side effects
 

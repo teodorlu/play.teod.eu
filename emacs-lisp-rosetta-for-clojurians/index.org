@@ -134,26 +134,3 @@ When writing org-mode documents that I export to HTML, I often like to have a pr
 Adding about half a page height solves this nicely.
 Sure, I could do it with CSS.
 But I'd rather just have a simple Org-mode document.
-
-#+begin_verse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+end_verse

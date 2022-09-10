@@ -40,11 +40,14 @@ I'd rather have incomplete parts than inability to move forward.
 
 A while ago, I slapped together some colors I felt had some sense of calm in them:
 
+#+attr_html: :width 720px
+#+attr_html: :height 405px
 [[file:solarpunk1.png]]
 
 But all of these are quite intense.
 What I feel is lacking is texture. Shades.
 And perhaps some depth.
+Darkness.
 
 #+begin_verse
 

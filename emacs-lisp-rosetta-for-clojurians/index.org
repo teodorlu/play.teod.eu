@@ -7,7 +7,8 @@
 
 This document is aimed at Clojure programmers who want to learn some Emacs Lisp.
 
-It's nowhere near complete, and will probably never be.
+As of 2022-09-10, it's nowhere near complete.
+And it probably never will be.
 
 * Loop for side effects
 

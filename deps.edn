@@ -1,0 +1,2 @@
+{:deps {net.mikera/imagez {:mvn/version "0.12.0"}}
+ :aliases {}}

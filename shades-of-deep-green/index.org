@@ -49,6 +49,21 @@ What I feel is lacking is texture. Shades.
 And perhaps some depth.
 Darkness.
 
+So!
+
+I'd like to create something.
+In here.
+Program it.
+Add texture.
+We're straight into generative art territory, aren't we.
+perhaps mix the three in a nice way?
+I dunno.
+Let's see where we end up.
+
+I've used https://github.com/mikera/imagez for image processing before, that was quite nice.
+Essentially, I just want to put pixels on a canvas.
+This could be kinda fun.
+
 #+begin_verse
 
 

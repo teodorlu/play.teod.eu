@@ -82,6 +82,15 @@ We want to:
 We build our knowledge as a language.
 We prioritize its words.
 For those words, we write motivating essays.
+** How can I communicate properly on the web that /my page/ is only a reference?
+Case: I want to create "intermediate" pages for remote references.
+But I don't want the to create confusion about what the canonical page for something is.
+How can I achieve that?
+
+Ideally, there's some HTTP / HTML stuff.
+A W3C spec or something.
+"Please do not treat this page as canonical".
+I want to ask Sindre, Oddmund, Richard and Sean about this.
 * 2022-08-27
 ACTION TIME
 

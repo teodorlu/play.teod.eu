@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID: 7e70b878-1ef2-4ab6-885b-727eb557213d
+:END:
+#+TITLE: OGGPOW: A framework for technical product discovery and delivery
+
+[[file:..][..]]
+
+DRAFT
+
+One Good Goal Plus initiative Options and WIP
+
+* JOB TO BE DONE
+Enable effective attention design for a product team solving hard technical problems.
+* TERMINOLOGY
+| Term                | Definition                                    |
+|---------------------+-----------------------------------------------|
+| One good goal (OGG) | An increment of product value                 |
+| Initiative options  | Options for future good goals / intiatives    |
+| WIP                 | Loose ends that limit current or future speed |
+* WORK CATEGORIES
+We group work into either:
+
+1. A bucket of options
+2. The current tactical goal
+3. A bucket of WIP
+* EXAMPLE WORK STREAMS
+Discovery work. Options -> OGG -> Options -> OGG.
+
+Options
+* A MINIMAL TOOLKIT FOR OGGPOW
+Options, OGG and WIP are documents.
+
+Documents are protected HTML.
+
+Documents have an URL.
+
+OGG is a reference to an initiative.
+The initiative starts as an option.
+The team prioritizes /one/ initiative at a time.
+
+Initiative options can have dependencies (references).
+
+Feasibility, viability, value and usability are tackled early in the initiative option phase, if possible.
+We can push an initiative option all the way to production under a feature flag.
+Or we can do technical feasibility work / technical prototyping under an initiative document.
+* OGGPOW in Unicad
+I don't like wasting my own time.
+I don't like wasting other's time.
+And I don't like using tools that break my flow.
+
+In Unicad, we haven't committed heavily to any single traditional work management system.
+We've used Miro and Figma on and off, and Github has been a sort of constant.
+* OGGPOW DOESN'T REQUIRE THAT WE SPENT OUR TIME ON:
+1. sprint planning. Instead, initiative option curation is a continuous process, and we stay in sync about progress on One Good Goal.
+2. trello. Options and WIP /can/ be viewed as lists, or as lists of links. Trello /can/ be used to implement OGGPOW, but is not required.
+3. sprints. We orient our work around One Good Goal, not random time intervals.
+4. backlog. We don't blindly say "here's a huge list of stuff we want to do". Instead, we curate options and select a single priority.

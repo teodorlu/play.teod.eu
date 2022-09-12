@@ -75,7 +75,7 @@
            ".")
       ""]
 
-     ["** Content that's ready for daylight"]
+     ["** Content that's ready for the eyes of others"]
      [""
       "Feel free to have a look :)"
       ""]

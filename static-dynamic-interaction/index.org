@@ -7,8 +7,7 @@
 
 Canonical content source: https://www.teodorheggelund.com/posts/static-dynamic-interaction.html
 
-An essay I wrote in 2018 that I still keep returning to.
-There's movement.
-There's immutability.
+Utility is found in movement.
+Movement is enabled by solid foundations.
 
-And we find utility movement enabled by solid foundations.
+The design challenge for a systems developer is to tastefully disambiguate between movement---dynamics and solidity---statics.

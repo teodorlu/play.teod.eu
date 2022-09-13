@@ -1,33 +1,88 @@
 :PROPERTIES:
 :ID: 7e70b878-1ef2-4ab6-885b-727eb557213d
 :END:
-#+TITLE: OGGPOW: A framework for technical product discovery and delivery
+#+TITLE: OGGPOW: A flexible strategic framework
 
 [[file:..][..]]
 
 DRAFT
 
-One Good Goal Plus initiative Options and WIP
+One Good Goal plus Options and WIP
 
-* JOB TO BE DONE
+* Second draft
+** Target audience: teams aiming for elite levels of trust and quality
+** Motivation & introduction
+- Utility is contextual.
+  The purpose of structure is to serve utility in a context.
+  Ref [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]].
+- Requirement: mutually high levels of trust, shared sense of quality and shared sense of aesthetics.
+- A brief history of failed attempt leading up to OGGPOW
+  - Note: it's gradually becoming better.
+  - My experience as a civil engineer: the inability to improve the process as we go.
+    - Too static
+  - My experience working in a startup: everything is moving, confusion reigns.
+    - Too dynamic
+  - My experience working in a big organization: Diluted intent, emphasis on legibility and reproducability over value.
+    - Actionable: reify intent for product decisions
+    - Actionable: reify intent for process decisions
+** Preparing for OGGPOW: how organizational stability impacts trust & quality
+Learning requires deep work.
+** One Good Goal
+Requirement: there is always one good goal.
+
+"Good":
+
+- Makes sense strategically
+- Actionable
+- Goal is specified as an outcome that's benefitical for end users.
+** A Bucket of Options
+Options are initiatives that we can choose to prioritize or grow.
+** A Bucket of WIP
+** IKI: a light tool for bottom-up attention design
+In Unicad, we don't want to waste our time.
+We'd rather work effectively with tools that enable thought than slow down for conformity and tool-driven workflows.
+We have made attempts to use Notion, Github and Miro for planning.
+Those attempts didn't stick.
+
+So we did what worked.
+
+We used code when code was the proper tool for the job.
+We used text when code didn't suffice.
+
+*The hourglass of IKI*.
+
+Flexibility - Individuals create content with the tools they prefer.
+
+Cohesion - One Knowledge Protocol
+
+Flexibility - Content can be read from any browser.
+Content can be indexed by anyone.
+** The hourglass of OGGPOW
+Flexibility - Bucket of Options
+
+Cohesion - One Good Goal
+
+Flexibility - Bucket of WIP
+* First draft
+** JOB TO BE DONE
 Enable effective attention design for a product team solving hard technical problems.
-* TERMINOLOGY
+** TERMINOLOGY
 | Term                | Definition                                    |
 |---------------------+-----------------------------------------------|
 | One good goal (OGG) | An increment of product value                 |
 | Initiative options  | Options for future good goals / intiatives    |
 | WIP                 | Loose ends that limit current or future speed |
-* WORK CATEGORIES
+** WORK CATEGORIES
 We group work into either:
 
 1. A bucket of options
 2. The current tactical goal
 3. A bucket of WIP
-* EXAMPLE WORK STREAMS
+** EXAMPLE WORK STREAMS
 Discovery work. Options -> OGG -> Options -> OGG.
 
 Options
-* A MINIMAL TOOLKIT FOR OGGPOW
+** A MINIMAL TOOLKIT FOR OGGPOW
 Options, OGG and WIP are documents.
 
 Documents are protected HTML.
@@ -43,14 +98,14 @@ Initiative options can have dependencies (references).
 Feasibility, viability, value and usability are tackled early in the initiative option phase, if possible.
 We can push an initiative option all the way to production under a feature flag.
 Or we can do technical feasibility work / technical prototyping under an initiative document.
-* OGGPOW in Unicad
+** OGGPOW in Unicad
 I don't like wasting my own time.
 I don't like wasting other's time.
 And I don't like using tools that break my flow.
 
 In Unicad, we haven't committed heavily to any single traditional work management system.
 We've used Miro and Figma on and off, and Github has been a sort of constant.
-* OGGPOW DOESN'T REQUIRE THAT WE SPENT OUR TIME ON:
+** OGGPOW DOESN'T REQUIRE THAT WE SPENT OUR TIME ON:
 1. sprint planning. Instead, initiative option curation is a continuous process, and we stay in sync about progress on One Good Goal.
 2. trello. Options and WIP /can/ be viewed as lists, or as lists of links. Trello /can/ be used to implement OGGPOW, but is not required.
 3. sprints. We orient our work around One Good Goal, not random time intervals.

@@ -5,9 +5,14 @@
 
 [[file:..][..]]
 
-rant:
-WARNING: THIS PROGRAM MAY NOT WORK AND WILL CHANGE.
-USE IT AT YOUR OWN RISK!
+#+BEGIN_VERSE
+<rant>
+THIS PROGRAM MAY NOT WORK
+THIS PROGRAM WILL CHANGE
+IF THIS PROGRAM CRASHES, YOU MAY NOT RECEIVE SUPPORT
+USE THIS PROGRAM AT YOUR OWN RISK
+</rant>
+#+END_VERSE
 
 * Bookmarks should live in Git!
 I gave up using bookmarks in web browsers /long/ ago.

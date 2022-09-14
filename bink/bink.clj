@@ -1,3 +1,5 @@
+#!/usr/bin/env bb
+
 (ns bink
   (:require [babashka.fs :as fs]
             [clojure.edn :as edn]

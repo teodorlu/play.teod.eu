@@ -5,16 +5,52 @@
 
 [[file:..][..]]
 
-DRAFT
+rant:
+WARNING: THIS PROGRAM MAY NOT WORK AND WILL CHANGE.
+USE IT AT YOUR OWN RISK!
 
-BEWARE: THIS SOFTWARE DOES NOT YET EXIST!
+* Bookmarks should live in Git
+I gave up using bookmarks in web browsers /long/ ago.
 
-You are reading my working notes.
+But I was thinking.
+We're able to take care of source code.
+Improve it over time.
+And we've got this /amazing/ thing called /version control/.
+And this other amazing thing called /data/.
+So why not combine them.
 
-:)
+Bookmarks are just data.
 
-* 2022-09-14
-** CLI draft
+But!
+Opening a bookmark must be nice.
+Run a command, select the bookmark, open in browser.
+
+So I made a thing.
+Use it like this:
+
+1. Run =$ bink= in a terminal
+2. Select a bookmark
+3. It opens in Firefox
+
+But the bookmarks are just a bunch of EDN files you can structure yourself in =~/.config/bink/provider/=.
+Here's an example:
+
+#+begin_src clojure
+;; from ~/.config/bink/provider/links.edn on my computer:
+{:links [{:title "Clojure Deref" :href "https://clojure.org/news/news"}
+         {:title "Clojureverse" :href "https://clojureverse.org/"}]}
+#+end_src
+
+If you want to try it out, that's awesome.
+
+Feel free to bug me about it on the babashka channel on the Clojurians Slack.
+* Dev journal
+Feel free to ignore this part :)
+
+Or not.
+You decide.
+** 2022-09-14
+*** CLI draft
 #+begin_src
 # To open a link:
 $ bink
@@ -24,7 +60,7 @@ $ bink
 # Add a link
 $ bink add "Clojure Deref" https://clojure.org/news/news
 #+end_src
-** Nice to have: link providers
+*** Nice to have: link providers
 Nice to have / later: link providers.
 I could fetch links from multiple sources.
 Use one source with my team at work.
@@ -37,12 +73,12 @@ Or ...
 It would be nice to be able to just symlink multiple files / programs into ~/.local/share/bink/providers.d/
 
 Hmmm.
-** Config
+*** Config
 | Path                        | Purpose                      |
 |-----------------------------+------------------------------|
 | =~/.config/bink/config.edn= | Bink main configuration file |
 | =~/.config/bink/provider/*= | Additional link providers    |
-** Link providers
+*** Link providers
 JSON file - interpret as JSON.
 EDN file - interpret as EDN.
 
@@ -51,7 +87,7 @@ If they are executable, perhaps they should be run?
 
 Perhaps an executable =links.json= should output JSON links on stdout.
 🤔
-** Link file format
+*** Link file format
 EDN:
 
 #+begin_src clojure

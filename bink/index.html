@@ -229,27 +229,48 @@
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#section" id="toc-section">2022-09-14</a>
+<li><a href="#bookmarks-should-live-in-git"
+id="toc-bookmarks-should-live-in-git">Bookmarks should live in
+Git</a></li>
+<li><a href="#dev-journal" id="toc-dev-journal">Dev journal</a>
 <ul>
-<li><a href="#cli-draft" id="toc-cli-draft">CLI draft</a></li>
-<li><a href="#nice-to-have-link-providers"
-id="toc-nice-to-have-link-providers">Nice to have: link
-providers</a></li>
-<li><a href="#config" id="toc-config">Config</a></li>
-<li><a href="#link-providers" id="toc-link-providers">Link
-providers</a></li>
-<li><a href="#link-file-format" id="toc-link-file-format">Link file
-format</a></li>
+<li><a href="#section" id="toc-section">2022-09-14</a></li>
 </ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
-<p>DRAFT</p>
-<p>BEWARE: THIS SOFTWARE DOES NOT YET EXIST!</p>
-<p>You are reading my working notes.</p>
-<p>:)</p>
-<h2 id="section">2022-09-14</h2>
-<h3 id="cli-draft">CLI draft</h3>
+<p>rant: WARNING: THIS PROGRAM MAY NOT WORK AND WILL CHANGE. USE IT AT
+YOUR OWN RISK!</p>
+<h2 id="bookmarks-should-live-in-git">Bookmarks should live in Git</h2>
+<p>I gave up using bookmarks in web browsers <em>long</em> ago.</p>
+<p>But I was thinking. We’re able to take care of source code. Improve
+it over time. And we’ve got this <em>amazing</em> thing called
+<em>version control</em>. And this other amazing thing called
+<em>data</em>. So why not combine them.</p>
+<p>Bookmarks are just data.</p>
+<p>But! Opening a bookmark must be nice. Run a command, select the
+bookmark, open in browser.</p>
+<p>So I made a thing. Use it like this:</p>
+<ol>
+<li>Run <code class="verbatim">$ bink</code> in a terminal</li>
+<li>Select a bookmark</li>
+<li>It opens in Firefox</li>
+</ol>
+<p>But the bookmarks are just a bunch of EDN files you can structure
+yourself in <code class="verbatim">~/.config/bink/provider/</code>.
+Here’s an example:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; from ~/.config/bink/provider/links.edn on my computer:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:links</span> [{<span class="at">:title</span> <span class="st">&quot;Clojure Deref&quot;</span> <span class="at">:href</span> <span class="st">&quot;https://clojure.org/news/news&quot;</span>}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>         {<span class="at">:title</span> <span class="st">&quot;Clojureverse&quot;</span> <span class="at">:href</span> <span class="st">&quot;https://clojureverse.org/&quot;</span>}]}</span></code></pre></div>
+<p>If you want to try it out, that’s awesome.</p>
+<p>Feel free to bug me about it on the babashka channel on the
+Clojurians Slack.</p>
+<h2 id="dev-journal">Dev journal</h2>
+<p>Feel free to ignore this part :)</p>
+<p>Or not. You decide.</p>
+<h3 id="section">2022-09-14</h3>
+<h4 id="cli-draft">CLI draft</h4>
 <pre><code># To open a link:
 $ bink
 # Select link with fzf
@@ -258,7 +279,7 @@ $ bink
 # Add a link
 $ bink add &quot;Clojure Deref&quot; https://clojure.org/news/news
 </code></pre>
-<h3 id="nice-to-have-link-providers">Nice to have: link providers</h3>
+<h4 id="nice-to-have-link-providers">Nice to have: link providers</h4>
 <p>Nice to have / later: link providers. I could fetch links from
 multiple sources. Use one source with my team at work. Another for
 personal stuff.</p>
@@ -268,7 +289,7 @@ URL or a system command.</p>
 symlink multiple files / programs into
 ~/.local/share/bink/providers.d/</p>
 <p>Hmmm.</p>
-<h3 id="config">Config</h3>
+<h4 id="config">Config</h4>
 <table>
 <thead>
 <tr class="header">
@@ -287,24 +308,24 @@ symlink multiple files / programs into
 </tr>
 </tbody>
 </table>
-<h3 id="link-providers">Link providers</h3>
+<h4 id="link-providers">Link providers</h4>
 <p>JSON file - interpret as JSON. EDN file - interpret as EDN.</p>
 <p>What about programs? If they are executable, perhaps they should be
 run?</p>
 <p>Perhaps an executable <code class="verbatim">links.json</code> should
 output JSON links on stdout. 🤔</p>
-<h3 id="link-file-format">Link file format</h3>
+<h4 id="link-file-format">Link file format</h4>
 <p>EDN:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{<span class="at">:links</span> [{<span class="at">:title</span> <span class="st">&quot;Clojure Deref&quot;</span> <span class="at">:href</span> <span class="st">&quot;https://clojure.org/news/news&quot;</span>}</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>         {<span class="at">:title</span> <span class="st">&quot;Clojureverse&quot;</span> <span class="at">:href</span> <span class="st">&quot;https://clojureverse.org/&quot;</span>}]}</span></code></pre></div>
-<p>JSON:</p>
 <div class="sourceCode" id="cb3"><pre
-class="sourceCode json"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;links&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Clojure Deref&quot;</span><span class="fu">,</span> <span class="dt">&quot;href&quot;</span><span class="fu">:</span> <span class="st">&quot;https://clojure.org/news/news&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Clojureverse&quot;</span><span class="fu">,</span> <span class="dt">&quot;href&quot;</span><span class="fu">:</span> <span class="st">&quot;https://clojureverse.org/&quot;</span><span class="fu">}</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>{<span class="at">:links</span> [{<span class="at">:title</span> <span class="st">&quot;Clojure Deref&quot;</span> <span class="at">:href</span> <span class="st">&quot;https://clojure.org/news/news&quot;</span>}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>         {<span class="at">:title</span> <span class="st">&quot;Clojureverse&quot;</span> <span class="at">:href</span> <span class="st">&quot;https://clojureverse.org/&quot;</span>}]}</span></code></pre></div>
+<p>JSON:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;links&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Clojure Deref&quot;</span><span class="fu">,</span> <span class="dt">&quot;href&quot;</span><span class="fu">:</span> <span class="st">&quot;https://clojure.org/news/news&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Clojureverse&quot;</span><span class="fu">,</span> <span class="dt">&quot;href&quot;</span><span class="fu">:</span> <span class="st">&quot;https://clojureverse.org/&quot;</span><span class="fu">}</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
 </body>
 </html>

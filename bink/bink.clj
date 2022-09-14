@@ -76,9 +76,6 @@
       :out
       str/trim))
 
-(defn firefox [url]
-  (process/process ["firefox" url]))
-
 (defn help-getting-started []
   (println (str/trim "
 Hi!

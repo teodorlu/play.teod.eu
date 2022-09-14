@@ -52,7 +52,7 @@ To add a bookmark, edit your link files.
 
 Feel free to bug me about it on the [[https://clojurians.slack.com/archives/CLX41ASCS][babashka channel on the Clojurians Slack]].
 
-Teodor (teodorlu on github/slack)
+Teodor (https://teod.eu)
 
 Here's a small install script: https://github.com/teodorlu/play.teod.eu/blob/master/bink/install.sh
 * Dev journal / working notes

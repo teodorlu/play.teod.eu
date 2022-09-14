@@ -4,7 +4,8 @@
   (:require [babashka.fs :as fs]
             [clojure.edn :as edn]
             [babashka.process :as process]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [clojure.java.browse]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -83,5 +84,5 @@
       _ (assert (= (count links) (count links-by-title)) "Duplicate titles are not allowed")
       choice-title (fzf (map :title links))
       choice (get links-by-title choice-title)
-      _ (firefox (:href choice))
+      _ (clojure.java.browse/browse-url (:href choice))
       ])

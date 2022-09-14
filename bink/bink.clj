@@ -76,13 +76,17 @@
 (defn firefox [url]
   (process/process ["firefox" url]))
 
-;; get links
-(let [links (all-links)
-      links-by-title (into {}
-                           (for [l links]
-                             [(:title l) l]))
-      _ (assert (= (count links) (count links-by-title)) "Duplicate titles are not allowed")
-      choice-title (fzf (map :title links))
-      choice (get links-by-title choice-title)
-      _ (clojure.java.browse/browse-url (:href choice))
-      ])
+(defn browse []
+  (let [links (all-links)
+        links-by-title (into {}
+                             (for [l links]
+                               [(:title l) l]))
+        _ (assert (= (count links) (count links-by-title)) "Duplicate titles are not allowed")
+        choice-title (fzf (map :title links))
+        choice (get links-by-title choice-title)]
+    (clojure.java.browse/browse-url (:href choice))))
+
+(when (= *file* (System/getProperty "babashka.file"))
+  (browse))
+
+nil

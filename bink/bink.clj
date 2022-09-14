@@ -80,9 +80,30 @@
 (defn firefox [url]
   (process/process ["firefox" url]))
 
-(defn browse [{}]
-  (let [links (all-links)
-        links-by-title (into {}
+(defn help-getting-started []
+  (println (str/trim "
+Hi!
+
+It doesn't look like you have any links. bink doesn't currently help you add or
+edit links.
+
+To get a starting point, try:
+
+    mkdir -p ~/.config/bink/provider
+    cat <<EOF >> ~/.config/bink/provider/clojure.edn
+{:links [{:title \"Clojure Deref\" :href \"https://clojure.org/news/news\"}
+         {:title \"Clojureverse\" :href \"https://clojureverse.org/\"}]}
+EOF
+
+But do feel free to organize your links however you want. That's what bink is
+for.
+
+Teodor
+"))
+  )
+
+(defn browse [links]
+  (let [links-by-title (into {}
                              (for [l links]
                                [(:title l) l]))
         _ (assert (= (count links) (count links-by-title)) "Duplicate titles are not allowed")
@@ -90,8 +111,14 @@
         choice (get links-by-title choice-title)]
     (clojure.java.browse/browse-url (:href choice))))
 
+(defn browse-helpful [{}]
+  (let [links (seq (all-links))]
+    (if links
+      (browse links)
+      (help-getting-started))))
+
 (defn main [& args]
-  (cli/dispatch [{:cmds [] :fn browse}]
+  (cli/dispatch [{:cmds [] :fn browse-helpful}]
                 args
                 {}))
 

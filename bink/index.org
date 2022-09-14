@@ -50,7 +50,7 @@ If you want to try it out, that's awesome.
 
 To add a bookmark, edit your link files.
 
-Feel free to bug me about it on the babashka channel on the Clojurians Slack.
+Feel free to bug me about it on the [[https://clojurians.slack.com/archives/CLX41ASCS][babashka channel on the Clojurians Slack]].
 
 Teodor (teodorlu on github/slack)
 

@@ -35,7 +35,7 @@ Use it like this:
 
 1. Run =$ bink= in a terminal
 2. Select a bookmark
-3. It opens in Firefox
+3. It opens in your web browser
 
 But the bookmarks are just a bunch of EDN files you can structure yourself in =~/.config/bink/provider/=.
 Here's an example:
@@ -49,12 +49,21 @@ Here's an example:
 If you want to try it out, that's awesome.
 
 To add a bookmark, edit your link files.
+You can use as many files as you want.
+Just make sure the suffix is =.edn=.
 
 Feel free to bug me about it on the [[https://clojurians.slack.com/archives/CLX41ASCS][babashka channel on the Clojurians Slack]].
 
 Teodor (https://teod.eu)
 
 Here's a small install script: https://github.com/teodorlu/play.teod.eu/blob/master/bink/install.sh
+
+Or install it with bbin:
+
+#+begin_src
+$ bbin install https://play.teod.eu/bink/bink.clj
+$ bink
+#+end_src
 * Dev journal / working notes
 Feel free to ignore this part :)
 

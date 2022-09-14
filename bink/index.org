@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 86c31b09-2831-4435-a73e-91db76fcbd57
 :END:
-#+TITLE: Bink: Bookmarks as data
+#+TITLE: Bink: Bookmarks are just data
 
 [[file:..][..]]
 

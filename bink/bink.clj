@@ -5,7 +5,8 @@
             [clojure.edn :as edn]
             [babashka.process :as process]
             [clojure.string :as str]
-            [clojure.java.browse]))
+            [clojure.java.browse]
+            [babashka.cli :as cli]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -76,7 +77,7 @@
 (defn firefox [url]
   (process/process ["firefox" url]))
 
-(defn browse []
+(defn browse [{}]
   (let [links (all-links)
         links-by-title (into {}
                              (for [l links]
@@ -86,7 +87,12 @@
         choice (get links-by-title choice-title)]
     (clojure.java.browse/browse-url (:href choice))))
 
+(defn main [& args]
+  (cli/dispatch [{:cmds [] :fn browse}]
+                args
+                {}))
+
 (when (= *file* (System/getProperty "babashka.file"))
-  (browse))
+  (apply main *command-line-args*))
 
 nil

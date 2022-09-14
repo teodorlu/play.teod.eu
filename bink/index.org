@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID: 86c31b09-2831-4435-a73e-91db76fcbd57
+:END:
+#+TITLE: Bink: A tiny TUI bookmark manager
+
+[[file:..][..]]
+
+DRAFT
+
+BEWARE: THIS SOFTWARE DOES NOT YET EXIST!
+
+You are reading my working notes.
+
+:)
+
+* 2022-09-14
+** CLI draft
+#+begin_src
+# To open a link:
+$ bink
+# Select link with fzf
+# Then it's opened in your browser.
+
+# Add a link
+$ bink add "Clojure Deref" https://clojure.org/news/news
+#+end_src
+** Nice to have: link providers
+Nice to have / later: link providers.
+I could fetch links from multiple sources.
+Use one source with my team at work.
+Another for personal stuff.
+
+A link provider could be an EDN file, a JSON file, an SQLite DB, an URL or a system command.
+
+But! Let's not start there.
+Or ...
+It would be nice to be able to just symlink multiple files / programs into ~/.local/share/bink/providers.d/
+
+Hmmm.
+** Config
+| Path                        | Purpose                      |
+|-----------------------------+------------------------------|
+| =~/.config/bink/config.edn= | Bink main configuration file |
+| =~/.config/bink/provider/*= | Additional link providers    |
+** Link providers
+JSON file - interpret as JSON.
+EDN file - interpret as EDN.
+
+What about programs?
+If they are executable, perhaps they should be run?
+
+Perhaps an executable =links.json= should output JSON links on stdout.
+🤔
+** Link file format
+EDN:
+
+#+begin_src clojure
+{:links [{:title "Clojure Deref" :href "https://clojure.org/news/news"}
+         {:title "Clojureverse" :href "https://clojureverse.org/"}]}
+#+end_src
+
+JSON:
+
+#+begin_src json
+{
+    "links": [
+        {"title": "Clojure Deref", "href": "https://clojure.org/news/news"},
+        {"title": "Clojureverse", "href": "https://clojureverse.org/"}
+    ]
+}
+#+end_src

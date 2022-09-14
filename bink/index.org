@@ -44,7 +44,7 @@ Here's an example:
 If you want to try it out, that's awesome.
 
 Feel free to bug me about it on the babashka channel on the Clojurians Slack.
-* Dev journal
+* Dev journal / working notes
 Feel free to ignore this part :)
 
 Or not.

@@ -4,8 +4,7 @@
   (:require [babashka.fs :as fs]
             [clojure.edn :as edn]
             [babashka.process :as process]
-            [clojure.string :as str]
-            [clojure.java.browse]))
+            [clojure.string :as str]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;

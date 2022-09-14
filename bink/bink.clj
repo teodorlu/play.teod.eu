@@ -56,8 +56,6 @@
 
 ;; First, collect all the link providers
 
-(fs/directory? (fs/expand-home "~/.config/bink/provider"))
-
 (defn providers []
   ;; Per 2022-09-14, we only support EDN links.
   (when (fs/directory? (fs/expand-home "~/.config/bink/provider"))

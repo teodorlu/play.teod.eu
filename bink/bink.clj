@@ -1,12 +1,13 @@
 #!/usr/bin/env bb
 
 (ns bink
-  (:require [babashka.fs :as fs]
-            [clojure.edn :as edn]
-            [babashka.process :as process]
-            [clojure.string :as str]
-            [clojure.java.browse]
-            [babashka.cli :as cli]))
+  (:require
+   [babashka.cli :as cli]
+   [babashka.fs :as fs]
+   [babashka.process :as process]
+   [clojure.edn :as edn]
+   [clojure.java.browse]
+   [clojure.string :as str]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;

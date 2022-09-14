@@ -55,12 +55,15 @@
 
 ;; First, collect all the link providers
 
+(fs/directory? (fs/expand-home "~/.config/bink/provider"))
+
 (defn providers []
   ;; Per 2022-09-14, we only support EDN links.
-  (let [support-json false]
-    (if support-json
-      (fs/glob (fs/expand-home "~/.config/bink/provider") "*.{edn,json}")
-      (fs/glob (fs/expand-home "~/.config/bink/provider") "*.edn"))))
+  (when (fs/directory? (fs/expand-home "~/.config/bink/provider"))
+    (let [support-json false]
+      (if support-json
+        (fs/glob (fs/expand-home "~/.config/bink/provider") "*.{edn,json}")
+        (fs/glob (fs/expand-home "~/.config/bink/provider") "*.edn")))))
 
 (defn all-links []
   (mapcat (fn [p]

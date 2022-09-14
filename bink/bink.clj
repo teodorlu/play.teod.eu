@@ -113,14 +113,36 @@ Teodor
       (browse links)
       (help-getting-started))))
 
-(defn help [{}]
+(defn rationale [{}]
   (clojure.java.browse/browse-url "https://play.teod.eu/bink/"))
 
+(declare dispatch-table)
+
+(defn lines [& ls]
+  (str/join "\n" (map str ls)))
+
+(defn help [{}]
+  (println (lines "Bink: Bookmarks are just data"
+                  ""
+                  "Available subcommands:"
+                  (apply lines (for [{:keys [cmds]} dispatch-table]
+                                 (str "  " (str/join " " cmds)))))))
+
+(defn show-providers [{}]
+  (println "Your link providers are:")
+  (println "")
+  (doseq [p (providers)]
+    (println (str "  " p))))
+
+(def dispatch-table
+  [{:cmds ["rationale"] :fn rationale}
+   {:cmds ["help"] :fn help}
+   {:cmds ["browse"] :fn browse-helpful}
+   {:cmds ["providers"] :fn show-providers}
+   {:cmds [] :fn browse-helpful}])
+
 (defn main [& args]
-  (cli/dispatch [{:cmds ["help"] :fn help}
-                 {:cmds ["browse"] :fn browse-helpful}
-                 {:cmds [] :fn browse-helpful}
-                 ]
+  (cli/dispatch dispatch-table
                 args
                 {}))
 

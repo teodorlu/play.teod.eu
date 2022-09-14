@@ -118,7 +118,9 @@ Teodor
 
 (defn main [& args]
   (cli/dispatch [{:cmds ["help"] :fn help}
-                 {:cmds [] :fn browse-helpful}]
+                 {:cmds ["browse"] :fn browse-helpful}
+                 {:cmds [] :fn browse-helpful}
+                 ]
                 args
                 {}))
 

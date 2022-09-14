@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 86c31b09-2831-4435-a73e-91db76fcbd57
 :END:
-#+TITLE: Bink: A tiny TUI bookmark manager
+#+TITLE: Bink: Bookmarks as data
 
 [[file:..][..]]
 
@@ -15,7 +15,7 @@ USE THIS PROGRAM AT YOUR OWN RISK
 #+END_VERSE
 
 * Bookmarks should live in Git!
-I gave up using bookmarks in web browsers /long/ ago.
+I gave up on managing bookmarks in web browsers long ago.
 
 But I was thinking.
 We're able to take care of source code.

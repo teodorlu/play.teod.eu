@@ -102,7 +102,7 @@ Teodor
   (let [links-by-title (into {}
                              (for [l links]
                                [(:title l) l]))
-        _ (assert (= (count links) (count links-by-title)) "Duplicate titles are not allowed")
+        _ (assert (= (count links) (count links-by-title)) "Link titles must be unique")
         choice-title (fzf (map :title links))
         choice (get links-by-title choice-title)]
     (clojure.java.browse/browse-url (:href choice))))

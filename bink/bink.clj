@@ -117,8 +117,12 @@ Teodor
       (browse links)
       (help-getting-started))))
 
+(defn help [{}]
+  (clojure.java.browse/browse-url "https://play.teod.eu/bink/"))
+
 (defn main [& args]
-  (cli/dispatch [{:cmds [] :fn browse-helpful}]
+  (cli/dispatch [{:cmds ["help"] :fn help}
+                 {:cmds [] :fn browse-helpful}]
                 args
                 {}))
 

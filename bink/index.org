@@ -9,7 +9,7 @@ rant:
 WARNING: THIS PROGRAM MAY NOT WORK AND WILL CHANGE.
 USE IT AT YOUR OWN RISK!
 
-* Bookmarks should live in Git
+* Bookmarks should live in Git!
 I gave up using bookmarks in web browsers /long/ ago.
 
 But I was thinking.

@@ -7,7 +7,7 @@
 #   1. Clone https://github.com/teodorlu/play.teod.eu
 #   2. Run `bink/install.sh`
 
-# Find setup folder in project
+# Find the absolute path to this directory
 DIR=$(cd "$(dirname "$0")" && echo "$(git rev-parse --show-toplevel)/bink")
 
 mkdir -p ~/.local/bin

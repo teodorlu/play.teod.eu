@@ -16,6 +16,7 @@ In code, outside of code.
 4 - Late binding is awesome.
 
 5 - Never link to content without enriching the intent of linking with context.
+Instead, answer "Why is this worthwhile?".
 
 6 - Consider modeling /all possible states/ as one data structure.
 Fewer edge cases are easier to manage.

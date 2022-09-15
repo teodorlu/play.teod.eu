@@ -129,10 +129,8 @@ Teodor
                                  (str "  " (str/join " " cmds)))))))
 
 (defn show-providers [{}]
-  (println "Your link providers are:")
-  (println "")
   (doseq [p (providers)]
-    (println (str "  " p))))
+    (println (str p))))
 
 (def dispatch-table
   [{:cmds ["rationale"] :fn rationale}

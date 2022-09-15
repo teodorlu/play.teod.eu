@@ -140,3 +140,8 @@ Example configuration:
                                  (slurp "https://iterb.art/data/links.json")
                                  keyword))}}}
 #+end_src
+
+But.
+What do we do if loading all the links takes time?
+Do we cache?
+Or do we allow the slowdown?

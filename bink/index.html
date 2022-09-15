@@ -357,5 +357,7 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb6-1"><a 
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                (cheshire.core/parse-string</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                                 (<span class="kw">slurp</span> <span class="st">&quot;https://iterb.art/data/links.json&quot;</span>)</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                                 <span class="kw">keyword</span>))}}}</span></code></pre></div>
+<p>But. What do we do if loading all the links takes time? Do we cache?
+Or do we allow the slowdown?</p>
 </body>
 </html>

@@ -96,6 +96,16 @@ Teodor
 "))
   )
 
+(defn browse-url-sync
+  "Browse to a URL, but block until the browser yields control"
+  [url]
+  (clojure.java.browse/browse-url url))
+
+(defn firefox-nohup
+  "Open an URL with firefox, but don't wait."
+  [url]
+  (babashka.process/process ['nohup 'firefox url]))
+
 (defn browse [links]
   (let [links-by-title (into {}
                              (for [l links]
@@ -103,7 +113,18 @@ Teodor
         _ (assert (= (count links) (count links-by-title)) "Link titles must be unique")
         choice-title (fzf (map :title links))
         choice (get links-by-title choice-title)]
-    (clojure.java.browse/browse-url (:href choice))))
+    #_
+    (browse-url-sync (:href choice))
+    ;; I'd like to use clojure.java.browse/browse-url for its portaibility.
+    ;; But it blocks the thread, and doesn't terminate until the browser quits.
+    ;; That leaves us a hanging terminal.
+    ;; We don't want that!
+    ;;
+    ;; We could optionally shell out to `nohup bb -e (clojure.java.browse/browse-url "url"`)
+    ;; ... but then we're back to having to do lots of manual escaping.
+    ;;
+    ;; bleh
+    (firefox-nohup (:href choice))))
 
 (defn browse-helpful [{}]
   (let [links (seq (all-links))]

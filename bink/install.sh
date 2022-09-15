@@ -15,3 +15,4 @@ DIR=$(cd "$(dirname "$0")" && echo "$(git rev-parse --show-toplevel)/bink")
 
 mkdir -p ~/.local/bin
 ln -sf "${DIR}/bink.clj" ~/.local/bin/bink
+ln -sf "${DIR}/bink-alacritty.sh" ~/.local/bin/bink-alacritty

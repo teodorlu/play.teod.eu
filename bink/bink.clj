@@ -59,14 +59,12 @@
 (defn providers []
   ;; Per 2022-09-14, we only support EDN links.
   (when (fs/directory? (fs/expand-home "~/.config/bink/provider"))
-    (let [support-json false]
-      (if support-json
-        (fs/glob (fs/expand-home "~/.config/bink/provider") "*.{edn,json}")
-        (fs/glob (fs/expand-home "~/.config/bink/provider") "*.edn")))))
+    (for [file (fs/glob (fs/expand-home "~/.config/bink/provider") "*.edn")]
+      {:path (str file)})))
 
 (defn all-links []
-  (mapcat (fn [p]
-            (:links (edn/read-string (slurp (str p)))))
+  (mapcat (fn [{:keys [path]}]
+            (:links (edn/read-string (slurp path))))
           (providers)))
 
 (defn fzf [options]
@@ -130,7 +128,7 @@ Teodor
 
 (defn show-providers [{}]
   (doseq [p (providers)]
-    (println (str p))))
+    (println (:path p))))
 
 (def dispatch-table
   [{:cmds ["rationale"] :fn rationale}

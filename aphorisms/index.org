@@ -25,7 +25,8 @@ Fewer edge cases are easier to manage.
 
 8 - DON'T require hierarchy to be equal to legibility.
 
-9 - Emacs is a tool for research, and happens to also work for editing source code.
+9 - Emacs is a tool for research.
+Working with source code can be viewed as research.
 
 10 - When in doubt, do that which builds trust.
 

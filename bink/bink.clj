@@ -122,7 +122,7 @@ Teodor
   (str/join "\n" (map str ls)))
 
 (defn help [{}]
-  (println (lines "Bink: Bookmarks are just data"
+  (println (lines "Bink: Bookmarks are data"
                   ""
                   "Available subcommands:"
                   (apply lines (for [{:keys [cmds]} dispatch-table]

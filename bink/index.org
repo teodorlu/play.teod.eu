@@ -125,3 +125,18 @@ JSON:
     ]
 }
 #+end_src
+** 2022-09-15
+*** I want a loose coupling between bink and the link providers
+Idea: different providers in bink config.
+
+Example configuration:
+
+#+begin_src clojure
+{:providers {clojure-community {:edn-file
+                                {:path "~/.config/bink/provider/clojure.edn"}}
+             stuff-from-work {:fn
+                              (fn []
+                                (cheshire.core/parse-string
+                                 (slurp "https://iterb.art/data/links.json")
+                                 keyword))}}}
+#+end_src

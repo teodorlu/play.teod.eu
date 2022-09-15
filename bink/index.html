@@ -236,6 +236,7 @@ Git!</a></li>
 id="toc-dev-journal-working-notes">Dev journal / working notes</a>
 <ul>
 <li><a href="#section" id="toc-section">2022-09-14</a></li>
+<li><a href="#section-1" id="toc-section-1">2022-09-15</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -343,5 +344,18 @@ class="sourceCode json"><code class="sourceCode json"><span id="cb5-1"><a href="
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Clojureverse&quot;</span><span class="fu">,</span> <span class="dt">&quot;href&quot;</span><span class="fu">:</span> <span class="st">&quot;https://clojureverse.org/&quot;</span><span class="fu">}</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<h3 id="section-1">2022-09-15</h3>
+<h4 id="i-want-a-loose-coupling-between-bink-and-the-link-providers">I
+want a loose coupling between bink and the link providers</h4>
+<p>Idea: different providers in bink config.</p>
+<p>Example configuration:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>{<span class="at">:providers</span> {clojure-community {<span class="at">:edn-file</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                                {<span class="at">:path</span> <span class="st">&quot;~/.config/bink/provider/clojure.edn&quot;</span>}}</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>             stuff-from-work {<span class="at">:fn</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                              (<span class="kw">fn</span> []</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                (cheshire.core/parse-string</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                                 (<span class="kw">slurp</span> <span class="st">&quot;https://iterb.art/data/links.json&quot;</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                                 <span class="kw">keyword</span>))}}}</span></code></pre></div>
 </body>
 </html>

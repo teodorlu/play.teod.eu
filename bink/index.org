@@ -145,3 +145,31 @@ But.
 What do we do if loading all the links takes time?
 Do we cache?
 Or do we allow the slowdown?
+
+If we select provider /first/ then select link, we might not care too much about load time.
+*** I can write a bink provider for play.teod.eu
+Hmm, that's actually a very good idea.
+
+And I want to configure which browser to use
+*** To configure which browser to use, is :providers a good toplevel key?
+I could extend the current thing.
+
+#+begin_src clojure
+{:providers {clojure-community {:file "~/.config/bink/provider/clojure.edn"
+                                :open-fn (fn [{:keys [href]}]
+                                           (clojure.java.browse/browse-url href))}
+             teod-play {:fn (fn []
+                                (clojure.edn/read-string
+                                 (slurp "https://play.teod.eu/links.edn")))
+                        :open-fn (fn [{:keys [href]}]
+                                   (babashka.process/process ["firefox" "-new-window" href]))}
+             stuff-from-work {:fn
+                              (fn []
+                                (cheshire.core/parse-string
+                                 (slurp "https://iterb.art/data/links.json")
+                                 keyword))}}}
+#+end_src
+*** What about multiple providers?
+1. We could mash all links into one
+2. We could first select provider, then load links, then select link
+*** A good next step is probably just supporting by iterbart usecase.

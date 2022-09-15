@@ -359,5 +359,39 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb6-1"><a 
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                                 <span class="kw">keyword</span>))}}}</span></code></pre></div>
 <p>But. What do we do if loading all the links takes time? Do we cache?
 Or do we allow the slowdown?</p>
+<p>If we select provider <em>first</em> then select link, we might not
+care too much about load time.</p>
+<h4 id="i-can-write-a-bink-provider-for-play.teod.eu">I can write a bink
+provider for play.teod.eu</h4>
+<p>Hmm, that’s actually a very good idea.</p>
+<p>And I want to configure which browser to use</p>
+<h4
+id="to-configure-which-browser-to-use-is-providers-a-good-toplevel-key">To
+configure which browser to use, is :providers a good toplevel key?</h4>
+<p>I could extend the current thing.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>{<span class="at">:providers</span> {clojure-community {<span class="at">:file</span> <span class="st">&quot;~/.config/bink/provider/clojure.edn&quot;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">:open-fn</span> (<span class="kw">fn</span> [{<span class="at">:keys</span> [href]}]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                                           (clojure.java.browse/browse-url href))}</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>             teod-play {<span class="at">:fn</span> (<span class="kw">fn</span> []</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>                                (clojure.edn/read-string</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>                                 (<span class="kw">slurp</span> <span class="st">&quot;https://play.teod.eu/links.edn&quot;</span>)))</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>                        <span class="at">:open-fn</span> (<span class="kw">fn</span> [{<span class="at">:keys</span> [href]}]</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>                                   (babashka.process/process [<span class="st">&quot;firefox&quot;</span> <span class="st">&quot;-new-window&quot;</span> href]))}</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>             stuff-from-work {<span class="at">:fn</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                              (<span class="kw">fn</span> []</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                                (cheshire.core/parse-string</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                                 (<span class="kw">slurp</span> <span class="st">&quot;https://iterb.art/data/links.json&quot;</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                                 <span class="kw">keyword</span>))}}}</span></code></pre></div>
+<h4 id="what-about-multiple-providers">What about multiple
+providers?</h4>
+<ol>
+<li>We could mash all links into one</li>
+<li>We could first select provider, then load links, then select
+link</li>
+</ol>
+<h4
+id="a-good-next-step-is-probably-just-supporting-by-iterbart-usecase.">A
+good next step is probably just supporting by iterbart usecase.</h4>
 </body>
 </html>

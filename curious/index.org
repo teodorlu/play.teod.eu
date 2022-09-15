@@ -13,7 +13,7 @@ This has taken me a while to realize.
 I thought I liked structure.
 I still do, actually.
 But that structure must be useful!
-Come to think of it, I wrote about this in
+Come to think of it, I wrote about this in [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]].
 
 At work, this means I'm very much interested in digging into adjacent domains.
 I treasure chances to learn something completely new.

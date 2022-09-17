@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd
+:END:
+#+TITLE: eu.teod/dbx: a toolkit for building your own personal knowledge base
+
+[[file:..][..]]
+
+THIS SOFTWARE DOES NOT YET EXIST
+
+Idea: split https://play.teod.eu/play.clj into something reusable (dbx) and something specific (play.teod.eu).

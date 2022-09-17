@@ -64,6 +64,8 @@ I've used https://github.com/mikera/imagez for image processing before, that was
 Essentially, I just want to put pixels on a canvas.
 This could be kinda fun.
 
+[[file:green.html]]
+
 #+begin_verse
 
 

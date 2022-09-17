@@ -59,3 +59,8 @@ An experimental plaintext graph-oriented knowledge base for doing data science i
 Aaaand we return to where we started: https://github.com/scicloj/scicloj.github.io/issues/58
 
 *Good user interface to explore available libraries*
+
+If sc-dbx is going to be of any value, there needs to be:
+
+1. Some content
+2. A nice viewing experience

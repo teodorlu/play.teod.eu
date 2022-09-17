@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: 58bbb42c-7e23-4fb3-8b7b-b46dab780550
+:END:
+#+TITLE: Scicloj is awesome
+
+[[file:..][..]]
+
+[[https://scicloj.github.io/][Scicloj]]
+is a Clojure community for data science.
+It's awesome!
+
+* Scicloj is awesome because
+1. There's a thorough [[https://scicloj.github.io/docs/resources/libs/][list of available Clojure tools and libraries]] you can leverage
+2. There's plenty of [[https://scicloj.github.io/docs/resources/reading/][recommended reading]] you can work through on your own
+3. It's easy to get help.
+
+* What does the Clojure data science ecosystem need?
+My opinion:
+
+1. Learnability
+2. Discoverability
+3. Cohesion
+
+Learnability comes first.
+Someone must be able to /learn something/.
+
+Discoverability second.
+If there is nice stuff around but nobody can find it, there's not much value provided to the ecosystem as a whole.
+
+Cohesion third.
+Most people look to the Python ecosystem for data science.
+Why?
+Data science with Python is learnable and discoverable.
+There are plenty of resources available.
+Data science work with Python often leverages [[https://scipy.org/][SciPy]].
+SciPy is also awesome.
+SciPy provides a cohesive entrypoint to Python data science.

@@ -8,3 +8,15 @@
 This org file only exists for as a target for Org-Roam!
 
 Idea: take the amazing data from https://scicloj.github.io/docs/resources/libs/ and experiment with content.
+
+* 2022-09-17
+** General or specific
+I'm interested in this both specifically and generally.
+
+*Specifically:* I want to make the Clojure data science ecosystem better.
+
+*Generally*: I'm curious about graph-oriented approaches to knowledge modeling.
+
+Specific approach: make that specific table good.
+
+General approach: keep on exploring graph-oriented knowledge models.

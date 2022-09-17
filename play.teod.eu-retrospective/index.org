@@ -978,3 +978,9 @@ Not more.
 There's a single indirection boundary.
 Information as written --- indirection --- published HTML.
 And that indirection is encoded in the CLI/Makefile --- not in opaque CI.
+* 2022-09-17
+** There are downsides to inventing names for new pages
+Giving something a name and an url is nice.
+Yet ... at some point it clutters the attention design of https://play.teod.eu/index.html.
+*** Actionable: don't show everything up top
+*** Actionable: clearly differentiate between seeds, foregin references and other stuff

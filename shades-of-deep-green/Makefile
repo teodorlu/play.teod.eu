@@ -7,5 +7,10 @@
 #
 # Calling =make= simply runs make in the parent directory.
 
-stuff:
+everything: rest local
+
+local:
+	echo "done"
+
+rest:
 	(cd .. && make)

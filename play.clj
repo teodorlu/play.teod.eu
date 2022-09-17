@@ -44,6 +44,9 @@
 (defn bash [cmd]
   (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd))))
 
+(defn words [& args] (str/join " " (map str args)))
+(defn lines [& args] (str/join "\n" (map str args)))
+
 (defn pages []
   (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
        (str/split-lines)
@@ -164,6 +167,26 @@ DRAFT
                        ["#+end_verse"
                         ""])))))
 
+(def relations-config
+  {:sources {:files files->relations
+             :lines lines->relations}
+   :targets {:lines relations->lines
+             :lines2 relations->lines2
+             :lines+recent relations->lines+recent
+             :pretty relations->pretty
+             :files relations->files}})
+
+(defn relations-helptext []
+  (let [helptext (lines
+                  "usage: ./play.clj relations :from SOURCE :to TARGET"
+                  ""
+                  "valid sources:"
+                  (str "  " (apply words (keys (:sources relations-config))))
+                  ""
+                  "valid targets:"
+                  (str "  " (apply words (keys (:targets relations-config)))))]
+    helptext))
+
 (defn relations [{:keys [opts]}]
   (let [sources {:files files->relations
                  :lines lines->relations}
@@ -173,10 +196,12 @@ DRAFT
                  :pretty relations->pretty
                  :files relations->files}
         {:keys [from to]} opts]
-    (assert (sources from))
-    (assert (targets to))
-    (let [rels ((sources from) opts)]
-      ((targets to) rels))))
+    (let [input-is-valid (and (contains? sources from)
+                              (contains? targets to))]
+      (if-not input-is-valid
+        (println (relations-helptext))
+        (let [rels ((sources from) opts)]
+          ((targets to) rels))))))
 
 (defn random-page [{:keys [opts]}]
   (let [n (or (:n opts) 1)]
@@ -215,9 +240,6 @@ DRAFT
       (bash "./play.clj makefile")
 
       nil)))
-
-(defn words [& args] (str/join " " (map str args)))
-(defn lines [& args] (str/join "\n" (map str args)))
 
 (defn builder [rel]
   (:builder rel :pandoc-page))

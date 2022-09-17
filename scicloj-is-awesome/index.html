@@ -296,6 +296,39 @@ href="https://play.teod.eu">https://play.teod.eu</a>)</li>
 </ol>
 <p>Name. dbx? kbx? sc-dbx sc-kbx Hmm sc-xkb</p>
 <p>siko-dbx</p>
+<ol>
+<li>Everything is a page</li>
+<li>Some pages are <code class="verbatim">:form :ref</code> - where we
+simply rewrite a link to the target we want. This enables us to enrich
+internal links <em>and</em> provide a light mechanism for enriching
+“remote” entities. And it ensures that “everything is still a
+page”.</li>
+<li>Attention design for index
+<ol>
+<li>Top - playlists. Collections of nice stuff.</li>
+<li>Bottom - list of all pages.
+<ol>
+<li>Consider “list of all pages” as a subpage.</li>
+</ol></li>
+</ol></li>
+<li>Build system
+<ol>
+<li>One big makefile
+<ol>
+<li>(or just use bb? not sure.)
+<ol>
+<li>Could perhaps try “just bb”, avoid too much code generation</li>
+</ol></li>
+</ol></li>
+<li>Swappable build mechanism for each page. Each page can decide on its
+own:
+<ol>
+<li>Build script</li>
+<li>Dependencies</li>
+</ol></li>
+<li>Link rewriting / resolution with pandoc and babashka.</li>
+</ol></li>
+</ol>
 <h2 id="a-specific-place-to-start-a-nice-viewer-for-the-library-data">A
 specific place to start: a nice viewer for the library data</h2>
 <p>Aaaand we return to where we started: <a

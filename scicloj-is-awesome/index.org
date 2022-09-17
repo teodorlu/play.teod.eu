@@ -63,6 +63,24 @@ Hmm
 sc-xkb
 
 siko-dbx
+
+1. Everything is a page
+2. Some pages are =:form :ref= - where we simply rewrite a link to the target we want.
+   This enables us to enrich internal links /and/ provide a light mechanism for enriching "remote" entities.
+   And it ensures that "everything is still a page".
+3. Attention design for index
+   1. Top - playlists. Collections of nice stuff.
+   2. Bottom - list of all pages.
+      1. Consider "list of all pages" as a subpage.
+4. Build system
+   1. One big makefile
+      1. (or just use bb? not sure.)
+         1. Could perhaps try "just bb", avoid too much code generation
+   2. Swappable build mechanism for each page.
+      Each page can decide on its own:
+      1. Build script
+      2. Dependencies
+   3. Link rewriting / resolution with pandoc and babashka.
 * A specific place to start: a nice viewer for the library data
 Aaaand we return to where we started: https://github.com/scicloj/scicloj.github.io/issues/58
 

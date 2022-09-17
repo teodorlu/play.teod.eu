@@ -55,3 +55,7 @@ Scicloj already has an answer to "how can I help?":
 An experimental plaintext graph-oriented knowledge base for doing data science in Clojure.
 
 1. Page oriented (like https://play.teod.eu)
+* A specific place to start: a nice viewer for the library data
+Aaaand we return to where we started: https://github.com/scicloj/scicloj.github.io/issues/58
+
+*Good user interface to explore available libraries*

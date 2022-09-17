@@ -56,6 +56,8 @@ Why?
 - Experiment with data capture
 
 "Personal information architecture"
+*** 2022-09-17 I haven't had much need yet.
+Just plaintext is nice. But it limits interactivity.
 ** Rewrite =p= and =teod_fzf_cd= to babashka
 Here's the ZSH code:
 
@@ -74,6 +76,7 @@ Why babashka?
 1. I prefer to maintain Clojure code to maintain ZSH code.
 2. Wait, I need a wrapper regardless.
    Otherwise =cd= doesn't work.
+*** 2022-09-17 probably don't want to do that.
 ** What is the list of concepts a new developer should be introduced to?
 *** Motivating context
 A new developer arrives.
@@ -94,6 +97,7 @@ Ideally, there's some HTTP / HTML stuff.
 A W3C spec or something.
 "Please do not treat this page as canonical".
 I want to ask Sindre, Oddmund, Richard and Sean about this.
+*** HTTP redirect.
 * 2022-09-17
 Morn.
 ** Open problems require curation

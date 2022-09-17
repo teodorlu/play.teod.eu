@@ -35,3 +35,23 @@ There are plenty of resources available.
 Data science work with Python often leverages [[https://scipy.org/][SciPy]].
 SciPy is also awesome.
 SciPy provides a cohesive entrypoint to Python data science.
+* A list of initiatives improving learnability, discoverability and cohesion for data science in Clojure
+Scicloj already has an answer to "how can I help?":
+[[https://scicloj.github.io/docs/community/getting_involved/][Scicloj.org --- Getting involved]].
+
+| Why                                          | Call to action                                   | Questions & comments                                          |
+|----------------------------------------------+--------------------------------------------------+---------------------------------------------------------------|
+| Learn with others in a study group           | https://scicloj.github.io/docs/community/groups/ |                                                               |
+| Share what you learn with others             | https://scicloj.github.io/docs/community/chat/   |                                                               |
+| Write a tutorial                             | https://github.com/scicloj/tutorials             | No call to action link.                                       |
+| Help organize practical stuff                | https://github.com/scicloj                       | No call to action link.                                       |
+| Pair with a library author                   | https://scicloj.github.io/docs/resources/libs/   | How do I know who are interested in pairing?                  |
+| Help building the website and knowledge base | https://github.com/scicloj/scicloj.github.io     | No call to action link.                                       |
+| Create a proof-of-concept                    | ?                                                | Is there a list of open problems somewhere?                   |
+| Contribute to a library                      | https://scicloj.github.io/docs/resources/libs/   | Is there a list of libraries where contributions are welcome? |
+| Submit an issue to a library                 | https://scicloj.github.io/docs/resources/libs/   |                                                               |
+
+* Idea - sc-dbx
+An experimental plaintext graph-oriented knowledge base for doing data science in Clojure.
+
+1. Page oriented (like https://play.teod.eu)

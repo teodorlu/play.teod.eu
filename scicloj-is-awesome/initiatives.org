@@ -1,0 +1,14 @@
+Scicloj already has an answer to "how can I help?":
+[[https://scicloj.github.io/docs/community/getting_involved/][Scicloj.org --- Getting involved]].
+This table is simply a copy from there.
+
+| Why                                | Call to action                                    | Questions                                    |
+|------------------------------------+---------------------------------------------------+----------------------------------------------|
+| Learn with others in a study group | https://scicloj.github.io/docs/community/groups/  |                                              |
+| Share what you learn with others   | https://scicloj.github.io/docs/community/chat/    |                                              |
+| Write a tutorial                   | https://github.com/scicloj/tutorials (not linked) |                                              |
+| Help organize practical stuff      | https://github.com/scicloj (not linked)           |                                              |
+| Pair with a library author         | https://scicloj.github.io/docs/resources/libs/    | How do I know who are interested in pairing? |
+|                                    |                                                   |                                              |
+
+Initiative 2

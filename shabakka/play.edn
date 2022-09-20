@@ -1,3 +1,4 @@
 {:title "Shabakka",
  :readiness :wtf-is-this,
- :author-url "https://teod.eu"}
+ :author-url "https://teod.eu",
+ :lang :en}

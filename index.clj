@@ -114,11 +114,11 @@
 
      ["** Seeds and vague ideas, please ignore."
       ""
-      "play.teod.eu functions as an idea playground for me."
-      "Some seeds grow. Others are forgotten."
-      "Feel free to skip all these."
-      "Or not."
-      "Expect the average seed to be messy and incomplete."
+      (lines "play.teod.eu functions as an idea playground for me."
+             "Some seeds grow. Others are forgotten."
+             "Feel free to skip all these."
+             "Or not."
+             "Expect the average seed to be messy and incomplete.")
       ""
       (str/join " · " (for [page wtf-is-this] (page-link page)))
       ""]

@@ -74,8 +74,7 @@
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"
-                  "Feel free to have a look :)"
-                  "")]
+                  "Feel free to have a look :)")]
 
      (for [page ready-for-comments]
        (str "- " (page-link page)))

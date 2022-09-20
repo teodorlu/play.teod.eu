@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 842f9b9a-de98-4187-863e-3e6cf1b1814d
 :END:
-#+TITLE: A list of failure modes from bad intersections between work and play
+#+TITLE: What's a good intersection between work and play?
 
 [[file:..][..]]
 
@@ -74,6 +74,8 @@ Back to reasonability.
 So I've been taking care of usability and sales.
 Mostly practical stuff.
 But the high risk high reward value work has been dormant.
+
+-----
 
 #+BEGIN_VERSE
 

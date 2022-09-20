@@ -53,3 +53,15 @@ It's a trust graph, essentially.
 And you don't get stuck in a filter bubble.
 
 :)
+
+-----
+
+"Soooo ... you claim that this works. But are you doing it yourself?"
+
+Yeah. Not 100 %.
+I haven't built the "read it later and tag it properly" system yet.
+But the things that I've read that have really mattered have all come via references from people I trust.
+This is already the way I'm reading Twitter.
+I follow lots and lots and lots of people.
+But I track the ones I truly pay attention to in a special list.
+Then I decide whether to browse broadly (everyone) or narrowly (special list) each time I open the app.

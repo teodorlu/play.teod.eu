@@ -212,26 +212,17 @@
    return element("tr", ...children)
  }
 
- // console.log(s("hello :)"))
- // console.log(td(s("hello there")))
- // console.log(tr(s("ohai")))
- // console.log(element("div", s("hello")))
-
  function row(line) {
-   const {uuid, slug, title} = line;
-   const tr_el = document.createElement("tr")
-   const td_el = document.createElement("td")
-   tr_el.appendChild(td_el)
-   td_el.appendChild(document.createTextNode(title))
-   return tr_el
+   const tr2 = tr(td(s(title)))
+   return tr2
  }
 
  // get_index().then((data) => console.log(data))
  // get_index().then((data) => console.log(row(data[0])))
  insert_pages_here = document.querySelector("#insert-pages-here")
- console.log(insert_pages_here)
+ // console.log(insert_pages_here)
  get_index().then((data) => {
-   console.log(row(data[0]))
+   // console.log(row(data[0]))
    for (const line of data) {
      insert_pages_here.appendChild(row(line))
    }

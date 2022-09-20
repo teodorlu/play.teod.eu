@@ -56,9 +56,9 @@
 (defn org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian wtf-is-this wtf-is-this-norwegian other forever-incomplete]} (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
-        lines (fn [& ls] (str/join "\n" (apply concat ls)))
+        lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
-    (lines
+    (lines2
      [(paragraphs "#+title: Towards an iterated game"
                   (sentences "Intent: bring ideas to life."
                              "Discuss, sharpen, play."

@@ -97,15 +97,15 @@
         ""])
 
      (when (seq forever-incomplete)
-       ["** Forever incomplete"
-        ""
-        (lines
-         "Some content is eventually /done/."
-         "Not journals.")
-        ""
-        ":)"
-        ""
-        (str/join " --- " (for [page forever-incomplete] (page-link page)))
+       [(paragraphs "** Forever incomplete"
+                    ""
+                    (lines
+                     "Some content is eventually /done/."
+                     "Not journals.")
+                    ""
+                    ":)"
+                    ""
+                    (str/join " --- " (for [page forever-incomplete] (page-link page))))
         ""])
 
      ["** Norwegian content"

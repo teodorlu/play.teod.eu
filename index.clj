@@ -56,24 +56,21 @@
 (defn org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian wtf-is-this wtf-is-this-norwegian other forever-incomplete]} (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
-        lines (fn [& ls] (str/join "\n" (apply concat ls)))]
+        lines (fn [& ls] (str/join "\n" (apply concat ls)))
+        paragraphs (fn [& ps] (str/join "\n\n" ps))]
     (lines
-     ["#+title: Towards an iterated game"
-      ""
-      (sentences "Intent: bring ideas to life."
-                 "Discuss, sharpen, play."
-                 "Minimize the distance between intent and reality.")
-      ""
-      (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
-                 "Embrace remix culture.")
-      ""
-      "Status: work in progress, lots of rough edges."
-      "But you're /very/ much welcome to have a look around 🤗"
-      ""
-      (str "Most content on this site is authored by Teodor Heggelund"
-           " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-           ".")
-      ""]
+     [(paragraphs "#+title: Towards an iterated game"
+                  (sentences "Intent: bring ideas to life."
+                             "Discuss, sharpen, play."
+                             "Minimize the distance between intent and reality.")
+                  (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
+                             "Embrace remix culture.")
+                  (sentences "Status: work in progress, lots of rough edges."
+                             "But you're /very/ much welcome to have a look around 🤗")
+                  (str "Most content on this site is authored by Teodor Heggelund"
+                       " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
+                       "."))]
+     [""]
 
      ["** Content that's ready for the eyes of others"]
      [""

@@ -20,3 +20,29 @@ I wrote about this in [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic 
 Play alone does not suffice.
 Work alone does not suffice.
 We need both, and they must be balanced.
+
+I've been enjoying [[id:e33962d6-d5cb-4ef8-b7be-9d4a537edbec][Metamuse (podcast)]] lately.
+Today I was listening to Episode 27: [[https://museapp.com/podcast/27-playful-software/][Playful software with Rasmus Andersson]].
+I had to stop listening when I heard this (somewhat edited by me for brevity):
+
+#+begin_quote
+Rasmus:
+
+What boundaries do we need to define?
+Let's say we have a couple of smart, interesting, playful people.
+The company people recognize that, and say:
+
+"Hey Lisa and Robin, would you be interested in sitting in this corner just coming up with crazy shit?"
+
+I think in most cases, that's a failure.
+#+end_quote
+
+List of failure modes:
+
+| situation                                 | failure                                                  |
+|-------------------------------------------+----------------------------------------------------------|
+| a group of people are only playing        | their play isn't used for anything productive            |
+| one person is playing, another is working | horrible experience for the worker, "I'm not your nanny" |
+| a group of people are only working        | no creativity at work.                                   |
+
+I've worked

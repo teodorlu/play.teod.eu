@@ -3,7 +3,11 @@
  :uuid "32bffa13-d4fb-4ae7-9718-855b0d4130d2",
  :author-url "https://teod.eu",
  :created "2022-08-13",
- :lang :en,
- :builds
- [{:build/type :index-org-2-html}
-  {:build/type :index-org-2-slides-html}]}
+ :lang :no
+
+ #_ "meta -- er dette en kapabilitet eller en feature?"
+ #_ "when in doubt, build feature."
+ #_ "Hva er lettest mulige start for å få ut noen slides?"
+ :builds [{:build/type :index-org-2-html}
+          {:build/type :index-org-2-slides-html}]
+ }

@@ -2,5 +2,4 @@
  :readiness :wtf-is-this,
  :author-url "https://teod.eu",
  :created "2022-07-24",
- :builder :no-op,
- :lang :en}
+ :builder :no-op}

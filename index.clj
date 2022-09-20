@@ -81,9 +81,10 @@
 
      ["** Other people's idea playgrounds"
       ""
-      "Ideas are best shared!"
-      "Some choose to share ideas in public."
-      "I think that's good."
+      (lines
+       "Ideas are best shared!"
+       "Some choose to share ideas in public."
+       "I think that's good.")
       ""
       "In alphabetical order:"
       ""]

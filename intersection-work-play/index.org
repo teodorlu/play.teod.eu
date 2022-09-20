@@ -16,7 +16,7 @@ When we play, we let our mind wander.
 We ease some constraints.
 
 I believe the act of designing the boundary between work and play is tremendously important.
-I wrote about this in [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]] in 2018, and I can't get the topic out of my mind.
+I wrote about this as [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]] in 2018, and I can't get the topic out of my mind.
 Play alone does not suffice.
 Work alone does not suffice.
 We need both, and they must be balanced.

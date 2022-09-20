@@ -2,4 +2,5 @@
  :readiness :wtf-is-this,
  :uuid "6a894657-11a7-4342-aa52-4ea776558e95",
  :author-url "https://teod.eu",
- :created "2022-07-30"}
+ :created "2022-07-30",
+ :lang :en}

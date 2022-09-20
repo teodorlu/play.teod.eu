@@ -32,18 +32,23 @@ What boundaries do we need to define?
 Let's say we have a couple of smart, interesting, playful people.
 The company people recognize that, and say:
 
-"Hey Lisa and Robin, would you be interested in sitting in this corner just coming up with crazy shit?"
+"Hey Lisa and Robin, would you be interested in sitting in this corner just coming up with crazy shit?
+Maybe we'll ship it."
 
 I think in most cases, that's a failure.
+
+Maybe the constraints are way too vague.
+Similar to an art class.
+Ask someone to paint /anything they want/, and you get paralysis.
 #+end_quote
 
 But there are plenty of things that can go wrong when the line between work and play is drawn without care.
 
-| situation                                 | failure                                                  |
-|-------------------------------------------+----------------------------------------------------------|
-| a group of people are only playing        | their play isn't used for anything productive            |
-| one person is playing, another is working | horrible experience for the worker, "I'm not your nanny" |
-| a group of people are only working        | no creativity at work.                                   |
+| situation                                 | example failure                                                               |
+|-------------------------------------------+-------------------------------------------------------------------------------|
+| a group of people are only playing        | their play never helps us ship anything                                       |
+| one person is playing, another is working | horrible experience for the worker. "I'm not your Nanny, I've got shit to do" |
+| a group of people are only working        | no creativity at work.                                                        |
 
 I've worked on [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]] in its current shape for about two years.
 We've seen lots of traction and I enjoy working with my co-founder, so my general answer to "how's it going?" is "I couldn't be more happy".
@@ -56,3 +61,33 @@ We have three major work streams:
 | usability | is the product ergonomic in daily use?                       |
 | sales     | are more people interested in the current value proposition? |
 | value     | are we able to handle more valuable workflows?               |
+
+For the last six months, we've been solely focused on usability.
+I've taken a somewhat technical product manager domain expert sales person role.
+Because my co-founder is /very/ strong technically.
+
+But where's the play?
+I like coding because it's playful.
+
+Back to reasonability.
+
+So I've been taking care of usability and sales.
+Mostly practical stuff.
+But the high risk high reward value work has been dormant.
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

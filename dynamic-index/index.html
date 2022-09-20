@@ -205,25 +205,17 @@
 
 
  function td(...children) {
-   const el = document.createElement("td")
-   for (const child of children) {
-     el.appendChild(child)
-   }
-   return el
+   return element("td", ...children)
  }
 
  function tr(...children) {
-   const el = document.createElement("tr")
-   for (const child of children) {
-     el.appendChild(child)
-   }
-   return el
+   return element("tr", ...children)
  }
 
- console.log(s("hello :)"))
- console.log(td(s("hello there")))
- console.log(tr(s("ohai")))
- console.log(element("div", s("hello")))
+ // console.log(s("hello :)"))
+ // console.log(td(s("hello there")))
+ // console.log(tr(s("ohai")))
+ // console.log(element("div", s("hello")))
 
  function row(line) {
    const {uuid, slug, title} = line;

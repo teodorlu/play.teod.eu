@@ -99,8 +99,9 @@
      (when (seq forever-incomplete)
        ["** Forever incomplete"
         ""
-        "Some content is eventually /done/."
-        "Not journals."
+        (lines
+         "Some content is eventually /done/."
+         "Not journals.")
         ""
         ":)"
         ""

@@ -83,6 +83,10 @@
   "slug" : "the-commons",
   "title" : "The Commons"
 }, {
+  "uuid" : "4253a57e-4814-474a-b696-296d338a477a",
+  "slug" : "dynamic-index",
+  "title" : "dynamic-index"
+}, {
   "uuid" : "4291481a-e7ad-4466-b51e-53b0e35076d1",
   "slug" : "emacs",
   "title" : "(Doom) Emacs learning journal"

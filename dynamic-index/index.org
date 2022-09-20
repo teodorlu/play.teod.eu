@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 4253a57e-4814-474a-b696-296d338a477a
+:END:
+#+TITLE: dynamic-index
+
+[[file:..][..]]
+
+DRAFT

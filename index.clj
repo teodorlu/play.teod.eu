@@ -112,15 +112,16 @@
      (for [page norwegian] (str "- " (page-link page)))
      [""]
 
-     ["** Seeds and vague ideas, please ignore."
-      ""
-      (lines "play.teod.eu functions as an idea playground for me."
-             "Some seeds grow. Others are forgotten."
-             "Feel free to skip all these."
-             "Or not."
-             "Expect the average seed to be messy and incomplete.")
-      ""
-      (str/join " · " (for [page wtf-is-this] (page-link page)))
+     [(paragraphs
+       "** Seeds and vague ideas, please ignore."
+       ""
+       (lines "play.teod.eu functions as an idea playground for me."
+              "Some seeds grow. Others are forgotten."
+              "Feel free to skip all these."
+              "Or not."
+              "Expect the average seed to be messy and incomplete.")
+       ""
+       (str/join " · " (for [page wtf-is-this] (page-link page))))
       ""]
 
      ["** Seeds and vague ideas in Norwegian, please ignore these too."

@@ -50,7 +50,7 @@
 
 (defn page-link
   "Link to a page on play.teod.eu"
-  [{:keys [id title created] :as _page}]
+  [{:keys [id title] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
 
 (defn page-link-with-date [{:keys [created] :as page}]

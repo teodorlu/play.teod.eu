@@ -88,7 +88,9 @@ By default, "just saying stuff" does:
 
 That means I can actually order by "good stuff" 🤔
 
-good := correlation_map^T * article_things
+$$
+good := \text{correlation_map}^T * \text{article_things}
+$$
 
 Hmm.
 * People can bring their own correlation thing

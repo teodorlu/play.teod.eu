@@ -40,3 +40,16 @@ I propose the following relations:
 | :medium  | :book              |
 
 Then filter & narrow down the /unlibrary/ with the relations.
+
+Why?
+
+Under information overload, topics alone are not enough.
+Significance is required.
+Why is this valuable?
+Value judgements are made in context.
+And when venturing into the unknown, you can choose to be influenced by someone who's judgement you trust.
+It's a trust graph, essentially.
+
+And you don't get stuck in a filter bubble.
+
+:)

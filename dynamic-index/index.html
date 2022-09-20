@@ -190,6 +190,14 @@
    return document.createTextNode(text)
  }
 
+ function element(tag, ...children) {
+   const el = document.createElement(tag)
+   for (const child of children) {
+     el.appendChild(child)
+   }
+   return el
+ }
+
  function a({href, title}) {
    const el = document.createElement("a")
    el.href = href
@@ -197,13 +205,6 @@
    return el
  }
 
- function el(tag, ...children) {
-   const el_el = document.createElement(tag)
-   for (const child of children) {
-     el_el.appendChild(child)
-   }
-   return el_el
- }
 
  function td(...children) {
    const el = document.createElement("td")

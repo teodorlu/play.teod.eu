@@ -79,15 +79,12 @@
      (for [page ready-for-comments]
        (str "- " (page-link page)))
 
-     ["** Other people's idea playgrounds"
-      ""
-      (lines
-       "Ideas are best shared!"
-       "Some choose to share ideas in public."
-       "I think that's good.")
-      ""
-      "In alphabetical order:"
-      ""]
+     [(paragraphs "** Other people's idea playgrounds"
+                  (lines
+                   "Ideas are best shared!"
+                   "Some choose to share ideas in public."
+                   "I think that's good.")
+                  "In alphabetical order:")]
      (for [{:keys [name href]}
            (sort-by :name
                     [{:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}

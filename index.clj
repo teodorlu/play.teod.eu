@@ -50,8 +50,13 @@
 
 (defn page-link
   "Link to a page on play.teod.eu"
-  [{:keys [id title] :as _page}]
+  [{:keys [id title created] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
+
+(defn page-link-with-date [{:keys [created] :as page}]
+  (let [date-str (when created
+                   (str " (" created ")"))]
+    (str (page-link page) (or date-str ""))))
 
 (defn org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian wtf-is-this wtf-is-this-norwegian other forever-incomplete]} (group-by :category pages)
@@ -77,7 +82,7 @@
                   "Feel free to have a look :)")]
 
      (for [page ready-for-comments]
-       (str "- " (page-link page)))
+       (str "- " (page-link-with-date page)))
 
      [(paragraphs "** Other people's idea playgrounds"
                   (lines

@@ -354,7 +354,10 @@ DRAFT
                 (with-out-str (pprint page)))
           (swap! big-index conj page))
         ;; write one big EDN file
-        (spit "index/big.edn" (with-out-str (pprint @big-index)))))))
+        (spit "index/big.edn" (with-out-str (pprint @big-index)))
+        ;; write one big JSON index
+        (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
+        ))))
 
 (defn filter-pandoc [{:as opts}]
   ;; only supported filter for now is resolve-links

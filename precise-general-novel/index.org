@@ -93,13 +93,12 @@ good := correlation_map^T * article_things
 Hmm.
 * People can bring their own correlation thing
 Here are some contrasting views.
-Please don't mind the man shrugging (me?) in the middle.
+Please don't mind me shrugging in the middle.
 
-| specific | Keep it specific, please | 🤷 | I like general theories  | general     |
-| novel    | Show me new ideas        | 🤷 | Show me old knowlege     | time tested |
-| precise  | BE PRECISE!              | 🤷 | the journey is to dream ❤️ | poetic      |
-| data     | Give me facts.           | 🤷 | What do you like?        | emotion     |
-
+| specific | Keep it specific | 🤷 | I like general theories  | general     |
+| novel    | Gimme new ideas  | 🤷 | I read old knowlege      | time tested |
+| precise  | Use words right  | 🤷 | the journey is to dream ❤️ | poetic      |
+| data     | Give me facts.   | 🤷 | What do you like?        | emotion     |
 
 I can make a nice little UI that works on this.
 Set your preference.

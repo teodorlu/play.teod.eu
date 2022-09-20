@@ -166,12 +166,14 @@
 </header>
 <p><a href="..">..</a></p>
 <p>DRAFT</p>
+<p><a href="#" id="random-page-link">Random page</a></p>
 <div id="index-table-placeholder"></div>
 
 <table>
   <thead>
     <tr>
       <th>Page</th>
+      <th>Comment</th>
     </tr>
   </thead>
   <tbody id="insert-pages-here">
@@ -201,6 +203,7 @@
  function a({href, title}) {
    const el = element("a", s(title))
    el.href = href
+   return el
  }
 
 
@@ -213,19 +216,30 @@
  }
 
  function row({uuid, slug, title}) {
-   return tr(td(s(title)))
+   return tr(
+     td(
+       // s(title)
+       a({title: title, href: "../" + slug + "/"})
+     ),
+     td()
+   )
  }
 
- // get_index().then((data) => console.log(data))
- // get_index().then((data) => console.log(row(data[0])))
- insert_pages_here = document.querySelector("#insert-pages-here")
- // console.log(insert_pages_here)
+ function random_item(items) {
+   return items[Math.floor(Math.random()*items.length)];
+ }
+
  get_index().then((data) => {
+   // set the random link to a random page
+   const random_page_link = document.querySelector("#random-page-link")
+   random_page_link.href = "../" + random_item(data).slug + "/"
+
+   const insert_pages_here = document.querySelector("#insert-pages-here")
    // console.log(row(data[0]))
    for (const line of data) {
      insert_pages_here.appendChild(row(line))
    }
- } )
+ })
 </script>
 </body>
 </html>

@@ -81,7 +81,7 @@
      [(paragraphs "** Content that's ready for the eyes of others"
                   "Feel free to have a look :)")]
 
-     (for [page ready-for-comments]
+     (for [page (sort-by :created  ready-for-comments)]
        (str "- " (page-link-with-date page)))
 
      [(paragraphs "** Other people's idea playgrounds"

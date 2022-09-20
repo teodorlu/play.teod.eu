@@ -145,8 +145,9 @@ I include this list as a personal reminder.
 "]
      ["** What is this?"
       ""
-      "Good question!"
-      "What this /is/ is perhaps less useful than what this is /for/."
+      (lines
+       "Good question!"
+       "What this /is/ is perhaps less useful than what this is /for/.")
       ""
       "** Then, what is this /for/??"
       ""

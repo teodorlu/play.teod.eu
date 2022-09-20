@@ -199,10 +199,8 @@
  }
 
  function a({href, title}) {
-   const el = document.createElement("a")
+   const el = element("a", s(title))
    el.href = href
-   el.appendChild(s(title))
-   return el
  }
 
 
@@ -225,7 +223,7 @@
  console.log(s("hello :)"))
  console.log(td(s("hello there")))
  console.log(tr(s("ohai")))
- console.log(el("div", s("hello")))
+ console.log(element("div", s("hello")))
 
  function row(line) {
    const {uuid, slug, title} = line;

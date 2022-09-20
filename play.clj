@@ -340,15 +340,21 @@ DRAFT
                         vals
                         (filter :uuid)
                         (map #(select-keys % [:uuid :slug :title :id]))
-                        (sort-by :uuid))]
+                        (sort-by :uuid))
+        big-index (atom [])]
     (if dry-run
       ;; just print pages
       (doseq [page uuid-index]
         (prn page))
       ;; otherwise, write to index/by-uuid/{UUID}.edn
-      (doseq [page uuid-index]
-        (spit (str "index/by-uuid/" (:uuid page) ".edn")
-              (with-out-str (pprint page)))))))
+      (do
+        ;; write an EDN file per UUID
+        (doseq [page uuid-index]
+          (spit (str "index/by-uuid/" (:uuid page) ".edn")
+                (with-out-str (pprint page)))
+          (swap! big-index conj page))
+        ;; write one big EDN file
+        (spit "index/big.edn" (with-out-str (pprint @big-index)))))))
 
 (defn filter-pandoc [{:as opts}]
   ;; only supported filter for now is resolve-links

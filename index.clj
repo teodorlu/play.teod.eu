@@ -57,6 +57,7 @@
   (let [{:keys [ready-for-comments norwegian wtf-is-this wtf-is-this-norwegian other forever-incomplete]} (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
         lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
+        lines (fn [& ls] (str/join "\n" (map str ls)))
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
     (lines2
      [(paragraphs "#+title: Towards an iterated game"
@@ -72,10 +73,10 @@
                        "."))]
      [""]
 
-     ["** Content that's ready for the eyes of others"]
-     [""
-      "Feel free to have a look :)"
-      ""]
+     [(paragraphs "** Content that's ready for the eyes of others"
+                  "Feel free to have a look :)"
+                  "")]
+
      (for [page ready-for-comments]
        (str "- " (page-link page)))
 

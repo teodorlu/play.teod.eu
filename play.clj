@@ -195,13 +195,13 @@ DRAFT
                  :lines+recent relations->lines+recent
                  :pretty relations->pretty
                  :files relations->files}
-        {:keys [from to]} opts]
-    (let [input-is-valid (and (contains? sources from)
-                              (contains? targets to))]
-      (if-not input-is-valid
-        (println (relations-helptext))
-        (let [rels ((sources from) opts)]
-          ((targets to) rels))))))
+        {:keys [from to]} opts
+        input-is-valid (and (contains? sources from)
+                            (contains? targets to))]
+    (if-not input-is-valid
+      (println (relations-helptext))
+      (let [rels ((sources from) opts)]
+        ((targets to) rels)))))
 
 (defn random-page [{:keys [opts]}]
   (let [n (or (:n opts) 1)]

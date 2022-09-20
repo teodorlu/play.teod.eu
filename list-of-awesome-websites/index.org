@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-| site           | why awesome                                                                         |
+| site           | why it's awesome                                                                    |
 |----------------+-------------------------------------------------------------------------------------|
 | [[https://acko.net/][acko.net]]       | The author of Mathbox. Pushing the limit of what can be done with a GPU on the web. |
 | [[http://worrydream.com/][worrydream.com]] | Interactive storytelling so good it's going to blow your hat off.                   |

@@ -18,8 +18,8 @@ We ease some constraints.
 
 I believe the act of designing the boundary between work and play is tremendously important.
 I wrote about this as [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]] in 2018, and I can't get the topic out of my mind.
-Play alone does not suffice.
-Work alone does not suffice.
+Play alone is not sufficient.
+Work alone sucks all air out of an initiative.
 We need both work and play, and there needs to be a balance.
 
 I've been enjoying [[id:e33962d6-d5cb-4ef8-b7be-9d4a537edbec][Metamuse (podcast)]] lately.

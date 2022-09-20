@@ -216,7 +216,8 @@ DRAFT
 (defn create-page [{:keys [opts]}]
   (let [slug (:slug opts)
         title (or (:title opts) slug)
-        uuid (or (:uuid opts) (bash "uuidgen"))]
+        uuid (or (:uuid opts) (bash "uuidgen"))
+        lang (or (:lang opts) :en)]
     (assert slug "Page slug is required.")
     (let [org-file (str slug "/index.org")
           play-file (str slug "/play.edn")]
@@ -234,7 +235,8 @@ DRAFT
                                    :readiness :wtf-is-this
                                    :uuid uuid
                                    :author-url "https://teod.eu"
-                                   :created (str/trim (bash "date -I"))}))))
+                                   :created (str/trim (bash "date -I"))
+                                   :lang lang}))))
 
       ;; Regenerate the makefile since we've added a new target
       (bash "./play.clj makefile")
@@ -430,7 +432,8 @@ index-by-uuid [--dry-run]
                           ;; page
                           :title :string ;; Page title
                           :n :long       ;; Count - eg random page count
-                          :uuid :string
+                          :uuid :string  ;; UUID for me and Org-roam
+                          :lang :keyword ;; Article language, :en or :no
                           ;; filter
                           :resolve-links :boolean
                           }}))

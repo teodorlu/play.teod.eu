@@ -41,3 +41,11 @@ Working with source code can be viewed as research.
 15 - Good: exploring your taste, aesthetic & values. Bad: comparing yourself with others.
 
 16 - Asking a specific question and generalizing later is often easier than the opposite.
+
+-----
+
+aphorisms from other people:
+
+- Adam Wiggins: https://gist.github.com/adamwiggins/5687294
+- Nassim Taleb: https://en.wikipedia.org/wiki/The_Bed_of_Procrustes
+- Friedrich Nietzsche: basically all his writing.

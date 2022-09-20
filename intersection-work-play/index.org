@@ -54,7 +54,7 @@ I've worked on [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]] in its curren
 We've seen lots of traction and I enjoy working with my co-founder, so my general answer to "how's it going?" is "I couldn't be more happy".
 But lately, something has been bugging me.
 
-We have three major work streams:
+We have three major work streams right now:
 
 | stream    | what                                                         |
 |-----------+--------------------------------------------------------------|
@@ -77,19 +77,23 @@ But the high risk high reward value work has been dormant.
 
 -----
 
-#+BEGIN_VERSE
+So, where's the actionable insight?
+Are you just rambling, Teodor
 
+🧌
 
+Well, yes.
+This is all just rambling.
+But I do have some parting words.
 
+- Only work kills motivation and creativity
+- Only play disconnects you from reality
+- I think there's a correlation between motivation to treat work as play and being a strong contributor at work
+- I think everyone deserves a bit of play, and /also/ deserves the responsibility to do proper work.
 
+Does that make sense?
+Perhaps?
 
+See to you later,
 
-
-
-
-
-
-
-
-
-#+END_VERSE
+Teodor

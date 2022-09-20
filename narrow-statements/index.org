@@ -8,8 +8,9 @@
 Idea: Coordination is easier when statements are narrow
 
 * Narrow /interpretation/ of statements requires:
-- Statement is composed of narrow pieces
-- Context where statement is interpreted is aware of the pieces
+A narrow statement is composed by narrow terms.
+
+The statement will be interpreted in a context where the terms are well-defined.
 * Challenge: narrow statements require more precise language than vague statements.
 Changing the way we speak is hard.
 Unfamiliar.

@@ -43,7 +43,7 @@ Then filter & narrow down your [[https://fs.blog/the-antilibrary/][antilibrary]]
 
 Why?
 
-Under information overload, topics alone are not enough.
+Under information overload, topics alone are not enough to direct your attention.
 Significance is required.
 Why is this valuable?
 Value judgements are made in context.

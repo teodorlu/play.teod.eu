@@ -19,7 +19,7 @@ I believe the act of designing the boundary between work and play is tremendousl
 I wrote about this as [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]] in 2018, and I can't get the topic out of my mind.
 Play alone does not suffice.
 Work alone does not suffice.
-We need both, and they must be balanced.
+We need both work and play, and there needs to be a balance.
 
 I've been enjoying [[id:e33962d6-d5cb-4ef8-b7be-9d4a537edbec][Metamuse (podcast)]] lately.
 Today I was listening to Episode 27: [[https://museapp.com/podcast/27-playful-software/][Playful software with Rasmus Andersson]].

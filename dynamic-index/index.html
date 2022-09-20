@@ -212,9 +212,8 @@
    return element("tr", ...children)
  }
 
- function row(line) {
-   const tr2 = tr(td(s(title)))
-   return tr2
+ function row({uuid, slug, title}) {
+   return tr(td(s(title)))
  }
 
  // get_index().then((data) => console.log(data))

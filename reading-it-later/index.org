@@ -39,7 +39,7 @@ I propose the following relations:
 | :from    | Metamuse (podcast) |
 | :medium  | :book              |
 
-Then filter & narrow down the /unlibrary/ with the relations.
+Then filter & narrow down your [[https://fs.blog/the-antilibrary/][antilibrary]] with the relations.
 
 Why?
 

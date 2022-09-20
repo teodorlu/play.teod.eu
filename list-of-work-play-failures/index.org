@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: 842f9b9a-de98-4187-863e-3e6cf1b1814d
+:END:
+#+TITLE: A list of failure modes from bad intersections between work and play
+
+[[file:..][..]]
+
+Play is dynamic, work is static.
+That's how I view it.
+When we play, we move in unsurprising ways.
+Imagine a playground where a dozen eight-year-olds are playing.
+Are you able to predict what's going to happen in half an hour?
+Even in ten minutes?
+
+When we play, we let our mind wander.
+We ease some constraints.
+
+I believe the act of designing the boundary between work and play is tremendously important.
+I wrote about this in [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]] in 2018, and I can't get the topic out of my mind.
+Play alone does not suffice.
+Work alone does not suffice.
+We need both, and they must be balanced.

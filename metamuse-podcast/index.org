@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: e33962d6-d5cb-4ef8-b7be-9d4a537edbec
+:END:
+#+TITLE: Metamuse (podcast)
+
+[[file:..][..]]
+
+https://museapp.com/podcast/
+
+A podcast by the team behind Muse - a tool for thought for iPad and Mac.

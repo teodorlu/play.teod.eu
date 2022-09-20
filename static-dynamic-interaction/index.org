@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-Canonical content source: https://www.teodorheggelund.com/posts/static-dynamic-interaction.html
+https://www.teodorheggelund.com/posts/static-dynamic-interaction.html
 
 Utility is found in movement.
 Movement is enabled by solid foundations.

@@ -51,7 +51,7 @@ But there are plenty of things that can go wrong when the line between work and 
 | a group of people are only working        | no creativity at work.                                                        |
 
 I've worked on [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]] in its current shape for about two years.
-We've seen lots of traction and I enjoy working with my co-founder, so my general answer to "how's it going?" is "I couldn't be more happy".
+We've seen lots of traction and I greatly enjoy working with my co-founder, so my go-to answer to "how's it going?" is "I couldn't be more happy".
 But lately, something has been bugging me.
 
 We have three major work streams right now:

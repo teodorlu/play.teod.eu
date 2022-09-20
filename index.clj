@@ -143,21 +143,15 @@
 
 I include this list as a personal reminder.
 "]
-     [(paragraphs
-       "** What is this?"
-       ""
-       (lines
-        "Good question!"
-        "What this /is/ is perhaps less useful than what this is /for/.")
-       ""
-       "** Then, what is this /for/??"
-       ""
-       (lines
-        "It's for playing with ideas."
-        "It's for breathing air into the bad ones, and the good ones.")
-       ""
-       "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]].")
-      ]
+     [(paragraphs "** What is this?"
+                  (lines
+                   "Good question!"
+                   "What this /is/ is perhaps less useful than what this is /for/.")
+                  "** Then, what is this /for/??"
+                  (lines
+                   "It's for playing with ideas."
+                   "It's for breathing air into the bad ones, and the good ones.")
+                  "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]].")]
 
 
 

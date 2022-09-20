@@ -339,7 +339,8 @@ DRAFT
         uuid-index (->> (files->relations {})
                         vals
                         (filter :uuid)
-                        (map #(select-keys % [:uuid :slug :title :id])))]
+                        (map #(select-keys % [:uuid :slug :title :id]))
+                        (sort-by :uuid))]
     (if dry-run
       ;; just print pages
       (doseq [page uuid-index]

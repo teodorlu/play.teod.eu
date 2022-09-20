@@ -1,6 +1,5 @@
-{:title
- "What's a good intersection between work and play?",
- :readiness :wtf-is-this,
+{:title "What's a good intersection between work and play?",
+ :readiness :ready-for-comments,
  :uuid "842f9b9a-de98-4187-863e-3e6cf1b1814d",
  :author-url "https://teod.eu",
  :created "2022-09-20"}

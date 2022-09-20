@@ -151,8 +151,9 @@ I include this list as a personal reminder.
       ""
       "** Then, what is this /for/??"
       ""
-      "It's for playing with ideas."
-      "It's for breathing air into the bad ones, and the good ones."
+      (lines
+       "It's for playing with ideas."
+       "It's for breathing air into the bad ones, and the good ones.")
       ""
       "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
       ]

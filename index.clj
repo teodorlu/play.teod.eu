@@ -156,7 +156,10 @@ I include this list as a personal reminder.
                   (lines
                    "It's for playing with ideas."
                    "It's for breathing air into the bad ones, and the good ones.")
-                  "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]].")]
+                  (lines
+                   "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
+                   "Local development URL for this page is [[http://localhost:9945/][localhost:9945]]."
+                   ))]
 
 
 

@@ -116,7 +116,8 @@ When in doubt, ask yourself "what's important?" and start writing.
 - If it's hard, try slicing it up.
 - If you dare, share what you learn with your peers.
 
-Check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Doom) Emacs learning journal]] to understand my journal-oriented process for learning Emacs.
+I use journaling all the time when I want to learn something.
+If you want an example, check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Doom) Emacs learning journal]].
 
 * Appendix B: more books
 more on trust & relationships:

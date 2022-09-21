@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID: 3e277668-bb98-484e-8c1b-85bd3a75e3b4
+:END:
+#+TITLE: Charles Comstock's sketches
+
+[[file:..][..]]
+
+https://dgtized.github.io/shimmers/#/sketches
+
+Source: https://github.com/dgtized/shimmers
+
+As of 2022-09-21, that's 170 sketches!
+Each is its own little Clojurescript file.
+
+Here's a small one:
+
+#+begin_src clojure
+(defn rain [noise]
+  (let [x0 (q/random (- 140) (+ 140 (q/width)))
+        angle (q/radians (+ (* 3 (q/random-gaussian))
+                            (* 110 (- 1 noise))))
+        x1 (+ x0 (* 200 (q/cos angle)))
+        s0 (- (rand) 0.2)
+        s1 (+ s0 (q/random noise))]
+    (q/stroke-weight (q/random 0.1 noise))
+    (q/line (q/lerp x0 x1 s0) (q/lerp 0 (q/height) s0)
+            (q/lerp x0 x1 s1) (q/lerp 0 (q/height) s1))))
+
+(defn draw [_]
+  (q/background 0 10)
+  (q/stroke 255 128)
+  (let [noise (q/noise 0 (/ (q/frame-count) 1000))]
+    ;; (q/print-every-n-millisec 500 noise)
+    (dotimes [_ (rand-int (* 8 noise))]
+      (rain noise))))
+
+(sketch/defquil precipitation
+  :created-at "2021-01-19"
+  :size [800 600]
+  :draw draw
+  :middleware [m/fun-mode framerate/mode])
+#+end_src
+
+Source: https://github.com/dgtized/shimmers/tree/fe486a0fbf5013de1ab334c179874ee2796070b9/src/shimmers/sketches/precipitation.cljs

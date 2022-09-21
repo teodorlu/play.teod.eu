@@ -116,7 +116,7 @@ When we play, we can't predict where we will end up in advance.
 That's where the excitement comes from :)
 
 *when we work, there is a deliverable*.
-Effective people know how to anchor their efforts so that the efforts contribute to some value in a specific context.
+Effective people know how to anchor their efforts so their effort add value in a context.
 And they keep that context in mind during the work, not as an afterthought.
 See [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]] and [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]].
 

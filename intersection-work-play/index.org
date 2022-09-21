@@ -70,7 +70,7 @@ We have three major work streams right now:
 | value     | are we able to handle more valuable workflows?               |
 
 For the last six months, we've been solely focused on usability.
-I've taken a somewhat technical product manager domain expert sales person role.
+I've taken a something of a technical product manager domain expert sales person role.
 Because my co-founder is /very/ strong technically.
 
 But where's the play?

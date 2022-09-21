@@ -41,4 +41,4 @@ Here's a small one:
   :middleware [m/fun-mode framerate/mode])
 #+end_src
 
-Source: https://github.com/dgtized/shimmers/tree/fe486a0fbf5013de1ab334c179874ee2796070b9/src/shimmers/sketches/precipitation.cljs
+[[https://dgtized.github.io/shimmers/#/sketches/precipitation?seed=2534613123][precipitation sketch]] | [[https://github.com/dgtized/shimmers/tree/fe486a0fbf5013de1ab334c179874ee2796070b9/src/shimmers/sketches/precipitation.cljs][precipitation.cljs source]]

@@ -107,13 +107,35 @@ Appendix: a table of work an play.
 And proposed definitions for "work" and "play".
 (2022-09-21)
 
-|          | Not play                  | Play                                  |
-| Not work | Meaningless paper pushing | We've forgotten what we did last week |
-| Work     | Cog in a system           | Deliverable /and/ autonomy            |
+|            | Not play                  | Play                                  |
+|------------+---------------------------+---------------------------------------|
+| *Not work* | Meaningless paper pushing | We've forgotten what we did last week |
+| *Work*     | Cog in a system           | Deliverable plus autonomy             |
 
 *play is unpredictable*.
 When we play, we can't predict where we will end up in advance.
+That's where the excitement comes from :)
 
 *when we work, there is a deliverable*.
 Effective people know how to anchor their efforts so that the efforts contributes to some value in a specific context.
 See [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]] and [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]].
+
+I also think it's possible to orient a product team around /both/ work and play.
+My attempt is [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]].
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

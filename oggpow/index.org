@@ -51,8 +51,7 @@ So we did what worked.
 
 We used code when code was the proper tool for the job.
 We used text when code didn't suffice.
-
-*** The hourglass of IKI
+** The hourglass of IKI
 Flexibility - Individuals create content with the tools they prefer.
 
 Cohesion - One Knowledge Protocol (narrow waist)

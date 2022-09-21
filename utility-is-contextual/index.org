@@ -19,4 +19,4 @@ Don't be a tyrant.
 
 Rather, when you want to introduce an abstraction, consider why it's useful.
 Build up a nexus of examples.
-Then ask your friends to make their own judgment.
+Then ask your friends to judge for themselves.

@@ -60,7 +60,7 @@ Content can be indexed by anyone.
 ** The hourglass of OGGPOW
 Flexibility - Bucket of Options
 
-Cohesion - One Good Goal
+Cohesion - One Good Goal (narrow waist)
 
 Flexibility - Bucket of WIP
 * First draft

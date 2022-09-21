@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-Shamelessly stolen from Zach Tellman - https://ideolalia.com/.
+Shamelessly stolen from Zach Tellman of https://ideolalia.com/.
 
 Premise: it's useless to judge utility abstracted from context.
 

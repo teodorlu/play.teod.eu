@@ -277,7 +277,7 @@ DRAFT
         indent (fn [s] (str "\t" s))
         makefile (lines
                   "# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED"
-                  "# SEE `make clean` TARGET"
+                  "# SEE `make makefile` TARGET"
                   ""
                   ""
 

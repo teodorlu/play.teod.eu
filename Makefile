@@ -1,5 +1,5 @@
 # DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED
-# SEE `make clean` TARGET
+# SEE `make makefile` TARGET
 
 
 # Generate target for root index

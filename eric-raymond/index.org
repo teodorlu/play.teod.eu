@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 4c29d9b7-617e-4178-83ca-e3c83cbd6e63
+:END:
+#+TITLE: Eric Raymond
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Eric_S._Raymond
+
+http://www.catb.org/~esr/

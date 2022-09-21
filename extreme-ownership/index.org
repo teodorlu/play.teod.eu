@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 40f7d350-4adb-4a1c-bee8-70b38e8006c0
+:END:
+#+TITLE: Extreme Ownership
+
+[[file:..][..]]
+
+https://www.goodreads.com/book/show/23848190-extreme-ownership?ref=nav_sb_ss_1_17
+
+Book written by [[id:5dce2cbf-71b0-4038-ad1d-7174236fd964][Jocko Willink]]

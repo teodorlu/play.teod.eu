@@ -66,6 +66,13 @@ Or install it with bbin:
 $ bbin install https://play.teod.eu/bink/bink.clj
 $ bink
 #+end_src
+
+TODO:
+
+1. I could provide curl one-liners with some "default" link collections
+2. I could push through to enable end-user launch stuff with =babashka.process/shell= or other things
+
+...
 * Status as of 2022-09-21
 1. I think this is a nice idea
 2. I'm not yet using it daily myself

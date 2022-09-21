@@ -34,7 +34,7 @@ Why trust, value and software, exactly?
 | value    | because knowing what value you provide empowers and frees you.                     |
 | software | because there are old people whose techniques you should steal.                    |
 
-When you understand trust, value and software well, moving forward is going to be easy.
+When you understand trust, value and software deeply, it's going to be easier for you to move forward.
 
 #+begin_quote
 Oh you want to learn D3.js?

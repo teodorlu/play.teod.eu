@@ -12,7 +12,7 @@ One Good Goal plus Options and WIP
 * Second draft
 ** Target audience: teams aiming for elite levels of trust and quality
 ** Motivation & introduction
-- Utility is contextual.
+- [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]].
   The purpose of structure is to serve utility in a context.
   Ref [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]].
 - Requirement: mutually high levels of trust, shared sense of quality and shared sense of aesthetics.

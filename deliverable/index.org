@@ -23,6 +23,12 @@ With strong values, simply staying true to your values is a goal in itself.
 
 First, the default --- write journal. Something like [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]].
 
-* Big heading
-text
-** Smaller heading
+/what do I want to put in this article?/
+
+Idea: apply [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]] to knowledge work.
+A capability is a mental model, a definition.
+A utility (feature) provides value in a context.
+As a text, it motivates /why/. (see [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aphorisms]], number 5).
+An assembly solves for /discovery/.
+How can I know what's available?
+Where do I start?

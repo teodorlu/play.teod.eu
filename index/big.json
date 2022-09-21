@@ -164,7 +164,8 @@
   "uuid" : "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "practice-deliberately-with-journals",
   "title" : "Practice deliberatley with journals",
@@ -221,7 +222,8 @@
   "uuid" : "45f5cc28-79f9-4a88-930f-06f77e727479",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "oggpo",
   "title" : "One Good Goal Plus Options",
@@ -298,7 +300,8 @@
   "uuid" : "5dce2cbf-71b0-4038-ad1d-7174236fd964",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "learn-design",
   "title" : "I want to learn design",
@@ -425,7 +428,8 @@
   "uuid" : "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "unix-signals-intro",
   "title" : "Unix signals: a crash course",
@@ -475,7 +479,8 @@
   "uuid" : "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "lost-in-specificity",
   "title" : "Lost in specificity",
@@ -491,7 +496,8 @@
   "uuid" : "a91a46da-75f0-4a1c-8cde-5e51ad199026",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-20",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "knowledge-worker",
   "title" : "You are a knowledge worker",
@@ -590,7 +596,8 @@
   "uuid" : "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "metamuse-podcast",
   "title" : "Metamuse (podcast)",
@@ -598,7 +605,8 @@
   "uuid" : "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-20",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "interface-perception-design",
   "title" : "Interface, Perception, Design",

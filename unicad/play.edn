@@ -3,4 +3,5 @@
  :uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026",
  :author-url "https://teod.eu",
  :created "2022-09-20",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

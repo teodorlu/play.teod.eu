@@ -103,7 +103,8 @@ Was it worthwhile to build?
 
 * Software
 
-On how to build software, I recommend [[id:3aa87eb3-5ab3-4897-9057-fd463c8bd980][The Art of Unix Programming]] by [[id:4c29d9b7-617e-4178-83ca-e3c83cbd6e63][Eric Raymond]].
+I recommend reading [[id:3aa87eb3-5ab3-4897-9057-fd463c8bd980][The Art of Unix Programming]] by [[id:4c29d9b7-617e-4178-83ca-e3c83cbd6e63][Eric Raymond]] to understand your options for creating software.
+How are others going to interact with the thing you made?
 
 -----
 

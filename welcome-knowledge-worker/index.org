@@ -120,14 +120,24 @@ I use journaling all the time when I want to learn something.
 If you want an example, check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Doom) Emacs learning journal]].
 
 * Appendix B: more books
+
+First --- you can safely skip these.
+Don't give yourself so many moving pieces that you get confused!
+
 more on trust & relationships:
 [[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]] .
-Why: it cuts to the bone.
 
 more on programming:
 [[id:a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1][The Pragmatic Programmer]], second edition. By Dave Thomas and Andy Hunt.
 Why: great read, actionable, will make your code better.
 
+more on programming 2:
+[[id:2dc52e4f-0604-4d33-a50c-1e8534266a47][Grokking Simplicity]] by Eric Normand.
+Why: it introduces functional programming by focusing on what FP lets you /do/ rather than stuffing abstract theory down your throat.
+
+
 more on value:
 [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
 Why: crisply defines what's useful to do in science.
+Caveat: this one is a tough read.
+Don't beat yourself up.

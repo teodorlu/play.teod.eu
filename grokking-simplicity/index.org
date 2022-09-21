@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 2dc52e4f-0604-4d33-a50c-1e8534266a47
+:END:
+#+TITLE: Grokking Simplicity
+
+[[file:..][..]]
+
+https://grokkingsimplicity.com/
+
+Book by Eric Normand.
+Introduces functional programming by focusing on what FP lets you /do/ rather than stuffing abstract theory down your throat.

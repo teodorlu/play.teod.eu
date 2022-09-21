@@ -117,7 +117,7 @@
      (for [page norwegian] (str "- " (page-link page)))
      [""]
 
-     [(paragraphs "** Seeds, drafts and vague ideas, please ignore."
+     [(paragraphs "** Seeds, drafts, references and vague ideas, please ignore."
                   (lines "play.teod.eu functions as an idea playground for me."
                          "Some seeds grow. Others are forgotten."
                          "Feel free to skip all these."

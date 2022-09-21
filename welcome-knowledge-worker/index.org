@@ -128,10 +128,8 @@ more on programming:
 The Pragmatic Programmer: Your Journey to Mastery (2nd edition)
 Dave Thomas
 Andy Hunt
-
 Why: great read, actionable, will make your code better.
 
 more on value:
 The Beginning of Infinity
-
 Why: crisply defines what's useful to do in science.

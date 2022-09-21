@@ -22,7 +22,7 @@ One Good Goal plus Options and WIP
     - Too static
   - My experience working in a startup (not Unicad): everything is moving, confusion reigns.
     - Too dynamic
-  - My experience working in a big organization: Diluted intent, emphasis on legibility and reproducability over value.
+  - My experience working in a big organization: Diluted intent, emphasis on legibility and reproducibility over value.
     - Actionable: reify intent for product decisions
     - Actionable: reify intent for process decisions
 ** Preparing for OGGPOW: how organizational stability impacts trust & quality

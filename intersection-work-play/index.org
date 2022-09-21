@@ -29,7 +29,7 @@ We need both work and play, and we need a balance.
 
 I've been enjoying [[id:e33962d6-d5cb-4ef8-b7be-9d4a537edbec][Metamuse (podcast)]] lately.
 Today I was listening to Episode 27: [[https://museapp.com/podcast/27-playful-software/][Playful software with Rasmus Andersson]].
-I had to stop listening when I heard this (somewhat edited by me for brevity):
+I had to stop listening when I heard this (edited for brevity):
 
 #+begin_quote
 Rasmus:

@@ -7,7 +7,7 @@
 
 Shamelessly stolen from Zach Tellman of https://ideolalia.com/.
 
-Premise: it's useless to judge utility abstracted from context.
+Premise / my interpretation: it's useless to judge utility abstracted from context.
 
 I suggest we separate our statements between definitions and experience reports.
 A definition defines a concept as crisply as possible.

@@ -123,6 +123,9 @@ If you want an example, check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Do
 
 First --- you can safely skip these.
 Don't give yourself so many moving pieces that you get confused!
+No, really!
+It's important to limit work in progress limited.
+Don't try to learn everything at once.
 
 more on trust & relationships:
 [[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]].

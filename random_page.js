@@ -15,7 +15,14 @@ class RandomPageButton extends HTMLButtonElement {
 
     // Element functionality written in here
     this.addEventListener("click", e => {
-      console.log("Click!")
+      // What kind of random content do we want?
+      //
+      //  - remote references are not that interesting
+      //  - old stuff with high potential is nice
+      //  - random old stuff is also nice
+      //  - perhaps I want some way to deprecate stuff? (i could also just delete it)
+
+      // console.log("Click!")
 
       get_index().then((data) => {
         const is_reasonable_target = (item) => {
@@ -30,8 +37,8 @@ class RandomPageButton extends HTMLButtonElement {
         // console.log(reasonable_targets)
 
         const item = random_item(reasonable_targets)
-        console.log(item)
-        // window.location.href = "/" + item.slug + "/"
+        // console.log(item)
+        window.location.href = "/" + item.slug + "/"
       })
     })
   }

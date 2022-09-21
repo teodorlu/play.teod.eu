@@ -204,14 +204,24 @@ DRAFT
         ((targets to) rels)))))
 
 (defn random-page [{:keys [opts]}]
-  (let [n (or (:n opts) 1)]
-    (println
-     (str/join "\n"
-               (->> (files->relations {})
-                    vals
-                    shuffle
-                    (take n)
-                    (map :slug))))))
+  (if (:dry-run opts)
+    (do
+      ;; dry run is mostly for dev
+      (pprint (->> (files->relations {})
+                   vals
+                   (remove #(= :remote-reference
+                               (:form %)))
+                   (take 5))))
+    (let [n (or (:n opts) 1)]
+      (println
+       (str/join "\n"
+                 (->> (files->relations {})
+                      vals
+                      (remove #(= :remote-reference
+                                  (:form %)))
+                      shuffle
+                      (take n)
+                      (map :slug)))))))
 
 (defn create-page [{:keys [opts]}]
   (let [slug (:slug opts)

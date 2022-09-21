@@ -77,7 +77,7 @@ To do this, a leader must push situational awareness up the chain of command.
 
 If you can build relationships of trust to the people around you, you'll have an easy time getting help and feedback.
 
-So, for trust, i recommend [[id:40f7d350-4adb-4a1c-bee8-70b38e8006c0][Extreme Ownership]] by Jocko Willink.
+So, for trust, I recommend [[id:40f7d350-4adb-4a1c-bee8-70b38e8006c0][Extreme Ownership]] by Jocko Willink.
 Start with /Chapter 10: Leading Up and Down the Chain of Command/ if you're in a hurry.
 
 * Value

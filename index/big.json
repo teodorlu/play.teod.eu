@@ -422,6 +422,13 @@
   "created" : "2022-09-10",
   "lang" : "en"
 }, {
+  "slug" : "aphorisms",
+  "title" : "Aphorisms",
+  "uuid" : "93ea907e-9dcb-4c6b-af7d-d9bc22c34d57",
+  "form" : "unknown",
+  "readiness" : "ready-for-comments",
+  "lang" : "en"
+}, {
   "slug" : "the-courage-to-be-disliked",
   "title" : "The Courage to Be Disliked",
   "readiness" : "wtf-is-this",

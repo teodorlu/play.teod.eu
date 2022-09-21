@@ -11,7 +11,7 @@ Premise / my interpretation: it's useless to judge utility abstracted from conte
 
 I suggest we separate our statements between definitions and experience reports.
 A definition defines a concept as crisply as possible.
-An experience report applies a set of definitions to a problem.
+An experience report applies a set of definitions to a problem, shares the effects, and judges their desirability.
 
 Don't push an abstraction on your friends without qualification.
 Rather, when you want to introduce an abstraction, consider why it's useful.

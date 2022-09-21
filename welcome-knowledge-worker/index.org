@@ -114,7 +114,7 @@ When in doubt, ask yourself "what's important?" and start writing.
 
 - Are you asking the right question?
 - If it's hard, try slicing it up.
-- If you dare, share pieces of your learning journal with your peers.
+- If you dare, share what you learn with your peers.
 
 Check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Doom) Emacs learning journal]] to understand my journal-oriented process for learning Emacs.
 

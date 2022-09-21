@@ -72,6 +72,11 @@ $ bink
 3. I think =bink= has the potential to remove real friction for teams with lots of scattered resources, and remove friction jumping from place to place
    1. (though one could consider not depending on hundreds of external services "at all")
 4. If you're interested in this, I'd be happy to help / discuss.
+5. A more interesting scope than "bookmark manager" might be "babashka-powered command launcher"
+   1. Could be layered on top of =fzf= or =rofi= or other things, user choice
+   2. Launcher setup could be user config.
+      And other people could help contribute launchers for their platform.
+      Linux and MacOS users might have different preferences here.
 * Dev journal / working notes
 Feel free to ignore this part :)
 

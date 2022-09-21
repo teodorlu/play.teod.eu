@@ -34,7 +34,7 @@ Requirement: there is always one good goal.
 
 - Makes sense strategically
 - Actionable
-- Goal is specified as an outcome that's benefitical for end users.
+- Goal is specified as an outcome that's beneficial for end users.
 ** A Bucket of Options
 Options are initiatives that we can choose to prioritize or grow.
 ** A Bucket of WIP

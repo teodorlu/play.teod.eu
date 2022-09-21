@@ -145,7 +145,6 @@ more on programming 2:
 [[id:2dc52e4f-0604-4d33-a50c-1e8534266a47][Grokking Simplicity]] by Eric Normand.
 Why: it introduces functional programming by focusing on what FP lets you /do/ rather than attempt to stuff abstract theory down your throat.
 
-
 more on value:
 [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
 Why: it crisply defines what's useful to do in science.

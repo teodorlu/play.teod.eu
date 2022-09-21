@@ -138,6 +138,6 @@ Why: it introduces functional programming by focusing on what FP lets you /do/ r
 
 more on value:
 [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
-Why: crisply defines what's useful to do in science.
+Why: it crisply defines what's useful to do in science.
 Caveat: this one is a tough read.
 Don't beat yourself up.

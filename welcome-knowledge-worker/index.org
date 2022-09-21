@@ -121,11 +121,18 @@ If you want an example, check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Do
 
 * Appendix B: more books
 
-First --- you can safely skip these.
-Don't give yourself so many moving pieces that you get confused!
-No, really!
-It's important to limit work in progress limited.
-Don't try to learn everything at once.
+You can safely skip these.
+At least for now.
+Learning is hard enough as it is.
+Learning lots of different stuff at the same time is even harder.
+So, please give yourself some breathing room.
+Please!
+
+Still adamant?
+OK!
+Please go ahead :)
+
+🐉
 
 more on trust & relationships:
 [[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]].

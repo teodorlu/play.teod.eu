@@ -27,11 +27,11 @@ So I'd like to suggest three books:
 
 Why trust, value and software, exactly?
 
-| thing    | why                                                             |
-|----------+-----------------------------------------------------------------|
-| trust    | because the lack of trust sucks and limits you.                 |
-| value    | because knowing what value you provide empowers you.            |
-| software | because there are old people whose techniques you should steal. |
+| thing    | why                                                                                |
+|----------+------------------------------------------------------------------------------------|
+| trust    | because relationships founded on trust is how you make things happen in the world. |
+| value    | because knowing what value you provide empowers you.                               |
+| software | because there are old people whose techniques you should steal.                    |
 
 When you understand trust, value and software well, moving forward is going to be easy.
 "Oh you want to learn D3.js?

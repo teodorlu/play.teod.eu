@@ -6,12 +6,14 @@
 [[file:..][..]]
 
 #+BEGIN_VERSE
-<rant>
 THIS PROGRAM MAY NOT WORK
 THIS PROGRAM WILL CHANGE
 IF THIS PROGRAM CRASHES, YOU MAY NOT RECEIVE SUPPORT
 USE THIS PROGRAM AT YOUR OWN RISK
-</rant>
+
+Please be kind :)
+
+Teodor
 #+END_VERSE
 
 * Bookmarks should live in Git!

@@ -30,7 +30,7 @@ Why trust, value and software, exactly?
 | thing    | why                                                                                |
 |----------+------------------------------------------------------------------------------------|
 | trust    | because relationships founded on trust is how you make things happen in the world. |
-| value    | because knowing what value you provide empowers you.                               |
+| value    | because knowing what value you provide empowers and frees you.                     |
 | software | because there are old people whose techniques you should steal.                    |
 
 When you understand trust, value and software well, moving forward is going to be easy.

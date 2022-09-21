@@ -5,6 +5,13 @@
 
 [[file:..][..]]
 
+#+begin_quote
+Sorry, this article is totally incomplete.
+Please bug me if you're interested in actually reading an ending.
+
+— Teodor 2022-09-21
+#+end_quote
+
 In tactical work, there's a deliverable.
 In strategic work, there's a deliverable.
 

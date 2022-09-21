@@ -82,11 +82,11 @@ Start with /Chapter 10: Leading Up and Down the Chain of Command/ if you're in a
 
 * Value
 
-[[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]]: [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]]
+On how to provide value, I recommend [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]] by [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]].
 
 * Software
 
-[[id:4c29d9b7-617e-4178-83ca-e3c83cbd6e63][Eric Raymond]]: [[id:3aa87eb3-5ab3-4897-9057-fd463c8bd980][The Art of Unix Programming]]
+On how to build software, I recommend [[id:3aa87eb3-5ab3-4897-9057-fd463c8bd980][The Art of Unix Programming]] by [[id:4c29d9b7-617e-4178-83ca-e3c83cbd6e63][Eric Raymond]].
 
 -----
 

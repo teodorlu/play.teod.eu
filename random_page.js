@@ -18,8 +18,20 @@ class RandomPageButton extends HTMLButtonElement {
       console.log("Click!")
 
       get_index().then((data) => {
-        const item = random_item(data)
-        window.location.href = "/" + item.slug + "/"
+        const is_reasonable_target = (item) => {
+          return (
+            item.form !== undefined
+              && item.form !== "remote-reference"
+          )
+        }
+
+        const reasonable_targets = data.filter(is_reasonable_target);
+
+        // console.log(reasonable_targets)
+
+        const item = random_item(reasonable_targets)
+        console.log(item)
+        // window.location.href = "/" + item.slug + "/"
       })
     })
   }

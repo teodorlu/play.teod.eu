@@ -85,7 +85,6 @@
                          "(doesn't look like a button but please try pressing it)"
                          "</p>"
                          "#+END_EXPORT")
-
                   )]
      [""]
 

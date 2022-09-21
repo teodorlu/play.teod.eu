@@ -34,10 +34,13 @@ Why trust, value and software, exactly?
 | software | because there are old people whose techniques you should steal.                    |
 
 When you understand trust, value and software well, moving forward is going to be easy.
-"Oh you want to learn D3.js?
+
+#+begin_quote
+Oh you want to learn D3.js?
 You already have some foundational understanding of software.
 And you know how to judge the value you provide by building something with D3.
-And you have people around you that you can ask for feedback or share your work with."
+And you have people around you that you can ask for feedback or share your work with.
+#+end_quote
 
 In short --- understanding trust, value and software deeply is a force multiplier for other things you want to learn and do.
 

@@ -984,3 +984,55 @@ Giving something a name and an url is nice.
 Yet ... at some point it clutters the attention design of https://play.teod.eu/index.html.
 *** Actionable: don't show everything up top
 *** Actionable: clearly differentiate between seeds, foregin references and other stuff
+* 2022-09-21
+** Go to random page
+I created a custom element!
+
+It's =<random-page-button>=.
+It works!
+But it doesn't look like a link, at all.
+Click it and go to a random page.
+
+Here's the implementation:
+
+#+begin_src javascript
+// Some code to define a <random-page> web component
+
+ async function get_index() {
+   const index_url = "/index/big.json";
+   return await fetch(index_url).then((response) => response.json());
+ }
+
+ function random_item(items) {
+   return items[Math.floor(Math.random()*items.length)];
+ }
+
+class RandomPageButton extends HTMLButtonElement {
+  constructor() {
+    super();
+
+    // Element functionality written in here
+    this.addEventListener("click", e => {
+      console.log("Click!")
+
+      get_index().then((data) => {
+        const item = random_item(data)
+        window.location.href = "/" + item.slug + "/"
+      })
+    })
+  }
+}
+
+const buttonOptions = { extends: 'button' }
+
+customElements.define("random-page-button", RandomPageButton, buttonOptions)
+#+end_src
+*** Am I happy with it?
+1. Absolutely!
+   It solves a problem for me :)
+2. No!
+   It doesn't even look like a link.
+   I extend the =HTMLButtonElement= class.
+   But it doesn't look like a button!!!
+
+It's a work in progress :)

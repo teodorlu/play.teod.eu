@@ -219,6 +219,8 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript" src="/random_page.js" defer></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -404,6 +406,11 @@ is just some code that generates some HTML</a></li>
 <li><a href="#there-are-downsides-to-inventing-names-for-new-pages"
 id="toc-there-are-downsides-to-inventing-names-for-new-pages">There are
 downsides to inventing names for new pages</a></li>
+</ul></li>
+<li><a href="#section-14" id="toc-section-14">2022-09-21</a>
+<ul>
+<li><a href="#go-to-random-page" id="toc-go-to-random-page">Go to random
+page</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1601,5 +1608,51 @@ everything up top</h4>
 id="actionable-clearly-differentiate-between-seeds-foregin-references-and-other-stuff">Actionable:
 clearly differentiate between seeds, foregin references and other
 stuff</h4>
+<h2 id="section-14">2022-09-21</h2>
+<h3 id="go-to-random-page">Go to random page</h3>
+<p>I created a custom element!</p>
+<p>It’s <code class="verbatim">&lt;random-page-button&gt;</code>. It
+works! But it doesn’t look like a link, at all. Click it and go to a
+random page.</p>
+<p>Here’s the implementation:</p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Some code to define a &lt;random-page&gt; web component</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">get_index</span>() {</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>   <span class="kw">const</span> index_url <span class="op">=</span> <span class="st">&quot;/index/big.json&quot;</span><span class="op">;</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>   <span class="cf">return</span> <span class="cf">await</span> <span class="fu">fetch</span>(index_url)<span class="op">.</span><span class="fu">then</span>((response) <span class="kw">=&gt;</span> response<span class="op">.</span><span class="fu">json</span>())<span class="op">;</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a> }</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a> <span class="kw">function</span> <span class="fu">random_item</span>(items) {</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>   <span class="cf">return</span> items[<span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>()<span class="op">*</span>items<span class="op">.</span><span class="at">length</span>)]<span class="op">;</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a> }</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> RandomPageButton <span class="kw">extends</span> <span class="bu">HTMLButtonElement</span> {</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">constructor</span>() {</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">super</span>()<span class="op">;</span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Element functionality written in here</span></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">this</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span> e <span class="kw">=&gt;</span> {</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Click!&quot;</span>)</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>      <span class="fu">get_index</span>()<span class="op">.</span><span class="fu">then</span>((data) <span class="kw">=&gt;</span> {</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> item <span class="op">=</span> <span class="fu">random_item</span>(data)</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>        <span class="bu">window</span><span class="op">.</span><span class="at">location</span><span class="op">.</span><span class="at">href</span> <span class="op">=</span> <span class="st">&quot;/&quot;</span> <span class="op">+</span> item<span class="op">.</span><span class="at">slug</span> <span class="op">+</span> <span class="st">&quot;/&quot;</span></span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>      })</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> buttonOptions <span class="op">=</span> { <span class="dt">extends</span><span class="op">:</span> <span class="st">&#39;button&#39;</span> }</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>customElements<span class="op">.</span><span class="fu">define</span>(<span class="st">&quot;random-page-button&quot;</span><span class="op">,</span> RandomPageButton<span class="op">,</span> buttonOptions)</span></code></pre></div>
+<h4 id="am-i-happy-with-it">Am I happy with it?</h4>
+<ol>
+<li>Absolutely! It solves a problem for me :)</li>
+<li>No! It doesn’t even look like a link. I extend the <code
+class="verbatim">HTMLButtonElement</code> class. But it doesn’t look
+like a button!!!</li>
+</ol>
+<p>It’s a work in progress :)</p>
 </body>
 </html>

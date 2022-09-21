@@ -22,3 +22,12 @@ I want this
 So ... I got sidetracked into writing some clojure code that shells out to git in order to do git stuff
 
 In other words, let's shave the yaks.
+* 2022-09-21
+** Lol, that went well.
+I think my original idea was:
+
+1. I want a time series plot of my activity
+2. Separated by source:
+   1. personal git & org-mode thing
+   2. Roam Research
+   3. here on play.teod.eu

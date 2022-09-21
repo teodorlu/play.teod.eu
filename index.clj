@@ -82,7 +82,7 @@
                          "<random-page-button>"
                          "Go to random page"
                          "</random-page-button>"
-                         "(sorry this doesn't look like a button yet)"
+                         "(doesn't look like a button but please try pressing it)"
                          "</p>"
                          "#+END_EXPORT")
 

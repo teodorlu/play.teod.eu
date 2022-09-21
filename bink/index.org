@@ -10,11 +10,11 @@ THIS PROGRAM MAY NOT WORK
 THIS PROGRAM WILL CHANGE
 IF THIS PROGRAM CRASHES, YOU MAY NOT RECEIVE SUPPORT
 USE THIS PROGRAM AT YOUR OWN RISK
+#+END_VERSE
 
-Please be kind :)
+Please be kind!
 
 Teodor
-#+END_VERSE
 
 * Bookmarks should live in Git!
 I gave up on managing bookmarks in web browsers long ago.

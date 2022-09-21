@@ -125,7 +125,7 @@ First --- you can safely skip these.
 Don't give yourself so many moving pieces that you get confused!
 
 more on trust & relationships:
-[[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]] .
+[[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]].
 
 more on programming:
 [[id:a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1][The Pragmatic Programmer]], second edition. By Dave Thomas and Andy Hunt.

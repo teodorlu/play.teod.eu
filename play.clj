@@ -341,6 +341,7 @@ DRAFT
         uuid-index (->> (files->relations {})
                         vals
                         (filter :uuid)
+                        #_
                         (map #(select-keys % [:uuid :slug :title :id]))
                         (sort-by :uuid))
         big-index (atom [])]

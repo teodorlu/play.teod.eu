@@ -1,3 +1,7 @@
-{:uuid "2d60ee76-a193-46fd-a07b-838af66cfcd6",
- :slug "kosekoding",
- :title "Kosekoding"}
+{:slug "kosekoding",
+ :title "Kosekoding",
+ :readiness :wtf-is-this,
+ :uuid "2d60ee76-a193-46fd-a07b-838af66cfcd6",
+ :author-url "https://teod.eu",
+ :created "2022-08-16",
+ :lang :no}

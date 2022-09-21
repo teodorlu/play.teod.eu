@@ -1,3 +1,8 @@
-{:uuid "9dfae94f-677a-49a6-bee3-98a2bb470e48",
- :slug "open-problems",
- :title "Open problems"}
+{:slug "open-problems",
+ :title "Open problems",
+ :form :rambling,
+ :readiness :forever-incomplete,
+ :lang :en,
+ :author-url "https://teod.eu",
+ :created "2022-07-14",
+ :uuid "9dfae94f-677a-49a6-bee3-98a2bb470e48"}

@@ -1,242 +1,551 @@
-[{:uuid "0391bd0a-f3cf-4aaa-bc00-24662c71e539",
-  :slug "intention-relation-action",
-  :title "Intention, Relation, Action"}
- {:uuid "052c1cdc-f2fe-4ba5-b319-d0394be1e184",
-  :slug "c-journal",
-  :title "C learning journal"}
- {:uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee",
-  :slug "many-small-functions-bad",
-  :title "When having many small functions is bad"}
- {:uuid "07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0",
-  :slug "bb-install",
-  :title "bb-install"}
- {:uuid "07f496f2-7dc3-4155-bbe7-e0f64e054129",
-  :slug "software-architecture-as-language-construction",
-  :title "Software architecture as langauge construction"}
- {:uuid "0c0b16ef-47dc-449c-b665-07c278ffec32",
-  :slug "sannhet-deskriptiv-preskriptiv",
-  :title "Deskriptiv sannhet, preskriptiv sannhet"}
- {:uuid "0ca0f3d5-ecae-40fe-9e79-2f24e6780079",
-  :slug "existensialism",
-  :title "existentialism"}
- {:uuid "0cc48734-e933-44cb-a4e8-2678f125f6df",
-  :slug "attention-design",
-  :title "Attention design"}
- {:uuid "26c1cdcc-d949-4d0a-ac74-ca6b7878dbe2",
-  :slug "okrs-are-scale-invariant",
-  :title "OKRs are scale invariant"}
- {:uuid "276c7103-9366-4326-8cfd-3c0871be3c64",
-  :slug "strong-relations",
-  :title "Strong relations"}
- {:uuid "2c53f531-afdd-4efb-becd-f5d2f220b5ab",
-  :slug "document-transform-pandoc-clojure",
-  :title "Recursive document transformations with Pandoc and Clojure"}
- {:uuid "2d60ee76-a193-46fd-a07b-838af66cfcd6",
-  :slug "kosekoding",
-  :title "Kosekoding"}
- {:uuid "2dc52e4f-0604-4d33-a50c-1e8534266a47",
-  :slug "grokking-simplicity",
-  :title "Grokking Simplicity"}
- {:uuid "2dc873d7-b97c-4145-830e-651070d64b3e",
-  :slug "my-writing-effort",
-  :title "Quantifying where my writing effort goes"}
- {:uuid "2e1280a4-a783-4ab7-9f5c-58a7851a8218",
-  :slug "feedback-interface-implementation",
-  :title "Feedback loops, interface design and how stuff works"}
- {:uuid "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b",
-  :slug "perception-reality",
-  :title "Perception is reality. Perception is not reality."}
- {:uuid "31478ab4-b7bf-4c87-8dae-8adb66690571",
-  :slug "utility-is-contextual",
-  :title "Utility is Contextual"}
- {:uuid "31e6ddd8-3006-42ee-9c74-68b00a69dee0",
-  :slug "nix",
-  :title "I want to learn Nix"}
- {:uuid "32bffa13-d4fb-4ae7-9718-855b0d4130d2",
-  :slug "terminalen-motorsag",
-  :title "Terminalen: Hvordan løpe med motorsag"}
- {:uuid "394f1b56-753e-40d2-a51c-3fcf58bee8c1",
-  :slug "reading-it-later",
-  :title "A \"read it later\" strategy that works"}
- {:uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
-  :slug "the-art-of-unix-programming",
-  :title "The Art of Unix Programming"}
- {:uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7",
-  :slug "practice-deliberately-with-journals",
-  :title "Practice deliberatley with journals"}
- {:uuid "3e277668-bb98-484e-8c1b-85bd3a75e3b4",
-  :slug "charles-comstock-sketches",
-  :title "Charles Comstock's sketches"}
- {:uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62",
-  :slug "the-commons",
-  :title "The Commons"}
- {:uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0",
-  :slug "extreme-ownership",
-  :title "Extreme Ownership"}
- {:uuid "4253a57e-4814-474a-b696-296d338a477a",
-  :slug "dynamic-index",
-  :title "dynamic-index"}
- {:uuid "4291481a-e7ad-4466-b51e-53b0e35076d1",
-  :slug "emacs",
-  :title "(Doom) Emacs learning journal"}
- {:uuid "45f5cc28-79f9-4a88-930f-06f77e727479",
-  :slug "marty-cagan",
-  :title "Marty Cagan"}
- {:uuid "4bd41cdf-bf88-4212-9899-fb419eb2273c",
-  :slug "oggpo",
-  :title "One Good Goal Plus Options"}
- {:uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63",
-  :slug "eric-raymond",
-  :title "Eric Raymond"}
- {:uuid "4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5",
-  :slug "empowered",
-  :title "Empowered"}
- {:uuid "55261ada-7ca6-4c94-88f5-446a9b35e5c4",
-  :slug "interaction-value-differential",
-  :title "Interaction value differential"}
- {:uuid "5603700a-9f22-44e2-9e03-f83776e2bfe3",
-  :slug "narrow-waist",
-  :title "Hourglass architecture - concept capture and references"}
- {:uuid "56cfb6c9-d78c-44f2-baed-6082654be2f4",
-  :slug "xml-on-the-web",
-  :title "Working with XML on the web"}
- {:uuid "58bbb42c-7e23-4fb3-8b7b-b46dab780550",
-  :slug "scicloj-is-awesome",
-  :title "Scicloj is awesome"}
- {:uuid "5a2744c3-4494-4191-ae97-eb305b12b69c",
-  :slug "solarpunk-designs",
-  :title "How to design for a solarpunk aesthetic"}
- {:uuid "5abac715-d886-4aa8-85d7-d0b877a245d6",
-  :slug "iterate-knowledge-archipelago",
-  :title "Iterate Knowledge Archipelago"}
- {:uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
-  :slug "jocko-willink",
-  :title "Jocko Willink"}
- {:uuid "5f45c0a1-8713-4066-8339-ad501c5486ac",
-  :slug "learn-design",
-  :title "I want to learn design"}
- {:uuid "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9",
-  :slug "list-of-awesome-websites",
-  :title "A list of awesome websites"}
- {:uuid "6a894657-11a7-4342-aa52-4ea776558e95",
-  :slug "how-to-build-ideas",
-  :title "How to build ideas"}
- {:uuid "6ac830ef-cb3f-48ea-924a-5304384c4b8e",
-  :slug "phenomenology",
-  :title "phenomenology"}
- {:uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
-  :slug "makefile-edn",
-  :title "Library: makefile-edn"}
- {:uuid "714361dd-69f2-4ed1-ba3b-b7450d23c3a3",
-  :slug "sterility-mess-utility",
-  :title "Sterility, mess and utility"}
- {:uuid "7bba802d-4788-4858-a6ea-d9eb29ae9e3c",
-  :slug "twitter-howto",
-  :title "How to use Twitter"}
- {:uuid "7e70b878-1ef2-4ab6-885b-727eb557213d",
-  :slug "oggpow",
-  :title "OGGPOW: A non-coercive strategic framework"}
- {:uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
-  :slug "watchexec-make-dev",
-  :title "watchexec make dev"}
- {:uuid "842f9b9a-de98-4187-863e-3e6cf1b1814d",
-  :slug "intersection-work-play",
-  :title "What's a good intersection between work and play?"}
- {:uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
-  :slug "bink",
-  :title "Bink: Bookmarks are just data"}
- {:uuid "8e72c536-9881-4477-8670-24c78edd82e7",
-  :slug "literature-notes",
-  :title "Literature Notes"}
- {:uuid "91a1d66d-2132-4acf-994a-e0bec32e8c6a",
-  :slug "precise-general-novel",
-  :title "Precise, general, novel"}
- {:uuid "92115e62-f102-4c97-92cc-8c9f52d53c71",
-  :slug "git-commit-messages",
-  :title "Git commit messages should be good, right?"}
- {:uuid "93d32545-91b7-463e-9d61-1e3da190cf64",
-  :slug "shades-of-deep-green",
-  :title "Shades of Deep Green"}
- {:uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
-  :slug "the-courage-to-be-disliked",
-  :title "The Courage to Be Disliked"}
- {:uuid "9b088c00-804d-4283-a208-f8c489696c71",
-  :slug "unix-signals-intro",
-  :title "Unix signals: a crash course"}
- {:uuid "9c186247-2fe0-4c64-b2b8-5fc6dc110911",
-  :slug "welcome-knowledge-worker",
-  :title "Welcome, knowledge worker!"}
- {:uuid "9dfae94f-677a-49a6-bee3-98a2bb470e48",
-  :slug "open-problems",
-  :title "Open problems"}
- {:uuid "9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825",
-  :slug "scicloj-libraries",
-  :title "Scicloj libraries and tools"}
- {:uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
-  :slug "deliverable",
-  :title "There's always a deliverable"}
- {:uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
-  :slug "the-pragmatic-programmer",
-  :title "The Pragmatic Programmer"}
- {:uuid "a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86",
-  :slug "lost-in-specificity",
-  :title "Lost in specificity"}
- {:uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026",
-  :slug "unicad",
-  :title "Unicad"}
- {:uuid "a9a168d1-acd1-49a2-8616-3b94ad577301",
-  :slug "knowledge-worker",
-  :title "You are a knowledge worker"}
- {:uuid "aaeb72f2-e2eb-4e51-b402-7f2d07150770",
-  :slug "a-perfect-day",
-  :title "A perfect day"}
- {:uuid "b58eff14-c704-4de3-b113-959fb41c0f5a",
-  :slug "burnout-meaning-deep-work",
+[{:slug "intention-relation-action",
+  :title "Intention, Relation, Action",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :uuid "0391bd0a-f3cf-4aaa-bc00-24662c71e539",
+  :lang :en}
+ {:slug "c-journal",
+  :title "C learning journal",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "052c1cdc-f2fe-4ba5-b319-d0394be1e184",
+  :lang :en}
+ {:slug "many-small-functions-bad",
+  :title "When having many small functions is bad",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee",
+  :lang :en}
+ {:slug "bb-install",
+  :title "bb-install",
+  :readiness :wtf-is-this,
+  :uuid "07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0",
+  :author-url "https://teod.eu",
+  :created "2022-08-12",
+  :lang :en}
+ {:slug "software-architecture-as-language-construction",
+  :title "Software architecture as langauge construction",
+  :readiness :wtf-is-this,
+  :uuid "07f496f2-7dc3-4155-bbe7-e0f64e054129",
+  :lang :en}
+ {:slug "sannhet-deskriptiv-preskriptiv",
+  :title "Deskriptiv sannhet, preskriptiv sannhet",
+  :lang :no,
+  :form :presentation,
+  :readiness :ready-for-comments,
+  :uuid "0c0b16ef-47dc-449c-b665-07c278ffec32"}
+ {:slug "existensialism",
+  :title "existentialism",
+  :readiness :wtf-is-this,
+  :uuid "0ca0f3d5-ecae-40fe-9e79-2f24e6780079",
+  :author-url "https://teod.eu",
+  :created "2022-08-27",
+  :lang :en}
+ {:slug "attention-design",
+  :title "Attention design",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "0cc48734-e933-44cb-a4e8-2678f125f6df",
+  :lang :en}
+ {:slug "okrs-are-scale-invariant",
+  :title "OKRs are scale invariant",
+  :readiness :wtf-is-this,
+  :uuid "26c1cdcc-d949-4d0a-ac74-ca6b7878dbe2",
+  :author-url "https://teod.eu",
+  :created "2022-08-17",
+  :lang :en}
+ {:slug "strong-relations",
+  :title "Strong relations",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :uuid "276c7103-9366-4326-8cfd-3c0871be3c64",
+  :lang :en}
+ {:slug "document-transform-pandoc-clojure",
+  :title "Recursive document transformations with Pandoc and Clojure",
+  :readiness :ready-for-comments,
+  :author-url "https://teod.eu",
+  :created "2022-07-15",
+  :uuid "2c53f531-afdd-4efb-becd-f5d2f220b5ab",
+  :lang :en}
+ {:slug "kosekoding",
+  :title "Kosekoding",
+  :readiness :wtf-is-this,
+  :uuid "2d60ee76-a193-46fd-a07b-838af66cfcd6",
+  :author-url "https://teod.eu",
+  :created "2022-08-16",
+  :lang :no}
+ {:slug "grokking-simplicity",
+  :title "Grokking Simplicity",
+  :readiness :wtf-is-this,
+  :uuid "2dc52e4f-0604-4d33-a50c-1e8534266a47",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "my-writing-effort",
+  :title "Quantifying where my writing effort goes",
+  :readiness :wtf-is-this,
+  :uuid "2dc873d7-b97c-4145-830e-651070d64b3e",
+  :author-url "https://teod.eu",
+  :created "2022-08-28",
+  :lang :en}
+ {:slug "feedback-interface-implementation",
+  :title "Feedback loops, interface design and how stuff works",
+  :form :explore,
+  :readiness :wtf-is-this,
+  :lang :en,
+  :uuid "2e1280a4-a783-4ab7-9f5c-58a7851a8218"}
+ {:slug "perception-reality",
+  :title "Perception is reality. Perception is not reality.",
+  :readiness :wtf-is-this,
+  :uuid "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b",
+  :author-url "https://teod.eu",
+  :created "2022-08-27",
+  :lang :en}
+ {:slug "utility-is-contextual",
+  :title "Utility is Contextual",
+  :readiness :wtf-is-this,
+  :uuid "31478ab4-b7bf-4c87-8dae-8adb66690571",
+  :author-url "https://teod.eu",
+  :created "2022-09-20",
+  :lang :en}
+ {:slug "nix",
+  :title "I want to learn Nix",
+  :readiness :wtf-is-this,
+  :uuid "31e6ddd8-3006-42ee-9c74-68b00a69dee0",
+  :author-url "https://teod.eu",
+  :created "2022-08-08",
+  :lang :en}
+ {:slug "terminalen-motorsag",
+  :title "Terminalen: Hvordan løpe med motorsag",
+  :readiness :wtf-is-this,
+  :uuid "32bffa13-d4fb-4ae7-9718-855b0d4130d2",
+  :author-url "https://teod.eu",
+  :created "2022-08-13",
+  :lang :no,
+  :builds
+  [{:build/type :index-org-2-html}
+   {:build/type :index-org-2-slides-html}]}
+ {:slug "reading-it-later",
+  :title "A \"read it later\" strategy that works",
+  :readiness :wtf-is-this,
+  :uuid "394f1b56-753e-40d2-a51c-3fcf58bee8c1",
+  :author-url "https://teod.eu",
+  :created "2022-09-20",
+  :lang :en}
+ {:slug "the-art-of-unix-programming",
+  :title "The Art of Unix Programming",
+  :readiness :wtf-is-this,
+  :uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "practice-deliberately-with-journals",
+  :title "Practice deliberatley with journals",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-23",
+  :uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7",
+  :lang :en}
+ {:slug "charles-comstock-sketches",
+  :title "Charles Comstock's sketches",
+  :readiness :wtf-is-this,
+  :uuid "3e277668-bb98-484e-8c1b-85bd3a75e3b4",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "the-commons",
+  :title "The Commons",
+  :readiness :wtf-is-this,
+  :uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62",
+  :author-url "https://teod.eu",
+  :created "2022-09-03",
+  :lang :en}
+ {:slug "extreme-ownership",
+  :title "Extreme Ownership",
+  :readiness :wtf-is-this,
+  :uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "dynamic-index",
+  :title "dynamic-index",
+  :readiness :wtf-is-this,
+  :uuid "4253a57e-4814-474a-b696-296d338a477a",
+  :author-url "https://teod.eu",
+  :created "2022-09-20",
+  :builder :no-op,
+  :lang :en}
+ {:slug "emacs",
+  :title "(Doom) Emacs learning journal",
+  :form :rambling,
+  :readiness :forever-incomplete,
+  :lang :en,
+  :uuid "4291481a-e7ad-4466-b51e-53b0e35076d1"}
+ {:slug "marty-cagan",
+  :title "Marty Cagan",
+  :readiness :wtf-is-this,
+  :uuid "45f5cc28-79f9-4a88-930f-06f77e727479",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "oggpo",
+  :title "One Good Goal Plus Options",
+  :readiness :wtf-is-this,
+  :uuid "4bd41cdf-bf88-4212-9899-fb419eb2273c",
+  :lang :en}
+ {:slug "eric-raymond",
+  :title "Eric Raymond",
+  :readiness :wtf-is-this,
+  :uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "empowered",
+  :title "Empowered",
+  :readiness :wtf-is-this,
+  :uuid "4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "interaction-value-differential",
+  :title "Interaction value differential",
+  :readiness :ready-for-comments,
+  :author-url "https://teod.eu",
+  :uuid "55261ada-7ca6-4c94-88f5-446a9b35e5c4",
+  :created "2022-07-13",
+  :lang :en}
+ {:slug "narrow-waist",
+  :title "Hourglass architecture - concept capture and references",
+  :form :explore,
+  :readiness :wtf-is-this,
+  :lang :en,
+  :uuid "5603700a-9f22-44e2-9e03-f83776e2bfe3"}
+ {:slug "xml-on-the-web",
+  :title "Working with XML on the web",
+  :readiness :wtf-is-this,
+  :uuid "56cfb6c9-d78c-44f2-baed-6082654be2f4",
+  :author-url "https://teod.eu",
+  :created "2022-08-08",
+  :lang :en}
+ {:slug "scicloj-is-awesome",
+  :title "Scicloj is awesome",
+  :readiness :wtf-is-this,
+  :uuid "58bbb42c-7e23-4fb3-8b7b-b46dab780550",
+  :author-url "https://teod.eu",
+  :created "2022-09-17",
+  :lang :en}
+ {:slug "solarpunk-designs",
+  :title "How to design for a solarpunk aesthetic",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-23",
+  :form :rambling,
+  :uuid "5a2744c3-4494-4191-ae97-eb305b12b69c",
+  :lang :en}
+ {:slug "iterate-knowledge-archipelago",
+  :title "Iterate Knowledge Archipelago",
+  :readiness :wtf-is-this,
+  :lang :en,
+  :uuid "5abac715-d886-4aa8-85d7-d0b877a245d6"}
+ {:slug "jocko-willink",
+  :title "Jocko Willink",
+  :readiness :wtf-is-this,
+  :uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "learn-design",
+  :title "I want to learn design",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-24",
+  :uuid "5f45c0a1-8713-4066-8339-ad501c5486ac",
+  :lang :en}
+ {:slug "list-of-awesome-websites",
+  :title "A list of awesome websites",
+  :readiness :wtf-is-this,
+  :uuid "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9",
+  :author-url "https://teod.eu",
+  :created "2022-09-17",
+  :lang :en}
+ {:slug "how-to-build-ideas",
+  :title "How to build ideas",
+  :readiness :wtf-is-this,
+  :uuid "6a894657-11a7-4342-aa52-4ea776558e95",
+  :author-url "https://teod.eu",
+  :created "2022-07-30",
+  :lang :en}
+ {:slug "phenomenology",
+  :title "phenomenology",
+  :readiness :wtf-is-this,
+  :uuid "6ac830ef-cb3f-48ea-924a-5304384c4b8e",
+  :author-url "https://teod.eu",
+  :created "2022-08-27",
+  :lang :en}
+ {:slug "makefile-edn",
+  :title "Library: makefile-edn",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-24",
+  :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
+  :lang :en}
+ {:slug "sterility-mess-utility",
+  :title "Sterility, mess and utility",
+  :readiness :wtf-is-this,
+  :uuid "714361dd-69f2-4ed1-ba3b-b7450d23c3a3",
+  :author-url "https://teod.eu",
+  :created "2022-08-27",
+  :lang :en}
+ {:slug "twitter-howto",
+  :title "How to use Twitter",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-16",
+  :uuid "7bba802d-4788-4858-a6ea-d9eb29ae9e3c",
+  :lang :en}
+ {:slug "oggpow",
+  :title "OGGPOW: A non-coercive strategic framework",
+  :readiness :wtf-is-this,
+  :uuid "7e70b878-1ef2-4ab6-885b-727eb557213d",
+  :author-url "https://teod.eu",
+  :created "2022-09-12",
+  :lang :en}
+ {:slug "watchexec-make-dev",
+  :title "watchexec make dev",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
+  :lang :en}
+ {:slug "intersection-work-play",
+  :title "What's a good intersection between work and play?",
+  :readiness :ready-for-comments,
+  :uuid "842f9b9a-de98-4187-863e-3e6cf1b1814d",
+  :author-url "https://teod.eu",
+  :created "2022-09-20",
+  :lang :en}
+ {:slug "bink",
+  :title "Bink: Bookmarks are just data",
+  :readiness :wtf-is-this,
+  :uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
+  :author-url "https://teod.eu",
+  :created "2022-09-14",
+  :lang :en}
+ {:slug "literature-notes",
+  :title "Literature Notes",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-17",
+  :uuid "8e72c536-9881-4477-8670-24c78edd82e7",
+  :lang :en}
+ {:slug "precise-general-novel",
+  :title "Precise, general, novel",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :uuid "91a1d66d-2132-4acf-994a-e0bec32e8c6a",
+  :lang :en}
+ {:slug "git-commit-messages",
+  :title "Git commit messages should be good, right?",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "92115e62-f102-4c97-92cc-8c9f52d53c71",
+  :lang :en}
+ {:slug "shades-of-deep-green",
+  :title "Shades of Deep Green",
+  :readiness :wtf-is-this,
+  :uuid "93d32545-91b7-463e-9d61-1e3da190cf64",
+  :author-url "https://teod.eu",
+  :created "2022-09-10",
+  :lang :en}
+ {:slug "the-courage-to-be-disliked",
+  :title "The Courage to Be Disliked",
+  :readiness :wtf-is-this,
+  :uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "unix-signals-intro",
+  :title "Unix signals: a crash course",
+  :form :article,
+  :status :wip,
+  :readiness :wtf-is-this,
+  :lang :en,
+  :uuid "9b088c00-804d-4283-a208-f8c489696c71"}
+ {:slug "welcome-knowledge-worker",
+  :title "Welcome, knowledge worker!",
+  :readiness :ready-for-comments,
+  :uuid "9c186247-2fe0-4c64-b2b8-5fc6dc110911",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "open-problems",
+  :title "Open problems",
+  :form :rambling,
+  :readiness :forever-incomplete,
+  :lang :en,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "9dfae94f-677a-49a6-bee3-98a2bb470e48"}
+ {:slug "scicloj-libraries",
+  :title "Scicloj libraries and tools",
+  :readiness :wtf-is-this,
+  :uuid "9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825",
+  :author-url "https://teod.eu",
+  :created "2022-07-30",
+  :builder :no-op,
+  :lang :en}
+ {:slug "deliverable",
+  :title "There's always a deliverable",
+  :readiness :wtf-is-this,
+  :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
+  :author-url "https://teod.eu",
+  :created "2022-08-17",
+  :lang :en}
+ {:slug "the-pragmatic-programmer",
+  :title "The Pragmatic Programmer",
+  :readiness :wtf-is-this,
+  :uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "lost-in-specificity",
+  :title "Lost in specificity",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86",
+  :lang :en}
+ {:slug "unicad",
+  :title "Unicad",
+  :readiness :wtf-is-this,
+  :uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026",
+  :author-url "https://teod.eu",
+  :created "2022-09-20",
+  :lang :en}
+ {:slug "knowledge-worker",
+  :title "You are a knowledge worker",
+  :form :article,
+  :readiness :wtf-is-this,
+  :lang :en,
+  :uuid "a9a168d1-acd1-49a2-8616-3b94ad577301"}
+ {:slug "a-perfect-day",
+  :title "A perfect day",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-29",
+  :uuid "aaeb72f2-e2eb-4e51-b402-7f2d07150770",
+  :lang :en}
+ {:slug "burnout-meaning-deep-work",
   :title
-  "Facing burnout, finding meaning and making space for deep work"}
- {:uuid "b722664c-d310-4908-9b57-98ffd73833c9",
-  :slug "play.teod.eu-retrospective",
-  :title "play.teod.eu: Rolling retrospective & list of problems"}
- {:uuid "b7446aab-c31e-4666-bf28-2728a04fd860",
-  :slug "bimodal-strategies",
-  :title "Bimodal strategies"}
- {:uuid "b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd",
-  :slug "why-dont-we-have-a-strategy",
-  :title "Why don't we have a strategy?"}
- {:uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e",
-  :slug "journal",
-  :title "Public journal"}
- {:uuid "c032492c-c104-4de2-b3eb-6b8097557f25",
-  :slug "documentation",
-  :title "Documentation"}
- {:uuid "c4ddc0a1-bcc6-418d-bddb-db05968d84a2",
-  :slug "curious",
-  :title "Please talk to me about stuff that doesn't fit!"}
- {:uuid "c62978a1-8081-4d44-9af4-93327f387085",
-  :slug "static-dynamic-interaction",
-  :title "Static-dynamic interaction"}
- {:uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15",
-  :slug "capability-feature-assembly",
-  :title "Software architecture as capability, feature and assembly"}
- {:uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
-  :slug "narrow-statements",
-  :title "Prefer narrow statements"}
- {:uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
-  :slug "the-beginning-of-infinity",
-  :title "The Beginning of Infinity"}
- {:uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
-  :slug "metamuse-podcast",
-  :title "Metamuse (podcast)"}
- {:uuid "e9a97a46-f252-4883-a311-21b20528d14d",
-  :slug "interface-perception-design",
-  :title "Interface, Perception, Design"}
- {:uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
-  :slug "dbx",
+  "Facing burnout, finding meaning and making space for deep work",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-29",
+  :uuid "b58eff14-c704-4de3-b113-959fb41c0f5a",
+  :lang :en}
+ {:slug "play.teod.eu-retrospective",
+  :title "play.teod.eu: Rolling retrospective & list of problems",
+  :readiness :forever-incomplete,
+  :author-url "https://teod.eu",
+  :created "2022-07-24",
+  :uuid "b722664c-d310-4908-9b57-98ffd73833c9",
+  :lang :en}
+ {:slug "bimodal-strategies",
+  :title "Bimodal strategies",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-29",
+  :uuid "b7446aab-c31e-4666-bf28-2728a04fd860",
+  :lang :en}
+ {:slug "why-dont-we-have-a-strategy",
+  :title "Why don't we have a strategy?",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd",
+  :lang :en}
+ {:slug "journal",
+  :title "Public journal",
+  :form :rambling,
+  :readiness :forever-incomplete,
+  :lang :en,
+  :uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e"}
+ {:slug "documentation",
+  :title "Documentation",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-14",
+  :uuid "c032492c-c104-4de2-b3eb-6b8097557f25",
+  :lang :en}
+ {:slug "curious",
+  :title "Please talk to me about stuff that doesn't fit!",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-18",
+  :uuid "c4ddc0a1-bcc6-418d-bddb-db05968d84a2",
+  :lang :en}
+ {:slug "static-dynamic-interaction",
+  :title "Static-dynamic interaction",
+  :readiness :wtf-is-this,
+  :uuid "c62978a1-8081-4d44-9af4-93327f387085",
+  :author-url "https://teod.eu",
+  :created "2022-08-27",
+  :lang :en}
+ {:slug "capability-feature-assembly",
+  :title "Software architecture as capability, feature and assembly",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15",
+  :lang :en}
+ {:slug "narrow-statements",
+  :title "Prefer narrow statements",
+  :readiness :wtf-is-this,
+  :uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
+  :lang :en}
+ {:slug "the-beginning-of-infinity",
+  :title "The Beginning of Infinity",
+  :readiness :wtf-is-this,
+  :uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
+  :author-url "https://teod.eu",
+  :created "2022-09-21",
+  :lang :en}
+ {:slug "metamuse-podcast",
+  :title "Metamuse (podcast)",
+  :readiness :wtf-is-this,
+  :uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
+  :author-url "https://teod.eu",
+  :created "2022-09-20",
+  :lang :en}
+ {:slug "interface-perception-design",
+  :title "Interface, Perception, Design",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-18",
+  :uuid "e9a97a46-f252-4883-a311-21b20528d14d",
+  :lang :en}
+ {:slug "dbx",
   :title
-  "teod/dbx: a toolkit for building your own personal knowledge base"}
- {:uuid "f777f427-209c-4525-aef7-c8ce889018b2",
-  :slug "emacs-lisp-rosetta-for-clojurians",
-  :title "An Emacs Lisp rosetta for Clojurians"}
- {:uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95",
-  :slug "thesis-antithesis-synthesis",
-  :title "Thesis, anitthesis, synthesis"}]
+  "teod/dbx: a toolkit for building your own personal knowledge base",
+  :readiness :wtf-is-this,
+  :uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
+  :author-url "https://teod.eu",
+  :created "2022-09-17",
+  :lang :en}
+ {:slug "emacs-lisp-rosetta-for-clojurians",
+  :title "An Emacs Lisp rosetta for Clojurians",
+  :readiness :wtf-is-this,
+  :uuid "f777f427-209c-4525-aef7-c8ce889018b2",
+  :author-url "https://teod.eu",
+  :created "2022-09-10",
+  :lang :en}
+ {:slug "thesis-antithesis-synthesis",
+  :title "Thesis, anitthesis, synthesis",
+  :readiness :wtf-is-this,
+  :author-url "https://teod.eu",
+  :created "2022-07-16",
+  :uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95",
+  :lang :en}]

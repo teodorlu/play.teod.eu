@@ -1,4 +1,8 @@
-{:uuid "b58eff14-c704-4de3-b113-959fb41c0f5a",
- :slug "burnout-meaning-deep-work",
+{:slug "burnout-meaning-deep-work",
  :title
- "Facing burnout, finding meaning and making space for deep work"}
+ "Facing burnout, finding meaning and making space for deep work",
+ :readiness :wtf-is-this,
+ :author-url "https://teod.eu",
+ :created "2022-07-29",
+ :uuid "b58eff14-c704-4de3-b113-959fb41c0f5a",
+ :lang :en}

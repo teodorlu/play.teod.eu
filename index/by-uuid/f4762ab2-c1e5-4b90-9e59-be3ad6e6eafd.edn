@@ -1,4 +1,8 @@
-{:uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
- :slug "dbx",
+{:slug "dbx",
  :title
- "teod/dbx: a toolkit for building your own personal knowledge base"}
+ "teod/dbx: a toolkit for building your own personal knowledge base",
+ :readiness :wtf-is-this,
+ :uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
+ :author-url "https://teod.eu",
+ :created "2022-09-17",
+ :lang :en}

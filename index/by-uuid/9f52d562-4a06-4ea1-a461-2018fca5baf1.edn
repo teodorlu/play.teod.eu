@@ -1,3 +1,7 @@
-{:uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
- :slug "deliverable",
- :title "There's always a deliverable"}
+{:slug "deliverable",
+ :title "There's always a deliverable",
+ :readiness :wtf-is-this,
+ :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
+ :author-url "https://teod.eu",
+ :created "2022-08-17",
+ :lang :en}

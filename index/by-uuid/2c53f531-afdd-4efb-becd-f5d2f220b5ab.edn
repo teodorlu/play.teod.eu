@@ -1,3 +1,7 @@
-{:uuid "2c53f531-afdd-4efb-becd-f5d2f220b5ab",
- :slug "document-transform-pandoc-clojure",
- :title "Recursive document transformations with Pandoc and Clojure"}
+{:slug "document-transform-pandoc-clojure",
+ :title "Recursive document transformations with Pandoc and Clojure",
+ :readiness :ready-for-comments,
+ :author-url "https://teod.eu",
+ :created "2022-07-15",
+ :uuid "2c53f531-afdd-4efb-becd-f5d2f220b5ab",
+ :lang :en}

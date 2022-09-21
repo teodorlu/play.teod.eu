@@ -1,3 +1,7 @@
-{:uuid "2dc873d7-b97c-4145-830e-651070d64b3e",
- :slug "my-writing-effort",
- :title "Quantifying where my writing effort goes"}
+{:slug "my-writing-effort",
+ :title "Quantifying where my writing effort goes",
+ :readiness :wtf-is-this,
+ :uuid "2dc873d7-b97c-4145-830e-651070d64b3e",
+ :author-url "https://teod.eu",
+ :created "2022-08-28",
+ :lang :en}

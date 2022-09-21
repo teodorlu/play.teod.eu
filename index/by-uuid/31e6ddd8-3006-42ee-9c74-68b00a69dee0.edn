@@ -1,3 +1,7 @@
-{:uuid "31e6ddd8-3006-42ee-9c74-68b00a69dee0",
- :slug "nix",
- :title "I want to learn Nix"}
+{:slug "nix",
+ :title "I want to learn Nix",
+ :readiness :wtf-is-this,
+ :uuid "31e6ddd8-3006-42ee-9c74-68b00a69dee0",
+ :author-url "https://teod.eu",
+ :created "2022-08-08",
+ :lang :en}

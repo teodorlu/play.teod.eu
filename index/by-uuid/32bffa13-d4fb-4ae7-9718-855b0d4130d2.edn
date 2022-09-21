@@ -1,3 +1,10 @@
-{:uuid "32bffa13-d4fb-4ae7-9718-855b0d4130d2",
- :slug "terminalen-motorsag",
- :title "Terminalen: Hvordan løpe med motorsag"}
+{:slug "terminalen-motorsag",
+ :title "Terminalen: Hvordan løpe med motorsag",
+ :readiness :wtf-is-this,
+ :uuid "32bffa13-d4fb-4ae7-9718-855b0d4130d2",
+ :author-url "https://teod.eu",
+ :created "2022-08-13",
+ :lang :no,
+ :builds
+ [{:build/type :index-org-2-html}
+  {:build/type :index-org-2-slides-html}]}

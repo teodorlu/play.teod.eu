@@ -1,3 +1,7 @@
-{:uuid "9c186247-2fe0-4c64-b2b8-5fc6dc110911",
- :slug "welcome-knowledge-worker",
- :title "Welcome, knowledge worker!"}
+{:slug "welcome-knowledge-worker",
+ :title "Welcome, knowledge worker!",
+ :readiness :ready-for-comments,
+ :uuid "9c186247-2fe0-4c64-b2b8-5fc6dc110911",
+ :author-url "https://teod.eu",
+ :created "2022-09-21",
+ :lang :en}

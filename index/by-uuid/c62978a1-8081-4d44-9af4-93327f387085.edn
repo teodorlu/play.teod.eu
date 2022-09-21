@@ -1,3 +1,7 @@
-{:uuid "c62978a1-8081-4d44-9af4-93327f387085",
- :slug "static-dynamic-interaction",
- :title "Static-dynamic interaction"}
+{:slug "static-dynamic-interaction",
+ :title "Static-dynamic interaction",
+ :readiness :wtf-is-this,
+ :uuid "c62978a1-8081-4d44-9af4-93327f387085",
+ :author-url "https://teod.eu",
+ :created "2022-08-27",
+ :lang :en}

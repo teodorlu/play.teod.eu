@@ -1,3 +1,6 @@
-{:uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e",
- :slug "journal",
- :title "Public journal"}
+{:slug "journal",
+ :title "Public journal",
+ :form :rambling,
+ :readiness :forever-incomplete,
+ :lang :en,
+ :uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e"}

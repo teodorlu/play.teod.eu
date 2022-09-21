@@ -1,3 +1,7 @@
-{:uuid "0ca0f3d5-ecae-40fe-9e79-2f24e6780079",
- :slug "existensialism",
- :title "existentialism"}
+{:slug "existensialism",
+ :title "existentialism",
+ :readiness :wtf-is-this,
+ :uuid "0ca0f3d5-ecae-40fe-9e79-2f24e6780079",
+ :author-url "https://teod.eu",
+ :created "2022-08-27",
+ :lang :en}

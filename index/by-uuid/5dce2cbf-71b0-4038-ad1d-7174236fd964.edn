@@ -1,3 +1,7 @@
-{:uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
- :slug "jocko-willink",
- :title "Jocko Willink"}
+{:slug "jocko-willink",
+ :title "Jocko Willink",
+ :readiness :wtf-is-this,
+ :uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
+ :author-url "https://teod.eu",
+ :created "2022-09-21",
+ :lang :en}

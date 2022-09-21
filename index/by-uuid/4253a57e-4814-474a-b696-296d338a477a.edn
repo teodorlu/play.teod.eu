@@ -1,3 +1,8 @@
-{:uuid "4253a57e-4814-474a-b696-296d338a477a",
- :slug "dynamic-index",
- :title "dynamic-index"}
+{:slug "dynamic-index",
+ :title "dynamic-index",
+ :readiness :wtf-is-this,
+ :uuid "4253a57e-4814-474a-b696-296d338a477a",
+ :author-url "https://teod.eu",
+ :created "2022-09-20",
+ :builder :no-op,
+ :lang :en}

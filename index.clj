@@ -75,7 +75,21 @@
                              "But you're /very/ much welcome to have a look around 🤗")
                   (str "Most content on this site is authored by Teodor Heggelund"
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-                       "."))]
+                       ".")
+
+                  (lines "#+BEGIN_EXPORT html"
+                         "Here comes a random page:"
+                         #_
+                         "<button is=\"random-page-button\">"
+                         "<random-page-button>"
+                         "Go to random page"
+                         #_
+                         "<button>"
+                         "</random-page-button>"
+                         "(not yet. But soon! I hope.)"
+                         "#+END_EXPORT")
+
+                  )]
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"

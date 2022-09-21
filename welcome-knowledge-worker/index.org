@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 9c186247-2fe0-4c64-b2b8-5fc6dc110911
 :END:
-#+TITLE: Welcome, developer!
+#+TITLE: Welcome, knowledge worker!
 
 [[file:..][..]]
 

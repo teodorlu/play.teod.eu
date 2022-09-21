@@ -169,7 +169,8 @@
   :uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0",
   :author-url "https://teod.eu",
   :created "2022-09-21",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "dynamic-index",
   :title "dynamic-index",
   :readiness :wtf-is-this,

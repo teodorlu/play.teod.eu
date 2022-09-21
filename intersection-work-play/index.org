@@ -107,10 +107,10 @@ Appendix: a table of work an play.
 And proposed definitions for "work" and "play".
 (2022-09-21)
 
-|            | Not play                  | Play                                        |
-|------------+---------------------------+---------------------------------------------|
-| *Not work* | Meaningless paper pushing | We had fun last week but don't remember why |
-| *Work*     | Cog in a system           | Deliverable plus autonomy                   |
+|            | Not play                         | Play                                                   |
+|------------+----------------------------------+--------------------------------------------------------|
+| *Not work* | Meaningless paper pushing & toil | We had fun last week but don't remember any conclusion |
+| *Work*     | I'm a cog in a system            | Deliverable plus autonomy                              |
 
 *play is unpredictable*.
 When we play, we can't predict where we will end up in advance.

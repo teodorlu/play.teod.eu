@@ -154,6 +154,9 @@
  {:uuid "93d32545-91b7-463e-9d61-1e3da190cf64",
   :slug "shades-of-deep-green",
   :title "Shades of Deep Green"}
+ {:uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
+  :slug "the-courage-to-be-disliked",
+  :title "The Courage to Be Disliked"}
  {:uuid "9b088c00-804d-4283-a208-f8c489696c71",
   :slug "unix-signals-intro",
   :title "Unix signals: a crash course"}
@@ -169,6 +172,9 @@
  {:uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
   :slug "deliverable",
   :title "There's always a deliverable"}
+ {:uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
+  :slug "the-pragmatic-programmer",
+  :title "The Pragmatic Programmer"}
  {:uuid "a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86",
   :slug "lost-in-specificity",
   :title "Lost in specificity"}
@@ -212,6 +218,9 @@
  {:uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
   :slug "narrow-statements",
   :title "Prefer narrow statements"}
+ {:uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
+  :slug "the-beginning-of-infinity",
+  :title "The Beginning of Infinity"}
  {:uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
   :slug "metamuse-podcast",
   :title "Metamuse (podcast)"}

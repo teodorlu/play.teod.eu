@@ -119,17 +119,14 @@ When in doubt, ask yourself "what's important?" and start writing.
 Check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Doom) Emacs learning journal]] to understand my journal-oriented process for learning Emacs.
 
 * Appendix B: more books
-
 more on trust & relationships:
-The Courage to Be Disliked
-https://www.goodreads.com/book/show/43306206-the-courage-to-be-disliked
+[[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]]
+Why: it cuts to the bone.
 
 more on programming:
-The Pragmatic Programmer: Your Journey to Mastery (2nd edition)
-Dave Thomas
-Andy Hunt
+[[id:a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1][The Pragmatic Programmer]], second edition. By Dave Thomas and Andy Hunt.
 Why: great read, actionable, will make your code better.
 
 more on value:
-The Beginning of Infinity
+[[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
 Why: crisply defines what's useful to do in science.

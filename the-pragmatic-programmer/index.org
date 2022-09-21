@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1
+:END:
+#+TITLE: The Pragmatic Programmer
+
+[[file:..][..]]
+
+Second edition is great: https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
+
+By Dave Thomas and Andy Hunt.

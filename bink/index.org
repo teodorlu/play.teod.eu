@@ -81,6 +81,8 @@ $ bink
    1. =babashka.org/links.edn= could link to babashka-related resources
       1. Though - security.
          Remote web sites should not be able to run code on your computer.
+7. Navigating to a random link is also an interesting use case
+8. Implementing datafy/nav and leveraging that could also be interesting.
 * Dev journal / working notes
 Feel free to ignore this part :)
 

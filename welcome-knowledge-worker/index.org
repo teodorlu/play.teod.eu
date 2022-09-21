@@ -120,7 +120,7 @@ Check out [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][(Doom) Emacs learning journ
 
 * Appendix B: more books
 more on trust & relationships:
-[[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]]
+[[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]] .
 Why: it cuts to the bone.
 
 more on programming:

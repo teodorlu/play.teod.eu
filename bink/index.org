@@ -68,8 +68,10 @@ $ bink
 #+end_src
 * Status as of 2022-09-21
 1. I think this is a nice idea
-2. I'm not yet using it properly myself
-3. If you're interested in this, I'd be happy to help / discuss.
+2. I'm not yet using it daily myself
+3. I think =bink= has the potential to remove real friction for teams with lots of scattered resources, and remove friction jumping from place to place
+   1. (though one could consider not depending on hundreds of external services "at all")
+4. If you're interested in this, I'd be happy to help / discuss.
 * Dev journal / working notes
 Feel free to ignore this part :)
 

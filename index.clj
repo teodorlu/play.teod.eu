@@ -78,9 +78,12 @@
                        ".")
 
                   (lines "#+BEGIN_EXPORT html"
+                         "<p>"
                          "<random-page-button>"
                          "Go to random page"
                          "</random-page-button>"
+                         "(sorry this doesn't look like a button yet)"
+                         "</p>"
                          "#+END_EXPORT")
 
                   )]

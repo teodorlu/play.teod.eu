@@ -20,7 +20,7 @@ One Good Goal plus Options and WIP
   - Note: it's gradually becoming better.
   - My experience as a civil engineer: the inability to improve the process as we go.
     - Too static
-  - My experience working in a startup: everything is moving, confusion reigns.
+  - My experience working in a startup (not Unicad): everything is moving, confusion reigns.
     - Too dynamic
   - My experience working in a big organization: Diluted intent, emphasis on legibility and reproducability over value.
     - Actionable: reify intent for product decisions

@@ -38,6 +38,9 @@ Requirement: there is always one good goal.
 ** A Bucket of Options
 Options are initiatives that we can choose to prioritize or grow.
 ** A Bucket of WIP
+Bugs
+
+List of instances of UI friction, tied closely to context of friction & purpose of workflow.
 ** IKI: a light tool for bottom-up attention design
 In Unicad, we don't want to waste our time.
 We'd rather work effectively with tools that enable thought than slow down for conformity and tool-driven workflows.

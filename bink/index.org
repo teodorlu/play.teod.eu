@@ -6,10 +6,10 @@
 [[file:..][..]]
 
 #+BEGIN_VERSE
-THIS PROGRAM MAY NOT WORK
-THIS PROGRAM WILL CHANGE
-IF THIS PROGRAM CRASHES, YOU MAY NOT RECEIVE SUPPORT
-USE THIS PROGRAM AT YOUR OWN RISK
+This program may not work.
+This program will change.
+If this program crashes, you may not receive support.
+Use this program at your own risk!
 #+END_VERSE
 
 Please be kind!
@@ -69,8 +69,10 @@ $ bink
 * Dev journal / working notes
 Feel free to ignore this part :)
 
+#+BEGIN_VERSE
 Or not.
-You decide.
+Your choice.
+#+END_VERSE
 ** 2022-09-14
 *** CLI draft
 #+begin_src

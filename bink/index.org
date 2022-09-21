@@ -66,6 +66,10 @@ Or install it with bbin:
 $ bbin install https://play.teod.eu/bink/bink.clj
 $ bink
 #+end_src
+* Status as of 2022-09-21
+1. I think this is a nice idea
+2. I'm not yet using it properly myself
+3. If you're interested in this, I'd be happy to help / discuss.
 * Dev journal / working notes
 Feel free to ignore this part :)
 

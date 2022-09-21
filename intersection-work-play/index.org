@@ -48,7 +48,8 @@ Similar to an art class.
 Ask someone to paint /anything they want/, and you get paralysis.
 #+end_quote
 
-But there are plenty of things that can go wrong when the line between work and play is drawn without care.
+Much can go wrong when the interaction between work and play is accidental.
+Here are some examples:
 
 | situation                                 | example failure                                                               |
 |-------------------------------------------+-------------------------------------------------------------------------------|

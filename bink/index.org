@@ -130,7 +130,7 @@ JSON:
 }
 #+end_src
 ** 2022-09-15
-*** I want a loose coupling between bink and the link providers
+*** I want loose coupling between bink and the link providers
 Idea: different providers in bink config.
 
 Example configuration:

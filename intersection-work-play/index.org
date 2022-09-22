@@ -138,7 +138,7 @@ And they keep that context in mind during the work, not as an afterthought.
 See [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]] and [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]].
 
 I also think it's possible to orient a product team around /both/ work and play.
-I propose a work process in [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]].
+Early draft for a work process: [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]].
 
 #+BEGIN_VERSE
 

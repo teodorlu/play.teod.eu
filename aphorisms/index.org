@@ -44,7 +44,7 @@ Working with source code can be viewed as research.
 
 -----
 
-Other people who's aphorisms I've found to be useful:
+Other people whose aphorisms I've found to be useful:
 
 - Adam Wiggins: https://gist.github.com/adamwiggins/5687294
 - Nassim Taleb: https://en.wikipedia.org/wiki/The_Bed_of_Procrustes

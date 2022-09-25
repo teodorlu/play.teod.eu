@@ -45,6 +45,10 @@ My opinion:
 2. It's really really really really hard to build trust
 3. But trust is really really really really important.
 4. In order to build trust, individuals must be willing to reach out and /give/ rather than build walls around themselves.
+   1. ref "charity" when trust is defined as integrity+competence+charity
+      1. + I should refer explicitly to the research Andreas and Håvard pointed me to here.
+         Andreas and Håvard, if you're reading this, thanks for the pointers!
+         ❤️
 5. Following Scrum mechanically works, in some sense.
    A product owner is tasked by creating some initiative options
    Devs can read those.

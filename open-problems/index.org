@@ -93,7 +93,7 @@ A W3C spec or something.
 "Please do not treat this page as canonical".
 I want to ask Sindre, Oddmund, Richard and Sean about this.
 *** HTTP redirect.
-* Solved problems
+* Closed problems
 ** Getting cross-article Org-roam links working
 I honestly cannot be bothered to maintain links to specific article IDs.
 Especially before I've shared them for public consumption.

@@ -26,6 +26,19 @@ Process:
 
 Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context. (left is unnamed, right is [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]) (see also [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], which heavily influenced this statement)
 
+Influences:
+
+1. Roam Research & similar tools
+   1. Logseq
+   2. Anagora
+2. Wikipedia
+3. Babashka
+4. FZF
+5. Emacs
+   1. Org-mode
+   2. Org-Roam
+   3. Embark
+
 * 2022-09-25
 I started writing (a lot) about dbx in [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][Teodor's public journal]].
 It's better here.

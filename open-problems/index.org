@@ -29,7 +29,7 @@ I've made a strategic framework: [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGP
 What?
 Problem?
 Are C and OpenGL problems?
-
+*** Initial rambling
 Well, not really.
 But there's stuff here I want to learn.
 
@@ -46,6 +46,8 @@ What  specifically?
 Which I can get with [[id:cab308ab-00db-4584-89a8-b7371b41275c][Mathbox]].
 Hmm.
 Hmmmmmmmmmmmm.
+*** Reframe: I want to create visualizations that have the same power as ABAQUS viewer.
+THAT WOULD BE NICE.
 ** A generic place to store data
 Possibly =store.teod.eu=.
 
@@ -57,29 +59,7 @@ Why?
 "Personal information architecture"
 *** 2022-09-17 I haven't had much need yet.
 Just plaintext is nice. But it limits interactivity.
-** Rewrite =p= and =teod_fzf_cd= to babashka
-Here's the ZSH code:
-
-#+begin_src
-teod_fzf_cd () {
-    root="$1"
-    depth="$2"
-    folders=$(cd "$root" && find . -mindepth "$depth" -maxdepth "$depth" | sed "s|^./||g" | sort )
-    folder=$(echo "$folders" | fzf)
-    cd "$root/$folder"
-}
-#+end_src
-
-Why babashka?
-
-1. I prefer to maintain Clojure code to maintain ZSH code.
-2. Wait, I need a wrapper regardless.
-   Otherwise =cd= doesn't work.
-*** 2022-09-17 probably don't want to do that.
-*** 2022-09-25 this is a special case of dbx!
-I want to make [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] instead.
-
-Closing!
+*** 2022-09-25 Closing this one.
 ** What is the list of concepts a new developer should be introduced to?
 *** Motivating context
 A new developer arrives.
@@ -101,12 +81,38 @@ A W3C spec or something.
 "Please do not treat this page as canonical".
 I want to ask Sindre, Oddmund, Richard and Sean about this.
 *** HTTP redirect.
+** Remote references must be presented properly on the index.
+Right now, they are lumped in with "seeds".
 * Closed problems
-** Getting cross-article Org-roam links working
+** 2022-09-25
+*** Getting cross-article Org-roam links working
 I honestly cannot be bothered to maintain links to specific article IDs.
 Especially before I've shared them for public consumption.
 Meaning "Ready for comments" and above.
-*** 2022-09-17 FIxed!
+**** 2022-09-17 FIxed!
+*** Rewrite =p= and =teod_fzf_cd= to babashka
+Here's the ZSH code:
+
+#+begin_src
+teod_fzf_cd () {
+    root="$1"
+    depth="$2"
+    folders=$(cd "$root" && find . -mindepth "$depth" -maxdepth "$depth" | sed "s|^./||g" | sort )
+    folder=$(echo "$folders" | fzf)
+    cd "$root/$folder"
+}
+#+end_src
+
+Why babashka?
+
+1. I prefer to maintain Clojure code to maintain ZSH code.
+2. Wait, I need a wrapper regardless.
+   Otherwise =cd= doesn't work.
+**** 2022-09-17 probably don't want to do that.
+**** 2022-09-25 this is a special case of dbx!
+I want to make [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] instead.
+
+Closing!
 * 2022-09-17
 Morn.
 ** Open problems require curation

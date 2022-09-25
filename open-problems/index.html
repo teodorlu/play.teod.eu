@@ -182,10 +182,6 @@ id="toc-c-opengl-graphics-webgl">C, OpenGL / Graphics, WebGL</a></li>
 <li><a href="#a-generic-place-to-store-data"
 id="toc-a-generic-place-to-store-data">A generic place to store
 data</a></li>
-<li><a href="#rewrite-p-and-teod_fzf_cd-to-babashka"
-id="toc-rewrite-p-and-teod_fzf_cd-to-babashka">Rewrite <code
-class="verbatim">p</code> and <code class="verbatim">teod_fzf_cd</code>
-to babashka</a></li>
 <li><a
 href="#what-is-the-list-of-concepts-a-new-developer-should-be-introduced-to"
 id="toc-what-is-the-list-of-concepts-a-new-developer-should-be-introduced-to">What
@@ -196,21 +192,23 @@ href="#how-can-i-communicate-properly-on-the-web-that-my-page-is-only-a-referenc
 id="toc-how-can-i-communicate-properly-on-the-web-that-my-page-is-only-a-reference">How
 can I communicate properly on the web that <em>my page</em> is only a
 reference?</a></li>
+<li><a
+href="#remote-references-must-be-presented-properly-on-the-index."
+id="toc-remote-references-must-be-presented-properly-on-the-index.">Remote
+references must be presented properly on the index.</a></li>
 </ul></li>
 <li><a href="#closed-problems" id="toc-closed-problems">Closed
 problems</a>
 <ul>
-<li><a href="#getting-cross-article-org-roam-links-working"
-id="toc-getting-cross-article-org-roam-links-working">Getting
-cross-article Org-roam links working</a></li>
+<li><a href="#section" id="toc-section">2022-09-25</a></li>
 </ul></li>
-<li><a href="#section" id="toc-section">2022-09-17</a>
+<li><a href="#section-1" id="toc-section-1">2022-09-17</a>
 <ul>
 <li><a href="#open-problems-require-curation"
 id="toc-open-problems-require-curation">Open problems require
 curation</a></li>
 </ul></li>
-<li><a href="#section-1" id="toc-section-1">2022-08-27</a></li>
+<li><a href="#section-2" id="toc-section-2">2022-08-27</a></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -237,6 +235,7 @@ a strategy?</a></p>
 non-coercive strategic framework</a>.</p>
 <h3 id="c-opengl-graphics-webgl">C, OpenGL / Graphics, WebGL</h3>
 <p>What? Problem? Are C and OpenGL problems?</p>
+<h4 id="initial-rambling">Initial rambling</h4>
 <p>Well, not really. But there’s stuff here I want to learn.</p>
 <p>What specifically?</p>
 <ol>
@@ -252,6 +251,11 @@ feel like when there’s just me, the computer and its memory?</li>
 what I really want is GPU-powered visualization.</h4>
 <p>Which I can get with <a href="../mathbox/">Mathbox</a>. Hmm.
 Hmmmmmmmmmmmm.</p>
+<h4
+id="reframe-i-want-to-create-visualizations-that-have-the-same-power-as-abaqus-viewer.">Reframe:
+I want to create visualizations that have the same power as ABAQUS
+viewer.</h4>
+<p>THAT WOULD BE NICE.</p>
 <h3 id="a-generic-place-to-store-data">A generic place to store
 data</h3>
 <p>Possibly <code class="verbatim">store.teod.eu</code>.</p>
@@ -264,30 +268,7 @@ data</h3>
 <h4 id="i-havent-had-much-need-yet.">2022-09-17 I haven’t had much need
 yet.</h4>
 <p>Just plaintext is nice. But it limits interactivity.</p>
-<h3 id="rewrite-p-and-teod_fzf_cd-to-babashka">Rewrite <code
-class="verbatim">p</code> and <code class="verbatim">teod_fzf_cd</code>
-to babashka</h3>
-<p>Here’s the ZSH code:</p>
-<pre><code>teod_fzf_cd () {
-    root=&quot;$1&quot;
-    depth=&quot;$2&quot;
-    folders=$(cd &quot;$root&quot; &amp;&amp; find . -mindepth &quot;$depth&quot; -maxdepth &quot;$depth&quot; | sed &quot;s|^./||g&quot; | sort )
-    folder=$(echo &quot;$folders&quot; | fzf)
-    cd &quot;$root/$folder&quot;
-}
-</code></pre>
-<p>Why babashka?</p>
-<ol>
-<li>I prefer to maintain Clojure code to maintain ZSH code.</li>
-<li>Wait, I need a wrapper regardless. Otherwise <code
-class="verbatim">cd</code> doesn’t work.</li>
-</ol>
-<h4 id="probably-dont-want-to-do-that.">2022-09-17 probably don’t want
-to do that.</h4>
-<h4 id="this-is-a-special-case-of-dbx">2022-09-25 this is a special case
-of dbx!</h4>
-<p>I want to make <a href="../dbx/">eu.teod/dbx: a toolkit for building
-your own personal knowledge base</a> instead.</p>
+<h4 id="closing-this-one.">2022-09-25 Closing this one.</h4>
 <h3
 id="what-is-the-list-of-concepts-a-new-developer-should-be-introduced-to">What
 is the list of concepts a new developer should be introduced to?</h3>
@@ -311,14 +292,46 @@ for something is. How can I achieve that?</p>
 “Please do not treat this page as canonical”. I want to ask Sindre,
 Oddmund, Richard and Sean about this.</p>
 <h4 id="http-redirect.">HTTP redirect.</h4>
+<h3
+id="remote-references-must-be-presented-properly-on-the-index.">Remote
+references must be presented properly on the index.</h3>
+<p>Right now, they are lumped in with “seeds”.</p>
 <h2 id="closed-problems">Closed problems</h2>
-<h3 id="getting-cross-article-org-roam-links-working">Getting
-cross-article Org-roam links working</h3>
+<h3 id="section">2022-09-25</h3>
+<h4 id="getting-cross-article-org-roam-links-working">Getting
+cross-article Org-roam links working</h4>
 <p>I honestly cannot be bothered to maintain links to specific article
 IDs. Especially before I’ve shared them for public consumption. Meaning
 “Ready for comments” and above.</p>
-<h4 id="fixed">2022-09-17 FIxed!</h4>
-<h2 id="section">2022-09-17</h2>
+<ol>
+<li><p>2022-09-17 FIxed!</p></li>
+</ol>
+<h4 id="rewrite-p-and-teod_fzf_cd-to-babashka">Rewrite <code
+class="verbatim">p</code> and <code class="verbatim">teod_fzf_cd</code>
+to babashka</h4>
+<p>Here’s the ZSH code:</p>
+<pre><code>teod_fzf_cd () {
+    root=&quot;$1&quot;
+    depth=&quot;$2&quot;
+    folders=$(cd &quot;$root&quot; &amp;&amp; find . -mindepth &quot;$depth&quot; -maxdepth &quot;$depth&quot; | sed &quot;s|^./||g&quot; | sort )
+    folder=$(echo &quot;$folders&quot; | fzf)
+    cd &quot;$root/$folder&quot;
+}
+</code></pre>
+<p>Why babashka?</p>
+<ol>
+<li>I prefer to maintain Clojure code to maintain ZSH code.</li>
+<li>Wait, I need a wrapper regardless. Otherwise <code
+class="verbatim">cd</code> doesn’t work.</li>
+</ol>
+<ol>
+<li><p>2022-09-17 probably don’t want to do that.</p></li>
+<li><p>2022-09-25 this is a special case of dbx!</p>
+<p>I want to make <a href="../dbx/">eu.teod/dbx: a toolkit for building
+your own personal knowledge base</a> instead.</p>
+<p>Closing!</p></li>
+</ol>
+<h2 id="section-1">2022-09-17</h2>
 <p>Morn.</p>
 <h3 id="open-problems-require-curation">Open problems require
 curation</h3>
@@ -344,7 +357,7 @@ old entries from the log.</li>
 </ol></li>
 </ol></li>
 </ol>
-<h2 id="section-1">2022-08-27</h2>
+<h2 id="section-2">2022-08-27</h2>
 <p>ACTION TIME</p>
 <ol>
 <li>Open problems are nice. I want to continue this path.</li>

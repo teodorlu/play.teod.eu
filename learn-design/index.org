@@ -45,3 +45,27 @@ I don't know basics in typography.
 I don't know color theory.
 When I just put things around, it looks bad.
 I want to fix that.
+* A list of my half-baked design efforts
+- [[id:93d32545-91b7-463e-9d61-1e3da190cf64][Shades of Deep Green]] - I want a calm wallpaper
+- [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]] - How to find the good Clojure data science stuff is a design challenge
+  - Perhaps the problem is that not enough designers learn Clojure?
+  - Perhaps I can ask some designers for help with Scicloj?
+
+Hmm, I want "teodor designs stuff" discoverable from the index by means of page metadata.
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

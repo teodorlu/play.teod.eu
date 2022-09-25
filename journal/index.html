@@ -219,6 +219,8 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript" src="/random_page.js" defer></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -406,6 +408,12 @@ contribute when you don’t know what you’re doing</a></li>
 <li><a href="#when-taking-notes-why-not-just-copy-paste-from-wikipedia"
 id="toc-when-taking-notes-why-not-just-copy-paste-from-wikipedia">When
 taking notes, why not just copy-paste from wikipedia?</a></li>
+</ul></li>
+<li><a href="#section-17" id="toc-section-17">2022-09-25</a>
+<ul>
+<li><a href="#dbx-and-bink-is-the-same-thing"
+id="toc-dbx-and-bink-is-the-same-thing">dbx and bink is the same
+thing</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1234,8 +1242,7 @@ works!!!</h3>
 <h3 id="how-do-contribute-when-you-dont-know-what-youre-doing">How do
 contribute when you don’t know what you’re doing</h3>
 <p>Also, “how to help”.</p>
-<p>From <a
-href="id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57">Aphorisms</a>:</p>
+<p>From <a href="../aphorisms/">Aphorisms</a>:</p>
 <blockquote>
 <p>10 - When in doubt, do that which builds trust.</p>
 <p>11 - When still in doubt, do that which reifies and distributes
@@ -1274,5 +1281,33 @@ taking notes, why not just copy-paste from wikipedia?</h3>
 resulting artifact.</p>
 <p>Because simply copying does not help you reify your taste. It does
 not help you to cultivate your taste.</p>
+<h2 id="section-17">2022-09-25</h2>
+<h3 id="dbx-and-bink-is-the-same-thing">dbx and bink is the same
+thing</h3>
+<p>Context.</p>
+<p><a href="../bink/">Bink: Bookmarks are just data</a> is “given a list
+of bookmarks as data, please let me navigate”.</p>
+<p><a href="../dbx/">eu.teod/dbx: a toolkit for building your own
+personal knowledge base</a> is “given a mechanism of pages as data,
+please let me create new pages and create links to stuff I’ve got”</p>
+<p>CLI comands:</p>
+<p><code class="verbatim">dbx nav</code> - first select provider, then
+paste a link.</p>
+<p><code class="verbatim">dbx van</code> - link to anything from the
+command line.</p>
+<p>dbx providers:</p>
+<p><code class="verbatim">play.teod.eu/localhost</code> - local http
+preview</p>
+<p><code class="verbatim">play.teod.eu/localfolder</code> - local
+folder</p>
+<p><code class="verbatim">play.teod.eu/web</code> - on the internet</p>
+<p>actions:</p>
+<p><code class="verbatim">print</code> - paste the path</p>
+<p><code class="verbatim">open</code> - open in a browser.</p>
+<p><code class="verbatim">cd</code> - given a shell wrapper, cd into the
+thing.</p>
+<p>(then there needs to be a dbx shell wrapper)</p>
+<p>(then perhaps support installation both as shell function (dbx) and
+installation as babashka script? (dbxx))</p>
 </body>
 </html>

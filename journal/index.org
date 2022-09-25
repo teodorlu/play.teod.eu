@@ -769,3 +769,36 @@ Because taking notes is 90 % for the process, and only 10 % for the resulting ar
 
 Because simply copying does not help you reify your taste.
 It does not help you to cultivate your taste.
+* 2022-09-25
+** dbx and bink is the same thing
+Context.
+
+[[id:86c31b09-2831-4435-a73e-91db76fcbd57][Bink: Bookmarks are just data]] is "given a list of bookmarks as data, please let me navigate".
+
+[[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] is "given a mechanism of pages as data, please let me create new pages and create links to stuff I've got"
+
+CLI comands:
+
+=dbx nav= - first select provider, then paste a link.
+
+=dbx van= - link to anything from the command line.
+
+dbx providers:
+
+=play.teod.eu/localhost= - local http preview
+
+=play.teod.eu/localfolder= - local folder
+
+=play.teod.eu/web= - on the internet
+
+actions:
+
+=print= - paste the path
+
+=open= - open in a browser.
+
+=cd= - given a shell wrapper, cd into the thing.
+
+(then there needs to be a dbx shell wrapper)
+
+(then perhaps support installation both as shell function (dbx) and installation as babashka script? (dbxx))

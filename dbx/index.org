@@ -161,3 +161,8 @@ Override chain:
 LOL
 
 If i can lean on some Clojure stuff to define that stuff, that is.
+** =workon= should scope certain dbx actions
+- default cli should respect workon
+- workon should perhaps only be for a single day
+- it should be possible to "escape" workon commands with a "global" or "universal" switch or something
+** Projects should provide their own "workon" context

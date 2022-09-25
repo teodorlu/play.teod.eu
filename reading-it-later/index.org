@@ -79,6 +79,22 @@ That's built into the index.
 
 🤔
 
+* Appendix C: attention design for reading it later
+
+Given:
+
+1. list of people with ideas
+   1. each person has refernces
+2. my needs / values & interests
+
+I want:
+
+1. To discover & learn new interesting stuff
+
+xx
+
+So. How do I apply [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] to this?
+
 #+BEGIN_VERSE
 
 

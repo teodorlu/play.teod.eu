@@ -44,7 +44,7 @@
   :created "2022-08-27",
   :lang :en}
  {:slug "attention-design",
-  :title "Attention design",
+  :title "attention design",
   :readiness :wtf-is-this,
   :author-url "https://teod.eu",
   :created "2022-07-14",
@@ -538,7 +538,8 @@
   :uuid "d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1",
   :author-url "https://teod.eu",
   :created "2022-09-25",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "the-beginning-of-infinity",
   :title "The Beginning of Infinity",
   :readiness :wtf-is-this,

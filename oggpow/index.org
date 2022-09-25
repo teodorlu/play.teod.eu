@@ -11,6 +11,9 @@ One Good Goal plus Options and WIP
 
 * Second draft
 ** Target audience: teams aiming for elite levels of trust and quality
+Requirement: high levels of trust and quality is already established.
+
+(I think? To be determined & tested. I'd love to try and see.)
 ** Motivation & introduction
 - [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]].
   The purpose of structure is to serve utility in a context.

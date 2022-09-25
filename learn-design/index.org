@@ -22,6 +22,8 @@ Perhaps "interesting problem" is a better category than "open problem."
 Copied over from my notes on [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]]:
 
 #+begin_quote
+My definition of design, influenced by David Deutsch and Rich Hickey and Zach Tellman:
+
 Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context. (left is unnamed, right is [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]) (see also [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], which heavily influenced this statement)
 (I think left might be aesthetics & beauty. or elegance.)
 #+end_quote

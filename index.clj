@@ -145,7 +145,9 @@
       ""
       ]
 
-     ["** Remote references, please ignore these too."
+     ["** Remote references"
+      ""
+      "Pointers to other people, places, artifacts."
       ""
       (str/join " · " (for [page remote-reference] (page-link page)))
       ""

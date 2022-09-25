@@ -12,6 +12,20 @@ Idea: split https://play.teod.eu/play.clj into something reusable (dbx) and some
 I believe dbx can help [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]] make Clojure data science more accessible.
 There are some ideas in [[id:58bbb42c-7e23-4fb3-8b7b-b46dab780550][Scicloj is awesome]]. See also [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]].
 
+Pieces:
+
+- library.
+  Use from babashka or clojure (or clojurescript?).
+  Do your own thing.
+- Babashka binary.
+  find pages, create new pages.
+- shell function
+  cd into where your stuff is.
+
+Process:
+
+Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context.
+
 * 2022-09-25
 I started writing (a lot) about dbx in [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][Teodor's public journal]].
 It's better here.

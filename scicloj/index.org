@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 1b1a3e02-9247-496e-b70f-2aee1251d1ff
+:END:
+#+TITLE: Scicloj
+
+[[file:..][..]]
+
+https://scicloj.github.io/
+
+A community promoting the use of Clojure for data-centric computing

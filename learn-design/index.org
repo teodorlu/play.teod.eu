@@ -33,6 +33,7 @@ So what?
 There are different kinds of design.
 I focus heavily on [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] on this site.
 In [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]], I approach how to design modules.
+In [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]], I approach how to design companies.
 I've always been interested in workflow design.
 
 But!

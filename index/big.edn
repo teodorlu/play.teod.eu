@@ -52,11 +52,10 @@
   :lang :en}
  {:slug "scicloj",
   :title "Scicloj",
-  :readiness :wtf-is-this,
   :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",
-  :author-url "https://teod.eu",
   :created "2022-09-25",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "okrs-are-scale-invariant",
   :title "OKRs are scale invariant",
   :readiness :wtf-is-this,
@@ -521,6 +520,13 @@
   :readiness :wtf-is-this,
   :author-url "https://teod.eu",
   :uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15",
+  :lang :en}
+ {:slug "mathbox",
+  :title "Mathbox",
+  :readiness :wtf-is-this,
+  :uuid "cab308ab-00db-4584-89a8-b7371b41275c",
+  :author-url "https://teod.eu",
+  :created "2022-09-25",
   :lang :en}
  {:slug "narrow-statements",
   :title "Prefer narrow statements",

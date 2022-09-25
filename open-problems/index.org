@@ -42,6 +42,10 @@ What  specifically?
    What does it feel like when there's just me, the computer and its memory?
 3. I want to be able to draw high-performance graphics!
 4. I want to be able to write high-performance code.
+*** Wait, what I really want is GPU-powered visualization.
+Which I can get with [[id:cab308ab-00db-4584-89a8-b7371b41275c][Mathbox]].
+Hmm.
+Hmmmmmmmmmmmm.
 ** A generic place to store data
 Possibly =store.teod.eu=.
 

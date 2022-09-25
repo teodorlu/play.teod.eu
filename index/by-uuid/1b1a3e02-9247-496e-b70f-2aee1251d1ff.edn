@@ -1,7 +1,6 @@
 {:slug "scicloj",
  :title "Scicloj",
- :readiness :wtf-is-this,
  :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",
- :author-url "https://teod.eu",
  :created "2022-09-25",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

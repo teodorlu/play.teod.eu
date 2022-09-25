@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: cab308ab-00db-4584-89a8-b7371b41275c
+:END:
+#+TITLE: Mathbox
+
+[[file:..][..]]
+
+https://github.com/unconed/mathbox
+
+#+begin_src
+MathBox is a library for rendering presentation-quality math diagrams in a browser using WebGL. Built on top of Three.js and ShaderGraph, it provides a clean API to visualize mathematical relationships and animate them declaratively.
+#+end_src
+
+High-quality motivation and demonstration: https://acko.net/blog/mathbox2/

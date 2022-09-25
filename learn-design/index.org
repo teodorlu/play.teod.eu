@@ -5,6 +5,10 @@
 
 [[file:..][..]]
 
+This page is really an open problem.
+Or an interesting problem.
+Perhaps "interesting problem" is a better category than "open problem."
+
 * Things I want to be able to
 - Pick colors that work nice together
 - Balance colors on a page so that it's not too heavy or too light
@@ -13,3 +17,26 @@
 - Easily make something with Figma and get it on play.teod.eu
 - Explore different HTML stuff here on play.teod.eu
 - Play with CSS variations on a single play.teod.eu page
+* What is design?
+
+Copied over from my notes on [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]]:
+
+#+begin_quote
+Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context. (left is unnamed, right is [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]) (see also [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], which heavily influenced this statement)
+(I think left might be aesthetics & beauty. or elegance.)
+#+end_quote
+
+So what?
+
+There are different kinds of design.
+I focus heavily on [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] on this site.
+In [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]], I approach how to design modules.
+I've always been interested in workflow design.
+
+But!
+
+I don't have the ground rules in place.
+I don't know basics in typography.
+I don't know color theory.
+When I just put things around, it looks bad.
+I want to fix that.

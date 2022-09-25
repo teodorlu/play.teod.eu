@@ -40,6 +40,7 @@ Influences:
    3. Embark
 6. Clojure & Rich Hickey
    1. "to design is to decomplect"
+   2. "decomplecting knowledge"
 
 * 2022-09-25
 I started writing (a lot) about dbx in [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][Teodor's public journal]].

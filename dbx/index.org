@@ -141,3 +141,7 @@ Override chain:
 2. =:exec= on =:provider= config
 3. =:exec= from default config
 4. just paste link as string.
+** dbx could be an emoji selector
+LOL
+
+If i can lean on some Clojure stuff to define that stuff, that is.

@@ -1051,3 +1051,6 @@ customElements.define("random-page-button", RandomPageButton, buttonOptions)
    But it doesn't look like a button!!!
 
 It's a work in progress :)
+* 2022-09-25
+** I absolutely love fiddling with play.teod.eu
+❤️

@@ -5,15 +5,11 @@
 
 [[./..][..]]
 
-Commentary on /Why Don't We Have a Strategy?/ by John Cutler.
-Reading the [[https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy][original article on The Beautiful Mess]] is probably a good idea.
+Commentary on https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy
+by John Cutler.
 
-Note from 2022-09-25: this is really an enriched remote reference.
-Remote reference with commentary.
-Canonical source is somewhere else.
-Remixing here.
-I want the structure of play.teod.eu to reflect that.
-But I don't know how yet.
+I recommend reading the original article before reading my commentary.
+The original article tackles an important problem in a crisp, well written manner.
 
 * "The system is not built for me to think. The system is built for me to be reactionary"
 #+begin_quote
@@ -43,3 +39,10 @@ Strategy is the tool that allows us to reach the long term goals that we could n
 
 Cool, that's the outcome.
 We like outcome-based definition.
+* Appendix A: I don't have a good structure for enriched remote references yet.
+This is really an enriched remote reference.
+Remote reference with commentary.
+Canonical source is somewhere else.
+Remixing here.
+I want the structure of play.teod.eu to reflect that.
+But I don't know how yet.

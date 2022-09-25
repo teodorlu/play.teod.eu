@@ -11,3 +11,119 @@ Idea: split https://play.teod.eu/play.clj into something reusable (dbx) and some
 
 I believe dbx can help [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]] make Clojure data science more accessible.
 There are some ideas in [[id:58bbb42c-7e23-4fb3-8b7b-b46dab780550][Scicloj is awesome]]. See also [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]].
+
+* 2022-09-25
+I started writing (a lot) about dbx in [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][Teodor's public journal]].
+It's better here.
+So I'm moving it here.
+** dbx and bink is the same thing
+Context.
+
+[[id:86c31b09-2831-4435-a73e-91db76fcbd57][Bink: Bookmarks are just data]] is "given a list of bookmarks as data, please let me navigate".
+
+[[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] is "given a mechanism of pages as data, please let me create new pages and create links to stuff I've got"
+
+*** I think these two are the same thing.
+Just with a default.
+
+#+begin_src
+dbx workon play.teod.eu
+dbx workon scicloj-kb
+#+end_src
+
+*** CLI comands:
+
+=dbx nav= - first select provider, then paste a link.
+
+=dbx van= - link to anything from the command line.
+
+*** dbx providers:
+
+=play.teod.eu/localhost= - local http preview
+
+=play.teod.eu/localfolder= - local folder
+
+=play.teod.eu/web= - on the internet
+
+*** actions:
+
+=print= - paste the path
+
+=open= - open in a browser.
+
+=cd= - given a shell wrapper, cd into the thing.
+
+(then there needs to be a dbx shell wrapper)
+
+(then perhaps support installation both as shell function (dbx) and installation as babashka script? (dbxx))
+*** How to get shell wrapper talking nicely to binary?
+approach: binary returns action
+
+approach: =dbx-cd= is a shell function, =dbx= is the binary.
+=dbx-cd= simply runs =dbx= and "cds" into the result.
+
+I can implement my github project listing things in terms of =dbx-cd= and =dbx=.
+
+I also want to ask Richard for his opinion on this.
+And Christian Duvolt.
+*** spec: =dbx-cd=
+1. calls out to =dbx "$@"=
+2. checks the error code.
+   If zero, cd into the target folder.
+*** examples
+open play.teod.eu page locally
+
+#+begin_src shell-script
+$ dbx-cd
+# pick play.teod.eu/localfolder
+# pick open-problems
+# dump path
+# cd in there
+#+end_src
+
+open play.teod.eu page locally with explicit provider
+
+#+begin_src shell-script
+$ dbx-cd :provider play.teod.eu/localfolder
+# pick open-problems
+# dump path
+# cd in there
+#+end_src
+
+open play.teod.eu page remotely with explicit =:exec=:
+
+#+begin_src shell-script
+$ dbx-cd :provider play.teod.eu/localfolder :exec firefox
+# pick open-problems
+# dbx picks out the URL, and looks up the "firefox" exec thing from config.
+# evals some bb
+# firefox opens the thing
+#+end_src
+
+open play.teod.eu page remotely with explicit =:exec=, but firefox in a new window
+
+#+begin_src shell-script
+$ dbx-cd :provider play.teod.eu/localfolder :exec firefox-new-window
+# pick open-problems
+# dbx picks out the URL, and looks up the "firefox" exec thing from config.
+# evals some bb
+# firefox opens the thing in a new window
+#+end_src
+
+open iterbart - leancast
+
+#+begin_src shell-script
+$ dbx-cd :provider play.teod.eu/localfolder
+# pick open-problems
+# dump path
+# cd in there
+#+end_src
+
+note - a link provider should have a default :exec.
+
+Override chain:
+
+1. =:exec= on as CLI param
+2. =:exec= on =:provider= config
+3. =:exec= from default config
+4. just paste link as string.

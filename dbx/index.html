@@ -167,6 +167,16 @@
 <h1 class="title">eu.teod/dbx: a toolkit for building your own personal
 knowledge base</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#section" id="toc-section">2022-09-25</a>
+<ul>
+<li><a href="#dbx-and-bink-is-the-same-thing"
+id="toc-dbx-and-bink-is-the-same-thing">dbx and bink is the same
+thing</a></li>
+</ul></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p>THIS SOFTWARE DOES NOT YET EXIST</p>
 <p>Idea: split <a
@@ -176,5 +186,103 @@ into something reusable (dbx) and something specific (play.teod.eu).</p>
 data science more accessible. There are some ideas in <a
 href="../scicloj-is-awesome/">Scicloj is awesome</a>. See also <a
 href="../scicloj-libraries/">Scicloj libraries and tools</a>.</p>
+<h2 id="section">2022-09-25</h2>
+<p>I started writing (a lot) about dbx in <a href="../journal/">Teodor’s
+public journal</a>. It’s better here. So I’m moving it here.</p>
+<h3 id="dbx-and-bink-is-the-same-thing">dbx and bink is the same
+thing</h3>
+<p>Context.</p>
+<p><a href="../bink/">Bink: Bookmarks are just data</a> is “given a list
+of bookmarks as data, please let me navigate”.</p>
+<p><a href="../dbx/">eu.teod/dbx: a toolkit for building your own
+personal knowledge base</a> is “given a mechanism of pages as data,
+please let me create new pages and create links to stuff I’ve got”</p>
+<h4 id="i-think-these-two-are-the-same-thing.">I think these two are the
+same thing.</h4>
+<p>Just with a default.</p>
+<pre><code>dbx workon play.teod.eu
+dbx workon scicloj-kb
+</code></pre>
+<h4 id="cli-comands">CLI comands:</h4>
+<p><code class="verbatim">dbx nav</code> - first select provider, then
+paste a link.</p>
+<p><code class="verbatim">dbx van</code> - link to anything from the
+command line.</p>
+<h4 id="dbx-providers">dbx providers:</h4>
+<p><code class="verbatim">play.teod.eu/localhost</code> - local http
+preview</p>
+<p><code class="verbatim">play.teod.eu/localfolder</code> - local
+folder</p>
+<p><code class="verbatim">play.teod.eu/web</code> - on the internet</p>
+<h4 id="actions">actions:</h4>
+<p><code class="verbatim">print</code> - paste the path</p>
+<p><code class="verbatim">open</code> - open in a browser.</p>
+<p><code class="verbatim">cd</code> - given a shell wrapper, cd into the
+thing.</p>
+<p>(then there needs to be a dbx shell wrapper)</p>
+<p>(then perhaps support installation both as shell function (dbx) and
+installation as babashka script? (dbxx))</p>
+<h4 id="how-to-get-shell-wrapper-talking-nicely-to-binary">How to get
+shell wrapper talking nicely to binary?</h4>
+<p>approach: binary returns action</p>
+<p>approach: <code class="verbatim">dbx-cd</code> is a shell function,
+<code class="verbatim">dbx</code> is the binary. <code
+class="verbatim">dbx-cd</code> simply runs <code
+class="verbatim">dbx</code> and “cds” into the result.</p>
+<p>I can implement my github project listing things in terms of <code
+class="verbatim">dbx-cd</code> and <code
+class="verbatim">dbx</code>.</p>
+<p>I also want to ask Richard for his opinion on this. And Christian
+Duvolt.</p>
+<h4 id="spec-dbx-cd">spec: <code class="verbatim">dbx-cd</code></h4>
+<ol>
+<li>calls out to <code class="verbatim">dbx "$@"</code></li>
+<li>checks the error code. If zero, cd into the target folder.</li>
+</ol>
+<h4 id="examples">examples</h4>
+<p>open play.teod.eu page locally</p>
+<pre class="shell-script"><code>$ dbx-cd
+# pick play.teod.eu/localfolder
+# pick open-problems
+# dump path
+# cd in there
+</code></pre>
+<p>open play.teod.eu page locally with explicit provider</p>
+<pre class="shell-script"><code>$ dbx-cd :provider play.teod.eu/localfolder
+# pick open-problems
+# dump path
+# cd in there
+</code></pre>
+<p>open play.teod.eu page remotely with explicit <code
+class="verbatim">:exec</code>:</p>
+<pre class="shell-script"><code>$ dbx-cd :provider play.teod.eu/localfolder :exec firefox
+# pick open-problems
+# dbx picks out the URL, and looks up the &quot;firefox&quot; exec thing from config.
+# evals some bb
+# firefox opens the thing
+</code></pre>
+<p>open play.teod.eu page remotely with explicit <code
+class="verbatim">:exec</code>, but firefox in a new window</p>
+<pre class="shell-script"><code>$ dbx-cd :provider play.teod.eu/localfolder :exec firefox-new-window
+# pick open-problems
+# dbx picks out the URL, and looks up the &quot;firefox&quot; exec thing from config.
+# evals some bb
+# firefox opens the thing in a new window
+</code></pre>
+<p>open iterbart - leancast</p>
+<pre class="shell-script"><code>$ dbx-cd :provider play.teod.eu/localfolder
+# pick open-problems
+# dump path
+# cd in there
+</code></pre>
+<p>note - a link provider should have a default :exec.</p>
+<p>Override chain:</p>
+<ol>
+<li><code class="verbatim">:exec</code> on as CLI param</li>
+<li><code class="verbatim">:exec</code> on <code
+class="verbatim">:provider</code> config</li>
+<li><code class="verbatim">:exec</code> from default config</li>
+<li>just paste link as string.</li>
+</ol>
 </body>
 </html>

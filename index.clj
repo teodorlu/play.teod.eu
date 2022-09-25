@@ -26,8 +26,9 @@
        (map (fn [id]
               {:id id}))))
 
-(defn category [{:keys [lang readiness] :as page}]
+(defn category [{:keys [lang readiness form] :as page}]
   (cond
+    (= form :remote-reference) :remote-reference
     (and (= readiness :wtf-is-this) (= lang :no)) :wtf-is-this-norwegian
     (= lang :no) :norwegian
     (= readiness :ready-for-comments) :ready-for-comments
@@ -59,7 +60,11 @@
     (str (page-link page) (or date-str ""))))
 
 (defn org-markup [{:keys [pages]}]
-  (let [{:keys [ready-for-comments norwegian wtf-is-this wtf-is-this-norwegian other forever-incomplete]} (group-by :category pages)
+  (let [{:keys [ready-for-comments norwegian
+                wtf-is-this wtf-is-this-norwegian
+                other forever-incomplete
+                remote-reference]}
+        (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
         lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
         lines (fn [& ls] (str/join "\n" (map str ls)))
@@ -140,6 +145,12 @@
       ""
       ]
 
+     ["** Remote references, please ignore these too."
+      ""
+      (str/join " · " (for [page remote-reference] (page-link page)))
+      ""
+      ]
+
      [""
       "** Efforts at \"writing things down together\" commonly fail because:
 
@@ -187,7 +198,21 @@ I include this list as a personal reminder.
 
   Functions should be modularized / parameterized to allow for reasonable experience in dev."
   []
-  (pprint (group-by :category (pages)))
+  (let [r (->> (pages)
+               (filter (fn [page]
+                         (= (:form page) :remote-reference)))
+               #_
+               (map :form)
+               (take 5)
+               #_
+               (group-by :category)
+               #_
+               (keys))]
+    (doseq [rr r]
+      (prn rr))
+    #_
+    (pprint r))
+
   #_#_
   (println (org-markup {:pages (pages)}))
   (prn (System/getenv "ALT")))

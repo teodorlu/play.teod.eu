@@ -532,6 +532,13 @@
   :readiness :wtf-is-this,
   :uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
   :lang :en}
+ {:slug "dark-agile",
+  :title "Dark Agile",
+  :readiness :wtf-is-this,
+  :uuid "d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1",
+  :author-url "https://teod.eu",
+  :created "2022-09-25",
+  :lang :en}
  {:slug "the-beginning-of-infinity",
   :title "The Beginning of Infinity",
   :readiness :wtf-is-this,

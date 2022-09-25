@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID: d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1
+:END:
+#+TITLE: Dark Agile
+
+[[file:..][..]]
+
+https://ronjeffries.com/categories/dark-agile/
+
+My definition: The inversion of the original "people are important, let's work together" to "companies adoping agile because it sounds good and uses process to control people".
+
+Some quotes by Ron Jeffres, whose blog introduced me to "Dark Agile" and "Dark Scrum":
+
+#+begin_quote
+Let’s talk about “Dark Scrum”.
+Too often, at least in software, Scrum seems to oppress people.
+Too often, Scrum does not deliver as rapidly, as reliably, as steadily as it should.
+As a result, everyone suffers.
+Most often, the developers suffer more than anyone.
+
+The theme behind a lot of my thinking lately is this:
+
+    /Kent Beck, my original “Agile” mentor, once said that he invented Extreme Programming to make the world safe for programmers. It turns out that the world is not yet safe for programmers. Scrum can be very unsafe for programmers. To paraphrase Ken Schwaber, one of the co-creators of Scrum, in another context: “That makes me sad”./
+
+Scrum, done even fairly well, is a good framework.
+I’m quite sincere about that.
+It’s good to have a strong connection to the business deciding what needs to be done, and what needs to be deferred.
+It’s good to have all the skills you need to build the product right on the team.
+It’s good to build a tested tangible product every couple of weeks, and it’s good to show it to stakeholders, and it’s good to review how things went and how to improve them.
+I’ve studied, worked with, and thought about Scrum for years, and everything about it is really quite good.
+Not perfect, but really quite good.
+
+Unfortunately, that’s Scrum as a concept, Scrum as an ideal, Scrum done as intended.
+Like every good idea, the reality sometimes falls short.
+Sometimes it falls far short.
+I call the result “Dark Scrum”.
+#+end_quote
+
+Source: https://ronjeffries.com/articles/016-09ff/defense/
+
+My opinion:
+
+1. Organizations are built on trust.
+   Trust goes both ways.
+2. It's really really really really hard to build trust
+3. It's also really really really really important.
+4. In order to build trust, individuals must be willing to reach out and /give/ rather than build walls around themselves.
+5. Following Scrum mechanically works, in some sense.
+   A product owner is tasked by creating some initiative options
+   Devs can read those.
+   And there's a definition of done.
+6. At a certain point, Scrum becomes limiting.
+   I've seen dev teams hide behind "we're following the process" to avoid having to think about how they are providing value to whom.
+   1. And some organizations/people explicitly punish devs for not "staying in their lane", so that's totally undertstandable.
+7. But I believe the best products are created as a collaboration between tech, product and design, when everyone are trying to solve problems /together/.
+   1. If you want to dig into this, read [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]]'s work.
+      I especially enjoyed [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]].
+      It explains thoroughly why product management is hard, its job, and defines "product discovery" crisply in contrast to "product delivery"
+8. At some point, motivated devs might get frustrated with Scrum's rules, and want to contribute more directly to value.
+9. ... which is why product teams are tasked with and measured by their ability to DELIVER VALUE, not COMPLETE TASKS IN SPRINTS.
+10. ... which is why the role of company leadership should be TO CREATE AND GROW AND CURATE INITIATIVE OPTIONS FOR DELIVERING VALUE!
+
+=</rant>=.
+
+That came out stronger than I first imagined.
+Well, it is what it is :)
+
+Teodor

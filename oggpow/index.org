@@ -13,6 +13,7 @@ One Good Goal plus Options and WIP
 I don't know how to slot-in new commentary / improvements / etc.
 I'll probably just have to rewrite it all, and put old stuff in a temporal index down below the fold.
 I also want an image.
+And the TOC is distracting.
 
 *2022-09-25*: Right now, there's three page types described:
 

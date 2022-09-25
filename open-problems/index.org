@@ -48,18 +48,6 @@ Hmm.
 Hmmmmmmmmmmmm.
 *** Reframe: I want to create visualizations that have the same power as ABAQUS viewer.
 THAT WOULD BE NICE.
-** A generic place to store data
-Possibly =store.teod.eu=.
-
-Why?
-
-- Dump data from different places
-- Experiment with data capture
-
-"Personal information architecture"
-*** 2022-09-17 I haven't had much need yet.
-Just plaintext is nice. But it limits interactivity.
-*** 2022-09-25 Closing this one.
 ** What is the list of concepts a new developer should be introduced to?
 *** Motivating context
 A new developer arrives.
@@ -113,6 +101,18 @@ Why babashka?
 I want to make [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] instead.
 
 Closing!
+*** A generic place to store data
+Possibly =store.teod.eu=.
+
+Why?
+
+- Dump data from different places
+- Experiment with data capture
+
+"Personal information architecture"
+**** 2022-09-17 I haven't had much need yet.
+Just plaintext is nice. But it limits interactivity.
+**** 2022-09-25 Closing this one.
 * 2022-09-17
 Morn.
 ** Open problems require curation

@@ -76,6 +76,10 @@ Why babashka?
 2. Wait, I need a wrapper regardless.
    Otherwise =cd= doesn't work.
 *** 2022-09-17 probably don't want to do that.
+*** 2022-09-25 this is a special case of dbx!
+I want to make [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] instead.
+
+Closing!
 ** What is the list of concepts a new developer should be introduced to?
 *** Motivating context
 A new developer arrives.

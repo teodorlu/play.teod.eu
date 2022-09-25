@@ -8,3 +8,6 @@
 THIS SOFTWARE DOES NOT YET EXIST
 
 Idea: split https://play.teod.eu/play.clj into something reusable (dbx) and something specific (play.teod.eu).
+
+I believe dbx can help [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]] make Clojure data science more accessible.
+There are some ideas in [[id:58bbb42c-7e23-4fb3-8b7b-b46dab780550][Scicloj is awesome]]. See also [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]].

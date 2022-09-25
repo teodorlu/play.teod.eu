@@ -43,7 +43,7 @@ My opinion:
 1. Organizations are built on trust.
    Trust goes both ways.
 2. It's really really really really hard to build trust
-3. It's also really really really really important.
+3. But trust is really really really really important.
 4. In order to build trust, individuals must be willing to reach out and /give/ rather than build walls around themselves.
 5. Following Scrum mechanically works, in some sense.
    A product owner is tasked by creating some initiative options

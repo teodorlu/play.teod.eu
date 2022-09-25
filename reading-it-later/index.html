@@ -156,6 +156,8 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript" src="/random_page.js" defer></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -164,6 +166,16 @@
 <header id="title-block-header">
 <h1 class="title">A “read it later” strategy that works</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#appendix-a-do-you-have-skin-in-the-game"
+id="toc-appendix-a-do-you-have-skin-in-the-game">Appendix A: do you have
+skin in the game?</a></li>
+<li><a href="#appendix-b-how-do-you-propose-we-implement-this-exactly"
+id="toc-appendix-b-how-do-you-propose-we-implement-this-exactly">Appendix
+B: how do you propose we implement this, exactly?</a></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p>I’ve tried maintaining lists of stuff to read later again and again,
 but the result is always the same. I don’t read it. At the time when I
@@ -220,14 +232,41 @@ trust graph, essentially.</p>
 <p>And you don’t get stuck in a filter bubble.</p>
 <p>:)</p>
 <hr />
-<p>“Soooo … you claim that this works. But are you doing it
-yourself?”</p>
-<p>Yeah. Not 100 %. I haven’t built the “read it later and tag it
+<h2 id="appendix-a-do-you-have-skin-in-the-game">Appendix A: do you have
+skin in the game?</h2>
+<p>Yeah. No. Not exactly. I haven’t built the “read it later and tag it
 properly” system yet. But the things that I’ve read that have really
 mattered have all come via references from people I trust. This is
 already the way I’m reading Twitter. I follow lots and lots and lots of
 people. But I track the ones I truly pay attention to in a special list.
 Then I decide whether to browse broadly (everyone) or narrowly (special
 list) each time I open the app.</p>
+<h2
+id="appendix-b-how-do-you-propose-we-implement-this-exactly">Appendix B:
+how do you propose we implement this, exactly?</h2>
+<p>Good point. I don’t want to manage new pages with
+{folder,play.edn,index.html} and stuff for each new entity. But perhaps
+a recommendation can have an UUID. And entities can list up their
+recommendations?</p>
+<p>🤔</p>
+<p>I think that could work. Then I just need an entity for Adam Wiggins
+and/or <a href="../metamuse-podcast/">Metamuse (podcast)</a>. And the
+“box of unpaged entities” can be a folder of EDN files. That’s built
+into the index.</p>
+<p>🤔</p>
+<div class="line-block"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</div>
 </body>
 </html>

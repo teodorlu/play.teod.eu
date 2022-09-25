@@ -56,12 +56,42 @@ And you don't get stuck in a filter bubble.
 
 -----
 
-"Soooo ... you claim that this works. But are you doing it yourself?"
-
-Yeah. Not 100 %.
+* Appendix A: do you have skin in the game?
+Yeah. No. Not exactly.
 I haven't built the "read it later and tag it properly" system yet.
 But the things that I've read that have really mattered have all come via references from people I trust.
 This is already the way I'm reading Twitter.
 I follow lots and lots and lots of people.
 But I track the ones I truly pay attention to in a special list.
 Then I decide whether to browse broadly (everyone) or narrowly (special list) each time I open the app.
+* Appendix B: how do you propose we implement this, exactly?
+Good point.
+I don't want to manage new pages with {folder,play.edn,index.html} and stuff for each new entity.
+But perhaps a recommendation can have an UUID.
+And entities can list up their recommendations?
+
+🤔
+
+I think that could work.
+Then I just need an entity for Adam Wiggins and/or [[id:e33962d6-d5cb-4ef8-b7be-9d4a537edbec][Metamuse (podcast)]].
+And the "box of unpaged entities" can be a folder of EDN files.
+That's built into the index.
+
+🤔
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

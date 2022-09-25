@@ -76,3 +76,22 @@ Apparently, this is something I care about!
 :)
 
 Teodor
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

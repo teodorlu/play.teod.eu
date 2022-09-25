@@ -60,6 +60,10 @@ My opinion:
    1. If you want to dig into this, read [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]]'s work.
       I especially enjoyed [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]].
       It explains thoroughly why product management is hard, its job, and defines "product discovery" crisply in contrast to "product delivery"
+   2. Effective product+design+tech collaboration is also /super hard/.
+      I don't think there's a way around each discipline learning a bit about the others, to establish understanding, trust and shared language.
+      1. which is why coders should learn design ([[id:5f45c0a1-8713-4066-8339-ad501c5486ac][I want to learn design]]), designers should learn code, everyone should learn product, and product should learn everything
+         1. which is an ideal --- but ideals are there so that we have something we can strive towards.
 8. At some point, motivated devs might get frustrated with Scrum's rules, and want to contribute more directly to value.
 9. ... which is why product teams are tasked with and measured by their ability to DELIVER VALUE, not COMPLETE TASKS IN SPRINTS.
 10. ... which is why the role of company leadership should be TO CREATE AND GROW AND CURATE INITIATIVE OPTIONS FOR DELIVERING VALUE!

@@ -30,13 +30,14 @@ Design is the art of tastefully narrowing the distance between elegant, ergonomi
 
 So what?
 
-There are different kinds of design.
-I focus heavily on [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] on this site.
-In [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]], I approach how to design modules.
-In [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]], I approach how to design companies.
-I've got a hunch that software engineering is better viewed as a sub dicipline of design than as science or engineering.
-Or more strongly, that there are three major educational directions: science (describing nature), humanities (describing humans) and design (creating reality).
-I've always been interested in workflow design.
+- There are different kinds of design.
+- I focus heavily on [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] on this site.
+- In [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]], I approach how to design modules.
+- In [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]], I approach how to design companies.
+  - Hmm, I think designers might prefer OGGPOW /a lot/ to stuff like scrum.
+- I've got a hunch that software engineering is better viewed as a sub dicipline of design than as science or engineering.
+- Or more strongly, that there are three major educational directions: science (describing nature), humanities (describing humans) and design (creating reality).
+- I've always been interested in workflow design.
 
 But!
 

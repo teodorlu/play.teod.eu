@@ -25,11 +25,6 @@ See also: https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy
 See also: [[id:b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd][Why don't we have a strategy?]]
 *** 2022-09-17 - review
 I've made a strategic framework: [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]].
-** Getting cross-article Org-roam links working
-I honestly cannot be bothered to maintain links to specific article IDs.
-Especially before I've shared them for public consumption.
-Meaning "Ready for comments" and above.
-*** 2022-09-17 FIxed!
 ** C, OpenGL
 What?
 Problem?
@@ -98,6 +93,12 @@ A W3C spec or something.
 "Please do not treat this page as canonical".
 I want to ask Sindre, Oddmund, Richard and Sean about this.
 *** HTTP redirect.
+* Solved problems
+** Getting cross-article Org-roam links working
+I honestly cannot be bothered to maintain links to specific article IDs.
+Especially before I've shared them for public consumption.
+Meaning "Ready for comments" and above.
+*** 2022-09-17 FIxed!
 * 2022-09-17
 Morn.
 ** Open problems require curation

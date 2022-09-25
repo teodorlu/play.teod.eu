@@ -38,6 +38,8 @@ Influences:
    1. Org-mode
    2. Org-Roam
    3. Embark
+6. Clojure & Rich Hickey
+   1. "to design is to decomplect"
 
 * 2022-09-25
 I started writing (a lot) about dbx in [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][Teodor's public journal]].

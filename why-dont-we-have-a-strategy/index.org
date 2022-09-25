@@ -8,6 +8,13 @@
 Commentary on /Why Don't We Have a Strategy?/ by John Cutler.
 Reading the [[https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy][original article on The Beautiful Mess]] is probably a good idea.
 
+Note from 2022-09-25: this is really an enriched remote reference.
+Remote reference with commentary.
+Canonical source is somewhere else.
+Remixing here.
+I want the structure of play.teod.eu to reflect that.
+But I don't know how yet.
+
 * "The system is not built for me to think. The system is built for me to be reactionary"
 #+begin_quote
 A product leader recently told me: "The system is not built for me to think. The

@@ -12,7 +12,7 @@ Idea: split https://play.teod.eu/play.clj into something reusable (dbx) and some
 I believe dbx can help [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]] make Clojure data science more accessible.
 There are some ideas in [[id:58bbb42c-7e23-4fb3-8b7b-b46dab780550][Scicloj is awesome]]. See also [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]].
 
-Pieces:
+* Pieces:
 
 - library.
   Use from babashka or clojure (or clojurescript?).
@@ -22,11 +22,11 @@ Pieces:
 - shell function
   cd into where your stuff is.
 
-Process:
+* Process:
 
 Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context. (left is unnamed, right is [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]) (see also [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], which heavily influenced this statement)
 
-Influences:
+* Influences:
 
 1. Roam Research & similar tools
    1. Logseq
@@ -166,3 +166,12 @@ If i can lean on some Clojure stuff to define that stuff, that is.
 - workon should perhaps only be for a single day
 - it should be possible to "escape" workon commands with a "global" or "universal" switch or something
 ** Projects should provide their own "workon" context
+=workon unicad=
+=workon play.teod.eu=
+=workon kb.scicloj.org=
+=workon iki=
+
+Workon context should:
+
+1. Provide a good default for writes - a "create page" action
+2. Narrow down for reads

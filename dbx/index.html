@@ -169,6 +169,9 @@ knowledge base</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#pieces" id="toc-pieces">Pieces:</a></li>
+<li><a href="#process" id="toc-process">Process:</a></li>
+<li><a href="#influences" id="toc-influences">Influences:</a></li>
 <li><a href="#section" id="toc-section">2022-09-25</a>
 <ul>
 <li><a href="#dbx-and-bink-is-the-same-thing"
@@ -195,21 +198,21 @@ into something reusable (dbx) and something specific (play.teod.eu).</p>
 data science more accessible. There are some ideas in <a
 href="../scicloj-is-awesome/">Scicloj is awesome</a>. See also <a
 href="../scicloj-libraries/">Scicloj libraries and tools</a>.</p>
-<p>Pieces:</p>
+<h2 id="pieces">Pieces:</h2>
 <ul>
 <li>library. Use from babashka or clojure (or clojurescript?). Do your
 own thing.</li>
 <li>Babashka binary. find pages, create new pages.</li>
 <li>shell function cd into where your stuff is.</li>
 </ul>
-<p>Process:</p>
+<h2 id="process">Process:</h2>
 <p>Design is the art of tastefully narrowing the distance between
 elegant, ergonomic, general tools and effective application in specific
 context. (left is unnamed, right is <a
 href="../utility-is-contextual/">Utility is Contextual</a>) (see also <a
 href="../the-beginning-of-infinity/">The Beginning of Infinity</a>,
 which heavily influenced this statement)</p>
-<p>Influences:</p>
+<h2 id="influences">Influences:</h2>
 <ol>
 <li>Roam Research &amp; similar tools
 <ol>
@@ -344,5 +347,14 @@ class="verbatim">workon</code> should scope certain dbx actions</h3>
 </ul>
 <h3 id="projects-should-provide-their-own-workon-context">Projects
 should provide their own “workon” context</h3>
+<p><code class="verbatim">workon unicad</code> <code
+class="verbatim">workon play.teod.eu</code> <code
+class="verbatim">workon kb.scicloj.org</code> <code
+class="verbatim">workon iki</code></p>
+<p>Workon context should:</p>
+<ol>
+<li>Provide a good default for writes - a “create page” action</li>
+<li>Narrow down for reads</li>
+</ol>
 </body>
 </html>

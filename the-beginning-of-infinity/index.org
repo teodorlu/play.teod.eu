@@ -6,3 +6,9 @@
 [[file:..][..]]
 
 https://en.wikipedia.org/wiki/The_Beginning_of_Infinity
+
+Book by David Deutsch
+
+My definition of design, influenced by David Deutsch and Rich Hickey and Zach Tellman:
+
+Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context. (left is unnamed, right is [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]) (see also [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], which heavily influenced this statement)

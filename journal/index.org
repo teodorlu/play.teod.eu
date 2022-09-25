@@ -777,6 +777,14 @@ Context.
 
 [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] is "given a mechanism of pages as data, please let me create new pages and create links to stuff I've got"
 
+I think these two are the same thing.
+Just with a default.
+
+#+begin_src
+dbx workon play.teod.eu
+dbx workon scicloj-kb
+#+end_src
+
 CLI comands:
 
 =dbx nav= - first select provider, then paste a link.

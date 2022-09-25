@@ -561,7 +561,7 @@
   "lang" : "en"
 }, {
   "slug" : "journal",
-  "title" : "Public journal",
+  "title" : "Teodor's public journal",
   "form" : "rambling",
   "readiness" : "forever-incomplete",
   "lang" : "en",
@@ -600,11 +600,10 @@
 }, {
   "slug" : "mathbox",
   "title" : "Mathbox",
-  "readiness" : "wtf-is-this",
   "uuid" : "cab308ab-00db-4584-89a8-b7371b41275c",
-  "author-url" : "https://teod.eu",
   "created" : "2022-09-25",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "narrow-statements",
   "title" : "Prefer narrow statements",

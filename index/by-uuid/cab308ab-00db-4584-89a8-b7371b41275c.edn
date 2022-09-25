@@ -1,7 +1,6 @@
 {:slug "mathbox",
  :title "Mathbox",
- :readiness :wtf-is-this,
  :uuid "cab308ab-00db-4584-89a8-b7371b41275c",
- :author-url "https://teod.eu",
  :created "2022-09-25",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

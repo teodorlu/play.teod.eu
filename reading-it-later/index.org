@@ -93,7 +93,37 @@ I want:
 
 xx
 
-So. How do I apply [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][Attention design]] to this?
+So. How do I apply [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][attention design]] to this?
+
+1. Discoverability
+2. Learnability
+3. ???
+
+or
+
+1. assembly
+2. utility
+3. capability
+
+I wanna read what I wrote in [[id:58bbb42c-7e23-4fb3-8b7b-b46dab780550][Scicloj is awesome]].
+
+1. Learnability
+2. Discoverability
+3. Cohesion
+
+Hmm.
+I'm not really optimizing for cohesion here.
+
+I think a great start is:
+
+1. List people who have referred to stuff
+2. Tag each reference
+   1. Have I not yet spent any time on it?
+   2. Did I have a look and then decide to close it down?
+   3. Did I have a look and get bored?
+   4. Did I have a look and get interested in more stuff?
+
+"Tag with my reference" is stuff that can wait until I have more stuff than I can browse / view on a single page.
 
 #+BEGIN_VERSE
 

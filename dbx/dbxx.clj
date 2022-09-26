@@ -58,7 +58,11 @@
       (embark-fn url))))
 
 (defn nav
-  "Choose provider, then choose link"
+  "Choose provider, then choose link
+
+  Problem: I've hard-coded that links must have :title, :description and :href.
+  I'd rather make links that have :label and :target.
+  Then push the label and target logic to config."
   [{:keys [opts]}]
   (let [provider-name (or (:provider opts) (symbol (fzf (provider-names))))
         provider (read-provider provider-name)
@@ -71,8 +75,6 @@
                       (str (:title l) " | " (:description l))))
         ]
 
-    #_
-    (pprint (get by-title-description choice))
     (embark provider (:href (get by-title-description choice)))
     )
   )

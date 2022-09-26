@@ -9,10 +9,17 @@
    [clojure.java.browse]
    [clojure.string :as str]))
 
+(defn providers []
+  (let [config-path (fs/expand-home "~/.config/dbx/dbx.edn")]
+    (when (fs/exists? config-path)
+      (let [edn (edn/read-string (slurp (str  config-path)))]
+        (keys (:providers edn))))))
+
 (defn provider
   "List available providers"
   [{}]
-  (println "providers TODO"))
+  (doseq [p (providers)]
+    (println p)))
 
 (def dispatch-table
   [{:cmds ["provider"] :fn provider}])

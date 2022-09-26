@@ -21,9 +21,23 @@
   (doseq [p (providers)]
     (println p)))
 
+(defn firefox
+  "Open URL in Firefox"
+  [url]
+  (babashka.process/process ['firefox '-new-window url]))
+
+(defn fzf [options]
+  (-> @(process/process ["fzf"] {:in (str/join "\n" options)
+                                 :out :string
+                                 :err :inherit})
+      :out
+      str/trim))
+
 (defn nav
   "Choose provider, then choose link"
   [{}]
+  (let [p (fzf (providers))]
+    (println p))
 
   )
 

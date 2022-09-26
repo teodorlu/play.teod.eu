@@ -21,8 +21,15 @@
   (doseq [p (providers)]
     (println p)))
 
+(defn nav
+  "Choose provider, then choose link"
+  [{}]
+
+  )
+
 (def dispatch-table
-  [{:cmds ["provider"] :fn provider}])
+  [{:cmds ["provider"] :fn provider}
+   {:cmds ["nav"] :fn nav}])
 
 (defn main [& args]
   (cli/dispatch dispatch-table args {}))

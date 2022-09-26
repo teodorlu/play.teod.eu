@@ -9,11 +9,15 @@
    [clojure.java.browse]
    [clojure.string :as str]))
 
+(def ^:dynamic *config-path* "~/.config/dbx/dbx.edn")
+
+(defn config-path []
+  (fs/expand-home *config-path*))
+
 (defn providers []
-  (let [config-path (fs/expand-home "~/.config/dbx/dbx.edn")]
-    (when (fs/exists? config-path)
-      (let [edn (edn/read-string (slurp (str  config-path)))]
-        (keys (:providers edn))))))
+  (when (fs/exists? (config-path))
+    (let [edn (edn/read-string (slurp (str (config-path))))]
+      (keys (:providers edn)))))
 
 (defn provider
   "List available providers"
@@ -33,11 +37,21 @@
       :out
       str/trim))
 
+(defn provider-links [p]
+  (let [provider-config])
+
+  )
+
 (defn nav
   "Choose provider, then choose link"
   [{}]
   (let [p (fzf (providers))]
-    (println p))
+    #_
+    (println p)
+
+
+    (println "what now")
+    )
 
   )
 

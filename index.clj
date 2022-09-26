@@ -182,7 +182,11 @@ I include this list as a personal reminder.
                   (lines
                    "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
                    "Local development URL for this page is [[http://localhost:9945/][localhost:9945]]."
-                   ))]
+                   )
+
+                  "** Hei, Torstein! 😃"
+
+                  )]
 
 
 

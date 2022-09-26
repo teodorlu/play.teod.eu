@@ -15,15 +15,15 @@
 (defn config-path []
   (fs/expand-home *config-path*))
 
-(defn providers []
+(defn provider-names []
   (when (fs/exists? (config-path))
     (let [edn (edn/read-string (slurp (str (config-path))))]
       (keys (:providers edn)))))
 
-(defn provider
+(defn cmd-provider
   "List available providers"
   [{}]
-  (doseq [p (providers)]
+  (doseq [p (provider-names)]
     (println p)))
 
 (defn firefox
@@ -43,36 +43,26 @@
     (let [edn (edn/read-string (slurp (str (config-path))))]
       (get (:providers edn) provider-name))))
 
-(defn provider-links [provider-name]
-  (let [provider (read-provider provider-name)]
-    (cond
-      ;; functions are interpreted "raw"
-      (contains? provider :fn)
-      (let [provider-fn (eval (:fn provider))]
-        (provider-fn))
-      :else nil)
-    )
+(defn provider-links [provider]
+  (cond
+    ;; provider has a Clojure function to get links
+    (contains? provider :fn)
+    (let [provider-fn (eval (:fn provider))]
+      (provider-fn))
+    :else nil))
 
-  #_
-  (when (fs/exists? (config-path))
-    (let [edn (edn/read-string (slurp (str (config-path))))]
-      (when-let [provider-method (get (:providers edn) p)]
-        (cond
-          ;; functions are interpreted "raw"
-          (contains? provider-method :fn)
-          (let [provider-fn (eval (:fn provider-method))]
-            (provider-fn))
-          :else nil)))))
-
-(defn embark [provider url])
+(defn embark [provider url]
+  (cond
+    (contains? provider :embark-fn)
+    (let [embark-fn (eval (:embark-fn provider))]
+      (embark-fn url))))
 
 (defn nav
   "Choose provider, then choose link"
   [{:keys [opts]}]
-  #_
-  (prn opts)
-  (let [p (or (:provider opts) (fzf (providers)))
-        links (provider-links p)
+  (let [provider-name (or (:provider opts) (symbol (fzf (provider-names))))
+        provider (read-provider provider-name)
+        links (provider-links provider)
         by-title-description (into {}
                                    (for [l links]
                                      [(str (:title l) " | " (:description l))
@@ -81,18 +71,14 @@
                       (str (:title l) " | " (:description l))))
         ]
 
-    (pprint p)
-
-    (pprint choice)
+    #_
     (pprint (get by-title-description choice))
-
-
+    (embark provider (:href (get by-title-description choice)))
     )
-
   )
 
 (def dispatch-table
-  [{:cmds ["provider"] :fn provider}
+  [{:cmds ["provider"] :fn cmd-provider}
    {:cmds ["nav"] :fn nav :args->opts [:provider] :coerce {:provider :symbol}}])
 
 (defn main [& args]

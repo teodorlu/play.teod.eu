@@ -38,26 +38,33 @@
       :out
       str/trim))
 
-(defn provider-links [p]
+(defn read-provider [provider-name]
+  (when (fs/exists? (config-path))
+    (let [edn (edn/read-string (slurp (str (config-path))))]
+      (get (:providers edn) provider-name))))
+
+(defn provider-links [provider-name]
+  (let [provider (read-provider provider-name)]
+    (cond
+      ;; functions are interpreted "raw"
+      (contains? provider :fn)
+      (let [provider-fn (eval (:fn provider))]
+        (provider-fn))
+      :else nil)
+    )
+
+  #_
   (when (fs/exists? (config-path))
     (let [edn (edn/read-string (slurp (str (config-path))))]
       (when-let [provider-method (get (:providers edn) p)]
-        #_
-        (prn provider-method)
         (cond
           ;; functions are interpreted "raw"
           (contains? provider-method :fn)
           (let [provider-fn (eval (:fn provider-method))]
             (provider-fn))
-          :else nil
+          :else nil)))))
 
-          )
-
-
-        )
-      ))
-
-  )
+(defn embark [provider url])
 
 (defn nav
   "Choose provider, then choose link"
@@ -73,6 +80,8 @@
         choice (fzf (for [l links]
                       (str (:title l) " | " (:description l))))
         ]
+
+    (pprint p)
 
     (pprint choice)
     (pprint (get by-title-description choice))

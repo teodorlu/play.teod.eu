@@ -10,12 +10,10 @@
                                        (:links (cheshire.core/parse-string
                                                 (slurp "/home/teodorlu/dev/amedia/teod/amedia-links/links.json")
                                                 keyword))]
-                                   #_
-                                   (prn links)
-                                   links
-                                   ))
+                                   #_ (prn links)
+                                   links))
                            :browse (fn [url]
                                      (let [cmd ["chrome-amedia" "--new-window" url]]
+                                       #_
                                        (prn cmd)
-                                       (babashka.process/process cmd)))}
-             }}
+                                       (babashka.process/process cmd)))}}}

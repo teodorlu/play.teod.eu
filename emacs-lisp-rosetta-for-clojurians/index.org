@@ -10,7 +10,7 @@ This document is aimed at Clojure programmers who want to learn some Emacs Lisp.
 As of 2022-09-10, it's nowhere near complete.
 And it probably never will be.
 
-Here's a better rosetta: https://hyperpolyglot.org/lisp
+Here's a better rosetta: https://hyperpolyglot.org/lisp.
 In addition to Clojure and Emacs Lisp, it includes Common Lisp and Racket.
 
 * Loop for side effects

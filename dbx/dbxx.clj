@@ -46,15 +46,15 @@
 (defn provider-links [provider]
   (cond
     ;; provider has a Clojure function to get links
-    (contains? provider :fn)
-    (let [provider-fn (eval (:fn provider))]
+    (contains? provider :ls)
+    (let [provider-fn (eval (:ls provider))]
       (provider-fn))
     :else nil))
 
 (defn embark [provider url]
   (cond
-    (contains? provider :embark-fn)
-    (let [embark-fn (eval (:embark-fn provider))]
+    (contains? provider :browse)
+    (let [embark-fn (eval (:browse provider))]
       (embark-fn url))))
 
 (defn nav

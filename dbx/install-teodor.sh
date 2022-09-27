@@ -1,6 +1,13 @@
 #!/usr/bin/env sh
 
-ln -srf ./dbxx.clj ~/.local/bin/dbxx
+# This is /NOT/ a generic install script - it's for teodor (https://teod.eu)
+#
+# You're free to use it, or not. But it's going to give you some links that you
+# probably don't care about.
+
+ln -srf dbxx.clj ~/.local/bin/dbxx
+ln -srf dbx.edn ~/.config/dbx/dbx.edn
+
 
 # To install the shell wrapper, this must be sourced too:
 #

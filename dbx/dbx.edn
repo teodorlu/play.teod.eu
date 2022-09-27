@@ -1,0 +1,7 @@
+;; now in ~/.config/dbx/dbx.edn
+{:providers {iterbart {:ls (fn []
+                             (:links (cheshire.core/parse-string
+                                      (slurp "https://iterb.art/data/links.json")
+                                      keyword)))
+                       :browse (fn [url]
+                                    (babashka.process/process ["firefox" "-new-window" url]))}}}

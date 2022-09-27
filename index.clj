@@ -184,8 +184,6 @@ I include this list as a personal reminder.
                    "Local development URL for this page is [[http://localhost:9945/][localhost:9945]]."
                    )
 
-                  "** Hei, Torstein! 😃"
-
                   )]
 
 

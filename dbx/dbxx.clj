@@ -52,6 +52,7 @@
     :else nil))
 
 (defn embark [provider url]
+  (pprint (list 'embark provider url))
   (cond
     (contains? provider :browse)
     (let [embark-fn (eval (:browse provider))]
@@ -67,15 +68,26 @@
   (let [provider-name (or (:provider opts) (symbol (fzf (provider-names))))
         provider (read-provider provider-name)
         links (provider-links provider)
+        #_#_
         by-title-description (into {}
                                    (for [l links]
                                      [(str (:title l) " | " (:description l))
                                       l]))
+        by-title (into {}
+                       (for [l links]
+                         [(:title l) l]))
+        #_#_
         choice (fzf (for [l links]
                       (str (:title l) " | " (:description l))))
+
+        choice (fzf (map :title links))
         ]
 
-    (embark provider (:href (get by-title-description choice)))
+    #_#_
+    (pprint by-title)
+    (prn (:href (get by-title choice)))
+
+    (embark provider (:href (get by-title choice)))
     )
   )
 

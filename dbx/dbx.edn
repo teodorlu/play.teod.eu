@@ -4,4 +4,18 @@
                                       (slurp "https://iterb.art/data/links.json")
                                       keyword)))
                        :browse (fn [url]
-                                    (babashka.process/process ["firefox" "-new-window" url]))}}}
+                                    (babashka.process/process ["firefox" "-new-window" url]))}
+             amedia-links {:ls (fn []
+                                 (let [links
+                                       (:links (cheshire.core/parse-string
+                                                (slurp "/home/teodorlu/dev/amedia/teod/amedia-links/links.json")
+                                                keyword))]
+                                   #_
+                                   (prn links)
+                                   links
+                                   ))
+                           :browse (fn [url]
+                                     (let [cmd ["chrome-amedia" "--new-window" url]]
+                                       (prn cmd)
+                                       (babashka.process/process cmd)))}
+             }}

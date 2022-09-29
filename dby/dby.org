@@ -1,0 +1,18 @@
+#+title: Dby
+
+* Verdi
+
+1. Les links json fra URL
+2. Les links json fra lokal fil
+3. Kjør kommando (parametrisert på URL)
+   1. Åpne nettleser
+   2. Åpne annen nettleser
+
+* Dataformat
+JSON
+
+RON
+
+TOML
+
+Rust

@@ -1,6 +1,5 @@
 #+title: Custom buttons with scittle
 
-
 First, make sure we export the right stuff.
 
 #+begin_export html

@@ -1,5 +1,5 @@
-stuff: scittle-buttons.html
+stuff: scittle-buttons/index.html
 	(cd .. && make)
 
-scittle-buttons.html: scittle-buttons.org
-	pandoc --standalone --from=org+smart scittle-buttons.org -o scittle-buttons.html
+scittle-buttons/index.html: scittle-buttons/index.org
+	pandoc --standalone --from=org+smart scittle-buttons/index.org -o scittle-buttons/index.html

@@ -1064,7 +1064,7 @@ There's a bit of a difference after all.
 So let's do just that.
 Scittle buttons, here we go.
 
-[[file:scittle-buttons.org]] | [[file:scittle-buttons.html]]
+[[file:scittle-buttons/index.org]] | [[file:scittle-buttons/index.html]]
 * trailing whitespace
 #+BEGIN_VERSE
 

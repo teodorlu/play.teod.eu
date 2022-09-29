@@ -132,7 +132,7 @@
      (for [page norwegian] (str "- " (page-link page)))
      [""]
 
-     [(paragraphs "** Seeds, drafts, references and vague ideas, please ignore."
+     [(paragraphs "** Seeds, drafts and vague ideas, please ignore."
                   (lines "Feel free to skip all these."
                          "Or not."
                          "Expect the average seed to be messy and incomplete.")

@@ -14,7 +14,7 @@ First, make sure we export the right stuff.
 Then, let's try to create a button.
 
 #+begin_export html
-<button onclick="goto_random_page">Go to random page</button>
+<button onclick="goto_random_page()">Go to random page</button>
 #+end_export
 
 More stuff!

@@ -15,5 +15,7 @@ pub enum Ls {
 }
 
 pub fn read_config() -> Config {
+    "~/dev/iterate/iterbart/public/data/links.json";
+
     todo!()
 }

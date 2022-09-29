@@ -1,0 +1,11 @@
+#+title: Custom buttons with scittle
+
+DOCUMENT
+
+#+begin_export html
+<script>
+console.log("abc123")
+</script>
+#+end_export
+
+ANOTHER

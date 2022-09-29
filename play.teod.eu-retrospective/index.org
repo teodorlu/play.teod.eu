@@ -1054,3 +1054,32 @@ It's a work in progress :)
 * 2022-09-25
 ** I absolutely love fiddling with play.teod.eu
 ❤️
+* 2022-09-29
+** skittle buttons
+I thought I wanted custom elements.
+So I made some!
+But I realize that I /do/ prefer to write Clojure rather than JavaScript.
+There's a bit of a difference after all.
+
+So let's do just that.
+Scittle buttons, here we go.
+
+[[file:scittle-buttons.org]] | [[file:scittle-buttons.html]]
+* trailing whitespace
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

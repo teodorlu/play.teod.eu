@@ -16,3 +16,36 @@ RON
 TOML
 
 Rust
+
+* Notater
+
+#+begin_src rust
+char; // kan være stack-allokert
+
+&str; // peker til et sted det er tekst
+
+// peker inneholder informasjon om adresse og "hvor stor" er denne tingen
+
+String; // string-objekt
+
+#+end_src
+
+1. hardkodet i binærfil
+2. dump i minne
+3. alt i binærfil har adresse
+4. tidlig i fila ligger alle strings som brukes
+5. Når vi kjører ="~/dev/iterate/iterbart/public/data/links.json"=, får vi en "peker til et sted det er en string"
+   1. i tillegg til stacken og heapen?
+   2. en &str kan ligge på heap eller i statisk data
+   3. "statisk data" er forhåndsallokert
+6. =String= med stor s
+   1. også en peker til tekstdata
+   2. men ligger alltid på heapen
+7. Du kan gjøre om en =String= til en =&str= men ikke motsatt
+8. En =String= eier du selv, ikke nødvendigvis en =&str=.
+   1. Du kan ikke mutere en =&str= som du har fått fra noen
+9. Måter å lage =String= fra =&str=
+   1. =.to_owned()= - kopierer
+      1. fra referanse til noe som ikke er referanse
+   2. =.into()= - kopierer og fikser
+   3. =.to_string()= - "annen semantikk"

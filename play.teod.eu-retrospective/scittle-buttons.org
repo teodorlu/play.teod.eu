@@ -1,14 +1,7 @@
 #+title: Custom buttons with scittle
 
-DOCUMENT
 
-#+begin_export html
-<script>
-console.log("abc123")
-</script>
-#+end_export
-
-ANOTHER
+First, make sure we export the right stuff.
 
 #+begin_export html
     <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
@@ -17,3 +10,11 @@ ANOTHER
     <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
     <script defer src="buttons.cljs" type="application/x-scittle"></script>
 #+end_export
+
+Then, let's try to create a button.
+
+#+begin_export html
+<random-page-button>Click me</random-page-button>
+#+end_export
+
+More stuff!

@@ -76,6 +76,7 @@
 (def dispatch-table
   [{:cmds ["provider"] :fn cmd-provider}
    {:cmds ["nav"] :fn nav :args->opts [:provider] :coerce {:provider :symbol}}
+   {:cmds ["lol"] :fn (fn [{}] (println "lol"))}
    {:cmds [] :fn nav :args->opts [:provider] :coerce {:provider :symbol}}])
 
 (defn main [& args]

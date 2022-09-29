@@ -16,9 +16,6 @@ pub enum Ls {
 }
 
 pub fn read_config() -> Config {
-
-    // lage config
-
     Config{
         providers: hashmap!{
             "iterbart".into() => Provider{
@@ -26,9 +23,5 @@ pub fn read_config() -> Config {
                 ls: Ls::FromFile("~/dev/iterate/iterbart/public/data/links.json".into())
             },
         }
-    };
-
-    "~/dev/iterate/iterbart/public/data/links.json";
-
-    todo!()
+    }
 }

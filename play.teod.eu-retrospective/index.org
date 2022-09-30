@@ -1080,6 +1080,14 @@ Og vi er snart på
 1. grave i [[id:e9a97a46-f252-4883-a311-21b20528d14d][Interface, Perception, Design]]
 2. fikse random_page-lenken på rotsiden.
    1. det har jeg jo egentlig løst allerede: [[file:scittle-buttons/index.org]] | [[file:scittle-buttons/index.html]]
+** ønsker jeg å jobbe fritt eller smalt akkurat nå?
+smalt.
+
+Så - se om jeg kan få gjort "gå til tilfeldig side"-knappen globalt tilgjengelig.
+** 23:25 nope
+endte opp med å skrive litt om Unicad og Excel.
+
+til senere - vil grave i interface, perception, design og knapper.
 
 * trailing whitespace
 #+BEGIN_VERSE

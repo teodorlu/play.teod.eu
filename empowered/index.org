@@ -7,4 +7,11 @@
 
 https://www.goodreads.com/book/show/53481975-empowered?from_search=true&from_srp=true&qid=YosfTbNl9b&rank=11
 
-Book by [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] and Chris Jones.
+#+begin_quote
+Similarly, product managers must be problem solvers as well.
+They are not trying to design the user experience, or architect a scalable, fault‐tolerant solution.
+Rather, they solve for constraints aligned around their customer's business, their industry, and especially their own business.
+Is this something their customers need? Is it substantially better than the alternatives? Is it something the company can effectively market and sell, that they can afford to build, that they can service and support, and that complies with legal and regulatory constraints?
+#+end_quote
+
+By [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] and Chris Jones.

@@ -8,6 +8,8 @@ cp -f dbx.edn ~/.config/dbx/dbx.edn
 # ls -lah ~/.config/dbx
 
 
+rm
+
 # Copy to .zshrc or .bashrc:
 #
 #   function dbx() {

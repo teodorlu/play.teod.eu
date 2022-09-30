@@ -137,6 +137,12 @@ Please go ahead :)
 more on trust & relationships:
 [[id:9488732f-7ab4-4ad9-8fd5-c5c22238636e][The Courage to Be Disliked]].
 
+more on value:
+[[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
+Why: it crisply defines what's useful to do in science.
+Caveat: this one is a tough read.
+Don't beat yourself up.
+
 more on programming:
 [[id:a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1][The Pragmatic Programmer]], second edition. By Dave Thomas and Andy Hunt.
 Why: great read, actionable, will make your code better.
@@ -144,9 +150,3 @@ Why: great read, actionable, will make your code better.
 more on programming 2:
 [[id:2dc52e4f-0604-4d33-a50c-1e8534266a47][Grokking Simplicity]] by Eric Normand.
 Why: it introduces functional programming by focusing on what FP lets you /do/ rather than attempt to stuff abstract theory down your throat.
-
-more on value:
-[[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
-Why: it crisply defines what's useful to do in science.
-Caveat: this one is a tough read.
-Don't beat yourself up.

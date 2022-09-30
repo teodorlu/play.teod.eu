@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 7a377e4e-1ef9-422f-af68-2a24c32b896c
+:END:
+#+TITLE: img
+
+[[file:..][..]]
+
+DRAFT
+[[2015-profil-mastergrad.JPG]]
+[[2015-profil-mastergrad-crop.jpg]]
+[[2018-pl-TH_color.png]]
+[[2018-pl-TH_white.png]]
+[[2018-pl-TH_white_homepage.png]]
+[[2019-02-15-riga-teodor.jpg]]
+[[2020-iterate-teodor.jpg]]
+[[2020-svarttjern.jpg]]

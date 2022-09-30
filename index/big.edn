@@ -310,6 +310,13 @@
   :author-url "https://teod.eu",
   :created "2022-08-27",
   :lang :en}
+ {:slug "img",
+  :title "img",
+  :readiness :wtf-is-this,
+  :uuid "7a377e4e-1ef9-422f-af68-2a24c32b896c",
+  :author-url "https://teod.eu",
+  :created "2022-09-30",
+  :lang :en}
  {:slug "twitter-howto",
   :title "How to use Twitter",
   :readiness :wtf-is-this,
@@ -509,7 +516,8 @@
   :uuid "c0467e4b-0caa-4c7d-9c30-ffabc855ec6a",
   :author-url "https://teod.eu",
   :created "2022-09-27",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "curious",
   :title "Please talk to me about stuff that doesn't fit!",
   :readiness :wtf-is-this,

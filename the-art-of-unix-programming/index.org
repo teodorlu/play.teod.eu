@@ -7,4 +7,8 @@
 
 http://www.catb.org/~esr/writings/taoup/html/
 
-Book by [[id:4c29d9b7-617e-4178-83ca-e3c83cbd6e63][Eric Raymond]]
+By [[id:4c29d9b7-617e-4178-83ca-e3c83cbd6e63][Eric Raymond]].
+
+#+begin_quote
+As with buildings, it’s easier to repair superstructure on top of a solid foundation than it is to replace the foundations without trashing the superstructure.
+#+end_quote

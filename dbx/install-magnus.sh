@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-sudo ln -sf dbxx.clj /usr/local/bin/dbxx
+sudo ln -sf "$PWD/dbxx.clj" /usr/local/bin/dbxx
 
 mkdir -p ~/.config/dbx/
 ln -sf dbx.edn ~/.config/dbx/dbx.edn

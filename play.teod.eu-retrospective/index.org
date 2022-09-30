@@ -1076,6 +1076,11 @@ Scittle buttons, here we go.
 ** fin dag.
 Var gøy.
 Og vi er snart på
+** vil
+1. grave i [[id:e9a97a46-f252-4883-a311-21b20528d14d][Interface, Perception, Design]]
+2. fikse random_page-lenken på rotsiden.
+   1. det har jeg jo egentlig løst allerede: [[file:scittle-buttons/index.org]] | [[file:scittle-buttons/index.html]]
+
 * trailing whitespace
 #+BEGIN_VERSE
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-ln -s dbxx.clj /usr/local/bin/dbxx
+ln -sf dbxx.clj /usr/local/bin/dbxx
 
 mkdir -p ~/.config/dbx/
-ln -s dbx.edn ~/.config/dbx/dbx.edn
+ln -sf dbx.edn ~/.config/dbx/dbx.edn
 
 
 # Copy to .zshrc or .bashrc:

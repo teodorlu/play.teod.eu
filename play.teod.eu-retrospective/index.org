@@ -11,6 +11,13 @@ Structure:
 2. Critique sandbox / options
 3. Journal
 
+Language: mostly English, some Norwegian.
+
+"Should I read this?"
+Probably not.
+Dunno.
+Make up your mind, feel free to ask me a question :)
+
 * Synthesis
 Attention is aimed here.
 ** play.teod.eu success metric: strong language
@@ -1065,6 +1072,10 @@ So let's do just that.
 Scittle buttons, here we go.
 
 [[file:scittle-buttons/index.org]] | [[file:scittle-buttons/index.html]]
+* 2022-09-30
+** fin dag.
+Var gøy.
+Og vi er snart på
 * trailing whitespace
 #+BEGIN_VERSE
 

@@ -86,7 +86,13 @@
                              "But you're /very/ much welcome to have a look around 🤗")
                   (str "Most content on this site is authored by Teodor Heggelund"
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-                       "."))]
+                       ".")
+
+                  (lines "I think I might want to link to commentary on other people's stuff up here."
+                         "🤔"
+                         "TBD.")
+
+                  )]
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"

@@ -269,7 +269,7 @@ DRAFT
                 "|"
                 "./play.clj filter resolve-links"
                 "|"
-                "pandoc -f json -o" (html t) "--standalone --toc -H header-default-include.html"))))
+                "pandoc -f json -o" (html t) "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
 
 (defn makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts

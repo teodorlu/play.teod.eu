@@ -2,7 +2,6 @@
  :title "Eric Raymond",
  :readiness :wtf-is-this,
  :uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63",
- :author-url "https://teod.eu",
  :created "2022-09-21",
  :lang :en,
  :form :remote-reference}

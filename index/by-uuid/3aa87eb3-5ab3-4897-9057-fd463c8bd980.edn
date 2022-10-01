@@ -2,7 +2,6 @@
  :title "The Art of Unix Programming",
  :readiness :wtf-is-this,
  :uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
- :author-url "https://teod.eu",
  :created "2022-09-21",
  :lang :en,
  :form :remote-reference}

@@ -145,7 +145,6 @@
   :title "The Art of Unix Programming",
   :readiness :wtf-is-this,
   :uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -174,7 +173,6 @@
   :title "Extreme Ownership",
   :readiness :wtf-is-this,
   :uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -196,7 +194,6 @@
   :title "Marty Cagan",
   :readiness :wtf-is-this,
   :uuid "45f5cc28-79f9-4a88-930f-06f77e727479",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -209,7 +206,6 @@
   :title "Eric Raymond",
   :readiness :wtf-is-this,
   :uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -264,7 +260,6 @@
   :title "Jocko Willink",
   :readiness :wtf-is-this,
   :uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -389,7 +384,6 @@
   :title "The Courage to Be Disliked",
   :readiness :wtf-is-this,
   :uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -434,7 +428,6 @@
   :title "The Pragmatic Programmer",
   :readiness :wtf-is-this,
   :uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -449,7 +442,6 @@
   :title "Unicad",
   :readiness :wtf-is-this,
   :uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026",
-  :author-url "https://teod.eu",
   :created "2022-09-20",
   :lang :en,
   :form :remote-reference}
@@ -470,9 +462,9 @@
   :title "Scittle",
   :readiness :wtf-is-this,
   :uuid "b4b1ff9b-f22f-404f-bfb1-f4a04ccf5108",
-  :author-url "https://teod.eu",
   :created "2022-10-01",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "burnout-meaning-deep-work",
   :title
   "Facing burnout, finding meaning and making space for deep work",
@@ -521,7 +513,6 @@
   "Exploring onboarding success, organizational fit, and turnover intention of software professionals",
   :readiness :wtf-is-this,
   :uuid "c0467e4b-0caa-4c7d-9c30-ffabc855ec6a",
-  :author-url "https://teod.eu",
   :created "2022-09-27",
   :lang :en,
   :form :remote-reference}
@@ -560,7 +551,6 @@
   :title "Dark Agile",
   :readiness :wtf-is-this,
   :uuid "d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1",
-  :author-url "https://teod.eu",
   :created "2022-09-25",
   :lang :en,
   :form :remote-reference}
@@ -568,7 +558,6 @@
   :title "The Beginning of Infinity",
   :readiness :wtf-is-this,
   :uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
-  :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
@@ -576,7 +565,6 @@
   :title "Metamuse (podcast)",
   :readiness :wtf-is-this,
   :uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
-  :author-url "https://teod.eu",
   :created "2022-09-20",
   :lang :en,
   :form :remote-reference}

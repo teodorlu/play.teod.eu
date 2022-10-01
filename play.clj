@@ -301,7 +301,7 @@ DRAFT
                   "# Generate target for 404"
                   "404.html: 404.org"
                   (indent
-                   "pandoc --from=org+smart -i 404.org -t json | cat | pandoc -f json -o 404.html --standalone -H header-default-include.html")
+                   "pandoc --from=org+smart -i 404.org -t json | cat | pandoc -f json -o 404.html --standalone -H header-default-include.html -H scittle/scittle-with-extras.html")
 
 
                   ""

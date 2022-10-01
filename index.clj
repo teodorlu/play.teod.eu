@@ -66,6 +66,7 @@
                 remote-reference]}
         (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
+        words sentences
         lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
         lines (fn [& ls] (str/join "\n" (map str ls)))
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
@@ -73,7 +74,12 @@
      [(paragraphs "#+title: Towards an iterated game"
 
                   (lines "#+BEGIN_EXPORT html"
-                         "<button onclick=\"goto_random_page()\">Go to random page</button>"
+                         (str "<button "
+                              (words "onclick=\"goto_random_page()\""
+                                     "style=\"display:block; margin: 0px auto;\"")
+                              ">"
+                              "Go to random page"
+                              "</button>")
                          "#+END_EXPORT")
 
                   (sentences "Intent: bring ideas to life."

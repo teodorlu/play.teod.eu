@@ -154,6 +154,4 @@ Why: it introduces functional programming by focusing on what FP lets you /do/ r
 
 
 
-
-
 #+END_VERSE

@@ -1748,12 +1748,32 @@ knapper.</p>
 novel</a>, I realize that I want an interaction mode I don’t have right
 now. I want to scan through multiple pages. Try to set some
 attributes.</p>
-<p>ideas:</p>
+<h4 id="ideas">ideas</h4>
 <ol>
 <li>enable batch editing</li>
 <li>near the browser</li>
 <li>collections</li>
 </ol>
+<h4 id="i-could-define-a-data-export-i-could-interop-with.">I could
+define a data export I could “interop” with.</h4>
+<p>Then apply.</p>
+<p>I would essentially need an <em>action</em>.</p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>[<span class="at">:set</span> <span class="at">:precision</span> <span class="fl">0.2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; A</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:action</span> <span class="at">:merge-meta</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:page-uuid</span> <span class="st">&quot;abc123&quot;</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:meta</span> {<span class="at">:precision</span> <span class="fl">0.2</span>}}</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="co">;; B</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>{<span class="at">:action</span> <span class="at">:merge-meta</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a> <span class="at">:page-slug</span> <span class="st">&quot;precise-general-novel&quot;</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a> <span class="at">:meta</span> {<span class="at">:precision</span> <span class="fl">0.2</span>}}</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="co">;; but there are multiple pages.</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="co">;; Hmm</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a><span class="co">;; Not quite sure what to do about that.</span></span></code></pre></div>
 <h2 id="trailing-whitespace">trailing whitespace</h2>
 <div class="line-block"><br />
 <br />

@@ -1093,12 +1093,35 @@ til senere - vil grave i interface, perception, design og knapper.
 Reading [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][Precise, general, novel]], I realize that I want an interaction mode I don't have right now.
 I want to scan through multiple pages.
 Try to set some attributes.
-
-ideas:
-
+*** ideas
 1. enable batch editing
 2. near the browser
 3. collections
+*** I could define a data export I could "interop" with.
+Then apply.
+
+I would essentially need an /action/.
+
+#+begin_src clojure
+[:set :precision 0.2]
+#+end_src
+
+#+begin_src clojure
+;; A
+{:action :merge-meta
+ :page-uuid "abc123"
+ :meta {:precision 0.2}}
+
+;; B
+{:action :merge-meta
+ :page-slug "precise-general-novel"
+ :meta {:precision 0.2}}
+
+;; but there are multiple pages.
+;; Hmm
+;; Not quite sure what to do about that.
+#+end_src
+
 * trailing whitespace
 #+BEGIN_VERSE
 

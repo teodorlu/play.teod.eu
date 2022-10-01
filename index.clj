@@ -99,9 +99,9 @@
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
                        ".")
 
-                  (lines "I think I might want to link to commentary on other people's stuff up here."
-                         "🤔"
-                         "TBD.")
+                  (lines "# I think I might want to link to commentary on other people's stuff up here."
+                         "# 🤔"
+                         "# TBD.")
 
                   )]
      [""]

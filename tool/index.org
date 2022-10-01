@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: f71dae68-f21c-4a6c-a7b5-56272c57c185
+:END:
+#+TITLE: tools
+
+[[file:..][..]]
+
+Tools for this website.

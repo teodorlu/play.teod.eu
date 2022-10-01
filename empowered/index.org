@@ -15,3 +15,31 @@ Is this something their customers need? Is it substantially better than the alte
 #+end_quote
 
 By [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] and Chris Jones.
+
+-----
+
+I've learned a lot about product management from Kristian Collin Berge.
+
+In December 2020, he recommended I read a book called /Empowered/.
+
+I wrote a bit (Norwegian) about my takeaways from chapter 1:
+
+#+begin_quote
+Første kapittel skiller mellom dev teams, feature teams og empowered teams
+
+- dev teams implementerer en løsning etter en spec
+- feature teams eier hvordan en løsning skal implementeres
+- empowered teams eier en problemdefinisjon; finne problemet, finne ut hvordan problemet kan løses, implementere løsningen, og validere om problemet er løst.
+
+Forkortet fra sammendraget til kapittel 1:
+
+- Kunder og stakeholders kan ikke vite hva som bør bygges.
+- Selv om man kjenner godt til problemet, er det vanskelig å vite hva som er mulig, og hvilke løsninger som vil fungere
+- Så hvordan finner vi ut hva som bør bygges? Vi gjør produktutforskning eksplisitt, og gir teamet i oppgave å gjøre produktutforskning. Vi trenger med andre ord et empowered team.
+#+end_quote
+
+Reading Empowered fundamentally changed my view on how to build products.
+
+Big thank you to Kristian and Marty Cagan.
+
+❤️

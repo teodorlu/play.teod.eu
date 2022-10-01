@@ -160,7 +160,7 @@
 
      ["** Remote references"
       ""
-      "Pointers to other people, places, artifacts."
+      "Pointers to people, places, artifacts."
       ""
       (str/join " · " (for [page remote-reference] (page-link page)))
       ""

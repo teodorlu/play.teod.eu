@@ -166,23 +166,23 @@
 <header id="title-block-header">
 <h1 class="title">tools</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#all-files" id="toc-all-files">All files</a></li>
+<li><a href="#cljs-files" id="toc-cljs-files">CLJS files</a></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p>Tools for this website.</p>
-<pre class="shell" data-exports="both"><code># Here a list of files:
-ls
+<h2 id="all-files">All files</h2>
+<pre class="shell" data-exports="both"><code>bb -e &#39;(-&gt;&gt; (babashka.fs/glob &quot;.&quot; &quot;*&quot;) (map str))&#39;
 </code></pre>
-<table>
-<tbody>
-<tr class="odd">
-<td>index.html</td>
-</tr>
-<tr class="even">
-<td>index.org</td>
-</tr>
-<tr class="odd">
-<td>play.edn</td>
-</tr>
-</tbody>
-</table>
+<pre class="example"><code>index.html&quot; &quot;goto_random_page.cljs&quot; &quot;play.edn&quot; &quot;index.org
+</code></pre>
+<h2 id="cljs-files">CLJS files</h2>
+<pre class="shell" data-exports="both"><code>bb -e &#39;(-&gt;&gt; (babashka.fs/glob &quot;.&quot; &quot;*.cljs&quot;) (map #(str &quot;/tools/&quot; %)))&#39;
+</code></pre>
+<pre class="example"><code>/tools/goto_random_page.cljs
+</code></pre>
 </body>
 </html>

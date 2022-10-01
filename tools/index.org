@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: f71dae68-f21c-4a6c-a7b5-56272c57c185
+:END:
+#+TITLE: tools
+
+[[file:..][..]]
+
+Tools for this website.
+
+* All files
+
+#+begin_src shell :exports both
+bb -e '(->> (babashka.fs/glob "." "*") (map str))'
+#+end_src
+
+#+RESULTS:
+: index.html" "goto_random_page.cljs" "play.edn" "index.org
+
+* CLJS files
+
+#+begin_src shell :exports both
+bb -e '(->> (babashka.fs/glob "." "*.cljs") (map #(str "/tools/" %)))'
+#+end_src
+
+#+RESULTS:
+: /tools/goto_random_page.cljs

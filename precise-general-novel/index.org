@@ -5,7 +5,7 @@
 
 [[./..][..]]
 
-* Three axes:
+* Three axes: precision, generality, novelty
 
 | vague      | precise |
 | specific   | general |
@@ -21,8 +21,11 @@ Web3 wild speculation: vague, general, novel.
 
 Idea --- always better to move to the right.
 But hard.
-* or four axes
-generality, novelty, precision, subjectivity
+* or four axes: precision, generality, novelty, subjectivity
+| vague      | precise    |
+| specific   | general    |
+| well-known | novel      |
+| objective  | subjective |
 * From a long long time ago
 Copied over from: https://subcons.teod.eu/specific-precise/
 
@@ -51,7 +54,8 @@ Others are often happy with me when I strive to be specific.
 * consider :subjectivity
 Here's a table:
 
-| axis          | as 0         | as 1         |
+| axis          | when 0 %     | when 100 %   |
+|---------------+--------------+--------------|
 | :generality   | event        | physical law |
 | :novelty      | known by all | known by 1   |
 | :precision    | dream        | logic        |
@@ -93,6 +97,7 @@ good := \textit{correlation_map}^T * \textit{article_things}
 $$
 
 Hmm.
+
 * People can bring their own correlation thing
 Here are some contrasting views.
 Please don't mind me shrugging in the middle.

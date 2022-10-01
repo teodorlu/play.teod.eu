@@ -10,4 +10,4 @@ Common pitfall: forcing everyone to consider an "objective" on the same level.
 Rather: A goal can be an objective or a key result dependning on who you ask.
 
 What: Objective.
-How: key results
+How: key results.

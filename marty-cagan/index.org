@@ -6,3 +6,20 @@
 [[file:..][..]]
 
 https://twitter.com/cagan
+
+Marty Cagan has written two books I've really enjoyed:
+
+| book      | topic                                          |
+|-----------+------------------------------------------------|
+| [[https://www.svpg.com/books/empowered-ordinary-people-extraordinary-products/][Empowered]] | Product teams and the job of a product manager |
+| [[https://www.svpg.com/books/inspired-how-to-create-tech-products-customers-love-2nd-edition/][Inspired]]  | Product teams                                  |
+
+heh.
+"are they about the exact same thing?"
+Not really.
+
+There's also a third book from the same "gang":
+
+| book  | topic                         |
+|-------+-------------------------------|
+| [[https://www.svpg.com/books/loved-how-to-rethink-marketing-for-tech-products/][Loved]] | The role of product marketing |

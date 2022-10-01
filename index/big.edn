@@ -311,7 +311,8 @@
   :uuid "7a377e4e-1ef9-422f-af68-2a24c32b896c",
   :author-url "https://teod.eu",
   :created "2022-09-30",
-  :lang :en}
+  :lang :en,
+  :norandompls {}}
  {:slug "twitter-howto",
   :title "How to use Twitter",
   :readiness :wtf-is-this,
@@ -474,7 +475,7 @@
   :uuid "b58eff14-c704-4de3-b113-959fb41c0f5a",
   :lang :en}
  {:slug "play.teod.eu-retrospective",
-  :title "play.teod.eu: Rolling, curated retrospective",
+  :title "play.teod.eu: Rolling retrospective",
   :readiness :forever-incomplete,
   :author-url "https://teod.eu",
   :created "2022-07-24",

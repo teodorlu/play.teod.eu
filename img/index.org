@@ -35,3 +35,7 @@ play.teod.eu is not meant to be complete and polite.
 [[file:2020-iterate-teodor.jpg]]
 
 [[file:2020-svarttjern.jpg]]
+
+* Comments
+
+I would prefer to auto generate the image links, but I'm not quite sure how to do that.

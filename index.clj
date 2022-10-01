@@ -71,21 +71,22 @@
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
     (lines2
      [(paragraphs "#+title: Towards an iterated game"
-                  (sentences "Intent: bring ideas to life."
-                             "Discuss, sharpen, play."
-                             "Minimize the distance between intent and reality.")
-                  (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
-                             "Embrace remix culture.")
-                  (sentences "Status: work in progress, lots of rough edges."
-                             "But you're /very/ much welcome to have a look around 🤗")
-                  (str "Most content on this site is authored by Teodor Heggelund"
-                       " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-                       ".")
 
                   (lines "#+BEGIN_EXPORT html"
                          "<button onclick=\"goto_random_page()\">Go to random page</button>"
                          "#+END_EXPORT")
-                  )]
+
+                  (sentences "Intent: bring ideas to life."
+                             "Discuss, sharpen, play."
+                             "Minimize the distance between intent and reality.")
+                  (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
+                             "Embrace remix culture."
+                             "Legibility as affordance, not design constraint.")
+                  (sentences "Status: work in progress, lots of rough edges."
+                             "But you're /very/ much welcome to have a look around 🤗")
+                  (str "Most content on this site is authored by Teodor Heggelund"
+                       " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
+                       "."))]
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"

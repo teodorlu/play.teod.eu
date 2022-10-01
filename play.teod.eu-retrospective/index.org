@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: b722664c-d310-4908-9b57-98ffd73833c9
 :END:
-#+TITLE: play.teod.eu: Rolling, curated retrospective
+#+TITLE: play.teod.eu: Rolling retrospective
 
 [[file:..][..]]
 

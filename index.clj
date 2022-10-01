@@ -83,15 +83,6 @@
                        ".")
 
                   (lines "#+BEGIN_EXPORT html"
-                         "<p>"
-                         "<random-page-button>"
-                         "Go to random page"
-                         "</random-page-button>"
-                         "(doesn't look like a button but please try pressing it)"
-                         "</p>"
-                         "#+END_EXPORT")
-
-                  (lines "#+BEGIN_EXPORT html"
                          "<button onclick=\"goto_random_page()\">Go to random page</button>"
                          "#+END_EXPORT")
                   )]

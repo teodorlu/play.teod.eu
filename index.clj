@@ -76,7 +76,7 @@
                   (lines "#+BEGIN_EXPORT html"
                          (str "<button "
                               (words "onclick=\"goto_random_page()\""
-                                     "style=\"display:block; margin: 0px auto;\"")
+                                     "style=\"display:block; margin: 0px auto; font-size: 16px; \"")
                               ">"
                               "Go to random page"
                               "</button>")

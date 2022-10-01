@@ -5,4 +5,27 @@
 
 [[file:..][..]]
 
-DRAFT
+https://babashka.org/scittle/
+
+With Scittle, you can script your web browser with Clojurescript without compiling anything.
+
+This folder contains some HTML for loading up scittle.
+
+There's an HTML file in this folder that's meant to be included by other pages:
+
+#+begin_src shell :exports both
+ls | grep html | grep -v index.html
+#+end_src
+
+#+RESULTS:
+: scittle-with-extras.html
+
+Here it is:
+
+#+INCLUDE: "scittle-with-extras.html" src html
+
+Full path for inclusion:
+
+#+begin_src
+/scittle/scittle-with-extras.html
+#+end_src

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: b4b1ff9b-f22f-404f-bfb1-f4a04ccf5108
+:END:
+#+TITLE: Scittle
+
+[[file:..][..]]
+
+DRAFT

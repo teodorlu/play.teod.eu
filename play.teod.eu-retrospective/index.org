@@ -1088,7 +1088,6 @@ Så - se om jeg kan få gjort "gå til tilfeldig side"-knappen globalt tilgjenge
 endte opp med å skrive litt om Unicad og Excel.
 
 til senere - vil grave i interface, perception, design og knapper.
-
 * trailing whitespace
 #+BEGIN_VERSE
 

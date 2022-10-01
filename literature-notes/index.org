@@ -5,14 +5,8 @@
 
 [[file:..][..]]
 
-* _ Prelude
-This page is extra different from other places.
-Toplevel is indexed by foreign sources.
-Then, there's temporal organization.
-Why?
-I don't think every other site merits having it's own dedicated page here.
-So why not put it on [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]]?
-Because I want it index by source and /then date/, not the other way around.
+Commentary on other people's websites :)
+
 * https://prog21.dadgum.com
 ** Why?
 We seem to have very similar perspectives on programming.
@@ -35,3 +29,15 @@ I think that's right.
 
 Man.
 * https://ideolalia.com/
+** https://ideolalia.com/essays/two-concepts-of-legibility.html
+legibility definitions:
+
+1. Coercive legibility.
+   A state requires people to follow rules.
+2. Legibility as an affordance.
+   Usable complex systems have built-in discovery mechanisms.
+
+| coercive legibility         | https://en.wikipedia.org/wiki/Seeing_Like_a_State   |
+| legibility as an affordance | https://en.wikipedia.org/wiki/The_Image_of_the_City |
+
+Here on play.teod.eu, I try to embrace chaos, /then/ solve for attention design and discoverability.

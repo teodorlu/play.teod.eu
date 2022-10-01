@@ -13,7 +13,7 @@ Haha, this is amazing.
 This idea didn't get too far.
 Really love that =M-x teod-play-random= can just send me over here.
 ** 2022-10-01
-Still no content here!
+*** Still no content here!
 Single letter page ...
 
 I think I'm starting to embrace /replacability/ in software.
@@ -21,3 +21,8 @@ I want to write functions I can easily replace.
 I want to know how my functions are used.
 
 I think I listened to [[https://twitter.com/ChristinGorman][Christin Gorman]] talk about this some time, but I can't find the video.
+*** xx
+|          | culture    | things  |
+|----------+------------+---------|
+| describe | humanities | science |
+| create   | art        | design  |

@@ -149,3 +149,11 @@ Why: great read, actionable, will make your code better.
 more on programming 2:
 [[id:2dc52e4f-0604-4d33-a50c-1e8534266a47][Grokking Simplicity]] by Eric Normand.
 Why: it introduces functional programming by focusing on what FP lets you /do/ rather than attempt to stuff abstract theory down your throat.
+
+#+BEGIN_VERSE
+
+
+
+
+
+#+END_VERSE

@@ -6,3 +6,13 @@
 [[file:..][..]]
 
 Tools for this website.
+
+#+begin_src shell :exports both
+# Here a list of files:
+ls
+#+end_src
+
+#+RESULTS:
+| index.html |
+| index.org  |
+| play.edn   |

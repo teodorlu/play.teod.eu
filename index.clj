@@ -82,6 +82,11 @@
                               "</button>")
                          "#+END_EXPORT")
 
+                  (lines "#+BEGIN_VERSE"
+                         ""
+                         ""
+                         "#+END_VERSE")
+
                   (sentences "Intent: bring ideas to life."
                              "Discuss, sharpen, play."
                              "Minimize the distance between intent and reality.")

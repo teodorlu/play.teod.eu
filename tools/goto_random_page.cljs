@@ -3,12 +3,11 @@
             [ajax.core :refer [GET]]))
 
 (defn goto-random-page []
-  (let [handler (fn [big-index-str]
-                  (let [big-index (edn/read-string big-index-str)
-                        item (rand-nth big-index)]
-                    (prn item)
-                    ;; window.location.href = "/" + item.slug + "/"
-                    (set! (.-href js/window.location) (str "/" (:slug item) "/"))))]
-    (GET "/index/big.edn" {:handler handler})))
+  (GET "/index/big.edn" {:handler (fn [big-index-str]
+                                    (let [page (->> big-index-str
+                                                    edn/read-string
+                                                    (remove #(contains? % :noindex))
+                                                    rand-nth)]
+                                      (set! (.-href js/window.location) (str "/" (:slug page) "/"))))}))
 
 (set! (.-goto_random_page js/window) goto-random-page)

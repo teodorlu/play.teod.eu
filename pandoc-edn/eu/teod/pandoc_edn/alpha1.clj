@@ -3,6 +3,20 @@
             [cheshire.core :as json]
             [eu.teod.pandoc-edn.alpha1 :as pandoc]))
 
+;; design goals:
+;;
+;;  - support babashka and JVM clojure
+;;  - encourage treating pandoc JSON as a narrow waist for documents
+;;
+;; non-goals (for now):
+;;
+;;  - wrap all of pandoc's API interface
+;;
+;; stuff I'm uncertain about:
+;;
+;;  - I want to handle errors better. Not sure how to go about that.
+;;  - Not sure how to do "library stuff" - publishing, etc.
+
 (defn ^:private process-sync [cmd opts]
   (slurp (:out (babashka.process/process cmd opts))))
 

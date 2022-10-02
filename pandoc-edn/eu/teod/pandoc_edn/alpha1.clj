@@ -1,7 +1,6 @@
 (ns eu.teod.pandoc-edn.alpha1
   (:require [babashka.process]
-            [cheshire.core :as json]
-            [eu.teod.pandoc-edn.alpha1 :as pandoc]))
+            [cheshire.core :as json]))
 
 ;; design goals:
 ;;
@@ -16,6 +15,7 @@
 ;;
 ;;  - I want to handle errors better. Not sure how to go about that.
 ;;  - Not sure how to do "library stuff" - publishing, etc.
+;;  - How to balance stuff people might want with me wanting to take this slow
 
 (defn ^:private process-sync [cmd opts]
   (slurp (:out (babashka.process/process cmd opts))))

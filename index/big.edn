@@ -50,6 +50,13 @@
   :created "2022-07-14",
   :uuid "0cc48734-e933-44cb-a4e8-2678f125f6df",
   :lang :en}
+ {:slug "pandoc-edn",
+  :title "pandoc-edn",
+  :readiness :wtf-is-this,
+  :uuid "11b5047d-6174-4c81-bc2f-bb212941f409",
+  :author-url "https://teod.eu",
+  :created "2022-10-03",
+  :lang :en}
  {:slug "scicloj",
   :title "Scicloj",
   :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",

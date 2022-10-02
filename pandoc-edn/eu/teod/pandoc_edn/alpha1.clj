@@ -10,7 +10,10 @@
 ;;
 ;; non-goals (for now):
 ;;
-;;  - wrap all of pandoc's API interface
+;;  - wrap all of pandoc's CLI arguments.
+;;    Pandoc supports /a lot/. There might be multiple ways to achieve the same thing.
+;;    I don't want multiple ways to achieve the same thing.
+;;    I want a nice, narrow data driven interface.
 ;;
 ;; stuff I'm uncertain about:
 ;;
@@ -27,7 +30,7 @@
   (slurp (:out (babashka.process/process cmd opts))))
 
 (defn from-string [s opts]
-  (let [supported? #{:markdown :markdown+smart :org :org+smart :html} ; whitelist for now
+  (let [supported? #{:markdown :markdown+smart :org :org+smart :html :plain} ; whitelist for now
         format (:format opts)]
     (assert (supported? format))
     (json/parse-string (process-sync ["pandoc" "--from" (name format) "--to" "json"]
@@ -35,7 +38,7 @@
                        keyword)))
 
 (defn to-string [pandoc opts]
-  (let [supported? #{:markdown :markdown+smart :org :org+smart :html} ; whitelist for now
+  (let [supported? #{:markdown :markdown+smart :org :org+smart :html :plain} ; whitelist for now
         format (:format opts)]
     (assert (supported? format))
     (process-sync ["pandoc" "--from" "json" "--to" (name format)]
@@ -116,5 +119,13 @@ Does this look nice?"
         (pandoc/to-string {:format :markdown}))
 
     )
+
+  (-> "ye say \"smart quotes\", ye do?"
+      (pandoc/from-string {:format :org+smart})
+      (pandoc/to-string {:format :plain}))
+  ;; =>
+  "ye say “smart quotes”, ye do?\n"
+
+
 
   )

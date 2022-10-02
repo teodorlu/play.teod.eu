@@ -1,6 +1,7 @@
 (ns eu.teod.pandoc-edn.alpha1
   (:require [babashka.process]
-            [cheshire.core :as json]))
+            [cheshire.core :as json]
+            [clojure.walk]))
 
 ;; design goals:
 ;;
@@ -16,6 +17,11 @@
 ;;  - I want to handle errors better. Not sure how to go about that.
 ;;  - Not sure how to do "library stuff" - publishing, etc.
 ;;  - How to balance stuff people might want with me wanting to take this slow
+;;
+;; todolist:
+;;
+;;  - [ ] Who do I want feedback from? I'd like some mentorship.
+;;  - [x] Provide an idiomatic "walk" method.
 
 (defn ^:private process-sync [cmd opts]
   (slurp (:out (babashka.process/process cmd opts))))
@@ -34,6 +40,22 @@
     (assert (supported? format))
     (process-sync ["pandoc" "--from" "json" "--to" (name format)]
                   {:in (json/generate-string pandoc)})))
+
+(defn prewalk
+  [pandoc filter-fn]
+  ;; uncertain about argument order.
+  ;;
+  ;;  1. In this ns, I like to have PANDOC as first arg.
+  ;;  2. In clojure.walk, FORM is second arg.
+  (update pandoc :blocks
+          (fn [blocks]
+            (clojure.walk/prewalk filter-fn blocks))))
+
+(defn postwalk
+  [pandoc filter-fn]
+  (update pandoc :blocks
+          (fn [blocks]
+            (clojure.walk/postwalk filter-fn blocks))))
 
 (comment
   ;; example invocations
@@ -63,5 +85,36 @@
 Does this look nice?"
       (pandoc/from-string {:format :markdown})
       (pandoc/to-string {:format :html}))
+
+(-> "# pandoc, just awesome
+
+Does this look nice?"
+      (pandoc/from-string {:format :markdown})
+      :blocks
+      first)
+
+  (-> "# pandoc, just awesome
+
+Does this look nice?"
+      (pandoc/from-string {:format :markdown})
+      :blocks
+      first
+      :c
+      (get 2))
+
+  (let [header? (fn [x]
+                  (= (:t x)
+                     "Header"))]
+    (-> "# pandoc, just awesome
+
+Does this look nice?"
+        (pandoc/from-string {:format :markdown})
+        (pandoc/prewalk (fn [x]
+                          (if (header? x)
+                            (update-in x [:c 2] (constantly [{:t "Str", :c "Pandoc is flexible."}]))
+                            x)))
+        (pandoc/to-string {:format :markdown}))
+
+    )
 
   )

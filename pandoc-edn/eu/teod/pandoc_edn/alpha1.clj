@@ -1,25 +1,31 @@
 (ns eu.teod.pandoc-edn.alpha1
   (:require [babashka.process]
-            [cheshire.core :as json]))
+            [cheshire.core :as json]
+            [eu.teod.pandoc-edn.alpha1 :as pandoc]))
 
 (defn ^:private process-sync [cmd opts]
   (slurp (:out (babashka.process/process cmd opts))))
 
 (defn from-string [s opts]
-  (let [supported #{:markdown :markdown+smart :org :org+smart}
+  (let [supported? #{:markdown :markdown+smart :org :org+smart :html} ; whitelist for now
         format (:format opts)]
-    (assert (supported format))
+    (assert (supported? format))
     (json/parse-string (process-sync ["pandoc" "--from" (name format) "--to" "json"]
                                      {:in s})
                        keyword)))
 
-(defn to-string [pandoc opts])
+(defn to-string [pandoc opts]
+  (let [supported? #{:markdown :markdown+smart :org :org+smart :html} ; whitelist for now
+        format (:format opts)]
+    (assert (supported? format))
+    (process-sync ["pandoc" "--from" "json" "--to" (name format)]
+                  {:in (json/generate-string pandoc)})))
 
 (comment
   ;; example invocations
-  (require '[eu.teod.pandoc-edn.alpha1 :as pandoc])
 
-  (process-sync ["pandoc" "--from" "markdown" "--to" "json"] {:in ""})
+  ;; this ns is written to be aliased as "pandoc"
+  (require '[eu.teod.pandoc-edn.alpha1 :as pandoc])
 
   (pandoc/from-string "# My heading" {:format :markdown})
   ;; returns
@@ -32,7 +38,16 @@
       ["my-heading" [] []]
       [{:t "Str", :c "My"} {:t "Space"} {:t "Str", :c "heading"}]]}]}
 
-  (str :markdown)
+  (pandoc/from-string "<div>lol</div>" {:format :html})
 
+  (-> "<div>lol</div>"
+      (pandoc/from-string {:format :html})
+      (pandoc/to-string {:format :html}))
+
+  (-> "# Heading
+
+Does this look nice?"
+      (pandoc/from-string {:format :markdown})
+      (pandoc/to-string {:format :html}))
 
   )

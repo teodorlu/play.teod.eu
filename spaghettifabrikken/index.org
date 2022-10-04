@@ -49,5 +49,13 @@ Map generation settings for use with --create, --start-server-load-scenario or -
 
 Interlude - I like the Factorio CLI.
 ** Found default conf yay
+Look here:
 
-#+INCLUDE: "doc.md" src markdown
+#+begin_src shell :exports both
+ls *settings.json
+#+end_src
+
+#+RESULTS:
+| map-gen-settings.json |
+| map-settings.json     |
+| server-settings.json  |

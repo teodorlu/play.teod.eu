@@ -175,3 +175,8 @@ Workon context should:
 
 1. Provide a good default for writes - a "create page" action
 2. Narrow down for reads
+* 2022-10-04
+** All your bookmarks are belong to babashka
+Title for launch post for =dbx= to Clojurians Slack.
+*** CONTRIBUTING
+I want to collect providers and embarkers!

@@ -1,0 +1,50 @@
+{
+    "name": "Spaghettifabrikken",
+    "description": "Her skjer det bare tull ass.",
+    "tags": [],
+
+    "max_players": 0,
+
+    "visibility":
+    {
+        "public": false,
+        "lan": true
+    },
+
+    "username": "",
+    "password": "",
+    "token": "",
+
+
+    "_game_password": [ "Jeg tenker at vi kjører ingame name whitelist, så har jeg oversikt over hvem som spiller."
+                      , "Så slipper jeg også å publisere et \"hemmelig\" passord på nett lol "],
+    "game_password": "",
+
+    "require_user_verification": true,
+    "max_upload_in_kilobytes_per_second": 0,
+    "max_upload_slots": 5,
+    "minimum_latency_in_ticks": 0,
+    "max_heartbeats_per_second": 60,
+
+    "ignore_player_limit_for_returning_players": false,
+    "allow_commands": "admins-only",
+
+    "autosave_interval": 10,
+    "autosave_slots": 5,
+    "afk_autokick_interval": 0,
+
+    "_comment_auto_pause": ["Whether should the server be paused when no players are present."
+                            , "teod: yes please! "],
+    "auto_pause": true,
+
+    "only_admins_can_pause_the_game": true,
+
+    "autosave_only_on_server": true,
+    "non_blocking_saving": false,
+
+    "_comment_segment_sizes": "Long network messages are split into segments that are sent over multiple ticks. Their size depends on the number of peers currently connected. Increasing the segment size will increase upload bandwidth requirement for the server and download bandwidth requirement for clients. This setting only affects server outbound messages. Changing these settings can have a negative impact on connection stability for some clients.",
+    "minimum_segment_size": 25,
+    "minimum_segment_size_peer_count": 20,
+    "maximum_segment_size": 100,
+    "maximum_segment_size_peer_count": 10
+}

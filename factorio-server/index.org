@@ -48,3 +48,6 @@ Map generation settings for use with --create, --start-server-load-scenario or -
 #+end_quote
 
 Interlude - I like the Factorio CLI.
+** Found default conf yay
+
+#+INCLUDE: "doc.md" src markdown

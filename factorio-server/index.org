@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: f19dd2e4-e45e-484b-bcfb-5436e6ca1e53
+:END:
+#+TITLE: Factorio dedicated server
+
+[[file:..][..]]
+
+I want to host a dedicated Factorio server!

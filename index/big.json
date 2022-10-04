@@ -668,6 +668,14 @@
   "uuid" : "e9a97a46-f252-4883-a311-21b20528d14d",
   "lang" : "en"
 }, {
+  "slug" : "factorio-server",
+  "title" : "Factorio dedicated server",
+  "readiness" : "wtf-is-this",
+  "uuid" : "f19dd2e4-e45e-484b-bcfb-5436e6ca1e53",
+  "author-url" : "https://teod.eu",
+  "created" : "2022-10-04",
+  "lang" : "en"
+}, {
   "slug" : "dbx",
   "title" : "teod/dbx: a toolkit for building your own personal knowledge base",
   "readiness" : "wtf-is-this",

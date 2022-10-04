@@ -1,0 +1,50 @@
+{
+    "_teodor": ["hei :)",
+                "jeg har beholdt det meste som default, men kommenterer når det ikke er tilfellet."],
+
+    "terrain_segmentation": 1,
+
+    "water": 1,
+
+    "width": 0,
+    "height": 0,
+
+    "starting_area": 1,
+
+    "peaceful_mode": false,
+    "autoplace_controls":
+    {
+        "coal": {"frequency": 1, "size": 1, "richness": 1},
+        "stone": {"frequency": 1, "size": 1, "richness": 1},
+        "copper-ore": {"frequency": 1, "size": 1,"richness": 1},
+        "iron-ore": {"frequency": 1, "size": 1, "richness": 1},
+        "uranium-ore": {"frequency": 1, "size": 1, "richness": 1},
+        "crude-oil": {"frequency": 1, "size": 1, "richness": 1},
+        "trees": {"frequency": 1, "size": 1, "richness": 1},
+        "enemy-base": {"frequency": 1, "size": 1, "richness": 1}
+    },
+
+    "cliff_settings":
+    {
+        "name": "cliff",
+        "cliff_elevation_0": 10,
+        "cliff_elevation_interval": 40,
+        "_richness_comment": "Called 'cliff continuity' in the map generator GUI. 0 will result in no cliffs, 10 will make all cliff rows completely solid",
+        "richness": 1
+    },
+
+    "property_expression_names":
+    {
+        "control-setting:moisture:frequency:multiplier": "1",
+        "control-setting:moisture:bias": "0",
+        "control-setting:aux:frequency:multiplier": "1",
+        "control-setting:aux:bias": "0"
+    },
+
+    "starting_points":
+    [
+        { "x": 0, "y": 0}
+    ],
+
+    "seed": null
+}

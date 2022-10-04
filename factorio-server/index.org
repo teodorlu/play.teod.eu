@@ -36,3 +36,15 @@ $ ./bin/x64/factorio --start-server ./saves/my-save.zip
 #+end_src
 
 /Q: Where do I find documentation for the JSON in server-settings and map-settings?/
+
+A1: found official docs for CLI arguments: https://wiki.factorio.com/Command_line_parameters
+
+A2: found more:
+
+#+begin_quote
+--map-gen-settings FILE
+
+Map generation settings for use with --create, --start-server-load-scenario or --generate-map-preview. See data/map-gen-settings.example.json
+#+end_quote
+
+Interlude - I like the Factorio CLI.

@@ -6,3 +6,33 @@
 [[file:..][..]]
 
 I want to host a dedicated Factorio server!
+
+* 2022-10-04
+** Reading https://wiki.factorio.com/Multiplayer
+Looks like there's a headless binary distribution - they are referrring to a =factorio= executable.
+
+And it's possible to control settings for map generation and maps.
+
+*** Create a save and run run the server 1
+
+#+begin_src
+# This creates a new save, as if by clicking the New Game button in the GUI
+$ ./bin/x64/factorio --create ./saves/my-save.zip
+#+end_src
+
+#+begin_src
+# This starts a server that will host the file created on the previous line
+$ ./bin/x64/factorio --start-server ./saves/my-save.zip
+#+end_src
+
+*** Create a save and run the server 2 - while controlling settings
+
+#+begin_src
+./bin/x64/factorio --create saves/my-save.zip --map-gen-settings my-map-gen-settings.json --map-settings my-map-settings.json
+#+end_src
+
+#+begin_src
+./bin/x64/factorio --start-server-load-latest --server-settings ./data/server-settings.json
+#+end_src
+
+/Q: Where do I find documentation for the JSON in server-settings and map-settings?/

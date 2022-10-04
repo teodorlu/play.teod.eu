@@ -180,7 +180,41 @@
 <header id="title-block-header">
 <h1 class="title">Factorio dedicated server</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#section" id="toc-section">2022-10-04</a>
+<ul>
+<li><a href="#reading-httpswiki.factorio.commultiplayer"
+id="toc-reading-httpswiki.factorio.commultiplayer">Reading
+<span>https://wiki.factorio.com/Multiplayer</span></a></li>
+</ul></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p>I want to host a dedicated Factorio server!</p>
+<h2 id="section">2022-10-04</h2>
+<h3 id="reading-httpswiki.factorio.commultiplayer">Reading <a
+href="https://wiki.factorio.com/Multiplayer">https://wiki.factorio.com/Multiplayer</a></h3>
+<p>Looks like there’s a headless binary distribution - they are
+referrring to a <code class="verbatim">factorio</code> executable.</p>
+<p>And it’s possible to control settings for map generation and
+maps.</p>
+<h4 id="create-a-save-and-run-run-the-server-1">Create a save and run
+run the server 1</h4>
+<pre><code># This creates a new save, as if by clicking the New Game button in the GUI
+$ ./bin/x64/factorio --create ./saves/my-save.zip
+</code></pre>
+<pre><code># This starts a server that will host the file created on the previous line
+$ ./bin/x64/factorio --start-server ./saves/my-save.zip
+</code></pre>
+<h4
+id="create-a-save-and-run-the-server-2---while-controlling-settings">Create
+a save and run the server 2 - while controlling settings</h4>
+<pre><code>./bin/x64/factorio --create saves/my-save.zip --map-gen-settings my-map-gen-settings.json --map-settings my-map-settings.json
+</code></pre>
+<pre><code>./bin/x64/factorio --start-server-load-latest --server-settings ./data/server-settings.json
+</code></pre>
+<p><em>Q: Where do I find documentation for the JSON in server-settings
+and map-settings?</em></p>
 </body>
 </html>

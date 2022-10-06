@@ -9,6 +9,6 @@ NILS ER AWWESOMEEEEEEEEE
 
 #+begin_export html
 <script>
-console.log("NILS")
+alert("NILS")
 </script>
 #+end_export

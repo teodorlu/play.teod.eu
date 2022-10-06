@@ -341,6 +341,13 @@
   :created "2022-07-14",
   :uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
   :lang :en}
+ {:slug "nils-er-awesome",
+  :title "Nils er Awesome",
+  :readiness :wtf-is-this,
+  :uuid "7eedf16d-7f5e-4697-8221-f608eaaceb9d",
+  :author-url "https://teod.eu",
+  :created "2022-10-06",
+  :lang :en}
  {:slug "intersection-work-play",
   :title "What's a good intersection between work and play?",
   :readiness :ready-for-comments,

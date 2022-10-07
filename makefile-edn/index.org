@@ -7,6 +7,10 @@
 
 Idea - provide mappers from/to Makefiles
 
+Message from 2022-10: I no longer think this is a good idea.
+Just use babashka.fs.
+Don't bother with the Makefiles.
+
 * Makefile EDN spec
 | :comment      | Makefile comment with #                | string              |
 | :target       | Makefile target                        | string              |

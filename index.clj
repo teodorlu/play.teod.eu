@@ -114,7 +114,7 @@
                          (for [page (filter #(nil? (:created %)) ready-for-comments)]
                            (str "- " (page-link-with-date page))))
 
-                  "Things I've written up:"
+                  "Things I've written:"
                   (apply lines
                          (for [page (reverse (sort-by :created (filter (comp some? :created ) ready-for-comments)))]
                            (str "- " (page-link-with-date page)))))]

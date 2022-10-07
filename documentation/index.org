@@ -57,8 +57,10 @@ Can the documentation you wrote successfully explain the topic to someone else?
 Do others find your documentation, or repeatedly ask the same question?
 And has anyone ever read the whole thing you wrote?
 
-It pains me that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never look at it again.
-"oh, it's just docs.", we way, turn our back on the text, and write more code.
+It pains me that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never back.
+In one sentence, we preach continuous delivery, continuous integration, and caring about working code, as the old timers of the Agile Manifesto would way.
+In the next, we see a fellow dev struggle with complete disorientation, and we turn our backs on them.
+"oh, it's just docs.", we say, and write more code.
 
 *why care?*
 

@@ -162,6 +162,13 @@
   :created "2022-07-23",
   :uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7",
   :lang :en}
+ {:slug "hei-christian",
+  :title "Hei, Christian!",
+  :readiness :wtf-is-this,
+  :uuid "3c279992-b42e-431c-8925-052a2dbfebfa",
+  :author-url "https://teod.eu",
+  :created "2022-10-06",
+  :lang :en}
  {:slug "charles-comstock-sketches",
   :title "Charles Comstock's sketches",
   :readiness :wtf-is-this,

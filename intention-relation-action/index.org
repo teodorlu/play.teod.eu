@@ -1,12 +1,12 @@
 :PROPERTIES:
 :ID: 0391bd0a-f3cf-4aaa-bc00-24662c71e539
 :END:
-#+title: Intention, Relation, Action
+#+title: Intent, Relationships, Action
 
 [[./..][..]]
 
-1. Intention
-2. Relation
+1. Intent
+2. Relationships
 3. Action
 
 Be intentional in what you do.

@@ -63,7 +63,7 @@ In one sentence, we preach continuous delivery, continuous integration, and cari
 In the next, we see a fellow dev struggle with complete disorientation, and we turn our backs on them.
 "oh, it's just docs.", we say, and write more code.
 
-*why care?*
+*why care about documentation?*
 
 Because understanding how to structure knowledge properly turns situations of total confusion into interesting design problems.
 

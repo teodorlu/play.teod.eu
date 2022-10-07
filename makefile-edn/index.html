@@ -148,10 +148,15 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -219,6 +224,22 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -238,7 +259,29 @@ id="toc-example-makefile-as-edn">Example makefile as EDN</a></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
-<p>Idea - provide mappers from/to Makefiles</p>
+<p>Original Idea - provide mappers from EDN to Makefiles - and back
+again.</p>
+<blockquote>
+<p>Message from 2022-10-07: I no longer think this is a good idea.</p>
+<p>I now believe:</p>
+<ol>
+<li>Build dependencies are just data and code</li>
+<li>Generally, it’s nice to have a auto-caching <em>build
+everything</em>-command</li>
+<li>This can be solved with EDN, <code
+class="verbatim">babashka.fs/glob</code> and <code
+class="verbatim">babashka.fs/modified-since</code></li>
+</ol>
+<p>Why?</p>
+<ol>
+<li>It’s possible to get equivalent performance with just babashka -
+perhaps even better if we don’t have to start / restart processes</li>
+<li>There’s just one language</li>
+<li>The “do we check in the Makefile?” question does not exist</li>
+<li>Other things can use the same EDN data that models build
+dependencies.</li>
+</ol>
+</blockquote>
 <h2 id="makefile-edn-spec">Makefile EDN spec</h2>
 <table>
 <tbody>

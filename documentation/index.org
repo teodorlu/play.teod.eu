@@ -54,6 +54,7 @@ Do others find your documentation, or repeatedly ask the same question?
 And has anyone ever read the whole thing you wrote?
 
 It pains me that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never look at it again.
+"oh, it's just docs.", we way, and make more stuff.
 
 *why care?*
 

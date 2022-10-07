@@ -47,7 +47,7 @@ I want to enable us to /see better/, so that we can create better.
 Can documentation be good?
 
 I can find the act of writing documentation to be an enjoyable experience.
-It's so close the /intent/ of [[id:0391bd0a-f3cf-4aaa-bc00-24662c71e539][Intent, Relation, Action]].
+It's so close the /intent/ of [[id:0391bd0a-f3cf-4aaa-bc00-24662c71e539][Intent, Relationships, Action]].
 
 I approach documentation in the same way I approach code --- through [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
 I write documentation as the interface between my understanding and your understanding.

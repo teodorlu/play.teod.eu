@@ -148,14 +148,35 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -214,5 +235,9 @@ a page and never care again.</p>
 <p>Because understanding how to structure knowledge properly turns
 situations of total confusion into interesting design problems.</p>
 <p>Who knows what? Who needs to know what?</p>
+<p>To me, that’s <em>exceptionally important</em>. I care about our
+shared understanding.</p>
+<p>I don’t want us to have an okay-ish shared understanding. I want our
+shared understanding to be <em>good</em>.</p>
 </body>
 </html>

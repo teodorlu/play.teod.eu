@@ -53,7 +53,7 @@ Can the documentation you wrote successfully explain the topic to someone else?
 Do others find your documentation, or repeatedly ask the same question?
 And has anyone ever read the whole thing you wrote?
 
-I find it to be a great shame that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never look at it again.
+It's a great shame that we strive to produce great code, but when it comes to documentation, we're content to slap some words on a page and never look at it again.
 
 *why care?*
 

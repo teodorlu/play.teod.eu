@@ -107,10 +107,17 @@
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"
-                  "Feel free to have a look :)")]
+                  "Feel free to have a look :)"
 
-     (for [page (sort-by :created  ready-for-comments)]
-       (str "- " (page-link-with-date page)))
+                  "Things I believe:"
+                  (apply lines
+                         (for [page (filter #(nil? (:created %)) ready-for-comments)]
+                           (str "- " (page-link-with-date page))))
+
+                  "Things I've written up:"
+                  (apply lines
+                         (for [page (reverse (sort-by :created (filter (comp some? :created ) ready-for-comments)))]
+                           (str "- " (page-link-with-date page)))))]
 
      [(paragraphs "** Other people's idea playgrounds"
                   (lines

@@ -17,7 +17,7 @@ Then kill it and put it in text.
 
 -----
 
-I have had some of the weirdest conversations in my life when the topic of documentation comes up.
+I've some of the weirdest conversations in my life when the topic of documentation comes up.
 I like writing things down.
 In fact, I find /great/ utility in writing things down.
 Written text extends my mind.

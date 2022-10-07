@@ -44,7 +44,7 @@ I want to enable us to see better, so that we can create better.
 Can documentation be good?
 
 I can find it motivating to build documentation.
-I approach documentation in the same way as I approach code --- through [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
+I approach documentation in the same way I approach code --- through [[id:2e1280a4-a783-4ab7-9f5c-58a7851a8218][Feedback loops, interface design and how stuff works]].
 I write documentation as the interface between my understanding and your understanding.
 The feedback loop tests how well the documentation explains its topic.
 Can you understand what you've written yourself?

@@ -85,7 +85,7 @@ That's our strategic process --- or lack thereof.
 
 (the article is over - keep on reading or do something else at your own leisure :))
 
-/Erik/ (Teodor paraphrasiing): there was this library I remember using.
+/Erik/ (Teodor paraphrasing): there was this library I remember using.
 Its docs were amazing.
 I've read references.
 Like, when you have a list of all the functions and docstrings.

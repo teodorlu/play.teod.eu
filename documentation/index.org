@@ -85,10 +85,11 @@ That's our strategic process --- or lack thereof.
 
 (the article is over - keep on reading or do something else at your own leisure :))
 
-/Erik/ (I'm paraphrasiing): there's this one library i remember using.
-Its docs were absolutely amazing.
+/Erik/ (I'm paraphrasiing): there was this library I remember using.
+Its docs were amazing.
 I've read references.
 Like, when you have a list of all the functions and docstrings.
+Lots of detail.
 But there was this .NET libary called triangle.net.
 They just had a list of examples.
 The first example was easy.

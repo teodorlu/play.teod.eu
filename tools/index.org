@@ -32,3 +32,9 @@ bb -e '(->> (babashka.fs/glob "." "*.cljs")
 
 #+RESULTS:
 : (/tools/goto_random_page.cljs)
+
+#+BEGIN_VERSE
+
+
+
+#+END_VERSE

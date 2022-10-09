@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: c032492c-c104-4de2-b3eb-6b8097557f25
 :END:
-#+TITLE: Writing documentation is creative work, not toil
+#+TITLE: Writing documentation is best viewed as creative work
 
 [[./..][..]]
 

@@ -7,20 +7,26 @@
 
 Tools for this website.
 
+This subdirectory contains some scripts.
+
 * All files
 
-#+begin_src shell :exports both
-bb -e '(->> (babashka.fs/glob "." "*") (map str))'
+Every file in this subdirectory:
+
+#+begin_src shell :exports both :format raw
+bb -e '(->> (babashka.fs/glob "." "*") (map str) (println))'
 #+end_src
 
 #+RESULTS:
-: index.html" "goto_random_page.cljs" "play.edn" "index.org
+: (index.html goto_random_page.cljs play.edn index.org)
 
 * CLJS files
 
-#+begin_src shell :exports both
-bb -e '(->> (babashka.fs/glob "." "*.cljs") (map #(str "/tools/" %)))'
+Every clojurescript file in this subdirectory:
+
+#+begin_src shell :exports both :format raw
+bb -e '(->> (babashka.fs/glob "." "*.cljs") (map #(str "/tools/" %)) (println))'
 #+end_src
 
 #+RESULTS:
-: /tools/goto_random_page.cljs
+: (/tools/goto_random_page.cljs)

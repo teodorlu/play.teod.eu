@@ -9,14 +9,25 @@
 
 "Documentation".
 
-That killed the conversation quickly, am I right?
+As I speak the word out loud, the conversation dies down.
 
-It's that dead thing that's painful to write.
-But you gotta do it.
-Fun stuff first, mess around.
+It's that dead thing.
+That thing I don't like writing.
+But I have to anyway.
 
-Then kill any fun you might have had.
-Scrape up some leftovers, and put them in words on a page.
+Coding is fun!
+I make stuff.
+I mess around, often clean it up too.
+
+Then --- /ugh/ --- there's writing docs.
+
+I don't even remember what I did.
+Well, I remember parts of it.
+I can write that.
+I type it up quickly, and close my text editor as soon as I write the final sentence.
+Done.
+Not looking at that again.
+I swear to myself --- next time I'm writing self-documenting code.
 
 -----
 

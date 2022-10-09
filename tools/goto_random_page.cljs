@@ -3,7 +3,7 @@
             [ajax.core :refer [GET]]))
 
 (defn noindex? [page]
-  (contains? page :noindex))
+  (contains? page :norandompls))
 
 (defn goto-random-page []
   (GET "/index/big.edn" {:handler (fn [big-index-str]

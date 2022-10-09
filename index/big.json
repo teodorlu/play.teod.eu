@@ -263,9 +263,9 @@
   "title" : "Empowered",
   "readiness" : "wtf-is-this",
   "uuid" : "4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5",
-  "author-url" : "https://teod.eu",
   "created" : "2022-09-21",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "interaction-value-differential",
   "title" : "Interaction value differential",

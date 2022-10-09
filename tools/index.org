@@ -5,9 +5,7 @@
 
 [[file:..][..]]
 
-Tools for this website.
-
-This subdirectory contains some scripts.
+Some scripts useful for this website.
 
 * All files
 

@@ -196,9 +196,9 @@ I include this list as a personal reminder.
                   "** Then, what is this /for/??"
                   (lines
                    "It's for playing with ideas."
-                   "It's for bad ideas."
-                   "Let's breathe air into them or light them on fire."
-                   "Or both at the same time.")
+                   "Good ones, but mostly bad ones."
+                   "Breathe air into them. Toss them around. Light them on fire."
+                   "See what happens.")
                   (lines
                    "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
                    "Local development URL for this page is [[http://localhost:9945/][localhost:9945]]."

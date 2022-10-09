@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 7e70b878-1ef2-4ab6-885b-727eb557213d
 :END:
-#+TITLE: OGGPOW: A non-coercive strategic framework
+#+TITLE: OGGPOW: A strategic framework for optionality
 
 [[file:..][..]]
 

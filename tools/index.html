@@ -195,13 +195,17 @@
 <p>Some scripts useful for this website.</p>
 <h2 id="all-files">All files</h2>
 <p>Every file in this subdirectory:</p>
-<pre class="shell" data-exports="both" data-format="raw"><code>bb -e &#39;(-&gt;&gt; (babashka.fs/glob &quot;.&quot; &quot;*&quot;) (map str) (println))&#39;
+<pre class="shell" data-exports="both" data-format="raw"><code>bb -e &#39;(-&gt;&gt; (babashka.fs/glob &quot;.&quot; &quot;*&quot;)
+            (map str)
+            (println))&#39;
 </code></pre>
 <pre class="example"><code>(index.html goto_random_page.cljs play.edn index.org)
 </code></pre>
 <h2 id="cljs-files">CLJS files</h2>
 <p>Every clojurescript file in this subdirectory:</p>
-<pre class="shell" data-exports="both" data-format="raw"><code>bb -e &#39;(-&gt;&gt; (babashka.fs/glob &quot;.&quot; &quot;*.cljs&quot;) (map #(str &quot;/tools/&quot; %)) (println))&#39;
+<pre class="shell" data-exports="both" data-format="raw"><code>bb -e &#39;(-&gt;&gt; (babashka.fs/glob &quot;.&quot; &quot;*.cljs&quot;)
+            (map #(str &quot;/tools/&quot; %))
+            (println))&#39;
 </code></pre>
 <pre class="example"><code>(/tools/goto_random_page.cljs)
 </code></pre>

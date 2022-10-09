@@ -12,7 +12,9 @@ Some scripts useful for this website.
 Every file in this subdirectory:
 
 #+begin_src shell :exports both :format raw
-bb -e '(->> (babashka.fs/glob "." "*") (map str) (println))'
+bb -e '(->> (babashka.fs/glob "." "*")
+            (map str)
+            (println))'
 #+end_src
 
 #+RESULTS:
@@ -23,7 +25,9 @@ bb -e '(->> (babashka.fs/glob "." "*") (map str) (println))'
 Every clojurescript file in this subdirectory:
 
 #+begin_src shell :exports both :format raw
-bb -e '(->> (babashka.fs/glob "." "*.cljs") (map #(str "/tools/" %)) (println))'
+bb -e '(->> (babashka.fs/glob "." "*.cljs")
+            (map #(str "/tools/" %))
+            (println))'
 #+end_src
 
 #+RESULTS:

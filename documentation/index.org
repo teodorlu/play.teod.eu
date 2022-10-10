@@ -98,6 +98,7 @@ That's our strategic process --- or lack thereof.
 
 *comments*
 
+2022-10-08
 /Erik/ (Teodor paraphrasing): there was this library I remember using.
 Its docs were amazing.
 I've read references.
@@ -110,3 +111,10 @@ Then each example introduced gradually more complexity.
 I liked that one.
 
 https://github.com/garykac/triangle.net/tree/master/wiki
+
+2022-10-09
+/Oddmund/ (Teodor paraphrasing): Perhaps a good metric for "is the documentation working?" is measuring when the docs are read?
+
+2022-10-10
+/Richard/ (Teodor paraphrasing): Perhaps a good metric for "is the documentation working?" is the amount of questions asked on Slack?
+Or perhaps the amount of repeated questions?

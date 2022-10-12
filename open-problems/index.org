@@ -14,6 +14,41 @@ Empty here for new.
 Need to brew some more.
 * Brewing problems / problem options / nexus of problems
 Gotta catch them all!
+** A strategic knowledge toolkit
+A good strategic process requires tools that enable that process.
+I believe in text.
+I believe in named documents.
+I believe in the web.
+I like how I've built this page.
+
+But this page is not enough.
+
+play.teod.eu is optimized for /my writing/.
+I don't want to do strategic work alone.
+I want a dynamic interactions with others.
+I want us to remix ideas collectively.
+
+Org-roam provides indexing capabilities for play.teod.eu.
+For now.
+But I'm not really using that much of Org-roam:
+
+1. Navigate to file by page name via page UUID
+2. Link to page by UUID
+
+And I've written a mapping from Org-roam =id:...= links to stuff that works for HTML myself.
+
+And "navigate to file via title" and "link to page by UUID & name" doesn't work for more than one site.
+I want interlinked sites.
+
+[[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][teod/dbx: a toolkit for building your own personal knowledge base]] is the tool I hope to shell out to for this.
+Create a tiny =dbx= wrapper for Emacs.
+A tiny =dbx= wrapper for VSCode.
+
+But who can I work with for this?
+Perhaps just test with Sindre?
+Probably a good idea.
+
+Could be nice to pair on too --- we do have a plan to do continuous pairing.
 ** Working properly with strategic initiatives
 Ever since I went into IT in 2019, I've felt shackled by the time horizon of the teams I've been working with.
 Where is the long term thinking?

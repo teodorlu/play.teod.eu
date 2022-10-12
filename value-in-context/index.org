@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: 028a2171-3146-4fbc-8d5d-3209675dae8b
+:END:
+#+TITLE: value in context
+
+[[file:..][..]]
+
+I believe value in context is the beginning of shared trust and shared sense of quality.
+It's specific, it speaks for itself.
+
+To build trust, provide value in context.
+Build trust /first/.
+That's the "charity" part of trust.
+(The others are integrity and competence, according to [[https://masteroppgaver.app.iterate.no/andreas-friestad-h%C3%A5vard-opheim/][Trust Building on Digital Labour Platforms: the Worker’s Perspective]]).
+Charity is being willing to provide value in context /first/ - without expecting demonstration of value in context from others first.
+
+Related: [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]].

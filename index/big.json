@@ -1,4 +1,12 @@
 [ {
+  "slug" : "value-in-context",
+  "title" : "value in context",
+  "readiness" : "wtf-is-this",
+  "uuid" : "028a2171-3146-4fbc-8d5d-3209675dae8b",
+  "author-url" : "https://teod.eu",
+  "created" : "2022-10-12",
+  "lang" : "en"
+}, {
   "slug" : "intention-relation-action",
   "title" : "Intent, Relationships, Action",
   "readiness" : "wtf-is-this",

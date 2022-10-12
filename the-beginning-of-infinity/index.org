@@ -70,7 +70,7 @@ Terminology:
 - The beginning of the open-ended creation of explanations.
 - The environments that could create an open-ended stream of knowledge, if suitably primed --- i.e. almost all environments.
 - The fact that new explanations create new problems.
-* Appendix A: this article lacks some specificity.
+* Appendix A: this article lacks specificity.
 Listing up /just synthesis/ without giving motivating examples is not providing [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][value in context]].
 This article would be better --- more useful --- if I could /anchor/ it.
 But that's okay.

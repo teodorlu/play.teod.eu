@@ -7,7 +7,7 @@
 
 Do: consider thoroughly where you point your attention.
 
-*My process for attention design: note taking.*
+*My process for personal attention design is note taking.*
 
 Copied from [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]] at 2022-07-14:
 
@@ -29,3 +29,5 @@ Global-scope rambling.
 
 *problems* is a global list of things that want attention.
 Global scope attention design.
+
+*I consider organizational attention design to be a rich, open problem.*

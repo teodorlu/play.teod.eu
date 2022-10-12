@@ -11,8 +11,12 @@ A few quotes from https://en.wikipedia.org/wiki/David_Deutsch#Invariants:
 
 #+begin_quote
 A bad explanation is easy to vary.
+#+end_quote
 
+#+begin_quote
 The search for hard-to-vary explanations is the origin of all progress.
+#+end_quote
 
+#+begin_quote
 That the truth consists of hard-to-vary assertions about reality is the most important fact about the physical world
 #+end_quote

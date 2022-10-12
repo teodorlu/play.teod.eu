@@ -38,3 +38,14 @@ Then, at the end of each chapter, there is a list.
 I found those lists to be the most useful part of the book.
 Thus, I choose to give them even more attention.
 So I list them here :)
+
+*Chapter 1: The Reach of Explanations*
+
+- The fact that some explanations have reach
+- The universal
+* Appendix A: this article lacks some specificity.
+Listing up /just synthesis/ without giving motivating examples is not providing [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][value in context]].
+This article would be better --- more useful --- if I could /anchor/ it.
+But that's okay.
+It's okay for me to have incomplete stuff on here.
+It's for play, after all :)

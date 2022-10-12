@@ -31,16 +31,21 @@ But the chapters can be long and complicated.
 I'm often left encouraged but confused, not sure exactly what I've just learned.
 
 Deutsch anticipates this.
-Each chapter covers the ground and provides context.
-At the end of each chapter, there is a list:
+Each chapters consist of a big main part, and a conclusion.
+The main part reads like normal prose.
+It motivates an idea, defines that idea, and explores its implications.
+The conclusion is /small/.
+It takes a vague "cloud" of an idea and sharpens it.
+Makes that idea /crisp/.
+In that conclusion there is always a list:
 /Meanings of "The Beginning of Infinity" encountered in this chapter./
 
-I found those lists to be the most useful part of the book.
-Thus, I choose to give them even more attention.
+I loved reading those lists.
+So much I want to give them more attention than merely reading them.
 So I list them here :)
 
 Each chapter also contains a list of terms and definitions.
-I'll include some of those.
+I'll include some of those too.
 
 *Chapter 1: The Reach of Explanations*
 

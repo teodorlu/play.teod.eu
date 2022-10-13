@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+DRAFT
+
 A nice format for integrating new knowledge.
 
 * Thesis --- current state

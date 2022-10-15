@@ -26,7 +26,7 @@ In code, outside of code.
 5 - Never link to content without enriching the intent of linking with context.
 Instead, answer "Why do I find this worthwhile?".
 
-6 - Consider modeling /all possible states/ as one data structure.
+6 - Consider modeling /all possible states/ as one data type.
 Fewer edge cases are easier to manage.
 
 7 - When "How does X work?", consider how your documentation can be improved.

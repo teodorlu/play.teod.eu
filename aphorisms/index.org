@@ -29,7 +29,7 @@ Instead, answer "Why do I find this worthwhile?".
 6 - Consider modeling /all possible states/ as one data structure.
 Fewer edge cases are easier to manage.
 
-7 - DO - critique your documentation when "How does X work?" is asked.
+7 - When "How does X work?", consider how your documentation can be improved.
 
 8 - DON'T require hierarchy to be equal to legibility.
 

@@ -5,6 +5,12 @@
 
 [[./..][..]]
 
+#+begin_quote
+An *aphorism* (from Greek ἀφορισμός: aphorismos, denoting 'delimitation', 'distinction', and 'definition') is a concise, terse, laconic, or memorable expression of a general truth or principle.
+
+[[https://en.wikipedia.org/wiki/Aphorism][wikipedia.org/wiki/Aphorism]]
+#+end_quote
+
 1 - Fewer moving pieces is better.
 Corollary: unnecessary flexibility is bad.
 

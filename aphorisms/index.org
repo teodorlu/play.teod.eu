@@ -11,6 +11,8 @@ An *aphorism* (from Greek ἀφορισμός: aphorismos, denoting 'delimitatio
 [[https://en.wikipedia.org/wiki/Aphorism][wikipedia.org/wiki/Aphorism]]
 #+end_quote
 
+My aphorisms:
+
 1 - Fewer moving pieces is better.
 Corollary: unnecessary flexibility is bad.
 

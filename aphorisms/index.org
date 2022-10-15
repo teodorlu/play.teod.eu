@@ -42,7 +42,7 @@ Working with source code can be viewed as research.
 
 16 - Asking a specific question and generalizing later is often easier than the opposite.
 
-17 - Don't ask people to change their behavior. That is not something they can give you. Instead, ask for something specific they can do at a specific point in time.
+17 - Don't ask people to change their behavior. That is not something they can give you. Instead, ask for something specific they can do to help you now.
 
 -----
 

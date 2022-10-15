@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 55261ada-7ca6-4c94-88f5-446a9b35e5c4
 :END:
-#+title: Interaction value differential
+#+title: How to ask experts for help
 
 [[./..][..]]
 
@@ -59,3 +59,5 @@ Show them that the time invested in you was well spent.
 Then ask for something else that they can give you easily.
 
 Repeat, and you might gain a mentor.
+
+*Appendix*

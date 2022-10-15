@@ -639,6 +639,14 @@
   "uuid" : "c8131839-be8d-4ca8-8bc3-eac72cfade15",
   "lang" : "en"
 }, {
+  "slug" : "denotational-design",
+  "title" : "Denotational Design",
+  "readiness" : "wtf-is-this",
+  "uuid" : "cab02e40-98f3-4baa-b375-be8736ceb88a",
+  "author-url" : "https://teod.eu",
+  "created" : "2022-10-15",
+  "lang" : "en"
+}, {
   "slug" : "mathbox",
   "title" : "Mathbox",
   "uuid" : "cab308ab-00db-4584-89a8-b7371b41275c",

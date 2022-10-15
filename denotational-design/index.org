@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: cab02e40-98f3-4baa-b375-be8736ceb88a
+:END:
+#+TITLE: Denotational Design
+
+[[file:..][..]]
+
+*Denotational Design* is a strong approach to software design applicable to ML languages like Haskell, Elm, F# and OcaML.
+
+I was first introduced to Denotaional Design when I watched a talk by [[http://conal.net/][Conal Elliot]].
+
+Some references:
+
+- [[http://conal.net/papers/type-class-morphisms/][Denotational design with type class morphisms]] - paper by Conal Elliot
+- [[https://ericnormand.me/podcast/why-do-i-like-denotational-design][Why do I like Denotational Design?]] - video by Eric Normand

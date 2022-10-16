@@ -30,12 +30,9 @@ Ting som er fine å kosekode på:
 Konseptet er skamløst stjålet fra [[https://twitter.com/magnars/][Magnar Sveen]] og [[https://twitter.com/cjno/][Christian Johansen]] (tror jeg).
 
 * Slide 1
-
-
-[[https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fteod%2Fx2qjKCuv8p.png?alt=media&token=b034e66a-b33d-4ec1-944c-65db8303f8fa]]
-
 #+BEGIN_EXPORT html
-<img src="[[https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fteod%2Fx2qjKCuv8p.png?alt=media&token=b034e66a-b33d-4ec1-944c-65db8303f8fa]]"></img>
+<img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fteod%2Fiy0ZjX7Q29.png?alt=media&amp;token=0676b79f-a173-4fa9-a93d-aa3bb134bf9b">
 #+END_EXPORT
 * slide 2
-[[file:https:/firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fteod%2Fx2qjKCuv8p.png?alt=media&token=b034e66a-b33d-4ec1-944c-65db8303f8fa%5D%5D]]
+#+BEGIN_EXPORT html
+#+END_EXPORT

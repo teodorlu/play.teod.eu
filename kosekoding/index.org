@@ -1,9 +1,9 @@
-# -*- ispell-local-dictionary: "nb_NO" -*
-
 :PROPERTIES:
 :ID: 2d60ee76-a193-46fd-a07b-838af66cfcd6
 :END:
 #+TITLE: Kosekoding
+
+# -*- ispell-local-dictionary: "nb_NO" -*
 
 [[file:..][..]]
 

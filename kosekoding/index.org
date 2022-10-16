@@ -56,3 +56,13 @@ Så inni her kommer jeg til å embedde litt rå HTML som kanskje kan bli et slid
 #+BEGIN_EXPORT html
 <script src="magnus_slideshow.js"></script>
 #+END_EXPORT
+* Appendix - arbeidslogg
+** 2022-10-16
+1. Jeg har fått Magnus sine greier til å funke
+2. yay!
+3. Jeg har også fått samlet greiene i én fil, så jeg har litt bedre kontroll
+
+Hva er gjenstående arbeid?
+
+1. problem: /slide discovery tag/ er den samme som /slide present tag/.
+2. problem: "hook in in DOM-logikk" er kontrollert i biblioteket, ikke i userspace

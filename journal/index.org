@@ -769,3 +769,14 @@ Because taking notes is 90 % for the process, and only 10 % for the resulting ar
 
 Because simply copying does not help you reify your taste.
 It does not help you to cultivate your taste.
+* 2022-10-16
+** wanna code
+options
+
+- dbx
+- runevfsiki
+- kosekoding - talk & slides
+
+choice
+
+- kosekoding - greiene Magnus lagde

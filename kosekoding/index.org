@@ -66,3 +66,12 @@ Hva er gjenstående arbeid?
 
 1. problem: /slide discovery tag/ er den samme som /slide present tag/.
 2. problem: "hook in in DOM-logikk" er kontrollert i biblioteket, ikke i userspace
+*** Først --- få kontroll på sideeffektene. Tidy first
+*** Så --- få vist lysbildene på hele sidehøyden.
+*** MEN ALLER FØRST!
+Jeg vil legge ned playground.teod.eu.
+I alle fall få til en solid redirect.
+Tror jeg kan kopiere toreheggelund.com-kode.
+
+OG jeg har lyst til å fikse toreheggelund.com i dag. Da må jeg sette av tid!
+Ikke bare sitte og pelle på mine egne ting. (Nå sier jeg også "pelle", Oddmund.)

@@ -19,6 +19,8 @@ const create_slides = (slideshow) => {
   return slides;
 };
 
+// STUFF WITH SOFT SIDE EFFECTS (clojure-pure)
+
 const view = (slide) => {
   const container = document.createElement("div");
   const slideHead = document.createElement("h2");
@@ -31,8 +33,6 @@ const view = (slide) => {
 
   return container;
 };
-
-// STUFF WITH SOFT SIDE EFFECTS (clojure-pure)
 
 const render = () => {
   // console.log("before:", state.slides);

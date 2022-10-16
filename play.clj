@@ -293,7 +293,7 @@ DRAFT
 
                   "# Generate target for root index"
                   ;; TODO root index also depends on all the play.edn files found
-                  (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets) (list "404.html")))
+                  (str/join " " (concat ["index.html:" "index.clj"] (map html targets) (map play-edn targets) (list "404.html" "header-default-include.html")))
                   "\t./index.clj"
                   ""
                   ""

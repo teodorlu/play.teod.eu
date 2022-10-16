@@ -1,2 +1,18 @@
 <link rel="icon" type="image/x-icon" href="/green.png">
 <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+<script type="text/javascript">
+ const hostCanonical = "play.teod.eu";
+ const hostAlias1 = "playgrouind.teod.eu";
+ const hostLocal1 = "localhost:9945";
+ if (
+     window.location.host === hostAlias1
+     // || window.location.host === hostLocal1
+ ) {
+     // http://localhost:9569/musikk
+     // redirect toreheggelund.com to www.toreheggelund.com
+     // redirect toreheggelund.com/musikk/ to www.toreheggelund.com/musikk/
+     const pathname = window.location.pathname || "";
+     window.location.replace("https://" + hostCanonical + pathname);
+ }
+</script>

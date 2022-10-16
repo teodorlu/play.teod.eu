@@ -2,6 +2,6 @@
  :title "Denotational Design",
  :readiness :wtf-is-this,
  :uuid "cab02e40-98f3-4baa-b375-be8736ceb88a",
- :author-url "https://teod.eu",
  :created "2022-10-15",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

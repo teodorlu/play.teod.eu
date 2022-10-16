@@ -35,3 +35,25 @@ Konseptet er skamløst stjålet fra [[https://twitter.com/magnars/][Magnar Sveen
 #+BEGIN_EXPORT html
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gm trust yourself today <a href="https://t.co/sTkEuPAkp7">pic.twitter.com/sTkEuPAkp7</a></p>&mdash; Vivid Void (@VividVoid_) <a href="https://twitter.com/VividVoid_/status/1557734828031614976?ref_src=twsrc%5Etfw">August 11, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 #+END_EXPORT
+* hack
+ønsker å få dette til å funke /ISH/ med eksisterende JS-kode før jeg begynner å refaktorere.
+holde meg på grønn.
+
+Så inni her kommer jeg til å embedde litt rå HTML som kanskje kan bli et slideshow.
+
+#+BEGIN_EXPORT html
+        <div id="slideshow">
+            <h1>epler</h1>
+            <p>innhold 11</p>
+            <p>innhold 12</p>
+
+            <h1>Pærer</h1>
+            <p>innhold 21</p>
+            <p>innhold 22</p>
+        </div>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+    <script src="generate_slideshow.js"></script>
+    <script src="display_slideshow.js"></script>
+#+END_EXPORT

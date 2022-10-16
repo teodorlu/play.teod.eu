@@ -75,3 +75,12 @@ Tror jeg kan kopiere toreheggelund.com-kode.
 
 OG jeg har lyst til å fikse toreheggelund.com i dag. Da må jeg sette av tid!
 Ikke bare sitte og pelle på mine egne ting. (Nå sier jeg også "pelle", Oddmund.)
+
+Og måten jeg tenker på å gjøre det er:
+
+1. Copy paste litt kode
+2. Prøv lokalt
+3. Gå i prod
+4. Prøv i prod.
+
+YOLO

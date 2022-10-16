@@ -9,9 +9,6 @@
      window.location.host === hostAlias1
      // || window.location.host === hostLocal1
  ) {
-     // http://localhost:9569/musikk
-     // redirect toreheggelund.com to www.toreheggelund.com
-     // redirect toreheggelund.com/musikk/ to www.toreheggelund.com/musikk/
      const pathname = window.location.pathname || "";
      window.location.replace("https://" + hostCanonical + pathname);
  }

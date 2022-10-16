@@ -54,5 +54,7 @@ Så inni her kommer jeg til å embedde litt rå HTML som kanskje kan bli et slid
 #+END_EXPORT
 
 #+BEGIN_EXPORT html
-    <script src="magnus_slideshow.js"></script>
+<!-- <script src="generate_slideshow.js"></script> -->
+<!-- <script src="display_slideshow.js"></script> -->
+<script src="magnus_slideshow.js"></script>
 #+END_EXPORT

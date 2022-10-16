@@ -3,8 +3,6 @@
 :END:
 #+TITLE: Kosekoding
 
-# -*- ispell-local-dictionary: "nb_NO" -*
-
 [[file:..][..]]
 
 Kosekoding er ikke stress.

@@ -9,6 +9,8 @@
      window.location.host === hostAlias1
      // || window.location.host === hostLocal1
  ) {
+     // redirect playground.teod.eu to play.teod.eu
+     // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
      const pathname = window.location.pathname || "";
      window.location.replace("https://" + hostCanonical + pathname);
  }

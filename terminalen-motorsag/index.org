@@ -5,6 +5,16 @@
 
 [[file:..][..]]
 
+#+begin_quote
+*Melding fra 2022-10-16*
+
+Dette initiativet har blitt flyttet!
+Men kursopplegget er fremdeles ikke ferdig.
+Ta en titt hvis du vil.
+
+https://github.com/iterate/terminalen-motorsag/
+#+end_quote
+
 Potensielt kursopplegg.
 
 Teodors private notater i Roam: https://roamresearch.com/#/app/teod/page/wjKfBoryc

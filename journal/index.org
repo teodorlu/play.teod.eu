@@ -780,3 +780,9 @@ options
 choice
 
 - kosekoding - greiene Magnus lagde
+
+se [[id:32bffa13-d4fb-4ae7-9718-855b0d4130d2][Terminalen: Hvordan løpe med motorsag]].
+Jeg har lyst til å bruke dingsen til Magnus.
+Det hadde vært fint.
+Men ... hvor var det vi gjorde det?
+Vi flyttet det til et Iterate-repo, vi.

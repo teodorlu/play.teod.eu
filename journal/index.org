@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       bd776ab0-d687-4f16-b66d-d03c86de2a2e
 :END:
-#+title: Teodor's public journal
+#+title: Teodor's public-personal journal
 #+OPTIONS: ^:nil
 
 [[./..][..]]

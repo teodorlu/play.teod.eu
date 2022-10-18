@@ -71,7 +71,7 @@
                          [(:title l) l]))
         choice (fzf (map :title links))]
 
-    (embark provider (:href (get by-title choice)))))
+    (embark provider (get by-title choice))))
 
 (def dispatch-table
   [{:cmds ["provider"] :fn cmd-provider}

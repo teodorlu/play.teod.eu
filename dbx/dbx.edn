@@ -3,16 +3,22 @@
                              (:links (cheshire.core/parse-string
                                       (slurp "https://iterb.art/data/links.json")
                                       keyword)))
-                       :browse (fn [url]
-                                    (babashka.process/process ["firefox" "-new-window" url]))}
+                       :browse (fn [{:keys [href]}]
+                                 (babashka.process/process ["firefox" "-new-window" href]))}
              amedia {:ls (fn []
                            (let [links
                                  (:links (cheshire.core/parse-string
                                           (slurp "/home/teodorlu/dev/amedia/teod/amedia-links/links.json")
                                           keyword))]
-                             #_ (prn links)
                              links))
-                     :browse (fn [url]
-                               (let [cmd ["chrome-amedia" "--new-window" url]]
-                                 #_ (prn cmd)
-                                 (babashka.process/process cmd)))}}}
+                     :browse (fn [{:keys [href]}]
+                               (let [cmd ["chrome-amedia" "--new-window" href]]
+                                 (babashka.process/process cmd)))}
+             play.teod.eu {:ls (fn []
+                                 (->> (slurp "https://play.teod.eu/index/big.edn")
+                                      (clojure.edn/read-string)
+                                      ))
+                           :browse (fn [url]
+                                     (println url))}
+             play.teod.eu-preview {}
+             }}

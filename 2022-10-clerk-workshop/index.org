@@ -16,8 +16,8 @@ X: Hey Teodor, I'm just curious about what this is meant to be.
 
 T: Hi :)
 
-Just my notes for the workshop.
-They are on the internet because that's easy for me, and it's easy to share with others.
+There's going to be a Clerk workshop, these are my prep notes.
+The notes are on the internet because that's easy for me, and if I want to share them with others, that's easy.
 And I find that writing about my process helps me learn and remember.
 I believe in learning in public.
 
@@ -26,6 +26,7 @@ X: Okay. But it's not official or anything?
 T: Nope --- just third party commentary. :)
 
 Thanks to Martin Kavalar and Daniel Slutsky, this is happening!
+I'm not representing any official entity here.
 #+end_quote
 
 The amazing folks making [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] decided to host a workshop for [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]]-adjacent people.

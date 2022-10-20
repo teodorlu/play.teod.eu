@@ -12,7 +12,7 @@
 | Time                | 18:00-19:30 Oslo time                       |
 
 #+begin_quote
-X: Hey Teodor, I'm curious about what this is meant to be.
+X: Hey Teodor, I'm just curious about what this is meant to be.
 
 T: Hi :)
 

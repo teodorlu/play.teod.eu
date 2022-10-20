@@ -5,8 +5,6 @@
 
 [[file:..][..]]
 
-*09:49: I want to spend all day with Clerk*.
-
 | Clojureverse thread | [[https://clojureverse.org/t/visual-tools-meeting-14-clerk-workshop/9423][visual-tools-meeting-14-clerk-workshop/9423]] |
 | Setup instructions  | [[https://github.com/nextjournal/clerk-demo/blob/workshop-202210-scicloj/workshop/setup.md][workshop-202210-scicloj/workshop/setup.md]]   |
 | Slack channel       | [[https://clojurians.slack.com/archives/C046BCJMWAY][#visual-tools-meeting-14-clerk-workshop]]     |
@@ -27,7 +25,7 @@ X: Okay. But it's not official or anything?
 
 T: Nope --- just third party commentary. :)
 
-Thank Martin and Daniel for making this happen!
+Thanks to Martin Kavalar and Daniel Slutsky, this is happening!
 #+end_quote
 
 The amazing folks making [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] decided to host a workshop for [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]]-adjacent people.

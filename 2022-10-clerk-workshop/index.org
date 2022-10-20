@@ -5,6 +5,7 @@
 
 [[file:..][..]]
 
+*09:49: I want to spend all day with Clerk*.
 
 | Clojureverse thread | [[https://clojureverse.org/t/visual-tools-meeting-14-clerk-workshop/9423][visual-tools-meeting-14-clerk-workshop/9423]] |
 | Setup instructions  | [[https://github.com/nextjournal/clerk-demo/blob/workshop-202210-scicloj/workshop/setup.md][workshop-202210-scicloj/workshop/setup.md]]   |
@@ -149,6 +150,9 @@ Simple, mmmm.
 
 All similary sized.
 I'll just start up top.
+
+*14:35: aaaand I got sidetracked today too.*
+Seems like (A) I'm not able to do programming stuff for hours and hours, and (B) my schedule wasn't completely open after all.
 
 
 #+BEGIN_VERSE

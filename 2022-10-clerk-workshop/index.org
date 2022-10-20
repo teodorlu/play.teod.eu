@@ -5,6 +5,13 @@
 
 [[file:..][..]]
 
+
+| Clojureverse thread | [[https://clojureverse.org/t/visual-tools-meeting-14-clerk-workshop/9423][visual-tools-meeting-14-clerk-workshop/9423]] |
+| Setup instructions  | [[https://github.com/nextjournal/clerk-demo/blob/workshop-202210-scicloj/workshop/setup.md][workshop-202210-scicloj/workshop/setup.md]]   |
+| Slack channel       | [[https://clojurians.slack.com/archives/C046BCJMWAY][#visual-tools-meeting-14-clerk-workshop]]     |
+| Zoom Link           | TBD, check channel 👆                       |
+| Time                | 18:00-19:30 Oslo time                       |
+
 The amazing folks making [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] decided to host a workshop for [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]]-adjacent people.
 
 This is just my notes as we go along.
@@ -82,6 +89,8 @@ But I also don't want more complexity than I need.
 Code is hard.
 
 Decision: fork and have the fork ready, but keep experimentation directly in upstream "thing" for now.
+
+
 
 #+BEGIN_VERSE
 

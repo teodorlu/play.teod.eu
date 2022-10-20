@@ -105,7 +105,7 @@ But I also don't want more complexity than I need.
 🤔
 Code is hard.
 
-Decision: fork and have the fork ready, but keep experimentation directly in upstream "thing" for now.
+Decision: fork and have the fork ready, but run code directly in upstream repo for now.
 
 
 

@@ -121,6 +121,18 @@ Okay, gonna do just that.
 I was a bit confused by the "setup" title.
 But this is really technical setup /and/ homework to finish /before/ the workshop.
 
+=<interlude>= - i REALLY want "paste screenshot into org document".
+But I don't want to dump lots of pictures in here.
+So in reality, I want a versioned blob store backed by R2 or something.
+With a nice Emacs interface.
+Hmm.
+Perhaps it's time for =static.teod.eu=.
+?
+Or =cdn.teod.eu=.
+?
+Hmm.
+=</interlude>=
+
 
 #+BEGIN_VERSE
 

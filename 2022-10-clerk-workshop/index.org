@@ -106,7 +106,20 @@ But I also don't want more complexity than I need.
 Code is hard.
 
 Decision: fork and have the fork ready, but run code directly in upstream repo for now.
+Revisit if this causes problems.
 
+/okay - moving forward/.
+
+Not sure exactly what "prep" I'm meant to do.
+Edit: right, they said so:
+
+#+begin_quote
+Work through the exercies in the =workshop/exercices= directory
+#+end_quote
+
+Okay, gonna do just that.
+I was a bit confused by the "setup" title.
+But this is really technical setup /and/ homework to finish /before/ the workshop.
 
 
 #+BEGIN_VERSE

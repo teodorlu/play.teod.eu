@@ -114,7 +114,7 @@ Not sure exactly what "prep" I'm meant to do.
 Edit: right, they said so:
 
 #+begin_quote
-Work through the exercies in the =workshop/exercices= directory
+Work through the exercises in the =workshop/exercices= directory
 #+end_quote
 
 Okay, gonna do just that.

@@ -9,7 +9,7 @@
 | Clojureverse thread | [[https://clojureverse.org/t/visual-tools-meeting-14-clerk-workshop/9423][visual-tools-meeting-14-clerk-workshop/9423]] |
 | Setup instructions  | [[https://github.com/nextjournal/clerk-demo/blob/workshop-202210-scicloj/workshop/setup.md][workshop-202210-scicloj/workshop/setup.md]]   |
 | Slack channel       | [[https://clojurians.slack.com/archives/C046BCJMWAY][#visual-tools-meeting-14-clerk-workshop]]     |
-| Zoom Link           | TBD, check channel 👆                       |
+| Zoom Link           | TBD, keep an eye on the channel 👆     |
 | Time                | 18:00-19:30 Oslo time                       |
 
 #+begin_quote

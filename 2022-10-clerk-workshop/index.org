@@ -82,3 +82,21 @@ But I also don't want more complexity than I need.
 Code is hard.
 
 Decision: fork and have the fork ready, but keep experimentation directly in upstream "thing" for now.
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

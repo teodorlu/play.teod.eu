@@ -224,6 +224,21 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -432,6 +447,7 @@ taking notes, why not just copy-paste from wikipedia?</a></li>
 <ul>
 <li><a href="#wanna-code" id="toc-wanna-code">wanna code</a></li>
 </ul></li>
+<li><a href="#hello-finn" id="toc-hello-finn">HELLO FINN!!!!</a></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -1314,5 +1330,6 @@ not help you to cultivate your taste.</p>
 motorsag</a>. Jeg har lyst til å bruke dingsen til Magnus. Det hadde
 vært fint. Men … hvor var det vi gjorde det? Vi flyttet det til et
 Iterate-repo, vi.</p>
+<h2 id="hello-finn">HELLO FINN!!!!</h2>
 </body>
 </html>

@@ -9,4 +9,4 @@ The amazing folks making [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] deci
 
 This is just my notes as we go along.
 This page should probably /be/ a Clerk notebook.
-But I'm not confortable putting Clerk notebooks on [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] quite yet.
+But I'm not comfortable putting Clerk notebooks on [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] quite yet.

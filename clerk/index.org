@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 9799d27f-49d0-414a-bb94-f611588fc85c
+:END:
+#+TITLE: Clerk
+
+[[file:..][..]]
+
+DRAFT

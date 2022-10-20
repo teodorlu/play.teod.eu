@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 1b275a74-df8e-4ef7-a401-4f04283ef68e
+:END:
+#+TITLE: 2022-10 Clerk workshop
+
+[[file:..][..]]
+
+The amazing folks making [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] decided to host a workshop for [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]]-adjacent people.
+
+This is just my notes as we go along.
+This page should probably /be/ a Clerk notebook.
+But I'm not confortable putting Clerk notebooks on [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] quite yet.

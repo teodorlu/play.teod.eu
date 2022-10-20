@@ -43,6 +43,13 @@
   :form :presentation,
   :readiness :ready-for-comments,
   :uuid "0c0b16ef-47dc-449c-b665-07c278ffec32"}
+ {:slug "play.teod.eu",
+  :title "play.teod.eu",
+  :readiness :wtf-is-this,
+  :uuid "0c9bef25-85ef-48e8-b4fd-d60160f177ec",
+  :author-url "https://teod.eu",
+  :created "2022-10-20",
+  :lang :en}
  {:slug "existensialism",
   :title "existentialism",
   :readiness :wtf-is-this,
@@ -70,6 +77,13 @@
   :created "2022-09-25",
   :lang :en,
   :form :remote-reference}
+ {:slug "2022-10-clerk-workshop",
+  :title "2022-10 Clerk workshop",
+  :readiness :wtf-is-this,
+  :uuid "1b275a74-df8e-4ef7-a401-4f04283ef68e",
+  :author-url "https://teod.eu",
+  :created "2022-10-20",
+  :lang :en}
  {:slug "okrs-are-scale-invariant",
   :title "OKRs are scale invariant",
   :readiness :wtf-is-this,
@@ -407,6 +421,13 @@
   :readiness :wtf-is-this,
   :uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
   :created "2022-09-21",
+  :lang :en,
+  :form :remote-reference}
+ {:slug "clerk",
+  :title "Clerk",
+  :readiness :wtf-is-this,
+  :uuid "9799d27f-49d0-414a-bb94-f611588fc85c",
+  :created "2022-10-20",
   :lang :en,
   :form :remote-reference}
  {:slug "unix-signals-intro",

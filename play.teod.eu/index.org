@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: 0c9bef25-85ef-48e8-b4fd-d60160f177ec
+:END:
+#+TITLE: play.teod.eu
+
+[[file:..][..]]
+
+https://play.teod.eu/
+
+Yeah, the page on play.teod.eu on play.teod.eu.
+Kind of weird, right?
+
+Whether this is "a remote reference" or not is up for discussion.
+
+:)
+
+I think I want to merge [[id:b722664c-d310-4908-9b57-98ffd73833c9][play.teod.eu: Rolling retrospective]] into this page.
+I'm using remote references /as direct commentary/ on for example [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], and I really like that.
+Rich references.
+Mmmmm.

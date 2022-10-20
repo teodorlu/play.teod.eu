@@ -87,9 +87,7 @@ Here we go, my own old clerk mess:
 ;; lots of elided stuff
 
 (map! :g "<f8>" #'teod-play-page-find
-      :g "C-S-n" #'teod/move-down-a-bit
-      :g "C-S-p" #'teod/move-up-a-bit
-      :g "C-s" #'consult-line
+      ;; ...
       :g "C-æ" #'clerk-show
       ;; ...
       )

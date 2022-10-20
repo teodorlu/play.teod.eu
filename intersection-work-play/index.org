@@ -140,6 +140,12 @@ See [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]] and [[id:
 I also think it's possible to orient a product team around /both/ work and play.
 Early draft for a work process: [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A non-coercive strategic framework]].
 
+*Appendix C: references*
+
+Oddmund kindly suggested [[https://austinhenley.com/blog/programmingasplay.html][Programming as play]].
+
+The author, Austin Z. Henley refers further to an academic paper: [[https://static.barik.net/barik/publications/vlhcc2017/PID4950171.pdf][Expressions on the Nature and Significance of Programming and Play]]
+
 #+BEGIN_VERSE
 
 

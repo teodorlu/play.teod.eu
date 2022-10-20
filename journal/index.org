@@ -787,3 +787,20 @@ Det hadde vært fint.
 Men ... hvor var det vi gjorde det?
 Vi flyttet det til et Iterate-repo, vi.
 * HELLO FINN!!!!
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

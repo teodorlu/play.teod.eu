@@ -47,9 +47,9 @@
   :title "play.teod.eu",
   :readiness :wtf-is-this,
   :uuid "0c9bef25-85ef-48e8-b4fd-d60160f177ec",
-  :author-url "https://teod.eu",
   :created "2022-10-20",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "existensialism",
   :title "existentialism",
   :readiness :wtf-is-this,
@@ -78,7 +78,7 @@
   :lang :en,
   :form :remote-reference}
  {:slug "2022-10-clerk-workshop",
-  :title "2022-10 Clerk workshop",
+  :title "Remote Clerk workshop for Scicloj-adjacent people (2022-10)",
   :readiness :wtf-is-this,
   :uuid "1b275a74-df8e-4ef7-a401-4f04283ef68e",
   :author-url "https://teod.eu",

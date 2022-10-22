@@ -82,3 +82,37 @@ This article would be better --- more useful --- if I could /anchor/ it.
 But that's okay.
 It's okay for me to have incomplete stuff on here.
 It's for play, after all :)
+
+Note from 2022-10-22 --- I'm kind of skeptical to this criticism.
+This page /is/ missing a proper introduction.
+An answer to why this is significant to me.
+See [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aphorisms]],
+
+#+begin_quote
+5 - Never link to content without enriching the intent of linking with context.
+Instead, answer "Why do I find this worthwhile?".
+#+end_quote
+
+🤔
+
+So perhaps this article /does not/ lack specificity, but context, or meaning.
+It's quite specific as it is.
+It's a book summary with some commentary.
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

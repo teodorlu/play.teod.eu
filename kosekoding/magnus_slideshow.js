@@ -57,13 +57,13 @@ const state = { current: 0, slides: [{ title: "", body: "" }] };
 
 document.addEventListener("keydown", (event) => {
   if (
-    event.key === "k" ||
+    event.key === "j" ||
     event.key === "ArrowRight" ||
     event.key === "ArrowDown"
   ) {
     slideIncrement(1);
   } else if (
-    event.key === "j" ||
+    event.key === "k" ||
     event.key === "ArrowLeft" ||
     event.key === "ArrowUp"
   ) {

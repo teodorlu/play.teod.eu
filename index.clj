@@ -87,6 +87,15 @@
                          ""
                          "#+END_VERSE")
 
+                  "-----"
+
+                  (sentences "Hi :) did you come here from Scicloj?"
+                             "Please consider visiting [[./scicloj-2022-10-ckm]]!")
+
+                  (sentences "---Teodor")
+
+                  "-----"
+
                   (sentences "Intent: bring ideas to life."
                              "Discuss, sharpen, play."
                              "Minimize the distance between intent and reality.")

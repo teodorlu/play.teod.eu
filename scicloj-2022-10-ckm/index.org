@@ -5,12 +5,6 @@
 
 [[file:..][..]]
 
-https://teod.eu/ (links to github, twitter, etc)
-
-async questions later? ping @teodorlu in #babashka or #data-science or something on Clojurians Slack --- or @teodorheggelund on Twitter.
-
-I'm really excited about this stuff!
-
 * rationale
 1. I'm interested in Scicloj and collective knowledge management
 2. I'm excited about my current learning process

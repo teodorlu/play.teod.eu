@@ -91,7 +91,7 @@ plan:
 
 1. put the good parts of play.teod.eu into dbx,
    - refactor play.teod.eu to use dbx.
-   - delete play.teod.eu code, keep a "customization layer".
+   - delete duplicate code from play.teod.eu, keep a "customization layer".
 2. avoid depending on Emacs and Org-mode/Org-roam for =dbx=
    - should be perfectly usable with VSCode/Calva and markdown.
 3. Explore how to pull together information from multiple =dbx= sites.

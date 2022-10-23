@@ -26,6 +26,7 @@ https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-wit
 - 2017-2020 :: daily journaling with Org-mode
 - 2020-2022 :: networked note taking with Roam research
 - 2022-     :: going web native for easy sharing with others!
+  /knowledge wants to be free/
 * who is this guy?
 used to do civil engineering, numerical analysis of nonlinear mechanics
 

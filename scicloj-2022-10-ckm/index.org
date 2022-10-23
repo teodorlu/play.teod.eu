@@ -32,6 +32,7 @@ Things I could show:
    1. Page for Daniel, perhaps?
 2. Linking to other pages
 3. the =play.clj relations= CLI
+   1. Optional. Kinda cool, not essential.
 
 I'm going to emphasize "showing the whole" over "explaining how everything works".
 

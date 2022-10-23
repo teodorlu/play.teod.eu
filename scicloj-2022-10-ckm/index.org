@@ -38,11 +38,9 @@ https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-wit
 
 - 2020-2022 :: networked note taking with Roam research
 
-  "hey, I can actually find things now, this is kinda cool"
+  "hey, I can actually find things now"
 
 - 2022-     :: going web native for easy sharing with others!
-
-  "Why not make it easy to share my ideas on the web?"
 * who is this guy?
 used to do civil engineering, numerical analysis of nonlinear mechanics
 

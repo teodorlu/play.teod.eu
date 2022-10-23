@@ -129,9 +129,9 @@ share the tool with others.
 async questions sometime later?
 ping me!
 
-| https://teod.eu           | links to github, twittter, etc |
-| Clojurians Slack          | @teodorlu                      |
-| Clojurians Slack channels | Mostly =#babashka=             |
+| https://teod.eu           | links to github, twittter, etc    |
+| Clojurians Slack          | @teodorlu                         |
+| Clojurians Slack channels | Try =#babashka=, =#babashka-neil= |
 
 I'm really excited about this stuff.
 

@@ -91,9 +91,9 @@ In other words: decouple the tool from the site.
 
 (requires us thinking together :))
 * current initiatives
-1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]]
-2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]]
-3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]]
+1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]] (Kira McLean)
+2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]] (Adam Helinski)
+3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]] (mostly Daniel I think?)
 * getting in touch with Teodor
 async questions later?
 ping me!

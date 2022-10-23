@@ -45,22 +45,30 @@ $ play.teod.eu-preview.sh
 2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"
    1. dbx doesn't really exist yet outside my head
 
-plan: put good parts of play.teod.eu into dbx.
-Decouple the tool from the site.
+plan: put the good parts of play.teod.eu into dbx,
+  refactor play.teod.eu to use dbx.
+  delete code.
+
+In other words: decouple the tool from the site.
 * =play.teod.eu= tech --- "how does this work?"
 (please jump in and ask questions, I'm not sure what people are interested in)
 
-1. Lots of babashka
-2. one folder for each document
+1. one folder for each document
    1. metadata in EDN files
       1. CLI for modifying metadata
    2. Embedding small HTML stuff is super easy
       1. Example: [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]]
-3. no build step, HTML files in Git
-4. a generated makefile
+2. no build step, HTML files in Git
+3. -> potentially really fast deploy
+   1. Currently 20-30 seconds, >95% of that is waiting for Cloudflare
+4. A big =babashka/cli= script
+5. Org-mode, org-roam and some Emacs lisp functions
+   1. I don't want org-mode or emacs dependencies in dbx
+6. a generated makefile
    1. makefile generation is painful.
       It's one big string, I want data.
    2. for dbx, I want pure babashka, no makefiles.
+      just use =babashka.fs/modified-since=
 * scicloj knowledge archipelago
 /Q: how can I learn Clojure data science?/
 

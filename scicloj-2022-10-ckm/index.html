@@ -274,14 +274,14 @@ babashka zealots”
 <li>dbx doesn’t really exist yet outside my head</li>
 </ol></li>
 </ol>
-<p>plan: put good parts of play.teod.eu into dbx. Decouple the tool from
-the site.</p>
+<p>plan: put the good parts of play.teod.eu into dbx, refactor
+play.teod.eu to use dbx. delete code.</p>
+<p>In other words: decouple the tool from the site.</p>
 <h2 id="play.teod.eu-tech-how-does-this-work"><code
 class="verbatim">play.teod.eu</code> tech — “how does this work?”</h2>
 <p>(please jump in and ask questions, I’m not sure what people are
 interested in)</p>
 <ol>
-<li>Lots of babashka</li>
 <li>one folder for each document
 <ol>
 <li>metadata in EDN files
@@ -295,6 +295,13 @@ tools</a></li>
 </ol></li>
 </ol></li>
 <li>no build step, HTML files in Git</li>
+<li>-&gt; potentially really fast deploy
+<ol>
+<li>Currently 20-30 seconds, &gt;95% of that is waiting for
+Cloudflare</li>
+</ol></li>
+<li>A big <code class="verbatim">babashka/cli</code> script</li>
+<li>Org-mode, org-roam and some Emacs lisp functions</li>
 <li>a generated makefile
 <ol>
 <li>makefile generation is painful. It’s one big string, I want

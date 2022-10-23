@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8
 :END:
-#+TITLE: Scicloj 2022-10: ideas for collective knowledge
+#+TITLE: Scicloj 2022-10: collective knowledge management
 
 [[file:..][..]]
 
@@ -43,12 +43,13 @@ I'm going to emphasize "showing the whole" over "explaining how everything works
 /Q: how can I learn Clojure data science?/
 
 /Q: how do we create, collect and index Clojure data science learning materials together?/
-
-Existing initiatives:
-
+* Prior work
 1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]]
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]]
+3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]]
 * getting in touch
+
+
 https://teod.eu/ | https://play.teod.eu/
 
 async questions later? ping me on #babashka on Clojurians Slack :)

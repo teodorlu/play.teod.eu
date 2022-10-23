@@ -67,7 +67,7 @@ I'm going to emphasize "showing the whole" over "explaining how everything works
 #+begin_src shell-script
 # CHEAT SHEET
 
-# preview server (bb-http-server)
+# preview server (wrapper for bb-http-server and firefox)
 $ play.teod.eu-preview.sh
 
 # relations (metadata system)

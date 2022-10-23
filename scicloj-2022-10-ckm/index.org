@@ -124,7 +124,7 @@ share the tool with others.
 1. Call to action --- "here's something more people should do"
 2. Definition --- "this is a name I'd like to reuse", "here's a nice mental model."
 3. Journals --- "this is just a record"
-4. Remote references --- "pointers to content from others, possibly annotated"
+4. Remote references --- "things others have made I'd like to refer to", "things I'd like to annotate to learn"
 * getting in touch with Teodor
 async questions later?
 ping me!

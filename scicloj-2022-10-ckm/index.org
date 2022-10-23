@@ -16,7 +16,7 @@ scicloj knowledge archipelago
 2. easy to collect and curate knowledge
 3. easy to learn.
 * who is this guy?
-used to do civil engineering (numerical analysis of nonlinear mechanics)
+used to do civil engineering, numerical analysis of nonlinear mechanics
 
 then software
 

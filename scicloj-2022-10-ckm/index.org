@@ -76,7 +76,7 @@ $ ./play.clj relations :from files :to lines | head
 $ ./play.clj relations :from files :to lines2 | head
 #+end_src
 * =play.teod.eu= tech --- "how does this work?"
-(please jump in and ask questions, I'm not sure what people are interested in)
+(not 100 % sure what people are interested in, suggestions & questions welcome)
 
 1. one folder for each document
    1. metadata in EDN files

@@ -95,8 +95,11 @@ In other words: decouple the tool from the site.
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]]
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]]
 * getting in touch with Teodor
-https://teod.eu/ (links to github, twitter, etc)
+async questions later?
+ping me!
 
-async questions later? ping @teodorlu in #babashka or #data-science or something on Clojurians Slack --- or @teodorheggelund on Twitter.
+I'm really excited about this stuff.
 
-I'm really excited about this stuff!
+| https://teod.eu           | links to github, twittter, etc |
+| Clojurians Slack          | @teodorlu                      |
+| Clojurians Slack channels | Mostly #babashka               |

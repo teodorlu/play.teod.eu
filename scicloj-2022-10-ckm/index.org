@@ -9,9 +9,7 @@
 1. I'm interested in Scicloj and collective knowledge management
 2. I'm excited about my current learning process
 3. So I'm going to share a bit :)
-* vision
-scicloj knowledge archipelago
-
+* vision: scicloj knowledge archipelago
 1. easy to create knowledge
 2. easy to collect and curate knowledge
 3. easy to learn.

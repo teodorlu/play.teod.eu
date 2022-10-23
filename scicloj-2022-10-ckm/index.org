@@ -131,7 +131,7 @@ ping me!
 
 | https://teod.eu           | links to github, twittter, etc |
 | Clojurians Slack          | @teodorlu                      |
-| Clojurians Slack channels | Mostly #babashka               |
+| Clojurians Slack channels | Mostly =#babashka=             |
 
 I'm really excited about this stuff.
 

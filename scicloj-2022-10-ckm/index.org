@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-How can be best learn together?
+How can we best learn together?
 What does "learning together" look like on the web?
 
 Over the last months, Teodor has used https://play.teod.eu to learn stuff.

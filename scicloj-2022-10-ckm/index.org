@@ -24,6 +24,7 @@ https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-wit
 3. easy to learn.
 * story
 - 2017-2020 :: daily journaling with Org-mode
+
   #+begin_src
   $ (cd ~/kb/personal && ls journal-*.org | xargs wc -l)
     2244 journal-2017.org
@@ -36,8 +37,12 @@ https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-wit
   #+end_src
 
 - 2020-2022 :: networked note taking with Roam research
+
+  "hey, I can actually find things now, this is kinda cool"
+
 - 2022-     :: going web native for easy sharing with others!
-  /knowledge wants to be free/
+
+  "Why not make it easy to share my ideas on the web?"
 * who is this guy?
 used to do civil engineering, numerical analysis of nonlinear mechanics
 

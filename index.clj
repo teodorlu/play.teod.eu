@@ -87,20 +87,26 @@
                          ""
                          "#+END_VERSE")
 
-                  "-----"
+                  (paragraphs "-----"
 
-                  (sentences "A temporary message:")
+                              (lines "#+BEGIN_EXPORT html"
+                                     "<img height=\"100px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
+                                     "#+END_EXPORT")
 
-                  (sentences "Hi :) did you come here from Scicloj?"
-                             "Please consider visiting [[./scicloj-2022-10-ckm]]!"
+                              (sentences "We interrupt this page with message:")
 
-                             (sentences "---Teodor 2022-10-23"))
+                              (sentences "Hi :) did you come here from Scicloj?"
+                                         "Please consider visiting [[./scicloj-2022-10-ckm]]!"
 
-                  "-----"
+                                         "---Teodor 2022-10-23")
 
-                  (sentences "Intent: bring ideas to life."
-                             "Discuss, sharpen, play."
-                             "Minimize the distance between intent and reality.")
+                              "-----"
+
+
+
+                              (sentences "Intent: bring ideas to life."
+                                         "Discuss, sharpen, play."
+                                         "Minimize the distance between intent and reality."))
                   (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
                              "Embrace remix culture."
                              "Legibility as affordance, not design constraint.")

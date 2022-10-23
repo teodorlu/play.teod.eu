@@ -5,7 +5,9 @@
 
 [[file:..][..]]
 
-Some notes to help jog my brain.
+url: https://play.teod.eu/
+
+async questions later? ping me on #babashka on Clojurians Slack :)
 
 * rationale
 1. I'm interested in Scicloj and collective knowledge management
@@ -21,22 +23,32 @@ Things to (possibly) show:
 3. the =play.clj relations= CLI
 
 I'm going to emphasize "showing the whole" over "explaining how everything works".
-* Terminology
-1. play.teod.eu --- my knowledge playground / backyard / garden
-2. teod/dbx --- "a collective knowledge toolkit for babashka zealots"
-   1. Very much WIP --- currently not usable.
-* =play.teod.eu= tech
+* terminology
+1. [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] --- my knowledge playground / backyard / garden
+2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"
+   1. Very much WIP
+   2. In its current state, won't help you with anything
+   3. You're better off cloning teodorlu/play.teod.eu and exploring
+* tech stack
+(please jump in and ask questions if you want to see)
+
 1. Lots of babashka
 2. one folder for each document
    1. html in git - no build step
    2. metadata in EDN files
       1. CLI for modifying metadata
-3. A huge generated makefile
-   1. Not really needed, for
+3. a generated makefile
+   1. for dbx, I want pure babashka, no makefiles.
+* scicloj knowledge archipelago
+/Q: how can I learn Clojure data science?/
 
-.
+/Q: how do we create, collect and index Clojure data science learning materials together?/
 
-1. Stack: babashka, pandoc and makefiles
-   1. I want to remove the makefiles.
-* Broader context: managing collective knowledge
-* I'm working on factoring out something reusabl
+Existing initiatives:
+
+1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]]
+2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]]
+* getting in touch
+https://teod.eu/ | https://play.teod.eu/
+
+async questions later? ping me on #babashka on Clojurians Slack :)

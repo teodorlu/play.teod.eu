@@ -24,6 +24,17 @@ https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-wit
 3. easy to learn.
 * story
 - 2017-2020 :: daily journaling with Org-mode
+  #+begin_src
+  $ (cd ~/kb/personal && ls journal-*.org | xargs wc -l)
+    2244 journal-2017.org
+    3375 journal-2018.org
+    6664 journal-2019.org
+    2184 journal-2020.org
+     985 journal-2021.org
+     974 journal-2022.org
+   16426 total
+  #+end_src
+
 - 2020-2022 :: networked note taking with Roam research
 - 2022-     :: going web native for easy sharing with others!
   /knowledge wants to be free/

@@ -92,8 +92,8 @@ $ ./play.clj relations :from files :to lines2 | head
 5. a big generated makefile
    1. makefile generation is painful.
       It's one big string, I want plain data.
-   2. for dbx, I want pure babashka, no makefiles.
-      just use =babashka.fs/modified-since=
+   2. I'd prefer pure babashka, no makefiles.
+      just use =babashka.fs/modified-since= for caching.
 * "but this is all heavily adapted for Teodor's preference"
 Yes.
 The /common toolkit/ needs to be abstracted from /personal preference/.

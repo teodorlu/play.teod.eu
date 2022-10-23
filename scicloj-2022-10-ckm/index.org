@@ -37,6 +37,7 @@ Things I could show:
 I'm going to emphasize "showing the whole" over "explaining how everything works".
 
 #+begin_src shell-script
+# A cheat sheet for myself
 $ play.teod.eu-preview.sh
 #+end_src
 * terminology

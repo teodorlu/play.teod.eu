@@ -98,7 +98,7 @@ the list below is a mouthful.)
       just use =babashka.fs/modified-since= for caching.
 * "but this is all heavily adapted for Teodor's preference"
 Yes.
-The /common toolkit/ needs to be abstracted from /personal preference/.
+A /common toolkit/ must be abstracted from /personal preference/.
 
 1. [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] --- my knowledge playground / backyard / garden
 2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"

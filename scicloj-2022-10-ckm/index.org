@@ -5,12 +5,11 @@
 
 [[file:..][..]]
 
-#+begin_quote
 How can be best learn together?
 What does "learning together" look like on the web?
 
-Over the last months, Teodor has used https://play.teod.eu to learn stuff. In this meeting, he'll share his workflow, and some ideas about collective knowledge management for Clojure data science.
-#+end_quote
+Over the last months, Teodor has used https://play.teod.eu to learn stuff.
+In this visual-tools meeting, he'll share his workflow, and some ideas about collective knowledge management for Clojure data science.
 
 * rationale: learning in public
 1. I'm interested in Scicloj and collective knowledge management

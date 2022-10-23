@@ -123,7 +123,7 @@ share the tool with others.
 * page types on play.teod.eu (can be skipped)
 1. Call to action --- "here's something more people should do"
 2. Definition --- "this is a name I'd like to reuse", "here's a nice mental model."
-3. Journals --- "this is just a record"
+3. Journals --- "temporal index of record"
 4. Remote references --- "things others have made I'd like to refer to", "things I'd like to annotate to learn"
 * getting in touch with Teodor
 async questions sometime later?

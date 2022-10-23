@@ -16,9 +16,10 @@ async questions later? ping me on #babashka on Clojurians Slack :)
 * vision
 scicloj knowledge archipelago
 * demo: =play.teod.eu=
-Things to (possibly) show:
+Things I could show:
 
-1. New page to production.
+1. Create a new page, and deploy it
+   1. Page for Daniel, perhaps?
 2. Linking to other pages
 3. the =play.clj relations= CLI
 
@@ -29,27 +30,45 @@ I'm going to emphasize "showing the whole" over "explaining how everything works
    1. Very much WIP
    2. In its current state, won't help you with anything
    3. You're better off cloning teodorlu/play.teod.eu and exploring
-* tech stack
-(please jump in and ask questions if you want to see)
+* tech --- "how does this work?"
+(please jump in and ask questions, I'm not sure what people are interested in)
 
 1. Lots of babashka
 2. one folder for each document
-   1. html in git - no build step
-   2. metadata in EDN files
+   1. metadata in EDN files
       1. CLI for modifying metadata
-3. a generated makefile
-   1. for dbx, I want pure babashka, no makefiles.
+   2. Embedding small HTML stuff is super easy
+      1. Example: [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]]
+3. no build step, HTML files in Git
+4. a generated makefile
+   1. makefile generation is painful.
+      It's one big string, I want data.
+   2. for dbx, I want pure babashka, no makefiles.
 * scicloj knowledge archipelago
 /Q: how can I learn Clojure data science?/
 
+🤔
+
+=:daniel_thinking_face:= =:kira_thinking_face:=
+
 /Q: how do we create, collect and index Clojure data science learning materials together?/
-* Prior work
+
+#+begin_verse
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
+#+end_verse
+
+(requires thinking together)
+* current initiatives
 1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]]
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]]
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]]
 * getting in touch
-
-
 https://teod.eu/ | https://play.teod.eu/
 
-async questions later? ping me on #babashka on Clojurians Slack :)
+async questions later? ping @teodorlu in #babashka or #data-science or something on Clojurians Slack --- or @teodorheggelund on Twitter.

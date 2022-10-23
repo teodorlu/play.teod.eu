@@ -85,12 +85,18 @@ Yes.
 1. [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] --- my knowledge playground / backyard / garden
 2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"
    1. dbx doesn't really exist outside my head (yet)
+3. Explore how to pull together information from multiple =dbx= sites.
 
-plan: put the good parts of play.teod.eu into dbx,
-  refactor play.teod.eu to use dbx.
-  delete code.
+plan:
 
-In other words: decouple the tool from the site.
+1. put the good parts of play.teod.eu into dbx,
+   - refactor play.teod.eu to use dbx.
+   - delete play.teod.eu code, keep a "customization layer".
+2. avoid depending on Emacs and Org-mode/Org-roam for =dbx=
+   - should be perfectly usable with VSCode/Calva and markdown.
+
+In other words: decouple the tool from the site,
+share the tool with others.
 * scicloj knowledge archipelago
 /Q: how can I learn Clojure data science?/
 

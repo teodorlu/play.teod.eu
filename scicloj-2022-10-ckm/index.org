@@ -43,7 +43,7 @@ $ play.teod.eu-preview.sh
 * terminology
 1. [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] --- my knowledge playground / backyard / garden
 2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"
-   1. dbx doesn't really exist yet outside my head
+   1. dbx doesn't really exist outside my head (yet)
 
 plan: put the good parts of play.teod.eu into dbx,
   refactor play.teod.eu to use dbx.
@@ -65,7 +65,7 @@ In other words: decouple the tool from the site.
 4. A big =babashka/cli= script
 5. Org-mode, org-roam and some Emacs lisp functions
    1. I don't want org-mode or emacs dependencies in dbx
-6. a generated makefile
+6. a big generated makefile
    1. makefile generation is painful.
       It's one big string, I want data.
    2. for dbx, I want pure babashka, no makefiles.

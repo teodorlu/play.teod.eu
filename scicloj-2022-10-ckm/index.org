@@ -57,12 +57,12 @@ $ play.teod.eu-preview.sh
       1. Example: [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]]
       2. Example: the "random button" on the [[file:..][front page]]
 2. no build step, HTML files in Git
-3. -> potentially really fast deploy
-   1. Currently 20-30 seconds, >95% of that is waiting for Cloudflare
-4. A big =babashka/cli= script
-5. Org-mode, org-roam and some Emacs lisp functions
+   1. really fast deploys!
+      Currently 20-30 seconds, >95% of that is waiting for Cloudflare
+3. A big =babashka/cli= script
+4. Org-mode, org-roam and some Emacs lisp functions
    1. I don't want org-mode or emacs dependencies in dbx
-6. a big generated makefile
+5. a big generated makefile
    1. makefile generation is painful.
       It's one big string, I want data.
    2. for dbx, I want pure babashka, no makefiles.

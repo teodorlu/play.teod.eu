@@ -84,7 +84,7 @@ $ ./play.clj relations :from files :to lines2 | head
    2. Embedding small HTML things is super easy
       1. Example: [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]]
       2. Example: the "random button" on the [[file:..][front page]]
-2. no build step, HTML files in Git
+2. no build step, just HTML files in folders, tracked by Git
    1. really fast deploys!
       Currently 20-30 seconds, >95% of that is waiting for Cloudflare
 3. A big =babashka/cli= script

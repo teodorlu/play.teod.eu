@@ -1,9 +1,11 @@
 :PROPERTIES:
 :ID: f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd
 :END:
-#+TITLE: teod/dbx: a toolkit for building your own personal knowledge base
+#+TITLE: dbx
 
 [[file:..][..]]
+
+*teod/dbx: a toolkit for building your own personal knowledge base*
 
 THIS SOFTWARE DOES NOT YET EXIST
 

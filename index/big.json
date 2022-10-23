@@ -450,6 +450,14 @@
   "uuid" : "8e72c536-9881-4477-8670-24c78edd82e7",
   "lang" : "en"
 }, {
+  "slug" : "scicloj-2022-10-dbx-ideas",
+  "title" : "Scicloj 2022-10: ideas for DBX",
+  "readiness" : "wtf-is-this",
+  "uuid" : "8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8",
+  "author-url" : "https://teod.eu",
+  "created" : "2022-10-23",
+  "lang" : "en"
+}, {
   "slug" : "precise-general-novel",
   "title" : "Precise, general, novel",
   "readiness" : "wtf-is-this",
@@ -725,7 +733,7 @@
   "lang" : "en"
 }, {
   "slug" : "dbx",
-  "title" : "teod/dbx: a toolkit for building your own personal knowledge base",
+  "title" : "dbx",
   "readiness" : "wtf-is-this",
   "uuid" : "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
   "author-url" : "https://teod.eu",

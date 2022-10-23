@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID: 8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8
+:END:
+#+TITLE: Scicloj 2022-10: ideas for collective knowledge
+
+[[file:..][..]]
+
+Some notes to help jog my brain.
+
+* rationale
+1. I'm interested in Scicloj and collective knowledge management
+2. I'm excited about my current learning process
+3. And I'm interested in helping others do the same.
+* vision
+scicloj knowledge archipelago
+* demo: =play.teod.eu=
+Things to (possibly) show:
+
+1. New page to production.
+2. Linking to other pages
+3. the =play.clj relations= CLI
+
+I'm going to emphasize "showing the whole" over "explaining how everything works".
+* Terminology
+1. play.teod.eu --- my knowledge playground / backyard / garden
+2. teod/dbx --- "a collective knowledge toolkit for babashka zealots"
+   1. Very much WIP --- currently not usable.
+* =play.teod.eu= tech
+1. Lots of babashka
+2. one folder for each document
+   1. html in git - no build step
+   2. metadata in EDN files
+      1. CLI for modifying metadata
+3. A huge generated makefile
+   1. Not really needed, for
+
+.
+
+1. Stack: babashka, pandoc and makefiles
+   1. I want to remove the makefiles.
+* Broader context: managing collective knowledge
+* I'm working on factoring out something reusabl

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>teod/dbx: a toolkit for building your own personal knowledge base</title>
+  <title>dbx</title>
   <style>
     html {
       line-height: 1.5;
@@ -148,14 +148,34 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -178,8 +198,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">teod/dbx: a toolkit for building your own personal
-knowledge base</h1>
+<h1 class="title">dbx</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -210,6 +229,8 @@ are belong to babashka</a></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
+<p><strong>teod/dbx: a toolkit for building your own personal knowledge
+base</strong></p>
 <p>THIS SOFTWARE DOES NOT YET EXIST</p>
 <p>Idea: split <a
 href="https://play.teod.eu/play.clj">https://play.teod.eu/play.clj</a>

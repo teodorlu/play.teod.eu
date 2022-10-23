@@ -58,7 +58,7 @@ In other words: decouple the tool from the site.
       1. CLI for modifying metadata
    2. Embedding small HTML stuff is super easy
       1. Example: [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]]
-      2. Example: the "random button" on the [[file:~/dev/teodorlu/play.teod.eu/][front page]]
+      2. Example: the "random button" on the [[file:..][front page]]
 2. no build step, HTML files in Git
 3. -> potentially really fast deploy
    1. Currently 20-30 seconds, >95% of that is waiting for Cloudflare

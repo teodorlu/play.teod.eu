@@ -91,7 +91,7 @@ $ ./play.clj relations :from files :to lines2 | head
 4. Org-mode, org-roam and some Emacs lisp functions
 5. a big generated makefile
    1. makefile generation is painful.
-      It's one big string, I want data.
+      It's one big string, I want plain data.
    2. for dbx, I want pure babashka, no makefiles.
       just use =babashka.fs/modified-since=
 * "but this is all heavily adapted for Teodor's preference"

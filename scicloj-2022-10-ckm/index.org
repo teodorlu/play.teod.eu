@@ -11,6 +11,9 @@ What does "learning together" look like on the web?
 Over the last months, Teodor has used https://play.teod.eu to learn stuff.
 In this visual-tools meeting, he'll share his workflow, and some ideas about collective knowledge management for Clojure data science.
 
+Scicloj visual-tools meeting 15 information on Cloureverse:
+https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-with-kindly/9425
+
 * rationale: learning in public
 1. I'm interested in Scicloj and collective knowledge management
 2. I'm excited about my current learning process

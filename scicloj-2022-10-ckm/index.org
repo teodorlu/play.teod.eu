@@ -42,7 +42,7 @@ https://clojureverse.org/t/visual-tools-meeting-15-a-common-ground-for-notes-wit
 
 - 2022-     :: going web native for easy sharing with others!
 
-  "collective knowledge management as sharing an URL"
+  "collective knowledge management as sharing a URL"
 * who is this guy?
 used to do civil engineering, numerical analysis of nonlinear mechanics
 

@@ -63,7 +63,7 @@ I'll include some of those too.
 
 Terminology:
 
-- Person :: An entity that can create eplanatory knowledge
+- Person :: An entity that can create explanatory knowledge
 
 "The Beginning of Infinity" is:
 

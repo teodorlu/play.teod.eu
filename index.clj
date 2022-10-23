@@ -89,10 +89,12 @@
 
                   "-----"
 
-                  (sentences "Hi :) did you come here from Scicloj?"
-                             "Please consider visiting [[./scicloj-2022-10-ckm]]!")
+                  (sentences "A temporary message:")
 
-                  (sentences "---Teodor")
+                  (sentences "Hi :) did you come here from Scicloj?"
+                             "Please consider visiting [[./scicloj-2022-10-ckm]]!"
+
+                             (sentences "---Teodor 2022-10-23"))
 
                   "-----"
 

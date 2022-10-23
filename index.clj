@@ -97,7 +97,7 @@
                                      "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
                                      "#+END_EXPORT")
 
-                              (sentences "Hi :) did you come here from Scicloj?"
+                              (sentences "Hi :) did you come here for Scicloj stuff?"
                                          "Please consider visiting [[./scicloj-2022-10-ckm]]!"
 
                                          "---Teodor 2022-10-23")

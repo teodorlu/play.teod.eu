@@ -31,7 +31,7 @@ But the chapters can be long and complicated.
 I'm often left encouraged but confused, not sure exactly what I've just learned.
 
 Deutsch anticipates this.
-Each chapters consist of a big main part, and a conclusion.
+Chapters begin with a big text, and end with a small conclusion.
 The main part reads like normal prose.
 It motivates an idea, defines that idea, and explores its implications.
 The conclusion is /small/.

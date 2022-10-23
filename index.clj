@@ -92,9 +92,10 @@
                               (lines "#+BEGIN_EXPORT html"
                                      (str
                                       "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
-                                      "<em>We interrupt this page with a message for"
-                                      "visual-tools meeting attendees"
-                                      "</em>"
+                                      (lines
+                                       "<em>We interrupt this page with a message for"
+                                       "visual-tools meeting attendees"
+                                       "</em>")
                                       "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">")
                                      "#+END_EXPORT")
 

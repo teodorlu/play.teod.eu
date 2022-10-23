@@ -24,7 +24,7 @@ these days product
 
 very interested in how we can build knowledge together.
 
-(currently inspired by [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], a book about good explanations)
+inspired by [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], a book about good explanations
 * demo: =play.teod.eu=
 Things I could show:
 

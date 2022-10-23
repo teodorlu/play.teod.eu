@@ -89,7 +89,6 @@ $ ./play.clj relations :from files :to lines2 | head
       Currently 20-30 seconds, 19-29 seconds waiting for Cloudflare
 3. A big =babashka/cli= script
 4. Org-mode, org-roam and some Emacs lisp functions
-   1. I don't want org-mode or emacs dependencies in dbx
 5. a big generated makefile
    1. makefile generation is painful.
       It's one big string, I want data.

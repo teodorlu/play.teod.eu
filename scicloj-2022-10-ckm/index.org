@@ -120,7 +120,7 @@ share the tool with others.
 1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]] (Kira McLean)
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]] (Adam Helinski)
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]] (mostly Daniel I think?)
-* option: page types on play.teod.eu
+* page types on play.teod.eu (can be skipped)
 1. Call to action --- "here's something more people should do"
 2. Definition --- "this is a name I'd like to reuse, here's a nice abstraction."
 3. Journals --- "this is just a record"

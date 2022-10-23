@@ -97,10 +97,12 @@ In other words: decouple the tool from the site.
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]] (Adam Helinski)
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]] (mostly Daniel I think?)
 * option: page types on play.teod.eu
-1. Actionables --- "here's something more people should do"
-2. Definitions --- "this is a name I'd like to reuse"
+1. Call to action --- "here's something more people should do"
+2. Definition --- "this is a name I'd like to reuse, here's a nice abstraction."
 3. Journals --- "this is just a record"
 4. Remote references --- "pointers to content from others, possibly annotated"
+
+(note: a page can be )
 * getting in touch with Teodor
 async questions later?
 ping me!

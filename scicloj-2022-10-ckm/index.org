@@ -81,7 +81,7 @@ $ ./play.clj relations :from files :to lines2 | head
 1. one folder for each document
    1. metadata in EDN files
       1. CLI for modifying metadata
-   2. Embedding small HTML stuff is super easy
+   2. Embedding small HTML things is super easy
       1. Example: [[id:9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825][Scicloj libraries and tools]]
       2. Example: the "random button" on the [[file:..][front page]]
 2. no build step, HTML files in Git

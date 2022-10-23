@@ -5,7 +5,9 @@
 
 [[file:..][..]]
 
-*teod/dbx: a toolkit for building your own personal knowledge base*
+Possible taglines:
+
+*teod/dbx: a collective knowledge toolkit for babashka zealots*
 
 THIS SOFTWARE DOES NOT YET EXIST
 

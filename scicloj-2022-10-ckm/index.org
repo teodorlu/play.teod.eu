@@ -100,7 +100,7 @@ In other words: decouple the tool from the site.
 1. Actionables --- "here's something more people should do"
 2. Definitions --- "this is a name I'd like to reuse"
 3. Journals --- "this is just a record"
-4. Foregin references --- "pointers to content from others, possibly annotated"
+4. Remote references --- "pointers to content from others, possibly annotated"
 * getting in touch with Teodor
 async questions later?
 ping me!

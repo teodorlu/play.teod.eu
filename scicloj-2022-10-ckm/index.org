@@ -86,7 +86,7 @@ $ ./play.clj relations :from files :to lines2 | head
       2. Example: the "random button" on the [[file:..][front page]]
 2. no build step, just HTML files in folders, tracked by Git
    1. really fast deploys!
-      Currently 20-30 seconds, where 19-29 seconds is waiting for Cloudflare
+      Currently 20-30 seconds, 19-29 seconds waiting for Cloudflare
 3. A big =babashka/cli= script
 4. Org-mode, org-roam and some Emacs lisp functions
    1. I don't want org-mode or emacs dependencies in dbx

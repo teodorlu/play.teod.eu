@@ -29,6 +29,8 @@ then software
 these days mostly product
 
 very interested in how we can build knowledge together.
+
+(currently very much excited by [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]] by [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]])
 * demo: =play.teod.eu=
 Things I could show:
 
@@ -38,6 +40,10 @@ Things I could show:
 3. the =play.clj relations= CLI
 
 I'm going to emphasize "showing the whole" over "explaining how everything works".
+
+#+begin_src shell-script
+$ play.teod.eu-preview.sh
+#+end_src
 * terminology
 1. [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] --- my knowledge playground / backyard / garden
 2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"

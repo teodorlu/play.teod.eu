@@ -96,6 +96,11 @@ In other words: decouple the tool from the site.
 1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]] (Kira McLean)
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]] (Adam Helinski)
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]] (mostly Daniel I think?)
+* option: page types on play.teod.eu
+1. Actionables --- "here's something more people should do"
+2. Definitions --- "this is a name I'd like to reuse"
+3. Journals --- "this is just a record"
+4. Foregin references --- "pointers to content from others, possibly annotated"
 * getting in touch with Teodor
 async questions later?
 ping me!

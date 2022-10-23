@@ -5,6 +5,13 @@
 
 [[file:..][..]]
 
+#+begin_quote
+How can be best learn together?
+What does "learning together" look like on the web?
+
+Teodor shares his excitement for his knowledge playground =play.teod.eu=, and some ideas for collective knowledge management for Clojure data science.
+#+end_quote
+
 * rationale: learning in public
 1. I'm interested in Scicloj and collective knowledge management
 2. I'm excited about my current learning process

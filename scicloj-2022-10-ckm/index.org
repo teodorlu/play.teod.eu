@@ -122,7 +122,7 @@ share the tool with others.
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]] (mostly Daniel I think?)
 * page types on play.teod.eu (can be skipped)
 1. Call to action --- "here's something more people should do"
-2. Definition --- "this is a name I'd like to reuse, here's a nice abstraction."
+2. Definition --- "this is a name I'd like to reuse", "here's a nice abstraction."
 3. Journals --- "this is just a record"
 4. Remote references --- "pointers to content from others, possibly annotated"
 * getting in touch with Teodor

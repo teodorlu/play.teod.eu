@@ -5,11 +5,13 @@
 
 [[file:..][..]]
 
-Possible taglines:
-
 *teod/dbx: a collective knowledge toolkit for babashka zealots*
 
-THIS SOFTWARE DOES NOT YET EXIST
+🐉 WARNING: THIS SOFTWARE DOES NOT YET EXIST 🐉
+
+🐉 WARNING: THIS PAGE IS A MESS 🐉
+
+-----
 
 Idea: split https://play.teod.eu/play.clj into something reusable (dbx) and something specific (play.teod.eu).
 

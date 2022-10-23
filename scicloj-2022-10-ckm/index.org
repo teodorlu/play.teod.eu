@@ -126,7 +126,7 @@ share the tool with others.
 3. Journals --- "this is just a record"
 4. Remote references --- "things others have made I'd like to refer to", "things I'd like to annotate to learn"
 * getting in touch with Teodor
-async questions later?
+async questions sometime later?
 ping me!
 
 | https://teod.eu           | links to github, twittter, etc |

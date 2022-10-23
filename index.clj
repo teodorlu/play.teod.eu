@@ -90,11 +90,12 @@
                   (paragraphs "-----"
 
                               (lines "#+BEGIN_EXPORT html"
-                                     "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
-                                     "<em>We interrupt this page with a message for"
-                                     "scicloj adjacent people"
-                                     "</em>"
-                                     "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
+                                     (str
+                                      "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
+                                      "<em>We interrupt this page with a message for"
+                                      "visual-tools meeting attendees"
+                                      "</em>"
+                                      "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">")
                                      "#+END_EXPORT")
 
                               (sentences "Hi :) did you come here for Scicloj stuff?"

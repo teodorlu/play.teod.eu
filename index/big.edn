@@ -190,6 +190,13 @@
   :created "2022-07-23",
   :uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7",
   :lang :en}
+ {:slug "daniel-slutsky",
+  :title "Daniel Slutsky",
+  :readiness :wtf-is-this,
+  :uuid "3c798467-1dcc-480a-b38a-b9915ae0e497",
+  :author-url "https://teod.eu",
+  :created "2022-10-23",
+  :lang :en}
  {:slug "charles-comstock-sketches",
   :title "Charles Comstock's sketches",
   :readiness :wtf-is-this,

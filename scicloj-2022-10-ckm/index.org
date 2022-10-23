@@ -15,6 +15,10 @@ async questions later? ping me on #babashka on Clojurians Slack :)
 3. And I'm interested in helping others do the same.
 * vision
 scicloj knowledge archipelago
+
+1. easy to create knowledge
+2. easy to collect and curate knowledge
+3. easy to learn.
 * demo: =play.teod.eu=
 Things I could show:
 
@@ -63,12 +67,14 @@ I'm going to emphasize "showing the whole" over "explaining how everything works
 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔 🤔
 #+end_verse
 
-(requires thinking together)
+(requires us thinking together :))
 * current initiatives
 1. [[https://github.com/scicloj/clojure-data-cookbook][clojure-data-cookbook]]
 2. [[https://github.com/clojupedia/clojupedia.org][clojupedia.org]]
 3. [[https://scicloj.github.io/docs/resources/libs/][scicloj.github.io/docs/resources/libs]]
-* getting in touch
-https://teod.eu/ | https://play.teod.eu/
+* getting in touch with Teodor
+https://teod.eu/ (links to github, twitter, etc)
 
 async questions later? ping @teodorlu in #babashka or #data-science or something on Clojurians Slack --- or @teodorheggelund on Twitter.
+
+I'm really excited about this stuff!

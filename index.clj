@@ -90,10 +90,12 @@
                   (paragraphs "-----"
 
                               (lines "#+BEGIN_EXPORT html"
-                                     "<img height=\"100px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
+                                     "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
+                                     "<em>We interrupt this page with a message for"
+                                     "scicloj adjacent people"
+                                     "</em>"
+                                     "<img height=\"20px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
                                      "#+END_EXPORT")
-
-                              (sentences "We interrupt this page with message:")
 
                               (sentences "Hi :) did you come here from Scicloj?"
                                          "Please consider visiting [[./scicloj-2022-10-ckm]]!"

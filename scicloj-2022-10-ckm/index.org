@@ -98,8 +98,16 @@ In other words: decouple the tool from the site.
 async questions later?
 ping me!
 
-I'm really excited about this stuff.
-
 | https://teod.eu           | links to github, twittter, etc |
 | Clojurians Slack          | @teodorlu                      |
 | Clojurians Slack channels | Mostly #babashka               |
+
+I'm really excited about this stuff.
+
+#+BEGIN_VERSE
+
+
+
+
+
+#+END_VERSE

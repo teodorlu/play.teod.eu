@@ -44,7 +44,9 @@ $ play.teod.eu-preview.sh
 1. [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] --- my knowledge playground / backyard / garden
 2. [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]] --- "a collective knowledge toolkit for babashka zealots"
    1. dbx doesn't really exist yet outside my head
-   2. but I want to pull out "some parts" of play.teod.eu for easy sharing.
+
+plan: put good parts of play.teod.eu into dbx.
+Decouple the tool from the site.
 * =play.teod.eu= tech --- "how does this work?"
 (please jump in and ask questions, I'm not sure what people are interested in)
 

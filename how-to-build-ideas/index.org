@@ -5,10 +5,6 @@
 
 [[file:..][..]]
 
-Hello, world :)
-
-Let's go to prod --- deploy takes about 30 seconds.
-
 - apply [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]] to product, development, design
 - generalize to ideas
 

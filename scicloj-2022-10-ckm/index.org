@@ -125,8 +125,6 @@ share the tool with others.
 2. Definition --- "this is a name I'd like to reuse, here's a nice abstraction."
 3. Journals --- "this is just a record"
 4. Remote references --- "pointers to content from others, possibly annotated"
-
-(note: a page can be )
 * getting in touch with Teodor
 async questions later?
 ping me!

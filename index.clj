@@ -87,8 +87,10 @@
                          ""
                          "#+END_VERSE")
 
-                  (paragraphs "-----"
+                  (paragraphs #_ "-----"
 
+
+                              #_
                               (lines "#+BEGIN_EXPORT html"
                                      (str
                                       "<img height=\"18px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">"
@@ -99,11 +101,13 @@
                                       "<img height=\"18px\" src=\"https://scicloj.github.io/sci-cloj-logo-transparent.png\">")
                                      "#+END_EXPORT")
 
+                              #_
                               (sentences "Hi :) did you come here for Scicloj stuff?"
                                          "Please consider visiting [[./scicloj-2022-10-ckm]]!"
 
                                          "---Teodor 2022-10-23")
 
+                              #_
                               "-----"
 
 

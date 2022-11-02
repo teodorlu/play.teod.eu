@@ -139,8 +139,7 @@ more on trust & relationships:
 more on value:
 [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], by David Deutsch.
 Why: it crisply defines what's useful to do in science.
-Caveat: this one is a tough read.
-Don't beat yourself up.
+Note: this is a tough read, don't beat yourself up if you think it's hard.
 
 more on programming:
 [[id:a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1][The Pragmatic Programmer]], second edition. By Dave Thomas and Andy Hunt.

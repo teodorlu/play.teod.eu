@@ -197,8 +197,8 @@ I include this list as a personal reminder.
                   (lines
                    "It's for playing with ideas."
                    "Good ones, but mostly bad ones."
-                   "Breathe air into them. Toss them around. Light them on fire."
-                   "See what happens.")
+                   "Toss them around. Light them on fire."
+                   "Then see what happens!")
                   (lines
                    "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
                    "Local development URL for this page is [[http://localhost:9945/][localhost:9945]]."

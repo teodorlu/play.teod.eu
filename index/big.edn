@@ -71,6 +71,13 @@
   :author-url "https://teod.eu",
   :created "2022-10-03",
   :lang :en}
+ {:slug "impose-limitations-eliminate-variance",
+  :title "Impose limitations and eliminate variance",
+  :readiness :wtf-is-this,
+  :uuid "1583d24e-df72-4660-89bf-71dc1b79bd78",
+  :author-url "https://teod.eu",
+  :created "2022-11-03",
+  :lang :en}
  {:slug "scicloj",
   :title "Scicloj",
   :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",

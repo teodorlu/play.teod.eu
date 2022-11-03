@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 1583d24e-df72-4660-89bf-71dc1b79bd78
+:END:
+#+TITLE: Impose limitations and eliminate variance
+
+[[file:..][..]]
+
+#+begin_verse
+Impose limitations and eliminate variance
+A technique used by artists and monks.
+Elimination of all mental noise leaves room for flourishing.
+But we must accept the limits of personal capabilities
+#+end_verse
+
+By [[https://bsless.github.io/][Ben Sless]].
+Picked up [[https://clojurians.slack.com/archives/CBJ5CGE0G/p1667477362900809?thread_ts=1667452133.056919&cid=CBJ5CGE0G][from Clojureverse, 2022-11-03]].

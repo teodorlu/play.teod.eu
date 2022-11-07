@@ -12,7 +12,7 @@ Do: consider thoroughly where you point your attention.
 Copied from [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]] at 2022-07-14:
 
 *named ideas* have a deeper meaning.
-They have an URL, and can be linked to.
+They have an URL so that they can be referred to.
 
 *project journal* is temporally indexed.
 Date up top, topic below.

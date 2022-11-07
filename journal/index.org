@@ -879,8 +879,9 @@ Take this counter example from chapter /The Definition of a Hack/:
 #+begin_quote
 In other words, the hack writes hierarchically.
 He writes what he imagines will play well in the eyes of others.
-He does not ask himself, "What do I want to write?"
-"What do I think is important?"
+He does not ask himself,
+"What do I want to write?
+What do I think is important?"
 Instead, he asks "What's hot, what can I make a deal for?"
 
 The hack is like a politician who consults the polls before he takes a position.
@@ -897,7 +898,7 @@ The joy of doing something worthwhile, and the disgust of wading through swamps.
 
 Again, no.
 I like where I am.
-I'm excited.
+I like where I'm going.
 
 #+begin_verse
 👋 talk to you later,

@@ -853,9 +853,9 @@ We'll see.
 -----
 
 Oh, we're not quite done.
-The eagles have come, all is complete, but we wake up in Rivendell.
+The eagles have come, saved the day, but we wake up in Rivendell.
 
-I'm realizing that I feel better now.
+I actually feel good now.
 Being dead serious, actually honest about that sense of quality.
 I felt like an ass when I was in the heat of the moment.
 Now I feel ... relief.
@@ -874,12 +874,15 @@ Teodor
 ... and now, we're back in the Shire.
 Yet Another End That's Not An End.
 
+I read this:
+
 #+begin_export html
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">feeling proud of your work is critical for any ambitious/high-achieving person. for this type, it’s not about the hours put in, it’s about the *feeling they get out* of doing the work. and if they’re not interested in the work, it’s hard to make it phenomenal and be proud of it.</p>&mdash; Isabel⚡️ (@isabelunraveled) <a href="https://twitter.com/isabelunraveled/status/1589683739696984071?ref_src=twsrc%5Etfw">November 7, 2022</a></blockquote>
 #+end_export
 
-This sounds strikingly similar to "territorial orientation" from [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]].
-Take this counter example from chapter /The Definition of a Hack/:
+
+[[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]] introduces "territorial orientation".
+Here's a quote from the chapter /The Definition of a Hack/:
 
 #+begin_quote
 In other words, the hack writes hierarchically.
@@ -901,7 +904,7 @@ The joy of doing something worthwhile, and the disgust of wading through swamps.
 
 "so what, you feel like complaining?"
 
-Again, no.
+No.
 I like where I am.
 I like where I'm going.
 

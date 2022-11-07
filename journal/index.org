@@ -788,9 +788,10 @@ Men ... hvor var det vi gjorde det?
 Vi flyttet det til et Iterate-repo, vi.
 * 2022-11-07
 ** The bitter aftertaste of cultivated aesthetics
+"Cultivate your aesthetic", [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]] said.
+
 woah, already procrastinating.
 What's Visa's last name?
-** Procrastination
 
 * trailing whitespace
 #+BEGIN_VERSE

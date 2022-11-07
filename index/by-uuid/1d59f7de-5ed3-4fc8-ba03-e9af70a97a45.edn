@@ -2,6 +2,6 @@
  :title "introspect (book)",
  :readiness :wtf-is-this,
  :uuid "1d59f7de-5ed3-4fc8-ba03-e9af70a97a45",
- :author-url "https://teod.eu",
  :created "2022-11-07",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

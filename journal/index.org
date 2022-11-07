@@ -888,6 +888,10 @@ He's a demagogue.
 He panders.
 #+end_quote
 
+"so what?"
+
+Yeah, that's the feeling of quality and lack thereof.
+The joy of doing something worthwhile, and the disgust of wading through swamps.
 * trailing whitespace
 #+BEGIN_VERSE
 

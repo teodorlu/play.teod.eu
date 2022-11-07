@@ -900,8 +900,8 @@ I like where I am.
 I'm excited.
 
 #+begin_verse
-👋 laters,
-   T
+👋 talk to you later,
+     T
 #+end_verse
 * trailing whitespace
 #+BEGIN_VERSE

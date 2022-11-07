@@ -874,7 +874,7 @@ Yet Another End That's Not An End.
 #+end_export
 
 This sounds strikingly similar to "territorial orientation" from [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]].
-Take this counter example from /The Definition of a Hack/:
+Take this counter example from chapter /The Definition of a Hack/:
 
 #+begin_quote
 In other words, the hack writes hierarchically.

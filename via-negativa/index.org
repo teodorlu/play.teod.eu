@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: c9e6730d-f318-42b8-9d18-1e36716eb351
+:END:
+#+TITLE: via negativa
+
+[[file:..][..]]
+
+Science works via negativa --- we seek to /invalidate/ a hypothesis through experiments.
+
+I was first introduced to the concept in [[id:d0c422ec-f856-44d8-b9a5-786137da06ef][Antifragile]].

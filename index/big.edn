@@ -68,9 +68,9 @@
   :title "Ida Aanes",
   :readiness :wtf-is-this,
   :uuid "0dec1845-f5c3-4061-8843-5089ff3b8657",
-  :author-url "https://teod.eu",
   :created "2022-11-07",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "pandoc-edn",
   :title "pandoc-edn",
   :readiness :wtf-is-this,
@@ -516,6 +516,13 @@
   :author-url "https://teod.eu",
   :created "2022-08-17",
   :lang :en}
+ {:slug "nassim-taleb",
+  :title "Nassim Taleb",
+  :readiness :wtf-is-this,
+  :uuid "a68a1144-24f0-4312-b7a4-9facfdbfc634",
+  :created "2022-11-07",
+  :lang :en,
+  :form :remote-reference}
  {:slug "the-pragmatic-programmer",
   :title "The Pragmatic Programmer",
   :readiness :wtf-is-this,
@@ -608,6 +615,13 @@
   :created "2022-09-27",
   :lang :en,
   :form :remote-reference}
+ {:slug "steven-pressfield",
+  :title "Steven Pressfield",
+  :readiness :wtf-is-this,
+  :uuid "c24fb740-235f-4798-aee6-a3075a45fef6",
+  :created "2022-11-07",
+  :lang :en,
+  :form :remote-reference}
  {:slug "curious",
   :title "Please talk to me about stuff that doesn't fit!",
   :readiness :wtf-is-this,
@@ -628,6 +642,13 @@
   :author-url "https://teod.eu",
   :uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15",
   :lang :en}
+ {:slug "via-negativa",
+  :title "via negativa",
+  :readiness :wtf-is-this,
+  :uuid "c9e6730d-f318-42b8-9d18-1e36716eb351",
+  :author-url "https://teod.eu",
+  :created "2022-11-07",
+  :lang :en}
  {:slug "denotational-design",
   :title "Denotational Design",
   :readiness :wtf-is-this,
@@ -645,6 +666,13 @@
   :title "Prefer narrow statements",
   :readiness :wtf-is-this,
   :uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
+  :lang :en}
+ {:slug "antifragile",
+  :title "Antifragile",
+  :readiness :wtf-is-this,
+  :uuid "d0c422ec-f856-44d8-b9a5-786137da06ef",
+  :author-url "https://teod.eu",
+  :created "2022-11-07",
   :lang :en}
  {:slug "visakanv",
   :title "visa",
@@ -709,6 +737,13 @@
   :author-url "https://teod.eu",
   :created "2022-09-10",
   :lang :en}
+ {:slug "the-war-of-art",
+  :title "The War of Art",
+  :readiness :wtf-is-this,
+  :uuid "fa08845b-32ed-4e74-a458-de85884da52d",
+  :created "2022-11-07",
+  :lang :en,
+  :form :remote-reference}
  {:slug "thesis-antithesis-synthesis",
   :title "Thesis, anitthesis, synthesis",
   :readiness :wtf-is-this,

@@ -1,7 +1,6 @@
-{:slug "ida-aanes",
- :title "Ida Aanes",
+{:title "Nassim Taleb",
  :readiness :wtf-is-this,
- :uuid "0dec1845-f5c3-4061-8843-5089ff3b8657",
+ :uuid "a68a1144-24f0-4312-b7a4-9facfdbfc634",
  :created "2022-11-07",
  :lang :en,
  :form :remote-reference}

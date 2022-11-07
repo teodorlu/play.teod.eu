@@ -1,7 +1,6 @@
-{:slug "ida-aanes",
- :title "Ida Aanes",
+{:title "Steven Pressfield",
  :readiness :wtf-is-this,
- :uuid "0dec1845-f5c3-4061-8843-5089ff3b8657",
+ :uuid "c24fb740-235f-4798-aee6-a3075a45fef6",
  :created "2022-11-07",
  :lang :en,
  :form :remote-reference}

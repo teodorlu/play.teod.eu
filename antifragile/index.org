@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: d0c422ec-f856-44d8-b9a5-786137da06ef
+:END:
+#+TITLE: Antifragile
+
+[[file:..][..]]
+
+a book by [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]]: https://en.wikipedia.org/wiki/Antifragile_(book)
+
+an idea: https://en.wikipedia.org/wiki/Antifragility
+
+a thing is antifragile if it gets stronger when exposed to stressors (information, randomness, time)

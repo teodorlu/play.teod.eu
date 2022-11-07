@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: fa08845b-32ed-4e74-a458-de85884da52d
+:END:
+#+TITLE: The War of Art
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/The_War_of_Art_(book)
+
+Book by [[id:c24fb740-235f-4798-aee6-a3075a45fef6][Steven Pressfield]].

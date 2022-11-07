@@ -874,7 +874,19 @@ Yet Another End That's Not An End.
 #+end_export
 
 This sounds strikingly similar to "territorial orientation" from [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]].
-Take this
+Take this counter example from /The Definition of a Hack/:
+
+#+begin_quote
+In other words, the hack writes hierarchically.
+He writes what he imagines will play well in the eyes of others.
+He does not ask himself, "What do I want to write?"
+"What do I think is important?"
+Instead, he asks "What's hot, what can I make a deal for?"
+
+The hack is like a politician who consults the polls before he takes a position.
+He's a demagogue.
+He panders.
+#+end_quote
 
 * trailing whitespace
 #+BEGIN_VERSE

@@ -22,6 +22,11 @@ Why?
 2. There's just one language
 3. The "do we check in the Makefile?" question does not exist
 4. Other things can use the same EDN data that models build dependencies.
+
+How?
+
+Read this:
+https://blog.michielborkent.nl/speeding-up-builds-fs-modified-since.html
 #+end_quote
 
 * Makefile EDN spec

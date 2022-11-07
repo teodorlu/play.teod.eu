@@ -224,6 +224,21 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -281,6 +296,9 @@ perhaps even better if we don’t have to start / restart processes</li>
 <li>Other things can use the same EDN data that models build
 dependencies.</li>
 </ol>
+<p>How?</p>
+<p>Read this: <a
+href="https://blog.michielborkent.nl/speeding-up-builds-fs-modified-since.html">https://blog.michielborkent.nl/speeding-up-builds-fs-modified-since.html</a></p>
 </blockquote>
 <h2 id="makefile-edn-spec">Makefile EDN spec</h2>
 <table>

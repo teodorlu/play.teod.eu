@@ -75,9 +75,9 @@
   :title "Impose limitations and eliminate variance",
   :readiness :wtf-is-this,
   :uuid "1583d24e-df72-4660-89bf-71dc1b79bd78",
-  :author-url "https://teod.eu",
   :created "2022-11-03",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "scicloj",
   :title "Scicloj",
   :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",
@@ -90,6 +90,13 @@
   :uuid "1b275a74-df8e-4ef7-a401-4f04283ef68e",
   :author-url "https://teod.eu",
   :created "2022-10-20",
+  :lang :en}
+ {:slug "introspectvv",
+  :title "introspect (book)",
+  :readiness :wtf-is-this,
+  :uuid "1d59f7de-5ed3-4fc8-ba03-e9af70a97a45",
+  :author-url "https://teod.eu",
+  :created "2022-11-07",
   :lang :en}
  {:slug "okrs-are-scale-invariant",
   :title "OKRs are scale invariant",
@@ -285,6 +292,13 @@
   :author-url "https://teod.eu",
   :created "2022-08-08",
   :lang :en}
+ {:slug "friendly-ambitious-nerd",
+  :title "friendly ambitious nerd",
+  :readiness :wtf-is-this,
+  :uuid "57341ad1-065a-4652-979d-61887803aabf",
+  :created "2022-11-07",
+  :lang :en,
+  :form :remote-reference}
  {:slug "scicloj-is-awesome",
   :title "Scicloj is awesome",
   :readiness :wtf-is-this,
@@ -618,6 +632,13 @@
   :readiness :wtf-is-this,
   :uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
   :lang :en}
+ {:slug "visakanv",
+  :title "Visakan Veerasamy",
+  :readiness :wtf-is-this,
+  :uuid "d1e0e6bd-d0ce-4880-acc7-e4935e643ebd",
+  :created "2022-11-07",
+  :lang :en,
+  :form :remote-reference}
  {:slug "dark-agile",
   :title "Dark Agile",
   :readiness :wtf-is-this,

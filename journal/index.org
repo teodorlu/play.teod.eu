@@ -786,7 +786,13 @@ Jeg har lyst til å bruke dingsen til Magnus.
 Det hadde vært fint.
 Men ... hvor var det vi gjorde det?
 Vi flyttet det til et Iterate-repo, vi.
-* HELLO FINN!!!!
+* 2022-11-07
+** The bitter aftertaste of cultivated aesthetics
+woah, already procrastinating.
+What's Visa's last name?
+** Procrastination
+
+* trailing whitespace
 #+BEGIN_VERSE
 
 

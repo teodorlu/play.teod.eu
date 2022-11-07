@@ -1,9 +1,11 @@
 :PROPERTIES:
 :ID: 1d59f7de-5ed3-4fc8-ba03-e9af70a97a45
 :END:
-#+TITLE: introspect (book)
+#+TITLE: introspect
 
 [[file:..][..]]
+
+book by [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]
 
 https://twitter.com/introspectvv |
 https://visakanv.gumroad.com/l/introspect

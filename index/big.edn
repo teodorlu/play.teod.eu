@@ -64,6 +64,13 @@
   :created "2022-07-14",
   :uuid "0cc48734-e933-44cb-a4e8-2678f125f6df",
   :lang :en}
+ {:slug "ida-aanes",
+  :title "Ida Aanes",
+  :readiness :wtf-is-this,
+  :uuid "0dec1845-f5c3-4061-8843-5089ff3b8657",
+  :author-url "https://teod.eu",
+  :created "2022-11-07",
+  :lang :en}
  {:slug "pandoc-edn",
   :title "pandoc-edn",
   :readiness :wtf-is-this,
@@ -78,6 +85,13 @@
   :created "2022-11-03",
   :lang :en,
   :form :remote-reference}
+ {:slug "sindre",
+  :title "Sindre",
+  :readiness :wtf-is-this,
+  :uuid "16f444c6-7311-4b95-9288-f878dd052ae4",
+  :author-url "https://teod.eu",
+  :created "2022-11-07",
+  :lang :en}
  {:slug "scicloj",
   :title "Scicloj",
   :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",

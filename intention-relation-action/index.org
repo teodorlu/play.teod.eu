@@ -5,9 +5,7 @@
 
 [[./..][..]]
 
-1. Intent
-2. Relationships
-3. Action
+*1. Intent*
 
 Be intentional in what you do.
 If you cannot execute with intent, don't do it.
@@ -15,11 +13,15 @@ Don't just follow the herd.
 Prefer explicit choices.
 Don't empty your reserves for something you don't believe in.
 
+*2. Relationships*
+
 Your relationships are valuable.
 Remember that.
 How can you prioritize the humans around you?
 What are their values?
 What are their perspectives?
+
+*3. Action*
 
 When intent is clear and relationships are cared for, take action.
 Go out, and change what is.

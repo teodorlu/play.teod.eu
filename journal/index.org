@@ -918,6 +918,44 @@ Grapefruit.
 👋 talk to you later,
      T
 #+end_verse
+* 2022-11-25
+We had some snow!
+Now we have some gray stuff.
+** =cond->= confusion
+I expect the following to evaluate without crashing.
+
+#+begin_src clojure
+(cond-> (list 1 2 3)
+  number? inc)
+#+end_src
+
+Do you know what?
+It crashes!
+Who would have thought.
+
+#+begin_src
+1. Unhandled java.lang.ClassCastException
+   class clojure.lang.PersistentList cannot be cast to class java.lang.Number
+   (clojure.lang.PersistentList is in unnamed module of loader 'app';
+   java.lang.Number is in module java.base of loader 'bootstrap')
+#+end_src
+
+I thought
+
+#+begin_src clojure
+(cond-> form condition transform)
+#+end_src
+
+was equivalent to
+
+#+begin_src clojure
+(if (condition form)
+  (transform form)
+  form)
+#+end_src
+
+, but it appears I was wrong.
+Not sure why.
 * trailing whitespace
 #+BEGIN_VERSE
 

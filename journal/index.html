@@ -453,6 +453,11 @@ taking notes, why not just copy-paste from wikipedia?</a></li>
 id="toc-on-the-bitter-aftertaste-of-cultivated-aesthetics">On the bitter
 aftertaste of cultivated aesthetics</a></li>
 </ul></li>
+<li><a href="#section-19" id="toc-section-19">2022-11-25</a>
+<ul>
+<li><a href="#cond--confusion" id="toc-cond--confusion"><code
+class="verbatim">cond-&gt;</code> confusion</a></li>
+</ul></li>
 <li><a href="#trailing-whitespace" id="toc-trailing-whitespace">trailing
 whitespace</a></li>
 </ul>
@@ -1419,6 +1424,29 @@ swamps.</p>
 <p>bitter can be good. Ginger. A good beer. Grapefruit.</p>
 <div class="line-block">👋 talk to you later,<br />
      T</div>
+<h2 id="section-19">2022-11-25</h2>
+<p>We had some snow! Now we have some gray stuff.</p>
+<h3 id="cond--confusion"><code class="verbatim">cond-&gt;</code>
+confusion</h3>
+<p>I expect the following to evaluate without crashing.</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(cond-&gt; (<span class="kw">list</span> <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">number?</span> <span class="kw">inc</span>)</span></code></pre></div>
+<p>Do you know what? It crashes! Who would have thought.</p>
+<pre><code>1. Unhandled java.lang.ClassCastException
+   class clojure.lang.PersistentList cannot be cast to class java.lang.Number
+   (clojure.lang.PersistentList is in unnamed module of loader &#39;app&#39;;
+   java.lang.Number is in module java.base of loader &#39;bootstrap&#39;)
+</code></pre>
+<p>I thought</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>(cond-&gt; form condition transform)</span></code></pre></div>
+<p>was equivalent to</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">if</span> (condition form)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  (transform form)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  form)</span></code></pre></div>
+<p>, but it appears I was wrong. Not sure why.</p>
 <h2 id="trailing-whitespace">trailing whitespace</h2>
 <div class="line-block"><br />
 <br />

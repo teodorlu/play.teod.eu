@@ -25,7 +25,7 @@ Ting som er fine å kosekode på:
 
 -----
 
-Konseptet er skamløst stjålet fra [[https://twitter.com/magnars/][Magnar Sveen]] og [[https://twitter.com/cjno/][Christian Johansen]] (tror jeg).
+Konseptet er stjålet fra [[https://twitter.com/magnars/][Magnar Sveen]] og [[https://twitter.com/cjno/][Christian Johansen]].
 
 * Slide 1
 #+BEGIN_EXPORT html

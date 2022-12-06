@@ -161,6 +161,21 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -202,8 +217,7 @@ id="toc-appendix---arbeidslogg">Appendix - arbeidslogg</a>
 <p>Kosekoding er ikke på systemer som kan eksplodere og gjøre det kjipt
 for folk. Kosekoding er på små, trivelige ting.</p>
 <hr />
-<p>Kanskje kosekoding er et fint alternativ til å bli utbrent og
-lei?</p>
+<p>Kanskje kosekoding er et alternativ til å bli lei?</p>
 <hr />
 <p>Ting som er fine å kosekode på:</p>
 <ol>

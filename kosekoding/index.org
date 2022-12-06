@@ -6,14 +6,15 @@
 [[file:..][..]]
 
 Kosekoding er ikke stress.
-Kosekoding er kos.
+Kosekoding er kos!
 
 Kosekoding er ikke på systemer som kan eksplodere og gjøre det kjipt for folk.
 Kosekoding er på små, trivelige ting.
 
 -----
 
-Kanskje kosekoding er et alternativ til å bli lei?
+Er du lei?
+Sett av en time til timekosekoding.
 
 -----
 
@@ -26,61 +27,13 @@ Ting som er fine å kosekode på:
 -----
 
 Konseptet er stjålet fra [[https://twitter.com/magnars/][Magnar Sveen]] og [[https://twitter.com/cjno/][Christian Johansen]].
+Takk!
 
-* Slide 1
+* Kosekoding krever at du tar deg tid
 #+BEGIN_EXPORT html
 <img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fteod%2Fiy0ZjX7Q29.png?alt=media&amp;token=0676b79f-a173-4fa9-a93d-aa3bb134bf9b">
 #+END_EXPORT
-* slide 2
+* Stol på deg selv!
 #+BEGIN_EXPORT html
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gm trust yourself today <a href="https://t.co/sTkEuPAkp7">pic.twitter.com/sTkEuPAkp7</a></p>&mdash; Vivid Void (@VividVoid_) <a href="https://twitter.com/VividVoid_/status/1557734828031614976?ref_src=twsrc%5Etfw">August 11, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 #+END_EXPORT
-* hack
-ønsker å få dette til å funke /ISH/ med eksisterende JS-kode før jeg begynner å refaktorere.
-holde meg på grønn.
-
-Så inni her kommer jeg til å embedde litt rå HTML som kanskje kan bli et slideshow.
-
-#+BEGIN_EXPORT html
-        <div id="slideshow">
-            <h1>epler</h1>
-            <p>innhold 11</p>
-            <p>innhold 12</p>
-
-            <h1>Pærer</h1>
-            <p>innhold 21</p>
-            <p>innhold 22</p>
-        </div>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<script src="magnus_slideshow.js"></script>
-#+END_EXPORT
-* Appendix - arbeidslogg
-** 2022-10-16
-1. Jeg har fått Magnus sine greier til å funke
-2. yay!
-3. Jeg har også fått samlet greiene i én fil, så jeg har litt bedre kontroll
-
-Hva er gjenstående arbeid?
-
-1. problem: /slide discovery tag/ er den samme som /slide present tag/.
-2. problem: "hook in in DOM-logikk" er kontrollert i biblioteket, ikke i userspace
-*** Først --- få kontroll på sideeffektene. Tidy first
-*** Så --- få vist lysbildene på hele sidehøyden.
-*** MEN ALLER FØRST!
-Jeg vil legge ned playground.teod.eu.
-I alle fall få til en solid redirect.
-Tror jeg kan kopiere toreheggelund.com-kode.
-
-OG jeg har lyst til å fikse toreheggelund.com i dag. Da må jeg sette av tid!
-Ikke bare sitte og pelle på mine egne ting. (Nå sier jeg også "pelle", Oddmund.)
-
-Og måten jeg tenker på å gjøre det er:
-
-1. Copy paste litt kode
-2. Prøv lokalt
-3. Gå i prod
-4. Prøv i prod.
-
-YOLO

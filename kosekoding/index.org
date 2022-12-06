@@ -29,11 +29,24 @@ Ting som er fine å kosekode på:
 Konseptet er stjålet fra [[https://twitter.com/magnars/][Magnar Sveen]] og [[https://twitter.com/cjno/][Christian Johansen]].
 Takk!
 
-* Kosekoding krever at du tar deg tid
+* Kosekoding krever at du tar deg tid!
 #+BEGIN_EXPORT html
 <img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fteod%2Fiy0ZjX7Q29.png?alt=media&amp;token=0676b79f-a173-4fa9-a93d-aa3bb134bf9b">
 #+END_EXPORT
-* Stol på deg selv!
+* Kosekoding krever at du stoler på deg selv!
 #+BEGIN_EXPORT html
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gm trust yourself today <a href="https://t.co/sTkEuPAkp7">pic.twitter.com/sTkEuPAkp7</a></p>&mdash; Vivid Void (@VividVoid_) <a href="https://twitter.com/VividVoid_/status/1557734828031614976?ref_src=twsrc%5Etfw">August 11, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 #+END_EXPORT
+* PLAN FOR FROKOSTMØTE 2022-12-06
+Vi skal kode på noe jeg synes er kos, https://play.teod.eu/!
+
+Oooog vi skal lage støtte for IKI.
+
+"Hva er det?"
+
+I dag må IKI lese all HTML-en på hele play.teod.eu.
+Sindre har laget en alternativ mekanisme.
+Det går an å tilby en fil på toppnivå - =iki.json= - som man putter alle sidene sine i.
+Det ønsker jeg å støtte!
+
+Eksempel: https://protean.app.iterate.no/iki.json

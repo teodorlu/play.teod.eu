@@ -50,3 +50,14 @@ Det går an å tilby en fil på toppnivå - =iki.json= - som man putter alle sid
 Det ønsker jeg å støtte!
 
 Eksempel: https://protean.app.iterate.no/iki.json
+* FINN
+hei jeg er teodor
+
+jeg har lyst til å kosekode
+
+journey before destination
+
+Så!
+
+Den skal ha en ny fil.
+Som gjør det lettere for Sindre å indeksere.

@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 2d60ee76-a193-46fd-a07b-838af66cfcd6
 :END:
-#+TITLE: Kosekoding
+#+TITLE: Kosekoding 🤗
 
 [[file:..][..]]
 

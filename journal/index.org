@@ -956,6 +956,19 @@ was equivalent to
 
 , but it appears I was wrong.
 Not sure why.
+* 2022-12-12
+:)
+** Asking people for stuff
+Proposed principle: /don't ask people for stuff in public/.
+
+Why?
+It couples "is this disrespectful" from other questions as "what is good?" and "what is practical?"
+
+Proposed principle:
+
+1. Provide information and invitations in public
+2. Ask for stuff in private.
+
 * trailing whitespace
 #+BEGIN_VERSE
 

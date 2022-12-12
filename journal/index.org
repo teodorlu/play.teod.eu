@@ -958,7 +958,7 @@ was equivalent to
 Not sure why.
 * 2022-12-12
 :)
-** Asking people for stuff
+** How to ask for stuff: in public or in private?
 Proposed principle: /don't ask people for stuff in public/.
 
 Why?

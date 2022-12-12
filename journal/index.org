@@ -962,7 +962,7 @@ Not sure why.
 Proposed principle: /don't ask people for stuff in public/.
 
 Why?
-It couples "is this disrespectful" from other questions as "what is good?" and "what is practical?"
+It couples "is this disrespectful" from other questions as "what is good?" and "what is practical?".
 
 Proposed principle:
 

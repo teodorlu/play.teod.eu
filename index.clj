@@ -193,16 +193,23 @@ I include this list as a personal reminder.
                   (lines
                    "Good question!"
                    "What this /is/ is perhaps less useful than what this is /for/.")
+
+
+
                   "** Then, what is this /for/??"
-                  (lines
-                   "It's for playing with ideas."
-                   "Good ones, but mostly bad ones."
-                   "Toss them around. Light them on fire."
-                   "Then see what happens!")
-                  (lines
-                   "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
-                   "Local development URL for this page is [[http://localhost:9945/][localhost:9945]]."
-                   )
+                  (lines "It's for playing with ideas."
+                         "Good ones, but mostly bad ones."
+                         "Toss them around. Light them on fire."
+                         "Then see what happens!")
+
+                  (lines "But if you still want to know what this is, consider watching this video:")
+
+                  (lines "#+BEGIN_EXPORT html"
+                         "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JSMcK5strRo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                         "#+END_EXPORT")
+
+                  (lines "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
+                         "Local development URL for this page is [[http://localhost:9945/][localhost:9945]].")
 
                   (let [blank-lines 5]
                     (str "#+BEGIN_VERSE" "\n"

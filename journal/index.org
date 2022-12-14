@@ -962,13 +962,16 @@ Not sure why.
 Proposed principle: /don't ask people for stuff in public/.
 
 Why?
-It decouples "is this disrespectful" from other questions as "what is good?" and "what is practical?".
+I was in an E-mail chain with five other people.
+I don't like those E-mail chains.
 
 Proposed principle:
 
 1. Provide information and invitations in public
 2. Ask for stuff in private.
 
+Why?
+It decouples "is this disrespectful" from other questions as "what is good?" and "what is practical?".
 * trailing whitespace
 #+BEGIN_VERSE
 

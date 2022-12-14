@@ -200,7 +200,7 @@ I include this list as a personal reminder.
                   (lines "It's for playing with ideas."
                          "Good ones, but mostly bad ones."
                          "Toss them around. Light them on fire."
-                         "Then see what happens!")
+                         "Then watch!")
 
                   (lines "But if you still want to know what this is, consider watching this video:")
 

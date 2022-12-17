@@ -8,6 +8,9 @@
 /Instead, please try "hold narrow opinions, ask good questions"./
 
 * Part 1 -- a taxonomy of knowledge.
+:PROPERTIES:
+:CUSTOM_ID: 73c043
+:END:
 
 "Strong opinions" is an excuse for imprecise, sloppy thinking.
 Sloppy thinking is bad.
@@ -79,6 +82,9 @@ I promise that there's a specific call to action at the end!
 #+end_export
 
 * Part 2 -- so what?
+:PROPERTIES:
+:CUSTOM_ID: 71e9ee
+:END:
 
 By talking more precisely about knowledge, we can build better stuff together.
 So, where does "better" fit into this hierarchy of knowledge?
@@ -122,6 +128,9 @@ This is an ideal!
 Precise thinking requires more effort.
 
 * Part 3 -- write shit down.
+:PROPERTIES:
+:CUSTOM_ID: 7f5c12
+:END:
 
 If you don't make your thinking explicit, you won't be able to look at your thinking from the outside.
 Explicit thinking is exactly what you get when you write down what you think.

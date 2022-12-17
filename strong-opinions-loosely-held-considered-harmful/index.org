@@ -174,11 +174,13 @@ Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/mast
 # (let's avoid infinite recursion, heh)
 # Please add your comment between the hands 👇
 ** 2022-12-17
-*** Teodor
+*** Am I being too forceful?
 I don't want to discourage people from trying or learning.
 Yet, I want to be clear.
 Not quite sure how to balance that.
 Comments & reactions welcome, curious if people find this encouraging, insulting or somwehere in between.
+
+-- Teodor
 ** .
 # Please add your comment between the hands 👆
 

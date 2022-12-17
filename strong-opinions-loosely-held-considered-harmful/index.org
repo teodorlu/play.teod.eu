@@ -139,6 +139,9 @@ Or be precise in what you're asking for.
 
 Writing is caring.
 
+* Discussion
+Nothing to see here yet!
+
 #+BEGIN_VERSE
 
 

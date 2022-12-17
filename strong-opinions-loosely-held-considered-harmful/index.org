@@ -151,18 +151,24 @@ Here's some plaintext for you to copy to get started:
   # [... how to comment ...]
   # (let's avoid infinite recursion, heh)
 
+  # Please add your comment here 👇
   ** 2022-12-17
   *** Mike
   # (assuming your name is Mike!)
   I don't like how you're trying to put everything into a box.
   What you're writing here really doesn't help me think.
   It would just get in the way, slow me down and make me mad.
+  # Please add your comment here 👆
 #+end_src
 
 Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/master/strong-opinions-loosely-held-considered-harmful/index.org][source file for this document]].
 
-Thank you for reading all the way to the end!
-I really appreciate that.
+# This line is an org-mode comment.
+# It doesn't show up in the HTML.
+# So thank you a lot for taking the time to fork comment and create a PR!
+# Don't worry about recompiling the HTML, I'll just do that.
+# Or try running =make= in the project directory, that might work if you have https://pandoc.org/ and https://babashka.org/ installed.
+# Just if you want to, that's no requirement.
 
 # [... how to comment ...]
 # (let's avoid infinite recursion, heh)

@@ -63,7 +63,7 @@ You ask a good follow up question because you recognize the situation of your co
 
 #+begin_export html
 <center>
-!!!
+!
 </center>
 #+end_export
 
@@ -85,8 +85,8 @@ So, where does "better" fit into this hierarchy of knowledge?
 Where's the quality?
 That's a great question, and I don't have a precise answer.
 I believe quality is both objective and subjective.
-It doesn't fit neatly into either of the four categories..
-Rather, it ties them together.
+It doesn't fit neatly into either of the four categories.
+Rather, it ties fact and judgment together.
 
 So, what should we do?
 

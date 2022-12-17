@@ -7,7 +7,7 @@
 
 /Instead, please try "hold narrow opinions, ask good questions"./
 
-* Part 1 -- a taxonomy of knowledge
+* Part 1 -- a taxonomy of knowledge.
 
 "Strong opinions" is an excuse for imprecise, sloppy thinking.
 Sloppy thinking is bad.

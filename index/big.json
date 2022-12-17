@@ -681,6 +681,14 @@
   "uuid" : "b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd",
   "lang" : "en"
 }, {
+  "slug" : "strong-opinions-loosely-held-considered-harmful",
+  "title" : "Strong",
+  "readiness" : "wtf-is-this",
+  "uuid" : "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
+  "author-url" : "https://teod.eu",
+  "created" : "2022-12-16",
+  "lang" : "en"
+}, {
   "slug" : "journal",
   "title" : "Teodor's public-personal journal",
   "form" : "rambling",
@@ -768,9 +776,9 @@
   "title" : "Antifragile",
   "readiness" : "wtf-is-this",
   "uuid" : "d0c422ec-f856-44d8-b9a5-786137da06ef",
-  "author-url" : "https://teod.eu",
   "created" : "2022-11-07",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "visakanv",
   "title" : "visa",

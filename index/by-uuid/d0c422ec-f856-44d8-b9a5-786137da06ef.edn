@@ -2,6 +2,6 @@
  :title "Antifragile",
  :readiness :wtf-is-this,
  :uuid "d0c422ec-f856-44d8-b9a5-786137da06ef",
- :author-url "https://teod.eu",
  :created "2022-11-07",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

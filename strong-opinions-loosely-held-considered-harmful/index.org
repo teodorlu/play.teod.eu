@@ -1,0 +1,91 @@
+:PROPERTIES:
+:ID: bd1be8c0-9227-4f87-9e9e-86b0f5903d5d
+:END:
+#+TITLE: "Strong opinions loosely held" is an excuse for sloppy thinking
+
+[[file:..][..]]
+
+/Instead, let's try "narrow opinions and good questions"./
+
+"Strong opinions" is an excuse for imprecise, sloppy thinking.
+That's bad.
+Don't do it.
+
+Is there an alternative?
+I strive to separate my knowledge into fact and judgment.
+
+- Fact
+  - Observation
+  - Implication
+- Judgement
+  - Aphorism
+  - Contextual utility
+
+/An observation is a record in time./
+Observations are facts.
+"On 2022-12-17, I saw a user struggle to understand how to navigate an app I made" is an observation.
+
+/An implication connects cause and relation"./
+Implications are facts.
+"If we separate between mutable code and immutable code, we derive a clean caching strategy for the immutable code" is an implications.
+Another example is "When the user gets a login error, there's a fault in the system John is making".
+
+Facts can be invalidated.
+We can misremember events, or use sloppy logic in our judgment.
+Facts are true or false, not good or bad.
+
+In contrast, judgment is subjective.
+Before we continue, let's put what we've defined in a table:
+
+| observation | Pete has such vast knowledge of Ukraine's geography! |
+| implication | Ben is a smart guy.                                  |
+| judgment    | If you're uncertain, ask Ann. She's wise.            |
+
+I want to split judgment into aphorism and contextual utility.
+
+/An aphorism is a deeply held belief/.
+It's part of your theory of the world.
+"Do: treat people with respect" is an aphorism.
+Your aphorisms are shaped by your experience.
+Treating the people you meet with respect is good for long term relationships, but it might cause you harm in low trust environments.
+Yet, we humans are limited.
+We don't have complete rational control over our psychology.
+We should accept that.
+Accept that we hold deep beliefs that we can't change at a whim.
+
+/Contextual utility is when you recognize a good thing to do in a situation./
+You're able to recognize and match some situation to potential actions, and pick one that makes sense.
+You ask a good follow up question because you recognize the situation of your conversation partner, have a hunch of where to move the conversation, and are able to open up something that was previously fuzzy and unknown.
+
+/Where's quality?/
+That's a great question, and I don't have a precise answer.
+I believe quality is both objective and subjective.
+It doesn't fit neatly into either of the four categories..
+Rather, it ties them together.
+
+/So, what should we do?/
+I started out claiming that "Strong opinions loosely held" is an excuse for sloppy thinking.
+A strong opinion stands on its own, as a whole.
+It is in part observation, in part implication, in part aphorism and in part contextual utility.
+A big, monolithic opinion is hard to criticize precisely.
+You either agree with it, or you don't.
+When you're choosing to hold strong opinions, you're putting the burden of pulling your opinion apart on your conversational partner.
+I think that's a bad thing to do.
+And you can choose to /not do it/.
+
+Instead, I suggest that you hold and present /narrow opinions/.
+Avoid depending on aphorisms when possible.
+When expressing contextual utility, make the context explicit.
+Explain the situation in which you're suggesting your cause of action.
+Complex problems tend to require observations, implications and contextual utility.
+Don't lump all of these together.
+Split them.
+By sharing your observations, others can trust them, or present conflicting evidence.
+Your implications can help others learn how you reason.
+When you've split up and recomposed your problem, end by asking questions to shape the conversation.
+Help people help you by sharing where you're uncertain.
+Are you missing information?
+Is there a part of your suggested course of action you're not confident about?
+How can other people help you?
+Ask about that.
+Then people can understand where you're coming from, and how they can help you.

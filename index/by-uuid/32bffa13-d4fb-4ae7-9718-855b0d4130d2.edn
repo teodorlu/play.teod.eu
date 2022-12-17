@@ -6,5 +6,5 @@
  :created "2022-08-13",
  :lang :no,
  :builds
- [{:build/type :index-org-2-html}
-  {:build/type :index-org-2-slides-html}]}
+ [#:build{:type :index-org-2-html}
+  #:build{:type :index-org-2-slides-html}]}

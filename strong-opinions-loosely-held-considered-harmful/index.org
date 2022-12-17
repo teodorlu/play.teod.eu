@@ -38,7 +38,7 @@ Implications are facts.
 Another example is "When the user gets a login error, there's a fault in the system John is making".
 
 Facts can be invalidated.
-We can misremember events, or use sloppy logic in our judgment.
+We can misremember events, or use sloppy logic.
 Facts are true or false, not good or bad.
 
 In contrast, judgment is subjective.

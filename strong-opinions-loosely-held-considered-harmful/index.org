@@ -39,7 +39,7 @@ We can misremember events, or use sloppy logic in our judgment.
 Facts are true or false, not good or bad.
 
 In contrast, judgment is subjective.
-Before we continue, here are some examples:
+Before we continue some examples.
 
 | observation | Pete has such vast knowledge of Ukraine's geography!                      |
 | implication | Ben is a smart guy.                                                       |

@@ -173,9 +173,16 @@ Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/mast
 # [... how to comment ...]
 # (let's avoid infinite recursion, heh)
 # Please add your comment here 👇
-
+** 2022-12-17
+*** Teodor
+I don't want to discourage people from trying or learning.
+Yet, I want to be clear.
+Not quite sure how to balance that.
+Comments & reactions welcome, curious if people find this encouraging, insulting or somwehere in between.
+** .
 # Please add your comment here 👆
 
+* .
 #+BEGIN_VERSE
 
 

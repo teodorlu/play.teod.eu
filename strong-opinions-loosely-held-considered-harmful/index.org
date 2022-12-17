@@ -7,7 +7,7 @@
 
 /Instead, please try "hold narrow opinions, ask good questions"./
 
-* Part 1 -- a definition of knowledge
+* Part 1 -- a taxonomy of knowledge
 
 "Strong opinions" is an excuse for imprecise, sloppy thinking.
 Sloppy thinking is bad.
@@ -15,7 +15,7 @@ Don't do it.
 
 Is there an alternative?
 I think so.
-First, I propose a hierarchy of knowledge:
+First, I propose a taxonomy of knowledge:
 
 - Knowledge
   - Fact

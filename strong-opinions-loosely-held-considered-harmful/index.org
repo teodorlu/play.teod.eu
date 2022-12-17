@@ -183,6 +183,8 @@ Comments & reactions welcome, curious if people find this encouraging, insulting
 -- Teodor
 ** .
 # Please add your comment between the hands 👆
+#
+# I use these funny empty headings to make sure these comments are positioned right in the document outline!
 
 * .
 #+BEGIN_VERSE

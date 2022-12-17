@@ -7,19 +7,23 @@
 
 /Instead, let's try "narrow opinions and good questions"./
 
+* Part 1 - A definition of knowledge
+
 "Strong opinions" is an excuse for imprecise, sloppy thinking.
 That's bad.
 Don't do it.
 
 Is there an alternative?
-I strive to separate my knowledge into fact and judgment.
+I strive to separate my knowledge into fact and judgment, and splitting each of those in two.
+I propose this hierarchy of knowledge:
 
-- Fact
-  - Observation
-  - Implication
-- Judgement
-  - Aphorism
-  - Contextual utility
+- Knowledge
+  - Fact
+    - Observation
+    - Implication
+  - Judgement
+    - Aphorism
+    - Contextual utility
 
 /An observation is a record in time./
 Observations are facts.
@@ -57,13 +61,37 @@ Accept that we hold deep beliefs that we can't change at a whim.
 You're able to recognize and match some situation to potential actions, and pick one that makes sense.
 You ask a good follow up question because you recognize the situation of your conversation partner, have a hunch of where to move the conversation, and are able to open up something that was previously fuzzy and unknown.
 
-/Where's quality?/
+#+begin_export html
+<center>
+!!!
+</center>
+#+end_export
+
+Phew.
+That was a lot.
+We've got a bit further to go, please bear with me.
+I promise that there's a specific call to action at the end!
+
+#+begin_export html
+<center>
+!!!
+😊
+!!!
+</center>
+#+end_export
+
+* Part 2 - So what?
+
+By talking more precisely about knowledge, we can build better stuff together.
+So, where does "better" fit into this hierarchy of knowledge?
+Where's the quality?
 That's a great question, and I don't have a precise answer.
 I believe quality is both objective and subjective.
 It doesn't fit neatly into either of the four categories..
 Rather, it ties them together.
 
-/So, what should we do?/
+So, what should we do?
+
 I started out claiming that "Strong opinions loosely held" is an excuse for sloppy thinking.
 A strong opinion stands on its own, as a whole.
 It is in part observation, in part implication, in part aphorism and in part contextual utility.
@@ -73,14 +101,14 @@ When you're choosing to hold strong opinions, you're putting the burden of pulli
 I think that's a bad thing to do.
 And you can choose to /not do it/.
 
-Instead, I suggest that you hold and present /narrow opinions/.
-Avoid depending on aphorisms when possible.
+Instead, hold and present /narrow opinions/.
+Avoid depending on your aphorisms when possible.
 When expressing contextual utility, make the context explicit.
 Explain the situation in which you're suggesting your cause of action.
 Complex problems tend to require observations, implications and contextual utility.
 Don't lump all of these together.
 Split them.
-By sharing your observations, others can trust them, or present conflicting evidence.
+By sharing your observations, others can trust your perception, or present conflicting evidence.
 Your implications can help others learn how you reason.
 When you've split up and recomposed your problem, end by asking questions to shape the conversation.
 Help people help you by sharing where you're uncertain.
@@ -94,3 +122,37 @@ Then people can understand where you're coming from, and how they can help you.
 Not at all.
 This is an ideal!
 Precise thinking requires more effort.
+
+* Part 3 - write shit down.
+
+If you don't make your thinking explicit, you won't be able to look at your thinking from the outside.
+Explicit thinking is exactly what you get when you write down what you think.
+You disconnect from the react to what's happening right now loop.
+You can revisit your thoughts at a later point in time, and see if you still believe what you wrote.
+
+Write things down with compassion.
+Care about the people you communicate with.
+At least if you're going to solve hard problems together.
+Take your time to disassemble your ball of ideas before trying to shove it into the head of others.
+Or be precise in what you're asking for.
+"You should do as I say" is a very different thing to ask for than "Can you help me disentangle this problem I can't get my head around?"
+
+Writing is caring.
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE

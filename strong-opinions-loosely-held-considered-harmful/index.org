@@ -7,7 +7,7 @@
 
 /Instead, let's try "narrow opinions and good questions"./
 
-* Part 1 - a definition of knowledge
+* Part 1 -- a definition of knowledge
 
 "Strong opinions" is an excuse for imprecise, sloppy thinking.
 Sloppy thinking is bad.
@@ -80,7 +80,7 @@ I promise that there's a specific call to action at the end!
 </center>
 #+end_export
 
-* Part 2 - so what?
+* Part 2 -- so what?
 
 By talking more precisely about knowledge, we can build better stuff together.
 So, where does "better" fit into this hierarchy of knowledge?
@@ -123,7 +123,7 @@ Not at all.
 This is an ideal!
 Precise thinking requires more effort.
 
-* Part 3 - write shit down.
+* Part 3 -- write shit down.
 
 If you don't make your thinking explicit, you won't be able to look at your thinking from the outside.
 Explicit thinking is exactly what you get when you write down what you think.

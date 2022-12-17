@@ -148,6 +148,9 @@ Here's some plaintext for you to copy to get started:
   If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
   Here's some plaintext for you to copy to get started:
 
+  # [... how to comment ...]
+  # (let's avoid infinite recursion, heh)
+
   ** 2022-12-17
   *** Mike
   # (assuming your name is Mike!)
@@ -157,6 +160,15 @@ Here's some plaintext for you to copy to get started:
 #+end_src
 
 Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/master/strong-opinions-loosely-held-considered-harmful/index.org][source file for this document]].
+
+Thank you for reading all the way to the end!
+I really appreciate that.
+
+# [... how to comment ...]
+# (let's avoid infinite recursion, heh)
+# Please add your comment here 👇
+
+# Please add your comment here 👆
 
 #+BEGIN_VERSE
 

@@ -45,7 +45,7 @@ Before we continue, here are some examples:
 | implication | Ben is a smart guy.                                                       |
 | judgment    | If you're uncertain, ask Ann. She really helped me get unstuck last week. |
 
-I want to split judgment into aphorism and contextual utility.
+I split judgment into aphorism and contextual utility.
 
 /An aphorism is a deeply held belief/.
 It's part of your theory of the world.

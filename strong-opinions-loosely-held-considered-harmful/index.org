@@ -10,7 +10,7 @@
 * Part 1 - A definition of knowledge
 
 "Strong opinions" is an excuse for imprecise, sloppy thinking.
-That's bad.
+Sloppy thinking is bad.
 Don't do it.
 
 Is there an alternative?

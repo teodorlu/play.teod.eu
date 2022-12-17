@@ -74,9 +74,7 @@ I promise that there's a specific call to action at the end!
 
 #+begin_export html
 <center>
-!!!
-😊
-!!!
+😺
 </center>
 #+end_export
 
@@ -141,6 +139,24 @@ Writing is caring.
 
 * Discussion
 Nothing to see here yet!
+If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
+Here's some plaintext for you to copy to get started:
+
+#+begin_src org-mode
+  * Discussion
+  Nothing to see here yet!
+  If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
+  Here's some plaintext for you to copy to get started:
+
+  ** 2022-12-17
+  *** Mike
+  # (assuming your name is Mike!)
+  I don't like how you're trying to put everything into a box.
+  What you're writing here really doesn't help me think.
+  It would just get in the way, slow me down and make me mad.
+#+end_src
+
+Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/master/strong-opinions-loosely-held-considered-harmful/index.org][source file for this document]].
 
 #+BEGIN_VERSE
 

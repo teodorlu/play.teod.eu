@@ -181,6 +181,32 @@ Not quite sure how to balance that.
 Comments & reactions welcome, curious if people find this encouraging, insulting or somwehere in between.
 
 -- Teodor
+*** The jump from "sloppy thinking" to "a taxonomy of knowledge" is sudden, surprising
+I start out like this:
+
+#+begin_quote
+"Strong opinions" is an excuse for imprecise, sloppy thinking.
+Sloppy thinking is bad.
+Don't do it.
+
+Is there an alternative?
+I think so.
+First, I propose a taxonomy of knowledge:
+
+- Knowledge
+  - Fact
+    - Observation
+    - Implication
+  - Judgement
+    - Aphorism
+    - Contextual utility
+#+end_quote
+
+The jump from sloppy thinking to a taxonomy of knowledge doesn't feel smooth.
+Suggestions for improvement are much welcome.
+I especially dislike the "Is there an alternative? I think so. First, I propose a taxonomy of knowledge" part.
+
+-- Teodor
 ** .
 # Please add your comment between the hands 👆
 #

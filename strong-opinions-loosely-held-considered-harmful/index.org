@@ -104,7 +104,7 @@ Avoid depending on your aphorisms when possible.
 When expressing contextual utility, make the context explicit.
 Explain the situation in which you're suggesting your cause of action.
 Complex problems tend to require observations, implications and contextual utility.
-Don't lump all of these together.
+Don't lump these together.
 Split them.
 By sharing your observations, others can trust your perception, or present conflicting evidence.
 Your implications can help others learn how you reason.

@@ -227,7 +227,7 @@ First, I propose a taxonomy of knowledge:
     - Contextual utility
 #+end_quote
 
-The jump from sloppy thinking to a taxonomy of knowledge doesn't feel smooth.
+The jump from sloppy thinking to a taxonomy of knowledge strikes me as sudden, surprising.
 Suggestions for improvement are much welcome.
 I especially dislike the "Is there an alternative? I think so. First, I propose a taxonomy of knowledge" part.
 

@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+DRAFT
+
 /Instead, please try "hold narrow opinions, ask good questions"./
 
 * Part 1 -- a taxonomy of knowledge.

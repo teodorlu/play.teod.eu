@@ -41,9 +41,9 @@ Facts are true or false, not good or bad.
 In contrast, judgment is subjective.
 Before we continue, let's put what we've defined in a table:
 
-| observation | Pete has such vast knowledge of Ukraine's geography! |
-| implication | Ben is a smart guy.                                  |
-| judgment    | If you're uncertain, ask Ann. She's wise.            |
+| observation | Pete has such vast knowledge of Ukraine's geography!                      |
+| implication | Ben is a smart guy.                                                       |
+| judgment    | If you're uncertain, ask Ann. She really helped me get unstuck last week. |
 
 I want to split judgment into aphorism and contextual utility.
 

@@ -147,6 +147,9 @@ Or be precise in what you're asking for.
 Writing is caring.
 
 * Discussion
+:PROPERTIES:
+:CUSTOM_ID: 3e796
+:END:
 Nothing to see here yet!
 If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
 Here's some plaintext for you to copy to get started:
@@ -183,7 +186,13 @@ Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/mast
 # (let's avoid infinite recursion, heh)
 # Please add your comment between the hands 👇
 ** 2022-12-17
+:PROPERTIES:
+:CUSTOM_ID: 8b68f
+:END:
 *** Am I being too forceful?
+:PROPERTIES:
+:CUSTOM_ID: bf462
+:END:
 I don't want to discourage people from trying or learning.
 Yet, I want to be clear.
 Not quite sure how to balance that.
@@ -191,6 +200,9 @@ Comments & reactions welcome, curious if people find this encouraging, insulting
 
 -- Teodor
 *** The jump from "sloppy thinking" to "a taxonomy of knowledge" is sudden, surprising
+:PROPERTIES:
+:CUSTOM_ID: db23f
+:END:
 I start out like this:
 
 #+begin_quote

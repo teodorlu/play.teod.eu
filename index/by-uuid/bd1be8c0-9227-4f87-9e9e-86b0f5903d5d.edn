@@ -1,5 +1,6 @@
 {:slug "strong-opinions-loosely-held-considered-harmful",
- :title "\"Strong opinions loosely held\" considered harmful",
+ :title
+ "\"Strong opinions loosely held\" is an excuse for sloppy thinking",
  :readiness :wtf-is-this,
  :uuid "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
  :author-url "https://teod.eu",

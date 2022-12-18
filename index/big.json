@@ -433,6 +433,14 @@
   "uuid" : "6b942b8f-8930-4c35-bb37-57e225a8518e",
   "lang" : "en"
 }, {
+  "slug" : "dont-hide-dragons-in-the-dark",
+  "title" : "Don't hide dragons in the dark",
+  "readiness" : "wtf-is-this",
+  "uuid" : "70750bc6-12fa-4d56-8703-7dd8c83d236c",
+  "author-url" : "https://teod.eu",
+  "created" : "2022-12-18",
+  "lang" : "en"
+}, {
   "slug" : "sterility-mess-utility",
   "title" : "Sterility, mess and utility",
   "readiness" : "wtf-is-this",
@@ -682,7 +690,7 @@
   "lang" : "en"
 }, {
   "slug" : "strong-opinions-loosely-held-considered-harmful",
-  "title" : "Strong",
+  "title" : "\"Strong opinions loosely held\" considered harmful",
   "readiness" : "wtf-is-this",
   "uuid" : "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
   "author-url" : "https://teod.eu",

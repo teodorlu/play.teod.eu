@@ -184,9 +184,15 @@ Then make a PR changing the [[https://github.com/teodorlu/play.teod.eu/tree/mast
 # This line is an org-mode comment.
 # It doesn't show up in the HTML.
 # So thank you a lot for taking the time to fork comment and create a PR!
-# Don't worry about recompiling the HTML, I'll just do that.
-# Or try running =make= in the project directory, that might work if you have https://pandoc.org/ and https://babashka.org/ installed.
-# Just if you want to, that's no requirement.
+# If that's what you're intending to do.
+# Don't worry about recompiling the HTML, I'll can do that the next time I visit.
+# Or try if you want.
+#
+#   1. Install https://pandoc.org/ and https://babashka.org/ and make
+#   2. Run =make= in the root
+#   3. That should be it.
+#
+# Just if you want to!
 
 # [... how to comment ...]
 # (let's avoid infinite recursion, heh)

@@ -243,7 +243,7 @@ I especially dislike the "Is there an alternative? I think so. First, I propose 
 :PROPERTIES:
 :CUSTOM_ID: 7ba5b
 :END:
-*** Rewrote the table.
+*** Aim for more specific examples in the table
 Old table:
 
 #+begin_quote

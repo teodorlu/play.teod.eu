@@ -243,7 +243,6 @@ I especially dislike the "Is there an alternative? I think so. First, I propose 
 
 -- Teodor
 ** 2022-12-19
-*** Got some helpful feedback from people on the Clojurians Slack
 ** .
 # Please add your comment between the hands 👆
 #

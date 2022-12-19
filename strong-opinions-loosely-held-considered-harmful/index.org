@@ -234,6 +234,28 @@ Suggestions for improvement are much welcome.
 I especially dislike the "Is there an alternative? I think so. First, I propose a taxonomy of knowledge" part.
 
 -- Teodor
+** 2022-12-19
+:PROPERTIES:
+:CUSTOM_ID: 7ba5b
+:END:
+*** Rewrote the table.
+Old table:
+
+#+begin_quote
+| observation | Pete has such vast knowledge of Ukraine's geography!                      |
+| implication | Ben is a smart guy.                                                       |
+| judgment    | If you're uncertain, ask Ann. She really helped me get unstuck last week. |
+#+end_quote
+
+New table:
+
+#+begin_quote
+| observation | Mark practically knows Go's standard library by heart, we was able to point me to [[https://pkg.go.dev/strings#Split][strings.Split()]].           |
+| implication | Last Tuesday, Ben helped me figure out why code crashed when I was stuck.                                    |
+| judgment    | I asked Ann how I should approach working with a customer, and she helped me understand their point of view. |
+#+end_quote
+
+I think those examples are better!
 ** .
 # Please add your comment between the hands 👆
 #

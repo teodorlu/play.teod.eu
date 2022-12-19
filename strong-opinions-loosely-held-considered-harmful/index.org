@@ -154,7 +154,8 @@ Writing is caring.
 :PROPERTIES:
 :CUSTOM_ID: 3e796
 :END:
-Nothing to see here yet!
+Big thanks to Oddmund and Ivar for early feedback!
+
 If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
 Here's some plaintext for you to copy to get started:
 

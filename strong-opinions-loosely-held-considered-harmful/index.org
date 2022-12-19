@@ -239,6 +239,9 @@ I especially dislike the "Is there an alternative? I think so. First, I propose 
 #
 # I use these funny empty headings to make sure these comments are positioned right in the document outline!
 * Changelog
+:PROPERTIES:
+:CUSTOM_ID: e56c7
+:END:
 ** 2022-12-19
 :PROPERTIES:
 :CUSTOM_ID: 7ba5b

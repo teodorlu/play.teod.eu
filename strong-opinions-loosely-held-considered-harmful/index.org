@@ -142,8 +142,8 @@ You disconnect from the "react to what's happening right now" loop.
 You can revisit your thoughts at a later point in time, and see if you still believe what you wrote.
 
 Let compassion for others motivate you when you write.
-You should care about your target audience.
-At least if you're going to solve hard problems together.
+Who is your target audience?
+How can you make it easy for them?
 Take your time to disassemble your ball of ideas before you attempt to shove it into another person's head.
 Or be precise in what you're asking for.
 "You should do as I say" is a very different thing to ask for than "Can you help me disentangle this problem I can't get my head around?"

@@ -138,7 +138,7 @@ Precise thinking requires more effort.
 
 If you don't make your thinking explicit, you won't be able to look at your thinking from the outside.
 Explicit thinking is exactly what you get when you write down what you think.
-You disconnect from the react to what's happening right now loop.
+You disconnect from the "react to what's happening right now" loop.
 You can revisit your thoughts at a later point in time, and see if you still believe what you wrote.
 
 Let compassion for others motivate you when you write.

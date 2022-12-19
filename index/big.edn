@@ -37,6 +37,13 @@
   :readiness :wtf-is-this,
   :uuid "07f496f2-7dc3-4155-bbe7-e0f64e054129",
   :lang :en}
+ {:slug "attention-later",
+  :title "attention-later",
+  :readiness :wtf-is-this,
+  :uuid "0be4b1f7-e4dd-4209-981b-797795be7533",
+  :author-url "https://teod.eu",
+  :created "2022-12-19",
+  :lang :en}
  {:slug "sannhet-deskriptiv-preskriptiv",
   :title "Deskriptiv sannhet, preskriptiv sannhet",
   :lang :no,
@@ -603,10 +610,11 @@
  {:slug "strong-opinions-loosely-held-considered-harmful",
   :title
   "\"Strong opinions loosely held\" is an excuse for sloppy thinking",
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :uuid "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
   :author-url "https://teod.eu",
   :created "2022-12-16",
+  :published "2022-12-19",
   :lang :en}
  {:slug "journal",
   :title "Teodor's public-personal journal",

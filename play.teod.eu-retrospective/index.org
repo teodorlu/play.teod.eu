@@ -274,10 +274,16 @@ pandoc  \
 
 Specifically, =-V title:""= makes sure the title isn't set twice.
 Regardless, I think I want to control the standalone stuff myself.
+
+See also:
+[[#D-a01c3][Table of Content is confusing]]
 ** I want - site previews
 When I post a Twitter link, Slack is able to create a nice preview.
 When I post a play.teod.eu link, there is no preview.
 ** Table of Content is confusing
+:PROPERTIES:
+:CUSTOM_ID: D-a01c3
+:END:
 *** Problems
 - Can't see that the TOC is a TOC
 - TOC comes above the link to go up
@@ -309,6 +315,9 @@ How to?
 - That means I should make build systems opt-in / configurable, I think.
 *** Examples of nicely formatted table of contents:
 https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter
+*** TOC contains "discussion", "comments" and such
+
+See: [[#D-06dc6][2022-12-19/I want a configurable table of contents]].
 * Solved problems
 ** Org-roam id:... links are broken
 Bad.
@@ -1124,7 +1133,7 @@ I would essentially need an /action/.
 * 2022-12-19
 ** I want a configurable table of contents
 :PROPERTIES:
-:CUSTOM_ID: 06dc6
+:CUSTOM_ID: D-06dc6
 :END:
 Why?
 I like creating sections for discussion and changelog in the end of an article.

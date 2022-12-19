@@ -154,7 +154,7 @@ Writing is caring.
 :PROPERTIES:
 :CUSTOM_ID: 3e796
 :END:
-Big thanks to Oddmund and Ivar for early feedback!
+Big thanks to Oddmund Ivar and Isak for early feedback!
 
 If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
 Here's some plaintext for you to copy to get started:
@@ -211,6 +211,8 @@ Not quite sure how to balance that.
 Comments & reactions welcome, curious if people find this encouraging, insulting or somwehere in between.
 
 -- Teodor
+**** xx
+[[#bf462][Am I being too forceful?]]
 *** The jump from "sloppy thinking" to "a taxonomy of knowledge" is sudden, surprising
 :PROPERTIES:
 :CUSTOM_ID: db23f
@@ -240,6 +242,8 @@ Suggestions for improvement are much welcome.
 I especially dislike the "Is there an alternative? I think so. First, I propose a taxonomy of knowledge" part.
 
 -- Teodor
+** 2022-12-19
+*** Got some helpful feedback from people on the Clojurians Slack
 ** .
 # Please add your comment between the hands 👆
 #

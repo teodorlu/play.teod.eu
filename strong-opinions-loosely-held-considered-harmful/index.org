@@ -234,6 +234,11 @@ Suggestions for improvement are much welcome.
 I especially dislike the "Is there an alternative? I think so. First, I propose a taxonomy of knowledge" part.
 
 -- Teodor
+** .
+# Please add your comment between the hands 👆
+#
+# I use these funny empty headings to make sure these comments are positioned right in the document outline!
+* Changelog
 ** 2022-12-19
 :PROPERTIES:
 :CUSTOM_ID: 7ba5b
@@ -256,11 +261,8 @@ New table:
 #+end_quote
 
 I think those examples are better!
-** .
-# Please add your comment between the hands 👆
-#
-# I use these funny empty headings to make sure these comments are positioned right in the document outline!
 
+-- Teodor
 * .
 #+BEGIN_VERSE
 

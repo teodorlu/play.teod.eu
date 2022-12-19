@@ -211,8 +211,6 @@ Not quite sure how to balance that.
 Comments & reactions welcome, curious if people find this encouraging, insulting or somwehere in between.
 
 -- Teodor
-**** xx
-[[#bf462][Am I being too forceful?]]
 *** The jump from "sloppy thinking" to "a taxonomy of knowledge" is sudden, surprising
 :PROPERTIES:
 :CUSTOM_ID: db23f

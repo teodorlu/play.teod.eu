@@ -46,10 +46,9 @@ Facts are true or false, not good or bad.
 In contrast, judgment is subjective.
 You can ask people for information, for facts.
 You can also ask people for help judging something.
+Here are three examples:
 
-Here are three example descriptions of people who might help you with observation, implication and judgment:
-
-| observation | Pete impressed all of us on the quiz, when he nailed every geography question.                               |
+| observation | Mark practically knows Go's standard library by heart, we was able to point me to [[https://pkg.go.dev/strings#Split][strings.Split()]].           |
 | implication | Last Tuesday, Ben helped me figure out why code crashed when I was stuck.                                    |
 | judgment    | I asked Ann how I should approach working with a customer, and she helped me understand their point of view. |
 

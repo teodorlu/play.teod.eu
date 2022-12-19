@@ -1121,7 +1121,28 @@ I would essentially need an /action/.
 ;; Hmm
 ;; Not quite sure what to do about that.
 #+end_src
+* 2022-12-19
+** I want a configurable table of contents
+Why?
+I like creating sections for discussion and changelog in the end of an article.
+But I don't want those to pollute the table of contents!
+So I need to take control of that.
 
+Specific example - for [[id:bd1be8c0-9227-4f87-9e9e-86b0f5903d5d]["Strong opinions loosely held" is an excuse for sloppy thinking]], my TOC as of 2022-12-19 is:
+
+#+begin_quote
+    Part 1 – a taxonomy of knowledge.
+    Part 2 – so what?
+    Part 3 – write shit down.
+    Discussion
+        2022-12-17
+        .
+    Changelog
+        2022-12-19
+    .
+#+end_quote
+
+I don't want "Discussion", "Changelog" and "." in the TOC!
 * trailing whitespace
 #+BEGIN_VERSE
 

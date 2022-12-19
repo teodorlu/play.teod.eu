@@ -148,10 +148,15 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -219,6 +224,37 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -435,6 +471,12 @@ jobbe fritt eller smalt akkurat nå?</a></li>
 <li><a href="#section-18" id="toc-section-18">2022-10-01</a>
 <ul>
 <li><a href="#on-batching" id="toc-on-batching">on batching</a></li>
+</ul></li>
+<li><a href="#section-19" id="toc-section-19">2022-12-19</a>
+<ul>
+<li><a href="#i-want-a-configurable-table-of-contents"
+id="toc-i-want-a-configurable-table-of-contents">I want a configurable
+table of contents</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace" id="toc-trailing-whitespace">trailing
 whitespace</a></li>
@@ -1774,6 +1816,21 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb26-1"><a
 <span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="co">;; but there are multiple pages.</span></span>
 <span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="co">;; Hmm</span></span>
 <span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a><span class="co">;; Not quite sure what to do about that.</span></span></code></pre></div>
+<h2 id="section-19">2022-12-19</h2>
+<h3 id="i-want-a-configurable-table-of-contents">I want a configurable
+table of contents</h3>
+<p>Why? I like creating sections for discussion and changelog in the end
+of an article. But I don’t want those to pollute the table of contents!
+So I need to take control of that.</p>
+<p>Specific example - for <a
+href="../strong-opinions-loosely-held-considered-harmful/">“Strong
+opinions loosely held” is an excuse for sloppy thinking</a>, my TOC as
+of 2022-12-19 is:</p>
+<blockquote>
+<p>Part 1 – a taxonomy of knowledge. Part 2 – so what? Part 3 – write
+shit down. Discussion 2022-12-17 . Changelog 2022-12-19 .</p>
+</blockquote>
+<p>I don’t want “Discussion”, “Changelog” and “.” in the TOC!</p>
 <h2 id="trailing-whitespace">trailing whitespace</h2>
 <div class="line-block"><br />
 <br />

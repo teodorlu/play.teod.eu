@@ -54,9 +54,9 @@
   [{:keys [id title] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
 
-(defn page-link-with-date [{:keys [created] :as page}]
-  (let [date-str (when created
-                   (str " (" created ")"))]
+(defn page-link-with-date [{:keys [created published] :as page}]
+  (let [date-str (when-let [date (or published created)]
+                   (str " (" date ")"))]
     (str (page-link page) (or date-str ""))))
 
 (defn org-markup [{:keys [pages]}]

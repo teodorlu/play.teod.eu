@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 700da08a-2e4f-442f-aab5-5875132d773f
 :END:
-#+TITLE: Clojure er knall
+#+TITLE: kos.clj
 
 [[file:..][..]]
 

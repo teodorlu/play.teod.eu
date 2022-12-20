@@ -10,6 +10,10 @@ DRAFT
 Idé: En Clerk-dings for å lære bort Clerk.
 Vi lener oss tungt på Clerk sin evne til å vise fram det vi jobber på.
 
+Hva er Clerk? Se:
+
+https://clerk.vision/ | https://book.clerk.vision/ | https://github.clerk.garden/nextjournal/clerk-demo/
+
 * Tooling
 
 VSCode på Mac

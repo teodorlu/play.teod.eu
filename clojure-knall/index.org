@@ -10,4 +10,21 @@ DRAFT
 Idé: En Clerk-dings for å lære bort Clerk.
 Vi lener oss tungt på Clerk sin evne til å vise fram det vi jobber på.
 
-Jeg legger opp til utvikling med VSCode og Mac.
+* Tooling
+
+VSCode på Mac
+
+* Hva vil folk ha?
+
+Hvem bør jeg spørre?
+
+- Hva vil Oddmund ha?
+- Hva vil Phillip ha?
+
+* Hva vil jeg vise?
+
+Noe dataviz.
+Historgram, stacked bar chart, bruksdata.
+
+Kanskje en widget.
+Kanskje en HTTP-request.

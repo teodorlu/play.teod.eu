@@ -26,6 +26,16 @@ Hvem bør jeg spørre?
 - Hva vil Phillip ha?
   - Kanskje noe med kvantitativ data.
   - Spør Dan Krister?
+- Thusan
+  - Kanskje noe HTTP-server-greier
+  - hva om
+    - jeg fyrer opp en HTTP-server hos meg
+    - på port/host som er tilgjengelig på wifi
+    - og tar inn meldinger over http
+    - fra folk i salen
+    - og viser meldinger ut/inn
+    - og lager histogram
+    - hmmm
 
 * Hva vil jeg vise?
 

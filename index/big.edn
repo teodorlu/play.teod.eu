@@ -382,6 +382,13 @@
   :created "2022-07-24",
   :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
   :lang :en}
+ {:slug "clojure-knall",
+  :title "Clojure er knall",
+  :readiness :wtf-is-this,
+  :uuid "700da08a-2e4f-442f-aab5-5875132d773f",
+  :author-url "https://teod.eu",
+  :created "2022-12-20",
+  :lang :en}
  {:slug "dont-hide-dragons-in-the-dark",
   :title "Don't hide dragons in the dark",
   :readiness :wtf-is-this,

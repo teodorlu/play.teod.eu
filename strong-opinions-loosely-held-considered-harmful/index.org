@@ -46,7 +46,7 @@ You can ask people for information, for facts.
 You can also ask people for help judging something.
 Here are three examples:
 
-| observation | Mark practically knows Go's standard library by heart, we was able to point me to [[https://pkg.go.dev/strings#Split][strings.Split()]].           |
+| observation | Mark practically knows Go's standard library by heart, he was able to point me to [[https://pkg.go.dev/strings#Split][strings.Split()]].           |
 | implication | Last Tuesday, Ben helped me figure out why code crashed when I was stuck.                                    |
 | judgment    | I asked Ann how I should approach working with a customer, and she helped me understand their point of view. |
 

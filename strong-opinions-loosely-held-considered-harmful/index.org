@@ -259,6 +259,11 @@ Thoughts:
    1. Similar to my options from [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A strategic framework for optionality]], and [[id:8326d85d-e3b9-49fc-a0d0-4174dd12572d][Anders Haugeto]]'s "bets".
 3. I really like the original text.
 
+I'd like to suggest a better title for the "Strong opinions weakly held" concept:
+
+/Clear opinions supported by falsifiable evidence/.
+I wonder if [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] would find that acceptable?
+
 -- Teodor
 ** .
 # Please add your comment between the hands 👆

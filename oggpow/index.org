@@ -9,11 +9,15 @@ DRAFT
 
 One Good Goal plus Options and WIP
 
-*2022-09-25*: This page is a mess.
-I don't know how to slot-in new commentary / improvements / etc.
+This page is a complete mess.
+You probably don't want to read it unless you're exceptionally curious.
 I'll probably just have to rewrite it all, and put old stuff in a temporal index down below the fold.
-I also want an image.
-And the TOC is distracting.
+
+List of problems with the current structure:
+
+- I don't know how to slot-in new commentary / improvements / etc.
+- I also want an image.
+- And the TOC is distracting.
 
 * Mess
 

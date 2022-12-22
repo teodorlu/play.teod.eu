@@ -250,6 +250,7 @@ Thoughts:
 
 1. I've criticized the ghost of an idea, not the original artifact.
 2. When I read the original text, I see an argument for a strong vision built on falsifiable hypotheses.
+   1. Similar to my options from [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A strategic framework for optionality]], and Anders Haugeto's "bets".
 3. I really like the original text.
 
 -- Teodor

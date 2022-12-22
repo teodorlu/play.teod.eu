@@ -432,6 +432,13 @@
   :created "2022-07-14",
   :uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
   :lang :en}
+ {:slug "anders-haugeto",
+  :title "Anders Haugeto",
+  :readiness :wtf-is-this,
+  :uuid "8326d85d-e3b9-49fc-a0d0-4174dd12572d",
+  :author-url "https://teod.eu",
+  :created "2022-12-22",
+  :lang :en}
  {:slug "intersection-work-play",
   :title "What's a good intersection between work and play?",
   :readiness :ready-for-comments,

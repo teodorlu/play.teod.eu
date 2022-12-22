@@ -241,7 +241,13 @@ I especially dislike the "Is there an alternative? I think so. First, I propose 
 
 -- Teodor
 ** 2022-12-22
+:PROPERTIES:
+:CUSTOM_ID: D-2df79
+:END:
 *** Where does "Strong opinions, weakly held" come from?
+:PROPERTIES:
+:CUSTOM_ID: D-f863f
+:END:
 I found a text by Bob Sutton written in 2006: https://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html
 
 And a 2014 tweet by Adam Grant referencing Bob Sutton: https://twitter.com/adammgrant/status/508601907330686976

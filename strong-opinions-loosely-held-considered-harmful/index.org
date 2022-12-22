@@ -240,7 +240,19 @@ Suggestions for improvement are much welcome.
 I especially dislike the "Is there an alternative? I think so. First, I propose a taxonomy of knowledge" part.
 
 -- Teodor
-** 2022-12-19
+** 2022-12-22
+*** Where does "Strong opinions, weakly held" come from?
+I found a text by Bob Sutton written in 2006: https://bobsutton.typepad.com/my_weblog/2006/07/strong_opinions.html
+
+And a 2014 tweet by Adam Grant referencing Bob Sutton: https://twitter.com/adammgrant/status/508601907330686976
+
+Thoughts:
+
+1. I've criticized the ghost of an idea, not the original artifact.
+2. When I read the original text, I see an argument for a strong vision built on falsifiable hypotheses.
+3. I really like the original text.
+
+-- Teodor
 ** .
 # Please add your comment between the hands 👆
 #

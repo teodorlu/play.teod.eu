@@ -15,6 +15,8 @@ I'll probably just have to rewrite it all, and put old stuff in a temporal index
 I also want an image.
 And the TOC is distracting.
 
+* Mess
+
 *2022-09-25*: Right now, there's three page types described:
 
 1. reference to current good goal
@@ -30,12 +32,12 @@ As I work on play.teod.eu, I discover /more/ types.
    Example purpose: deliverable for a "what's important" workshop.
    Example purpose: deliverable for product management work.
 
-* Second draft
-** Target audience: teams aiming for elite levels of trust and quality
+** Second draft
+*** Target audience: teams aiming for elite levels of trust and quality
 Requirement: high levels of trust and quality is already established.
 
 (I think? To be determined & tested. I'd love to try and see.)
-** Motivation & introduction
+*** Motivation & introduction
 - [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]].
   The purpose of structure is to serve utility in a context.
   Ref [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]].
@@ -49,9 +51,9 @@ Requirement: high levels of trust and quality is already established.
   - My experience working in a big organization: Diluted intent, emphasis on legibility and reproducibility over value.
     - Actionable: reify intent for product decisions
     - Actionable: reify intent for process decisions
-** Preparing for OGGPOW: how organizational stability impacts trust & quality
+*** Preparing for OGGPOW: how organizational stability impacts trust & quality
 Learning requires deep work.
-** One Good Goal
+*** One Good Goal
 Requirement: there is always one good goal.
 
 "Good":
@@ -59,13 +61,13 @@ Requirement: there is always one good goal.
 - Makes sense strategically
 - Actionable
 - Goal is specified as an outcome that's beneficial for end users.
-** A Bucket of Options
+*** A Bucket of Options
 Options are initiatives that we can choose to prioritize or grow.
-** A Bucket of WIP
+*** A Bucket of WIP
 Bugs
 
 List of instances of UI friction, tied closely to context of friction & purpose of workflow.
-** IKI: a light tool for bottom-up attention design
+*** IKI: a light tool for bottom-up attention design
 In Unicad, we don't want to waste our time.
 We'd rather work effectively with tools that enable thought than slow down for conformity and tool-driven workflows.
 We have made attempts to use Notion, Github and Miro for planning.
@@ -75,39 +77,39 @@ So we did what worked.
 
 We used code when code was the proper tool for the job.
 We used text when code didn't suffice.
-** The hourglass of IKI
+*** The hourglass of IKI
 Flexibility - Individuals create content with the tools they prefer.
 
 Cohesion - One Knowledge Protocol (narrow waist)
 
 Flexibility - Content can be read from any browser.
 Content can be indexed by anyone.
-** The hourglass of OGGPOW
+*** The hourglass of OGGPOW
 Flexibility - Bucket of Options
 
 Cohesion - One Good Goal (narrow waist)
 
 Flexibility - Bucket of WIP
-* First draft
-** JOB TO BE DONE
+** First draft
+*** JOB TO BE DONE
 Enable effective attention design for a product team solving hard technical problems.
-** TERMINOLOGY
+*** TERMINOLOGY
 | Term                | Definition                                    |
 |---------------------+-----------------------------------------------|
 | One good goal (OGG) | An increment of product value                 |
 | Initiative options  | Options for future good goals / intiatives    |
 | WIP                 | Loose ends that limit current or future speed |
-** WORK CATEGORIES
+*** WORK CATEGORIES
 We group work into either:
 
 1. A bucket of options
 2. The current tactical goal
 3. A bucket of WIP
-** EXAMPLE WORK STREAMS
+*** EXAMPLE WORK STREAMS
 Discovery work. Options -> OGG -> Options -> OGG.
 
 Options
-** A MINIMAL TOOLKIT FOR OGGPOW
+*** A MINIMAL TOOLKIT FOR OGGPOW
 Options, OGG and WIP are documents.
 
 Documents are protected HTML.
@@ -123,14 +125,14 @@ Initiative options can have dependencies (references).
 Feasibility, viability, value and usability are tackled early in the initiative option phase, if possible.
 We can push an initiative option all the way to production under a feature flag.
 Or we can do technical feasibility work / technical prototyping under an initiative document.
-** OGGPOW in Unicad
+*** OGGPOW in Unicad
 I don't like wasting my own time.
 I don't like wasting other's time.
 And I don't like using tools that break my flow.
 
 In Unicad, we haven't committed heavily to any single traditional work management system.
 We've used Miro and Figma on and off, and Github has been a sort of constant.
-** OGGPOW DOESN'T REQUIRE THAT WE SPENT OUR TIME ON:
+*** OGGPOW DOESN'T REQUIRE THAT WE SPENT OUR TIME ON:
 [[https://www.youtube.com/watch?v=Gzj723LkRJY&t=112s][LOOK AT ALL THE THINGS I'M NOT DOING]]
 
 1. sprint planning. Instead, initiative option curation is a continuous process, and we stay in sync about progress on One Good Goal.

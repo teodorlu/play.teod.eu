@@ -154,7 +154,7 @@ Writing is caring.
 :PROPERTIES:
 :CUSTOM_ID: 3e796
 :END:
-Big thanks to Oddmund Ivar and Isak for early feedback!
+Big thanks to Oddmund, Ivar and Isak for early feedback!
 
 If you want to add a comment, just send it to Teodor, or create a PR adding your comment to the comment section.
 Here's some plaintext for you to copy to get started:
@@ -263,6 +263,24 @@ I'd like to suggest a better title for the "Strong opinions weakly held" concept
 
 /Clear opinions supported by falsifiable evidence/.
 I wonder if [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] would find that acceptable?
+
+-- Teodor
+** 2022-12-25
+:PROPERTIES:
+:CUSTOM_ID: D-aef0e0
+:END:
+*** Perhaps I should restructure the whole text
+How about
+
+- Strong opinions thrown around
+  - What: explain why throwing strong opinions around leads to unproductive discussion
+- Components of narrow opinions
+  - What: explain how to use decomposition to form a narrow opinion.
+- Frame uncertainty with questions
+  - What: argue for questions as a good way to venture into unknown territory.
+  - A good question transforms unknown unknowns into known unknowns
+  - Ask someone a question to invite them to collaborate with you.
+  - Ask yourself a question to introspect.
 
 -- Teodor
 ** .

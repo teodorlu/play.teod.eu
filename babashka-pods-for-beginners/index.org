@@ -58,9 +58,9 @@ Here are some examples:
 
 But there's a caveat.
 I'm cheating!
-I'm pretending all binary data is serializable, and all strings are UTF-8.
+I'm pretending that all binary data is UTF-8 serialized text.
 
-That's enough for us for now.
+But that's enough for us now.
 If you want do dig further into bencode, read [[https://en.wikipedia.org/wiki/Bencode][the Bencode Wikipedia page]] and the [[https://github.com/nrepl/bencode/blob/4286ceef3cc7e9531b8e1650d0a1ff243b150dcd/test/bencode/core_test.clj#L57-L91][nrepl/bencode tests]].
 
 * Why do we need bencode?

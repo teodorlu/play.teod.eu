@@ -359,9 +359,9 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a 
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>(bencode/decode <span class="st">&quot;i99e&quot;</span>)</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; 99</span></span></code></pre></div>
-<p>But there’s a caveat. I’m cheating! I’m pretending all binary data is
-serializable, and all strings are UTF-8.</p>
-<p>That’s enough for us for now. If you want do dig further into
+<p>But there’s a caveat. I’m cheating! I’m pretending that all binary
+data is UTF-8 serialized text.</p>
+<p>But that’s enough for us now. If you want do dig further into
 bencode, read <a href="https://en.wikipedia.org/wiki/Bencode">the
 Bencode Wikipedia page</a> and the <a
 href="https://github.com/nrepl/bencode/blob/4286ceef3cc7e9531b8e1650d0a1ff243b150dcd/test/bencode/core_test.clj#L57-L91">nrepl/bencode

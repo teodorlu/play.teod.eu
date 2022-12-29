@@ -29,7 +29,7 @@ An executable program that takes commands on stdin, and prints results to stdout
 
 /Q: what kind of commands on stdin?/
 
-/describe/, /invoke/ and /shutdown/.
+There are three commands: /describe/, /invoke/ and /shutdown/.
 
 /Q: what do they do?/
 

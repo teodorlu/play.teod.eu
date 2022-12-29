@@ -50,6 +50,8 @@ When the babashka pods library starts your executable, it sets the environment v
 So you can default to your normal behavior otherwise.
 For a practical example, see [[https://github.com/rorokimdim/stash/blob/f07f90316531cb0b3eafaa481ab72b8ca59525f6/app/Main.hs#L957-L962][rorokimdim's stash]] or [[https://github.com/justone/tabl/blob/6de881ff75db1a7325fa4ec429c98ce8d055c309/src/app/main.clj#L119-L127][justone's tabl]].
 
+[[http://localhost:9945/babashka-pods-for-beginners/][local preview]] | [[https://play.teod.eu/babashka-pods-for-beginners/][view on the web]]
+
 #+BEGIN_VERSE
 
 

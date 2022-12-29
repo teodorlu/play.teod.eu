@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID: 11092c41-79bf-4aed-86c2-16df0848fef4
+:END:
+#+TITLE: Babashka pods for beginners
+
+[[file:..][..]]
+
+DRAFT
+
+Motivation: Babashka pods are a mechanism to build functionality in any language, and expose those features in Clojure.
+You can build a high performance numerics library in Rust, and use it from Clojure.
+Or wrap around some nice existing library.
+
+I read [[https://book.babashka.org/#pods][the section on pods in the babashka book]] and [[https://github.com/babashka/pods][the babashka pods README]], and still didn't feel like everything made sense.
+So, why not write the introduction that I would have wanted.
+
+/Q: give me a minimal example of pods/
+
+Sure.
+Here are the moving pieces:
+
+1. Your program
+2. The =babashka/babashka.pods= library
+3. A pod
+
+/Q: what is a pod?/
+
+An executable program that takes commands on stdin, and prints results to stdout.
+
+/Q: what kind of commands on stdin?/
+
+/describe/, /invoke/ and /shutdown/.
+
+/Q: what do they do?/
+
+- describe :: list of provided namespaces, and provided vars for each namespace.
+- invoke :: invoke a function
+- shutdown :: stop any processes the pod is running
+
+/Q: that doesn't sound too complicated!/
+
+I thought it was way more complicated too!
+But that's it, really.
+You write an application in some language, and follow a convention for stdin and stdout.
+
+/Q: But ... I might want to use stdin and stdout for other things./
+
+Yup!
+When the babashka pods library starts your executable, it sets the environment variable =BABASHKA_POD= to =true=.
+So you can default to your normal behavior otherwise.
+For a practical example, see [[https://github.com/rorokimdim/stash/blob/f07f90316531cb0b3eafaa481ab72b8ca59525f6/app/Main.hs#L957-L962][rorokimdim's stash]].

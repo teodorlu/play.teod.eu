@@ -78,6 +78,13 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "babashka-pods-for-beginners",
+  :title "Babashka pods for beginners",
+  :readiness :wtf-is-this,
+  :uuid "11092c41-79bf-4aed-86c2-16df0848fef4",
+  :author-url "https://teod.eu",
+  :created "2022-12-29",
+  :lang :en}
  {:slug "pandoc-edn",
   :title "pandoc-edn",
   :readiness :wtf-is-this,
@@ -438,6 +445,7 @@
   :uuid "8326d85d-e3b9-49fc-a0d0-4174dd12572d",
   :author-url "https://teod.eu",
   :created "2022-12-22",
+  :form :remote-reference,
   :lang :en}
  {:slug "intersection-work-play",
   :title "What's a good intersection between work and play?",

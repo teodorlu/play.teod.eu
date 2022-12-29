@@ -357,8 +357,7 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a 
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; error - integers only!</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>(bencode/decode <span class="st">&quot;i99e&quot;</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; 99</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="at">:rcf</span></span></code></pre></div>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; 99</span></span></code></pre></div>
 <p>But there’s a caveat. I’m cheating! I’m pretending all binary data is
 serializable, and all strings are UTF-8.</p>
 <p>That’s enough for us for now. If you want do dig further into

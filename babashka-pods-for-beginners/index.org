@@ -68,7 +68,6 @@ If you want do dig further into bencode, read [[https://en.wikipedia.org/wiki/Be
 * Why do we need bencode?
 
 
-
 * .
 
 #+BEGIN_VERSE

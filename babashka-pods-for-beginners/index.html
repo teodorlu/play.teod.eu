@@ -358,7 +358,24 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a 
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; error - integers only!</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>(bencode/decode <span class="st">&quot;i99e&quot;</span>)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; 99</span></span></code></pre></div>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; 99</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> examples </span>[f &amp; exs]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">for</span> [<span class="kw">e</span> exs]</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    [<span class="kw">e</span> (f <span class="kw">e</span>)]))</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>(examples bencode/encode</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;x&quot;</span> <span class="dv">1</span>}</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>          {<span class="st">&quot;name&quot;</span> <span class="st">&quot;tom&quot;</span>}</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>          [<span class="st">&quot;n&quot;</span> <span class="st">&quot;tom&quot;</span>]</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>          [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>          [<span class="dv">1</span> <span class="dv">2</span>]</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>          )</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; ([{&quot;x&quot; 1} &quot;d1:xi1ee&quot;]</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">;;     [{&quot;name&quot; &quot;tom&quot;} &quot;d4:name3:tome&quot;]</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">;;     [[&quot;n&quot; &quot;tom&quot;] &quot;l1:n3:tome&quot;]</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">;;     [[1 2 3] &quot;li1ei2ei3ee&quot;]</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">;;     [[1 2] &quot;li1ei2ee&quot;])</span></span></code></pre></div>
 <p>But there’s a caveat. I’m cheating! I’m pretending that all binary
 data is UTF-8 serialized text.</p>
 <p>But that’s enough for us now. If you want do dig further into

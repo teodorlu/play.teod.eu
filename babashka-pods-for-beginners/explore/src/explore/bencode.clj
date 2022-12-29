@@ -1,5 +1,6 @@
 (ns explore.bencode
-  (:require [bencode.core])
+  (:require [bencode.core]
+            [clojure.walk])
   (:import [java.io ByteArrayInputStream ByteArrayOutputStream PushbackInputStream]))
 
 (defn encode [x]
@@ -31,10 +32,38 @@
   )
 
 (defn decode [s]
-  (-> s
-      (.getBytes "UTF-8")
-      ByteArrayInputStream.
-      PushbackInputStream.
-      bencode.core/read-bencode))
+  (->> (.getBytes s "UTF-8")
+       ByteArrayInputStream.
+       PushbackInputStream.
+       bencode.core/read-bencode
+       (clojure.walk/postwalk (fn [form]
+                                (if (bytes? form)
+                                  (String. form "UTF-8")
+                                  form)))))
 
-(decode "i99e")
+(comment
+  (decode "i99e")
+  ;; => 99
+
+  (-> [1 2 3]
+      encode
+      decode)
+  ;; => [1 2 3]
+
+  (-> {:name "teodor"}
+      encode
+      decode)
+  ;; => {"name" [116, 101, 111, 100, 111, 114]}
+
+  (-> {:name "teodor"}
+      encode
+      decode
+      (get "name"))
+  ;; => "teodor"
+
+  (let [s "teodor"
+        bytes (.getBytes s "UTF-8")]
+    (String. bytes "UTF-8"))
+  ;; => "teodor"
+
+  :rcf)

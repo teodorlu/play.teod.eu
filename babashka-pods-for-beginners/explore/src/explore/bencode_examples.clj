@@ -8,6 +8,11 @@
    (bencode/encode {"foo" "bar"}))
 ;; => true
 
+(-> {:foo "bar"}
+    bencode/encode
+    bencode/decode)
+;; => {"foo" "bar"}
+
 (bencode/encode "teodor")
 ;; => "6:teodor"
 

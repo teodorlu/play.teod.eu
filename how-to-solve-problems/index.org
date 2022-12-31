@@ -133,3 +133,6 @@ And perhaps quality doesn't fit into a box.
 At least some part of it.
 Silent, nameless.
 * Examples
+* .
+
+[[http://localhost:9945/how-to-solve-problems/][local preview]] | [[https://play.teod.eu/how-to-solve-problems/][view on the web]]

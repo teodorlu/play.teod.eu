@@ -12,6 +12,7 @@ DRAFT
 *** Modernism: Objective truth is obtainable
 *** Nietzche & Taleb: Truth is subordinated utility
 *** Deutsch: utility and truth requires theory
+** Defining "solve" and "problem"
 * Recipe: How to solve problems
 ** Human relationships
 *** Trust
@@ -32,7 +33,7 @@ DRAFT
 ** Solutions are options to address contextual utility
 *** Tension between contextual utility and solutions
 *** Product as a collection contextual utility
-*** Product as abstraction between general tools and specific contextual utility
+*** Product as abstraction general tools from contextual utility
 **** Product design
 ** How to grow problem options
 ** How to grow solution options

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>How to solve problems</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">How to solve problems</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#rationale" id="toc-rationale">Rationale</a>
+<ul>
+<li><a href="#philosophical-foundation"
+id="toc-philosophical-foundation">Philosophical foundation</a></li>
+</ul></li>
+<li><a href="#recipe-how-to-solve-problems"
+id="toc-recipe-how-to-solve-problems">Recipe: How to solve problems</a>
+<ul>
+<li><a href="#human-relationships" id="toc-human-relationships">Human
+relationships</a></li>
+<li><a href="#the-problem-space" id="toc-the-problem-space">The problem
+space</a></li>
+<li><a href="#solutions-are-options-to-address-contextual-utility"
+id="toc-solutions-are-options-to-address-contextual-utility">Solutions
+are options to address contextual utility</a></li>
+<li><a href="#how-to-grow-problem-options"
+id="toc-how-to-grow-problem-options">How to grow problem
+options</a></li>
+<li><a href="#how-to-grow-solution-options"
+id="toc-how-to-grow-solution-options">How to grow solution
+options</a></li>
+<li><a
+href="#obvious-problems-person-struggles-to-achieve-goal-in-specific-context"
+id="toc-obvious-problems-person-struggles-to-achieve-goal-in-specific-context">Obvious
+problems: person struggles to achieve goal in specific context</a></li>
+<li><a href="#wicked-problems-its-hard-to-pinpoint-whats-wrong"
+id="toc-wicked-problems-its-hard-to-pinpoint-whats-wrong">Wicked
+problems: it’s hard to pinpoint what’s wrong</a></li>
+<li><a href="#is-it-confusing-make-it-explicit."
+id="toc-is-it-confusing-make-it-explicit.">Is it confusing? Make it
+explicit.</a></li>
+<li><a
+href="#product-discovery-trust-quality-intent-contextual-utility-problems-space-solution-space"
+id="toc-product-discovery-trust-quality-intent-contextual-utility-problems-space-solution-space">Product
+discovery: trust, quality, intent, contextual utility, problems space,
+solution space</a></li>
+<li><a href="#oggpow-one-good-goal-plus-options-and-wip"
+id="toc-oggpow-one-good-goal-plus-options-and-wip">OGGPOW: One Good Goal
+Plus Options and Wip</a></li>
+<li><a
+href="#good-product-discovery-is-to-work-effectively-with-options"
+id="toc-good-product-discovery-is-to-work-effectively-with-options">Good
+product discovery is to work effectively with options</a></li>
+<li><a href="#good-project-management-is-to-limit-wip-to-reach-goals."
+id="toc-good-project-management-is-to-limit-wip-to-reach-goals.">Good
+Project management is to limit WIP to reach goals.</a></li>
+<li><a href="#modeling-knowledge" id="toc-modeling-knowledge">Modeling
+knowledge</a></li>
+</ul></li>
+<li><a href="#examples" id="toc-examples">Examples</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<p>DRAFT</p>
+<h2 id="rationale">Rationale</h2>
+<h3 id="philosophical-foundation">Philosophical foundation</h3>
+<h4 id="modernism-objective-truth-is-obtainable">Modernism: Objective
+truth is obtainable</h4>
+<h4 id="nietzche-taleb-truth-is-subordinated-utility">Nietzche &amp;
+Taleb: Truth is subordinated utility</h4>
+<h4 id="deutsch-utility-and-truth-requires-theory">Deutsch: utility and
+truth requires theory</h4>
+<h2 id="recipe-how-to-solve-problems">Recipe: How to solve problems</h2>
+<h3 id="human-relationships">Human relationships</h3>
+<h4 id="trust">Trust</h4>
+<h4 id="shared-sense-of-quality">Shared sense of quality</h4>
+<h4 id="shared-intent">Shared intent</h4>
+<h3 id="the-problem-space">The problem space</h3>
+<h4 id="solving-a-problem">“solving” a “problem”</h4>
+<ul>
+<li>A well defined problem</li>
+<li>Contextual utility</li>
+<li>Ideal</li>
+</ul>
+<h4 id="a-bimodal-strategy-opens-the-space-between-ideal-and-utility">A
+bimodal strategy opens the space between ideal and utility</h4>
+<h4 id="contextual-utility-is-wide-specific">Contextual utility is wide,
+specific</h4>
+<h4
+id="balancing-specific-contextual-utility-and-long-term-vision">Balancing
+specific contextual utility and long term vision</h4>
+<h4
+id="an-initiative-can-improve-one-or-more-cases-of-contextual-utility">An
+initiative can improve one or more cases of contextual utility</h4>
+<h4 id="problem-space-contextual-utility-solution-space">Problem space,
+contextual utility, solution space</h4>
+<h4 id="solutions-are-options">Solutions are options</h4>
+<h4
+id="growing-problems-collecting-contextual-utility-building-knowledge">Growing
+problems, collecting contextual utility, building knowledge</h4>
+<h3 id="solutions-are-options-to-address-contextual-utility">Solutions
+are options to address contextual utility</h3>
+<h4 id="tension-between-contextual-utility-and-solutions">Tension
+between contextual utility and solutions</h4>
+<h4 id="product-as-a-collection-contextual-utility">Product as a
+collection contextual utility</h4>
+<h4
+id="product-as-abstraction-between-general-tools-and-specific-contextual-utility">Product
+as abstraction between general tools and specific contextual
+utility</h4>
+<ol>
+<li><p>Product design</p></li>
+</ol>
+<h3 id="how-to-grow-problem-options">How to grow problem options</h3>
+<h3 id="how-to-grow-solution-options">How to grow solution options</h3>
+<h3
+id="obvious-problems-person-struggles-to-achieve-goal-in-specific-context">Obvious
+problems: person struggles to achieve goal in specific context</h3>
+<h3 id="wicked-problems-its-hard-to-pinpoint-whats-wrong">Wicked
+problems: it’s hard to pinpoint what’s wrong</h3>
+<h4 id="problem-lack-of-trust">Problem: lack of trust</h4>
+<p>Definition:</p>
+<ul>
+<li>People don’t want to help each other. Instead, they want to pursue
+individual inerests.</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>lack of incentives to cooperate</li>
+<li>potential for deceit</li>
+<li>potential for miscommunication</li>
+</ul>
+<h4 id="problem-lack-of-shared-intent">Problem: lack of shared
+intent</h4>
+<p>Definition:</p>
+<ul>
+<li>People don’t know what other people need and hope to achieve</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>People go in different directions</li>
+<li>Rework is likely</li>
+</ul>
+<h4 id="problem-lack-of-shared-sense-of-quality">Problem: lack of shared
+sense of quality</h4>
+<p>Definition:</p>
+<ul>
+<li>People don’t have a shared aesthetic / sense of “good”</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>Communication is reduced to either contextual utility or abstract
+theorizing</li>
+<li>No shared space to pursue mastery destroys motivation</li>
+</ul>
+<h4
+id="how-to-build-trust-shared-sense-of-quality-and-shared-intent">How to
+build trust, shared sense of quality and shared intent</h4>
+<p>Trust, shared sense of quality and shared intent are all connected.
+If I’m not willing to help you (trust), I will not care about your goals
+(shared intent). If I don’t care about your goals (shared intent), I
+won’t get up close to your sense of quality. If you don’t trust me, you
+won’t tell me your goals or your taste.</p>
+<h3 id="is-it-confusing-make-it-explicit.">Is it confusing? Make it
+explicit.</h3>
+<h4 id="confusing-contextual-utility-enumerate-it.">Confusing contextual
+utility? Enumerate it.</h4>
+<p>Contextual utility is specific. In contrast to an abstract sense of
+quality, contextual utility is bound to time, place, people and goals.
+Use that. Don’t reduce situations before you understand them. Collect
+each context.</p>
+<p>Each case of contextual utility is an option you may choose to
+address. How valuable is it? For whom? Is it hard to solve? Does it
+align with your vision and the problem space you care about long
+term?</p>
+<h4 id="how-can-you-solve-it">How can you solve it?</h4>
+<h3
+id="product-discovery-trust-quality-intent-contextual-utility-problems-space-solution-space">Product
+discovery: trust, quality, intent, contextual utility, problems space,
+solution space</h3>
+<p>Woah.</p>
+<h3 id="oggpow-one-good-goal-plus-options-and-wip">OGGPOW: One Good Goal
+Plus Options and Wip</h3>
+<h4 id="one-good-goal-keeps-you-moving">One good goal keeps you
+moving</h4>
+<h4 id="a-bucket-of-options-is-latitude-for-action">A bucket of options
+is latitude for action</h4>
+<h4 id="manage-work-in-progress-dont-get-stuck">Manage work in progress,
+don’t get stuck</h4>
+<h3 id="good-product-discovery-is-to-work-effectively-with-options">Good
+product discovery is to work effectively with options</h3>
+<h3 id="good-project-management-is-to-limit-wip-to-reach-goals.">Good
+Project management is to limit WIP to reach goals.</h3>
+<h3 id="modeling-knowledge">Modeling knowledge</h3>
+<p>In <a
+href="../strong-opinions-loosely-held-considered-harmful/">“Strong
+opinions loosely held” is an excuse for sloppy thinking</a>, I proposed
+a taxonomy of knowledge:</p>
+<ul>
+<li>Knowledge
+<ul>
+<li>Fact
+<ul>
+<li>Observation</li>
+<li>Implication</li>
+</ul></li>
+<li>Judgment
+<ul>
+<li>Aphorism</li>
+<li>Contextual utility</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Seeing these categories at 2022-12-31, I feel myself hesitating.
+Where’s the quality? Is it unnamed? Let’s see where it fits.</p>
+<dl>
+<dt>observing quality</dt>
+<dd>
+You can observe your own reactions to quality in real time. To signify
+an observation of quality in time, put a timestamp on it! Then you’ve
+bound that judgment to a place and a time. That will come in handy
+later. You’ll wonder what you were thinking. What you meant. Why. And
+you might want to change your mind.
+</dd>
+<dt>implied quality?</dt>
+<dd>
+I don’t really see implication and quality as being connected.
+</dd>
+<dt>quality encoded as aphorism</dt>
+<dd>
+Perhaps you can formulate what you <em>really</em> think is good as an
+aphorism. People have done that before. There’s a list in <a
+href="../aphorisms/">Aphorisms</a>, scroll down to the bottom.
+</dd>
+<dt>contextual utility — the meat</dt>
+<dd>
+This is the easy one! If quality as observation and quality as aphorism
+is hard, just focus on contextual utility. It tends to be easy to talk
+about. Good for someone somewhere at some point in time tends to be
+good. At least that’s a worthwhile contribution to the discussion.
+</dd>
+</dl>
+<p>And perhaps quality doesn’t fit into a box. At least some part of it.
+Silent, nameless.</p>
+<h2 id="examples">Examples</h2>
+</body>
+</html>

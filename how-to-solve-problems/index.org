@@ -1,0 +1,134 @@
+:PROPERTIES:
+:ID: 4cd857d6-b081-4bc5-9fdf-4a3af61bd9a0
+:END:
+#+TITLE: How to solve problems
+
+[[file:..][..]]
+
+DRAFT
+
+* Rationale
+** Philosophical foundation
+*** Modernism: Objective truth is obtainable
+*** Nietzche & Taleb: Truth is subordinated utility
+*** Deutsch: utility and truth requires theory
+* Recipe: How to solve problems
+** Human relationships
+*** Trust
+*** Shared sense of quality
+*** Shared intent
+** The problem space
+*** "solving" a "problem"
+- A well defined problem
+- Contextual utility
+- Ideal
+*** A bimodal strategy opens the space between ideal and utility
+*** Contextual utility is wide, specific
+*** Balancing specific contextual utility and long term vision
+*** An initiative can improve one or more cases of contextual utility
+*** Problem space, contextual utility, solution space
+*** Solutions are options
+*** Growing problems, collecting contextual utility, building knowledge
+** Solutions are options to address contextual utility
+*** Tension between contextual utility and solutions
+*** Product as a collection contextual utility
+*** Product as abstraction between general tools and specific contextual utility
+**** Product design
+** How to grow problem options
+** How to grow solution options
+** Obvious problems: person struggles to achieve goal in specific context
+** Wicked problems: it's hard to pinpoint what's wrong
+*** Problem: lack of trust
+Definition:
+
+- People don't want to help each other.
+  Instead, they want to pursue individual inerests.
+
+Impact:
+
+- lack of incentives to cooperate
+- potential for deceit
+- potential for miscommunication
+*** Problem: lack of shared intent
+Definition:
+
+- People don't know what other people need and hope to achieve
+
+Impact:
+
+- People go in different directions
+- Rework is likely
+*** Problem: lack of shared sense of quality
+Definition:
+
+- People don't have a shared aesthetic / sense of "good"
+
+Impact:
+
+- Communication is reduced to either contextual utility or abstract theorizing
+- No shared space to pursue mastery destroys motivation
+*** How to build trust, shared sense of quality and shared intent
+Trust, shared sense of quality and shared intent are all connected.
+If I'm not willing to help you (trust), I will not care about your goals (shared intent).
+If I don't care about your goals (shared intent), I won't get up close to your sense of quality.
+If you don't trust me, you won't tell me your goals or your taste.
+** Is it confusing? Make it explicit.
+*** Confusing contextual utility? Enumerate it.
+Contextual utility is specific.
+In contrast to an abstract sense of quality, contextual utility is bound to time, place, people and goals.
+Use that.
+Don't reduce situations before you understand them.
+Collect each context.
+
+Each case of contextual utility is an option you may choose to address.
+How valuable is it?
+For whom?
+Is it hard to solve?
+Does it align with your vision and the problem space you care about long term?
+*** How can you solve it?
+** Product discovery: trust, quality, intent, contextual utility, problems space, solution space
+Woah.
+** OGGPOW: One Good Goal Plus Options and Wip
+*** One good goal keeps you moving
+*** A bucket of options is latitude for action
+*** Manage work in progress, don't get stuck
+** Good product discovery is to work effectively with options
+** Good Project management is to limit WIP to reach goals.
+** Modeling knowledge
+In [[id:bd1be8c0-9227-4f87-9e9e-86b0f5903d5d]["Strong opinions loosely held" is an excuse for sloppy thinking]], I proposed a taxonomy of knowledge:
+
+- Knowledge
+  - Fact
+    - Observation
+    - Implication
+  - Judgment
+    - Aphorism
+    - Contextual utility
+
+Seeing these categories at 2022-12-31, I feel myself hesitating.
+Where's the quality?
+Is it unnamed?
+Let's see where it fits.
+
+- observing quality :: You can observe your own reactions to quality in real time.
+  To signify an observation of quality in time, put a timestamp on it!
+  Then you've bound that judgment to a place and a time.
+  That will come in handy later.
+  You'll wonder what you were thinking.
+  What you meant.
+  Why.
+  And you might want to change your mind.
+- implied quality? :: I don't really see implication and quality as being connected.
+- quality encoded as aphorism :: Perhaps you can formulate what you /really/ think is good as an aphorism.
+  People have done that before.
+  There's a list in [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aphorisms]], scroll down to the bottom.
+- contextual utility --- the meat :: This is the easy one!
+  If quality as observation and quality as aphorism is hard, just focus on contextual utility.
+  It tends to be easy to talk about.
+  Good for someone somewhere at some point in time tends to be good.
+  At least that's a worthwhile contribution to the discussion.
+
+And perhaps quality doesn't fit into a box.
+At least some part of it.
+Silent, nameless.
+* Examples

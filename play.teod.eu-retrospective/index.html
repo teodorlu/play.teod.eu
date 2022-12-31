@@ -288,6 +288,7 @@ others</a></li>
 <li><a href="#renaming-an-article-is-a-pain"
 id="toc-renaming-an-article-is-a-pain">Renaming an article is a
 pain</a></li>
+<li><a href="#D-a01c3" id="toc-D-a01c3">Table of Content is bad</a></li>
 </ul></li>
 <li><a href="#rest" id="toc-rest">Rest</a>
 <ul>
@@ -297,8 +298,6 @@ with pandoc <code class="verbatim">--standalone</code> is causing
 problems</a></li>
 <li><a href="#i-want---site-previews" id="toc-i-want---site-previews">I
 want - site previews</a></li>
-<li><a href="#D-a01c3" id="toc-D-a01c3">Table of Content is
-confusing</a></li>
 </ul></li>
 <li><a href="#solved-problems" id="toc-solved-problems">Solved
 problems</a>
@@ -622,31 +621,17 @@ opportunity to:
 <li>Use that data to trigger rebuilds &amp; stuff.</li>
 </ol></li>
 </ol>
-<h2 id="rest">Rest</h2>
-<p>Ledger.</p>
-<h3 id="working-with-pandoc---standalone-is-causing-problems">Working
-with pandoc <code class="verbatim">--standalone</code> is causing
-problems</h3>
-<p>As long as I’m using the <code class="verbatim">--standalone</code>
-stuff, I’m making problems for myself. Example: I loose roundtripping.
-If I try to roundtrip with <code class="verbatim">--standalone</code>, I
-get double table of contents and double title. I don’t want that.</p>
-<p>Found a walkaround for roundtripping: avoid writing title info</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
-<p>Specifically, <code class="verbatim">-V title:""</code> makes sure
-the title isn’t set twice. Regardless, I think I want to control the
-standalone stuff myself.</p>
-<p>See also: <a href="#D-a01c3">Table of Content is confusing</a></p>
-<h3 id="i-want---site-previews">I want - site previews</h3>
-<p>When I post a Twitter link, Slack is able to create a nice preview.
-When I post a play.teod.eu link, there is no preview.</p>
-<h3 id="D-a01c3">Table of Content is confusing</h3>
+<h3 id="D-a01c3">Table of Content is bad</h3>
+<h4 id="i-want-to-be-able-to-opt-out-of-toc-generation">I want to be
+able to opt out of TOC generation</h4>
+<p>Per 2022-12-31, I have several pages where I’ve omitted to create
+headings in order to avoid having a TOC. An example is the <a
+href="../aphorisms/">Aphorisms</a> page. It has a list of my own
+aphorisms, and a list of links to other people’s aphorisms. I wanted to
+link to it from <a href="../how-to-solve-problems/">How to solve
+problems</a>, but I couldn’t link directly to the right section because
+it wasn’t a header.</p>
+<p>Note: I guess I could create an anchor? That’s not a bad idea.</p>
 <h4 id="problems">Problems</h4>
 <ul>
 <li>Can’t see that the TOC is a TOC</li>
@@ -681,6 +666,30 @@ href="https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-
 “discussion”, “comments” and such</h4>
 <p>See: <a href="#D-06dc6">2022-12-19/I want a configurable table of
 contents</a>.</p>
+<h2 id="rest">Rest</h2>
+<p>Ledger.</p>
+<h3 id="working-with-pandoc---standalone-is-causing-problems">Working
+with pandoc <code class="verbatim">--standalone</code> is causing
+problems</h3>
+<p>As long as I’m using the <code class="verbatim">--standalone</code>
+stuff, I’m making problems for myself. Example: I loose roundtripping.
+If I try to roundtrip with <code class="verbatim">--standalone</code>, I
+get double table of contents and double title. I don’t want that.</p>
+<p>Found a walkaround for roundtripping: avoid writing title info</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
+<p>Specifically, <code class="verbatim">-V title:""</code> makes sure
+the title isn’t set twice. Regardless, I think I want to control the
+standalone stuff myself.</p>
+<p>See also: <a href="#D-a01c3">Table of Content is confusing</a></p>
+<h3 id="i-want---site-previews">I want - site previews</h3>
+<p>When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.</p>
 <h2 id="solved-problems">Solved problems</h2>
 <h3 id="org-roam-id-links-are-broken">Org-roam id:… links are
 broken</h3>

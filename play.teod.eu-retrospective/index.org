@@ -253,37 +253,18 @@ Idea:
 3. When / if I redo the build system (remove Make), I'll use that opportunity to:
    1. Extract page dependencies to data
    2. Use that data to trigger rebuilds & stuff.
-* Rest
-Ledger.
-** Working with pandoc =--standalone= is causing problems
-As long as I'm using the =--standalone= stuff, I'm making problems for myself.
-Example: I loose roundtripping.
-If I try to roundtrip with =--standalone=, I get double table of contents and double title.
-I don't want that.
-
-Found a walkaround for roundtripping: avoid writing title info
-
-#+begin_src bash
-pandoc  \
-    --standalone \
-    -V title:"" \
-    -i index.html \
-    --filter rickroll.sh \
-    -o rickroll-ourselves.html
-#+end_src
-
-Specifically, =-V title:""= makes sure the title isn't set twice.
-Regardless, I think I want to control the standalone stuff myself.
-
-See also:
-[[#D-a01c3][Table of Content is confusing]]
-** I want - site previews
-When I post a Twitter link, Slack is able to create a nice preview.
-When I post a play.teod.eu link, there is no preview.
-** Table of Content is confusing
+** Table of Content is bad
 :PROPERTIES:
 :CUSTOM_ID: D-a01c3
 :END:
+*** I want to be able to opt out of TOC generation
+Per 2022-12-31, I have several pages where I've omitted to create headings in order to avoid having a TOC.
+An example is the [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aphorisms]] page.
+It has a list of my own aphorisms, and a list of links to other people's aphorisms.
+I wanted to link to it from [[id:4cd857d6-b081-4bc5-9fdf-4a3af61bd9a0][How to solve problems]], but I couldn't link directly to the right section because it wasn't a header.
+
+Note: I guess I could create an anchor?
+That's not a bad idea.
 *** Problems
 - Can't see that the TOC is a TOC
 - TOC comes above the link to go up
@@ -318,6 +299,33 @@ https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-tw
 *** TOC contains "discussion", "comments" and such
 
 See: [[#D-06dc6][2022-12-19/I want a configurable table of contents]].
+* Rest
+Ledger.
+** Working with pandoc =--standalone= is causing problems
+As long as I'm using the =--standalone= stuff, I'm making problems for myself.
+Example: I loose roundtripping.
+If I try to roundtrip with =--standalone=, I get double table of contents and double title.
+I don't want that.
+
+Found a walkaround for roundtripping: avoid writing title info
+
+#+begin_src bash
+pandoc  \
+    --standalone \
+    -V title:"" \
+    -i index.html \
+    --filter rickroll.sh \
+    -o rickroll-ourselves.html
+#+end_src
+
+Specifically, =-V title:""= makes sure the title isn't set twice.
+Regardless, I think I want to control the standalone stuff myself.
+
+See also:
+[[#D-a01c3][Table of Content is confusing]]
+** I want - site previews
+When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.
 * Solved problems
 ** Org-roam id:... links are broken
 Bad.

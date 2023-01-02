@@ -99,11 +99,8 @@
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
                        ".")
 
-                  (lines "# I think I might want to link to commentary on other people's stuff up here."
-                         "# 🤔"
-                         "# TBD.")
-
-                  )]
+                  #_:newline
+                  #_"he's not using 100 % paredit!!! :o")]
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"

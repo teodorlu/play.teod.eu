@@ -1,13 +1,13 @@
 :PROPERTIES:
 :ID: bca50118-6b1b-46ac-a19d-3604aafc8e51
 :END:
-#+TITLE: Oddmund's list of ideas without body
+#+TITLE: Oddmund's list of idea titles
 
 [[file:..][..]]
 
 DRAFT
 
 - The Science of Computer Programming
-- The Phisosophy of Product Discovery
+- The Phisosophy of Product Discovery (suggestion from Teodor)
 - The Delight and Cacophony of Symmathesy
 - The Ephemerality and Unwritability of Good Ideas

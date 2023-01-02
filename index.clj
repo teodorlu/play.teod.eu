@@ -197,7 +197,7 @@ I include this list as a personal reminder.
                   (lines "It's for playing with ideas."
                          "Good ones, but mostly bad ones."
                          "Toss them around. Light them on fire."
-                         "Then watch!")
+                         "Then watch the smoke rise!")
 
                   (lines "I talked about how I use this page on a meetup. The recording is available:")
 

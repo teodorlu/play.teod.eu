@@ -93,7 +93,7 @@
                   (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
                              "Embrace remix culture."
                              "Legibility as affordance, not design constraint.")
-                  (sentences "Status: work in progress, lots of rough edges."
+                  (sentences "Status: work in progress, plenty of rough edges."
                              "But you're /very/ much welcome to have a look around 🤗")
                   (str "Most content on this site is authored by Teodor Heggelund"
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"

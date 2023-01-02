@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/teodorlu/play.teod.eu/master/how-to-solve-prob
 ** Philosophical foundation
 *** Modernism: Objective truth is obtainable
 *** Nietzche & Taleb: Truth is subordinated utility
-*** Deutsch: utility and truth requires theory
+*** Deutsch: utility and truth must be interpreted through theory
 ** Defining "solve" and "problem"
 * Recipe: How to solve problems
 ** Human relationships

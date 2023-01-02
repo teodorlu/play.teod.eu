@@ -199,7 +199,7 @@ I include this list as a personal reminder.
                          "Toss them around. Light them on fire."
                          "Then watch!")
 
-                  (lines "But if you still want to know what this is, consider watching this video:")
+                  (lines "I talked about how I use this page on a meetup. The recording is available:")
 
                   (lines "#+BEGIN_EXPORT html"
                          "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JSMcK5strRo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"

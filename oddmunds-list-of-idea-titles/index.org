@@ -8,6 +8,6 @@
 DRAFT
 
 - The Science of Computer Programming
-- The Phisosophy of Product Discovery (suggestion from Teodor)
+- The Philosophy of Product Discovery (suggestion from Teodor)
 - The Delight and Cacophony of Symmathesy
 - The Ephemerality and Unwritability of Good Ideas

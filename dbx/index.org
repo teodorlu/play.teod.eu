@@ -7,6 +7,10 @@
 
 *teod/dbx: a collective knowledge toolkit for babashka zealots*
 
+or
+
+*teod/dbx: plaintext collective knowledge management for Clojurians*
+
 ⚠ 🐉 WARNING: THIS SOFTWARE DOES NOT YET EXIST 🐉 ⚠
 
 ⚠ 🐉 WARNING: THIS PAGE IS A MESS 🐉 ⚠

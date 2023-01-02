@@ -13,7 +13,9 @@ So I don't recommend reading this page as an article.
 So, what's a good way to read it, then?
 Just read the source!
 
-Here's the source: https://github.com/teodorlu/play.teod.eu/tree/master/how-to-solve-problems/index.org
+Here's the source:
+
+https://raw.githubusercontent.com/teodorlu/play.teod.eu/master/how-to-solve-problems/index.org
 
 * Rationale
 ** Philosophical foundation

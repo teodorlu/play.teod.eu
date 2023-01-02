@@ -7,7 +7,8 @@
 
 DRAFT
 
-- The Science of Computer Programming
-- The Philosophy of Product Discovery (suggestion from Teodor)
-- The Delight and Cacophony of Symmathesy
-- The Ephemerality and Unwritability of Good Ideas
+- 2023-01-02
+  - The Science of Computer Programming
+  - The Philosophy of Product Discovery (suggestion from Teodor)
+  - The Delight and Cacophony of Symmathesy
+  - The Ephemerality and Unwritability of Good Ideas

@@ -202,7 +202,7 @@ I include this list as a personal reminder.
                   (lines "I talked about how I use this page on a meetup. The recording is available:")
 
                   (lines "#+BEGIN_EXPORT html"
-                         "<iframe width=\"560\" height=\"315\" src=\"https://m.youtube.com/watch?v=JSMcK5strRo&t=10m16s\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                         "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JSMcK5strRo?start=616\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
                          "#+END_EXPORT")
 
                   (lines "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."

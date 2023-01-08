@@ -6,3 +6,8 @@
 [[file:..][..]]
 
 Just a thin page so that I can share code easily!
+
+Use Github to view the code listing.
+Separate subfolders for separate collections of code.
+
+https://github.com/teodorlu/play.teod.eu/tree/master/code-sandbox

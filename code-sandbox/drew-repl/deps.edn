@@ -1,0 +1,3 @@
+{:paths ["src"]
+ :deps {compojure/compojure {:mvn/version "1.7.0"}}
+ :aliases {}}

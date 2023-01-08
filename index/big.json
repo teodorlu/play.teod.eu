@@ -123,6 +123,14 @@
   "created" : "2022-11-07",
   "lang" : "en"
 }, {
+  "slug" : "stuttaford-systems-thinking",
+  "title" : "Systems Thinking - Notes and Resources, by Robert Stuttaford",
+  "readiness" : "wtf-is-this",
+  "uuid" : "19f57a28-d65e-4fea-b623-70de022056a2",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-01-08",
+  "lang" : "en"
+}, {
   "slug" : "scicloj",
   "title" : "Scicloj",
   "uuid" : "1b1a3e02-9247-496e-b70f-2aee1251d1ff",

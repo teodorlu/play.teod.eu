@@ -54,3 +54,5 @@ From my [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aphorisms]]:
 
 13 - When /STILL/ in doubt, improve your specific & general feedback loops.
 #+end_quote
+
+Also, see [[id:7e70b878-1ef2-4ab6-885b-727eb557213d][OGGPOW: A strategic framework for optionality]].

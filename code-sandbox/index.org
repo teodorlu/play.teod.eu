@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID: 51ce7962-1987-4b7a-888d-3226c2d4d05b
+:END:
+#+TITLE: Code sandbox
+
+[[file:..][..]]

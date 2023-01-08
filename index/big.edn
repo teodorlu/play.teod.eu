@@ -307,6 +307,13 @@
   :author-url "https://teod.eu",
   :created "2022-12-31",
   :lang :en}
+ {:slug "code-sandbox",
+  :title "Code sandbox",
+  :readiness :wtf-is-this,
+  :uuid "51ce7962-1987-4b7a-888d-3226c2d4d05b",
+  :author-url "https://teod.eu",
+  :created "2023-01-08",
+  :lang :en}
  {:slug "interaction-value-differential",
   :title "How to ask experts for help",
   :readiness :ready-for-comments,
@@ -646,7 +653,7 @@
  {:slug "strong-opinions-loosely-held-considered-harmful",
   :title
   "\"Strong opinions loosely held\" is an excuse for sloppy thinking",
-  :readiness :ready-for-comments,
+  :readiness :wtf-is-this,
   :uuid "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
   :author-url "https://teod.eu",
   :created "2022-12-16",

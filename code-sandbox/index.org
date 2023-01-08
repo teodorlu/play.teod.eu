@@ -4,3 +4,5 @@
 #+TITLE: Code sandbox
 
 [[file:..][..]]
+
+Just a thin page so that I can share code easily!

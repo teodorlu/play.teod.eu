@@ -127,9 +127,9 @@
   "title" : "Systems Thinking - Notes and Resources, by Robert Stuttaford",
   "readiness" : "wtf-is-this",
   "uuid" : "19f57a28-d65e-4fea-b623-70de022056a2",
-  "author-url" : "https://teod.eu",
   "created" : "2023-01-08",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "scicloj",
   "title" : "Scicloj",
@@ -495,6 +495,14 @@
   "uuid" : "714361dd-69f2-4ed1-ba3b-b7450d23c3a3",
   "author-url" : "https://teod.eu",
   "created" : "2022-08-27",
+  "lang" : "en"
+}, {
+  "slug" : "tillit-kvalitet-intensjon-i-relasjoner",
+  "title" : "Tillit, kvalitet og intensjon i relasjoner: en mentalmodell for å få ting gjort",
+  "readiness" : "wtf-is-this",
+  "uuid" : "77a4d1b4-fa1d-49d6-ba4a-675966dd69c4",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-01-11",
   "lang" : "en"
 }, {
   "slug" : "img",

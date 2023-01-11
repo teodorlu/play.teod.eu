@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID: 77a4d1b4-fa1d-49d6-ba4a-675966dd69c4
+:END:
+#+TITLE: Tillit, kvalitet og intensjon i relasjoner: en mentalmodell for å få ting gjort
+
+[[file:..][..]]
+
+Skal du gjøre noe vanskelig er det nyttig å stille seg spørsmålet
+
+#+begin_quote
+Hvordan kan jeg kutte dette problemet i småbiter?
+#+end_quote
+
+Hvis du har så flaks at noen kan hjelpe deg å nå det vanskelige målet, spør dem.
+Men spør deg selv også.
+
+* Vi kan forstå systemer gjennom relasjoner
+Jeg synes systemer er gøy, hvordan ting påvirker andre ting.
+Da jeg skulle begynne å lage verktøy for andre, og ikke bare meg selv, slet jeg med å forstå hvordan jeg kunne komme meg videre.
+Når jeg lager verktøy for meg selv, er det en drøss med problemer jeg aldri har.
+Jeg trenger egentlig ikke en prosess for å hente innsikt --- jeg kan bare jobbe med problemet hver dag, så kommer jeg gjennom til slutt.
+I dag --- mens jeg skriver denne teksten 8. januar 2023 --- jobber jeg lite med verktøy som er kun for meg, og mye med verktøy som skal hjelpe andre. Da holder ikke arbeidsprosessen "sett deg ned og jobb med det tekniske problemet hver dag".
+
+Vi kan løse opp i dette ved å redefinere "problemet" og "systemet".
+
+| begrep      | teknisk definisjon                         | tekno-sosial definisjon                                   |
+|-------------+--------------------------------------------+-----------------------------------------------------------|
+| "problemet" | veldefinert problem som kan løses med kode | dårlig definert problem som kan løses med folk og verktøy |
+| "systemet"  | definerte steg som oppnår noe              | folk og verktøy i samspill med folk og verktøy            |
+
+Hvordan beveger vi oss fra å tenke teknisk til å tenke tekno-sosialt?
+Det er her tillit, kvalitet og intensjon i relasjoner kan hjelpe oss.
+
+Vi kan forstå systemer ved å se på relasjonene i systemet - pilene mellom prikkene.
+I sosiale systemer kan vi forstå pilene som relasjoner.
+
+* Relasjoner i sosiale systemer kan vi dele inn i tillit, kvalitet og intensjon
+
+- Tillit: Stoler Ada på at Bernt vil at Ada skal få det bra?
+- Kvalitet: Skjønner Ada hva Bernt synes er bra?
+- Intensjon: Skjønner Ada hva Bert prøver å oppnå?
+
+Pilene går begge veier.
+Bernt kan stole på Ada uten at Ada stoler på Bernt.
+Ada kan skjønne hvor Bernt prøver å komme uten at Bernt vet noe særlig om Ada.
+Ada kan synes at Escher lager vanvittig inspirerende bilder uten at Escher har hørt om Ada.

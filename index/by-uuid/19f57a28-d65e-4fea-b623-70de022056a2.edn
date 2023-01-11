@@ -2,6 +2,6 @@
  :title "Systems Thinking - Notes and Resources, by Robert Stuttaford",
  :readiness :wtf-is-this,
  :uuid "19f57a28-d65e-4fea-b623-70de022056a2",
- :author-url "https://teod.eu",
  :created "2023-01-08",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

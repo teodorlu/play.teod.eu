@@ -322,6 +322,13 @@
   :author-url "https://teod.eu",
   :created "2023-01-08",
   :lang :en}
+ {:slug "write-shit-down-reasons",
+  :title "Ten reasons you should write shit down",
+  :readiness :wtf-is-this,
+  :uuid "52f0ba07-7748-400d-910e-2ec833c17800",
+  :author-url "https://teod.eu",
+  :created "2023-01-14",
+  :lang :en}
  {:slug "interaction-value-differential",
   :title "How to ask experts for help",
   :readiness :ready-for-comments,
@@ -439,7 +446,7 @@
   :uuid "77a4d1b4-fa1d-49d6-ba4a-675966dd69c4",
   :author-url "https://teod.eu",
   :created "2023-01-11",
-  :lang :en}
+  :lang :no}
  {:slug "img",
   :title "img",
   :readiness :wtf-is-this,

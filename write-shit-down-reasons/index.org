@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 52f0ba07-7748-400d-910e-2ec833c17800
+:END:
+#+TITLE: Seven reasons you should write shit down
+
+[[file:..][..]]
+
+DRAFT
+
+* Writing is thinking
+* Writing is persistent
+* Writing gives you structure that enables you to tackle more chaotic problems
+* Writing allows you to iterate on your own thoughts
+* Writing gives you a deliverable for anything
+* Writing is an excellent medium for storytelling -- which is how you can persuade others
+* Writing lets you build knowledge

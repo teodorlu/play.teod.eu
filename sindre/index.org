@@ -8,4 +8,5 @@
 https://sindrejohansen.no/
 
 https://github.com/sindreij/ |
-https://twitter.com/sindreij/
+https://twitter.com/sindreij/ |
+@sindre@octodon.social

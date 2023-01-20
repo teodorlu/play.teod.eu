@@ -16,7 +16,7 @@ Fast feedback, wide feedback and no branching are technical properties.
 When we work with products, we want to point the development in a direction that makes sense for the product.
 
 | fast feedback   | feedback time less than 100 ms                                   |
-| slow feedback   | feedback time more than 1 minute                                 |
+| slow feedback   | feedback time more than 1 second                                 |
 | wide feedback   | we're confident that our whole system works                      |
 | narrow feedback | we're not sure whether we broke something                        |
 | no branching    | there's one source of truth                                      |

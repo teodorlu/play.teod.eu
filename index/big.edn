@@ -323,7 +323,7 @@
   :created "2023-01-08",
   :lang :en}
  {:slug "write-shit-down-reasons",
-  :title "Ten reasons you should write shit down",
+  :title "Seven reasons you should write shit down",
   :readiness :wtf-is-this,
   :uuid "52f0ba07-7748-400d-910e-2ec833c17800",
   :author-url "https://teod.eu",
@@ -588,6 +588,13 @@
   :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
   :author-url "https://teod.eu",
   :created "2022-08-17",
+  :lang :en}
+ {:slug "fast-feedback-wide-feedback-no-branching",
+  :title "Fast feedback, wide feedback, no branching",
+  :readiness :wtf-is-this,
+  :uuid "a0824551-5a60-4ce0-948d-ca421313d5d1",
+  :author-url "https://teod.eu",
+  :created "2023-01-20",
   :lang :en}
  {:slug "nassim-taleb",
   :title "Nassim Taleb",

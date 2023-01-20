@@ -161,6 +161,21 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -221,13 +236,13 @@ problems</a>
 <ul>
 <li><a href="#section" id="toc-section">2022-09-25</a></li>
 </ul></li>
-<li><a href="#section-1" id="toc-section-1">2022-09-17</a>
+<li><a href="#section-2" id="toc-section-2">2022-09-17</a>
 <ul>
 <li><a href="#open-problems-require-curation"
 id="toc-open-problems-require-curation">Open problems require
 curation</a></li>
 </ul></li>
-<li><a href="#section-2" id="toc-section-2">2022-08-27</a></li>
+<li><a href="#section-3" id="toc-section-3">2022-08-27</a></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -315,6 +330,9 @@ is the list of concepts a new developer should be introduced to?</h3>
 <h4 id="idea">Idea</h4>
 <p>We build our knowledge as a language. We prioritize its words. For
 those words, we write motivating essays.</p>
+<h4 id="deliverable-welcome-text">Deliverable: welcome text</h4>
+<p><a href="../welcome-knowledge-worker/">Welcome, knowledge worker!</a>
+- I gave this to some people, and I think it helped a bit.</p>
 <h3
 id="how-can-i-communicate-properly-on-the-web-that-my-page-is-only-a-reference">How
 can I communicate properly on the web that <em>my page</em> is only a
@@ -339,6 +357,9 @@ IDs. Especially before I’ve shared them for public consumption. Meaning
 “Ready for comments” and above.</p>
 <ol>
 <li><p>2022-09-17 FIxed!</p></li>
+<li><p>2023-01-14</p>
+<p>I can’t remember what shis problem was. Vague description! Ah well,
+done is done. Apparently I fixed it.</p></li>
 </ol>
 <h4 id="rewrite-p-and-teod_fzf_cd-to-babashka">Rewrite <code
 class="verbatim">p</code> and <code class="verbatim">teod_fzf_cd</code>
@@ -364,6 +385,8 @@ class="verbatim">cd</code> doesn’t work.</li>
 <p>I want to make <a href="../dbx/">eu.teod/dbx: a toolkit for building
 your own personal knowledge base</a> instead.</p>
 <p>Closing!</p></li>
+<li><p>2023-01-14 yeah, this doesn’t have to be done</p>
+<p>It works as it is, no need to move to babashka.</p></li>
 </ol>
 <h4 id="a-generic-place-to-store-data">A generic place to store
 data</h4>
@@ -379,7 +402,7 @@ data</h4>
 <p>Just plaintext is nice. But it limits interactivity.</p></li>
 <li><p>2022-09-25 Closing this one.</p></li>
 </ol>
-<h2 id="section-1">2022-09-17</h2>
+<h2 id="section-2">2022-09-17</h2>
 <p>Morn.</p>
 <h3 id="open-problems-require-curation">Open problems require
 curation</h3>
@@ -405,7 +428,7 @@ old entries from the log.</li>
 </ol></li>
 </ol></li>
 </ol>
-<h2 id="section-2">2022-08-27</h2>
+<h2 id="section-3">2022-08-27</h2>
 <p>ACTION TIME</p>
 <ol>
 <li>Open problems are nice. I want to continue this path.</li>

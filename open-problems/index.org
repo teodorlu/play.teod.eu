@@ -94,6 +94,8 @@ We want to:
 We build our knowledge as a language.
 We prioritize its words.
 For those words, we write motivating essays.
+*** Deliverable: welcome text
+[[id:9c186247-2fe0-4c64-b2b8-5fc6dc110911][Welcome, knowledge worker!]] - I gave this to some people, and I think it helped a bit.
 ** How can I communicate properly on the web that /my page/ is only a reference?
 Case: I want to create "intermediate" pages for remote references.
 But I don't want the to create confusion about what the canonical page for something is.
@@ -113,6 +115,11 @@ I honestly cannot be bothered to maintain links to specific article IDs.
 Especially before I've shared them for public consumption.
 Meaning "Ready for comments" and above.
 **** 2022-09-17 FIxed!
+**** 2023-01-14
+I can't remember what shis problem was.
+Vague description!
+Ah well, done is done.
+Apparently I fixed it.
 *** Rewrite =p= and =teod_fzf_cd= to babashka
 Here's the ZSH code:
 
@@ -136,6 +143,8 @@ Why babashka?
 I want to make [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][eu.teod/dbx: a toolkit for building your own personal knowledge base]] instead.
 
 Closing!
+**** 2023-01-14 yeah, this doesn't have to be done
+It works as it is, no need to move to babashka.
 *** A generic place to store data
 Possibly =store.teod.eu=.
 

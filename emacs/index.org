@@ -457,3 +457,15 @@ In Dired, a single =d= press marks a file for deletion.
 In Magit, =d= sends you off to =magit-diff=.
 So it's different!
 But "select lines then press x" does the same, both for Doom Emacs Dired and Doom Emacs Magit.
+* 2023-01-19
+** parseedn.el
+Repo: https://github.com/clojure-emacs/parseedn
+
+*** Example
+#+begin_src emacs-lisp
+(parseedn-read-str "{:x 123}")
+#+end_src
+
+#+RESULTS:
+: #s(hash-table size 1 test equal rehash-size 1.5 rehash-threshold 0.8125 data (:x 123))
+*** Where is the hash-table API docs?

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: a0824551-5a60-4ce0-948d-ca421313d5d1
+:END:
+#+TITLE: Fast feedback, wide feedback, no branching
+
+[[file:..][..]]
+
+DRAFT
+
+Ideal technical work. Covers "all development".
+
+In combination with project management: limit WIP.
+
+In combination with product management: we want to move the product in a direction that makes sense.
+Fast feedback, wide feedback and no branching are technical properties.
+When we work with products, we want to point the development in a direction that makes sense for the product.
+
+| fast feedback   | feedback time less than 100 ms                                   |
+| slow feedback   | feedback time more than 1 minute                                 |
+| wide feedback   | we're confident that our whole system works                      |
+| narrow feedback | we're not sure whether we broke something                        |
+| no branching    | there's one source of truth                                      |
+| branching       | we're not sure which combination of branches we're talking about |

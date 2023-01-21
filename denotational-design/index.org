@@ -7,7 +7,9 @@
 
 *Denotational Design* is a strong approach to software design applicable to ML languages like Haskell, Elm, F# and OCaml.
 
-I was first introduced to Denotaional Design when I watched a talk by [[http://conal.net/][Conal Elliot]].
+I was first introduced to Denotaional Design when I watched a talk by [[http://conal.net/][Conal Elliot]]:
+
+https://www.youtube.com/watch?v=bmKYiUOEo2A
 
 Some references:
 

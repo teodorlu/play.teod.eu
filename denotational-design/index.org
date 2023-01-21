@@ -12,7 +12,7 @@ I was first introduced to Denotaional Design when I watched a talk by [[http://c
 https://www.youtube.com/watch?v=bmKYiUOEo2A ([[http://conal.net/talks/denotational-design-lambdajam-2015.pdf][slides]])
 
 #+begin_export html
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bmKYiUOEo2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="784" height="441" src="https://www.youtube-nocookie.com/embed/bmKYiUOEo2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+end_export
 
 Some references:

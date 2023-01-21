@@ -9,7 +9,7 @@
 
 I was first introduced to Denotaional Design when I watched a talk by [[http://conal.net/][Conal Elliot]]:
 
-https://www.youtube.com/watch?v=bmKYiUOEo2A
+https://www.youtube.com/watch?v=bmKYiUOEo2A ([[http://conal.net/talks/denotational-design-lambdajam-2015.pdf][slides]])
 
 Some references:
 

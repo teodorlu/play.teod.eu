@@ -161,6 +161,21 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -187,7 +202,7 @@
 </header>
 <p><a href="..">..</a></p>
 <p><strong>Denotational Design</strong> is a strong approach to software
-design applicable to ML languages like Haskell, Elm, F# and OcaML.</p>
+design applicable to ML languages like Haskell, Elm, F# and OCaml.</p>
 <p>I was first introduced to Denotaional Design when I watched a talk by
 <a href="http://conal.net/">Conal Elliot</a>.</p>
 <p>Some references:</p>

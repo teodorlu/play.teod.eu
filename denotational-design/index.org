@@ -15,7 +15,7 @@ I was first introduced to Denotaional Design when I watched a talk by [[http://c
 
 https://www.youtube.com/watch?v=bmKYiUOEo2A ([[http://conal.net/talks/denotational-design-lambdajam-2015.pdf][slides]])
 
-Some references:
+More references:
 
 - [[http://conal.net/papers/type-class-morphisms/][Denotational design with type class morphisms]] - paper by Conal Elliot
 - [[https://ericnormand.me/podcast/why-do-i-like-denotational-design][Why do I like Denotational Design?]] - video by Eric Normand

@@ -1,17 +1,37 @@
 #!/usr/bin/env python3
 
 def is_numeric(ch): return ch in set("0123456789")
+def is_letter(ch): return ch in set("abcdefghijklmnopqrstuvwxyz")
+def is_numeric_or_letter(ch): return is_numeric(ch) or is_letter(ch)
 def is_whitespace(ch): return ch == ' '
 def is_open_paren(ch): return ch == '('
 def is_close_paren(ch): return ch == ')'
 
 def read_num(s):
+    if not is_numeric(s[0]):
+        raise ValueError(f"Invalid number: {s}")
+
     i = 0
     while i < len(s):
         if not is_numeric(s[i]):
             break
         i = i + 1
     return (int(s[:i]), s[i:])
+
+class Symbol(str):
+    pass
+
+def read_symbol(s):
+    if not is_letter(s[0]):
+        raise ValueError(f"Invalid symbol: {s}")
+
+    i = 0
+    while i < len(s):
+        if not is_numeric_or_letter(s[i]):
+            break
+        i = i + 1
+
+    return (Symbol(s[:i]), s[i:])
 
 def read_one(s):
     """
@@ -30,6 +50,9 @@ def read_one(s):
 
     if is_numeric(s[i]):
         return read_num(s[i:])
+
+    if is_letter(s[i]):
+        return read_symbol(s[i:])
 
     if is_open_paren(s[i]):
         return read_list(s[i+1:])

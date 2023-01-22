@@ -186,3 +186,85 @@ ACTION TIME
    1. Define [[id:6ac830ef-cb3f-48ea-924a-5304384c4b8e][phenomenology]]
    2. Define [[id:0ca0f3d5-ecae-40fe-9e79-2f24e6780079][existentialism]]
    3. Create a data visualization gallery
+* 2023-01-22
+** Review
+dump
+
+- [X] review open problems
+- [ ] refocus on CSS & design
+- [ ] try change the "main" layout of play.teod.eu
+- [X] consider looking into Org-Roam-s SQLite database
+*** review open problems
+doing
+*** refocuss on CSS & interaction design
+yes -- need to build those skills
+*** try change the "main" layout of play.teod.eu
+yes -- then I actually see the stuff I'm making.
+*** consider looking into Org-Roam-s SQLite database
+Yes! I did. this was rewarding.
+**** raw sql
+#+begin_src sql
+CREATE TABLE files (
+    file UNIQUE PRIMARY KEY,
+    title ,
+    hash NOT NULL,
+    atime NOT NULL,
+    mtime NOT NULL
+)
+
+CREATE TABLE nodes (
+    id NOT NULL PRIMARY KEY,
+    file NOT NULL,
+    level NOT NULL,
+    pos NOT NULL,
+    todo ,
+    priority ,
+    scheduled text,
+    deadline text,
+    title ,
+    properties ,
+    olp ,
+    FOREIGN KEY (file) REFERENCES files (file) ON DELETE CASCADE
+)
+
+CREATE TABLE aliases (
+    node_id NOT NULL,
+    alias ,
+    FOREIGN KEY (node_id) REFERENCES nodes (id) ON DELETE CASCADE
+)
+
+CREATE TABLE citations (
+    node_id NOT NULL,
+    cite_key NOT NULL,
+    pos NOT NULL,
+    properties ,
+    FOREIGN KEY (node_id) REFERENCES nodes (id) ON DELETE CASCADE
+)
+
+CREATE TABLE refs (
+    node_id NOT NULL,
+    ref NOT NULL,
+    type NOT NULL,
+    FOREIGN KEY (node_id) REFERENCES nodes (id) ON DELETE CASCADE
+)
+
+CREATE TABLE tags (
+    node_id NOT NULL,
+    tag ,
+    FOREIGN KEY (node_id) REFERENCES nodes (id) ON DELETE CASCADE
+)
+
+CREATE TABLE links (
+    pos NOT NULL,
+    source NOT NULL,
+    dest NOT NULL,
+    type NOT NULL,
+    properties NOT NULL,
+    FOREIGN KEY (source) REFERENCES nodes (id) ON DELETE CASCADE
+)
+
+CREATE INDEX alias_node_id ON aliases (node_id )
+CREATE INDEX refs_node_id ON refs (node_id )
+CREATE INDEX tags_node_id ON tags (node_id )
+#+end_src
+**** What about the Emacs lisp source?

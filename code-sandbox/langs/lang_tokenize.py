@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+from sys import argv
+
+
 def is_numeric(ch): return ch in set("0123456789")
 def is_whitespace(ch): return ch == ' '
 def is_open_paren(ch): return ch == '('
@@ -68,3 +71,17 @@ def read_all(s):
         tokens.append(token)
 
     return tokens
+
+def repl():
+    while True:
+        try:
+            s = input("> ")
+        except EOFError:
+            break
+        token, _ = read_one(s)
+        print(token)
+
+if __name__ == '__main__':
+    import sys
+    if len(sys.argv) >= 2 and sys.argv[1] == "repl":
+        repl()

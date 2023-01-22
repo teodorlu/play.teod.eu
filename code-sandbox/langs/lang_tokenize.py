@@ -59,12 +59,21 @@ def read_one(s):
 
     raise ValueError(f"Cannot tokenize character: {s[i]}")
 
+class L(list):
+    def __init__(self, *items):
+        super(L, self).__init__(items)
+
+    def __repr__(self):
+        return "L(" + super().__repr__()[1:-1] + ")"
+
+    pass
+
 def read_list(s):
     """
     > read_list("123 456)")
     ([123, 456], '')
     """
-    tokens = []
+    tokens = L()
 
     while s != "" and s[0] != ')':
         token, s = read_one(s)

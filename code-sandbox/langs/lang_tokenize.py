@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-from sys import argv
-
-
 def is_numeric(ch): return ch in set("0123456789")
 def is_whitespace(ch): return ch == ' '
 def is_open_paren(ch): return ch == '('

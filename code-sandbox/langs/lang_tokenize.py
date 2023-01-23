@@ -64,7 +64,19 @@ class L(list):
         super(L, self).__init__(items)
 
     def __repr__(self):
-        return "L(" + super().__repr__()[1:-1] + ")"
+        # Option with commas:
+        #
+        #     return "L(" + super().__repr__()[1:-1] + ")"
+        return "(" + " ".join(repr(x) for x in self) + ")"
+
+    pass
+
+def print_every_list_like_in_clojure():
+
+    def repr_space(items):
+        return "(" + " ".join(repr(x) for x in items) + ")"
+
+    list.__repr__ = repr_space
 
     pass
 

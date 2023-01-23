@@ -161,6 +161,21 @@
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
   <!-- play.teod.eu/scittle/scittle-with-extras.html -->
   <!-- shared HTML embed for scittle goodies -->
 
@@ -242,5 +257,6 @@ href="https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra">https://en.wikipedia
 <li>Steven Mittens (from other people) <a
 href="https://acko.net/blog/lessons-from-interesting-people/">https://acko.net/blog/lessons-from-interesting-people/</a></li>
 </ul>
+<p>Hei john!</p>
 </body>
 </html>

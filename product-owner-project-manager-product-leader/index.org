@@ -15,8 +15,12 @@ Scrum trifecta: product owner, scrum manager and development team.
 * A product leader does what needs to be done.
 What needs to be done when developers and designers do an excellent job in their roles?
 
-
-
 Terminology footnote: What I refer to as a product leader might be called a product manager by others.
 * WIP vs options
 * Limit WIP, create, curate and priotitize options.
+* References
+1. Good project management: [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]
+2. Good product management: [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]]
+3. The perils of scrum: [[id:d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1][Dark Agile]]
+4. Why you should limit WIP: The Goal (Eliyahu M. Goldratt)
+5. A story about a company that improves its development process: The Phoenix Project (Gene Kim )

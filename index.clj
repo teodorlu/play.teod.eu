@@ -92,7 +92,7 @@
                              "Minimize the distance between intent and reality.")
                   (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
                              "Embrace remix culture."
-                             "Legibility a partially provided affordance, not a design constraint.")
+                             "Legibility is a partially provided affordance, not a design constraint.")
                   (sentences "Status: work in progress, plenty of rough edges."
                              "But you're /very/ much welcome to have a look around 🤗")
                   (str "Most content on this site is authored by Teodor Heggelund"

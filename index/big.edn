@@ -648,9 +648,9 @@
   :title "browsetxt",
   :readiness :wtf-is-this,
   :uuid "a9f40b01-502d-4bed-9cd1-6c78478ecf33",
-  :author-url "https://teod.eu",
   :created "2023-02-14",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "a-perfect-day",
   :title "A perfect day",
   :readiness :wtf-is-this,
@@ -819,6 +819,13 @@
   :created "2022-09-20",
   :lang :en,
   :form :remote-reference}
+ {:slug "writing-is-fake",
+  :title "Writing is fake",
+  :readiness :wtf-is-this,
+  :uuid "e7949444-e208-40ff-9979-5fb6852ff57c",
+  :author-url "https://teod.eu",
+  :created "2023-02-14",
+  :lang :en}
  {:slug "interface-perception-design",
   :title "Interface, Perception, Design",
   :readiness :wtf-is-this,

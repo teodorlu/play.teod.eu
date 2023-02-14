@@ -1163,6 +1163,24 @@ Specific example - for [[id:bd1be8c0-9227-4f87-9e9e-86b0f5903d5d]["Strong opinio
 #+end_quote
 
 I don't want "Discussion", "Changelog" and "." in the TOC!
+* 2023-02-14
+** new pandoc, new style
+#+begin_src sh :results output
+pandoc --version
+#+end_src
+
+#+RESULTS:
+: pandoc 3.0.1
+: Features: +server +lua
+: Scripting engine: Lua 5.4
+: User data directory: /home/teodorlu/.local/share/pandoc
+: Copyright (C) 2006-2023 John MacFarlane. Web:  https://pandoc.org
+: This is free software; see the source for copying conditions. There is no
+: warranty, not even for merchantability or fitness for a particular purpose.
+
+Today is the first time I'm writing (again) after getting Pandoc 3.
+And I'm really appreciating the changes!
+It's cleaner, and takes up less space.
 * trailing whitespace
 #+BEGIN_VERSE
 

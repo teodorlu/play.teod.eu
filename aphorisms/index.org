@@ -23,8 +23,8 @@ In code, outside of code.
 
 4 - Late binding is awesome.
 
-5 - Never link to content without enriching the intent of linking with context.
-Instead, answer "Why do I find this worthwhile?".
+5 - Never link to content without significance and context.
+Answer "Why do I find this worthwhile?" and "Where is this applicable?".
 
 6 - Consider modeling /all possible states/ as one data type.
 Fewer edge cases are easier to manage.

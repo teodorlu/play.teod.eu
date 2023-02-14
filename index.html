@@ -7,9 +7,6 @@
   <title>Towards an iterated game</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -84,9 +84,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -212,8 +213,7 @@ design constraint.</p>
 <p>Status: work in progress, plenty of rough edges. But you’re
 <em>very</em> much welcome to have a look around 🤗</p>
 <p>Most content on this site is authored by Teodor Heggelund (<a
-href="https://teod.eu"><a
-href="https://teod.eu">https://teod.eu</a></a>).</p>
+href="https://teod.eu"><span>https://teod.eu</span></a>).</p>
 <h2 id="content-thats-ready-for-the-eyes-of-others">Content that’s ready
 for the eyes of others</h2>
 <p>Feel free to have a look :)</p>
@@ -344,16 +344,19 @@ href="./strong-relations/">Strong relations</a> · <a
 href="./the-commons/">The Commons</a> · <a href="./deliverable/">There’s
 always a deliverable</a> · <a
 href="./thesis-antithesis-synthesis/">Thesis, anitthesis, synthesis</a>
-· <a href="./unix-signals-intro/">Unix signals: a crash course</a> · <a
-href="./utility-is-contextual/">Utility is Contextual</a> · <a
-href="./many-small-functions-bad/">When having many small functions is
-bad</a> · <a href="./why-dont-we-have-a-strategy/">Why don’t we have a
-strategy?</a> · <a href="./xml-on-the-web/">Working with XML on the
-web</a> · <a href="./documentation/">Writing documentation is best
-viewed as creative work</a> · <a href="./knowledge-worker/">You are a
-knowledge worker</a> · <a href="./attention-design/">attention
-design</a> · <a href="./attention-later/">attention-later</a> · <a
-href="./bb-install/">bb-install</a> · <a href="./dbx/">dbx</a> · <a
+· <a href="./understanding-datafy-nav/">Understanding Clojure’s datafy
+and nav</a> · <a href="./unix-signals-intro/">Unix signals: a crash
+course</a> · <a href="./utility-is-contextual/">Utility is
+Contextual</a> · <a href="./many-small-functions-bad/">When having many
+small functions is bad</a> · <a
+href="./why-dont-we-have-a-strategy/">Why don’t we have a strategy?</a>
+· <a href="./xml-on-the-web/">Working with XML on the web</a> · <a
+href="./documentation/">Writing documentation is best viewed as creative
+work</a> · <a href="./knowledge-worker/">You are a knowledge worker</a>
+· <a href="./attention-design/">attention design</a> · <a
+href="./attention-later/">attention-later</a> · <a
+href="./bb-install/">bb-install</a> · <a
+href="./browsetxt/">browsetxt</a> · <a href="./dbx/">dbx</a> · <a
 href="./dots/">dots</a> · <a href="./dynamic-index/">dynamic-index</a> ·
 <a href="./existensialism/">existentialism</a> · <a
 href="./img/">img</a> · <a
@@ -401,8 +404,8 @@ href="./the-art-of-unix-programming/">The Art of Unix Programming</a> ·
 href="./the-war-of-art/">The War of Art</a> · <a
 href="./unicad/">Unicad</a> · <a
 href="./friendly-ambitious-nerd/">friendly ambitious nerd</a> · <a
-href="./introspectvv/">introspect (book)</a> · <a
-href="./play.teod.eu/">play.teod.eu</a> · <a
+href="./fzf/">fzf</a> · <a href="./introspectvv/">introspect (book)</a>
+· <a href="./play.teod.eu/">play.teod.eu</a> · <a
 href="./visakanv/">visa</a></p>
 <h2
 id="efforts-at-writing-things-down-together-commonly-fail-because">Efforts

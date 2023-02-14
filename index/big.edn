@@ -134,6 +134,13 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "fzf",
+  :title "fzf",
+  :readiness :wtf-is-this,
+  :uuid "21159de2-2922-4489-a871-85dc857bcc38",
+  :created "2023-02-14",
+  :lang :en,
+  :form :remote-reference}
  {:slug "okrs-are-scale-invariant",
   :title "OKRs are scale invariant",
   :readiness :wtf-is-this,
@@ -637,6 +644,13 @@
   :readiness :wtf-is-this,
   :lang :en,
   :uuid "a9a168d1-acd1-49a2-8616-3b94ad577301"}
+ {:slug "browsetxt",
+  :title "browsetxt",
+  :readiness :wtf-is-this,
+  :uuid "a9f40b01-502d-4bed-9cd1-6c78478ecf33",
+  :author-url "https://teod.eu",
+  :created "2023-02-14",
+  :lang :en}
  {:slug "a-perfect-day",
   :title "A perfect day",
   :readiness :wtf-is-this,
@@ -853,4 +867,11 @@
   :author-url "https://teod.eu",
   :created "2022-07-16",
   :uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95",
+  :lang :en}
+ {:slug "understanding-datafy-nav",
+  :title "Understanding Clojure's datafy and nav",
+  :readiness :wtf-is-this,
+  :uuid "ffe69f24-6817-4330-96a6-f0d2598cbd14",
+  :author-url "https://teod.eu",
+  :created "2023-02-14",
   :lang :en}]

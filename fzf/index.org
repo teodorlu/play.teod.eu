@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 21159de2-2922-4489-a871-85dc857bcc38
+:END:
+#+TITLE: fzf
+
+[[file:..][..]]
+
+https://github.com/junegunn/fzf

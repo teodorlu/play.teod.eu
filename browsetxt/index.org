@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: a9f40b01-502d-4bed-9cd1-6c78478ecf33
+:END:
+#+TITLE: browsetxt
+
+[[file:..][..]]
+
+https://github.com/teodorlu/browsetxt

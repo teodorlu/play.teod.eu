@@ -1,0 +1,66 @@
+:PROPERTIES:
+:ID: ffe69f24-6817-4330-96a6-f0d2598cbd14
+:END:
+#+TITLE: Understanding Clojure's datafy and nav
+
+[[file:..][..]]
+
+DRAFT
+
+/Datafy and nav: an API for generic graph navigation/.
+
+"Graph navigators as user interface" is an idea that has been stuck in my mind for a while.
+I've been asking myself why I like the user interface I get from Emacs, Dired, Magit and projectile.
+It's so simple.
+There's a buffer with a mode and some "open thing".
+Then you can do stuff on that buffer.
+
+Web browsers are graph navigators, file managers are graph navigators.
+The terminal is a graph navigator.
+
+| Graph navigator | Serialized location |
+|-----------------+---------------------|
+| Web browser     | URL                 |
+| File manager    | Folder path         |
+| Terminal        | Folder path         |
+
+[[id:21159de2-2922-4489-a871-85dc857bcc38][fzf]] is a tool for /making/ graph navigators.
+It's user interface is amazingly simple.
+Put locations on STDIN, and you get the user's selected location (or action) on stdout.
+
+What does that have to do with datafy and nav?
+Datafy and nav decouples the functionality providing graph navigation capability from the user interface that lets the user choose where to navigate.
+
+I stumbled into my curiosity about fzf after realizing how easy it is to build useful tools on top of it.
+I created [[id:a9f40b01-502d-4bed-9cd1-6c78478ecf33][teodorlu/browsetxt]] by accident exploring that.
+"Where's somewhere there are locations and links?"
+The web.
+"How can one browse the web?"
+Let's try!
+There it is.
+
+My current conclusions, per 2023-02-14:
+
+1. Graph navigators are powerful UIs
+2. teodorlu/browsetxt is fun, but "cares about too much".
+   I believe datafy/nav could be a way to uncouple it.
+
+API for "browsetxt on datafy/nav":
+
+1. starting point
+2. function to get next location from (datafy current-location)
+
+Datafy/nav and laziness.
+Putting all the data in memory is going to break down sooner or later.
+Datafy/nav is a way to push generic navigation functionality up to the user without giving the user the whole world.
+It's a lazy view over the full graph!
+
+Idea: text-based graph navigation over a roam database.
+Q: what would I use this for?
+Do I need it?
+Eeeeh.
+
+Idea 2: exploring [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] as a graph.
+Q: what would I use this for?
+Do I need it?
+Can't really think of anything.

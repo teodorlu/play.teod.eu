@@ -7,9 +7,6 @@
   <title>(Doom) Emacs learning journal</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -84,9 +84,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -157,6 +158,8 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -220,7 +223,6 @@
     code span.va { color: #19177c; } /* Variable */
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
@@ -380,7 +382,7 @@ class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb1-
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      (cider-interactive-eval</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>       (concat <span class="st">&quot;(nextjournal.clerk/show! </span><span class="sc">\&quot;</span><span class="st">&quot;</span> filename <span class="st">&quot;</span><span class="sc">\&quot;</span><span class="st">)&quot;</span>)))))</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>(define-key clojure-mode-map (kbd <span class="st">&quot;&lt;M-return&gt;&quot;</span>) &#39;clerk-show)</span></code></pre></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>(define-key clojure-mode-map (kbd <span class="st">&quot;&lt;M-return&gt;&quot;</span>) <span class="dt">&#39;clerk-show</span>)</span></code></pre></div>
 <p>Source: <a
 href="https://github.com/nextjournal/clerk/blob/a5e60412c812bd348e61d8a02377edf1960e89ba/README.md#L77">Clerk
 README</a>.</p>
@@ -417,18 +419,18 @@ class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb3-
 can use.</p>
 <p>In my case, I think I can use the following:</p>
 <div class="sourceCode" id="cb4" data-org-language="emacs-lisp"><pre
-class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(add-hook after-save-hook teod/clerk-show <span class="dv">0</span> &#39;t)</span></code></pre></div>
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(add-hook after-save-hook teod/clerk-show <span class="dv">0</span> <span class="dt">&#39;t</span>)</span></code></pre></div>
 <p>Though I admit I don’t really understand when I should use different
 function reference styles.</p>
 <div class="sourceCode" id="cb5" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>teod/clerk-show <span class="co">; like this?</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>&#39;teod/clerk-show <span class="co">; or this?</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>#&#39;teod/clerk-show <span class="co">; or this?</span></span></code></pre></div>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&#39;teod/clerk-show</span> <span class="co">; or this?</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="op">#&#39;</span>teod/clerk-show <span class="co">; or this?</span></span></code></pre></div>
 <p>Let’s try the simplest.</p>
 <div class="sourceCode" id="cb6" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/clerk-autoshow </span>()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  (add-hook after-save-hook teod/clerk-show <span class="dv">0</span> &#39;t))</span></code></pre></div>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  (add-hook after-save-hook teod/clerk-show <span class="dv">0</span> <span class="dt">&#39;t</span>))</span></code></pre></div>
 <p>Nope! That didn’t work. I got the following in the <code
 class="verbatim">*Messages*</code> buffer:</p>
 <blockquote>
@@ -441,7 +443,7 @@ apply</p>
 href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Setting-Hooks.html">https://www.gnu.org/software/emacs/manual/html_node/elisp/Setting-Hooks.html</a></p>
 <p>Example from manual:</p>
 <div class="sourceCode" id="cb7" data-org-language="emacs-lisp"><pre
-class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(add-hook &#39;lisp-interaction-mode-hook &#39;auto-fill-mode)</span></code></pre></div>
+class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(add-hook <span class="dt">&#39;lisp-interaction-mode-hook</span> <span class="dt">&#39;auto-fill-mode</span>)</span></code></pre></div>
 <p>So .. both should be qoted. OK! (interlude: I’m not super comfortable
 with <em>when</em> to use symbols. Clojure has some different idioms
 here.)</p>
@@ -449,7 +451,7 @@ here.)</p>
 <div class="sourceCode" id="cb8" data-org-language="emacs-lisp"><pre
 class="sourceCode commonlisp"><code class="sourceCode commonlisp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">defun</span><span class="fu"> teod/clerk-autoshow </span>()</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  (interactive)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  (add-hook &#39;after-save-hook &#39;teod/clerk-show <span class="dv">0</span> &#39;t))</span></code></pre></div>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  (add-hook <span class="dt">&#39;after-save-hook</span> <span class="dt">&#39;teod/clerk-show</span> <span class="dv">0</span> <span class="dt">&#39;t</span>))</span></code></pre></div>
 <p>Yaaay!</p>
 <p><strong><strong>Reflection</strong></strong>. Really enjoyable. I was
 able to achieve what I wanted. I got stuck first, asking got me unstuck.

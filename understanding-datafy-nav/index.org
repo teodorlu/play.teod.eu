@@ -64,3 +64,39 @@ Idea 2: exploring [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] as a
 Q: what would I use this for?
 Do I need it?
 Can't really think of anything.
+
+Back to that API.
+
+#+begin_quote
+1. starting point
+2. function to get next location from (datafy current-location)
+#+end_quote
+
+Something like:
+
+#+begin_src clojure
+(fzf-nav starting-point
+         datafied->links)
+#+end_src
+
+... but ... there's something missing.
+If we made a web browser on that API, we would never view pages.
+We've made a state machine that can only move around.
+What good is that?
+No good!
+
+This is where we need a use case :)
+
+We could port browsetxt over.
+Then we would need to provide:
+
+1. An exit
+2. A way to view a web page
+
+Or we could use it to make =fzf-quickcd=.
+Quickly jump to different places.
+But why?
+
+One why: to connect thoughts together.
+Right now, I'm leaning on IDE functionality to move around.
+I have to keep remembering things.

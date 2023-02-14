@@ -49,3 +49,7 @@ We simply ... do.
 We use it as a medium for communication.
 Lead by example!
 Prototype in it!!
+
+Sidenote: I'm enjoying the new Pandoc style.
+There's more trailing whitespace than before.
+Meaning I don't normally need to add my own trailing lines.

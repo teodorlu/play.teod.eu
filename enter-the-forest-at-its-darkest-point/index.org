@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 70722312-22d0-4291-9dd4-aad1ea86f4ea
+:END:
+#+TITLE: Enter the Forest at its Darkest Point
+
+[[file:..][..]]
+
+Why 1: because that's your maximal learning potential
+
+Why 2: because it's uniquely /for you/.
+Trails are made by others.
+Only you can perceive this darkness.
+For others, the darkest point will be elsewhere.
+
+Application to software and product:
+Attack the hardest problem first.
+If you can't solve the hardest problem, you'll have to redo the whole thing.
+In other words, aim towards the maximal unknownness.

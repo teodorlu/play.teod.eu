@@ -976,7 +976,7 @@ It decouples "is this disrespectful" from other questions as "what is good?" and
 ** but /why/?
 Why bother with all this collective knowledge management stuff?
 
-Watching a video where [[https://www.youtube.com/watch?v=7TJEgxlqvQU][Werner Hetzog discusses Mike Tyson's interest in old dead french rulers]], I get the need to write, to model, to map out.
+Watching a [[https://www.youtube.com/watch?v=7TJEgxlqvQU][video]] where [[id:f39b5dcb-3d95-41d7-8526-35f28083a150][Werner Hetzog]] discusses Mike Tyson's interest in old dead french rulers, I get the need to write, to model, to map out.
 
 but /why/?
 

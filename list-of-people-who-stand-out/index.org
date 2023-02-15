@@ -7,6 +7,6 @@
 
 DRAFT
 
-| person         | why                                |
-|----------------+------------------------------------|
-| [[https://en.wikipedia.org/wiki/Werner_Herzog][Werner Hertzog]] | Creates films about unusual topics |
+| person        | why                                |
+|---------------+------------------------------------|
+| [[id:f39b5dcb-3d95-41d7-8526-35f28083a150][Werner Hetzog]] | Creates films about unusual topics |

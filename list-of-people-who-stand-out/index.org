@@ -7,6 +7,7 @@
 
 DRAFT
 
-| person        | why                                |
-|---------------+------------------------------------|
-| [[id:f39b5dcb-3d95-41d7-8526-35f28083a150][Werner Hetzog]] | Creates films about unusual topics |
+| person        | why                                                             |
+|---------------+-----------------------------------------------------------------|
+| [[id:f39b5dcb-3d95-41d7-8526-35f28083a150][Werner Hetzog]] | Creates films about unusual topics                              |
+| [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] | Theoretical physicist /and/ philosopher /and/ excellent teacher |

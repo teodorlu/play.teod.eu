@@ -995,6 +995,10 @@ I want /interesting things/.
 Documents can be interesting.
 Art can be interesting.
 Programs can be interesting.
+
+If you will, we get stuck in a tautology.
+Interesting things are interesting.
+No shit!
 * trailing whitespace
 #+BEGIN_VERSE
 

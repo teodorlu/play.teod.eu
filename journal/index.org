@@ -982,8 +982,13 @@ but /why/?
 
 Because it /means something/.
 I'm not interested in making Wikipedia 2.
-I'm interested in a curated, significant subset of the knowledge, values and culture of the world.
-A source of good questions.
+I'm interested in a curated, subset of the knowledge, values and culture of the world.
+And I want that subset do /do something/.
+
+Not just describe some facts.
+The knowledge should have a function.
+A purpose.
+The knowledge should be a source of good questions.
 
 I don't just want to put all of history on [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
 I want /interesting things/.

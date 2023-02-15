@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 2510c600-87cf-47b0-9f73-8feb9991053b
+:END:
+#+TITLE: List of people who stand out
+
+[[file:..][..]]
+
+DRAFT
+
+| person         | why                                |
+|----------------+------------------------------------|
+| [[https://en.wikipedia.org/wiki/Werner_Herzog][Werner Hertzog]] | Creates films about unusual topics |

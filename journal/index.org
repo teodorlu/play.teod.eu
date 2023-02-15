@@ -972,6 +972,24 @@ Proposed principle:
 
 Why?
 It decouples "is this disrespectful" from other questions as "what is good?" and "what is practical?".
+* 2023-02-15
+** but /why/?
+Why bother with all this collective knowledge management stuff?
+
+Watching a video where [[https://www.youtube.com/watch?v=7TJEgxlqvQU][Werner Hetzog discusses Mike Tyson's interest in old dead french rulers]], I get the need to write, to model, to map out.
+
+but /why/?
+
+Because it /means something/.
+I'm not interested in making Wikipedia 2.
+I'm interested in a curated, significant subset of the knowledge, values and culture of the world.
+A source of good questions.
+
+I don't just want to put all of history on [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
+I want /interesting things/.
+Documents can be interesting.
+Art can be interesting.
+Programs can be interesting.
 * trailing whitespace
 #+BEGIN_VERSE
 

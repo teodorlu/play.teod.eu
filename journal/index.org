@@ -999,6 +999,11 @@ Programs can be interesting.
 If you will, we get stuck in a tautology.
 Interesting things are interesting.
 No shit!
+
+But perhaps the systems thinking and quality aspects are less common.
+A way to surface interest is to provide a thread of interest.
+Therefore, I want /threaded interest/ on this site.
+🤔
 * trailing whitespace
 #+BEGIN_VERSE
 

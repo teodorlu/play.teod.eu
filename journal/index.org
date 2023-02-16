@@ -1014,7 +1014,6 @@ I could use that to serve & stream updates.
 How?
 I could use a babashka file watcher to trigger signals for reloading a specific page.
 Then Electric just makes the rest /work/.
-
 * trailing whitespace
 #+BEGIN_VERSE
 

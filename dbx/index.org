@@ -11,11 +11,9 @@ or
 
 *teod/dbx: plaintext collective knowledge management for Clojurians*
 
-⚠ 🐉 WARNING: THIS SOFTWARE DOES NOT YET EXIST 🐉 ⚠
-
-⚠ 🐉 WARNING: THIS PAGE IS A MESS 🐉 ⚠
-
-⚠ 🐉 WARNING: THERE'S A DECENT CHANCE I'LL NEVER HAVE TIME TO FINISH THIS PROJECT 🐉 ⚠
+Warning: this software does not yet exist.
+This page is a mess.
+And there's a chance I'll never have the time to finish this project.
 
 -----
 

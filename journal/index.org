@@ -1004,6 +1004,17 @@ But perhaps the systems thinking and quality aspects are less common.
 A way to surface interest is to provide a thread of interest.
 Therefore, I want /threaded interest/ on this site.
 🤔
+* 2023-02-16
+** Electric UI for always-live content sites
+Electric: https://github.com/hyperfiddle/electric
+
+With Electric, I can write a backend and stream updates to a frontend.
+I could use that to serve & stream updates.
+
+How?
+I could use a babashka file watcher to trigger signals for reloading a specific page.
+Then Electric just makes the rest /work/.
+
 * trailing whitespace
 #+BEGIN_VERSE
 

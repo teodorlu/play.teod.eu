@@ -303,6 +303,13 @@
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
+ {:slug "liste-opsjoner-presentasjoner",
+  :title "Liste over opsjoner på presentasjoner",
+  :readiness :wtf-is-this,
+  :uuid "4b5eec18-2c51-49bf-b69e-87c6ce07a417",
+  :author-url "https://teod.eu",
+  :created "2023-02-17",
+  :lang :en}
  {:slug "oggpo",
   :title "One Good Goal Plus Options",
   :readiness :wtf-is-this,
@@ -865,9 +872,9 @@
   :title "Werner Hetzog",
   :readiness :wtf-is-this,
   :uuid "f39b5dcb-3d95-41d7-8526-35f28083a150",
-  :author-url "https://teod.eu",
   :created "2023-02-15",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "dbx",
   :title "dbx",
   :readiness :wtf-is-this,

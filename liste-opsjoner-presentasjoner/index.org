@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: 4b5eec18-2c51-49bf-b69e-87c6ce07a417
+:END:
+#+TITLE: Liste over opsjoner på presentasjoner
+
+[[file:..][..]]
+
+1. Gudskomplekser
+   1. Babels tårn
+   2. Utvikler -- gjøre selv, samarbeid
+   3. Produkt -- må bruke X til /alt/ for at det skal være nyttig
+   4. Teknologi / bibliotek -- ikke "smal", må gjøre alt selv
+2. Funksjonell-reaktiv programmering
+   1. Signal-kombinatorer
+   2. Paper fra de som skrev Haskell
+   3. Reflex
+   4. Elm 0.17
+   5. Solid.js
+   6. Electric (som vi skal se på i dag)

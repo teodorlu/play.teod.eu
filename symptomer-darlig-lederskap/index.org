@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 0245f643-6229-42c1-9829-6253056853be
+:END:
+#+TITLE: Symptomer på dårlig lederskap
+
+[[file:..][..]]
+
+1. Prosjektet mangler en /kjerne/ -- et forendende aspekt, en helhet
+2. Ingen kjente potensielle konkrete utfall som vil indikere suksess
+
+Flere??
+Det må jo være flere.
+
+1. Folk ber andre folk om å gjøre ting -- heller enn å be om hjelp til å oppnå et mål
+2. Suksess måles av av innsats heller enn effekt
+   1. Referanse: John Cutler
+   2. Referanse: 37 signals podcast, /critique the work, not the effort/
+3. "mye" er synonymt med "bra"

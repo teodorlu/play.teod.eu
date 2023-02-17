@@ -15,4 +15,4 @@ Det må jo være flere.
 2. Suksess måles av av innsats heller enn effekt
    1. Referanse: John Cutler
    2. Referanse: 37 signals podcast, /critique the work, not the effort/
-3. "mye" er synonymt med "bra"
+3. "mye" er oppfattet som synonymt med "bra"

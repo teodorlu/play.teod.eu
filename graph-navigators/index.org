@@ -68,6 +68,8 @@ A graph navigator generator provides primitives and/or structure that enables cr
 | Navigate to resource | =(nav resource)=                      |
 ** Hypertext
 ???
+
+I don't even know where to start.
 ** IKI (WIP)
 [[id:b57bc14e-0a1b-49b0-a745-23c605414ba0][IKI: Knowledge Iterated]]
 

@@ -17,5 +17,5 @@ Det må jo være flere.
    2. Referanse: 37 signals podcast, /critique the work, not the effort/
 3. "mye" er oppfattet som synonymt med "bra"
 4. TODO spesifikt eksempel på hva som skjer når det ikke er delt intensjon
-4. TODO spesifikt eksempel på hva som skjer når det ikke er delt forståelse av kvalitet
-4. TODO spesifikt eksempel på hva som skjer når det ikke er gjensidig tillit
+5. TODO spesifikt eksempel på hva som skjer når det ikke er delt forståelse av kvalitet
+6. TODO spesifikt eksempel på hva som skjer når det ikke er gjensidig tillit

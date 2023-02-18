@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID: d3ec67c4-e88f-4d18-81b6-08ae54ab784a
+:END:
+#+TITLE: Graph navigators
+
+[[file:..][..]]
+
+A graph navigator is an open ended user interface with capabilities for:
+
+1. Viewing a resource
+2. Listing linked resources
+
+A user interface can then be implementad as a /navigator/.
+The navigator has a current resource, an operations for
+
+1. Viewing the current resource
+2. Viewing links from the current resource to other resources
+3. Navigating to a linked resource.
+
+* List of graph navigators
+Let's dig into some examples.
+** Web browser
+| Term                        | Specialization |
+|-----------------------------+----------------|
+| Resource                    | Web page       |
+| Linked resources            | Links on page  |
+| View current resource       | Default view   |
+| Navigate to linked resource | Click link     |
+** Terminal
+| Term                        | Specialization                    |
+|-----------------------------+-----------------------------------|
+| Resource                    | Folder                            |
+| Linked resources            | subfolders and symlinks in folder |
+| View current resource       | =ls=                              |
+| Navigate to linked resource | =cd=                              |
+** Dired (Emacs)
+| Term                        | Specialization                    |
+|-----------------------------+-----------------------------------|
+| Resource                    | Folder                            |
+| Linked resources            | subfolders and symlinks in folder |
+| View current resource       | Default view                      |
+| Navigate to linked resource | Press =RET= on link               |
+** Magit (Emacs)
+| Term                        | Specialization                 |
+|-----------------------------+--------------------------------|
+| Resource                    | Git object                     |
+| Linked resources            | Related git objects            |
+| View current resource       | Depends on type of Git object. |
+| Navigate to linked resource | Press =RET= on link            |
+* List of graph navigator generators
+A graph navigator generator provides primitives and/or structure that enables creating graph navigators.
+** Emacs
+| Term                 | Specialization             |
+|----------------------+----------------------------|
+| Resource             | Buffer                     |
+| Navigate to resource | Press =RET=                |
+| Navigate to resource | Run command: =M-x command= |
+** FZF
+| Term                 | Specialization             |
+|----------------------+----------------------------|
+| Resource             | Line                       |
+| Navigate to resource | Press =RET=                |
+** Clojure datafy/nav
+| Term                 | Specialization                    |
+|----------------------+-----------------------------------|
+| View resource        | =(datafy resource)=               |
+| View resource links  | Find links in =(datafy resource)= |
+| Navigate to resource | =(nav resource)=                  |
+** Hypertext
+???
+** IKI (WIP)
+Disclaimer: my pet project.

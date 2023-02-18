@@ -50,11 +50,11 @@ Let's dig into some examples.
 * List of graph navigator generators
 A graph navigator generator provides primitives and/or structure that enables creating graph navigators.
 ** Emacs
-| Term                 | Specialization                                |
-|----------------------+-----------------------------------------------|
-| Resource             | Buffer                                        |
-| Navigate to resource | Press =RET=                                   |
-| Navigate to resource | Run command: =M-x custom-navigation-function= |
+| Term                 | Specialization                            |
+|----------------------+-------------------------------------------|
+| Resource             | Buffer                                    |
+| Navigate to resource | Press =RET=                               |
+| Navigate to resource | Run command: =M-x my-navigation-function= |
 ** FZF
 | Term                 | Specialization             |
 |----------------------+----------------------------|

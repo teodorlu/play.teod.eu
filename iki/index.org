@@ -31,3 +31,15 @@ I want:
 
 IKI leans on two narrow waists: everything is a file (creating centric), and the web (consumption centric).
 We support extending the creation interface by progreamming with data, and the consumption interface with web technology.
+
+*Implementation sketch (2023-02-18)*:
+Core system built with Clojure & pandoc.
+Can run on Babashka and JVM Clojure.
+
+*IKI providers - sketch (2023-02-18)*.
+Multiple IKI sources must be allowed.
+Provider capabilities:
+
+1. Available links
+2. Iterface through a data layer
+3. Allow for non-plaintext user interfaces.

@@ -36,6 +36,11 @@ We support extending the creation interface by progreamming with data, and the c
 Core system built with Clojure & pandoc.
 Can run on Babashka and JVM Clojure.
 
+IKI is a library (first) and a CLI (second).
+The recommended IKI setup is to extend the library to provide a custom CLI.
+(is this an IKI distribution?)
+Code editors (Emacs, VSCode, etc) talk to the CLI through a plugin, providing things like fuzzy link target selection.
+
 *IKI providers - sketch (2023-02-18)*.
 Multiple IKI sources must be allowed.
 Provider capabilities:

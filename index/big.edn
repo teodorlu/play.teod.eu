@@ -693,6 +693,13 @@
   :created "2022-10-01",
   :lang :en,
   :form :remote-reference}
+ {:slug "iki",
+  :title "IKI: Knowledge Iterated",
+  :readiness :wtf-is-this,
+  :uuid "b57bc14e-0a1b-49b0-a745-23c605414ba0",
+  :author-url "https://teod.eu",
+  :created "2023-02-18",
+  :lang :en}
  {:slug "burnout-meaning-deep-work",
   :title
   "Facing burnout, finding meaning and making space for deep work",

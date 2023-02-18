@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID: b57bc14e-0a1b-49b0-a745-23c605414ba0
+:END:
+#+TITLE: IKI: Knowledge Iterated
+
+[[file:..][..]]
+

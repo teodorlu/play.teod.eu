@@ -61,11 +61,11 @@ A graph navigator generator provides primitives and/or structure that enables cr
 | Resource             | Line                       |
 | Navigate to resource | Press =RET=                |
 ** Clojure datafy/nav
-| Term                 | Specialization                    |
-|----------------------+-----------------------------------|
-| View resource        | =(datafy resource)=               |
-| View resource links  | Find links in =(datafy resource)= |
-| Navigate to resource | =(nav resource)=                  |
+| Term                 | Specialization                        |
+|----------------------+---------------------------------------|
+| View resource        | =(datafy resource)=                   |
+| View resource links  | Select links from =(datafy resource)= |
+| Navigate to resource | =(nav resource)=                      |
 ** Hypertext
 ???
 ** IKI (WIP)

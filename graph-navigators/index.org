@@ -27,17 +27,17 @@ Let's dig into some examples.
 | View current resource       | Default view   |
 | Navigate to linked resource | Click link     |
 ** Terminal
-| Term                        | Specialization                    |
-|-----------------------------+-----------------------------------|
-| Resource                    | Folder                            |
-| Linked resources            | subfolders and symlinks in folder |
-| View current resource       | =ls=                              |
-| Navigate to linked resource | =cd=                              |
+| Term                        | Specialization                          |
+|-----------------------------+-----------------------------------------|
+| Resource                    | Folder                                  |
+| Linked resources            | Subfolders and symbolic links in folder |
+| View current resource       | =ls=                                    |
+| Navigate to linked resource | =cd=                                    |
 ** Dired (Emacs)
 | Term                        | Specialization                    |
 |-----------------------------+-----------------------------------|
 | Resource                    | Folder                            |
-| Linked resources            | subfolders and symlinks in folder |
+| Linked resources            | Subfolders and symbolic links in folder |
 | View current resource       | Default view                      |
 | Navigate to linked resource | Press =RET= on link               |
 ** Magit (Emacs)

@@ -12,3 +12,22 @@ The recommended introduction to IKI is a [[id:1b1a3e02-9247-496e-b70f-2aee1251d1
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+END_EXPORT
+
+*Idea sketch (2023-02-18)*:
+I see lack of shared intent, lack of shared sense of quality and lack of trust as the three biggest factors holding current software and product teams back.
+IKI is the tool I wish I had for building shared intent, building trust, and building shared sense of quality.
+
+I want:
+
+1. Something plaintext-based where I can put the corpus of content in Git
+2. An ergonomic way to link to content
+3. Good HTML export
+4. Good HTML navigation user interface
+   1. We get a lot for free with the browser
+   2. But we want more stuff:
+      1. Tagging and metadata
+      2. Quickly navigating to /any page/, not just direct links
+      3. Navigating to a random page
+
+IKI leans on two narrow waists: everything is a file (creating centric), and the web (consumption centric).
+We support extending the creation interface by progreamming with data, and the consumption interface with web technology.

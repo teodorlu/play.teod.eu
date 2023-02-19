@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: b57bc14e-0a1b-49b0-a745-23c605414ba0
 :END:
-#+TITLE: IKI: Knowledge Iterated
+#+TITLE: iki: knowledge iterated
 
 [[file:..][..]]
 
@@ -47,3 +47,8 @@ Provider capabilities:
 1. Available links
 2. Iterface through a data layer
 3. Allow for non-plaintext user interfaces.
+* 2023-02-19
+** Why am I not working on iki?
+1. Because I'm not using iki daily
+2. Because I don't know what the correct next step is /exactly/
+3. Because I'm not using iki

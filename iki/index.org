@@ -51,4 +51,12 @@ Provider capabilities:
 ** Why am I not working on iki?
 1. Because I'm not using iki daily
 2. Because I don't know what the correct next step is /exactly/
-3. Because I'm not using iki
+3. Because I'm not using iki for [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
+** What are my current [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] pain points?
+1. Reindexing troubles
+   1. Changing the title of a post is a hassle!
+      The data is two places: page source and metadata file.
+      And the index lingers - =by-uuid= pages linger.
+   2. The reindexing logic is complex.
+      I mix an Emacs UI, a Babashka CLI and a generated Makefile.
+      I want less moving pieces.

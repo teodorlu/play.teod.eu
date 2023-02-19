@@ -13,7 +13,8 @@ The recommended introduction to IKI is a [[id:1b1a3e02-9247-496e-b70f-2aee1251d1
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+END_EXPORT
 
-*Idea sketch (2023-02-18)*:
+* 2023-02-18
+** Idea sketch
 I see lack of shared intent, lack of shared sense of quality and lack of trust as the three biggest factors holding current software and product teams back.
 IKI is the tool I wish I had for building shared intent, building trust, and building shared sense of quality.
 
@@ -31,8 +32,7 @@ I want:
 
 IKI leans on two narrow waists: everything is a file (creating centric), and the web (consumption centric).
 We support extending the creation interface by progreamming with data, and the consumption interface with web technology.
-
-*Implementation sketch (2023-02-18)*:
+** Implementation sketch
 Core system built with Clojure & pandoc.
 Can run on Babashka and JVM Clojure.
 
@@ -40,8 +40,7 @@ IKI is a library (first) and a CLI (second).
 The recommended IKI setup is to extend the library to provide a custom CLI.
 (is this an IKI distribution?)
 Code editors (Emacs, VSCode, etc) talk to the CLI through a plugin, providing things like fuzzy link target selection.
-
-*IKI providers - sketch (2023-02-18)*.
+** IKI providers sketch
 Multiple IKI sources must be allowed.
 Provider capabilities:
 

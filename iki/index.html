@@ -201,17 +201,30 @@
 <header id="title-block-header">
 <h1 class="title">IKI: Knowledge Iterated</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#section" id="toc-section">2023-02-18</a>
+<ul>
+<li><a href="#idea-sketch" id="toc-idea-sketch">Idea sketch</a></li>
+<li><a href="#implementation-sketch"
+id="toc-implementation-sketch">Implementation sketch</a></li>
+<li><a href="#iki-providers-sketch" id="toc-iki-providers-sketch">IKI
+providers sketch</a></li>
+</ul></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p>Formerly known as <a href="../dbx/">dbx</a>.</p>
 <p>The recommended introduction to IKI is a <a
 href="../scicloj/">Scicloj</a> meeting from 2022-10-23:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p><strong>Idea sketch (2023-02-18)</strong>: I see lack of shared
-intent, lack of shared sense of quality and lack of trust as the three
-biggest factors holding current software and product teams back. IKI is
-the tool I wish I had for building shared intent, building trust, and
-building shared sense of quality.</p>
+<h2 id="section">2023-02-18</h2>
+<h3 id="idea-sketch">Idea sketch</h3>
+<p>I see lack of shared intent, lack of shared sense of quality and lack
+of trust as the three biggest factors holding current software and
+product teams back. IKI is the tool I wish I had for building shared
+intent, building trust, and building shared sense of quality.</p>
 <p>I want:</p>
 <ol>
 <li>Something plaintext-based where I can put the corpus of content in
@@ -233,15 +246,15 @@ Git</li>
 centric), and the web (consumption centric). We support extending the
 creation interface by progreamming with data, and the consumption
 interface with web technology.</p>
-<p><strong>Implementation sketch (2023-02-18)</strong>: Core system
-built with Clojure &amp; pandoc. Can run on Babashka and JVM
-Clojure.</p>
+<h3 id="implementation-sketch">Implementation sketch</h3>
+<p>Core system built with Clojure &amp; pandoc. Can run on Babashka and
+JVM Clojure.</p>
 <p>IKI is a library (first) and a CLI (second). The recommended IKI
 setup is to extend the library to provide a custom CLI. (is this an IKI
 distribution?) Code editors (Emacs, VSCode, etc) talk to the CLI through
 a plugin, providing things like fuzzy link target selection.</p>
-<p><strong>IKI providers - sketch (2023-02-18)</strong>. Multiple IKI
-sources must be allowed. Provider capabilities:</p>
+<h3 id="iki-providers-sketch">IKI providers sketch</h3>
+<p>Multiple IKI sources must be allowed. Provider capabilities:</p>
 <ol>
 <li>Available links</li>
 <li>Iterface through a data layer</li>

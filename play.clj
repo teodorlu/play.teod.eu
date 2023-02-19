@@ -342,8 +342,6 @@ DRAFT
       (print makefile)
       (spit "Makefile" makefile))))
 
-
-
 (defn index-by-uuid
   "Create an index from page uuid to slug and title."
   [{:keys [opts]}]
@@ -361,6 +359,8 @@ DRAFT
         (prn page))
       ;; otherwise, write to index/by-uuid/{UUID}.edn
       (do
+        ;; ensure "index/by-uuid/" exists
+        (fs/create-dirs "index/by-uuid/")
         ;; write an EDN file per UUID
         (doseq [page uuid-index]
           (spit (str "index/by-uuid/" (:uuid page) ".edn")

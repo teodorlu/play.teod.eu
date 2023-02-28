@@ -55,6 +55,10 @@ Counter example: [[id:cab02e40-98f3-4baa-b375-be8736ceb88a][Denotational Design]
 
 17 - Don't ask people to change their behavior. That is not something they can give you. Instead, ask for something specific they can do to help you now.
 
+18 - When exploring, prioritize cohesion over loose coupling.
+Explorations should be clearly tied to the initiative they are working for.
+Keeping the exploration singular ensures clarity and deletability.
+
 -----
 
 Other people whose aphorisms I've found to be useful:

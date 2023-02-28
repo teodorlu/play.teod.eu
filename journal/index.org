@@ -1014,6 +1014,14 @@ I could use that to serve & stream updates.
 How?
 I could use a babashka file watcher to trigger signals for reloading a specific page.
 Then Electric just makes the rest /work/.
+* 2023-02-28
+** Competence - Quality - Aesthetics - Taste --- it's a scale
+| Competence | Quality               | Aesthetics                | Taste                                          |
+|------------+-----------------------+---------------------------+------------------------------------------------|
+| Skills     | Outcome effectiveness | what's the right outcome? | why are we even here - where do we want to be? |
+
+Left: Objective, specific.
+Right: general, vague.
 * trailing whitespace
 #+BEGIN_VERSE
 

@@ -51,3 +51,6 @@ I propose two ways to refactor an explanation:
 
 Removing dependencies from an explanation increases its reach.
 Mathematicians generally call this /generalization/.
+
+We might realize that we have been /vague/ in the way we formulated our explanation.
+Vagueness lets variability slip in, and explanation variability is /bad/.

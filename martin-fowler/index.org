@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 5db117b1-2b4c-4c39-bd6d-3b909042fc79
+:END:
+#+TITLE: Martin Fowler
+
+[[file:..][..]]
+
+https://martinfowler.com/

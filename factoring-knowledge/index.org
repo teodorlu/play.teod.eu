@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID: 69978c82-f5a1-4135-9dbb-187d05606a1b
+:END:
+#+TITLE: Factoring Knowledge
+
+[[file:..][..]]
+
+To learn is to factor your knowledge.
+You split a big, fuzzy, opaque idea into smaller, crisper pieces.
+You've now taken a piece of knowledge and split that into /factors/.
+
+As software developers, we often talk about /refactoring/.
+According to [[id:5db117b1-2b4c-4c39-bd6d-3b909042fc79][Martin Fowler]],
+
+#+begin_quote
+[Software] refactoring is a disciplined technique for restructuring an existing body of code, altering its internal structure without changing its external behavior.
+#+end_quote
+
+We /refactor/ code by changing a composite structure to extract different factors.
+We combine, then factor.
+The "re" prefix means just that -- the code is already a composite of pieces, and we intend to split that code into different pieces.
+
+I want to dig into this bit:
+
+#+begin_quote
+altering its internal structure without changing its external behavior
+#+end_quote
+
+When we work in the realm of knowledge, "changing structure without changing externally observed behavior" gets harder.
+The work of factoring knowledge tends to /improve/ that knowledge.
+We move from a weak explanation to a stronger explanation.
+
+Following [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]], the quality of an explanation is determined by the /reach/ of the explanation, and how /hard it is to vary the explanation/.
+
+- The /reach/ of an explanation is the range of its explanatory power.
+  Can it explain a wide range of situations, or is it only narrowly applicable?
+  Broad reach is good.
+- The /difficulty to vary/ of an explanation is the quality of its core.
+  Does the explanation have the right core?
+  Or is it weak?
+  Weak explanations are easy to vary.
+  When you try to vary a /strong/ explanation, the explanation gets /wrong/.
+  Replace one term, and it no longer explains what it should.
+
+Let's bring back factoring and refactoring.
+We can change the structure of an explanation in order to improve its reach, or decrease its variability.
+I propose two ways to refactor an explanation:
+
+1. Remove explanation dependencies
+2. Rebase the explanation on stronger terms.
+
+Removing dependencies from an explanation increases its reach.
+Mathematicians generally call this /generalization/.

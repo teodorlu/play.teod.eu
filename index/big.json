@@ -465,6 +465,14 @@
   "lang" : "en",
   "uuid" : "5abac715-d886-4aa8-85d7-d0b877a245d6"
 }, {
+  "slug" : "martin-fowler",
+  "title" : "Martin Fowler",
+  "readiness" : "wtf-is-this",
+  "uuid" : "5db117b1-2b4c-4c39-bd6d-3b909042fc79",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-01",
+  "lang" : "en"
+}, {
   "slug" : "jocko-willink",
   "title" : "Jocko Willink",
   "readiness" : "wtf-is-this",
@@ -487,6 +495,14 @@
   "uuid" : "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9",
   "author-url" : "https://teod.eu",
   "created" : "2022-09-17",
+  "lang" : "en"
+}, {
+  "slug" : "factoring-knowledge",
+  "title" : "Factoring Knowledge",
+  "readiness" : "wtf-is-this",
+  "uuid" : "69978c82-f5a1-4135-9dbb-187d05606a1b",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-01",
   "lang" : "en"
 }, {
   "slug" : "how-to-build-ideas",

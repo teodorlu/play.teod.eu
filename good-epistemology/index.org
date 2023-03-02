@@ -7,8 +7,18 @@
 
 DRAFT
 
-Motivation: product.
+*Motivation: product.*
 List of cases where the naive solution is bad, and the good solution emerges with good epistemology.
 
-Motivation: software design.
+*Motivation: software design.*
 Mapping bad software design to bad epistemology.
+
+*Epistemology for product teams*.
+Observation, theory, judgment, experiment.
+Epistemology in product discovery.
+Bucket of options.
+Creating an option, building an option, sharing an option.
+Trust, shared intent, shared sense of quality.
+
+*Antifragility through good epistemology*.
+Bad epistemolgy allows fragility to slip in.

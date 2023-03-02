@@ -408,9 +408,9 @@
   :title "Martin Fowler",
   :readiness :wtf-is-this,
   :uuid "5db117b1-2b4c-4c39-bd6d-3b909042fc79",
-  :author-url "https://teod.eu",
   :created "2023-03-01",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "jocko-willink",
   :title "Jocko Willink",
   :readiness :wtf-is-this,
@@ -560,6 +560,13 @@
   :uuid "8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8",
   :author-url "https://teod.eu",
   :created "2022-10-23",
+  :lang :en}
+ {:slug "good-epistemology",
+  :title "Good epistemology",
+  :readiness :wtf-is-this,
+  :uuid "91873324-e6b0-4187-a335-e4e02740938b",
+  :author-url "https://teod.eu",
+  :created "2023-03-02",
   :lang :en}
  {:slug "precise-general-novel",
   :title "Precise, general, novel",

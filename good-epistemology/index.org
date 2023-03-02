@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 91873324-e6b0-4187-a335-e4e02740938b
+:END:
+#+TITLE: Good epistemology
+
+[[file:..][..]]
+
+DRAFT
+
+Motivation: product.
+List of cases where the naive solution is bad, and the good solution emerges with good epistemology.
+
+Motivation: software design.
+Mapping bad software design to bad epistemology.

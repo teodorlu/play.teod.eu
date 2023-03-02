@@ -342,7 +342,7 @@ DRAFT
       (print makefile)
       (spit "Makefile" makefile))))
 
-(defn index-by-uuid
+(defn reindex
   "Create an index from page uuid to slug and title."
   [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
@@ -412,7 +412,7 @@ relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
 
 makefile [--dry-run]
 
-index-by-uuid [--dry-run]
+reindex [--dry-run]
 ")))
 
 (defn iki.json [{:keys [opts]}]
@@ -424,7 +424,7 @@ index-by-uuid [--dry-run]
 (def dispatch-table
   [{:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn filter-pandoc :cmds-opts [:resolve-links]}
-   {:cmds ["index-by-uuid"] :fn index-by-uuid}
+   {:cmds ["reindex"] :fn reindex}
    {:cmds ["makefile"] :fn makefile}
    {:cmds ["random-page"] :fn random-page}
    {:cmds ["relations"] :fn relations}

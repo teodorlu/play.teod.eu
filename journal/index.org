@@ -1061,6 +1061,9 @@ Aaaand I can "move around" more quickly.
 This way of dividing is sufficient for lots of stuff.
 
 | organization | project | initiative |
+** Sword of truth, shield of virtue
+Truth slices up what's wrong.
+Virtue keeps you in check, lets you avoid harming yourself and others.
 * trailing whitespace
 #+BEGIN_VERSE
 

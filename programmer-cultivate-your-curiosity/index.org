@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID: ed7bbc77-18b0-4092-bd7d-f127d7bc3041
+:END:
+#+TITLE: Programmer, cultivate your curiosity!
+
+[[file:..][..]]
+
+DRAFT
+
+Motivation: as programmers, we should take our curiosity seriously, not squander it!
+
+Form: apply [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]'s ideas about creativity and curiosity and nerds to practicing programmers.
+Mix in some [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]], with some [[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]].
+
+In other words:
+
+1. Explore what you like by creating and remixing
+2. Publish your creations on the web
+3. Share them with others!
+
+Good examples of people taking their curiosity seriously, and delivering it piecemeal:
+
+1. Magnar Sveen and Christian Johansen in Zombieclj: https://www.zombieclj.no/
+2. Baggers pushing pixels with Lisp on youtube:
+   https://www.youtube.com/playlist?list=PL2VAYZE_4wRITJBv6saaKouj4sWSG1FcS
+3. Sam Ritchie playing with knowledge and physics and data visualization.
+   See for instance the awesome-clerk list:
+   https://github.com/mentat-collective/awesome-clerk
+4. Nils's newsletter "Ting jeg tenker på" (Norwegian):
+   https://nilsr.substack.com/

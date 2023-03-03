@@ -1050,6 +1050,11 @@ Idea 2.1: JVM server, bb clients.
 Yup
 
 But building on Clojure (bb/jvm) gives a different set of tradeoffs.
+*** Idea 3: JVM server, Emacs Lisp client
+🤔🤔🤔
+
+Then I don't have to reinvent Emacs.
+Aaaand I can "move around" more quickly.
 
 * trailing whitespace
 #+BEGIN_VERSE

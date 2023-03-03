@@ -10,7 +10,7 @@ DRAFT
 Motivation: as programmers, we should take our curiosity seriously, not squander it!
 
 Form: apply [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]'s ideas about creativity and curiosity and nerds to practicing programmers.
-Mix in some [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]], with some [[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]].
+Throw in two ounces of [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][There's always a deliverable]], spice with [[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]].
 
 In other words:
 

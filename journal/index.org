@@ -1055,7 +1055,7 @@ But building on Clojure (bb/jvm) gives a different set of tradeoffs.
 
 Then I don't have to reinvent Emacs.
 Aaaand I can "move around" more quickly.
-** Observation: hiearchy depth 3
+** Observation: hierarchy depth 3
 | date | project / option | theme |
 
 This way of dividing is sufficient for lots of stuff.

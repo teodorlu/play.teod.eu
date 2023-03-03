@@ -1026,7 +1026,7 @@ Right: general, vague.
 ** Idea: file explorer on bb
 codename *filebbrowser*
 
-1. Navigate around quickly - be like dired
+1. Navigate around quickly - be like dired with Doom's =(:evil +everywhere)=
 2. Support jumping from/to a normal CLI
 3. Support some Clojure
    1. REPL expressions

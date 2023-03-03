@@ -1024,7 +1024,7 @@ Left: Objective, specific.
 Right: general, vague.
 * 2023-03-03
 ** Idea: file explorer on bb
-*filebbrowser*
+codename *filebbrowser*
 
 1. Navigate around quickly - be like dired
 2. Support jumping from/to a normal CLI

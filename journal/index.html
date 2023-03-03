@@ -482,6 +482,11 @@ always-live content sites</a></li>
 id="toc-competence---quality---aesthetics---taste-its-a-scale">Competence
 - Quality - Aesthetics - Taste — it’s a scale</a></li>
 </ul></li>
+<li><a href="#section-24" id="toc-section-24">2023-03-03</a>
+<ul>
+<li><a href="#idea-file-explorer-on-bb"
+id="toc-idea-file-explorer-on-bb">Idea: file explorer on bb</a></li>
+</ul></li>
 <li><a href="#trailing-whitespace" id="toc-trailing-whitespace">trailing
 whitespace</a></li>
 </ul>
@@ -1543,6 +1548,41 @@ Quality - Aesthetics - Taste — it’s a scale</h3>
 </tbody>
 </table>
 <p>Left: Objective, specific. Right: general, vague.</p>
+<h2 id="section-24">2023-03-03</h2>
+<h3 id="idea-file-explorer-on-bb">Idea: file explorer on bb</h3>
+<p><strong>filebbrowser</strong></p>
+<ol>
+<li>Navigate around quickly - be like dired</li>
+<li>Support jumping from/to a normal CLI</li>
+<li>Support some Clojure
+<ol>
+<li>REPL expressions</li>
+<li>Put <code class="verbatim">tap&gt;</code> to good use, perhaps
+persist</li>
+<li>Dynamic vars for current directory</li>
+</ol></li>
+</ol>
+<p>How</p>
+<p>Consider having a “process stack” – start filebbrowser from the
+terminal, and put terminals “on top”, then start filebbrowser on top of
+that (again)</p>
+<p>Support FZF UIs natively</p>
+<h4 id="idea-2-use-a-clientserver-model-instead">Idea 2: use a
+client/server model instead</h4>
+<ol>
+<li>Use a persistent JVM</li>
+<li>Connect multiple clients</li>
+<li>Keep the clients as light as required</li>
+<li>Automatically start a server when required – like Emacs w/client
+&amp; server</li>
+</ol>
+<p>Idea 2.1: JVM server, bb clients. 🤔</p>
+<h4
+id="criticism-this-is-just-reinventing-emacs-dired-and-vtermeshell">Criticism:
+this is just reinventing Emacs, Dired and vterm/eshell</h4>
+<p>Yup</p>
+<p>But building on Clojure (bb/jvm) gives a different set of
+tradeoffs.</p>
 <h2 id="trailing-whitespace">trailing whitespace</h2>
 <div class="line-block"><br />
 <br />

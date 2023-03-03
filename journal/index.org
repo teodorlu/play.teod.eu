@@ -1022,6 +1022,35 @@ Then Electric just makes the rest /work/.
 
 Left: Objective, specific.
 Right: general, vague.
+* 2023-03-03
+** Idea: file explorer on bb
+*filebbrowser*
+
+1. Navigate around quickly - be like dired
+2. Support jumping from/to a normal CLI
+3. Support some Clojure
+   1. REPL expressions
+   2. Put =tap>= to good use, perhaps persist
+   3. Dynamic vars for current directory
+
+How
+
+Consider having a "process stack" -- start filebbrowser from the terminal, and put terminals "on top", then start filebbrowser on top of that (again)
+
+Support FZF UIs natively
+*** Idea 2: use a client/server model instead
+1. Use a persistent JVM
+2. Connect multiple clients
+3. Keep the clients as light as required
+4. Automatically start a server when required -- like Emacs w/client & server
+
+Idea 2.1: JVM server, bb clients.
+🤔
+*** Criticism: this is just reinventing Emacs, Dired and vterm/eshell
+Yup
+
+But building on Clojure (bb/jvm) gives a different set of tradeoffs.
+
 * trailing whitespace
 #+BEGIN_VERSE
 

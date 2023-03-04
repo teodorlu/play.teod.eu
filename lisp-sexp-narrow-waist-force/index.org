@@ -59,7 +59,7 @@ I've been told I sometimes theorize without getting to the specifics.
 So here's a list.
 
 1. Learn to work with s-expressions --- it's worth the effort.
-2. Try using [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]], [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[https://mathbox.mentat.org/][Mathbox.cljs]] to visualize points in a 3D space, it's amazing.
+2. Try using [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]], [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[https://mathbox.mentat.org/][Mathbox.cljs]] to visualize points in 3D, it's amazing.
 3. Consider whether your current programming workflow limits the ideas you can explore and things you can build.
 
 That's it for today.

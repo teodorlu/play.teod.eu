@@ -7,4 +7,4 @@
 
 https://clerk.vision/
 
-Literate dataflow programming on the web with Clojure.
+Literate dataflow programming on the web with [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]]

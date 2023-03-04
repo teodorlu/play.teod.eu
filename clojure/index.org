@@ -5,4 +5,6 @@
 
 [[file:..][..]]
 
-DRAFT
+https://clojure.org/
+
+A general purpose programming language

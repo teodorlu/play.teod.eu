@@ -28,7 +28,7 @@ Other solutions to the problems Clerk solve include:
 Note: I do /not/ dislike MATLAB, Jupyter notebooks or Julia.
 I'm amazed by the problems they solve.
 I do want to learn Julia.
-I'm just even more amazed by what you get when you sprinkle s-expression dust on the problem.
+I'm just even more amazed by what you get when you sprinkle s-expression dust on ecosystem /first/ and tackle the problem with those constraints in mind.
 
 So why lisp?
 *Because the fact that everyone is being forced to work with S-expressions is a good thing.*

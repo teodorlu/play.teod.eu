@@ -51,7 +51,7 @@ You can tell I like Clojure.
 I love Clojure.
 I enjoy working with Clojure systems more than I've enjoyed working with systems in other languages I've used.
 But this text is about Lisp, not Clojure.
-Clerk showed what is /possible/ when your language is build with certain constraints in mind.
+Clerk showed what is /possible/ when your language is built with certain constraints in mind.
 I'm fairly confident it's possible to make the same move in other languages: Common Lisp, Racket, Smalltalk.
 In fact, I'm fairly confident this has been tried.
 For instance, check out [[https://lepiter.io/feenk/introducing-lepiter--knowledge-management--e2p6apqsz5npq7m4xte0kkywn//][how the Glamorous Toolkit developers are approaching notebooks]].

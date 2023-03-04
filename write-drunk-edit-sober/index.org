@@ -17,3 +17,9 @@ This is what feature flags are for.
 Write the idea out in its full form (text, working feature under a flag), /then/ test and measure whether it's any good.
 
 *why?* Because the bounaries of ideas are fuzzy, and the act of expanding the fuzzyness (writing) is totally different from the act of removing all that is fuzzy (editing).
+
+/who said that?/
+I know that I just read it.
+It appears Hemingway said something /like it/.
+You can also try the [[https://www.squibler.io/dangerous-writing-prompt-app/write?limit=5&type=minutes][dangerous writing app]].
+It deletes your text if you try to stop writing and start editing too early.

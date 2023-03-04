@@ -9,7 +9,7 @@ Working with S-expressions takes discipline.
 It's not easy, you can't just write words while leaning on your brain's natural language center.
 Instead, you must make an effort.
 
-But why?
+But why should you?
 Because [[id:5603700a-9f22-44e2-9e03-f83776e2bfe3][narrow waists]] are exceptionally powerful, and reward that effort.
 It's worth it.
 The layer below the narrow waist -- the language -- becomes cleaner, simpler.

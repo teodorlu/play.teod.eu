@@ -64,7 +64,7 @@ So here's a list.
 2. Try using [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]], [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[https://mathbox.mentat.org/][Mathbox.cljs]] to visualize some 3D point data
 3. Consider whether your current programming workflow might be limiting the things you can build.
 
-That's all.
+That's it for today.
 Thanks for reading!
 
 Teodor

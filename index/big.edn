@@ -460,6 +460,20 @@
   :created "2022-07-24",
   :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
   :lang :en}
+ {:slug "training-collaboration-delivery",
+  :title "Training, collaboration, delivery",
+  :readiness :wtf-is-this,
+  :uuid "6da41413-063d-45d3-924b-aa2715a8855c",
+  :author-url "https://teod.eu",
+  :created "2023-03-03",
+  :lang :en}
+ {:slug "clojure",
+  :title "Clojure",
+  :readiness :wtf-is-this,
+  :uuid "6f1d8319-90b8-4006-9508-ef912fcd939b",
+  :created "2023-03-04",
+  :lang :en,
+  :form :remote-reference}
  {:slug "kos.clj",
   :title "kos.clj",
   :readiness :wtf-is-this,
@@ -730,6 +744,14 @@
   :created "2022-07-29",
   :uuid "b58eff14-c704-4de3-b113-959fb41c0f5a",
   :lang :en}
+ {:slug "lisp-narrow-waist",
+  :title
+  "Why Lisp? Because it forces the s-expression narrow waist down everyone's throats",
+  :readiness :ready-for-comments,
+  :uuid "b632d12b-2fee-4e29-a7a6-56ae2e0ade55",
+  :author-url "https://teod.eu",
+  :created "2023-03-04",
+  :lang :en}
  {:slug "play.teod.eu-retrospective",
   :title "play.teod.eu: Rolling retrospective",
   :readiness :forever-incomplete,
@@ -903,6 +925,13 @@
   :author-url "https://teod.eu",
   :created "2022-07-18",
   :uuid "e9a97a46-f252-4883-a311-21b20528d14d",
+  :lang :en}
+ {:slug "programmer-cultivate-your-curiosity",
+  :title "Programmer, cultivate your curiosity!",
+  :readiness :wtf-is-this,
+  :uuid "ed7bbc77-18b0-4092-bd7d-f127d7bc3041",
+  :author-url "https://teod.eu",
+  :created "2023-03-03",
   :lang :en}
  {:slug "spaghettifabrikken",
   :title "Factorio dedicated server",

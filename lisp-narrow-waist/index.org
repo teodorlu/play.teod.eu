@@ -42,7 +42,7 @@ It communicates with the running Clojure process through a REPL, the standard wa
 It doesn't replace your editor, you can just use your editor.
 It /does/ provide some surprises about expression evaluation: form-by-form evaluation is replaced with dataflow programming and dependency tracking.
 But that's the thing that Clerk provides!
-That's the whole value proposition!
+That's the value proposition!
 That's the way you /want/ to work with your Clerk notebook!
 
 You can tell I like Clojure.

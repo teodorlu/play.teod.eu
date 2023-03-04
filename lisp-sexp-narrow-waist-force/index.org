@@ -1,0 +1,70 @@
+:PROPERTIES:
+:ID: b632d12b-2fee-4e29-a7a6-56ae2e0ade55
+:END:
+#+TITLE: Why Lisp? Because it forces the s-expression narrow waist down everyone's throats
+
+[[file:..][..]]
+
+To me, right now, the title sums it all up.
+Working with S-expressions takes discipline.
+It's not easy, you can't just write words and lean on your brain's natural language center to get it all done.
+Instead, you must make an effort.
+You must learn how to work with it.
+You must spend /effort/.
+
+But why?
+Because [[id:5603700a-9f22-44e2-9e03-f83776e2bfe3][narrow waists]] are exceptionally powerful, and reward that effort.
+It's worth it.
+The layer below the narrow waist -- the language -- becomes cleaner, simpler.
+The layers above the narrow waist -- the tooling, the editors, linters -- gain leverage.
+They can do /more/.
+
+Tools like [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] can be built /in userspace/!
+How amazing is that!
+
+Other solutions to the problems Clerk solve include:
+
+1. Build a proprietary programming language with proprietary libraries meant to be used in a proprietary editor ([[https://en.wikipedia.org/wiki/MATLAB][MATLAB]])
+2. Build a separate editor for an existing language, forking the editor tooling ecosystem ([[https://en.wikipedia.org/wiki/Project_Jupyter][Jupyter]] notebooks)
+3. Build a brand new programming language ([[https://en.wikipedia.org/wiki/Julia_(programming_language)][Julia]])
+
+Digression: I do /not/ dislike MATLAB, Jupyter notebooks or Julia.
+I'm amazed by the problems they solve.
+I'm just even more amazed by what you get when you sprinkle s-expression dust on the problem.
+
+So why lisp?
+*Because the fact that everyone is being forced to work with S-expressions is a good thing.*
+It's not easy.
+It requires effort.
+It requires discipline.
+But the leverage outweighs the cost.
+
+In Clerk's case, it didn't have to create any rifts in the Clojure community.
+It communicates with the running Clojure process through a REPL, the standard way of communicating with Clojure processes.
+It doesn't replace your editor, you can just use your editor.
+It /does/ provide some surprises with evaluation: form-by-form evaluation is replaced with dataflow programming and dependency tracking.
+But that's the whole feature!
+That's the whole value proposition!
+That's the way you /want/ to work with your Clerk notebook!
+
+You can tell I like Clojure.
+I love Clojure.
+I enjoy working with Clojure systems more than I've enjoyed working with systems in other languages I've used.
+But this text is about Lisp, not Clojure.
+Clerk showed what is /possible/ when your language is build with certain constraints in mind.
+I'm fairly confident it's possible to make the same move in other languages: Common Lisp, Racket, Smalltalk.
+In fact, I'm fairly confident this has been tried.
+For instance, check out [[https://lepiter.io/feenk/introducing-lepiter--knowledge-management--e2p6apqsz5npq7m4xte0kkywn//][how the Glamorous Toolkit developers are approaching notebooks]].
+
+*takeaways and actionables*.
+I've been told I sometimes theorize without getting to the specifics.
+So here's a list.
+
+1. Learn to work with s-expressions --- it's worth the effort.
+2. Try using [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]], [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[https://mathbox.mentat.org/][Mathbox.cljs]] to visualize some 3D point data
+3. Consider whether your current programming workflow might be limiting the things you can build.
+
+That's all.
+Thanks for reading!
+
+Teodor

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Why Lisp? Because it forces the s-expression narrow waist down everyone’s throats</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Why Lisp? Because it forces the s-expression narrow
+waist down everyone’s throats</h1>
+</header>
+<p><a href="..">..</a></p>
+<p>To me, right now, the title sums it all up. Working with
+S-expressions takes discipline. It’s not easy, you can’t just write
+words and lean on your brain’s natural language center to get it all
+done. Instead, you must make an effort. You must learn how to work with
+it. You must spend <em>effort</em>.</p>
+<p>But why? Because <a href="../narrow-waist/">narrow waists</a> are
+exceptionally powerful, and reward that effort. It’s worth it. The layer
+below the narrow waist – the language – becomes cleaner, simpler. The
+layers above the narrow waist – the tooling, the editors, linters – gain
+leverage. They can do <em>more</em>.</p>
+<p>Tools like <a href="../clerk/">Clerk</a> can be built <em>in
+userspace</em>! How amazing is that!</p>
+<p>Other solutions to the problems Clerk solve include:</p>
+<ol>
+<li>Build a proprietary programming language with proprietary libraries
+meant to be used in a proprietary editor (<a
+href="https://en.wikipedia.org/wiki/MATLAB">MATLAB</a>)</li>
+<li>Build a separate editor for an existing language, forking the editor
+tooling ecosystem (<a
+href="https://en.wikipedia.org/wiki/Project_Jupyter">Jupyter</a>
+notebooks)</li>
+<li>Build a brand new programming language (<a
+href="https://en.wikipedia.org/wiki/Julia_(programming_language)">Julia</a>)</li>
+</ol>
+<p>Digression: I do <em>not</em> dislike MATLAB, Jupyter notebooks or
+Julia. I’m amazed by the problems they solve. I’m just even more amazed
+by what you get when you sprinkle s-expression dust on the problem.</p>
+<p>So why lisp? <strong>Because the fact that everyone is being forced
+to work with S-expressions is a good thing.</strong> It’s not easy. It
+requires effort. It requires discipline. But the leverage outweighs the
+cost.</p>
+<p>In Clerk’s case, it didn’t have to create any rifts in the Clojure
+community. It communicates with the running Clojure process through a
+REPL, the standard way of communicating with Clojure processes. It
+doesn’t replace your editor, you can just use your editor. It
+<em>does</em> provide some surprises with evaluation: form-by-form
+evaluation is replaced with dataflow programming and dependency
+tracking. But that’s the whole feature! That’s the whole value
+proposition! That’s the way you <em>want</em> to work with your Clerk
+notebook!</p>
+<p>You can tell I like Clojure. I love Clojure. I enjoy working with
+Clojure systems more than I’ve enjoyed working with systems in other
+languages I’ve used. But this text is about Lisp, not Clojure. Clerk
+showed what is <em>possible</em> when your language is build with
+certain constraints in mind. I’m fairly confident it’s possible to make
+the same move in other languages: Common Lisp, Racket, Smalltalk. In
+fact, I’m fairly confident this has been tried. For instance, check out
+<a
+href="https://lepiter.io/feenk/introducing-lepiter--knowledge-management--e2p6apqsz5npq7m4xte0kkywn//">how
+the Glamorous Toolkit developers are approaching notebooks</a>.</p>
+<p><strong>takeaways and actionables</strong>. I’ve been told I
+sometimes theorize without getting to the specifics. So here’s a
+list.</p>
+<ol>
+<li>Learn to work with s-expressions — it’s worth the effort.</li>
+<li>Try using <a
+href="id:6f1d8319-90b8-4006-9508-ef912fcd939b">Clojure</a>, <a
+href="../clerk/">Clerk</a> and <a
+href="https://mathbox.mentat.org/">Mathbox.cljs</a> to visualize some 3D
+point data</li>
+<li>Consider whether your current programming workflow might be limiting
+the things you can build.</li>
+</ol>
+<p>That’s all. Thanks for reading!</p>
+<p>Teodor</p>
+</body>
+</html>

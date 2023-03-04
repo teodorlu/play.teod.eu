@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-Examles:
+Examples:
 
 When writing text, first write too much, then edit.
 Why?

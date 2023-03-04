@@ -1065,6 +1065,11 @@ This way of dividing is sufficient for lots of stuff.
 Truth slices up what's wrong.
 Virtue keeps you in check, lets you avoid harming yourself and others.
 ** Write about something important
+That's right!
+
+1. Reflect on what's important
+2. Write about that
+3. Reflect on your writing and whether it's important
 * trailing whitespace
 #+BEGIN_VERSE
 

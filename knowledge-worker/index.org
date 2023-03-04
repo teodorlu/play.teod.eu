@@ -7,6 +7,8 @@
 
 State: DRAFT
 
+I pulled some of this out into [[id:9c186247-2fe0-4c64-b2b8-5fc6dc110911][Welcome, knowledge worker!]]
+
 Outline (DRAFT):
 
 1. Heterarchical knowledge models - mental models as opt-in / useful

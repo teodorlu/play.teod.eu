@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 Working with S-expressions takes discipline.
-It's not easy, you can't just write words and lean on your brain's natural language center to get it all done.
+It's not easy, you can't just write words while leaning on your brain's natural language center.
 Instead, you must make an effort.
 You must learn how to work with it.
 You must spend /effort/.

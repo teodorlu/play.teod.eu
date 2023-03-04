@@ -27,8 +27,9 @@ Other solutions to the problems Clerk solve include:
 2. Build a separate editor for an existing language, forking the editor tooling ecosystem ([[https://en.wikipedia.org/wiki/Project_Jupyter][Jupyter]] notebooks)
 3. Build a brand new programming language ([[https://en.wikipedia.org/wiki/Julia_(programming_language)][Julia]])
 
-Digression: I do /not/ dislike MATLAB, Jupyter notebooks or Julia.
+Note: I do /not/ dislike MATLAB, Jupyter notebooks or Julia.
 I'm amazed by the problems they solve.
+I /do/ want to learn Julia.
 I'm just even more amazed by what you get when you sprinkle s-expression dust on the problem.
 
 So why lisp?

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: dc3b66ad-d07f-4139-98ff-796a974146ed
+:END:
+#+TITLE: Write drunk, edit sober
+
+[[file:..][..]]
+
+Examles:
+
+When writing text, first write too much, then edit.
+Why?
+Because it's faster, better.
+Your mind can /first/ be in positive, constructive mode, then pick at all the flaws later.
+
+When building product, propose and share the idea first, the criticize reality later.
+This is what feature flags are for.
+Write the idea out in its full form (text, working feature under a flag), /then/ test and measure whether it's any good.
+
+*why?* Because the bounaries of ideas are fuzzy, and the act of expanding the fuzzyness (writing) is totally different from the act of removing all that is fuzzy (editing).

@@ -5,4 +5,6 @@
 
 [[file:..][..]]
 
-DRAFT
+https://clerk.vision/
+
+Literate dataflow programming on the web with Clojure.

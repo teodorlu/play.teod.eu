@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID: 587fd857-1f93-4b59-935a-7681e5129665
+:END:
+#+TITLE: Trust, quality, intent: an organizational model
+
+[[file:..][..]]
+
+/Shared trust, shared sense of quality and shared intent as a characterization of human relations/
+
+* Motivation: real world systems involve people
+
+I used to be oriented around systems of objects, rather than people.
+Math, physics, programming, legos.
+You name it.
+can i excercise system design and see the system in motion?
+I'm in.
+
+That model has its limits.
+It gives no prescription for how to work with people and design teams.
+A great place to exercise system design is to build products.
+But why should people want to use the products you build?
+
+Here the thing-oriented worldview breaks down.
+It's not sufficient to create a great product you'd use yourself for others to be willing to pay you for the right to use that product.
+People just /know/ what's great for them.
+Communication is needed.
+
+Shared trust, shared sense of quality, shared intent is a model that helps contextualize those choices.
+
+* Let's start with examples.
+
+/Quicknote/ a temporally oriented note-taking app.
+
+| Alice   | Quicknote developer       |
+| Bob     | Quicknote product manager |
+| Charlie | Early quicknote adopter   |
+
+We can characterize Alice, Bob and Charlie's relations through attributes.
+We choose the notation =(subject->object).attribute=.
+Does Alice trust Bob? That's =(alice->bob).trust=.
+Does Bob understand what Charlie is motivate by, and finds to be /really good?/ That's =(bob->charlie).quality=.
+
+- Relation :: Evidence
+
+.
+
+- (alice->bob).trust :: Bob promised that they would reconsider the sync feature
+  if they ran into too much trouble.
+  They did, and cut scope.
+- (charlie->alice).quality :: Charlie was going shopping, and checked the "buy milk" item.
+  The app froze.
+  He asked Alice what he could do to fix it, and Alice was visibly embarassed.
+  She said, "that's my fault, I'm fixing it."
+  The next day, Charlie tried again, and it was working.
+
+* A low resolution score, or a high resolution map
+
+Developers Alice and Dave share a love for immutability, but their differences differ when it comes to type systems.
+
+In a low-resolution model, they have /some/ sense of shared quality.
+They like working together, and learning from each other.
+
+| shared quality about ?     | score |
+|----------------------------+-------|
+| Programming in general     | 6/10  |
+| Immutability (programming) | 8/10  |
+| Type systems (programming) | 5/10  |
+| Food                       | 1/10  |
+
+A low score can indicate no overlapping sense of quality, or no /known/ overlap in sense of quality.
+If Alice and Dave have never eaten together, or cooked food together, they don't have a /shared sense/ of quality of food -- even if they might both /love/ burritos.

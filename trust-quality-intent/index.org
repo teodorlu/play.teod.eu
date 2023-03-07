@@ -69,3 +69,5 @@ They like working together, and learning from each other.
 
 A low score can indicate no overlapping sense of quality, or no /known/ overlap in sense of quality.
 If Alice and Dave have never eaten together, or cooked food together, they don't have a /shared sense/ of quality of food -- even if they might both /love/ burritos.
+
+In other words: /We map known shared territory/.

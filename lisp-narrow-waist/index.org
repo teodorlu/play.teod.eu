@@ -7,7 +7,7 @@
 
 Working with S-expressions takes discipline.
 It's not easy, you can't just lean on your language center and write words.
-Instead, you must make an effort.
+Instead, you must put in work.
 
 But why should you?
 Because [[id:5603700a-9f22-44e2-9e03-f83776e2bfe3][narrow waists]] are exceptionally powerful, and reward that effort.

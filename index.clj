@@ -150,14 +150,14 @@
      (for [page norwegian] (str "- " (page-link page)))
      [""]
 
-     [(paragraphs "** Seeds, drafts and vague ideas, please ignore."
-                  (lines "Feel free to skip all these."
-                         "Or not."
-                         "Expect messy, incomplete rambling.")
+     [(paragraphs "** Seeds, drafts and vague ideas, feel free to skip."
+                  (lines "Or have a peek."
+                         "Expect messy, incomplete rambling."
+                         "Consider letting me know if you find a title for a text you'd like to read!")
                   (str/join " · " (for [page wtf-is-this] (page-link page))))
       ""]
 
-     ["** Seeds and vague ideas in Norwegian, please ignore these too."
+     ["** Seeds and vague ideas in Norwegian, feel free to skip."
       ""
       (str/join " · " (for [page wtf-is-this-norwegian] (page-link page)))
       ""
@@ -165,7 +165,7 @@
 
      ["** Remote references"
       ""
-      "Pointers to people, places, artifacts."
+      "Pointers to people, places, artifacts, interlaced with some commentary."
       ""
       (str/join " · " (for [page remote-reference] (page-link page)))
       ""
@@ -192,9 +192,7 @@ I include this list as a personal reminder.
                    "Good question!"
                    "What this /is/ is perhaps less useful than what this is /for/.")
 
-
-
-                  "** Then, what is this /for/??"
+                  "** Then, what is this /for/?"
                   (lines "It's for playing with ideas."
                          "Good ones, but mostly bad ones."
                          "Toss them around. Light them on fire."

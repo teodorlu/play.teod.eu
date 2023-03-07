@@ -60,7 +60,7 @@ Developers Alice and Dave share a love for immutability, but their differences d
 In a low-resolution model, they have /some/ sense of shared quality.
 They like working together, and learning from each other.
 
-| shared quality what?       | score |
+| shared quality about what? | score |
 |----------------------------+-------|
 | Programming in general     | 6/10  |
 | Immutability (programming) | 8/10  |

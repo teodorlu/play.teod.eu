@@ -1,0 +1,7 @@
+/* A collection of minor adjustments for this page! */
+
+/* Can we make sure youtube videos get the right width? */
+.youtube-video {
+    width: 784px;
+    height: 441px;
+}

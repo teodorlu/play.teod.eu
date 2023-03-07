@@ -153,7 +153,7 @@
      [(paragraphs "** Seeds, drafts and vague ideas, please ignore."
                   (lines "Feel free to skip all these."
                          "Or not."
-                         "Expect the average seed to be messy and incomplete.")
+                         "Expect messy, incomplete rambling.")
                   (str/join " · " (for [page wtf-is-this] (page-link page))))
       ""]
 

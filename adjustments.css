@@ -2,6 +2,15 @@
 
 /* Can we make sure youtube videos get the right width? */
 .youtube-video {
-    width: 784px;
-    height: 441px;
+    /* Display ration: 16/9 */
+
+    /* Youtube original: */
+    /* width: 784px; */
+    /* height: 441px; */
+
+    /* My adaptation: */
+
+    width: 576px;
+    height: 324px;
 }
+/* yes! */

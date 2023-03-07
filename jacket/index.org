@@ -7,11 +7,71 @@
 
 DRAFT
 
-Goal: a tool for working pages here
+* Goal: a tool for working pages here
 
 - I think [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] is a good fit.
   Write some Clojure code that can be shared between CLI and Electric tool, and use that.
   Electric Clojure can potentially also give me a faster interaction loop than I'm getting otherwise.
 - First step: just a HTML table of pages, by created time.
 
+* Is this a good idea?
+
+It would /perhaps/ be better to think [[id:b57bc14e-0a1b-49b0-a745-23c605414ba0][iki: knowledge iterated]] & loose coupling.
+It would be nice if:
+
+1. jacket could work on any IKI site
+2. jacket development could work independent of IKI development
+3. ... and jacket doesn't even need to be in here.
+   It could just query https://play.teod.eu/index/big.edn and get started.
+
+* experimentation
+
 #+INCLUDE: "table.html" export html
+
+#+begin_src clojure :backend babashka
+;; (clojure.core/load "recent_pages.clj")
+
+(prn (+ 1 2))
+#+end_src
+
+#+RESULTS:
+: 3
+
+#+begin_src clojure :backend babashka :results value
+(+ 1 2)
+#+end_src
+#+RESULTS:
+
+#+begin_src clojure :backend babashka
+(require 'recent-pages)
+#+end_src
+
+#+RESULTS:
+
+#+begin_src clojure :backend babashka
+(prn *file*)
+#+end_src
+
+#+RESULTS:
+: /tmp/babel-yNaNHZ/clojure-bb-script-XLqS6V.clj
+
+#+begin_src clojure :backend babashka :dir .
+(prn *file*)
+#+end_src
+
+#+RESULTS:
+: /tmp/babel-yNaNHZ/clojure-bb-script-Hutvac.clj
+
+#+begin_src clojure :backend babashka :dir .
+(prn (babashka.fs/cwd))
+#+end_src
+
+#+RESULTS:
+: #object[sun.nio.fs.UnixPath 0x58cea7f6 "/home/teodorlu/dev/teodorlu/play.teod.eu/jacket"]
+
+#+begin_src clojure :backend babashka
+(prn (babashka.fs/cwd))
+#+end_src
+
+#+RESULTS:
+: #object[sun.nio.fs.UnixPath 0x45802c56 "/home/teodorlu/dev/teodorlu/play.teod.eu/jacket"]

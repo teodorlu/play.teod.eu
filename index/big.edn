@@ -233,6 +233,13 @@
   :builds
   [#:build{:type :index-org-2-html}
    #:build{:type :index-org-2-slides-html}]}
+ {:slug "proof-of-work",
+  :title "Proof of Work",
+  :readiness :wtf-is-this,
+  :uuid "332543a2-3a55-46d5-b447-57e52dca5642",
+  :author-url "https://teod.eu",
+  :created "2023-03-07",
+  :lang :en}
  {:slug "david-deutsch",
   :title "David Deutsch",
   :readiness :wtf-is-this,
@@ -268,6 +275,13 @@
   :author-url "https://teod.eu",
   :created "2022-10-23",
   :lang :en}
+ {:slug "electric-clojure",
+  :title "Electric Clojure",
+  :readiness :wtf-is-this,
+  :uuid "3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4",
+  :created "2023-03-07",
+  :lang :en,
+  :form :remote-reference}
  {:slug "charles-comstock-sketches",
   :title "Charles Comstock's sketches",
   :readiness :wtf-is-this,
@@ -384,6 +398,13 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "trust-quality-intent",
+  :title "trust, shared sense of quality and shared intent",
+  :readiness :wtf-is-this,
+  :uuid "587fd857-1f93-4b59-935a-7681e5129665",
+  :author-url "https://teod.eu",
+  :created "2023-03-06",
+  :lang :en}
  {:slug "scicloj-is-awesome",
   :title "Scicloj is awesome",
   :readiness :wtf-is-this,
@@ -532,6 +553,13 @@
   :author-url "https://teod.eu",
   :created "2022-09-12",
   :lang :en}
+ {:slug "principle-of-charity",
+  :title "Principle of Charity",
+  :readiness :wtf-is-this,
+  :uuid "7e870f15-eed2-4974-8cb8-121620f87288",
+  :author-url "https://teod.eu",
+  :created "2023-03-07",
+  :lang :en}
  {:slug "watchexec-make-dev",
   :title "watchexec make dev",
   :readiness :wtf-is-this,
@@ -644,6 +672,13 @@
   :author-url "https://teod.eu",
   :created "2022-09-21",
   :lang :en}
+ {:slug "support-challenge-carry",
+  :title "Support, challenge, carry",
+  :readiness :wtf-is-this,
+  :uuid "9c67d806-b806-4c24-8c98-2e19443b9794",
+  :author-url "https://teod.eu",
+  :created "2023-03-07",
+  :lang :en}
  {:slug "open-problems",
   :title "Open problems",
   :form :rambling,
@@ -721,6 +756,13 @@
   :author-url "https://teod.eu",
   :created "2022-07-29",
   :uuid "aaeb72f2-e2eb-4e51-b402-7f2d07150770",
+  :lang :en}
+ {:slug "learning-to-discover",
+  :title "Learning to discover",
+  :readiness :wtf-is-this,
+  :uuid "b21e4aea-7282-45e8-83a3-2d80ecdf669b",
+  :author-url "https://teod.eu",
+  :created "2023-03-07",
   :lang :en}
  {:slug "scittle",
   :title "Scittle",
@@ -898,6 +940,13 @@
   :created "2022-09-25",
   :lang :en,
   :form :remote-reference}
+ {:slug "write-drunk-edit-sober",
+  :title "Write drunk, edit sober",
+  :readiness :wtf-is-this,
+  :uuid "dc3b66ad-d07f-4139-98ff-796a974146ed",
+  :author-url "https://teod.eu",
+  :created "2023-03-04",
+  :lang :en}
  {:slug "the-beginning-of-infinity",
   :title "The Beginning of Infinity",
   :readiness :wtf-is-this,

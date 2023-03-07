@@ -1185,6 +1185,7 @@ It's cleaner, and takes up less space.
 ** I was motivated to write some stuff today.
 what pages did I create today?
 
+
 [[id:7e870f15-eed2-4974-8cb8-121620f87288][Principle of Charity]]
 [[id:b21e4aea-7282-45e8-83a3-2d80ecdf669b][Learning to discover]]
 [[id:9c67d806-b806-4c24-8c98-2e19443b9794][Support, challenge, carry]]

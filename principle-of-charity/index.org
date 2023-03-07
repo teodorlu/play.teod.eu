@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: 7e870f15-eed2-4974-8cb8-121620f87288
+:END:
+#+TITLE: Principle of Charity
+
+[[file:..][..]]
+
+DRAFT
+
+Assume that you can learn something from the person you're talking to, and assume that you have /some shared motivation/ for doing good work.
+
+Why?
+It's an absolutely amazing hack to crank up learning speed, and to start building [[id:587fd857-1f93-4b59-935a-7681e5129665][trust, shared sense of quality and shared intent]]
+
+https://en.m.wikipedia.org/wiki/Principle_of_charity

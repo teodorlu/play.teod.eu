@@ -1,11 +1,11 @@
 :PROPERTIES:
 :ID: 587fd857-1f93-4b59-935a-7681e5129665
 :END:
-#+TITLE: Trust, quality, intent: an organizational model
+#+TITLE: trust, shared sense of quality and shared intent
 
 [[file:..][..]]
 
-/Shared trust, shared sense of quality and shared intent as a characterization of human relations/
+/Shared trust, shared sense of quality and shared intent: a model for human relations/
 
 * Motivation: real world systems involve people
 

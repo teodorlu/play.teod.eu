@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID: 9c67d806-b806-4c24-8c98-2e19443b9794
+:END:
+#+TITLE: Support, challenge, carry
+
+[[file:..][..]]
+
+DRAFT
+
+Support: How can I make others good, powerful?
+
+Challenge: What information do I need to feed back into the system in order for it to run smoother?
+
+Carry: Is it time for me to lead?
+
+*frame: carry and support in league of legends*
+Provide some examples, video.
+
+*frame: carry and support in Age of Empires*.
+More examlpes!
+
+*stepwise: support ➡ challenge ➡ carry*
+Why?
+Because playing support is easier -- you don't need to /define/ the rules of the game to play nice.
+
+*dynamic initiative*.
+Who should carry?
+That depends on who knows the territory better -- what we're doing now, and where we're going.
+As a team forms, its [[id:587fd857-1f93-4b59-935a-7681e5129665][turst, shared sense of quality, and shared intent]] will improve.
+That lowers switching costs.
+Questions & framings that needs to be explicit early on takes hold in a shared understanding.
+With lower switching cost, it makes sense to move the initiative around.
+When the switching cost reaches zero, we want the player with the best map to lead.
+But can we reach "perfection"?
+No.
+I don't believe that's possible.
+There will /always/ be information asymmetry.
+The reason is plain: information asymmetry gives teams leverage.
+Different people want different things.
+
+Not: /perfect dynamic initiative/.
+But: /shared understaning, charity and team willingness to support, challenge and carry/.

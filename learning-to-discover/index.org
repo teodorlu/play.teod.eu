@@ -63,3 +63,5 @@ TODO write the rest?
 Why the title?
 Because the journey from effort emphasis to sustainable value emphasis is a journey towards discovery.
 Discovery of the self, discovery of the team, discovery of skills, and discovery of the subject matter.
+
+Related: [[id:support-challenge-carry][Support, challenge, carry]]

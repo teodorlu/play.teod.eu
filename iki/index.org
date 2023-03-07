@@ -10,7 +10,7 @@ Formerly known as [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]].
 The recommended introduction to IKI is a [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]] meeting from 2022-10-23:
 
 #+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+END_EXPORT
 
 * 2023-02-18

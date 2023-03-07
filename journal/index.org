@@ -1070,6 +1070,8 @@ That's right!
 1. Reflect on what's important
 2. Write about that
 3. Reflect on your writing and whether it's important
+* 2023-03-07
+** Aesthetics is hard
 * trailing whitespace
 #+BEGIN_VERSE
 

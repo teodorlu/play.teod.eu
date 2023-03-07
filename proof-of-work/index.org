@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 332543a2-3a55-46d5-b447-57e52dca5642
+:END:
+#+TITLE: Proof of Work
+
+[[file:..][..]]
+
+DRAFT

@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID: b21e4aea-7282-45e8-83a3-2d80ecdf669b
+:END:
+#+TITLE: Learning to discover
+
+[[file:..][..]]
+
+DRAFT
+
+This is a text I've been wanting to write for a /long/ time.
+Yet, it's name is new.
+
+Why?
+When I started out, I understood the value I provided tightly coupled to where I'd put in effort.
+I had an education.
+Based on that education, someone was willing to pay me for showing up each day.
+
+We value effort.
+We see someone putting in an effort, and someone else not caring.
+We want to work with people who put in effort.
+Those working relationships are the most rewarding.
+
+Yet ... something is not quite right.
+What makes that effort valuable?
+Where's the [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][value in context]]?
+
+Effort is a [[id:proof-of-work][Proof of Work]].
+It's known sacrifice.
+Yet, it's /not/ proof of value.
+It's not value in context.
+
+-----
+
+Aiming for value in context requires suspending the measurement of effort.
+Instead, we aim to measure effect.
+We measure outcome.
+
+In the product management community, this is repeated endlessly
+I don't disagree that outcome is important.
+Not at all.
+But /whose outcome/?
+The product manager's?
+What about good design work?
+What about good software development?
+How will designers and software developers know that they are contributing to something great, something worthwhile?
+I don't believe in reducing everything to /product outcome/.
+
+TODO write the rest?

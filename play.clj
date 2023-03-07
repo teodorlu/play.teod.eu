@@ -227,7 +227,25 @@ DRAFT
   (let [slug (:slug opts)
         title (or (:title opts) slug)
         uuid (or (:uuid opts) (bash "uuidgen"))
-        lang (or (:lang opts) :en)]
+        lang (or (:lang opts) :en)
+        valid-opts? (and slug title uuid lang)
+        helptext (str/trim "
+Usage:
+
+  ./play.clj [:slug] SLUG [OPT...]
+
+Allowed options:
+
+  :title TITLE
+  :uuid UUID
+  :lang LANG
+")]
+    (when (or (:h opts) (:help opts))
+      (println helptext)
+      (System/exit 0))
+    (when (not valid-opts?)
+      (println helptext)
+      (System/exit 1))
     (assert slug "Page slug is required.")
     (let [org-file (str slug "/index.org")
           play-file (str slug "/play.edn")]

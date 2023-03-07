@@ -46,3 +46,20 @@ How will designers and software developers know that they are contributing to so
 I don't believe in reducing everything to /product outcome/.
 
 TODO write the rest?
+
+- "Learning to discover"
+  - Create a path from "here's a skill I can provide" to "I'm orienting myself to provide value in a sustainable pace"
+  - Make that path continuous, not discrete.
+    No jumps.
+  - I want to empathize that the end game is a model that works for individuals /and/ the whole.
+    In areas where outcome is easy to measure, and in areas where outcome is hard to measure over a short term.
+  - I value project management.
+  - I value discovery & exploration.
+    For individuals and for teams.
+  - I value design skills, software skills.
+  - I value WIP management.
+  - I value quality.
+
+Why the title?
+Because the journey from effort emphasis to sustainable value emphasis is a journey towards discovery.
+Discovery of the self, discovery of the team, discovery of skills, and discovery of the subject matter.

@@ -675,6 +675,14 @@
   "created" : "2022-09-14",
   "lang" : "en"
 }, {
+  "slug" : "jacket",
+  "title" : "Jacket Interactive",
+  "readiness" : "wtf-is-this",
+  "uuid" : "8a7c967a-185e-4ade-a799-1dd70642351b",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-07",
+  "lang" : "en"
+}, {
   "slug" : "literature-notes",
   "title" : "Literature Notes",
   "readiness" : "wtf-is-this",

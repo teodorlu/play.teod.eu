@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: 8a7c967a-185e-4ade-a799-1dd70642351b
+:END:
+#+TITLE: Jacket Interactive
+
+[[file:..][..]]
+
+DRAFT
+
+Goal: a tool for working pages here
+
+- I think [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] is a good fit.
+  Write some Clojure code that can be shared between CLI and Electric tool, and use that.
+  Electric Clojure can potentially also give me a faster interaction loop than I'm getting otherwise.
+- First step: just a HTML table of pages, by created time.
+
+#+INCLUDE: "table.html" export html

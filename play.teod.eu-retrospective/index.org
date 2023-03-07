@@ -1181,6 +1181,29 @@ pandoc --version
 Today is the first time I'm writing (again) after getting Pandoc 3.
 And I'm really appreciating the changes!
 It's cleaner, and takes up less space.
+* 2023-03-07
+** I was motivated to write some stuff today.
+what pages did I create today?
+
+[[id:7e870f15-eed2-4974-8cb8-121620f87288][Principle of Charity]]
+[[id:b21e4aea-7282-45e8-83a3-2d80ecdf669b][Learning to discover]]
+[[id:9c67d806-b806-4c24-8c98-2e19443b9794][Support, challenge, carry]]
+
+Nice!
+** It would be nice to list all pages by creation time.
+I could solve that with an index query, and present it on a page.
+** I'd like batch tag editing.
+Options:
+
+1. Manual editing
+2. Emacs UI
+3. CLI
+4. [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] UI
+5. Functionality in a lib, usable from CLI and electric Clojure
+** In general, I want a batch editing UI
+Emacs could be nice, but I'd rather want an Electric Clojure UI, I think.
+Just run it locally for now.
+🤔
 * trailing whitespace
 #+BEGIN_VERSE
 

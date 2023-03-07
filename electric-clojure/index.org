@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4
+:END:
+#+TITLE: Electric Clojure
+
+[[file:..][..]]
+
+https://github.com/hyperfiddle/electric

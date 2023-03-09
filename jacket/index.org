@@ -7,14 +7,17 @@
 
 DRAFT
 
-* Goal: a tool for working pages here
+Idea: an interactive IKI UI with write access
+
+* early stuff
+** Goal: a tool for working pages here
 
 - I think [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] is a good fit.
   Write some Clojure code that can be shared between CLI and Electric tool, and use that.
   Electric Clojure can potentially also give me a faster interaction loop than I'm getting otherwise.
 - First step: just a HTML table of pages, by created time.
 
-* Is this a good idea?
+** Is this a good idea?
 
 It would /perhaps/ be better to think [[id:b57bc14e-0a1b-49b0-a745-23c605414ba0][iki: knowledge iterated]] & loose coupling.
 It would be nice if:
@@ -24,7 +27,7 @@ It would be nice if:
 3. ... and jacket doesn't even need to be in here.
    It could just query https://play.teod.eu/index/big.edn and get started.
 
-* experimentation
+** experimentation
 
 #+INCLUDE: "table.html" export html
 
@@ -75,3 +78,6 @@ It would be nice if:
 
 #+RESULTS:
 : #object[sun.nio.fs.UnixPath 0x45802c56 "/home/teodorlu/dev/teodorlu/play.teod.eu/jacket"]
+* 2023-03-09
+** I moved some experimentation in this folder off
+into [[id:b57bc14e-0a1b-49b0-a745-23c605414ba0][iki: knowledge iterated]] and its github repo

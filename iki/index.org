@@ -5,8 +5,9 @@
 
 [[file:..][..]]
 
-Formerly known as [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]].
+https://github.com/teodorlu/iki
 
+Formerly known as [[id:f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd][dbx]].
 The recommended introduction to IKI is a [[id:1b1a3e02-9247-496e-b70f-2aee1251d1ff][Scicloj]] meeting from 2022-10-23:
 
 #+BEGIN_EXPORT html

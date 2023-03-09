@@ -1185,7 +1185,6 @@ It's cleaner, and takes up less space.
 ** I was motivated to write some stuff today.
 what pages did I create today?
 
-
 [[id:7e870f15-eed2-4974-8cb8-121620f87288][Principle of Charity]]
 [[id:b21e4aea-7282-45e8-83a3-2d80ecdf669b][Learning to discover]]
 [[id:9c67d806-b806-4c24-8c98-2e19443b9794][Support, challenge, carry]]
@@ -1205,6 +1204,16 @@ Options:
 Emacs could be nice, but I'd rather want an Electric Clojure UI, I think.
 Just run it locally for now.
 🤔
+* 2023-03-09
+** IKI UI
+I want an IKI UI.
+I think browser UI is the way to go.
+*** Proposed functionality
+1. List recent pages
+2. Edit titles
+3. Batch edit page tags
+   1. Perhaps first class actions should be a thing?
+      Named actions?
 * trailing whitespace
 #+BEGIN_VERSE
 

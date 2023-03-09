@@ -610,6 +610,13 @@
   :created "2022-07-17",
   :uuid "8e72c536-9881-4477-8670-24c78edd82e7",
   :lang :en}
+ {:slug "pandoc",
+  :title "Pandoc",
+  :readiness :wtf-is-this,
+  :uuid "8ebac1d6-a7e8-4556-a483-a1b1c11f832d",
+  :author-url "https://teod.eu",
+  :created "2023-03-09",
+  :lang :en}
  {:slug "scicloj-2022-10-ckm",
   :title "Scicloj 2022-10: knowledge management on play.teod.eu",
   :readiness :wtf-is-this,

@@ -59,6 +59,8 @@ Counter example: [[id:cab02e40-98f3-4baa-b375-be8736ceb88a][Denotational Design]
 Explorations should be clearly tied to the initiative they are working for.
 Keeping the exploration singular ensures clarity and deletability.
 
+19 - Design theory with its application in mind.
+
 -----
 
 Other people whose aphorisms I've found to be useful:

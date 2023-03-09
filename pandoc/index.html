@@ -202,7 +202,45 @@
 <header id="title-block-header">
 <h1 class="title">Pandoc</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#section" id="toc-section">2023-03-09</a>
+<ul>
+<li><a href="#a-bug" id="toc-a-bug">A bug?</a></li>
+</ul></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
-<p>DRAFT</p>
+<p><a href="https://pandoc.org/">https://pandoc.org/</a></p>
+<h2 id="section">2023-03-09</h2>
+<h3 id="a-bug">A bug?</h3>
+<p>No link in pandoc:</p>
+<pre class="shell" data-results="output raw"><code>cat &lt;&lt;EOF | pandoc --from org --to json
+visa writes in [[id:7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b][visakanv&#39;s 50yr &quot;plan&quot; for global nerd network [wip]​]]:
+EOF
+</code></pre>
+<p>Simplified, still no link:</p>
+<pre class="shell" data-results="raw"><code>echo &quot;#+begin_src json&quot;
+cat &lt;&lt;EOF | pandoc --from org --to json
+visa writes in [[id:abc123][xx &quot;plan&quot; xx [wip]​]]:
+EOF
+echo &quot;#+end_src&quot;
+</code></pre>
+<p>Removing quotations, what now?</p>
+<pre class="shell" data-results="raw"><code>echo &quot;#+begin_src json&quot;
+cat &lt;&lt;EOF | pandoc --from org --to json
+visa writes in [[id:abc123][xx [wip]​]]:
+EOF
+echo &quot;#+end_src&quot;
+</code></pre>
+<p>No link.</p>
+<p>Removing wip with brackets, what now?</p>
+<pre class="shell" data-results="raw"><code>echo &quot;#+begin_src json&quot;
+cat &lt;&lt;EOF | pandoc --from org --to json
+visa writes in [[id:abc123][xx wip​]]:
+EOF
+echo &quot;#+end_src&quot;
+</code></pre>
+<p>It’s a link! 🎉</p>
 </body>
 </html>

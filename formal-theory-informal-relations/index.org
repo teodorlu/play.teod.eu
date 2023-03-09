@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-[[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]] writes in [[id:7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b][visakanv's 50yr "plan" for global nerd network [wip]​]]:
+[[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]] writes in [[id:7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b][visakanv's 50yr "plan" for global nerd network (wip)]]:
 
 #+begin_quote
 it's always interesting to me how often people try to "formalize" certain things that you can actually just do "informally". I'm personally generally of the opinion that things should be kept "informal" up to the edge of chaos.

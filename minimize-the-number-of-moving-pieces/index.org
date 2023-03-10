@@ -18,5 +18,3 @@ References:
 - The Clojure community's tendency to use host libraries directly rather than through wrappers.
   By avoiding the wrapper, we avoid one more source of problems.
   The mental model is /only/ the host library, not the host library /and/ it's wrapper library conventions.
-
-  See for example

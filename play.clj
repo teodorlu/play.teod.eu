@@ -228,8 +228,6 @@ DRAFT
                       (map :slug)))))))
 
 (defn create-page [{:keys [opts]}]
-  (prn opts)
-  (System/exit 0)
   (let [slug (:slug opts)
         title (or (:title opts) slug)
         uuid (or (:uuid opts) (bash "uuidgen"))

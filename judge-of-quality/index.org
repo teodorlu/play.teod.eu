@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID: 7cfe7fb2-c4c4-4ace-80a0-58c7883c19e7
+:END:
+#+TITLE: Do you dare be the judge of quality?
+
+[[file:..][..]]
+
+DRAFT
+
+Want to absolutely destroy your working relationship with someone?
+In an off-hand motion, tell them that something they are proud of sucks.
+
+-----
+
+I find motivation in working with great people in order to build great things.
+Most things aren't great.
+We can follow Stephane Hessel or Cave Johnson and get mad.
+When life gives you lemons, don't make lemonade.
+Demand to see life's manager!
+You don't want those damn lemons!
+
+Or we can stop caring.
+Everything is meaningless after all, right, so why care?
+There's no responsibility.
+
+I want there to be a path between anger an apathy.
+Something constructive.
+Something that builds [[id:587fd857-1f93-4b59-935a-7681e5129665][trust, shared sense of quality and shared intent]].
+
+I believe that's possible by talking narrowly or indirectly about quality.
+What does that mean?
+It's easier to describe it's negative rule.
+
+/don't lie about quality/.
+
+When you think something is bad but aren't quite sure, keep your absolute judgment to yourself.
+And when you are absolutely sure, be narrow in your judgment.
+Be very precise in a problem you perceive.
+Or provide an explicit example of something bad that might happen downstream from the bad choice.
+
+Do you dare be the judge of quality?
+Ask yourself twice before acting.

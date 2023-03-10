@@ -642,6 +642,14 @@
   "uuid" : "7bba802d-4788-4858-a6ea-d9eb29ae9e3c",
   "lang" : "en"
 }, {
+  "slug" : "judge-of-quality",
+  "title" : "Do you dare be the judge of quality?",
+  "readiness" : "wtf-is-this",
+  "uuid" : "7cfe7fb2-c4c4-4ace-80a0-58c7883c19e7",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-10",
+  "lang" : "en"
+}, {
   "slug" : "visakanvs-50-yr-plan-for-global-nerd-network-wip",
   "title" : "visakanv's 50yr \"plan\" for global nerd network [wip]",
   "readiness" : "wtf-is-this",

@@ -258,16 +258,17 @@ Allowed options:
 
       ;; Play file
       (when-not (fs/exists? play-file)
-        (spit play-file (with-out-str
-                          (pprint {:title title
-                                   :readiness :wtf-is-this
-                                   :uuid uuid
-                                   :author-url "https://teod.eu"
-                                   :created (str/trim (bash "date -I"))
-                                   :lang lang}))))
+        (let [page-meta {:title title
+                         :readiness :wtf-is-this
+                         :uuid uuid
+                         :author-url "https://teod.eu"
+                         :created (str/trim (bash "date -I"))
+                         :lang lang}]
+          (spit play-file (with-out-str
+                            (pprint page-meta))))
 
-      ;; Regenerate the makefile since we've added a new target
-      (bash "./play.clj makefile")
+        ;; Regenerate the makefile since we've added a new target
+        (bash "./play.clj makefile"))
 
       nil)))
 

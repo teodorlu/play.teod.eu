@@ -228,6 +228,8 @@ DRAFT
                       (map :slug)))))))
 
 (defn create-page [{:keys [opts]}]
+  (prn opts)
+  (System/exit 0)
   (let [slug (:slug opts)
         title (or (:title opts) slug)
         uuid (or (:uuid opts) (bash "uuidgen"))
@@ -478,7 +480,6 @@ reindex [--dry-run]
                           :n :long          ; Count - eg random page count
                           :uuid :string     ; UUID for me and Org-roam
                           :lang :keyword    ; Article language, :en or :no
-                          :form :keyword    ; :remote-reference -- or something else.
                           ;; filter
                           :resolve-links :boolean
                           }}))

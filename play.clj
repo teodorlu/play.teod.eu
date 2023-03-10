@@ -241,7 +241,7 @@ DRAFT
                     (println (str/trim content)))
         fake-bash (fn [& args]
                     (println "> Would run")
-                    (into '(bash) args))
+                    (prn (apply list 'bash args)))
         helptext (str/trim "
 Usage:
 

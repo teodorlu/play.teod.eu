@@ -22,7 +22,7 @@
 
 (require '[babashka.deps :as deps])
 
-(deps/add-deps '{:deps {org.babashka/cli {#_ :mvn/version "0.6.49"
+(deps/add-deps '{:deps {org.babashka/cli {;; :mvn/version "0.6.49"
                                           :git/url "git@github.com:babashka/cli.git"
                                           :sha "53329b5a8558159e0e6329255a8128f379bb8305"
                                           }

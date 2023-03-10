@@ -237,11 +237,17 @@ DRAFT
         lang (or (:lang opts) :en)
         valid-opts? (and slug title uuid lang)
         fake-spit (fn [path content]
-                    (println "> Would write to" path)
-                    (println (str/trim content)))
+                    (println (str  "Would write to " path ":"))
+                    (println)
+                    (doseq [l (str/split-lines content)]
+                      (println "  " l))
+                    (println))
         fake-bash (fn [& args]
-                    (println "> Would run")
-                    (prn (apply list 'bash args)))
+                    (println "Would run:")
+                    (println)
+                    (println (str "  " (pr-str (apply list 'bash args))))
+                    (println)
+                    )
         helptext (str/trim "
 Usage:
 

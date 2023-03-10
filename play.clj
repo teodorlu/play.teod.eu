@@ -474,6 +474,7 @@ reindex [--dry-run]
                           :n :long       ;; Count - eg random page count
                           :uuid :string  ;; UUID for me and Org-roam
                           :lang :keyword ;; Article language, :en or :no
+                          :form :keyword ;; :remote-reference -- or something else.
                           ;; filter
                           :resolve-links :boolean
                           }}))

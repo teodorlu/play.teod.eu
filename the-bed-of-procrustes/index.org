@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: d2123911-3c3b-4f38-88f3-dfaf146f02be
+:END:
+#+TITLE: The Bed of Procrustes
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/The_Bed_of_Procrustes
+
+Book by [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]].
+
+Procrustes was a mythological character from ancient greece:
+
+https://en.wikipedia.org/wiki/Procrustes

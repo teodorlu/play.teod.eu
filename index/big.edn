@@ -947,6 +947,13 @@
   :readiness :wtf-is-this,
   :uuid "cd48d901-8e1b-4d10-9b5a-76002e426dc0",
   :lang :en}
+ {:slug "in-a-box",
+  :title "In a Box",
+  :readiness :wtf-is-this,
+  :uuid "ceabdfb3-9e0a-4b0b-b803-20c70db6a511",
+  :created "2023-03-10",
+  :lang :en,
+  :form :remote-reference}
  {:slug "antifragile",
   :title "Antifragile",
   :readiness :wtf-is-this,
@@ -961,6 +968,13 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "the-bed-of-procrustes",
+  :title "The Bed of Procrustes",
+  :readiness :wtf-is-this,
+  :uuid "d2123911-3c3b-4f38-88f3-dfaf146f02be",
+  :author-url "https://teod.eu",
+  :created "2023-03-10",
+  :lang :en}
  {:slug "graph-navigators",
   :title "Graph navigators",
   :readiness :wtf-is-this,

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: ceabdfb3-9e0a-4b0b-b803-20c70db6a511
+:END:
+#+TITLE: In a Box
+
+[[file:..][..]]
+
+/From [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]]'s [[id:d2123911-3c3b-4f38-88f3-dfaf146f02be][The Bed of Procrustes]], chapter Chance, Success, Happiness, and Stoicism/
+
+#+begin_quote
+#+begin_verse
+They are born, then put in a box;
+they go home to live in a box;
+they study by ticking boxes;
+they go to what is called "work" in a box;
+where they sit in their cubicle box;
+they drive to the grocery store in a box to buy food in a box;
+they go to the gym in a box to sit in a box;
+they talk about thinking "outside the box";
+and when they die they are put in a box.
+All boxes, Euclidian, geometrically smooth boxes.
+#+end_verse
+#+end_quote

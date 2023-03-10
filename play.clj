@@ -466,15 +466,15 @@ reindex [--dry-run]
                          {:cmds [] :fn print-subcommands}])
                 args
                 {:coerce {;; relations
-                          :from :keyword ;; page relation format
-                          :to :keyword   ;; page relation format
+                          :from :keyword    ; page relation format
+                          :to :keyword      ; page relation format
                           :dry-run :boolean
                           ;; page
-                          :title :string ;; Page title
-                          :n :long       ;; Count - eg random page count
-                          :uuid :string  ;; UUID for me and Org-roam
-                          :lang :keyword ;; Article language, :en or :no
-                          :form :keyword ;; :remote-reference -- or something else.
+                          :title :string    ; Page title
+                          :n :long          ; Count - eg random page count
+                          :uuid :string     ; UUID for me and Org-roam
+                          :lang :keyword    ; Article language, :en or :no
+                          :form :keyword    ; :remote-reference -- or something else.
                           ;; filter
                           :resolve-links :boolean
                           }}))

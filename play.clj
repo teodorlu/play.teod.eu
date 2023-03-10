@@ -236,6 +236,9 @@ DRAFT
         uuid (or (:uuid opts) (bash "uuidgen"))
         lang (or (:lang opts) :en)
         valid-opts? (and slug title uuid lang)
+        fake-spit (fn [path content]
+                    (println "> Would write to " path)
+                    (println (str/trim content)))
         helptext (str/trim "
 Usage:
 
@@ -261,8 +264,11 @@ Allowed options:
 
       ;; Org file
       (when-not (fs/exists? org-file)
-        (spit org-file (page-index-org {:title title
-                                        :uuid uuid})))
+        (let [org-file-contents (page-index-org {:title title
+                                                 :uuid uuid})]
+          (if (:dry-run opts)
+            (fake-spit org-file org-file-contents)
+            (spit org-file org-file-contents))))
 
       ;; Play file
       (when-not (fs/exists? play-file)

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: 79498331-5aa8-4282-ad1e-15e7ca755fbb
+:END:
+#+TITLE: Minimize the number of moving pieces
+
+[[file:..][..]]
+
+DRAFT
+
+A rule of thumb I've come to adopt in systems design.
+
+References:
+
+- [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s notion of simplicity.
+  See [[id:3eb092bf-b847-4686-b250-fca303022782][Simple Made Easy]].
+  A Rich-Hickey-simple solutions does not have unneccesary parts.
+- The Clojure community's tendency to use host libraries directly rather than through wrappers.
+  By avoiding the wrapper, we avoid one more source of problems.
+  The mental model is /only/ the host library, not the host library /and/ it's wrapper library conventions.

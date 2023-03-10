@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: a172782b-bceb-4b44-afdf-7a2348d02970
+:END:
+#+TITLE: Rich Hickey
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Rich_Hickey

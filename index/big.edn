@@ -296,6 +296,13 @@
   :author-url "https://teod.eu",
   :created "2022-09-03",
   :lang :en}
+ {:slug "simple-made-easy",
+  :title "Simple Made Easy",
+  :readiness :wtf-is-this,
+  :uuid "3eb092bf-b847-4686-b250-fca303022782",
+  :author-url "https://teod.eu",
+  :created "2023-03-10",
+  :lang :en}
  {:slug "extreme-ownership",
   :title "Extreme Ownership",
   :readiness :wtf-is-this,
@@ -531,6 +538,13 @@
   :author-url "https://teod.eu",
   :created "2023-01-11",
   :lang :no}
+ {:slug "minimize-the-number-of-moving-pieces",
+  :title "Minimize the number of moving pieces",
+  :readiness :wtf-is-this,
+  :uuid "79498331-5aa8-4282-ad1e-15e7ca755fbb",
+  :author-url "https://teod.eu",
+  :created "2023-03-10",
+  :lang :en}
  {:slug "img",
   :title "img",
   :readiness :wtf-is-this,
@@ -730,6 +744,13 @@
   :author-url "https://teod.eu",
   :created "2023-01-20",
   :lang :en}
+ {:slug "rich-hickey",
+  :title "Rich Hickey",
+  :readiness :wtf-is-this,
+  :uuid "a172782b-bceb-4b44-afdf-7a2348d02970",
+  :created "2023-03-10",
+  :lang :en,
+  :form :remote-reference}
  {:slug "nassim-taleb",
   :title "Nassim Taleb",
   :readiness :wtf-is-this,
@@ -972,9 +993,9 @@
   :title "The Bed of Procrustes",
   :readiness :wtf-is-this,
   :uuid "d2123911-3c3b-4f38-88f3-dfaf146f02be",
-  :author-url "https://teod.eu",
   :created "2023-03-10",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "graph-navigators",
   :title "Graph navigators",
   :readiness :wtf-is-this,

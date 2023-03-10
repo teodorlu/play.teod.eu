@@ -232,13 +232,14 @@ DRAFT
         helptext (str/trim "
 Usage:
 
-  ./play.clj [:slug] SLUG [OPT...]
+  ./play.clj create-page [:slug] SLUG [OPT...]
 
 Allowed options:
 
   :title TITLE
   :uuid UUID
   :lang LANG
+  :form FORM
 ")]
     (when (or (:h opts) (:help opts))
       (println helptext)

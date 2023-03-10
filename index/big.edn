@@ -300,9 +300,9 @@
   :title "Simple Made Easy",
   :readiness :wtf-is-this,
   :uuid "3eb092bf-b847-4686-b250-fca303022782",
-  :author-url "https://teod.eu",
   :created "2023-03-10",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "extreme-ownership",
   :title "Extreme Ownership",
   :readiness :wtf-is-this,

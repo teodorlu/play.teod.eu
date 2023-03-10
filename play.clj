@@ -22,9 +22,7 @@
 
 (require '[babashka.deps :as deps])
 
-(deps/add-deps '{:deps {org.babashka/cli {#_#_:mvn/version "0.6.48"
-                                          :git/url "git@github.com:babashka/cli.git"
-                                          :sha "de1585c21880773c0ea1bb90fe9ecb436bec4488"}
+(deps/add-deps '{:deps {org.babashka/cli {:mvn/version "0.6.49"}
                         eu.teod/pandoc-toolbox {:local/root "../pandoc-toolbox"}}})
 
 (require 'babashka.cli :reload)

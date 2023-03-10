@@ -478,8 +478,8 @@ reindex [--dry-run]
                           ;; filter
                           :resolve-links :boolean
                           }}))
-
-(apply main *command-line-args*)
+(when (= *file* (System/getProperty "babashka.file"))
+  (apply main *command-line-args*))
 
  ;; How to run:
  ;;

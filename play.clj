@@ -263,7 +263,9 @@ Allowed options:
                          :uuid uuid
                          :author-url "https://teod.eu"
                          :created (str/trim (bash "date -I"))
-                         :lang lang}]
+                         :lang lang}
+              page-meta (if (:form opts) (assoc page-meta :form (:form opts))
+                            page-meta)]
           (spit play-file (with-out-str
                             (pprint page-meta))))
 

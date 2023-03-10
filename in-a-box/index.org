@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-From [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]]'s [[id:d2123911-3c3b-4f38-88f3-dfaf146f02be][The Bed of Procrustes]], chapter "Chance, Success, Happiness, and Stoicism"
+From [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]]'s [[id:d2123911-3c3b-4f38-88f3-dfaf146f02be][The Bed of Procrustes]], chapter "Chance, Success, Happiness, and Stoicism":
 
 #+begin_quote
 #+begin_verse

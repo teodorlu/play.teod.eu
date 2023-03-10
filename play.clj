@@ -237,8 +237,11 @@ DRAFT
         lang (or (:lang opts) :en)
         valid-opts? (and slug title uuid lang)
         fake-spit (fn [path content]
-                    (println "> Would write to " path)
+                    (println "> Would write to" path)
                     (println (str/trim content)))
+        fake-bash (fn [& args]
+                    (println "> Would run")
+                    (into '(bash) args))
         helptext (str/trim "
 Usage:
 
@@ -279,12 +282,17 @@ Allowed options:
                          :created (str/trim (bash "date -I"))
                          :lang lang}
               page-meta (if (:form opts) (assoc page-meta :form (:form opts))
-                            page-meta)]
-          (spit play-file (with-out-str
-                            (pprint page-meta))))
+                            page-meta)
+              play-file-content (with-out-str (pprint page-meta))
+              ]
+          (if (:dry-run opts)
+            (fake-spit play-file play-file-content)
+            (spit play-file play-file-content)))
 
         ;; Regenerate the makefile since we've added a new target
-        (bash "./play.clj makefile"))
+        (if (:dry-run opts)
+          (fake-bash "./play.clj makefile")
+          (bash "./play.clj makefile")))
 
       nil)))
 

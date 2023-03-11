@@ -1146,6 +1146,34 @@ We rarely emphasize the word in relation to the other words in the sentence.
 Every week, [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]] brings together content from the Clojure community in [[id:b7518497-f161-498b-a670-c74ba7e8b4b4][Clojure Deref]] -- the Clojure newsletter.
 This is an interesting corpus of free resources.
 Perhaps something can be done for discovery.
+** List of lists
+List of things I find good.
+List of things I find bad.
+List of things I want to stay the same.
+List of things I want to change.
+** Actionables
+*** List of good
+- Cohesive movement.
+- Flow.
+- Doing one's best and seeing that create impact.
+- Working with Good People.
+*** List of bad
+- Wasting time
+- Doing stuff that doesn't need to be done
+- Working with people who don't care
+- Working with people who don't want to make something good
+- Working with people who don't respect their own time
+- Working with people who don't respect others' time
+- Working on a team where there's no aim, no goal, where people just do stuff
+*** Time to be bad?
+Perhaps.
+*** Bad, for whom?
+For myself.
+For my self respect.
+For my team.
+For my organization.
+For my customer.
+
 * trailing whitespace
 #+BEGIN_VERSE
 

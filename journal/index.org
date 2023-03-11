@@ -1118,6 +1118,21 @@ Når du uttrykker skepsis til struktur du ikke ønsker, er det fordi strukturen 
    /Bruk tekst/.
    Bruk tekst til å ta kontroll.
    Ikke gå i søvne, /tenk/.
+** "it's rich" -- "it has texture"
+#+begin_quote
+if you look at the lives of individual creators, it's so rich!
+#+end_quote
+
+-- Mark, [[id:e33962d6-d5cb-4ef8-b7be-9d4a537edbec][Metamuse (podcast)]], episode 40
+
+So ... wealth is texture?
+Wealth is rich in texture?
+Variability, details, individuation?
+
+Rather than boxed, bland, plain, smooth?
+
+🤔
+
 * trailing whitespace
 #+BEGIN_VERSE
 

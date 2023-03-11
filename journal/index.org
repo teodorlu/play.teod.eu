@@ -1071,7 +1071,7 @@ That's right!
 2. Write about that
 3. Reflect on your writing and whether it's important
 * 2023-03-07
-** Aesthetics is hard
+** Aesthetics is hard.
 [[id:7cfe7fb2-c4c4-4ace-80a0-58c7883c19e7][Do you dare be the judge of quality?]]
 * 2023-03-11
 ** Leveranser, mål, kvalitet, tekst, surr og ergonomisk arbeidsflyt

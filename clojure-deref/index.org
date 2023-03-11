@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: b7518497-f161-498b-a670-c74ba7e8b4b4
+:END:
+#+TITLE: Clojure Deref
+
+[[file:..][..]]
+
+https://clojure.org/news/news
+
+A Clojure newsletter curated by [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]].

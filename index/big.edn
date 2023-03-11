@@ -99,6 +99,13 @@
   :author-url "https://teod.eu",
   :created "2022-10-03",
   :lang :en}
+ {:slug "alex-miller",
+  :title "Alex Miller",
+  :readiness :wtf-is-this,
+  :uuid "15708661-258b-44fe-84b2-1aaaee815060",
+  :author-url "https://teod.eu",
+  :created "2023-03-11",
+  :lang :en}
  {:slug "impose-limitations-eliminate-variance",
   :title "Impose limitations and eliminate variance",
   :readiness :wtf-is-this,
@@ -864,6 +871,14 @@
   :created "2022-07-29",
   :uuid "b7446aab-c31e-4666-bf28-2728a04fd860",
   :lang :en}
+ {:slug "clojure-deref",
+  :title "Clojure Deref",
+  :readiness :wtf-is-this,
+  :uuid "b7518497-f161-498b-a670-c74ba7e8b4b4",
+  :author-url "https://teod.eu",
+  :created "2023-03-11",
+  :lang :en,
+  :form :remote-reference}
  {:slug "why-dont-we-have-a-strategy",
   :title "Why don't we have a strategy?",
   :readiness :wtf-is-this,

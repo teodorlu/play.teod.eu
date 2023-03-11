@@ -1142,7 +1142,10 @@ And its meaning depends on who you're asking.
 
 But there's a difference between "bra" and "/bra/".
 We rarely emphasize the word in relation to the other words in the sentence.
-
+** The corpus of the Clojure newsletter is interesting.
+Every week, [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]] brings together content from the Clojure community in [[id:b7518497-f161-498b-a670-c74ba7e8b4b4][Clojure Deref]] -- the Clojure newsletter.
+This is an interesting corpus of free resources.
+Perhaps something can be done for discovery.
 * trailing whitespace
 #+BEGIN_VERSE
 

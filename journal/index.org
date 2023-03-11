@@ -1132,6 +1132,10 @@ Variability, details, individuation?
 Rather than boxed, bland, plain, smooth?
 
 🤔
+** we either create theory or apply theory
+we either construct language or apply language to gain [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][value in context]].
+
+See [[id:07f496f2-7dc3-4155-bbe7-e0f64e054129][Software architecture as langauge construction]] or [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]].
 
 * trailing whitespace
 #+BEGIN_VERSE

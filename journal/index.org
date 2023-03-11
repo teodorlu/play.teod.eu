@@ -1119,7 +1119,6 @@ ooog sammendraget, fordi jeg ikke skriver den fulle teksten nå.
    /Bruk tekst/.
    Bruk tekst til å ta kontroll.
    Ikke gå i søvne, /tenk/.
-
 * trailing whitespace
 #+BEGIN_VERSE
 

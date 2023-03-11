@@ -70,3 +70,6 @@ altering its components without changing the domain
 #+end_quote
 
 For knowledge, we factor / refactor an explanation by keeping the problem constant, but moving the domain.
+
+Vary solutions under invariant problems.
+🤔

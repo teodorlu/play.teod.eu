@@ -1140,6 +1140,9 @@ See [[id:07f496f2-7dc3-4155-bbe7-e0f64e054129][Software architecture as langauge
 There's one word: "bra".
 And its meaning depends on who you're asking.
 
+But there's a difference between "bra" and "/bra/".
+We rarely emphasize the word in relation to the other words in the sentence.
+
 * trailing whitespace
 #+BEGIN_VERSE
 

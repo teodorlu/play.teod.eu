@@ -1072,6 +1072,54 @@ That's right!
 3. Reflect on your writing and whether it's important
 * 2023-03-07
 ** Aesthetics is hard
+* 2023-03-11
+** Leveranser, mål, kvalitet, tekst, surr og ergonomisk arbeidsflyt
+Har du egentlig gjort noe fornuftig i dag?
+Jobber vi egentlig på det som betyr noe?
+Når du uttrykker skepsis til struktur du ikke ønsker, er det fordi strukturen er dårlig, eller fordi du ikke gidder?
+
+ooog sammendraget, fordi jeg ikke skriver den fulle teksten nå.
+
+1. Leveranser er til for å få noe /ned/ på papiret.
+   Hvis du misliker leveranser, kan det generaliseres til at du ikke ønsker at noen skal dømme deg for noe, og at du heller vil ha fri.
+2. Mål.
+   Grunnen til at vi har leveranser i det hele tatt, er for å nå mål.
+3. Vi kan nå mål så fort som overhodet mulig, eller vi kan nå mål uten å kompromittere kvaliteten vi leverer.
+   Jeg har ikke tro på å "nå mål så fort som overhodet mulig".
+   Det er ekvivalent til å dra for å ta knebøy, for så å ta ett lett sett og sitte på mobilen.
+   Gjør det skikkelig.
+   Og hvis det er vanskelig?
+   Perfekt.
+   Da har vi faktisk et verdig mål å oppnå.
+   Et skikkelig problem, som ikke er trivielt å nå.
+4. Tekst.
+   Tekst er magisk.
+   Tekst gjør det mulig å lage leveranser /av alt/.
+   Det er en sannhet mennesker har kjent så lenge vi har hatt kultur.
+   Hulemaleriene lot oss heve oss over instinkt og dele noe syntetisk, noe vi har /laget/.
+   Hulemalerier er tekst.
+   Bokstaver og litteratur er tekst.
+   Og du klarer /alltid/ å skrive noe.
+   Og når du har skrevet det ned, kommuniserer det /noe/ til andre mennesker.
+   Bruk tekst.
+   Tekst lar deg lage leveranser av alt.
+   Tekst lar deg gjøre mål /konkrete/.
+   Tekst lar deg levere kvalitet.
+5. Hvis vi ignorerer leveranser, mål, kvalitet og tekst, hva gjenstår?
+   Surr.
+   Sirkus.
+   Det kan godt være koselig, og lekent.
+   Men vi tar ikke oss selv seriøst.
+   Vi kunne levert så uendelig mye bedre.
+6. Tekst har en plass for å lage ergonomisk arbeidsflyt.
+   For lite, og vi har surr.
+   For mye, og vi har byråkrati.
+   Bruk tekst til å peke deg selv framover.
+   Bruk tekst til å definere "framover".
+   /Bruk tekst/.
+   Bruk tekst til å ta kontroll.
+   Ikke gå i søvne, /tenk/.
+
 * trailing whitespace
 #+BEGIN_VERSE
 

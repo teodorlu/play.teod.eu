@@ -54,3 +54,19 @@ Mathematicians generally call this /generalization/.
 
 We might realize that we have been /vague/ in the way we formulated our explanation.
 Vagueness lets variability slip in, and explanation variability is /bad/.
+
+-----
+
+continuing on 2023-03-11.
+
+#+begin_quote
+altering its internal structure without changing its external behavior
+#+end_quote
+
+Another formulation:
+
+#+begin_quote
+altering its components without changing the domain
+#+end_quote
+
+For knowledge, we factor / refactor an explanation by keeping the problem constant, but moving the domain.

@@ -1136,6 +1136,9 @@ Rather than boxed, bland, plain, smooth?
 we either construct language or apply language to gain [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][value in context]].
 
 See [[id:07f496f2-7dc3-4155-bbe7-e0f64e054129][Software architecture as langauge construction]] or [[id:c8131839-be8d-4ca8-8bc3-eac72cfade15][Capability, feature and assembly]].
+** In Norwegian, we don't distinguish between "good" and "great".
+There's one word: "bra".
+And its meaning depends on who you're asking.
 
 * trailing whitespace
 #+BEGIN_VERSE

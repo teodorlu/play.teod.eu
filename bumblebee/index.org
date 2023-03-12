@@ -14,4 +14,4 @@ Aim for easy use with [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]].
 Provide a data language (avoid string manipulation), and convenience functions for showing fluid fields.
 
 *Logo*: a determined bumblebee flying in headwind, with fluid flow lines surrounding.
-Consider asking Camilla if she's interested.
+Consider asking Camilla if she's interested in helping draw something.

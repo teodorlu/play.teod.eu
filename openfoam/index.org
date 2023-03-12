@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 7b88332e-f8a7-452b-bfd8-d128728182ce
+:END:
+#+TITLE: OpenFOAM
+
+[[file:..][..]]
+
+https://www.openfoam.com/
+
+The Open Source Computational Fluid Dynamics (CFD) Toolbox

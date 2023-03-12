@@ -103,9 +103,9 @@
   :title "Alex Miller",
   :readiness :wtf-is-this,
   :uuid "15708661-258b-44fe-84b2-1aaaee815060",
-  :author-url "https://teod.eu",
   :created "2023-03-11",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "impose-limitations-eliminate-variance",
   :title "Impose limitations and eliminate variance",
   :readiness :wtf-is-this,
@@ -223,6 +223,14 @@
   :author-url "https://teod.eu",
   :created "2022-09-20",
   :lang :en}
+ {:slug "joakim-sellevold",
+  :title "Joakim Sellevold",
+  :readiness :wtf-is-this,
+  :uuid "3169cf8d-d1eb-48a1-a80a-0b2dc96b80b6",
+  :author-url "https://teod.eu",
+  :created "2023-03-12",
+  :lang :en,
+  :form :remote-reference}
  {:slug "nix",
   :title "I want to learn Nix",
   :readiness :wtf-is-this,
@@ -601,6 +609,13 @@
   :author-url "https://teod.eu",
   :created "2022-07-14",
   :uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
+  :lang :en}
+ {:slug "bumblebee",
+  :title "Bumblebee",
+  :readiness :wtf-is-this,
+  :uuid "7fe75ff7-4508-49be-89fd-53f52a846424",
+  :author-url "https://teod.eu",
+  :created "2023-03-12",
   :lang :en}
  {:slug "anders-haugeto",
   :title "Anders Haugeto",

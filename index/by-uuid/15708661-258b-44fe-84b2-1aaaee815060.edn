@@ -2,6 +2,6 @@
  :title "Alex Miller",
  :readiness :wtf-is-this,
  :uuid "15708661-258b-44fe-84b2-1aaaee815060",
- :author-url "https://teod.eu",
  :created "2023-03-11",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

@@ -12,3 +12,6 @@ This libary does not yet exist.
 *Idea*: wrap the library [[id:3169cf8d-d1eb-48a1-a80a-0b2dc96b80b6][Joakim Sellevold]] uses to run his fluid dynamic computations.
 Aim for easy use with [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]].
 Provide a data language (avoid string manipulation), and convenience functions for showing fluid fields.
+
+*Logo*: a determined bumblebee flying in headwind, with fluid flow lines surrounding.
+Consider asking Camilla if she's interested.

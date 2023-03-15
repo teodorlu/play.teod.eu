@@ -118,6 +118,7 @@ def repl():
         try:
             s = input("> ")
         except EOFError:
+            print()
             break
         token, _ = read_one(s)
         print(token)

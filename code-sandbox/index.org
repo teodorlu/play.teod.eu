@@ -7,7 +7,7 @@
 
 A thin page for sharing code with others.
 
-Github: https://github.com/teodorlu/play.teod.eu/tree/master/code-sandbox
+Github: [[https://github.com/teodorlu/play.teod.eu/tree/master/code-sandbox][teodorlu/play.teod.eu/tree/master/code-sandbox]]
 
 | dir     | what                                | completeness              |
 |---------+-------------------------------------+---------------------------|

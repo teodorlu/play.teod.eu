@@ -5,9 +5,10 @@
 
 [[file:..][..]]
 
-Just a thin page so that I can share code easily!
+A thin page for sharing code with others.
 
-Use Github to view the code listing.
-Separate subfolders for separate collections of code.
+Github: https://github.com/teodorlu/play.teod.eu/tree/master/code-sandbox
 
-https://github.com/teodorlu/play.teod.eu/tree/master/code-sandbox
+| dir     | what                                | completeness              |
+|---------+-------------------------------------+---------------------------|
+| [[./zepi/]] | A little lisp - for learning's sake | tokenizer works, rest WIP |

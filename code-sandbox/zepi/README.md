@@ -1,3 +1,5 @@
 # Zepi
 
-Roam notes: https://roamresearch.com/#/app/teod/page/nPPgnPW04
+Zepi has moved: https://github.com/teodorlu/zepi/tree/master/./
+
+(exact commit: https://github.com/teodorlu/zepi/commit/66efa62)

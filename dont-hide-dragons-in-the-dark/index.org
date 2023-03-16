@@ -17,3 +17,7 @@ Idea:
 2. Effects
    1. Hard problems become less scary
    2. You enable others to help you
+
+References:
+
+- https://patchdrury.medium.com/king-arthur-and-entering-the-forest-where-its-darkest-c70efd937bdd

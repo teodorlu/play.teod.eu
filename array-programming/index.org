@@ -17,6 +17,7 @@ Memory and speed is rarely a problem.
 When we program with /column oriented data/, we typically want to work on one column at a time.
 A column can be an array of points in time, or a sample from a probability distribution.
 
+Array programming is a rich discipline centered around column-oriented data.
 * References
 ** [[https://github.com/techascent/tech.datatype/blob/8cc83d771d9621d580fd5d4d0625005bd7ab0e0c/docs/00-sequences-and-arrays.md][Sequences And Arrays]]
 By [[id:a878303d-3130-4dd3-9192-791ddd2cbbcf][Chris Nuernberger]].

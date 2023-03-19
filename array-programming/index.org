@@ -20,3 +20,14 @@ A column can be an array of points in time, or a sample from a probability distr
 By [[id:a878303d-3130-4dd3-9192-791ddd2cbbcf][Chris Nuernberger]].
 ** [[http://www.appliedscience.studio/articles/array-programming-for-clojurists.html][Array languages for Clojurians]]
 By [[id:b6921704-d8d9-4d82-a814-3b9ced8bee31][Dave Liepmann]].
+
+* Journal
+** 2023-03-19
+I'd like to make a Clerk notebook that demonstrates how [[id:b6f0829a-dade-466a-9504-384170af436d][Latin hypercube sampling]] improves performance over arbitrary random sampling for monte-carlo-methods.
+But ... I don't know where to start.
+
+1. I'd like to be /very lazy/ when sampling -- ideally simply work from readers (tech.ml style) and avoid as much allocation as possible.
+   Though it looks like we might have to sample the initial data.
+   Hmm.
+2. I want nice tabular data display for Clerk
+3. I want nice histograms for Clerk.

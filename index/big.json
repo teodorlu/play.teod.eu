@@ -1030,6 +1030,14 @@
   "created" : "2023-03-19",
   "lang" : "en"
 }, {
+  "slug" : "latin-hypercube-sampling",
+  "title" : "Latin hypercube sampling",
+  "readiness" : "wtf-is-this",
+  "uuid" : "b6f0829a-dade-466a-9504-384170af436d",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-19",
+  "lang" : "en"
+}, {
   "slug" : "play.teod.eu-retrospective",
   "title" : "play.teod.eu: Rolling retrospective",
   "readiness" : "forever-incomplete",

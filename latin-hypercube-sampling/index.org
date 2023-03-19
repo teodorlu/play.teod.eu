@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: b6f0829a-dade-466a-9504-384170af436d
+:END:
+#+TITLE: Latin hypercube sampling
+
+[[file:..][..]]
+
+https://en.m.wikipedia.org/wiki/Latin_hypercube_sampling

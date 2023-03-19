@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+https://en.wikipedia.org/wiki/Array_programming
+
 * Array programming enables performant, ergonomic handling of tabular data
 My definition:
 

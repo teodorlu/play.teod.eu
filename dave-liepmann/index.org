@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: b6921704-d8d9-4d82-a814-3b9ced8bee31
+:END:
+#+TITLE: Dave Liepmann
+
+[[file:..][..]]
+
+https://www.daveliepmann.com/

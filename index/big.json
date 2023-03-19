@@ -546,6 +546,14 @@
   "created" : "2022-09-17",
   "lang" : "en"
 }, {
+  "slug" : "array-programming",
+  "title" : "Array Programming",
+  "readiness" : "wtf-is-this",
+  "uuid" : "6483d5f6-1124-4625-8968-172058114605",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-19",
+  "lang" : "en"
+}, {
   "slug" : "factoring-knowledge",
   "title" : "Factoring Knowledge",
   "readiness" : "wtf-is-this",
@@ -910,6 +918,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "chris-nuernberger",
+  "title" : "Chris Nuernberger",
+  "readiness" : "wtf-is-this",
+  "uuid" : "a878303d-3130-4dd3-9192-791ddd2cbbcf",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-19",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "the-pragmatic-programmer",
   "title" : "The Pragmatic Programmer",
   "readiness" : "wtf-is-this",
@@ -1003,6 +1020,14 @@
   "uuid" : "b632d12b-2fee-4e29-a7a6-56ae2e0ade55",
   "author-url" : "https://teod.eu",
   "created" : "2023-03-04",
+  "lang" : "en"
+}, {
+  "slug" : "dave-liepmann",
+  "title" : "Dave Liepmann",
+  "readiness" : "wtf-is-this",
+  "uuid" : "b6921704-d8d9-4d82-a814-3b9ced8bee31",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-19",
   "lang" : "en"
 }, {
   "slug" : "play.teod.eu-retrospective",

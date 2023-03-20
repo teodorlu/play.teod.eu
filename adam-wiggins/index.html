@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Array programming</title>
+  <title>Adam Wiggins</title>
   <style>
     html {
       color: #1a1a1a;
@@ -200,88 +200,9 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Array programming</h1>
+<h1 class="title">Adam Wiggins</h1>
 </header>
-<nav id="TOC" role="doc-toc">
-<ul>
-<li><a
-href="#array-programming-enables-performant-ergonomic-handling-of-tabular-data"
-id="toc-array-programming-enables-performant-ergonomic-handling-of-tabular-data">Array
-programming enables performant, ergonomic handling of tabular
-data</a></li>
-<li><a href="#references" id="toc-references">References</a>
-<ul>
-<li><a href="#sequences-and-arrays"
-id="toc-sequences-and-arrays">Sequences And Arrays</a></li>
-<li><a href="#array-languages-for-clojurians"
-id="toc-array-languages-for-clojurians">Array languages for
-Clojurians</a></li>
-</ul></li>
-<li><a href="#journal" id="toc-journal">Journal</a>
-<ul>
-<li><a href="#section" id="toc-section">2023-03-19</a></li>
-</ul></li>
-</ul>
-</nav>
 <p><a href="..">..</a></p>
-<p><a
-href="https://en.wikipedia.org/wiki/Array_programming">https://en.wikipedia.org/wiki/Array_programming</a></p>
-<h2
-id="array-programming-enables-performant-ergonomic-handling-of-tabular-data">Array
-programming enables performant, ergonomic handling of tabular data</h2>
-<p>My definition:</p>
-<p>When we program with <em>row oriented data</em>, we typically want to
-work on one row at a time. A row can be a customer, a document, or a
-user. Memory and speed is rarely a problem.</p>
-<p>When we program with <em>column oriented data</em>, we typically want
-to work on one column at a time. A column can be an array of points in
-time, or a sample from a probability distribution.</p>
-<p>Array programming is a rich discipline centered around
-column-oriented data.</p>
-<h2 id="references">References</h2>
-<h3 id="sequences-and-arrays"><a
-href="https://github.com/techascent/tech.datatype/blob/8cc83d771d9621d580fd5d4d0625005bd7ab0e0c/docs/00-sequences-and-arrays.md">Sequences
-And Arrays</a></h3>
-<p>By <a href="../chris-nuernberger/">Chris Nuernberger</a>.</p>
-<h3 id="array-languages-for-clojurians"><a
-href="http://www.appliedscience.studio/articles/array-programming-for-clojurists.html">Array
-languages for Clojurians</a></h3>
-<p>By <a href="../dave-liepmann/">Dave Liepmann</a>.</p>
-<h2 id="journal">Journal</h2>
-<h3 id="section">2023-03-19</h3>
-<h4 id="why">why</h4>
-<p>I’d like to make a Clerk notebook that demonstrates how <a
-href="../latin-hypercube-sampling/">Latin hypercube sampling</a>
-improves performance over arbitrary random sampling for
-monte-carlo-methods. But … I don’t know where to start.</p>
-<ol>
-<li>I’d like to be <em>very lazy</em> when sampling – ideally simply
-work from readers (tech.ml style) and avoid as much allocation as
-possible. Though it looks like we might have to sample the initial data.
-Hmm.</li>
-<li>I want nice tabular data display for Clerk</li>
-<li>I want nice histograms for Clerk.</li>
-</ol>
-<h4 id="j">j?</h4>
-<p>Both <a href="../dave-liepmann/">Dave Liepmann</a> and <a
-href="../chris-nuernberger/">Chris Nuernberger</a> quickly refer to <a
-href="../j-programming-language/">J (programming language)</a>.</p>
-<h4 id="perhaps-i-should-just-start-with-plain-java-and-arrays">Perhaps
-I should just start with plain java, and arrays?</h4>
-<p>latin hypercube:</p>
-<ol>
-<li>set the cube dimension</li>
-<li>set the sample size (N)</li>
-<li>for each cube dimension,
-<ol>
-<li>split the cube space into N equally large buckets</li>
-<li>in each bucket, sample a random value</li>
-</ol></li>
-<li>finally, shuffle each sample vector</li>
-</ol>
-<h4 id="buuut-starting-simpler-lets-just-sample-normally">buuut starting
-simpler, let’s just sample “normally”</h4>
-<p>and we can define a <code class="verbatim">uniform-&gt;dice</code>
-transformer.</p>
+<p>DRAFT</p>
 </body>
 </html>

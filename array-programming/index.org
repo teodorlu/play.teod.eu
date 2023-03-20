@@ -36,4 +36,15 @@ But ... I don't know where to start.
 2. I want nice tabular data display for Clerk
 3. I want nice histograms for Clerk.
 *** j?
-Both [[id:b6921704-d8d9-4d82-a814-3b9ced8bee31][Dave Liepmann]] and [[id:a878303d-3130-4dd3-9192-791ddd2cbbcf][Chris Nuernberger]] quickly refer to
+Both [[id:b6921704-d8d9-4d82-a814-3b9ced8bee31][Dave Liepmann]] and [[id:a878303d-3130-4dd3-9192-791ddd2cbbcf][Chris Nuernberger]] quickly refer to [[id:e7c61981-5991-4d8c-b242-ed372784fc35][J (programming language)]].
+*** Perhaps I should just start with plain java, and arrays?
+latin hypercube:
+
+1. set the cube dimension
+2. set the sample size (N)
+3. for each cube dimension,
+   1. split the cube space into N equally large buckets
+   2. in each bucket, sample a random value
+4. finally, shuffle each sample vector
+*** buuut starting simpler, let's just sample "normally"
+and we can define a =uniform->dice= transformer.

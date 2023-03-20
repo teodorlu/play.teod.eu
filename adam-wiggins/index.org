@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 48b4e75a-2103-428a-973d-83ca972c9464
+:END:
+#+TITLE: Adam Wiggins
+
+[[file:..][..]]
+
+https://github.com/adamwiggins | https://twitter.com/_adamwiggins_

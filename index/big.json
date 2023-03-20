@@ -398,6 +398,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "adam-wiggins",
+  "title" : "Adam Wiggins",
+  "readiness" : "wtf-is-this",
+  "uuid" : "48b4e75a-2103-428a-973d-83ca972c9464",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-20",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "liste-opsjoner-presentasjoner",
   "title" : "Liste over opsjoner på presentasjoner",
   "readiness" : "wtf-is-this",
@@ -1273,6 +1282,14 @@
   "uuid" : "e7949444-e208-40ff-9979-5fb6852ff57c",
   "author-url" : "https://teod.eu",
   "created" : "2023-02-14",
+  "lang" : "en"
+}, {
+  "slug" : "j-programming-language",
+  "title" : "J (programming language)",
+  "readiness" : "wtf-is-this",
+  "uuid" : "e7c61981-5991-4d8c-b242-ed372784fc35",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-19",
   "lang" : "en"
 }, {
   "slug" : "interface-perception-design",

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: e7c61981-5991-4d8c-b242-ed372784fc35
+:END:
+#+TITLE: J (programming language)
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/J_(programming_language)

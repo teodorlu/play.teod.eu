@@ -1173,6 +1173,13 @@ For my self respect.
 For my team.
 For my organization.
 For my customer.
+* 2023-03-20
+** as a programmer, I want to skim a git commit log and get /something/.
+at least let me know easily whether the change was "fix bug" "add stuff" or "move things around"
+
+| f | fix stuff         | things were broken, now we're good    |
+| a | add stuff         | TOOL handles some PROBLEM better now. |
+| r | move stuff around | internals, no observable changes.     |
 
 * trailing whitespace
 #+BEGIN_VERSE

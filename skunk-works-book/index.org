@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 6b654acd-a9b6-493d-ba2b-399b574813a2
+:END:
+#+TITLE: Skunk Works: A Personal Memoir of My Years at Lockheed
+
+[[file:..][..]]
+
+https://www.goodreads.com/nl/book/show/101438.Skunk_Works
+
+Book written by Ben R. Rich about his role in Lockheed Skunk Works.
+
+Mentioned by [[id:00cd1474-ccf6-44d2-9795-492fbd0c08c3][Mark McGranaghan]] (https://markmcgranaghan.com/interests)

@@ -15,3 +15,5 @@ Provide a data language (avoid string manipulation), and convenience functions f
 
 *Logo*: a determined bumblebee flying in strong headwind, with fluid flow lines showing turbulence and drag sources.
 Consider asking Camilla if she's interested in helping draw something.
+
+*Motivation*: as of 2023-03-20, I'm reading

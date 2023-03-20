@@ -1200,3 +1200,6 @@ Fragmented movement is when everybody is waving their arms faster and faster and
 
 In cohesive movement, internal structure enables the desired outwards movement.
 For example, car frames or aircraft bodies are stiff, but move fast.
+** move yourself, help others move.
+| move yourself    | [[id:9c67d806-b806-4c24-8c98-2e19443b9794][Support, challenge, carry]] carry   |
+| help others move | [[id:9c67d806-b806-4c24-8c98-2e19443b9794][Support, challenge, carry]] support |

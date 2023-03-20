@@ -1195,3 +1195,8 @@ You can use that attention to follow movement, or to cause movement.
 | cause movement  | create  |
 
 How do you want to spend your day?
+** cohesive movement
+Fragmented movement is when everybody is waving their arms faster and faster and faster, but the things that matter stay the same.
+
+In cohesive movement, internal structure enables the desired outwards movement.
+For example, car frames or aircraft bodies are stiff, but move fast.

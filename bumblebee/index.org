@@ -16,4 +16,5 @@ Provide a data language (avoid string manipulation), and convenience functions f
 *Logo*: a determined bumblebee flying in strong headwind, with fluid flow lines showing turbulence and drag sources.
 Consider asking Camilla if she's interested in helping draw something.
 
-*Motivation*: as of 2023-03-20, I'm reading
+*Motivation*: as of 2023-03-20, I'm reading [[id:6b654acd-a9b6-493d-ba2b-399b574813a2][Skunk Works: A Personal Memoir of My Years at Lockheed]].
+And I want to see, read, explore an interactive essay exploring the interplay of lift, drag and stealth on geometric bodies.

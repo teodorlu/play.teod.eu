@@ -1195,21 +1195,3 @@ You can use that attention to follow movement, or to cause movement.
 | cause movement  | create  |
 
 How do you want to spend your day?
-* trailing whitespace
-#+BEGIN_VERSE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+END_VERSE

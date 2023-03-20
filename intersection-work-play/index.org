@@ -94,17 +94,17 @@ That's been on hold.
 So, where's the actionable insight?
 Are you just rambling, Teodor ...
 
-(this is where "work" asks us to be specific. (perhaps because [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]? (is work to provide utility in a context? (I think perhaps work is to provide utility in a context.))))
+This is where "work" asks us to be specific.
+Perhaps because [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]?
+Perhaps work is to provide utility in a context.
 
 #+begin_export html
 <span style="font-size: 90pt">
-🧌
+🤔🧌
 </span>
 #+end_export
 
-Well, yes.
-This is all just rambling.
-But I do have some parting words.
+Parting words:
 
 - Only work kills motivation and creativity
 - Only play disconnects you from reality

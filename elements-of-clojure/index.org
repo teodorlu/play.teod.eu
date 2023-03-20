@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 084bf28d-3509-412d-ada2-d70c08c658de
+:END:
+#+TITLE: Elements of Clojure
+
+[[file:..][..]]
+
+https://elementsofclojure.com/

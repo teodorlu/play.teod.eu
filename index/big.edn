@@ -52,6 +52,13 @@
   :readiness :wtf-is-this,
   :uuid "07f496f2-7dc3-4155-bbe7-e0f64e054129",
   :lang :en}
+ {:slug "elements-of-clojure",
+  :title "Elements of Clojure",
+  :readiness :wtf-is-this,
+  :uuid "084bf28d-3509-412d-ada2-d70c08c658de",
+  :author-url "https://teod.eu",
+  :created "2023-03-20",
+  :lang :en}
  {:slug "attention-later",
   :title "attention-later",
   :readiness :wtf-is-this,
@@ -1071,6 +1078,14 @@
   :readiness :wtf-is-this,
   :uuid "ceabdfb3-9e0a-4b0b-b803-20c70db6a511",
   :created "2023-03-10",
+  :lang :en,
+  :form :remote-reference}
+ {:slug "zach-tellman",
+  :title "Zach Tellman",
+  :readiness :wtf-is-this,
+  :uuid "cf51b512-3236-4c9d-befa-a477994123e0",
+  :author-url "https://teod.eu",
+  :created "2023-03-20",
   :lang :en,
   :form :remote-reference}
  {:slug "antifragile",

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: cf51b512-3236-4c9d-befa-a477994123e0
+:END:
+#+TITLE: Zach Tellman
+
+[[file:..][..]]
+
+https://ideolalia.com/
+
+I lean heavily on "narrow names" when I think about good architecture.
+A "narrow name" is a term defined by Zach Tellman in the first chapter of [[id:084bf28d-3509-412d-ada2-d70c08c658de][Elements of Clojure]].

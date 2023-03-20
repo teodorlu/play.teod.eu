@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+
+
 Shamelessly stolen from Zach Tellman of https://ideolalia.com/.
 
 Premise / my interpretation: it's useless to judge utility abstracted from context.

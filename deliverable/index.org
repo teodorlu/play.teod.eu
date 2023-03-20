@@ -5,15 +5,15 @@
 
 [[file:..][..]]
 
-#+begin_quote
-Sorry, this article is totally incomplete.
-Please bug me if you think I should complete it.
-The idea is that to formulate a deliverable (outcome) for your effort is good for you over the long term.
+DRAFT
 
-Related: [[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]].
+This article lacks polish, cohesion and effort.
+If you're curious about the ideas, please free to let me know.
 
-— Teodor 2022-09-21
-#+end_quote
+Consider reading this other piece that touches on the same content:
+[[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]]
+
+-----
 
 In tactical work, there's a deliverable.
 In strategic work, there's a deliverable.

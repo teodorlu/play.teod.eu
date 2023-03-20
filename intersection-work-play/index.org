@@ -121,9 +121,9 @@ Teodor
 
 *Appendix A: a table of work and play*. (2022-09-21)
 
-|            | *Not play*                       | *Play*                                          |
-| *Not work* | Meaningless paper pushing & toil | We had fun last week but it doesn't help us now |
-| *Work*     | I'm a cog in a system            | Deliverable plus autonomy                       |
+|            | *Not play*                       | *Play*                                             |
+| *Not work* | Meaningless paper pushing & toil | We had fun last week but it doesn't help us now    |
+| *Work*     | I'm a cog in a system            | A sense of meaning and purpose, with deliverables. |
 
 *Appendix B: Proposed definitions for /work/ and /play/*
 

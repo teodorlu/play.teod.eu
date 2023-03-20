@@ -1216,6 +1216,9 @@ I think browser UI is the way to go.
       Named actions?
 *** Why?
 in order to increase [[id:587fd857-1f93-4b59-935a-7681e5129665][trust, shared sense of quality and shared intent]] with my network.
+* 2023-03-20
+** Simple CSS?
+inspiration: https://markmcgranaghan.com/ and https://gobyexample.com/ by [[id:00cd1474-ccf6-44d2-9795-492fbd0c08c3][Mark McGranaghan]].
 * trailing whitespace
 #+BEGIN_VERSE
 

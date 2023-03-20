@@ -1177,10 +1177,10 @@ For my customer.
 ** as a programmer, I want to skim a git commit log and get /something/.
 at least let me know easily whether the change was "fix bug" "add stuff" or "move things around"
 
-| f | fix stuff         | things were broken, now we're good    |
-| a | add stuff         | TOOL handles some PROBLEM better now. |
-| r | move stuff around | internals, no observable changes.     |
-| d | doc               | doc changes only                      |
+| f | fix:      | fix stuff         | things were broken, now we're good    |
+| a | add:      | add stuff         | TOOL handles some PROBLEM better now. |
+| r | refactor: | move stuff around | internals, no observable changes.     |
+| d | doc:      | doc               | doc changes only                      |
 
 * trailing whitespace
 #+BEGIN_VERSE

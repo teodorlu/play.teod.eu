@@ -1180,6 +1180,7 @@ at least let me know easily whether the change was "fix bug" "add stuff" or "mov
 | f | fix stuff         | things were broken, now we're good    |
 | a | add stuff         | TOOL handles some PROBLEM better now. |
 | r | move stuff around | internals, no observable changes.     |
+| d | doc               | doc changes only                      |
 
 * trailing whitespace
 #+BEGIN_VERSE

@@ -1181,7 +1181,20 @@ at least let me know easily whether the change was "fix bug" "add stuff" or "mov
 | a | add:      | add stuff         | TOOL handles some PROBLEM better now. |
 | r | refactor: | move stuff around | internals, no observable changes.     |
 | d | doc:      | doc               | doc changes only                      |
+** your movement is limited, use is wisely
+If everything is moving all the time, you cannot move yourself.
+If nothing around you can ever move, you're stuck.
 
+In other words, it's bad for you if everything moves, and if nothing moves!
+
+*your personal workflow*.
+You have a finite amount of attention you can spend each day.
+You can use that attention to follow movement, or to cause movement.
+
+| follow movement | consume |
+| cause movement  | create  |
+
+How do you want to spend your day?
 * trailing whitespace
 #+BEGIN_VERSE
 

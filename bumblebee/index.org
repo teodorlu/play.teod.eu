@@ -7,7 +7,7 @@
 
 DRAFT
 
-This libary does not yet exist.
+This library does not yet exist.
 
 *Idea*: wrap [[id:7b88332e-f8a7-452b-bfd8-d128728182ce][OpenFOAM]].
 Aim for easy use with [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]].

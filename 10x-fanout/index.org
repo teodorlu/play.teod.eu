@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: 2054721d-1574-402e-aefc-160b60ddfc45
+:END:
+#+TITLE: 10X fanout
+
+[[file:..][..]]
+
+DRAFT
+
+Opinion: for abstraction to make sense, you need 10X fanout.
+
+One tool, ten usages.
+
+If you don't have ten usages, you shouldn't abstract.
+Your architecture becomes too deep.
+
+*how this piece is wrong*.
+10X is /very precise/, but "abstraction" is vague.
+Is adding a name abstraction?
+Is extract to function abstraction?
+Is extract to library abstraction?
+I'd say "extract to library" is /more abstraction/ than "adding a name".
+And having a reasonably high fanout / degree of reuse only makes sense when there is a certain degree of abstraction.
+In other words, fanout factor and "abstractness" is both on a scale, and are coupled.

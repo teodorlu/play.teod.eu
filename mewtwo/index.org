@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: f9519bf0-beaf-4910-8ecb-d3b02c5b2727
+:END:
+#+TITLE: Mewtwo
+
+[[file:..][..]]
+
+DRAFT
+
+I /have/ to create a library named Mewtwo!
+
+github.com/teodorlu/mewtwo

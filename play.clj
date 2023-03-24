@@ -32,6 +32,7 @@
 
 (require '[babashka.cli :as cli]
          '[babashka.fs :as fs]
+         '[clojure.string :as str]
          '[clojure.java.shell]
          '[clojure.string :as str]
          '[clojure.edn :as edn]
@@ -388,8 +389,8 @@ Allowed options:
                        (str/join " " (concat ["index.html"] (map html targets))))
                   )]
     (if dry-run
-      (print makefile)
-      (spit "Makefile" makefile))))
+      (println makefile)
+      (spit "Makefile" (str (str/trim makefile) "\n")))))
 
 (defn reindex
   "Create an index from page uuid to slug and title."

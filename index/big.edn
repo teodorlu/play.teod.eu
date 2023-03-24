@@ -56,9 +56,9 @@
   :title "Elements of Clojure",
   :readiness :wtf-is-this,
   :uuid "084bf28d-3509-412d-ada2-d70c08c658de",
-  :author-url "https://teod.eu",
   :created "2023-03-20",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "attention-later",
   :title "attention-later",
   :readiness :wtf-is-this,
@@ -1213,6 +1213,13 @@
   :uuid "f777f427-209c-4525-aef7-c8ce889018b2",
   :author-url "https://teod.eu",
   :created "2022-09-10",
+  :lang :en}
+ {:slug "mewtwo",
+  :title "Mewtwo",
+  :readiness :wtf-is-this,
+  :uuid "f9519bf0-beaf-4910-8ecb-d3b02c5b2727",
+  :author-url "https://teod.eu",
+  :created "2023-03-24",
   :lang :en}
  {:slug "the-war-of-art",
   :title "The War of Art",

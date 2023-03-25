@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+* what
+
 DRAFT
 
 Support: How can I make others good, powerful?
@@ -48,7 +50,7 @@ Different people want different things.
 Not: /perfect dynamic initiative/.
 But: /shared understaning, charity and team willingness to support, challenge and carry/.
 
------
+* examples
 
 *product lead, tech lead interaction*
 I like to program, and I like to create tools that actually work well in the real world.
@@ -108,3 +110,8 @@ An option is something you can capitalize on.
 A potential for value sometime in the future.
 Why not help explore that option!
 Light your torch, and venture into the unknown.
+
+* storytime
+
+1. Learning to play support -- working with PK
+2. When you know everything there is to know, you never need to play support.

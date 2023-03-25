@@ -7,4 +7,4 @@
 
 https://scicloj.github.io/
 
-A community promoting the use of Clojure for data-centric computing
+A community promoting the use of Clojure for data-centric computing.

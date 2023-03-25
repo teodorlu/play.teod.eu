@@ -132,6 +132,14 @@
   "created" : "2022-10-03",
   "lang" : "en"
 }, {
+  "slug" : "dynamic-initiative",
+  "title" : "dynamic initiative",
+  "readiness" : "wtf-is-this",
+  "uuid" : "14decb6f-bf0f-41f5-9c37-97d7e4a996ac",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-25",
+  "lang" : "en"
+}, {
   "slug" : "alex-miller",
   "title" : "Alex Miller",
   "readiness" : "wtf-is-this",
@@ -937,7 +945,7 @@
   "builder" : "no-op",
   "lang" : "en"
 }, {
-  "slug" : "deliverable",
+  "slug" : "theres-always-a-deliverable",
   "title" : "There's always a deliverable",
   "readiness" : "wtf-is-this",
   "uuid" : "9f52d562-4a06-4ea1-a461-2018fca5baf1",

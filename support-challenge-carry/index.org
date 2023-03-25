@@ -113,5 +113,6 @@ Light your torch, and venture into the unknown.
 
 * storytime
 
-1. Learning to play support -- working with PK
-2. When you know everything there is to know, you never need to play support.
+support challenge carry moved off to its own page:
+
+[[id:71725fe3-fa18-4a69-9429-6fc306ce9368][Learning to play support]]

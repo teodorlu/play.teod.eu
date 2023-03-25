@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: 71725fe3-fa18-4a69-9429-6fc306ce9368
+:END:
+#+TITLE: Learning to play support
+
+[[file:..][..]]
+
+ref [[id:9c67d806-b806-4c24-8c98-2e19443b9794][Support, challenge, carry]]
+
+If you know everything there is to know, and everyone else are stupid, the optimal strategy is zero support, and 100 % carry or challenge.
+
+If you know everything there is to know, and everyone else are stupid, I feel sorry for you.
+Not working with /anyone/ you have anything to learn from must suck!
+I prefer working with people I can learn from, and can spar with.
+
+People that have something to offer, and that are willing to engage in curious exploration over dogma.
+I happen to be in a position where I get that right now.
+For that, I grateful.
+It's a light in the darkness.
+The nourishment that makes me willing to grind.
+
+-----
+
+1. Learning to develop alone
+2. Growing an interest in functional programming, type systems and interactive programming alone
+3. Why don't they recognize this as /good/?
+4. Hitting the wall and getting stuck: getting placed in softwhere teams where I couldn't get anything done.
+   1. I don't know how to navigate this
+   2. I don't know where to start
+   3. I don't even understand where we're going.
+5. Meeting a friend
+   1. Grace, charity, commitment
+   2. Listening
+   3. Emphasis on problems
+6. A new hope: how can I help them?
+   1. How can I understand their perception of problems?
+   2. Hack: ask them to help me define a two-week deliverable

@@ -31,28 +31,23 @@ Shared trust, shared sense of quality, shared intent is a model that helps conte
 
 /Quicknote/ a temporally oriented note-taking app.
 
-| Alice   | Quicknote developer       |
-| Bob     | Quicknote product manager |
-| Charlie | Early quicknote adopter   |
+| person  | label | description               |
+|---------+-------+---------------------------|
+| Alice   | a     | Quicknote developer       |
+| Bob     | b     | Quicknote product manager |
+| Charlie | c     | Early quicknote adopter   |
 
 We can characterize Alice, Bob and Charlie's relations through attributes.
 We choose the notation =(subject->object).attribute=.
-Does Alice trust Bob? That's =(alice->bob).trust=.
-Does Bob understand what Charlie is motivate by, and finds to be /really good?/ That's =(bob->charlie).quality=.
+Does Alice trust Bob? That's =(a->b).trust=.
+Does Bob understand what Charlie is motivate by, and finds to be /really good?/ That's =(b->c).quality=.
 
-- Relation :: Evidence
+Let's also shorten trust to =t=, quality to =q= and intent to =i=.
 
-.
-
-- (alice->bob).trust :: Bob promised that they would reconsider the sync feature
-  if they ran into too much trouble.
-  They did, and cut scope.
-- (charlie->alice).quality :: Charlie was going shopping, and checked the "buy milk" item.
-  The app froze.
-  He asked Alice what he could do to fix it, and Alice was visibly embarassed.
-  She said, "that's my fault, I'm fixing it."
-  The next day, Charlie tried again, and it was working.
-
+| rel      | evidence                                                                                                                                     |
+|----------+----------------------------------------------------------------------------------------------------------------------------------------------|
+| (a->b).t | Bob promised that they would reconsider the sync feature if they ran into too much trouble. They did, and cut scope.                         |
+| (c->a).q | Charlie was going shopping, and checked the "buy milk" item. The app froze. He asked Alice what he could do to fix it, and Alice was visibly embarassed. She said, "that's my fault, I'm fixing it." The next day, Charlie tried again, and it was working. |
 * A low resolution score, or a high resolution map
 
 Developers Alice and Dave share a love for immutability, but their differences differ when it comes to type systems.

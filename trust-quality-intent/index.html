@@ -235,17 +235,27 @@ helps contextualize those choices.</p>
 <h2 id="lets-start-with-examples.">Let’s start with examples.</h2>
 <p><em>Quicknote</em> a temporally oriented note-taking app.</p>
 <table>
+<thead>
+<tr class="header">
+<th>person</th>
+<th>label</th>
+<th>description</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td>Alice</td>
+<td>a</td>
 <td>Quicknote developer</td>
 </tr>
 <tr class="even">
 <td>Bob</td>
+<td>b</td>
 <td>Quicknote product manager</td>
 </tr>
 <tr class="odd">
 <td>Charlie</td>
+<td>c</td>
 <td>Early quicknote adopter</td>
 </tr>
 </tbody>
@@ -253,31 +263,34 @@ helps contextualize those choices.</p>
 <p>We can characterize Alice, Bob and Charlie’s relations through
 attributes. We choose the notation <code
 class="verbatim">(subject-&gt;object).attribute</code>. Does Alice trust
-Bob? That’s <code class="verbatim">(alice-&gt;bob).trust</code>. Does
-Bob understand what Charlie is motivate by, and finds to be <em>really
-good?</em> That’s <code
-class="verbatim">(bob-&gt;charlie).quality</code>.</p>
-<dl>
-<dt>Relation</dt>
-<dd>
-Evidence
-</dd>
-</dl>
-<p>.</p>
-<dl>
-<dt>(alice-&gt;bob).trust</dt>
-<dd>
-Bob promised that they would reconsider the sync feature if they ran
-into too much trouble. They did, and cut scope.
-</dd>
-<dt>(charlie-&gt;alice).quality</dt>
-<dd>
-Charlie was going shopping, and checked the “buy milk” item. The app
+Bob? That’s <code class="verbatim">(a-&gt;b).trust</code>. Does Bob
+understand what Charlie is motivate by, and finds to be <em>really
+good?</em> That’s <code class="verbatim">(b-&gt;c).quality</code>.</p>
+<p>Let’s also shorten trust to <code class="verbatim">t</code>, quality
+to <code class="verbatim">q</code> and intent to <code
+class="verbatim">i</code>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>rel</th>
+<th>evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(a-&gt;b).t</td>
+<td>Bob promised that they would reconsider the sync feature if they ran
+into too much trouble. They did, and cut scope.</td>
+</tr>
+<tr class="even">
+<td>(c-&gt;a).q</td>
+<td>Charlie was going shopping, and checked the “buy milk” item. The app
 froze. He asked Alice what he could do to fix it, and Alice was visibly
 embarassed. She said, “that’s my fault, I’m fixing it.” The next day,
-Charlie tried again, and it was working.
-</dd>
-</dl>
+Charlie tried again, and it was working.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="a-low-resolution-score-or-a-high-resolution-map">A low
 resolution score, or a high resolution map</h2>
 <p>Developers Alice and Dave share a love for immutability, but their

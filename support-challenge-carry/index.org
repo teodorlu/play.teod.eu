@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 9c67d806-b806-4c24-8c98-2e19443b9794
 :END:
-#+TITLE: Support, challenge, carry
+#+TITLE: support, challenge, carry
 
 [[file:..][..]]
 

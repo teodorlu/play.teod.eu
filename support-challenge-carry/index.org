@@ -113,6 +113,7 @@ Light your torch, and venture into the unknown.
 
 * storytime
 
-support challenge carry moved off to its own page:
+Why do I even care about this?
+Because I used to neglect support.
 
-[[id:71725fe3-fa18-4a69-9429-6fc306ce9368][Learning to play support]]
+Read that story: [[id:71725fe3-fa18-4a69-9429-6fc306ce9368][Learning to play support]].

@@ -22,8 +22,9 @@ Note: there's no "goodness" column.
 "Goodness" is vague, and /intensely/ subject to the interpretation of the person.
 "Goodness" is easy to vary (thanks, [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]]. Also, thanks [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] for [[id:9447cd35-15b9-49c7-b47e-537c03b48f0b][The Value of Values]], ie "value judgments should be timestamped with /date observed/").
 
-"Precision" is an alternative.
-But then we can't aim for a single number.
+If "Goodness" leads to imprecise judgment, what's a better way?
+I don't think we can reduce content to a single number.
+I think a better approach is by describing aspects of the content.
 
 I'd say =(precision, generality, novelty, liveness, date)= is harder to vary than =(goodness)=.
 * Three axes: precision, generality, novelty

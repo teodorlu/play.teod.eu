@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 9447cd35-15b9-49c7-b47e-537c03b48f0b
+:END:
+#+TITLE: The Value of Values
+
+[[file:..][..]]
+
+Talk by [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]
+
+https://www.youtube.com/watch?v=-I-VpPMzG7c

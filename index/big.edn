@@ -823,6 +823,14 @@
   :form :unknown,
   :readiness :ready-for-comments,
   :lang :en}
+ {:slug "the-value-of-values",
+  :title "The Value of Values",
+  :readiness :wtf-is-this,
+  :uuid "9447cd35-15b9-49c7-b47e-537c03b48f0b",
+  :author-url "https://teod.eu",
+  :created "2023-03-27",
+  :lang :en,
+  :form :remote-reference}
  {:slug "the-courage-to-be-disliked",
   :title "The Courage to Be Disliked",
   :readiness :wtf-is-this,

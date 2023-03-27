@@ -22,10 +22,10 @@ Design is the art of tastefully narrowing the distance between elegant, ergonomi
 My book rating along [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][precise, general, novel]]:
 
 | axis       | rating |
-|------------+--------+
-| precision  |   0.95 |
+|------------+--------|
+| precision  |   0.99 |
 | generality |   0.99 |
-| novelty    |    0.9 |
+| novelty    |   0.90 |
 
 * Meanings of "The Beginning of Infinity" encountered in /The Beginning of Infinity/
 I am absolutely thrilled by multiple aspects of this book.

@@ -15,6 +15,6 @@ My book rating along [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][precise, general
 
 | axis       | rating |
 |------------+--------|
-| precision  |    0.9 |
-| generality |    0.9 |
+| precision  |   0.90 |
+| generality |   0.90 |
 | novelty    |   0.95 |

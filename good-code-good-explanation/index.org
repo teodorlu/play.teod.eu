@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: e1354351-b206-4758-a6d7-122343aa6a7f
+:END:
+#+TITLE: Good code as good explanations
+
+[[file:..][..]]
+
+DRAFT
+
+Idea: apply [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]]'s definitions of "good explanation" and "good theory" to code quality

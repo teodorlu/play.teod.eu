@@ -40,6 +40,14 @@
   :created "2022-07-14",
   :uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee",
   :lang :en}
+ {:slug "cohen-anthem",
+  :title "Anthem (Leonard Cohen)",
+  :readiness :wtf-is-this,
+  :uuid "05c2baca-f21e-4689-a48d-5d67e34b969b",
+  :author-url "https://teod.eu",
+  :created "2023-03-27",
+  :lang :en,
+  :form :remote-reference}
  {:slug "bb-install",
   :title "bb-install",
   :readiness :wtf-is-this,
@@ -114,6 +122,14 @@
   :author-url "https://teod.eu",
   :created "2022-10-03",
   :lang :en}
+ {:slug "leonard-cohen",
+  :title "Leonard Cohen",
+  :readiness :wtf-is-this,
+  :uuid "12d75d97-7561-40d4-8853-be233400e668",
+  :author-url "https://teod.eu",
+  :created "2023-03-27",
+  :lang :en,
+  :form :remote-reference}
  {:slug "dynamic-initiative",
   :title "dynamic initiative",
   :readiness :wtf-is-this,
@@ -1190,6 +1206,13 @@
   :created "2022-09-21",
   :lang :en,
   :form :remote-reference}
+ {:slug "good-code-good-explanation",
+  :title "Good code as good explanations",
+  :readiness :wtf-is-this,
+  :uuid "e1354351-b206-4758-a6d7-122343aa6a7f",
+  :author-url "https://teod.eu",
+  :created "2023-03-27",
+  :lang :en}
  {:slug "stupid-games-stupid-prizes",
   :title "Play stupid games, win stupid prizes",
   :readiness :wtf-is-this,

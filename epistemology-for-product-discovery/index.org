@@ -6,3 +6,15 @@
 [[file:..][..]]
 
 DRAFT
+
+motivation:
+
+1. I've learned tons from [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]], [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] and [[id:df393f09-0441-4919-aabb-a1773feb2eee][Kristian Collin Berge]].
+   I believe there's overlap!
+2. [[id:c0cada69-772f-4e7d-9c45-158d81f0c2a5][Peter Strömberg]] is interested in this: https://twitter.com/pappapez/status/1639757337383632903
+3. I believe lots of product teams do this really badly
+   1. which is why I want to build [[id:b57bc14e-0a1b-49b0-a745-23c605414ba0][iki: knowledge iterated]].
+4. I believe better tools for epistemically rigorous discovery can help us bridge the gap between work and play (see [[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]])
+5. I believe we should treat discovery with the same care as we grant delivery
+
+...

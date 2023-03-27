@@ -1232,6 +1232,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "peter-stromberg",
+  "title" : "Peter Strömberg",
+  "readiness" : "wtf-is-this",
+  "uuid" : "c0cada69-772f-4e7d-9c45-158d81f0c2a5",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-27",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "steven-pressfield",
   "title" : "Steven Pressfield",
   "readiness" : "wtf-is-this",
@@ -1378,6 +1387,15 @@
   "readiness" : "wtf-is-this",
   "uuid" : "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
   "created" : "2022-09-21",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
+  "slug" : "kristian-collin-berge",
+  "title" : "Kristian Collin Berge",
+  "readiness" : "wtf-is-this",
+  "uuid" : "df393f09-0441-4919-aabb-a1773feb2eee",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-27",
   "lang" : "en",
   "form" : "remote-reference"
 }, {

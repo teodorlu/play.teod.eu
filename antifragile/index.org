@@ -10,3 +10,11 @@ a book by [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]]: https://en.
 an idea: https://en.wikipedia.org/wiki/Antifragility
 
 a thing is antifragile if it gets stronger when exposed to stressors (information, randomness, time)
+
+My book rating along [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][precise, general, novel]]:
+
+| axis       | rating |
+|------------+--------|
+| precision  |    0.9 |
+| generality |    0.9 |
+| novelty    |   0.95 |

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 49c68458-d374-499e-b78b-8c282cf7e089
+:END:
+#+TITLE: John Backus
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/John_Backus

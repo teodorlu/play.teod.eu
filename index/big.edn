@@ -791,7 +791,7 @@
   :created "2023-03-02",
   :lang :en}
  {:slug "precise-general-novel",
-  :title "Precise, general, novel",
+  :title "precise, general, novel",
   :readiness :wtf-is-this,
   :author-url "https://teod.eu",
   :uuid "91a1d66d-2132-4acf-994a-e0bec32e8c6a",

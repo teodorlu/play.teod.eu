@@ -19,6 +19,14 @@ My definition of design, influenced by David Deutsch, Rich Hickey and Zach Tellm
 Design is the art of tastefully narrowing the distance between elegant, ergonomic, general tools and effective application in specific context. (left is unnamed, right is [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][Utility is Contextual]]) (see also [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]], which heavily influenced this statement)
 (I think left might be aesthetics & beauty. or elegance.)
 
+My book rating along [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][precise, general, novel]]:
+
+| axis       | rating |
+|------------+--------+
+| precision  |   0.95 |
+| generality |   0.99 |
+| novelty    |    0.9 |
+
 * Meanings of "The Beginning of Infinity" encountered in /The Beginning of Infinity/
 I am absolutely thrilled by multiple aspects of this book.
 Its clarity, its taste.

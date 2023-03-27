@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 4c8e5193-712c-4ce1-b53e-c02970914911
+:END:
+#+TITLE: Epistemology for product discovery
+
+[[file:..][..]]
+
+DRAFT

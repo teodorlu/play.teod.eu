@@ -498,6 +498,14 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "epistemology-for-product-discovery",
+  "title" : "Epistemology for product discovery",
+  "readiness" : "wtf-is-this",
+  "uuid" : "4c8e5193-712c-4ce1-b53e-c02970914911",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-27",
+  "lang" : "en"
+}, {
   "slug" : "empowered",
   "title" : "Empowered",
   "readiness" : "wtf-is-this",

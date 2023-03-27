@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 90d3bd28-49e6-486f-a748-ba9a5a51c2dd
+:END:
+#+TITLE: Can programming be liberated from the von Neumann style?
+
+[[file:..][..]]
+
+[[id:49c68458-d374-499e-b78b-8c282cf7e089][John Backus]]'s turing lecture (1978).
+
+https://dl.acm.org/doi/10.1145/359576.359579

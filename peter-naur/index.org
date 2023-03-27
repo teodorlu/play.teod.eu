@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 5743c6b5-07b2-4a6f-b91f-8b79b4f75fad
+:END:
+#+TITLE: Peter Naur
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Peter_Naur

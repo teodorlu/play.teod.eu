@@ -457,6 +457,14 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "peter-naur",
+  :title "Peter Naur",
+  :readiness :wtf-is-this,
+  :uuid "5743c6b5-07b2-4a6f-b91f-8b79b4f75fad",
+  :author-url "https://teod.eu",
+  :created "2023-03-27",
+  :lang :en,
+  :form :remote-reference}
  {:slug "trust-quality-intent",
   :title "trust, shared sense of quality and shared intent",
   :readiness :wtf-is-this,

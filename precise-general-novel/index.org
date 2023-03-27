@@ -27,7 +27,11 @@ I don't think we can reduce content to a single number.
 I think a better approach is by describing aspects of the content.
 
 I'd say =(precision, generality, novelty, liveness, date)= is harder to vary than =(goodness)=.
-* Three axes: precision, generality, novelty
+* Discovering "precise, general, novel"
+Originally, this section was the whole article!
+As of 2023-03-27, I'm pushing it down in significance.
+Start with a table, explore theory later.
+** Three axes: precision, generality, novelty
 
 | vague      | precise |
 | specific   | general |
@@ -43,12 +47,12 @@ Web3 wild speculation: vague, general, novel.
 
 Idea --- always better to move to the right.
 But hard.
-* or four axes: precision, generality, novelty, subjectivity
+** or four axes: precision, generality, novelty, subjectivity
 | vague      | precise    |
 | specific   | general    |
 | well-known | novel      |
 | objective  | subjective |
-* From a long long time ago
+** From a long long time ago
 Copied over from: https://subcons.teod.eu/specific-precise/
 
 It's possible to be precise about generalities (good philosophy), and it's possible to be precise about specifics (good measurement, good planning).
@@ -68,12 +72,12 @@ Or:
 | *Vague*   | Stuff that's plain wrong. | Equivocation                 |
 
 Which set of examples would you prefer? Why?
-* 2D version -- precision and generality
+** 2D version -- precision and generality
 Easier to draw.
-* My friction -- want to move right.
+** My friction -- want to move right.
 I often accept a small loss of precision to gain generality.
 Others are often happy with me when I strive to be specific.
-* consider :subjectivity
+** consider :subjectivity
 Here's a table:
 
 | axis          | when 0 %     | when 100 %   |
@@ -82,7 +86,7 @@ Here's a table:
 | :novelty      | known by all | known by 1   |
 | :precision    | dream        | logic        |
 | :subjectivity | event        | taste        |
-* Consider assigning :generality :novelty :precision :subjectivity to all articles
+** Consider assigning :generality :novelty :precision :subjectivity to all articles
 Then I can query on stuff.
 
 Can either be a 0-1 scale, or :low, :medium, :high
@@ -105,7 +109,7 @@ By default, "just saying stuff" does:
 - is vague
 - and subjective.
 
-* Assigning correlation to value allows rich ordering
+** Assigning correlation to value allows rich ordering
 
 | :generality   | 0.8 |
 | :novelty      | 0.8 |
@@ -120,7 +124,7 @@ $$
 
 Hmm.
 
-* People can bring their own correlation thing
+** People can bring their own correlation thing
 Here are some contrasting views.
 Please don't mind me shrugging in the middle.
 
@@ -132,8 +136,8 @@ Please don't mind me shrugging in the middle.
 I can make a nice little UI that works on this.
 Set your preference.
 Load preferences from others.
-* Data oriented programming is precise, general and novel
-* Christopher Alexander talks about :liveness
+** Data oriented programming is precise, general and novel
+** Christopher Alexander talks about :liveness
 See: https://dorian.substack.com/p/at-any-given-moment-in-a-process
 
 What is liveness? What is degree of life?

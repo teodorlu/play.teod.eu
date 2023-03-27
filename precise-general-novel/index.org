@@ -8,12 +8,12 @@
 * Content rated by precision, generality, novelty and liveness
 Non-authorative source, potentially out of date.
 
-| entity                         | precision | generality | novelty | liveness | rated when |
-|--------------------------------+-----------+------------+---------+----------+------------|
-| [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]]      |      0.99 |       0.99 |    0.90 |      0.8 | 2023-03-27 |
-| [[id:d0c422ec-f856-44d8-b9a5-786137da06ef][Antifragile]]                    |      0.90 |       0.90 |    0.95 |     0.95 | 2023-03-27 |
-| [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]]                 |      0.70 |       0.50 |    0.90 |     0.99 | 2023-03-27 |
-| [[id:6b654acd-a9b6-493d-ba2b-399b574813a2][Skunk Works: A Personal Memoir]] |      0.90 |       0.60 |    0.60 |     0.95 | 2023-03-27 |
+| entity                         | precise | general | novel | live |       date |
+|--------------------------------+---------+---------+-------+------+------------|
+| [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]]      |    0.99 |    0.99 |  0.90 |  0.8 | 2023-03-27 |
+| [[id:d0c422ec-f856-44d8-b9a5-786137da06ef][Antifragile]]                    |    0.90 |    0.90 |  0.95 | 0.95 | 2023-03-27 |
+| [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]]                 |    0.70 |    0.50 |  0.90 | 0.99 | 2023-03-27 |
+| [[id:6b654acd-a9b6-493d-ba2b-399b574813a2][Skunk Works: A Personal Memoir]] |    0.90 |    0.60 |  0.60 | 0.95 | 2023-03-27 |
 
 Note: there's no "goodness" column.
 "Goodness" is hard to compare.

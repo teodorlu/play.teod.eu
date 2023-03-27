@@ -25,7 +25,7 @@ Note: there's no "goodness" column.
 "Precision" is an alternative.
 But then we can't aim for a single number.
 
-I'd say (precision, generality, novelty, liveness, date) is harder to vary than (goodness).
+I'd say =(precision, generality, novelty, liveness, date)= is harder to vary than =(goodness)=.
 * Three axes: precision, generality, novelty
 
 | vague      | precise |

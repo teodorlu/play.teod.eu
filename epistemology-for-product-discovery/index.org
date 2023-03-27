@@ -14,6 +14,7 @@ motivation:
 2. [[id:c0cada69-772f-4e7d-9c45-158d81f0c2a5][Peter Strömberg]] is interested in this: https://twitter.com/pappapez/status/1639757337383632903
 3. I believe lots of product teams do this really badly
    1. which is why I want to build [[id:b57bc14e-0a1b-49b0-a745-23c605414ba0][iki: knowledge iterated]].
+   2. aaand it ties into my motivation for working with [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]], etc.
 4. I believe better tools for epistemically rigorous discovery can help us bridge the gap between work and play (see [[id:842f9b9a-de98-4187-863e-3e6cf1b1814d][What's a good intersection between work and play?]])
 5. I believe we should treat discovery with the same care as we grant delivery
 

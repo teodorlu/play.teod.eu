@@ -546,6 +546,9 @@ corpus of the Clojure newsletter is still interesting</a></li>
 <ul>
 <li><a href="#i-want-canonical-links" id="toc-i-want-canonical-links">I
 want canonical links</a></li>
+<li><a href="#i-want-full-width-tables-for-play.teod.eu"
+id="toc-i-want-full-width-tables-for-play.teod.eu">I want full width
+tables for play.teod.eu</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1871,5 +1874,24 @@ corpus of the Clojure newsletter is still interesting</h3>
 <p>Hmmm.</p>
 <p>Isn’t that how the DOI thing works? Or perhaps I should have a small
 redirect service that does the right thing on the HTTP level?</p>
+<h3 id="i-want-full-width-tables-for-play.teod.eu">I want full width
+tables for <a href="../play.teod.eu/">play.teod.eu</a></h3>
+<p>.. and I might want to just generate the HTML and CSS myself.</p>
+<p>But I’m not able to!</p>
+<p>😔</p>
+<p>At least not right now, within my current skill ceiling and available
+time. And I’m also hesitant to fork away from Pandoc.</p>
+<h4 id="wait">wait …</h4>
+<p>what about … forking pandoc? starting from pandoc and building?</p>
+<p>hmmmm</p>
+<p>disadvantages:</p>
+<ol>
+<li>haskell</li>
+</ol>
+<p>but .. I could I extract the current pandoc html writer and work only
+with that? Use the rest of pandoc as a binary, and write only the
+json-&gt;html piece?</p>
+<p>Perhaps “transpile” from haskell to clojure?</p>
+<p>🤔</p>
 </body>
 </html>

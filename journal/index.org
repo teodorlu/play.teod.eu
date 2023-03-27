@@ -1217,3 +1217,31 @@ Hmmm.
 
 Isn't that how the DOI thing works?
 Or perhaps I should have a small redirect service that does the right thing on the HTTP level?
+** I want full width tables for [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]]
+.. and I might want to just generate the HTML and CSS myself.
+
+But I'm not able to!
+
+😔
+
+At least not right now, within my current skill ceiling and available time.
+And I'm also hesitant to fork away from Pandoc.
+
+*** wait ...
+what about ...
+forking pandoc?
+starting from pandoc and building?
+
+hmmmm
+
+disadvantages:
+
+1. haskell
+
+but ..
+I could I extract the current pandoc html writer and work only with that?
+Use the rest of pandoc as a binary, and write only the json->html piece?
+
+Perhaps "transpile" from haskell to clojure?
+
+🤔

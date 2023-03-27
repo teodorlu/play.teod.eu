@@ -5,7 +5,7 @@
 
 [[./..][..]]
 
-* Rating table
+* Content rated by precision, generality, novelty and liveness
 Non-authorative source, potentially out of date.
 
 | entity                    | precision | generality | novelty | liveness |

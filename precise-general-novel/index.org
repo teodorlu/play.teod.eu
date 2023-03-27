@@ -6,7 +6,9 @@
 [[./..][..]]
 
 * Content rated by precision, generality, novelty and liveness
-Non-authorative source, potentially out of date.
+Note: other pages may also contain ratings according to PGNL.
+Those might conflict with the ones represented here.
+But I've timestamped when I judged the content, so thinking "when was this evaluated" might help resolve any conflicts.
 
 | entity                         | precise | general | novel | live |       date |
 |--------------------------------+---------+---------+-------+------+------------|

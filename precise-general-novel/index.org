@@ -17,7 +17,9 @@ Non-authorative source, potentially out of date.
 
 Note: there's no "goodness" column.
 "Goodness" is hard to compare.
-Instead, i strive for a precise, non-monocausal way of organization.
+
+"Precision" is an alternative.
+But then we can't aim for a single number.
 * Three axes: precision, generality, novelty
 
 | vague      | precise |

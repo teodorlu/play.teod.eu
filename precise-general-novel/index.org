@@ -135,6 +135,7 @@ Non-authorative source, potentially out of date.
 |---------------------------+-----------+------------+---------+----------|
 | [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]] |      0.99 |       0.99 |    0.90 |      0.8 |
 | [[id:d0c422ec-f856-44d8-b9a5-786137da06ef][Antifragile]]               |      0.90 |       0.90 |    0.95 |     0.95 |
+| [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]]            |      0.70 |       0.90 |    0.90 |     0.99 |
 
 * Reflection, journal, etc.
 ** 2023-03-27

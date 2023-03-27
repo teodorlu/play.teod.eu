@@ -5,6 +5,6 @@
 
 [[file:..][..]]
 
-An article by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]].
+An article by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]] (1985).
 
 https://pages.cs.wisc.edu/~remzi/Naur.pdf

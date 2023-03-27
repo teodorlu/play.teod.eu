@@ -368,6 +368,14 @@
   :readiness :forever-incomplete,
   :lang :en,
   :uuid "4291481a-e7ad-4466-b51e-53b0e35076d1"}
+ {:slug "programming-as-theory-building",
+  :title "Programming as Theory Building",
+  :readiness :wtf-is-this,
+  :uuid "44a0ce6d-f13e-4dc1-a5cc-3c820b215769",
+  :author-url "https://teod.eu",
+  :created "2023-03-27",
+  :lang :en,
+  :form :remote-reference}
  {:slug "marty-cagan",
   :title "Marty Cagan",
   :readiness :wtf-is-this,

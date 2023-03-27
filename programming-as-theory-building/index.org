@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 44a0ce6d-f13e-4dc1-a5cc-3c820b215769
+:END:
+#+TITLE: Programming as Theory Building
+
+[[file:..][..]]
+
+An article by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]].
+
+https://pages.cs.wisc.edu/~remzi/Naur.pdf

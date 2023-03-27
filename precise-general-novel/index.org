@@ -19,9 +19,13 @@ But I've timestamped when I judged the content, so thinking "when was this evalu
 
 Note: there's no "goodness" column.
 "Goodness" is hard to compare.
+"Goodness" is vague, and /intensely/ subject to the interpretation of the person.
+"Goodness" is easy to vary (thanks, [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]]).
 
 "Precision" is an alternative.
 But then we can't aim for a single number.
+
+I'd say (precision, generality, novelty, liveness, date) is harder to vary than (goodness).
 * Three axes: precision, generality, novelty
 
 | vague      | precise |

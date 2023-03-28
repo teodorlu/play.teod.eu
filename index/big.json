@@ -221,6 +221,15 @@
   "created" : "2023-03-24",
   "lang" : "en"
 }, {
+  "slug" : "dtype-next",
+  "title" : "dtype-next",
+  "readiness" : "wtf-is-this",
+  "uuid" : "20e994be-d760-44b1-bee6-3575ebed65df",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-28",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "fzf",
   "title" : "fzf",
   "readiness" : "wtf-is-this",

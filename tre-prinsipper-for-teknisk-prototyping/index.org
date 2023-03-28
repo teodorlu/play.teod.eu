@@ -116,3 +116,40 @@ Når?
 [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aforismer]] funker ikke når vi skal samle et team til å jobbe i samme retning.
 Da må vi snakke om [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][verdi i kontekst]]!
 De generelle utsagnene dine om hva du mener er feil i verden foreslår jeg at du tar over en middag etter to øl.
+* Appendix C: eksperter som prototyper
+Eksperter som prototyper kan komme vanvittig langt.
+Hvordan ser det ut?
+
+Her er et eksempel: [[id:a878303d-3130-4dd3-9192-791ddd2cbbcf][Chris Nuernberger]] som bygger et streaming-system for probabilistisk programmering:
+
+https://github.com/cnuernber/streams/commits/master
+
+Merk: jeg leser repoet på 2023-03-28, og per nå er siste git SHA [[https://github.com/cnuernber/streams/commit/ce58ab726c00db2b975bc69821eb670ef9e7338a][ce58a]].
+
+Hvordan var det han gjorde det?
+
+1. Han utforsket et veldefinert problem.
+   Hypotesen var noe ala "er det mulig å simulere monte-carlo-analyser uten å allokere?"
+2. Han låste ned alle ting han ikke ønsket å bry seg om.
+   Hvis han hadde prøvd å integrere med eksisterende systemer han har laget tidligere, feks [[id:20e994be-d760-44b1-bee6-3575ebed65df][dtype-next]], hadde han ikke kommet i mål.
+3. Han noterte seg ned hva han lærte underveis.
+   Se på commit-loggen.
+   Se på README, den beskriver hva han har gjort og hvorfor han har gjort det.
+   Han kommuniserte tilbake til en relevant Slack-tråd der han, jeg og [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] hadde diskutert noe tidligere.
+
+Første commit 7:34 PM GMT+2.
+Siste commit 2:52 AM GMT+2.
+7 timer fra start til slutt.
+Og han har /funnet på noe nytt!/.
+
+Som fersk utvikler, er det /fullstendig urealistisk/ å forvente noe sånt av seg selv.
+Dette er en person som har jobbet for å bli kjempedyktig i 20 år, og aldri har stoppet å forvente mer av seg selv.
+
+Men legg merke til tiden han brukte.
+Han holdt scope til noe han kunne få til på én dag.
+Det er lurt!
+
+Start der.
+Hvor langt kan du komme på en dag?
+Kan du teste /én ting/ i dag?
+Etter hvert som du blir bedre, kan den /ene tingen/ være en større ting.

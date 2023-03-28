@@ -25,7 +25,7 @@ Skriv ned det.
 Det kan du bruke når du setter i gang hver dag.
 
 Når du har gjort et stykke arbeid, kan du bruke hypotesen til å vurdere arbeidet ditt.
-* Prinsipp 2: test én ting av gangen
+* Prinsipp 2: test én ting av gangen.
 Vi prototyper for å lære.
 Hvis vi tester fem ting om gangen og resultatet er bra, hvilken av de fem tingene var bra?
 Det er bedre å teste én ting av gangen.

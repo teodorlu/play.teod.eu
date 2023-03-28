@@ -8,7 +8,7 @@
 
 DRAFT
 
-Motivasjon:
+* Motivasjon
 
 1. Prototyping for strikkedesigner i Woolit høsten 2020
 2. Synes det var vanskelig å vite hvordan jeg skulle tenke på det!
@@ -19,8 +19,19 @@ Hva er det du skal forbedre?
 Rettere sagt, hva er det du tror du kan forbedre?
 Skriv ned det.
 Det kan du bruke når du setter i gang hver dag.
-Er vi nærmere nå?
+
+Når du har gjort et stykke arbeid, kan du bruke hypotesen til å vurdere arbeidet ditt.
 * Prinsipp 2: lås alle valg unntatt det du skal teste.
+Trenger du noe data fra internett?
+Last ned ned og hardkod json inn i appen din.
+Trenger du et CLI-flagg?
+Løs det med én if-setning, ikke begynn å søke etter biblioteker for parsing av CLI-argumenter.
+
+Hypotesen din definerer hva du ønsker å oppnå.
+Det er her du skal gi verdi.
+Hvis hypotesen er "kan vi gjøre HOPS-CLI-et sette seg inn i?" skal du eksperimentere opplevelsen når man først setter seg inn i HOPS-CLI-et, og ignorere alt annet du kan ignorere.
+
+
 * Prinsipp 3: loggfør progresjon hver dag.
 * Appendix A: vi prototyper for å hypoteseteste en teori.
 Teorien er hva vi tror vi kan forbedre.
@@ -47,3 +58,27 @@ Målet vårt er å gjøre teorien bedre.
    En innovasjonsdirektør sitter kanskje og vurderer femten forskjellige initiativer, er nedlessed med ulest E-post, og har ikke ta stilling til løse ideer personen ikke kan gjøre noe konkret med.
    "ingeniørselskaper er interessert i mer kontroll over beregningene sine" kan bety mye forskjellig.
    "en byggingeniør som skal levere beregninger til rapport til tredjepart ønsker å ha én beregning som kan regne på én eller flere søyler" er spissere, og vanskeligere å variere gitt observasjoner.
+* Appendix B: smale utsagn, brede utsagn
+#+begin_quote
+jeg ønsker å gjøre det lettere for brukere å forstå HOPS-CLI-et første gang de møter det
+#+end_quote
+
+er et smalt utsagn.
+Det er presist, mulig å teste, og hjelper teamet å koordinere.
+
+#+begin_quote
+jeg ønsker å gjøre HOPS lett
+#+end_quote
+
+er et bredt, vagt utsagn.
+Hva betyr det, egentlig?
+
+Jeg vil gå så langt som å si at det siste er ubrukelig!
+/Selvfølgelig/ ønsker vi at det skal være lett for noen i Iterate å bruke HOPS.
+Men, for hvem?
+Til hva?
+Når?
+
+[[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aforismer]] funker ikke når vi skal samle et team til å jobbe i samme retning.
+Da må vi snakke om [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][verdi i kontekst]]!
+De generelle utsagnene dine om hva du mener er feil i verden foreslår jeg at du tar over en middag etter to øl.

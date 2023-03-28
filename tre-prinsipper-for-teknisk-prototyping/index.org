@@ -65,7 +65,7 @@ Og når du har kommet et stykke:
 
 1. Hva var det du gjorde?
 2. Fungerte det?
-3. Hva er neste steg?
+3. Hva er mulige neste steg?
 
 Du skriver ikke dette for andre.
 Du skriver det for deg selv.

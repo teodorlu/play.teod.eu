@@ -160,3 +160,13 @@ Start der.
 Hvor langt kan du komme på en dag?
 Kan du teste /én ting/ i dag?
 Etter hvert som du blir bedre, kan den /ene tingen/ være en større ting.
+* Appendix D: Hvordan kan denne artikkelen forbedres?
+** "Prinsipp 1: start med en hypotese om hva du skal forbedre." er vagt
+"hypotese om hva du skal forbedre" er mange ord.
+Hva er det jeg egentlig mener?
+
+1. Definer et smalt problem /først/
+2. Så kan du tenke på hvordan du svarer på det problemet
+3. Når du har holdt på litt, kan du vurdere om svaret er "nei", "ja" eller "vi vet ikke helt".
+
+Hvis du ikke starter med et mål, kommer du sannsynligvis til å gjøre noe uten å ha det du har gjort forankret i et solid "hvorfor"-svar.

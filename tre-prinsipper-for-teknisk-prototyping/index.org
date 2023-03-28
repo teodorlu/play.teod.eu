@@ -160,8 +160,7 @@ Noen observasjoner:
    Se på README, den beskriver hva han har gjort og hvorfor han har gjort det.
    Han kommuniserte tilbake til en relevant Slack-tråd der han, jeg og [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] hadde diskutert noe tidligere.
 
-Se på det her!
-Det er en fryd å lese.
+Se feks på `README.md`:
 
 #+begin_quote
 Simple programmatic model for infinite streams of numbers or objects primitive

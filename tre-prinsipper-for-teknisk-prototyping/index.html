@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Tre prinsipper for teknisk prototyping av produkter</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Tre prinsipper for teknisk prototyping av
+produkter</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#prinsipp-1-start-med-en-hypotese-om-hva-du-skal-forbedre."
+id="toc-prinsipp-1-start-med-en-hypotese-om-hva-du-skal-forbedre.">Prinsipp
+1: start med en hypotese om hva du skal forbedre.</a></li>
+<li><a href="#prinsipp-2-lås-alle-valg-unntatt-det-du-skal-teste."
+id="toc-prinsipp-2-lås-alle-valg-unntatt-det-du-skal-teste.">Prinsipp 2:
+lås alle valg unntatt det du skal teste.</a></li>
+<li><a href="#prinsipp-3-loggfør-progresjon-hver-dag."
+id="toc-prinsipp-3-loggfør-progresjon-hver-dag.">Prinsipp 3: loggfør
+progresjon hver dag.</a></li>
+<li><a href="#appendix-a-vi-prototyper-for-å-hypoteseteste-en-teori."
+id="toc-appendix-a-vi-prototyper-for-å-hypoteseteste-en-teori.">Appendix
+A: vi prototyper for å hypoteseteste en teori.</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<p>DRAFT</p>
+<p>Motivasjon:</p>
+<ol>
+<li>Prototyping for strikkedesigner i Woolit høsten 2020</li>
+<li>Synes det var vanskelig å vite hvordan jeg skulle tenke på det!</li>
+<li>Nå er jeg tryggere på prototyping.</li>
+</ol>
+<h2
+id="prinsipp-1-start-med-en-hypotese-om-hva-du-skal-forbedre.">Prinsipp
+1: start med en hypotese om hva du skal forbedre.</h2>
+<p>Hva er det du skal forbedre? Rettere sagt, hva er det du tror du kan
+forbedre? Skriv ned det. Det kan du bruke når du setter i gang hver dag.
+Er vi nærmere nå?</p>
+<h2 id="prinsipp-2-lås-alle-valg-unntatt-det-du-skal-teste.">Prinsipp 2:
+lås alle valg unntatt det du skal teste.</h2>
+<h2 id="prinsipp-3-loggfør-progresjon-hver-dag.">Prinsipp 3: loggfør
+progresjon hver dag.</h2>
+<h2 id="appendix-a-vi-prototyper-for-å-hypoteseteste-en-teori.">Appendix
+A: vi prototyper for å hypoteseteste en teori.</h2>
+<p>Teorien er hva vi tror vi kan forbedre. Men teorien er usikker. Hva
+betyr det egentlig at vi skal støtte grafnavigering i
+HOPS-terminalgrensesnittet? Det er sannelig ikke godt å si når ordene
+står alene uten noe å støtte seg på! Vi prototyper for å gi teorien
+tekstur. Målet vårt er å gjøre teorien bedre.</p>
+<p><a href="../david-deutsch/">David Deutsch</a> definerer en god teori
+som:</p>
+<ol>
+<li>Den forklarer noe interessant. På engelsk, “good explanations have
+reach”. Kan du faktisk forbedre noe i produktet? Hvis ikke, lager du
+ikke en teknisk produkt-prototype!</li>
+<li>Den er vanskelig å variere. Er det lett å erstatte teorien med noe
+annet? I Unicad har vi per 2023-03-28 en hypotese om at
+ingeniørselskaper er interessert i mer kontroll over beregningene sine.
+<a href="../kristian-collin-berge/">Kristian Collin Berge</a> er kjapt
+ute med å stille spørsmål for å øke detaljgraden. Hvilke
+ingeniørselskaper? I hvilken kontekst? Hvilken rolle har personene i
+ingeniørselskapene, og hva er deres motivasjon? En ingeniør som
+prosjekterer bygg har kanskje mer enn nok å gjøre i hverdagen sin. En
+innovasjonsdirektør sitter kanskje og vurderer femten forskjellige
+initiativer, er nedlessed med ulest E-post, og har ikke ta stilling til
+løse ideer personen ikke kan gjøre noe konkret med. “ingeniørselskaper
+er interessert i mer kontroll over beregningene sine” kan bety mye
+forskjellig. “en byggingeniør som skal levere beregninger til rapport
+til tredjepart ønsker å ha én beregning som kan regne på én eller flere
+søyler” er spissere, og vanskeligere å variere gitt observasjoner.</li>
+</ol>
+</body>
+</html>

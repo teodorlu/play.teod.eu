@@ -229,6 +229,14 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "tre-prinsipper-for-teknisk-prototyping",
+  "title" : "Tre prinsipper for teknisk prototyping",
+  "readiness" : "wtf-is-this",
+  "uuid" : "22b202cb-482e-4d24-bf1e-caf51c88ae89",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-28",
+  "lang" : "en"
+}, {
   "slug" : "list-of-people-who-stand-out",
   "title" : "List of people who stand out",
   "readiness" : "wtf-is-this",

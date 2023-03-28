@@ -1,0 +1,49 @@
+# -*- ispell-local-dictionary: "nb_NO" -*-
+:PROPERTIES:
+:ID: 22b202cb-482e-4d24-bf1e-caf51c88ae89
+:END:
+#+TITLE: Tre prinsipper for teknisk prototyping av produkter
+
+[[file:..][..]]
+
+DRAFT
+
+Motivasjon:
+
+1. Prototyping for strikkedesigner i Woolit høsten 2020
+2. Synes det var vanskelig å vite hvordan jeg skulle tenke på det!
+3. Nå er jeg tryggere på prototyping.
+
+* Prinsipp 1: start med en hypotese om hva du skal forbedre.
+Hva er det du skal forbedre?
+Rettere sagt, hva er det du tror du kan forbedre?
+Skriv ned det.
+Det kan du bruke når du setter i gang hver dag.
+Er vi nærmere nå?
+* Prinsipp 2: lås alle valg unntatt det du skal teste.
+* Prinsipp 3: loggfør progresjon hver dag.
+* Appendix A: vi prototyper for å hypoteseteste en teori.
+Teorien er hva vi tror vi kan forbedre.
+Men teorien er usikker.
+Hva betyr det egentlig at vi skal støtte grafnavigering i HOPS-terminalgrensesnittet?
+Det er sannelig ikke godt å si når ordene står alene uten noe å støtte seg på!
+Vi prototyper for å gi teorien tekstur.
+Målet vårt er å gjøre teorien bedre.
+
+[[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] definerer en god teori som:
+
+1. Den forklarer noe interessant.
+   På engelsk, "good explanations have reach".
+   Kan du faktisk forbedre noe i produktet?
+   Hvis ikke, lager du ikke en teknisk produkt-prototype!
+2. Den er vanskelig å variere.
+   Er det lett å erstatte teorien med noe annet?
+   I Unicad har vi per 2023-03-28 en hypotese om at ingeniørselskaper er interessert i mer kontroll over beregningene sine.
+   [[id:df393f09-0441-4919-aabb-a1773feb2eee][Kristian Collin Berge]] er kjapt ute med å stille spørsmål for å øke detaljgraden.
+   Hvilke ingeniørselskaper?
+   I hvilken kontekst?
+   Hvilken rolle har personene i ingeniørselskapene, og hva er deres motivasjon?
+   En ingeniør som prosjekterer bygg har kanskje mer enn nok å gjøre i hverdagen sin.
+   En innovasjonsdirektør sitter kanskje og vurderer femten forskjellige initiativer, er nedlessed med ulest E-post, og har ikke ta stilling til løse ideer personen ikke kan gjøre noe konkret med.
+   "ingeniørselskaper er interessert i mer kontroll over beregningene sine" kan bety mye forskjellig.
+   "en byggingeniør som skal levere beregninger til rapport til tredjepart ønsker å ha én beregning som kan regne på én eller flere søyler" er spissere, og vanskeligere å variere gitt observasjoner.

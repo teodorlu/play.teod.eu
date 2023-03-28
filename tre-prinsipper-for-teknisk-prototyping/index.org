@@ -10,7 +10,7 @@
 Jeg jobbet med protyping av verktøy for design av strikkeplagg for strikkedesignere på Woolit høsten 2020.
 Det synes jeg var skikkelig vanskelig!
 
-Siden 2020 har jeg fått trening i teknisk prototyping av produkter fra arbeid med [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]] og [[id:7cce9240-3c15-4f48-98a6-17abbb782e4d][Amedia]].
+Siden 2020 har jeg fått trening i teknisk prototyping gjennom [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]] og [[id:7cce9240-3c15-4f48-98a6-17abbb782e4d][Amedia]].
 Dette er hva jeg har lært.
 
 * Prinsipp 1: start med en hypotese om hva du skal forbedre.

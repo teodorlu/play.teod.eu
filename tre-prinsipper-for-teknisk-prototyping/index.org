@@ -125,7 +125,7 @@ Når?
 [[id:93ea907e-9dcb-4c6b-af7d-d9bc22c34d57][Aforismer]] funker ikke når vi skal samle et team til å jobbe i samme retning.
 Da må vi snakke om [[id:028a2171-3146-4fbc-8d5d-3209675dae8b][verdi i kontekst]]!
 De generelle utsagnene dine om hva du mener er feil i verden foreslår jeg at du tar over en middag etter to øl.
-* Appendix C: eksperter som prototyper
+* Appendix C: sånn ser det ut når en ekspert lager prototyper
 Eksperter som prototyper kan komme vanvittig langt.
 Hvordan ser det ut?
 

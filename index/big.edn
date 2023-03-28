@@ -933,6 +933,14 @@
   :created "2023-03-10",
   :lang :en,
   :form :remote-reference}
+ {:slug "woolit",
+  :title "Woolit",
+  :readiness :wtf-is-this,
+  :uuid "a27c44fa-9601-4013-ba30-251fac22ee46",
+  :author-url "https://teod.eu",
+  :created "2023-03-28",
+  :lang :en,
+  :form :remote-reference}
  {:slug "nassim-taleb",
   :title "Nassim Taleb",
   :readiness :wtf-is-this,

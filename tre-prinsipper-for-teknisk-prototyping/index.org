@@ -30,8 +30,6 @@ Løs det med én if-setning, ikke begynn å søke etter biblioteker for parsing 
 Hypotesen din definerer hva du ønsker å oppnå.
 Det er her du skal gi verdi.
 Hvis hypotesen er "kan vi gjøre HOPS-CLI-et sette seg inn i?" skal du eksperimentere opplevelsen når man først setter seg inn i HOPS-CLI-et, og ignorere alt annet du kan ignorere.
-
-
 * Prinsipp 3: loggfør progresjon hver dag.
 Hva er din daglige rytme?
 Hvordan svarer du på spørsmålet "hva er viktig i dag" hver morgen?

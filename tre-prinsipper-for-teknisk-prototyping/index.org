@@ -131,25 +131,62 @@ Hvordan ser det ut?
 
 Her er et eksempel: [[id:a878303d-3130-4dd3-9192-791ddd2cbbcf][Chris Nuernberger]] som bygger et streaming-system for probabilistisk programmering:
 
-https://github.com/cnuernber/streams/commits/master
+#+begin_src
+$ git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+ce58ab7 Chris Nuernberger       Mon Mar 27 18:52:13 2023 -0600  editing
+feb6836 Chris Nuernberger       Mon Mar 27 18:50:56 2023 -0600  one more edit
+1ec005a Chris Nuernberger       Mon Mar 27 18:49:32 2023 -0600  Update README.md
+3fd0a86 Chris Nuernberger       Mon Mar 27 18:46:03 2023 -0600  adding link to api docs.
+a03e0a1 Chris Nuernberger       Mon Mar 27 18:43:22 2023 -0600  Added api docs.
+21f8004 Chris Nuernberger       Mon Mar 27 18:17:48 2023 -0600  Merge branch 'master' of github.com:cnuernber/streams
+5b6e479 Chris Nuernberger       Mon Mar 27 18:12:50 2023 -0600  fixing examples and updating readme and docs.
+bdb990f Chris Nuernberger       Mon Mar 27 14:15:39 2023 -0600  Updating readme
+1aadf01 Chris Nuernberger       Mon Mar 27 14:11:00 2023 -0600  Better pathway for take-n, less typecasting.
+3d4e48c Chris Nuernberger       Mon Mar 27 11:34:17 2023 -0600  Initial commit
+#+end_src
 
-Merk: jeg leser repoet på 2023-03-28, og per nå er siste git SHA [[https://github.com/cnuernber/streams/commit/ce58ab726c00db2b975bc69821eb670ef9e7338a][ce58a]].
+Kilde: https://github.com/cnuernber/streams/commits/master
 
-Hvordan var det han gjorde det?
+Noen observasjoner:
 
 1. Han utforsket et veldefinert problem.
    Hypotesen var noe ala "er det mulig å simulere monte-carlo-analyser uten å allokere?"
+   Han trengte ikke snakke med folk for å få avklaringer.
 2. Han låste ned alle ting han ikke ønsket å bry seg om.
    Hvis han hadde prøvd å integrere med eksisterende systemer han har laget tidligere, feks [[id:20e994be-d760-44b1-bee6-3575ebed65df][dtype-next]], hadde han ikke kommet i mål.
+   I stedet brukte han verkøy han kjente godt, og gjorde så lite som mulig for å komme i mål.
 3. Han noterte seg ned hva han lærte underveis.
    Se på commit-loggen.
    Se på README, den beskriver hva han har gjort og hvorfor han har gjort det.
    Han kommuniserte tilbake til en relevant Slack-tråd der han, jeg og [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] hadde diskutert noe tidligere.
 
-Første commit 7:34 PM GMT+2.
-Siste commit 2:52 AM GMT+2.
-7 timer fra start til slutt.
-Og han har /funnet på noe nytt!/.
+Se på det her!
+Det er en fryd å lese.
+
+#+begin_quote
+Simple programmatic model for infinite streams of numbers or objects primitive
+and doing arithmetic operations (in double space) on them.  Provides basic structure for
+monte-carlo simulations.
+
+Streams are an interesting concept as they are lazy noncaching and also not indexable.
+
+Use fastmath/random for distributions and the transducers in kixi.stats.core for
+basic stats.
+#+end_quote
+
+Konsist, kommer til poenget.
+Problemet er å kjøre monte-carlo-simuleringer.
+
+Han gjør det tydelig har valgt /nonocaching/.
+Det gjør at:
+
+1. Vi tvinger oss til å loope over dataen én gang
+2. Som gir god ytelse
+3. Og gjør det mulig å /slippe/ å allokere hele datasetttet i minne.
+   Dette kjører på JVM, så vi har i utgangspunktet ganske stor minne bruk.
+   Men jeg tror (/tror/!) denne måten å gjøre ting på kunne taklet så store sample-verdier som vi ønsker, uten å noen sinne gå tom for minne.
+
+-----
 
 Som fersk utvikler, er det /fullstendig urealistisk/ å forvente noe sånt av seg selv.
 Dette er en person som har jobbet for å bli kjempedyktig i 20 år, og aldri har stoppet å forvente mer av seg selv.

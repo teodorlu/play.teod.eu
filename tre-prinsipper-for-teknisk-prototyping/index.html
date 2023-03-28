@@ -208,9 +208,9 @@
 <li><a href="#prinsipp-1-start-med-en-hypotese-om-hva-du-skal-forbedre."
 id="toc-prinsipp-1-start-med-en-hypotese-om-hva-du-skal-forbedre.">Prinsipp
 1: start med en hypotese om hva du skal forbedre.</a></li>
-<li><a href="#prinsipp-2-lås-alle-valg-unntatt-det-du-skal-teste."
-id="toc-prinsipp-2-lås-alle-valg-unntatt-det-du-skal-teste.">Prinsipp 2:
-lås alle valg unntatt det du skal teste.</a></li>
+<li><a href="#prinsipp-2-test-én-ting-av-gangen"
+id="toc-prinsipp-2-test-én-ting-av-gangen">Prinsipp 2: test én ting av
+gangen</a></li>
 <li><a href="#prinsipp-3-loggfør-progresjon-hver-dag."
 id="toc-prinsipp-3-loggfør-progresjon-hver-dag.">Prinsipp 3: loggfør
 progresjon hver dag.</a></li>
@@ -247,20 +247,17 @@ forbedre? Skriv ned det. Det kan du bruke når du setter i gang hver
 dag.</p>
 <p>Når du har gjort et stykke arbeid, kan du bruke hypotesen til å
 vurdere arbeidet ditt.</p>
-<h2 id="prinsipp-2-lås-alle-valg-unntatt-det-du-skal-teste.">Prinsipp 2:
-lås alle valg unntatt det du skal teste.</h2>
-<p>Trenger du noe data fra internett? Last ned ned og hardkod json inn i
-appen din. Trenger du et CLI-flagg? Løs det med én if-setning, ikke
-begynn å søke etter biblioteker for parsing av CLI-argumenter.</p>
-<p>Hypotesen din definerer hva du ønsker å oppnå. Det er her du skal gi
-verdi. Hvis hypotesen er “kan vi gjøre HOPS-CLI-et sette seg inn i?”
-skal du eksperimentere opplevelsen når man først setter seg inn i
-HOPS-CLI-et, og ignorere alt annet du kan ignorere.</p>
-<p><a href="../sindre/">Sindre</a> poengterer at “lås alle valg unntatt
-det du skal teste” kanskje bommer litt, og foreslår noe ala “test én
-ting. Skal du teste flere ting, bør du lage flere prototyper.”
-motivasjon: slipp å ta stilling til <em>alle tingene</em> du kan
-ignorere, fordi det er lettest for deg!</p>
+<h2 id="prinsipp-2-test-én-ting-av-gangen">Prinsipp 2: test én ting av
+gangen</h2>
+<p>Vi prototyper for å lære. Hvis vi tester fem ting om gangen og
+resultatet er bra, hvilken av de fem tingene var bra? Det er bedre å
+teste én ting av gangen.</p>
+<p>Test det du ønsker å teste, hold resten fast. Hardkod API-responser.
+Tester du en brukerflyt, kan du ignorere alt utenfor den
+brukerflyten.</p>
+<p>Når du tester én ting av gangen, er det også <em>mye</em> lettere å
+faktisk bli ferdig. Hvis det er mer du er interessert i, kan du alltids
+lage en ny prototype!</p>
 <h2 id="prinsipp-3-loggfør-progresjon-hver-dag.">Prinsipp 3: loggfør
 progresjon hver dag.</h2>
 <p>Hva er din daglige rytme? Hvordan svarer du på spørsmålet “hva er

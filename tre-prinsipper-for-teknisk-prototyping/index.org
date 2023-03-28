@@ -6,8 +6,6 @@
 
 [[file:..][..]]
 
-DRAFT
-
 * Motivasjon
 Jeg jobbet med protyping av verktøy for design av strikkeplagg for strikkedesignere på Woolit høsten 2020.
 Det synes jeg var skikkelig vanskelig!

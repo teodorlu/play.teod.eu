@@ -2,7 +2,7 @@
 :PROPERTIES:
 :ID: 22b202cb-482e-4d24-bf1e-caf51c88ae89
 :END:
-#+TITLE: Tre prinsipper for teknisk prototyping av produkter
+#+TITLE: Tre prinsipper for teknisk prototyping
 
 [[file:..][..]]
 

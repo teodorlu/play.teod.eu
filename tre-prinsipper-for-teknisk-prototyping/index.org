@@ -92,7 +92,7 @@ Målet vårt er å gjøre teorien bedre.
    En innovasjonsdirektør sitter kanskje og vurderer femten forskjellige initiativer, er nedlessed med ulest E-post, og har ikke ta stilling til løse ideer personen ikke kan gjøre noe konkret med.
    "ingeniørselskaper er interessert i mer kontroll over beregningene sine" kan bety mye forskjellig.
    "en byggingeniør som skal levere beregninger til rapport til tredjepart ønsker å ha én beregning som kan regne på én eller flere søyler" er spissere, og vanskeligere å variere gitt observasjoner.
-* Appendix B: smale utsagn, brede utsagn
+* Appendix B: smale utsagn gjør det lettere å jobbe sammen
 #+begin_quote
 jeg ønsker å gjøre det lettere for brukere å forstå HOPS-CLI-et første gang de møter det
 #+end_quote

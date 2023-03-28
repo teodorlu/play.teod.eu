@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 7cce9240-3c15-4f48-98a6-17abbb782e4d
+:END:
+#+TITLE: Amedia
+
+[[file:..][..]]
+
+https://www.amedia.no/
+
+#+begin_quote
+Vi er den største utgiveren av lokale medier i Norge. Over tusen redaksjonelle medarbeidere  over hele landet bidrar til løpende nyhetsdekning i 88 lokalaviser, Nettavisen, Nationen, 11 lokale nettsteder og 4 fagtidsskrifter.
+#+end_quote

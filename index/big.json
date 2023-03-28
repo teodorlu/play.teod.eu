@@ -235,7 +235,7 @@
   "uuid" : "22b202cb-482e-4d24-bf1e-caf51c88ae89",
   "author-url" : "https://teod.eu",
   "created" : "2023-03-28",
-  "lang" : "en"
+  "lang" : "no"
 }, {
   "slug" : "list-of-people-who-stand-out",
   "title" : "List of people who stand out",
@@ -795,6 +795,15 @@
   "created" : "2022-07-16",
   "uuid" : "7bba802d-4788-4858-a6ea-d9eb29ae9e3c",
   "lang" : "en"
+}, {
+  "slug" : "amedia",
+  "title" : "Amedia",
+  "readiness" : "wtf-is-this",
+  "uuid" : "7cce9240-3c15-4f48-98a6-17abbb782e4d",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-03-28",
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "judge-of-quality",
   "title" : "Do you dare be the judge of quality?",

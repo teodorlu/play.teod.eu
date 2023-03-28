@@ -33,6 +33,43 @@ Hvis hypotesen er "kan vi gjøre HOPS-CLI-et sette seg inn i?" skal du eksperime
 
 
 * Prinsipp 3: loggfør progresjon hver dag.
+Hva er din daglige rytme?
+Hvordan svarer du på spørsmålet "hva er viktig i dag" hver morgen?
+
+Ser du på trello-lappene og river deg i håret fordi noen ikke skjønner at det er vanskelig å jobbe i kodebasen din?
+Stresser du over at API-et /enda/ ikke er ferdig fordi hva "ferdig" betyr sklir ut?
+
+Jeg ønsker å jobbe med mennesker som tenker sjæl og ønsker å levere høy kvalitet.
+Mitt triks for å tenke sjæl er å spørre meg selv "hva er viktig?" og tenke meg om.
+
+Når du prototyper, leverer du kunnskap.
+Mottakeren av kunnskapen er deg selv i morgen, deg selv om en uke, og teamet når du er klar for å dele det du har lært.
+For å få til dette anbefaler jeg å skrive tekst.
+
+Når du kommer på jobb om morgenen:
+
+1. Skriv ned hypotesen.
+   Hva gjenstår?
+   Eller er vi i mål?
+2. Hva er neste "to-timers-store utfordring" du kan gjøre?
+3. Er det noe du synes er vanskelig?
+   Bør du spørre om hjelp?
+
+Og når du har kommet et stykke:
+
+1. Hva var det du gjorde?
+2. Fungerte det?
+3. Hva er neste steg?
+
+Du skriver ikke dette for andre.
+Du skriver det for deg selv.
+Men det er mye lettere å oppsummere for andre hva du har lært når du allerede har kontroll på hva du har gjort og konkludert med!
+
+Og bruk et verktøy for å loggføre som funker for deg.
+Jeg foretrekker plaintext i git.
+Jeg har sett designere få knallbra nytte av Figma og Figjam.
+Miro funker ofte bra hvis man er to eller flere.
+Og produktgjengen i Iterate har stålkontroll på Notion.
 * Appendix A: vi prototyper for å hypoteseteste en teori.
 Teorien er hva vi tror vi kan forbedre.
 Men teorien er usikker.

@@ -6,7 +6,7 @@
 
 [[file:..][..]]
 
-* Motivasjon
+* Hvorfor lage tekniske prototyper?
 Jeg jobbet med protyping av verktøy for design av strikkeplagg for strikkedesignere på [[id:a27c44fa-9601-4013-ba30-251fac22ee46][Woolit]] høsten 2020.
 Det synes jeg var skikkelig vanskelig!
 Jeg satt med spørsmål som:
@@ -19,7 +19,7 @@ Jeg satt med spørsmål som:
 I dag føler jeg at jeg har bedre kontroll.
 Les resten hvis du er interessert i hva jeg har lært!
 
-Takk til [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]] for feeback på utkast av denne teksten.
+Takk til [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]] for tilbakemeldinger tidlige versjoner av denne teksten.
 * Prinsipp 1: start med en hypotese om hva du skal forbedre.
 Hva er det du skal forbedre?
 Rettere sagt, hva er det du tror du kan forbedre?

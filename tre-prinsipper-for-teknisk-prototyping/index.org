@@ -9,10 +9,15 @@
 * Motivasjon
 Jeg jobbet med protyping av verktøy for design av strikkeplagg for strikkedesignere på Woolit høsten 2020.
 Det synes jeg var skikkelig vanskelig!
+Jeg satt med spørsmål som:
 
-Siden 2020 har jeg fått trening i teknisk prototyping gjennom [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]] og [[id:7cce9240-3c15-4f48-98a6-17abbb782e4d][Amedia]].
-Dette er hva jeg har lært.
+1. Hvordan vet jeg om jeg bør prototype noe nå?
+2. Hvordan stiller jeg spørsmål som jeg kan svare på med en prototype?
+3. Hva er en prototype?
+4. Hva er effekten av å lage denne prototypen?
 
+I dag føler jeg at jeg har bedre kontroll.
+Les resten hvis du er interessert i hva jeg har lært!
 * Prinsipp 1: start med en hypotese om hva du skal forbedre.
 Hva er det du skal forbedre?
 Rettere sagt, hva er det du tror du kan forbedre?

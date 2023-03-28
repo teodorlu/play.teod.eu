@@ -18,6 +18,8 @@ Jeg satt med spørsmål som:
 
 I dag føler jeg at jeg har bedre kontroll.
 Les resten hvis du er interessert i hva jeg har lært!
+
+Takk til [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]] for feeback på utkast av denne teksten.
 * Prinsipp 1: start med en hypotese om hva du skal forbedre.
 Hva er det du skal forbedre?
 Rettere sagt, hva er det du tror du kan forbedre?
@@ -160,7 +162,9 @@ Start der.
 Hvor langt kan du komme på en dag?
 Kan du teste /én ting/ i dag?
 Etter hvert som du blir bedre, kan den /ene tingen/ være en større ting.
-* Appendix D: Hvordan kan denne artikkelen forbedres?
+* Appendix D: Kritikk og kommentarer på denne teksten
+Har du innspill?
+Fyr løs!
 ** "Prinsipp 1: start med en hypotese om hva du skal forbedre." er vagt
 "hypotese om hva du skal forbedre" er mange ord.
 Hva er det jeg egentlig mener?

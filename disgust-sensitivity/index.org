@@ -5,4 +5,19 @@
 
 [[file:..][..]]
 
-DRAFT
+* 2023-03-28
+** Chat with L and OJ at work
+What's messy?
+Who cleans up the mess?
+We want order to justify a purpose.
+
+People feel different levels of discomfort around mess (disgust sensitivity).
+* 2023-03-29
+** tiny tiny literature review
+*Disgust-sensitivitet korrelerer negativt med villighet til å ta risiko*
+
+https://www.cambridge.org/core/journals/judgment-and-decision-making/article/relation-between-disgust-sensitivity-and-risktaking-propensity-a-domain-specific-approach/3F4A136CC929A378972B285D4A9FE71D#
+
+#+begin_quote
+Based on mini meta-analysis, sexual disgust sensitivity had the strongest relationships with social risk-taking propensity and health/safety risk-taking propensity, and moral disgust sensitivity had the strongest relationship with ethical risk-taking propensity
+#+end_quote

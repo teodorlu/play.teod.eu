@@ -210,7 +210,7 @@
   :form :remote-reference}
  {:slug "tre-prinsipper-for-teknisk-prototyping",
   :title "Tre prinsipper for teknisk prototyping",
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :uuid "22b202cb-482e-4d24-bf1e-caf51c88ae89",
   :author-url "https://teod.eu",
   :created "2023-03-28",
@@ -314,6 +314,13 @@
   :uuid "332543a2-3a55-46d5-b447-57e52dca5642",
   :author-url "https://teod.eu",
   :created "2023-03-07",
+  :lang :en}
+ {:slug "disgust-sensitivity",
+  :title "disgust sensitivity",
+  :readiness :wtf-is-this,
+  :uuid "338c5b0a-ad78-4ab7-a259-a916093d6cb4",
+  :author-url "https://teod.eu",
+  :created "2023-03-29",
   :lang :en}
  {:slug "david-deutsch",
   :title "David Deutsch",

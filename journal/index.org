@@ -1245,3 +1245,13 @@ Use the rest of pandoc as a binary, and write only the json->html piece?
 Perhaps "transpile" from haskell to clojure?
 
 🤔
+* 2023-03-29
+** Good code is scale dependent
+- Layer 1: Do I understand this function when I scale it?
+- Layer 2: Is this cohesive, does it solve its problem in a good way?
+- Layer 3: Does our overall architecture enable us to solve hard problems, or does it get in the way?
+
+I've sometimes felt annoyed working on code bases, seeing stuff that can be improved everywhere.
+Then, later I've realized that I was focusing too intently on stuff that doesn't matter.
+
+The right layer to focus on was 2 or 3, I was stuck on 1.

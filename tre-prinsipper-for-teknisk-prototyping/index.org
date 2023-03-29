@@ -19,7 +19,7 @@ Jeg satt med spørsmål som:
 I dag føler jeg at jeg har bedre kontroll.
 Les resten hvis du er interessert i hva jeg har lært!
 
-Takk til [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]] for tilbakemeldinger tidlige versjoner av denne teksten.
+Takk til [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]] for tilbakemeldinger på utkast av denne teksten.
 * Prinsipp 1: start med en hypotese om hva du skal forbedre.
 Hva er det du skal forbedre?
 Rettere sagt, hva er det du tror du kan forbedre?

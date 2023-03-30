@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 499243a4-7b24-4937-8f95-066d28ae6fe0
+:END:
+#+TITLE: Polyglot programming from an abundance mindset
+
+[[file:..][..]]
+
+DRAFT
+
+Should we bet on /one/ programming language, or work with multiple?
+
+Scarcity mindset - minimize cost reduction - minimize required learning - /one language/.
+
+Abundance mindset - maximize potential - maximize porential learning - /multiple sources of tradition & capability/.

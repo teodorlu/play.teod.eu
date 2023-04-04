@@ -13,10 +13,10 @@ Structure:
 
 Language: mostly English, some Norwegian.
 
-"Should I read this?"
-Probably not.
-Dunno.
-Make up your mind, feel free to ask me a question :)
+"As someone who is not Teodor, should I read this?"
+This is mostly a project page for myself.
+So it's definitely not required reading.
+But it's public, and open for comments :)
 
 * Synthesis
 Attention is aimed here.
@@ -33,6 +33,15 @@ I feel like I want to ask Oddmund for help / advice.
 I want to learn CSS.
 I want to use play.teod.eu to learn CSS.
 As of 2022-08-20, Pandoc controls the CSS, and I don't have too much leverage.
+*** Examples from other people / inspiration / ideas to steal
+See also
+
+- [[https://peps.python.org/pep-0657/][peps.python.org]].
+  Very nice on mobile.
+  Somewhat disappointing on desktop.
+- [[https://danluu.com/elon-twitter-texts/][danluu.com]].
+  Extremely simple.
+  But not sexy --- zero styling.
 *** I cannot easily customize the CSS without building everything from scratch.
 Pandoc provides CSS to me.
 But I want to configure stuff myself too.

@@ -1,0 +1,19 @@
+structure:
+
+1. Temporally indexed by date
+2. For each reference capture properties.
+	1. target URL or remote reference on play
+	2. where I discovered the link
+		1. Where did I find the link?
+		2. Who made the thing where I found it?
+	3. Target resource creation date
+	4. Reference date (same as toplevel date)
+
+Not sure what kind of capture mechanism I want for this.
+I definitely want something easier than a plaintext doc.
+
+* 2023-04-05
+Remote title: Lambda Jam 2015 - Conal Elliott - The Essence and Origins of Functional Reactive Programming
+Remote URL: https://www.youtube.com/watch?v=j3Q32brCUAI
+Source URL: https://raw.githubusercontent.com/kennytilton/cells/main/Lisp-NYC-2018-02v1.pdf
+Source: Kenneth Tilton (https://github.com/kennytilton)

@@ -12,6 +12,13 @@ structure:
 Not sure what kind of capture mechanism I want for this.
 I definitely want something easier than a plaintext doc.
 
+Idea: reading it later in public, bottom-up.
+
+1. Provide a way to store & share reading it later lists
+2. Create a tiny babashka UI for creating those
+3. Also create a tiny EDN API for creating
+4. And invite @pez and Oddmund to try.
+
 * 2023-04-05
 Remote title: Lambda Jam 2015 - Conal Elliott - The Essence and Origins of Functional Reactive Programming
 Remote URL: https://www.youtube.com/watch?v=j3Q32brCUAI

@@ -1,0 +1,10 @@
+# Unstage a file
+
+The `git reset` command unstages by default.
+To unstage everything:
+
+	git reset .
+
+To unstage a single file:
+
+	git reset myfile

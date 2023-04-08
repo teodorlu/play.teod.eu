@@ -435,8 +435,7 @@ Usage:
 
   ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
       "))
-    (System/exit 0)
-    )
+    (System/exit 0))
 
   (when (contains? (set (:rest-cmds cmd-opts))
                    "resolve-links")

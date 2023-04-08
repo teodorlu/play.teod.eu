@@ -472,20 +472,13 @@ makefile [--dry-run]
 reindex [--dry-run]
 ")))
 
-(defn iki.json [{:keys [opts]}]
-  (let [resultat "hei på deg 🤗"]
-    (if (:dry-run opts)
-      (println resultat)
-      (spit "iki.json" resultat))))
-
 (def dispatch-table
   [{:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn filter-pandoc :cmds-opts [:resolve-links]}
    {:cmds ["reindex"] :fn reindex}
    {:cmds ["makefile"] :fn makefile}
    {:cmds ["random-page"] :fn random-page}
-   {:cmds ["relations"] :fn relations}
-   {:cmds ["iki.json"] :fn iki.json}])
+   {:cmds ["relations"] :fn relations}])
 
 (defn print-subcommands [{}]
   (println "usage: ./play.clj COMMAND")

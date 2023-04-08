@@ -443,8 +443,7 @@ Usage:
           by-uuid (fn [uuid]
                     (let [path (str "index/by-uuid/" uuid ".edn")]
                       (when (fs/regular-file? path)
-                        (edn/read-string (slurp path))))
-                    )
+                        (edn/read-string (slurp path)))))
           uuid->slug (fn [uuid] (:slug (by-uuid uuid)))
           replace-link (fn [x]
                          (if (pandoc/link? x)

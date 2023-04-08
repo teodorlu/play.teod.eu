@@ -457,21 +457,6 @@ Usage:
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println (json/generate-string resolved)))))
 
-(defn print-help [{}]
-  (println (str/trim "
-Usage: ./play.clj COMMAND <options>
-
-Subcommands:
-
-page SLUG :title PAGE_TITLE
-
-relations :from RELATIONS_SOURCE :to RELATIONS_TARGET
-
-makefile [--dry-run]
-
-reindex [--dry-run]
-")))
-
 (def dispatch-table
   [{:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn filter-pandoc :cmds-opts [:resolve-links]}

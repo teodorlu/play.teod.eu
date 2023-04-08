@@ -422,14 +422,23 @@ Allowed options:
         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
         ))))
 
-(defn filter-pandoc [{:as opts}]
+(defn filter-pandoc [{:as cmd-opts}]
   ;; only supported filter for now is resolve-links
   ;;
   ;; Test with:
   ;;
   ;;   ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
 
-  (when (contains? (set (:rest-cmds opts))
+  (when (:h (:opts cmd-opts))
+    (println (str/trim "
+Usage:
+
+  ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
+      "))
+    (System/exit 0)
+    )
+
+  (when (contains? (set (:rest-cmds cmd-opts))
                    "resolve-links")
     (let [pandoc-json (json/parse-string (slurp *in*))
           by-uuid (fn [uuid]
@@ -452,7 +461,7 @@ Allowed options:
 
 (defn print-help [{}]
   (println (str/trim "
-Usage: ./play.clj <subcommand> <options>
+Usage: ./play.clj COMMAND <options>
 
 Subcommands:
 
@@ -481,9 +490,9 @@ reindex [--dry-run]
    {:cmds ["iki.json"] :fn iki.json}])
 
 (defn print-subcommands [{}]
-  (println "usage: ./play.clj <command>")
+  (println "usage: ./play.clj COMMAND")
   (println "")
-  (println "available commands:")
+  (println "Available commands:")
   (doseq [{:keys [cmds]} dispatch-table]
     (println (str "  "
                   (str/join " " cmds)))))

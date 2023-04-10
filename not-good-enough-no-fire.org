@@ -1,8 +1,9 @@
-# not good enough, no fire
+* not good enough, no fire
+
 
 School system.
 homework, control. Making a fuzz. Motivation. Lack of agency.
-
+** ?
 Engineering
 so SLOW
 
@@ -16,3 +17,4 @@ FIRE!
 - composition
 - feedback cycle
 - power
+** composition, feedback cycle, power

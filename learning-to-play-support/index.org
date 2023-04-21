@@ -23,7 +23,7 @@ The nourishment that makes me willing to grind.
 1. Learning to develop alone
 2. Growing an interest in functional programming, type systems and interactive programming alone
 3. Why don't they recognize this as /good/?
-4. Hitting the wall and getting stuck: getting placed in softwhere teams where I couldn't get anything done.
+4. Hitting the wall and getting stuck: getting placed in software teams where I couldn't get anything done.
    1. I don't know how to navigate this
    2. I don't know where to start
    3. I don't even understand where we're going.

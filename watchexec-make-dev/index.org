@@ -11,7 +11,7 @@ I prefer to work in either of two ways:
 2. In a =watchexec make dev= loop.
 
 Using the REPL is nice for Clojure and Emacs Lisp.
-I've tried with Python and Haskell, but I didn't really like it.
+I've tried leaning on the REPL for programming Python and Haskell, but I didn't enjoy it.
 
 What about =watchexec make dev=?
 First, this is watchexec: https://watchexec.github.io/

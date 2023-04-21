@@ -10,7 +10,7 @@ I prefer to work in either of two ways:
 1. With a REPL
 2. In a =watchexec make dev= loop.
 
-REPL is nice for Clojure and Emacs Lisp.
+Using the REPL is nice for Clojure and Emacs Lisp.
 I've tried with Python and Haskell, but I didn't really like it.
 
 What about =watchexec make dev=?

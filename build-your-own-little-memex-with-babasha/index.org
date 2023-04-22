@@ -17,8 +17,65 @@ I should share my journey, and what my talk will be about.
 
 -----
 
+* talk proposal to babashka conf
+
 In May 2022, I decided that I wanted to build my own playful place on the internet.
 I wanted to trust my own choices completely, and make every decision according to my own sense of aesthetics.
 My previous web site had collapsed under its own weight, and could no longer build, becase of breaking changes in some packages that I used.
 
-I had previously gotten interested in the personal knowledge management movement, primarily
+I had previously gotten interested in the personal knowledge management movement, primarily Roam Research.
+I wanted the best parts of Roam with publishing to the web.
+But I wanted total control.
+For a time, I explored exporting from Roam to HTML.
+But I quickly realized that while I loved using Roam's outlining, it didn't give me the control I wanted for the web.
+
+* reference collection
+copy-pasted things from other places
+** copied from my personal journal
+From [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][Teodor's public-personal journal]], 2023-04-22
+*** the memex is here: it is the world wide web
+1. information deserves to be free
+2. put knowledge in bite-sized definitions (theories) + motivation about why one should care about this
+3. compose bite-sized definitions with playlists -- a playlist is an ordered list of links
+
+Done!
+
+Q: what's the right interface for making microtheories?
+
+Q: what's the right interface for making knowledge playlists?
+
+Microtheories need to be good explanations.
+Examples of good explanations:
+
+- https://snapshots.nextjournal.com/clerk-demo/build/f8112d44fa742cd0913dcbd370919eca249cbcd9/notebooks/rule_30.html
+- https://www.youtube.com/watch?v=r6sGWTCMz2k&t=19s
+*** it's worthwhile to build your own little memex
+a "little memex" is your own corner of knowledge.
+you curate the index.
+you create and link your nodes.
+you can refer to and build on other memexes, but the act building the memex is the reward in itself.
+*** your memex should live on the web
+microtheories deserve its own URL.
+others should be able to leverage your [[id:8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e][little memex]].
+*** your memex is composed of microtheories and knowledge playlists
+a [[id:2628579d-9108-4268-9fab-cf0faffb7191][microtheory]] is a bite-sided deinfition, and motivation for why it matters.
+
+a [[id:30253e9f-4247-4a36-8876-b2a7402d2e1e][knowledge playlist]] is an ordered list of microtheories.
+*** the act of building your own little memex is to explore your curiosity and journal about your experience.
+1. what are you curious about?
+   1. write that question down.
+   2. Breathe!
+2. find /an answer/
+   1. write that answer down.
+   2. Breathe!
+3. and /an action/
+   1. write that action down.
+   2. Breathe!
+4. Listen to yourself.
+   1. Breathe.
+   2. Do you want to do the action?
+   3. if yes, consider doing it.
+
+Go!
+*** build your own little memex with babashka
+yes!

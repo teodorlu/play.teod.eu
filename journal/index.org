@@ -1296,3 +1296,9 @@ Done!
 Q: what's the right interface for making microtheories?
 
 Q: what's the right interface for making knowledge playlists?
+
+Microtheories need to be good explanations.
+Examples of good explanations:
+
+- https://snapshots.nextjournal.com/clerk-demo/build/f8112d44fa742cd0913dcbd370919eca249cbcd9/notebooks/rule_30.html
+- https://www.youtube.com/watch?v=r6sGWTCMz2k&t=19s

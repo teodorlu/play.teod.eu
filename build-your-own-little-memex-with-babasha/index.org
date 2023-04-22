@@ -20,6 +20,7 @@ I should share my journey, and what my talk will be about.
 * talk proposal to babashka conf
 
 In May 2022, I decided that I wanted to build my own playful place on the internet.
+https://play.teod.eu/ was born.
 I wanted to trust my own choices completely, and make every decision according to my own sense of aesthetics.
 My previous web site had collapsed under its own weight, and could no longer build, becase of breaking changes in some packages that I used.
 
@@ -28,6 +29,21 @@ I wanted the best parts of Roam with publishing to the web.
 But I wanted total control.
 For a time, I explored exporting from Roam to HTML.
 But I quickly realized that while I loved using Roam's outlining, it didn't give me the control I wanted for the web.
+
+A year ago, this effort felt like madness.
+Today, I feel like it's one of the better decisions I've made in my life.
+Counted today, I've got 12900 lines of org-mode content:
+
+#+begin_src bash
+$ find . -iname '*.org' | xargs cat | wc -l
+12900
+#+end_src
+
+I sometimes quote stuff from others, and sometimes copy things around.
+But I'd guess about 80 % of it is words I've written.
+So something has worked out.
+
+
 
 * reference collection
 copy-pasted things from other places

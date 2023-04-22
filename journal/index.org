@@ -1286,3 +1286,13 @@ Vi kommer på jobb, skal legge ned en dags innsats, så skal vi gå hjem.
 
 teamprosess: innsatsen er alt.
 Hvordan vi jobber er ufattelig viktig!
+** the memex is here: it is the world wide web
+1. information deserves to be free
+2. put knowledge in bite-sized definitions (theories) + motivation about why one should care about this
+3. compose bite-sized definitions with playlists -- a playlist is an ordered list of links
+
+Done!
+
+Q: what's the right interface for making microtheories?
+
+Q: what's the right interface for making knowledge playlists?

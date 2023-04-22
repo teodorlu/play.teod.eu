@@ -185,7 +185,7 @@
   :uuid "1c87d797-747d-4bb0-9a72-9243fbbcd2be",
   :author-url "https://teod.eu",
   :created "2023-04-22",
-  :lang :en,
+  :lang :no,
   :form :remote-reference}
  {:slug "introspectvv",
   :title "introspect (book)",
@@ -797,6 +797,13 @@
   :uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
   :author-url "https://teod.eu",
   :created "2022-09-14",
+  :lang :en}
+ {:slug "little-memex",
+  :title "little memex",
+  :readiness :wtf-is-this,
+  :uuid "8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e",
+  :author-url "https://teod.eu",
+  :created "2023-04-22",
   :lang :en}
  {:slug "jacket",
   :title "Jacket Interactive",

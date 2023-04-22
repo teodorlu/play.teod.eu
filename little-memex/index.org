@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e
+:END:
+#+TITLE: little memex
+
+[[file:..][..]]
+
+DRAFT
+
+A little memex is a person's attempt to structure and share knowledge.
+[[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] is my little memex.

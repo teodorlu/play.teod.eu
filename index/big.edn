@@ -237,6 +237,13 @@
   :author-url "https://teod.eu",
   :created "2023-04-22",
   :lang :en}
+ {:slug "build-your-own-little-memex-with-babasha",
+  :title "Build Your Own Little Memex with Babashka",
+  :readiness :wtf-is-this,
+  :uuid "26776cc4-e64d-494b-b24c-784b2c57866d",
+  :author-url "https://teod.eu",
+  :created "2023-04-22",
+  :lang :en}
  {:slug "okrs-are-scale-invariant",
   :title "OKRs are scale invariant",
   :readiness :wtf-is-this,
@@ -918,6 +925,13 @@
   :created "2022-10-20",
   :lang :en,
   :form :remote-reference}
+ {:slug "grace-charity-joy",
+  :title "grace, charity, joy",
+  :readiness :wtf-is-this,
+  :uuid "9afd4f7e-8bde-49f6-8722-fd30e9c96a50",
+  :author-url "https://teod.eu",
+  :created "2023-04-22",
+  :lang :en}
  {:slug "unix-signals-intro",
   :title "Unix signals: a crash course",
   :form :article,

@@ -1302,3 +1302,11 @@ Examples of good explanations:
 
 - https://snapshots.nextjournal.com/clerk-demo/build/f8112d44fa742cd0913dcbd370919eca249cbcd9/notebooks/rule_30.html
 - https://www.youtube.com/watch?v=r6sGWTCMz2k&t=19s
+** it's worthwhile to build your own little memex
+a "little memex" is your own corner of knowledge.
+you curate the index.
+you create and link your nodes.
+you can refer to and build on other memexes, but the act building the memex is the reward in itself.
+** your memex should live on the web
+microtheories deserve its own URL.
+others should be able to leverage your little memex.

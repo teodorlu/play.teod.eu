@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 30253e9f-4247-4a36-8876-b2a7402d2e1e
+:END:
+#+TITLE: knowledge playlist
+
+[[file:..][..]]
+
+DRAFT
+
+An ordered list of [[id:2628579d-9108-4268-9fab-cf0faffb7191][microtheories]] that builds knowledge from a start to an end.
+A knowledge playlist can be built and followed in order to learn.

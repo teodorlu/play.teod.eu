@@ -1310,3 +1310,7 @@ you can refer to and build on other memexes, but the act building the memex is t
 ** your memex should live on the web
 microtheories deserve its own URL.
 others should be able to leverage your [[id:8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e][little memex]].
+** your memex is composed of microtheories and knowledge playlists
+a [[id:2628579d-9108-4268-9fab-cf0faffb7191][microtheory]] is a bite-sided deinfition, and motivation for why it matters.
+
+a [[id:30253e9f-4247-4a36-8876-b2a7402d2e1e][knowledge playlist]] is an ordered list of microtheories.

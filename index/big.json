@@ -263,6 +263,14 @@
   "created" : "2023-02-15",
   "lang" : "en"
 }, {
+  "slug" : "microtheory",
+  "title" : "microtheory",
+  "readiness" : "wtf-is-this",
+  "uuid" : "2628579d-9108-4268-9fab-cf0faffb7191",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-22",
+  "lang" : "en"
+}, {
   "slug" : "okrs-are-scale-invariant",
   "title" : "OKRs are scale invariant",
   "readiness" : "wtf-is-this",
@@ -323,6 +331,14 @@
   "uuid" : "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b",
   "author-url" : "https://teod.eu",
   "created" : "2022-08-27",
+  "lang" : "en"
+}, {
+  "slug" : "knowledge-playlist",
+  "title" : "knowledge playlist",
+  "readiness" : "wtf-is-this",
+  "uuid" : "30253e9f-4247-4a36-8876-b2a7402d2e1e",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-22",
   "lang" : "en"
 }, {
   "slug" : "utility-is-contextual",

@@ -1314,3 +1314,19 @@ others should be able to leverage your [[id:8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e
 a [[id:2628579d-9108-4268-9fab-cf0faffb7191][microtheory]] is a bite-sided deinfition, and motivation for why it matters.
 
 a [[id:30253e9f-4247-4a36-8876-b2a7402d2e1e][knowledge playlist]] is an ordered list of microtheories.
+** the act of building your own little memex is to explore your curiosity and journal about your experience.
+1. what are you curious about?
+   1. write that question down.
+   2. Breathe!
+2. find /an answer/
+   1. write that answer down.
+   2. Breathe!
+3. and /an action/
+   1. write that action down.
+   2. Breathe!
+4. Listen to yourself.
+   1. Breathe.
+   2. Do you want to do the action?
+   3. if yes, consider doing it.
+
+Go!

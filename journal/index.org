@@ -1309,4 +1309,4 @@ you create and link your nodes.
 you can refer to and build on other memexes, but the act building the memex is the reward in itself.
 ** your memex should live on the web
 microtheories deserve its own URL.
-others should be able to leverage your little memex.
+others should be able to leverage your [[id:8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e][little memex]].

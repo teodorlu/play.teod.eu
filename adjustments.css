@@ -14,3 +14,7 @@
     height: 324px;
 }
 /* yes! */
+
+body {
+    padding-bottom: 20vh;
+}

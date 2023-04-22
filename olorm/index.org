@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 1c87d797-747d-4bb0-9a72-9243fbbcd2be
+:END:
+#+TITLE: OLORM
+
+[[file:..][..]]
+
+https://serve.olorm.app.iterate.no/
+
+Et initiativ der teknologier fra Iterate deler ting de bryr seg om i hverdagen.

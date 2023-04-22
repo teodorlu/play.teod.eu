@@ -35,15 +35,34 @@ Today, I feel like it's one of the better decisions I've made in my life.
 Counted today, I've got 12900 lines of org-mode content:
 
 #+begin_src bash
+$ cd ~/dev/teodorlu/play.teod.eu
 $ find . -iname '*.org' | xargs cat | wc -l
 12900
+#+end_src
+
+In comparison, my last site got less content:
+
+#+begin_src bash
+$ cd ../teodorheggelund.com
+$ find . -iname '*.org' | xargs cat | wc -l
+1476
 #+end_src
 
 I sometimes quote stuff from others, and sometimes copy things around.
 But I'd guess about 80 % of it is words I've written.
 So something has worked out.
 
+I want to:
 
+1. Share my motivation for writing on the web
+2. Share what "clicked" for me, and explore why I've written about 8 times as much content as I ever wrote on my old site.
+3. Share my efforts to pull out some code that can be reused, and how that's going.
+
+** key ideas
+
+applied curiosity: my motivation for writing.
+
+charity, grace and joy: sharing my work with others, and how that's going.
 
 * reference collection
 copy-pasted things from other places

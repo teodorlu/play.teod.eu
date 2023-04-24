@@ -1332,3 +1332,36 @@ a [[id:30253e9f-4247-4a36-8876-b2a7402d2e1e][knowledge playlist]] is an ordered 
 Go!
 ** build your own little memex with babashka
 yes!
+* 2023-04-24
+** OLORM: lag en subkommando, få ting gjort
+Steg 0: design.
+
+#+begin_src
+$ olorm draw ol
+Lars
+#+end_src
+
+Så o er oddmund, l er lars, r er richard.
+
+Steg 1: lag en ny subkommando.
+
+#+begin_src
++(defn olorm-draw [stuff]
++  (prn stuff))
++
+ (def subcommands
+   [
+    {:cmds ["create"]        :fn olorm-create}
+    {:cmds ["help"]          :fn olorm-help}
+    {:cmds ["repo-path"]     :fn olorm-repo-path}
+    {:cmds ["set-repo-path"] :fn olorm-set-repo-path :args->opts [:repo-path]}
++   {:cmds ["draw"]          :fn olorm-draw          :args->opts [:pool]}
+    {:cmds []                :fn olorm-help}])
+#+end_src
+
+Den da kan vi se hva vi får inn av CLI-parse-biblioteket.
+
+#+begin_src
+$ olorm draw olr
+{:cmds ("draw" "olr"), :args (), :rest-cmds (), :opts {:pool "olr"}, :dispatch ["draw"]}
+#+end_src

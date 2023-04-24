@@ -64,6 +64,18 @@ applied curiosity: my motivation for writing.
 
 charity, grace and joy: sharing my work with others, and how that's going.
 
+Other people are curious too!
+But the world is filled with too much information, so why should you add any more?
+And /how/ should you share your work with others?
+My best bet per 2023-04-22: structure your work as /narrow theories/.
+In Clojure, we have a culture for writing narrow libraries.
+A narrow library solves one thing well with minimal dependencies, and minimal impact on your code.
+I want to argue that the same goes for knowledge.
+A good article presents and
+
+TODO
+
+
 * reference collection
 copy-pasted things from other places
 ** copied from my personal journal

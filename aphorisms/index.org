@@ -51,7 +51,6 @@ Working with source code is research.
 
 16 - Asking a specific question and generalizing later is often easier than the opposite.
 Rich, specific context reduces the need for [[https://en.wikipedia.org/wiki/Denotation][denotation]].
-Counter example: [[id:cab02e40-98f3-4baa-b375-be8736ceb88a][Denotational Design]].
 
 17 - Don't ask people to change their behavior. That is not something they can give you. Instead, ask for something specific they can do to help you now.
 

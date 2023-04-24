@@ -1347,3 +1347,17 @@ https://serve.olorm.app.iterate.no/o/olorm-7/
 - Allow tools to interact (referential transparency)
 
 Source: https://twitter.com/jackrusher/status/1623367128635084802
+** Homesteading
+Jeg leser /Homesteading/ av [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]].
+
+I dette asnittet blir jeg sittende å tenke:
+
+#+begin_quote
+I managed to sidestep the worst of those concerns by practicing something I think of as “attention hygiene”:
+#+end_quote
+
+Jeg har tenkt mye på oppmerksomhet mens jeg har laget denne siden.
+Se feks [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][attention design]].
+
+Jeg tror det er /grunnen/ til at jeg liker å holde på med disse greiene.
+Jeg tar kontroll over min egen oppmerksomhet.

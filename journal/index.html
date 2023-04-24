@@ -584,6 +584,13 @@ journal about your experience.</a></li>
 id="toc-build-your-own-little-memex-with-babashka">build your own little
 memex with babashka</a></li>
 </ul></li>
+<li><a href="#section-31" id="toc-section-31">2023-04-24</a>
+<ul>
+<li><a href="#olorm-lag-en-subkommando-få-ting-gjort"
+id="toc-olorm-lag-en-subkommando-få-ting-gjort">OLORM: lag en
+subkommando, få ting gjort</a></li>
+<li><a href="#xx-1" id="toc-xx-1">xx</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -2029,5 +2036,44 @@ journal about your experience.</h3>
 <h3 id="build-your-own-little-memex-with-babashka">build your own little
 memex with babashka</h3>
 <p>yes!</p>
+<h2 id="section-31">2023-04-24</h2>
+<h3 id="olorm-lag-en-subkommando-få-ting-gjort">OLORM: lag en
+subkommando, få ting gjort</h3>
+<p>Flyttet: Steg 0: design.</p>
+<pre><code>$ olorm draw ol
+Lars
+</code></pre>
+<p>Så o er oddmund, l er lars, r er richard.</p>
+<p>Steg 1: lag en ny subkommando.</p>
+<pre><code>+(defn olorm-draw [stuff]
++  (prn stuff))
++
+ (def subcommands
+   [
+    {:cmds [&quot;create&quot;]        :fn olorm-create}
+    {:cmds [&quot;help&quot;]          :fn olorm-help}
+    {:cmds [&quot;repo-path&quot;]     :fn olorm-repo-path}
+    {:cmds [&quot;set-repo-path&quot;] :fn olorm-set-repo-path :args-&gt;opts [:repo-path]}
++   {:cmds [&quot;draw&quot;]          :fn olorm-draw          :args-&gt;opts [:pool]}
+    {:cmds []                :fn olorm-help}])
+</code></pre>
+<p>Den da kan vi se hva vi får inn av CLI-parse-biblioteket.</p>
+<pre><code>$ olorm draw olr
+{:cmds (&quot;draw&quot; &quot;olr&quot;), :args (), :rest-cmds (), :opts {:pool &quot;olr&quot;}, :dispatch [&quot;draw&quot;]}
+</code></pre>
+<h3 id="xx-1">xx</h3>
+<p>Norvig and Pitman on good programming style, via Jack Rusher:</p>
+<ul>
+<li>Be explicit</li>
+<li>Be specific</li>
+<li>Be conside</li>
+<li>Be consistent</li>
+<li>Be helpful (anticipate the reader’s needs)</li>
+<li>Be conventional (don’t be obscure)</li>
+<li>Build abstractions at a usable level</li>
+<li>Allow tools to interact (referential transparency)</li>
+</ul>
+<p>Source: <a
+href="https://twitter.com/jackrusher/status/1623367128635084802">https://twitter.com/jackrusher/status/1623367128635084802</a></p>
 </body>
 </html>

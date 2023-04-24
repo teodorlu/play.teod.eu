@@ -589,7 +589,10 @@ memex with babashka</a></li>
 <li><a href="#olorm-lag-en-subkommando-få-ting-gjort"
 id="toc-olorm-lag-en-subkommando-få-ting-gjort">OLORM: lag en
 subkommando, få ting gjort</a></li>
-<li><a href="#xx-1" id="toc-xx-1">xx</a></li>
+<li><a
+href="#norvig-and-pitman-on-good-programming-style-via-jack-rusher"
+id="toc-norvig-and-pitman-on-good-programming-style-via-jack-rusher">Norvig
+and Pitman on good programming style, via Jack Rusher:</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2039,30 +2042,11 @@ memex with babashka</h3>
 <h2 id="section-31">2023-04-24</h2>
 <h3 id="olorm-lag-en-subkommando-få-ting-gjort">OLORM: lag en
 subkommando, få ting gjort</h3>
-<p>Flyttet: Steg 0: design.</p>
-<pre><code>$ olorm draw ol
-Lars
-</code></pre>
-<p>Så o er oddmund, l er lars, r er richard.</p>
-<p>Steg 1: lag en ny subkommando.</p>
-<pre><code>+(defn olorm-draw [stuff]
-+  (prn stuff))
-+
- (def subcommands
-   [
-    {:cmds [&quot;create&quot;]        :fn olorm-create}
-    {:cmds [&quot;help&quot;]          :fn olorm-help}
-    {:cmds [&quot;repo-path&quot;]     :fn olorm-repo-path}
-    {:cmds [&quot;set-repo-path&quot;] :fn olorm-set-repo-path :args-&gt;opts [:repo-path]}
-+   {:cmds [&quot;draw&quot;]          :fn olorm-draw          :args-&gt;opts [:pool]}
-    {:cmds []                :fn olorm-help}])
-</code></pre>
-<p>Den da kan vi se hva vi får inn av CLI-parse-biblioteket.</p>
-<pre><code>$ olorm draw olr
-{:cmds (&quot;draw&quot; &quot;olr&quot;), :args (), :rest-cmds (), :opts {:pool &quot;olr&quot;}, :dispatch [&quot;draw&quot;]}
-</code></pre>
-<h3 id="xx-1">xx</h3>
-<p>Norvig and Pitman on good programming style, via Jack Rusher:</p>
+<p>Flyttet: <a
+href="https://serve.olorm.app.iterate.no/o/olorm-7/">https://serve.olorm.app.iterate.no/o/olorm-7/</a></p>
+<h3
+id="norvig-and-pitman-on-good-programming-style-via-jack-rusher">Norvig
+and Pitman on good programming style, via Jack Rusher:</h3>
 <ul>
 <li>Be explicit</li>
 <li>Be specific</li>

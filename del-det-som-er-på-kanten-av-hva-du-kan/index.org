@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 800d73cb-472c-4994-ac0b-f74d5335811d
 :END:
-#+TITLE: Del det som er på kanten av hva du kan
+#+TITLE: Del det som er på kanten av hva du kan.
 
 [[file:..][..]]
 

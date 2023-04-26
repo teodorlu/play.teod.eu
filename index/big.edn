@@ -805,6 +805,13 @@
   :author-url "https://teod.eu",
   :created "2023-03-12",
   :lang :en}
+ {:slug "del-det-som-er-på-kanten-av-hva-du-kan",
+  :title "Del det som er på kanten av hva du kan",
+  :readiness :wtf-is-this,
+  :uuid "800d73cb-472c-4994-ac0b-f74d5335811d",
+  :author-url "https://teod.eu",
+  :created "2023-04-26",
+  :lang :en}
  {:slug "anders-haugeto",
   :title "Anders Haugeto",
   :readiness :wtf-is-this,

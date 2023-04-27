@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: bc850da4-64c2-416e-b31c-417bcf24a4fe
+:END:
+#+TITLE: Hypertext: The medium is the message
+
+[[file:..][..]]
+
+DRAFT
+
+motivation
+
+discussion with Finn.
+Can making content, making tools and helping others make truly be separated?
+Interlude: the clueless middle manager.
+Interlude: skin in the game, Antaeus Whacked.
+
+outline
+
+1. "text" in literary theory.
+2. Hypertext: the future is now.
+   You can put any experience in someone's pocket.
+3. Writing hypertext.
+4. Writing hypertext in a moldable tool.
+5. Moldable tools for hypertext

@@ -40,6 +40,9 @@ Teodor
 
 * 2023-04-27
 ** Jonas: hvorfor krever læring at du skriver? (Teodor parafraserer)
+:PROPERTIES:
+:CUSTOM_ID: D-da26bb
+:END:
 Her er punkt 3:
 
 #+begin_quote

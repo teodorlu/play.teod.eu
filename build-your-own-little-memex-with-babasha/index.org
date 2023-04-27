@@ -17,6 +17,10 @@ I should share my journey, and what my talk will be about.
 
 -----
 
+Call for papers/talks/workshops:
+
+https://babashka.org/conf/
+
 * talk proposal to babashka conf
 
 In May 2022, I decided that I wanted to build my own playful place on the internet.

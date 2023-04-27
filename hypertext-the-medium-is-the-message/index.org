@@ -46,3 +46,7 @@ Moldable message, moldable medium, moldable development.
 - moldable {development,writing,tools}
   - is your current process of creating suited to create what you aim to create?
   - opinion: you should be able to shape your creative process as you create.
+
+-----
+
+Clerk is a moldable tool for publishing content on a moldable medium: hypertext.

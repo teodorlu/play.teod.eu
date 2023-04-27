@@ -22,7 +22,7 @@ Call for papers/talks/workshops:
 https://babashka.org/conf/
 
 * proposal notes 2
-Literature review.
+*Literature review.*
 
 - memex - as we may think
   https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
@@ -36,19 +36,19 @@ Literature review.
   - programming with hand tools
   - running with scissors
 
-Time for doing.
+*Time for doing.*
 
 - https://play.teod.eu/
   - scicloj visual tools presentation
     https://www.youtube.com/watch?time_continue=616&v=JSMcK5strRo&embeds_euri=https%3A%2F%2Fplay.teod.eu%2F&source_ve_path=MjM4NTE&feature=emb_title
   -
 
-Key ideas.
+*Key ideas.*
 
 1. Moldable message, moldable medium, moldbable tools.
    Live creation.
 
-Talk outline.
+*Talk outline.*
 Note: I expect that I'll need to cut scope to stick to 20 minutes, but I think I'll keep the rough 3 part outline.
 
 1. Part one: Tools for thinking and the web for sharing.
@@ -64,7 +64,7 @@ Note: I expect that I'll need to cut scope to stick to 20 minutes, but I think I
    3. Invite collaborators for writing clojure+babashka libraries for making this happen.
    4. Towards a shared Clojure memex composed of tiny personal islands
 
-Intended talk outcomes.
+*Intended talk outcomes.*
 
 1. Audience considers, perhaps /wants/ to use Babashka to learn & share on the internet
 2. Audience sees how to make this happen using tools that already exists

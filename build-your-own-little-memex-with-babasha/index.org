@@ -21,6 +21,56 @@ Call for papers/talks/workshops:
 
 https://babashka.org/conf/
 
+* proposal notes 2
+Literature review.
+
+- memex - as we may think
+  https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
+- the medium is the message
+  https://en.wikipedia.org/wiki/The_medium_is_the_message
+- hypertext
+- moldable tools
+  - stop writing dead programs
+    https://www.youtube.com/watch?v=8Ab3ArE8W3s
+- The Clojure ethos for simple tools
+  - programming with hand tools
+  - running with scissors
+
+Time for doing.
+
+- https://play.teod.eu/
+  - scicloj visual tools presentation
+    https://www.youtube.com/watch?time_continue=616&v=JSMcK5strRo&embeds_euri=https%3A%2F%2Fplay.teod.eu%2F&source_ve_path=MjM4NTE&feature=emb_title
+  -
+
+Key ideas.
+
+1. Moldable message, moldable medium, moldbable tools.
+   Live creation.
+
+Talk outline.
+Note: I expect that I'll need to cut scope to stick to 20 minutes, but I think I'll keep the rough 3 part outline.
+
+1. Part one: Tools for thinking and the web for sharing.
+2. Part two: My learning practice
+   1. Share how I approach learning a new topic
+      1. Exploring my curiosity
+      2. Making that curiosity explicit, and making it stick.
+      3. Sticky application: journaling.
+      4. Sticky application: contributing to open source (optionally what I've learned from contributing to Neil)
+3. Part three: Build Your Own Little Memex with Babashka
+   1. Show how Clojure programmers can currently leverage Babashka and Pandoc for building and sharing their knowledge.
+   2. Motivate /why/
+   3. Invite collaborators for writing clojure+babashka libraries for making this happen.
+   4. Towards a shared Clojure memex composed of tiny personal islands
+
+Intended talk outcomes.
+
+1. Audience considers, perhaps /wants/ to use Babashka to learn & share on the internet
+2. Audience sees how to make this happen using tools that already exists
+3. Audience members may consider contributing to an effort / to libraries that make it easier for Clojure programmers
+   to build their own little memex with babashka on the Internet
+
 * talk proposal to babashka conf
 
 In May 2022, I decided that I wanted to build my own playful place on the internet.

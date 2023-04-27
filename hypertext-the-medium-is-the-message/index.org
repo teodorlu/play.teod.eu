@@ -28,3 +28,8 @@ outline
 3. Writing hypertext.
 4. Writing hypertext in a moldable tool.
 5. Moldable tools for hypertext
+
+-----
+
+Alternative title:
+Moldable message, moldable medium, moldable development.

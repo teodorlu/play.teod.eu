@@ -41,7 +41,6 @@ https://babashka.org/conf/
 - https://play.teod.eu/
   - scicloj visual tools presentation
     https://www.youtube.com/watch?time_continue=616&v=JSMcK5strRo&embeds_euri=https%3A%2F%2Fplay.teod.eu%2F&source_ve_path=MjM4NTE&feature=emb_title
-  -
 
 *Key ideas.*
 

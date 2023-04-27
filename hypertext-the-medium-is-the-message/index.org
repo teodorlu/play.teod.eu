@@ -9,10 +9,16 @@ DRAFT
 
 motivation
 
-discussion with Finn.
-Can making content, making tools and helping others make truly be separated?
-Interlude: the clueless middle manager.
-Interlude: skin in the game, Antaeus Whacked.
+- discussion with Finn.
+  - Can making content, making tools and helping others make truly be separated?
+- discussion with Jonas.
+  - "What is hypertext?"
+  - "What is learning?"
+    - Is learning practice, a process, an activity you can /do/?
+    - Or is learning an outcome?
+    - 🤔
+- Interlude: the clueless middle manager.
+- Interlude: skin in the game, Antaeus Whacked.
 
 outline
 

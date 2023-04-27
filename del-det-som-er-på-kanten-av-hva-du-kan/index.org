@@ -39,6 +39,9 @@ At du har tro på at du kommer til å lære noe av skriveprosessen, og at du øn
 
 Hvorfor akkurat skriving?
 *** Svar fra Teodor
+:PROPERTIES:
+:CUSTOM_ID: D-b43dbf
+:END:
 Godt poeng.
 Jeg mener egentlig ikke at alle må skrive, jeg blander litt sammen ord her.
 

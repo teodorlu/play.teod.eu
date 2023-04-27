@@ -33,3 +33,15 @@ outline
 
 Alternative title:
 Moldable message, moldable medium, moldable development.
+
+- moldable message
+  - what are you communicating?
+    how will what you are communicating change during the process of writing it?
+- moldable medium
+  - how can you mold the medium to suit your message?
+    is words on paper the best presentation?
+    text vs hypertext.
+    the edge of hypertext: tactile, physical media.
+- moldable {development,writing,tools}
+  - is your current process of creating suited to create what you aim to create?
+  - opinion: you should be able to shape your creative process as you create.

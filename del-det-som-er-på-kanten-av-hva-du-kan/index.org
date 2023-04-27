@@ -28,3 +28,34 @@ Eller del med hele Internett.
 3. At du har tro på at du kommer til å lære noe av skriveprosessen, og at du ønsker å bruke det du lærer til å få kontakt med andre.
 
 Å lære er å utforske det som er på kanten av hva du kan.
+
+* 2023-04-27
+** Jonas: hvorfor krever læring at du skriver? (Teodor parafraserer)
+Her er punkt 3:
+
+#+begin_quote
+At du har tro på at du kommer til å lære noe av skriveprosessen, og at du ønsker å bruke det du lærer til å få kontakt med andre.
+#+end_quote
+
+Hvorfor akkurat skriving?
+*** Svar fra Teodor
+Godt poeng.
+Jeg mener egentlig ikke at alle må skrive, jeg blander litt sammen ord her.
+
+"tekst" betyr ofte "bokstaver på et medium" i daglig bruk.
+Jeg tenker egentlig på en akademisk definisjon av tekst.
+Fra [[https://en.wikipedia.org/wiki/Text_(literary_theory)][Text (literary theory) (Wikipedia)]]:
+
+#+begin_quote
+In literary theory, a text is any object that can be "read", whether this object is a work of literature, a street sign, an arrangement of buildings on a city block, or styles of clothing. It is a coherent set of signs that transmits some kind of informative message.[1] This set of signs is considered in terms of the informative message's content, rather than in terms of its physical form or the medium in which it is represented.
+#+end_quote
+
+Med andre ord, en "tekst" kan være en bok, en artikkel, en avis.
+Men også en TV-sending, et improvisert teater, et radiohørespill, eller en nettside.
+Kjernen er at en tekst har /innhold/.
+
+Det innholdet er gjerne hva du har lært når du "skriver" for å lære!
+
+Gir det mening?
+
+Teodor

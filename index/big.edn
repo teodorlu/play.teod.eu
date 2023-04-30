@@ -251,6 +251,14 @@
   :author-url "https://teod.eu",
   :created "2022-08-17",
   :lang :en}
+ {:slug "datomic",
+  :title "Datomic",
+  :readiness :wtf-is-this,
+  :uuid "27217b9d-112e-40c6-a4f2-6532b733f612",
+  :author-url "https://teod.eu",
+  :created "2023-04-30",
+  :lang :en,
+  :form :remote-reference}
  {:slug "strong-relations",
   :title "Strong relations",
   :readiness :wtf-is-this,
@@ -435,6 +443,14 @@
   :readiness :forever-incomplete,
   :lang :en,
   :uuid "4291481a-e7ad-4466-b51e-53b0e35076d1"}
+ {:slug "lessons-learned-teaching-elm-to-kids",
+  :title "Lessons learned teaching Elm to kids",
+  :readiness :wtf-is-this,
+  :uuid "436d7df4-f986-4bff-8efa-44bf72099859",
+  :author-url "https://teod.eu",
+  :created "2023-04-30",
+  :lang :en,
+  :form :remote-reference}
  {:slug "programming-as-theory-building",
   :title "Programming as Theory Building",
   :readiness :wtf-is-this,
@@ -597,6 +613,14 @@
   :readiness :wtf-is-this,
   :lang :en,
   :uuid "5abac715-d886-4aa8-85d7-d0b877a245d6"}
+ {:slug "quil",
+  :title "Quil",
+  :readiness :wtf-is-this,
+  :uuid "5ac5617e-6d50-4da0-a917-59d9d00c4622",
+  :author-url "https://teod.eu",
+  :created "2023-04-30",
+  :lang :en,
+  :form :remote-reference}
  {:slug "martin-fowler",
   :title "Martin Fowler",
   :readiness :wtf-is-this,
@@ -1236,6 +1260,14 @@
   :author-url "https://teod.eu",
   :uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15",
   :lang :en}
+ {:slug "maria.cloud",
+  :title "maria.cloud",
+  :readiness :wtf-is-this,
+  :uuid "c86c554e-415f-48c0-8792-37faef276765",
+  :author-url "https://teod.eu",
+  :created "2023-04-30",
+  :lang :en,
+  :form :remote-reference}
  {:slug "formal-theory-informal-relations",
   :title "Formal theory, informal relations",
   :readiness :wtf-is-this,

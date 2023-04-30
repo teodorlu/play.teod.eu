@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 5ac5617e-6d50-4da0-a917-59d9d00c4622
+:END:
+#+TITLE: Quil
+
+[[file:..][..]]
+
+http://quil.info/
+
+A [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] library for creating interactive drawings and animations.

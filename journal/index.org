@@ -1361,3 +1361,34 @@ Se feks [[id:0cc48734-e933-44cb-a4e8-2678f125f6df][attention design]].
 
 Jeg tror det er /grunnen/ til at jeg liker å holde på med disse greiene.
 Jeg tar kontroll over min egen oppmerksomhet.
+* 2023-04-30
+** things
+datomic was open sourced
+** wanna code
+*** why
+curious
+*** why
+[[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]], [[id:27217b9d-112e-40c6-a4f2-6532b733f612][Datomic]] and [[id:5ac5617e-6d50-4da0-a917-59d9d00c4622][Quil]].
+And [[https://github.com/nextjournal/clojure-mode/][nextjournal/clojure-mode]].
+Done right, this could work for kids!
+
+But local setup & installation is too complex.
+So I'm kind of curiuos about trying this myself.
+
+This would essentially be a cheap [[id:c86c554e-415f-48c0-8792-37faef276765][maria.cloud]] clone.
+So ... why?
+
+1. Because it's a worthwhile challenge, and I'd love to be able to build something like that.
+2. Because my overwhelming experience teaching kids to code ([[id:436d7df4-f986-4bff-8efa-44bf72099859][Lessons learned teaching Elm to kids]])
+   has been that being able to control (A) the subject matter, and (B) the learning experience is essential.
+   So even if there is a "good tool" it's not necessarily the best tool for teaching what you aim to teach.
+
+Deliverables?
+
+1. I could make an introduction to Clojure that I'm interested in giving with this material.
+2. I could teach more kids to code -- this time Clojure rather than Elm (because why not)
+3. The quil-system itself
+   1. I wanna learn Quil
+   2. I wanna learn Electric Clojure
+   3. I wanna learn Datomic
+   4. I wanna experience writing a moldable systems (see for instance [[id:bc850da4-64c2-416e-b31c-417bcf24a4fe][Hypertext: The medium is the message]] and [[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]], both drafts)

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 27217b9d-112e-40c6-a4f2-6532b733f612
+:END:
+#+TITLE: Datomic
+
+[[file:..][..]]
+
+https://www.datomic.com/
+
+A database built on EAV triples (like RDF) and immutability

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 436d7df4-f986-4bff-8efa-44bf72099859
+:END:
+#+TITLE: Lessons learned teaching Elm to kids
+
+[[file:..][..]]
+
+https://www.youtube.com/watch?v=FSec8QmgEWo
+
+My experience report after spending ten weeks teaching kids from 12 to 16 years to program in Elm.
+
+*Slides (PDF)*:  https://www.teodorheggelund.com/static/teaching-kids-elm.pdf

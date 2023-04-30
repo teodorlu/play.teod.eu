@@ -1464,5 +1464,5 @@ I had to shorten the column names to make it fit:
 | Javascript      |     0.8 |           0.5 |     0.8 |      1 | NPM       |
 | [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]]        |       1 |           0.4 |     0.9 |      1 | Graal     |
 | Cherry          |    "no" |     "JS good" |   "yes" |    0.9 | NPM       |
-| Nbb             |  "good" | "luaJIT good" |     0.9 |      1 | NPM       |
-| Fennel (mpenet) |  "good" |             ? |  "good" | "good" | Lua       |
+| Nbb             |  "good" |               |     0.9 |      1 | NPM       |
+| Fennel (mpenet) |  "good" | "luaJIT good" |  "good" | "good" | Lua       |

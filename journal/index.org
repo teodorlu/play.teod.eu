@@ -1456,13 +1456,13 @@ I had to shorten the column names to make it fit:
 | instant build    | build             |
 | ecosystem        | ecosystem         |
 
-| thing           | runtime |   performance | startup |  build | ecosystem |
-|-----------------+---------+---------------+---------+--------+-----------|
-| [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]]         |       1 |           0.8 |     0.2 |      1 | Maven     |
-| Go              |     0.4 |           0.8 |       1 |    0.7 | ?         |
-| [[id:307f5d35-7be1-4693-8378-4a0255717056][Rust]]            |     0.1 |          0.95 |       1 |    0.1 | ?         |
-| Javascript      |     0.8 |           0.5 |     0.8 |      1 | NPM       |
-| [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]]        |       1 |           0.4 |     0.9 |      1 | Graal     |
-| Cherry          |    "no" |     "JS good" |   "yes" |    0.9 | NPM       |
-| Nbb             |  "good" |               |     0.9 |      1 | NPM       |
-| Fennel (mpenet) |  "good" | "luaJIT good" |  "good" | "good" | Lua       |
+| thing           | runtime | performance | startup |  build | ecosystem |
+|-----------------+---------+-------------+---------+--------+-----------|
+| [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]]         |       1 |         0.8 |     0.2 |      1 | Maven     |
+| Go              |     0.4 |         0.8 |       1 |    0.7 | ?         |
+| [[id:307f5d35-7be1-4693-8378-4a0255717056][Rust]]            |     0.1 |        0.95 |       1 |    0.1 | ?         |
+| Javascript      |     0.8 |         0.5 |     0.8 |      1 | NPM       |
+| [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]]        |       1 |         0.4 |     0.9 |      1 | Graal     |
+| Cherry          |    "no" |     "as JS" |   "yes" |    0.9 | NPM       |
+| Nbb             |  "good" |             |     0.9 |      1 | NPM       |
+| Fennel (mpenet) |  "good" | "as luaJIT" |  "good" | "good" | Lua+C FFI |

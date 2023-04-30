@@ -1466,3 +1466,4 @@ I had to shorten the column names to make it fit:
 | Cherry     |    "no" |     "as JS" |   "yes" |    0.9 | NPM       |
 | Nbb        |  "good" |             |     0.9 |      1 | NPM       |
 | Fennel     |  "good" | "as luaJIT" |  "good" | "good" | Lua+C FFI |
+| Zig        |         |             |         |        | Zig+C ABI |

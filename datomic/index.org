@@ -7,4 +7,4 @@
 
 https://www.datomic.com/
 
-A database built on EAV triples (like RDF) and immutability
+A database built on EAV triples (like RDF) and immutability built with [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]]

@@ -5,8 +5,6 @@
 
 [[file:..][..]]
 
-#+begin_quote
 Rich Hickey is a computer programmer and speaker, known as the creator of the Clojure programming language.
-#+end_quote
 
 https://en.wikipedia.org/wiki/Rich_Hickey

@@ -2165,5 +2165,36 @@ Little Memex with Babashka</a>, both drafts)</li>
 </tr>
 </tbody>
 </table>
+<h4 id="clojurians-slack-post">clojurians slack post</h4>
+<p>Idea: of “dynamic runtime”, “high performance” and “instant startup”,
+you can only pick two. I rated (very subjectively, hand-waving) some
+runtimes from 0 (bad) to 1 (good).</p>
+<p>Would you agree? Are there counter-examples? Does this have to be the
+case?</p>
+<p>How would you score runtimes you use on the three axes?</p>
+<ul>
+<li><em>Dynamic runtime</em>. How fast can you change the semantics of
+your running program? Can you keep your state? If you have to restart /
+recompile, how long does that take?</li>
+<li><em>High performance</em>. When the runtime has had time to warm up,
+how fast can we get? Is this runtime suitable for number crunching?</li>
+<li><em>Instant startup</em>. How fast is a cold start? Can this work as
+a script, so that scripts can be composed into a Unix pileline, with an
+overall not-terrible experience?</li>
+</ul>
+<hr />
+<p>My speculation:</p>
+<p>I know borkdude has experimented with starting up Sci and JVM Clojure
+simultaneously, using Sci for instant startup, and moving over to JVM
+Clojure for JVM optimizations / compilation, but I don’t think that
+effort got further than experimentation. Another challenge is that sci
+isn’t exactly the same as JVM Clojure, so I suspect one could get nasty
+bugs if the two runtimes “diverge in execution”.</p>
+<p>I also wonder if Common Lisp might score high on all three. But I
+haven’t used CL in anger, so won’t blindly guess a score. Common Lisp
+hacker opinions welcome! I’m also curious if Clojure is better than
+Common Lisp on any of these axes. Which further begs the question about
+why some of us prefer Clojure over Common Lisp, and if that merits a
+fourth axis. (edited)</p>
 </body>
 </html>

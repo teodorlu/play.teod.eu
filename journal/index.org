@@ -1431,4 +1431,17 @@ I also wonder if Common Lisp might score high on all three.
 But I haven't used CL in anger, so won't blindly guess a score.
 Common Lisp hacker opinions welcome! I'm also curious if Clojure is better than Common Lisp on any of these axes.
 Which further begs the question about why some of us prefer Clojure over Common Lisp, and if that merits a fourth axis.
-(edited)
+
+10:31 teodorlu:
+
+#+begin_quote
+I also wonder if Common Lisp might score high on all three.
+#+end_quote
+
+Perhaps this is more a matter of effort than anything else.
+If we had infinite resources, perhaps we could "just" invent a JVM that worked like this.
+Start out with a simple statically compiled interpreter, then move to compile & JIT optimize stuff.
+But I'm speculation, I've never written anything like the JVM or Sci.
+
+Related, perhaps "jvm bytecode" is a better target for this than "Clojure".
+So that there are different JVM bytecode interpretation strategies with different performance characteristics.

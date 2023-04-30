@@ -351,6 +351,15 @@
   "lang" : "en",
   "uuid" : "2e1280a4-a783-4ab7-9f5c-58a7851a8218"
 }, {
+  "slug" : "its-not-about-you",
+  "title" : "it's not about you",
+  "readiness" : "wtf-is-this",
+  "uuid" : "2f4431a2-1534-4855-a639-725fea288095",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-30",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "perception-reality",
   "title" : "Perception is reality. Perception is not reality.",
   "readiness" : "wtf-is-this",

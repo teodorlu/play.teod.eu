@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 1c80cee5-af85-45ca-9b54-47e297eaa4d9
+:END:
+#+TITLE: Go (programming language)
+
+[[file:..][..]]
+
+https://go.dev/

@@ -205,6 +205,15 @@
   "created" : "2022-10-20",
   "lang" : "en"
 }, {
+  "slug" : "golang",
+  "title" : "Go (programming language)",
+  "readiness" : "wtf-is-this",
+  "uuid" : "1c80cee5-af85-45ca-9b54-47e297eaa4d9",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-30",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "olorm",
   "title" : "OLORM",
   "readiness" : "wtf-is-this",
@@ -357,6 +366,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-04-22",
   "lang" : "en"
+}, {
+  "slug" : "rust-lang",
+  "title" : "Rust (programming language)",
+  "readiness" : "wtf-is-this",
+  "uuid" : "307f5d35-7be1-4693-8378-4a0255717056",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-30",
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "utility-is-contextual",
   "title" : "Utility is Contextual",

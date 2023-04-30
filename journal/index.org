@@ -1392,3 +1392,12 @@ Deliverables?
    2. I wanna learn Electric Clojure
    3. I wanna learn Datomic
    4. I wanna experience writing a moldable systems (see for instance [[id:bc850da4-64c2-416e-b31c-417bcf24a4fe][Hypertext: The medium is the message]] and [[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]], both drafts)
+** idea
+dynamic runtime, high performance, instant startup, pick two?
+
+| thing                       | dynamic runtime | high performance | instant startup |
+|-----------------------------+-----------------+------------------+-----------------|
+| [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]]                     |               1 |              0.8 |             0.2 |
+| [[id:1c80cee5-af85-45ca-9b54-47e297eaa4d9][Go (programming language)]]   |             0.4 |              0.8 |               1 |
+| [[id:307f5d35-7be1-4693-8378-4a0255717056][Rust (programming language)]] |             0.1 |             0.95 |               1 |
+| Javascript                  |             0.8 |              0.5 |             0.8 |

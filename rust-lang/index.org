@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 307f5d35-7be1-4693-8378-4a0255717056
+:END:
+#+TITLE: Rust (programming language)
+
+[[file:..][..]]
+
+https://www.rust-lang.org/

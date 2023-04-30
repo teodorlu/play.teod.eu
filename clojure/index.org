@@ -7,4 +7,4 @@
 
 https://clojure.org/
 
-A general purpose programming language
+A general purpose programming language created by [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]

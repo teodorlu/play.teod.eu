@@ -1401,3 +1401,4 @@ dynamic runtime, high performance, instant startup, pick two?
 | [[id:1c80cee5-af85-45ca-9b54-47e297eaa4d9][Go (programming language)]]   |             0.4 |              0.8 |               1 |
 | [[id:307f5d35-7be1-4693-8378-4a0255717056][Rust (programming language)]] |             0.1 |             0.95 |               1 |
 | Javascript                  |             0.8 |              0.5 |             0.8 |
+| [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]]                    |             0.9 |              0.4 |             0.9 |

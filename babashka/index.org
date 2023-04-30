@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 5345d063-8018-4bde-8574-8ab9df27f479
+:END:
+#+TITLE: Babashka
+
+[[file:..][..]]
+
+https://babashka.org/

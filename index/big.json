@@ -649,6 +649,15 @@
   "created" : "2023-01-14",
   "lang" : "en"
 }, {
+  "slug" : "babashka",
+  "title" : "Babashka",
+  "readiness" : "wtf-is-this",
+  "uuid" : "5345d063-8018-4bde-8574-8ab9df27f479",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-30",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "interaction-value-differential",
   "title" : "How to ask experts for help",
   "readiness" : "ready-for-comments",

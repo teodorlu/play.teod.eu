@@ -32,3 +32,5 @@ This is a burden, but also a fine way to judge /everything/.
 If you know /why/ initiatives are worked on, you can judge whether the initiative works as it should.
 
 *the job to be done for a meeting* TODO
+
+Could ask for feedback from Dan Krister.

@@ -1474,3 +1474,15 @@ are we doing the right things to hit the overall priorities?
 ** execution for developers
 what things should I be making progress on today?
 have I made progress on the things I should today?
+** a process has a job to be done
+if you don't know a process's job to be done, you
+
+1. Either haven't done your job as a leader understanding why things are being done,
+2. or the process should not be done.
+
+As a leader, you need to know why things are being done.
+
+This is a burden, but also a fine way to judge /everything/.
+If you know /why/ initiatives are worked on, you can judge whether the initiative works as it should
+*** the job to be done for a meeting
+*** the job to be done for XX

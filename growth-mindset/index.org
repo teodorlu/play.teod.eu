@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+Farnam Street quoting Carol Dweck on growth mindset:
+
 #+begin_quote
 If you have only a certain amount of intelligence, a certain personality, and a certain moral character— well, then you’d better prove that you have a healthy dose of them. It simply wouldn’t do to look or feel deficient in these most basic characteristics.
 
@@ -15,6 +17,10 @@ I’ve seen so many people with this one consuming goal of proving themselves—
 […]
 
 There’s another mindset in which these traits are not simply a hand you’re dealt and have to live with, always trying to convince yourself and others that you have a royal flush when you’re secretly worried it’s a pair of tens. In this mindset, the hand you’re dealt is just the starting point for development. This growth mindset is based on the belief that your basic qualities are things you can cultivate through your efforts.
+
+[…]
+
+Why hide deficiencies instead of overcoming them? Why look for friends or partners who will just shore up your self-esteem instead of ones who will also challenge you to grow? And why seek out the tried and true, instead of experiences that will stretch you? The passion for stretching yourself and sticking to it, even (or especially) when it’s not going well, is the hallmark of the growth mindset. This is the mindset that allows people to thrive during some of the most challenging times in their lives.
 #+end_quote
 
 Carol Dweck book:

@@ -69,6 +69,8 @@ In a mix of Norwegian and English, sorry.
 - *Databaser og datamodellering*
   - hva er en database
     - state i database, ikke andre steder
+      - https://12factor.net/
+        - hva i 12factor bør vi være kritisk til?
     - databaser og miljøer
     - SQL 101
     - prøvekjøre med [[id:b79cec4e-13d3-451c-9577-dad732c31438][sqlite]] og [[id:7c092c90-0868-44a1-b17e-fcc5be10c1ce][sqlitebrowser]]

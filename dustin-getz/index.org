@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID: 16a35298-ed54-45a9-ab95-19f5944823e5
+:END:
+#+TITLE: Dustin Getz
+
+[[file:..][..]]
+
+https://www.dustingetz.com
+
+* 2023-05-01
+** Reading his aphorisms
+https://www.dustingetz.com/#/page/643ed908-e454-4fe8-9ac4-010041d63d1c
+
+#+begin_quote
+Opportunity is the space between your competitors' assumptions
+#+end_quote
+
+😁
+
+#+begin_quote
+Intuition is the antonym of reason
+#+end_quote
+
+Agreed.
+But I wonder whether those terms are meant to be value-laden.
+Is one better than the other?
+
+I would say quite strongly /no/.
+
+#+begin_quote
+Engineering is done with numbers. Analysis without numbers is just an opinion
+#+end_quote
+
+Oooooh.
+So theory /needs/ to be composed out of numbers?
+
+(Interlude - I feel myself /actively trying/ to find holes right now.
+Not out of malice, but out of curiosity and ambition)
+
+I think [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] would disagree.
+
+Though if we substitute "numbers" for "objectively falsifiable theory and observation", I'm inclined to agree.

@@ -151,6 +151,14 @@
   :created "2022-11-03",
   :lang :en,
   :form :remote-reference}
+ {:slug "dustin-getz",
+  :title "Dustin Getz",
+  :readiness :wtf-is-this,
+  :uuid "16a35298-ed54-45a9-ab95-19f5944823e5",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
+  :lang :en,
+  :form :remote-reference}
  {:slug "sindre",
   :title "Sindre",
   :readiness :wtf-is-this,
@@ -1150,7 +1158,7 @@
   :lang :en}
  {:slug "prompts-for-learning",
   :title "prompts for learning",
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :uuid "ada033c3-e631-49c9-8153-b9f1c69fd31d",
   :author-url "https://teod.eu",
   :created "2023-05-01",

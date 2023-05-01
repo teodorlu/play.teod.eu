@@ -24,15 +24,43 @@ Here we go.
 In a mix of Norwegian and English, sorry.
 
 - HTTP og servere
-  - Hva er HTTP?
+  - Hva er en HTTP-request?
+  - Headere
+    - Accept
+    - Content-Type
+  - Body
+  - HTTP-request med Curl
+  - HTTP-request med js-fetch
+  - Inspisere HTTP-requests i Firefox / Chrome
 - Testing og andre teknikker for å vite om koden gjør den du tror den gjør
   - Enhetstester
   - Integrasjonstester
   - Hvordan kjører testene i CI?
+  - ---
+  - Property testing
 - Utviklingsprosess.
-  Parprogrammering, mob-programmering, PR-er, feature-flagging, gradvis utrulling
-  - Hvordan spille andre gode
-  - Hvordan hjelpe andre å få løst problemer på PR-er
+  - Hvordan spille andre gode.
+    - Jeg er fersk, og jobber sammen med en erfaren utvikler.
+      Hvordan kan jeg hjelpe grinebiteren å ha færre problemer i hverdagen?
+    - Jeg er erfaren utvikler.
+      Hvordan kan jeg hjelpe en nyansatt å gjøre en god jobb?
+  - Parprogrammering
+  - PR-er
+    - hvorfor+hvordan bruker vi PR-er i dette teamet?
+      - unngå bugs?
+      - lære / lære bort?
+    - Hvor stor PR er dette?
+      - Gjør du én ting eller mange ting?
+      - Hvordan skrive kode for å kunne shippe mindre inkrementer.
+    - er det mulig å skjønne hva du har gjort?
+      - klarer du å uttrykke det konsist?
+      - bør du inkludere bilder, figurer eventuelt en video?
+        Github støtter opplasting av media rett i PR-beskrivelse.
+    - hva ønsker du feedback på?
+  - ---
+  - Feature-flagging
+  - Ensemble-programmering
+  - Gradvis utrulling
 - Databaser og datamodellering
   - Get started with PostgreSQL
   - Migrations
@@ -41,9 +69,9 @@ In a mix of Norwegian and English, sorry.
     - Cached things
   - /one database/ vs "We have PostgreSQL, Redis and an object store and we don't know where to put things"
 - CSS
-  - ?
+  - Hva er en anbefalt måte å begynne å skrive CSS på?
 - React
-  - ?
+  - Hvordan går jeg fra
 - Sikkerhet
   - Marcus shortlist
     - «Tokens»: https://paseto.io/
@@ -95,6 +123,8 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
     - Elixir
     - F#
 - Declarative programming
+  - HTML
+    - HTMX (https://htmx.org/)
   - SQL
   - Prolog
   - Minikanren

@@ -121,6 +121,7 @@ In a mix of Norwegian and English, sorry.
   - Git
   - Terminal emulator and shell
     - Different shells: bash, zsh, fish, sh
+      - GRML ZSH config: https://grml.org/zsh/
     - Terminal enulators on Mac: iterm (built-in), kitty, alacritty, iterm2, ...
   - ---
   - POSIX - the things you know will work.

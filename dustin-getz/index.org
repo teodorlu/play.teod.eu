@@ -113,3 +113,10 @@ Hmm.
 I think I agree with this one.
 Yet, I don't think I completely understand it.
 Nor have I internalized it.
+
+#+begin_quote
+Civilization advances by extending the number of operations we can perform without thinking about them
+#+end_quote
+
+Yes!
+This was Popper, right?

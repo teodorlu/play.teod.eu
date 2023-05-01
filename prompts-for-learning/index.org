@@ -82,7 +82,7 @@ Avoiding hard mode for now.
       I tried once and failed.
       At that time, I tried Datomic Cloud, but had never used AWS.
 2. What do you want to learn?
-   1. Writing apps with [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] and Datomic
+   1. Writing apps with [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] and Datomic.
 3. What's something you're good at?
    1. I'd like to think I'm decently good at being honest with myself about the things I don't know.
       But at the same time, I feel like that can rub some people off the wrong way, that it's too impolite, too direct.

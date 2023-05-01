@@ -108,6 +108,7 @@ In a mix of Norwegian and English, sorry.
       - hvilke felter bør du putte på JSON-loggene dine?
       - hvordan søker du i loggene?
       - https://www.elastic.co/kibana/
+  - ---
   - Miljøer
     - Dev og prod
     - Eller dev og test og prod

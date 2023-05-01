@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: 2be96e32-2649-4416-956a-64cbb23a3f9e
+:END:
+#+TITLE: tech learning ladder
+
+[[file:..][..]]
+
+Timestamp: 2023-05-01
+
+As a tech person, what might one learn?
+
+I find that to be a hard question.
+Our industry is moving.
+Our tools are changing.
+And as we get better, we gain agility.
+We don't slow down, we speed up.
+
+So I'm hesitant to leave this document as /the answer for forever/.
+I'll strive for [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] where possible, but not at the expense of clarity.
+
+Here we go.
+In Norwegian.
+I'm sorry.
+
+- HTTP og servere
+- Testing og andre teknikker for å vite om koden gjør den du tror den gjør
+- Utviklingsprosess.
+  Parprogrammering, mob-programmering, PR-er, feature-flagging, gradvis utrulling
+- Databaser og datamodellering
+- CSS
+- React
+- Sikkerhet
+
+That's all for level 1.
+Topics that can be postponed are put below the "fold" (the horizontal line)
+
+-----

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: dfd45cfa-3154-47ef-8f74-06fe0e69715e
+:END:
+#+TITLE: lindy compatibility
+
+[[file:..][..]]
+
+Lindy-compatible things stand the test of time.
+
+https://en.wikipedia.org/wiki/Lindy_effect

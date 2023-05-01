@@ -1513,7 +1513,7 @@ Process:
 Goal:
 
 1. Build trust
-2. Excercise [[id:efbb9f44-9a8e-436e-bf68-ff19d5bd990c][growth mindset]]
-3. Excercise [[id:5fd923f9-dc43-4a82-ac59-8785e98bc901][coachability]]
+2. Exercise [[id:efbb9f44-9a8e-436e-bf68-ff19d5bd990c][growth mindset]]
+3. Exercise [[id:5fd923f9-dc43-4a82-ac59-8785e98bc901][coachability]]
 
 13:06: moved this into [[id:ada033c3-e631-49c9-8153-b9f1c69fd31d][prompts for learning]].

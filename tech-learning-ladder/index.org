@@ -45,6 +45,7 @@ In a mix of Norwegian and English, sorry.
     - Jeg er erfaren utvikler.
       Hvordan kan jeg hjelpe en nyansatt å gjøre en god jobb?
     - Hvordan kan jeg hjelpe en produktleder eller prosjektleder?
+    - Produktledelse og teknologiledelse --- hvem skal jeg spørre?
   - Parprogrammering
   - PR-er
     - hvorfor+hvordan bruker vi PR-er i dette teamet?

@@ -119,4 +119,4 @@ Civilization advances by extending the number of operations we can perform witho
 #+end_quote
 
 Yes!
-This was Popper, right?
+This is a [[id:407a392f-53fa-4bd5-b38c-8491d6e4ed37][Karl Popper]] quote, right?

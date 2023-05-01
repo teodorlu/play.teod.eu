@@ -106,8 +106,14 @@ In a mix of Norwegian and English, sorry.
   - Curl
   - jq
   - Environment variables
+    - $USER
+    - $HOME
+    - $EDITOR
   - Command line arguments
-  - Filer
+  - Jobbe med filer
+    - filer som stdin, stdout
+    - temp-filer
+    - "namespacing i filsystemer"
 - *"Operations": Når appen din kjører i prod*
   - Feil og logging
     - Hvordan får du appen din i prod den første gangen?

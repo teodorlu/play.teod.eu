@@ -121,6 +121,7 @@ In a mix of Norwegian and English, sorry.
   - Git
   - Terminal emulator and shell
     - Different shells: bash, zsh, fish, sh
+    - Terminal enulators on Mac: iterm (built-in), kitty, alacritty, iterm2, ...
   - ---
   - POSIX - the things you know will work.
   - Curl

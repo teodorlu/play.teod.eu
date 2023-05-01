@@ -32,6 +32,11 @@ In a mix of Norwegian and English, sorry.
   - HTTP-request med Curl
   - HTTP-request med js-fetch
   - Inspisere HTTP-requests i Firefox / Chrome
+  - Skrive en HTTP-server i Go
+    - Kjør den lokalt
+    - Kjør den på nett
+    - Hvordan serve HTML
+    - Hvordan serve JSON
 - *Testing og andre teknikker for å vite om koden gjør den du tror den gjør*
   - Enhetstester
   - Hvordan kjører testene i CI?

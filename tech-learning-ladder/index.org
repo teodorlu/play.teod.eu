@@ -19,19 +19,81 @@ So I'm hesitant to leave this document as /the answer for forever/.
 I'll strive for [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] where possible, but not at the expense of clarity.
 
 Here we go.
-In Norwegian.
-I'm sorry.
+In a mix of Norwegian and English, sorry.
 
 - HTTP og servere
+  - Hva er HTTP?
 - Testing og andre teknikker for å vite om koden gjør den du tror den gjør
+  - Enhetstester
+  - Integrasjonstester
+  - Hvordan kjører testene i CI?
 - Utviklingsprosess.
   Parprogrammering, mob-programmering, PR-er, feature-flagging, gradvis utrulling
+  - Hvordan spille andre gode
+  - Hvordan hjelpe andre å få løst problemer på PR-er
 - Databaser og datamodellering
+  - Get started with PostgreSQL
+  - Migrations
+  - Putting "non-obvious" stuff in the database
+    - Assets
+    - Cached things
+  - /one database/ vs "We have PostgreSQL, Redis and an object store and we don't know where to put things"
 - CSS
+  - ?
 - React
+  - ?
 - Sikkerhet
+  - Marcus shortlist
+    - «Tokens»: https://paseto.io/
+    - «Kryptering»: https://doc.libsodium.org/
+    - «Passordhashing»: https://en.wikipedia.org/wiki/Argon2?wprov=sfti1
+    - Neither of those three? Reconsider your approach.
+    - Ensure you test your stuff /extensively/.
+- Unix og Unix-verktøy
+  - Git
+  - The shell
+  - Curl
+  - Environment variables
+  - Command line arguments
 
 That's all for level 1.
 Topics that can be postponed are put below the "fold" (the horizontal line)
 
 -----
+
+- Interfaces, contracts and API design
+  - Interfaces between modules
+  - Typed interfaces in programming languages
+    - Go: =interface=
+    - Java: =interface=
+    - Typescript: =interface=
+    - Rust: =trait=
+    - Haskell: =class= (typeclass)
+    - Clojure: =protocol= (java =interface= also supported)
+  - CQRS and event sourccing
+  - Idempotence
+  - Immutability
+  - Teodor opinion /prefer shallow hierarchies/
+    - build namespaces, not taxonomies.
+  - Data and serialization.
+    Cycles.
+- Functional programming.
+  - Types.
+  - Data.
+  - Pure functions.
+  - System-level functional programming (eg using GET requests with immutability and caching)
+- Types and type systems.
+  - Types in object oriented languages
+    - Go
+    - Typescript
+  - Types in functional languages
+    - Elm
+    - Haskell
+    - Clojure
+    - Elixir
+    - F#
+- Declarative programming
+  - SQL
+  - Prolog
+  - Minikanren
+  - Datalog

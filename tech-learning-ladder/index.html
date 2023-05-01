@@ -211,20 +211,124 @@ we speed up.</p>
 <p>So I’m hesitant to leave this document as <em>the answer for
 forever</em>. I’ll strive for <a href="../lindy-compatibility/">lindy
 compatibility</a> where possible, but not at the expense of clarity.</p>
-<p>Here we go. In Norwegian. I’m sorry.</p>
+<p>Here we go. In a mix of Norwegian and English, sorry.</p>
 <ul>
-<li>HTTP og servere</li>
+<li>HTTP og servere
+<ul>
+<li>Hva er HTTP?</li>
+</ul></li>
 <li>Testing og andre teknikker for å vite om koden gjør den du tror den
-gjør</li>
+gjør
+<ul>
+<li>Enhetstester</li>
+<li>Integrasjonstester</li>
+<li>Hvordan kjører testene i CI?</li>
+</ul></li>
 <li>Utviklingsprosess. Parprogrammering, mob-programmering, PR-er,
-feature-flagging, gradvis utrulling</li>
-<li>Databaser og datamodellering</li>
-<li>CSS</li>
-<li>React</li>
-<li>Sikkerhet</li>
+feature-flagging, gradvis utrulling
+<ul>
+<li>Hvordan spille andre gode</li>
+<li>Hvordan hjelpe andre å få løst problemer på PR-er</li>
+</ul></li>
+<li>Databaser og datamodellering
+<ul>
+<li>Get started with PostgreSQL</li>
+<li>Migrations</li>
+<li>Putting “non-obvious” stuff in the database
+<ul>
+<li>Assets</li>
+<li>Cached things</li>
+</ul></li>
+<li><em>one database</em> vs “We have PostgreSQL, Redis and an object
+store and we don’t know where to put things”</li>
+</ul></li>
+<li>CSS
+<ul>
+<li>?</li>
+</ul></li>
+<li>React
+<ul>
+<li>?</li>
+</ul></li>
+<li>Sikkerhet
+<ul>
+<li>Marcus shortlist
+<ul>
+<li>«Tokens»: <a href="https://paseto.io/">https://paseto.io/</a></li>
+<li>«Kryptering»: <a
+href="https://doc.libsodium.org/">https://doc.libsodium.org/</a></li>
+<li>«Passordhashing»: <a
+href="https://en.wikipedia.org/wiki/Argon2?wprov=sfti1">https://en.wikipedia.org/wiki/Argon2?wprov=sfti1</a></li>
+<li>Neither of those three? Reconsider your approach.</li>
+<li>Ensure you test your stuff <em>extensively</em>.</li>
+</ul></li>
+</ul></li>
+<li>Unix og Unix-verktøy
+<ul>
+<li>Git</li>
+<li>The shell</li>
+<li>Curl</li>
+<li>Environment variables</li>
+<li>Command line arguments</li>
+</ul></li>
 </ul>
 <p>That’s all for level 1. Topics that can be postponed are put below
 the “fold” (the horizontal line)</p>
 <hr />
+<ul>
+<li>Interfaces, contracts and API design
+<ul>
+<li>Interfaces between modules</li>
+<li>Typed interfaces in programming languages
+<ul>
+<li>Go: <code class="verbatim">interface</code></li>
+<li>Java: <code class="verbatim">interface</code></li>
+<li>Typescript: <code class="verbatim">interface</code></li>
+<li>Rust: <code class="verbatim">trait</code></li>
+<li>Haskell: <code class="verbatim">class</code> (typeclass)</li>
+<li>Clojure: <code class="verbatim">protocol</code> (java <code
+class="verbatim">interface</code> also supported)</li>
+</ul></li>
+<li>CQRS and event sourccing</li>
+<li>Idempotence</li>
+<li>Immutability</li>
+<li>Teodor opinion <em>prefer shallow hierarchies</em>
+<ul>
+<li>build namespaces, not taxonomies.</li>
+</ul></li>
+<li>Data and serialization. Cycles.</li>
+</ul></li>
+<li>Functional programming.
+<ul>
+<li>Types.</li>
+<li>Data.</li>
+<li>Pure functions.</li>
+<li>System-level functional programming (eg using GET requests with
+immutability and caching)</li>
+</ul></li>
+<li>Types and type systems.
+<ul>
+<li>Types in object oriented languages
+<ul>
+<li>Go</li>
+<li>Typescript</li>
+</ul></li>
+<li>Types in functional languages
+<ul>
+<li>Elm</li>
+<li>Haskell</li>
+<li>Clojure</li>
+<li>Elixir</li>
+<li>F#</li>
+</ul></li>
+</ul></li>
+<li>Declarative programming
+<ul>
+<li>SQL</li>
+<li>Prolog</li>
+<li>Minikanren</li>
+<li>Datalog</li>
+</ul></li>
+</ul>
 </body>
 </html>

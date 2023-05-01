@@ -62,12 +62,23 @@ In a mix of Norwegian and English, sorry.
   - Ensemble-programmering
   - Gradvis utrulling
 - Databaser og datamodellering
-  - Get started with PostgreSQL
+  - hva er en database
+    - state i database, ikke andre steder
+    - databaser og miljøer
+    - SQL 101
+  - Databaser på Iterapp
+    - hvordan kommer du i gang?
+      et eksempel du klarer å kjøre selv, der du lager en bitteliten app med DB som kan gjøre noe.
+  - PostgreSQL-spesifikke ting vi bør vite om?
+  - SQLite
   - Migrations
   - Putting "non-obvious" stuff in the database
     - Assets
     - Cached things
   - /one database/ vs "We have PostgreSQL, Redis and an object store and we don't know where to put things"
+  - tester og database.
+    Hva kan vi gjøre?
+    Får vi skrevet tester på kode som bruker databasen?
 - CSS
   - Hva er en anbefalt måte å begynne å skrive CSS på?
 - React

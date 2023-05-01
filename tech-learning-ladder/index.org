@@ -107,6 +107,12 @@ In a mix of Norwegian and English, sorry.
     - Dev og prod
     - Eller dev og test og prod
       - hvordan bruker du test?
+  - Docker
+    - Hvordan skriver du en dockerfile?
+    - Hvordan tester du om en dockerfile funker? (--entrypoint bash)
+    - Dockerfiles til Iterapp
+  - Kubernetes
+  - Backup og gjennoppretting av databasen
 
 That's all for level 1.
 Topics that can be postponed are put below the "fold" (the horizontal line)

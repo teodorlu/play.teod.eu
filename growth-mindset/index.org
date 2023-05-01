@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: efbb9f44-9a8e-436e-bf68-ff19d5bd990c
+:END:
+#+TITLE: growth mindset
+
+[[file:..][..]]
+
+#+begin_quote
+If you have only a certain amount of intelligence, a certain personality, and a certain moral character— well, then you’d better prove that you have a healthy dose of them. It simply wouldn’t do to look or feel deficient in these most basic characteristics.
+
+[…]
+
+I’ve seen so many people with this one consuming goal of proving themselves— in the classroom, in their careers, and in their relationships. Every situation calls for a confirmation of their intelligence, personality, or character. Every situation is evaluated: Will I succeed or fail? Will I look smart or dumb? Will I be accepted or rejected? Will I feel like a winner or a loser?
+
+[…]
+
+There’s another mindset in which these traits are not simply a hand you’re dealt and have to live with, always trying to convince yourself and others that you have a royal flush when you’re secretly worried it’s a pair of tens. In this mindset, the hand you’re dealt is just the starting point for development. This growth mindset is based on the belief that your basic qualities are things you can cultivate through your efforts.
+#+end_quote
+
+Carol Dweck book:
+https://www.goodreads.com/book/show/40745.Mindset
+
+Farnam Street summary of Carol Dweck book:
+https://fs.blog/carol-dweck-mindset/

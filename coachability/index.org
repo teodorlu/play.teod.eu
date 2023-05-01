@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 5fd923f9-dc43-4a82-ac59-8785e98bc901
+:END:
+#+TITLE: coachability
+
+[[file:..][..]]
+
+DRAFT
+
+Excerpt from [[id:a3ce5686-05e5-4620-8d38-77af80203184][Trillion Dollar Coach:]]
+
+#+begin_quote
+People who want to get the best out of a coaching relationship need to be coachable.
+Bill's aproach to coaching was rooted in his mind-set that almost all people have value, not based on their title or their role, but on who they are.
+His job was to make them better.
+But only if they were coachable.
+And, Jonathan's experience notwithstanding, that was based on a lot more than the ability to pull a pithy quote out of the ether (or nether) in a pinch
+#+end_quote

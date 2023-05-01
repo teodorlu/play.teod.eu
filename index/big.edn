@@ -674,6 +674,14 @@
   :created "2022-07-24",
   :uuid "5f45c0a1-8713-4066-8339-ad501c5486ac",
   :lang :en}
+ {:slug "coachability",
+  :title "coachability",
+  :readiness :wtf-is-this,
+  :uuid "5fd923f9-dc43-4a82-ac59-8785e98bc901",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
+  :lang :en,
+  :form :remote-reference}
  {:slug "list-of-awesome-websites",
   :title "A list of awesome websites",
   :readiness :wtf-is-this,
@@ -1076,6 +1084,14 @@
   :created "2023-03-28",
   :lang :en,
   :form :remote-reference}
+ {:slug "trillion-dollar-coach",
+  :title "Trillion Dollar Coach",
+  :readiness :wtf-is-this,
+  :uuid "a3ce5686-05e5-4620-8d38-77af80203184",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
+  :lang :en,
+  :form :remote-reference}
  {:slug "nassim-taleb",
   :title "Nassim Taleb",
   :readiness :wtf-is-this,
@@ -1467,6 +1483,14 @@
   :author-url "https://teod.eu",
   :created "2023-03-03",
   :lang :en}
+ {:slug "growth-mindset",
+  :title "growth mindset",
+  :readiness :wtf-is-this,
+  :uuid "efbb9f44-9a8e-436e-bf68-ff19d5bd990c",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
+  :lang :en,
+  :form :remote-reference}
  {:slug "spaghettifabrikken",
   :title "Factorio dedicated server",
   :readiness :wtf-is-this,

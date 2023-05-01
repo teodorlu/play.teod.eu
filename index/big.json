@@ -1310,6 +1310,14 @@
   "uuid" : "aaeb72f2-e2eb-4e51-b402-7f2d07150770",
   "lang" : "en"
 }, {
+  "slug" : "prompts-for-learning",
+  "title" : "prompts for learning",
+  "readiness" : "wtf-is-this",
+  "uuid" : "ada033c3-e631-49c9-8153-b9f1c69fd31d",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-01",
+  "lang" : "en"
+}, {
   "slug" : "learning-to-discover",
   "title" : "Learning to discover",
   "readiness" : "wtf-is-this",

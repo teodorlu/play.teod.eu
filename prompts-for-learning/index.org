@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID: ada033c3-e631-49c9-8153-b9f1c69fd31d
+:END:
+#+TITLE: prompts for learning
+
+[[file:..][..]]
+
+Sometimes we need a nudge to keep on learning, and not get stuck.
+I'll share a specific approach to make that happen.
+
+*Motivation*.
+Why do we want to do this?
+To "learn" is one reason.
+But there are three deeper reasons:
+
+1. To build a trust-based mentoring relationship.
+2. To exercise [[id:efbb9f44-9a8e-436e-bf68-ff19d5bd990c][growth mindset]].
+3. To exercise [[id:5fd923f9-dc43-4a82-ac59-8785e98bc901][coachability]].
+
+Learning is good.
+But permanently boosting your learning speed is even better!
+Let's try make that happen.
+
+*Process*.
+Follow these steps:
+
+1. Find someone you trust
+2. Write three or six answers, your choice
+3. Share the answers with the person you trust
+
+Then make sure you do this /again/.
+Try starting with once a month.
+That's it!
+
+*Easy mode prompts - build awareness*:
+
+- What's one example of something you think is hard?
+- What do you want to learn?
+- What's something you're good at?
+
+*Hard mode questions - build awareness + execute*:
+
+- What's one example of something you think is hard?
+  - Can you give one example of a person around you that finds this less hard?
+- What do you want to learn?
+  - Can you give one example of an activity that can help you learn that thing?
+- What's something you're good at?
+  - Do you see anyone around you that needs your help with that?

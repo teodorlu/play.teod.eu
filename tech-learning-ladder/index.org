@@ -44,6 +44,7 @@ In a mix of Norwegian and English, sorry.
       Hvordan kan jeg hjelpe grinebiteren å ha færre problemer i hverdagen?
     - Jeg er erfaren utvikler.
       Hvordan kan jeg hjelpe en nyansatt å gjøre en god jobb?
+    - Hvordan kan jeg hjelpe en produktleder eller prosjektleder?
   - Parprogrammering
   - PR-er
     - hvorfor+hvordan bruker vi PR-er i dette teamet?

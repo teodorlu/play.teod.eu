@@ -78,7 +78,8 @@ Avoiding hard mode for now.
 1. What's one example of something you think is hard?
    1. Running Datomic in prod.
       Migrations, not looking data, configuring the underlying data store.
-      I've never done that before, and I've tried before and failed.
+      I've never done that successfully before
+      I tried once and failed.
       At that time, I tried Datomic Cloud, but had never used AWS.
 2. What do you want to learn?
    1. Writing apps with [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]] and Datomic

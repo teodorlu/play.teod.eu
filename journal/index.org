@@ -1467,3 +1467,10 @@ I had to shorten the column names to make it fit:
 | Nbb        |  "good" |             |     0.9 |      1 | NPM       |
 | Fennel     |  "good" | "as luaJIT" |  "good" | "good" | Lua+C FFI |
 | Zig        |         |             |         |        | Zig+C ABI |
+* 2023-05-01
+** execution
+are the overall priorities right?
+are we doing the right things to hit the overall priorities?
+** execution for developers
+what things should I be making progress on today?
+have I made progress on the things I should today?

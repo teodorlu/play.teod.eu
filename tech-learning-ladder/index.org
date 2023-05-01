@@ -34,9 +34,9 @@ In a mix of Norwegian and English, sorry.
   - Inspisere HTTP-requests i Firefox / Chrome
 - *Testing og andre teknikker for å vite om koden gjør den du tror den gjør*
   - Enhetstester
-  - Integrasjonstester
   - Hvordan kjører testene i CI?
   - ---
+  - Integrasjonstester
   - Property testing
 - *Utviklingsprosess*.
   - Hvordan spille andre gode.

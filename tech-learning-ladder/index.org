@@ -96,6 +96,7 @@ In a mix of Norwegian and English, sorry.
   - Curl
   - Environment variables
   - Command line arguments
+  - Filer
 - *"Operations": Når appen din kjører i prod*
   - Feil og logging
     - Hvordan får du vite at noe ikke funker?

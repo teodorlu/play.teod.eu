@@ -119,6 +119,7 @@ In a mix of Norwegian and English, sorry.
     - Hvordan skriver du en dockerfile?
     - Hvordan tester du om en dockerfile funker? (--entrypoint bash)
     - Dockerfiles til Iterapp
+  - Github actions
   - Kubernetes
   - Backup og gjennoppretting av databasen
 
@@ -127,7 +128,7 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
 
 -----
 
-- *Interfaces, contracts and API design*
+-
   - Interfaces between modules
   - Typed interfaces in programming languages
     - Go: =interface=

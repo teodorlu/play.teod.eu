@@ -23,7 +23,7 @@ I'll strive for [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]]
 Here we go.
 In a mix of Norwegian and English, sorry.
 
-- HTTP og servere
+- *HTTP og servere*
   - Hva er en HTTP-request?
   - Headere
     - Accept
@@ -32,13 +32,13 @@ In a mix of Norwegian and English, sorry.
   - HTTP-request med Curl
   - HTTP-request med js-fetch
   - Inspisere HTTP-requests i Firefox / Chrome
-- Testing og andre teknikker for å vite om koden gjør den du tror den gjør
+- *Testing og andre teknikker for å vite om koden gjør den du tror den gjør*
   - Enhetstester
   - Integrasjonstester
   - Hvordan kjører testene i CI?
   - ---
   - Property testing
-- Utviklingsprosess.
+- *Utviklingsprosess*.
   - Hvordan spille andre gode.
     - Jeg er fersk, og jobber sammen med en erfaren utvikler.
       Hvordan kan jeg hjelpe grinebiteren å ha færre problemer i hverdagen?
@@ -61,7 +61,7 @@ In a mix of Norwegian and English, sorry.
   - Feature-flagging
   - Ensemble-programmering
   - Gradvis utrulling
-- Databaser og datamodellering
+- *Databaser og datamodellering*
   - hva er en database
     - state i database, ikke andre steder
     - databaser og miljøer
@@ -79,24 +79,24 @@ In a mix of Norwegian and English, sorry.
   - tester og database.
     Hva kan vi gjøre?
     Får vi skrevet tester på kode som bruker databasen?
-- CSS
+- *CSS*
   - Hva er en anbefalt måte å begynne å skrive CSS på?
-- React
+- *React*
   - Hvordan går jeg fra
-- Sikkerhet
+- *Sikkerhet*
   - Marcus shortlist
     - «Tokens»: https://paseto.io/
     - «Kryptering»: https://doc.libsodium.org/
     - «Passordhashing»: https://en.wikipedia.org/wiki/Argon2?wprov=sfti1
     - Neither of those three? Reconsider your approach.
     - Ensure you test your stuff /extensively/.
-- Unix og Unix-verktøy
+- *Unix og Unix-verktøy*
   - Git
   - The shell
   - Curl
   - Environment variables
   - Command line arguments
-- "Operations": Når appen din kjører i prod
+- *"Operations": Når appen din kjører i prod*
   - Feil og logging
     - Hvordan får du vite at noe ikke funker?
     - Structured logging.
@@ -119,7 +119,7 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
 
 -----
 
-- Interfaces, contracts and API design
+- *Interfaces, contracts and API design*
   - Interfaces between modules
   - Typed interfaces in programming languages
     - Go: =interface=
@@ -135,12 +135,12 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
     - build namespaces, not taxonomies.
   - Data and serialization.
     Cycles.
-- Functional programming.
+- *Functional programming.*
   - Types.
   - Data.
   - Pure functions.
   - System-level functional programming (eg using GET requests with immutability and caching)
-- Types and type systems.
+- *Types and type systems.*
   - Types in object oriented languages
     - Go
     - Typescript
@@ -150,14 +150,18 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
     - Clojure
     - Elixir
     - F#
-- Declarative programming
+- *Declarative programming*
   - HTML
     - HTMX (https://htmx.org/)
   - SQL
   - Prolog
   - Minikanren
   - Datalog
-- Ytelse
+- *Ytelse*
   - Allokering
   - Dataorientert programmering (tenk på hvordan minnet ditt funker)
   - Finn ut hva som er tregt med tracing
+  - Hvordan ytelse påvirker brukeropplevelse
+    - "300 ms"
+    - https://danluu.com/input-lag/
+  - Trege og raske CLI-verktøy -- og hvordan de er bygget

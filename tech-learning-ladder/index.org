@@ -18,6 +18,8 @@ We don't slow down, we speed up.
 So I'm hesitant to leave this document as /the answer for forever/.
 I'll strive for [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] where possible, but not at the expense of clarity.
 
+-----
+
 Here we go.
 In a mix of Norwegian and English, sorry.
 

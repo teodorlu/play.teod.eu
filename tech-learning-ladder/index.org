@@ -101,6 +101,7 @@ In a mix of Norwegian and English, sorry.
   - The shell
   - ---
   - Curl
+  - jq
   - Environment variables
   - Command line arguments
   - Filer

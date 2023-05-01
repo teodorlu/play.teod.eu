@@ -1487,6 +1487,14 @@ If you know /why/ initiatives are worked on, you can judge whether the initiativ
 *** the job to be done for a meeting
 *** the job to be done for XX
 ** prompts for learning
+Easy mode (awareness):
+
+- What's one example of something you think is hard?
+- What do you want to learn?
+- What's something you're good at?
+
+Hard mode (awareness + actionable):
+
 - What's one example of something you think is hard?
   - Can you give one example of a person around you that finds this less hard?
 - What do you want to learn?

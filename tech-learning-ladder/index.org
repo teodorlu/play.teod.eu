@@ -100,7 +100,9 @@ In a mix of Norwegian and English, sorry.
   - Editoren min - en investering.
   - Git
   - Terminal emulator and shell
+    - Different shells: bash, zsh, fish, sh
   - ---
+  - POSIX - the things you know will work.
   - Curl
   - jq
   - Environment variables

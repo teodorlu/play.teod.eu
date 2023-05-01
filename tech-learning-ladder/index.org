@@ -115,6 +115,10 @@ In a mix of Norwegian and English, sorry.
     - filer som stdin, stdout
     - temp-filer
     - "namespacing i filsystemer"
+  - Små, skarpe verktøy
+  - Pipes
+    - hvordan bruke pipes til å koble sammen andre programmer
+    - hvordan skrive egne programmer som funker godt med pipes
 - *"Operations": Når appen din kjører i prod*
   - Feil og logging
     - Hvordan får du appen din i prod den første gangen?

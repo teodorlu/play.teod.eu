@@ -71,7 +71,7 @@ In a mix of Norwegian and English, sorry.
     - state i database, ikke andre steder
     - databaser og miljøer
     - SQL 101
-    - prøvekjøring med sqlite og [[id:7c092c90-0868-44a1-b17e-fcc5be10c1ce][sqlitebrowser]]
+    - prøvekjøring med [[id:b79cec4e-13d3-451c-9577-dad732c31438][sqlite]] og [[id:7c092c90-0868-44a1-b17e-fcc5be10c1ce][sqlitebrowser]]
   - Databaser på Iterapp
     - hvordan kommer du i gang?
       et eksempel du klarer å kjøre selv, der du lager en bitteliten app med DB som kan gjøre noe.

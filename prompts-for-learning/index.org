@@ -53,7 +53,24 @@ What you do want to learn?
 What are you good at?
 Write those down and send to a friend!
 
+#+begin_src
+
+
+
+
+
+#+end_src
+
 -----
+
+#+begin_src
+
+
+
+
+
+
+#+end_src
 
 *Eating my own dogfood*.
 Avoiding hard mode for now.

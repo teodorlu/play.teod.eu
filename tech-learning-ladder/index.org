@@ -97,7 +97,7 @@ In a mix of Norwegian and English, sorry.
     - Neither of those three? Reconsider your approach.
     - Ensure you test your stuff /extensively/.
 - *Unix og Unix-verktøy*
-  - Editoren min
+  - Editoren min - en investering.
   - Git
   - The shell
   - ---

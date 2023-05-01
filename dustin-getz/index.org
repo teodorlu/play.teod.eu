@@ -60,3 +60,38 @@ Related:
 2. Communication requries some degree of trust.
 3. Trust requires an /initial charitable action/.
    Someone must allow it to grow.
+
+#+begin_quote
+You Can't Tell People Anything (you have to show them)
+#+end_quote
+
+:)
+I think https://electric-examples-app.fly.dev/ is a GREAT example of this principle applied.
+
+#+begin_quote
+You do not rise to the level of your goals. You fall to the level of your systems.
+#+end_quote
+
+Agreed.
+Your habits set your baseline.
+Habits ~ system.
+
+Also, this is psychologically safe, and protects against burnout.
+If you're feeling bad, just /don't destroy your systems+habits today/.
+That's enough.
+You can be exceptional later.
+
+#+begin_quote
+The goal is not to avoid mistakes; the goal is to achieve uncorrelated levels of excellence in some dimension — Nat Friedman
+#+end_quote
+
+I have no idea what Dustin/Nat mean by "uncorrelated levels of excellence in some dimension".
+Uncorrelated -> cosine similarity is 0, so that each "axis" of excellence is independent?
+Not sure.
+
+Though I'd guess that it's about
+
+1. Baseline novelty -- what's actually new here?
+2. Orthogonality -- how can we decompose that novelty into simple parts?
+
+But then, why "in some dimension"?

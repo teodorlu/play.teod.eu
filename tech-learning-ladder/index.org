@@ -32,7 +32,7 @@ In a mix of Norwegian and English, sorry.
   - HTTP-request med Curl
   - HTTP-request med js-fetch
   - Inspisere HTTP-requests i Firefox / Chrome
-  - Skrive en HTTP-server i Go
+  - Skriv en HTTP-server i Go
     - Kjør den lokalt
     - Kjør den på nett
     - Hvordan serve HTML

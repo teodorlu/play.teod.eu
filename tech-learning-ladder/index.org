@@ -101,6 +101,8 @@ In a mix of Norwegian and English, sorry.
   - Filer
 - *"Operations": Når appen din kjører i prod*
   - Feil og logging
+    - Hvordan får du appen din i prod den første gangen?
+      - Skriver du loggmeldinger som du klarer å lese?
     - Hvordan får du vite at noe ikke funker?
     - Structured logging.
       - hvilke felter bør du putte på JSON-loggene dine?

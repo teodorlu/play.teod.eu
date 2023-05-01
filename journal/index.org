@@ -1469,6 +1469,8 @@ I had to shorten the column names to make it fit:
 | Zig        |         |             |         |        | Zig+C ABI |
 * 2023-05-01
 ** execution
+moved to own page: [[id:8eade94f-28b6-4602-bb3d-8df57e22ecc1][execution for developers]].
+
 are the overall priorities right?
 are we doing the right things to hit the overall priorities?
 ** execution for developers

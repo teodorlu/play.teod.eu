@@ -949,6 +949,13 @@
   :created "2022-07-17",
   :uuid "8e72c536-9881-4477-8670-24c78edd82e7",
   :lang :en}
+ {:slug "execution-for-developers",
+  :title "execution for developers",
+  :readiness :wtf-is-this,
+  :uuid "8eade94f-28b6-4602-bb3d-8df57e22ecc1",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
+  :lang :en}
  {:slug "pandoc",
   :title "Pandoc",
   :readiness :wtf-is-this,
@@ -1465,7 +1472,7 @@
   :lang :en,
   :form :remote-reference}
  {:slug "lindy-compatibility",
-  :title "lindy-compatibility",
+  :title "lindy compatibility",
   :readiness :wtf-is-this,
   :uuid "dfd45cfa-3154-47ef-8f74-06fe0e69715e",
   :author-url "https://teod.eu",

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID: 8eade94f-28b6-4602-bb3d-8df57e22ecc1
+:END:
+#+TITLE: execution for developers
+
+[[file:..][..]]
+
+DRAFT
+
+What does "chief executive" mean?
+My opinion: The person with ultimate responsibility for a good outcome.
+
+*Execution*:
+
+- are the overall priorities right?
+- are we doing the right things to hit the overall priorities?
+
+*Execution for developers*.
+
+- what things should I be making progress on today?
+- have I made progress on the things I should today?
+
+*a process has a job to be done*.
+if you don't know a process's job to be done, you
+
+1. Either haven't done your job as a leader building strategic context,
+2. or the process should should be stopped.
+
+As a leader, you need to know why things are being done.
+
+This is a burden, but also a fine way to judge /everything/.
+If you know /why/ initiatives are worked on, you can judge whether the initiative works as it should.
+
+*the job to be done for a meeting* TODO

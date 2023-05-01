@@ -99,7 +99,7 @@ In a mix of Norwegian and English, sorry.
 - *Unix og Unix-verktøy*
   - Editoren min - en investering.
   - Git
-  - The shell
+  - Terminal emulator and shell
   - ---
   - Curl
   - jq

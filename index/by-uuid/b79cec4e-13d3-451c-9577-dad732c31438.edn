@@ -1,0 +1,8 @@
+{:slug "sqlite",
+ :title "sqlite",
+ :readiness :wtf-is-this,
+ :uuid "b79cec4e-13d3-451c-9577-dad732c31438",
+ :author-url "https://teod.eu",
+ :created "2023-05-01",
+ :lang :en,
+ :form :remote-reference}

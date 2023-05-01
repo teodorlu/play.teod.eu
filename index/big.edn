@@ -849,6 +849,14 @@
   :created "2022-07-16",
   :uuid "7bba802d-4788-4858-a6ea-d9eb29ae9e3c",
   :lang :en}
+ {:slug "sqlitebrowser",
+  :title "sqlitebrowser",
+  :readiness :wtf-is-this,
+  :uuid "7c092c90-0868-44a1-b17e-fcc5be10c1ce",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
+  :lang :en,
+  :form :remote-reference}
  {:slug "amedia",
   :title "Amedia",
   :readiness :wtf-is-this,
@@ -1263,6 +1271,14 @@
   :uuid "b7518497-f161-498b-a670-c74ba7e8b4b4",
   :author-url "https://teod.eu",
   :created "2023-03-11",
+  :lang :en,
+  :form :remote-reference}
+ {:slug "sqlite",
+  :title "sqlite",
+  :readiness :wtf-is-this,
+  :uuid "b79cec4e-13d3-451c-9577-dad732c31438",
+  :author-url "https://teod.eu",
+  :created "2023-05-01",
   :lang :en,
   :form :remote-reference}
  {:slug "why-dont-we-have-a-strategy",

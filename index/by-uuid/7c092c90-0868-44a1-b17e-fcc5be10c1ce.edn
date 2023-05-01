@@ -1,0 +1,8 @@
+{:slug "sqlitebrowser",
+ :title "sqlitebrowser",
+ :readiness :wtf-is-this,
+ :uuid "7c092c90-0868-44a1-b17e-fcc5be10c1ce",
+ :author-url "https://teod.eu",
+ :created "2023-05-01",
+ :lang :en,
+ :form :remote-reference}

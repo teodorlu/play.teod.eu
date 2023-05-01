@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: b79cec4e-13d3-451c-9577-dad732c31438
+:END:
+#+TITLE: sqlite
+
+[[file:..][..]]
+
+https://sqlite.org/index.html

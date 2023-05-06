@@ -6,3 +6,6 @@
 [[file:..][..]]
 
 https://babashka.org/
+
+Babashka is a fast Clojure runtime well suited for shell scripting.
+The Babashka book is a good place to get started: https://book.babashka.org/

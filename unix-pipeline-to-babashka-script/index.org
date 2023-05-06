@@ -5,4 +5,17 @@
 
 [[file:..][..]]
 
-DRAFT
+[[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] is a great way to write shell scripts.
+But Unix pipelines are also great!
+Want to know how to make those pipelines in Babashka?
+Please read on.
+
+#+begin_src bash
+find .. | grep index.org | xargs cat | grep -i lisp | wc -l
+#+end_src
+
+#+RESULTS:
+: 57
+
+
+If you know how

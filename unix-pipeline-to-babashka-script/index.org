@@ -10,7 +10,7 @@ But Unix pipelines are also great!
 Want to know how to make those pipelines in Babashka?
 Please read on.
 
-#+begin_src bash
+#+begin_src bash :exports both
 find .. | grep index.org | xargs cat | grep -i lisp | wc -l
 #+end_src
 

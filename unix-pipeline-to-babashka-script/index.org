@@ -20,3 +20,7 @@ find .. | grep index.org | xargs cat | grep -i lisp | wc -l
 : 57
 
 Let's translate that pipeline step by step to Babashka.
+
+#+begin_src babashka :exports both
+(+ 1 2)
+#+end_src

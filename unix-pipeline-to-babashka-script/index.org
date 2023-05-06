@@ -10,6 +10,8 @@ But Unix pipelines are also great!
 Want to know how to make those pipelines in Babashka?
 Please read on.
 
+Here's a Unix pipeline count count how many times I've mentioned Lisp on my site:
+
 #+begin_src bash :exports both
 find .. | grep index.org | xargs cat | grep -i lisp | wc -l
 #+end_src
@@ -17,5 +19,4 @@ find .. | grep index.org | xargs cat | grep -i lisp | wc -l
 #+RESULTS:
 : 57
 
-
-If you know how
+Let's translate that pipeline step by step to Babashka.

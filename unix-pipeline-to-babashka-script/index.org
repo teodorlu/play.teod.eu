@@ -21,6 +21,10 @@ find .. | grep index.org | xargs cat | grep -i lisp | wc -l
 
 Let's translate that pipeline step by step to Babashka.
 
-#+begin_src babashka :exports both
-(+ 1 2)
+#+begin_src bash :exports both
+bb -e <<EOF
+(+ 1 2 3)
+EOF
 #+end_src
+
+#+RESULTS:

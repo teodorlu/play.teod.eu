@@ -210,6 +210,13 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "planning",
+  :title "planning",
+  :readiness :wtf-is-this,
+  :uuid "1ded911f-fc29-4a5c-9a45-0f2ce6c210c3",
+  :author-url "https://teod.eu",
+  :created "2023-05-07",
+  :lang :en}
  {:slug "10x-fanout",
   :title "10X fanout",
   :readiness :wtf-is-this,

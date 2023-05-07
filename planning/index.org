@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 1ded911f-fc29-4a5c-9a45-0f2ce6c210c3
+:END:
+#+TITLE: planning
+
+[[file:..][..]]
+
+DRAFT
+
+We plan in order to ensure fractal continuity in intent over time.

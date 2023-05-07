@@ -9,4 +9,4 @@ DRAFT
 
 We plan to ensure fractal continuity in intent over time.
 
-Per 2023-05-07, by current best take on planning is the section *Planning: making stable, agile systems by setting static-dynamic boundaries* in [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]].
+Per 2023-05-07, by current best take on planning is the section *Planning: making stable, agile systems by setting static-dynamic boundaries* in [[id:c62978a1-8081-4d44-9af4-93327f387085][Static-dynamic interaction]] (written in December 2018).

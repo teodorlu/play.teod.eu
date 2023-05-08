@@ -78,7 +78,7 @@ Vi ønsket å vise at med noen barrierer og hopping er det fortsatt mulig
 videoen vist:
 
 #+BEGIN_EXPORT html
-<iframe class="youtube-video" src="https://www.youtube.com/watch?v=8FpleWuQN2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  class="youtube-video" src="https://www.youtube.com/embed/8FpleWuQN2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+END_EXPORT
 
 Her sliter en spilljournalist med å mestre mekanikkene i en turial.

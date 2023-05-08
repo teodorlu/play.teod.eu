@@ -14,7 +14,7 @@ html {
 </style>
 #+end_export
 
-Opplegget er laget av Eivind og Finn.
+Opplegget er laget og gjennomført av Eivind Yu Nilsen og Finn.
 Sammendraget er skrevet av Finn.
 
 Sammendrag fra fagkveld 3.Mai 2023.

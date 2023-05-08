@@ -105,9 +105,3 @@ så bra ut da jeg scrubbet dem 🙈)
 * Modifiser spillet med det du har lært
 
 Be gjerne om hjelp fra [[https://garasjen.slack.com/archives/C01LPT4GB8R][#spillutvikling på Slack]]!
-
-* teodor tester
-
-#+begin_export html
-<iframe class="youtube-video" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0"></iframe>
-#+end_export

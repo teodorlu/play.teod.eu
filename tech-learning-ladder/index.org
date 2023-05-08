@@ -9,14 +9,15 @@ Timestamp: 2023-05-01
 
 As a tech person, what might one learn?
 
-I find that to be a hard question.
-Our industry is moving.
-Our tools are changing.
-And as we get better, we gain agility.
-We don't slow down, we speed up.
+That's a hard question.
+Our industry is moving, and our tools are chaning.
+And as we get better, the speed of change increases.
 
-So I'm hesitant to leave this document as /the answer for forever/.
-I'll strive for [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] where possible, but not at the expense of clarity.
+I don't presume to be able to find a final answer to this question.
+I'll aim for:
+
+1. Clarity
+2. Then [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] (where possible)
 
 -----
 

@@ -11,6 +11,14 @@ html {
     color: #ffffff;
     background-color: #222c37;
 }
+
+a {
+    color: #aaaaff
+}
+
+a:visited {
+    color: #5555aa
+}
 </style>
 #+end_export
 

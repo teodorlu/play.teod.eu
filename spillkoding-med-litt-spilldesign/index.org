@@ -13,11 +13,11 @@ html {
 }
 
 a {
-    color: #D4F600;
+    color: #F39C12;
 }
 
 a:visited {
-    color: #D4F600;
+    color: #D35400;
 }
 </style>
 #+end_export

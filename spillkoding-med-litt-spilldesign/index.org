@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 #+begin_quote
-Opplegget er laget av Finn. (Finn, vil du ha lenke til deg selv eller ikke?)
+Opplegget er laget av Eivind og Finn.
 
 Sammendrag fra fagkveld 3.Mai 2023
 

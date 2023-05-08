@@ -215,3 +215,10 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
     - "300 ms"
     - https://danluu.com/input-lag/
   - Trege og raske CLI-verktøy -- og hvordan de er bygget
+- *Mobilutvikling*
+  - Flutter
+  - React native
+
+Spør etter: under hver kategori, hva bør vi gjøre?
+
+Helst: så vi er klare for nyansatte i august.

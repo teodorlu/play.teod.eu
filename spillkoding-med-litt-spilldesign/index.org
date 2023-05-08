@@ -5,13 +5,10 @@
 
 [[file:..][..]]
 
-#+begin_quote
 Opplegget er laget av Eivind og Finn.
 
-Sammendrag fra fagkveld 3.Mai 2023
-
-Tid for å gjennomføre: 1-2 timer
-#+end_quote
+Sammendrag fra fagkveld 3.Mai 2023.
+Tid for å gjennomføre: 1-2 timer.
 
 * Om sammendraget
 

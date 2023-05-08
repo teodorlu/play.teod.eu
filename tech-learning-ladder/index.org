@@ -228,3 +228,4 @@ teodor sammendrag
 1. viktige spørsmål:
    1. hvordan skal vi bruke lista til å hjelpe nyansatte denne uka?
    2. hvordan skal vi bruke lista til å hjelpe de som starter i august?
+2. skal vi bruke kateogriene til å holde oversikt over "artifacts" (feks sammendrag spillutvikling)?

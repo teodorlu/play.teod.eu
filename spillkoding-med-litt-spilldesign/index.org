@@ -48,7 +48,7 @@ kurssammendrag.
 
 For mac:
 
-- Gå til unity.com/download
+- Gå til https://unity.com/download
 
 - Last ned for macos (scroll litt lenger ned på sida)
 

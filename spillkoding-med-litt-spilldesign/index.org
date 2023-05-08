@@ -5,7 +5,6 @@
 
 [[file:..][..]]
 
-
 #+begin_quote
 Opplegget er laget av Finn. (Finn, vil du ha lenke til deg selv eller ikke?)
 

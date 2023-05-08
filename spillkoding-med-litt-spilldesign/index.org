@@ -5,6 +5,15 @@
 
 [[file:..][..]]
 
+#+begin_export html
+<style>
+html {
+    color: #ffffff;
+    background-color: #222c37;
+}
+</style>
+#+end_export
+
 Opplegget er laget av Eivind og Finn.
 Sammendraget er skrevet av Finn.
 

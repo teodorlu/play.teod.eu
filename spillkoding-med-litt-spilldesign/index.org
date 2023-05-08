@@ -77,6 +77,10 @@ Vi ønsket å vise at med noen barrierer og hopping er det fortsatt mulig
 å lage et utfordrende spill. For great fun and profit ble denne youtube
 videoen vist:
 
+#+BEGIN_EXPORT html
+<iframe class="youtube-video" src="https://www.youtube.com/watch?v=8FpleWuQN2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+END_EXPORT
+
 Her sliter en spilljournalist med å mestre mekanikkene i en turial.
 
 * Lag et plattformspill med hjelp fra +Eivind+ Unitys 2D tutorial
@@ -87,7 +91,13 @@ lar dere lage et 2D platformspill derfra.
 
 For en no code approach bruk denne:
 
+https://learn.unity.com/tutorial/video-2d-game-kit-walkthrough#5c7f8528edbc2a002053b76d
+
 Hvis du kunne tenkt deg å lære scripting bruk denne:
+
+#+BEGIN_EXPORT html
+<iframe class="youtube-video" src="https://www.youtube.com/watch?v=nPigL-dIqgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+END_EXPORT
 
 (Jeg sitter uten headset så har ikke sjekket det de sier, men videoene
 så bra ut da jeg scrubbet dem 🙈)

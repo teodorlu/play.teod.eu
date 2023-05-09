@@ -21,8 +21,7 @@ Someone once asked Somerset Maugham if he wrone on a schedule, or only when stru
 | framtid | nåtid             |
 
 trust can bridge the gap.
-but you can safely [[id:79d9c6f5-7be4-4f4e-b418-321c12e8c39f][defer the trust problem]].
-for some time.
+but you can safely [[id:79d9c6f5-7be4-4f4e-b418-321c12e8c39f][defer the trust problem]] for some time.
 then you must face it.
 If you don't, you stay in Neverland and risk never growing up.
 

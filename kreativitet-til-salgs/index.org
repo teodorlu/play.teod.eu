@@ -40,3 +40,9 @@ sitat david deutsch
 
 — [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]], [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]]
 #+end_quote
+
+#+begin_quote
+In theory there is no difference between theory and practice. In practice, there is.
+
+— Yogi Berra
+#+end_quote

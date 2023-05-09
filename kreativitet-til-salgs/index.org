@@ -15,12 +15,10 @@ Someone once asked Somerset Maugham if he wrone on a schedule, or only when stru
 - [[id:c24fb740-235f-4798-aee6-a3075a45fef6][Steven Pressfield]], [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]]
 #+end_quote
 
-
-
-| individuelt | kollektivt        |
-| tekstur     | glatthet          |
-| fantasi     | objekter i verden |
-| framtid     | nåtid             |
+| individ | kollektiv         |
+| tekstur | glatthet          |
+| fantasi | objekter i verden |
+| framtid | nåtid             |
 
 trust can bridge the gap.
 but you can safely [[id:79d9c6f5-7be4-4f4e-b418-321c12e8c39f][defer the trust problem]].

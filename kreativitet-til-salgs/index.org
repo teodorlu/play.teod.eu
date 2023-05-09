@@ -58,9 +58,9 @@ Det som følger er valgfritt.
 | tekstur      | glatthet          |
 | fantasi      | objekter i verden |
 | framtid      | nåtid             |
-| abstrakt     | konkret           |
 | produkt      | arbeidsflyt       |
 | min kontekst | delt kontekst     |
+| abstrakt     | konkret           |
 
 kun for kodere:
 

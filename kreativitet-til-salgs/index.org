@@ -30,7 +30,9 @@ If you don't, you stay in Neverland and risk never growing up.
 | teori         | praksis   | David Deutsch      |
 
 #+begin_quote
-sitat sione de beavouir
+Man must not attempt to dispel the ambiguity of his being but, on the contrary, accept the task of realizing it.
+
+- [[id:40629ca8-68df-40e9-a40c-33460b683df8][Simone de Beauvoir]], [[id:63ee3837-fb0e-43c9-81fd-1f0b5b2c7bd6][The Ethics of Ambiguity]]
 #+end_quote
 
 #+begin_quote

@@ -489,6 +489,14 @@
   :created "2023-03-10",
   :lang :en,
   :form :remote-reference}
+ {:slug "simone-de-beauvoir",
+  :title "Simone de Beauvoir",
+  :readiness :wtf-is-this,
+  :uuid "40629ca8-68df-40e9-a40c-33460b683df8",
+  :author-url "https://teod.eu",
+  :created "2023-05-09",
+  :lang :en,
+  :form :remote-reference}
  {:slug "karl-popper",
   :title "Karl Popper",
   :readiness :wtf-is-this,
@@ -740,6 +748,14 @@
   :author-url "https://teod.eu",
   :created "2022-09-17",
   :lang :en}
+ {:slug "the-ethics-of-ambiguity",
+  :title "The Ethics of Ambiguity",
+  :readiness :wtf-is-this,
+  :uuid "63ee3837-fb0e-43c9-81fd-1f0b5b2c7bd6",
+  :author-url "https://teod.eu",
+  :created "2023-05-09",
+  :lang :en,
+  :form :remote-reference}
  {:slug "array-programming",
   :title "Array programming",
   :readiness :wtf-is-this,

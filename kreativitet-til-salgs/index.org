@@ -6,6 +6,11 @@
 [[file:..][..]]
 
 | kreativitet | salg              |
+
+#+begin_quote
+sitat steven pressfield
+#+end_quote
+
 | individuelt | kollektivt        |
 | tekstur     | glatthet          |
 | fantasi     | objekter i verden |
@@ -15,3 +20,11 @@
 
 | transcendence | facticity | Simone de Beauvoir |
 | teori         | praksis   | David Deutsch      |
+
+#+begin_quote
+sitat sione de beavouir
+#+end_quote
+
+#+begin_quote
+sitat david deutsch
+#+end_quote

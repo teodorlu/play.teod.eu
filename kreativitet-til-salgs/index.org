@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: 12fea9ba-c435-4158-ae33-d9fc9fa45a44
+:END:
+#+TITLE: Kreativitet til salgs
+
+[[file:..][..]]
+
+| kreativitet | salg              |
+| individuelt | kollektivt        |
+| tekstur     | glatthet          |
+| fantasi     | objekter i verden |
+| framtid     | nåtid             |
+
+/defer the trust problem/
+
+| transcendence | facticity | Simone de Beauvoir |
+| teori         | praksis   | David Deutsch      |

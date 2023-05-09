@@ -130,6 +130,13 @@
   :created "2023-03-27",
   :lang :en,
   :form :remote-reference}
+ {:slug "kreativitet-til-salgs",
+  :title "Kreativitet til salgs",
+  :readiness :wtf-is-this,
+  :uuid "12fea9ba-c435-4158-ae33-d9fc9fa45a44",
+  :author-url "https://teod.eu",
+  :created "2023-05-09",
+  :lang :en}
  {:slug "dynamic-initiative",
   :title "dynamic initiative",
   :readiness :wtf-is-this,
@@ -418,7 +425,7 @@
   :uuid "36901875-2032-48fe-a952-9877b88df98e",
   :author-url "https://teod.eu",
   :created "2023-05-08",
-  :lang :en}
+  :lang :no}
  {:slug "david-deutsch",
   :title "David Deutsch",
   :readiness :wtf-is-this,

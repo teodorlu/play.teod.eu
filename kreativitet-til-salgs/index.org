@@ -8,8 +8,14 @@
 | kreativitet | salg              |
 
 #+begin_quote
-sitat steven pressfield
+Someone once asked Somerset Maugham if he wrone on a schedule, or only when struck by inspiration.
+"I only write when inspiration strikes", he replied.
+"Fortunately, it strikes every morning at nine o'clock sharp."
+
+- [[id:c24fb740-235f-4798-aee6-a3075a45fef6][Steven Pressfield]], [[id:fa08845b-32ed-4e74-a458-de85884da52d][The War of Art]]
 #+end_quote
+
+
 
 | individuelt | kollektivt        |
 | tekstur     | glatthet          |

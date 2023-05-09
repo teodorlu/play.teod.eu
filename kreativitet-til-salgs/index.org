@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-| kreativitet | salg |
+kreativitet ⟷ salg
 
 #+begin_quote
 Someone once asked Somerset Maugham if he wrone on a schedule, or only when struck by inspiration.

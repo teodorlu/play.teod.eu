@@ -55,6 +55,7 @@ Og når jobben er gjort, slipper vi arbeidet ut i verden.
 | tekstur     | glatthet          |
 | fantasi     | objekter i verden |
 | framtid     | nåtid             |
+| abstrakt    | konkret           |
 
 trust can bridge the gap.
 but you can safely [[id:79d9c6f5-7be4-4f4e-b418-321c12e8c39f][defer the trust problem]] for some time.

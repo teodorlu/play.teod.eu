@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: 79d9c6f5-7be4-4f4e-b418-321c12e8c39f
+:END:
+#+TITLE: defer the trust problem
+
+[[file:..][..]]
+
+DRAFT
+
+when creating something new, defer the trust problem.
+
+publish for those who share context with you first.
+
+publish first for those whom you can trust.
+
+/then/
+
+when selling and scaling, you need to solve the trust problem.
+
+you need to make sure that your product is usable outside of the high-trust core environment.

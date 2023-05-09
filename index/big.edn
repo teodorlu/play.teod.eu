@@ -136,7 +136,7 @@
   :uuid "12fea9ba-c435-4158-ae33-d9fc9fa45a44",
   :author-url "https://teod.eu",
   :created "2023-05-09",
-  :lang :en}
+  :lang :no}
  {:slug "dynamic-initiative",
   :title "dynamic initiative",
   :readiness :wtf-is-this,
@@ -846,6 +846,13 @@
   :uuid "79498331-5aa8-4282-ad1e-15e7ca755fbb",
   :author-url "https://teod.eu",
   :created "2023-03-10",
+  :lang :en}
+ {:slug "defer-the-trust-problem",
+  :title "defer the trust problem",
+  :readiness :wtf-is-this,
+  :uuid "79d9c6f5-7be4-4f4e-b418-321c12e8c39f",
+  :author-url "https://teod.eu",
+  :created "2023-05-09",
   :lang :en}
  {:slug "img",
   :title "img",

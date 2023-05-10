@@ -30,3 +30,7 @@ It took me a long time to get comfortable with this idea, and really, it was SIC
 #+begin_quote
 and then the linear algebra textbook goes on to show that the dual space is isomorphic to the original vector space, leaving you wondering why the whole idea was introduced.
 #+end_quote
+
+questions:
+
+1. what is the metric tensor?

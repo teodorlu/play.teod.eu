@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 76e53c23-5a32-4e9e-b735-426fbc9f6982
+:END:
+#+TITLE: Colin Smith
+
+[[file:..][..]]
+
+https://github.com/littleredcomputer

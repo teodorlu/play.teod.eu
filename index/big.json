@@ -969,6 +969,15 @@
   "created" : "2023-03-25",
   "lang" : "en"
 }, {
+  "slug" : "colin-smith",
+  "title" : "Colin Smith",
+  "readiness" : "wtf-is-this",
+  "uuid" : "76e53c23-5a32-4e9e-b735-426fbc9f6982",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-10",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "tillit-kvalitet-intensjon-i-relasjoner",
   "title" : "Tillit, kvalitet og intensjon i relasjoner: en mentalmodell for å få ting gjort",
   "readiness" : "wtf-is-this",
@@ -1516,6 +1525,14 @@
   "created" : "2023-05-01",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "tensor-calculus-101",
+  "title" : "tensor calculus 101",
+  "readiness" : "wtf-is-this",
+  "uuid" : "b8e8b0e5-0f49-4eee-a338-6265176ebfdc",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-10",
+  "lang" : "en"
 }, {
   "slug" : "why-dont-we-have-a-strategy",
   "title" : "Why don't we have a strategy?",

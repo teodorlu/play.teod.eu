@@ -29,7 +29,7 @@ Du har gjort ditt beste.
 Noen ganger må vi ha tykk hud.
 
 Neste dag klokker vi inn på nytt om morgenen.
-Vi lover oss lev å få gjort en fornuftig ting før lunsj, og en fornuftig ting etter lunsj.
+Vi lover oss selv å få gjort en fornuftig ting før lunsj, og en fornuftig ting etter lunsj.
 Vi tar en kaffe med utvikleren vi jobber med, og ler av hvor mange bugs vi har.
 
 Utvikling er vanskelig.

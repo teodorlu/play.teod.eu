@@ -92,3 +92,7 @@ Og hvis du vil lære å gjøre det selv, kan du bare fortsette å lese!
 
 <div id="example1"></div>
 #+end_export
+* Hva er hydrering i browser? Hvorfor gjør man det?
+Optional!
+* Hva er tailwind? Hvorfor bruker man tailwind?
+Optional!

@@ -5,12 +5,13 @@
 
 [[file:..][..]]
 
+/Skrevet av Ole Jacob og Teodor/
+
 Hvordan funker egentlig lappebrett-animasjonen på https://www.iterate.no/?
 
 Den animasjonen er det [[id:c02b9b51-6ea2-47a9-8037-f0346a7974a7][Ole Jacob]] som har laget.
 Og hvis du vil lære å gjøre det selv, kan du bare fortsette å lese!
 
-Denne teksten er skrevet av Ole Jacob og Teodor.
 
 #+begin_export html
 <style>

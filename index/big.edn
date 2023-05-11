@@ -295,6 +295,13 @@
   :author-url "https://teod.eu",
   :uuid "276c7103-9366-4326-8cfd-3c0871be3c64",
   :lang :en}
+ {:slug "css-animasjoner-interate.no",
+  :title "CSS-animasjoner på Iterate.no",
+  :readiness :wtf-is-this,
+  :uuid "2845f4a3-8251-4012-89aa-5a51384601e6",
+  :author-url "https://teod.eu",
+  :created "2023-05-11",
+  :lang :en}
  {:slug "tech-learning-ladder",
   :title "tech learning ladder",
   :readiness :wtf-is-this,
@@ -1383,6 +1390,14 @@
   :readiness :forever-incomplete,
   :lang :en,
   :uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e"}
+ {:slug "ole-jacob",
+  :title "Ole Jacob",
+  :readiness :wtf-is-this,
+  :uuid "c02b9b51-6ea2-47a9-8037-f0346a7974a7",
+  :author-url "https://teod.eu",
+  :created "2023-05-11",
+  :lang :en,
+  :form :remote-reference}
  {:slug "documentation",
   :title "Writing documentation is best viewed as creative work",
   :readiness :wtf-is-this,

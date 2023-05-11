@@ -12,6 +12,46 @@ Hvordan funker egentlig lappebrett-animasjonen på https://www.iterate.no/?
 Den animasjonen er det [[id:c02b9b51-6ea2-47a9-8037-f0346a7974a7][Ole Jacob]] som har laget.
 Og hvis du vil lære å gjøre det selv, kan du bare fortsette å lese!
 
+* Slik lager du en CSS-animasjon
+#+begin_src html
+<style>
+#example1 {
+  /* animation properties */
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  /* other properties */
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  z-index: -1;
+}
+
+@keyframes my-animation {
+  from {
+    background-color: #ff7a59;
+    width: 300px;
+    top: 10px;
+  }
+  to {
+    background-color: #33475b;
+    width: 50px;
+    top: 100px;
+  }
+}
+</style>
+
+<div id="example1"></div>
+#+end_src
 
 #+begin_export html
 <style>
@@ -52,10 +92,3 @@ Og hvis du vil lære å gjøre det selv, kan du bare fortsette å lese!
 
 <div id="example1"></div>
 #+end_export
-
-#+begin_quote
-TODO
-
-skal vi ta med oss en gif / kort video av bretten?
-eventuelt også med "slowdown"?
-#+end_quote

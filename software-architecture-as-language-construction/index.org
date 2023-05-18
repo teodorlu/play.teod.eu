@@ -5,30 +5,27 @@
 
 [[./..][..]]
 
-#+begin_verse
-Idea
 
-Language construction as the major metaphor for software architecture
+*Idea*
+
+Language construction as the major metaphor for software architecture.
 
 We either
 
-    construct language
+- /construct language/
 
-or
-
-    apply language to solve business problems.
+- or /apply language to solve business problems/.
 
 Principles for language construction
 
-    minimal number of moving pieces
+- minimal number of moving pieces
 
-    each sentence reads on its own
+- each sentence reads on its own
 
-    components have no more dependencies than they actually need
+- components have no more dependencies than they actually need
 
 Principles for applying language to solve business problems
 
-    straightforward is best - avoid indirection
+- straightforward is best, avoid indirection
 
-    solving business problems when the right modules / words / namespaces are provided should be trivial
-#+end_verse
+- solving business problems when the right modules / words / namespaces are provided should be trivial

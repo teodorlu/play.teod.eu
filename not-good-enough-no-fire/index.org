@@ -23,7 +23,9 @@ Or behold the flowing years from the Sea returning?
       Theoden speaking to Gamling before the Uruk-hai attack Helm's Deep.
 #+end_quote
 
-..
+Where now are the horse and the rider?
+Where is the horn that was blowing?
+Is it all lost?
 
 #+begin_quote
 At that sound, the bent shape of the king sprang suddenly erect.
@@ -31,11 +33,12 @@ Tall and proud he seemed again; and rising in his stirrups he cried in a loud vo
 
 #+begin_verse
  
-    Arise, arise, Riders of Théoden!
-    Fell deeds awake: fire and slaughter!
-    spear shall be shaken, shield shall be splintered,
-    a sword-day, a red day, ere the sun rises!
-    Ride now, ride now! Ride to Gondor!
+        Arise, arise, Riders of Théoden!
+        Fell deeds awake: fire and slaughter!
+        spear shall be shaken, shield shall be splintered,
+        a sword-day, a red day, ere the sun rises!
+        Ride now, ride now! Ride to Gondor!
+ 
 #+end_verse
 
 With that he seized a great horn from Guthláf his banner-bearer, and he blew such a blast upon it that it burst asunder.
@@ -43,7 +46,8 @@ And straightway all the hors in the host were lifted up in music, and the blowin
 
 #+begin_verse
  
-    Ride now, ride now! Ride to Gondor!
+        Ride now, ride now! Ride to Gondor!
+ 
 #+end_verse
 
 Suddenly the king cried to Snowmane, and the horse sprang away.

@@ -1808,6 +1808,15 @@
   "created" : "2023-03-27",
   "lang" : "en"
 }, {
+  "slug" : "twitter_rpg_strategy_guide.txt",
+  "title" : "twitter_rpg_strategy_guide.txt",
+  "readiness" : "wtf-is-this",
+  "uuid" : "e1a74f45-bb7b-46e7-8842-7977dbd48fb6",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-20",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "stupid-games-stupid-prizes",
   "title" : "Play stupid games, win stupid prizes",
   "readiness" : "wtf-is-this",

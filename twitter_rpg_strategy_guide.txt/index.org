@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID: e1a74f45-bb7b-46e7-8842-7977dbd48fb6
+:END:
+#+TITLE: twitter_rpg_strategy_guide.txt
+
+[[file:..][..]]
+
+By [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]].
+Originally posted on Twitter:
+https://twitter.com/visakanv/status/1094684057173016581
+
+I decided I wanted to take this text seriously, so I'm transcribing and editing for sane HTML formatting.
+What follows is Visa's words, not mine.
+
+Visa, if you read this and want me to take this down, please let me know.
+
+---Teodor
+
+* twitter_rpg_strategy_guide.txt
+
+Twitter is a multiplayer real-time virtual world, primarily text-based with limited multimedia support.
+It combines elements of role-playing games, hack and slash, player versus player, interactive fiction and online chat.
+
+Players can read, view and contribute descriptions of objects, other players, non-player characters, and actions performed in the virtual world, as well as the "real" world.
+Players typically interact with each other by utilizing strings that resemble natural language.
+
+While traditional MUDs typically implement RPGs set in distinct fantasy worlds populated by fictional races and monsters, with players choosing classes in order to gain specific skills or powers, Twitter allows every player to project their own fantasy and define their own game.
+
+The flexible nature of Twitter makes it difficult for any singulra definition of "the game" to become canonical. Conflict between players with different interpretations of Twitter is a key feature of Twitter itself.
+Indeed, one of the most popular games is "hey, fuck that guy".
+
+Unsurprisingly, few players put much thought into precisely defining the game that they are playing.
+Most players "pick it up" organically as they go along, inheriting the unwritten rules and norms of their peers via imitation and (limited) experimentation.
+
+Twitter is also searchable, and allows tweets to be "threaded" in chains.
+
+This allows skilled players to build incredibly complex tapestries of hypertext, consisting of thousands of tweets.
+
+Why would such prolific players choose Twitter as a medium, rather than "websites" or "books", which appear to be better suited to large volumes of content?
+
+Because Twitter allows any player to interact with any other player's tweets.
+
+Most casual players do not appear to have caught on to the true potential utility of Twitter, or perhaps they are indifferent to it.
+
+A web of tweets is a living entity that allows players to meet, interact and engage with 1000s of others /at the level of individual thoughts/.
+
+Properly constructed, a web of tweets allows you to:
+
+- witness how other players discover your tweets, via their patterns of likes, retweets and quote tweets
+
+- connect each fragmented thought and experience into the part of a greater whole
+
+- recognise and embellish patterns in your own play.
+
+We have not even begun talking about relationships.
+
+
+
+* Teodor's commentary
+** 2023-05-20
+*** "strings that resemble natural language"
+😂
+
+There's so much weirdness on Twitter.

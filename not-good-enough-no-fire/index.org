@@ -56,10 +56,10 @@ Motivation.
 Lack of agency.
 ** ?
 Engineering
-so SLOW
+SO SLOW
 
 Programming
-so much HASSLE
+SO MUCH HASSLE
 
 prometheus didn't sacrifice himself to give us fire for this.
 

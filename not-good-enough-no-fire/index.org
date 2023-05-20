@@ -79,6 +79,15 @@ And then all the host of Rohan burst into song, and they sang as they slew, for 
    ---J.R.R Tolkien, /The Return of the King/, chapter 5, "The Ride of the Rohirrim".
 #+end_quote
 
+#+begin_verse
+Arise, arise, Riders of Théoden!
+Fell deeds awake: fire and slaughter!
+spear shall be shaken, shield shall be splintered,
+a sword-day, a red day, ere the sun rises!
+Ride now, ride now! Ride to Gondor!
+
+Ride now, ride now! Ride to Gondor!
+#+end_verse
 
 * old notes
 School system.

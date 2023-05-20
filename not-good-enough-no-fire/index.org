@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID: 139bfaef-5305-4f5d-89a0-f34a61bca27d
+:END:
+#+TITLE: not good enough, no fire
+
+[[file:..][..]]
+
+DRAFT
+
+Prometheus stole fire from the gods, gave it to us, and suffered an eternity for us to do ... /this/?
+
+#+begin_quote
+Where now are the horse and the rider? Where is the horn that was blowing?
+Where is the helm and the hauberk, and the bright hair flowing?
+Where is the harp on the harpstring, and the red fire glowing?
+Where is the spring and the harvest and the tall corn growing?
+They have passed like rain on the mountain, like a wind in the meadow;
+The days have gone down in the West behind the hills into shadow.
+Who shall gather the smoke of the deadwood burning,
+Or behold the flowing years from the Sea returning?
+
+- J.R.R Tolkien, /The Two Towers/
+#+end_quote
+
+* old notes
+School system.
+homework, control. Making a fuzz. Motivation. Lack of agency.
+** ?
+Engineering
+so SLOW
+
+Programming
+so much HASSLE
+
+prometheus didn't sacrifice himself to give us fire for this.
+
+FIRE!
+
+- composition
+- feedback cycle
+- power
+** composition, feedback cycle, power
+** I WANT TO FEEL THE FLAMES AND ALMOST GET BURNED

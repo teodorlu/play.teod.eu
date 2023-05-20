@@ -158,6 +158,14 @@
   "created" : "2023-05-09",
   "lang" : "no"
 }, {
+  "slug" : "not-good-enough-no-fire",
+  "title" : "not good enough, no fire",
+  "readiness" : "wtf-is-this",
+  "uuid" : "139bfaef-5305-4f5d-89a0-f34a61bca27d",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-20",
+  "lang" : "en"
+}, {
   "slug" : "dynamic-initiative",
   "title" : "dynamic initiative",
   "readiness" : "wtf-is-this",
@@ -343,7 +351,7 @@
   "uuid" : "2845f4a3-8251-4012-89aa-5a51384601e6",
   "author-url" : "https://teod.eu",
   "created" : "2023-05-11",
-  "lang" : "en"
+  "lang" : "no"
 }, {
   "slug" : "tech-learning-ladder",
   "title" : "tech learning ladder",

@@ -11,7 +11,7 @@ I'll share a specific approach to make that happen.
 *Motivation*.
 Why do we want to do this?
 To "learn" is one reason.
-But there are three deeper reasons:
+But there are deeper reasons:
 
 1. To build a trust-based mentoring relationship.
 2. To exercise [[id:efbb9f44-9a8e-436e-bf68-ff19d5bd990c][growth mindset]].

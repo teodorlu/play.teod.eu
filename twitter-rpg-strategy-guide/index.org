@@ -16,7 +16,7 @@ Visa, if you read this and want me to take this down, please let me know.
 
 ---Teodor
 
-* twitter_rpg_strategy_guide.txt
+* twitter rpg strategy guide.txt
 
 Twitter is a multiplayer real-time virtual world, primarily text-based with limited multimedia support.
 It combines elements of role-playing games, hack and slash, player versus player, interactive fiction and online chat.

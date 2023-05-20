@@ -7,20 +7,18 @@
 
 DRAFT
 
-Prometheus stole fire from the gods, gave it to us, for ... /this/?
+T-shirt front:
 
-I want a t-shirt with
-
-#+begin_verse
+#+begin_center
 NOT GOOD ENOUGH
-   NO FIRE
-#+end_verse
+NO FIRE
+#+end_center
 
 on the front and
 
-#+begin_verse
+#+begin_center
 Prometheus stole fire from the gods, gave it to us, for ... /this/?
-#+end_verse
+#+end_center
 
 on the back.
 

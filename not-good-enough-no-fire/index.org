@@ -9,16 +9,16 @@ DRAFT
 
 T-shirt front:
 
-#+begin_center
+#+begin_src
 NOT GOOD ENOUGH
-NO FIRE
-#+end_center
+   NO FIRE
+#+end_src
 
 on the front and
 
-#+begin_center
+#+begin_verse
 Prometheus stole fire from the gods, gave it to us, for ... /this/?
-#+end_center
+#+end_verse
 
 on the back.
 

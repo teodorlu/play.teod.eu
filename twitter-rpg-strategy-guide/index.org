@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: e1a74f45-bb7b-46e7-8842-7977dbd48fb6
 :END:
-#+TITLE: twitter_rpg_strategy_guide.txt
+#+TITLE: twitter rpg strategy guide.txt
 
 [[file:..][..]]
 
@@ -71,6 +71,32 @@ At any moment, any player can completely change their experience of Twitter by d
 - What are you tweeting? Why?
 - What exeriences would you like to have? Why?
 - Who would you like to play with? How? Why?
+
+With a little introspection, Twitter can be a tool for self-inquiry, making friends, testing ideas, messing around, finding information, practicing speech, and pretty much anything you like.
+
+It's also, like everything else, just a game.
+
+Have fun!
+
+[16 days of silence]
+
+Honestly, I'm still not done geeking out about how great Twitter is.
+Any tweet from any thread can be reused on any other thread,,,
+do you guys realise how wild that is???
+It allows you to create your own cinematic universe.
+
+#+begin_verse
+follow curiosity
+develop taste
+publish writing
+make friends
+#+end_verse
+
+#+begin_quote
+twitter allows me to do ALL OF THOSE THINGS SIMULTANEOUSLY
+
+branch 👉 https://twitter.com/visakanv/status/1094208757049905152
+#+end_quote
 
 * Teodor's commentary
 ** 2023-05-20

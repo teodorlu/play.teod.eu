@@ -1405,6 +1405,13 @@
   :created "2023-05-11",
   :lang :en,
   :form :remote-reference}
+ {:slug "katta-3b",
+  :title "Katta 3B: grilling på St. Hanshaugen",
+  :readiness :wtf-is-this,
+  :uuid "c02c42ce-5ba4-4957-9752-95a18b120bf1",
+  :author-url "https://teod.eu",
+  :created "2023-05-25",
+  :lang :en}
  {:slug "documentation",
   :title "Writing documentation is best viewed as creative work",
   :readiness :wtf-is-this,

@@ -3,9 +3,9 @@
 :END:
 #+TITLE: Katta 3B: grilling på St. Hanshaugen
 
-#+begin_export html
-<img src="https://oslo-katedral.vgs.no/siteassets/nyheter-blokker-banner/forsidebannere/oslo-katedralskole_banner-forside.png?w=1144&h=250&mode=crop" />
-#+end_export
+[[./349142940_234283459244234_1392398698641717987_n.jpg]]
+
+/(vi skulle helst hatt et bilde av alle, men dette er hva Sara fant!)/
 
 Hei!
 

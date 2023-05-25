@@ -23,7 +23,7 @@ Pakkeliste:
 - noe å sitte på, feks pledd (valgfri)
 - noe å drikke (valgfri)
 - noe å spise (valgfri)
-- eventuelt grille-i-parken-ting (valgfri)
+- eventuelle andre grille-i-parken-ting (valgfri)
 
 Jeg (Teodor) kjøper inn en engangsgrill eller to eller tre.
 Hvis vi har glømt noe annet viktig, kan vi finne en butikk.

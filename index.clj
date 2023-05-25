@@ -28,7 +28,7 @@
 
 (defn category [{:keys [lang readiness form] :as page}]
   (cond
-    (= readiness :noindex) :noindex
+    (= readiness :noindex) :noindex ;; don't link to this at all
     (= form :remote-reference) :remote-reference
     (and (= readiness :wtf-is-this) (= lang :no)) :wtf-is-this-norwegian
     (= lang :no) :norwegian

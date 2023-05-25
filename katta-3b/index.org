@@ -3,6 +3,10 @@
 :END:
 #+TITLE: Katta 3B: grilling på St. Hanshaugen
 
+#+begin_export html
+<img src="https://oslo-katedral.vgs.no/siteassets/nyheter-blokker-banner/forsidebannere/oslo-katedralskole_banner-forside.png?w=1144&h=250&mode=crop" />
+#+end_export
+
 Hei!
 
 Teodor (skriver) og Sara ramblet plutselig borti hverandre på et utested på Grønland.

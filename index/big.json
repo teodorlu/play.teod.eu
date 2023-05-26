@@ -512,6 +512,14 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "dont-assume-trust-build-trust",
+  "title" : "Don't assume trust. Build trust.",
+  "readiness" : "wtf-is-this",
+  "uuid" : "37e07eec-4b5c-498a-875e-b4c4267dbfd2",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-26",
+  "lang" : "en"
+}, {
   "slug" : "reading-it-later",
   "title" : "A \"read it later\" strategy that works",
   "readiness" : "wtf-is-this",
@@ -789,6 +797,14 @@
   "created" : "2023-03-27",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "ikke-anta-tillit-bygg-tillit",
+  "title" : "Ikke anta tillit. Bygg tillit.",
+  "readiness" : "wtf-is-this",
+  "uuid" : "584e220e-be74-4079-94a9-a565624325fb",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-26",
+  "lang" : "en"
 }, {
   "slug" : "trust-quality-intent",
   "title" : "trust, shared sense of quality and shared intent",
@@ -1601,11 +1617,11 @@
 }, {
   "slug" : "katta-3b",
   "title" : "Katta 3B: grilling på St. Hanshaugen",
-  "readiness" : "wtf-is-this",
+  "readiness" : "noindex",
   "uuid" : "c02c42ce-5ba4-4957-9752-95a18b120bf1",
   "author-url" : "https://teod.eu",
   "created" : "2023-05-25",
-  "lang" : "en"
+  "lang" : "no"
 }, {
   "slug" : "documentation",
   "title" : "Writing documentation is best viewed as creative work",
@@ -1816,8 +1832,8 @@
   "created" : "2023-03-27",
   "lang" : "en"
 }, {
-  "slug" : "twitter_rpg_strategy_guide.txt",
-  "title" : "twitter_rpg_strategy_guide.txt",
+  "slug" : "twitter-rpg-strategy-guide",
+  "title" : "twitter rpg strategy guide.txt",
   "readiness" : "wtf-is-this",
   "uuid" : "e1a74f45-bb7b-46e7-8842-7977dbd48fb6",
   "author-url" : "https://teod.eu",

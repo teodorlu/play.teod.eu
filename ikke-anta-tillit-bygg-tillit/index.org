@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 584e220e-be74-4079-94a9-a565624325fb
+:END:
+#+TITLE: Ikke anta tillit. Bygg tillit.
+
+[[file:..][..]]
+
+DRAFT.
+Se også: [[id:37e07eec-4b5c-498a-875e-b4c4267dbfd2][Don't assume trust. Build trust.]]
+
+Outline:
+
+1. Men X hører ikke på meg!
+   Hvis X bare hadde gjort som jeg sa, ville vi ikke hatt dette problemet.
+2. Jeg DIGGER å jobbe med flinke folk med selvinnsikt.
+   Jeg digger å jobbe med nysgjerrige folk med selvinnsikt.
+   Jeg kan jobbe med kompetente folk uten selvinnsikt i en begrenset periode.
+   1. "bortforklaring?"
+   2. Nei -- bygge tillit henger sammen med selvinnsikt.
+      Jeg /vet faktisk ikke/ hvordan dette kan løses på best mulig vis.
+      Da må jeg handle /som om det er sant/.

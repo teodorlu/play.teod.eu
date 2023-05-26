@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID: 37e07eec-4b5c-498a-875e-b4c4267dbfd2
+:END:
+#+TITLE: Don't assume trust. Build trust.
+
+[[file:..][..]]
+
+DRAFT.
+See also: [[id:584e220e-be74-4079-94a9-a565624325fb][Ikke anta tillit. Bygg tillit.]]
+
+#+begin_quote
+Jeg DIGGER å jobbe med flinke folk med selvinnsikt. Jeg digger å jobbe med nysgjerrige folk med selvinnsikt. Jeg tolererer kompetente folk uten selvinnsikt i en begrenset tidsperiode.
+#+end_quote

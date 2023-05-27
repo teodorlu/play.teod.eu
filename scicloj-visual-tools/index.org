@@ -17,6 +17,7 @@ Based on the Clojureverse thread:
 https://clojureverse.org/t/visual-tools-meeting-18-various-updates/9981
 
 1. Welcome / chat (5-10 minutes)
+
 2. (~30 minutes) [[id:bdbed0b8-b25c-4ad3-9c7c-c50215eddc77][Jeremy Vuillermet]] presents /Mosaic/.
    Mosaic is a data-oriented design tool prototype built in clojurescript and inspired by Bret Victor's Drawing Dynamic Visualizations (embedded below).
 
@@ -32,4 +33,3 @@ https://clojureverse.org/t/visual-tools-meeting-18-various-updates/9981
 
 5. Others?
    [[id:6455f952-018a-497a-bfc1-69774f26946a][Sam Ritchie]]?
-** visual-tools meeting 18 -- Teodor prep

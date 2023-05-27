@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 57221ffb-132c-4348-8ba4-5df6cff915d3
+:END:
+#+TITLE: Clojureverse
+
+[[file:..][..]]
+
+https://clojureverse.org/

@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID: 5679f20c-6564-4020-816d-0575c6456451
+:END:
+#+TITLE: Teodor's school system
+
+[[file:..][..]]
+
+DRAFT
+
+At some point in life, I'd love the change to work on this problem.
+
+* 2023-05-27
+** Subjects
+- Analysis
+- Literature
+- Movement
+- Aesthetics.
+
+*Analysis*.
+Science, reason, logic, mathematics, physics.
+Creating systems.
+
+*Literature*.
+Writing, reading, communicating, speaking.
+Theater.
+
+*Movement*.
+Dance, swimming, running, BJJ.
+
+*Aesthetics*.
+Visuals, taste, food.
+History of art.
+
+Problem: where is the adventure?
+Where is the movement into the unknown?
+Perhaps that's not a problem, perhaps that's just a combination.
+/Movement/ into the unknown, in order to find something /aeshetically/ better.
+/Analysis/ of whether it's better, /literature/ about the journey.
+
+Goal: living in a moldable system.
+This sort of combines all the things.
+Don't give kids ipads.
+Give kids something they can explore the inner workings of.
+And something that encourages that exploration /together/.
+(ie what Kay, Papert, et al seem to conclude)
+
+Goal: encourage people that they can /change their circumstances for the better/.
+Your environment is not static, it's dynamic.
+Your environment is meant to be lived in.

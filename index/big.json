@@ -773,6 +773,14 @@
   "lang" : "en",
   "uuid" : "5603700a-9f22-44e2-9e03-f83776e2bfe3"
 }, {
+  "slug" : "teodor-school-system",
+  "title" : "Teodor's school system",
+  "readiness" : "wtf-is-this",
+  "uuid" : "5679f20c-6564-4020-816d-0575c6456451",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-27",
+  "lang" : "en"
+}, {
   "slug" : "xml-on-the-web",
   "title" : "Working with XML on the web",
   "readiness" : "wtf-is-this",
@@ -804,7 +812,7 @@
   "uuid" : "584e220e-be74-4079-94a9-a565624325fb",
   "author-url" : "https://teod.eu",
   "created" : "2023-05-26",
-  "lang" : "en"
+  "lang" : "no"
 }, {
   "slug" : "trust-quality-intent",
   "title" : "trust, shared sense of quality and shared intent",

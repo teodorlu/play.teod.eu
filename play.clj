@@ -279,12 +279,13 @@ Allowed options:
 
       ;; Play file
       (when-not (fs/exists? play-file)
-        (let [page-meta {:title title
-                         :readiness :wtf-is-this
-                         :uuid uuid
-                         :author-url "https://teod.eu"
-                         :created (str/trim (bash "date -I"))
-                         :lang lang}
+        (let [page-meta (into (sorted-map)
+                              {:title title
+                               :readiness :wtf-is-this
+                               :uuid uuid
+                               :author-url "https://teod.eu"
+                               :created (str/trim (bash "date -I"))
+                               :lang lang})
               page-meta (if (:form opts) (assoc page-meta :form (:form opts))
                             page-meta)
               play-file-content (with-out-str (pprint page-meta))

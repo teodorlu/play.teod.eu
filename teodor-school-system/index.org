@@ -16,19 +16,19 @@ The problem is hard, and has been worked on by smart people.
 
 * 2023-05-27
 ** Subjects
-My best bet per 2023-05-27 is these four:
+My best bet per 2023-05-27 is these four (in alphabetical order):
 
+- Aesthetics.
 - Analysis
 - Literature
 - Movement
-- Aesthetics.
 
 Then encourage activities that combine the subjects, for example dance (movement and aesthetics) or system design (aesthetics and analysis).
 
+- *Aesthetics*. Visuals, taste, food. History of art.
 - *Analysis*. Science, reason, logic, mathematics, physics, machines.
 - *Literature*. Writing, reading, communicating, speaking. Theater.
 - *Movement*. Dance, swimming, running, BJJ.
-- *Aesthetics*. Visuals, taste, food. History of art.
 
 Problem: where is the adventure?
 Where is the movement into the unknown?

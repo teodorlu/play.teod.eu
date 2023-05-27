@@ -35,3 +35,5 @@ https://clojureverse.org/t/visual-tools-meeting-18-various-updates/9981
 
 6. Others?
    [[id:6455f952-018a-497a-bfc1-69774f26946a][Sam Ritchie]]?
+** Teodor notes
+Elena is teaching Clojure, and would like to discuss teaching.

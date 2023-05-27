@@ -52,3 +52,29 @@ Joy in aesthetics: "This feels /right/ to me".
 Joy in analysis: "Playing around with this machine is /fun/, it lets me see better, understand better".
 Joy in literature: "Man this story is engaging! I want to take part!"
 Joy in movement: "I feel the flow!"
+** otfrom comments: Where is "Expression"?
+From [[id:8638f5d6-bc22-4f10-a457-ab388c22128b][the Clojurians Slack]] ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685180318899499][thread link]]):
+
+#+begin_quote
+I think you are missing "Expression" in your 4 overarching things. It might be captured in your activities for the other four, but it would be easy for it to be formulaic without having the ability to express what you want as one of the goals/subjects.
+
+Expression is why I do free writing 5 days per week and I find it difficult to keep going, but rewarding when I do because the practice makes it easier for me.
+
+Though all of us here do a lot of expressing as building something in code is a form of expression (regardless of what that thing is)
+
+---otfrom
+#+end_quote
+
+My reply:
+
+#+begin_src
+hmmm.
+
+Is "expression" a way to "make it real"? Like practicing a real instrument in order to play a song "for real" for someone at some point in time?
+
+I think you have a point.
+
+When I look back at when I went to school, it seemed so fake. Fake history: read some years to present on a test. Fake English: read some words to remember them for a test.
+
+---teodorlu
+#+end_src

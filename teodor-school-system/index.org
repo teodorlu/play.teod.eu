@@ -67,7 +67,7 @@ Though all of us here do a lot of expressing as building something in code is a 
 
 My reply:
 
-#+begin_src
+#+begin_quote
 hmmm.
 
 Is "expression" a way to "make it real"? Like practicing a real instrument in order to play a song "for real" for someone at some point in time?
@@ -77,4 +77,4 @@ I think you have a point.
 When I look back at when I went to school, it seemed so fake. Fake history: read some years to present on a test. Fake English: read some words to remember them for a test.
 
 ---teodorlu
-#+end_src
+#+end_quote

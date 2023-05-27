@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 93748cdc-a42a-4d68-9094-51e610cb526f
+:END:
+#+TITLE: Clojure Data Cookbook
+
+[[file:..][..]]
+
+https://github.com/scicloj/clojure-data-cookbook
+
+#+begin_quote
+A book about how to do common data manipulation, analysis, and visualization tasks in Clojure
+#+end_quote
+
+by [[id:0d83ed00-e292-49ea-8c75-1c0b85084f43][Kira McLean]]

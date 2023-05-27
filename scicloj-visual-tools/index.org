@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: a20497dc-314b-4296-b493-3e603f4125eb
+:END:
+#+TITLE: Scicloj visual-tools
+
+[[file:..][..]]
+
+https://scicloj.github.io/docs/community/groups/visual-tools/
+
+#+begin_quote
+The goal of this group is to create collaborations in learning and building Clojure tools for data visualization and literate programming.
+#+end_quote
+
+* 2023-05-27
+** visual-tools meeting 18 schedule
+1. Welcome / chat (5-10 minutes)
+2. (~30 minutes) [[id:bdbed0b8-b25c-4ad3-9c7c-c50215eddc77][Jeremy Vuillermet]] presents /Mosaic/.
+   Mosaic is a data-oriented design tool prototype built in clojurescript and inspired by Bret Victor's Drawing Dynamic Visualizations (embedded below).
+
+   Jeremy's demo: https://www.loom.com/share/6ee8eca626a641918e6b6e766d109194
+
+   #+begin_export html
+   <iframe class="youtube-video" src="https://www.youtube.com/embed/ef2jpjTEB5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   #+end_export
+
+3. [[id:0d83ed00-e292-49ea-8c75-1c0b85084f43][Kira McLean]] will share an update about the current status of the [[id:93748cdc-a42a-4d68-9094-51e610cb526f][Clojure Data Cookbook]]
+
+4. [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] will update about using [[https://scicloj.github.io/kindly/][Kindly]], [[https://scicloj.github.io/clay/][Clay]] and [[https://quarto.org/][Quarto]]
+
+5. Others?
+   [[id:6455f952-018a-497a-bfc1-69774f26946a][Sam Ritchie]]?

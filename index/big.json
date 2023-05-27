@@ -117,6 +117,15 @@
   "uuid" : "0cc48734-e933-44cb-a4e8-2678f125f6df",
   "lang" : "en"
 }, {
+  "slug" : "kira-mclean",
+  "title" : "Kira McLean",
+  "readiness" : "wtf-is-this",
+  "uuid" : "0d83ed00-e292-49ea-8c75-1c0b85084f43",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-27",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "ida-aanes",
   "title" : "Ida Aanes",
   "readiness" : "wtf-is-this",
@@ -904,6 +913,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "sam-ritchie",
+  "title" : "Sam Ritchie",
+  "readiness" : "wtf-is-this",
+  "uuid" : "6455f952-018a-497a-bfc1-69774f26946a",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-27",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "array-programming",
   "title" : "Array programming",
   "readiness" : "wtf-is-this",
@@ -1265,6 +1283,15 @@
   "uuid" : "92115e62-f102-4c97-92cc-8c9f52d53c71",
   "lang" : "en"
 }, {
+  "slug" : "clojure-data-cookbook",
+  "title" : "Clojure Data Cookbook",
+  "readiness" : "wtf-is-this",
+  "uuid" : "93748cdc-a42a-4d68-9094-51e610cb526f",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-27",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
   "slug" : "shades-of-deep-green",
   "title" : "Shades of Deep Green",
   "readiness" : "wtf-is-this",
@@ -1384,6 +1411,15 @@
   "readiness" : "wtf-is-this",
   "uuid" : "a172782b-bceb-4b44-afdf-7a2348d02970",
   "created" : "2023-03-10",
+  "lang" : "en",
+  "form" : "remote-reference"
+}, {
+  "slug" : "scicloj-visual-tools",
+  "title" : "Scicloj visual-tools",
+  "readiness" : "wtf-is-this",
+  "uuid" : "a20497dc-314b-4296-b493-3e603f4125eb",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-27",
   "lang" : "en",
   "form" : "remote-reference"
 }, {
@@ -1622,6 +1658,15 @@
   "readiness" : "forever-incomplete",
   "lang" : "en",
   "uuid" : "bd776ab0-d687-4f16-b66d-d03c86de2a2e"
+}, {
+  "slug" : "jeremy-vuillermet",
+  "title" : "Jeremy Vuillermet",
+  "readiness" : "wtf-is-this",
+  "uuid" : "bdbed0b8-b25c-4ad3-9c7c-c50215eddc77",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-27",
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "ole-jacob",
   "title" : "Ole Jacob",

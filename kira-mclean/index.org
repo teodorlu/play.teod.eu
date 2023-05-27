@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 0d83ed00-e292-49ea-8c75-1c0b85084f43
+:END:
+#+TITLE: Kira McLean
+
+[[file:..][..]]
+
+https://kiramclean.com/ | https://indieweb.social/@kira@indieweb.social | https://twitter.com/kiraemclean
+
+Kira writes the [[id:93748cdc-a42a-4d68-9094-51e610cb526f][Clojure Data Cookbook]].

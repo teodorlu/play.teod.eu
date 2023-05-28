@@ -1522,3 +1522,5 @@ Goal:
 ** not even wrong
 I want to write something about product management and good theory.
 Tie [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] and [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] together.
+
+Core: the skills of a good product manager is theory building in practice.

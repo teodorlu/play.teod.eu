@@ -1517,3 +1517,8 @@ Goal:
 3. Exercise [[id:5fd923f9-dc43-4a82-ac59-8785e98bc901][coachability]]
 
 13:06: moved this into [[id:ada033c3-e631-49c9-8153-b9f1c69fd31d][prompts for learning]].
+
+* 2023-05-28
+** not even wrong
+I want to write something about product management and good theory.
+Tie [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] and [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] together.

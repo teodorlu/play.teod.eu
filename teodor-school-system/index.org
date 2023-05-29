@@ -105,4 +105,5 @@ If you want the source, please read [[https://clojurians.slack.com/archives/CBJ5
          This cool Norwegian singer/songwriter I got the chance to talk to went to India to train his vocals, and enjoyed the experience.
 7. "The categories overlap in many interesting ways that are not clear in their presentation here. Maybe a Venn-ish diagram would be better? (Trivial example: dance is movement + aesthetics.)" ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685357099012009?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
 8. "A missing category here is emotional education. One of the most important things we learn in the course of life is to cease to be a slave to emotional impulses, while also remaining in touch with the important things they tell us." ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685357099012009?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
-9. Emotional development (trust, self-awareness, being aware of one's emotions) and "professional development" (learning skills (teche), knowledge (episteme)) go hand-in-hand
+9. Emotional development (trust, self-awareness, being aware of one's emotions) and "professional development" (learning skills (teche), knowledge (episteme)) go hand-in-hand.
+   Learning to solve hard problems together is a way to get better both at solving hard problems, and working together.

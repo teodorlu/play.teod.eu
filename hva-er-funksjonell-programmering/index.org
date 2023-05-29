@@ -52,11 +52,12 @@ Hvis vi skal behandle programmering som en seriøs disiplin, må vi forstå hvor
 
 Jeg foretrekker å bruke programmeringsspråket Clojure[fn:clojure].
 Clojure har knallgod støtte for funksjonell programmering og knallgode utviklerverktøy --- som Calva for Visual Studio Code, og Clerk for [[id:7ba7621e-5dc0-42d8-9e91-dc244d115928][Literate Programming]][fn:clerk].
-Jeg mener at programmeringsspråket Clojure er også lett å lære[fn:clojure-easy].
-Clojure har et lite standardbibliotek med et smakfult utvalg funksjoner som funker bra sammen.
+Og Clojure er /lett/[fn:clojure-easy].
+Det er få ting man må lære, og de få tingene fungerer godt sammen.
 Syntaksen til språket er minimal.
 Du får /akkurat nok/ for å snakke godt om data, beregninger og handlinger.
 Du får ikke med deg bagasje laget for å tilfredsstille en mellomleder som ville overbevise Java-utviklere om å prøve språket fordi Java var i vinden da språket ble skrevet.
+Hvis du kun har skrevet kode i blokk-orienterte språk med krøllparanteser (som Algol, C, Java, Javascript og Go), krever Clojure-syntaksen tilvenning.
 
 Men du trenger ikke skrive Clojure for å skrive funksjonell kode.
 Skill mellom beregninger og handlinger i koden din.

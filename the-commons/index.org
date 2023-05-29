@@ -23,14 +23,7 @@ It is in shared spaces we can see who we are in relation to other people and the
 
 * 2023-05-29
 ** References
-Elinor Ostrum
-
-#+begin_quote
-Elinor Claire "Lin" Ostrom (née Awan; August 7, 1933 – June 12, 2012) was an American political scientist and political economist[1][2][3] whose work was associated with New Institutional Economics and the resurgence of political economy.[4] In 2009, she was awarded the Nobel Memorial Prize in Economic Sciences for her "analysis of economic governance, especially the commons", which she shared with Oliver E. Williamson. She was the first woman to win the Nobel Prize in Economics.[5]
-
-Source:
-https://en.wikipedia.org/wiki/Elinor_Ostrom
-#+end_quote
+[[id:90b9129d-dece-4775-b40f-a95b0bbaea6d][Elinor Ostrum]]
 
 Governing the Commons
 The Evolution of Institutions for Collective Action

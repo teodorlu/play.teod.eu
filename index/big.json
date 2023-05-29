@@ -1050,7 +1050,7 @@
   "form" : "remote-reference",
   "lang" : "en",
   "readiness" : "wtf-is-this",
-  "title" : "Design, Composition, Performance",
+  "title" : "Design, Composition and Performance",
   "uuid" : "73b93aeb-d61a-413d-a119-53335e73afda"
 }, {
   "slug" : "colin-smith",
@@ -1293,6 +1293,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2022-10-23",
   "lang" : "en"
+}, {
+  "slug" : "elinor-ostrum",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-29",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Elinor Ostrum",
+  "uuid" : "90b9129d-dece-4775-b40f-a95b0bbaea6d"
 }, {
   "slug" : "can-programming-be-liberated-from-the-von-neumann-style",
   "title" : "Can programming be liberated from the von Neumann style?",

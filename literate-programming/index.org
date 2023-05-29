@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 7ba7621e-5dc0-42d8-9e91-dc244d115928
+:END:
+#+TITLE: Literate Programming
+
+[[file:..][..]]
+
+A programming discipline in which one writes programs that can be executed and read by humans from top to bottom.
+When I face a hard programming problem, I like to use [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] to explore the topic interactively.
+Literate programming with Clerk makes the problems more tangible for me than blind symbol manipulation.
+
+http://www.literateprogramming.com/
+
+https://en.wikipedia.org/wiki/Literate_programming

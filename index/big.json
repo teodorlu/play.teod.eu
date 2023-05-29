@@ -1103,6 +1103,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "literate-programming",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-29",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Literate Programming",
+  "uuid" : "7ba7621e-5dc0-42d8-9e91-dc244d115928"
+}, {
   "slug" : "twitter-howto",
   "title" : "How to use Twitter",
   "readiness" : "wtf-is-this",

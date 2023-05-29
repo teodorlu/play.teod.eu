@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Hva er funksjonell programmering?</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Hva er funksjonell programmering?</h1>
+</header>
+<p><a href="..">..</a></p>
+<p>Funksjonell programmering er en <em>disiplin</em> for å programmere
+som gjør det enklere å forstå koden din, og enklere å endre koden du
+allerede har skrevet.</p>
+<p>I funksjonell programmering som beskrevet av Eric Normand<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> skiller vi mellom:</p>
+<ol>
+<li>Data</li>
+<li>Beregninger</li>
+<li>Handlinger.</li>
+</ol>
+<p>Data kan for eksempel være et JSON-objekt. Beregninger er funksjoner
+fra data til data. Handlinger har en <em>effekt</em>, for eksempel at
+data blir lagret i databasen, eller en <em>koeffekt</em>, for eksempel
+at vi henter ut dagens dato (forskjellig hver dag), eller antall brukere
+i systemet vårt.</p>
+<p>Hvordan har funksjonell programmering påvirket dagens kultur for
+utvikling av webapplikasjoner? La oss ta et tilbakeblikk.</p>
+<p>Da Brendon Eich skulle lage et programmeringsspråk som skulle kjøre
+rett i nettleseren, ville han først lage en Scheme-dialekt<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+Scheme er et funksjonelt programmeringsspråk, Eich ville lage en variant
+som var lett å bruke til å lage interaktive nettsider. Sjefene hans sa
+at det fikk han ikke lov til! Sjefene hadde hørt om <em>Java</em>, og
+ville at programmeringsspråket Eich designet skulle likne på Java. Så
+det var lett Java-utviklere å programmere interaktivitet i nettlesere.
+Han fikk ti dager, og så ble JavaScript født.</p>
+<p>Vi fikk så en objektorientert modell for hypertekst-dokumenter, som
+så fint fikk navnet <em>Document Object Model</em><a href="#fn3"
+class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.
+Denne viste det seg at var vanskelig å jobbe med, så John Resig skrev
+jQuery<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a> for å kunne jobbe med
+hypertekst-dokumenter uten å lage så mange objekter.</p>
+<p>Dette var fremdeles tungvindt. Programmereren måtte selv sørge for å
+holde tilstand i synk med hva som ble vist på skjermen. I tillegg ble
+sider skrevet med jQuery ofte trege etter hvert: jQuery oppdaterer
+<em>hele</em> HTML-dokumentet hver gang brukeren endrer på noe.</p>
+<p>Dette hadde Conal Elliot og Paul Hudak et svar på:
+<em>Funksjonell-reaktiv programmering</em> (FRP)<a href="#fn5"
+class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.
+Elliot og Hudak designer et <em>språk</em> (eller en <em>protokoll</em>
+hvis du vil) for å la effekter reagerer på andre effekter.</p>
+<p>I 2012 lagde Evan Czaplicki programmeringsspråket <em>Elm</em> for å
+bruke FRP til å lage spill<a href="#fn6" class="footnote-ref"
+id="fnref6" role="doc-noteref"><sup>6</sup></a>, og i 2013 lagde Jordan
+Walke React for å lage interaktive webapper[fn:react]. Det oppfordres
+først til å lage React-apper i objektorientert stil (React Class
+Components), før dette frarådes, og reaktive funksjoner (React Hooks)
+får førstesideplassen.</p>
+<p>Jordan Walker lager i 2016 ReasonML<a href="#fn7"
+class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, et
+språk som er funksjonelt <em>først</em>, i kontrast til Javascript, som
+har tungt fokus på klasser, objekter og syntaks som likner på
+Javascript. ReasonML er basert på ML<a href="#fn8" class="footnote-ref"
+id="fnref8" role="doc-noteref"><sup>8</sup></a>, og andre ML-baserte
+språk (Standard ML, OCaml, Haskell og F#).</p>
+<p>Hvis vi skal behandle programmering som en seriøs disiplin, må vi
+forstå hvordan vi kom hit vi er i dag.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a
+href="https://grokkingsimplicity.com/">https://grokkingsimplicity.com/</a><a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a
+href="https://en.wikipedia.org/wiki/Brendan_Eich#Netscape">https://en.wikipedia.org/wiki/Brendan_Eich#Netscape</a><a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a
+href="https://en.wikipedia.org/wiki/Document_Object_Model">https://en.wikipedia.org/wiki/Document_Object_Model</a><a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a
+href="https://en.wikipedia.org/wiki/JQuery">https://en.wikipedia.org/wiki/JQuery</a><a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><a
+href="http://conal.net/papers/icfp97/">http://conal.net/papers/icfp97/</a><a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><a
+href="https://en.wikipedia.org/wiki/Elm_(programming_language)">https://en.wikipedia.org/wiki/Elm_(programming_language)</a><a
+href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><a
+href="https://en.wikipedia.org/wiki/Reason_(programming_language)">https://en.wikipedia.org/wiki/Reason_(programming_language)</a><a
+href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><a
+href="https://en.wikipedia.org/wiki/ML_(programming_language)">https://en.wikipedia.org/wiki/ML_(programming_language)</a><a
+href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

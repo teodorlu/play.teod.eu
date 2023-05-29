@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID: 51ffdc72-ed70-4703-a773-347344e5dd6e
+:END:
+#+TITLE: Hva er funksjonell programmering?
+
+[[file:..][..]]
+
+Funksjonell programmering er en /disiplin/ for å programmere som gjør det enklere å forstå koden din, og enklere å endre koden du allerede har skrevet.
+
+I funksjonell programmering som beskrevet av Eric Normand[fn:grokking-simplicity] skiller vi mellom:
+
+1. Data
+2. Beregninger
+3. Handlinger.
+
+Data kan for eksempel være et JSON-objekt.
+Beregninger er funksjoner fra data til data.
+Handlinger har en /effekt/, for eksempel at data blir lagret i databasen, eller en /koeffekt/, for eksempel at vi henter ut dagens dato (forskjellig hver dag), eller antall brukere i systemet vårt.
+
+Hvordan har funksjonell programmering påvirket dagens kultur for utvikling av webapplikasjoner?
+La oss ta et tilbakeblikk.
+
+Da Brendon Eich skulle lage et programmeringsspråk som skulle kjøre rett i nettleseren, ville han først lage en Scheme-dialekt[fn:js-scheme].
+Scheme er et funksjonelt programmeringsspråk, Eich ville lage en variant som var lett å bruke til å lage interaktive nettsider.
+Sjefene hans sa at det fikk han ikke lov til!
+Sjefene hadde hørt om /Java/, og ville at programmeringsspråket Eich designet skulle likne på Java.
+Så det var lett Java-utviklere å programmere interaktivitet i nettlesere.
+Han fikk ti dager, og så ble JavaScript født.
+
+Vi fikk så en objektorientert modell for hypertekst-dokumenter, som så fint fikk navnet /Document Object Model/[fn:dom].
+Denne viste det seg at var vanskelig å jobbe med, så John Resig skrev jQuery[fn:jquery] for å kunne jobbe med hypertekst-dokumenter uten å lage så mange objekter.
+
+Dette var fremdeles tungvindt.
+Programmereren måtte selv sørge for å holde tilstand i synk med hva som ble vist på skjermen.
+I tillegg ble sider skrevet med jQuery ofte trege etter hvert: jQuery oppdaterer /hele/ HTML-dokumentet hver gang brukeren endrer på noe.
+
+Dette hadde Conal Elliot og Paul Hudak et svar på: /Funksjonell-reaktiv programmering/ (FRP)[fn:frp].
+Elliot og Hudak designer et /språk/ (eller en /protokoll/ hvis du vil) for å la effekter reagerer på andre effekter.
+
+I 2012 lagde Evan Czaplicki programmeringsspråket /Elm/ for å bruke FRP til å lage spill[fn:elm], og i 2013 lagde Jordan Walke React for å lage interaktive webapper[fn:react].
+Det oppfordres først til å lage React-apper i objektorientert stil (React Class Components), før dette frarådes, og reaktive funksjoner (React Hooks) får førstesideplassen.
+
+Jordan Walker lager i 2016 ReasonML[fn:reasonml], et språk som er funksjonelt /først/, i kontrast til Javascript, som har tungt fokus på klasser, objekter og syntaks som likner på Javascript.
+ReasonML er basert på ML[fn:ml], og andre ML-baserte språk (Standard ML, OCaml, Haskell og F#).
+
+Hvis vi skal behandle programmering som en seriøs disiplin, må vi forstå hvordan vi kom hit vi er i dag.
+
+[fn:grokking-simplicity] https://grokkingsimplicity.com/
+[fn:js-scheme] https://en.wikipedia.org/wiki/Brendan_Eich#Netscape
+[fn:dom] https://en.wikipedia.org/wiki/Document_Object_Model
+[fn:jquery] https://en.wikipedia.org/wiki/JQuery
+[fn:frp] http://conal.net/papers/icfp97/
+[fn:elm] https://en.wikipedia.org/wiki/Elm_(programming_language)
+[fn:reasonml] https://en.wikipedia.org/wiki/Reason_(programming_language)
+[fn:ml] https://en.wikipedia.org/wiki/ML_(programming_language)

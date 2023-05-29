@@ -109,7 +109,7 @@ Sett av fire timer til å /komme i gang/ så du finner ut hvor du står fast.
 Så løfter du de problemene opp til noen som kan språket du prøver å lære deg.
 
 Funksjonell programmering er en disiplin som kommer til å gjøre deg til en permanent bedre utvikler.
-Det er en ferdighet som varer og gir avkastning, uansett om du jobber i et språk med førsteklasses støtte for funksjonell programmering eller ikke.
+Det er en ferdighet som gir varig avkastning, uansett om du jobber i et språk med førsteklasses støtte for funksjonell programmering eller ikke.
 
 [fn:grokking-simplicity] https://grokkingsimplicity.com/
 [fn:js-scheme] https://en.wikipedia.org/wiki/Brendan_Eich#Netscape

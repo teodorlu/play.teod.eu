@@ -1978,6 +1978,15 @@
   "uuid" : "e9a97a46-f252-4883-a311-21b20528d14d",
   "lang" : "en"
 }, {
+  "slug" : "git",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-29",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Git",
+  "uuid" : "e9ad88c6-f5a4-479b-a1c7-8dc1e2a8471a"
+}, {
   "slug" : "programmer-cultivate-your-curiosity",
   "title" : "Programmer, cultivate your curiosity!",
   "readiness" : "wtf-is-this",

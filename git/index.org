@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: e9ad88c6-f5a4-479b-a1c7-8dc1e2a8471a
+:END:
+#+TITLE: Git
+
+[[file:..][..]]
+
+A distributed version control system
+
+https://git-scm.com/

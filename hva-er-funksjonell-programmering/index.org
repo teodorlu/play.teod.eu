@@ -17,6 +17,7 @@ Vi følger Eric Normands definisjon av funksjonell programmering[fn:grokking-sim
 Data kan for eksempel være et JSON-objekt.
 Beregninger er funksjoner fra data til data.
 Handlinger har en /effekt/, for eksempel at data blir lagret i databasen, eller en /koeffekt/, for eksempel at vi henter ut dagens dato (forskjellig hver dag).
+Effekter er funksjoner fra data "til verden", og koeffekter er funksjoner "fra verden" til data.
 
 Hvordan har funksjonell programmering påvirket dagens kultur for utvikling av webapplikasjoner?
 La oss ta et tilbakeblikk.

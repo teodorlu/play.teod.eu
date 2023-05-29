@@ -46,7 +46,7 @@ ReasonML er basert på ML[fn:ml], og andre ML-baserte språk (Standard ML, OCaml
 Hvis vi skal behandle programmering som en seriøs disiplin, må vi forstå hvordan vi kom hit vi er i dag.
 
 Jeg foretrekker å bruke programmeringsspråket Clojure[fn:clojure].
-Clojure har knallgod støtte for funksjonell programmering og knallgode utviklerverktøy ([fn:calva], [fn:clerk]).
+Clojure har knallgod støtte for funksjonell programmering og knallgode utviklerverktøy for Clojure-koding i VSCode[fn:calva] og dynamiske utviklingsmiljøer[fn:clerk].
 Clojure er også lett å lære.
 Clojure har et lite standardbibliotek med et smakfult utvalg funksjoner som funker bra sammen.
 Syntaksen til språket er /ikke/ satt av en mellomleder som vil overbevise Java-utviklere, som lar oss unngå enda flere feil.

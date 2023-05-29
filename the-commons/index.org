@@ -19,3 +19,13 @@ Otherwise, the commons may end in tragedy.
 Commons give us meaning.
 It is in shared spaces that we understand who we are.
 It is in shared spaces we can see who we are.
+
+* 2023-05-29
+** References
+Elinor Ostrum
+https://en.wikipedia.org/wiki/Elinor_Ostrom
+
+Governing the Commons
+The Evolution of Institutions for Collective Action
+https://www.cambridge.org/no/academic/subjects/politics-international-relations/political-theory/governing-commons-evolution-institutions-collective-action-1?format=PB&isbn=9781107569782
+(I haven't read this)

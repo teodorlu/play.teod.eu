@@ -88,7 +88,7 @@ Vi lager derimot aktive hindre mot å lære noe som helst.
 Det gjør vondt å koble om hjernen vår til å kunne tenke på en annen måte.
 Hvis det er "lett", har vi ikke lært noe fundamentalt nytt.
 
-Dagens store språkmodeller (large language models, LLM-er) som GPT-4 tydeliggjør dette skillet.
+Store språkmodeller (large language models, LLM-er) som GPT-4 tydeliggjør dette skillet.
 GPT-4 har lest enorme mengder tekst, og klarer å koble sammen kjente ting.
 GPT-4 klare ikke å finne opp nye ting.
 Hvis vi som utviklere fortsetter å vektlegge lette ting over enkle ting, kommer vil til å bli automatisert bort.

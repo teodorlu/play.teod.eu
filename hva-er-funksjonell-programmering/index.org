@@ -27,7 +27,7 @@ Sjefene hadde hørt om /Java/, og ville at programmeringsspråket Eich designet 
 Så Java-utviklere lett kunne lage skript som kjørte for brukere på en nettside.
 Han fikk ti dager, og lagde JavaScript.
 
-Vi fikk så en objektorientert modell for hypertekst-dokumenter, som så fint fikk navnet /Document Object Model/[fn:dom].
+Vi fikk så en objektorientert modell for hypertekst-dokumenter med det fine navnet /Document Object Model/[fn:dom].
 Denne viste det seg at var vanskelig å jobbe med, så John Resig skrev jQuery[fn:jquery] for å kunne jobbe med hypertekst-dokumenter uten å lage så mange objekter.
 
 Dette var fremdeles tungvindt.

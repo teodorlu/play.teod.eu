@@ -63,6 +63,7 @@ Men du trenger ikke skrive Clojure for å skrive funksjonell kode.
 Skill mellom beregninger og handlinger i koden din.
 Funksjoner returnerer enten et svar, eller kjører en sideeffekt.
 Lag nyhetsbrevet du ønsker å sende ut /før/ du sender det ut.
+Bruk spørsmålet /hvor er mutasjonen?/ til å dele opp systemet ditt så du kan lager begripelige moduler.
 Da er det rett fram å teste, og du slipper mocking.
 Hvis du bruker et funksjonelt tankesett på systemnivå, ramler Event Sourcing[fn:event-sourcing] og Command Query Response Segregation[fn:cqrs] ut.
 Plutselig cacher du på content id-er[fn:content-id] i stedet for referanser til muterbare objekter, og caching i distribuerte systemer blir trivielt i stedet for kjempevanskelig.

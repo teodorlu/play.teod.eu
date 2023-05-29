@@ -290,11 +290,13 @@ tilvenning.</p>
 <p>Men du trenger ikke skrive Clojure for å skrive funksjonell kode.
 Skill mellom beregninger og handlinger i koden din. Funksjoner
 returnerer enten et svar, eller kjører en sideeffekt. Lag nyhetsbrevet
-du ønsker å sende ut <em>før</em> du sender det ut. Da er det rett fram
-å teste, og du slipper mocking. Hvis du bruker et funksjonelt tankesett
-på systemnivå, ramler Event Sourcing<a href="#fn13" class="footnote-ref"
-id="fnref13" role="doc-noteref"><sup>13</sup></a> og Command Query
-Response Segregation<a href="#fn14" class="footnote-ref" id="fnref14"
+du ønsker å sende ut <em>før</em> du sender det ut. Bruk spørsmålet
+<em>hvor er mutasjonen?</em> til å dele opp systemet ditt så du kan
+lager begripelige moduler. Da er det rett fram å teste, og du slipper
+mocking. Hvis du bruker et funksjonelt tankesett på systemnivå, ramler
+Event Sourcing<a href="#fn13" class="footnote-ref" id="fnref13"
+role="doc-noteref"><sup>13</sup></a> og Command Query Response
+Segregation<a href="#fn14" class="footnote-ref" id="fnref14"
 role="doc-noteref"><sup>14</sup></a> ut. Plutselig cacher du på content
 id-er<a href="#fn15" class="footnote-ref" id="fnref15"
 role="doc-noteref"><sup>15</sup></a> i stedet for referanser til

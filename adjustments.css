@@ -10,8 +10,7 @@
 
     /* My adaptation: */
 
-    /* width: 576px; */
-    width: inherit;
+    width: 576px;
     height: 324px;
 }
 /* yes! */
@@ -19,6 +18,6 @@
 body {
     padding-bottom: 20vh;
 
-    /* Sindre suggested a bit more space for readability, let's try that. */
+    /* Sindre suggested a bit more space for reading  */
     line-height: 1.4;
 }

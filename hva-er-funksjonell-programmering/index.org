@@ -71,7 +71,7 @@ Men da må vi sette oss ned og /legge ned en innsats for å lære/.
   Å trykke "save" på filer og dra filene over i en E-post og trykke send er lett for de fleste som har brukt filer og E-post før.
 
 - /enkle ting/ har få komponenter som ikke er sammenvevd.
-  Enkle ting /kan deles opp/.
+  Enkle ting /kan deles opp/, og enkeltdeler kan forstås i isolasjon.
 
   [[id:e9ad88c6-f5a4-479b-a1c7-8dc1e2a8471a][Git]] er /vanskelig/ å bruke for folk som aldri har brukt Git før.
   Men Git /deler opp/ problemet med "hvordan jobber vi sammen?" ved å kunne snakke veldig presist om /versjoner av koden/ (commits), og /endringer i koden/ (diffs, forskjeller mellom commits).

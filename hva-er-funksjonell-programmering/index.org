@@ -42,7 +42,7 @@ Elliot og Hudak designer et /språk/ (eller en /protokoll/ hvis du vil) for å l
 En annen effekt kan være at en farge endrer seg fra grønn til grå.
 
 I 2012 lagde Evan Czaplicki programmeringsspråket /Elm/ for å bruke FRP til å lage spill[fn:elm], og i 2013 lagde Jordan Walke React for å lage interaktive webapper[fn:react].
-Det oppfordres først til å lage React-apper i objektorientert stil (React Class Components), før dette frarådes, og reaktive funksjoner (React Hooks) får rampelyset.
+React-teamet oppfordrer først til å lage React-apper i objektorientert stil (React Class Components), før de ombestemmer seg, og anbefaler folk å bruke reaktive funksjoner (React Hooks) i stedet.
 
 Jordan Walker lager i 2016 ReasonML[fn:reasonml], et språk som er funksjonelt /først/, i kontrast til Javascript, som har tungt fokus på klasser, objekter og syntaks som likner på Javascript.
 ReasonML er basert på ML[fn:ml], og andre språk i ML-familien (Standard ML, OCaml, Haskell og F#).

@@ -57,7 +57,7 @@ Funksjoner returnerer enten et svar, eller kjører en sideeffekt.
 Lag nyhetsbrevet du ønsker å sende ut /før/ du sender det ut.
 Da er det rett fram å teste, og du slipper mocking.
 Hvis du bruker et funksjonelt tankesett på systemnivå, ramler Event Sourcing[fn:event-sourcing] og Command Query Response Segregation[fn:cqrs] ut.
-Plutselig cacher du på content id-er[fn:content-id] i stedet for referanser til muterbare objekter, og caching blir trivielt (i stedet for å være et "veldig vanskelig problem").
+Plutselig cacher du på content id-er[fn:content-id] i stedet for referanser til muterbare objekter, og caching i distribuerte systemer blir trivielt (i stedet for å være et "veldig vanskelig problem").
 
 Min erfaring er at systemer som ikke skiller mellom muterende kode (handlinger) og ikke-muterende kode (beregninger) ender opp i en suppe av mutasjon der man ikke klarer å komme videre.
 Funksjonell programmering gir en vei ut[fn:out-of-the-tar-pit].

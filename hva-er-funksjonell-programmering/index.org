@@ -91,6 +91,7 @@ Hvis du har /én time/, hør på [[id:81dfcf30-e59d-4293-9000-5b29c97f90b8][Eric
 #+end_export
 
 Hvis du har /10 timer/, les [[id:2dc52e4f-0604-4d33-a50c-1e8534266a47][Grokking Simplicity]].
+Underveis, spør deg selv hvordan du jobber med data, beregninger og handlinger i din egen kode.
 
 Hvis du har /100 timer/, plukk deg et språk med førsteklasses støtte for funksjonell programmering (feks Elm, Elixir eller Clojure) og velg deg noe du vil lage.
 Sett av fire timer til å /komme i gang/ så du finner ut hvor du står fast.

@@ -36,7 +36,7 @@ Programmereren måtte selv sørge for å holde tilstand i synk med hva som ble v
 I tillegg ble sider skrevet med jQuery ofte trege etter hvert: jQuery oppdaterer /hele/ HTML-dokumentet hver gang brukeren endrer på noe.
 
 Dette hadde Conal Elliot og Paul Hudak et svar på i 1997: /Funksjonell-reaktiv programmering/ (FRP)[fn:frp].
-Elliot og Hudak designer et /språk/ (eller en /protokoll/ hvis du vil) for å la effekter reagerer på andre effekter.
+Elliot og Hudak designer et /språk/ (eller en /protokoll/ hvis du vil) for å la effekter reagere på andre effekter.
 
 I 2012 lagde Evan Czaplicki programmeringsspråket /Elm/ for å bruke FRP til å lage spill[fn:elm], og i 2013 lagde Jordan Walke React for å lage interaktive webapper[fn:react].
 Det oppfordres først til å lage React-apper i objektorientert stil (React Class Components), før dette frarådes, og reaktive funksjoner (React Hooks) får førstesideplassen.

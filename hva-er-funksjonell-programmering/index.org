@@ -48,9 +48,11 @@ Hvis vi skal behandle programmering som en seriøs disiplin, må vi forstå hvor
 
 Jeg foretrekker å bruke programmeringsspråket Clojure[fn:clojure].
 Clojure har knallgod støtte for funksjonell programmering og knallgode utviklerverktøy for Clojure-koding i Visual Studio Code[fn:calva] og [[id:7ba7621e-5dc0-42d8-9e91-dc244d115928][Literate Programming]][fn:clerk].
-Clojure er også lett å lære.
+Jeg mener at programmeringsspråket Clojure er også lett å lære[fn:clojure-easy].
 Clojure har et lite standardbibliotek med et smakfult utvalg funksjoner som funker bra sammen.
-Syntaksen til språket er /ikke/ satt av en mellomleder som vil overbevise Java-utviklere, som lar oss unngå enda flere feil.
+Syntaksen til språket er minimal.
+Den er laget for å tilby /akkurat nok/ for å snakke godt om data, beregninger og handlinger.
+Den er ikke laget for å tilfredsstille en mellomleder som ville overbevise Java-utviklere om å prøve språket.
 
 Men du trenger ikke skrive Clojure for å skrive funksjonell kode.
 Skill mellom beregninger og handlinger i koden din.
@@ -119,7 +121,7 @@ Det er en ferdighet som varer og gir avkastning, uansett om du jobber i et språ
 [fn:reasonml] https://en.wikipedia.org/wiki/Reason_(programming_language)
 [fn:ml] https://en.wikipedia.org/wiki/ML_(programming_language)
 [fn:clojure] https://clojure.org/
-[fn:clojure-easiest] https://clojureverse.org/t/clojure-has-a-dirty-little-secret/9160
+[fn:clojure-easy] https://clojureverse.org/t/clojure-has-a-dirty-little-secret/9160
 [fn:calva] https://calva.io/
 [fn:clerk] https://clerk.vision/
 [fn:event-sourcing] https://martinfowler.com/eaaDev/EventSourcing.html

@@ -38,7 +38,7 @@ Programmereren måtte selv sørge for å holde tilstand i synk med hva som ble v
 I tillegg ble sider skrevet med jQuery ofte trege: jQuery oppdaterer /hele/ HTML-dokumentet hver gang brukeren endrer på noe.
 
 Dette hadde Conal Elliot og Paul Hudak et svar på i 1997: /Funksjonell-reaktiv programmering/ (FRP)[fn:frp].
-Elliot og Hudak designer et /språk/ (eller en /protokoll/ hvis du vil) for å la effekter reagere på andre effekter.
+Elliot og Hudak designet et /språk/ (eller en /protokoll/ hvis du vil) for å la effekter reagere på andre effekter.
 Én effekt kan være at en person trykker på en knapp.
 En annen effekt kan være at en farge endrer seg fra grønn til grå.
 

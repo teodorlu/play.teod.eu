@@ -24,8 +24,8 @@ Da Brendon Eich skulle lage et programmeringsspråk som skulle kjøre rett i net
 Scheme er et funksjonelt programmeringsspråk, Eich ville lage en variant som var lett å bruke til å lage interaktive nettsider.
 Sjefene hans sa at det fikk han ikke lov til!
 Sjefene hadde hørt om /Java/, og ville at programmeringsspråket Eich designet skulle likne på Java.
-Så det var lett Java-utviklere å programmere interaktivitet i nettlesere.
-Han fikk ti dager, og så ble JavaScript født.
+Så Java-utviklere lett kunne lage interaktive nettsider.
+Han fikk ti dager, og lagde JavaScript.
 
 Vi fikk så en objektorientert modell for hypertekst-dokumenter, som så fint fikk navnet /Document Object Model/[fn:dom].
 Denne viste det seg at var vanskelig å jobbe med, så John Resig skrev jQuery[fn:jquery] for å kunne jobbe med hypertekst-dokumenter uten å lage så mange objekter.

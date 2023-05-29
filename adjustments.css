@@ -17,4 +17,7 @@
 
 body {
     padding-bottom: 20vh;
+
+    /* Sindre suggested a bit more space for readability, let's try that. */
+    line-height: 1.4;
 }

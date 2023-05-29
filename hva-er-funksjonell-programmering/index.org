@@ -86,7 +86,9 @@ Hvis vi som utviklere fortsetter å vektlegge lette ting over enkle ting, kommer
 
 Hvis du har /én time/, hør på [[id:81dfcf30-e59d-4293-9000-5b29c97f90b8][Eric Normand]] hvordan han definerer funksjonell programmering:
 
+#+begin_export html
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4hSE898e7eV3ySlB8PabRY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+#+end_export
 
 Hvis du har /10 timer/, les [[id:2dc52e4f-0604-4d33-a50c-1e8534266a47][Grokking Simplicity]].
 

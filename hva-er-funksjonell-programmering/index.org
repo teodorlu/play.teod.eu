@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-Funksjonell programmering er en disiplin programmering som gjør det enklere å skrive, forstå og endre kode.
+Funksjonell programmering er en disiplin for programmering som gjør det enklere å skrive, forstå og endre kode.
 I denne teksten introduserer jeg funksjonell programmering, og belyser hvordan tradisjonen for funksjonell programmering har påvirket dagens JavaScript-økosystem for webprogrammering.
 
 Vi følger Eric Normands definisjon av funksjonell programmering[fn:grokking-simplicity] og skiller mellom:

@@ -34,7 +34,7 @@ Denne viste det seg at var vanskelig å jobbe med, så John Resig skrev jQuery[f
 
 Hypertekst-programmering med jQuery var fremdeles tungvindt.
 Programmereren måtte selv sørge for å holde tilstand i synk med hva som ble vist på skjermen.
-I tillegg ble sider skrevet med jQuery ofte trege etter hvert: jQuery oppdaterer /hele/ HTML-dokumentet hver gang brukeren endrer på noe.
+I tillegg ble sider skrevet med jQuery ofte trege: jQuery oppdaterer /hele/ HTML-dokumentet hver gang brukeren endrer på noe.
 
 Dette hadde Conal Elliot og Paul Hudak et svar på i 1997: /Funksjonell-reaktiv programmering/ (FRP)[fn:frp].
 Elliot og Hudak designer et /språk/ (eller en /protokoll/ hvis du vil) for å la effekter reagere på andre effekter.

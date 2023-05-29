@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 73b93aeb-d61a-413d-a119-53335e73afda
+:END:
+#+TITLE: Design, Composition, and Performance
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/QCwqnjxqfmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+#+begin_quote
+[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] explores the nature of design and composition and how it impacts the software development practice and tools.
+#+end_quote

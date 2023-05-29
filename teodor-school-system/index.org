@@ -78,3 +78,30 @@ When I look back at when I went to school, it seemed fake. Fake history: read so
 
 ---teodorlu
 #+end_quote
+* 2023-05-29
+** My summary of more comments from the Clojureverse thread
+Note: these are not my ideas, only my summary of the ideas.
+If you want the source, please read [[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685180318899499][the thread]].
+
+1. [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] has touched on "expression" in [[id:73b93aeb-d61a-413d-a119-53335e73afda][Design, Composition and Performance]] and "performance"
+2. How should this schools system be funded?
+   - Norwegian public schools have large classes (20 to 30 kids) and tightly, centrally controlled curriculums.
+   - Private schools cost a lot and amplify socio-economic differences.
+   - In bad schools, there are often no good teachers to set good examples.
+3. Expression is a way to use what you've learned to get a chance to move beoyond it.
+   Also, learning to express yourself in some way is important. ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685222191964799?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
+   1. Free writing every day is a way to exercise expression ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685266145263599?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
+   2. Prompts can be used to break free of writing the same thing every day ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685266213307359?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
+4. Creative expression typically requires constraints in order to avoid the "tyranny of the blank canvas"
+5. There's tension between "education for workers" and "education for thinkers" ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685266708417809?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
+6. Education
+   1. Teodor's current understanding:
+      1. Western education is based on /skills/ (techne), eastern education is based on principles
+      2. Don't feel like I have a grasp on eastern thinking.
+         The western approach sometimes feels "dead".
+      3. Not sure how I should approach learning this.
+         Perhaps living in it is required, that even the question "is there a book I can read?" builds in the (western) assumption that this can be learned from books.
+         The Beatles went to India.
+         This cool Norwegian singer/songwriter I got the chance to talk to went to India to train his vocals, and enjoyed the experience.
+7. "The categories overlap in many interesting ways that are not clear in their presentation here. Maybe a Venn-ish diagram would be better? (Trivial example: dance is movement + aesthetics.)" ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685357099012009?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
+8. "A missing category here is emotional education. One of the most important things we learn in the course of life is to cease to be a slave to emotional impulses, while also remaining in touch with the important things they tell us." ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685357099012009?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])

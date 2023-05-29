@@ -62,7 +62,7 @@ Da er det rett fram å teste, og du slipper mocking.
 Hvis du bruker et funksjonelt tankesett på systemnivå, ramler Event Sourcing[fn:event-sourcing] og Command Query Response Segregation[fn:cqrs] ut.
 Plutselig cacher du på content id-er[fn:content-id] i stedet for referanser til muterbare objekter, og caching i distribuerte systemer blir trivielt i stedet for kjempevanskelig.
 
-Min erfaring er at systemer som ikke skiller mellom muterende kode (handlinger) og ikke-muterende kode (beregninger) ender opp i en suppe av mutasjon der man ikke klarer å komme videre.
+Min erfaring er at systemer som ikke skiller mellom muterende kode (handlinger) og ikke-muterende kode (beregninger) ender opp i en suppe av mutasjon der utvikling går saktere og saktere og saktere.
 Funksjonell programmering gir en vei ut[fn:out-of-the-tar-pit].
 
 Men da må vi sette oss ned og /legge ned en innsats for å lære/.

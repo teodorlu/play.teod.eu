@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 81dfcf30-e59d-4293-9000-5b29c97f90b8
+:END:
+#+TITLE: Eric Normand
+
+[[file:..][..]]
+
+https://ericnormand.me/

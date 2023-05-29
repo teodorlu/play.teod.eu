@@ -1185,6 +1185,15 @@
   "created" : "2023-04-26",
   "lang" : "en"
 }, {
+  "slug" : "eric-normand",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-05-29",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Eric Normand",
+  "uuid" : "81dfcf30-e59d-4293-9000-5b29c97f90b8"
+}, {
   "slug" : "anders-haugeto",
   "title" : "Anders Haugeto",
   "readiness" : "wtf-is-this",

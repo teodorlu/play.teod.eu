@@ -268,13 +268,12 @@ forstå hvordan vi kom hit vi er i dag.</p>
 <p>Jeg foretrekker å bruke programmeringsspråket Clojure<a href="#fn10"
 class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.
 Clojure har knallgod støtte for funksjonell programmering og knallgode
-utviklerverktøy for Clojure-koding i Visual Studio Code<a href="#fn11"
-class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>
-og <a href="../literate-programming/">Literate Programming</a><a
+utviklerverktøy — som Calva i Visual Studio Code, og Clerk for <a
+href="../literate-programming/">Literate Programming</a><a href="#fn11"
+class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>.
+Jeg mener at programmeringsspråket Clojure er også lett å lære<a
 href="#fn12" class="footnote-ref" id="fnref12"
-role="doc-noteref"><sup>12</sup></a>. Jeg mener at programmeringsspråket
-Clojure er også lett å lære<a href="#fn13" class="footnote-ref"
-id="fnref13" role="doc-noteref"><sup>13</sup></a>. Clojure har et lite
+role="doc-noteref"><sup>12</sup></a>. Clojure har et lite
 standardbibliotek med et smakfult utvalg funksjoner som funker bra
 sammen. Syntaksen til språket er minimal. Den er laget for å tilby
 <em>akkurat nok</em> for å snakke godt om data, beregninger og
@@ -285,19 +284,19 @@ Skill mellom beregninger og handlinger i koden din. Funksjoner
 returnerer enten et svar, eller kjører en sideeffekt. Lag nyhetsbrevet
 du ønsker å sende ut <em>før</em> du sender det ut. Da er det rett fram
 å teste, og du slipper mocking. Hvis du bruker et funksjonelt tankesett
-på systemnivå, ramler Event Sourcing<a href="#fn14" class="footnote-ref"
-id="fnref14" role="doc-noteref"><sup>14</sup></a> og Command Query
-Response Segregation<a href="#fn15" class="footnote-ref" id="fnref15"
-role="doc-noteref"><sup>15</sup></a> ut. Plutselig cacher du på content
-id-er<a href="#fn16" class="footnote-ref" id="fnref16"
-role="doc-noteref"><sup>16</sup></a> i stedet for referanser til
+på systemnivå, ramler Event Sourcing<a href="#fn13" class="footnote-ref"
+id="fnref13" role="doc-noteref"><sup>13</sup></a> og Command Query
+Response Segregation<a href="#fn14" class="footnote-ref" id="fnref14"
+role="doc-noteref"><sup>14</sup></a> ut. Plutselig cacher du på content
+id-er<a href="#fn15" class="footnote-ref" id="fnref15"
+role="doc-noteref"><sup>15</sup></a> i stedet for referanser til
 muterbare objekter, og caching i distribuerte systemer blir trivielt (i
 stedet for å være et “veldig vanskelig problem”).</p>
 <p>Min erfaring er at systemer som ikke skiller mellom muterende kode
 (handlinger) og ikke-muterende kode (beregninger) ender opp i en suppe
 av mutasjon der man ikke klarer å komme videre. Funksjonell
-programmering gir en vei ut<a href="#fn17" class="footnote-ref"
-id="fnref17" role="doc-noteref"><sup>17</sup></a>.</p>
+programmering gir en vei ut<a href="#fn16" class="footnote-ref"
+id="fnref16" role="doc-noteref"><sup>16</sup></a>.</p>
 <p>Men da må vi sette oss ned og <em>legge ned en innsats for å
 lære</em>. <a href="../rich-hickey/">Rich Hickey</a> skiller i <a
 href="../simple-made-easy/">Simple Made Easy</a> mellom ting som er
@@ -381,26 +380,24 @@ href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn10"><p><a
 href="https://clojure.org/">https://clojure.org/</a><a href="#fnref10"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p><a href="https://calva.io/">https://calva.io/</a><a
-href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p><a
-href="https://clerk.vision/">https://clerk.vision/</a><a href="#fnref12"
+<li id="fn11"><p><a
+href="https://clerk.vision/">https://clerk.vision/</a><a href="#fnref11"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p><a
+<li id="fn12"><p><a
 href="https://clojureverse.org/t/clojure-has-a-dirty-little-secret/9160">https://clojureverse.org/t/clojure-has-a-dirty-little-secret/9160</a><a
+href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><a
+href="https://martinfowler.com/eaaDev/EventSourcing.html">https://martinfowler.com/eaaDev/EventSourcing.html</a><a
 href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14"><p><a
-href="https://martinfowler.com/eaaDev/EventSourcing.html">https://martinfowler.com/eaaDev/EventSourcing.html</a><a
+href="https://martinfowler.com/bliki/CQRS.html">https://martinfowler.com/bliki/CQRS.html</a><a
 href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p><a
-href="https://martinfowler.com/bliki/CQRS.html">https://martinfowler.com/bliki/CQRS.html</a><a
+href="https://en.wikipedia.org/wiki/Content-addressable_storage">https://en.wikipedia.org/wiki/Content-addressable_storage</a><a
 href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn16"><p><a
-href="https://en.wikipedia.org/wiki/Content-addressable_storage">https://en.wikipedia.org/wiki/Content-addressable_storage</a><a
-href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17"><p><a
 href="https://curtclifton.net/papers/MoseleyMarks06a.pdf">https://curtclifton.net/papers/MoseleyMarks06a.pdf</a><a
-href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>

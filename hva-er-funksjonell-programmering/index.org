@@ -24,7 +24,7 @@ Da Brendon Eich skulle lage et programmeringsspråk som skulle kjøre rett i net
 Scheme er et funksjonelt programmeringsspråk, Eich ville lage en variant som var lett å bruke til å lage interaktive nettsider.
 Sjefene hans sa at det fikk han ikke lov til!
 Sjefene hadde hørt om /Java/, og ville at programmeringsspråket Eich designet skulle likne på Java.
-Så Java-utviklere lett kunne lage script som kjørte på nettsider.
+Så Java-utviklere lett kunne lage skript som kjørte for brukere på en nettside.
 Han fikk ti dager, og lagde JavaScript.
 
 Vi fikk så en objektorientert modell for hypertekst-dokumenter, som så fint fikk navnet /Document Object Model/[fn:dom].

@@ -22,7 +22,7 @@ Hvordan har funksjonell programmering påvirket dagens kultur for utvikling av w
 La oss ta et tilbakeblikk.
 
 Da Brendon Eich skulle lage et programmeringsspråk som skulle kjøre rett i nettleseren, ville han først lage en Scheme-dialekt[fn:js-scheme].
-Scheme er et funksjonelt programmeringsspråk, Eich ville lage en variant som var lett å bruke til å lage interaktive nettsider.
+Scheme er et funksjonelt programmeringsspråk, Eich ville lage en scheme-dialekt som var godt egnet til å lage interaktive nettsider.
 Sjefene hans sa at det fikk han ikke lov til!
 Sjefene hadde hørt om /Java/, og ville at programmeringsspråket Eich designet skulle likne på Java.
 Det måtte være lett for Java-utviklere å brukte språket til Eich, sa sjefene.

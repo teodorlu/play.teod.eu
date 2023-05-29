@@ -106,6 +106,7 @@ Det er en ferdighet som varer og gir avkastning, uansett om du jobber i et språ
 [fn:jquery] https://en.wikipedia.org/wiki/JQuery
 [fn:frp] http://conal.net/papers/icfp97/
 [fn:elm] https://en.wikipedia.org/wiki/Elm_(programming_language)
+[fn:react] https://en.wikipedia.org/wiki/React_(software)
 [fn:reasonml] https://en.wikipedia.org/wiki/Reason_(programming_language)
 [fn:ml] https://en.wikipedia.org/wiki/ML_(programming_language)
 [fn:clojure] https://clojure.org/

@@ -249,25 +249,26 @@ hvis du vil) for å la effekter reagerer på andre effekter.</p>
 <p>I 2012 lagde Evan Czaplicki programmeringsspråket <em>Elm</em> for å
 bruke FRP til å lage spill<a href="#fn6" class="footnote-ref"
 id="fnref6" role="doc-noteref"><sup>6</sup></a>, og i 2013 lagde Jordan
-Walke React for å lage interaktive webapper[fn:react]. Det oppfordres
-først til å lage React-apper i objektorientert stil (React Class
-Components), før dette frarådes, og reaktive funksjoner (React Hooks)
-får førstesideplassen.</p>
-<p>Jordan Walker lager i 2016 ReasonML<a href="#fn7"
-class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, et
+Walke React for å lage interaktive webapper<a href="#fn7"
+class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.
+Det oppfordres først til å lage React-apper i objektorientert stil
+(React Class Components), før dette frarådes, og reaktive funksjoner
+(React Hooks) får førstesideplassen.</p>
+<p>Jordan Walker lager i 2016 ReasonML<a href="#fn8"
+class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>, et
 språk som er funksjonelt <em>først</em>, i kontrast til Javascript, som
 har tungt fokus på klasser, objekter og syntaks som likner på
-Javascript. ReasonML er basert på ML<a href="#fn8" class="footnote-ref"
-id="fnref8" role="doc-noteref"><sup>8</sup></a>, og andre ML-baserte
+Javascript. ReasonML er basert på ML<a href="#fn9" class="footnote-ref"
+id="fnref9" role="doc-noteref"><sup>9</sup></a>, og andre ML-baserte
 språk (Standard ML, OCaml, Haskell og F#).</p>
 <p>Hvis vi skal behandle programmering som en seriøs disiplin, må vi
 forstå hvordan vi kom hit vi er i dag.</p>
-<p>Jeg foretrekker å bruke programmeringsspråket Clojure<a href="#fn9"
-class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.
+<p>Jeg foretrekker å bruke programmeringsspråket Clojure<a href="#fn10"
+class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.
 Clojure har knallgod støtte for funksjonell programmering og knallgode
-utviklerverktøy<a href="#fn10" class="footnote-ref" id="fnref10"
-role="doc-noteref"><sup>10</sup></a><a href="#fn11" class="footnote-ref"
-id="fnref11" role="doc-noteref"><sup>11</sup></a>. Clojure er også lett
+utviklerverktøy<a href="#fn11" class="footnote-ref" id="fnref11"
+role="doc-noteref"><sup>11</sup></a><a href="#fn12" class="footnote-ref"
+id="fnref12" role="doc-noteref"><sup>12</sup></a>. Clojure er også lett
 å lære. Clojure har et lite standardbibliotek med et smakfult utvalg
 funksjoner som funker bra sammen. Syntaksen til språket er <em>ikke</em>
 satt av en mellomleder som vil overbevise Java-utviklere, som lar oss
@@ -277,19 +278,19 @@ Skill mellom beregninger og handlinger i koden din. Funksjoner
 returnerer enten et svar, eller kjører en sideeffekt. Lag nyhetsbrevet
 du ønsker å sende ut <em>før</em> du sender det ut. Da er det rett fram
 å teste, og du slipper mocking. Hvis du bruker et funksjonelt tankesett
-på systemnivå, ramler Event Sourcing<a href="#fn12" class="footnote-ref"
-id="fnref12" role="doc-noteref"><sup>12</sup></a> og Command Query
-Response Segregation<a href="#fn13" class="footnote-ref" id="fnref13"
-role="doc-noteref"><sup>13</sup></a> ut. Plutselig cacher du på content
-id-er<a href="#fn14" class="footnote-ref" id="fnref14"
-role="doc-noteref"><sup>14</sup></a> i stedet for referanser til
+på systemnivå, ramler Event Sourcing<a href="#fn13" class="footnote-ref"
+id="fnref13" role="doc-noteref"><sup>13</sup></a> og Command Query
+Response Segregation<a href="#fn14" class="footnote-ref" id="fnref14"
+role="doc-noteref"><sup>14</sup></a> ut. Plutselig cacher du på content
+id-er<a href="#fn15" class="footnote-ref" id="fnref15"
+role="doc-noteref"><sup>15</sup></a> i stedet for referanser til
 muterbare objekter, og caching blir trivielt (i stedet for å være et
 “veldig vanskelig problem”).</p>
 <p>Min erfaring er at systemer som ikke skiller mellom muterende kode
 (handlinger) og ikke-muterende kode (beregninger) ender opp i en suppe
 av mutasjon der man ikke klarer å komme videre. Funksjonell
-programmering gir en vei ut<a href="#fn15" class="footnote-ref"
-id="fnref15" role="doc-noteref"><sup>15</sup></a>.</p>
+programmering gir en vei ut<a href="#fn16" class="footnote-ref"
+id="fnref16" role="doc-noteref"><sup>16</sup></a>.</p>
 <p>Men da må vi sette oss ned og <em>legge ned en innsats for å
 lære</em>. <a href="../rich-hickey/">Rich Hickey</a> skiller i <a
 href="../simple-made-easy/">Simple Made Easy</a> mellom ting som er
@@ -352,31 +353,34 @@ href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 href="https://en.wikipedia.org/wiki/Elm_(programming_language)">https://en.wikipedia.org/wiki/Elm_(programming_language)</a><a
 href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p><a
-href="https://en.wikipedia.org/wiki/Reason_(programming_language)">https://en.wikipedia.org/wiki/Reason_(programming_language)</a><a
+href="https://en.wikipedia.org/wiki/React_(software)">https://en.wikipedia.org/wiki/React_(software)</a><a
 href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8"><p><a
-href="https://en.wikipedia.org/wiki/ML_(programming_language)">https://en.wikipedia.org/wiki/ML_(programming_language)</a><a
+href="https://en.wikipedia.org/wiki/Reason_(programming_language)">https://en.wikipedia.org/wiki/Reason_(programming_language)</a><a
 href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9"><p><a
-href="https://clojure.org/">https://clojure.org/</a><a href="#fnref9"
+href="https://en.wikipedia.org/wiki/ML_(programming_language)">https://en.wikipedia.org/wiki/ML_(programming_language)</a><a
+href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p><a
+href="https://clojure.org/">https://clojure.org/</a><a href="#fnref10"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p><a href="https://calva.io/">https://calva.io/</a><a
-href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p><a
-href="https://clerk.vision/">https://clerk.vision/</a><a href="#fnref11"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p><a href="https://calva.io/">https://calva.io/</a><a
+href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12"><p><a
-href="https://martinfowler.com/eaaDev/EventSourcing.html">https://martinfowler.com/eaaDev/EventSourcing.html</a><a
-href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+href="https://clerk.vision/">https://clerk.vision/</a><a href="#fnref12"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn13"><p><a
-href="https://martinfowler.com/bliki/CQRS.html">https://martinfowler.com/bliki/CQRS.html</a><a
+href="https://martinfowler.com/eaaDev/EventSourcing.html">https://martinfowler.com/eaaDev/EventSourcing.html</a><a
 href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14"><p><a
-href="https://en.wikipedia.org/wiki/Content-addressable_storage">https://en.wikipedia.org/wiki/Content-addressable_storage</a><a
+href="https://martinfowler.com/bliki/CQRS.html">https://martinfowler.com/bliki/CQRS.html</a><a
 href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn15"><p><a
-href="https://curtclifton.net/papers/MoseleyMarks06a.pdf">https://curtclifton.net/papers/MoseleyMarks06a.pdf</a><a
+href="https://en.wikipedia.org/wiki/Content-addressable_storage">https://en.wikipedia.org/wiki/Content-addressable_storage</a><a
 href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p><a
+href="https://curtclifton.net/papers/MoseleyMarks06a.pdf">https://curtclifton.net/papers/MoseleyMarks06a.pdf</a><a
+href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>

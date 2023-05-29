@@ -96,7 +96,7 @@ If you want the source, please read [[https://clojurians.slack.com/archives/CBJ5
 5. There's tension between "education for workers" and "education for thinkers" ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685266708417809?thread_ts=1685180318.899499&cid=CBJ5CGE0G][source]])
 6. There's tention between the "western tradition for education" and the "eastern tradition for education".
    1. Teodor's current understanding:
-      1. Western education is based on /skills/ ([[https://en.wikipedia.org/wiki/Techne][techne]]), eastern education is based on principles
+      1. Western education is based on /skills/ ([[https://en.wikipedia.org/wiki/Techne][techne]]) and knowledge ([[https://en.wikipedia.org/wiki/Episteme][episteme]]), eastern education is based on principles
       2. Don't feel like I have a grasp on eastern thinking.
          The western approach sometimes feels "dead".
       3. Not sure how I should approach learning this.

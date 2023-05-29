@@ -32,7 +32,7 @@ Eich fikk ti dager, og lagde JavaScript.
 Vi fikk så en objektorientert modell for hypertekst-dokumenter med det fine navnet /Document Object Model/[fn:dom].
 Denne viste det seg at var vanskelig å jobbe med, så John Resig skrev jQuery[fn:jquery] for å kunne jobbe med hypertekst-dokumenter uten å lage så mange objekter.
 
-Dette var fremdeles tungvindt.
+Hypertekst-programmering med jQuery var fremdeles tungvindt.
 Programmereren måtte selv sørge for å holde tilstand i synk med hva som ble vist på skjermen.
 I tillegg ble sider skrevet med jQuery ofte trege etter hvert: jQuery oppdaterer /hele/ HTML-dokumentet hver gang brukeren endrer på noe.
 

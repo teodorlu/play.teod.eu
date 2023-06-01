@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-I used to think that software architecture is about create big systems.
+I used to believe that software architecture is about create big systems.
 I no longer do that.
 
 Now, I first think about objectives.

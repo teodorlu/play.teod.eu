@@ -1566,6 +1566,13 @@
   :created "2022-07-18",
   :uuid "c4ddc0a1-bcc6-418d-bddb-db05968d84a2",
   :lang :en}
+ {:slug "dependencies-howto",
+  :author-url "https://teod.eu",
+  :created "2023-06-01",
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Dependencies: HOWTO",
+  :uuid "c5ccd23f-3e40-47a7-8161-a6661452fa49"}
  {:slug "static-dynamic-interaction",
   :title "Static-dynamic interaction",
   :readiness :wtf-is-this,

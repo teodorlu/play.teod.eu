@@ -40,5 +40,5 @@ https://whimsical.com/design-in-practice-PNQ6pHTiU8MdPjcWfN9hbE
 
 It’s a great talk, but there’s so much information that it’s hard for me to keep track of the relationships between things without some help. It obviously doesn’t include everything discussed in the talk, but maybe it’s better than nothing.
 
-—flowthing
+—flowthing ([[https://clojurians.slack.com/archives/CBJ5CGE0G/p1685736136522899][source]])
 #+end_quote

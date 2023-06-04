@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 7e831e40-daa5-4714-9ba5-c9e08988ce55
+:END:
+#+TITLE: Design in Practice
+
+[[file:..][..]]
+
+#+begin_quote
+[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]], the author of Clojure and designer of Datomic, is a software developer with over 35 years of experience in various domains.
+#+end_quote
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/c5QF2HjHLSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

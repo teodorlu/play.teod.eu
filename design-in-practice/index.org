@@ -5,9 +5,26 @@
 
 [[file:..][..]]
 
-#+begin_quote
-[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]], the author of Clojure and designer of Datomic, is a software developer with over 35 years of experience in various domains.
-#+end_quote
+
+Slides: https://download.clojure.org/presentations/DesignInPractice.pdf
+
+#+begin_verse
+*Objective - Demystify Design*
+
+    not (just) going to the hammock
+    practice - ‘what you do’
+
+concrete techniques with tangible outputs
+demonstrable progress ‘walk forward’
+activities you can make PM stories out of
+
+    thus make time for, throughout the dev process
+    not pleading for 2 weeks of nebulous 'hammock time' up front
+
+valuable artifacts that make the effort evident
+
+tips and techniques, not a formal method or anything highfalutin
+#+end_verse
 
 #+begin_export html
 <iframe class="youtube-video" src="https://www.youtube.com/embed/c5QF2HjHLSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

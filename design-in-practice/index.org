@@ -30,3 +30,13 @@ valuable artifacts that make the effort evident
 
 tips and techniques, not a formal method or anything highfalutin
 #+end_verse
+
+Big chart / graph / map of all the things in the talk and how they relate, by flowthing:
+
+https://whimsical.com/design-in-practice-PNQ6pHTiU8MdPjcWfN9hbE
+
+#+begin_quote
+It’s a great talk, but there’s so much information that it’s hard for me to keep track of the relationships between things without some help. It obviously doesn’t include everything discussed in the talk, but maybe it’s better than nothing.
+
+—flowthing
+#+end_quote

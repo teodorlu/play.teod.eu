@@ -16,6 +16,6 @@ Then, I think about dependencies.
 
 1. Can we solve those with zero code?
 2. Otherwise, can we solve those with one page of code and zero dependencies?
-3. If not, can we solve those with one and limited, explicit, well-named dependencies?
+3. If not, can we solve those with one page of code, and limited, explicit, well-named dependencies?
 
 If we do not think we can achieve our goals with either of the three options, I'm inclined to treat the code we write as exploration.

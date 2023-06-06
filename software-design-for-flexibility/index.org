@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 29d152b9-9f5e-4c23-904a-f926b3d83477
+:END:
+#+TITLE: Software Design for Flexibility
+
+[[file:..][..]]
+
+https://mitpress.mit.edu/9780262045490/software-design-for-flexibility/

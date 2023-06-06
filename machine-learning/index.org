@@ -20,5 +20,6 @@ This document is a sort of reference for me about machine learning topics.
   Good first impression.
 - I think [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] wrote a tiny neural network-like thing in 10 lines of plain Clojure, but I can't find it.
 - [[https://maxhalford.github.io/blog/ogd-in-sql/][Online gradient descent written in SQL]] was a thing I found in my Firefox history.
-- [[id:565f1ed6-dbd1-466f-9592-5b045d4a9753][Adrian Tofting]] recommends looking at this:
-  https://pytorch-geometric.readthedocs.io/en/latest/tutorial/heterogeneous.html
+- [[id:565f1ed6-dbd1-466f-9592-5b045d4a9753][Adrian Tofting]] recommends looking at:
+  - [[https://pytorch-geometric.readthedocs.io/en/latest/tutorial/heterogeneous.html][Heterogeneous Graph Learning (pytorch-geometric)]]
+  - [[https://www.youtube.com/watch?v=gelY00Xpzfg][Using Graph Neural Networks to Approximate Mechanical Response on 3D Lattice Structures (youtube)]]

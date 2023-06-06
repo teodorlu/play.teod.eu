@@ -10,7 +10,7 @@ https://en.wikipedia.org/wiki/Machine_learning
 This document is a sort of reference for me about machine learning topics.
 
 * 2023-06-06
-** capture
+** reference capture
 - [[id:385744ba-95d4-45ac-b10e-6a8392e3ba80][gradient descent]] is a way to train a [[id:14d7645f-70e8-4505-9c59-c76c6aea7ff1][neural network]].
   Gradient descent requires that the model is expressed in a way that one can "take the gradient" of the model.
 - Here's a nice guide to machine learning from the perspective of a Clojure programmer:

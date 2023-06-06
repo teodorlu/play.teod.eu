@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: bac1204a-183a-4210-ae93-b4cee2fd1b03
+:END:
+#+TITLE: discussion wishlist
+
+[[file:..][..]]
+
+A list of discussions I'd love to see in the world before I die.
+
+*parochiality in theory and in practice*.
+[[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] and [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]].
+
+*a network of friendly, ambitious nerds*.
+[[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]] and [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]].

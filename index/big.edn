@@ -1527,6 +1527,14 @@
   :created "2022-07-24",
   :uuid "b722664c-d310-4908-9b57-98ffd73833c9",
   :lang :en}
+ {:slug "gerald-jay-sussman",
+  :author-url "https://teod.eu",
+  :created "2023-06-06",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Gerald Jay Sussman",
+  :uuid "b726cfb2-5aff-46e7-b377-c881af59753d"}
  {:slug "bimodal-strategies",
   :title "Bimodal strategies",
   :readiness :wtf-is-this,

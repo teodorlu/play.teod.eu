@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: b726cfb2-5aff-46e7-b377-c881af59753d
+:END:
+#+TITLE: Gerald Jay Sussman
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Gerald_Jay_Sussman

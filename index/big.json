@@ -175,6 +175,15 @@
   "created" : "2023-05-20",
   "lang" : "en"
 }, {
+  "slug" : "neural-network",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-06",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "neural network",
+  "uuid" : "14d7645f-70e8-4505-9c59-c76c6aea7ff1"
+}, {
   "slug" : "dynamic-initiative",
   "title" : "dynamic initiative",
   "readiness" : "wtf-is-this",
@@ -528,6 +537,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-05-26",
   "lang" : "en"
+}, {
+  "slug" : "gradient-descent",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-06",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "gradient descent",
+  "uuid" : "385744ba-95d4-45ac-b10e-6a8392e3ba80"
 }, {
   "slug" : "reading-it-later",
   "title" : "A \"read it later\" strategy that works",
@@ -1988,6 +2006,14 @@
   "created" : "2022-09-20",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "machine-learning",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-06",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "machine learning",
+  "uuid" : "e4637763-45a7-4f5f-95ae-0fc35b5d0cd5"
 }, {
   "slug" : "writing-is-fake",
   "title" : "Writing is fake",

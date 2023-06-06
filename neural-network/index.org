@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 14d7645f-70e8-4505-9c59-c76c6aea7ff1
+:END:
+#+TITLE: neural network
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Neural_network

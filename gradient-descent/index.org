@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 385744ba-95d4-45ac-b10e-6a8392e3ba80
+:END:
+#+TITLE: gradient descent
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Gradient_descent

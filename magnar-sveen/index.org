@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 6d36df4a-c172-460d-a9cf-8e6ee5d386c8
+:END:
+#+TITLE: Magnar Sveen
+
+[[file:..][..]]
+
+https://twitter.com/magnars | https://github.com/magnars/

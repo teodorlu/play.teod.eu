@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 565f1ed6-dbd1-466f-9592-5b045d4a9753
+:END:
+#+TITLE: Adrian Tofting
+
+[[file:..][..]]
+
+https://www.linkedin.com/in/adrian-tofting/
+
+https://pytorch-geometric.readthedocs.io/en/latest/tutorial/heterogeneous.html

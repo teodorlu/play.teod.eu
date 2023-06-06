@@ -707,6 +707,14 @@
   :readiness :wtf-is-this,
   :lang :en,
   :uuid "5603700a-9f22-44e2-9e03-f83776e2bfe3"}
+ {:slug "adrian-tofting",
+  :author-url "https://teod.eu",
+  :created "2023-06-06",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Adrian Tofting",
+  :uuid "565f1ed6-dbd1-466f-9592-5b045d4a9753"}
  {:slug "teodor-school-system",
   :title "Teodor's school system",
   :readiness :wtf-is-this,

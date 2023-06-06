@@ -9,6 +9,8 @@ https://en.wikipedia.org/wiki/Machine_learning
 
 This document is a sort of reference for me about machine learning topics.
 
+* 2023-06-06
+** capture
 - [[id:385744ba-95d4-45ac-b10e-6a8392e3ba80][gradient descent]] is a way to train a [[id:14d7645f-70e8-4505-9c59-c76c6aea7ff1][neural network]].
   Gradient descent requires that the model is expressed in a way that one can "take the gradient" of the model.
 - Here's a nice guide to machine learning from the perspective of a Clojure programmer:
@@ -17,3 +19,4 @@ This document is a sort of reference for me about machine learning topics.
   I /started/ following this guide, but never made it to the finish line.
   Good first impression.
 - I think [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] wrote a tiny neural network-like thing in 10 lines of plain Clojure, but I can't find it.
+- [[https://maxhalford.github.io/blog/ogd-in-sql/][Online gradient descent written in SQL]] was a thing I found in my Firefox history.

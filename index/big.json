@@ -1098,6 +1098,15 @@
   "title" : "Design, Composition and Performance",
   "uuid" : "73b93aeb-d61a-413d-a119-53335e73afda"
 }, {
+  "slug" : "creative-computation",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-06",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Creative Computation",
+  "uuid" : "747d8b1e-5048-44f0-bd97-ef9a7de2fddd"
+}, {
   "slug" : "colin-smith",
   "title" : "Colin Smith",
   "readiness" : "wtf-is-this",

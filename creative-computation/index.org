@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 747d8b1e-5048-44f0-bd97-ef9a7de2fddd
+:END:
+#+TITLE: Creative Computation
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/TeXCvh5X5w0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+#+begin_quote
+An exploration of the ways in which computation can aid creativity and vice versa, with many examples.
+
+—[[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]
+#+end_quote

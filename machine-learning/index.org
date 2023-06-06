@@ -15,4 +15,5 @@ This document is a sort of reference for me about machine learning topics.
   https://matthewdowney.github.io/clojure-neural-networks-from-scratch-mnist.html
 - [[http://neuralnetworksanddeeplearning.com/chap1.html][Neural networks from scratch with Numpy]].
   I /started/ following this guide, but never made it to the finish line.
+  Good first impression.
 - I think [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] wrote a tiny neural network-like thing in 10 lines of plain Clojure, but I can't find it.

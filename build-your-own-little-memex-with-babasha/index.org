@@ -9,22 +9,23 @@ Slides PDF: TODO
 
 Script for demo:
 
-1. Create a new page for Niklas Luhman (niklas-luhman) (workspace 2)
+1. Demonstrate old, complicated system
 
-2. Refer to him as
+   1. Create a new page for Niklas Luhman (niklas-luhman) (workspace 2)
 
-   #+begin_quote
-   Sociologist, worked with linked data before computers
-   #+end_quote
+   2. Refer to him as
 
-3. Link to Niklas from this page
+      #+begin_quote
+      Sociologist, worked with linked data before computers
+      #+end_quote
 
-4. Open https://github.com/teodorlu/lemex.experimental/settings
-   Change visibility to public
+   3. Link to Niklas from this page
 
-   #+begin_quote
-   For discussing memexes, building memexes and using memexes to achieve things!
-   #+end_quote
+2. Open new, experimental system
+
+   1. https://github.com/teodorlu/lemex.experimental/settings
+
+   2. Change visibility to public
 
 #+BEGIN_VERSE
 

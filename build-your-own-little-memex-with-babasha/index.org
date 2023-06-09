@@ -22,8 +22,6 @@ Script for demo:
 4. Open https://github.com/teodorlu/lemex.experimental/settings
    Change visibility to public
 
-5. Create "little memexes" channel on Slack (workspace 3)
-
    #+begin_quote
    For discussing memexes, building memexes and using memexes to achieve things!
    #+end_quote

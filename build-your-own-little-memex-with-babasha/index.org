@@ -24,6 +24,10 @@ Script for demo:
 
 5. Create "little memexes" channel on Slack (workspace 3)
 
+   #+begin_quote
+   For discussing memexes, building memexes and using memexes to achieve things!
+   #+end_quote
+
 #+BEGIN_VERSE
 
 

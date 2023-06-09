@@ -5,7 +5,51 @@
 
 [[file:..][..]]
 
-DRAFT
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE
+
+
+Notes PDF: ...
 
 1. applied curiosity
    1. [[id:1d59f7de-5ed3-4fc8-ba03-e9af70a97a45][introspect]], [[id:57341ad1-065a-4652-979d-61887803aabf][friendly ambitious nerd]], [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]

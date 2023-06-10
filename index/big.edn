@@ -1662,6 +1662,14 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "niklas-luhman",
+  :author-url "https://teod.eu",
+  :created "2023-06-10",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Niklas Luhman",
+  :uuid "c46037a1-481e-4040-aca9-f6157f3040a4"}
  {:slug "curious",
   :title "Please talk to me about stuff that doesn't fit!",
   :readiness :wtf-is-this,

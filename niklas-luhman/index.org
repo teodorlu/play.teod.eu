@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: c46037a1-481e-4040-aca9-f6157f3040a4
+:END:
+#+TITLE: Niklas Luhman
+
+[[file:..][..]]
+
+Sociologist, worked with linked data before computers

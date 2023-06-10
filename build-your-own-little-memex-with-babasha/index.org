@@ -19,7 +19,7 @@ Script for demo:
       Sociologist, worked with linked data before computers
       #+end_quote
 
-   3. Link to Niklas from this page
+   3. Link to [[id:c46037a1-481e-4040-aca9-f6157f3040a4][Niklas Luhman]] from this page
 
 2. Open new, experimental system
 

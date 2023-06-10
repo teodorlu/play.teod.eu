@@ -1527,3 +1527,4 @@ Core: the skills of a good product manager is theory building in practice.
 * 2023-06-10
 ** paulus asks about time
 Teodor says "yeah, lots of time."
+** remember to look at federated wikis

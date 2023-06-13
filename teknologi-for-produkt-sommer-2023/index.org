@@ -136,6 +136,6 @@ Hvis du klarer å skrive en konsis beskrivelse av problemet du trenger hjelp til
 
 *Referanser.*
 [[id:a3ce5686-05e5-4620-8d38-77af80203184][Trillion Dollar Coach]] er en god bok om å be om hjelp gjennom vinkelen /coaching/ og /[[id:5fd923f9-dc43-4a82-ac59-8785e98bc901][coachability]]/.
-Boka handler om hvordan [[id:1430e8a9-2e4b-499e-9447-84c71985aaf1][Bill Campbell]] hjalp blant andre Steve Jobs med å styre Apple.
+Boka handler om hvordan [[id:1430e8a9-2e4b-499e-9447-84c71985aaf1][Bill Campbell]] hjalp folk /som coach/, blant andre Steve Jobs med å styre Apple.
 Jeg har også skrevet en annen tekst om hvordan å be om hjelp: [[id:55261ada-7ca6-4c94-88f5-446a9b35e5c4][How to ask experts for help]].
 Cirka to minutter å lese, på engelsk.

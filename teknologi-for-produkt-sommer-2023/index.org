@@ -52,7 +52,6 @@ Her er tre forslag.
    hvis du ikke kjenner bruken av det du lager, vet du ikke om det til syvende og sist er verdifullt.
 2. /Det er lurt å lære seg å jobbe med egen kode i prod/.
    Inntill ekte folk bruker det du har laget, er det enkelte lekser du aldri lærer deg.
-   Plutselig dukker det opp problemer som tar to uker lenger enn du skulle trodd.
    Jeg er glad i å starte med noe ekte, og få det ut, hele veien på nett.
 3. Innovasjon Norge anbefaler en balanse mellom [[id:add61309-25d3-418d-8a9b-542915198e53][Technology Readiness Level]] (TRL) og [[id:990561a0-48e8-4a32-a225-41650ea8edda][Business Readiness Level]] (BRL).
    Jeg synes denne inndelingen er en god beskrivelse av god produktutvikling.

@@ -5,9 +5,7 @@
 
 [[file:..][..]]
 
-DRAFT
-
-(basert på [[https://roamresearch.com/#/app/teod/page/X3CSJVLdw][Teodors notater]], ikke offentlig)
+(basert på [[https://roamresearch.com/#/app/teod/page/X3CSJVLdw][Teodors notater]], men notatene er ikke offentlig)
 
 Hvordan bruker vi teknologi til å bygge produkt?
 Det spørsmålet har jeg brukt mye tid på de siste fire årene.

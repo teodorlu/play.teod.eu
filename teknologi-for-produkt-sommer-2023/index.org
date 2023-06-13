@@ -26,7 +26,6 @@ Vi skal plukke hver av problemen fra hverandre ved å:
 
 * Bør jeg sette meg ned og kode eller grave i problemene vi løser nå?
 
-*Hva er problemet?*
 Det er dumt å bruke masse tid på å løse feil problem, og det kan være skikkelig givende å se ekte folk bruke det du har laget til å løse ekte problemer.
 Samtidig er teknologi vanskelig nok i seg selv---det krever mye innsats å bli en solid utvikler.
 Så hva bør vi fokusere på?
@@ -64,7 +63,6 @@ Her er tre forslag.
 
 * Hvordan jobber vi sammen på gode produktteam?
 
-*Hva er problemet?*
 "Bare gjør ting som lager verdi" er et ikkesvar.
 Hva er veien fra koden din til folk som betaler for å få bruke koden din til å løse problemer de bryr seg om i praksis?
 Den veien går (nesten) alltid gjennom å /jobbe med folk/.
@@ -118,7 +116,6 @@ Her liker jeg [[id:40f7d350-4adb-4a1c-bee8-70b38e8006c0][Extreme Ownership]] av 
 
 * Hvordan bør jeg be om hjelp?
 
-*Hva er problemet?*
 "Bare be om hjelp" er et ikke-svar.
 Hvem bør jeg be om hjelp?
 Hva bør jeg be om hjelp til?

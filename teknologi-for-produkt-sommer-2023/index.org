@@ -5,7 +5,8 @@
 
 [[file:..][..]]
 
-(basert på [[https://roamresearch.com/#/app/teod/page/X3CSJVLdw][Teodors notater]], men notatene er ikke offentlig)
+Denne teksten er skrevet til nyansatte i Iterate.
+Men mesteparten er ikke Iterate-spesifikt, så teksten publiseres offentlig.
 
 Hvordan bruker vi teknologi til å bygge produkt?
 Det spørsmålet har jeg brukt mye tid på de siste fire årene.
@@ -139,3 +140,9 @@ Hvis du klarer å skrive en konsis beskrivelse av problemet du trenger hjelp til
 Boka handler om hvordan [[id:1430e8a9-2e4b-499e-9447-84c71985aaf1][Bill Campbell]] hjalp folk /som coach/, blant andre Steve Jobs med å styre Apple.
 Jeg har også skrevet en annen tekst om hvordan å be om hjelp: [[id:55261ada-7ca6-4c94-88f5-446a9b35e5c4][How to ask experts for help]].
 Cirka to minutter å lese, på engelsk, om hvordan du kan få hjelp av /hvem som helst/, ikke bare kollegaer.
+
+* Appendix
+** 2023-06-13
+Denne teksten er skrevet basert på disse ikke-offentlige notater:
+
+https://roamresearch.com/#/app/teod/page/X3CSJVLdw

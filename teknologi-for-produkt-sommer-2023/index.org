@@ -14,9 +14,9 @@ Her er mitt perspektiv.
 
 Vi skal dekke tre problemer:
 
-- Bør jeg sette meg ned og kode eller grave i problemene vi løser nå?
-- Hvordan jobber vi sammen på gode produktteam?
-- Hvordan bør jeg be om hjelp?
+- /Bør jeg sette meg ned og kode eller grave i problemene vi løser nå?/
+- /Hvordan jobber vi sammen på gode produktteam?/
+- /Hvordan bør jeg be om hjelp?/
 
 Vi plukker problemene fra hverandre ved å:
 

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Teknologi for å bygge produkt (Sommer 2023)</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Teknologi for å bygge produkt (Sommer 2023)</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#bør-jeg-sette-meg-ned-og-kode-eller-grave-i-problemene-vi-løser-nå"
+id="toc-bør-jeg-sette-meg-ned-og-kode-eller-grave-i-problemene-vi-løser-nå">Bør
+jeg sette meg ned og kode eller grave i problemene vi løser nå?</a></li>
+<li><a href="#hvordan-jobber-vi-sammen-på-gode-produktteam"
+id="toc-hvordan-jobber-vi-sammen-på-gode-produktteam">Hvordan jobber vi
+sammen på gode produktteam?</a></li>
+<li><a href="#hvordan-bør-jeg-be-om-hjelp"
+id="toc-hvordan-bør-jeg-be-om-hjelp">Hvordan bør jeg be om
+hjelp?</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<p>DRAFT</p>
+<p>(basert på <a
+href="https://roamresearch.com/#/app/teod/page/X3CSJVLdw">Teodors
+notater</a>, ikke offentlig)</p>
+<p>Hvordan bruker vi teknologi til å bygge produkt? Det spørsmålet har
+jeg brukt mye tid på de siste fire årene. Her er mitt perspektiv.</p>
+<p>Vi skal dekke tre problemer:</p>
+<ul>
+<li>Bør jeg sette meg ned og kode eller grave i problemene vi løser
+nå?</li>
+<li>Hvordan jobber vi sammen på gode produktteam?</li>
+<li>Hvordan bør jeg be om hjelp?</li>
+</ul>
+<p>Vi skal plukke hver av problemen fra hverandre ved å:</p>
+<ul>
+<li>Definere problemet</li>
+<li>Beskrive symptomer på problemet—hvordan vet vi at vi har
+problemet?</li>
+<li>Beskrive utfordringer—kanksje det ikke finnes en oppskrift som
+<em>løser</em> problemet.</li>
+<li>Beskrive handlingsrommet vårt: hva kan vi gjøre når vi har
+problemet?</li>
+</ul>
+<h2
+id="bør-jeg-sette-meg-ned-og-kode-eller-grave-i-problemene-vi-løser-nå">Bør
+jeg sette meg ned og kode eller grave i problemene vi løser nå?</h2>
+<p><strong>Hva er problemet?</strong> Det er dumt å bruke masse tid på å
+løse feil problem, og det kan være skikkelig givende å se ekte folk
+bruke det du har laget til å løse ekte problemer. Samtidig er teknologi
+vanskelig nok i seg selv—det krever mye innsats å bli en solid utvikler.
+Så hva bør vi fokusere på? Kun kode? Kun produkt? Litt av hvert?</p>
+<p><strong>Diagnose.</strong> Du har begrenset tid. Det er dumt å lage
+noe som ingen kommer til å bruke. Samtidig er det dumt å ikke få brukt
+det du faktisk er god på etter en (snart fullført) universitetsgrad!</p>
+<p><strong>Utfordringer.</strong> Her finnes det ikke noe 100%-svar.
+Hvis du fortsetter å lære, både på tech- og produkt-biten kommer du til
+å få en bedre og bedre magefølelse. Tech og produkt er hver for seg
+store fagfelt som tar lang tid å mestre.</p>
+<p><strong>Handlingsrom.</strong> Hva kan du gjøre? Her er tre
+forslag.</p>
+<ol>
+<li><em>Ta stilling til bruken av det du lager</em>. Hvem bruker det? I
+hvilken situasjon? Til å oppnå hvilket mål? hvis du ikke kjenner bruken
+av det du lager, vet du ikke om det til syvende og sist er
+verdifullt.</li>
+<li><em>Det er lurt å lære seg å jobbe med egen kode i prod</em>.
+Inntill ekte folk bruker det du har laget, er det enkelte lekser du
+aldri lærer deg. Plutselig dukker det opp problemer som tar to uker
+lenger enn du skulle trodd. Jeg er glad i å starte med noe ekte, og få
+det ut, hele veien på nett.</li>
+<li>Innovasjon Norge anbefaler en balanse mellom <a
+href="../technology-readiness-level/">Technology Readiness Level</a>
+(TRL) og <a href="../business-readiness-level/">Business Readiness
+Level</a> (BRL). Jeg synes denne inndelingen er en god beskrivelse av
+god produktutvikling. Leser du den, kommer du også ett steg nærmere å
+skrive en god Innovasjon Norge-søknad. Ta en titt på tabellene, og prøv
+å si noe om prosjektet ditt. Hva er TRL (1-9)? Hva er BRL (1-9)?</li>
+</ol>
+<h2 id="hvordan-jobber-vi-sammen-på-gode-produktteam">Hvordan jobber vi
+sammen på gode produktteam?</h2>
+<h2 id="hvordan-bør-jeg-be-om-hjelp">Hvordan bør jeg be om hjelp?</h2>
+</body>
+</html>

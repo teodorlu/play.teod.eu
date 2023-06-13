@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID: 224c548c-b444-4557-86a5-9056a393548f
+:END:
+#+TITLE: Teknologi for å bygge produkt (Sommer 2023)
+
+[[file:..][..]]
+
+DRAFT
+
+(basert på [[https://roamresearch.com/#/app/teod/page/X3CSJVLdw][Teodors notater]], ikke offentlig)
+
+Hvordan bruker vi teknologi til å bygge produkt?
+Det spørsmålet har jeg brukt mye tid på de siste fire årene.
+Her er mitt perspektiv.
+
+Vi skal dekke tre problemer:
+
+- Bør jeg sette meg ned og kode eller grave i problemene vi løser nå?
+- Hvordan jobber vi sammen på gode produktteam?
+- Hvordan bør jeg be om hjelp?
+
+Vi skal plukke hver av problemen fra hverandre ved å:
+
+- Definere problemet
+- Beskrive symptomer på problemet---hvordan vet vi at vi har problemet?
+- Beskrive utfordringer---kanksje det ikke finnes en oppskrift som /løser/ problemet.
+- Beskrive handlingsrommet vårt: hva kan vi gjøre når vi har problemet?
+
+* Bør jeg sette meg ned og kode eller grave i problemene vi løser nå?
+
+*Hva er problemet?*
+Det er dumt å bruke masse tid på å løse feil problem, og det kan være skikkelig givende å se ekte folk bruke det du har laget til å løse ekte problemer.
+Samtidig er teknologi vanskelig nok i seg selv---det krever mye innsats å bli en solid utvikler.
+Så hva bør vi fokusere på?
+Kun kode? Kun produkt? Litt av hvert?
+
+*Diagnose.*
+Du har begrenset tid.
+Det er dumt å lage noe som ingen kommer til å bruke.
+Samtidig er det dumt å ikke få brukt det du faktisk er god på etter en (snart fullført) universitetsgrad!
+
+*Utfordringer.*
+Her finnes det ikke noe 100%-svar.
+Hvis du fortsetter å lære, både på tech- og produkt-biten kommer du til å få en bedre og bedre magefølelse.
+Tech og produkt er hver for seg store fagfelt som tar lang tid å mestre.
+
+*Handlingsrom.*
+Hva kan du gjøre?
+Her er tre forslag.
+
+1. /Ta stilling til bruken av det du lager/.
+   Hvem bruker det?
+   I hvilken situasjon?
+   Til å oppnå hvilket mål?
+   hvis du ikke kjenner bruken av det du lager, vet du ikke om det til syvende og sist er verdifullt.
+2. /Det er lurt å lære seg å jobbe med egen kode i prod/.
+   Inntill ekte folk bruker det du har laget, er det enkelte lekser du aldri lærer deg.
+   Plutselig dukker det opp problemer som tar to uker lenger enn du skulle trodd.
+   Jeg er glad i å starte med noe ekte, og få det ut, hele veien på nett.
+3. Innovasjon Norge anbefaler en balanse mellom [[id:add61309-25d3-418d-8a9b-542915198e53][Technology Readiness Level]] (TRL) og [[id:990561a0-48e8-4a32-a225-41650ea8edda][Business Readiness Level]] (BRL).
+   Jeg synes denne inndelingen er en god beskrivelse av god produktutvikling.
+   Leser du den, kommer du også ett steg nærmere å skrive en god Innovasjon Norge-søknad.
+   Ta en titt på tabellene, og prøv å si noe om prosjektet ditt.
+   Hva er TRL (1-9)?
+   Hva er BRL (1-9)?
+
+* Hvordan jobber vi sammen på gode produktteam?
+* Hvordan bør jeg be om hjelp?

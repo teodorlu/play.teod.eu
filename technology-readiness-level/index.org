@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: add61309-25d3-418d-8a9b-542915198e53
+:END:
+#+TITLE: Technology Readiness Level
+
+[[file:..][..]]
+
+https://www.innovasjonnorge.no/no/tjenester/innovasjon-og-utvikling/finansiering-for-innovasjon-og-utvikling/finansiering-av-innovasjonsprosjekt/technology-readiness-level-trl/
+
+#+begin_quote
+Teknologimodenhet måles ofte på en såkalt TRL-skala. Denne skalaen sier noe om hvor langt man har kommet i utviklingsprosessen og hvilken dokumentasjon som finnes for teknologiens ytelse, og på hvilken skala.
+#+end_quote

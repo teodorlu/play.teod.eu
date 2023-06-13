@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 022060d8-811e-41dd-9c59-f179945a2dbc
+:END:
+#+TITLE: Inspired
+
+[[file:..][..]]
+
+https://www.goodreads.com/en/book/show/35249663
+
+A book about how good product teams work by [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]].

@@ -65,4 +65,57 @@ Her er tre forslag.
    Hva er BRL (1-9)?
 
 * Hvordan jobber vi sammen på gode produktteam?
+
+*Hva er problemet?*
+"Bare gjør ting som lager verdi" er et ikkesvar.
+Hva er veien fra koden din til folk som betaler for å få bruke koden din til å løse problemer de bryr seg om i praksis?
+Den veien går (nesten) alltid gjennom å /jobbe med folk/.
+Folk på teamet ditt.
+Folk som kan hjelpe deg i Iterate.
+Kunder, partnere, investorer.
+I din relasjon med alle disse menneskene er det ting du kan /gjøre/ for at dere kan forstå hverandre bedre, og for å gjøre det lett for dere å hjelpe hverandre.
+
+*Diagnose*.
+I din relasjon til en person X:
+
+- Stoler X på deg? Stoler du på X?
+- Skjønner X hva du synes er bra? Skjønner du hva X synes er bra?
+- Skjønner X hva du prøver å oppnå? Skjønner du hva X prøver å oppnå?
+
+*Utfordringer.*
+Disse greien er vanskelig!
+Hva om:
+
+"Jeg er usikker på hva vi prøver å oppnå."
+Ja.
+Det krever trening å bli god til å sette mål.
+Be folk som kan det du lurer på om hjelp. Vi er her for å hjelpe deg.
+
+"Jeg vet ikke hva "bra" betyr her. Hva er god markedsføring? Hva er godt design?"
+Ja.
+Det krever trening å få en forståelse av kvalitet innen fagfeltet du driver med, enten du prøver å skrive overbevisende tekst på landingssiden, lage et godt design, eller prøver å få folk til å kjøpe det du har laget.
+Men du kan be folk som kan det du lurer på om hjelp!
+Vi er her for å hjelpe deg.
+🙂
+
+*Handlingsrom*.
+Når du ikke vet akkurat hva du bør gjøre, kan du bygge sterkere relasjoner med menneskene du har rundt deg.
+
+- /tillit/ --- hva kan du gjøre for at personen stoler på deg?
+- /delt forståelse av kvalitet/ --- hva synes personen er /bra/ i sin hverdag?
+  Hva er dårlig?
+- /delt forståelse av intensjon/ --- hvilke mål prøver personen å oppnå?
+
+Disse tre er ekstremt viktige når du jobber med kunder eller potensielle kunder
+Hvis kunden ikke stoler på deg, vil ikke kunden være ærlig med deg.
+Hvis du ikke skjønner hva kunden synes er bra, klarer du verken levere bra ting, eller forstå /hva/ du kan gjøre for å levere bra ting.
+Hvis du ikke forstår hva kunden prøver å oppnå fra dag til dag, klarer du ikke å lage et produkt som er bra nok til at kunden vil kjøpe.
+
+*Referanser.*
+[[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] skriver svært godt om hvordan gode produktteam jobber i praksis.
+Start med [[id:022060d8-811e-41dd-9c59-f179945a2dbc][Inspired]], og gå videre på [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]].
+
+For å bygge tillit kan du starte med å ta eierskap til problemer.
+Her liker jeg [[id:40f7d350-4adb-4a1c-bee8-70b38e8006c0][Extreme Ownership]] av [[id:5dce2cbf-71b0-4038-ad1d-7174236fd964][Jocko Willink]].
+
 * Hvordan bør jeg be om hjelp?

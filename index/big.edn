@@ -6,6 +6,14 @@
   :created "2023-03-20",
   :lang :en,
   :form :remote-reference}
+ {:slug "inspired",
+  :author-url "https://teod.eu",
+  :created "2023-06-13",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Inspired",
+  :uuid "022060d8-811e-41dd-9c59-f179945a2dbc"}
  {:slug "symptomer-darlig-lederskap",
   :title "Symptomer på dårlig lederskap",
   :readiness :wtf-is-this,

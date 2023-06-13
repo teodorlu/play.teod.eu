@@ -143,6 +143,6 @@ Cirka to minutter å lese, på engelsk, om hvordan du kan få hjelp av /hvem som
 
 * Appendix
 ** 2023-06-13
-Denne teksten er skrevet basert på ikke-offentlige notater:
+Denne teksten er basert på ikke-offentlige notater:
 
 https://roamresearch.com/#/app/teod/page/X3CSJVLdw

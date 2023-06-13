@@ -18,7 +18,7 @@ Vi skal dekke tre problemer:
 - Hvordan jobber vi sammen på gode produktteam?
 - Hvordan bør jeg be om hjelp?
 
-Vi skal plukke hver av problemen fra hverandre ved å:
+Vi plukker problemene fra hverandre ved å:
 
 - Definere problemet
 - Beskrive symptomer på problemet---hvordan vet vi at vi har problemet?

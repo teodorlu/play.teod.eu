@@ -111,7 +111,7 @@ Hvis du ikke forstår hva kunden prøver å oppnå fra dag til dag, klarer du ik
 [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]] skriver svært godt om hvordan gode produktteam jobber i praksis.
 Start med [[id:022060d8-811e-41dd-9c59-f179945a2dbc][Inspired]], og gå videre på [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]].
 
-For å bygge tillit kan du starte med å ta eierskap til problemer.
+Du kan bygge tillit ved å ta eierskap til problemer.
 Her liker jeg [[id:40f7d350-4adb-4a1c-bee8-70b38e8006c0][Extreme Ownership]] av [[id:5dce2cbf-71b0-4038-ad1d-7174236fd964][Jocko Willink]].
 
 * Hvordan bør jeg be om hjelp?

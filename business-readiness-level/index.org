@@ -9,4 +9,4 @@
 Business Readiness Level (BRL) er en skala som beskriver den forretningsmessige modenheten til en ny forretningsidé. Den beskriver hvor godt en ny innovasjon er samkjørt med behov i markedet.
 #+end_quote
 
-https://www.innovasjonnorge.no/no/tjenester/innovasjon-og-utvikling/finansiering-for-innovasjon-og-utvikling/finansiering-av-innovasjonsprosjekt/business-readiness-level-brl/
+Kilde: https://www.innovasjonnorge.no/no/tjenester/innovasjon-og-utvikling/finansiering-for-innovasjon-og-utvikling/finansiering-av-innovasjonsprosjekt/business-readiness-level-brl/

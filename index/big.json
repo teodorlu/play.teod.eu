@@ -193,6 +193,15 @@
   "created" : "2023-05-20",
   "lang" : "en"
 }, {
+  "slug" : "bill-campbell",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-13",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Bill Campbell",
+  "uuid" : "1430e8a9-2e4b-499e-9447-84c71985aaf1"
+}, {
   "slug" : "neural-network",
   "author-url" : "https://teod.eu",
   "created" : "2023-06-06",

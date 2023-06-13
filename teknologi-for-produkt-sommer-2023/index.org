@@ -119,3 +119,29 @@ For å bygge tillit kan du starte med å ta eierskap til problemer.
 Her liker jeg [[id:40f7d350-4adb-4a1c-bee8-70b38e8006c0][Extreme Ownership]] av [[id:5dce2cbf-71b0-4038-ad1d-7174236fd964][Jocko Willink]].
 
 * Hvordan bør jeg be om hjelp?
+
+*Hva er problemet?*
+"Bare be om hjelp" er et ikke-svar.
+Hvem bør jeg be om hjelp?
+Hva bør jeg be om hjelp til?
+Hvor mye hjelp bør jeg be om?
+Hvor mye innsats bør jeg legge ned selv før jeg ber om hjelp?
+
+*Diagnose.*
+Du står fast, og vet ikke hva du skal gjøre.
+
+*Utfordringer.*
+Selvinnsikt og intellektuell ydmykhet er svært viktige kvaliteter å ha hvis du vil bygge produkt---men de tar også tid å kultivere.
+
+*Handlingsrom.*
+Du kan spørre hvem som kan hjelpe til på et problem.
+Finn og jeg har en viss oversikt over hvem som kan hva i organisasjonen.
+
+Hvis du klarer å skrive en konsis beskrivelse av problemet du trenger hjelp til, er det mye lettere å vite hvordan vi kan hjelpe deg.
+Én setning, kanskje to.
+
+*Referanser.*
+[[id:a3ce5686-05e5-4620-8d38-77af80203184][Trillion Dollar Coach]] er en fantastisk bok om å be om hjelp gjennom vinkelen /coaching/ og /[[id:5fd923f9-dc43-4a82-ac59-8785e98bc901][coachability]]/.
+Boka handler om hvordan [[id:1430e8a9-2e4b-499e-9447-84c71985aaf1][Bill Campbell]] hjalp blant andre Steve Jobs med å styre Apple.
+Jeg har også skrevet en annen tekst om hvordan å be om hjelp: [[id:55261ada-7ca6-4c94-88f5-446a9b35e5c4][How to ask experts for help]].
+Cirka to minutter å lese, på engelsk.

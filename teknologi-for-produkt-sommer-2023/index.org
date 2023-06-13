@@ -20,7 +20,7 @@ Vi skal dekke tre problemer:
 
 Vi plukker problemene fra hverandre ved å:
 
-- Definere problemet
+- Definere problemet.
 - Beskrive symptomer på problemet---hvordan vet vi at vi har problemet?
 - Beskrive utfordringer---kanksje det ikke finnes en oppskrift som /løser/ problemet.
 - Beskrive handlingsrommet vårt: hva kan vi gjøre når vi har problemet?
@@ -42,7 +42,7 @@ Samtidig er det dumt å ikke få brukt det du faktisk er god på etter en (snart
 
 *Utfordringer.*
 Her finnes det ikke noe 100%-svar.
-Hvis du fortsetter å lære, både på tech- og produkt-biten kommer du til å få en bedre og bedre magefølelse.
+Hvis du fortsetter å lære, både på teknologi- og produkt-biten kommer du til å få en bedre og bedre magefølelse.
 Tech og produkt er hver for seg store fagfelt som tar lang tid å mestre.
 
 *Handlingsrom.*

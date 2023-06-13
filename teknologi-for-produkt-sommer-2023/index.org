@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 Denne teksten er skrevet til nyansatte utviklere i Iterate---enten fast ansatte, eller folk som skal ha sommerjobb.
-Men mesteparten er ikke Iterate-spesifikt, så teksten publiseres offentlig.
+Mesteparten av teksten er nyttig utenfor Iterate, så teksten er publisert offentlig.
 
 Hvordan bruker vi teknologi til å bygge produkt?
 Det spørsmålet har jeg brukt mye tid på de siste fire årene.

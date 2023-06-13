@@ -25,6 +25,9 @@ Vi skal plukke hver av problemen fra hverandre ved å:
 - Beskrive utfordringer---kanksje det ikke finnes en oppskrift som /løser/ problemet.
 - Beskrive handlingsrommet vårt: hva kan vi gjøre når vi har problemet?
 
+Underveis kommer jeg til å referere til noen bøker.
+Det er ikke dumt å lese bøker for å lære, men å lese bøker krever innsats.
+
 * Bør jeg sette meg ned og kode eller grave i problemene vi løser nå?
 
 Det er dumt å bruke masse tid på å løse feil problem, og det kan være skikkelig givende å se ekte folk bruke det du har laget til å løse ekte problemer.

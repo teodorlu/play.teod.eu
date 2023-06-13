@@ -148,7 +148,10 @@
       ""
       "Not everybody speaks Norwegian. But some do!"
       ""]
-     (for [page norwegian] (str "- " (page-link page)))
+     ;; (for [page norwegian] (str "- " (page-link page)))
+     [(apply lines
+             (for [page (reverse (sort-by :created norwegian))]
+               (str "- " (page-link-with-date page))))]
      [""]
 
      [(paragraphs "** Seeds, drafts and vague ideas, feel free to skip."

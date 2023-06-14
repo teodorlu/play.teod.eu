@@ -293,12 +293,12 @@
   :created "2023-02-14",
   :lang :en,
   :form :remote-reference}
- {:slug "teknologi-for-produkt-sommer-2023",
+ {:slug "teknologi-for-produkt-intro",
   :author-url "https://teod.eu",
   :created "2023-06-13",
   :lang :no,
-  :readiness :wtf-is-this,
-  :title "Teknologi for å bygge produkt (Sommer 2023)",
+  :readiness :ready-for-comments,
+  :title "Teknologi for å bygge produkt --- en introduksjon",
   :uuid "224c548c-b444-4557-86a5-9056a393548f"}
  {:slug "tre-prinsipper-for-teknisk-prototyping",
   :title "Tre prinsipper for teknisk prototyping",

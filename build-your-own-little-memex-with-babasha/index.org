@@ -172,7 +172,10 @@ borkdude: for infinite patience with Neil pull requests.
 (renamed from =#little-memexes=),
 https://teod.eu/
 
-** (APPENDIX) Recommended reading.
+** (APPENDIX) Recommended resources.
+:PROPERTIES:
+:CUSTOM_ID: D-9debaf
+:END:
 
 Do you want to dig /even deeper/?
 Here are some threads you might take a bite of:
@@ -180,15 +183,25 @@ Here are some threads you might take a bite of:
 1. The books [[id:57341ad1-065a-4652-979d-61887803aabf][friendly ambitious nerd]] and [[id:1d59f7de-5ed3-4fc8-ba03-e9af70a97a45][introspect]] by [[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]].
    What if we actively explore our curisosity and cultivate our taste in practice?
    These books give a perspective.
-2. The book [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]] by [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
+2. [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]] by [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
    Deutsch gives the best definition of /theory/ that I've seen.
    A good theory explains things well, and a good theory is hard to vary.
    I believe software engineering and product management should be viewed as disciplines for theory building.
-3. The essay [[id:44a0ce6d-f13e-4dc1-a5cc-3c820b215769][Programming as Theory Building]] by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]].
-4. The talk [[id:9349d376-d5ee-458b-884c-b35cce2aa296][The Origins of Opera and the Future of Programming]] by [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]].
-   Jessica
+3. [[id:44a0ce6d-f13e-4dc1-a5cc-3c820b215769][Programming as Theory Building]] by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]].
+4. [[id:9349d376-d5ee-458b-884c-b35cce2aa296][The Origins of Opera and the Future of Programming]] by [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]].
+   Jessica defines [[id:f14b4cd9-75ff-4eec-814b-5de38d01a455][symmathesy]] as "a learning system made of learning parts", [[https://norabateson.wordpress.com/2015/11/03/symmathesy-a-word-in-progress/][attributing the term to Nora Bateson]].
+   A memex is a great way to collect the written part of the learning system.
+5. [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]] by [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]].
+   I claim that "Memex functionality can be extended with Clojure" is a good.
+   Why?
+   Because I believe that the text and the system for working with & viewing the text should be developed together.
+   In my interpretation, Jack Rusher argues for the same thing, "program" is the "text".
+6. [[https://www.youtube.com/watch?v=ShEez0JkOFw][Programming with Hand Tools]] by Tim Ewald and [[https://www.youtube.com/watch?v=Qx0-pViyIDU][Running With Scissors: Live Coding With Data]] by Stuart Halloway.
+   Further argumentation for the importance of being able to change our tools for working as we are working.
+7. Two examples of good explanations: [[https://www.youtube.com/watch?v=r6sGWTCMz2k&t=19s][But what is a Fourier series? From heat flow to drawing with circles]] by 3Blue1Brown and [[https://snapshots.nextjournal.com/clerk-demo/build/f8112d44fa742cd0913dcbd370919eca249cbcd9/notebooks/rule_30.html][Rule 30 🕹]] by [[id:63922b15-01b3-4a03-afe1-18c8ef0fa8f4][Martin Kavalar]]
 
 
+running with scissors
 * please ignore --- early notes
 
 You probably don't want to read the things below this line.

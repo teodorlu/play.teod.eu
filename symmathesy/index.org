@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: f14b4cd9-75ff-4eec-814b-5de38d01a455
+:END:
+#+TITLE: symmathesy
+
+[[file:..][..]]
+
+From [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]]'s definition:'
+
+#+begin_quote
+Symmathecist: (sim-MATH-uh-sist) an active participant in a symmathesy.
+
+A symmathesy (sim-MATH-uh-see, coined by Nora Bateson) is a learning system made of learning parts. Software teams are each a symmathesy, composed of the people on the team, the running software, and all their tools.
+
+([[https://jessitron.com/2018/10/25/symmathecist-n/][source]])
+#+end_quote

@@ -990,6 +990,15 @@
   "created" : "2022-09-17",
   "lang" : "en"
 }, {
+  "slug" : "stop-writing-dead-programs",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Stop Writing Dead Programs",
+  "uuid" : "595b4aa8-b167-462c-b9b7-303143a66921"
+}, {
   "slug" : "solarpunk-designs",
   "title" : "How to design for a solarpunk aesthetic",
   "readiness" : "wtf-is-this",
@@ -2377,6 +2386,15 @@
   "created" : "2023-05-01",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "symmathesy",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "symmathesy",
+  "uuid" : "f14b4cd9-75ff-4eec-814b-5de38d01a455"
 }, {
   "slug" : "spaghettifabrikken",
   "title" : "Factorio dedicated server",

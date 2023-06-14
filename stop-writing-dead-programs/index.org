@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 595b4aa8-b167-462c-b9b7-303143a66921
+:END:
+#+TITLE: Stop Writing Dead Programs
+
+[[file:..][..]]
+
+https://jackrusher.com/strange-loop-2022/ (Complete transcript with links to all references)
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/8Ab3ArE8W3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

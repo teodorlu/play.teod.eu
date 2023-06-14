@@ -99,7 +99,7 @@ I wouldn't recommend this architecture to others who are just starting out.
 (2) Trees. 🌲
 (3) Moving water. 🌊
 
-** (PART 2) How to build your own little memex with Babashka
+** (PART 2) How to build your own little memex with Babashka.
 
 *Memex operations*:
 

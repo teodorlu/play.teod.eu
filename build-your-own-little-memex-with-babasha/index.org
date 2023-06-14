@@ -127,8 +127,10 @@ Also, I want an approachable memex toolkit for non-Emacs users.
 #+begin_src
 experimental_memex/
   api.clj       ; ~100 lines, heavily commented
-  contrib.clj   ; Quickly collect ideas, append-only. Empty, as of 2023-06-14
-  cli.clj       ; A babashka CLI. Empty, as of 2023-06-14.
+  contrib.clj   ; Quickly collect ideas, append-only.
+                ; Empty, as of 2023-06-14
+  cli.clj       ; A babashka CLI.
+                ; Empty, as of 2023-06-14.
 #+end_src
 
 *demo.*

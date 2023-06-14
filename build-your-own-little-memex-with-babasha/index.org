@@ -13,9 +13,7 @@ If you /additionally/ enjoy using the [[id:6f1d8319-90b8-4006-9508-ef912fcd939b]
 
 This idea was originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]] 2023-07-10.
 
-If you enjoy expressing yourself in written text, making your own little memex
-
-Slides PDF: TODO
+Slides: [[https://nextcloud.teod.eu/s/7NQjQbLF4D3rA3g][Build your own little memex with babashka.pdf]]
 
 #+BEGIN_VERSE
 
@@ -40,7 +38,11 @@ Slides PDF: TODO
 
 #+END_VERSE
 
-* please ignore
+
+* please ignore --- early notes
+
+You probably don't want to read the things below this line.
+It contains early drafts and early outlines that didn't make it into the talk, drafts for the conference proposal, etc.
 
 ** Script for demo during presentation
 

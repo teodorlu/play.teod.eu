@@ -11,6 +11,8 @@ Do you enjoy expressing yourself in written text?
 If that is the case, you might enjoy building a memex for your curiosity and taste.
 If you /additionally/ enjoy using the [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] programming language, consider building your own little memex with Babashka.
 
+This idea was originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]] 2023-07-10.
+
 If you enjoy expressing yourself in written text, making your own little memex
 
 Slides PDF: TODO

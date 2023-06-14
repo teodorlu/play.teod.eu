@@ -10,9 +10,10 @@ https://babashka.org/conf/
 A conference for [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] enthusiasts.
 The first babashka-conf was held June 10th 2023.
 
-* Talks from the first babashka-conf
+* babashka-conf 2023: talks
 
 The first babashka-conf was held June 10th 2023.
+This list is based on the official [[https://babashka.org/conf/schedule.html][babashka-conf schedule page]], retrieved 2023-06-14.
 
 - /Clojure on SCIs/ by [[id:8a1ec713-4e59-45b0-9121-4c1ea8d3f611][Malcolm Sparks]]. Opening keynote.
   Abstract:

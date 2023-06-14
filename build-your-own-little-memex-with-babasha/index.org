@@ -64,7 +64,6 @@ Virtual pieces of paper linking to other virtual pieces of paper on a network de
 Emerging tools for thought enable frictionless capture and frictionless linking under the label of /Personal knowledge management/.
 [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] (2003), [[https://en.wikipedia.org/wiki/TiddlyWiki][TiddlyWiki]] (2004), [[id:ea364f64-1662-411d-a52e-5aa552ce45e4][Roam Research]] (2019?), [[id:5f3cf403-db0c-4d7d-8001-58ff62c343b7][Org-roam]] (2020?).
 
-I want more!
 In addition to frictionless capture and frictionless linking, I want frictionless sharing and frictionless extension with code.
 Let's use the web, files and [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] to move from personal to /collective/ knowledge management!
 

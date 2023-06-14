@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 5b65c3e9-2c3c-4718-96ea-12fee228e1c4
+:END:
+#+TITLE: Vannevar Bush
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Vannevar_Bush

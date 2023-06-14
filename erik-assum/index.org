@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 8a10b234-1308-49ea-b0bf-4005adc351a2
+:END:
+#+TITLE: Erik Assum
+
+[[file:..][..]]
+
+https://github.com/slipset

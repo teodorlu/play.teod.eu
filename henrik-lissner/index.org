@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: d5f62ad8-f837-4156-9444-fe9b0b157b1a
+:END:
+#+TITLE: Henrik Lissner
+
+[[file:..][..]]
+
+https://henrik.io/ | https://github.com/hlissner

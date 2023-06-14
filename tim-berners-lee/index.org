@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 07ed25bd-5f10-404c-bee4-f8c9db383bf3
+:END:
+#+TITLE: Tim Berners Lee
+
+[[file:..][..]]
+
+https://en.m.wikipedia.org/wiki/Tim_Berners-Lee

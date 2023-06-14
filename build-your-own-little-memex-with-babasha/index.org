@@ -15,29 +15,17 @@ This idea was originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9]
 
 Slides: [[https://nextcloud.teod.eu/s/7NQjQbLF4D3rA3g][Build your own little memex with babashka.pdf]]
 
-#+BEGIN_VERSE
+* References --- a companion to the slides and the recording.
 
+Intended usage: keep this section next to the recording or a PDF of the slides to see where how you can learn more.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+END_VERSE
-
+*Big thanks (incomplete list)*:
+[[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]], [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]], [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]],
+[[id:3331b931-9aaf-4fa4-9742-0fe2f02031e6][Ted Nelson]], [[id:07ed25bd-5f10-404c-bee4-f8c9db383bf3][Tim Berners Lee]], [[id:40e888ea-7732-41da-8776-7f506844e7f7][Ward Cunningham]], [[id:c46037a1-481e-4040-aca9-f6157f3040a4][Niklas Luhman]],
+[[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]], Tore, [[id:e511ab7c-858e-44fc-b9b6-738e7286f221][Steinar Barstad]],
+[[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]], [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]], [[id:63922b15-01b3-4a03-afe1-18c8ef0fa8f4][Martin Kavalar]], [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]],
+[[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]], [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]], [[id:8a10b234-1308-49ea-b0bf-4005adc351a2][Erik Assum]], [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]], [[id:d5f62ad8-f837-4156-9444-fe9b0b157b1a][Henrik Lissner]],
+[[id:43e911a6-55b4-4138-af40-5181775eca2b][Conor White-Sullivan]], [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]], [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]] organizers.
 
 * please ignore --- early notes
 

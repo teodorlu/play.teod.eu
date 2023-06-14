@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 43e911a6-55b4-4138-af40-5181775eca2b
+:END:
+#+TITLE: Conor White-Sullivan
+
+[[file:..][..]]
+
+https://twitter.com/Conaw
+
+Co-founder of [[id:ea364f64-1662-411d-a52e-5aa552ce45e4][Roam Research]].

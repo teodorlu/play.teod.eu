@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: ea364f64-1662-411d-a52e-5aa552ce45e4
+:END:
+#+TITLE: Roam Research
+
+[[file:..][..]]
+
+https://roamresearch.com/
+
+#+begin_quote
+A note-taking tool for networked thought.
+#+end_quote

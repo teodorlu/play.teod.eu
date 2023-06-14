@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 40e888ea-7732-41da-8776-7f506844e7f7
+:END:
+#+TITLE: Ward Cunningham
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Ward_Cunningham

@@ -1001,6 +1001,15 @@
   "created" : "2022-09-17",
   "lang" : "en"
 }, {
+  "slug" : "martin-kavalar",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Martin Kavalar",
+  "uuid" : "63922b15-01b3-4a03-afe1-18c8ef0fa8f4"
+}, {
   "slug" : "the-ethics-of-ambiguity",
   "title" : "The Ethics of Ambiguity",
   "readiness" : "wtf-is-this",
@@ -1369,6 +1378,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-04-22",
   "lang" : "en"
+}, {
+  "slug" : "malcolm-sparks",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Malcolm Sparks",
+  "uuid" : "8a1ec713-4e59-45b0-9121-4c1ea8d3f611"
 }, {
   "slug" : "jacket",
   "title" : "Jacket Interactive",
@@ -1940,6 +1958,15 @@
   "title" : "Niklas Luhman",
   "uuid" : "c46037a1-481e-4040-aca9-f6157f3040a4"
 }, {
+  "slug" : "gert-goet",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Gert Goet",
+  "uuid" : "c4cfd85f-13ae-49ef-8613-f3c495260a61"
+}, {
   "slug" : "curious",
   "title" : "Please talk to me about stuff that doesn't fit!",
   "readiness" : "wtf-is-this",
@@ -2042,6 +2069,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "babashka-conf",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "babashka-conf",
+  "uuid" : "cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9"
+}, {
   "slug" : "antifragile",
   "title" : "Antifragile",
   "readiness" : "wtf-is-this",
@@ -2140,6 +2176,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-03-08",
   "lang" : "en"
+}, {
+  "slug" : "flavio-sousa",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Flavio Sousa",
+  "uuid" : "e2183a42-3e2a-4aa8-9d22-652e06382d8e"
 }, {
   "slug" : "metamuse-podcast",
   "title" : "Metamuse (podcast)",

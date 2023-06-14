@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: c4cfd85f-13ae-49ef-8613-f3c495260a61
+:END:
+#+TITLE: Gert Goet
+
+[[file:..][..]]
+
+https://www.gertgoet.com/ | https://github.com/eval

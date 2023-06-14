@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID: cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9
+:END:
+#+TITLE: babashka-conf
+
+[[file:..][..]]
+
+https://babashka.org/conf/
+
+A conference for [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] enthusiasts.
+The first babashka-conf was held June 10th 2023.
+
+* Talks from the first babashka-conf
+
+The first babashka-conf was held June 10th 2023.
+
+- /Clojure on SCIs/ by [[id:8a1ec713-4e59-45b0-9121-4c1ea8d3f611][Malcolm Sparks]]. Opening keynote.
+  Abstract:
+
+  #+begin_quote
+  In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system, for example, how state updates are made by submitting database transactions (to XTDB) written as SCI code. I'll explain why I chose SCI and some of the reasons SCI makes a perfect scripting language to embed in a JVM-based application, providing some tips along the way to others who want to try using SCI in this way.
+  #+end_quote
+
+- /Portuguese Driving Schools and Babashka/ by [[id:e2183a42-3e2a-4aa8-9d22-652e06382d8e][Flavio Sousa]].
+  Abstract:
+
+  #+begin_quote
+  In this talk, I'll show how Babashka is powering a no-frills not-for-profit initiative attempting to bring a much-needed layer of transparency to a traditional business, deemed too unsexy to disrupt. I'll explain how Babashka brings Clojure and sanity to the messy realities of web and PDF scraping and how it enables a low budget and performant "serverless" solution, reminiscent of simpler times in web development. Join me for a potpourri of state bureaucracy, freedom of information acts, incomprehensible stubbornness and low budget solutions that steer away from big tech.
+  #+end_quote
+
+- /SCI for Science/ by [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]].
+  Abstract:
+
+  #+begin_quote
+  Scientific computing workflows typically require a balance between dynamic playfulness and stable reproducibility. One way to seek such balance is the "namespace as a notebook" approach: enjoying the playfulness of the Clojure editor and REPL in a self-documenting fashion, generating a document as a side-effect. This has been manifested in different ways through the evolution of tools such as Oz, Notespace, Clerk, and Clay. Of all the above, Clay intentionally tries to be the least clever, offering a minimalistic approach targeting documents such as HTML files, Quarto pages, and reveal.js presentations. These documents can include interactive widgets and access various data visualization libraries using SCI (through Scittle). In this talk, we will explore a real-world data-science problem using Clay, focusing on usability and the desired workflow. Our perspective will be the Scicloj journey to make Clojure a friendly option for people tackling data and science problems. We will discuss the role of SCI in the solution, as well as some of the technical and conceptual challenges on that path. Basic knowledge of Clojure will be assumed.
+  #+end_quote
+
+- /Do or Do Not Clojure/ by [[id:c4cfd85f-13ae-49ef-8613-f3c495260a61][Gert Goet]].
+  Abstract:
+
+  #+begin_quote
+  When was the last time you ran into a new library and thought: “If only I could give it a spin real quick…”? It’s this friction that deps-try tries to remove. And it shouldn’t matter whether the thing you want to try is a published library, a git-repository, a local project or just Clojure itself: you’ll spin up a rebel-readline powered REPL just as easily. In this talk you’ll learn all about deps-try, how it aims to make Clojure more accessible to newcomers and how Babashka makes it all tick.
+  #+end_quote
+
+- /Don't Forget the REPL/ by [[id:63922b15-01b3-4a03-afe1-18c8ef0fa8f4][Martin Kavalar]].
+  Abstract:
+
+  #+begin_quote
+  Babashka's instant startup time makes it a great choice for scripting. This can make it tempting to iterate by re-running scripts. This talk is a reminder that Babashka has good support for interactive development with the REPL. We'll explore when you should consider reaching for the REPL. We hope you'll learn a few tricks about REPL-driven development in general and in Babashka in particular.
+  #+end_quote
+
+- /[[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]]/ by me.
+  Abstract:
+
+  #+begin_quote
+  A memex is a tool for information capture, information storage and information retrieval. Memexes can be used to build theory, collect research, or explore one's own taste. In this talk, we will explore the history of memexes, how a memex can aid our learning process, and how we can build our own little memex with Babashka.
+  #+end_quote
+
+- /Growing an Ecosystem: Lessons Learned/ by [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]. Closing keynote.
+  Abstract:
+
+  #+begin_quote
+  In this talk, Michiel will take us on a journey through the babashka ecosystem, how it evolved into what it currently is and the lessons he learned along the way.
+  #+end_quote

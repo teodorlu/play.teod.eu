@@ -5,27 +5,15 @@
 
 [[file:..][..]]
 
+I believe to explore one's curiosity and to cultivate one's taste is a /good thing/ (tanks [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]).
+
+Do you enjoy expressing yourself in written text?
+If that is the case, you might enjoy building a memex for your curiosity and taste.
+If you /additionally/ enjoy using the [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] programming language, consider building your own little memex with Babashka.
+
+If you enjoy expressing yourself in written text, making your own little memex
+
 Slides PDF: TODO
-
-Script for demo:
-
-1. Demonstrate old, complicated system
-
-   1. Create a new page for Niklas Luhman (niklas-luhman) (workspace 2)
-
-   2. Refer to him as
-
-      #+begin_quote
-      Sociologist, worked with linked data before computers
-      #+end_quote
-
-   3. Link to [[id:c46037a1-481e-4040-aca9-f6157f3040a4][Niklas Luhman]] from this page
-
-2. Open new, experimental system
-
-   1. https://github.com/teodorlu/lemex.experimental/settings
-
-   2. Change visibility to public
 
 #+BEGIN_VERSE
 
@@ -51,6 +39,27 @@ Script for demo:
 #+END_VERSE
 
 * please ignore
+
+** Script for demo during presentation
+
+1. Demonstrate old, complicated system
+
+   1. Create a new page for Niklas Luhman (niklas-luhman) (workspace 2)
+
+   2. Refer to him as
+
+      #+begin_quote
+      Sociologist, worked with linked data before computers
+      #+end_quote
+
+   3. Link to [[id:c46037a1-481e-4040-aca9-f6157f3040a4][Niklas Luhman]] from this page
+
+2. Open new, experimental system
+
+   1. https://github.com/teodorlu/lemex.experimental/settings
+
+   2. Change visibility to public
+
 
 ** proposal notes 2
 *Literature review.*

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>babashka-conf</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">babashka-conf</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#talks-from-the-first-babashka-conf"
+id="toc-talks-from-the-first-babashka-conf">Talks from the first
+babashka-conf</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<p><a
+href="https://babashka.org/conf/">https://babashka.org/conf/</a></p>
+<p>A conference for <a href="../babashka/">Babashka</a> enthusiasts. The
+first babashka-conf was held June 10th 2023.</p>
+<h2 id="talks-from-the-first-babashka-conf">Talks from the first
+babashka-conf</h2>
+<p>The first babashka-conf was held June 10th 2023.</p>
+<ul>
+<li><p><em>Clojure on SCIs</em> by <a href="../malcolm-sparks/">Malcolm
+Sparks</a>. Opening keynote. Abstract:</p>
+<blockquote>
+<p>In the past few years I’ve been developing a secure durable
+programmable system, called Site. The language of this system is SCI,
+the small-clojure-interpreter that powers babashka. In this talk I’ll
+explain some of the notable features and benefits of this system, for
+example, how state updates are made by submitting database transactions
+(to XTDB) written as SCI code. I’ll explain why I chose SCI and some of
+the reasons SCI makes a perfect scripting language to embed in a
+JVM-based application, providing some tips along the way to others who
+want to try using SCI in this way.</p>
+</blockquote></li>
+<li><p><em>Portuguese Driving Schools and Babashka</em> by <a
+href="../flavio-sousa/">Flavio Sousa</a>. Abstract:</p>
+<blockquote>
+<p>In this talk, I’ll show how Babashka is powering a no-frills
+not-for-profit initiative attempting to bring a much-needed layer of
+transparency to a traditional business, deemed too unsexy to disrupt.
+I’ll explain how Babashka brings Clojure and sanity to the messy
+realities of web and PDF scraping and how it enables a low budget and
+performant “serverless” solution, reminiscent of simpler times in web
+development. Join me for a potpourri of state bureaucracy, freedom of
+information acts, incomprehensible stubbornness and low budget solutions
+that steer away from big tech.</p>
+</blockquote></li>
+<li><p><em>SCI for Science</em> by <a href="../daniel-slutsky/">Daniel
+Slutsky</a>. Abstract:</p>
+<blockquote>
+<p>Scientific computing workflows typically require a balance between
+dynamic playfulness and stable reproducibility. One way to seek such
+balance is the “namespace as a notebook” approach: enjoying the
+playfulness of the Clojure editor and REPL in a self-documenting
+fashion, generating a document as a side-effect. This has been
+manifested in different ways through the evolution of tools such as Oz,
+Notespace, Clerk, and Clay. Of all the above, Clay intentionally tries
+to be the least clever, offering a minimalistic approach targeting
+documents such as HTML files, Quarto pages, and reveal.js presentations.
+These documents can include interactive widgets and access various data
+visualization libraries using SCI (through Scittle). In this talk, we
+will explore a real-world data-science problem using Clay, focusing on
+usability and the desired workflow. Our perspective will be the Scicloj
+journey to make Clojure a friendly option for people tackling data and
+science problems. We will discuss the role of SCI in the solution, as
+well as some of the technical and conceptual challenges on that path.
+Basic knowledge of Clojure will be assumed.</p>
+</blockquote></li>
+<li><p><em>Do or Do Not Clojure</em> by <a href="../gert-goet/">Gert
+Goet</a>. Abstract:</p>
+<blockquote>
+<p>When was the last time you ran into a new library and thought: “If
+only I could give it a spin real quick…”? It’s this friction that
+deps-try tries to remove. And it shouldn’t matter whether the thing you
+want to try is a published library, a git-repository, a local project or
+just Clojure itself: you’ll spin up a rebel-readline powered REPL just
+as easily. In this talk you’ll learn all about deps-try, how it aims to
+make Clojure more accessible to newcomers and how Babashka makes it all
+tick.</p>
+</blockquote></li>
+<li><p><em>Don’t Forget the REPL</em> by <a
+href="../martin-kavalar/">Martin Kavalar</a>. Abstract:</p>
+<blockquote>
+<p>Babashka’s instant startup time makes it a great choice for
+scripting. This can make it tempting to iterate by re-running scripts.
+This talk is a reminder that Babashka has good support for interactive
+development with the REPL. We’ll explore when you should consider
+reaching for the REPL. We hope you’ll learn a few tricks about
+REPL-driven development in general and in Babashka in particular.</p>
+</blockquote></li>
+<li><p><em><a href="../build-your-own-little-memex-with-babasha/">Build
+Your Own Little Memex with Babashka</a></em> by me. Abstract:</p>
+<blockquote>
+<p>A memex is a tool for information capture, information storage and
+information retrieval. Memexes can be used to build theory, collect
+research, or explore one’s own taste. In this talk, we will explore the
+history of memexes, how a memex can aid our learning process, and how we
+can build our own little memex with Babashka.</p>
+</blockquote></li>
+<li><p><em>Growing an Ecosystem: Lessons Learned</em> by <a
+href="../michiel-borkent/">Michiel Borkent</a>. Closing keynote.
+Abstract:</p>
+<blockquote>
+<p>In this talk, Michiel will take us on a journey through the babashka
+ecosystem, how it evolved into what it currently is and the lessons he
+learned along the way.</p>
+</blockquote></li>
+</ul>
+</body>
+</html>

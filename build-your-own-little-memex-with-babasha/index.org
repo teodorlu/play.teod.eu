@@ -27,6 +27,54 @@ Intended usage: keep this section next to the recording or a PDF of the slides t
 [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]], [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]], [[id:8a10b234-1308-49ea-b0bf-4005adc351a2][Erik Assum]], [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]], [[id:d5f62ad8-f837-4156-9444-fe9b0b157b1a][Henrik Lissner]],
 [[id:43e911a6-55b4-4138-af40-5181775eca2b][Conor White-Sullivan]], [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]], [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]] organizers.
 
+[interlude] *List of good things* (subjective).
+(1) Knowing where your ideas come from. Influences, references. ⚓
+
+*Build your own little memex with Babashka*.
+Teodor Heggelund. https://teod.eu, [[github.com/teodorlu/][@teodorlu]].
+
+References + slides will be found here (+soon+ you're looking at it!).
+https://play.teod.eu/build-your-own-little-memex-with-babasha/
+
+Today:
+(PART 1) What is a memex? A brief history of ideas.
+(PART 2) How to build your own little memex with Babashka.
+(Part 3) Memexes applied: a tool for exploration
+
+** (PART 1) What is a memex? A brief history of ideas.
+
+Information capture, information storage and information retrieval.
+/[[https://en.m.wikipedia.org/wiki/As_We_May_Think][As We May Think]]/ ([[id:5b65c3e9-2c3c-4718-96ea-12fee228e1c4][Vannevar Bush]], 1945).
+
+Pieces of paper linking to pieces of paper.
+[[id:c46037a1-481e-4040-aca9-f6157f3040a4][Niklas Luhman]]. Slipboxes, [[https://en.wikipedia.org/wiki/Zettelkasten][Zettelkasten]].
+1952-
+
+Virtual pieces of paper linking to other virtual pieces of paper on a computer.
+[[id:3331b931-9aaf-4fa4-9742-0fe2f02031e6][Ted Nelson]], [[https://en.wikipedia.org/wiki/Hypertext][Hypertext]], 1963.
+
+Virtual pieces of paper linking to other virtual pieces of paper on a network describing physics experiments on a network of computers at [[https://en.wikipedia.org/wiki/CERN][CERN]].
+[[id:07ed25bd-5f10-404c-bee4-f8c9db383bf3][Tim Berners Lee]], 1990.
+[[https://en.wikipedia.org/wiki/HTTP][HTTP]] and the [[https://en.wikipedia.org/wiki/Internet][Internet]].
+
+/but, do you really want to write =<!doctype html><html><head><title>Build yourself a little memex with Babashka ...= by hand?
+
+Emerging tools for thought enable frictionless capture and frictionless linking under the label of /Personal knowledge management/.
+[[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] (2003), [[https://en.wikipedia.org/wiki/TiddlyWiki][TiddlyWiki]] (2004), [[id:ea364f64-1662-411d-a52e-5aa552ce45e4][Roam Research]] (2019?), [[id:5f3cf403-db0c-4d7d-8001-58ff62c343b7][Org-roam]] (2020?).
+
+I want more!
+In addition to frictionless capture and frictionless linking, I want frictionless sharing and frictionless extension with code.
+Let's use the web, files and [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] to move from personal to /collective/ knowledge management!
+
+But the future is already here.
+Blogs, newsletters, Wikipedia and [[id:b7518497-f161-498b-a670-c74ba7e8b4b4][Clojure Deref]] are already memexes.
+Clojure deref is a memex:
+
+| memex function      | clojure-deref mechanism      |
+|---------------------+------------------------------|
+| information capture | [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]] collects content |
+| information storage |                              |
+
 * please ignore --- early notes
 
 You probably don't want to read the things below this line.

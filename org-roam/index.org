@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 5f3cf403-db0c-4d7d-8001-58ff62c343b7
+:END:
+#+TITLE: Org-roam
+
+[[file:..][..]]
+
+#+begin_quote
+A plain-text personal knowledge management system.
+#+end_quote
+
+https://www.orgroam.com/ | https://github.com/org-roam/org-roam
+
+By [[id:0e22690f-17f5-49cb-ac61-5305c326ee76][Jethro Kuan]] and contributors.
+
+First commit I could find from the org-roam Github repo is from 2020-01-05.

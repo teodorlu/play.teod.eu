@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 0e22690f-17f5-49cb-ac61-5305c326ee76
+:END:
+#+TITLE: Jethro Kuan
+
+[[file:..][..]]
+
+https://www.jethro.dev/ | https://github.com/jethrokuan

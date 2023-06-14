@@ -1551,6 +1551,15 @@
   "uuid" : "92115e62-f102-4c97-92cc-8c9f52d53c71",
   "lang" : "en"
 }, {
+  "slug" : "the-origins-of-opera-and-the-future-of-programming",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "The Origins of Opera and the Future of Programming",
+  "uuid" : "9349d376-d5ee-458b-884c-b35cce2aa296"
+}, {
   "slug" : "clojure-data-cookbook",
   "title" : "Clojure Data Cookbook",
   "readiness" : "wtf-is-this",

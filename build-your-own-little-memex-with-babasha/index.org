@@ -172,6 +172,23 @@ borkdude: for infinite patience with Neil pull requests.
 (renamed from =#little-memexes=),
 https://teod.eu/
 
+** (APPENDIX) Recommended reading.
+
+Do you want to dig /even deeper/?
+Here are some threads you might take a bite of:
+
+1. The books [[id:57341ad1-065a-4652-979d-61887803aabf][friendly ambitious nerd]] and [[id:1d59f7de-5ed3-4fc8-ba03-e9af70a97a45][introspect]] by [[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]].
+   What if we actively explore our curisosity and cultivate our taste in practice?
+   These books give a perspective.
+2. The book [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]] by [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
+   Deutsch gives the best definition of /theory/ that I've seen.
+   A good theory explains things well, and a good theory is hard to vary.
+   I believe software engineering and product management should be viewed as disciplines for theory building.
+3. The essay [[id:44a0ce6d-f13e-4dc1-a5cc-3c820b215769][Programming as Theory Building]] by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]].
+4. The talk [[id:9349d376-d5ee-458b-884c-b35cce2aa296][The Origins of Opera and the Future of Programming]] by [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]].
+   Jessica
+
+
 * please ignore --- early notes
 
 You probably don't want to read the things below this line.

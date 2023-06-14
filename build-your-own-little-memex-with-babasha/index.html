@@ -275,6 +275,12 @@ id="toc-references-a-companion-to-the-slides-and-the-recording.">References
 <li><a href="#part-1-what-is-a-memex-a-brief-history-of-ideas."
 id="toc-part-1-what-is-a-memex-a-brief-history-of-ideas.">(PART 1) What
 is a memex? A brief history of ideas.</a></li>
+<li><a href="#part-2-how-to-build-your-own-little-memex-with-babashka"
+id="toc-part-2-how-to-build-your-own-little-memex-with-babashka">(PART
+2) How to build your own little memex with Babashka</a></li>
+<li><a href="#part-3-memexes-applied-a-tool-for-exploration."
+id="toc-part-3-memexes-applied-a-tool-for-exploration.">(PART 3) Memexes
+applied: a tool for exploration.</a></li>
 </ul></li>
 <li><a href="#please-ignore-early-notes"
 id="toc-please-ignore-early-notes">please ignore — early notes</a>
@@ -375,7 +381,105 @@ linking, I want frictionless sharing and frictionless extension with
 code. Let’s use the web, files and <a href="../babashka/">Babashka</a>
 to move from personal to <em>collective</em> knowledge management!</p>
 <p>But the future is already here. Blogs, newsletters, Wikipedia and <a
-href="../clojure-deref/">Clojure Deref</a> are already memexes.</p>
+href="../clojure-deref/">Clojure Deref</a> are already memexes. Clojure
+deref is a memex:</p>
+<table>
+<thead>
+<tr class="header">
+<th>memex function</th>
+<th>clojure-deref mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>information capture</td>
+<td><a href="../alex-miller/">Alex Miller</a> collects content</td>
+</tr>
+<tr class="even">
+<td>information storage</td>
+<td><a
+href="https://clojure.org/news/news">https://clojure.org/news/news</a></td>
+</tr>
+<tr class="odd">
+<td>information retrieval</td>
+<td>people read &amp; watch content</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prior work for a babashka memex</strong>. I started out with
+an <a href="../org-roam/">Org-roam</a> system. Org-Roam is built on <a
+href="../emacs/">Emacs</a> and <a href="../emacs-lisp/">Emacs
+Lisp</a>.</p>
+<p>Then I built <a href="../play.teod.eu/">play.teod.eu</a> on that
+Org-roam foundation. A generated makefile to build the pages. <a
+href="../pandoc/">Pandoc</a> for converting documents to HTML and
+resolving links to slugs. <a href="../babashka/">Babashka</a> to stitch
+it all together. But this system is too complex and has too many
+dependenceies. I wouldn’t recommend this architecture to others who are
+just starting out.</p>
+<p><strong>Desired memex properties</strong> (subjective):</p>
+<ol>
+<li>Memex is built out of simple pieces</li>
+<li>Memex supports multiple source formats: Org-mode, Markdown, Clojure
+namespaces, …</li>
+<li>Memex functionality can be extended with Clojure</li>
+<li>Nice editor integrations are provided: VSCode, Emacs, …</li>
+</ol>
+<p>[interlude] <strong>List of good things</strong> (subjective). (1)
+References. ⚓ (2) Trees. 🌲 (3) Moving water. 🌊</p>
+<h3 id="part-2-how-to-build-your-own-little-memex-with-babashka">(PART
+2) How to build your own little memex with Babashka</h3>
+<p><strong>Memex operations</strong>:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(make-doc memex uuid slug title)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>(make-link memex uuid)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>(docs memex)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>(-&gt;html-files memex)</span></code></pre></div>
+<p><strong>A memex architecture</strong>. Layers:</p>
+<ol>
+<li>Editor plugins: VSCode, Emacs, … Editor plugins shell out to a
+babashka memex CLI.</li>
+<li>Babashka memex CLI calls babashka memex lib.</li>
+<li>Babashka memex lib uses <a href="../pandoc/">Pandoc</a> for document
+conversion. Memex lib works on plaintext files on disk.</li>
+<li>Plaintext files are in different formats: org-mode, markdown,
+asciidoc, clojure namespace with markdown, …</li>
+</ol>
+<p><strong>What I’m working on</strong></p>
+<pre><code>experimental_memex/
+  api.clj       ; ~100 lines, heavily commented
+  contrib.clj   ; Quickly collect ideas, append-only. Empty, as of 2023-06-14
+  cli.clj       ; A babashka CLI. Empty, as of 2023-06-14.
+</code></pre>
+<p><strong>demo.</strong> See the old, complex system in action. The
+new, simple system doesn’t work yet. Contributions welcome, beta testers
+welcome.</p>
+<p>[interlude] <strong>List of good things</strong> (subjective). (1)
+References. ⚓ (2) Trees. 🌲 (3) Moving water. 🌊 (4) Exploring your
+curiosity. 🤔 (5) Cultivating your taste 🖼</p>
+<h3 id="part-3-memexes-applied-a-tool-for-exploration.">(PART 3) Memexes
+applied: a tool for exploration.</h3>
+<p>What are you curious about?</p>
+<p>What’s good? What do you like?</p>
+<p>Give it a title. Put it in your memex. Start exploring!</p>
+<p>Want to build a babashka toolkit for building memexes together? Join
+<a href="https://clojurians.slack.com/archives/C05C7FWTF3K">#memexes</a>
+on <a href="../clojurians-slack/">the Clojurians Slack</a>! (renamed
+from <code class="verbatim">#little-memexes</code>)</p>
+<p>This talk focused on <em>theory building</em>. Up next, <a
+href="../michiel-borkent/">Michiel Borkent</a> will tackle theory
+<em>and</em> practice in growing the Babashka ecosystem.</p>
+<p><strong>Thank you!</strong> Organizers (Paulus, Agatha and Paulus)
+and sponsors (Pitch, Doctronic, Scarlet, Juxt): you made this happen.
+Clojure community: You’re awesome. borkdude: for infinite patience with
+Neil pull requests.</p>
+<p><a href="https://github.com/teodorlu/">@teodorlu (Github)</a>, <a
+href="https://twitter.com/TeodorHeggelund">@TeodorHeggelund
+(Twitter)</a>, <a
+href="https://clojurians.slack.com/archives/C05C7FWTF3K">#memexes</a> on
+<a href="../clojurians-slack/">the Clojurians Slack</a> (renamed from
+<code class="verbatim">#little-memexes</code>), <a
+href="https://teod.eu/">https://teod.eu/</a></p>
 <h2 id="please-ignore-early-notes">please ignore — early notes</h2>
 <p>You probably don’t want to read the things below this line. It
 contains early drafts and early outlines that didn’t make it into the
@@ -487,15 +591,15 @@ wanted for the web.</p>
 <p>A year ago, this effort felt like madness. Today, I feel like it’s
 one of the better decisions I’ve made in my life. Counted today, I’ve
 got 12900 lines of org-mode content:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/dev/teodorlu/play.teod.eu</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> find . <span class="at">-iname</span> <span class="st">&#39;*.org&#39;</span> <span class="kw">|</span> <span class="fu">xargs</span> cat <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">12900</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/dev/teodorlu/play.teod.eu</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> find . <span class="at">-iname</span> <span class="st">&#39;*.org&#39;</span> <span class="kw">|</span> <span class="fu">xargs</span> cat <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">12900</span></span></code></pre></div>
 <p>In comparison, my last site got less content:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ../teodorheggelund.com</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> find . <span class="at">-iname</span> <span class="st">&#39;*.org&#39;</span> <span class="kw">|</span> <span class="fu">xargs</span> cat <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">1476</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ../teodorheggelund.com</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> find . <span class="at">-iname</span> <span class="st">&#39;*.org&#39;</span> <span class="kw">|</span> <span class="fu">xargs</span> cat <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-l</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">1476</span></span></code></pre></div>
 <p>I sometimes quote stuff from others, and sometimes copy things
 around. But I’d guess about 80 % of it is words I’ve written. So
 something has worked out.</p>

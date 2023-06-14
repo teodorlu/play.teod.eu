@@ -70,10 +70,107 @@ But the future is already here.
 Blogs, newsletters, Wikipedia and [[id:b7518497-f161-498b-a670-c74ba7e8b4b4][Clojure Deref]] are already memexes.
 Clojure deref is a memex:
 
-| memex function      | clojure-deref mechanism      |
-|---------------------+------------------------------|
-| information capture | [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]] collects content |
-| information storage |                              |
+| memex function        | clojure-deref mechanism       |
+|-----------------------+-------------------------------|
+| information capture   | [[id:15708661-258b-44fe-84b2-1aaaee815060][Alex Miller]] collects content  |
+| information storage   | https://clojure.org/news/news |
+| information retrieval | people read & watch content   |
+
+*Prior work for a babashka memex*.
+I started out with an [[id:5f3cf403-db0c-4d7d-8001-58ff62c343b7][Org-roam]] system.
+Org-Roam is built on [[id:4291481a-e7ad-4466-b51e-53b0e35076d1][Emacs]] and [[id:4e53b86e-ee35-42d7-bf1f-f325dc8355fc][Emacs Lisp]].
+
+Then I built [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] on that Org-roam foundation.
+A generated makefile to build the pages.
+[[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]] for converting documents to HTML and resolving links to slugs.
+[[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] to stitch it all together.
+But this system is too complex and has too many dependenceies.
+I wouldn't recommend this architecture to others who are just starting out.
+
+*Desired memex properties* (subjective):
+
+1. Memex is built out of simple pieces
+2. Memex supports multiple source formats: Org-mode, Markdown, Clojure namespaces, ...
+3. Memex functionality can be extended with Clojure
+4. Nice editor integrations are provided: VSCode, Emacs, ...
+
+[interlude] *List of good things* (subjective).
+(1) References. ⚓
+(2) Trees. 🌲
+(3) Moving water. 🌊
+
+** (PART 2) How to build your own little memex with Babashka
+
+*Memex operations*:
+
+#+begin_src clojure
+(make-doc memex uuid slug title)
+(make-link memex uuid)
+(docs memex)
+(->html-files memex)
+#+end_src
+
+*A memex architecture*. Layers:
+
+1. Editor plugins: VSCode, Emacs, ...
+   Editor plugins shell out to a babashka memex CLI.
+2. Babashka memex CLI calls babashka memex lib.
+3. Babashka memex lib uses [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]] for document conversion.
+   Memex lib works on plaintext files on disk.
+4. Plaintext files are in different formats:
+   org-mode, markdown, asciidoc, clojure namespace with markdown, ...
+
+*What I'm working on*
+
+#+begin_src
+experimental_memex/
+  api.clj       ; ~100 lines, heavily commented
+  contrib.clj   ; Quickly collect ideas, append-only. Empty, as of 2023-06-14
+  cli.clj       ; A babashka CLI. Empty, as of 2023-06-14.
+#+end_src
+
+*demo.*
+See the old, complex system in action.
+The new, simple system doesn't work yet.
+Contributions welcome, beta testers welcome.
+
+[interlude] *List of good things* (subjective).
+(1) References. ⚓
+(2) Trees. 🌲
+(3) Moving water. 🌊
+(4) Exploring your curiosity. 🤔
+(5) Cultivating your taste 🖼
+
+** (PART 3) Memexes applied: a tool for exploration.
+
+What are you curious about?
+
+What's good?
+What do you like?
+
+Give it a title.
+Put it in your memex.
+Start exploring!
+
+Want to build
+a babashka toolkit
+for building memexes
+together?
+Join [[https://clojurians.slack.com/archives/C05C7FWTF3K][#memexes]] on [[id:8638f5d6-bc22-4f10-a457-ab388c22128b][the Clojurians Slack]]!
+(renamed from =#little-memexes=)
+
+This talk focused on /theory building/.
+Up next, [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]] will tackle theory /and/ practice in growing the Babashka ecosystem.
+
+*Thank you!*
+Organizers (Paulus, Agatha and Paulus) and sponsors (Pitch, Doctronic, Scarlet, Juxt): you made this happen.
+Clojure community: You're awesome.
+borkdude: for infinite patience with Neil pull requests.
+
+[[https://github.com/teodorlu/][@teodorlu (Github)]], [[https://twitter.com/TeodorHeggelund][@TeodorHeggelund (Twitter)]],
+[[https://clojurians.slack.com/archives/C05C7FWTF3K][#memexes]] on [[id:8638f5d6-bc22-4f10-a457-ab388c22128b][the Clojurians Slack]]
+(renamed from =#little-memexes=),
+https://teod.eu/
 
 * please ignore --- early notes
 

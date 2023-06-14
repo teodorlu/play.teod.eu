@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 4e53b86e-ee35-42d7-bf1f-f325dc8355fc
+:END:
+#+TITLE: Emacs Lisp
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Emacs_Lisp

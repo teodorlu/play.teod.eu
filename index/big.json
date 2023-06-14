@@ -727,7 +727,7 @@
   "lang" : "en"
 }, {
   "slug" : "emacs",
-  "title" : "(Doom) Emacs learning journal",
+  "title" : "Emacs",
   "form" : "rambling",
   "readiness" : "forever-incomplete",
   "lang" : "en",
@@ -848,6 +848,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2022-12-31",
   "lang" : "en"
+}, {
+  "slug" : "emacs-lisp",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-14",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Emacs Lisp",
+  "uuid" : "4e53b86e-ee35-42d7-bf1f-f325dc8355fc"
 }, {
   "slug" : "visakan-veerasamy",
   "author-url" : "https://teod.eu",

@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+*TODO* embed recording video when released.
+
 I believe to explore one's curiosity and to cultivate one's taste is a /good thing/ (tanks [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]).
 
 Do you enjoy expressing yourself in written text?
@@ -15,7 +17,7 @@ This idea was originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9]
 
 Slides: [[https://nextcloud.teod.eu/s/7NQjQbLF4D3rA3g][Build your own little memex with babashka.pdf]]
 
-* References --- a companion to the slides and the recording.
+* References---a companion to the slides and the recording.
 
 Intended usage: keep this section next to the recording or a PDF of the slides to see where how you can learn more.
 
@@ -202,7 +204,7 @@ Here are some threads you might take a bite of:
 
 
 running with scissors
-* please ignore --- early notes
+* please ignore---early notes
 
 You probably don't want to read the things below this line.
 It contains early drafts and early outlines that didn't make it into the talk, drafts for the conference proposal, etc.

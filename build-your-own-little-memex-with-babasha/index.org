@@ -206,8 +206,10 @@ Here are some threads you might take a bite of:
 
 * please ignore---early notes
 
-You probably don't want to read the things below this line.
-It contains early drafts and early outlines that didn't make it into the talk, drafts for the conference proposal, etc.
+You probably don't want to keep reading.
+The above this line, there is polish.
+Below this line, there is no polish.
+It contains earliy drafts that didn't make it into the talk.
 
 ** Script for demo during presentation
 

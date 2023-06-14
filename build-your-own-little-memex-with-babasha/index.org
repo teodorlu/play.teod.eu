@@ -33,7 +33,7 @@ Intended usage: keep this section next to the recording or a PDF of the slides t
 (1) Knowing where your ideas come from. Influences, references. ⚓
 
 *Build your own little memex with Babashka*.
-Teodor Heggelund. https://teod.eu, [[github.com/teodorlu/][@teodorlu]].
+Teodor Heggelund. https://teod.eu, [[https://github.com/teodorlu/][@teodorlu]].
 
 References + slides will be found here (+soon+ you're looking at it!).
 https://play.teod.eu/build-your-own-little-memex-with-babasha/

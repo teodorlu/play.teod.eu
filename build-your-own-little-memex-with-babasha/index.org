@@ -192,6 +192,7 @@ Here are some threads you might take a bite of:
    A good theory explains things well, and a good theory is hard to vary.
    I believe software engineering and product management should be viewed as disciplines for theory building.
 3. [[id:44a0ce6d-f13e-4dc1-a5cc-3c820b215769][Programming as Theory Building]] by [[id:5743c6b5-07b2-4a6f-b91f-8b79b4f75fad][Peter Naur]].
+   That theory can be collected in code, or in a memex.
 4. [[id:9349d376-d5ee-458b-884c-b35cce2aa296][The Origins of Opera and the Future of Programming]] by [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]].
    Jessica defines [[id:f14b4cd9-75ff-4eec-814b-5de38d01a455][symmathesy]] as "a learning system made of learning parts", [[https://norabateson.wordpress.com/2015/11/03/symmathesy-a-word-in-progress/][attributing the term to Nora Bateson]].
    A memex is a great way to collect the written part of the learning system.

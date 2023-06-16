@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 224c548c-b444-4557-86a5-9056a393548f
 :END:
-#+TITLE: Teknologi for å bygge produkt --- en introduksjon
+#+TITLE: Teknologi for å bygge produkt---en introduksjon
 
 [[file:..][..]]
 

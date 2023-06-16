@@ -197,7 +197,7 @@ Here are some threads you might take a bite of:
    Jessica defines [[id:f14b4cd9-75ff-4eec-814b-5de38d01a455][symmathesy]] as "a learning system made of learning parts", [[https://norabateson.wordpress.com/2015/11/03/symmathesy-a-word-in-progress/][attributing the term to Nora Bateson]].
    A memex is a great way to collect the written part of the learning system.
 5. [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]] by [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]].
-   I claim that "Memex functionality can be extended with Clojure" is a good.
+   I claim that "Memex functionality can be extended with Clojure" is a good thing.
    Why?
    Because I believe that the text and the system for working with & viewing the text should be developed together.
    In my interpretation, Jack Rusher argues for the same thing, "program" is the "text".

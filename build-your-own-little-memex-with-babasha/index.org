@@ -85,7 +85,7 @@ Then I built [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] on that O
 A generated makefile to build the pages.
 [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]] for converting documents to HTML and resolving links to slugs.
 [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] to stitch it all together.
-But this system is too complex and has too many dependenceies.
+But this system is too complex and has too many dependencies.
 I wouldn't recommend this architecture to others who are just starting out.
 Also, I want an approachable memex toolkit for non-Emacs users.
 

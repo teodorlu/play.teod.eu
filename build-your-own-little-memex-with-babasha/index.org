@@ -7,7 +7,7 @@
 
 *TODO* embed recording video when released.
 
-I believe to explore one's curiosity and to cultivate one's taste is a /good thing/ (tanks [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]).
+I believe to explore one's curiosity and to cultivate one's taste is a /good thing/ (thanks [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]).
 
 Do you enjoy expressing yourself in written text?
 If that is the case, you might enjoy building a memex for your curiosity and taste.
@@ -185,7 +185,7 @@ Do you want to dig /even deeper/?
 Here are some threads you might take a bite of:
 
 1. The books [[id:57341ad1-065a-4652-979d-61887803aabf][friendly ambitious nerd]] and [[id:1d59f7de-5ed3-4fc8-ba03-e9af70a97a45][introspect]] by [[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]].
-   What if we actively explore our curisosity and cultivate our taste in practice?
+   What if we actively explore our curiosity and cultivate our taste in practice?
    These books give a perspective.
 2. [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]] by [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
    Deutsch gives the best definition of /theory/ that I've seen.

@@ -352,6 +352,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "bodil-stokke",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-16",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Bodil Stokke",
+  "uuid" : "217c51e3-1bff-43c9-af88-bc181631e94b"
+}, {
   "slug" : "teknologi-for-produkt-intro",
   "author-url" : "https://teod.eu",
   "created" : "2023-06-13",
@@ -386,10 +395,10 @@
 }, {
   "slug" : "build-your-own-little-memex-with-babasha",
   "title" : "Build Your Own Little Memex with Babashka",
-  "readiness" : "wtf-is-this",
+  "readiness" : "ready-for-comments",
   "uuid" : "26776cc4-e64d-494b-b24c-784b2c57866d",
   "author-url" : "https://teod.eu",
-  "created" : "2023-04-22",
+  "created" : "2023-07-10",
   "lang" : "en"
 }, {
   "slug" : "okrs-are-scale-invariant",
@@ -521,6 +530,15 @@
   "created" : "2023-04-30",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "rich-facepalm",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-16",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "rich-facepalm",
+  "uuid" : "313f3626-6866-4544-8617-78a3977e0fc1"
 }, {
   "slug" : "utility-is-contextual",
   "title" : "Utility is Contextual",

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 313f3626-6866-4544-8617-78a3977e0fc1
+:END:
+#+TITLE: rich-facepalm
+
+[[file:..][..]]
+
+[[file:rich-facepalm.jpg]]
+
+[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] facepalming.
+Image credits: [[id:217c51e3-1bff-43c9-af88-bc181631e94b][Bodil Stokke]].

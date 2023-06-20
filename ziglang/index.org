@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: ea79b414-3a73-404d-8ee5-2d37ff53de10
+:END:
+#+TITLE: Zig
+
+[[file:..][..]]
+
+https://ziglang.org/
+
+* 2023-06-20
+** I want to learn Zig
+Why:
+
+1. I want to tackle low-level stuff that [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] isn't well suited for, and I want more control than I get from [[id:1c80cee5-af85-45ca-9b54-47e297eaa4d9][Go (programming language)]].
+2. I want a language I could make OpenGL stuff in.
+3. [[id:052c1cdc-f2fe-4ba5-b319-d0394be1e184][I want to learn C]], but I don't want to get stuck in ancient tooling.
+4. I want to work with a lightweight foundation.

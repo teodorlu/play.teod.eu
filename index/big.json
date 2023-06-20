@@ -366,7 +366,7 @@
   "created" : "2023-06-13",
   "lang" : "no",
   "readiness" : "ready-for-comments",
-  "title" : "Teknologi for å bygge produkt --- en introduksjon",
+  "title" : "Teknologi for å bygge produkt---en introduksjon",
   "uuid" : "224c548c-b444-4557-86a5-9056a393548f"
 }, {
   "slug" : "tre-prinsipper-for-teknisk-prototyping",
@@ -2387,6 +2387,15 @@
   "readiness" : "wtf-is-this",
   "title" : "Roam Research",
   "uuid" : "ea364f64-1662-411d-a52e-5aa552ce45e4"
+}, {
+  "slug" : "ziglang",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-20",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Zig",
+  "uuid" : "ea79b414-3a73-404d-8ee5-2d37ff53de10"
 }, {
   "slug" : "programmer-cultivate-your-curiosity",
   "title" : "Programmer, cultivate your curiosity!",

@@ -42,3 +42,24 @@ const pj =
 //
 // // -- comment
 // \\ -- multiline string!!!
+
+const json = std.json;
+const testing = std.testing;
+const parseFromSlice = json.static.parseFromSlice;
+
+const Point = struct {
+    x: i32,
+    y: i32,
+};
+
+test "json pj" {
+    // try parseFromSlice
+    // var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    // const allocator = gpa.allocator();
+
+    // const point = try std.json.parseFromSlice(Point, allocator, pj, .{});
+    // try std.testing.expectEqual(point, point);
+
+    // const stream = std.json.TokenStream.init(pj);
+    // try std.testing.expectEqual(stream, stream);
+}

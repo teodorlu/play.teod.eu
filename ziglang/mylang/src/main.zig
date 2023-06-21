@@ -38,3 +38,9 @@ test "simple test 2" {
     try list.append(5);
     try std.testing.expectEqual(@as(i32, 5), list.pop());
 }
+
+test "teodor" {
+    const age = 123;
+
+    try std.testing.expectEqual(@as(i32, 123), age);
+}

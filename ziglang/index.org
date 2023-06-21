@@ -15,3 +15,6 @@ Why:
 2. I want a language I could make OpenGL stuff in.
 3. [[id:052c1cdc-f2fe-4ba5-b319-d0394be1e184][I want to learn C]], but I don't want to get stuck in ancient tooling.
 4. I want to work with a lightweight foundation.
+5. I want to see what I can come up with when I don't have a REPL to work with.
+6. I want experience making more "speed efficient" choices than when I follow "just use maps and other immutable data types"
+** So ... let's make a Lisp?

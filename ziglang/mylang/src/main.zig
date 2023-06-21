@@ -22,30 +22,3 @@ test "simple test" {
     try list.append(42);
     try std.testing.expectEqual(@as(i32, 42), list.pop());
 }
-
-// const point = struct {
-//     x i32
-// }
-
-test "simple test 2" {
-    var list = std.ArrayList(i32).init(std.testing.allocator);
-    defer list.deinit(); // try commenting this out and see if zig detects the memory leak!
-    try list.append(42);
-    try list.append(1);
-    try list.append(1);
-    try list.append(1);
-    try list.append(1);
-    try list.append(5);
-    try std.testing.expectEqual(@as(i32, 5), list.pop());
-}
-
-test "teodor" {
-    const age = 123;
-
-    try std.testing.expectEqual(@as(i32, 123), age);
-    try std.testing.expectEqual(123, age);
-
-    var ages = std.ArrayList(i32).init(std.testing.allocator);
-
-    defer ages.deinit();
-}

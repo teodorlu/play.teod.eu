@@ -43,4 +43,5 @@ test "teodor" {
     const age = 123;
 
     try std.testing.expectEqual(@as(i32, 123), age);
+    try std.testing.expectEqual(123, age);
 }

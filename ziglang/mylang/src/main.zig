@@ -22,3 +22,11 @@ test "simple test" {
     try list.append(42);
     try std.testing.expectEqual(@as(i32, 42), list.pop());
 }
+
+// Want to parse json into structs
+// want to write tests
+
+test "json test" {
+    const x = 3;
+    try std.testing.expectEqual(x, 3);
+}

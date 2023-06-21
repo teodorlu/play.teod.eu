@@ -44,4 +44,8 @@ test "teodor" {
 
     try std.testing.expectEqual(@as(i32, 123), age);
     try std.testing.expectEqual(123, age);
+
+    var ages = std.ArrayList(i32).init(std.testing.allocator);
+
+    defer ages.deinit();
 }

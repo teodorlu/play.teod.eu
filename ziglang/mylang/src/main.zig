@@ -30,3 +30,15 @@ test "json test" {
     const x = 3;
     try std.testing.expectEqual(x, 3);
 }
+
+const pj =
+    \\ {
+    \\   "x": 1
+    \\   "y": 2
+    \\ }
+;
+
+// Note.
+//
+// // -- comment
+// \\ -- multiline string!!!

@@ -1,4 +1,4 @@
-// I'm following https://ziglearn.org/
+// https://ziglearn.org/ chapter 0
 
 const std = @import("std");
 

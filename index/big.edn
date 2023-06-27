@@ -294,6 +294,14 @@
   :author-url "https://teod.eu",
   :created "2023-03-24",
   :lang :en}
+ {:slug "paulus-esterhazy",
+  :author-url "https://teod.eu",
+  :created "2023-06-27",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Paulus Esterhazy",
+  :uuid "20a97990-dd60-4cd7-9c09-a61db5ef88a7"}
  {:slug "dtype-next",
   :title "dtype-next",
   :readiness :wtf-is-this,
@@ -1957,6 +1965,13 @@
   :created "2022-11-07",
   :lang :en,
   :form :remote-reference}
+ {:slug "clojure-let",
+  :author-url "https://teod.eu",
+  :created "2023-06-27",
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Just use a \"let\" (Clojure)",
+  :uuid "d0f2a691-1418-4b17-be50-d2f95d6ea8dc"}
  {:slug "visakanv",
   :title "visa",
   :readiness :wtf-is-this,
@@ -1993,6 +2008,14 @@
   :created "2022-09-25",
   :lang :en,
   :form :remote-reference}
+ {:slug "angels-singing-writing-for-programmers",
+  :author-url "https://teod.eu",
+  :created "2023-06-27",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Angels Singing: Writing for Programmers",
+  :uuid "d8c14c54-5295-41c6-ac41-ecd4fcd718fe"}
  {:slug "write-drunk-edit-sober",
   :title "Write drunk, edit sober",
   :readiness :wtf-is-this,

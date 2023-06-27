@@ -26,3 +26,5 @@ I think I listened to [[https://twitter.com/ChristinGorman][Christin Gorman]] ta
 |----------+------------+---------|
 | describe | humanities | science |
 | create   | art        | design  |
+** 2023-06-27
+Finally touched on this in [[id:d0f2a691-1418-4b17-be50-d2f95d6ea8dc][Write clear Clojure code with =let=]].

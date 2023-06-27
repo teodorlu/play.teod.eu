@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: d8c14c54-5295-41c6-ac41-ecd4fcd718fe
+:END:
+#+TITLE: Angels Singing: Writing for Programmers
+
+[[file:..][..]]
+
+A talk by [[id:20a97990-dd60-4cd7-9c09-a61db5ef88a7][Paulus Esterhazy]].
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/T7-2DW-KDV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

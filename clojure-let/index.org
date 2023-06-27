@@ -1,0 +1,213 @@
+:PROPERTIES:
+:ID: d0f2a691-1418-4b17-be50-d2f95d6ea8dc
+:END:
+#+TITLE: Write clear Clojure code with =let=
+
+[[file:..][..]]
+
+For a long time, I felt bad for not being able to write plain imperative code in Clojure.
+Clojure code should be pretty!
+It should be functional!
+Clojure code should have the clarity of [[id:d8c14c54-5295-41c6-ac41-ecd4fcd718fe][angels singing]]!
+
+Then, reality hits me in the face.
+I've got some JSON HTTP payload, and I need to deliver some JSON HTTP payload.
+How can I make that code sing?
+
+Then I started reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
+Here's the source for =bb print-deps=, edited to fit on this page:
+
+#+begin_src clojure
+(defn print-deps [deps-format]
+  (let [deps (-> (io/resource "META-INF/babashka/deps.edn")
+                 slurp
+                 edn/read-string)
+        deps (:deps deps)
+        deps (assoc
+              deps
+              'babashka/fs {:mvn/version "0.4.19"}
+              'babashka/babashka.curl {:mvn/version "0.1.2"}
+
+              'babashka/babashka.core
+              {:git/url "https://github.com/babashka/babashka.core"
+               :git/sha "52a6037bd4b632bffffb04394fb4efd0cdab6b1e"}
+
+              'babashka/process {:mvn/version "0.5.21"})
+        deps (dissoc
+              deps
+              'borkdude/sci
+              'org.babashka/sci
+              'borkdude/graal.locking
+              'org.postgresql/postgresql
+              'babashka/clojure-lanterna
+              'seancorfield/next.jdbc
+              'datascript/datascript
+              'org.hsqldb/hsqldb)
+        bb-edn-deps (:deps @common/bb-edn)
+        deps (merge deps bb-edn-deps)
+        paths (:paths @common/bb-edn)
+        deps {:deps deps}
+        deps (cond-> deps
+               (seq paths) (assoc :paths paths))]
+    (case deps-format
+      ("deps" nil) (binding [*print-namespace-maps* false]
+                     (pp/pprint deps))
+      ("classpath") (let [cp (str/trim
+                              (sci/with-out-str
+                                (deps/clojure
+                                 ["-Spath" "-Sdeps" deps]
+                                 {:out :string})))]
+                      (println cp)))))
+#+end_src
+
+[[https://github.com/babashka/babashka/blob/85eef7d6f705d562a2e2c96363f679ae9827410c/src/babashka/impl/print_deps.clj#L11-L42][Source]].
+
+Here's another [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]] excerpt, this time from =neil dep add=.
+As above, I've edited briefly for clarity.
+Some code has been replaced with =,,,=.
+I've deleted code comments, and broken up certain lines.
+
+#+begin_src clojure
+(defn dep-add [{:keys [opts]}]
+  (if (or (:help opts) (:h opts) (not (:lib opts)))
+    (print-dep-add-help)
+    (do
+      (ensure-deps-file opts)
+      (let [edn-string (edn-string opts)
+            edn-nodes (edn-nodes edn-string)
+            lib (:lib opts)
+            lib (symbol lib)
+            lib (symbol (or (namespace lib) (name lib))
+                        (name lib))
+            alias (:alias opts)
+            explicit-git-sha? (or (:sha opts) (:latest-sha opts))
+            explicit-git-tag? (or (:tag opts) (:latest-tag opts))
+            [version coord-type?]
+            (cond explicit-git-tag?
+                  [(or (and (:tag opts)
+                            (git/find-github-tag lib (:tag opts)))
+                       (git/latest-github-tag lib)) :git/tag]
+                  ,,,)
+            missing? (nil? version)
+            mvn? (= coord-type? :mvn)
+            git-sha? (= coord-type? :git/sha)
+            git-tag? (= coord-type? :git/tag)
+            git-url (when (or git-sha? git-tag?)
+                      (or (:git/url opts)
+                          (str "https://github.com/"
+                               (git/clean-github-lib lib))))
+            as (or (:as opts) lib)
+            existing-aliases (-> edn-string
+                                 edn/read-string
+                                 :aliases)
+            path (if alias
+                   [:aliases
+                    alias
+                    (if (get-in existing-aliases [alias :deps])
+                      :deps
+                      :extra-deps)
+                    as]
+                   [:deps as])
+            nl-path (if (and alias
+                             (not (contains?
+                                   existing-aliases
+                                   alias)))
+                      [:aliases alias]
+                      path)
+            edn-nodes (-> edn-nodes
+                          (r/assoc-in nl-path nil)
+                          str
+                          r/parse-string)
+            nodes (cond
+                    missing? edn-nodes
+                    mvn?
+                    (r/assoc-in edn-nodes path
+                                {:mvn/version version})
+                    ,,,)
+            nodes (if-let [root (and (or git-sha? git-tag?)
+                                     (:deps/root opts))]
+                    (-> nodes
+                        (r/assoc-in (conj path :deps/root) root))
+                    nodes)
+            s (str (str/trim (str nodes)) "\n")]
+        (when-not missing?
+          (spit (:deps-file opts) s))))))
+#+end_src
+
+[[https://github.com/babashka/neil/blob/05b2db6218e4dd39548d5e17a4772a25efea8fb2/src/babashka/neil.clj#L343-L433][Source]].
+
+The code is imperative.
+It uses the same variable names multiple times.
+Is =deps= a map from libraries to versions, or a map with a key =:deps= that has a value that is a map from libraries to versions?
+Depending on where in the code you're reading, it's both!
+
+So, should it be refactored?
+
+I believe that [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][utility is contextual]].
+The context for this code is someone working with it.
+Someone reading it.
+
+And as someone reading it, I find this let block to be clear as daylight.
+You read the code.
+The code does what it says it does.
+You can understand the order of the code---from top to bottom.
+The function is /one thing/.
+There's no way to use the implementation details of the function, because those details are /inside the function/.
+
+Here's a piece of my own code, with some details replaced with =,,,=:
+
+#+begin_src clojure
+(defn olorm-create [{:keys [opts]}]
+  (when (or (:help opts) (:h opts))
+    (println (str/trim "
+Usage:
+
+  $ olorm create [OPTION...]
+
+Allowed options:
+
+  --disable-git-commands  Disable all Git commands. Useful for testing.
+  --disable-git-magic     Alias for --disable-git-commands
+  --dry-run               Supress side effects and print commands instead
+  --help                  Show this helptext.
+  --no-git-commands  Disable all Git commands. Useful for testing.
+  --no-git-magic          Alias for --disable-git-commands
+"))
+    (System/exit 0))
+  (let [repo-path (repo-path)
+        dispatch (fn [cmd & args]
+                   (if (:dry-run opts)
+                     (prn `(~cmd ~@args))
+                     (apply (resolve cmd) args)))
+        disable-git-commands (or (:disable-git-commands opts) ,,,)]
+    (when-not disable-git-commands
+      (dispatch `shell {:dir repo-path} "git pull --ff-only"))
+    (let [number (inc (or (->> (olorm/docs {:repo-path repo-path})
+                               (map :number)
+                               sort
+                               last)
+                          0))
+          doc (olorm/->olorm {:repo-path repo-path :number number})]
+      (dispatch `fs/create-dirs (olorm/path doc))
+      (let [index-md-path (olorm/index-md-path doc)]
+        (dispatch `spit index-md-path (olorm/md-skeleton doc))
+        (dispatch `spit (olorm/meta-path doc) (prn-str {:git.user/email (olorm/git-user-email {:repo-path repo-path})
+                                                        :doc/created (olorm/today)
+                                                        :doc/uuid (olorm/uuid)}))
+        (dispatch `shell {:dir repo-path} (System/getenv "EDITOR") index-md-path)
+        (when-not disable-git-commands
+          (dispatch `shell {:dir repo-path} "git add .")
+          (dispatch `shell {:dir repo-path} "git commit -m" (str "olorm-" (:number doc)))
+          (dispatch `shell {:dir repo-path} "git pull --rebase") ;; pull & rebase if someone is writing another another microblog entry
+          (dispatch `shell {:dir repo-path} "git push")))
+      (println (str "Husk å publisere i #mikrobloggeriet-announce på Slack. Feks:"
+                    "\n\n"
+                    (str "   OLORM-" (:number doc) ": $DIN_TITTEL → https://mikrobloggeriet.no/o/" (:slug doc) "/"))))))
+#+end_src
+
+[[https://github.com/iterate/olorm/blob/fa0ada803a7bffe6cf6f0d96f91f3606cffcab09/cli/src/mikrobloggeriet/olorm_cli.clj#L53-L102][Source]].
+It's let expressions and some code inside.
+Reading it now, I feel like I want to flatten it down to a single layer of =let= expressions.
+
+Go forth and write clear Clojure code!
+In many cases, a =let= is all you need.

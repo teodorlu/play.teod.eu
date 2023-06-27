@@ -9,15 +9,8 @@
 <iframe class="youtube-video" src="https://www.youtube.com/embed/VJbLxRVOxuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+end_export
 
-I believe to explore one's curiosity and to cultivate one's taste is a /good thing/ (thanks [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]).
-
-Do you enjoy expressing yourself in written text?
-If that is the case, you might enjoy building a memex for your curiosity and taste.
-If you /additionally/ enjoy using the [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] programming language, consider building your own little memex with Babashka.
-
-This idea was originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]] 2023-07-10.
-
-Slides: [[https://nextcloud.teod.eu/s/7NQjQbLF4D3rA3g][Build your own little memex with babashka.pdf]]
+Slides: [[https://nextcloud.teod.eu/s/7NQjQbLF4D3rA3g][Build your own little memex with babashka.pdf]].
+Originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]], 2023-07-10.
 
 * References---a companion to the slides and the recording.
 

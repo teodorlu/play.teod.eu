@@ -5,7 +5,9 @@
 
 [[file:..][..]]
 
-*TODO* embed recording video when released.
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/VJbLxRVOxuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
 
 I believe to explore one's curiosity and to cultivate one's taste is a /good thing/ (thanks [[id:d1e0e6bd-d0ce-4880-acc7-e4935e643ebd][visa]]).
 

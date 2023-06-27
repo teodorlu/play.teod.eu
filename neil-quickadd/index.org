@@ -9,7 +9,7 @@ https://github.com/teodorlu/neil-quickadd
 
 How do you know the dependency coordinates of the libraries you want to use?
 
-/neil-quickadd/ approach:
+neil-quickadd enables this approach:
 
 1. Scan Clojure projects you've downloaded for their dependencies
 2. Give you a quick, nice autocomplete for adding those dependencies in your own project.
@@ -35,3 +35,30 @@ Available options:
 
   --select-version             ; Ask the user to select versions, instead of deferring to neil defaults
 #+end_src
+
+*quickstart:*
+
+1. Go to the folder where you have cloned Clojure projects:
+
+   #+begin_src shell
+   cd ~/my-repos
+   #+end_src
+
+2. Scan the whole thing for dependencies, or scan only specific repositories:
+
+   #+begin_src shell
+   neil-quickadd scan .  # all deps.edn files in the current folder
+                         # or in subfolders.
+   neil-quickadd scan reduceco2
+   neil-quickadd scan spreadknowledge  # or scan specific projects
+   #+end_src
+
+3. Now, quickly choose with dependencies to add.
+
+   #+begin_src shell
+   cd ~/my-clojure-project
+   neil-quickadd
+   #+end_src
+
+   Now, pick the dependencies you want.
+   Try it, it's quite quick!

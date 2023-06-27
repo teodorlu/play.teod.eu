@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: 797e0cc1-f2af-49c0-a656-3905e82162de
+:END:
+#+TITLE: neil-quickadd
+
+[[file:..][..]]
+
+https://github.com/teodorlu/neil-quickadd
+
+How do you know the dependency coordinates of the libraries you want to use?
+
+/neil-quickadd/ approach:
+
+1. Scan Clojure projects you've downloaded for their dependencies
+2. Give you a quick, nice autocomplete for adding those dependencies in your own project.
+
+A blacklist command is added to remove things you don't want.
+For example if a dependency is available at two different places.
+
+#+begin_src
+Usage: neil-quickadd [COMMAND] [OPT...]
+
+Available commands:
+
+  neil-quickadd                    ; Add a dependency with FZF
+  neil-quickadd blacklist          ; Blacklist a library with FZF
+  neil-quickadd blacklist-lib LIB  ; Blacklist a library with CLI
+  neil-quickadd blacklist-list     ; Print blacklisted libraries
+  neil-quickadd clear-index        ; Remove the index
+  neil-quickadd help               ; Print subcommands
+  neil-quickadd libs               ; Show the index
+  neil-quickadd scan               ; Scan a folder for dependencies
+
+Available options:
+
+  --select-version             ; Ask the user to select versions, instead of deferring to neil defaults
+#+end_src

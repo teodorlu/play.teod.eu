@@ -14,7 +14,7 @@ Originally presented on [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf
 
 * References---a companion to the slides and the recording.
 
-Intended usage: keep this section next to the recording or a PDF of the slides.
+Intended usage: keep this companion next to the recording or the slides PDF.
 
 *Big thanks (incomplete list)*:
 [[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]], [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]], [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]],

@@ -30,8 +30,7 @@ Intended usage: keep this companion next to the recording or the slides PDF.
 *Build your own little memex with Babashka*.
 Teodor Heggelund. https://teod.eu, [[https://github.com/teodorlu/][@teodorlu]].
 
-References + slides are here (you're looking at them!).
-https://play.teod.eu/build-your-own-little-memex-with-babasha/
+References + slides are right here; you're looking at them!.
 
 Today:
 (PART 1) What is a memex? A brief history of ideas.
@@ -54,7 +53,7 @@ Virtual pieces of paper linking to other virtual pieces of paper on a network de
 [[id:07ed25bd-5f10-404c-bee4-f8c9db383bf3][Tim Berners Lee]], 1990.
 [[https://en.wikipedia.org/wiki/HTTP][HTTP]] and the [[https://en.wikipedia.org/wiki/Internet][Internet]].
 
-/but, do you really want to write =<!doctype html><html><head><title>Build yourself a little memex with Babashka ...= by hand?/
+but, do you /really/ want to write =<!doctype html><html><head><title>Build yourself a little memex with Babashka ...= /by hand?/
 
 Emerging tools for thought enable frictionless capture and frictionless linking under the label of /Personal knowledge management/.
 [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] (2003), [[https://en.wikipedia.org/wiki/TiddlyWiki][TiddlyWiki]] (2004), [[id:ea364f64-1662-411d-a52e-5aa552ce45e4][Roam Research]] (2019?), [[id:5f3cf403-db0c-4d7d-8001-58ff62c343b7][Org-roam]] (2020?).

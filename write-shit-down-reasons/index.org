@@ -36,7 +36,9 @@ The thing that you produce at work is your deliverable.
 That deliverable can be used by someone else.
 With writing, you can gain a deliverable for /anything/.
 Your thoughts can now be shared, and benefit people in the future.
-Since you now have a deliverable for anything, you can work in small increments on anything.
+Since you now have a deliverable for anything, you can work incrementally on anything.
+Either extend an existing text directly, or explore /next to the text/.
+Then come back to the text and its annotations.
 
 *Writing lets you exercise storytelling---the medium for persuasion*.
 We humans understand the world in terms of narratives.

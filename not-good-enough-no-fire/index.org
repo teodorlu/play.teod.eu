@@ -11,16 +11,16 @@ T-shirt front:
 
 #+begin_src
  
-                                NOT GOOD ENOUGH
-                                    NO FIRE
+                           NOT GOOD ENOUGH
+                               NO FIRE
 #+end_src
 
 on the front and
 
 #+begin_src
  
-             Prometheus stole fire from the gods and gave it to us,
-                                for ... THIS?
+        Prometheus stole fire from the gods and gave it to us,
+                           for ... THIS?
 #+end_src
 
 on the back.

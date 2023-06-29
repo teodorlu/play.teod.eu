@@ -5,13 +5,15 @@
 
 [[file:..][..]]
 
+/in praise of imperative Clojure code with =let= that does what says it does/
+
 For a long time, I felt bad for not being able to write plain imperative code in Clojure.
 Clojure code should be pretty!
 It should be functional!
 Clojure code should have the [[id:d8c14c54-5295-41c6-ac41-ecd4fcd718fe][clarity of angels singing]]!
 
 Then, reality hits me in the face.
-I've got some JSON HTTP payload, and I need to deliver some JSON HTTP payload.
+I've got an JSON HTTP payload, and I need to deliver another JSON HTTP payload.
 How can I make that code sing?
 
 Lately, I've been reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
@@ -140,6 +142,7 @@ Is =deps= a map from libraries to versions, or a map with a key =:deps= that has
 Depending on where in the code you're reading, it's both!
 
 So, should it be refactored?
+Should it be split up into more pieces?
 
 I believe that [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][utility is contextual]].
 The contextual utility for this code is that it should be easy to understand (utility) for someone who reads and changes the code or its surroundings (context).
@@ -151,7 +154,7 @@ I can understand the order of the code---from top to bottom.
 The function is /one thing/.
 There's no way to abuse the implementation details of the function, because those details are /inside the function/.
 
-Here's a piece of my own code, with some details replaced with =,,,=:
+Here's a piece of my own code (please pardon the Norwegian text), with some details replaced with =,,,=:
 
 #+begin_src clojure
 (defn olorm-create [{:keys [opts]}]
@@ -163,9 +166,9 @@ Usage:
 
 Allowed options:
 
-  --disable-git-commands  Disable all Git commands. Useful for testing.
+  --disable-git-commands  Disable all Git commands.
   --disable-git-magic     Alias for --disable-git-commands
-  --dry-run               Supress side effects and print commands instead
+  --dry-run               Suppress side effects, print instead
   --help                  Show this helptext.
   --no-git-commands  Disable all Git commands. Useful for testing.
   --no-git-magic          Alias for --disable-git-commands
@@ -188,18 +191,26 @@ Allowed options:
       (dispatch `fs/create-dirs (olorm/path doc))
       (let [index-md-path (olorm/index-md-path doc)]
         (dispatch `spit index-md-path (olorm/md-skeleton doc))
-        (dispatch `spit (olorm/meta-path doc) (prn-str {:git.user/email (olorm/git-user-email {:repo-path repo-path})
-                                                        :doc/created (olorm/today)
-                                                        :doc/uuid (olorm/uuid)}))
-        (dispatch `shell {:dir repo-path} (System/getenv "EDITOR") index-md-path)
+        (dispatch `spit (olorm/meta-path doc)
+                  (prn-str {:git.user/email (olorm/git-user-email
+                                             {:repo-path repo-path})
+                            :doc/created (olorm/today)
+                            :doc/uuid (olorm/uuid)}))
+        (dispatch `shell {:dir repo-path}
+                  (System/getenv "EDITOR") index-md-path)
         (when-not disable-git-commands
           (dispatch `shell {:dir repo-path} "git add .")
-          (dispatch `shell {:dir repo-path} "git commit -m" (str "olorm-" (:number doc)))
-          (dispatch `shell {:dir repo-path} "git pull --rebase") ;; pull & rebase if someone is writing another another microblog entry
+          (dispatch `shell {:dir repo-path} "git commit -m"
+                    (str "olorm-" (:number doc)))
+          (dispatch `shell {:dir repo-path} "git pull --rebase")
           (dispatch `shell {:dir repo-path} "git push")))
-      (println (str "Husk å publisere i #mikrobloggeriet-announce på Slack. Feks:"
-                    "\n\n"
-                    (str "   OLORM-" (:number doc) ": $DIN_TITTEL → https://mikrobloggeriet.no/o/" (:slug doc) "/"))))))
+      (println
+       (str
+        "Husk å publisere i #mikrobloggeriet-announce på Slack. Feks:"
+        "\n\n"
+        "   OLORM-" (:number doc)
+        ": $DIN_TITTEL → https://mikrobloggeriet.no/o/"
+        (:slug doc) "/")))))
 #+end_src
 
 [[https://github.com/iterate/olorm/blob/fa0ada803a7bffe6cf6f0d96f91f3606cffcab09/cli/src/mikrobloggeriet/olorm_cli.clj#L53-L102][Source]].
@@ -209,7 +220,7 @@ Reading it now, I feel like I want to flatten it down to a single layer of =let=
 Something like this:
 
 #+begin_src clojure
-,,, #_ "stuff above ..."
+,,, #_ "stuff ..."
 (let [repo-path (repo-path)
       dispatch (fn [cmd & args]
                  (if (:dry-run opts)
@@ -223,7 +234,7 @@ Something like this:
                       0))
       doc (olorm/->olorm {:repo-path repo-path :number number})
       _ (dispatch `fs/create-dirs (olorm/path doc))
-      ,,, #_ "more stuff below ..."])
+      ,,, #_ "more stuff ..."])
 #+end_src
 
 But still, it's fine.
@@ -232,10 +243,15 @@ It doesn't do anything fancy.
 It doesn't need to do anything fancy!
 It's just code, from top to bottom.
 
-Go forth and write clear Clojure code!
+Sure, fancy code can sing.
+Abstractions can be beautiful.
+But there's beauty in simplicity!
+So, go forth and write clear Clojure code.
 In many cases, a =let= is all you need.
-You don't need fancy constructs to give your code the clarity of angels singing.
+You don't need fancy constructs to give your code clarity.
 
 Do you agree?
 Disagree?
 Let [[id:1a915a34-7a98-498c-914a-70c2ecf47afc][me]] know!
+
+Teodor

@@ -268,13 +268,15 @@
 class="verbatim">let</code></h1>
 </header>
 <p><a href="..">..</a></p>
+<p><em>in praise of imperative Clojure code with <code
+class="verbatim">let</code> that does what says it does</em></p>
 <p>For a long time, I felt bad for not being able to write plain
 imperative code in Clojure. Clojure code should be pretty! It should be
 functional! Clojure code should have the <a
 href="../angels-singing-writing-for-programmers/">clarity of angels
 singing</a>!</p>
-<p>Then, reality hits me in the face. I’ve got some JSON HTTP payload,
-and I need to deliver some JSON HTTP payload. How can I make that code
+<p>Then, reality hits me in the face. I’ve got an JSON HTTP payload, and
+I need to deliver another JSON HTTP payload. How can I make that code
 sing?</p>
 <p>Lately, I’ve been reading <a href="../michiel-borkent/">Michiel
 Borkent</a>’s code. Here’s the source for <code
@@ -397,7 +399,8 @@ times. Is <code class="verbatim">deps</code> a map from libraries to
 versions, or a map with a key <code class="verbatim">:deps</code> that
 has a value that is a map from libraries to versions? Depending on where
 in the code you’re reading, it’s both!</p>
-<p>So, should it be refactored?</p>
+<p>So, should it be refactored? Should it be split up into more
+pieces?</p>
 <p>I believe that <a href="../utility-is-contextual/">utility is
 contextual</a>. The contextual utility for this code is that it should
 be easy to understand (utility) for someone who reads and changes the
@@ -408,8 +411,8 @@ understand the order of the code—from top to bottom. The function is
 <em>one thing</em>. There’s no way to abuse the implementation details
 of the function, because those details are <em>inside the
 function</em>.</p>
-<p>Here’s a piece of my own code, with some details replaced with <code
-class="verbatim">,,,</code>:</p>
+<p>Here’s a piece of my own code (please pardon the Norwegian text),
+with some details replaced with <code class="verbatim">,,,</code>:</p>
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> olorm-create </span>[{<span class="at">:keys</span> [opts]}]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">when</span> (<span class="kw">or</span> (<span class="at">:help</span> opts) (<span class="at">:h</span> opts))</span>
@@ -420,9 +423,9 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a 
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">Allowed options:</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="st">  --disable-git-commands  Disable all Git commands. Useful for testing.</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="st">  --disable-git-commands  Disable all Git commands.</span></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="st">  --disable-git-magic     Alias for --disable-git-commands</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="st">  --dry-run               Supress side effects and print commands instead</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="st">  --dry-run               Suppress side effects, print instead</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="st">  --help                  Show this helptext.</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="st">  --no-git-commands  Disable all Git commands. Useful for testing.</span></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="st">  --no-git-magic          Alias for --disable-git-commands</span></span>
@@ -445,25 +448,33 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a 
 <span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>      (dispatch <span class="at">`fs/create-dirs</span> (olorm/path <span class="kw">doc</span>))</span>
 <span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">let</span> [index-md-path (olorm/index-md-path <span class="kw">doc</span>)]</span>
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>        (dispatch <span class="at">`spit</span> index-md-path (olorm/md-skeleton <span class="kw">doc</span>))</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        (dispatch <span class="at">`spit</span> (olorm/meta-path <span class="kw">doc</span>) (<span class="kw">prn-str</span> {<span class="at">:git.user/email</span> (olorm/git-user-email {<span class="at">:repo-path</span> repo-path})</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>                                                        <span class="at">:doc/created</span> (olorm/today)</span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>                                                        <span class="at">:doc/uuid</span> (olorm/uuid)}))</span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>        (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} (System/getenv <span class="st">&quot;EDITOR&quot;</span>) index-md-path)</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>        (<span class="kw">when-not</span> disable-git-commands</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git add .&quot;</span>)</span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git commit -m&quot;</span> (<span class="kw">str</span> <span class="st">&quot;olorm-&quot;</span> (<span class="at">:number</span> <span class="kw">doc</span>)))</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git pull --rebase&quot;</span>) <span class="co">;; pull &amp; rebase if someone is writing another another microblog entry</span></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git push&quot;</span>)))</span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">println</span> (<span class="kw">str</span> <span class="st">&quot;Husk å publisere i #mikrobloggeriet-announce på Slack. Feks:&quot;</span></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">&quot;</span></span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>                    (<span class="kw">str</span> <span class="st">&quot;   OLORM-&quot;</span> (<span class="at">:number</span> <span class="kw">doc</span>) <span class="st">&quot;: $DIN_TITTEL → https://mikrobloggeriet.no/o/&quot;</span> (<span class="at">:slug</span> <span class="kw">doc</span>) <span class="st">&quot;/&quot;</span>))))))</span></code></pre></div>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        (dispatch <span class="at">`spit</span> (olorm/meta-path <span class="kw">doc</span>)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>                  (<span class="kw">prn-str</span> {<span class="at">:git.user/email</span> (olorm/git-user-email</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>                                             {<span class="at">:repo-path</span> repo-path})</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>                            <span class="at">:doc/created</span> (olorm/today)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>                            <span class="at">:doc/uuid</span> (olorm/uuid)}))</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>        (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path}</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>                  (System/getenv <span class="st">&quot;EDITOR&quot;</span>) index-md-path)</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>        (<span class="kw">when-not</span> disable-git-commands</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git add .&quot;</span>)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git commit -m&quot;</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>                    (<span class="kw">str</span> <span class="st">&quot;olorm-&quot;</span> (<span class="at">:number</span> <span class="kw">doc</span>)))</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git pull --rebase&quot;</span>)</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git push&quot;</span>)))</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">println</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">str</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Husk å publisere i #mikrobloggeriet-announce på Slack. Feks:&quot;</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;</span><span class="sc">\n\n</span><span class="st">&quot;</span></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;   OLORM-&quot;</span> (<span class="at">:number</span> <span class="kw">doc</span>)</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;: $DIN_TITTEL → https://mikrobloggeriet.no/o/&quot;</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>        (<span class="at">:slug</span> <span class="kw">doc</span>) <span class="st">&quot;/&quot;</span>)))))</span></code></pre></div>
 <p><a
 href="https://github.com/iterate/olorm/blob/fa0ada803a7bffe6cf6f0d96f91f3606cffcab09/cli/src/mikrobloggeriet/olorm_cli.clj#L53-L102">Source</a>.</p>
 <p>There are let expressions, and there is some code. Reading it now, I
 feel like I want to flatten it down to a single layer of <code
 class="verbatim">let</code> expressions. Something like this:</p>
 <div class="sourceCode" id="cb4"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>,,, <span class="co">#_</span> <span class="st">&quot;stuff above ...&quot;</span></span>
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>,,, <span class="co">#_</span> <span class="st">&quot;stuff ...&quot;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [repo-path (repo-path)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>      dispatch (<span class="kw">fn</span> [cmd &amp; args]</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                 (<span class="kw">if</span> (<span class="at">:dry-run</span> opts)</span>
@@ -477,13 +488,15 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a 
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">0</span>))</span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="kw">doc</span> (olorm/-&gt;olorm {<span class="at">:repo-path</span> repo-path <span class="at">:number</span> number})</span>
 <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      _ (dispatch <span class="at">`fs/create-dirs</span> (olorm/path <span class="kw">doc</span>))</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      ,,, <span class="co">#_</span> <span class="st">&quot;more stuff below ...&quot;</span>])</span></code></pre></div>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      ,,, <span class="co">#_</span> <span class="st">&quot;more stuff ...&quot;</span>])</span></code></pre></div>
 <p>But still, it’s fine. It’s one function. It doesn’t do anything
 fancy. It doesn’t need to do anything fancy! It’s just code, from top to
 bottom.</p>
-<p>Go forth and write clear Clojure code! In many cases, a <code
-class="verbatim">let</code> is all you need. You don’t need fancy
-constructs to give your code the clarity of angels singing.</p>
+<p>Sure, fancy code can sing. Abstractions can be beautiful. But there’s
+beauty in simplicity! So, go forth and write clear Clojure code. In many
+cases, a <code class="verbatim">let</code> is all you need. You don’t
+need fancy constructs to give your code clarity.</p>
 <p>Do you agree? Disagree? Let <a href="../me/">me</a> know!</p>
+<p>Teodor</p>
 </body>
 </html>

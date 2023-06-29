@@ -10,3 +10,5 @@ Hi, I'm Teodor :)
 - My home on the web: https://teod.eu/
 - My Twitter handle: https://twitter.com/teodorheggelund
 - My Github handle: https://github.com/teodorlu/
+- My personal email is my first name (above) at teodorheggelund.com.
+  I'm making this sentence a bit hard to read to avoid E-mails from bots.

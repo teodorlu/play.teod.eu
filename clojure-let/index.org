@@ -14,7 +14,7 @@ Then, reality hits me in the face.
 I've got some JSON HTTP payload, and I need to deliver some JSON HTTP payload.
 How can I make that code sing?
 
-Then I started reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
+Lately, I've been reading reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
 Here's the source for =bb print-deps=, edited to fit on this page:
 
 #+begin_src clojure

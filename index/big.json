@@ -1587,6 +1587,13 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "shabakka",
+  "title" : "Shabakka",
+  "readiness" : "wtf-is-this",
+  "author-url" : "https://teod.eu",
+  "lang" : "en",
+  "uuid" : "9149f217-16e5-46ac-b5bb-a34f7a7893cd"
+}, {
   "slug" : "good-epistemology",
   "title" : "Good epistemology",
   "readiness" : "wtf-is-this",
@@ -2247,9 +2254,9 @@
 }, {
   "slug" : "clojure-let",
   "author-url" : "https://teod.eu",
-  "created" : "2023-06-27",
+  "created" : "2023-06-29",
   "lang" : "en",
-  "readiness" : "wtf-is-this",
+  "readiness" : "ready-for-comments",
   "title" : "Write clear Clojure code with =let=",
   "uuid" : "d0f2a691-1418-4b17-be50-d2f95d6ea8dc"
 }, {

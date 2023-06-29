@@ -28,7 +28,8 @@
 
 (defn category [{:keys [lang readiness form] :as page}]
   (cond
-    (= readiness :noindex) :noindex ;; don't link to this at all
+    (= readiness :noindex) :noindex       ;; don't link to this at all
+    (= readiness :deprecated) :deprecated ;; nothing to see here
     (= form :remote-reference) :remote-reference
     (and (= readiness :wtf-is-this) (= lang :no)) :wtf-is-this-norwegian
     (= lang :no) :norwegian
@@ -64,7 +65,8 @@
   (let [{:keys [ready-for-comments norwegian
                 wtf-is-this wtf-is-this-norwegian
                 other forever-incomplete
-                remote-reference]}
+                remote-reference
+                deprecated]}
         (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
         words sentences
@@ -130,11 +132,6 @@
                      {:name "blog.oddmundo.com" :href "https://blog.oddmundo.com/"}])]
        (str "- " (org-link {:name name :href href}) " (off-site link)"))
 
-     (when (seq other)
-       ["** Uncategorized\n"
-        (str/join " --- " (for [page other] (page-link page)))
-        ""])
-
      (when (seq forever-incomplete)
        [(paragraphs "** Forever incomplete"
                     (lines
@@ -174,6 +171,22 @@
       (str/join " · " (for [page remote-reference] (page-link page)))
       ""
       ]
+
+     (when (seq other)
+       ["** Uncategorized\n"
+        (str/join  " · " (for [page other] (page-link page)))
+        ""])
+
+     (when (seq deprecated)
+       ["** Deprecated\n"
+        (lines "#+BEGIN_EXPORT html"
+               "<div style=\"font-size: 0.75em;\">"
+               "#+END_EXPORT")
+        (str/join " --- " (for [page deprecated] (page-link page)))
+        (lines "#+BEGIN_EXPORT html"
+               "</div>"
+               "#+END_EXPORT")
+        ""])
 
      [""
       "** Efforts at \"writing things down together\" commonly fail because:

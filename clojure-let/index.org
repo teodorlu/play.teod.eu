@@ -225,7 +225,7 @@ Something like this:
                       0))
       doc (olorm/->olorm {:repo-path repo-path :number number})
       _ (dispatch `fs/create-dirs (olorm/path doc))
-      ,,,])
+      ,,, #_ "more stuff below ..."])
 #+end_src
 
 But still, it's fine.

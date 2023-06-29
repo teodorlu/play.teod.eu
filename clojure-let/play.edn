@@ -1,6 +1,6 @@
 {:author-url "https://teod.eu",
  :created "2023-06-27",
  :lang :en,
- :readiness :wtf-is-this,
+ :readiness :ready-for-comments,
  :title "Write clear Clojure code with =let=",
  :uuid "d0f2a691-1418-4b17-be50-d2f95d6ea8dc"}

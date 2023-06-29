@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID: 22594488-d5f3-41d5-9704-1e2725ec6097
+:END:
 #+title: A bitemporal worldview
 
 [[./..][..]]

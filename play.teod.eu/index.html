@@ -159,6 +159,70 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <script type="text/javascript" src="https://livejs.com/live.js" async></script>
@@ -202,17 +266,704 @@
 <header id="title-block-header">
 <h1 class="title">play.teod.eu</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#retrospectivesynthesis"
+id="toc-retrospectivesynthesis">retrospective—synthesis</a>
+<ul>
+<li><a href="#play.teod.eu-success-metric-strong-language"
+id="toc-play.teod.eu-success-metric-strong-language">play.teod.eu
+success metric: strong language</a></li>
+<li><a href="#source-code-listings-are-bad"
+id="toc-source-code-listings-are-bad">Source code listings are
+BAD</a></li>
+<li><a href="#css-pain-points" id="toc-css-pain-points">CSS pain
+points</a></li>
+<li><a href="#i-want-reified-links" id="toc-i-want-reified-links">I want
+reified links</a></li>
+<li><a href="#how-can-i-improve-front-page-attention-design"
+id="toc-how-can-i-improve-front-page-attention-design">how can i improve
+front page attention design?</a></li>
+<li><a href="#cultivate-and-learn-from-how-others-are-doing-their-stuff"
+id="toc-cultivate-and-learn-from-how-others-are-doing-their-stuff">Cultivate
+and learn from how others are doing their stuff</a></li>
+<li><a href="#ideas-from-others" id="toc-ideas-from-others">Ideas from
+others</a></li>
+<li><a href="#renaming-an-article-is-a-pain"
+id="toc-renaming-an-article-is-a-pain">Renaming an article is a
+pain</a></li>
+<li><a href="#D-a01c3" id="toc-D-a01c3">Table of Content is bad</a></li>
+</ul></li>
+<li><a href="#retrospectiverest"
+id="toc-retrospectiverest">retrospective—rest</a>
+<ul>
+<li><a href="#working-with-pandoc---standalone-is-causing-problems"
+id="toc-working-with-pandoc---standalone-is-causing-problems">Working
+with pandoc <code class="verbatim">--standalone</code> is causing
+problems</a></li>
+<li><a href="#i-want---site-previews" id="toc-i-want---site-previews">I
+want - site previews</a></li>
+</ul></li>
+<li><a href="#solved-problems" id="toc-solved-problems">Solved
+problems</a>
+<ul>
+<li><a href="#org-roam-id-links-are-broken"
+id="toc-org-roam-id-links-are-broken">Org-roam id:… links are
+broken</a></li>
+<li><a href="#i-need-to-contract-narrow-before-publishing"
+id="toc-i-need-to-contract-narrow-before-publishing">I need to
+“contract” / “narrow” before publishing</a></li>
+<li><a href="#creating-new-pages" id="toc-creating-new-pages">Creating
+new pages</a></li>
+<li><a href="#comment-system" id="toc-comment-system">comment
+system</a></li>
+<li><a href="#date-tagging" id="toc-date-tagging">Date tagging</a></li>
+</ul></li>
+<li><a href="#section-1" id="toc-section-1">2022-05-26</a>
+<ul>
+<li><a href="#from-teodor-discuss-iterate-slack"
+id="toc-from-teodor-discuss-iterate-slack">From #teodor-discuss (Iterate
+slack)</a></li>
+</ul></li>
+<li><a href="#section-2" id="toc-section-2">2023-02-14</a>
+<ul>
+<li><a href="#new-pandoc-new-style" id="toc-new-pandoc-new-style">new
+pandoc, new style</a></li>
+</ul></li>
+<li><a href="#section-3" id="toc-section-3">2023-03-07</a>
+<ul>
+<li><a href="#i-was-motivated-to-write-some-stuff-today."
+id="toc-i-was-motivated-to-write-some-stuff-today.">I was motivated to
+write some stuff today.</a></li>
+<li><a href="#it-would-be-nice-to-list-all-pages-by-creation-time."
+id="toc-it-would-be-nice-to-list-all-pages-by-creation-time.">It would
+be nice to list all pages by creation time.</a></li>
+<li><a href="#id-like-batch-tag-editing."
+id="toc-id-like-batch-tag-editing.">I’d like batch tag editing.</a></li>
+<li><a href="#in-general-i-want-a-batch-editing-ui"
+id="toc-in-general-i-want-a-batch-editing-ui">In general, I want a batch
+editing UI</a></li>
+</ul></li>
+<li><a href="#section-4" id="toc-section-4">2023-03-09</a>
+<ul>
+<li><a href="#iki-ui" id="toc-iki-ui">IKI UI</a></li>
+</ul></li>
+<li><a href="#section-5" id="toc-section-5">2023-03-20</a>
+<ul>
+<li><a href="#simple-css" id="toc-simple-css">Simple CSS?</a></li>
+</ul></li>
+<li><a href="#trailing-whitespace" id="toc-trailing-whitespace">trailing
+whitespace</a></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p><a href="https://play.teod.eu/">https://play.teod.eu/</a></p>
 <p>Yeah, the page on play.teod.eu on play.teod.eu. Kind of weird,
 right?</p>
 <p>Whether this is “a remote reference” or not is up for discussion.</p>
 <p>:)</p>
-<p>I think I want to merge <a
-href="../play.teod.eu-retrospective/">play.teod.eu: Rolling
-retrospective</a> into this page. I’m using remote references <em>as
-direct commentary</em> on for example <a
-href="../the-beginning-of-infinity/">The Beginning of Infinity</a>, and
-I really like that. Rich references. Mmmmm.</p>
+<p>I’m using remote references <em>as direct commentary</em> on for
+example <a href="../the-beginning-of-infinity/">The Beginning of
+Infinity</a>, and I really like that. Rich references. Mmmmm.</p>
+<p>What follows is discussion / a retrospective for this page.</p>
+<ol>
+<li>first, a critique synthesis</li>
+<li>then, a critique sandbox &amp; options</li>
+<li>then, a journal</li>
+</ol>
+<p>Language: mostly English, some Norwegian.</p>
+<p>“As someone who is not Teodor, should I read this?” This is mostly a
+project page for myself. So it’s definitely not required reading. But
+it’s public, and open for comments :)</p>
+<h2 id="retrospectivesynthesis">retrospective—synthesis</h2>
+<p>Attention is aimed here.</p>
+<h3 id="play.teod.eu-success-metric-strong-language">play.teod.eu
+success metric: strong language</h3>
+<p>I want to use play.teod.eu to power up my language.</p>
+<h3 id="source-code-listings-are-bad">Source code listings are BAD</h3>
+<p>Just look at <a
+href="../document-transform-pandoc-clojure/">Recursive document
+transformations with Pandoc and Clojure</a>.</p>
+<ol>
+<li>Hard to disambiguate code listings from text</li>
+<li>Code listing syntax highlighting has horrible contrast with the rest
+of the text.</li>
+</ol>
+<p>I feel like I want to ask Oddmund for help / advice.</p>
+<h3 id="css-pain-points">CSS pain points</h3>
+<p>I want to learn CSS. I want to use play.teod.eu to learn CSS. As of
+2022-08-20, Pandoc controls the CSS, and I don’t have too much
+leverage.</p>
+<h4 id="examples-from-other-people-inspiration-ideas-to-steal">Examples
+from other people / inspiration / ideas to steal</h4>
+<p>See also</p>
+<ul>
+<li><a href="https://peps.python.org/pep-0657/">peps.python.org</a>.
+Very nice on mobile. Somewhat disappointing on desktop.</li>
+<li><a href="https://danluu.com/elon-twitter-texts/">danluu.com</a>.
+Extremely simple. But not sexy — zero styling.</li>
+</ul>
+<h4
+id="i-cannot-easily-customize-the-css-without-building-everything-from-scratch.">I
+cannot easily customize the CSS without building everything from
+scratch.</h4>
+<p>Pandoc provides CSS to me. But I want to configure stuff myself too.
+Does that mean I have to write all the CSS from scratch?</p>
+<p>What is a good first step? Should I understand how the existing CSS
+works first? Or should I just remove it all and start from the
+start?</p>
+<ol>
+<li><p>Why just remove it all</p>
+<p>I can be okay with it looking a bit crap. I need to take
+responsibility for writing the CSS myself I want to become good at CSS
+at any point.</p></li>
+<li><p>Why tweak</p>
+<p>Pandoc’s look is good right now. And I can move incrementally. I
+don’t have to redo everything.</p></li>
+</ol>
+<h4 id="tables-are-too-narrow">Tables are too narrow</h4>
+<p>I cannot use tables effectively. They wrap <em>way</em> before they
+are useful.</p>
+<p>Example of a bad table: <a
+href="https://play.teod.eu/git-commit-messages/">https://play.teod.eu/git-commit-messages/</a></p>
+<h4 id="the-whole-site-is-narrow">the whole site is narrow</h4>
+<p>Here are two example lines from <a
+href="https://play.teod.eu/git-commit-messages/">https://play.teod.eu/git-commit-messages/</a>:</p>
+<blockquote>
+<p>I sometimes write bad commit messages. Here on play.teod.eu, I write
+particularly bad commit messages. See for yourself:</p>
+</blockquote>
+<p>That’s 68 characters.</p>
+<p>Here are some example lines from <a
+href="https://drewdevault.com/2022/07/09/Fediverse-toxicity.html">https://drewdevault.com/2022/07/09/Fediverse-toxicity.html</a>:</p>
+<blockquote>
+<p>Mastodon, inspired by GNU social, together with Pleroma, form the
+most popular components of what we know as the “Fediverse” today. All of
+them are, in essence, federated, free software Twitter clones,
+interoperable with each other via the ActivityPub protocol.</p>
+</blockquote>
+<p>That’s up to 95 characters.</p>
+<h4 id="source-code-blocks-are-too-narrow">Source code blocks are too
+narrow</h4>
+<p>And for source code, <a
+href="id:de4eab79-8b9a-472b-b22b-ae0441d5fcf5">Drew DeVault</a> is using
+an even smaller font. The article <a
+href="https://drewdevault.com/2022/07/01/Porting-DOOM-to-Helios.html">Porting
+Doom to Helios</a> has some source code. Here are some of the longer
+lines:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">static</span> <span class="dt">size_t</span> writecons<span class="op">(</span><span class="dt">FILE</span> <span class="op">*</span>f<span class="op">,</span> <span class="dt">const</span> <span class="dt">unsigned</span> <span class="dt">char</span> <span class="op">*</span>buf<span class="op">,</span> <span class="dt">size_t</span> size<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    sys_writecons<span class="op">(</span>f<span class="op">-&gt;</span>wbase<span class="op">,</span> f<span class="op">-&gt;</span>wpos <span class="op">-</span> f<span class="op">-&gt;</span>wbase<span class="op">);</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    sys_writecons<span class="op">(</span>buf<span class="op">,</span> size<span class="op">);</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    f<span class="op">-&gt;</span>wend <span class="op">=</span> f<span class="op">-&gt;</span>buf <span class="op">+</span> f<span class="op">-&gt;</span>buf_size<span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    f<span class="op">-&gt;</span>wpos <span class="op">=</span> f<span class="op">-&gt;</span>wbase <span class="op">=</span> f<span class="op">-&gt;</span>buf<span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> size<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>I think the source code too is meant to reach about a 100 characters
+in width.</p>
+<h3 id="i-want-reified-links">I want reified links</h3>
+<p>A shallow link just points somewhere. A reified link carries meaning
+and metadata.</p>
+<h4 id="cross-site-linking-with-org-roam.">Cross site linking with
+org-roam.</h4>
+<p>So … getting Org-roam to find links here was easy. Just set the root
+dir, and add ID properties for each page that should be indexed.</p>
+<p>Status: links are working in Emacs. Links are <em>not</em> working on
+the web. Why? I’m using Pandoc to parse org-mode links, and pandoc
+doesn’t know how to handle id links. Perhaps I can solve this myself
+with a filter? Hmm.</p>
+<p>Options:</p>
+<ul>
+<li>Work around the ID links to provide <code
+class="verbatim">../other-page/</code>-style links</li>
+<li>Just use the file links
+<ul>
+<li>But the plain file links won’t know about which org document is the
+target – which is a pain.</li>
+</ul></li>
+<li>Perhaps this is finally a case for a pandoc filter with
+babashka.</li>
+</ul>
+<p>Filter architecture draft:</p>
+<ul>
+<li>Need a global links store
+<ul>
+<li>I could generate that</li>
+<li>Or I could pull it out of Org-Roam</li>
+</ul></li>
+<li>Given that global link store, mapping for instance <code
+class="verbatim">658447a3-00e6-44aa-963e-d2f5938c50d3</code> to <code
+class="verbatim">../play.teod.eu-rolling-retrospective/</code>, I could
+simply use that global link store for rich links or post processing.
+<ul>
+<li>I would want to query links to show relations between pages</li>
+<li>I would want to transform links when converting from org-mode to
+html</li>
+</ul></li>
+</ul>
+<p>What would the “check in everything” approach mean?</p>
+<ol>
+<li>Simply link to folders</li>
+<li>Then simply manage that.</li>
+</ol>
+<p>I wouldn’t be able to get the nice “straight to file” Org-Roam style
+navigation. But do I really need that?</p>
+<h4 id="reified-links-for-play.teod.eu">reified links for
+play.teod.eu</h4>
+<p>I want reified links for play.teod.eu.</p>
+<ol>
+<li><p>Why reified links?</p>
+<p>Because I can model and query knowledge.</p>
+<p>A good first use case is being able to resolve the id: links I can
+insert with Org-Roam, like this: <a
+href="../feedback-interface-implementation/">Feedback loops, interface
+design and how stuff works</a>.</p>
+<ol>
+<li><p>Challenges</p>
+<p>Can I get the links out with Pandoc JSON and a Clojure filter with a
+walk? I think so.</p>
+<p>And how should I represent the links?</p>
+<p>Well, there’s not only the links. I need to <em>resolve</em> the
+links. Hmm, that could mean extracting links. And links could have some
+kind of ID. What if I simply keep the original link target, and use that
+as an ID? But … linking to the ID of a page and linking to the path of a
+page is different.</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here&#39;s a link to this page:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span></code></pre></div>
+<p>No, actually, that’s not a link. That’s a link target. If I want that
+as an entity, I’ll need … an ID too? Hmm.</p>
+<p>What can differentiate the links?</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">;; here is this page:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>{<span class="at">:id</span>   <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="at">:host</span> <span class="st">&quot;play.teod.eu&quot;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="at">:path</span> <span class="st">&quot;play.teod.eu-rolling-retrospective&quot;</span>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">;; What does the link to this page look like?</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>{<span class="at">:target/id</span> <span class="st">&quot;658447a3-00e6-44aa-963e-d2f5938c50d3&quot;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> <span class="at">:source/id</span> <span class="st">&quot;abc123&quot;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link ID?</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a> <span class="co">;; what&#39;s link type?</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a> <span class="co">;; What kind of link types can I have?</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a> }</span></code></pre></div>
+<p>How do we know the difference between one link and another?</p>
+<p>Option:</p>
+<ul>
+<li>source, target and increasing number</li>
+<li>just source and target</li>
+</ul>
+<p>Challenge:</p>
+<ul>
+<li>I don’t control Org-mode’s UI. So I can’t add a link ID there. I
+probably don’t want to keep track of link IDs that detailed either. As
+long as I’m using plain text. Or … add a ?referrer=abc123?</li>
+</ul></li>
+<li><p>referrers not allowed</p>
+<p>Here’s some verbatim org-code:</p>
+<p>I tried linking to id:abc123?referrer=123 rather than id:abc123, but
+to no avail. How about linking to id:abc123#referrer-123? Nope.</p></li>
+</ol></li>
+</ol>
+<h4
+id="i-want-to-tag-each-article-with-generality-novelty-precision-subjectivity">I
+want to tag each article with :generality :novelty :precision
+:subjectivity</h4>
+<table>
+<tbody>
+<tr class="odd">
+<td>axis</td>
+<td>as 0</td>
+<td>as 1</td>
+</tr>
+<tr class="even">
+<td>:generality</td>
+<td>event</td>
+<td>physical law</td>
+</tr>
+<tr class="odd">
+<td>:novelty</td>
+<td>known by all</td>
+<td>known by 1</td>
+</tr>
+<tr class="even">
+<td>:precision</td>
+<td>dream</td>
+<td>logic</td>
+</tr>
+<tr class="odd">
+<td>:subjectivity</td>
+<td>event</td>
+<td>taste</td>
+</tr>
+</tbody>
+</table>
+<h4 id="applied-reified-links-example">Applied reified links
+example</h4>
+<p>I believe reified links can model knowledge well. And on top of that
+model, we can build better UIs.</p>
+<p>Here’s what an UI could look like: <a
+href="https://embed.kumu.io/1feca726268dbbda0f905fb7be844e5e#anxiety-driven-procrastination">https://embed.kumu.io/1feca726268dbbda0f905fb7be844e5e#anxiety-driven-procrastination</a></p>
+<h3 id="how-can-i-improve-front-page-attention-design">how can i improve
+front page attention design?</h3>
+<h4 id="i-want-a-new-category---not-indexed">i want a new category - not
+indexed</h4>
+<p>Relevant for example for external references.</p>
+<p>so perhaps a :type :reference? :reference-target #{:book :web-essay
+,,,}</p>
+<h3
+id="cultivate-and-learn-from-how-others-are-doing-their-stuff">Cultivate
+and learn from how others are doing their stuff</h3>
+<p><a
+href="https://til.simonwillison.net/sqlite/enabling-wal-mode">https://til.simonwillison.net/sqlite/enabling-wal-mode</a></p>
+<p>Bra / spennende:</p>
+<ol>
+<li>Godt eksempel på hvordan man kan vise “ting som linker hit”
+nederst</li>
+<li>Veldig oversiktelig struktur</li>
+<li>Simon Wilson strukturerer notatene sine i underkategorier.
+<ol>
+<li>Han bruker <code class="verbatim">til.simonwilson.net</code> der jeg
+bruker <code class="verbatim">play.teod.eu</code></li>
+<li>… men der jeg holder meg til <em>ett suffiks</em> (feks <code
+class="verbatim">/maksimal-opsjonalitet</code>), bruker han kategori
+først (<code class="verbatim">sqlite</code>). Så … litt som jeg samler
+tematiske ting i journaler. Tror ikke han har kategorier i kategorier,
+men det er i alle fall kategori -&gt; ting.</li>
+</ol></li>
+</ol>
+<p><a
+href="https://memex.marginalia.nu/">https://memex.marginalia.nu/</a></p>
+<p>Bra / spennende:</p>
+<ol>
+<li>Han bruker siden til aggregering av podcaster. Jeg er interessert i
+noe sånt for meg selv.</li>
+<li>Siden ser ut til å ha login og et redigerings-lag rett i
+nettleser</li>
+<li>Støtter gemini.</li>
+</ol>
+<h3 id="ideas-from-others">Ideas from others</h3>
+<p><strong>Patrick Dubroy</strong> on how to build ideas in a shared
+space:</p>
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Like it&#39;s just so much harder to achieve what SPJ describes here with systems work <a href="https://t.co/6ShxWQsAOr">pic.twitter.com/6ShxWQsAOr</a></p>&mdash; Patrick Dubroy (@dubroy) <a href="https://twitter.com/dubroy/status/1563167406008070149?ref_src=twsrc%5Etfw">August 26, 2022</a></blockquote>
+
+<h3 id="renaming-an-article-is-a-pain">Renaming an article is a
+pain</h3>
+<p>Right now:</p>
+<ol>
+<li>Rename in index.org</li>
+<li>Rename in play.edn</li>
+<li>Then run <code class="verbatim">teod-play-refresh</code> (<code
+class="verbatim">SPC å r</code>)</li>
+<li>Then update articles (accidentally) when a link to then is
+encountered.</li>
+</ol>
+<p>Idea:</p>
+<ol>
+<li>Reduce the renaming to a single action</li>
+<li>Introduce explicit dependency from a page to the other pages which
+it refers to</li>
+<li>When / if I redo the build system (remove Make), I’ll use that
+opportunity to:
+<ol>
+<li>Extract page dependencies to data</li>
+<li>Use that data to trigger rebuilds &amp; stuff.</li>
+</ol></li>
+</ol>
+<h3 id="D-a01c3">Table of Content is bad</h3>
+<h4 id="i-want-to-be-able-to-opt-out-of-toc-generation">I want to be
+able to opt out of TOC generation</h4>
+<p>Per 2022-12-31, I have several pages where I’ve omitted to create
+headings in order to avoid having a TOC. An example is the <a
+href="../aphorisms/">Aphorisms</a> page. It has a list of my own
+aphorisms, and a list of links to other people’s aphorisms. I wanted to
+link to it from <a href="../how-to-solve-problems/">How to solve
+problems</a>, but I couldn’t link directly to the right section because
+it wasn’t a header.</p>
+<p>Note: I guess I could create an anchor? That’s not a bad idea.</p>
+<h4 id="problems">Problems</h4>
+<ul>
+<li>Can’t see that the TOC is a TOC</li>
+<li>TOC comes above the link to go up</li>
+</ul>
+<h4 id="solve-with-pandoc-filter">Solve with Pandoc filter?</h4>
+<p>Now, I use the –toc pandoc option:</p>
+<pre class="shell-script"><code>pandoc -s --shift-heading-level-by=1 --toc --from=org+smart -H live.html -i play.teod.eu-retrospective/index.org -o play.teod.eu-retrospective/index.html
+</code></pre>
+<p>If I create my own filter instead, I can do something else.</p>
+<p>Something like:</p>
+<pre class="shell-script"><code>pandoc --from org+smart -i play.teod.eu-retrospective/index.org --to json \
+    | ./play.clj transform --generate-toc --link-up  \
+    | pandoc --from json -o play.teod.eu-retrospective/index.html
+</code></pre>
+<p>Questions.</p>
+<ul>
+<li>What about HTML template?</li>
+<li>How should it be possible to configure the build?</li>
+</ul>
+<p>How to?</p>
+<ul>
+<li>It’s nice to start with a single page.</li>
+<li>That means I should make build systems opt-in / configurable, I
+think.</li>
+</ul>
+<h4 id="examples-of-nicely-formatted-table-of-contents">Examples of
+nicely formatted table of contents:</h4>
+<p><a
+href="https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter">https://guzey.com/personal/what-should-you-do-with-your-life/#cold-emails-and-twitter</a></p>
+<h4 id="toc-contains-discussion-comments-and-such">TOC contains
+“discussion”, “comments” and such</h4>
+<p>See: <a href="#D-06dc6">2022-12-19/I want a configurable table of
+contents</a>.</p>
+<h2 id="retrospectiverest">retrospective—rest</h2>
+<p>Ledger.</p>
+<h3 id="working-with-pandoc---standalone-is-causing-problems">Working
+with pandoc <code class="verbatim">--standalone</code> is causing
+problems</h3>
+<p>As long as I’m using the <code class="verbatim">--standalone</code>
+stuff, I’m making problems for myself. Example: I loose roundtripping.
+If I try to roundtrip with <code class="verbatim">--standalone</code>, I
+get double table of contents and double title. I don’t want that.</p>
+<p>Found a walkaround for roundtripping: avoid writing title info</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span>  <span class="dt">\</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">-V</span> title:<span class="st">&quot;&quot;</span> <span class="dt">\</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">-i</span> index.html <span class="dt">\</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">--filter</span> rickroll.sh <span class="dt">\</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">-o</span> rickroll-ourselves.html</span></code></pre></div>
+<p>Specifically, <code class="verbatim">-V title:""</code> makes sure
+the title isn’t set twice. Regardless, I think I want to control the
+standalone stuff myself.</p>
+<p>See also: <a href="#D-a01c3">Table of Content is confusing</a></p>
+<h3 id="i-want---site-previews">I want - site previews</h3>
+<p>When I post a Twitter link, Slack is able to create a nice preview.
+When I post a play.teod.eu link, there is no preview.</p>
+<h2 id="solved-problems">Solved problems</h2>
+<h3 id="org-roam-id-links-are-broken">Org-roam id:… links are
+broken</h3>
+<p>Bad.</p>
+<h4 id="problem-definition">Problem definition</h4>
+<ol>
+<li>They don’t link to the right place</li>
+<li>They even link to id:… things that don’t work</li>
+</ol>
+<h4 id="first-step-option-strip-out-the-links-that-dont-work">First step
+option: strip out the links that don’t work</h4>
+<h4
+id="second-step-option-fix-the-links-rewrite-from-id-to-path-and-then-href-to-folder">Second
+step option: fix the links — rewrite from id: to path: and then href: to
+folder</h4>
+<p>Hmm, prehaps href is better. 🤔</p>
+<h4 id="solved.">2022-08-19 - solved.</h4>
+<p>All org documents now get their links rewritten. The link rewrite
+filter is written so that it only rewrites the links it should
+rewrite.</p>
+<h3 id="i-need-to-contract-narrow-before-publishing">I need to
+“contract” / “narrow” before publishing</h3>
+<p>Problem statement — how can I use this site to grow messy stuff AND
+share reasonable stuff with others?</p>
+<h4 id="early-view">Early view</h4>
+<p>The stuff that’s published on my site right now is a real mess. Mess
+how? In many ways. But the big one: the ideas are intertwined. There’s
+coupling. I could remove that coupling. Or at least attempt to remove
+that coupling.</p>
+<h4 id="says-hello">2022-07-12 says hello</h4>
+<p>At the time that I wrote the text above, everything was one big
+lump.</p>
+<p>Merely splitting between “feedback welcome”, “forever incomplete” and
+“mess” helps me A LOT personally.</p>
+<h4 id="says-hello-1">2022-07-14 says hello</h4>
+<p>I’ve recently published two small things on the Clojurians Slack.
+First a bit about Emacs — how to use <code
+class="verbatim">read-string</code>, <code
+class="verbatim">completing-read</code> and <code
+class="verbatim">let*</code> to write tiny UIs. Then a <em>Interaction
+value differential</em> page.</p>
+<p>Am I happy with the results?</p>
+<p>Yes.</p>
+<p>Very much, actually. Every publish-action gave me some nice
+interactions. In the Emacs case, I simply copied from my notes and Emacs
+config and wrote a small, little Slack message. In the <em>Interaction
+value differential</em> article, I published something. And I liked what
+i published.</p>
+<p>😊</p>
+<h4 id="consid-er-this-solved">2022-08-20 consid er this solved!</h4>
+<p>I’ve cleanly separated between stuff that people should consider
+reading, and stuff that people should ignore.</p>
+<h3 id="creating-new-pages">Creating new pages</h3>
+<p>Currently, I hand-roll my own new-page creation. I could also hook my
+logic into Org-Roam’s templating system Details: <a
+href="https://github.com/org-roam/org-roam/blob/c3867619147175faf89ed8f3e90a1e67a4fd9655/doc/org-roam.org#L896">https://github.com/org-roam/org-roam/blob/c3867619147175faf89ed8f3e90a1e67a4fd9655/doc/org-roam.org#L896</a></p>
+<h4 id="im-happy-with-how-its-working-now.">2022-08-20 I’m happy with
+how it’s working now.</h4>
+<p>Solution: write my own Emacs lisp library to control page creation
+and page search.</p>
+<p>Really happy. I consider it solved now.</p>
+<h3 id="comment-system">comment system</h3>
+<p>Option: Comments on Twitter. Option: Comments on Hacker News. Option:
+Comments embedded straight into the text - via Github pull requests.</p>
+<p>Option: Comments as Github issues. Example: <a
+href="https://github.com/matthijscox/Blog/issues/3">https://github.com/matthijscox/Blog/issues/3</a></p>
+<h4
+id="just-share-on-relevant-slack-where-there-can-be-comments">2022-08-20
+Just share on relevant Slack, where there can be comments</h4>
+<p>Comment system <em>is</em> the sharing mechanism. Don’t expect to
+find too many people “just cause”.</p>
+<h3 id="date-tagging">Date tagging</h3>
+<p>Problem statement — should I encode dates (created, edited) in the
+metadata model?</p>
+<h4 id="early-view-1">Early view</h4>
+<p>I want metadata for :changed and :created. First because I want to
+filter / sort. Then perhaps later because that metadata is nice to
+have.</p>
+<h4 id="says-pikaboo">2022-07-12 says pikaboo</h4>
+<p>Date tagging would be nice. But by what semantics? And why?</p>
+<p>Reasonable question — which vague idea was created when? Which vague
+idea was edited last? I could use OS mtime for editing. Sync into
+play.edn. Have play.edn files <em>partially</em> generated. Or just pull
+it out from source at the right time? Do the :relations trick?</p>
+<ol>
+<li><p>I really like the idea of just using file modification times.</p>
+<p>buuut I don’t think those get checked into git</p></li>
+<li><p>Can I just use git blame perhaps?</p>
+<p>🤔</p>
+<p>Git knows when the file was changed last</p></li>
+<li><p>Outline — on page creation + git blame</p>
+<p>On creating a new page, write :created (now)</p>
+<p>On creating the metadata table, file edit time by asking Git</p></li>
+</ol>
+<h4 id="section">2022-07-14 👀</h4>
+<p>Well — haven’t really taken this any further.</p>
+<p>I kinda want dates for my ephemeral stuff. So that it’s easier to
+handle the very incomplete stuff. Or at least sort by creation date.</p>
+<p>Hmm, let’s just add a :created timestamp.</p>
+<h4 id="i-want-to-derive-last-modified-from-git-history-of-org-file.">I
+want to derive :last-modified from git history of org-file.</h4>
+<h2 id="section-1">2022-05-26</h2>
+<h3 id="from-teodor-discuss-iterate-slack">From #teodor-discuss (Iterate
+slack)</h3>
+<p>Source: <a
+href="https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869">https://garasjen.slack.com/archives/C01KB5RSAU9/p1653562307600869</a></p>
+<p>Hva vil jeg egentlig å få ut av en nettside?</p>
+<p>Effektivt å skrive tekst. Kan gjøre det i vanlige tekstformater.
+Frittstående sider. Løs kobling, trenger ikke samme struktur overalt.
+Gjenbrukbare komponenter. Hele greia funker som en statisk side. Statisk
+html er sjekket inn i git. Lynraske bygg. Effektivt å jobbe med
+hiccup.</p>
+<p>Effektivt å jobbe med ideer. Effektivt å lenke mellom ideer.</p>
+<p>Lett å få inn ting jeg har tegnet. Feks på papir, remarkable eller i
+figma</p>
+<p>Twitter… Trenger jeg å tenke på det? Kommentarer. Webmentions?
+Systemet jeg bruker i dag? Hacker news? Twitter? Jeg ønsker jo å kunne
+diskutere ting på Twitter Og det gir mening å ha invitasjoner til
+diskusjon på Twitter, samt invitasjon til å diskutere på Twitter på
+nettsiden.</p>
+<p>Hva med unicad og blogging og artikler for sånt?</p>
+<p>Approach: embed unicad I noe annet. Approach: bygg skriving rett inn
+i unicad.</p>
+<div class="THINKING_FACE drawer">
+<p>Hva får jeg egentlig ut av en nettside som jeg ikke får her i
+#teodor-discuss? Tilgjengelig for folk utenfra Bedre på å redigere store
+ting Mer kontroll på presentasjon (også mer jobb)</p>
+<p>Oddmund: Har du vurdert å bare skrive nettsida di i HTML?</p>
+<p>Det er jo cirka det jeg gjør på subcons.teod.eu. Bare via hiccup</p>
+<p>Kan laste opp rå html også, og det funker fint.</p>
+<p>Ting jeg ønsker å skrive om: Ortogonalitet Feedback-loop + API-design
++ hvordan ting funker Eksempler på bruk av watchexec Noe dataviz</p>
+<p>@oddmunds jeg har prøvd å skrive html direkte, men det føles som å gå
+i gjørme. Med hiccup har jeg i alle fall en skikkelig editor. Men jeg
+liker bedre å redigere tekst i gode formater for tekst (feks org-mode,
+eller markdown, til en viss grad)</p>
+<p>Enda en side: Konvertering mellom Roam / html / hiccup / org-mode
+Litt usikker på om jeg får til det rett i browser. Trenger kanskje en
+tjeneste. En backend. Med pandoc og Clojure bør det ikke være alt for
+vanskelig. Men hvis jeg får opp noe sånt, kan jeg lett gå mellom
+formater.</p>
+<p>Enda en side: Signaler, starting av prosesser, stopping av prosesser.
+Sigterm, sigkill, sighup (?) Kan lage en side i stedet for å lage
+presentasjon eller noe annet.</p>
+</div>
+<p>Why? I like creating sections for discussion and changelog in the end
+of an article. But I don’t want those to pollute the table of contents!
+So I need to take control of that.</p>
+<p>Specific example - for <a
+href="../strong-opinions-loosely-held-considered-harmful/">“Strong
+opinions loosely held” is an excuse for sloppy thinking</a>, my TOC as
+of 2022-12-19 is:</p>
+<blockquote>
+<p>Part 1 – a taxonomy of knowledge. Part 2 – so what? Part 3 – write
+shit down. Discussion 2022-12-17 . Changelog 2022-12-19 .</p>
+</blockquote>
+<p>I don’t want “Discussion”, “Changelog” and “.” in the TOC!</p>
+<h2 id="section-2">2023-02-14</h2>
+<h3 id="new-pandoc-new-style">new pandoc, new style</h3>
+<div class="sourceCode" id="cb7" data-org-language="sh"
+data-results="output"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">--version</span></span></code></pre></div>
+<p>Today is the first time I’m writing (again) after getting Pandoc 3.
+And I’m really appreciating the changes! It’s cleaner, and takes up less
+space.</p>
+<h2 id="section-3">2023-03-07</h2>
+<h3 id="i-was-motivated-to-write-some-stuff-today.">I was motivated to
+write some stuff today.</h3>
+<p>what pages did I create today?</p>
+<p><a href="../principle-of-charity/">Principle of Charity</a> <a
+href="../learning-to-discover/">Learning to discover</a> <a
+href="../support-challenge-carry/">Support, challenge, carry</a></p>
+<p>Nice!</p>
+<h3 id="it-would-be-nice-to-list-all-pages-by-creation-time.">It would
+be nice to list all pages by creation time.</h3>
+<p>I could solve that with an index query, and present it on a page.</p>
+<h3 id="id-like-batch-tag-editing.">I’d like batch tag editing.</h3>
+<p>Options:</p>
+<ol>
+<li>Manual editing</li>
+<li>Emacs UI</li>
+<li>CLI</li>
+<li><a href="../electric-clojure/">Electric Clojure</a> UI</li>
+<li>Functionality in a lib, usable from CLI and electric Clojure</li>
+</ol>
+<h3 id="in-general-i-want-a-batch-editing-ui">In general, I want a batch
+editing UI</h3>
+<p>Emacs could be nice, but I’d rather want an Electric Clojure UI, I
+think. Just run it locally for now. 🤔</p>
+<h2 id="section-4">2023-03-09</h2>
+<h3 id="iki-ui">IKI UI</h3>
+<p>I want an IKI UI. I think browser UI is the way to go.</p>
+<h4 id="proposed-functionality">Proposed functionality</h4>
+<ol>
+<li>List recent pages</li>
+<li>Edit titles</li>
+<li>Batch edit page tags
+<ol>
+<li>Perhaps first class actions should be a thing? Named actions?</li>
+</ol></li>
+</ol>
+<h4 id="why">Why?</h4>
+<p>in order to increase <a href="../trust-quality-intent/">trust, shared
+sense of quality and shared intent</a> with my network.</p>
+<h2 id="section-5">2023-03-20</h2>
+<h3 id="simple-css">Simple CSS?</h3>
+<p>inspiration: <a
+href="https://markmcgranaghan.com/">https://markmcgranaghan.com/</a> and
+<a href="https://gobyexample.com/">https://gobyexample.com/</a> by <a
+href="../mark-mcgranaghan/">Mark McGranaghan</a>.</p>
+<h2 id="trailing-whitespace">trailing whitespace</h2>
+<div class="line-block"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</div>
 </body>
 </html>

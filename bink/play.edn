@@ -1,5 +1,5 @@
 {:title "Bink: Bookmarks are just data",
- :readiness :wtf-is-this,
+ :readiness :deprecated,
  :uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
  :author-url "https://teod.eu",
  :created "2022-09-14",

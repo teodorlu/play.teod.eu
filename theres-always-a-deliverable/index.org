@@ -24,7 +24,7 @@ We just have to define our impact in terms of an intermediate goal, not the end 
 Strong values make intermediate goals easier.
 With strong values, simply staying true to your values is a goal in itself.
 
-First, the default --- write journal. Something like [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]].
+First, the default---write journal. Something like [[id:bd776ab0-d687-4f16-b66d-d03c86de2a2e][My public journal]].
 
 /what do I want to put in this article?/
 

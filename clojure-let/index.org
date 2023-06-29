@@ -14,7 +14,7 @@ Then, reality hits me in the face.
 I've got some JSON HTTP payload, and I need to deliver some JSON HTTP payload.
 How can I make that code sing?
 
-Lately, I've been reading reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
+Lately, I've been reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
 Here's the source for =bb print-deps=, edited to fit on this page:
 
 #+begin_src clojure
@@ -236,3 +236,8 @@ It's just code, from top to bottom.
 
 Go forth and write clear Clojure code!
 In many cases, a =let= is all you need.
+You don't need fancy constructs to give your code the clarity of angels singing.
+
+Do you agree?
+Disagree?
+Let [[id:1a915a34-7a98-498c-914a-70c2ecf47afc][me]] know!

@@ -278,6 +278,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "me",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-06-29",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "me",
+  "uuid" : "1a915a34-7a98-498c-914a-70c2ecf47afc"
+}, {
   "slug" : "scicloj",
   "title" : "Scicloj",
   "uuid" : "1b1a3e02-9247-496e-b70f-2aee1251d1ff",
@@ -380,7 +389,7 @@
 }, {
   "slug" : "bitemporal-worldview",
   "title" : "A bitemporal worldview",
-  "readiness" : "wtf-is-this",
+  "readiness" : "deprecated",
   "lang" : "en",
   "uuid" : "22594488-d5f3-41d5-9704-1e2725ec6097"
 }, {
@@ -1986,10 +1995,10 @@
   "slug" : "why-dont-we-have-a-strategy",
   "title" : "Why don't we have a strategy?",
   "readiness" : "wtf-is-this",
-  "author-url" : "https://teod.eu",
   "created" : "2022-07-14",
   "uuid" : "b94ada99-dfc3-4f3e-ba69-a4edf5fc1efd",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "discussion-wishlist",
   "author-url" : "https://teod.eu",
@@ -2399,9 +2408,9 @@
   "title" : "J (programming language)",
   "readiness" : "wtf-is-this",
   "uuid" : "e7c61981-5991-4d8c-b242-ed372784fc35",
-  "author-url" : "https://teod.eu",
   "created" : "2023-03-19",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "interface-perception-design",
   "title" : "Interface, Perception, Design",

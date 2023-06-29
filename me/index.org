@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 1a915a34-7a98-498c-914a-70c2ecf47afc
+:END:
+#+TITLE: me
+
+[[file:..][..]]
+
+Hi, I'm Teodor :)
+
+- My home on the web: https://teod.eu/
+- My Twitter handle: https://twitter.com/teodorheggelund
+- My Github handle: https://github.com/teodorlu/

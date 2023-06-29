@@ -5,7 +5,8 @@
 
 [[file:..][..]]
 
-To the best of my knowledge, "utility is contextual" is coined by [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]].
+I first saw [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]] use this term.
+Not sure if he invented it, or found it somewhere else.
 
 Premise / my interpretation: it's useless to judge utility abstracted from context.
 

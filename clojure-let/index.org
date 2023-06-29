@@ -8,7 +8,7 @@
 For a long time, I felt bad for not being able to write plain imperative code in Clojure.
 Clojure code should be pretty!
 It should be functional!
-Clojure code should have the clarity of [[id:d8c14c54-5295-41c6-ac41-ecd4fcd718fe][angels singing]]!
+Clojure code should have the [[id:d8c14c54-5295-41c6-ac41-ecd4fcd718fe][clarity of angels singing]]!
 
 Then, reality hits me in the face.
 I've got some JSON HTTP payload, and I need to deliver some JSON HTTP payload.

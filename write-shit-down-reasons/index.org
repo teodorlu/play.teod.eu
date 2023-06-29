@@ -5,12 +5,47 @@
 
 [[file:..][..]]
 
-DRAFT
+Without further ado,
 
-* Writing is thinking
-* Writing is persistent
-* Writing gives you structure that enables you to tackle more chaotic problems
-* Writing allows you to iterate on your own thoughts
-* Writing gives you a deliverable for anything
-* Writing is an excellent medium for storytelling -- which is how you can persuade others
-* Writing lets you build knowledge
+*Writing is thinking*.
+Writing allows you to process your own thoughts.
+
+*Writing is persistent*.
+When you write down what you think, you can save your thoughts and reload them.
+
+*Writing gives you structure for tackling more chaotic problems*.
+We can't store everything in our brain.
+Yet, we want to tackle certain larger-than-brain problems.
+Writing helps you do that.
+With writing, you build a mental scaffolding for yourself.
+With that scaffolding, you gain power.
+Your mind clears up, and you gain confidence in your own thinking.
+
+*Writing lets you iterate on your own thoughts*.
+You already believe certain beliefs.
+With writing, you gain introspection into your beliefs, and your history of beliefs.
+By clarifying your current position on a topic, you can revisit that topic later.
+You can agree, disagree, or improve that earlier belief.
+
+*Writing gives you a deliverable for anything*.
+What do you produce at work?
+Designs?
+Software?
+A service that people use?
+The thing that you produce at work is your deliverable.
+That deliverable can be used by someone else.
+With writing, you can gain a deliverable for /anything/.
+Your thoughts can now be shared, and benefit people in the future.
+Since you now have a deliverable for anything, you can work in small increments on anything.
+
+*Writing lets you exercise storytelling---the medium for persuasion*.
+We humans understand the world in terms of narratives.
+A person, a goal, a situation. Actions. A conclusion.
+I believe that the way to change the world is by presenting and implementing alternative narratives.
+You can build those narratives through writing.
+Then you can, should you choose to do so, move that story to other media.
+
+*Writing lets you build knowledge*.
+By writing knowledge down and naming pieces of knowledge, you can refer to your knowledge.
+You can build knowledge on different knowledge.
+That knowledge is amusingly also easier to remember when you've written it down and named it.

@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 9f52d562-4a06-4ea1-a461-2018fca5baf1
 :END:
-#+TITLE: There's always a deliverable
+#+TITLE: there's always a deliverable
 
 [[file:..][..]]
 

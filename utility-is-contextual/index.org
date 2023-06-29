@@ -5,14 +5,20 @@
 
 [[file:..][..]]
 
+DRAFT
+
 I first saw [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]] use this term.
 Not sure if he invented it, or found it somewhere else.
 
 Premise / my interpretation: it's useless to judge utility abstracted from context.
 
-I suggest we separate our statements between definitions and experience reports.
+Instead, let's split "statements" into definitions and experience reports.
 A definition defines a concept as crisply as possible.
 An experience report applies a set of definitions to a problem, shares the effects, and judges their desirability.
+A definition is objective (a priori), an experience report is subjective.
+Utility can be judged as part of an experience.
+
+-----
 
 Don't push an abstraction on your friends without qualification.
 You can only do that if you're a tyrant.

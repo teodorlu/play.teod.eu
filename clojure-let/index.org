@@ -154,7 +154,7 @@ I can understand the order of the code---from top to bottom.
 The function is /one thing/.
 There's no way to abuse the implementation details of the function, because those details are /inside the function/.
 
-Here's a piece of my own code (please pardon the Norwegian text), with some details replaced with =,,,=:
+Here's a piece of my own code (please pardon the Norwegian), with some details replaced with =,,,=:
 
 #+begin_src clojure
 (defn olorm-create [{:keys [opts]}]
@@ -170,7 +170,7 @@ Allowed options:
   --disable-git-magic     Alias for --disable-git-commands
   --dry-run               Suppress side effects, print instead
   --help                  Show this helptext.
-  --no-git-commands  Disable all Git commands. Useful for testing.
+  --no-git-commands       Alias for --disable-git-commands
   --no-git-magic          Alias for --disable-git-commands
 "))
     (System/exit 0))
@@ -183,9 +183,7 @@ Allowed options:
     (when-not disable-git-commands
       (dispatch `shell {:dir repo-path} "git pull --ff-only"))
     (let [number (inc (or (->> (olorm/docs {:repo-path repo-path})
-                               (map :number)
-                               sort
-                               last)
+                               (map :number) sort last)
                           0))
           doc (olorm/->olorm {:repo-path repo-path :number number})]
       (dispatch `fs/create-dirs (olorm/path doc))

@@ -63,9 +63,7 @@ Here's the source for =bb print-deps=, edited to fit on this page:
 [[https://github.com/babashka/babashka/blob/85eef7d6f705d562a2e2c96363f679ae9827410c/src/babashka/impl/print_deps.clj#L11-L42][Source]].
 
 Here's another [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]] excerpt, this time from =neil dep add=.
-As above, I've edited briefly for clarity.
-Some code has been replaced with =,,,=.
-I've deleted code comments, and broken up certain lines.
+As above, I've edited the code for clarity.
 
 #+begin_src clojure
 (defn dep-add [{:keys [opts]}]

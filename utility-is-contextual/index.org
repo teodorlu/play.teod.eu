@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-Shamelessly stolen from Zach Tellman of https://ideolalia.com/.
+To the best of my knowledge, "utility is contextual" is coned by [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]].
 
 Premise / my interpretation: it's useless to judge utility abstracted from context.
 

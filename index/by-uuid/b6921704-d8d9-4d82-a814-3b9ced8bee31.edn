@@ -2,6 +2,6 @@
  :title "Dave Liepmann",
  :readiness :wtf-is-this,
  :uuid "b6921704-d8d9-4d82-a814-3b9ced8bee31",
- :author-url "https://teod.eu",
  :created "2023-03-19",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

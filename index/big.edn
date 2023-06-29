@@ -332,6 +332,11 @@
   :readiness :ready-for-comments,
   :title "Teknologi for å bygge produkt---en introduksjon",
   :uuid "224c548c-b444-4557-86a5-9056a393548f"}
+ {:slug "bitemporal-worldview",
+  :title "A bitemporal worldview",
+  :readiness :wtf-is-this,
+  :lang :en,
+  :uuid "22594488-d5f3-41d5-9704-1e2725ec6097"}
  {:slug "tre-prinsipper-for-teknisk-prototyping",
   :title "Tre prinsipper for teknisk prototyping",
   :readiness :ready-for-comments,
@@ -358,7 +363,7 @@
   :readiness :ready-for-comments,
   :uuid "26776cc4-e64d-494b-b24c-784b2c57866d",
   :author-url "https://teod.eu",
-  :created "2023-07-10",
+  :created "2023-06-10",
   :lang :en}
  {:slug "okrs-are-scale-invariant",
   :title "OKRs are scale invariant",
@@ -483,7 +488,7 @@
   :title "rich-facepalm",
   :uuid "313f3626-6866-4544-8617-78a3977e0fc1"}
  {:slug "utility-is-contextual",
-  :title "Utility is Contextual",
+  :title "utility is contextual",
   :readiness :wtf-is-this,
   :uuid "31478ab4-b7bf-4c87-8dae-8adb66690571",
   :author-url "https://teod.eu",
@@ -567,7 +572,7 @@
   :uuid "385744ba-95d4-45ac-b10e-6a8392e3ba80"}
  {:slug "reading-it-later",
   :title "A \"read it later\" strategy that works",
-  :readiness :wtf-is-this,
+  :readiness :deprecated,
   :uuid "394f1b56-753e-40d2-a51c-3fcf58bee8c1",
   :author-url "https://teod.eu",
   :created "2022-09-20",
@@ -590,9 +595,9 @@
   :title "Daniel Slutsky",
   :readiness :wtf-is-this,
   :uuid "3c798467-1dcc-480a-b38a-b9915ae0e497",
-  :author-url "https://teod.eu",
   :created "2022-10-23",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "electric-clojure",
   :title "Electric Clojure",
   :readiness :wtf-is-this,
@@ -795,15 +800,15 @@
   :author-url "https://teod.eu",
   :created "2023-05-29",
   :lang :no,
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :title "Hva er funksjonell programmering?",
   :uuid "51ffdc72-ed70-4703-a773-347344e5dd6e"}
  {:slug "write-shit-down-reasons",
   :title "Seven reasons you should write shit down",
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :uuid "52f0ba07-7748-400d-910e-2ec833c17800",
   :author-url "https://teod.eu",
-  :created "2023-01-14",
+  :created "2023-06-29",
   :lang :en}
  {:slug "babashka",
   :title "Babashka",
@@ -1035,7 +1040,7 @@
   :form :remote-reference}
  {:slug "makefile-edn",
   :title "Library: makefile-edn",
-  :readiness :wtf-is-this,
+  :readiness :deprecated,
   :author-url "https://teod.eu",
   :created "2022-07-24",
   :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
@@ -1221,7 +1226,7 @@
   :created "2023-03-10",
   :lang :en}
  {:slug "visakanvs-50-yr-plan-for-global-nerd-network-wip",
-  :title "visakanv's 50yr \"plan\" for global nerd network [wip]",
+  :title "visakanv's 50yr \"plan\" for global nerd network (wip)",
   :readiness :wtf-is-this,
   :uuid "7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b",
   :created "2023-03-09",
@@ -1303,7 +1308,7 @@
   :form :remote-reference}
  {:slug "bink",
   :title "Bink: Bookmarks are just data",
-  :readiness :wtf-is-this,
+  :readiness :deprecated,
   :uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
   :author-url "https://teod.eu",
   :created "2022-09-14",
@@ -1514,7 +1519,7 @@
   :builder :no-op,
   :lang :en}
  {:slug "theres-always-a-deliverable",
-  :title "There's always a deliverable",
+  :title "there's always a deliverable",
   :readiness :wtf-is-this,
   :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
   :author-url "https://teod.eu",
@@ -1685,9 +1690,9 @@
   :title "Dave Liepmann",
   :readiness :wtf-is-this,
   :uuid "b6921704-d8d9-4d82-a814-3b9ced8bee31",
-  :author-url "https://teod.eu",
   :created "2023-03-19",
-  :lang :en}
+  :lang :en,
+  :form :remote-reference}
  {:slug "latin-hypercube-sampling",
   :title "Latin hypercube sampling",
   :readiness :wtf-is-this,
@@ -1696,8 +1701,8 @@
   :created "2023-03-19",
   :lang :en}
  {:slug "play.teod.eu-retrospective",
-  :title "play.teod.eu: Rolling retrospective",
-  :readiness :forever-incomplete,
+  :title "play.teod.eu: Rolling retrospective (deprecated)",
+  :readiness :deprecated,
   :author-url "https://teod.eu",
   :created "2022-07-24",
   :uuid "b722664c-d310-4908-9b57-98ffd73833c9",
@@ -1970,7 +1975,7 @@
   :created "2023-06-27",
   :lang :en,
   :readiness :wtf-is-this,
-  :title "Just use a \"let\" (Clojure)",
+  :title "Write clear Clojure code with =let=",
   :uuid "d0f2a691-1418-4b17-be50-d2f95d6ea8dc"}
  {:slug "visakanv",
   :title "visa",

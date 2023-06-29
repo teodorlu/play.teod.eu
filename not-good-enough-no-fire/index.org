@@ -48,8 +48,7 @@ At that sound, the bent shape of the king sprang suddenly erect.
 Tall and proud he seemed again; and rising in his stirrups he cried in a loud voice, more clear than any there had ever heard a mortal man achieve before:
 
 #+begin_verse
- 
-        Arise, arise, Riders of Théoden!
+        Arise, arise, Riders of Théoden!
         Fell deeds awake: fire and slaughter!
         spear shall be shaken, shield shall be splintered,
         a sword-day, a red day, ere the sun rises!
@@ -61,8 +60,7 @@ With that he seized a great horn from Guthláf his banner-bearer, and he blew su
 And straightway all the hors in the host were lifted up in music, and the blowing of the horns of Rohan in that hour was like a storm upon the plain and a thunder in the mountains.
 
 #+begin_verse
- 
-        Ride now, ride now! Ride to Gondor!
+        Ride now, ride now! Ride to Gondor!
  
 #+end_verse
 

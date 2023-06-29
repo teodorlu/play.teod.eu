@@ -211,6 +211,7 @@ Reading it now, I feel like I want to flatten it down to a single layer of =let=
 Something like this:
 
 #+begin_src clojure
+,,, #_ "stuff above ..."
 (let [repo-path (repo-path)
       dispatch (fn [cmd & args]
                  (if (:dry-run opts)

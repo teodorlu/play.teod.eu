@@ -465,20 +465,21 @@ href="https://github.com/iterate/olorm/blob/fa0ada803a7bffe6cf6f0d96f91f3606cffc
 feel like I want to flatten it down to a single layer of <code
 class="verbatim">let</code> expressions. Something like this:</p>
 <div class="sourceCode" id="cb4"><pre
-class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [repo-path (repo-path)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>      dispatch (<span class="kw">fn</span> [cmd &amp; args]</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                 (<span class="kw">if</span> (<span class="at">:dry-run</span> opts)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                   (<span class="kw">prn</span> `(<span class="at">~cmd</span> <span class="at">~@args</span>))</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                   (<span class="kw">apply</span> (<span class="kw">resolve</span> cmd) args)))</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>      disable-git-commands (<span class="kw">or</span> (<span class="at">:disable-git-commands</span> opts) ,,,)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>      _ (<span class="kw">when-not</span> disable-git-commands</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git pull --ff-only&quot;</span>))</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>      number (<span class="kw">inc</span> (<span class="kw">or</span> (<span class="kw">-&gt;&gt;</span> (olorm/docs {<span class="at">:repo-path</span> repo-path})</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>                           (<span class="kw">map</span> <span class="at">:number</span>) <span class="kw">sort</span> <span class="kw">last</span>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">0</span>))</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">doc</span> (olorm/-&gt;olorm {<span class="at">:repo-path</span> repo-path <span class="at">:number</span> number})</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      _ (dispatch <span class="at">`fs/create-dirs</span> (olorm/path <span class="kw">doc</span>))</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      ,,,])</span></code></pre></div>
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>,,, <span class="co">#_</span> <span class="st">&quot;stuff above ...&quot;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [repo-path (repo-path)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>      dispatch (<span class="kw">fn</span> [cmd &amp; args]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                 (<span class="kw">if</span> (<span class="at">:dry-run</span> opts)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                   (<span class="kw">prn</span> `(<span class="at">~cmd</span> <span class="at">~@args</span>))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                   (<span class="kw">apply</span> (<span class="kw">resolve</span> cmd) args)))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>      disable-git-commands (<span class="kw">or</span> (<span class="at">:disable-git-commands</span> opts) ,,,)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>      _ (<span class="kw">when-not</span> disable-git-commands</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>          (dispatch <span class="at">`shell</span> {<span class="at">:dir</span> repo-path} <span class="st">&quot;git pull --ff-only&quot;</span>))</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      number (<span class="kw">inc</span> (<span class="kw">or</span> (<span class="kw">-&gt;&gt;</span> (olorm/docs {<span class="at">:repo-path</span> repo-path})</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                           (<span class="kw">map</span> <span class="at">:number</span>) <span class="kw">sort</span> <span class="kw">last</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                      <span class="dv">0</span>))</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="kw">doc</span> (olorm/-&gt;olorm {<span class="at">:repo-path</span> repo-path <span class="at">:number</span> number})</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      _ (dispatch <span class="at">`fs/create-dirs</span> (olorm/path <span class="kw">doc</span>))</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      ,,,])</span></code></pre></div>
 <p>But still, it’s fine. It’s one function. It doesn’t do anything
 fancy. It doesn’t need to do anything fancy! It’s just code, from top to
 bottom.</p>

@@ -1,8 +1,13 @@
 :PROPERTIES:
 :ID: b722664c-d310-4908-9b57-98ffd73833c9
 :END:
-#+TITLE: play.teod.eu: Rolling retrospective
+#+TITLE: play.teod.eu: Rolling retrospective (deprecated)
 
 [[file:..][..]]
 
-2023-06-29: this page was moved to [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
+2023-06-29: deprecated.
+This page used to contain a retrospective for play.teod.eu, this site.
+
+I don't want to have separate "retrospective pages".
+I prefer to have discussion on the page itself.
+Therefore, I moved the discussion to the "entity"/"reference"-page for play.teod.eu: [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].

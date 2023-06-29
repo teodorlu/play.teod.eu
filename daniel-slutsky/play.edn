@@ -1,6 +1,6 @@
 {:title "Daniel Slutsky",
  :readiness :wtf-is-this,
  :uuid "3c798467-1dcc-480a-b38a-b9915ae0e497",
- :author-url "https://teod.eu",
  :created "2022-10-23",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

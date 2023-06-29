@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 5baabeb7-f920-416c-941e-edbbd156f805
+:END:
+#+TITLE: dangerous writing app
+
+[[file:..][..]]
+
+https://www.squibler.io/dangerous-writing-prompt-app/write?limit=5&type=minutes
+
+An app that deletes your text if you stop writing.
+Great to fight writer's block.

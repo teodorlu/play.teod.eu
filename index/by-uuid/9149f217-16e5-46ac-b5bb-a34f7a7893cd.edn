@@ -1,6 +1,6 @@
 {:slug "shabakka",
  :title "Shabakka",
- :readiness :wtf-is-this,
+ :readiness :deprecated,
  :author-url "https://teod.eu",
  :lang :en,
  :uuid "9149f217-16e5-46ac-b5bb-a34f7a7893cd"}

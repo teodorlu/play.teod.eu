@@ -11,4 +11,4 @@ Hi, I'm Teodor :)
 - My Twitter handle: https://twitter.com/teodorheggelund
 - My Github handle: https://github.com/teodorlu/
 - My personal email is my first name (above) at teodorheggelund.com.
-  I'm making this sentence hard to confuse bots.
+  I'm making this sentence hard to read to confuse bots.

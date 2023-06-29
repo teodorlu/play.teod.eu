@@ -144,15 +144,14 @@ Depending on where in the code you're reading, it's both!
 So, should it be refactored?
 
 I believe that [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][utility is contextual]].
-The context for this code is someone working with it.
-Someone reading it.
+The contextual utility for this code is that it should be easy to understand (utility) for someone who reads and changes the code or its surroundings (context).
 
-And as someone reading it, I find this let block to be clear as daylight.
-You read the code.
+And as someone reading it, I find this let block to be as clear as daylight.
+I read the code.
 The code does what it says it does.
-You can understand the order of the code---from top to bottom.
+I can understand the order of the code---from top to bottom.
 The function is /one thing/.
-There's no way to use the implementation details of the function, because those details are /inside the function/.
+There's no way to abuse the implementation details of the function, because those details are /inside the function/.
 
 Here's a piece of my own code, with some details replaced with =,,,=:
 
@@ -206,8 +205,33 @@ Allowed options:
 #+end_src
 
 [[https://github.com/iterate/olorm/blob/fa0ada803a7bffe6cf6f0d96f91f3606cffcab09/cli/src/mikrobloggeriet/olorm_cli.clj#L53-L102][Source]].
-It's let expressions and some code inside.
+
+There are let expressions, and there is some code.
 Reading it now, I feel like I want to flatten it down to a single layer of =let= expressions.
+Something like this:
+
+#+begin_src clojure
+(let [repo-path (repo-path)
+      dispatch (fn [cmd & args]
+                 (if (:dry-run opts)
+                   (prn `(~cmd ~@args))
+                   (apply (resolve cmd) args)))
+      disable-git-commands (or (:disable-git-commands opts) ,,,)
+      _ (when-not disable-git-commands
+          (dispatch `shell {:dir repo-path} "git pull --ff-only"))
+      number (inc (or (->> (olorm/docs {:repo-path repo-path})
+                           (map :number) sort last)
+                      0))
+      doc (olorm/->olorm {:repo-path repo-path :number number})
+      _ (dispatch `fs/create-dirs (olorm/path doc))
+      ,,,])
+#+end_src
+
+But still, it's fine.
+It's one function.
+It doesn't do anything fancy.
+It doesn't need to do anything fancy!
+It's just code, from top to bottom.
 
 Go forth and write clear Clojure code!
 In many cases, a =let= is all you need.

@@ -1528,3 +1528,21 @@ Core: the skills of a good product manager is theory building in practice.
 ** paulus asks about time
 Teodor says "yeah, lots of time."
 ** remember to look at federated wikis
+* 2023-07-02
+** Watching Maria: A beginner-friendly coding environment for Clojure
+by [[id:b6921704-d8d9-4d82-a814-3b9ced8bee31][Dave Liepmann]].
+
+I liked this part:
+
+#+begin_quote
+Why learn to code?
+
+#+begin_src clojure
+#{:create :play :explore :share}
+#+end_src
+#+end_quote
+
+Create. Play. Explore. Share.
+
+That's /right/.
+Matches the name of my site ([[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]]).

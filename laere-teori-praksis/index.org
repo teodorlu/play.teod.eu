@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 496bc614-2f51-4d7f-bf53-a0e26e72ffb7
 :END:
-#+TITLE: Lære teori, lææære praksis
+#+TITLE: Lære teori, lære praksis
 
 [[file:..][..]]
 

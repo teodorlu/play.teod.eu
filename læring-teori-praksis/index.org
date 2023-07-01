@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID: 496bc614-2f51-4d7f-bf53-a0e26e72ffb7
+:END:
+#+TITLE: Lære teori, lææære praksis
+
+[[file:..][..]]
+
+Teori er læren om det som er /er sant/.
+Teori er internkonsistent, og gir ja/nei-svar.
+Hvordan teori skal anvendes er ikke åpenbart.
+
+Praksis er læren om hva som /funker i verden/.
+Praksis er tvetydig og kontekstavhengig.
+Hvordan praksis skal anvendes er åpenbart---fordi praksis /er anvendelse/.
+
+*Hvrfor skal vi lære teori?*
+Teorier er mentalmodeller.
+De lar deg tenke, og se lenger.
+Har du litt matematikk i bunn, er det lettere å skjønne hvorfor gjeld er problematisk i statsbudsjettet.
+
+*Hvorfor skal vi lære praksis?*
+Praksis er et sett med erfaringer.
+Noe har fungert.
+Noe har blitt problematisk.
+
+*Hvordan skal vi lære teori?*
+
+1. Start med et motiverende eksempel om problemene teorien kan brukes til å løse.
+   Gjør det konkret.
+2. Definér teorien
+3. Bruk teorien til å løse problemet vi har definert.
+   Forenkle problemet ved behov.
+
+*Hvordan skal vi lære praksis?*
+For teori går det an å kjøpe en lærebok, lese den, og lære.
+For praksis mener jeg at to ting trengs:
+
+1. Tilgang på problemene som skal løses
+2. Tilgang på en person som har løst liknende problemer før.
+
+*Hvordan mentorere?*
+
+1. Student og lærer diskuterer xx problemer
+2. Velge et problem
+3. Jobbe på problemet.
+
+Innsats! Ikke styring.

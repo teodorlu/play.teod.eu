@@ -8,3 +8,12 @@
 Rich Hickey is a computer programmer and speaker, known as the creator of the Clojure programming language.
 
 https://en.wikipedia.org/wiki/Rich_Hickey
+
+Rich Hickey content indexed on this site:
+
+| Title                                | Description                     | Date |
+|--------------------------------------+---------------------------------+------|
+| [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]]                   | How to design software          |      |
+| [[id:3eb092bf-b847-4686-b250-fca303022782][Simple Made Easy]]                     | Simplicity: what, how and why   |      |
+| [[id:73b93aeb-d61a-413d-a119-53335e73afda][Design, Composition, and Performance]] | What is design?                 |      |
+| [[id:9447cd35-15b9-49c7-b47e-537c03b48f0b][The Value of Values]]                  | immutability: what, how and why |      |

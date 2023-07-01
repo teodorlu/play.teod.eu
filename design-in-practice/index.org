@@ -9,7 +9,7 @@
 <iframe class="youtube-video" src="https://www.youtube.com/embed/c5QF2HjHLSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+end_export
 
-By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]. [[https://download.clojure.org/presentations/DesignInPractice.pdf][Slides]].
+By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] (2023). [[https://download.clojure.org/presentations/DesignInPractice.pdf][Slides]].
 
 Scope, copied from first slide:
 

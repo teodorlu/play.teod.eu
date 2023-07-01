@@ -439,8 +439,7 @@ understand the order of the code—from top to bottom. The function is
 <em>one thing</em>. There’s no way to abuse the implementation details
 of the function, because those details are <em>inside the
 function</em>.</p>
-<p>Here’s a piece of my own code (please pardon the Norwegian), with
-some details replaced with <code class="verbatim">,,,</code>:</p>
+<p>Here’s a piece of my own code:</p>
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> olorm-create </span>[{<span class="at">:keys</span> [opts]}]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">when</span> (<span class="kw">or</span> (<span class="at">:help</span> opts) (<span class="at">:h</span> opts))</span>

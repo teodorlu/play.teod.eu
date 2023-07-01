@@ -194,7 +194,7 @@ I can understand the order of the code---from top to bottom.
 The function is /one thing/.
 There's no way to abuse the implementation details of the function, because those details are /inside the function/.
 
-Here's a piece of my own code (please pardon the Norwegian), with some details replaced with =,,,=:
+Here's a piece of my own code:
 
 #+begin_src clojure
 (defn olorm-create [{:keys [opts]}]

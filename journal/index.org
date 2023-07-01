@@ -1550,3 +1550,8 @@ Create. Play. Explore. Share.
 
 That's /right/.
 Matches the name of my site ([[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]]).
+
+#+begin_quote
+baby steps
+/comprehensible/ and /tangible/
+#+end_quote

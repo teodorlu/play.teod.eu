@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 575419ac-17d8-4b5a-b060-10aecd6fee78
+:END:
+#+TITLE: The Language of the System
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/teod embed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]].

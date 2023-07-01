@@ -270,17 +270,23 @@ class="verbatim">let</code></h1>
 <p><a href="..">..</a></p>
 <p><em>in praise of imperative Clojure code with <code
 class="verbatim">let</code> that does what says it does</em></p>
-<p>For a long time, I felt bad for not being able to write plain
-imperative code in Clojure. Clojure code should be pretty! It should be
-functional! Clojure code should have the <a
+<p>For a long time, I’ve felt bad for writing imperative code in
+Clojure. Functional looks better! Is it my fault for not seeing the
+inherently functional nature of the I’m problem I’m working on?</p>
+<p>Clojure code should be pretty! It should be functional! Clojure code
+should have the <a
 href="../angels-singing-writing-for-programmers/">clarity of angels
 singing</a>!</p>
-<p>Then, reality hits me in the face. I’ve got an JSON HTTP payload, and
-I need to deliver another JSON HTTP payload. How can I make that code
-sing?</p>
-<p>Lately, I’ve been reading <a href="../michiel-borkent/">Michiel
-Borkent</a>’s code. Here’s the source for <code
-class="verbatim">bb print-deps</code>, edited to fit on this page:</p>
+<p>Then, I sit down with my editor, and I feel kind of stressed. I’ve
+got an JSON HTTP payload, and I need to deliver another JSON HTTP
+payload. It’s a pile of assignment. The code does not sing. It barfs,
+slightly off-tune.</p>
+<p>Can I make it sing?</p>
+<hr />
+<p>A series of events have lead me to spend some time reading <a
+href="../michiel-borkent/">Michiel Borkent</a>’s code lately. Here’s the
+source for <code class="verbatim">bb print-deps</code>, edited to fit on
+this page:</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> print-deps </span>[deps-format]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [deps (<span class="kw">-&gt;</span> (io/resource <span class="st">&quot;META-INF/babashka/deps.edn&quot;</span>)</span>
@@ -394,13 +400,35 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a 
 <span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>          (spit (<span class="at">:deps-file</span> opts) s))))))</span></code></pre></div>
 <p><a
 href="https://github.com/babashka/neil/blob/05b2db6218e4dd39548d5e17a4772a25efea8fb2/src/babashka/neil.clj#L343-L433">Source</a>.</p>
-<p>The code is imperative. It uses the same variable names multiple
+<p>Do you notice a pattern? Consider scrolling back up to read. Forming
+a hypothesis for yourself before reading more of my opinions will help
+you reflect and remember!</p>
+<div class="line-block"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</div>
+<p>Let’s continue.</p>
+<p>The code is imperative! It uses the same variable names multiple
 times. Is <code class="verbatim">deps</code> a map from libraries to
 versions, or a map with a key <code class="verbatim">:deps</code> that
 has a value that is a map from libraries to versions? Depending on where
 in the code you’re reading, it’s both!</p>
 <p>So, should it be refactored? Should it be split up into more
 pieces?</p>
+<p>On the first glance, it’s easy to say “yes! The function is too long!
+It doesn’t use threading and other nice Clojure constructs!” I do
+<em>not</em> think this code should be split up. Why is that?</p>
 <p>I believe that <a href="../utility-is-contextual/">utility is
 contextual</a>. The contextual utility for this code is that it should
 be easy to understand (utility) for someone who reads and changes the

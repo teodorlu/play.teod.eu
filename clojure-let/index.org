@@ -7,16 +7,25 @@
 
 /in praise of imperative Clojure code with =let= that does what says it does/
 
-For a long time, I felt bad for not being able to write plain imperative code in Clojure.
+For a long time, I've felt bad for writing imperative code in Clojure.
+Functional looks better!
+Is it my fault for not seeing the inherently functional nature of the I'm problem I'm working on?
+
 Clojure code should be pretty!
 It should be functional!
 Clojure code should have the [[id:d8c14c54-5295-41c6-ac41-ecd4fcd718fe][clarity of angels singing]]!
 
-Then, reality hits me in the face.
+Then, I sit down with my editor, and I feel kind of stressed.
 I've got an JSON HTTP payload, and I need to deliver another JSON HTTP payload.
-How can I make that code sing?
+It's a pile of assignment.
+The code does not sing.
+It barfs, slightly off-tune.
 
-Lately, I've been reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code.
+Can I make it sing?
+
+-----
+
+A series of events have lead me to spend some time reading [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s code lately.
 Here's the source for =bb print-deps=, edited to fit on this page:
 
 #+begin_src clojure
@@ -136,13 +145,44 @@ Again, edited to fit here.
 
 [[https://github.com/babashka/neil/blob/05b2db6218e4dd39548d5e17a4772a25efea8fb2/src/babashka/neil.clj#L343-L433][Source]].
 
-The code is imperative.
+Do you notice a pattern?
+Consider scrolling back up to read.
+Forming a hypothesis for yourself before reading more of my opinions will help you reflect and remember!
+
+#+BEGIN_VERSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+END_VERSE
+
+Let's continue.
+
+The code is imperative!
 It uses the same variable names multiple times.
 Is =deps= a map from libraries to versions, or a map with a key =:deps= that has a value that is a map from libraries to versions?
 Depending on where in the code you're reading, it's both!
 
 So, should it be refactored?
 Should it be split up into more pieces?
+
+On the first glance, it's easy to say
+  "yes!
+  The function is too long!
+  It doesn't use threading and other nice Clojure constructs!"
+I do /not/ think this code should be split up.
+Why is that?
 
 I believe that [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][utility is contextual]].
 The contextual utility for this code is that it should be easy to understand (utility) for someone who reads and changes the code or its surroundings (context).

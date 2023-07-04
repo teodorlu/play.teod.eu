@@ -1555,3 +1555,7 @@ Matches the name of my site ([[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teo
 baby steps
 /comprehensible/ and /tangible/
 #+end_quote
+* 2023-07-04
+** Is this all there is?
+Effort required.
+Consumption and learning conflated.

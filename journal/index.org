@@ -1591,3 +1591,26 @@ So here is a selection of commands.
 #+begin_src shell
 $ clj -A:test -X cognitect.test-runner.api/test :vars '[babashka.neil.dep-upgrade-test/dep-upgrade-test]'
 #+end_src
+*** Test runner source
+https://github.com/cognitect-labs/test-runner/blob/7284cda41fb9edc0f3bc6b6185cfb7138fc8a023/src/cognitect/test_runner/api.clj#L16-L30
+
+Inlined:
+
+#+begin_src clojure
+(defn test
+  "Invoke the test-runner with the following options:
+
+  * :dirs - coll of directories containing tests, default= [\"test\"]
+  * :nses - coll of namespace symbols to test
+  * :patterns - coll of regex strings to match namespaces
+  * :vars - coll of fully qualified symbols to run tests on
+  * :includes - coll of test metadata keywords to include
+  * :excludes - coll of test metadata keywords to exclude
+
+  If neither :nses nor :patterns is supplied, use `:patterns [\".*-test$\"]`."
+  [opts]
+  (let [{:keys [fail error]} (do-test opts)]
+    (when (> (+ fail error) 0)
+      (throw (ex-info "Test failures or errors occurred." {})))))
+#+end_src
+*** Open question: do I need to specify -X even though it's in the alias??

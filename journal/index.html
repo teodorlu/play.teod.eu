@@ -2499,5 +2499,28 @@ line interface. So here is a selection of commands.</p>
 from the command line</h4>
 <pre class="shell"><code>$ clj -A:test -X cognitect.test-runner.api/test :vars &#39;[babashka.neil.dep-upgrade-test/dep-upgrade-test]&#39;
 </code></pre>
+<h4 id="test-runner-source">Test runner source</h4>
+<p><a
+href="https://github.com/cognitect-labs/test-runner/blob/7284cda41fb9edc0f3bc6b6185cfb7138fc8a023/src/cognitect/test_runner/api.clj#L16-L30">https://github.com/cognitect-labs/test-runner/blob/7284cda41fb9edc0f3bc6b6185cfb7138fc8a023/src/cognitect/test_runner/api.clj#L16-L30</a></p>
+<p>Inlined:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> test</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Invoke the test-runner with the following options:</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="st">  * :dirs - coll of directories containing tests, default= [</span><span class="sc">\&quot;</span><span class="st">test</span><span class="sc">\&quot;</span><span class="st">]</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="st">  * :nses - coll of namespace symbols to test</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="st">  * :patterns - coll of regex strings to match namespaces</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="st">  * :vars - coll of fully qualified symbols to run tests on</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="st">  * :includes - coll of test metadata keywords to include</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="st">  * :excludes - coll of test metadata keywords to exclude</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="st">  If neither :nses nor :patterns is supplied, use `:patterns [</span><span class="sc">\&quot;</span><span class="st">.*-test$</span><span class="sc">\&quot;</span><span class="st">]`.&quot;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  [opts]</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [{<span class="at">:keys</span> [fail error]} (do-test opts)]</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">when</span> (<span class="kw">&gt;</span> (<span class="kw">+</span> fail error) <span class="dv">0</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">throw</span> (ex-info <span class="st">&quot;Test failures or errors occurred.&quot;</span> {})))))</span></code></pre></div>
+<h4
+id="open-question-do-i-need-to-specify--x-even-though-its-in-the-alias">Open
+question: do I need to specify -X even though it’s in the alias??</h4>
 </body>
 </html>

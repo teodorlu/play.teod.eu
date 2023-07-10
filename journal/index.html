@@ -643,6 +643,8 @@ id="toc-i-want-a-pandoc-benchmark">I want a Pandoc benchmark</a></li>
 <ul>
 <li><a href="#not-even-wrong-1" id="toc-not-even-wrong-1">Not even
 wrong</a></li>
+<li><a href="#deps.edn-cheat-sheet" id="toc-deps.edn-cheat-sheet"><code
+class="verbatim">deps.edn</code> cheat sheet</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2479,5 +2481,23 @@ When theory works, it <em>is</em> the structure of our
 communication.</p>
 <p><em>When theory works, it is the structure of our
 communication</em></p>
+<h3 id="deps.edn-cheat-sheet"><code class="verbatim">deps.edn</code>
+cheat sheet</h3>
+<p>Context: I’ve previously struggled with running tests on <a
+href="../michiel-borkent/">Michiel Borkent</a>’s projects. Neil,
+Babashka.</p>
+<p>Specifically:</p>
+<ol>
+<li>How do I get a proper REPL with the right aliases here?</li>
+<li>How do I run certain tests from the command line?</li>
+<li>How do I run all the tests from the command line?</li>
+<li>How do I run tests from a REPL?</li>
+</ol>
+<p>I want to fix this by getting more familiar with the `clj` command
+line interface. So here is a selection of commands.</p>
+<h4 id="run-a-specific-var-from-the-command-line">Run a specific var
+from the command line</h4>
+<pre class="shell"><code>$ clj -A:test -X cognitect.test-runner.api/test :vars &#39;[babashka.neil.dep-upgrade-test/dep-upgrade-test]&#39;
+</code></pre>
 </body>
 </html>

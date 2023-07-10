@@ -1573,3 +1573,21 @@ When theory works, it is invisible.
 When theory works, it /is/ the structure of our communication.
 
 /When theory works, it is the structure of our communication/
+** =deps.edn= cheat sheet
+Context:
+I've previously struggled with running tests on [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]'s projects.
+Neil, Babashka.
+
+Specifically:
+
+1. How do I get a proper REPL with the right aliases here?
+2. How do I run certain tests from the command line?
+3. How do I run all the tests from the command line?
+4. How do I run tests from a REPL?
+
+I want to fix this by getting more familiar with the `clj` command line interface.
+So here is a selection of commands.
+*** Run a specific var from the command line
+#+begin_src shell
+$ clj -A:test -X cognitect.test-runner.api/test :vars '[babashka.neil.dep-upgrade-test/dep-upgrade-test]'
+#+end_src

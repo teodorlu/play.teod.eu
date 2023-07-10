@@ -1562,3 +1562,14 @@ Consumption and learning conflated.
 ** I want a Pandoc benchmark
 How much of the time spent is process startup?
 How much is actual document conversion?
+* 2023-07-10
+** Not even wrong
+I feel like this is the problem /every XXX time/.
+Lack of theory causes confusion.
+Conflicting theories cause communication to break down.
+
+Though---as I write this, I realize how often it works well, but then theory (shared intent) is implicit.
+When theory works, it is invisible.
+When theory works, it /is/ the structure of our communication.
+
+/When theory works, it is the structure of our communication/

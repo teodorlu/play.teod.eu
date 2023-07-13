@@ -7,3 +7,10 @@
 
 http://groups.csail.mit.edu/mac/users/gjs/ |
 https://en.wikipedia.org/wiki/Gerald_Jay_Sussman
+
+GJS content on this site:
+
+| document                                    | what+why                                        |
+|---------------------------------------------+-------------------------------------------------|
+| [[id:29d152b9-9f5e-4c23-904a-f926b3d83477][Software Design for Flexibility]]             | textbook, how to build systems flexible systems |
+| [[id:75b85720-093b-4b0c-91fb-d6ad79c47e0c][Adventures in Advanced Symbolic Programming]] | class, how to build flexible systems            |

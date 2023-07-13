@@ -9,13 +9,14 @@ https://en.wikipedia.org/wiki/Emacs
 
 Emacs is an extensible text editor with a long history.
 
-You probably don't want to read this page from start to bottom---it's my process for learning Emacs.
+I like using Emacs.
+Why?
+Because Emacs is future oriented.
+It doesn't lock you into pre-determined habits.
+You may shape it to your will and intent.
 
-Hey!
-Reading this document from start to end might not be useful. So why put it
-here if the intent isn't consumption?
+This page is a record of some of the Emacs things I've learned.
 
-Keep reading if you'd like. Or stop here. 🐉
 * Prelude
 My learning process works something like this:
 

@@ -152,8 +152,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -339,11 +342,10 @@ id="toc-deleting-branches-with-magit-again">Deleting branches with Magit
 <p><a
 href="https://en.wikipedia.org/wiki/Emacs">https://en.wikipedia.org/wiki/Emacs</a></p>
 <p>Emacs is an extensible text editor with a long history.</p>
-<p>You probably don’t want to read this page from start to bottom—it’s
-my process for learning Emacs.</p>
-<p>Hey! Reading this document from start to end might not be useful. So
-why put it here if the intent isn’t consumption?</p>
-<p>Keep reading if you’d like. Or stop here. 🐉</p>
+<p>I like using Emacs. Why? Because Emacs is future oriented. It doesn’t
+lock you into pre-determined habits. You may shape it to your will and
+intent.</p>
+<p>This page is a record of some of the Emacs things I’ve learned.</p>
 <h2 id="prelude">Prelude</h2>
 <p>My learning process works something like this:</p>
 <ol>

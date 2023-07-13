@@ -6,3 +6,9 @@
 [[file:..][..]]
 
 https://ericnormand.me/
+
+Eric Normand content referenced on this site:
+
+| document                                           | what+why                                |
+|----------------------------------------------------+-----------------------------------------|
+| [[id:6b05277b-7fc2-46cb-b0de-91b8ba9ad4e4][You are in a maze of deeply nested maps, all alike]] | lecture, overcoming too-dynamic systems |

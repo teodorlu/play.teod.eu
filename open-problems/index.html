@@ -152,8 +152,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -516,12 +519,14 @@ places.</li>
 <h3 id="review-1">Review</h3>
 <p>dump</p>
 <ul class="task-list">
-<li><input type="checkbox" checked="" />review open problems</li>
-<li><input type="checkbox" />refocus on CSS &amp; design</li>
-<li><input type="checkbox" />try change the “main” layout of
-play.teod.eu</li>
-<li><input type="checkbox" checked="" />consider looking into Org-Roam-s
-SQLite database</li>
+<li><label><input type="checkbox" checked="" />review open
+problems</label></li>
+<li><label><input type="checkbox" />refocus on CSS &amp;
+design</label></li>
+<li><label><input type="checkbox" />try change the “main” layout of
+play.teod.eu</label></li>
+<li><label><input type="checkbox" checked="" />consider looking into
+Org-Roam-s SQLite database</label></li>
 </ul>
 <h4 id="review-open-problems">review open problems</h4>
 <p>doing</p>

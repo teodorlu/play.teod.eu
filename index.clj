@@ -135,9 +135,8 @@
      (when (seq forever-incomplete)
        [(paragraphs "** Forever incomplete"
                     (lines
-                     "Some content is eventually /done/."
-                     "Not journals.")
-                    ":)"
+                     "Some content is eventually /complete/."
+                     "Not journals!")
                     (str/join " --- " (for [page forever-incomplete] (page-link page))))
         ""])
 

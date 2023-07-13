@@ -35,7 +35,7 @@ References + slides are right here; you're looking at them!.
 Today:
 (PART 1) What is a memex? A brief history of ideas.
 (PART 2) How to build your own little memex with Babashka.
-(Part 3) Memexes applied: a tool for exploration
+(PART 3) Memexes applied: a tool for exploration
 
 ** (PART 1) What is a memex? A brief history of ideas.
 

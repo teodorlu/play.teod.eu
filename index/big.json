@@ -1328,6 +1328,15 @@
   "title" : "Creative Computation",
   "uuid" : "747d8b1e-5048-44f0-bd97-ef9a7de2fddd"
 }, {
+  "slug" : "adventures-in-advanced-symbolic-programming",
+  "author-url" : "https://teod.eu",
+  "created" : "",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Adventures in Advanced Symbolic Programming",
+  "uuid" : "75b85720-093b-4b0c-91fb-d6ad79c47e0c"
+}, {
   "slug" : "michiel-borkent",
   "author-url" : "https://teod.eu",
   "created" : "2023-06-06",

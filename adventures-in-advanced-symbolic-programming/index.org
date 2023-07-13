@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: 75b85720-093b-4b0c-91fb-d6ad79c47e0c
+:END:
+#+TITLE: Adventures in Advanced Symbolic Programming
+
+[[file:..][..]]
+
+http://groups.csail.mit.edu/mac/users/gjs/6.945/
+
+#+begin_quote
+Concepts and techniques for the design and implementation of large software systems that can be adapted to uses not anticipated by the designer.
+#+end_quote
+
+A class in symbolic programming taught by [[id:b726cfb2-5aff-46e7-b377-c881af59753d][Gerald Jay Sussman]] and Hizami Anuar.
+
+* 2023-07-13
+** really interesting exercises.
+I've read read/skimmed the [[id:29d152b9-9f5e-4c23-904a-f926b3d83477][Software Design for Flexibility]], but I don't feel like I have more than a superficial understanding of the concepts presented.
+Reading through the exercises for this course was interesting because they seemed significant and /hard/.
+Good hard, not silly hard.

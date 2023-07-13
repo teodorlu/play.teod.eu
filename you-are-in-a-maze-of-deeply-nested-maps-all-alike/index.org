@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 6b05277b-7fc2-46cb-b0de-91b8ba9ad4e4
+:END:
+#+TITLE: You are in a maze of deeply nested maps, all alike
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=Sjb6y19YIWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+By [[id:81dfcf30-e59d-4293-9000-5b29c97f90b8][Eric Normand]]

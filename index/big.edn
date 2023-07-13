@@ -517,6 +517,14 @@
   :author-url "https://teod.eu",
   :created "2022-08-08",
   :lang :en}
+ {:slug "mikrobloggeriet.no",
+  :author-url "https://teod.eu",
+  :created "",
+  :form :remote-reference,
+  :lang :no,
+  :readiness :wtf-is-this,
+  :title "mikrobloggeriet.no",
+  :uuid "32703cee-4d48-46f7-b87a-31eb89f46e84"}
  {:slug "terminalen-motorsag",
   :title "Terminalen: Hvordan løpe med motorsag",
   :readiness :wtf-is-this,
@@ -1062,6 +1070,14 @@
   :author-url "https://teod.eu",
   :created "2022-08-27",
   :lang :en}
+ {:slug "you-are-in-a-maze-of-deeply-nested-maps-all-alike",
+  :author-url "https://teod.eu",
+  :created "",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "You are in a maze of deeply nested maps, all alike",
+  :uuid "6b05277b-7fc2-46cb-b0de-91b8ba9ad4e4"}
  {:slug "skunk-works-book",
   :title "Skunk Works: A Personal Memoir of My Years at Lockheed",
   :readiness :wtf-is-this,

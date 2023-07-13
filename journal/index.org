@@ -1614,3 +1614,36 @@ Inlined:
       (throw (ex-info "Test failures or errors occurred." {})))))
 #+end_src
 *** Open question: do I need to specify -X even though it's in the alias??
+Yes!
+Here's how:
+
+#+begin_src shell
+$ clj -X:test :vars '[babashka.neil.dep-upgrade-test/dep-upgrade-test]'
+#+end_src
+
+Can I run that from a REPL?
+* 2023-07-13
+** Diverse!
+1. Fikk god tilbakemelding på [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]].
+   Prøvde å jobbe litt med det, ba om innspill.
+   Fikk innspill.
+   Gjorde endringer basert på innspill.
+2. Fant [[id:6b05277b-7fc2-46cb-b0de-91b8ba9ad4e4][You are in a maze of deeply nested maps, all alike]] etter litt hjelp fra en trivelig fyr på [[id:8638f5d6-bc22-4f10-a457-ab388c22128b][Clojurians Slack]].
+3. Har lyst til å komme videre på Memex-sporet.
+   Men jeg tror nå er tiden for å bygge---ikke tiden for å snakke om bygging.
+   Jeg har noe bra på vei flere steder.
+   Her på [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
+   På [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]].
+   Og på det interne kunnskapsssytemet til [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]].
+4. Hypotese: ferie er urettet /nettverkssøk/.
+   Jobb er rettet arbeid mot mål og milestener.
+   Ferie er å kunne navigere fritt over et nettverk.
+5. Læring krever innsats.
+   Jeg bryr meg om at folk skal kunne lære ting.
+   Men jeg gidder ikke bruke tid og innsats hvis jeg ikke får noe tilbake.
+   Gjør noe!
+   Ta initiativ!
+   Demonstrér at du tar dette seriøst!
+   Ikke bare sett deg på ræva og vent på at gode ting skal skje med deg.
+   Det er ikke noe demonstrasjon på nysgjerrighet.
+   Tvert imot, det er nøyaktig det motsatte.

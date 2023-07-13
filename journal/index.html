@@ -152,8 +152,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -645,6 +648,10 @@ id="toc-i-want-a-pandoc-benchmark">I want a Pandoc benchmark</a></li>
 wrong</a></li>
 <li><a href="#deps.edn-cheat-sheet" id="toc-deps.edn-cheat-sheet"><code
 class="verbatim">deps.edn</code> cheat sheet</a></li>
+</ul></li>
+<li><a href="#section-39" id="toc-section-39">2023-07-13</a>
+<ul>
+<li><a href="#diverse" id="toc-diverse">Diverse!</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2522,5 +2529,36 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb15-1"><a
 <h4
 id="open-question-do-i-need-to-specify--x-even-though-its-in-the-alias">Open
 question: do I need to specify -X even though it’s in the alias??</h4>
+<p>Yes! Here’s how:</p>
+<pre class="shell"><code>$ clj -X:test :vars &#39;[babashka.neil.dep-upgrade-test/dep-upgrade-test]&#39;
+</code></pre>
+<p>Can I run that from a REPL?</p>
+<h2 id="section-39">2023-07-13</h2>
+<h3 id="diverse">Diverse!</h3>
+<ol>
+<li>Fikk god tilbakemelding på <a
+href="../mikrobloggeriet.no/">mikrobloggeriet.no</a>. Prøvde å jobbe
+litt med det, ba om innspill. Fikk innspill. Gjorde endringer basert på
+innspill.</li>
+<li>Fant <a
+href="../you-are-in-a-maze-of-deeply-nested-maps-all-alike/">You are in
+a maze of deeply nested maps, all alike</a> etter litt hjelp fra en
+trivelig fyr på <a href="../clojurians-slack/">Clojurians
+Slack</a>.</li>
+<li>Har lyst til å komme videre på Memex-sporet. Men jeg tror nå er
+tiden for å bygge—ikke tiden for å snakke om bygging. Jeg har noe bra på
+vei flere steder. Her på <a href="../play.teod.eu/">play.teod.eu</a>. På
+<a href="../mikrobloggeriet.no/">mikrobloggeriet.no</a>. Og på det
+interne kunnskapsssytemet til <a href="../unicad/">Unicad</a>.</li>
+<li>Hypotese: ferie er urettet <em>nettverkssøk</em>. Jobb er rettet
+arbeid mot mål og milestener. Ferie er å kunne navigere fritt over et
+nettverk.</li>
+<li>Læring krever innsats. Jeg bryr meg om at folk skal kunne lære ting.
+Men jeg gidder ikke bruke tid og innsats hvis jeg ikke får noe tilbake.
+Gjør noe! Ta initiativ! Demonstrér at du tar dette seriøst! Ikke bare
+sett deg på ræva og vent på at gode ting skal skje med deg. Det er ikke
+noe demonstrasjon på nysgjerrighet. Tvert imot, det er nøyaktig det
+motsatte.</li>
+</ol>
 </body>
 </html>

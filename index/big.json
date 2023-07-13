@@ -779,7 +779,7 @@
 }, {
   "slug" : "emacs",
   "title" : "Emacs",
-  "form" : "rambling",
+  "form" : "remote-reference",
   "readiness" : "forever-incomplete",
   "lang" : "en",
   "uuid" : "4291481a-e7ad-4466-b51e-53b0e35076d1"
@@ -2095,7 +2095,7 @@
   "lang" : "en"
 }, {
   "slug" : "journal",
-  "title" : "Teodor's public-personal journal",
+  "title" : "Teodor's public journal",
   "form" : "rambling",
   "readiness" : "forever-incomplete",
   "lang" : "en",
@@ -2310,7 +2310,7 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-06-29",
   "lang" : "en",
-  "readiness" : "ready-for-comments",
+  "readiness" : "wtf-is-this",
   "title" : "Write clear Clojure code with =let=",
   "uuid" : "d0f2a691-1418-4b17-be50-d2f95d6ea8dc"
 }, {

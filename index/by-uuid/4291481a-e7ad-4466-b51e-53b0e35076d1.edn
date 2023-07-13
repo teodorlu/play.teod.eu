@@ -1,6 +1,6 @@
 {:slug "emacs",
  :title "Emacs",
- :form :rambling,
+ :form :remote-reference,
  :readiness :forever-incomplete,
  :lang :en,
  :uuid "4291481a-e7ad-4466-b51e-53b0e35076d1"}

@@ -231,7 +231,7 @@ DRAFT
 (defn create-page [{:keys [opts]}]
   (let [slug (:slug opts)
         title (or (:title opts) slug)
-        uuid (or (:uuid opts) (bash "uuidgen"))
+        uuid (or (:uuid opts) (str (random-uuid)))
         lang (or (:lang opts) :en)
         valid-opts? (and slug title uuid lang)
         fake-spit (fn [path content]

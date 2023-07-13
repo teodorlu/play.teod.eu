@@ -5,4 +5,6 @@
 
 [[file:..][..]]
 
-https://github.com/adamwiggins | https://twitter.com/_adamwiggins_
+https://adamwiggins.com/ |
+https://github.com/adamwiggins |
+https://twitter.com/_adamwiggins_

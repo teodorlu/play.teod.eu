@@ -8,7 +8,7 @@
 http://groups.csail.mit.edu/mac/users/gjs/ |
 https://en.wikipedia.org/wiki/Gerald_Jay_Sussman
 
-GJS content on this site:
+GJS content referenced on this site:
 
 | document                                    | what+why                                        |
 |---------------------------------------------+-------------------------------------------------|

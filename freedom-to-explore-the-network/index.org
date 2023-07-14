@@ -129,4 +129,11 @@ Possible courses of action:
 3. Limit total workday to 6 hours.
 4. Introduce kanban-like system.
 
+Or perhaps this is all about expectations.
+I will never spend 100 % of my time on execution.
+That is not for me.
+I will continue to explore.
+And in the event of having to do execution-heavy work, I will interperse that work with light exploratory work.
+I do this out of self respect.
+
 [fn:1] [[id:3619c8d2-f020-4e65-8e45-ca1970cdf46c][Finite element implementation of lower-order strain gradient plasticity in Abaqus]]

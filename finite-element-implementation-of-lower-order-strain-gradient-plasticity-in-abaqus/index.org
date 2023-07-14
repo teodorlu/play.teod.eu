@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 3619c8d2-f020-4e65-8e45-ca1970cdf46c
+:END:
+#+TITLE: Finite element implementation of lower-order strain gradient plasticity in Abaqus
+
+[[file:..][..]]
+
+https://www.teodorheggelund.com/static/heggelund15.pdf
+
+By [[id:72328026-a75f-4c81-a434-a8fcba97b7bd][Teodor Heggelund]] (2015).

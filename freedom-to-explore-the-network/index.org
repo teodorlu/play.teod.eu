@@ -16,3 +16,117 @@ Where is the excitement?
 Where is the challenge?
 Where is the meaning?
 Where is the known, where is the unknown?
+
+But why?
+Why be free?
+
+That's a bad question!
+It's two things.
+(1) Why be?
+and (2) why be free rather than nonfree?
+
+"Why be?" is /also/ a bad question.
+It is not something we can choose.
+We cannot choose to be.
+We are not given a choice to be or not to be before we are made.
+We can choose to take our life.
+But the choice "Why be?" is /not/ a question of suicide.
+
+The other question if better.
+"Why be free rather than nonfree?"
+We can answer this question with agency, adventure and learning.
+To be nonfree is to live without agency, to avoid adventure, and to avoid learning.
+Let's choose to be free.
+
+That freedom /means something/.
+We exercise that freedom every day, whether we believe we do or not.
+A single unit of freedom is a choice.
+Yet, if freedom was to make /one choice/, life would be boring.
+Choices compound and unlock new options.
+
+That is the freedom to explore.
+
+-----
+
+Leisure is freedom, work is striving towards goals.
+The two work together, both are needed.
+Without structured effort working towards goals, we limit our capability.
+Without unstructured exploration of the network, we never discover what our goals actually were.
+
+Work and leisure are not good or bad.
+They are tools for us to shape our life.
+
+-----
+
+I don't like 8 hour workdays.
+"fill these 8 hours".
+Yeah, right.
+
+8 hours is too long for highly concentrated work.
+And too short for roaming exploration.
+For me.
+
+I tried cutting at six hours.
+More leisure after work helped.
+Yet, I am in a culture, and I felt other people's expectations weighing on me.
+
+I do realize I need both.
+All leisure is not good.
+But what is the balance?
+I need balance.
+
+-----
+
+Is it all about goals and values?
+What do we aim to achieve?
+No.
+Goals are one parts.
+Needs and capability is another.
+And those intertwine with communication.
+What should we be doing?
+What are we able to do?
+What are we motivated to do?
+They connect.
+Perhaps a start is to define high-level categories.
+Each category has a different shape of work.
+Make it explicit.
+
+In [[id:a91a46da-75f0-4a1c-8cde-5e51ad199026][Unicad]], we currently have three major goals:
+
+1. Land expert engineering projects where we can take a part, produce something extraordinary, learn from the experience, and make some money.
+2. Grow number of parametric design users.
+3. Grow number of calculation documentation users.
+
+I could take the three, and split along goals, capability and motivation.
+Divide those into activities.
+Gain some sanity.
+
+Then dedicate 3-4 hours each day to narrow work towards one of those goals.
+For the rest, allow roaming.
+
+Decication and focus is valuable, and important.
+Always looking for the next new thing lets us see what others don't notice, without doubt.
+But that effort spent looking in all directions at all times has a cost.
+By always looking for new things of strategic importance, we fail to execute the obvious right in front of us.
+
+-----
+
+I had a delightful balance between work and leisure two weeks I spent in Spain with friends while writing my master's thesis[fn:1].
+For 3-4 hours every morning, I worked on the thesis.
+Other than that, we roamed around.
+
+The /shape/ of the thesis work was given.
+Deliver this text.
+Will the shape of this so called "structured work" fit?
+Not necessarily.
+
+Possible courses of action:
+
+1. Set aside 3 hours each morning for /individual work/.
+   Collaboration after lunch.
+2. Define high-level goals, and actions working towards those goals.
+   Purpose: with defined goals and defined actions towards those goals, we make the work explicit.
+3. Limit total workday to 6 hours.
+4. Introduce kanban-like system.
+
+[fn:1] [[id:3619c8d2-f020-4e65-8e45-ca1970cdf46c][Finite element implementation of lower-order strain gradient plasticity in Abaqus]]

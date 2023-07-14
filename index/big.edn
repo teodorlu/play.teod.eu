@@ -557,6 +557,16 @@
   :author-url "https://teod.eu",
   :created "2023-03-29",
   :lang :en}
+ {:slug
+  "finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus",
+  :author-url "https://teod.eu",
+  :created "",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title
+  "Finite element implementation of lower-order strain gradient plasticity in Abaqus",
+  :uuid "3619c8d2-f020-4e65-8e45-ca1970cdf46c"}
  {:slug "spillkoding-med-litt-spilldesign",
   :title "Spillkoding med litt spilldesign",
   :readiness :wtf-is-this,
@@ -1150,6 +1160,14 @@
   :author-url "https://teod.eu",
   :created "2023-03-25",
   :lang :en}
+ {:slug "teodor-heggelund",
+  :author-url "https://teod.eu",
+  :created "",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Teodor Heggelund",
+  :uuid "72328026-a75f-4c81-a434-a8fcba97b7bd"}
  {:slug "design-composition-performance",
   :author-url "https://teod.eu",
   :created "2023-05-29",

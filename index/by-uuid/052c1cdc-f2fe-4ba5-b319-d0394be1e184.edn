@@ -1,7 +1,7 @@
 {:slug "c-lang",
- :title "C learning journal",
+ :title "C (programming language)",
  :readiness :wtf-is-this,
- :author-url "https://teod.eu",
  :created "2022-07-14",
  :uuid "052c1cdc-f2fe-4ba5-b319-d0394be1e184",
- :lang :en}
+ :lang :en,
+ :form :remote-reference}

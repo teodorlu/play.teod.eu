@@ -41,12 +41,12 @@
   "lang" : "en"
 }, {
   "slug" : "c-lang",
-  "title" : "C learning journal",
+  "title" : "C (programming language)",
   "readiness" : "wtf-is-this",
-  "author-url" : "https://teod.eu",
   "created" : "2022-07-14",
   "uuid" : "052c1cdc-f2fe-4ba5-b319-d0394be1e184",
-  "lang" : "en"
+  "lang" : "en",
+  "form" : "remote-reference"
 }, {
   "slug" : "many-small-functions-bad",
   "title" : "When having many small functions is bad",
@@ -2329,6 +2329,14 @@
   "created" : "2023-03-10",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "freedom-to-explore-the-network",
+  "author-url" : "https://teod.eu",
+  "created" : "",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Freedom To Explore the Network",
+  "uuid" : "d25f0e71-4b76-47fc-b816-f57f696fb8c6"
 }, {
   "slug" : "graph-navigators",
   "title" : "Graph navigators",

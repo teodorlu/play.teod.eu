@@ -129,7 +129,7 @@ Possible courses of action:
 3. Limit total workday to 6 hours.
 4. Introduce kanban-like system.
 
-Or perhaps this is all about expectations.
+Perhaps this is a matter of setting expectations.
 I will never spend 100 % of my time on execution.
 That is not for me.
 I will continue to explore.

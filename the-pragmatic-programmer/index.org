@@ -5,6 +5,6 @@
 
 [[file:..][..]]
 
-Second edition is great: https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
+Second edition: https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
 
 By Dave Thomas and Andy Hunt.

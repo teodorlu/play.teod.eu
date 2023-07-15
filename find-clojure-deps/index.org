@@ -6,3 +6,20 @@
 [[file:..][..]]
 
 DRAFT
+
+Where do you find your Clojure dependencies?
+
+Problems we want to address:
+
+1. I need to solve a problem and I don't know which libraries can help me
+2. I can't remember the name of some dependency I've used before
+3. I want to learn how experienced people work, and see which tools they use.
+
+Rough structure:
+
+1. Present real problems, in a real situation.
+2. How can we solve this?
+3. Explain the path Nezz takes.
+4. Gifs and videos!
+5. (should I ask to present on London Clojurians? If so, I need to fill more time!)
+6. Call to action

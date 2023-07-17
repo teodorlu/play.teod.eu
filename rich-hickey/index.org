@@ -11,10 +11,11 @@ https://en.wikipedia.org/wiki/Rich_Hickey
 
 Rich Hickey content indexed on this site:
 
-| Title                                | Description                     | Date |
-|--------------------------------------+---------------------------------+------|
-| [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]]                   | how to design software          | 2023 |
-| [[id:3eb092bf-b847-4686-b250-fca303022782][Simple Made Easy]]                     | simplicity: what, how and why   | 2011 |
-| [[id:73b93aeb-d61a-413d-a119-53335e73afda][Design, Composition, and Performance]] | what is design?                 | 2013 |
-| [[id:9447cd35-15b9-49c7-b47e-537c03b48f0b][The Value of Values]]                  | immutability: what, how and why | 2012 |
-| [[id:575419ac-17d8-4b5a-b060-10aecd6fee78][The Language of the System]]           |                                 | 2012 |
+| Title                                | Description                      | Date |
+|--------------------------------------+----------------------------------+------|
+| [[id:3eb092bf-b847-4686-b250-fca303022782][Simple Made Easy]]                     | simplicity: what, how and why    | 2011 |
+| [[id:575419ac-17d8-4b5a-b060-10aecd6fee78][The Language of the System]]           |                                  | 2012 |
+| [[id:65d772e5-951c-47b5-b3cd-fb8bf765b6ab][Maybe Not]]                            | how to treat partial information | 2018 |
+| [[id:73b93aeb-d61a-413d-a119-53335e73afda][Design, Composition, and Performance]] | what is design?                  | 2013 |
+| [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]]                   | how to design software           | 2023 |
+| [[id:9447cd35-15b9-49c7-b47e-537c03b48f0b][The Value of Values]]                  | immutability: what, how and why  | 2012 |

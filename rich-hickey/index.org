@@ -9,7 +9,7 @@ Rich Hickey is a computer programmer and speaker, known as the creator of the Cl
 
 https://en.wikipedia.org/wiki/Rich_Hickey
 
-Rich Hickey content indexed on this site:
+Rich Hickey content referenced on this site:
 
 | Title                                | Description                      | Date |
 |--------------------------------------+----------------------------------+------|

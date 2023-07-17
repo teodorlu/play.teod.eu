@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 65d772e5-951c-47b5-b3cd-fb8bf765b6ab
+:END:
+#+TITLE: Maybe Not
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/YR5WdGrpoug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+A talk by [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] on how to treat partial information.

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: e868f48d-019d-4664-b06f-12c699f950e5
+:END:
+#+TITLE: Outcome orientation! Or ... not?
+
+[[file:..][..]]
+
+DRAFT.
+
+NRK.
+Everyone should be oriented towards outcomes.
+That's how we're going to work.
+
+Software product team.
+Shipping real features to real users.
+Stressful for individual contributors.
+
+We can't even /talk/ about hard technical problems if we must only talk in business language.
+
+#+BEGIN_QUOTE
+You have the right to your labor, but not the fruits of your labour.
+#+END_QUOTE
+
+Focusing on the labour.
+Focusing on the work.
+The rhythm of the work.
+The quality of the work itself.
+The tactility of the work. 

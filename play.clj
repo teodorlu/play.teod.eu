@@ -228,6 +228,10 @@ DRAFT
                       (take n)
                       (map :slug)))))))
 
+(defn today-str []
+  (.format (java.time.format.DateTimeFormatter/ofPattern "yyyy-MM-dd")
+           (java.time.LocalDateTime/now)))
+
 (defn create-page [{:keys [opts]}]
   (let [slug (:slug opts)
         title (or (:title opts) slug)
@@ -284,7 +288,7 @@ Allowed options:
                                :readiness :wtf-is-this
                                :uuid uuid
                                :author-url "https://teod.eu"
-                               :created (str/trim (bash "date -I"))
+                               :created (today-str)
                                :lang lang})
               page-meta (if (:form opts) (assoc page-meta :form (:form opts))
                             page-meta)

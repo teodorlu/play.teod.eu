@@ -15,16 +15,18 @@
            (repeat n "ol"))))
 
 (defn git-infer-created-date [f]
-  (let [proc-handle (shell {:out :string}
+  (let [proc-handle (shell {:out :string :continue true}
                            "git log --pretty=\"format:%cs\""
                            (str (fs/absolutize f)))]
     (when (= 0 (:exit proc-handle))
       (-> proc-handle :out str/split-lines sort first))))
 
-(defn pages []
-  (map (fn [play-edn]
-         {:slug (str (fs/parent play-edn))})
-       (fs/glob "." "*/play.edn")))
+
+(defn page-slugs []
+  (map (fn [play-edn] (str (fs/parent play-edn))) (fs/glob "." "*/play.edn")))
+
+(defn slug->meta-file-path [slug]
+  (str slug "/play.edn"))
 
 (defn files->relations
   "Read relations from play.edn files on disk
@@ -32,24 +34,19 @@
   returns a map from slug to relation.
   "
   []
-  (->> (pages)
-       (map (fn [{:keys [slug] :as p}]
-              (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
+  (->> (page-slugs)
+       (map (fn [slug] (merge {:slug slug}
+                              (edn/read-string (slurp (slug->meta-file-path slug))))))
        (map (juxt :slug identity))
        (into {})))
 
-(comment
-  ;; give me relations where there's no :created
+(defn files->relations2
+  "Read relations from play.edn files on disk
 
-  (filter (fn [[_slug rel]]
-            (not (:created rel)))
-          (files->relations))
-
-  (->>
-   (files->relations)
-   (filter (fn [[_slug rel]]
-             (not (:created rel))))
-   vals
-   (map :slug)
-   sort
-   ))
+  returns a map from slug to relation.
+  "
+  []
+  (->> (page-slugs)
+       sort
+       (map (fn [slug] (merge {:slug slug}
+                              (edn/read-string (slurp (slug->meta-file-path slug))))))))

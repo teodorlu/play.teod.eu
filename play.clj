@@ -31,7 +31,6 @@
          '[babashka.fs :as fs]
          '[clojure.string :as str]
          '[clojure.java.shell]
-         '[clojure.string :as str]
          '[clojure.edn :as edn]
          '[clojure.pprint :refer [pprint]]
          '[cheshire.core :as json]
@@ -461,13 +460,19 @@ Usage:
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println (json/generate-string resolved)))))
 
+(defn lol [{:keys [opts]}]
+  (prn 'lol))
+
 (def dispatch-table
-  [{:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
+  [
+   {:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn filter-pandoc :cmds-opts [:resolve-links]}
-   {:cmds ["reindex"] :fn reindex}
+   {:cmds ["lol"] :fn lol}
    {:cmds ["makefile"] :fn makefile}
    {:cmds ["random-page"] :fn random-page}
-   {:cmds ["relations"] :fn relations}])
+   {:cmds ["reindex"] :fn reindex}
+   {:cmds ["relations"] :fn relations}
+   ])
 
 (defn print-subcommands [{}]
   (println "usage: ./play.clj COMMAND")

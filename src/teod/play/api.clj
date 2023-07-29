@@ -29,15 +29,27 @@
 (defn files->relations
   "Read relations from play.edn files on disk
 
-  :uuid-from-org - when true, try to crudely find UUIDs from index.org files.
+  returns a map from slug to relation.
   "
-  [{:keys []}]
-  (let [enrich (fn [page] page)]
-    (->> (pages)
-         (map (fn [{:keys [slug] :as p}]
-                (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
-         (map enrich)
-         (map (juxt :slug identity))
-         (into {}))))
+  []
+  (->> (pages)
+       (map (fn [{:keys [slug] :as p}]
+              (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
+       (map (juxt :slug identity))
+       (into {})))
 
-(get (files->relations {}) "rich-hickey")
+(comment
+  ;; give me relations where there's no :created
+
+  (filter (fn [[_slug rel]]
+            (not (:created rel)))
+          (files->relations))
+
+  (->>
+   (files->relations)
+   (filter (fn [[_slug rel]]
+             (not (:created rel))))
+   vals
+   (map :slug)
+   sort
+   ))

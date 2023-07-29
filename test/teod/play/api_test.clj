@@ -7,3 +7,7 @@
   (is (= (count "YYYY-MM-DD")
          (count (play/today-str)))
       "today-str returns an iso timestamp"))
+
+(deftest git-infer-created-date-test
+  (is (some? (play/git-infer-created-date "deps.edn")))
+  (is (not (some? (play/git-infer-created-date "file that does not exist")))))

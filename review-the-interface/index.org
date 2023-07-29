@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID: 41b97354-0f9e-46c6-b234-a619b04152aa
+:END:
+#+TITLE: Review the interface
+
+[[file:..][..]]
+
+/Though I believe focusing on the interface when reviewing any artifact is useful, this text currently focuses on reviewing module interfaces made by programmers./
+
+What should be the goal of a code review?
+I've been struggling to put my finger on that for a long time.
+I believe it's one of the best tools we have to learn from each other as programmers.
+But reality isn't always as kind.
+I've been stuck waiting for a review when I just wanted to get the code out there and solve other problems.
+I've felt the process grind to a halt when focus shifts from overall quality of the change to minute opinion-driven details.
+In those cases, why did the review feel bad?
+In order to answer that question, we need to separate design from implementation in our development process.
+
+- *Our design* is the behavior of the code.
+  The semantics.
+  What do we actually want to happen?
+  How will other code use our code?
+  When we design our module, we look at the module from the outside.
+
+- *Our implementation* is why (or whether) the code does what the code is designed to do.
+  If the implementation doesn't follow the design, that's a bug.
+
+I use this separation any time I touch code.
+Right now, am i designing an interface, or implementing something according to spec?
+
+As the author of your code, you are both the designer and the implementor.
+It is your responsibility to design your code, and it is your responsibility to lift up your design.
+What is the code supposed to do?
+Does it do that?
+How can a team member get a crisp understanding of your design?
+What is the interface to your code?
+The exercise of explicitly focusing on the interface to your code has tremendous value.
+It's a muscle you can train.
+Libraries that feel great to use did not come that way: they were designed to feel great to use.
+This is a skill you can learn.
+But it's not a skill you have to learn alone, you can get help.
+
+The next time you've designed and implemented a piece of code, get a code review.
+Make your design explicit.
+What is the interface to your code?
+Then ask your colleague to /review the interface/.
+The interface to your code is more important than variable names that only exist within a function body.
+
+People /are not/ going to magially give you great feedback unless you ask for it.
+People are busy.
+They don't necessarily know you that well.
+They don't know how you react to criticism.
+Perhaps you'll be insulted if they ask you to try again?
+
+That's why you need to be explicit in what you ask for.
+Yes, you're /asking for a review/.
+The review isn't there to annoy you.
+It's there to enable learning and improve overall code quality.
+And you should ask explicitly for feedback on the interface to your code, because the interface to your code shapes all code consuming your code, and great interfaces compose into good, flexible systems.
+
+*Further resources*.
+To make the software design process explicit, I heartily recommend [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]] by [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]].
+Rich is a great software designer, and has had a significant impact on how I write software.
+I'm also exited about [[id:81dfcf30-e59d-4293-9000-5b29c97f90b8][Eric Normand]]'s upcoming book /Executable specifications/ (per 2023-07-29 not yet released).

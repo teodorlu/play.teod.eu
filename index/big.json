@@ -777,6 +777,14 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "review-the-interface",
+  "author-url" : "https://teod.eu",
+  "created" : "",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Review the interface",
+  "uuid" : "41b97354-0f9e-46c6-b234-a619b04152aa"
+}, {
   "slug" : "dynamic-index",
   "title" : "dynamic-index",
   "readiness" : "wtf-is-this",
@@ -2515,6 +2523,14 @@
   "created" : "2023-03-19",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "outcome-orientation-or-not",
+  "author-url" : "https://teod.eu",
+  "created" : "",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Outcome orientation! Or ... not?",
+  "uuid" : "e868f48d-019d-4664-b06f-12c699f950e5"
 }, {
   "slug" : "interface-perception-design",
   "title" : "Interface, Perception, Design",

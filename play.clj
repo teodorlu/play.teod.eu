@@ -27,14 +27,17 @@
 
 (require 'babashka.cli :reload)
 
-(require '[babashka.cli :as cli]
-         '[babashka.fs :as fs]
-         '[clojure.string :as str]
-         '[clojure.java.shell]
-         '[clojure.edn :as edn]
-         '[clojure.pprint :refer [pprint]]
-         '[cheshire.core :as json]
-         '[teod.pandoc-toolbox :as pandoc])
+(require
+ '[babashka.cli :as cli]
+ '[babashka.fs :as fs]
+ '[cheshire.core :as json]
+ '[clojure.edn :as edn]
+ '[clojure.java.shell]
+ '[clojure.pprint :refer [pprint]]
+ '[clojure.string :as str]
+ '[teod.pandoc-toolbox :as pandoc]
+ '[teod.play.api :as play]
+ )
 
 ;; relations example
 ;;
@@ -460,8 +463,8 @@ Usage:
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println (json/generate-string resolved)))))
 
-(defn lol [{:keys [opts]}]
-  (prn 'lol))
+(defn lol [{:keys [_opts]}]
+  (println (play/lol)))
 
 (def dispatch-table
   [

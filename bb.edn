@@ -1,1 +1,1 @@
-{}
+{:deps {eu.teod/play {:local/root "."}}}

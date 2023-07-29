@@ -1,4 +1,36 @@
 {:paths ["src"]
+ :deps {babashka/babashka.core
+        {:git/url "https://github.com/babashka/babashka.core",
+         :git/sha "52a6037bd4b632bffffb04394fb4efd0cdab6b1e"},
+        babashka/babashka.curl {:mvn/version "0.1.2"},
+        babashka/fs {:mvn/version "0.4.19"},
+        babashka/process {:mvn/version "0.5.21"},
+        cheshire/cheshire {:mvn/version "5.11.0"},
+        clj-commons/clj-yaml {:mvn/version "1.0.26"},
+        com.cognitect/transit-clj {:mvn/version "1.0.333"},
+        com.taoensso/timbre {:mvn/version "6.0.1"},
+        eu.teod/play {:local/root "."},
+        hiccup/hiccup {:mvn/version "2.0.0-alpha2"},
+        http-kit/http-kit {:mvn/version "2.7.0-RC1"},
+        insn/insn {:mvn/version "0.5.2"},
+        nrepl/bencode {:mvn/version "1.1.0"},
+        org.babashka/babashka.impl.java {:mvn/version "0.1.8"},
+        org.babashka/cli {:mvn/version "0.7.51"},
+        org.babashka/http-client {:mvn/version "0.3.11"},
+        org.babashka/sci.impl.types {:mvn/version "0.0.2"},
+        org.clojure/clojure {:mvn/version "1.11.1"},
+        org.clojure/core.async {:mvn/version "1.6.673"},
+        org.clojure/core.match {:mvn/version "1.0.0"},
+        org.clojure/core.rrb-vector {:mvn/version "0.1.2"},
+        org.clojure/data.csv {:mvn/version "1.0.0"},
+        org.clojure/data.priority-map {:mvn/version "1.1.0"},
+        org.clojure/data.xml {:mvn/version "0.2.0-alpha8"},
+        org.clojure/test.check {:mvn/version "1.1.1"},
+        org.clojure/tools.cli {:mvn/version "1.0.214"},
+        org.clojure/tools.logging {:mvn/version "1.1.0"},
+        org.flatland/ordered {:mvn/version "1.5.9"},
+        rewrite-clj/rewrite-clj {:mvn/version "1.1.46"},
+        selmer/selmer {:mvn/version "1.12.50"}}
  :aliases
  {:test
   {:extra-paths ["test"]}

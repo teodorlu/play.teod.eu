@@ -5,4 +5,5 @@
 
 (deftest today-str-test
   (is (= (count "YYYY-MM-DD")
-         (count (play/today-str)))))
+         (count (play/today-str)))
+      "today-str returns an iso timestamp"))

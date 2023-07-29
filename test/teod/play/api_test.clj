@@ -17,5 +17,5 @@
                  {:slug "rich-hickey"})))
 
 (deftest files->relations-test
-  (let [rels (play/files->relations {})]
+  (let [rels (play/files->relations)]
     (is (= :remote-reference (get-in rels ["rich-hickey" :form])))))

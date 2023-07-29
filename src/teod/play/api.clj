@@ -19,3 +19,8 @@
                            (str (fs/absolutize f)))]
     (when (= 0 (:exit proc-handle))
       (-> proc-handle :out str/split-lines sort first))))
+
+(defn pages []
+  (map (fn [play-edn]
+         {:slug (str (fs/parent play-edn))})
+       (fs/glob "." "*/play.edn")))

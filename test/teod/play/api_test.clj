@@ -11,3 +11,7 @@
 (deftest git-infer-created-date-test
   (is (some? (play/git-infer-created-date "deps.edn")))
   (is (not (some? (play/git-infer-created-date "file that does not exist")))))
+
+(deftest pages-test
+  (is (contains? (into #{} (play/pages))
+                 {:slug "rich-hickey"})))

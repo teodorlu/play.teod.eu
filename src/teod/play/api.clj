@@ -2,6 +2,7 @@
   (:require
    [babashka.fs :as fs]
    [babashka.process :refer [shell]]
+   [clojure.edn :as edn]
    [clojure.string :as str]))
 
 (defn today-str []
@@ -24,3 +25,19 @@
   (map (fn [play-edn]
          {:slug (str (fs/parent play-edn))})
        (fs/glob "." "*/play.edn")))
+
+(defn files->relations
+  "Read relations from play.edn files on disk
+
+  :uuid-from-org - when true, try to crudely find UUIDs from index.org files.
+  "
+  [{:keys []}]
+  (let [enrich (fn [page] page)]
+    (->> (pages)
+         (map (fn [{:keys [slug] :as p}]
+                (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
+         (map enrich)
+         (map (juxt :slug identity))
+         (into {}))))
+
+(get (files->relations {}) "rich-hickey")

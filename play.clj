@@ -232,6 +232,8 @@ DRAFT
   (.format (java.time.format.DateTimeFormatter/ofPattern "yyyy-MM-dd")
            (java.time.LocalDateTime/now)))
 
+(defn infer-created [] #_ TODO)
+
 (defn create-page [{:keys [opts]}]
   (let [slug (:slug opts)
         title (or (:title opts) slug)

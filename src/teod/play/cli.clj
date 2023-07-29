@@ -7,8 +7,8 @@
    [clojure.java.shell]
    [clojure.pprint :refer [pprint]]
    [clojure.string :as str]
-   [teod.play.pandoc-toolbox :as pandoc]
-   [teod.play.api :as play]))
+   [teod.play.api :as play]
+   [teod.play.pandoc-toolbox :as pandoc]))
 
 ;; relations example
 ;;

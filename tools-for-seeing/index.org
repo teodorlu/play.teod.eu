@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 16cf4a27-aaee-478d-ad7a-db1a4596cc80
+:END:
+#+TITLE: tools for seeing
+
+[[file:..][..]]
+
+DRAFT
+
+/A note on something I had to learn about how to work with systems/
+
+*throughput, inventory and operational expense* is a tool for seeing.
+
+*a unit test* is a tool for seeing.
+
+*a REPL* is a tool for seeing.
+
+*immutability* is a tool for seeing.
+Without it, a clear image of the system becomes harder to obtain.
+
+/when working with systems, we need to develop tools for seeing alongside building the system to achieve the system's goals/

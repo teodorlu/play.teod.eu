@@ -229,6 +229,13 @@
   :created "2023-05-01",
   :lang :en,
   :form :remote-reference}
+ {:slug "tools-for-seeing",
+  :author-url "https://teod.eu",
+  :created "2023-07-31",
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "tools for seeing",
+  :uuid "16cf4a27-aaee-478d-ad7a-db1a4596cc80"}
  {:slug "sindre",
   :title "Sindre",
   :readiness :wtf-is-this,

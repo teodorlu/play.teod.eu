@@ -204,7 +204,7 @@
   "lang" : "no"
 }, {
   "slug" : "not-good-enough-no-fire",
-  "title" : "not good enough, no fire",
+  "title" : "not good enough! no fire!",
   "readiness" : "wtf-is-this",
   "uuid" : "139bfaef-5305-4f5d-89a0-f34a61bca27d",
   "author-url" : "https://teod.eu",
@@ -1329,7 +1329,7 @@
   "lang" : "en"
 }, {
   "slug" : "sterility-mess-utility",
-  "title" : "Sterility, mess and utility",
+  "title" : "sterility, mess and utility",
   "readiness" : "wtf-is-this",
   "uuid" : "714361dd-69f2-4ed1-ba3b-b7450d23c3a3",
   "author-url" : "https://teod.eu",
@@ -1576,7 +1576,7 @@
   "lang" : "en"
 }, {
   "slug" : "intersection-work-play",
-  "title" : "What's a good intersection between work and play?",
+  "title" : "a good intersection between work and play",
   "readiness" : "ready-for-comments",
   "uuid" : "842f9b9a-de98-4187-863e-3e6cf1b1814d",
   "author-url" : "https://teod.eu",
@@ -1599,6 +1599,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2022-09-14",
   "lang" : "en"
+}, {
+  "slug" : "oddmund",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-08-05",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Oddmund",
+  "uuid" : "8833ff2f-ed66-4db2-ac14-6f8eff9f70d4"
 }, {
   "slug" : "little-memex",
   "title" : "little memex",
@@ -2501,7 +2510,7 @@
   "form" : "remote-reference"
 }, {
   "slug" : "stupid-games-stupid-prizes",
-  "title" : "Play stupid games, win stupid prizes",
+  "title" : "play stupid games, win stupid prizes",
   "readiness" : "wtf-is-this",
   "uuid" : "e1d1d9f4-9991-458c-ac9b-d7573b54c2cc",
   "author-url" : "https://teod.eu",

@@ -7,7 +7,7 @@
 
 DRAFT
 
-- 2023-01-02
+- 2023-01-02 (by [[id:8833ff2f-ed66-4db2-ac14-6f8eff9f70d4][Oddmund]])
   - The Science of Computer Programming
   - The Philosophy of Product Discovery (suggestion from Teodor)
   - The Delight and Cacophony of Symmathesy

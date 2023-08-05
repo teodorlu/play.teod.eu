@@ -19,10 +19,32 @@ I'll aim for:
 1. Clarity
 2. Then [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] (where possible)
 
------
+* Technologist practice map
+
+In practice, we deliver value.
+What practices are useful for knowing?
+
+- Ability to ship increments of working code in 15 minutes to two hours
+  - *Context*.
+    Given a level of individual expertise and codebase quality, it's possible to solve real problems and ship the solutions to master in 15 minutes to two hours.
+    Why can I say this?
+    Because I've seen it working with [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]] and [[id:8833ff2f-ed66-4db2-ac14-6f8eff9f70d4][Oddmund]].
+    See also [[https://www.youtube.com/watch?v=DyM4NtlIL44][Fred George talk about teams working in this rhythm]].
+  - List of techniques that help enable shipping rapid increments.
+    - Codebase is decoulpled and can be tested in isolation.
+    - We have tests for our business logic, and are not struck by fear when making changes.
+    - We have automated tests runnning elsewhere, and can see exactly which commits pass the tests.
+    - We can iterate quickly on our code and our tests locally, writing new code and re-running the tests in ~10-15 seconds
+    - We can spin up a local development environment in a few seconds
+    - We are comfortable juding which changes are /safe/ to make
+    - Our codebase are structured such that a significant amount of our changes are safe to make
+    - We limit mutation in our codebase to where it is approperiate
+    - We automate operational work
+    - We are able to leverage feature flagging to limit work in progress (inventory) and to enable insight into the real system
+
+* Technologist theory map
 
 Here we go.
-In a mix of Norwegian and English, sorry.
 
 - *HTTP og servere*
   - Hva er en HTTP-request?

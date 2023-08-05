@@ -25,10 +25,10 @@ In practice, we deliver value.
 What practices ([[id:b646678e-92bc-40d9-89aa-88749dffa079][techne]]) are worth knowing?
 
 -
-   #+begin_export html
-   <a id="A-y6oo15" href="#A-y6oo15">§</a>
-   #+end_export
-   Ability to ship increments of working code in 15 minutes to two hours
+    #+begin_export html
+    <a id="A-y6oo15" href="#A-y6oo15">§</a>
+    #+end_export
+    *Ability to ship increments of working code in 15 minutes to two hours*
   - *Context*.
     Given a level of individual expertise and codebase quality, it's possible to solve real problems and ship the solutions to master in 15 minutes to two hours.
     Why can I say this?
@@ -46,15 +46,20 @@ What practices ([[id:b646678e-92bc-40d9-89aa-88749dffa079][techne]]) are worth k
     - We automate operational work
     - We are able to leverage feature flagging to limit work in progress (inventory) and to enable insight into the real system
 -
-   #+begin_export html
-   <a id="A-4aizro" href="#A-4aizro">§</a>
-   #+end_export
-   Tastefully understand how code changes, product features and product outcomes connect
+    #+begin_export html
+    <a id="A-4aizro" href="#A-4aizro">§</a>
+    #+end_export
+    *Tastefully understand how code changes, product features and product outcomes connect*
   - Code changes power product features
   - Product features power product outcomes
   - The motivation for /doing stuff/ is product outcomes, but we must balance product outcomes with codebase quality.
   - Sometimes it's easier to ship a big thing by cutting it up into multiple smaller pieces (eg an incremental migration)
   - Sometimes it's impossible to cut a big thing into smaller pieces (eg users must see real product in order to provide real feedback in real context)
+
+Advanced:
+
+- *Interactive programming*
+  - [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]]
 
 * Technologist theory map
 
@@ -208,7 +213,7 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
 
 Onto level 2: advanced skills!
 
-- Modularitet, API-design og systemdesign
+- *Modularitet, API-design og systemdesign*
   - Interfaces between modules
   - Typed interfaces in programming languages
     - Go: =interface=

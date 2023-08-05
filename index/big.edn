@@ -829,6 +829,14 @@
   :readiness :wtf-is-this,
   :title "Emacs Lisp",
   :uuid "4e53b86e-ee35-42d7-bf1f-f325dc8355fc"}
+ {:slug "episteme",
+  :author-url "https://teod.eu",
+  :created "2023-08-05",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "episteme",
+  :uuid "4f080a65-bb30-4d08-8d37-db878dd852b3"}
  {:slug "visakan-veerasamy",
   :author-url "https://teod.eu",
   :created "2023-06-06",
@@ -1812,6 +1820,14 @@
   :author-url "https://teod.eu",
   :created "2023-03-04",
   :lang :en}
+ {:slug "techne",
+  :author-url "https://teod.eu",
+  :created "2023-08-05",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "techne",
+  :uuid "b646678e-92bc-40d9-89aa-88749dffa079"}
  {:slug "dave-liepmann",
   :title "Dave Liepmann",
   :readiness :wtf-is-this,

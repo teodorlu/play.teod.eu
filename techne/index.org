@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: b646678e-92bc-40d9-89aa-88749dffa079
+:END:
+#+TITLE: techne
+
+[[file:..][..]]
+
+https://en.m.wikipedia.org/wiki/Techne

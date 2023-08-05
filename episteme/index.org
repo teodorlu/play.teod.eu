@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 4f080a65-bb30-4d08-8d37-db878dd852b3
+:END:
+#+TITLE: episteme
+
+[[file:..][..]]
+
+https://en.m.wikipedia.org/wiki/Episteme

@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 139bfaef-5305-4f5d-89a0-f34a61bca27d
 :END:
-#+TITLE: not good enough, no fire
+#+TITLE: not good enough, there's no fire
 
 [[file:..][..]]
 

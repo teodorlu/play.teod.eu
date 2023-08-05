@@ -36,7 +36,7 @@ Here comes some org-mode text
 #+end_src
 
 #+begin_export html
-</summary>
+</details>
 #+end_export
 
 It work!!!

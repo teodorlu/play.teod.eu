@@ -329,7 +329,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;</span></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;</span><span class="kw">strong</span><span class="dt">&gt;</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        HTML output with <span class="dt">&lt;</span><span class="kw">pre</span><span class="dt">&gt;</span>details<span class="dt">&lt;/</span><span class="kw">pre</span><span class="dt">&gt;</span>-elements</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        HTML output with <span class="dt">&lt;</span><span class="kw">code</span><span class="dt">&gt;</span>details<span class="dt">&lt;/</span><span class="kw">code</span><span class="dt">&gt;</span>-elements</span>
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&lt;/</span><span class="kw">strong</span><span class="dt">&gt;</span></span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
 <span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
@@ -357,12 +357,16 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="
   <details>
     <summary>
       <strong>
-        HTML output with <pre>details</pre>-elements
+        HTML output with <code>details</code>-elements
       </strong>
     </summary>
 
     Web native, and fast!
   </details>
 </details>
+
+<p>… but we need to provide some indentation. By default, browsers don’t
+indent the contents of a <code class="verbatim">details</code>-element.
+That leads to a bit of confusion about what’s inside what.</p>
 </body>
 </html>

@@ -79,7 +79,7 @@ Web native, and fast!
   <details>
     <summary>
       <strong>
-        HTML output with <pre>details</pre>-elements
+        HTML output with <code>details</code>-elements
       </strong>
     </summary>
 
@@ -111,7 +111,7 @@ Rendered HTML:
   <details>
     <summary>
       <strong>
-        HTML output with <pre>details</pre>-elements
+        HTML output with <code>details</code>-elements
       </strong>
     </summary>
 
@@ -119,3 +119,6 @@ Rendered HTML:
   </details>
 </details>
 #+end_export
+
+... but we need to provide some indentation. By default, browsers don't indent the contents of a =details=-element.
+That leads to a bit of confusion about what's inside what.

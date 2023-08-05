@@ -55,7 +55,6 @@ What practices ([[id:b646678e-92bc-40d9-89aa-88749dffa079][techne]]) are worth k
   - The motivation for /doing stuff/ is product outcomes, but we must balance product outcomes with codebase quality.
   - Sometimes it's easier to ship a big thing by cutting it up into multiple smaller pieces (eg an incremental migration)
   - Sometimes it's impossible to cut a big thing into smaller pieces (eg users must see real product in order to provide real feedback in real context)
-  -
 
 * Technologist theory map
 

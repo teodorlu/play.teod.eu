@@ -207,6 +207,8 @@ Topics that can be postponed are put below the "fold" (the horizontal line)
 
 -----
 
+Onto level 2: advanced skills!
+
 - Modularitet, API-design og systemdesign
   - Interfaces between modules
   - Typed interfaces in programming languages

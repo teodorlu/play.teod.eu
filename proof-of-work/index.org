@@ -21,3 +21,20 @@ Where are we putting our work?
 Are we getting any impact from the effort?
 
 Instead of looking for the hack, consider doing the work and sharing the proof of that work.
+
+#+begin_export html
+<details>
+<summary>This is the summary</summary>
+#+end_export
+Here comes some org-mode text
+
+- item
+- yet /another/
+
+#+begin_src clojure
+(inc 99)
+#+end_src
+
+#+begin_export html
+</summary>
+#+end_export

@@ -6,3 +6,101 @@
 [[file:..][..]]
 
 https://mikrobloggeriet.no/
+
+/How can we keep learning from each other in a technology organization?/
+
+My mind was racing as I was in the middle of the churn.
+Features, features, features!
+Build more!
+Do more!
+Look down, focus on what you're doing!
+
+But what about the long term?
+Is what I am staring at right now the only thing I will get to learn?
+Sometimes focus is needed.
+But sometimes we need to lift our head and look around.
+What other things are there?
+Are those worth learning?
+A good place to start is /who one can learn from/.
+That requires knowing who's around, who they are, and what they know and care about.
+In good organizations, individuals have a sense of just that.
+Let's define that sense precisely.
+
+- *Trust* has been built.
+  People feel safe around each other, and want to help.
+  (TODO complete writing [[id:37e07eec-4b5c-498a-875e-b4c4267dbfd2][Don't assume trust. Build trust.]])
+- *Shared intent* is established.
+  Individuals have a shared understanding of what the goal is.
+- *Shared sense of quality* is present between individuals.
+
+The responsibilty of building trust and establishing shared intent largely falls on the leaders of the organization.
+Shared sense of quality is something i believe in building from the bottom up.
+Who are you?
+What do you care about?
+What do you find to be /good/?
+I love conversations where I gain a deeper understanding about what someone /really finds to be good/.
+Yesterday, I met someone who said that "The role of art is to criticise society".
+At first, I was sceptical.
+Does aesthetics have to be useful?
+Can we hope to place the burden of utility on aesthetics?
+But aesthetics is not art.
+Good art can be beautiful.
+But not all beautiful things are art.
+I believe that [[id:31478ab4-b7bf-4c87-8dae-8adb66690571][utility is contextual]].
+And art exists in a context.
+It exists in our society.
+
+Through that interaction, we gained a shared sense of quality.
+
+Let's recap.
+
+1. We build /shared sense of quality/ when either I understand what you think is good, or you understand what I think is good.
+2. Good organizations are characterized by shared sense of quality.
+3. The responsibilty of building shared sense of quality is on everyone, not just managers.
+
+So how do we ship shared sense of quality?
+I've claimed that [[id:9f52d562-4a06-4ea1-a461-2018fca5baf1][there's always a deliverable]]; what's the deliverable for shared sense of quality?
+One answer is reflective text.
+Try answering these questions:
+
+1. What are you up to right now?
+2. Do you find quality in it?
+3. Why? Why not?
+
+Did you discover something?
+Reading the questions, I have to give it a shot right now.
+
+#+begin_quote
+I am—surprisingly—sitting here writing.
+I'm enjoying the experience.
+I've had a breakfast and coffee.
+City sounds are trickling in from the window.
+I'm working from a Mac, which has been a bit of a shift from my previous Linux usage.
+I like using the writing toolkit I've made for myself for writing on [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]], especially my system for linking.
+#+end_quote
+
+What if we distributed those three questions to an organization, and received regular answers?
+What would that do to an organization over time?
+If people actually knew the interests and values of others?
+
+That's what I'm trying to do with Mikrobloggeriet.
+So far, the results have been amazing.
+Oddmund, Lars and Richard have written 32 microblog entries.
+I've greatly enjoyed reading those.
+Limiting scope has been a challenge, as it often is.
+My intent was originally to limit the writing exercise to 10 minutes, so that it can be interspersed into an otherwise busy day.
+I quickly blew that budget completely when I wrote [[https://mikrobloggeriet.no/o/olorm-7/][my first entry]], but later [[https://mikrobloggeriet.no/o/olorm-32/][managed to ship a text in 15 minutes]].
+
+More broadly, I wish we could actually use the Internet for building shared sense of quality.
+All of us.
+Some of us already are.
+[[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]] is a great example, most of his blog posts, and interactions over Twitter is about playing around with what's good.
+I believe you should [[id:d5f7d7c9-f390-4d07-aa30-51c3307b73ab][keep your aesthetic playful]], and Visa is a good example in practice.
+[[id:19f57a28-d65e-4fea-b623-70de022056a2][Systems Thinking - Notes and Resources, by Robert Stuttaford]] is another good example.
+It's an exploration.
+
+When I started making [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]], one of my principles was to play with content and medium.
+I didn't want it to be serious.
+Hence the domain name.
+That has worked for me.
+If I had tried writing a serious blog with serious entries of proper, serious information, I probably would have quit.

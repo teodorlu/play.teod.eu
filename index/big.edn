@@ -2138,6 +2138,13 @@
   :readiness :wtf-is-this,
   :title "Henrik Lissner",
   :uuid "d5f62ad8-f837-4156-9444-fe9b0b157b1a"}
+ {:slug "keep-your-aesthetic-playful",
+  :author-url "https://teod.eu",
+  :created "2023-08-05",
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "keep your aesthetic playful",
+  :uuid "d5f7d7c9-f390-4d07-aa30-51c3307b73ab"}
  {:slug "dark-agile",
   :title "Dark Agile",
   :readiness :wtf-is-this,

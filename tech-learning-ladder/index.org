@@ -36,7 +36,7 @@ What practices ([[id:b646678e-92bc-40d9-89aa-88749dffa079][techne]]) are worth k
     See also [[https://www.youtube.com/watch?v=DyM4NtlIL44][Fred George talk about teams working in this rhythm]].
   - List of techniques that help enable shipping rapid increments.
     - Codebase is decoulpled and can be tested in isolation.
-    - We have tests for our business logic, and are not struck by fear when making changes.
+    - We have tests for our business logic, and we can change the business logic without fear.
     - We have automated tests runnning elsewhere, and can see exactly which commits pass the tests.
     - We can iterate quickly on our code and our tests locally, writing new code and re-running the tests in ~10-15 seconds
     - We can spin up a local development environment in a few seconds

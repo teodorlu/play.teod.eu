@@ -1670,3 +1670,13 @@ I suspect I want to keep a reading reference log.
    That effort /means something/.
    How much time has I spent on this resource?
    effort-on-resource avoids cheap signaling.
+
+So,
+
+referencelog? readlog? remotelog?
+
+I'm not quite sure.
+
+Browsing experience:
+Must be possible to "collapse" views.
+Collapse into days, collapse in other ways.

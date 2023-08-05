@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 842f9b9a-de98-4187-863e-3e6cf1b1814d
 :END:
-#+TITLE: What's a good intersection between work and play?
+#+TITLE: a good intersection between work and play
 
 [[file:..][..]]
 

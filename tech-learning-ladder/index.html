@@ -236,7 +236,41 @@ hours
 codebase quality, it’s possible to solve real problems and ship the
 solutions to master in 15 minutes to two hours. Why can I say this?
 Because I’ve seen it working with <a href="../sindre/">Sindre</a> and <a
-href="../oddmund/">Oddmund</a>.</li>
+href="../oddmund/">Oddmund</a>. See also <a
+href="https://www.youtube.com/watch?v=DyM4NtlIL44">Fred George talk
+about teams working in this rhythm</a>.</li>
+<li>List of techniques that help enable shipping rapid increments.
+<ul>
+<li>Codebase is decoulpled and can be tested in isolation.</li>
+<li>We have tests for our business logic, and are not struck by fear
+when making changes.</li>
+<li>We have automated tests runnning elsewhere, and can see exactly
+which commits pass the tests.</li>
+<li>We can iterate quickly on our code and our tests locally, writing
+new code and re-running the tests in ~10-15 seconds</li>
+<li>We can spin up a local development environment in a few seconds</li>
+<li>We are comfortable juding which changes are <em>safe</em> to
+make</li>
+<li>Our codebase are structured such that a significant amount of our
+changes are safe to make</li>
+<li>We limit mutation in our codebase to where it is approperiate</li>
+<li>We automate operational work</li>
+<li>We are able to leverage feature flagging to limit work in progress
+(inventory) and to enable insight into the real system</li>
+</ul></li>
+</ul></li>
+<li>Tastefully understand how code changes, product features and product
+outcomes connect
+<ul>
+<li>Code changes power product features</li>
+<li>Product features power product outcomes</li>
+<li>The motivation for <em>doing stuff</em> is product outcomes, but we
+must balance product outcomes with codebase quality.</li>
+<li>Sometimes it’s easier to ship a big thing by cutting it up into
+multiple smaller pieces (eg an incremental migratyion)</li>
+<li>Sometimes it’s impossible to cut a big thing into smaller pieces (eg
+users must see real product in order to provide real feedback in real
+context)</li>
 </ul></li>
 </ul>
 <h2 id="technologist-theory-map">Technologist theory map</h2>

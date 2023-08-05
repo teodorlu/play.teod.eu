@@ -26,7 +26,7 @@ What practices are useful for knowing?
 
 -
   #+begin_export html
-  <a id="2oui22"/>
+  <a id="A-y6oo15" href="#A-y6oo15">§</a>
   #+end_export
   Ability to ship increments of working code in 15 minutes to two hours
   - *Context*.
@@ -47,7 +47,7 @@ What practices are useful for knowing?
     - We are able to leverage feature flagging to limit work in progress (inventory) and to enable insight into the real system
 -
   #+begin_export html
-  <a id="gts15d"/>
+  <a id="A-4aizro" href="#A-4aizro">§</a>
   #+end_export
   Tastefully understand how code changes, product features and product outcomes connect
   - Code changes power product features

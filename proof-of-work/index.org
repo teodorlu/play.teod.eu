@@ -39,5 +39,5 @@ Here comes some org-mode text
 </details>
 #+end_export
 
-It work!!!
+It works!!!
 💕

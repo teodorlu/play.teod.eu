@@ -7,11 +7,13 @@
 
 Timestamp: 2023-05-01
 
-As a tech person, what might one learn?
+As a technology person, what might I want to learn?
 
 That's a hard question.
-Our industry is moving, and our tools are chaning.
+Our industry is moving, and our tools are changing.
 And as we get better, the speed of change increases.
+
+typooo
 
 I don't presume to be able to find a final answer to this question.
 I'll aim for:
@@ -58,7 +60,7 @@ What practices ([[id:b646678e-92bc-40d9-89aa-88749dffa079][techne]]) are worth k
 
 * Technologist theory map
 
-Certain theories ([[id:4f080a65-bb30-4d08-8d37-db878dd852b3][episteme]]) are worth knowing.
+Certain theories ([[id:4f080a65-bb30-4d08-8d37-db878dd852b3][episteme]]) are useful.
 Here's a place to start:
 
 - *HTTP og servere*

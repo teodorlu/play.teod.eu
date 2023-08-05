@@ -43,3 +43,79 @@ It works!!!
 💕
 
 I could create a pandoc transformer that makes details elements out of org-mode headings. That would be kind of neat.
+
+#+begin_src markdown
+# A light outliner
+
+Could have
+
+## An input document format with headings
+
+The input format is text-based, and the user's editor handles outlining.
+
+## HTML output with `details`-elements
+
+Web native, and fast!
+#+end_src
+
+#+begin_src html
+<details>
+  <summary><strong>
+      A light outliner
+  </strong></summary>
+
+  could have
+
+  <details>
+    <summary>
+      <strong>
+        An input document format with headings
+      </strong>
+    </summary>
+
+    The input format is text based, and the user's editor handles outlining.
+  </details>
+
+  <details>
+    <summary>
+      <strong>
+        HTML output with <pre>details</pre>-elements
+      </strong>
+    </summary>
+
+    Web native, and fast!
+  </details>
+</details>
+#+end_src
+
+Rendered HTML:
+
+#+begin_export html
+<details>
+  <summary><strong>
+      A light outliner
+  </strong></summary>
+
+  could have
+
+  <details>
+    <summary>
+      <strong>
+        An input document format with headings
+      </strong>
+    </summary>
+
+    The input format is text based, and the user's editor handles outlining.
+  </details>
+
+  <details>
+    <summary>
+      <strong>
+        HTML output with <pre>details</pre>-elements
+      </strong>
+    </summary>
+
+    Web native, and fast!
+  </details>
+</details>
+#+end_export

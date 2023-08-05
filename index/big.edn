@@ -1561,6 +1561,14 @@
   :author-url "https://teod.eu",
   :created "2023-02-03",
   :lang :en}
+ {:slug "the-goal-book",
+  :author-url "https://teod.eu",
+  :created "2023-08-05",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "The Goal (book)",
+  :uuid "96bd0a06-d9b8-47a4-99f4-a79bd8ebd0a1"}
  {:slug "clerk",
   :title "Clerk",
   :readiness :wtf-is-this,
@@ -1568,6 +1576,14 @@
   :created "2022-10-20",
   :lang :en,
   :form :remote-reference}
+ {:slug "eliyahu-goldratt",
+  :author-url "https://teod.eu",
+  :created "2023-08-05",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Eliyahu Goldratt",
+  :uuid "97de0013-e7d3-429e-bf06-1a4bfca5d184"}
  {:slug "business-readiness-level",
   :author-url "https://teod.eu",
   :created "2023-06-13",
@@ -2271,6 +2287,14 @@
   :readiness :wtf-is-this,
   :title "Zig",
   :uuid "ea79b414-3a73-404d-8ee5-2d37ff53de10"}
+ {:slug "software-dependencies-cause-operational-expense",
+  :author-url "https://teod.eu",
+  :created "2023-08-05",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Software dependencies cause operational expense",
+  :uuid "eb3f5e54-6f91-4909-9d0e-92b96db7b0ca"}
  {:slug "programmer-cultivate-your-curiosity",
   :title "Programmer, cultivate your curiosity!",
   :readiness :wtf-is-this,

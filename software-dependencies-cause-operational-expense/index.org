@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID: eb3f5e54-6f91-4909-9d0e-92b96db7b0ca
+:END:
+#+TITLE: Software dependencies cause operational expense
+
+[[file:..][..]]
+
+I've been reading and re-reading [[id:96bd0a06-d9b8-47a4-99f4-a79bd8ebd0a1][The Goal (book)]] lately.
+The Goal is a book about the operational management of a factory.
+Originally published in 1984, it's set before the Internet.
+
+In the book, Alex Rogo (the factory manager) works to understand how to improve his factory.
+Alex is coached by Jonah, who early on presents a theory for production:
+
+- *Throughput* is the value created by the system,
+- *Inventory* is partially created value, and
+- *Operational expense* is cost incurred while delivering throughput.
+
+I added continuous integration to [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]].
+I decided to run tests both with Github actions and in the Dockerfile build of the application.
+And I was reflecting on the /cost/ of doing that.
+Test dependencies for normal builds, and test dependencies in the tests.
+We need test dependencies in the tests, that can't be avoided.
+But not necessarily in the Docker builds themselves.
+Locally, I added five to ten seconds to the builds by running tests.
+
+Perhaps ten seconds is okay.
+But each dependency has a cost.
+Those ten seconds are subtracted /every time we want to deploy/ from now on.
+That means it's harder to fix issues.
+
+This goes for /every dependency that is added/.
+Each dependency has a weight.
+You have to carry it from now on.
+You have to handle any issues it causes, you have to accept the increase in build times, and each new local setup will be slower.
+
+"The Goal" from [[id:96bd0a06-d9b8-47a4-99f4-a79bd8ebd0a1][The Goal (book)]] is to /increase throughput while simultaneously decreasing inventory and operational expense/.
+Our "test before deploy" (CICD) strategy /increases operational expense/ (more code, more dependencies).
+But it also enables us to increase throughput and decrease inventory.
+We increase throughput by spending less time debugging when something goes wrong that the tests could have catched.
+We decrease inventory by shipping smaller increments of code to production, where those increments can be tested.

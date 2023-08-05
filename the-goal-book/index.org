@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 96bd0a06-d9b8-47a4-99f4-a79bd8ebd0a1
+:END:
+#+TITLE: The Goal (book)
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/The_Goal_(novel)
+
+By [[id:97de0013-e7d3-429e-bf06-1a4bfca5d184][Eliyahu Goldratt]].

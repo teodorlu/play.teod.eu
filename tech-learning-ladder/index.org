@@ -24,7 +24,11 @@ I'll aim for:
 In practice, we deliver value.
 What practices are useful for knowing?
 
-- Ability to ship increments of working code in 15 minutes to two hours
+-
+  #+begin_export html
+  <a id="2oui22"/>
+  #+end_export
+  Ability to ship increments of working code in 15 minutes to two hours
   - *Context*.
     Given a level of individual expertise and codebase quality, it's possible to solve real problems and ship the solutions to master in 15 minutes to two hours.
     Why can I say this?
@@ -41,7 +45,11 @@ What practices are useful for knowing?
     - We limit mutation in our codebase to where it is approperiate
     - We automate operational work
     - We are able to leverage feature flagging to limit work in progress (inventory) and to enable insight into the real system
-- Tastefully understand how code changes, product features and product outcomes connect
+-
+  #+begin_export html
+  <a id="gts15d"/>
+  #+end_export
+  Tastefully understand how code changes, product features and product outcomes connect
   - Code changes power product features
   - Product features power product outcomes
   - The motivation for /doing stuff/ is product outcomes, but we must balance product outcomes with codebase quality.

@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 714361dd-69f2-4ed1-ba3b-b7450d23c3a3
 :END:
-#+TITLE: Sterility, mess and utility
+#+TITLE: sterility, mess and utility
 
 [[file:..][..]]
 

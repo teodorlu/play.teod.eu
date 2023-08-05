@@ -1670,6 +1670,7 @@ I suspect I want to keep a reading reference log.
    That effort /means something/.
    How much time has I spent on this resource?
    effort-on-resource avoids cheap signaling.
+   ([[id:332543a2-3a55-46d5-b447-57e52dca5642][proof of work]])
 
 So,
 

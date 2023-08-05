@@ -41,3 +41,5 @@ Here comes some org-mode text
 
 It works!!!
 💕
+
+I could create a pandoc transformer that makes details elements out of org-mode headings. That would be kind of neat.

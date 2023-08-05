@@ -13,10 +13,8 @@ That's a hard question.
 Our industry is moving, and our tools are changing.
 And as we get better, the speed of change increases.
 
-typooo
-
-I don't presume to be able to find a final answer to this question.
-I'll aim for:
+I don't presume to hold a final answer to what's worth learning.
+In this list, I'll aim for:
 
 1. Clarity
 2. Then [[id:dfd45cfa-3154-47ef-8f74-06fe0e69715e][lindy compatibility]] (where possible)

@@ -22,6 +22,8 @@ Are we getting any impact from the effort?
 
 Instead of looking for the hack, consider doing the work and sharing the proof of that work.
 
+* A draft with markdup and HTML-rendering for outlines
+
 #+begin_export html
 <details>
 <summary>This is the summary</summary>
@@ -122,3 +124,9 @@ Rendered HTML:
 
 ... but we need to provide some indentation. By default, browsers don't indent the contents of a =details=-element.
 That leads to a bit of confusion about what's inside what.
+
+* What is the most significant part of the product?
+
+Position: data entry.
+Because unless we can effectively get a catalog of references, there is no value.
+The system must have content to have any value.

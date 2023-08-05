@@ -1,8 +1,23 @@
 :PROPERTIES:
 :ID: 332543a2-3a55-46d5-b447-57e52dca5642
 :END:
-#+TITLE: Proof of Work
+#+TITLE: proof of work
 
 [[file:..][..]]
 
 DRAFT
+
+Are you trying to make something happen?
+Are you looking for the smart way out?
+The way you can get away with minimal effort?
+Then, when you try to get others to do your thing, they ... don't?
+
+If you tell kids that they have stay in line, they will tell other kids that the other kids have to stay in line.
+
+As humans, we don't rely purely on analysis of information.
+We also judge effort.
+Effort signals significance.
+Where are we putting our work?
+Are we getting any impact from the effort?
+
+Instead of looking for the hack, consider doing the work and sharing the proof of that work.

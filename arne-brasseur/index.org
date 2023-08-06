@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 3f4cbc3b-c4cc-411a-8e4e-83baa42a2cb3
+:END:
+#+TITLE: Arne Brasseur
+
+[[file:..][..]]
+
+https://github.com/plexus | https://twitter.com/plexus
+
+[[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] programmer.
+Created [[id:57221ffb-132c-4348-8ba4-5df6cff915d3][Clojureverse]].

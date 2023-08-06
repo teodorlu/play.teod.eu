@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 7b2fd2a1-c3c7-467c-bcf4-ad5760652e2b
+:END:
+#+TITLE: interactive programming
+
+[[file:..][..]]
+
+Quoting [[id:3f4cbc3b-c4cc-411a-8e4e-83baa42a2cb3][Arne Brasseur]]:
+
+#+Begin_quote
+I have personally become convinced that REPL-driven development is a terrible
+name for what we do, precisely because of the reasons outlined above. People
+associate “REPL” with a specific place where you put code, but it’s not about
+the REPL as a place, that is entirely secondary, it’s about the interactivity
+that is possible when communicating with a live process.
+
+We don’t need to invent new terms for this, we just need to go back to the
+roots. This has been known since the 70’s as interactive development. Here’s a
+[[https://www.softwarepreservation.org/projects/interactive_c/bib/Sandewall-1978.pdf][paper from 1978]] 37 that digs into what that means. (hat tip to [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] for
+that).
+#+end_quote

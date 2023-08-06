@@ -6,3 +6,10 @@
 [[file:..][..]]
 
 https://jackrusher.com/
+
+Presentations:
+
+- [[id:747d8b1e-5048-44f0-bd97-ef9a7de2fddd][Creative Computation]]: reflections on how to create things with programming, interspersed with examples.
+  Touches on the interaction between "fuzzy" disciplines (art, design) and "rigid" disciplines (science, engineering), suggesting that they may be more connected than one might thing.
+- [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]]: Argues that interactivity should be built into the systems we create.
+  That [[id:7b2fd2a1-c3c7-467c-bcf4-ad5760652e2b][interactive programming]] is an under-appreciated way of developing programs.

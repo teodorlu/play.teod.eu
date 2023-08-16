@@ -26,7 +26,7 @@ This requires some programming discipline.
 You actually need to do only one small thing between each time you evaluate your code.
 
 /My practice/: I work with a piece of data, transforming it one step at a time.
-After each step, I see that the result looks like what I expect.
+After each step, I see whether the result is what I expect.
 
 *3. Lean on refactor/rename from your editor*.
 It's easier to move from working code to working code with good renaming support.

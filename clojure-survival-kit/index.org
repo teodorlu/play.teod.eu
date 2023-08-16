@@ -84,5 +84,13 @@ This is where /raise expression replacing parent/ comes in.
 Put your cursor on =[=, then /raise expression replacing parent/.
 
 *7. Evaluate current toplevel form*.
+TODO describe.
+(contributions welcome)
 
 *8. Evaluate current buffer*.
+TODO describe.
+(contributions welcome)
+
+*Contributions welcome: default key bindings for Calva.*
+This guide would be better with direct references to how to run these actions with Calva: give the correct name for the command, and its default key binding.
+Please propose a change to this file if you want want to add some details.

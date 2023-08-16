@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID: 4bd87ab3-ae39-4ffa-b791-322f4daf4272
+:END:
+#+TITLE: Clojure survival kit
+
+[[file:..][..]]
+
+Trying to work with Clojure code based on habits from Javascript, Go or Java can lead to an unpleasant experience.
+Here are seven pieces of advice to avoid having to rip your hair out.
+
+*1. Never break parenthesis balance*.
+In block oriented languages like Java, Go and Javascript, you can often open a bunch of {, ( and [s, and ask your editor to "fix your mess".
+In Clojure, this leads to a complete clusterfuck.
+If you open a parenthesis without closing it, you can suddenly no longer evaluate expressions, because your file /does not end/
+
+/My practice/: keep parentheses balanced at all times.
+Learn some editor key bindings to make this nice.
+
+*2. Evaluate one expresion at a time*.
+Clojure has good support for making small, incremental changes and seeing what they do.
+And /weak support/ for automatically inferring where you've made some mistake.
+In Haskell or Rust, you can often mash out a lot of code and ask your compiler to find your mistake.
+In Clojure, the compiler won't do that.
+Instead, the compiler support a different mindset: you can make very small changes, and see instantly what they do.
+This requires some programming discipline.
+You actually need to do only one small thing between each time you evaluate your code.
+
+/My practice/: I work with a piece of data, transforming it one step at a time.
+After each step, I see that the result looks like what I expect.
+
+*3. Lean on refactor/rename from your editor*.
+It's easier to move from working code to working code with good renaming support.
+I use =clojure-lsp= for this with Emacs, bound to =SPC c r=.
+With Visual Studio Code and Calva, refactor/rename is bound to =F12=.
+
+*4. =slurp=, a structural editing action*
+In Clojure, you often want to wrap an S-Expression in another.
+With slurp, you can transform your code from
+Let's say you have this code:
+
+#+begin_src clojure
+(first)
+[1 2 3]
+#+end_src
+
+to
+
+#+begin_src clojure
+(first
+ [1 2 3])
+#+end_src
+
+with a single action.
+
+*5. Expand selection - quickly select a form*.
+To avoid breaking parentheses, we need to avoid copying a form like =(first [1 2=.
+Instead, we want to copy =(first [1 2 3])=
+Expand selection helps us do this.
+Put your cursor on the =(= before /first/, and run expand selection.
+Then you can copy or cut the whole thing!
+
+Expand selection is also a great thing to use in other langauges.
+To the best of my knowledge, it first appeared in Intellij IDEA.
+Then [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]] implemented an Emacs package:
+https://github.com/magnars/expand-region.el
+Since then, multiple editors have adopted this as a nice tool.
+
+*6. Raise expression replacing parent*
+What if we need to go back from
+
+#+begin_src clojure
+(first
+ [1 2 3])
+#+end_src
+
+to
+
+#+begin_src clojure
+[1 2 3]
+#+end_src
+
+?
+This is where /raise expression replacing parent/ comes in.
+Put your cursor on =[=, then /raise expression replacing parent/.
+
+*7. Evaluate current toplevel form*.
+
+*8. Evaluate current buffer*.

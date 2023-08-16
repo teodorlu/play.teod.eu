@@ -84,7 +84,8 @@ This is where /raise expression replacing parent/ comes in.
 Put your cursor on =[=, then /raise expression replacing parent/.
 
 *7. Evaluate current toplevel form*.
-TODO describe.
+TODO describe: motivation, example, why this matters.
+Wrapping in =do=, rich comment forms.
 (contributions welcome)
 
 *8. Evaluate current buffer*.

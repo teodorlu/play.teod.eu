@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 Trying to work with Clojure code based on habits from Javascript, Go or Java can lead to an unpleasant experience.
-Here are seven pieces of advice to avoid having to rip your hair out.
+Here are seven pieces of advice to make your first steps into Clojure less painful.
 
 *1. Never break parenthesis balance*.
 In block oriented languages like Java, Go and Javascript, you can often open a bunch of {, ( and [s, and ask your editor to "fix your mess".

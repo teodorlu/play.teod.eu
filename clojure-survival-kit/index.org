@@ -34,7 +34,7 @@ I use =clojure-lsp= for this with Emacs, bound to =SPC c r=.
 With Visual Studio Code and Calva, refactor/rename is bound to =F12=.
 Visual Studio Code/Calva refactor/rename is based on =clojure-lsp= under the hood.
 
-*4. =slurp=, a structural editing action*
+*4. Use /slurp/ to wrap a form*.
 In Clojure, you often want to wrap an S-Expression in another.
 With slurp, you can transform your code from
 
@@ -52,7 +52,7 @@ to
 
 with a single action.
 
-*5. Expand selection - quickly select a form*.
+*5. Use /expand selection/ to quickly select forms*.
 To avoid breaking parentheses, we need to avoid copying a form like =(first [1 2=.
 Instead, we want to copy =(first [1 2 3])=
 Expand selection helps us do this.
@@ -65,7 +65,7 @@ Then [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]] implemented an Em
 https://github.com/magnars/expand-region.el
 Since then, multiple editors have adopted the expand selection action.
 
-*6. Raise expression replacing parent*
+*6. Use /raise expression replacing parent/ to unwrap a form*
 What if we need to go back from
 
 #+begin_src clojure

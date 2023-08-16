@@ -304,9 +304,9 @@ Emacs, bound to <code class="verbatim">SPC c r</code>. With Visual
 Studio Code and Calva, refactor/rename is bound to <code
 class="verbatim">F12</code>. Visual Studio Code/Calva refactor/rename is
 based on <code class="verbatim">clojure-lsp</code> under the hood.</p>
-<p><strong>4. <code class="verbatim">slurp</code>, a structural editing
-action</strong> In Clojure, you often want to wrap an S-Expression in
-another. With slurp, you can transform your code from</p>
+<p><strong>4. Use <em>slurp</em> to wrap a form</strong>. In Clojure,
+you often want to wrap an S-Expression in another. With slurp, you can
+transform your code from</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">first</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>]</span></code></pre></div>
@@ -315,13 +315,13 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a 
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">first</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>])</span></code></pre></div>
 <p>with a single action.</p>
-<p><strong>5. Expand selection - quickly select a form</strong>. To
-avoid breaking parentheses, we need to avoid copying a form like <code
-class="verbatim">(first [1 2</code>. Instead, we want to copy <code
-class="verbatim">(first [1 2 3])</code> Expand selection helps us do
-this. Put your cursor on the <code class="verbatim">(</code> before
-<em>first</em>, and run expand selection. Then you can copy or cut the
-whole thing!</p>
+<p><strong>5. Use <em>expand selection</em> to quickly select
+forms</strong>. To avoid breaking parentheses, we need to avoid copying
+a form like <code class="verbatim">(first [1 2</code>. Instead, we want
+to copy <code class="verbatim">(first [1 2 3])</code> Expand selection
+helps us do this. Put your cursor on the <code class="verbatim">(</code>
+before <em>first</em>, and run expand selection. Then you can copy or
+cut the whole thing!</p>
 <p>Expand selection is also a great thing to use in other langauges. To
 the best of my knowledge, it first appeared in Intellij IDEA. Then <a
 href="../magnar-sveen/">Magnar Sveen</a> implemented an Emacs package:
@@ -329,8 +329,8 @@ href="../magnar-sveen/">Magnar Sveen</a> implemented an Emacs package:
 href="https://github.com/magnars/expand-region.el">https://github.com/magnars/expand-region.el</a>
 Since then, multiple editors have adopted the expand selection
 action.</p>
-<p><strong>6. Raise expression replacing parent</strong> What if we need
-to go back from</p>
+<p><strong>6. Use <em>raise expression replacing parent</em> to unwrap a
+form</strong> What if we need to go back from</p>
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">first</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> [<span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span>])</span></code></pre></div>

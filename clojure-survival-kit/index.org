@@ -36,7 +36,6 @@ With Visual Studio Code and Calva, refactor/rename is bound to =F12=.
 *4. =slurp=, a structural editing action*
 In Clojure, you often want to wrap an S-Expression in another.
 With slurp, you can transform your code from
-Let's say you have this code:
 
 #+begin_src clojure
 (first)

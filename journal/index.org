@@ -1686,3 +1686,8 @@ flog
 flog.teod.eu
 
 flog---a tool for remixing
+* 2023-08-26
+** Three libraries for writing
+- A pandoc wrapper
+- An interface for linking
+- A tookit to create a site

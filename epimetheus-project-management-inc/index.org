@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 #+begin_src
-Epimetheus project management inc
+EPIMETHEUS PROJECT MANAGEMENT INC
 
 =================================
 

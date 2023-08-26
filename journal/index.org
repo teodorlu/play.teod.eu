@@ -1690,5 +1690,15 @@ flog---a tool for remixing
 ** Three libraries for writing
 - A pandoc wrapper
   https://github.com/teodorlu/pandoc.alpha1
+  - Goals:
+    make conversion easy.
+    make extracting information from a pandoc document structure easy.
 - An interface for linking
+  - Goals:
+    make /one/ interface for working with links --- that can be used with a single link provider, og with multiple
+    a TUI
+    a way to store & collect links
 - A tookit to create a site
+  - Goals:
+    Share effort working on code.
+    Share common tools.

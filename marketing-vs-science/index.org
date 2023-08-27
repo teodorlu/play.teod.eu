@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID: a2f1a44d-3012-4da3-a780-8ff6cc77697c
+:END:
+#+TITLE: Marketing vs science
+
+[[file:..][..]]
+
+DRAFT
+
+*motivation*.
+As I see it, marketing and science emphathise different ways of understanding reality.
+
+- In science, we share theory to criticise it collectively.
+- In marketing, we act on a scene of competing stories.
+
+Both views of reality are necessary.
+Science without marketing will fail to reach everyone.
+Ceding the ground of story will limit who you reach.
+Talking about theory without caring about its interpretation works when communicating with people who are /already/ interested in your message---but has no way of reaching new people.
+Marketing without science builds in a real risk of being plain wrong.
+It does not let you talk effectively about building things that do not yet exist.
+It does not teach you how you can create /correct/ theory.
+
+A synthesis of marketing and science is powerful.
+You can talk crisply about what you are proposing (theory) and motivate it for real use (story).
+This synthesis can be achieved /within one individual/, by choosing whether marketing or science is the right frame for the situation.
+Or, more commonly, different people can embody each frame.
+
+*text outline*.
+I don't want to describe this view as theory.
+Though theory is precisely what you've read this far.
+I want story.
+Something like this:
+
+- Our champions: for science, [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
+  For marketing, Patrick Rothfuss.
+  As judge, Socrates.
+- Science for theory, marketing for story.
+  Point of contention: objective truth versus utilitarian truth
+- Good versus evil: As treated in [[id:c977d38f-8c20-4650-8da7-b922d5a4b252][Lord of the Rings]] and [[id:de9c6ebc-9382-4a80-9261-6fac477d5358][Wheel of Time]].
+  Criteria:
+  - Truth and deception in communication between people.
+    Describe Aragorn, Denethor and Saruman.
+  - Control and responsibility.
+    What is the effect of failure?
+    Is failure punished?
+  - Controlling perception and story.
+    In the prolouge of The Wheel of Time book 3, The Dragon Reborn there is a surprising amount of perception at play, in a scene with some arguably evil people.
+    "If you do not encourage the perception that /I want/, I will kill you."
+    I don't think you'd find that kind of interaction between less evil people.
+- Is evil bad?
+  A jungian take on integrating the shadow.
+  - From the previous section on good versus evil, it's surprisingly easy to find analogies to science versus marketing.
+    An argument why science is /not enough/ is found in [[id:273a1922-051b-45aa-a543-0b620357d499][Carl Jung]]'s work on integrating the shadow.
+    I don't believe science is enough.
+    In science, we build theory.
+    That theory is worthless if it's not used in practice.

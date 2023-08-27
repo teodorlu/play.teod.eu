@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: c977d38f-8c20-4650-8da7-b922d5a4b252
+:END:
+#+TITLE: Lord of the Rings
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/The_Lord_of_the_Rings

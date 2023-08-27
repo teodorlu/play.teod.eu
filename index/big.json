@@ -170,6 +170,14 @@
   "title" : "Jethro Kuan",
   "uuid" : "0e22690f-17f5-49cb-ac61-5305c326ee76"
 }, {
+  "slug" : "epimetheus-project-management-inc",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-04-04",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Epimetheus Project Management Inc",
+  "uuid" : "10a1985a-fcfd-4eb8-ad9a-0032600695e3"
+}, {
   "slug" : "babashka-pods-for-beginners",
   "title" : "Babashka pods for beginners",
   "readiness" : "wtf-is-this",
@@ -449,6 +457,15 @@
   "created" : "2023-04-30",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "carl-jung",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-08-27",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Carl Jung",
+  "uuid" : "273a1922-051b-45aa-a543-0b620357d499"
 }, {
   "slug" : "strong-relations",
   "title" : "Strong relations",
@@ -1944,6 +1961,14 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "marketing-vs-science",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-08-27",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Marketing vs science",
+  "uuid" : "a2f1a44d-3012-4da3-a780-8ff6cc77697c"
+}, {
   "slug" : "trillion-dollar-coach",
   "title" : "Trillion Dollar Coach",
   "readiness" : "wtf-is-this",
@@ -2332,6 +2357,15 @@
   "lang" : "en",
   "form" : "remote-reference"
 }, {
+  "slug" : "lord-of-the-rings",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-08-27",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Lord of the Rings",
+  "uuid" : "c977d38f-8c20-4650-8da7-b922d5a4b252"
+}, {
   "slug" : "formal-theory-informal-relations",
   "title" : "Formal theory, informal relations",
   "readiness" : "wtf-is-this",
@@ -2517,6 +2551,15 @@
   "created" : "2022-09-21",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "wheel-of-time",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-08-27",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Wheel of Time",
+  "uuid" : "de9c6ebc-9382-4a80-9261-6fac477d5358"
 }, {
   "slug" : "kristian-collin-berge",
   "title" : "Kristian Collin Berge",

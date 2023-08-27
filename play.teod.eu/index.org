@@ -1241,6 +1241,11 @@ in order to increase [[id:587fd857-1f93-4b59-935a-7681e5129665][trust, shared se
 * 2023-03-20
 ** Simple CSS?
 inspiration: https://markmcgranaghan.com/ and https://gobyexample.com/ by [[id:00cd1474-ccf6-44d2-9795-492fbd0c08c3][Mark McGranaghan]].
+* 2023-08-27
+** Jacobian's site has nice CSS
+https://jacobian.org/2023/mar/31/incompetent-but-nice-follow-ups/
+
+I especially like his quotation style. It's light, just enough.
 * trailing whitespace
 #+BEGIN_VERSE
 

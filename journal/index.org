@@ -1702,3 +1702,86 @@ flog---a tool for remixing
   - Goals:
     Share effort working on code.
     Share common tools.
+* 2023-08-27
+** Memexes - a status update
+Hi, everyone!
+
+I'm super excited to see that so many people choose to join this channel.
+I expected to be able to spend more time on memex tooling for people who like to write babashka scripts, but I've been busy with work.
+So here's a status update.
+
+*motivation: a better way to build knowledge, applicable to real-world projects.*
+I'm sick of trello.
+Sick of churning out tasks before we really know what we're doing.
+I'm also sick of running full speed ahead with no idea where the team is going.
+Is there an alternative?
+I believe we need:
+
+1. To treat building knowledge as seriously as we treat building software.
+   It pains me to see the effort that goes into writing source code, while at the same time documentation is viewed as an afterthought.
+2. Better tools for building knowledge.
+   With source code, I can jump into a project, make an improvement, and push it.
+   With knowledge, I don't feel like I'm able to do the same when I'm working with others.
+   I can quickly take notes for myself, but I cannot easily use those notes to work with the rest of my team.
+
+*collective knowledge management in practice: does using a memex work?*
+I want to build tools for managing knowledge as I'm using them day to day.
+My deliverable this far has been text in hyperlinked documents.
+I've been able to get teammates to contribute text to hyperlinked documents in two cases:
+for our planning system in the startup I'm working on (private), and in an initiative for technical blogging with colleagues (public, [[https://github.com/iterate/mikrobloggeriet/][source code]], [[https://mikrobloggeriet.no/][live site]], all in Norwegian).
+
+*the first pain point: converting documents from various formats to HTML.*
+In both cases, I've had to write some kind of system to convert text from plaintext formats like markdown and org-mode to HTML.
+So far, I've based all that conversion on [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]].
+I've approached the pandoc conversion in a few different ways.
+Pandoc can convert files directly, with commands like =pandoc -i document.md -o document.html=.
+Pandoc can also work on markup as strings directly:
+
+#+begin_src
+$ echo 'hi, _there_!' | pandoc -f markdown -t html
+<p>hi, <em>there</em>!</p>
+#+end_src
+
+Though Pandoc usage through shelling out has its limitations.
+For a small document conversion, I typically get a response in ~30 ms.
+For a large document, I it takes 200-300 ms to get a response.
+For my use, that has necessitated some caching.
+Especially when the amount of documents grows large.
+On [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]], I currently have 351 documents.
+
+*a pandoc wrapper for babashka scripts*.
+So I've written a pandoc wrapper.
+Nothing serious, yet.
+But I'm gradually able to reuse more code each new time I need to convert documents.
+If you're interested in helping out, I'd greatly appreciate feedback from real usage!
+Example usage of the current iteration:
+
+#+begin_src clojure
+(require '[teodorlu.pandoc.alpha1 :as pandoc])
+
+(-> "Hi, _there_!"
+    pandoc/from-markdown
+    pandoc/to-html)
+;; => "<p>Hi, <em>there</em>!</p>\n"
+#+end_src
+
+*next steps?*
+So, where does the journey lead?
+Right now, I'm thinking links.
+I've been able to get 7 colleagues to start writing content to learn things and plan projects.
+That means we've produced a little body of work.
+We're starting to feel the /weight/ of that content.
+What have we actually written?
+I think we can improve that with better tools for linking.
+A first step could be a FZF-powered command line interface.
+Something like this:
+
+#+begin_src
+$ link --format markdown
+# ... select Simple Made Easy with FZF ...
+# Then this is printed:
+[Simple Made Easy](https://www.youtube.com/watch?v=LKtk3HCgTa8)
+#+end_src
+
+That's all for today.
+Hope you all have a great day :)

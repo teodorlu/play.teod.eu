@@ -673,6 +673,11 @@ later” strategy that works - another take</a></li>
 id="toc-three-libraries-for-writing">Three libraries for
 writing</a></li>
 </ul></li>
+<li><a href="#section-42" id="toc-section-42">2023-08-27</a>
+<ul>
+<li><a href="#memexes---a-status-update"
+id="toc-memexes---a-status-update">Memexes - a status update</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -2634,5 +2639,80 @@ store &amp; collect links</li>
 <li>Goals: Share effort working on code. Share common tools.</li>
 </ul></li>
 </ul>
+<h2 id="section-42">2023-08-27</h2>
+<h3 id="memexes---a-status-update">Memexes - a status update</h3>
+<p>Hi, everyone!</p>
+<p>I’m super excited to see that so many people choose to join this
+channel. I expected to be able to spend more time on memex tooling for
+people who like to write babashka scripts, but I’ve been busy with work.
+So here’s a status update.</p>
+<p><strong>motivation: a better way to build knowledge, applicable to
+real-world projects.</strong> I’m sick of trello. Sick of churning out
+tasks before we really know what we’re doing. I’m also sick of running
+full speed ahead with no idea where the team is going. Is there an
+alternative? I believe we need:</p>
+<ol>
+<li>To treat building knowledge as seriously as we treat building
+software. It pains me to see the effort that goes into writing source
+code, while at the same time documentation is viewed as an
+afterthought.</li>
+<li>Better tools for building knowledge. With source code, I can jump
+into a project, make an improvement, and push it. With knowledge, I
+don’t feel like I’m able to do the same when I’m working with others. I
+can quickly take notes for myself, but I cannot easily use those notes
+to work with the rest of my team.</li>
+</ol>
+<p><strong>collective knowledge management in practice: does using a
+memex work?</strong> I want to build tools for managing knowledge as I’m
+using them day to day. My deliverable this far has been text in
+hyperlinked documents. I’ve been able to get teammates to contribute
+text to hyperlinked documents in two cases: for our planning system in
+the startup I’m working on (private), and in an initiative for technical
+blogging with colleagues (public, <a
+href="https://github.com/iterate/mikrobloggeriet/">source code</a>, <a
+href="https://mikrobloggeriet.no/">live site</a>, all in Norwegian).</p>
+<p><strong>the first pain point: converting documents from various
+formats to HTML.</strong> In both cases, I’ve had to write some kind of
+system to convert text from plaintext formats like markdown and org-mode
+to HTML. So far, I’ve based all that conversion on <a
+href="../pandoc/">Pandoc</a>. I’ve approached the pandoc conversion in a
+few different ways. Pandoc can convert files directly, with commands
+like <code
+class="verbatim">pandoc -i document.md -o document.html</code>. Pandoc
+can also work on markup as strings directly:</p>
+<pre><code>$ echo &#39;hi, _there_!&#39; | pandoc -f markdown -t html
+&lt;p&gt;hi, &lt;em&gt;there&lt;/em&gt;!&lt;/p&gt;
+</code></pre>
+<p>Though Pandoc usage through shelling out has its limitations. For a
+small document conversion, I typically get a response in ~30 ms. For a
+large document, I it takes 200-300 ms to get a response. For my use,
+that has necessitated some caching. Especially when the amount of
+documents grows large. On <a href="../play.teod.eu/">play.teod.eu</a>, I
+currently have 351 documents.</p>
+<p><strong>a pandoc wrapper for babashka scripts</strong>. So I’ve
+written a pandoc wrapper. Nothing serious, yet. But I’m gradually able
+to reuse more code each new time I need to convert documents. If you’re
+interested in helping out, I’d greatly appreciate feedback from real
+usage! Example usage of the current iteration:</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">require</span> &#39;[teodorlu.pandoc.alpha1 <span class="at">:as</span> pandoc])</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">-&gt;</span> <span class="st">&quot;Hi, _there_!&quot;</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    pandoc/from-markdown</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    pandoc/to-html)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; &quot;&lt;p&gt;Hi, &lt;em&gt;there&lt;/em&gt;!&lt;/p&gt;\n&quot;</span></span></code></pre></div>
+<p><strong>next steps?</strong> So, where does the journey lead? Right
+now, I’m thinking links. I’ve been able to get 7 colleagues to start
+writing content to learn things and plan projects. That means we’ve
+produced a little body of work. We’re starting to feel the
+<em>weight</em> of that content. What have we actually written? I think
+we can improve that with better tools for linking. A first step could be
+a FZF-powered command line interface. Something like this:</p>
+<pre><code>$ link --format markdown
+# ... select Simple Made Easy with FZF ...
+# Then this is printed:
+[Simple Made Easy](https://www.youtube.com/watch?v=LKtk3HCgTa8)
+</code></pre>
+<p>That’s all for today. Hope you all have a great day :)</p>
 </body>
 </html>

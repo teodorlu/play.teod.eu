@@ -1784,4 +1784,4 @@ $ link --format markdown
 #+end_src
 
 That's all for today.
-Hope you all have a great day :)
+Hope you all have a great day!

@@ -2068,6 +2068,14 @@
   "title" : "Technology Readiness Level",
   "uuid" : "add61309-25d3-418d-8a9b-542915198e53"
 }, {
+  "slug" : "trust-vs-evil",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-09-02",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Trust vs Evil",
+  "uuid" : "afce0ad0-0723-4b19-a7bf-1e9da412045f"
+}, {
   "slug" : "learning-to-discover",
   "title" : "Learning to discover",
   "readiness" : "wtf-is-this",

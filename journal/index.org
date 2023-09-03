@@ -1788,3 +1788,13 @@ Hope you all have a great day!
 * 2023-09-02
 ** Trust vs evil
 Wrote a text and moved it over to its own page: [[id:afce0ad0-0723-4b19-a7bf-1e9da412045f][Trust vs Evil]].
+* 2023-09-03
+** checkin
+Got a nice comment from @PEZ about my thouhgts on [[id:afce0ad0-0723-4b19-a7bf-1e9da412045f][Trust vs Evil]].
+Evil, not being constrained by honor and moral, has a larger pool of possible actions.
+
+Wrote some more titles, but I'm leaving those for now:
+
+- light touch leadership
+- take people seriously
+- hvor flink er du?

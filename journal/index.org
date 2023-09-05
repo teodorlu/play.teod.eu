@@ -1798,3 +1798,42 @@ Wrote some more titles, but I'm leaving those for now:
 - light touch leadership
 - take people seriously
 - hvor flink er du?
+* 2023-09-05
+** "testing" er feil ord
+Det er feil modell.
+Det gir feil assosiasjoner.
+Det er ikke det som /skjer/.
+
+Så hva /er/ det som skjer?
+Vi lærer.
+Steg for steg.
+Vi lærer hvordan bibliotekene vi bruker fungerer.
+Vi lærer om programmeringsspråket vi bruker.
+Vi lærer om mønstre for å organisere kode som fungerer godt eller dårlig.
+
+Vi bygger teori og praksis.
+Teorien handler om [[https://en.wikipedia.org/wiki/Denotation][denotasjon]] og definisjon.
+Teorien er hva vi ser.
+Teorien er språket vi bruker.
+I praksis må vi velge hva vi ønsker å gjøre.
+Vi må velge teori som passer problemet.
+Og vi må /gjennomføre/.
+Teori uten handling er verdiløst.
+
+"Gjør noen greier, kast det ut!
+Nå tester vi, dere."
+
+Nei nei nei!
+Poenget er ikke å bruke testing til å kunne la være å ta stilling til kvaliteten av det vi har laget.
+Vi er fagfolk.
+Hvis vi ikke bryr oss om kvaliteten på produktet vi lager, kommer ingen til å gjøre det.
+Dette er /teori/.
+Teorien velger vi å tro på eller ikke.
+Vi får ikke "testet" om vi er gode på programmering når brukere bruker produktet.
+Brukerene jobber med produktet, ikke med koden.
+Vi får ikke "testet" om vi er gode designere når brukeren bruker produktet.
+Vi får sjekket om brukeren oppnår de målene brukeren har.
+
+Målet med å sette produktet foran folk som skal bruke det /er ikke/ å vurdere hvor gode vi er på programmering og design.
+Det toget har gått.
+Målet er å se /om produktet lar brukeren oppnå det brukeren vil!/

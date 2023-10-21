@@ -211,5 +211,50 @@
 </header>
 <p><a href="..">..</a></p>
 <p>DRAFT</p>
+<p>In <a href="../build-your-own-little-memex-with-babasha/">Build Your
+Own Little Memex with Babashka</a>, I called for a community effort to
+build memexes together, and build tools for building memexes together. I
+put <em>a start</em> into code at <a
+href="https://github.com/teodorlu/lemex.experimental/">https://github.com/teodorlu/lemex.experimental/</a>.
+Thinking back, I don’t think I started this right.</p>
+<p>I presumed to be able to create a cohesive namespace of memex
+operations from the start. Instead, I believe a good first step is to
+assemble a ball of mud and be able to share that ball of mud.</p>
+<p>Another way to start:</p>
+<ol>
+<li>Collect functions community members have already written in one
+place</li>
+<li>Avoid breaking those functions</li>
+</ol>
+<p>We could put these functions in <code
+class="verbatim">teodorlu.memextogether.mud</code>.</p>
+<p>Package conventions:</p>
+<ol>
+<li>Don’t break consumers.</li>
+<li>Avoid lots of dependencies where possible.</li>
+</ol>
+<p>But we should depend on <em>some</em> libraries. I propose:</p>
+<ul>
+<li>babashka/fs</li>
+<li>babashka/process</li>
+<li>babashka/shell</li>
+</ul>
+<p>Candidates:</p>
+<ul>
+<li>An RDF database of some sort, eg datascript, datahike, xt or
+datomic.
+<ul>
+<li>Problem: a whole database is a lot of dependencies
+<ul>
+<li>Possible mitigation: memextogether depends on a databse interface,
+memextogether consumers bring their own database.</li>
+</ul></li>
+<li>Problem: per 2023-10-21, I (Teodor) haven’t been able to make use of
+relational in building <a href="../play.teod.eu/">play.teod.eu</a>. I
+have some relations, but I basically only use those relations to build
+the home page. There is no search, there is no querying, there is no
+structured data modeling.</li>
+</ul></li>
+</ul>
 </body>
 </html>

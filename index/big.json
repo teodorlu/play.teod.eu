@@ -2072,7 +2072,7 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-09-02",
   "lang" : "en",
-  "readiness" : "wtf-is-this",
+  "readiness" : "ready-for-comments",
   "title" : "Trust vs Evil",
   "uuid" : "afce0ad0-0723-4b19-a7bf-1e9da412045f"
 }, {
@@ -2713,6 +2713,14 @@
   "readiness" : "wtf-is-this",
   "title" : "Software dependencies cause operational expense",
   "uuid" : "eb3f5e54-6f91-4909-9d0e-92b96db7b0ca"
+}, {
+  "slug" : "memextogether",
+  "author-url" : "https://teod.eu",
+  "created" : "2023-10-21",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Memextogether",
+  "uuid" : "eb485858-e481-400f-b48b-982926939d0e"
 }, {
   "slug" : "programmer-cultivate-your-curiosity",
   "title" : "Programmer, cultivate your curiosity!",

@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID: eb485858-e481-400f-b48b-982926939d0e
+:END:
+#+TITLE: Memextogether
+
+[[file:..][..]]
+
+DRAFT
+
+In [[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]], I called for a community effort to build memexes together, and build tools for building memexes together.
+I put /a start/ into code at https://github.com/teodorlu/lemex.experimental/.
+Thinking back, I don't think I started this right.
+
+I presumed to be able to create a cohesive namespace of memex operations from the start.
+Instead, I believe a good first step is to assemble a ball of mud and be able to share that ball of mud.
+
+Another way to start:
+
+1. Collect functions community members have already written in one place
+2. Avoid breaking those functions
+
+We could put these functions in =teodorlu.memextogether.mud=.
+
+Package conventions:
+
+1. Don't break consumers.
+2. Avoid lots of dependencies where possible.
+
+But we should depend on /some/ libraries.
+I propose:
+
+- babashka/fs
+- babashka/process
+- babashka/shell
+
+Candidates:
+
+- An RDF database of some sort, eg datascript, datahike, xt or datomic.
+  - Problem: a whole database is a lot of dependencies
+    - Possible mitigation: memextogether depends on a databse interface, memextogether consumers bring their own database.
+  - Problem: per 2023-10-21, I (Teodor) haven't been able to make use of relational in building [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
+    I have some relations, but I basically only use those relations to build the home page.
+    There is no search, there is no querying, there is no structured data modeling.

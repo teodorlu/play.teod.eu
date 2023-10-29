@@ -6,3 +6,5 @@
 [[file:..][..]]
 
 https://mitpress.mit.edu/9780262045490/software-design-for-flexibility/
+
+by [[id:bc79cbf6-145d-4674-afa6-799c8fdb81a3][Chris Hanson]] and [[id:b726cfb2-5aff-46e7-b377-c881af59753d][Gerald Jay Sussman]].

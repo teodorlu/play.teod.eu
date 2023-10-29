@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: bc79cbf6-145d-4674-afa6-799c8fdb81a3
+:END:
+#+TITLE: Chris Hanson
+
+[[file:..][..]]
+
+https://people.csail.mit.edu/cph/

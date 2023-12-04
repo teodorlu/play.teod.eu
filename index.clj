@@ -97,7 +97,7 @@
                              "Embrace remix culture."
                              "Legibility is a partially provided affordance, not a design constraint.")
                   (sentences "Status: work in progress, plenty of rough edges."
-                             "But you're /very/ much welcome to have a look around 🤗")
+                             "But you're /very/ much welcome to have a look around!")
                   (str "Most content on this site is authored by Teodor Heggelund"
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
                        ".")

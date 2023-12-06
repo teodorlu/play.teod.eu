@@ -59,9 +59,3 @@ Show them that the time invested in you was well spent.
 Then ask for something else that they can give you easily.
 
 Repeat, and you might gain a mentor.
-
-*Appendix*
-
-Jordan Miller decided to ask for help when she wanted to give a tech talk:
-[[https://lambduhh.notion.site/Alex-Miller-s-advice-on-tech-talks-The-Abstract-a0fdd7dc91614af7adfe7b9d478c459c][Alex Miller’s advice on tech talks: 💫 --- The Abstract 💫]].
-As it turns out, her article is a great resource on how to ask for help in general :)

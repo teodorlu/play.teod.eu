@@ -1837,3 +1837,12 @@ Vi får sjekket om brukeren oppnår de målene brukeren har.
 Målet med å sette produktet foran folk som skal bruke det /er ikke/ å vurdere hvor gode vi er på programmering og design.
 Det toget har gått.
 Målet er å se /om produktet lar brukeren oppnå det brukeren vil!/
+* 2023-12-23
+** Coding for fun? Or not?
+I like creating stuff.
+Programming is a nice tool, but it's not necessarily a goal in itself.
+
+| Create music   | [[id:EBDC5A9A-6B70-4FD4-8BFC-635C08521879][Overtone]] |
+| Create visuals | [[id:5ac5617e-6d50-4da0-a917-59d9d00c4622][Quil]]     |
+
+Perhaps I should challenge myself on creating /new kinds of things/.

@@ -1846,3 +1846,8 @@ Programming is a nice tool, but it's not necessarily a goal in itself.
 | Create visuals | [[id:5ac5617e-6d50-4da0-a917-59d9d00c4622][Quil]]     |
 
 Perhaps I should challenge myself on creating /new kinds of things/.
+* 2024-01-07
+** Mistaking category for entity
+In programming, names should make it clear whether you're talking about a category of things or a specific entity.
+I commonly see programmers work with entities, but name the category.
+The name is /too wide/, if we use [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]]'s terminology from [[id:084bf28d-3509-412d-ada2-d70c08c658de][Elements of Clojure]].

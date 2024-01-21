@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: 1faa6508-39e2-4a28-b5cc-174e2be5735e
+:END:
+#+TITLE: The Phenomenology of Good Code
+
+[[file:..][..]]
+
+DRAFT
+
+Idea: use [[id:6ac830ef-cb3f-48ea-924a-5304384c4b8e][phenomenology]] as a tool to judge the quality of code.
+
+Good experience working with the code?
+Good code!
+Bad experience working with the code?
+Bad code!
+
+Caveat: people's experiences differ.
+
+Who are on the team?
+What are they familiar with?
+
+When the experience working with code is poor, should the code be changed, or does the programmer need to learn something?
+
+(inspired by a comment on /ergonomics/ by [[id:8833ff2f-ed66-4db2-ac14-6f8eff9f70d4][Oddmund]])

@@ -1,0 +1,87 @@
+:PROPERTIES:
+:ID: 33288b32-b2eb-4d1e-b0f3-b13f84749fda
+:END:
+#+TITLE: Compressing Thoughts
+
+[[file:..][..]]
+
+DRAFT
+
+* Context: just read [[id:e81db2a4-90a3-4d5e-847c-19479d83d66d][Say What You Mean]] by [[id:34cb6363-5c1d-4af4-b11b-3c3cd97a1150][David Schmudde]], loving it
+
+Today, I'd like to discuss the act of compressing your own thoughts.
+
+1. Mental work is creation & exploration interwoven with compression
+2. When we explore, we increase optionality; we increase the bounds of our map
+3. When we compress, we reduce the language needed to cover the map
+   1. From a non-orthogonal basis towards concise language
+4. The compressed, orthogonal basis is /declarative/ in the words of David Schmudde.
+
+* Application: use writing to compress your thoughts.
+
+I like to write on the internet.
+Writing on the internet lets me thing.
+When writing, I roam in thoughtspace.
+Yet, the act of writing /while roaming in thoughtspace/ lets me compress, not just explore.
+
+I've come away surprised (perhaps even shocked) when people express disgust with writing things down considering the act of writing as a "dead", "boring" activity.
+
+For me, it's not.
+
+I experience it as living, creative.
+And the writing for me, has this special role of compression.
+If I did not write it down, I would not remember it as crisply.
+The writing makes my thoughts /stick/.
+
+It's also relaxing.
+By means of writing, I can /deliver/ a train of thoughts.
+That liberates me from having to remember it.
+I can move on to other things.
+
+* Writing for myself, or writing to others.
+
+I use writing as a tool to think.
+
+I very rarely, if never, write when I /do not/ need to use writing as a means to think.
+I generally strive avoid activityes that I find to be soul-killing.
+To the reader, I recommend /avoiding killing your soul/.
+
+Though when we encounter creative resistance, how do we know whether what we are seeing is a soul-killing activity that we should not do, or merely lazyness on our part?
+Is this activity a soul-killing activity I should strive to avoid, or am I childishly, lazily rejecting having to do my chores?
+
+Let's talk about it differently.
+There are /steps/ to writing for compression.
+
+1. First, there's a problem you're working on.
+   Make sure you define that problem /clearly/.
+2. Then, /compress/ that problem statement.
+   Can you express it succintly?
+
+And if (you should) try discussing things to other before the ideas are properly compressed, make that clear to the person you're talking to.
+"I to discuss the /idea/ right now, not its current representation.
+ I'm aware that it's a bit ... raw.
+ Can you please bear with me, then we can see where it leads?"
+
+So, if "writing is boring", I suggest considering whether you're writing to compress, or whether you're writing to communicate.
+
+* References
+
+[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]] discusses the important of a /succint/ problem definition in detail.
+The act of working towards a /more succint/ definition is an act of compression.
+
+In [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]], [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]'s style of communication caused me top reconsider how I present.
+Previously, I'd learned that in order to get my points across, I'd needed to slow down and explain more, explain in a coherent matter.
+Rusher talks /fast/, with little to no "uhm" and "where was I".
+I believe he has done his preparations well, leading to a /well compressed/ understanding of the points he is trying to get across.
+In other words, /compressing your own understanding/ is different from /communicating well what you understand/.
+And the to are (not /actually/) in conflict, they are mutually helpful to each other.
+If you first understand what you are talking about well, you can more easily take the time /you need/ when the time to explain it slowly comes.
+But you also learn a thing padagogy alone will not provide: you learn to make actual progress on the theory.
+/Stop Writing Dead Programs/ is one such example, it covers a topic in breadth and depth from what you can expect from a one hour presentation.
+
+Lessons:
+
+- Consider compressing /first/, then sharing /later/
+- Think of your performance /as a performance/.
+  You wouldn't want Robert Plant to stop and say "ummm, where was I" in the middle of /Stairway to Heaven/.
+  Strive to be great!

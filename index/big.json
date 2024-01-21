@@ -352,6 +352,14 @@
   "created" : "2023-05-07",
   "lang" : "en"
 }, {
+  "slug" : "phenomenology-of-good-code",
+  "author-url" : "https://teod.eu",
+  "created" : "2024-01-15",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "The Phenomenology of Good Code",
+  "uuid" : "1faa6508-39e2-4a28-b5cc-174e2be5735e"
+}, {
   "slug" : "10x-fanout",
   "title" : "10X fanout",
   "readiness" : "wtf-is-this",
@@ -644,6 +652,14 @@
   "created" : "2023-03-07",
   "lang" : "en"
 }, {
+  "slug" : "compressing-thoughts",
+  "author-url" : "https://teod.eu",
+  "created" : "2024-01-21",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Compressing Thoughts",
+  "uuid" : "33288b32-b2eb-4d1e-b0f3-b13f84749fda"
+}, {
   "slug" : "ted-nelson",
   "author-url" : "https://teod.eu",
   "created" : "2023-06-14",
@@ -660,6 +676,15 @@
   "author-url" : "https://teod.eu",
   "created" : "2023-03-29",
   "lang" : "en"
+}, {
+  "slug" : "david-schmudde",
+  "author-url" : "https://teod.eu",
+  "created" : "2024-01-21",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "David Schmudde",
+  "uuid" : "34cb6363-5c1d-4af4-b11b-3c3cd97a1150"
 }, {
   "slug" : "finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus",
   "author-url" : "https://teod.eu",
@@ -1193,6 +1218,15 @@
   "created" : "2022-09-21",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "tom-macwright",
+  "author-url" : "https://teod.eu",
+  "created" : "2024-01-21",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Tom MacWright",
+  "uuid" : "5ec2f465-8875-4399-b0c2-7b5cb1eb3425"
 }, {
   "slug" : "org-roam",
   "author-url" : "https://teod.eu",
@@ -2678,6 +2712,15 @@
   "created" : "2023-03-19",
   "lang" : "en",
   "form" : "remote-reference"
+}, {
+  "slug" : "schmudde-say-what-you-mean",
+  "author-url" : "https://teod.eu",
+  "created" : "2024-01-21",
+  "form" : "remote-reference",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Say What You Mean",
+  "uuid" : "e81db2a4-90a3-4d5e-847c-19479d83d66d"
 }, {
   "slug" : "outcome-orientation-or-not",
   "author-url" : "https://teod.eu",

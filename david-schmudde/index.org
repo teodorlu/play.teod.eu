@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 34cb6363-5c1d-4af4-b11b-3c3cd97a1150
+:END:
+#+TITLE: David Schmudde
+
+[[file:..][..]]
+
+https://schmud.de/
+
+Software Engineer, Educator, Researcher, Digital Artist
+
+My impression: somewhat of a generalist / polyglot with feet well planted /both/ in the objective (science, software) and the subjective (art, music).
+Strong storyteller.
+
+[[https://schmud.de/pages/about.html#this-website][Claims to have stolen ideas from]]
+
+- /[[https://brutalist-web.design/][Brutalist Web Design]]/ by David Bryant Copeland
+- /[[https://abookapart.com/products/everyday-information-architecture][Everyday Information Architecture]]/

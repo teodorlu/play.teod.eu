@@ -165,7 +165,7 @@ DRAFT
                   (str "  " (apply words (keys (:targets relations-config)))))]
     helptext))
 
-(defn relations [{:keys [opts]}]
+(defn cmd-relations [{:keys [opts]}]
   (let [sources {:files files->relations
                  :lines lines->relations}
         targets {:lines relations->lines
@@ -181,7 +181,7 @@ DRAFT
       (let [rels ((sources from) opts)]
         ((targets to) rels)))))
 
-(defn random-page [{:keys [opts]}]
+(defn cmd-random-page [{:keys [opts]}]
   (if (:dry-run opts)
     (do
       ;; dry run is mostly for dev
@@ -203,7 +203,7 @@ DRAFT
 
 (defn infer-created [] #_ TODO)
 
-(defn create-page [{:keys [opts]}]
+(defn cmd-create-page [{:keys [opts]}]
   (let [slug (:slug opts)
         title (or (:title opts) slug)
         uuid (or (:uuid opts) (str (random-uuid)))
@@ -294,7 +294,7 @@ Allowed options:
                 "|"
                 "pandoc -f json -o" (html t) "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
 
-(defn makefile [{:keys [opts]}]
+(defn cmd-makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
         targets (->> (files->relations {})
                      vals
@@ -365,7 +365,7 @@ Allowed options:
       (println makefile)
       (spit "Makefile" (str (str/trim makefile) "\n")))))
 
-(defn reindex
+(defn cmd-reindex
   "Create an index from page uuid to slug and title."
   [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
@@ -416,7 +416,7 @@ Allowed options:
         (pprint args) ;; pprint the seq
         ))))
 
-(defn filter
+(defn cmd-filter
   "Apply play.teod.eu filters.
 
   For now, the only supported filter is resolve-links.
@@ -457,13 +457,13 @@ Usage:
 
 (def dispatch-table
   [
-   {:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
-   {:cmds ["filter"] :fn filter :cmds-opts [:resolve-links]}
+   {:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
+   {:cmds ["filter"] :fn cmd-filter :cmds-opts [:resolve-links]}
    {:cmds ["lol"] :fn lol}
-   {:cmds ["makefile"] :fn makefile}
-   {:cmds ["random-page"] :fn random-page}
-   {:cmds ["reindex"] :fn reindex}
-   {:cmds ["relations"] :fn relations}
+   {:cmds ["makefile"] :fn cmd-makefile}
+   {:cmds ["random-page"] :fn cmd-random-page}
+   {:cmds ["reindex"] :fn cmd-reindex}
+   {:cmds ["relations"] :fn cmd-relations}
    ])
 
 (defn print-subcommands [{}]

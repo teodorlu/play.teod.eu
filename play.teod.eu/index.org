@@ -1293,6 +1293,42 @@ $ echo '# hei duuu' | pandoc --from markdown --to json | ./play.clj filter resol
 #+end_src
 
 No output from =./play.clj filter resolve-links=. That's a problem.
+*** What goes wrong when we run =filter resolve-links=?
+??
+**** does anyting run?
+Let's see what happens.
+
+#+begin_src
+$ git diff src
+diff --git a/src/teod/play/cli.clj b/src/teod/play/cli.clj
+index 6da93c6f..f203b38c 100644
+--- a/src/teod/play/cli.clj
++++ b/src/teod/play/cli.clj
+@@ -395,7 +395,12 @@ Allowed options:
+         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
+         ))))
+
++(defn verbose? []
++  (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE"))))
++
+ (defn filter [{:as cmd-opts}]
++  (when (verbose?) (prn "it runs"))
++
+   ;; only supported filter for now is resolve-links
+   ;;
+   ;; Test with:
+#+end_src
+
+then
+
+#+begin_src
+$ export EU_TEOD_PLAY_VERBOSE=1
+$ echo '# hei duuu' | pandoc --from markdown --to json | ./play.clj filter resolve-links
+"it runs"
+#+end_src
+
+something runs.
+**** hypothesis: we branch /away/ from printing (code bug)
 
 * trailing whitespace
 #+BEGIN_VERSE

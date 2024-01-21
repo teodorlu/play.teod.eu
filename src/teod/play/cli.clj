@@ -395,11 +395,15 @@ Allowed options:
         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
         ))))
 
+(defn dbg [& args]
+  (binding [*out* *err*]
+    (apply prn args)))
+
 (defn verbose? []
   (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE"))))
 
 (defn filter [{:as cmd-opts}]
-  (when (verbose?) (prn "it runs"))
+  (when (verbose?) (dbg "it runs"))
 
   ;; only supported filter for now is resolve-links
   ;;
@@ -418,7 +422,7 @@ Usage:
   (when (contains? (set (:rest-cmds cmd-opts))
                    "resolve-links")
     (when (verbose?)
-      (prn
+      (dbg
        '(:rest-cmds cmd-opts)
        'contains?
        "resolve-links"))

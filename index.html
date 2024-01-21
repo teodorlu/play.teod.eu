@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Towards an iterated game</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Towards an iterated game</h1>
+</header>
+<button onclick="goto_random_page()" style="display:block; margin: 0px auto; font-size: 16px; ">Go to random page</button>
+
+<div class="line-block"><br />
+</div>
+<p>Intent: bring ideas to life. Discuss, sharpen, play. Minimize the
+distance between intent and reality.</p>
+<p>Process: Aim intent towards curiosity — explore — refactor towards
+orthogonality. Embrace remix culture. Legibility is a partially provided
+affordance, not a design constraint.</p>
+<p>Status: work in progress, plenty of rough edges. But you’re
+<em>very</em> much welcome to have a look around!</p>
+<p>Most content on this site is authored by Teodor Heggelund (<a
+href="https://teod.eu"><span>https://teod.eu</span></a>).</p>
+<h2 id="content-thats-ready-for-the-eyes-of-others">Content that’s ready
+for the eyes of others</h2>
+<p>Feel free to have a look :)</p>
+<p>Things I believe:</p>
+<ul>
+<li><a href="./aphorisms/">Aphorisms</a></li>
+</ul>
+<p>Things I’ve written:</p>
+<ul>
+<li><a href="./trust-vs-evil/">Trust vs Evil</a> (2023-09-02)</li>
+<li><a href="./write-shit-down-reasons/">Seven reasons you should write
+shit down</a> (2023-06-29)</li>
+<li><a href="./build-your-own-little-memex-with-babasha/">Build Your Own
+Little Memex with Babashka</a> (2023-06-10)</li>
+<li><a href="./prompts-for-learning/">prompts for learning</a>
+(2023-05-01)</li>
+<li><a href="./lisp-narrow-waist/">Why Lisp? Because it forces the
+s-expression narrow waist down everyone’s throats</a> (2023-03-04)</li>
+<li><a href="./welcome-knowledge-worker/">Welcome, knowledge worker!</a>
+(2022-09-21)</li>
+<li><a href="./intersection-work-play/">a good intersection between work
+and play</a> (2022-09-20)</li>
+<li><a href="./document-transform-pandoc-clojure/">Recursive document
+transformations with Pandoc and Clojure</a> (2022-07-15)</li>
+<li><a href="./interaction-value-differential/">How to ask experts for
+help</a> (2022-07-13)</li>
+</ul>
+<h2 id="other-peoples-idea-playgrounds">Other people’s idea
+playgrounds</h2>
+<p>Ideas are best shared! Some choose to share ideas in public. I think
+that’s good.</p>
+<p>In alphabetical order:</p>
+<ul>
+<li><a href="https://kevin.stravers.net/">Kevin’s WikiBlog</a> (off-site
+link)</li>
+<li><a href="https://play.sindre.me/">Sindre’s Random Ramblings</a>
+(off-site link)</li>
+<li><a href="https://blog.oddmundo.com/">blog.oddmundo.com</a> (off-site
+link)</li>
+</ul>
+<h2 id="forever-incomplete">Forever incomplete</h2>
+<p>Some content is eventually <em>complete</em>. Not journals!</p>
+<p><a href="./open-problems/">Open problems</a> — <a
+href="./journal/">Teodor’s public journal</a></p>
+<h2 id="norwegian-content">Norwegian content</h2>
+<p>Not everybody speaks Norwegian. But some do!</p>
+<ul>
+<li><a href="./teknologi-for-produkt-intro/">Teknologi for å bygge
+produkt—en introduksjon</a> (2023-06-13)</li>
+<li><a href="./hva-er-funksjonell-programmering/">Hva er funksjonell
+programmering?</a> (2023-05-29)</li>
+<li><a href="./tre-prinsipper-for-teknisk-prototyping/">Tre prinsipper
+for teknisk prototyping</a> (2023-03-28)</li>
+<li><a href="./maksimal-opsjonalitet/">MAKSIMAL OPSJONALITET</a></li>
+<li><a href="./sannhet-deskriptiv-preskriptiv/">Deskriptiv sannhet,
+preskriptiv sannhet</a></li>
+</ul>
+<h2 id="seeds-drafts-and-vague-ideas-feel-free-to-skip.">Seeds, drafts
+and vague ideas, feel free to skip.</h2>
+<p>Or have a peek. Expect messy, incomplete rambling. Consider letting
+me know if you find a title for a text you’d like to read!</p>
+<p><a href="./strong-opinions-loosely-held-considered-harmful/">“Strong
+opinions loosely held” is an excuse for sloppy thinking</a> · <a
+href="./10x-fanout/">10X fanout</a> · <a
+href="./list-of-awesome-websites/">A list of awesome websites</a> · <a
+href="./a-perfect-day/">A perfect day</a> · <a
+href="./emacs-lisp-rosetta-for-clojurians/">An Emacs Lisp rosetta for
+Clojurians</a> · <a href="./clojure-interactive/">An interactive Clojure
+journey</a> · <a href="./asymmetry-and-power-in-discovery/">Asymmetry
+and power in discovery</a> · <a
+href="./babashka-pods-for-beginners/">Babashka pods for beginners</a> ·
+<a href="./bimodal-strategies/">Bimodal strategies</a> · <a
+href="./bumblebee/">Bumblebee</a> · <a
+href="./charles-comstock-sketches/">Charles Comstock’s sketches</a> · <a
+href="./clojure-survival-kit/">Clojure survival kit</a> · <a
+href="./code-sandbox/">Code sandbox</a> · <a
+href="./compressing-thoughts/">Compressing Thoughts</a> · <a
+href="./del-det-som-er-på-kanten-av-hva-du-kan/">Del det som er på
+kanten av hva du kan</a> · <a href="./dependencies-howto/">Dependencies:
+HOWTO</a> · <a href="./discover-difference/">Discover the difference</a>
+· <a href="./judge-of-quality/">Do you dare be the judge of quality?</a>
+· <a href="./dont-assume-trust-build-trust/">Don’t assume trust. Build
+trust.</a> · <a href="./dont-hide-dragons-in-the-dark/">Don’t hide
+dragons in the dark</a> · <a
+href="./enter-the-forest-at-its-darkest-point/">Enter the Forest at its
+Darkest Point</a> · <a
+href="./epimetheus-project-management-inc/">Epimetheus Project
+Management Inc</a> · <a
+href="./epistemology-for-product-discovery/">Epistemology for product
+discovery</a> · <a href="./fuse/">FUSE</a> · <a
+href="./burnout-meaning-deep-work/">Facing burnout, finding meaning and
+making space for deep work</a> · <a
+href="./factoring-knowledge/">Factoring Knowledge</a> · <a
+href="./spaghettifabrikken/">Factorio dedicated server</a> · <a
+href="./fast-feedback-wide-feedback-no-branching/">Fast feedback, wide
+feedback, no branching</a> · <a
+href="./feedback-interface-implementation/">Feedback loops, interface
+design and how stuff works</a> · <a
+href="./formal-theory-informal-relations/">Formal theory, informal
+relations</a> · <a href="./freedom-to-explore-the-network/">Freedom To
+Explore the Network</a> · <a href="./git-commit-messages/">Git commit
+messages should be good, right?</a> · <a
+href="./good-code-good-explanation/">Good code as good explanations</a>
+· <a href="./good-epistemology/">Good epistemology</a> · <a
+href="./graph-navigators/">Graph navigators</a> · <a
+href="./grokking-simplicity/">Grokking Simplicity</a> · <a
+href="./holding-ideas-so-tightly-they-suffocate/">Holding one’s ideas so
+tightly they suffocate</a> · <a href="./narrow-waist/">Hourglass
+architecture - concept capture and references</a> · <a
+href="./how-to-build-ideas/">How to build ideas</a> · <a
+href="./solarpunk-designs/">How to design for a solarpunk aesthetic</a>
+· <a href="./grow-knowlege-together/">How to grow knowledge together</a>
+· <a href="./unix-pipeline-to-babashka-script/">How to port a Unix
+pipeline to a Babashka script</a> · <a
+href="./how-to-solve-problems/">How to solve problems</a> · <a
+href="./twitter-howto/">How to use Twitter</a> · <a
+href="./hypertext-the-medium-is-the-message/">Hypertext: The medium is
+the message</a> · <a href="./nix/">I want to learn Nix</a> · <a
+href="./learn-design/">I want to learn design</a> · <a
+href="./intention-relation-action/">Intent, Relationships, Action</a> ·
+<a href="./interface-perception-design/">Interface, Perception,
+Design</a> · <a href="./iterate-knowledge-archipelago/">Iterate
+Knowledge Archipelago</a> · <a href="./jacket/">Jacket Interactive</a> ·
+<a href="./latin-hypercube-sampling/">Latin hypercube sampling</a> · <a
+href="./learning-to-discover/">Learning to discover</a> · <a
+href="./learning-to-play-support/">Learning to play support</a> · <a
+href="./wip/">Let the play.teod.eu WIP simmer</a> · <a
+href="./list-of-people-who-stand-out/">List of people who stand out</a>
+· <a href="./liste-opsjoner-presentasjoner/">Liste over opsjoner på
+presentasjoner</a> · <a href="./literature-notes/">Literature Notes</a>
+· <a href="./lost-in-specificity/">Lost in specificity</a> · <a
+href="./marketing-vs-science/">Marketing vs science</a> · <a
+href="./memextogether/">Memextogether</a> · <a
+href="./mewtwo/">Mewtwo</a> · <a href="./rdf-intro/">Modeling knowledge
+with RDF</a> · <a href="./oggpow/">OGGPOW: A strategic framework for
+optionality</a> · <a href="./okrs-are-scale-invariant/">OKRs are scale
+invariant</a> · <a href="./oddmunds-list-of-idea-titles/">Oddmunds liste
+over ideer uten kropp</a> · <a href="./oggpo/">One Good Goal Plus
+Options</a> · <a href="./heterarchies/">Opt-in hierarchies</a> · <a
+href="./orthogonality-enables-optionality/">Orthogonality enables
+optionality</a> · <a href="./outcome-orientation-or-not/">Outcome
+orientation! Or … not?</a> · <a href="./overtone/">Overtone</a> · <a
+href="./perception-reality/">Perception is reality. Perception is not
+reality.</a> · <a href="./curious/">Please talk to me about stuff that
+doesn’t fit!</a> · <a href="./polyglot-abundance/">Polyglot programming
+from an abundence mindset</a> · <a
+href="./practice-deliberately-with-journals/">Practice deliberatley with
+journals</a> · <a href="./narrow-statements/">Prefer narrow
+statements</a> · <a href="./principle-of-charity/">Principle of
+Charity</a> · <a href="./product-for-developers/">Product discovery for
+software developers</a> · <a
+href="./product-owner-project-manager-product-leader/">Product owner,
+project manager, product leader</a> · <a
+href="./programmer-cultivate-your-curiosity/">Programmer, cultivate your
+curiosity!</a> · <a href="./purposeful-software-development/">Purposeful
+Software Development</a> · <a href="./experiment-on-yourself/">Put the
+syringe into thine own arm</a> · <a
+href="./my-writing-effort/">Quantifying where my writing effort goes</a>
+· <a href="./2022-10-clerk-workshop/">Remote Clerk workshop for
+Scicloj-adjacent people (2022-10)</a> · <a
+href="./review-the-interface/">Review the interface</a> · <a
+href="./scicloj-2022-10-ckm/">Scicloj 2022-10: knowledge management on
+play.teod.eu</a> · <a href="./scicloj-is-awesome/">Scicloj is
+awesome</a> · <a href="./scicloj-libraries/">Scicloj libraries and
+tools</a> · <a href="./shades-of-deep-green/">Shades of Deep Green</a> ·
+<a href="./sindre/">Sindre</a> · <a
+href="./capability-feature-assembly/">Software architecture as
+capability, feature and assembly</a> · <a
+href="./software-architecture-as-language-construction/">Software
+architecture as langauge construction</a> · <a
+href="./static-dynamic-interaction/">Static-dynamic interaction</a> · <a
+href="./strong-relations/">Strong relations</a> · <a
+href="./teodor-school-system/">Teodor’s school system</a> · <a
+href="./the-commons/">The Commons</a> · <a
+href="./phenomenology-of-good-code/">The Phenomenology of Good Code</a>
+· <a href="./thesis-antithesis-synthesis/">Thesis, anitthesis,
+synthesis</a> · <a href="./training-collaboration-delivery/">Training,
+collaboration, delivery</a> · <a
+href="./understanding-datafy-nav/">Understanding Clojure’s datafy and
+nav</a> · <a href="./unix-signals-intro/">Unix signals: a crash
+course</a> · <a href="./many-small-functions-bad/">When having many
+small functions is bad</a> · <a href="./find-clojure-deps/">Where do you
+find your Clojure dependencies?</a> · <a
+href="./xml-on-the-web/">Working with XML on the web</a> · <a
+href="./clojure-let/">Write clear Clojure code with <code
+class="verbatim">let</code></a> · <a
+href="./write-drunk-edit-sober/">Write drunk, edit sober</a> · <a
+href="./documentation/">Writing documentation is best viewed as creative
+work</a> · <a href="./writing-is-fake/">Writing is fake</a> · <a
+href="./knowledge-worker/">You are a knowledge worker</a> · <a
+href="./attention-design/">attention design</a> · <a
+href="./attention-later/">attention-later</a> · <a
+href="./bb-install/">bb-install</a> · <a href="./dbx/">dbx</a> · <a
+href="./defer-the-trust-problem/">defer the trust problem</a> · <a
+href="./discussion-wishlist/">discussion wishlist</a> · <a
+href="./disgust-sensitivity/">disgust sensitivity</a> · <a
+href="./dots/">dots</a> · <a href="./dynamic-initiative/">dynamic
+initiative</a> · <a href="./dynamic-index/">dynamic-index</a> · <a
+href="./execution-for-developers/">execution for developers</a> · <a
+href="./existensialism/">existentialism</a> · <a
+href="./charity-grace-joy/">grace, charity, joy</a> · <a
+href="./iki/">iki: knowledge iterated</a> · <a href="./img/">img</a> ·
+<a href="./inspiration-howto/">inspiration-howto</a> · <a
+href="./keep-your-aesthetic-playful/">keep your aesthetic playful</a> ·
+<a href="./knowledge-playlist/">knowledge playlist</a> · <a
+href="./little-memex/">little memex</a> · <a
+href="./machine-learning/">machine learning</a> · <a
+href="./microtheory/">microtheory</a> · <a
+href="./minimize-the-number-of-moving-pieces/">minimize the number of
+moving pieces</a> · <a href="./not-good-enough-no-fire/">not good
+enough! no fire!</a> · <a href="./pandoc-edn/">pandoc-edn</a> · <a
+href="./phenomenology/">phenomenology</a> · <a
+href="./planning/">planning</a> · <a
+href="./stupid-games-stupid-prizes/">play stupid games, win stupid
+prizes</a> · <a href="./precise-general-novel/">precise, general,
+novel</a> · <a href="./proof-of-work/">proof of work</a> · <a
+href="./software-architecture/">software-architecture</a> · <a
+href="./sterility-mess-utility/">sterility, mess and utility</a> · <a
+href="./support-challenge-carry/">support, challenge, carry</a> · <a
+href="./tech-learning-ladder/">tech learning ladder</a> · <a
+href="./tensor-calculus-101/">tensor calculus 101</a> · <a
+href="./theres-always-a-deliverable/">there’s always a deliverable</a> ·
+<a href="./tools/">tools</a> · <a href="./tools-for-seeing/">tools for
+seeing</a> · <a href="./trust-quality-intent/">trust, shared sense of
+quality and shared intent</a> · <a
+href="./utility-is-contextual/">utility is contextual</a> · <a
+href="./value-in-context/">value in context</a> · <a
+href="./via-negativa/">via negativa</a> · <a
+href="./watchexec-make-dev/">watchexec make dev</a></p>
+<h2 id="seeds-and-vague-ideas-in-norwegian-feel-free-to-skip.">Seeds and
+vague ideas in Norwegian, feel free to skip.</h2>
+<p><a href="./css-animasjoner-interate.no/">CSS-animasjoner på
+Iterate.no</a> · <a href="./ikke-anta-tillit-bygg-tillit/">Ikke anta
+tillit. Bygg tillit.</a> · <a href="./kosekoding/">Kosekoding</a> · <a
+href="./kreativitet-til-salgs/">Kreativitet til salgs</a> · <a
+href="./spillkoding-med-litt-spilldesign/">Spillkoding med litt
+spilldesign</a> · <a href="./symptomer-darlig-lederskap/">Symptomer på
+dårlig lederskap</a> · <a href="./terminalen-motorsag/">Terminalen:
+Hvordan løpe med motorsag</a> · <a
+href="./tillit-kvalitet-intensjon-i-relasjoner/">Tillit, kvalitet og
+intensjon i relasjoner: en mentalmodell for å få ting gjort</a> · <a
+href="./kos.clj/">kos.clj</a></p>
+<h2 id="remote-references">Remote references</h2>
+<p>Pointers to people, places, artifacts, interlaced with some
+commentary.</p>
+<p><a href="./adam-wiggins/">Adam Wiggins</a> · <a
+href="./adrian-tofting/">Adrian Tofting</a> · <a
+href="./adventures-in-advanced-symbolic-programming/">Adventures in
+Advanced Symbolic Programming</a> · <a href="./alex-miller/">Alex
+Miller</a> · <a href="./amedia/">Amedia</a> · <a
+href="./anders-haugeto/">Anders Haugeto</a> · <a
+href="./angels-singing-writing-for-programmers/">Angels Singing: Writing
+for Programmers</a> · <a href="./cohen-anthem/">Anthem (Leonard
+Cohen)</a> · <a href="./antifragile/">Antifragile</a> · <a
+href="./arne-brasseur/">Arne Brasseur</a> · <a
+href="./array-programming/">Array programming</a> · <a
+href="./babashka/">Babashka</a> · <a href="./berlin/">Berlin</a> · <a
+href="./bill-campbell/">Bill Campbell</a> · <a
+href="./bodil-stokke/">Bodil Stokke</a> · <a
+href="./business-readiness-level/">Business Readiness Level</a> · <a
+href="./c-lang/">C (programming language)</a> · <a
+href="./can-programming-be-liberated-from-the-von-neumann-style/">Can
+programming be liberated from the von Neumann style?</a> · <a
+href="./carl-jung/">Carl Jung</a> · <a href="./chris-hanson/">Chris
+Hanson</a> · <a href="./chris-nuernberger/">Chris Nuernberger</a> · <a
+href="./christian-johansen/">Christian Johansen</a> · <a
+href="./clerk/">Clerk</a> · <a href="./clojure/">Clojure</a> · <a
+href="./clojure-data-cookbook/">Clojure Data Cookbook</a> · <a
+href="./clojure-deref/">Clojure Deref</a> · <a
+href="./clojureverse/">Clojureverse</a> · <a
+href="./clojurians-slack/">Clojurians Slack</a> · <a
+href="./colin-smith/">Colin Smith</a> · <a
+href="./conor-white-sullivan/">Conor White-Sullivan</a> · <a
+href="./creative-computation/">Creative Computation</a> · <a
+href="./daniel-slutsky/">Daniel Slutsky</a> · <a
+href="./dark-agile/">Dark Agile</a> · <a href="./datomic/">Datomic</a> ·
+<a href="./dave-liepmann/">Dave Liepmann</a> · <a
+href="./david-deutsch/">David Deutsch</a> · <a
+href="./david-schmudde/">David Schmudde</a> · <a
+href="./denotational-design/">Denotational Design</a> · <a
+href="./design-in-practice/">Design in Practice</a> · <a
+href="./design-composition-performance/">Design, Composition and
+Performance</a> · <a href="./dustin-getz/">Dustin Getz</a> · <a
+href="./electric-clojure/">Electric Clojure</a> · <a
+href="./elements-of-clojure/">Elements of Clojure</a> · <a
+href="./elinor-ostrum/">Elinor Ostrum</a> · <a
+href="./eliyahu-goldratt/">Eliyahu Goldratt</a> · <a
+href="./emacs/">Emacs</a> · <a href="./emacs-lisp/">Emacs Lisp</a> · <a
+href="./empowered/">Empowered</a> · <a href="./eric-normand/">Eric
+Normand</a> · <a href="./eric-raymond/">Eric Raymond</a> · <a
+href="./erik-assum/">Erik Assum</a> · <a
+href="./exploring-onboarding-success-organizational-fit-and-turnover-intention-of-software-professionals/">Exploring
+onboarding success, organizational fit, and turnover intention of
+software professionals</a> · <a href="./extreme-ownership/">Extreme
+Ownership</a> · <a
+href="./finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus/">Finite
+element implementation of lower-order strain gradient plasticity in
+Abaqus</a> · <a href="./flavio-sousa/">Flavio Sousa</a> · <a
+href="./gerald-jay-sussman/">Gerald Jay Sussman</a> · <a
+href="./gert-goet/">Gert Goet</a> · <a href="./git/">Git</a> · <a
+href="./golang/">Go (programming language)</a> · <a
+href="./henrik-lissner/">Henrik Lissner</a> · <a href="./ida-aanes/">Ida
+Aanes</a> · <a href="./impose-limitations-eliminate-variance/">Impose
+limitations and eliminate variance</a> · <a href="./in-a-box/">In a
+Box</a> · <a href="./inspired/">Inspired</a> · <a
+href="./j-programming-language/">J (programming language)</a> · <a
+href="./jack-rusher/">Jack Rusher</a> · <a
+href="./jeremy-vuillermet/">Jeremy Vuillermet</a> · <a
+href="./jessica-kerr/">Jessica Kerr</a> · <a
+href="./jethro-kuan/">Jethro Kuan</a> · <a
+href="./joakim-sellevold/">Joakim Sellevold</a> · <a
+href="./jocko-willink/">Jocko Willink</a> · <a
+href="./john-backus/">John Backus</a> · <a href="./karl-popper/">Karl
+Popper</a> · <a href="./kira-mclean/">Kira McLean</a> · <a
+href="./kristian-collin-berge/">Kristian Collin Berge</a> · <a
+href="./leonard-cohen/">Leonard Cohen</a> · <a
+href="./lessons-learned-teaching-elm-to-kids/">Lessons learned teaching
+Elm to kids</a> · <a href="./literate-programming/">Literate
+Programming</a> · <a href="./lord-of-the-rings/">Lord of the Rings</a> ·
+<a href="./laere-teori-praksis/">Lære teori, lære praksis</a> · <a
+href="./magnar-sveen/">Magnar Sveen</a> · <a
+href="./malcolm-sparks/">Malcolm Sparks</a> · <a
+href="./mark-mcgranaghan/">Mark McGranaghan</a> · <a
+href="./martin-fowler/">Martin Fowler</a> · <a
+href="./martin-kavalar/">Martin Kavalar</a> · <a
+href="./marty-cagan/">Marty Cagan</a> · <a href="./mathbox/">Mathbox</a>
+· <a href="./maybe-not/">Maybe Not</a> · <a
+href="./metamuse-podcast/">Metamuse (podcast)</a> · <a
+href="./michiel-borkent/">Michiel Borkent</a> · <a
+href="./nassim-taleb/">Nassim Taleb</a> · <a
+href="./niklas-luhman/">Niklas Luhman</a> · <a href="./olorm/">OLORM</a>
+· <a href="./oddmund/">Oddmund</a> · <a href="./ole-jacob/">Ole
+Jacob</a> · <a href="./openfoam/">OpenFOAM</a> · <a
+href="./org-roam/">Org-roam</a> · <a href="./pandoc/">Pandoc</a> · <a
+href="./paulus-esterhazy/">Paulus Esterhazy</a> · <a
+href="./peter-naur/">Peter Naur</a> · <a href="./peter-stromberg/">Peter
+Strömberg</a> · <a href="./programming-as-theory-building/">Programming
+as Theory Building</a> · <a href="./quil/">Quil</a> · <a
+href="./rich-hickey/">Rich Hickey</a> · <a href="./roam-research/">Roam
+Research</a> · <a href="./rust-lang/">Rust (programming language)</a> ·
+<a href="./sam-ritchie/">Sam Ritchie</a> · <a
+href="./schmudde-say-what-you-mean/">Say What You Mean</a> · <a
+href="./scicloj/">Scicloj</a> · <a
+href="./scicloj-visual-tools/">Scicloj visual-tools</a> · <a
+href="./scittle/">Scittle</a> · <a href="./simone-de-beauvoir/">Simone
+de Beauvoir</a> · <a href="./simple-made-easy/">Simple Made Easy</a> ·
+<a href="./skunk-works-book/">Skunk Works: A Personal Memoir of My Years
+at Lockheed</a> · <a href="./software-design-for-flexibility/">Software
+Design for Flexibility</a> · <a
+href="./software-dependencies-cause-operational-expense/">Software
+dependencies cause operational expense</a> · <a
+href="./steinar-barstad/">Steinar Barstad</a> · <a
+href="./steven-pressfield/">Steven Pressfield</a> · <a
+href="./stop-writing-dead-programs/">Stop Writing Dead Programs</a> · <a
+href="./stuttaford-systems-thinking/">Systems Thinking - Notes and
+Resources, by Robert Stuttaford</a> · <a
+href="./technology-readiness-level/">Technology Readiness Level</a> · <a
+href="./ted-nelson/">Ted Nelson</a> · <a
+href="./teodor-heggelund/">Teodor Heggelund</a> · <a
+href="./the-art-of-unix-programming/">The Art of Unix Programming</a> ·
+<a href="./the-bed-of-procrustes/">The Bed of Procrustes</a> · <a
+href="./the-beginning-of-infinity/">The Beginning of Infinity</a> · <a
+href="./the-courage-to-be-disliked/">The Courage to Be Disliked</a> · <a
+href="./the-ethics-of-ambiguity/">The Ethics of Ambiguity</a> · <a
+href="./the-goal-book/">The Goal (book)</a> · <a
+href="./the-language-of-the-system/">The Language of the System</a> · <a
+href="./the-origins-of-opera-and-the-future-of-programming/">The Origins
+of Opera and the Future of Programming</a> · <a
+href="./the-pragmatic-programmer/">The Pragmatic Programmer</a> · <a
+href="./the-value-of-values/">The Value of Values</a> · <a
+href="./the-war-of-art/">The War of Art</a> · <a
+href="./tim-berners-lee/">Tim Berners Lee</a> · <a
+href="./tom-macwright/">Tom MacWright</a> · <a
+href="./trillion-dollar-coach/">Trillion Dollar Coach</a> · <a
+href="./unicad/">Unicad</a> · <a href="./vannevar-bush/">Vannevar
+Bush</a> · <a href="./visakan-veerasamy/">Visakan Veerasamy</a> · <a
+href="./ward-cunningham/">Ward Cunningham</a> · <a
+href="./werner-hetzog/">Werner Hetzog</a> · <a
+href="./wheel-of-time/">Wheel of Time</a> · <a
+href="./why-dont-we-have-a-strategy/">Why don’t we have a strategy?</a>
+· <a href="./woolit/">Woolit</a> · <a
+href="./you-are-in-a-maze-of-deeply-nested-maps-all-alike/">You are in a
+maze of deeply nested maps, all alike</a> · <a
+href="./zach-tellman/">Zach Tellman</a> · <a href="./ziglang/">Zig</a> ·
+<a href="./babashka-conf/">babashka-conf</a> · <a
+href="./browsetxt/">browsetxt</a> · <a
+href="./coachability/">coachability</a> · <a
+href="./dangerous-writing-app/">dangerous writing app</a> · <a
+href="./dtype-next/">dtype-next</a> · <a href="./episteme/">episteme</a>
+· <a href="./friendly-ambitious-nerd/">friendly ambitious nerd</a> · <a
+href="./fzf/">fzf</a> · <a href="./gradient-descent/">gradient
+descent</a> · <a href="./growth-mindset/">growth mindset</a> · <a
+href="./interactive-programming/">interactive programming</a> · <a
+href="./introspectvv/">introspect (book)</a> · <a
+href="./its-not-about-you/">it’s not about you</a> · <a
+href="./lindy-compatibility/">lindy compatibility</a> · <a
+href="./maria.cloud/">maria.cloud</a> · <a href="./me/">me</a> · <a
+href="./mikrobloggeriet.no/">mikrobloggeriet.no</a> · <a
+href="./neil-quickadd/">neil-quickadd</a> · <a
+href="./neural-network/">neural network</a> · <a
+href="./play.teod.eu/">play.teod.eu</a> · <a
+href="./rich-facepalm/">rich-facepalm</a> · <a
+href="./sqlite/">sqlite</a> · <a
+href="./sqlitebrowser/">sqlitebrowser</a> · <a
+href="./symmathesy/">symmathesy</a> · <a href="./techne/">techne</a> ·
+<a href="./twitter-rpg-strategy-guide/">twitter rpg strategy
+guide.txt</a> · <a href="./visakanv/">visa</a> · <a
+href="./visakanvs-50-yr-plan-for-global-nerd-network-wip/">visakanv’s
+50yr “plan” for global nerd network (wip)</a></p>
+<h2 id="deprecated">Deprecated</h2>
+<div style="font-size: 0.75em;">
+
+<p><a href="./reading-it-later/">A “read it later” strategy that
+works</a> — <a href="./bitemporal-worldview/">A bitemporal worldview</a>
+— <a href="./bink/">Bink: Bookmarks are just data</a> — <a
+href="./makefile-edn/">Library: makefile-edn</a> — <a
+href="./shabakka/">Shabakka</a> — <a
+href="./play.teod.eu-retrospective/">play.teod.eu: Rolling retrospective
+(deprecated)</a></p>
+</div>
+
+<h2
+id="efforts-at-writing-things-down-together-commonly-fail-because">Efforts
+at “writing things down together” commonly fail because:</h2>
+<ol>
+<li>We put things prematurely into large hierarchies that collapse</li>
+<li>The inability to critique the hierarchy itself — and iterate on the
+hierarchy</li>
+<li>The inability to have separate hierarchies</li>
+<li>More abstractly — we need a <em>fractal</em> structure, not a
+hierarchical one.</li>
+<li>Unclear content authority — whose content is this? Who is
+responsible?</li>
+<li>Mixing good stuff and bad stuff makes the good stuff hard to
+find</li>
+<li>It’s hard to find any good stuff whatsoever</li>
+<li>It’s hard to find anything that’s not on the front page</li>
+<li>It’s impossible to build other views than the default</li>
+<li>It’s impossible to embed things that should not be built at all</li>
+</ol>
+<p>I include this list as a personal reminder.</p>
+<h2 id="what-is-this">What is this?</h2>
+<p>Good question! What this <em>is</em> is perhaps less useful than what
+this is <em>for</em>.</p>
+<h2 id="then-what-is-this-for">Then, what is this <em>for</em>?</h2>
+<p>It’s for playing with ideas. Good ones, but mostly bad ones. Toss
+them around. Light them on fire. Then watch the smoke rise!</p>
+<p>I talked about how I use this page on a meetup. The recording is
+available:</p>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/JSMcK5strRo?start=616" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p>Canonical URL for this page is <a
+href="https://play.teod.eu">play.teod.eu</a>. Local development URL for
+this page is <a href="http://localhost:9945/">localhost:9945</a>.</p>
+<div class="line-block"><br />
+<br />
+<br />
+<br />
+</div>
+</body>
+</html>

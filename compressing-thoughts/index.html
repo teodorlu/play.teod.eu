@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Compressing Thoughts</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+   const hostCanonical = "play.teod.eu";
+   const hostAlias1 = "playground.teod.eu";
+   const hostLocal1 = "localhost:9945";
+   if (
+       window.location.host === hostAlias1
+       // || window.location.host === hostLocal1
+   ) {
+       // redirect playground.teod.eu to play.teod.eu
+       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+       const pathname = window.location.pathname || "";
+       window.location.replace("https://" + hostCanonical + pathname);
+   }
+  </script>
+  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
+  <!-- shared HTML embed for scittle goodies -->
+
+  <!-- Scittle -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+
+  <!-- React -->
+  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+  <!-- Reagent and HTTP requests for Clojurescript -->
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
+
+  <!-- Random page functionality -->
+  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Compressing Thoughts</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#context-just-read-say-what-you-mean-by-david-schmudde-loving-it"
+id="toc-context-just-read-say-what-you-mean-by-david-schmudde-loving-it">Context:
+just read Say What You Mean by David Schmudde, loving it</a></li>
+<li><a href="#application-use-writing-to-compress-your-thoughts."
+id="toc-application-use-writing-to-compress-your-thoughts.">Application:
+use writing to compress your thoughts.</a></li>
+<li><a href="#writing-for-myself-or-writing-to-others."
+id="toc-writing-for-myself-or-writing-to-others.">Writing for myself, or
+writing to others.</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<p>DRAFT</p>
+<h2
+id="context-just-read-say-what-you-mean-by-david-schmudde-loving-it">Context:
+just read <a href="../schmudde-say-what-you-mean/">Say What You Mean</a>
+by <a href="../david-schmudde/">David Schmudde</a>, loving it</h2>
+<p>Today, I’d like to discuss the act of compressing your own
+thoughts.</p>
+<ol>
+<li>Mental work is creation &amp; exploration interwoven with
+compression</li>
+<li>When we explore, we increase optionality; we increase the bounds of
+our map</li>
+<li>When we compress, we reduce the language needed to cover the map
+<ol>
+<li>From a non-orthogonal basis towards concise language</li>
+</ol></li>
+<li>The compressed, orthogonal basis is <em>declarative</em> in the
+words of David Schmudde.</li>
+</ol>
+<h2 id="application-use-writing-to-compress-your-thoughts.">Application:
+use writing to compress your thoughts.</h2>
+<p>I like to write on the internet. Writing on the internet lets me
+thing. When writing, I roam in thoughtspace. Yet, the act of writing
+<em>while roaming in thoughtspace</em> lets me compress, not just
+explore.</p>
+<p>I’ve come away surprised (perhaps even shocked) when people express
+disgust with writing things down considering the act of writing as a
+“dead”, “boring” activity.</p>
+<p>For me, it’s not.</p>
+<p>I experience it as living, creative. And the writing for me, has this
+special role of compression. If I did not write it down, I would not
+remember it as crisply. The writing makes my thoughts
+<em>stick</em>.</p>
+<p>It’s also relaxing. By means of writing, I can <em>deliver</em> a
+train of thoughts. That liberates me from having to remember it. I can
+move on to other things.</p>
+<h2 id="writing-for-myself-or-writing-to-others.">Writing for myself, or
+writing to others.</h2>
+<p>I use writing as a tool to think.</p>
+<p>I very rarely, if never, write when I <em>do not</em> need to use
+writing as a means to think. I generally strive avoid activityes that I
+find to be soul-killing. To the reader, I recommend <em>avoiding killing
+your soul</em>.</p>
+<p>Though when we encounter creative resistance, how do we know whether
+what we are seeing is a soul-killing activity that we should not do, or
+merely lazyness on our part? Is this activity a soul-killing activity I
+should strive to avoid, or am I childishly, lazily rejecting having to
+do my chores?</p>
+<p>Let’s talk about it differently. There are <em>steps</em> to writing
+for compression.</p>
+<ol>
+<li>First, there’s a problem you’re working on. Make sure you define
+that problem <em>clearly</em>.</li>
+<li>Then, <em>compress</em> that problem statement. Can you express it
+succintly?</li>
+</ol>
+<p>And if (you should) try discussing things to other before the ideas
+are properly compressed, make that clear to the person you’re talking
+to. “I to discuss the <em>idea</em> right now, not its current
+representation. I’m aware that it’s a bit … raw. Can you please bear
+with me, then we can see where it leads?”</p>
+<p>So, if “writing is boring”, I suggest considering whether you’re
+writing to compress, or whether you’re writing to communicate.</p>
+<h2 id="references">References</h2>
+<p><a href="../rich-hickey/">Rich Hickey</a>’s <a
+href="../design-in-practice/">Design in Practice</a> discusses the
+important of a <em>succint</em> problem definition in detail. The act of
+working towards a <em>more succint</em> definition is an act of
+compression.</p>
+<p>In <a href="../stop-writing-dead-programs/">Stop Writing Dead
+Programs</a>, <a href="../jack-rusher/">Jack Rusher</a>’s style of
+communication caused me top reconsider how I present. Previously, I’d
+learned that in order to get my points across, I’d needed to slow down
+and explain more, explain in a coherent matter. Rusher talks
+<em>fast</em>, with little to no “uhm” and “where was I”. I believe he
+has done his preparations well, leading to a <em>well compressed</em>
+understanding of the points he is trying to get across. In other words,
+<em>compressing your own understanding</em> is different from
+<em>communicating well what you understand</em>. And the to are (not
+<em>actually</em>) in conflict, they are mutually helpful to each other.
+If you first understand what you are talking about well, you can more
+easily take the time <em>you need</em> when the time to explain it
+slowly comes. But you also learn a thing padagogy alone will not
+provide: you learn to make actual progress on the theory. <em>Stop
+Writing Dead Programs</em> is one such example, it covers a topic in
+breadth and depth from what you can expect from a one hour
+presentation.</p>
+<p>Lessons:</p>
+<ul>
+<li>Consider compressing <em>first</em>, then sharing
+<em>later</em></li>
+<li>Think of your performance <em>as a performance</em>. You wouldn’t
+want Robert Plant to stop and say “ummm, where was I” in the middle of
+<em>Stairway to Heaven</em>. Strive to be great!</li>
+</ul>
+</body>
+</html>

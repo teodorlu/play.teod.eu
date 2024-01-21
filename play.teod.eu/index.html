@@ -61,7 +61,7 @@
       max-width: 100%;
     }
     svg {
-      height; auto;
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -168,7 +168,7 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -265,9 +265,6 @@
 
   <!-- Random page functionality -->
   <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
@@ -364,6 +361,14 @@ editing UI</a></li>
 <li><a href="#jacobians-site-has-nice-css"
 id="toc-jacobians-site-has-nice-css">Jacobian’s site has nice
 CSS</a></li>
+</ul></li>
+<li><a href="#section-7" id="toc-section-7">2024-01-21</a>
+<ul>
+<li><a href="#problem-not-validating-slugs"
+id="toc-problem-not-validating-slugs">Problem: not validating
+slugs</a></li>
+<li><a href="#build-is-broken" id="toc-build-is-broken">🐛 build is
+broken</a></li>
 </ul></li>
 <li><a href="#trailing-whitespace" id="toc-trailing-whitespace">trailing
 whitespace</a></li>
@@ -967,6 +972,152 @@ href="../mark-mcgranaghan/">Mark McGranaghan</a>.</p>
 <p><a
 href="https://jacobian.org/2023/mar/31/incompetent-but-nice-follow-ups/">https://jacobian.org/2023/mar/31/incompetent-but-nice-follow-ups/</a></p>
 <p>I especially like his quotation style. It’s light, just enough.</p>
+<h2 id="section-7">2024-01-21</h2>
+<h3 id="problem-not-validating-slugs">Problem: not validating slugs</h3>
+<p>Observation:</p>
+<ol>
+<li>I just created a mess for myself by creating a page with a slug with
+spaces in it.</li>
+<li>The result was an error state, I had to manually delete files</li>
+</ol>
+<p>Proposed solution 1:</p>
+<ol>
+<li>Create validation in the <em>page create</em> script that prevents
+this from ever happening!</li>
+</ol>
+<h3 id="build-is-broken">🐛 build is broken</h3>
+<p>I can’t build! Let’s fix it.</p>
+<h4 id="how-to-reproduce">how to reproduce</h4>
+<p>Version info:</p>
+<pre><code>$ git rev-parse HEAD
+0c27fa27b1b824670e6c994e6aee972c87c54dd7
+$ pandoc --version
+pandoc 3.1.11.1
+Features: +server +lua
+Scripting engine: Lua 5.4
+User data directory: /Users/teodorlu/.local/share/pandoc
+Copyright (C) 2006-2023 John MacFarlane. Web: https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
+$ bb --version
+babashka v1.3.188
+</code></pre>
+<pre><code>$ make
+pandoc -s --shift-heading-level-by=1 --from=org+smart -i compressing-thoughts/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o compressing-thoughts/index.html --standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html
+JSON parse error: Error in $: not enough input
+make: *** [compressing-thoughts/index.html] Error 64
+</code></pre>
+<h4 id="hypothesis-.play.clj-filter-resolve-links-is-broken">Hypothesis:
+<code class="verbatim">./play.clj filter resolve-links</code> is
+broken</h4>
+<p>Is the hypothesis correct?</p>
+<pre><code>$ echo &#39;# hei duuu&#39; | pandoc --from markdown --to json
+{&quot;pandoc-api-version&quot;:[1,23,1],&quot;meta&quot;:{},&quot;blocks&quot;:[{&quot;t&quot;:&quot;Header&quot;,&quot;c&quot;:[1,[&quot;hei-duuu&quot;,[],[]],[{&quot;t&quot;:&quot;Str&quot;,&quot;c&quot;:&quot;hei&quot;},{&quot;t&quot;:&quot;Space&quot;},{&quot;t&quot;:&quot;Str&quot;,&quot;c&quot;:&quot;duuu&quot;}]]}]}
+$ echo &#39;# hei duuu&#39; | pandoc --from markdown --to json | ./play.clj filter resolve-links
+</code></pre>
+<p>No output from <code
+class="verbatim">./play.clj filter resolve-links</code>. That’s a
+problem.</p>
+<h4 id="what-goes-wrong-when-we-run-filter-resolve-links">What goes
+wrong when we run <code
+class="verbatim">filter resolve-links</code>?</h4>
+<p>??</p>
+<ol>
+<li><p>does anyting run?</p>
+<p>Let’s see what happens.</p>
+<pre><code>$ git diff src
+diff --git a/src/teod/play/cli.clj b/src/teod/play/cli.clj
+index 6da93c6f..f203b38c 100644
+--- a/src/teod/play/cli.clj
++++ b/src/teod/play/cli.clj
+@@ -395,7 +395,12 @@ Allowed options:
+         (spit &quot;index/big.json&quot; (json/generate-string @big-index {:pretty true}))
+         ))))
+
++(defn verbose? []
++  (not (nil? (System/getenv &quot;EU_TEOD_PLAY_VERBOSE&quot;))))
++
+ (defn filter [{:as cmd-opts}]
++  (when (verbose?) (prn &quot;it runs&quot;))
++
+   ;; only supported filter for now is resolve-links
+   ;;
+   ;; Test with:
+</code></pre>
+<p>then</p>
+<pre><code>$ export EU_TEOD_PLAY_VERBOSE=1
+$ echo &#39;# hei duuu&#39; | pandoc --from markdown --to json | ./play.clj filter resolve-links
+&quot;it runs&quot;
+</code></pre>
+<p>something runs.</p></li>
+<li><p>hypothesis: we branch <em>away</em> from printing (code bug)</p>
+<pre><code>$ git diff src
+diff --git a/src/teod/play/cli.clj b/src/teod/play/cli.clj
+index f203b38c..0a4424e9 100644
+--- a/src/teod/play/cli.clj
++++ b/src/teod/play/cli.clj
+@@ -417,6 +417,11 @@ Usage:
+
+   (when (contains? (set (:rest-cmds cmd-opts))
+                    &quot;resolve-links&quot;)
++    (when (verbose?)
++      (prn
++       &#39;(:rest-cmds cmd-opts)
++       &#39;contains?
++       &quot;resolve-links&quot;))
+     (let [pandoc-json (json/parse-string (slurp *in*))
+           by-uuid (fn [uuid]
+                     (let [path (str &quot;index/by-uuid/&quot; uuid &quot;.edn&quot;)]
+</code></pre>
+<p>then</p>
+<pre><code>$ echo &#39;# hei duuu&#39; | pandoc --from markdown --to json | ./play.clj filter resolve-links
+&quot;it runs&quot;
+</code></pre>
+<p>!!! We we have our problem.</p></li>
+</ol>
+<h4 id="rest-cmds-is-deprecated-and-will-be-removed"><code
+class="verbatim">:rest-cmds</code> is deprecated and will be
+removed</h4>
+<p>From <a
+href="https://github.com/babashka/cli/blob/8ec3e9b8e60b1d37f2377b86c5c448f3938a0b7d/src/babashka/cli.cljc#L685">https://github.com/babashka/cli/blob/8ec3e9b8e60b1d37f2377b86c5c448f3938a0b7d/src/babashka/cli.cljc#L685</a></p>
+<pre class="example"><code>
+</code></pre>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> dispatch</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Subcommand dispatcher.</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="st">  Dispatches on longest matching command entry in `table` by matching</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="st">  subcommands to the `:cmds` vector and invoking the correspondig `:fn`.</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="st">  Table is in the form:</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="st">  ```clojure</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="st">  [{:cmds [</span><span class="sc">\&quot;</span><span class="st">sub_1</span><span class="sc">\&quot;</span><span class="st"> .. </span><span class="sc">\&quot;</span><span class="st">sub_n</span><span class="sc">\&quot;</span><span class="st">] :fn f :cmds-opts [:lib]}</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="st">   ...</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="st">   {:cmds [] :fn f}]</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="st">  ```</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="st">  When a match is found, `:fn` called with the return value of</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="st">  `parse-args` applied to `args` enhanced with:</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a><span class="st">  * `:dispatch` - the matching commands</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="st">  * `:args` - concatenation of unparsed commands and args</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="st">  * `:rest-cmds`: DEPRECATED, this will be removed in a future version</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a><span class="st">  Use an empty `:cmds` vector to always match or to provide global options.</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a><span class="st">  Provide an `:error-fn` to deal with non-matches.</span></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a><span class="st">  Each entry in the table may have additional `parse-args` options.</span></span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a><span class="st">  For more information and examples, see [README.md](README.md#subcommands).&quot;</span></span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>  ([table args]</span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>   (dispatch table args {}))</span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>  ([table args opts]</span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>   (<span class="kw">let</span> [tree (<span class="kw">-&gt;</span> table table-&gt;tree)]</span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>     (dispatch-tree tree args opts))))</span></code></pre></div>
+<h4 id="ill-use-args-instead.">I’ll use <code
+class="verbatim">:args</code> instead.</h4>
 <h2 id="trailing-whitespace">trailing whitespace</h2>
 <div class="line-block"><br />
 <br />

@@ -395,7 +395,7 @@ Allowed options:
         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
         ))))
 
-(defn filter-pandoc [{:as cmd-opts}]
+(defn filter [{:as cmd-opts}]
   ;; only supported filter for now is resolve-links
   ;;
   ;; Test with:
@@ -436,7 +436,7 @@ Usage:
 (def dispatch-table
   [
    {:cmds ["create-page"] :fn create-page :cmds-opts [:slug]}
-   {:cmds ["filter"] :fn filter-pandoc :cmds-opts [:resolve-links]}
+   {:cmds ["filter"] :fn filter :cmds-opts [:resolve-links]}
    {:cmds ["lol"] :fn lol}
    {:cmds ["makefile"] :fn makefile}
    {:cmds ["random-page"] :fn random-page}

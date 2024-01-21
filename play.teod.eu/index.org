@@ -1256,7 +1256,43 @@ Observation:
 Proposed solution 1:
 
 1. Create validation in the /page create/ script that prevents this from ever happening!
+** 🐛 build is broken
+I can't build!
+Let's fix it.
+*** how to reproduce
+Version info:
 
+#+begin_src
+$ git rev-parse HEAD
+0c27fa27b1b824670e6c994e6aee972c87c54dd7
+$ pandoc --version
+pandoc 3.1.11.1
+Features: +server +lua
+Scripting engine: Lua 5.4
+User data directory: /Users/teodorlu/.local/share/pandoc
+Copyright (C) 2006-2023 John MacFarlane. Web: https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
+$ bb --version
+babashka v1.3.188
+#+end_src
+
+#+begin_src
+$ make
+pandoc -s --shift-heading-level-by=1 --from=org+smart -i compressing-thoughts/index.org -t json | ./play.clj filter resolve-links | pandoc -f json -o compressing-thoughts/index.html --standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html
+JSON parse error: Error in $: not enough input
+make: *** [compressing-thoughts/index.html] Error 64
+#+end_src
+*** Hypothesis: =./play.clj filter resolve-links= is broken
+Is the hypothesis correct?
+
+#+begin_src
+$ echo '# hei duuu' | pandoc --from markdown --to json
+{"pandoc-api-version":[1,23,1],"meta":{},"blocks":[{"t":"Header","c":[1,["hei-duuu",[],[]],[{"t":"Str","c":"hei"},{"t":"Space"},{"t":"Str","c":"duuu"}]]}]}
+$ echo '# hei duuu' | pandoc --from markdown --to json | ./play.clj filter resolve-links
+#+end_src
+
+No output from =./play.clj filter resolve-links=. That's a problem.
 
 * trailing whitespace
 #+BEGIN_VERSE

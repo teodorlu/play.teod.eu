@@ -1246,6 +1246,18 @@ inspiration: https://markmcgranaghan.com/ and https://gobyexample.com/ by [[id:0
 https://jacobian.org/2023/mar/31/incompetent-but-nice-follow-ups/
 
 I especially like his quotation style. It's light, just enough.
+* 2024-01-21
+** Problem: not validating slugs
+Observation:
+
+1. I just created a mess for myself by creating a page with a slug with spaces in it.
+2. The result was an error state, I had to manually delete files
+
+Proposed solution 1:
+
+1. Create validation in the /page create/ script that prevents this from ever happening!
+
+
 * trailing whitespace
 #+BEGIN_VERSE
 

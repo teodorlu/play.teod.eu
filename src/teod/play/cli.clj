@@ -417,6 +417,11 @@ Usage:
 
   (when (contains? (set (:rest-cmds cmd-opts))
                    "resolve-links")
+    (when (verbose?)
+      (prn
+       '(:rest-cmds cmd-opts)
+       'contains?
+       "resolve-links"))
     (let [pandoc-json (json/parse-string (slurp *in*))
           by-uuid (fn [uuid]
                     (let [path (str "index/by-uuid/" uuid ".edn")]

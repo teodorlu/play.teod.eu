@@ -1329,6 +1329,35 @@ $ echo '# hei duuu' | pandoc --from markdown --to json | ./play.clj filter resol
 
 something runs.
 **** hypothesis: we branch /away/ from printing (code bug)
+#+begin_src
+$ git diff src
+diff --git a/src/teod/play/cli.clj b/src/teod/play/cli.clj
+index f203b38c..0a4424e9 100644
+--- a/src/teod/play/cli.clj
++++ b/src/teod/play/cli.clj
+@@ -417,6 +417,11 @@ Usage:
+
+   (when (contains? (set (:rest-cmds cmd-opts))
+                    "resolve-links")
++    (when (verbose?)
++      (prn
++       '(:rest-cmds cmd-opts)
++       'contains?
++       "resolve-links"))
+     (let [pandoc-json (json/parse-string (slurp *in*))
+           by-uuid (fn [uuid]
+                     (let [path (str "index/by-uuid/" uuid ".edn")]
+#+end_src
+
+then
+
+#+begin_src
+$ echo '# hei duuu' | pandoc --from markdown --to json | ./play.clj filter resolve-links
+"it runs"
+#+end_src
+
+!!!
+We we have our problem.
 
 * trailing whitespace
 #+BEGIN_VERSE

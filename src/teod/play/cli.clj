@@ -401,7 +401,14 @@ Allowed options:
 (defn dbg [& args]
   (when (verbose?)
     (binding [*out* *err*]
-      (apply prn args))))
+      (cond
+        (zero? (count args))
+        nil ;; no-op
+        (= 1 (count args))
+        (pprint (first args)) ;; raw pprint on arg
+        :else
+        (pprint args) ;; pprint the seq
+        ))))
 
 (defn filter [{:as cmd-opts}]
   (dbg "it runs")
@@ -419,7 +426,8 @@ Usage:
   ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
       "))
     (System/exit 0))
-
+  (dbg '(:rest-cmds cmd-opts) (:rest-cmds cmd-opts))
+  (dbg 'cmd-opts cmd-opts)
   (when (contains? (set (:rest-cmds cmd-opts))
                    "resolve-links")
     (dbg '(:rest-cmds cmd-opts) 'contains? "resolve-links")

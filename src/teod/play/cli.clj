@@ -395,15 +395,16 @@ Allowed options:
         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
         ))))
 
-(defn dbg [& args]
-  (binding [*out* *err*]
-    (apply prn args)))
-
 (defn verbose? []
   (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE"))))
 
+(defn dbg [& args]
+  (when (verbose?)
+    (binding [*out* *err*]
+      (apply prn args))))
+
 (defn filter [{:as cmd-opts}]
-  (when (verbose?) (dbg "it runs"))
+  (dbg "it runs")
 
   ;; only supported filter for now is resolve-links
   ;;
@@ -421,11 +422,7 @@ Usage:
 
   (when (contains? (set (:rest-cmds cmd-opts))
                    "resolve-links")
-    (when (verbose?)
-      (dbg
-       '(:rest-cmds cmd-opts)
-       'contains?
-       "resolve-links"))
+    (dbg '(:rest-cmds cmd-opts) 'contains? "resolve-links")
     (let [pandoc-json (json/parse-string (slurp *in*))
           by-uuid (fn [uuid]
                     (let [path (str "index/by-uuid/" uuid ".edn")]

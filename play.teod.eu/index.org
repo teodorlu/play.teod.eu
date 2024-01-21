@@ -1358,6 +1358,48 @@ $ echo '# hei duuu' | pandoc --from markdown --to json | ./play.clj filter resol
 
 !!!
 We we have our problem.
+*** =:rest-cmds= is deprecated and will be removed
+From
+https://github.com/babashka/cli/blob/8ec3e9b8e60b1d37f2377b86c5c448f3938a0b7d/src/babashka/cli.cljc#L685
+:
+
+#+begin_src clojure
+(defn dispatch
+  "Subcommand dispatcher.
+
+  Dispatches on longest matching command entry in `table` by matching
+  subcommands to the `:cmds` vector and invoking the correspondig `:fn`.
+
+  Table is in the form:
+
+  ```clojure
+  [{:cmds [\"sub_1\" .. \"sub_n\"] :fn f :cmds-opts [:lib]}
+   ...
+   {:cmds [] :fn f}]
+  ```
+
+  When a match is found, `:fn` called with the return value of
+  `parse-args` applied to `args` enhanced with:
+
+  * `:dispatch` - the matching commands
+  * `:args` - concatenation of unparsed commands and args
+  * `:rest-cmds`: DEPRECATED, this will be removed in a future version
+
+  Use an empty `:cmds` vector to always match or to provide global options.
+
+  Provide an `:error-fn` to deal with non-matches.
+
+  Each entry in the table may have additional `parse-args` options.
+
+  For more information and examples, see [README.md](README.md#subcommands)."
+  ([table args]
+   (dispatch table args {}))
+  ([table args opts]
+   (let [tree (-> table table->tree)]
+     (dispatch-tree tree args opts))))
+#+end_src
+*** I'll use =:args= instead.
+
 
 * trailing whitespace
 #+BEGIN_VERSE

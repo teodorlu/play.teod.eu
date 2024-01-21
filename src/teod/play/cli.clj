@@ -398,7 +398,13 @@ Allowed options:
 (defn verbose? []
   (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE"))))
 
-(defn dbg [& args]
+#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
+(defn dbg
+  "Debug a value only when run with verbose
+
+  I typically include calls to dbg only when I need them. Usage requires setting
+  an environment variable to opts into verbose mode."
+  [& args]
   (when (verbose?)
     (binding [*out* *err*]
       (cond
@@ -410,15 +416,15 @@ Allowed options:
         (pprint args) ;; pprint the seq
         ))))
 
-(defn filter [{:as cmd-opts}]
-  (dbg "it runs")
+(defn filter
+  "Apply play.teod.eu filters.
 
-  ;; only supported filter for now is resolve-links
-  ;;
-  ;; Test with:
-  ;;
-  ;;   ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
+  For now, the only supported filter is resolve-links.
 
+  Example usage:
+
+    ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json"
+  [{:as cmd-opts}]
   (when (:h (:opts cmd-opts))
     (println (str/trim "
 Usage:
@@ -426,11 +432,8 @@ Usage:
   ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
       "))
     (System/exit 0))
-  (dbg '(:rest-cmds cmd-opts) (:rest-cmds cmd-opts))
-  (dbg 'cmd-opts cmd-opts)
-  (when (contains? (set (:rest-cmds cmd-opts))
+  (when (contains? (set (:args cmd-opts))
                    "resolve-links")
-    (dbg '(:rest-cmds cmd-opts) 'contains? "resolve-links")
     (let [pandoc-json (json/parse-string (slurp *in*))
           by-uuid (fn [uuid]
                     (let [path (str "index/by-uuid/" uuid ".edn")]

@@ -104,6 +104,7 @@ Here's a place to start:
     - Hvordan kan jeg hjelpe en produktleder eller prosjektleder?
     - Produktledelse og teknologiledelse --- hvem skal jeg spørre?
     - Hvordan jobber jeg med en designer?
+      - Hvordan kan jeg hjelpe designeren gjøre en god jobb?
       - Hvordan shipper jeg det designeren har tegnet opp?
       - Interaksjonsdesign vs grafisk design.
   - Parprogrammering

@@ -69,7 +69,7 @@ So, if "writing is boring", I suggest considering whether you're writing to comp
 [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]] discusses the important of a /succint/ problem definition in detail.
 The act of working towards a /more succint/ definition is an act of compression.
 
-In [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]], [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]'s style of communication caused me top reconsider how I present.
+In [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]], [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]'s style of communication caused me to reconsider what a good lecture is.
 Previously, I'd learned that in order to get my points across, I'd needed to slow down and explain more, explain in a coherent matter.
 Rusher talks /fast/, with little to no "uhm" and "where was I".
 I believe he has done his preparations well, leading to a /well compressed/ understanding of the points he is trying to get across.

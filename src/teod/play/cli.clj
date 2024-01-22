@@ -395,9 +395,6 @@ Allowed options:
         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
         ))))
 
-(defn verbose? []
-  (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE"))))
-
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn dbg
   "Debug a value only when run with verbose
@@ -405,7 +402,7 @@ Allowed options:
   I typically include calls to dbg only when I need them. Usage requires setting
   an environment variable to opts into verbose mode."
   [& args]
-  (when (verbose?)
+  (when (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE")))
     (binding [*out* *err*]
       (cond
         (zero? (count args))

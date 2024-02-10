@@ -1851,3 +1851,16 @@ Perhaps I should challenge myself on creating /new kinds of things/.
 In programming, names should make it clear whether you're talking about a category of things or a specific entity.
 I commonly see programmers work with entities, but name the category.
 The name is /too wide/, if we use [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]]'s terminology from [[id:084bf28d-3509-412d-ada2-d70c08c658de][Elements of Clojure]].
+* 2024-02-10
+** State pling plong
+I'm /still/ not used to playing around with stateful systems.
+I avoid state like the plague!
+Should I change that?
+Perhaps?
+
+If yes, how?
+Write an interactive chat application?
+Write some logging thing?
+A way to visualize those logs?
+
+Hmmm.

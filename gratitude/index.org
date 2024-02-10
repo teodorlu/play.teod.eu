@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID: 564234ad-f9fd-4de6-9c74-82b4e0d4aafe
+:END:
+#+TITLE: Gratitude
+
+[[file:..][..]]
+
+- Eivind
+  - What teamwork is.
+- Jørgen Veum-Wahlberg
+  - What technology leadership is.
+  - How /giving space and optinality/ can enable good outcomes.
+- Kristian Collin Berge
+  - What products are.
+  - Why one needs to be /specific/ when working with products.
+- Per Kristian Ingebrigtsen
+  - How to do backend development in practice.
+  - How to teach and learn.
+  - Why one needs to be honest and humble when working with technology.
+- Rune Larsen
+  - The importance of trust
+- [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]
+  - How to do effective software development in practice.
+- Sean Percival
+  - How to reach people.
+- Tore Heggelund
+- [[id:16f444c6-7311-4b95-9288-f878dd052ae4][Sindre]]
+  - What good teamwork looks like.
+- [[id:8833ff2f-ed66-4db2-ac14-6f8eff9f70d4][Oddmund]]
+  - How curiosity impacts learning in programming teams
+- [[id:e511ab7c-858e-44fc-b9b6-738e7286f221][Steinar Barstad]]
+  - How trust and clarity intertwines.
+
+DRAFT

@@ -1068,6 +1068,14 @@
   "lang" : "en",
   "uuid" : "5603700a-9f22-44e2-9e03-f83776e2bfe3"
 }, {
+  "slug" : "gratitude",
+  "author-url" : "https://teod.eu",
+  "created" : "2024-02-10",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "title" : "Gratitude",
+  "uuid" : "564234ad-f9fd-4de6-9c74-82b4e0d4aafe"
+}, {
   "slug" : "adrian-tofting",
   "author-url" : "https://teod.eu",
   "created" : "2023-06-06",

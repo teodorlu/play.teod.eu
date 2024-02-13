@@ -8,7 +8,8 @@
    [teod.play.api :as api]
    [eu.teod.clerk-utils :as hammertime]
    [nextjournal.clerk :as clerk]
-   [nextjournal.clerk.viewer :as v]))
+   [nextjournal.clerk.viewer :as v]
+   [babashka.fs :as fs]))
 
 ;; Can I query for the relations from code?
 
@@ -50,6 +51,16 @@
       (filter :builder)
       (sort-by :slug)
       (map assoc-url)))
+
+;; For the pages where `:builder` is set, what is the folder content?
+
+^{::clerk/width :full}
+(big-table
+ (->> (cli/files->relations {})
+      vals
+      (filter :builder)
+      (sort-by :slug)
+      (map #(assoc % :dir (sort (map str (fs/list-dir (:slug %))))))))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

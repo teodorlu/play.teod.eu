@@ -22,16 +22,6 @@
 
 ;; There we go!
 
-^{::clerk/budget nil ::clerk/auto-expand-results? true}
-(clerk/table (->> (cli/files->relations {})
-                  vals
-                  (sort-by :slug)))
-
-^{::clerk/budget nil ::clerk/auto-expand-results? true}
-(->> (cli/files->relations {})
-     vals
-     (sort-by :slug))
-
 (v/with-viewer v/table
   (->> (cli/files->relations {})
        vals

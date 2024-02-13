@@ -1,6 +1,7 @@
 {:paths ["src"]
  :deps {
-        ;; Babashka-like environment
+        ;; Track Babashka deps EXACTLY
+        ;; Generate with `bb print-deps`
         babashka/babashka.core
         {:git/url "https://github.com/babashka/babashka.core",
          :git/sha "52a6037bd4b632bffffb04394fb4efd0cdab6b1e"},

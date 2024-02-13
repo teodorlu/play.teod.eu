@@ -1,5 +1,7 @@
 {:paths ["src"]
- :deps {babashka/babashka.core
+ :deps {
+        ;; Babashka-like environment
+        babashka/babashka.core
         {:git/url "https://github.com/babashka/babashka.core",
          :git/sha "52a6037bd4b632bffffb04394fb4efd0cdab6b1e"},
         babashka/babashka.curl {:mvn/version "0.1.2"},
@@ -12,8 +14,6 @@
         hiccup/hiccup {:mvn/version "2.0.0-alpha2"},
         http-kit/http-kit {:mvn/version "2.7.0-RC1"},
         insn/insn {:mvn/version "0.5.2"},
-        io.github.nextjournal/clerk {:mvn/version "0.15.957"},
-        io.github.teodorlu/play {:local/root "."},
         nrepl/bencode {:mvn/version "1.1.0"},
         org.babashka/babashka.impl.java {:mvn/version "0.1.8"},
         org.babashka/cli {:mvn/version "0.7.51"},
@@ -30,8 +30,12 @@
         org.clojure/tools.cli {:mvn/version "1.0.214"},
         org.clojure/tools.logging {:mvn/version "1.1.0"},
         org.flatland/ordered {:mvn/version "1.5.9"},
-        rewrite-clj/rewrite-clj {:mvn/version "1.1.46"}
-        selmer/selmer {:mvn/version "1.12.50"}
+        rewrite-clj/rewrite-clj {:mvn/version "1.1.46"},
+        selmer/selmer {:mvn/version "1.12.50"},
+
+        ;; Extra deps
+        io.github.nextjournal/clerk {:mvn/version "0.15.957"},
+        io.github.teodorlu/play {:local/root "."},
         }
  :aliases
  {:test

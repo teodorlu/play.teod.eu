@@ -287,15 +287,15 @@ Allowed options:
 
 (defmethod makefile-entry :pandoc-page
   [slug]
-  (let [org-file-name (fn [target] (str target "/index.org"))
-        html-file-name (fn [target] (str target "/index.html"))]
-    (str (html-file-name slug) ": " (org-file-name slug)
+  (let [org-file-name-fn (fn [target] (str target "/index.org"))
+        html-file-name-fn (fn [target] (str target "/index.html"))]
+    (str (html-file-name-fn slug) ": " (org-file-name-fn slug)
          "\n\t"
-         (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" (org-file-name slug) "-t json"
+         (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" (org-file-name-fn slug) "-t json"
                 "|"
                 "./play.clj filter resolve-links"
                 "|"
-                "pandoc -f json -o" (html-file-name slug) "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
+                "pandoc -f json -o" (html-file-name-fn slug) "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
 
 (defn cmd-makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts

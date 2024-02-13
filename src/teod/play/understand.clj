@@ -6,10 +6,37 @@
   (:require
    [teod.play.cli :as cli]
    [teod.play.api :as api]
-   [eu.teod.clerk-utils :as hammertime]))
+   [eu.teod.clerk-utils :as hammertime]
+   [nextjournal.clerk :as clerk]
+   [nextjournal.clerk.viewer :as v]))
 
 ;; Can I query for the relations from code?
 
 (hammertime/doc cli/cmd-relations)
 
 ;; That did _not help_.
+
+(->> (cli/files->relations {})
+     vals
+     (sort-by :slug))
+
+;; There we go!
+
+^{::clerk/budget nil ::clerk/auto-expand-results? true}
+(clerk/table (->> (cli/files->relations {})
+                  vals
+                  (sort-by :slug)))
+
+^{::clerk/budget nil ::clerk/auto-expand-results? true}
+(->> (cli/files->relations {})
+     vals
+     (sort-by :slug))
+
+(v/with-viewer v/table
+  (->> (cli/files->relations {})
+       vals
+       (sort-by :slug)))
+
+
+^{:nextjournal.clerk/visibility {:code :hide}}
+(clerk/html [:div {:style {:height "50vh"}}])

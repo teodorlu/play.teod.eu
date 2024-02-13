@@ -286,16 +286,16 @@ Allowed options:
   (str "# No build for rel: " (pr-str rel)))
 
 (defmethod makefile-entry :pandoc-page
-  [rel]
-  (let [org (fn [target] (str target "/index.org"))
-        html (fn [target] (str target "/index.html"))]
-    (str (html rel) ": " (org rel)
+  [slug]
+  (let [org-file-name (fn [target] (str target "/index.org"))
+        html-file-name (fn [target] (str target "/index.html"))]
+    (str (html-file-name slug) ": " (org-file-name slug)
          "\n\t"
-         (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" (org rel) "-t json"
+         (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" (org-file-name slug) "-t json"
                 "|"
                 "./play.clj filter resolve-links"
                 "|"
-                "pandoc -f json -o" (html rel) "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
+                "pandoc -f json -o" (html-file-name slug) "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
 
 (defn cmd-makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts

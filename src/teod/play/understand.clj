@@ -26,10 +26,18 @@
   (v/with-viewer (dissoc v/table-viewer :page-size)
     x))
 
+(defn assoc-url [relation]
+  (let [{:keys [slug]} relation]
+    (assoc relation
+           :link
+           (clerk/html [:a {:href (str "https://play.teod.eu/" slug)} slug]))))
+
+^{::clerk/width :full}
 (big-table
  (->> (cli/files->relations {})
       vals
-      (sort-by :slug)))
+      (sort-by :slug)
+      (map assoc-url)))
 
 
 ^{:nextjournal.clerk/visibility {:code :hide}}

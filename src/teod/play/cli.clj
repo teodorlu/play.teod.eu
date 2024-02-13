@@ -281,6 +281,10 @@ Allowed options:
 
 (defmulti makefile-entry builder)
 
+(defmethod makefile-entry :no-build
+  [rel]
+  (str "# No build for rel: " (pr-str rel)))
+
 (defmethod makefile-entry :pandoc-page
   [rel]
   (let [t rel

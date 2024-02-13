@@ -32,6 +32,8 @@
            :link
            (clerk/html [:a {:href (str "https://play.teod.eu/" slug)} slug]))))
 
+;; ## All the pages
+
 ^{::clerk/width :full}
 (big-table
  (->> (cli/files->relations {})
@@ -39,6 +41,15 @@
       (sort-by :slug)
       (map assoc-url)))
 
+;; ## Only pages where `:builder` is set
+
+^{::clerk/width :full}
+(big-table
+ (->> (cli/files->relations {})
+      vals
+      (filter :builder)
+      (sort-by :slug)
+      (map assoc-url)))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

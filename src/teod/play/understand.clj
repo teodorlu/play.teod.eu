@@ -22,10 +22,14 @@
 
 ;; There we go!
 
-(v/with-viewer v/table
-  (->> (cli/files->relations {})
-       vals
-       (sort-by :slug)))
+(defn big-table [x]
+  (v/with-viewer (dissoc v/table-viewer :page-size)
+    x))
+
+(big-table
+ (->> (cli/files->relations {})
+      vals
+      (sort-by :slug)))
 
 
 ^{:nextjournal.clerk/visibility {:code :hide}}

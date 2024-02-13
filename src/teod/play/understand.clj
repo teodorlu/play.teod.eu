@@ -62,5 +62,9 @@
       (sort-by :slug)
       (map #(assoc % :dir (sort (map str (fs/list-dir (:slug %))))))))
 
+;; yess!
+;;
+;; jeg kan tydeligvis sette `:builder :no-op`, men jeg har kun satt det for `scicloj-libraries`.
+
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

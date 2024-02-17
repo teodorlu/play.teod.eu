@@ -25,6 +25,11 @@ Jeg har andre forventninger til meg selv og til menneskene mine rundt meg.
 Å skrive ned erfaringene .. eksplisitt
 * Netflix-reglene for feedback
 * Verdier: Tillit, kvalitet og intensjon
+** Tillit
+** Kvalitet
+** Intensjon
+** Andre
+** Deg selv
 * Opsjoner og opsjonalitet
 * Release != Deploy != Review
 * Teori og praksis

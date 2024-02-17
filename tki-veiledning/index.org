@@ -35,3 +35,6 @@ Jeg har andre forventninger til meg selv og til menneskene mine rundt meg.
 * Teori og praksis
 * Interaktiv programmering
 * Hypotesetesting i produktutvikling
+* Hierarkier og navnerom
+* Navn, navnerom, operasjoner og typer i programvaredesign
+* Feedback: bredde og responstid

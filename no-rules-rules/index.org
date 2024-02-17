@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 6ca15d90-a55e-4f0d-b185-a163ec2e077c
+:END:
+#+TITLE: No Rules Rules
+
+[[file:..][..]]
+
+https://www.goodreads.com/en/book/show/49099937
+
+Book by [[id:85F235DE-A4CA-4054-AECE-EAEEC844A688][Reed Hastings]] and [[id:F84FC8DF-4EF2-4565-91B2-23376C732022][Erin Meyer]].

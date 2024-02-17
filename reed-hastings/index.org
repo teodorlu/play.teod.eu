@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 85F235DE-A4CA-4054-AECE-EAEEC844A688
+:END:
+#+TITLE: Reed Hastings
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Reed_Hastings
+
+Per 2024-02-17, CEO of Netlix.
+Author of [[id:6ca15d90-a55e-4f0d-b185-a163ec2e077c][No Rules Rules]].

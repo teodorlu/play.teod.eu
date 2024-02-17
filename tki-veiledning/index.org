@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID: 529da36c-168f-4698-866f-bba64a5c13c5
+:END:
+#+TITLE: Tillit, kvalitet og intensjon i praksis: en håndbok for produkt- og programvareutvikling
+
+[[file:..][..]]
+
+* Til programvareutviklere som jobber i produktteam
+Jobber du med programvareutvikling i et produktteam?
+Dette dokumentet er til deg.
+
+Lenge følte jeg at jeg ikke /ante/ hvordan man burde jobbe sammen når man lager produkter.
+Jeg startet med en teknisk utdannelse og en teknisk jobb.
+Jeg lærte meg hvordan /jeg/ kunne løse problemer /alene/.
+
+Etter hvert slo virkelighetsbildet mitt sprekker.
+
+- Jeg visste ikke hva jeg burde gjøre når målet ikke var sylskarpt.
+- Jeg tok ikke stilling til hvordan jeg kunne gjøre andre bedre.
+- Jeg observerte tilfeller der jeg trodde jeg visste nøyaktig hva som burde gjøres, og i ettertid innså at jeg hadde tatt fullstendig feil.
+
+Disse erfaringene har ført til at jeg gjør enkelte ting annerledes enn før.
+Jeg har andre forventninger til meg selv og til menneskene mine rundt meg.
+
+Å skrive ned erfaringene .. eksplisitt
+* Netflix-reglene for feedback
+* Verdier: Tillit, kvalitet og intensjon
+* Opsjoner og opsjonalitet
+* Release != Deploy != Review
+* Teori og praksis
+* Interaktiv programmering
+* Hypotesetesting i produktutvikling

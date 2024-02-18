@@ -6,6 +6,7 @@
 [[file:..][..]]
 
 * Til programvareutviklere som jobber i produktteam
+
 Jobber du med programvareutvikling i et produktteam?
 Dette dokumentet er til deg.
 
@@ -27,6 +28,19 @@ Det hjelper meg selv å få oversikt, og det hjelper meg med å kommunisere med 
 
 Jeg publiserer på Internett fordi jeg mener at kunnskap bør være fritt tilgjengelig på Internett.
 Du er hjertelig velkommen til å lese dette dokumentet og prøve ut ideene selv om vi ikke kjenner hverandre---men vær obs på at dette dokumentet handler om god praksis, og god praksis ofte må læres fra personer, ikke lærebøker.
+
+* Takk til Elisabeth.
+
+I januar og februar 2024 har jeg hatt gleden av å jobbe med [[id:71D39E8D-B345-4602-95E3-1F6DDDD986D4][Elisabeth Irgens]].
+Uten Elisabeth, hadde jeg ikke startet på denne teksten helga 17. og 18. februar.
+Hvorfor?
+
+Jeg har samlet opp meninger om hvordan programvareutvikling og produktutvikling bør gjøres.
+Elisabeth har ved svært mange anledninger stilt "hva mener du med X?"-spørsmål.
+
+Så tusen takk, Elisabeth!
+Jeg setter pris på å kunne jobbe med deg.
+
 
 * Om god, trygg og klar kommunikasjon
 

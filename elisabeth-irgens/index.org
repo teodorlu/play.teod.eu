@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 71D39E8D-B345-4602-95E3-1F6DDDD986D4
+:END:
+#+TITLE: Elisabeth Irgens
+
+[[file:..][..]]
+
+#+begin_quote
+Frontend punk 😈
+
+I attended a CSS course back in 2006, and have been writing code for a living ever since.
+#+end_quote
+
+https://elisabethirgens.com
+
+https://elisabethirgens.github.io/notes/
+
+https://github.com/elisabethirgens/

@@ -1878,7 +1878,6 @@ When I tried starting a REPL like I normally do, it didn't work.
 
 - Have I read the project docs? :: this might be described in the README or somewhere I haven't read.
 - Have I read the Leiningen docs? :: this should be described in the leiningen docs too.
-*** Project docs for REPL and tests?
 *** Unrelated, what is igrishaev doing?
 /lots/ of changes.
 
@@ -1972,3 +1971,22 @@ specifically
 
 Yeeeeah, OK.
 Not "let's use jdbc and compare to pg2 to test our code", but "let's provide a nice comptibility layer for those using next.jdbc today."
+*** Project docs for REPL and tests?
+Let's see.
+
+- Found =docker-compose.yaml= with lots of different pg versions.
+- Toplevel =project.clj= contains =:managed-versions= and =:sub=
+  - =:managed-versions=: ??
+- =:java-source-paths=: hei.
+  - Kilde: https://github.com/teodorlu/pg2/blob/8c6ac8e451feaf0ed348fd546d0e413b5be267b4/pg-core/project.clj#L24
+  - Vi har noe java
+*** Kompilere subprosjekter før jeg gjør noe mer?
+Jeg har nå gjort cirka følgende fra toppen:
+
+#+begin_src
+(cd pg-core && lein clean && lein javac && lein install)
+(cd pg-honey && lein clean && lein javac && lein install)
+(cd pg-component && lein clean && lein javac && lein install)
+#+end_src
+
+... og jeg får nå /andre typer feil/ når jeg prøver å kjøre testene (feks med =(cd pg-core && lein test)=).

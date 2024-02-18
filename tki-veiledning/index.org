@@ -95,5 +95,48 @@ Tillit, kvalitet og intensjon i relasjonen til de som /skal bruke/ produktet.
    Hva /må de gjøre/ på en arbeidsdag?
    Hva starter de med, og hva slutter de med?
 * Hierarkier og navnerom
+
+** Hierarki eller navnerom til organisering av innsikt?
+
+1. Wikipedia organiserer innsikt etter /unikt navn/, ikke etter hierarki.
+   1. Men du /kan/ organisere i hierarki eller liste også.
+      Det gjøres via metadata, spørringer og egne sider for hierarki.
+2. Biblioteker har førsteklasses støtte for /bøker/, og legger så indekser oppå.
+   Du kan gjøre spørringer etter hvilke bøker en forfatter har skrevet, eller filtrere på emneknagger (tags).
+3. Internett organiserer kunnskap etter navnerom.
+   URL-er ser mistenkelig hierarkiske ut, men ikke la det lure deg!
+   På toppen har vi /domenenavn/, vårt globale system for å unngå kollisjoner i navnerom.
+   Ett av domenene på Internett er teod.eu, der finner du et underdomene som heter [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]].
+
+Hvis du starter med organisering etter navnerom, kan du innføre opt-inn-hierarkier i etterkant, akkurat som Wikipedia gjør det.
+Hvis du starter med organisering etter hierarki / taksonomi, blir du låst.
+Hva gjør du når du har kategorisert noe feil?
+Hva gjør du med referansene til det du har kategorisert feil?
+
+** Hierarki eller navnerom til organisering av kode?
+Før tenkte jeg hierarki / taksonomi for å splitte en kodebase i filer (klasser, ...).
+Nå tenker jeg navnerom.
+
+| hierarki/taksonomi | Kategorisering av et domeneproblem         |
+| navnerom           | Et sett med ord som er fine å bruke sammen |
+
+Det beste eksempelet jeg vet om på dette er hvordan standardbiblioteket til Clojure er organisert.
+Det aller meste er i [[https://clojuredocs.org/clojure.core][clojure.core]].
+Det er ikke gjort forsøk på å kategorisere alle tingene man trenger som Clojure-progravareutvikler.
+Det er i stedet gjort en innsats for å bygge opp et sett med navngitte byggeklosser som fungerer godt sammen.
+
+Et annet navnerom jeg liker godt og bærer preg av tanken "la oss lage /ett kraftig navnerom/" er [[https://docs.datomic.com/pro/clojure/index.html][datomic.api]].
+Ett navnerom med det du trenger for å jobbe med data.
+
+Navnerommet alene svarer ikke på hvor man bør starte /først/.
+(Da bør man lese en guide, ikke en API-referanse).
+Men dette er en kjapp start:
+
+1. Bruk =datomic.api/connect= for å koble til databasen
+2. Bruk =datomic.api/db= for å hente siste versjon av databasen
+3. Bruk =datomic.api/as-of= for å hente en tidligere versjon av databasen
+4. Bruk =datomic.api/q= for å gjøre en databasespørring
+5. Bruk =datomic.api/entity= for å hente ut én entitet fra en primærnøkkel.
+
 * Navn, navnerom, operasjoner og typer i programvaredesign
 * Feedback: bredde og responstid

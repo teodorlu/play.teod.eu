@@ -271,7 +271,15 @@ id="toc-repl-greven-utvikling">REPL-greven utvikling</a></li>
 id="toc-hypotesetesting-i-produktutvikling">Hypotesetesting i
 produktutvikling</a></li>
 <li><a href="#hierarkier-og-navnerom"
-id="toc-hierarkier-og-navnerom">Hierarkier og navnerom</a></li>
+id="toc-hierarkier-og-navnerom">Hierarkier og navnerom</a>
+<ul>
+<li><a href="#hierarki-eller-navnerom-til-organisering-av-innsikt"
+id="toc-hierarki-eller-navnerom-til-organisering-av-innsikt">Hierarki
+eller navnerom til organisering av innsikt?</a></li>
+<li><a href="#hierarki-eller-navnerom-til-organisering-av-kode"
+id="toc-hierarki-eller-navnerom-til-organisering-av-kode">Hierarki eller
+navnerom til organisering av kode?</a></li>
+</ul></li>
 <li><a href="#navn-navnerom-operasjoner-og-typer-i-programvaredesign"
 id="toc-navn-navnerom-operasjoner-og-typer-i-programvaredesign">Navn,
 navnerom, operasjoner og typer i programvaredesign</a></li>
@@ -402,6 +410,70 @@ for dem et godt stykke arbeid?</li>
 arbeidsdag? Hva starter de med, og hva slutter de med?</li>
 </ol>
 <h2 id="hierarkier-og-navnerom">Hierarkier og navnerom</h2>
+<h3 id="hierarki-eller-navnerom-til-organisering-av-innsikt">Hierarki
+eller navnerom til organisering av innsikt?</h3>
+<ol>
+<li>Wikipedia organiserer innsikt etter <em>unikt navn</em>, ikke etter
+hierarki.
+<ol>
+<li>Men du <em>kan</em> organisere i hierarki eller liste også. Det
+gjøres via metadata, spørringer og egne sider for hierarki.</li>
+</ol></li>
+<li>Biblioteker har førsteklasses støtte for <em>bøker</em>, og legger
+så indekser oppå. Du kan gjøre spørringer etter hvilke bøker en
+forfatter har skrevet, eller filtrere på emneknagger (tags).</li>
+<li>Internett organiserer kunnskap etter navnerom. URL-er ser
+mistenkelig hierarkiske ut, men ikke la det lure deg! På toppen har vi
+<em>domenenavn</em>, vårt globale system for å unngå kollisjoner i
+navnerom. Ett av domenene på Internett er teod.eu, der finner du et
+underdomene som heter <a href="../play.teod.eu/">play.teod.eu</a>.</li>
+</ol>
+<p>Hvis du starter med organisering etter navnerom, kan du innføre
+opt-inn-hierarkier i etterkant, akkurat som Wikipedia gjør det. Hvis du
+starter med organisering etter hierarki / taksonomi, blir du låst. Hva
+gjør du når du har kategorisert noe feil? Hva gjør du med referansene
+til det du har kategorisert feil?</p>
+<h3 id="hierarki-eller-navnerom-til-organisering-av-kode">Hierarki eller
+navnerom til organisering av kode?</h3>
+<p>Før tenkte jeg hierarki / taksonomi for å splitte en kodebase i filer
+(klasser, …). Nå tenker jeg navnerom.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>hierarki/taksonomi</td>
+<td>Kategorisering av et domeneproblem</td>
+</tr>
+<tr class="even">
+<td>navnerom</td>
+<td>Et sett med ord som er fine å bruke sammen</td>
+</tr>
+</tbody>
+</table>
+<p>Det beste eksempelet jeg vet om på dette er hvordan
+standardbiblioteket til Clojure er organisert. Det aller meste er i <a
+href="https://clojuredocs.org/clojure.core">clojure.core</a>. Det er
+ikke gjort forsøk på å kategorisere alle tingene man trenger som
+Clojure-progravareutvikler. Det er i stedet gjort en innsats for å bygge
+opp et sett med navngitte byggeklosser som fungerer godt sammen.</p>
+<p>Et annet navnerom jeg liker godt og bærer preg av tanken “la oss lage
+<em>ett kraftig navnerom</em>” er <a
+href="https://docs.datomic.com/pro/clojure/index.html">datomic.api</a>.
+Ett navnerom med det du trenger for å jobbe med data.</p>
+<p>Navnerommet alene svarer ikke på hvor man bør starte <em>først</em>.
+(Da bør man lese en guide, ikke en API-referanse). Men dette er en kjapp
+start:</p>
+<ol>
+<li>Bruk <code class="verbatim">datomic.api/connect</code> for å koble
+til databasen</li>
+<li>Bruk <code class="verbatim">datomic.api/db</code> for å hente siste
+versjon av databasen</li>
+<li>Bruk <code class="verbatim">datomic.api/as-of</code> for å hente en
+tidligere versjon av databasen</li>
+<li>Bruk <code class="verbatim">datomic.api/q</code> for å gjøre en
+databasespørring</li>
+<li>Bruk <code class="verbatim">datomic.api/entity</code> for å hente ut
+én entitet fra en primærnøkkel.</li>
+</ol>
 <h2 id="navn-navnerom-operasjoner-og-typer-i-programvaredesign">Navn,
 navnerom, operasjoner og typer i programvaredesign</h2>
 <h2 id="feedback-bredde-og-responstid">Feedback: bredde og

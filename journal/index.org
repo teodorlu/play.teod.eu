@@ -1864,3 +1864,8 @@ Write some logging thing?
 A way to visualize those logs?
 
 Hmmm.
+* 2024-02-18
+** State pling plong 2
+Since last "State pling plong", I set up a PostgreSQL database for [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]].
+That was a helpful learning experience.
+I'm glad i spent the time.

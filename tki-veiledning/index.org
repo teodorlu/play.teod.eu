@@ -23,7 +23,25 @@ Disse erfaringene har ført til at jeg gjør enkelte ting annerledes enn før.
 Jeg har andre forventninger til meg selv og til menneskene mine rundt meg.
 
 Å skrive ned erfaringene .. eksplisitt
-* Netflix-reglene for feedback
+* Om god, trygg og klar kommunikasjon
+** "non violent communication"
+https://www.goodreads.com/en/book/show/71730
+
+
+
+** Feedback i Netflix
+I boka [[id:6ca15d90-a55e-4f0d-b185-a163ec2e077c][No Rules Rules]], beskriver [[id:85F235DE-A4CA-4054-AECE-EAEEC844A688][Reed Hastings]] og [[id:F84FC8DF-4EF2-4565-91B2-23376C732022][Erin Meyer]] hvordan tilbakemeldinger gis og tas i Netflix.
+
+Jeg siterer:
+
+#+begin_quote
+*Giving Feedback*
+
+- *Aim to assist*:
+  Feedback must be given with positive intent.
+  GIving feedback in order to get frustration off your chest, intentionally hurting the other person, or furthering your political agenda is not tolerated.
+  Clearly explain how a specific behavior change will help you
+#+end_quote
 
 * Verdier: Tillit, kvalitet og intensjon
 ** Tillit
@@ -33,6 +51,24 @@ Jeg har andre forventninger til meg selv og til menneskene mine rundt meg.
 ** Deg selv
 * Opsjoner og opsjonalitet
 * Release != Deploy != Review
+
+Her er tre engelske ord.
+Vi bruker ofte disse ordene når vi snakker om programvareutvikling, selv på norsk.
+
+| Begrep  | Norsk begrep?  | Min definisjon                            |
+|---------+----------------+-------------------------------------------|
+| Deploy  |                | Få ny kode ut sammen med den "ekte" koden |
+| Release |                | Starte å /kjøre/ den nye koden            |
+| Review  | Kodegranskning | Noen andre ser over koden og kommenterer. |
+
+** "alle kan lese og skrive alt"---Om kulturen på MIT og Bell labs på 70- og 80-tallet
+
+** E-postlister og patcher: Linus Thorvalds lager et useriøst hobbyprosjekt
+
+** Release, deploy og review i open source-prosjektene til [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]
+
+** Gode
+[[id:41b97354-0f9e-46c6-b234-a619b04152aa][Review the interface]]
 * Teori og praksis
 * Interaktiv programmering
 * Hypotesetesting i produktutvikling

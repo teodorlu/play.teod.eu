@@ -139,4 +139,8 @@ Men dette er en kjapp start:
 5. Bruk =datomic.api/entity= for å hente ut én entitet fra en primærnøkkel.
 
 * Navn, navnerom, operasjoner og typer i programvaredesign
-* Feedback: bredde og responstid
+* Feedback: bredde, responstid og komprimering
+
+- Bredde: vet vi om /alt/ funker, eller vet vi bare om /noe/ funker?
+- Responstid: får vi feedback på 0.1 sekund, 1 sekund, 10 sekunder, 1 minutt, 1 time, 1 døgn, 1 uke, 1 måned eller 1 år?
+- Komprimering: er det lett å konsumere /formatet/ på feedbacken, eller må vi gå grundig gjennom for å se hva vi egentlig ser på nå?

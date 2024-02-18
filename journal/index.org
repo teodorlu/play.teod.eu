@@ -1869,3 +1869,13 @@ Hmmm.
 Since last "State pling plong", I set up a PostgreSQL database for [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]].
 That was a helpful learning experience.
 I'm glad i spent the time.
+** Contributing to igrishaev/pg2
+https://github.com/igrishaev/pg2
+
+https://github.com/igrishaev/pg2/issues/1
+*** Problem: no REPL, no tests
+When I tried starting a REPL like I normally do, it didn't work.
+
+- Have I read the project docs? :: this might be described in the README or somewhere I haven't read.
+- Have I read the Leiningen docs? :: this should be described in the leiningen docs too.
+*** Project docs for REPL and tests?

@@ -1879,3 +1879,96 @@ When I tried starting a REPL like I normally do, it didn't work.
 - Have I read the project docs? :: this might be described in the README or somewhere I haven't read.
 - Have I read the Leiningen docs? :: this should be described in the leiningen docs too.
 *** Project docs for REPL and tests?
+*** Unrelated, what is igrishaev doing?
+/lots/ of changes.
+
+#+begin_src
+ README.md                                                 | 297 +++++++++++++++++++++++++++++++++++++-
+ pg-bench/src/pg/demo.clj                                  | 197 ++++++++++++++++++++++++-
+ pg-core/src/clj/pg/core.clj                               |  60 +++++---
+ pg-core/src/clj/pg/jdbc.clj                               | 262 +++++++++++++++++++++++++++++++++
+ pg-core/src/clj/pg/pool.clj                               |  10 +-
+ pg-core/src/java/org/pg/Accum.java                        |   4 +-
+ pg-core/src/java/org/pg/ConnConfig.java                   |  19 ++-
+ pg-core/src/java/org/pg/Connection.java                   |  21 ++-
+ pg-core/src/java/org/pg/ExecuteParams.java                |   1 +
+ pg-core/src/java/org/pg/Main.java                         |   9 +-
+ pg-core/src/java/org/pg/Payload.java                      |   1 +
+ pg-core/src/java/org/pg/auth/ScramSha256.java             |   2 +-
+ pg-core/src/java/org/pg/codec/DecoderBin.java             |   2 +-
+ pg-core/src/java/org/pg/codec/DecoderTxt.java             |   2 +-
+ pg-core/src/java/org/pg/codec/EncoderBin.java             |   5 +-
+ pg-core/src/java/org/pg/codec/EncoderTxt.java             |  18 ++-
+ pg-core/src/java/org/pg/enums/Format.java                 |   2 +-
+ pg-core/src/java/org/pg/enums/SASL.java                   |   2 +-
+ pg-core/src/java/org/pg/enums/TXStatus.java               |   2 +-
+ pg-core/src/java/org/pg/{ => error}/PGError.java          |   2 +-
+ pg-core/src/java/org/pg/{ => error}/PGErrorResponse.java  |   2 +-
+ pg-core/src/java/org/pg/json/JSON.java                    |   2 +-
+ pg-core/src/java/org/pg/msg/AuthenticationResponse.java   |   2 +-
+ pg-core/src/java/org/pg/msg/ErrorResponse.java            |   2 +-
+ pg-core/src/java/org/pg/msg/Execute.java                  |   2 +-
+ pg-core/src/java/org/pg/msg/FieldParser.java              |   2 +-
+ pg-core/src/java/org/pg/msg/NegotiateProtocolVersion.java |   2 +-
+ pg-core/src/java/org/pg/msg/NoticeResponse.java           |   2 +-
+ pg-core/src/java/org/pg/msg/NotificationResponse.java     |   2 +-
+ pg-core/src/java/org/pg/msg/Parse.java                    |   2 +-
+ pg-core/src/java/org/pg/pool/Pool.java                    |  22 ++-
+ pg-core/src/java/org/pg/{clojure => proto}/IClojure.java  |   2 +-
+ pg-core/src/java/org/pg/{reducer => proto}/IReducer.java  |   2 +-
+ pg-core/src/java/org/pg/reducer/Default.java              |   1 +
+ pg-core/src/java/org/pg/reducer/Dummy.java                |   1 +
+ pg-core/src/java/org/pg/reducer/First.java                |   1 +
+ pg-core/src/java/org/pg/reducer/Fold.java                 |   1 +
+ pg-core/src/java/org/pg/reducer/GroupBy.java              |   1 +
+ pg-core/src/java/org/pg/reducer/IndexBy.java              |   1 +
+ pg-core/src/java/org/pg/reducer/Java.java                 |   1 +
+ pg-core/src/java/org/pg/reducer/KV.java                   |   1 +
+ pg-core/src/java/org/pg/reducer/Matrix.java               |   1 +
+ pg-core/src/java/org/pg/reducer/Run.java                  |   1 +
+ pg-core/src/java/org/pg/type/PGEnum.java                  |   2 +-
+ pg-core/src/java/org/pg/util/HashTool.java                |   2 +-
+ pg-core/src/java/org/pg/util/HexTool.java                 |   2 +-
+ pg-core/src/java/org/pg/util/IOTool.java                  |   2 +-
+ pg-core/test/pg/client_test.clj                           |  18 ++-
+ pg-core/test/pg/concurrency_test.clj                      | 164 +++++++++++++++++++--
+ pg-core/test/pg/decode_txt_test.clj                       |   2 +-
+ pg-core/test/pg/encode_bin_test.clj                       |   2 +-
+ pg-core/test/pg/encode_txt_test.clj                       |   2 +-
+ pg-core/test/pg/jdbc_test.clj                             | 289 +++++++++++++++++++++++++++++++++++++
+ pg-core/test/pg/pool_test.clj                             |   4 +-
+ todo.md                                                   |  26 +++-
+#+end_src
+
+README, demo, tests.
+But "jdbc"???
+Why jdbc?
+
+#+begin_src
+(ns pg.jdbc
+  "
+  The Next.JDBC-friendly wrapper. Mimics most of the
+  `next.jdbc` functions and macros.
+
+  https://github.com/seancorfield/next-jdbc/blob/develop/src/next/jdbc.clj
+  "
+  (:import
+   clojure.lang.IPersistentMap
+   clojure.lang.IFn
+   org.pg.Connection
+   org.pg.pool.Pool)
+  (:require
+   [clojure.set :as set]
+   [pg.core :as pg]
+   [pg.pool :as pool]))
+#+end_src
+
+specifically
+
+#+begin_quote
+  The Next.JDBC-friendly wrapper. Mimics most of the
+  `next.jdbc` functions and macros.
+#+end_quote
+
+Yeeeeah, OK.
+Not "let's use jdbc and compare to pg2 to test our code", but "let's provide a nice comptibility layer for those using next.jdbc today."

@@ -67,8 +67,9 @@ Vi bruker ofte disse ordene når vi snakker om programvareutvikling, selv på no
 
 ** Release, deploy og review i open source-prosjektene til [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]
 
-** Gode
-[[id:41b97354-0f9e-46c6-b234-a619b04152aa][Review the interface]]
+** God kodegranskning fokuserer på /grensesnitt mellom moduler/
+
+Les mer (på engelsk): [[id:41b97354-0f9e-46c6-b234-a619b04152aa][Review the interface]]
 * Teori og praksis
 * Interaktiv programmering
 * Hypotesetesting i produktutvikling

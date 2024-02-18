@@ -72,7 +72,28 @@ Vi bruker ofte disse ordene når vi snakker om programvareutvikling, selv på no
 Les mer (på engelsk): [[id:41b97354-0f9e-46c6-b234-a619b04152aa][Review the interface]]
 * Teori og praksis
 * Interaktiv programmering
+** Observability
+** Logger
+** Test-dreven utvikling
+** REPL-greven utvikling
 * Hypotesetesting i produktutvikling
+1. Lage opsjoner
+2. Flytte opsjoner fra vage ideer til ekte initiativer
+3. Funker det?
+   For hvem?
+
+Tillit, kvalitet og intensjon i relasjonen til de som /skal bruke/ produktet.
+
+1. *tillit*.
+   Stoler de på deg?
+   Kommer de til å fortelle deg at det du har laget er dritt hvis du spør hva de mener?
+   /ønsker/ de å fortelle deg om hverdagen sin, eller vil de helst få deg ut døra så de kan fortsette med det de egentlig bryr seg om å få gjort i dag?
+2. *kvalitet*.
+   Hva setter de pris på i hverdagen?
+   Hva er for dem et godt stykke arbeid?
+3. *intensjon*
+   Hva /må de gjøre/ på en arbeidsdag?
+   Hva starter de med, og hva slutter de med?
 * Hierarkier og navnerom
 * Navn, navnerom, operasjoner og typer i programvaredesign
 * Feedback: bredde og responstid

@@ -29,10 +29,20 @@ Jeg publiserer på Internett fordi jeg mener at kunnskap bør være fritt tilgje
 Du er hjertelig velkommen til å lese dette dokumentet og prøve ut ideene selv om vi ikke kjenner hverandre---men vær obs på at dette dokumentet handler om god praksis, og god praksis ofte må læres fra personer, ikke lærebøker.
 
 * Om god, trygg og klar kommunikasjon
+
 ** "non-violent communication"
 https://www.goodreads.com/en/book/show/71730
 
+Jeg misliker tittelen "ikke-voldelig kommunikasjon".
+Jeg synes det er en dårlig beskrivelse for hva boka handler om.
+Er det ment til å implisere at de som ikke har lest boka og gjør det den sier er voldelige?
+For meg fremstår det som en rar holdning å ha.
 
+Det jeg liker med boka er at den beskriver en måte å be om å få ting uten å ta valget om å /gi/ vekk fra den du ber om noe.
+
+Det gjør at folk lettere kan gi deg det du trenger når de kan, og kan si nei når de ikke har anledning.
+Det gjør også at du splitter mellom /informasjonen om hva du har behov for/ og /handlingen du ønsker/.
+Kanskje det du ba om ikke var det du egentlig ville ha.
 
 ** Feedback i Netflix
 I boka [[id:6ca15d90-a55e-4f0d-b185-a163ec2e077c][No Rules Rules]], beskriver [[id:85F235DE-A4CA-4054-AECE-EAEEC844A688][Reed Hastings]] og [[id:F84FC8DF-4EF2-4565-91B2-23376C732022][Erin Meyer]] hvordan tilbakemeldinger gis og tas i Netflix.
@@ -44,7 +54,7 @@ Jeg siterer:
 
 - *Aim to assist*:
   Feedback must be given with positive intent.
-  GIving feedback in order to get frustration off your chest, intentionally hurting the other person, or furthering your political agenda is not tolerated.
+  Giving feedback in order to get frustration off your chest, intentionally hurting the other person, or furthering your political agenda is not tolerated.
   Clearly explain how a specific behavior change will help you
 #+end_quote
 

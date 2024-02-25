@@ -2036,3 +2036,143 @@ Hmmmm.
 Heh, det finnes jo makefiles overalt!
 :D
 De må jeg prøve.
+* 2024-02-25
+** scicloj study group
+*** people
+**** daniel stuff
+using ggplot from clojure
+work by generateme - how to use ggplot from Clojure (clojisr)
+
+90 minutes total
+**** Teodor
+Programming, civil engineering, product.
+Interested in data and data visualization, /not/ an expert.
+
+Data Visualization: /not/ an expert, and would definitely like to get better.
+**** thomas 2018
+frontend
+databases, dashboards, visuals
+get into the data part
+"r is a great place to start"
+
+d3, three.js
+"grammer of graphics"
+
+wrote a gallery
+**** daniel
+community organizer scicloj
+funded by clojurists together
++ some open source
+**** andrew
+dataviz and data science
+python, scala, r, clojure
+prior experience with ggplot
+
+found ggplot to be superior for fundamental reasons
+primarily clojure now
+think there is a lot to learn from ggplot
+
+implement wilkinsons "grammar of graphics"
+
+"there's a reason why ggplot2 is THE dataviz library for R"
+explore more and learn.
+
+daniel: what is grammar of graphics
+**** kira
+possible to do dataviz with vega / vega-lite
+"dataviz biggest hole"
+
+really cool to implement the grammar of graphics in clojure
+it's an idea, it's a grammar
+
+"right now, only impl is in R"
+**** tomasz
+written clojure libraries
+created "cljplot" from scratch, "lots of mistakes", hope to contribute
+**** jaryt
+phd student, small university midwest
+taught at a small university in africa
+here to study, "be with the best!"
+*** section 2
+**** intro, andrew
+in the clojure world, we work with vega & vega lite
+impl of grammar of graphics
+
+from leol wilkinson
+early work 80s statistical computing data visualization
+access to computers was new
+spss
+"chief scientist"
+"h2o AI"
+passed away
+grammar of graphics is his "magnus opus"
+
+important because --- page 2 ---
+
+first part, syntax
+
+#+begin_quote
+we often call graphics charts (greek), latin
+pie charts, bar charts
+
+shuns charts
+
+charts instances of general objects
+
+pie is a divided bar into polar coordinates
+
+histogram != bar charts
+
+different grammars
+
+fewer charts than wanted
+no deep structure
+no reuse
+cannot add new charts
+"theory of graphics, not charts"
+#+end_quote
+
+decompose basic charts into the more fundamental things
+axes, scales
+coordinates
+
+ways of combining
+formal algebra
+
+r library ggplot "much more directly implements the algebra" than vega (lite)
+hypothesis: we'll see ggplot2 perform better than vega (lite).
+
+Wilkinson book: https://link.springer.com/book/10.1007/0-387-28695-0
+**** daniel demo
+Qs teodor
+
+1. Are you getting completion from CIDER?
+2. What was the return value from =(r "1 + 1")=
+
+.
+
+- fn for representing ggplot plots as a clojure data structure
+- ggplot lib can convert to clojure data
+- r is oo, we want data
+**** ggplot vs vega
+ggplot has a combinator API
+
+ways to combine primitives!
+
+kira: about vega-lite, "have to understand everything in order to do the fancy stuff"
+axes, layers, scales
+don't want to care
+marks, encodings
+have that magic "behind the scenes" translation between high-level easy to EDN/JSON/...
+
+andrew: "incremental specificity", "compositional power"
+
+daniel: functions, objects, "hidden"
+teodor: emmy, reitit, pure data representation is opt-in
+
+daniel: jun cho wants to look inside, ggplot is hiding
+ggplot-like
+"functions and safety", can check if args are ok
+perhaps we end up with something safe to hanami
+**** daniel demo
+teodor: what if we start by translating from r

@@ -713,6 +713,11 @@ pling plong 2</a></li>
 id="toc-contributing-to-igrishaevpg2">Contributing to
 igrishaev/pg2</a></li>
 </ul></li>
+<li><a href="#section-50" id="toc-section-50">2024-02-25</a>
+<ul>
+<li><a href="#scicloj-study-group" id="toc-scicloj-study-group">scicloj
+study group</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="./..">..</a></p>
@@ -3000,5 +3005,110 @@ Error: executing /opt/homebrew/bin/docker-compose up: exit status 1
 <li>Kanskje han kjører Linux og mitt feiler på Mac.</li>
 <li>Jeg kjører Podman, kanskje noe her krever vanlig Docker.</li>
 </ul>
+<h4 id="makefiles">Makefiles!</h4>
+<p>Heh, det finnes jo makefiles overalt! :D De må jeg prøve.</p>
+<h2 id="section-50">2024-02-25</h2>
+<h3 id="scicloj-study-group">scicloj study group</h3>
+<h4 id="people">people</h4>
+<ol>
+<li><p>daniel stuff</p>
+<p>using ggplot from clojure work by generateme - how to use ggplot from
+Clojure (clojisr)</p>
+<p>90 minutes total</p></li>
+<li><p>Teodor</p>
+<p>Programming, civil engineering, product. Interested in data and data
+visualization, <em>not</em> an expert.</p>
+<p>Data Visualization: <em>not</em> an expert, and would definitely like
+to get better.</p></li>
+<li><p>thomas 2018</p>
+<p>frontend databases, dashboards, visuals get into the data part “r is
+a great place to start”</p>
+<p>d3, three.js “grammer of graphics”</p>
+<p>wrote a gallery</p></li>
+<li><p>daniel</p>
+<p>community organizer scicloj funded by clojurists together</p>
+<ul>
+<li>some open source</li>
+</ul></li>
+<li><p>andrew</p>
+<p>dataviz and data science python, scala, r, clojure prior experience
+with ggplot</p>
+<p>found ggplot to be superior for fundamental reasons primarily clojure
+now think there is a lot to learn from ggplot</p>
+<p>implement wilkinsons “grammar of graphics”</p>
+<p>“there’s a reason why ggplot2 is THE dataviz library for R” explore
+more and learn.</p>
+<p>daniel: what is grammar of graphics</p></li>
+<li><p>kira</p>
+<p>possible to do dataviz with vega / vega-lite “dataviz biggest
+hole”</p>
+<p>really cool to implement the grammar of graphics in clojure it’s an
+idea, it’s a grammar</p>
+<p>“right now, only impl is in R”</p></li>
+<li><p>tomasz</p>
+<p>written clojure libraries created “cljplot” from scratch, “lots of
+mistakes”, hope to contribute</p></li>
+<li><p>jaryt</p>
+<p>phd student, small university midwest taught at a small university in
+africa here to study, “be with the best!”</p></li>
+</ol>
+<h4 id="section-2-1">section 2</h4>
+<ol>
+<li><p>intro, andrew</p>
+<p>in the clojure world, we work with vega &amp; vega lite impl of
+grammar of graphics</p>
+<p>from leol wilkinson early work 80s statistical computing data
+visualization access to computers was new spss “chief scientist” “h2o
+AI” passed away grammar of graphics is his “magnus opus”</p>
+<p>important because — page 2 —</p>
+<p>first part, syntax</p>
+<blockquote>
+<p>we often call graphics charts (greek), latin pie charts, bar
+charts</p>
+<p>shuns charts</p>
+<p>charts instances of general objects</p>
+<p>pie is a divided bar into polar coordinates</p>
+<p>histogram != bar charts</p>
+<p>different grammars</p>
+<p>fewer charts than wanted no deep structure no reuse cannot add new
+charts “theory of graphics, not charts”</p>
+</blockquote>
+<p>decompose basic charts into the more fundamental things axes, scales
+coordinates</p>
+<p>ways of combining formal algebra</p>
+<p>r library ggplot “much more directly implements the algebra” than
+vega (lite) hypothesis: we’ll see ggplot2 perform better than vega
+(lite).</p>
+<p>Wilkinson book: <a
+href="https://link.springer.com/book/10.1007/0-387-28695-0">https://link.springer.com/book/10.1007/0-387-28695-0</a></p></li>
+<li><p>daniel demo</p>
+<p>Qs teodor</p>
+<ol>
+<li>Are you getting completion from CIDER?</li>
+<li>What was the return value from <code
+class="verbatim">(r "1 + 1")</code></li>
+</ol>
+<p>.</p>
+<ul>
+<li>fn for representing ggplot plots as a clojure data structure</li>
+<li>ggplot lib can convert to clojure data</li>
+<li>r is oo, we want data</li>
+</ul></li>
+<li><p>ggplot vs vega</p>
+<p>ggplot has a combinator API</p>
+<p>ways to combine primitives!</p>
+<p>kira: about vega-lite, “have to understand everything in order to do
+the fancy stuff” axes, layers, scales don’t want to care marks,
+encodings have that magic “behind the scenes” translation between
+high-level easy to EDN/JSON/…</p>
+<p>andrew: “incremental specificity”, “compositional power”</p>
+<p>daniel: functions, objects, “hidden” teodor: emmy, reitit, pure data
+representation is opt-in</p>
+<p>daniel: jun cho wants to look inside, ggplot is hiding ggplot-like
+“functions and safety”, can check if args are ok perhaps we end up with
+something safe to hanami</p></li>
+<li><p>daniel demo</p>
+<p>teodor: what if we start by translating from r</p></li>
+</ol>
 </body>
 </html>

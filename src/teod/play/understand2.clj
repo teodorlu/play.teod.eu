@@ -4,6 +4,8 @@
    [nextjournal.clerk.viewer :as v]
    [teod.play.cli :as cli]))
 
+(set! *print-namespace-maps* false)
+
 ;; # Building a reflective understanding—part 2
 
 (defn big-table [x]
@@ -78,7 +80,7 @@
    :slug {:db/unique :db.unique/identity}
    :uuid {:db/unique :db.unique/identity}
    ;; But use namespace qualified name for new properties.
-   :teod.play/author {:db/cardinality :db.cardinality/many}})
+   :teod.play/authors {:db/cardinality :db.cardinality/many}})
 
 (require '[datascript.core :as d])
 
@@ -109,6 +111,9 @@
 (type (d/entity db [:slug "journal"]))
 (type (into {} (d/entity db [:slug "journal"])))
 (type (d/pull db '[*] [:slug "journal"]))
+
+{:teod.play/authors
+ (d/pull db [:uuid] [:slug "rich-hickey"])}
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

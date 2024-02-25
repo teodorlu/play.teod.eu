@@ -114,6 +114,20 @@
 (d/pull db
         '[:slug {:teod.play/authors [*]}]
         [:slug "simple-made-easy"])
+(comment
+  ;; gir:
+  {:slug "simple-made-easy",
+   :teod.play/authors
+   [{:db/id 267,
+     :created "2023-03-10",
+     :form :remote-reference,
+     :lang :en,
+     :readiness :wtf-is-this,
+     :slug "rich-hickey",
+     :title "Rich Hickey",
+     :uuid "a172782b-bceb-4b44-afdf-7a2348d02970"}]})
+
+;; GØY!
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

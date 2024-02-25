@@ -42,18 +42,16 @@
 ;; This is when I probably want a datascript database of my stuff.
 ;; ... and I (think) I want to keep my current file storage system, just add an index.
 
-(defn title-matches [re]
-  (fn [rel] (re-matches re (:title rel))))
+(defn grep-title [re xs]
+  (filter #(re-matches re (:title %)) xs))
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (->> (relations)
-     (filter (title-matches #".*[Ss]imple.*")))
+     (grep-title #".*[Ss]imple.*"))
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (->> (relations)
-     (filter (title-matches #".*book.*")))
-
-
+     (grep-title #".*book.*"))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

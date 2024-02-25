@@ -94,7 +94,13 @@
     (d/transact! conn rels)
     @conn))
 
-(def db (relations->datascript-db (relations)))
+(defonce db (relations->datascript-db (relations)))
+
+(comment
+  ;; the sole purpose of (do ,, nil) is to avoid slowdown from printing the
+  ;; whole db to the repl.
+  (do (alter-var-root #'db (constantly (relations->datascript-db (relations)))) :done)
+  )
 
 (type db)
 

@@ -344,3 +344,8 @@ Actionabes?
 1. put more effort into studying
 2. get a better teacher / access better pedagogy
 3. learn a better topic
+
+scale: log scale, linear scale
+grammar: roles of "things" in function calls
+
+nice book.

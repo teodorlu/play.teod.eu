@@ -49,5 +49,53 @@
 (->> (relations)
      (grep-title #".*[Cc]lerk.*"))
 
+(comment
+  (->> (relations)
+       shuffle
+       first)
+  ;; =>
+  {:slug "the-commons",
+   :title "The Commons",
+   :readiness :wtf-is-this,
+   :uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62",
+   :author-url "https://teod.eu",
+   :created "2022-09-03",
+   :lang :en})
+;; observations:
+;;
+;; - `:slug` is unique
+;; - `:uuid` is unique
+;;
+;; (for a given point in time)
+;;
+;; could have opted for ns qualified keywords like
+;;
+;;     :teod.play/slug
+;;     :teod.play/uuid
+;;
+;; ... but ... I didn't!
+
+(def teod-play-schema
+  "A schema for Teodor's play.
+
+  Who plays with schemas? Better not wonder too deeply about that question."
+  {;; we already have a bunch of unqualified :slug and :uuid
+   ;; keep them for now!
+   ;; we can fixup later if we want to.
+   :slug {:db/unique :db.unique/identity}
+   :uuid {:db/unique :db.unique/identity}
+   ;; But use namespace qualified name for new properties.
+   :teod.play/author {:db/cardinality :db.cardinality/many}})
+
+(require '[datascript.core :as d])
+
+(defn relations->datascript-db [rels]
+  (let [conn (d/create-conn teod-play-schema)]
+    (d/transact! conn rels)))
+
+(def db (relations->datascript-db (relations)))
+
+db
+
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

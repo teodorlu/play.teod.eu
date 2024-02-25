@@ -1990,3 +1990,49 @@ Jeg har nå gjort cirka følgende fra toppen:
 #+end_src
 
 ... og jeg får nå /andre typer feil/ når jeg prøver å kjøre testene (feks med =(cd pg-core && lein test)=).
+*** =docker compose up=
+Feilene jeg fikk over så ut som "prøver å koble til port, finner ikke"
+
+#+begin_src
+lein test pg.client-test
+
+lein test :only pg.client-test/test-decode-oid
+
+ERROR in (test-decode-oid) (IOTool.java:139)
+PORT 10110
+Uncaught exception, not in assertion.
+expected: nil
+  actual: org.pg.PGError: cannot open a socket, host: 127.0.0.1, port: 10110
+ at org.pg.util.IOTool.socket (IOTool.java:139)
+    org.pg.Connection._connect_unlocked (Connection.java:304)
+    org.pg.Connection.connect (Connection.java:297)
+    org.pg.Connection.<init> (Connection.java:73)
+    org.pg.Connection.<init> (Connection.java:82)
+[...]
+#+end_src
+
+Må jeg kjøre opp en PostgreSQL-instans lokalt?
+
+#+begin_src
+$ docker compose up
+[...]
+[+] Running 1/0
+ ✔ Network pg2_default   Created                                                                   0.0s
+ ⠋ Container pg2-pg14-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg11-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg15-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg12-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg16-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg13-1  Creating                                                                  0.0s
+Error response from daemon: make cli opts(): making volume mountpoint for volume /Users/teodorlu/dev/igrishaev/pg2/.docker/postgres/initdb.d: mkdir /Users: operation not permitted
+Error: executing /opt/homebrew/bin/docker-compose up: exit status 1
+#+end_src
+
+Hmmmm.
+
+- Kanskje han kjører Linux og mitt feiler på Mac.
+- Jeg kjører Podman, kanskje noe her krever vanlig Docker.
+*** Makefiles!
+Heh, det finnes jo makefiles overalt!
+:D
+De må jeg prøve.

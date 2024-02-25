@@ -355,4 +355,9 @@ nice book.
 chapter 13 - build a plot layer by layer
 https://ggplot2-book.org/layers
 
-"learn dataviz"; "learn r"; "learn grammar of graphics"; "reimplement in Clojure"
+- "learn dataviz"
+- "learn r"
+- "learn grammar of graphics"
+- "reimplement in Clojure"
+
+thomasz has a nice backend, but is looking for a better way to create the plots.

@@ -98,10 +98,18 @@
 
 (type db)
 
+^{:nextjournal.clerk/auto-expand-results? true}
 (into {}
       (d/entity db [:slug "journal"]))
 
 ;; it works!
+
+^{:nextjournal.clerk/auto-expand-results? true}
+(d/pull db '[*] [:slug "journal"])
+
+(type (d/entity db [:slug "journal"]))
+(type (into {} (d/entity db [:slug "journal"])))
+(type (d/pull db '[*] [:slug "journal"]))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

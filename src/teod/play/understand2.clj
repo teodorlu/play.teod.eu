@@ -15,13 +15,6 @@
        vals
        (sort-by :slug)))
 
-#_
-^{::clerk/width :full}
-(big-table
- (->> (cli/files->relations {})
-      vals
-      (sort-by :slug)))
-
 ^{::clerk/width :full}
 (big-table
  (->> (relations)

@@ -2093,7 +2093,7 @@ created "cljplot" from scratch, "lots of mistakes", hope to contribute
 phd student, small university midwest
 taught at a small university in africa
 here to study, "be with the best!"
-*** section 2
+*** part two
 **** intro, andrew
 in the clojure world, we work with vega & vega lite
 impl of grammar of graphics
@@ -2176,3 +2176,12 @@ ggplot-like
 perhaps we end up with something safe to hanami
 **** daniel demo
 teodor: what if we start by translating from r
+
+daniel: "stat layer" in your dataflow
+
+"hard".
+Actionabes?
+
+1. put more effort into studying
+2. get a better teacher / access better pedagogy
+3. learn a better topic

@@ -4,7 +4,7 @@
    [nextjournal.clerk.viewer :as v]
    [teod.play.cli :as cli]))
 
-;; continue the understanding-building!
+;; # Building a reflective understanding—part 2
 
 (defn big-table [x]
   (v/with-viewer (dissoc v/table-viewer :page-size)

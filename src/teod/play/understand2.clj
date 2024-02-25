@@ -42,6 +42,17 @@
 ;; This is when I probably want a datascript database of my stuff.
 ;; ... and I (think) I want to keep my current file storage system, just add an index.
 
+(defn title-matches [re]
+  (fn [rel] (re-matches re (:title rel))))
+
+^{:nextjournal.clerk/auto-expand-results? true}
+(->> (relations)
+     (filter (title-matches #".*[Ss]imple.*")))
+
+^{:nextjournal.clerk/auto-expand-results? true}
+(->> (relations)
+     (filter (title-matches #".*book.*")))
+
 
 
 ^{:nextjournal.clerk/visibility {:code :hide}}

@@ -384,3 +384,29 @@ Kira: you don't have to understand everything in ggplot.
 
 goal: can make it work without understanding what's under the abstractions
 goal: make it terse
+**** teodor ggplot draft
+#+begin_src clojure
+(ns explore.ggplotj
+  (:refer-clojure :exclude [+]))
+
+;; STEP 1: OPERATIONS AND EXAMPLE USAGE
+
+(defn + [])
+(defn ggplot [])
+(defn aes [])
+(defn geom-point [])
+
+;; STEP 2: PROTOCOLS AND STRUCTS
+;;
+;; ... assuming we don't need two-argument dispatch.
+
+(comment
+  +
+  ggplot
+  aes
+  geom-point)
+#+end_src
+
+alternative name: =jjplot=.
+Symmetry & hat tip to ggplot.
+Hat tip to CloJure & Jvm.

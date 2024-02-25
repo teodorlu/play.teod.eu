@@ -47,11 +47,7 @@
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (->> (relations)
-     (grep-title #".*[Ss]imple.*"))
-
-^{:nextjournal.clerk/auto-expand-results? true}
-(->> (relations)
-     (grep-title #".*book.*"))
+     (grep-title #".*[Cc]lerk.*"))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

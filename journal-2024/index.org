@@ -5,4 +5,342 @@
 
 [[file:..][..]]
 
-DRAFT
+* 2024-01-07
+** Mistaking category for entity
+In programming, names should make it clear whether you're talking about a category of things or a specific entity.
+I commonly see programmers work with entities, but name the category.
+The name is /too wide/, if we use [[id:cf51b512-3236-4c9d-befa-a477994123e0][Zach Tellman]]'s terminology from [[id:084bf28d-3509-412d-ada2-d70c08c658de][Elements of Clojure]].
+* 2024-02-10
+** State pling plong
+I'm /still/ not used to playing around with stateful systems.
+I avoid state like the plague!
+Should I change that?
+Perhaps?
+
+If yes, how?
+Write an interactive chat application?
+Write some logging thing?
+A way to visualize those logs?
+
+Hmmm.
+* 2024-02-18
+** State pling plong 2
+Since last "State pling plong", I set up a PostgreSQL database for [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]].
+That was a helpful learning experience.
+I'm glad i spent the time.
+** Contributing to igrishaev/pg2
+https://github.com/igrishaev/pg2
+
+https://github.com/igrishaev/pg2/issues/1
+*** Problem: no REPL, no tests
+When I tried starting a REPL like I normally do, it didn't work.
+
+- Have I read the project docs? :: this might be described in the README or somewhere I haven't read.
+- Have I read the Leiningen docs? :: this should be described in the leiningen docs too.
+*** Unrelated, what is igrishaev doing?
+/lots/ of changes.
+
+#+begin_src
+ README.md                                                 | 297 +++++++++++++++++++++++++++++++++++++-
+ pg-bench/src/pg/demo.clj                                  | 197 ++++++++++++++++++++++++-
+ pg-core/src/clj/pg/core.clj                               |  60 +++++---
+ pg-core/src/clj/pg/jdbc.clj                               | 262 +++++++++++++++++++++++++++++++++
+ pg-core/src/clj/pg/pool.clj                               |  10 +-
+ pg-core/src/java/org/pg/Accum.java                        |   4 +-
+ pg-core/src/java/org/pg/ConnConfig.java                   |  19 ++-
+ pg-core/src/java/org/pg/Connection.java                   |  21 ++-
+ pg-core/src/java/org/pg/ExecuteParams.java                |   1 +
+ pg-core/src/java/org/pg/Main.java                         |   9 +-
+ pg-core/src/java/org/pg/Payload.java                      |   1 +
+ pg-core/src/java/org/pg/auth/ScramSha256.java             |   2 +-
+ pg-core/src/java/org/pg/codec/DecoderBin.java             |   2 +-
+ pg-core/src/java/org/pg/codec/DecoderTxt.java             |   2 +-
+ pg-core/src/java/org/pg/codec/EncoderBin.java             |   5 +-
+ pg-core/src/java/org/pg/codec/EncoderTxt.java             |  18 ++-
+ pg-core/src/java/org/pg/enums/Format.java                 |   2 +-
+ pg-core/src/java/org/pg/enums/SASL.java                   |   2 +-
+ pg-core/src/java/org/pg/enums/TXStatus.java               |   2 +-
+ pg-core/src/java/org/pg/{ => error}/PGError.java          |   2 +-
+ pg-core/src/java/org/pg/{ => error}/PGErrorResponse.java  |   2 +-
+ pg-core/src/java/org/pg/json/JSON.java                    |   2 +-
+ pg-core/src/java/org/pg/msg/AuthenticationResponse.java   |   2 +-
+ pg-core/src/java/org/pg/msg/ErrorResponse.java            |   2 +-
+ pg-core/src/java/org/pg/msg/Execute.java                  |   2 +-
+ pg-core/src/java/org/pg/msg/FieldParser.java              |   2 +-
+ pg-core/src/java/org/pg/msg/NegotiateProtocolVersion.java |   2 +-
+ pg-core/src/java/org/pg/msg/NoticeResponse.java           |   2 +-
+ pg-core/src/java/org/pg/msg/NotificationResponse.java     |   2 +-
+ pg-core/src/java/org/pg/msg/Parse.java                    |   2 +-
+ pg-core/src/java/org/pg/pool/Pool.java                    |  22 ++-
+ pg-core/src/java/org/pg/{clojure => proto}/IClojure.java  |   2 +-
+ pg-core/src/java/org/pg/{reducer => proto}/IReducer.java  |   2 +-
+ pg-core/src/java/org/pg/reducer/Default.java              |   1 +
+ pg-core/src/java/org/pg/reducer/Dummy.java                |   1 +
+ pg-core/src/java/org/pg/reducer/First.java                |   1 +
+ pg-core/src/java/org/pg/reducer/Fold.java                 |   1 +
+ pg-core/src/java/org/pg/reducer/GroupBy.java              |   1 +
+ pg-core/src/java/org/pg/reducer/IndexBy.java              |   1 +
+ pg-core/src/java/org/pg/reducer/Java.java                 |   1 +
+ pg-core/src/java/org/pg/reducer/KV.java                   |   1 +
+ pg-core/src/java/org/pg/reducer/Matrix.java               |   1 +
+ pg-core/src/java/org/pg/reducer/Run.java                  |   1 +
+ pg-core/src/java/org/pg/type/PGEnum.java                  |   2 +-
+ pg-core/src/java/org/pg/util/HashTool.java                |   2 +-
+ pg-core/src/java/org/pg/util/HexTool.java                 |   2 +-
+ pg-core/src/java/org/pg/util/IOTool.java                  |   2 +-
+ pg-core/test/pg/client_test.clj                           |  18 ++-
+ pg-core/test/pg/concurrency_test.clj                      | 164 +++++++++++++++++++--
+ pg-core/test/pg/decode_txt_test.clj                       |   2 +-
+ pg-core/test/pg/encode_bin_test.clj                       |   2 +-
+ pg-core/test/pg/encode_txt_test.clj                       |   2 +-
+ pg-core/test/pg/jdbc_test.clj                             | 289 +++++++++++++++++++++++++++++++++++++
+ pg-core/test/pg/pool_test.clj                             |   4 +-
+ todo.md                                                   |  26 +++-
+#+end_src
+
+README, demo, tests.
+But "jdbc"???
+Why jdbc?
+
+#+begin_src
+(ns pg.jdbc
+  "
+  The Next.JDBC-friendly wrapper. Mimics most of the
+  `next.jdbc` functions and macros.
+
+  https://github.com/seancorfield/next-jdbc/blob/develop/src/next/jdbc.clj
+  "
+  (:import
+   clojure.lang.IPersistentMap
+   clojure.lang.IFn
+   org.pg.Connection
+   org.pg.pool.Pool)
+  (:require
+   [clojure.set :as set]
+   [pg.core :as pg]
+   [pg.pool :as pool]))
+#+end_src
+
+specifically
+
+#+begin_quote
+  The Next.JDBC-friendly wrapper. Mimics most of the
+  `next.jdbc` functions and macros.
+#+end_quote
+
+Yeeeeah, OK.
+Not "let's use jdbc and compare to pg2 to test our code", but "let's provide a nice comptibility layer for those using next.jdbc today."
+*** Project docs for REPL and tests?
+Let's see.
+
+- Found =docker-compose.yaml= with lots of different pg versions.
+- Toplevel =project.clj= contains =:managed-versions= and =:sub=
+  - =:managed-versions=: ??
+- =:java-source-paths=: hei.
+  - Kilde: https://github.com/teodorlu/pg2/blob/8c6ac8e451feaf0ed348fd546d0e413b5be267b4/pg-core/project.clj#L24
+  - Vi har noe java
+*** Kompilere subprosjekter før jeg gjør noe mer?
+Jeg har nå gjort cirka følgende fra toppen:
+
+#+begin_src
+(cd pg-core && lein clean && lein javac && lein install)
+(cd pg-honey && lein clean && lein javac && lein install)
+(cd pg-component && lein clean && lein javac && lein install)
+#+end_src
+
+... og jeg får nå /andre typer feil/ når jeg prøver å kjøre testene (feks med =(cd pg-core && lein test)=).
+*** =docker compose up=
+Feilene jeg fikk over så ut som "prøver å koble til port, finner ikke"
+
+#+begin_src
+lein test pg.client-test
+
+lein test :only pg.client-test/test-decode-oid
+
+ERROR in (test-decode-oid) (IOTool.java:139)
+PORT 10110
+Uncaught exception, not in assertion.
+expected: nil
+  actual: org.pg.PGError: cannot open a socket, host: 127.0.0.1, port: 10110
+ at org.pg.util.IOTool.socket (IOTool.java:139)
+    org.pg.Connection._connect_unlocked (Connection.java:304)
+    org.pg.Connection.connect (Connection.java:297)
+    org.pg.Connection.<init> (Connection.java:73)
+    org.pg.Connection.<init> (Connection.java:82)
+[...]
+#+end_src
+
+Må jeg kjøre opp en PostgreSQL-instans lokalt?
+
+#+begin_src
+$ docker compose up
+[...]
+[+] Running 1/0
+ ✔ Network pg2_default   Created                                                                   0.0s
+ ⠋ Container pg2-pg14-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg11-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg15-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg12-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg16-1  Creating                                                                  0.0s
+ ⠋ Container pg2-pg13-1  Creating                                                                  0.0s
+Error response from daemon: make cli opts(): making volume mountpoint for volume /Users/teodorlu/dev/igrishaev/pg2/.docker/postgres/initdb.d: mkdir /Users: operation not permitted
+Error: executing /opt/homebrew/bin/docker-compose up: exit status 1
+#+end_src
+
+Hmmmm.
+
+- Kanskje han kjører Linux og mitt feiler på Mac.
+- Jeg kjører Podman, kanskje noe her krever vanlig Docker.
+*** Makefiles!
+Heh, det finnes jo makefiles overalt!
+:D
+De må jeg prøve.
+* 2024-02-25
+** scicloj study group
+*** people
+**** daniel stuff
+using ggplot from clojure
+work by generateme - how to use ggplot from Clojure (clojisr)
+
+90 minutes total
+**** Teodor
+Programming, civil engineering, product.
+Interested in data and data visualization, /not/ an expert.
+
+Data Visualization: /not/ an expert, and would definitely like to get better.
+**** thomas 2018
+frontend
+databases, dashboards, visuals
+get into the data part
+"r is a great place to start"
+
+d3, three.js
+"grammer of graphics"
+
+wrote a gallery
+**** daniel
+community organizer scicloj
+funded by clojurists together
++ some open source
+**** andrew
+dataviz and data science
+python, scala, r, clojure
+prior experience with ggplot
+
+found ggplot to be superior for fundamental reasons
+primarily clojure now
+think there is a lot to learn from ggplot
+
+implement wilkinsons "grammar of graphics"
+
+"there's a reason why ggplot2 is THE dataviz library for R"
+explore more and learn.
+
+daniel: what is grammar of graphics
+**** kira
+possible to do dataviz with vega / vega-lite
+"dataviz biggest hole"
+
+really cool to implement the grammar of graphics in clojure
+it's an idea, it's a grammar
+
+"right now, only impl is in R"
+**** tomasz
+written clojure libraries
+created "cljplot" from scratch, "lots of mistakes", hope to contribute
+**** jaryt
+phd student, small university midwest
+taught at a small university in africa
+here to study, "be with the best!"
+*** part two
+**** intro, andrew
+in the clojure world, we work with vega & vega lite
+impl of grammar of graphics
+
+from leol wilkinson
+early work 80s statistical computing data visualization
+access to computers was new
+spss
+"chief scientist"
+"h2o AI"
+passed away
+grammar of graphics is his "magnus opus"
+
+important because --- page 2 ---
+
+first part, syntax
+
+#+begin_quote
+we often call graphics charts (greek), latin
+pie charts, bar charts
+
+shuns charts
+
+charts instances of general objects
+
+pie is a divided bar into polar coordinates
+
+histogram != bar charts
+
+different grammars
+
+fewer charts than wanted
+no deep structure
+no reuse
+cannot add new charts
+"theory of graphics, not charts"
+#+end_quote
+
+decompose basic charts into the more fundamental things
+axes, scales
+coordinates
+
+ways of combining
+formal algebra
+
+r library ggplot "much more directly implements the algebra" than vega (lite)
+hypothesis: we'll see ggplot2 perform better than vega (lite).
+
+Wilkinson book: https://link.springer.com/book/10.1007/0-387-28695-0
+**** daniel demo
+Qs teodor
+
+1. Are you getting completion from CIDER?
+2. What was the return value from =(r "1 + 1")=
+
+.
+
+- fn for representing ggplot plots as a clojure data structure
+- ggplot lib can convert to clojure data
+- r is oo, we want data
+**** ggplot vs vega
+ggplot has a combinator API
+
+ways to combine primitives!
+
+kira: about vega-lite, "have to understand everything in order to do the fancy stuff"
+axes, layers, scales
+don't want to care
+marks, encodings
+have that magic "behind the scenes" translation between high-level easy to EDN/JSON/...
+
+andrew: "incremental specificity", "compositional power"
+
+daniel: functions, objects, "hidden"
+teodor: emmy, reitit, pure data representation is opt-in
+
+daniel: jun cho wants to look inside, ggplot is hiding
+ggplot-like
+"functions and safety", can check if args are ok
+perhaps we end up with something safe to hanami
+**** daniel demo
+teodor: what if we start by translating from r
+
+daniel: "stat layer" in your dataflow
+
+"hard".
+Actionabes?
+
+1. put more effort into studying
+2. get a better teacher / access better pedagogy
+3. learn a better topic

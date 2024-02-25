@@ -2,5 +2,6 @@
  :form :remote-reference,
  :lang :en,
  :readiness :wtf-is-this,
+ :teod.play/authors {:uuid "a172782b-bceb-4b44-afdf-7a2348d02970"},
  :title "Simple Made Easy",
  :uuid "3eb092bf-b847-4686-b250-fca303022782"}

@@ -366,3 +366,6 @@ kira: move processing to the JVM side.
 CLJplot: crunching in Clojure on the JVM
 
 andrew: humble UI
+
+thomas: learn, document the learning!
+kira: learn, document the learning!

@@ -361,3 +361,8 @@ https://ggplot2-book.org/layers
 - "reimplement in Clojure"
 
 thomasz has a nice backend, but is looking for a better way to create the plots.
+
+kira: move processing to the JVM side.
+CLJplot: crunching in Clojure on the JVM
+
+andrew: humble UI

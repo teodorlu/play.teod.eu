@@ -369,3 +369,8 @@ andrew: humble UI
 
 thomas: learn, document the learning!
 kira: learn, document the learning!
+
+daniel: look into hanami.
+Defaults and some logic around defaults as data.
+
+Teodor: separate speed from design.

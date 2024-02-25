@@ -100,7 +100,7 @@
 
 (type db)
 
-;; I've got a real datomic db.
+;; I've got a real datascript db.
 ;; Nice!
 
 (into {} (:teod.play/authors (d/entity db [:slug "simple-made-easy"])))

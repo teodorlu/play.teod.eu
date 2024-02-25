@@ -90,8 +90,6 @@
    :teod.play/authors {:db/cardinality :db.cardinality/many
                        :db/valueType   :db.type/ref}})
 
-(require '[datascript.core :as d])
-
 (defn relations->datascript-db [rels]
   (let [conn (d/create-conn schema)]
     (d/transact! conn rels)

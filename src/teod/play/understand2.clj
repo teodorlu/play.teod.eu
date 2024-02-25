@@ -80,7 +80,8 @@
    :slug {:db/unique :db.unique/identity}
    :uuid {:db/unique :db.unique/identity}
    ;; But use namespace qualified name for new properties.
-   :teod.play/authors {:db/cardinality :db.cardinality/many}})
+   :teod.play/authors {:db/cardinality :db.cardinality/many
+                       :db/valueType   :db.type/ref}})
 
 (require '[datascript.core :as d])
 
@@ -99,21 +100,20 @@
 
 (type db)
 
+;; I've got a real datomic db.
+;; Nice!
+
+(into {} (:teod.play/authors (d/entity db [:slug "simple-made-easy"])))
+
+(into {} (d/entity db [:slug "simple-made-easy"]))
+
 ^{:nextjournal.clerk/auto-expand-results? true}
-(into {}
-      (d/entity db [:slug "journal"]))
-
-;; it works!
+(d/pull db '[*] [:slug "simple-made-easy"])
 
 ^{:nextjournal.clerk/auto-expand-results? true}
-(d/pull db '[*] [:slug "journal"])
-
-(type (d/entity db [:slug "journal"]))
-(type (into {} (d/entity db [:slug "journal"])))
-(type (d/pull db '[*] [:slug "journal"]))
-
-{:teod.play/authors
- (d/pull db [:uuid] [:slug "rich-hickey"])}
+(d/pull db
+        '[:slug {:teod.play/authors [*]}]
+        [:slug "simple-made-easy"])
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

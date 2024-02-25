@@ -2,7 +2,8 @@
   (:require
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.viewer :as v]
-   [teod.play.cli :as cli]))
+   [teod.play.cli :as cli]
+   [datascript.core :as d]))
 
 (set! *print-namespace-maps* false)
 
@@ -123,7 +124,7 @@
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (d/pull db
-        '[:slug {:teod.play/authors [*]}]
+        '[:db/id :slug {:teod.play/authors [*]}]
         [:slug "simple-made-easy"])
 (comment
   ;; gir:
@@ -139,6 +140,23 @@
      :uuid "a172782b-bceb-4b44-afdf-7a2348d02970"}]})
 
 ;; GØY!
+
+;; hvor mange dokumenter i databasen?
+
+(d/q '[:find (count ?e) .
+       :where [?e :slug ?slug]]
+     db)
+
+;; per 2024-02-25, 368.
+;; Nice!
+
+(into {}
+      (d/entity db [:slug "journal"]))
+
+
+(d/q '[:find (count ?e) .
+       :where [?e :db/id]]
+     db)
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

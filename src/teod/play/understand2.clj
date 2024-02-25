@@ -70,7 +70,7 @@
 ;;
 ;; ... but ... I didn't!
 
-(def teod-play-schema
+(def schema
   "A schema for Teodor's play.
 
   Who plays with schemas? Better not wonder too deeply about that question."
@@ -80,13 +80,19 @@
    :slug {:db/unique :db.unique/identity}
    :uuid {:db/unique :db.unique/identity}
    ;; But use namespace qualified name for new properties.
+   ;;
+   ;; NOTE. I'm not sure I _want_ this key. It's a bit ... too much.
+   ;;
+   ;; Alternatives:
+   ;;
+   ;; - `:doc/authors`
    :teod.play/authors {:db/cardinality :db.cardinality/many
                        :db/valueType   :db.type/ref}})
 
 (require '[datascript.core :as d])
 
 (defn relations->datascript-db [rels]
-  (let [conn (d/create-conn teod-play-schema)]
+  (let [conn (d/create-conn schema)]
     (d/transact! conn rels)
     @conn))
 
@@ -106,6 +112,11 @@
 (into {} (:teod.play/authors (d/entity db [:slug "simple-made-easy"])))
 
 (into {} (d/entity db [:slug "simple-made-easy"]))
+
+^{:nextjournal.clerk/auto-expand-results? true}
+(into {}
+      (-> (d/entity db [:slug "simple-made-easy"])
+          :teod.play/authors))
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (d/pull db '[*] [:slug "simple-made-easy"])

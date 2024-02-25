@@ -302,6 +302,8 @@ r library ggplot "much more directly implements the algebra" than vega (lite)
 hypothesis: we'll see ggplot2 perform better than vega (lite).
 
 Wilkinson book: https://link.springer.com/book/10.1007/0-387-28695-0
+
+Other book: https://ggplot2-book.org/
 **** daniel demo
 Qs teodor
 
@@ -349,3 +351,8 @@ scale: log scale, linear scale
 grammar: roles of "things" in function calls
 
 nice book.
+
+chapter 13 - build a plot layer by layer
+https://ggplot2-book.org/layers
+
+"learn dataviz"; "learn r"; "learn grammar of graphics"; "reimplement in Clojure"

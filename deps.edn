@@ -33,12 +33,13 @@
         org.clojure/tools.logging {:mvn/version "1.1.0"},
         org.flatland/ordered {:mvn/version "1.5.9"},
         rewrite-clj/rewrite-clj {:mvn/version "1.1.47"},
-        selmer/selmer {:mvn/version "1.12.59"}
+        selmer/selmer {:mvn/version "1.12.59"},
 
         ;; Extra deps
+        datascript/datascript {:mvn/version "1.6.3"}, ;; To query over my content
         io.github.nextjournal/clerk {:mvn/version "0.15.957"},
-        io.github.teodorlu/play {:local/root "."} io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime"
-                                                                                       :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"},
+        io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}
+        io.github.teodorlu/play {:local/root "."},
         }
  :aliases
  {:test

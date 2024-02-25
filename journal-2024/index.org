@@ -381,3 +381,6 @@ general data science work: need more general things.
 
 "what's better, vega, hanami or ggplot?"
 Kira: you don't have to understand everything in ggplot.
+
+goal: can make it work without understanding what's under the abstractions
+goal: make it terse

@@ -91,11 +91,17 @@
 
 (defn relations->datascript-db [rels]
   (let [conn (d/create-conn teod-play-schema)]
-    (d/transact! conn rels)))
+    (d/transact! conn rels)
+    @conn))
 
 (def db (relations->datascript-db (relations)))
 
-db
+(type db)
+
+(into {}
+      (d/entity db [:slug "journal"]))
+
+;; it works!
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

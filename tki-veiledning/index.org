@@ -95,7 +95,7 @@ Vi bruker ofte disse ordene når vi snakker om programvareutvikling, selv på no
 | Begrep  | Norsk begrep?  | Min definisjon                            |
 |---------+----------------+-------------------------------------------|
 | Deploy  |                | Få ny kode ut sammen med den "ekte" koden |
-| Release |                | Starte å /kjøre/ den nye koden            |
+| Release | "prodsetting"? | Starte å /kjøre/ den nye koden            |
 | Review  | Kodegranskning | Noen andre ser over koden og kommenterer. |
 
 ** "alle kan lese og skrive alt"---Om kulturen på MIT og Bell labs på 70- og 80-tallet

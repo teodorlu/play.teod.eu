@@ -71,6 +71,11 @@ Jeg siterer:
   Giving feedback in order to get frustration off your chest, intentionally hurting the other person, or furthering your political agenda is not tolerated.
   Clearly explain how a specific behavior change will help you
 #+end_quote
+** Teori ≠ praksis
+David Deutch om teori.
+
+Teori er objektiv, uten verdivurderinger.
+Praksis er subjektiv, med verdivurderinger.
 
 * Verdier: Tillit, kvalitet og intensjon
 ** Tillit

@@ -87,7 +87,7 @@ Da folk sluttet å drømme
 ** Andre
 ** Deg selv
 * Opsjoner og opsjonalitet
-* Release != Deploy != Review
+* Release ≠ Deploy ≠ Review
 
 Her er tre engelske ord.
 Vi bruker ofte disse ordene når vi snakker om programvareutvikling, selv på norsk.

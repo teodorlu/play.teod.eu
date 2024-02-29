@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: EAEE3D9F-2AB6-44F0-A75A-7070A65AC9E6
+:END:
+#+TITLE: Datascript
+
+[[file:..][..]]
+
+DRAFT

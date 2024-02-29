@@ -71,7 +71,7 @@ We have three major work streams right now:
 
 For the last six months, we've been solely focused on usability.
 I've taken a something of a technical product manager domain expert sales person role.
-Because my co-founder is /very/ strong technically.
+Because my co-founder is strong technically.
 
 But where's the play?
 I like coding because it's playful.

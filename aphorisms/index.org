@@ -64,8 +64,10 @@ Keeping the exploration singular ensures clarity and deletability.
 
 Other people whose aphorisms I've found to be useful:
 
-- [[id:48b4e75a-2103-428a-973d-83ca972c9464][Adam Wiggins]] :: https://gist.github.com/adamwiggins/5687294
-- [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]] :: https://en.wikipedia.org/wiki/The_Bed_of_Procrustes
-- [[id:72EA74E8-9AD5-44CF-B20E-C96C4AD93F75][Friedrich Nietzsche]] :: lots of stuff, start with https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra
-- [[id:058ABC10-BAFC-4487-9444-F06C89B9396C][Steven Mittens]] :: (from other people) https://acko.net/blog/lessons-from-interesting-people/
-- [[id:16a35298-ed54-45a9-ab95-19f5944823e5][Dustin Getz]] :: (Hyperfiddle and [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]]): https://www.dustingetz.com/#/page/643ed908-e454-4fe8-9ac4-010041d63d1c
+| Person              | Aphorisms                                                                                                  |
+|---------------------+------------------------------------------------------------------------------------------------------------|
+| [[id:48b4e75a-2103-428a-973d-83ca972c9464][Adam Wiggins]]        | https://gist.github.com/adamwiggins/5687294                                                                |
+| [[id:a68a1144-24f0-4312-b7a4-9facfdbfc634][Nassim Taleb]]        | https://en.wikipedia.org/wiki/The_Bed_of_Procrustes                                                        |
+| [[id:72EA74E8-9AD5-44CF-B20E-C96C4AD93F75][Friedrich Nietzsche]] | lots of stuff, start with https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra                             |
+| [[id:058ABC10-BAFC-4487-9444-F06C89B9396C][Steven Mittens]]      | (from other people) https://acko.net/blog/lessons-from-interesting-people/                                 |
+| [[id:16a35298-ed54-45a9-ab95-19f5944823e5][Dustin Getz]]         | (Hyperfiddle and [[id:3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4][Electric Clojure]]): https://www.dustingetz.com/#/page/643ed908-e454-4fe8-9ac4-010041d63d1c |

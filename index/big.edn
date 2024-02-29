@@ -48,6 +48,14 @@
   :created "2022-07-14",
   :uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee",
   :lang :en}
+ {:slug "steven-mittens",
+  :author-url "https://teod.eu",
+  :created "2024-02-29",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Steven Mittens",
+  :uuid "058ABC10-BAFC-4487-9444-F06C89B9396C"}
  {:slug "christian-johansen",
   :author-url "https://teod.eu",
   :created "2023-06-06",
@@ -690,12 +698,13 @@
   :created "2022-09-03",
   :lang :en}
  {:slug "simple-made-easy",
-  :title "Simple Made Easy",
-  :readiness :wtf-is-this,
-  :uuid "3eb092bf-b847-4686-b250-fca303022782",
   :created "2023-03-10",
+  :form :remote-reference,
   :lang :en,
-  :form :remote-reference}
+  :readiness :wtf-is-this,
+  :teod.play/authors [[:uuid "a172782b-bceb-4b44-afdf-7a2348d02970"]],
+  :title "Simple Made Easy",
+  :uuid "3eb092bf-b847-4686-b250-fca303022782"}
  {:slug "arne-brasseur",
   :author-url "https://teod.eu",
   :created "2023-08-06",
@@ -1295,6 +1304,14 @@
   :readiness :wtf-is-this,
   :title "Teodor Heggelund",
   :uuid "72328026-a75f-4c81-a434-a8fcba97b7bd"}
+ {:slug "friedrich-nietzsche",
+  :author-url "https://teod.eu",
+  :created "2024-02-29",
+  :form :remote-reference,
+  :lang :en,
+  :readiness :wtf-is-this,
+  :title "Friedrich Nietzsche",
+  :uuid "72EA74E8-9AD5-44CF-B20E-C96C4AD93F75"}
  {:slug "design-composition-performance",
   :author-url "https://teod.eu",
   :created "2023-05-29",

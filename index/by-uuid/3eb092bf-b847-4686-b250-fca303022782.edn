@@ -1,7 +1,8 @@
 {:slug "simple-made-easy",
- :title "Simple Made Easy",
- :readiness :wtf-is-this,
- :uuid "3eb092bf-b847-4686-b250-fca303022782",
  :created "2023-03-10",
+ :form :remote-reference,
  :lang :en,
- :form :remote-reference}
+ :readiness :wtf-is-this,
+ :teod.play/authors [[:uuid "a172782b-bceb-4b44-afdf-7a2348d02970"]],
+ :title "Simple Made Easy",
+ :uuid "3eb092bf-b847-4686-b250-fca303022782"}

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 058ABC10-BAFC-4487-9444-F06C89B9396C
+:END:
+#+TITLE: Steven Mittens
+
+[[file:..][..]]
+
+https://acko.net/
+
+#+begin_quote
+Hi, I'm Steven. I like computers, problems and using the former to solve the latter. I believe in elegance over adequacy, thoughtfulness over impulse, and in the wonder of the world as we can see it. I like to build and design cool pieces of technology.
+
+Throughout the years, I've left a trail of nifty contraptions behind, most of which are published here. You'll find demos, designs, dev journals and other random musings.
+#+end_quote

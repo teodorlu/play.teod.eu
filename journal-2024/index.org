@@ -412,6 +412,6 @@ Symmetry & hat tip to ggplot.
 Hat tip to CloJure & Jvm.
 * 2024-02-29
 ** a UI for updates
-- based on [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and Datascript
+- based on [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[id:EAEE3D9F-2AB6-44F0-A75A-7070A65AC9E6][Datascript]]
 - view, then filter, then commit
 - REPL

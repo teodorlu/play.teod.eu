@@ -86,6 +86,7 @@ Da folk sluttet å drømme
 ** Intensjon
 ** Andre
 ** Deg selv
+** Men mest av alt tillit
 * Opsjoner og opsjonalitet
 * Release ≠ Deploy ≠ Review
 

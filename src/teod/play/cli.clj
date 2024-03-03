@@ -342,9 +342,11 @@ Allowed options:
 
                   "# Rengenerate the index"
                   "# Note: we don't remove the makefile, as that gets us ... stuck."
+                  "#       we also regenerate the metadata index."
                   ".PHONY: clean"
                   "clean:"
                   "\trm -f index.html"
+                  "\t./play.clj reindex"
                   ""
                   ""
 

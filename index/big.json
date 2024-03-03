@@ -3472,13 +3472,13 @@
   "form" : "remote-reference",
   "uuid" : "e511ab7c-858e-44fc-b9b6-738e7286f221"
 }, {
-  "slug" : "livejs",
+  "slug" : "livejs.com",
   "page/uuid" : "e6e8471e-8dbf-403d-80ef-343c94599216",
   "created" : "2024-03-03",
   "readiness" : "wtf-is-this",
-  "title" : "Live.js",
+  "title" : "livejs.com",
   "lang" : "en",
-  "page/slug" : "livejs",
+  "page/slug" : "livejs.com",
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "e6e8471e-8dbf-403d-80ef-343c94599216"

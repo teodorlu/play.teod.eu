@@ -34,7 +34,7 @@ What if I am only making /some/ of the slides?
 
 I've chosen to opt for an approach that gives me way more control in exchange for a bit of manual work.
 
-* Export from PDF with Poppler 🤗
+* Convert PDF to image files with Poppler 🤗
 
 A different option is to convert the PDF to a set of images, then copy each image into the slideshow.
 Plenty of tools can do this.

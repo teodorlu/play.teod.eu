@@ -1,7 +1,9 @@
 {:slug "metamuse-podcast",
- :title "Metamuse (podcast)",
- :readiness :wtf-is-this,
- :uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
+ :page/uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec",
  :created "2022-09-20",
+ :readiness :wtf-is-this,
+ :title "Metamuse (podcast)",
  :lang :en,
- :form :remote-reference}
+ :page/slug "metamuse-podcast",
+ :form :remote-reference,
+ :uuid "e33962d6-d5cb-4ef8-b7be-9d4a537edbec"}

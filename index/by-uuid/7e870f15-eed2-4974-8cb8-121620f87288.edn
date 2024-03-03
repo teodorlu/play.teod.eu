@@ -1,7 +1,9 @@
 {:slug "principle-of-charity",
- :title "Principle of Charity",
- :readiness :wtf-is-this,
- :uuid "7e870f15-eed2-4974-8cb8-121620f87288",
- :author-url "https://teod.eu",
+ :page/uuid "7e870f15-eed2-4974-8cb8-121620f87288",
  :created "2023-03-07",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Principle of Charity",
+ :lang :en,
+ :page/slug "principle-of-charity",
+ :author-url "https://teod.eu",
+ :uuid "7e870f15-eed2-4974-8cb8-121620f87288"}

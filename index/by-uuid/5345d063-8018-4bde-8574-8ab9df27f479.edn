@@ -1,8 +1,10 @@
 {:slug "babashka",
- :title "Babashka",
- :readiness :wtf-is-this,
- :uuid "5345d063-8018-4bde-8574-8ab9df27f479",
- :author-url "https://teod.eu",
+ :page/uuid "5345d063-8018-4bde-8574-8ab9df27f479",
  :created "2023-04-30",
+ :readiness :wtf-is-this,
+ :title "Babashka",
  :lang :en,
- :form :remote-reference}
+ :page/slug "babashka",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "5345d063-8018-4bde-8574-8ab9df27f479"}

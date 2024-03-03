@@ -1,8 +1,10 @@
 {:slug "datomic",
- :title "Datomic",
- :readiness :wtf-is-this,
- :uuid "27217b9d-112e-40c6-a4f2-6532b733f612",
- :author-url "https://teod.eu",
+ :page/uuid "27217b9d-112e-40c6-a4f2-6532b733f612",
  :created "2023-04-30",
+ :readiness :wtf-is-this,
+ :title "Datomic",
  :lang :en,
- :form :remote-reference}
+ :page/slug "datomic",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "27217b9d-112e-40c6-a4f2-6532b733f612"}

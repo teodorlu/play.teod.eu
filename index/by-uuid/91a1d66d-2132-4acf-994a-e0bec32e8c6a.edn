@@ -3,4 +3,6 @@
  :readiness :wtf-is-this,
  :author-url "https://teod.eu",
  :uuid "91a1d66d-2132-4acf-994a-e0bec32e8c6a",
- :lang :en}
+ :lang :en,
+ :page/slug "precise-general-novel",
+ :page/uuid "91a1d66d-2132-4acf-994a-e0bec32e8c6a"}

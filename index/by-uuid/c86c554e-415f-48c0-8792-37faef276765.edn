@@ -1,8 +1,10 @@
 {:slug "maria.cloud",
- :title "maria.cloud",
- :readiness :wtf-is-this,
- :uuid "c86c554e-415f-48c0-8792-37faef276765",
- :author-url "https://teod.eu",
+ :page/uuid "c86c554e-415f-48c0-8792-37faef276765",
  :created "2023-04-30",
+ :readiness :wtf-is-this,
+ :title "maria.cloud",
  :lang :en,
- :form :remote-reference}
+ :page/slug "maria.cloud",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "c86c554e-415f-48c0-8792-37faef276765"}

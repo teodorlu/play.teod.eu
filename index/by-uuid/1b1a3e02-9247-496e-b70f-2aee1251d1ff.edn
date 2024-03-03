@@ -3,4 +3,6 @@
  :uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff",
  :created "2022-09-25",
  :lang :en,
- :form :remote-reference}
+ :form :remote-reference,
+ :page/slug "scicloj",
+ :page/uuid "1b1a3e02-9247-496e-b70f-2aee1251d1ff"}

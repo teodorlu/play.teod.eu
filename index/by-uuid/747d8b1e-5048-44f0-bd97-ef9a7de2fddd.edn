@@ -1,8 +1,10 @@
 {:slug "creative-computation",
- :author-url "https://teod.eu",
+ :page/uuid "747d8b1e-5048-44f0-bd97-ef9a7de2fddd",
  :created "2023-06-06",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Creative Computation",
+ :lang :en,
+ :page/slug "creative-computation",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "747d8b1e-5048-44f0-bd97-ef9a7de2fddd"}

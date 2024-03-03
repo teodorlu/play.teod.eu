@@ -1,8 +1,10 @@
 {:slug "peter-naur",
- :title "Peter Naur",
- :readiness :wtf-is-this,
- :uuid "5743c6b5-07b2-4a6f-b91f-8b79b4f75fad",
- :author-url "https://teod.eu",
+ :page/uuid "5743c6b5-07b2-4a6f-b91f-8b79b4f75fad",
  :created "2023-03-27",
+ :readiness :wtf-is-this,
+ :title "Peter Naur",
  :lang :en,
- :form :remote-reference}
+ :page/slug "peter-naur",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "5743c6b5-07b2-4a6f-b91f-8b79b4f75fad"}

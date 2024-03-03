@@ -1,7 +1,9 @@
 {:slug "planning",
- :title "planning",
- :readiness :wtf-is-this,
- :uuid "1ded911f-fc29-4a5c-9a45-0f2ce6c210c3",
- :author-url "https://teod.eu",
+ :page/uuid "1ded911f-fc29-4a5c-9a45-0f2ce6c210c3",
  :created "2023-05-07",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "planning",
+ :lang :en,
+ :page/slug "planning",
+ :author-url "https://teod.eu",
+ :uuid "1ded911f-fc29-4a5c-9a45-0f2ce6c210c3"}

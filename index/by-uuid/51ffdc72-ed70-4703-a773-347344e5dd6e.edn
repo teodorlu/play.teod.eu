@@ -1,7 +1,9 @@
 {:slug "hva-er-funksjonell-programmering",
- :author-url "https://teod.eu",
+ :page/uuid "51ffdc72-ed70-4703-a773-347344e5dd6e",
  :created "2023-05-29",
- :lang :no,
  :readiness :ready-for-comments,
  :title "Hva er funksjonell programmering?",
+ :lang :no,
+ :page/slug "hva-er-funksjonell-programmering",
+ :author-url "https://teod.eu",
  :uuid "51ffdc72-ed70-4703-a773-347344e5dd6e"}

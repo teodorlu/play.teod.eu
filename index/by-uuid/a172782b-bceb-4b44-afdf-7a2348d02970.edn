@@ -1,7 +1,9 @@
 {:slug "rich-hickey",
- :title "Rich Hickey",
- :readiness :wtf-is-this,
- :uuid "a172782b-bceb-4b44-afdf-7a2348d02970",
+ :page/uuid "a172782b-bceb-4b44-afdf-7a2348d02970",
  :created "2023-03-10",
+ :readiness :wtf-is-this,
+ :title "Rich Hickey",
  :lang :en,
- :form :remote-reference}
+ :page/slug "rich-hickey",
+ :form :remote-reference,
+ :uuid "a172782b-bceb-4b44-afdf-7a2348d02970"}

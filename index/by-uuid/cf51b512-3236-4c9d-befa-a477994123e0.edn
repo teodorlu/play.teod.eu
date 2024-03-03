@@ -1,8 +1,10 @@
 {:slug "zach-tellman",
- :title "Zach Tellman",
- :readiness :wtf-is-this,
- :uuid "cf51b512-3236-4c9d-befa-a477994123e0",
- :author-url "https://teod.eu",
+ :page/uuid "cf51b512-3236-4c9d-befa-a477994123e0",
  :created "2023-03-20",
+ :readiness :wtf-is-this,
+ :title "Zach Tellman",
  :lang :en,
- :form :remote-reference}
+ :page/slug "zach-tellman",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "cf51b512-3236-4c9d-befa-a477994123e0"}

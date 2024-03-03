@@ -1,7 +1,9 @@
 {:slug "scicloj-2022-10-ckm",
- :title "Scicloj 2022-10: knowledge management on play.teod.eu",
- :readiness :wtf-is-this,
- :uuid "8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8",
- :author-url "https://teod.eu",
+ :page/uuid "8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8",
  :created "2022-10-23",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Scicloj 2022-10: knowledge management on play.teod.eu",
+ :lang :en,
+ :page/slug "scicloj-2022-10-ckm",
+ :author-url "https://teod.eu",
+ :uuid "8f2d71cb-6c4a-49eb-a5a9-bbca92ad10d8"}

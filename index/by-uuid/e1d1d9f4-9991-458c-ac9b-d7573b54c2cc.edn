@@ -1,7 +1,9 @@
 {:slug "stupid-games-stupid-prizes",
- :title "play stupid games, win stupid prizes",
- :readiness :wtf-is-this,
- :uuid "e1d1d9f4-9991-458c-ac9b-d7573b54c2cc",
- :author-url "https://teod.eu",
+ :page/uuid "e1d1d9f4-9991-458c-ac9b-d7573b54c2cc",
  :created "2023-03-08",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "play stupid games, win stupid prizes",
+ :lang :en,
+ :page/slug "stupid-games-stupid-prizes",
+ :author-url "https://teod.eu",
+ :uuid "e1d1d9f4-9991-458c-ac9b-d7573b54c2cc"}

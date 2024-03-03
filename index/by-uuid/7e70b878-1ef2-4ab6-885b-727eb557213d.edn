@@ -1,7 +1,9 @@
 {:slug "oggpow",
- :title "OGGPOW: A strategic framework for optionality",
- :readiness :wtf-is-this,
- :uuid "7e70b878-1ef2-4ab6-885b-727eb557213d",
- :author-url "https://teod.eu",
+ :page/uuid "7e70b878-1ef2-4ab6-885b-727eb557213d",
  :created "2022-09-12",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "OGGPOW: A strategic framework for optionality",
+ :lang :en,
+ :page/slug "oggpow",
+ :author-url "https://teod.eu",
+ :uuid "7e70b878-1ef2-4ab6-885b-727eb557213d"}

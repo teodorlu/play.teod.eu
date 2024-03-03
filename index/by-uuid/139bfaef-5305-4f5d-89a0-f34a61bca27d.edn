@@ -1,7 +1,9 @@
 {:slug "not-good-enough-no-fire",
- :title "not good enough! no fire!",
- :readiness :wtf-is-this,
- :uuid "139bfaef-5305-4f5d-89a0-f34a61bca27d",
- :author-url "https://teod.eu",
+ :page/uuid "139bfaef-5305-4f5d-89a0-f34a61bca27d",
  :created "2023-05-20",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "not good enough! no fire!",
+ :lang :en,
+ :page/slug "not-good-enough-no-fire",
+ :author-url "https://teod.eu",
+ :uuid "139bfaef-5305-4f5d-89a0-f34a61bca27d"}

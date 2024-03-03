@@ -1,8 +1,10 @@
 {:slug "teodor-heggelund",
- :author-url "https://teod.eu",
+ :page/uuid "72328026-a75f-4c81-a434-a8fcba97b7bd",
  :created "",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Teodor Heggelund",
+ :lang :en,
+ :page/slug "teodor-heggelund",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "72328026-a75f-4c81-a434-a8fcba97b7bd"}

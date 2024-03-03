@@ -1,8 +1,10 @@
 {:slug "woolit",
- :title "Woolit",
- :readiness :wtf-is-this,
- :uuid "a27c44fa-9601-4013-ba30-251fac22ee46",
- :author-url "https://teod.eu",
+ :page/uuid "a27c44fa-9601-4013-ba30-251fac22ee46",
  :created "2023-03-28",
+ :readiness :wtf-is-this,
+ :title "Woolit",
  :lang :en,
- :form :remote-reference}
+ :page/slug "woolit",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "a27c44fa-9601-4013-ba30-251fac22ee46"}

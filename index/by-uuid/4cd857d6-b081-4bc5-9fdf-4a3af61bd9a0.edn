@@ -1,7 +1,9 @@
 {:slug "how-to-solve-problems",
- :title "How to solve problems",
- :readiness :wtf-is-this,
- :uuid "4cd857d6-b081-4bc5-9fdf-4a3af61bd9a0",
- :author-url "https://teod.eu",
+ :page/uuid "4cd857d6-b081-4bc5-9fdf-4a3af61bd9a0",
  :created "2022-12-31",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "How to solve problems",
+ :lang :en,
+ :page/slug "how-to-solve-problems",
+ :author-url "https://teod.eu",
+ :uuid "4cd857d6-b081-4bc5-9fdf-4a3af61bd9a0"}

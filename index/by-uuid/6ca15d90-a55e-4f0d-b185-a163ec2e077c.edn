@@ -1,8 +1,10 @@
 {:slug "no-rules-rules",
- :author-url "https://teod.eu",
+ :page/uuid "6ca15d90-a55e-4f0d-b185-a163ec2e077c",
  :created "2024-02-17",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "No Rules Rules",
+ :lang :en,
+ :page/slug "no-rules-rules",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "6ca15d90-a55e-4f0d-b185-a163ec2e077c"}

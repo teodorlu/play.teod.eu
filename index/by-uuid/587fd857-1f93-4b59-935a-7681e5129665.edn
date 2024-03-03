@@ -1,7 +1,9 @@
 {:slug "trust-quality-intent",
- :title "trust, shared sense of quality and shared intent",
- :readiness :wtf-is-this,
- :uuid "587fd857-1f93-4b59-935a-7681e5129665",
- :author-url "https://teod.eu",
+ :page/uuid "587fd857-1f93-4b59-935a-7681e5129665",
  :created "2023-03-06",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "trust, shared sense of quality and shared intent",
+ :lang :en,
+ :page/slug "trust-quality-intent",
+ :author-url "https://teod.eu",
+ :uuid "587fd857-1f93-4b59-935a-7681e5129665"}

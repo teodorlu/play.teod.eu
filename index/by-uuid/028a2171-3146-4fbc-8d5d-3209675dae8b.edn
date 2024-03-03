@@ -1,7 +1,9 @@
 {:slug "value-in-context",
- :title "value in context",
- :readiness :wtf-is-this,
- :uuid "028a2171-3146-4fbc-8d5d-3209675dae8b",
- :author-url "https://teod.eu",
+ :page/uuid "028a2171-3146-4fbc-8d5d-3209675dae8b",
  :created "2022-10-12",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "value in context",
+ :lang :en,
+ :page/slug "value-in-context",
+ :author-url "https://teod.eu",
+ :uuid "028a2171-3146-4fbc-8d5d-3209675dae8b"}

@@ -1,8 +1,10 @@
 {:slug "design-in-practice",
- :author-url "https://teod.eu",
+ :page/uuid "7e831e40-daa5-4714-9ba5-c9e08988ce55",
  :created "2023-06-04",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Design in Practice",
+ :lang :en,
+ :page/slug "design-in-practice",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "7e831e40-daa5-4714-9ba5-c9e08988ce55"}

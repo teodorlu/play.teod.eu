@@ -1,7 +1,9 @@
 {:slug "documentation",
- :title "Writing documentation is best viewed as creative work",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "c032492c-c104-4de2-b3eb-6b8097557f25",
  :created "2022-07-14",
- :uuid "c032492c-c104-4de2-b3eb-6b8097557f25",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Writing documentation is best viewed as creative work",
+ :lang :en,
+ :page/slug "documentation",
+ :author-url "https://teod.eu",
+ :uuid "c032492c-c104-4de2-b3eb-6b8097557f25"}

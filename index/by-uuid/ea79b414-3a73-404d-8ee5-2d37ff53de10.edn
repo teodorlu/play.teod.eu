@@ -1,8 +1,10 @@
 {:slug "ziglang",
- :author-url "https://teod.eu",
+ :page/uuid "ea79b414-3a73-404d-8ee5-2d37ff53de10",
  :created "2023-06-20",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Zig",
+ :lang :en,
+ :page/slug "ziglang",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "ea79b414-3a73-404d-8ee5-2d37ff53de10"}

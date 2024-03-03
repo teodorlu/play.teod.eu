@@ -1,8 +1,10 @@
 {:slug "growth-mindset",
- :title "growth mindset",
- :readiness :wtf-is-this,
- :uuid "efbb9f44-9a8e-436e-bf68-ff19d5bd990c",
- :author-url "https://teod.eu",
+ :page/uuid "efbb9f44-9a8e-436e-bf68-ff19d5bd990c",
  :created "2023-05-01",
+ :readiness :wtf-is-this,
+ :title "growth mindset",
  :lang :en,
- :form :remote-reference}
+ :page/slug "growth-mindset",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "efbb9f44-9a8e-436e-bf68-ff19d5bd990c"}

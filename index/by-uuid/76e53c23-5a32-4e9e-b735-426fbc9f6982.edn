@@ -1,8 +1,10 @@
 {:slug "colin-smith",
- :title "Colin Smith",
- :readiness :wtf-is-this,
- :uuid "76e53c23-5a32-4e9e-b735-426fbc9f6982",
- :author-url "https://teod.eu",
+ :page/uuid "76e53c23-5a32-4e9e-b735-426fbc9f6982",
  :created "2023-05-10",
+ :readiness :wtf-is-this,
+ :title "Colin Smith",
  :lang :en,
- :form :remote-reference}
+ :page/slug "colin-smith",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "76e53c23-5a32-4e9e-b735-426fbc9f6982"}

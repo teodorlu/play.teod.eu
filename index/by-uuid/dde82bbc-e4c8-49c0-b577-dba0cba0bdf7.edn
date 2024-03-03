@@ -1,7 +1,9 @@
 {:slug "the-beginning-of-infinity",
- :title "The Beginning of Infinity",
- :readiness :wtf-is-this,
- :uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
+ :page/uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "The Beginning of Infinity",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-beginning-of-infinity",
+ :form :remote-reference,
+ :uuid "dde82bbc-e4c8-49c0-b577-dba0cba0bdf7"}

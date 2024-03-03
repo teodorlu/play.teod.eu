@@ -1,7 +1,9 @@
 {:slug "eric-raymond",
- :title "Eric Raymond",
- :readiness :wtf-is-this,
- :uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63",
+ :page/uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "Eric Raymond",
  :lang :en,
- :form :remote-reference}
+ :page/slug "eric-raymond",
+ :form :remote-reference,
+ :uuid "4c29d9b7-617e-4178-83ca-e3c83cbd6e63"}

@@ -1,7 +1,9 @@
 {:slug "my-writing-effort",
- :title "Quantifying where my writing effort goes",
- :readiness :wtf-is-this,
- :uuid "2dc873d7-b97c-4145-830e-651070d64b3e",
- :author-url "https://teod.eu",
+ :page/uuid "2dc873d7-b97c-4145-830e-651070d64b3e",
  :created "2022-08-28",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Quantifying where my writing effort goes",
+ :lang :en,
+ :page/slug "my-writing-effort",
+ :author-url "https://teod.eu",
+ :uuid "2dc873d7-b97c-4145-830e-651070d64b3e"}

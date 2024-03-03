@@ -1,8 +1,10 @@
 {:slug "karl-popper",
- :title "Karl Popper",
- :readiness :wtf-is-this,
- :uuid "407a392f-53fa-4bd5-b38c-8491d6e4ed37",
- :author-url "https://teod.eu",
+ :page/uuid "407a392f-53fa-4bd5-b38c-8491d6e4ed37",
  :created "2023-05-01",
+ :readiness :wtf-is-this,
+ :title "Karl Popper",
  :lang :en,
- :form :remote-reference}
+ :page/slug "karl-popper",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "407a392f-53fa-4bd5-b38c-8491d6e4ed37"}

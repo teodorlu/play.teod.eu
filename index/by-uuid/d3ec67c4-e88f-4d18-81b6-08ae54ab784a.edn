@@ -1,7 +1,9 @@
 {:slug "graph-navigators",
- :title "Graph navigators",
- :readiness :wtf-is-this,
- :uuid "d3ec67c4-e88f-4d18-81b6-08ae54ab784a",
- :author-url "https://teod.eu",
+ :page/uuid "d3ec67c4-e88f-4d18-81b6-08ae54ab784a",
  :created "2023-02-18",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Graph navigators",
+ :lang :en,
+ :page/slug "graph-navigators",
+ :author-url "https://teod.eu",
+ :uuid "d3ec67c4-e88f-4d18-81b6-08ae54ab784a"}

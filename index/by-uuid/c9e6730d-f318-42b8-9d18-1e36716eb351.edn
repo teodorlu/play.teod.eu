@@ -1,7 +1,9 @@
 {:slug "via-negativa",
- :title "via negativa",
- :readiness :wtf-is-this,
- :uuid "c9e6730d-f318-42b8-9d18-1e36716eb351",
- :author-url "https://teod.eu",
+ :page/uuid "c9e6730d-f318-42b8-9d18-1e36716eb351",
  :created "2022-11-07",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "via negativa",
+ :lang :en,
+ :page/slug "via-negativa",
+ :author-url "https://teod.eu",
+ :uuid "c9e6730d-f318-42b8-9d18-1e36716eb351"}

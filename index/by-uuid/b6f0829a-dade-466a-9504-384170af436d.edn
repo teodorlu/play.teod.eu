@@ -1,7 +1,9 @@
 {:slug "latin-hypercube-sampling",
- :title "Latin hypercube sampling",
- :readiness :wtf-is-this,
- :uuid "b6f0829a-dade-466a-9504-384170af436d",
- :author-url "https://teod.eu",
+ :page/uuid "b6f0829a-dade-466a-9504-384170af436d",
  :created "2023-03-19",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Latin hypercube sampling",
+ :lang :en,
+ :page/slug "latin-hypercube-sampling",
+ :author-url "https://teod.eu",
+ :uuid "b6f0829a-dade-466a-9504-384170af436d"}

@@ -1,8 +1,10 @@
 {:slug "openfoam",
- :title "OpenFOAM",
- :readiness :wtf-is-this,
- :uuid "7b88332e-f8a7-452b-bfd8-d128728182ce",
- :author-url "https://teod.eu",
+ :page/uuid "7b88332e-f8a7-452b-bfd8-d128728182ce",
  :created "2023-03-12",
+ :readiness :wtf-is-this,
+ :title "OpenFOAM",
  :lang :en,
- :form :remote-reference}
+ :page/slug "openfoam",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "7b88332e-f8a7-452b-bfd8-d128728182ce"}

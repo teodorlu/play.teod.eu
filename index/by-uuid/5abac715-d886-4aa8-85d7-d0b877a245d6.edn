@@ -2,4 +2,6 @@
  :title "Iterate Knowledge Archipelago",
  :readiness :wtf-is-this,
  :lang :en,
- :uuid "5abac715-d886-4aa8-85d7-d0b877a245d6"}
+ :uuid "5abac715-d886-4aa8-85d7-d0b877a245d6",
+ :page/slug "iterate-knowledge-archipelago",
+ :page/uuid "5abac715-d886-4aa8-85d7-d0b877a245d6"}

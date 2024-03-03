@@ -1,7 +1,9 @@
 {:slug "knowledge-playlist",
- :title "knowledge playlist",
- :readiness :wtf-is-this,
- :uuid "30253e9f-4247-4a36-8876-b2a7402d2e1e",
- :author-url "https://teod.eu",
+ :page/uuid "30253e9f-4247-4a36-8876-b2a7402d2e1e",
  :created "2023-04-22",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "knowledge playlist",
+ :lang :en,
+ :page/slug "knowledge-playlist",
+ :author-url "https://teod.eu",
+ :uuid "30253e9f-4247-4a36-8876-b2a7402d2e1e"}

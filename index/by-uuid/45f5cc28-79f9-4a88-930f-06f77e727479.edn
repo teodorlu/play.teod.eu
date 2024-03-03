@@ -1,7 +1,9 @@
 {:slug "marty-cagan",
- :title "Marty Cagan",
- :readiness :wtf-is-this,
- :uuid "45f5cc28-79f9-4a88-930f-06f77e727479",
+ :page/uuid "45f5cc28-79f9-4a88-930f-06f77e727479",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "Marty Cagan",
  :lang :en,
- :form :remote-reference}
+ :page/slug "marty-cagan",
+ :form :remote-reference,
+ :uuid "45f5cc28-79f9-4a88-930f-06f77e727479"}

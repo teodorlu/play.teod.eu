@@ -1,8 +1,10 @@
 {:slug "flavio-sousa",
- :author-url "https://teod.eu",
+ :page/uuid "e2183a42-3e2a-4aa8-9d22-652e06382d8e",
  :created "2023-06-14",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Flavio Sousa",
+ :lang :en,
+ :page/slug "flavio-sousa",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "e2183a42-3e2a-4aa8-9d22-652e06382d8e"}

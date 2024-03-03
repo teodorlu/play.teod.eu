@@ -1,7 +1,9 @@
 {:slug "watchexec-make-dev",
- :title "watchexec make dev",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
  :created "2022-07-14",
- :uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "watchexec make dev",
+ :lang :en,
+ :page/slug "watchexec-make-dev",
+ :author-url "https://teod.eu",
+ :uuid "7ec7b6b8-9341-43c0-bd05-b11fb89f2475"}

@@ -1,7 +1,9 @@
 {:slug "jocko-willink",
- :title "Jocko Willink",
- :readiness :wtf-is-this,
- :uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
+ :page/uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "Jocko Willink",
  :lang :en,
- :form :remote-reference}
+ :page/slug "jocko-willink",
+ :form :remote-reference,
+ :uuid "5dce2cbf-71b0-4038-ad1d-7174236fd964"}

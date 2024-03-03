@@ -1,8 +1,10 @@
 {:slug "techne",
- :author-url "https://teod.eu",
+ :page/uuid "b646678e-92bc-40d9-89aa-88749dffa079",
  :created "2023-08-05",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "techne",
+ :lang :en,
+ :page/slug "techne",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "b646678e-92bc-40d9-89aa-88749dffa079"}

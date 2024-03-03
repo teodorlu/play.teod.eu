@@ -1,7 +1,9 @@
 {:slug "tre-prinsipper-for-teknisk-prototyping",
- :title "Tre prinsipper for teknisk prototyping",
- :readiness :ready-for-comments,
- :uuid "22b202cb-482e-4d24-bf1e-caf51c88ae89",
- :author-url "https://teod.eu",
+ :page/uuid "22b202cb-482e-4d24-bf1e-caf51c88ae89",
  :created "2023-03-28",
- :lang :no}
+ :readiness :ready-for-comments,
+ :title "Tre prinsipper for teknisk prototyping",
+ :lang :no,
+ :page/slug "tre-prinsipper-for-teknisk-prototyping",
+ :author-url "https://teod.eu",
+ :uuid "22b202cb-482e-4d24-bf1e-caf51c88ae89"}

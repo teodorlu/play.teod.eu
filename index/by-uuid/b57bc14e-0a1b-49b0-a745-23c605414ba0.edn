@@ -1,7 +1,9 @@
 {:slug "iki",
- :title "iki: knowledge iterated",
- :readiness :wtf-is-this,
- :uuid "b57bc14e-0a1b-49b0-a745-23c605414ba0",
- :author-url "https://teod.eu",
+ :page/uuid "b57bc14e-0a1b-49b0-a745-23c605414ba0",
  :created "2023-02-18",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "iki: knowledge iterated",
+ :lang :en,
+ :page/slug "iki",
+ :author-url "https://teod.eu",
+ :uuid "b57bc14e-0a1b-49b0-a745-23c605414ba0"}

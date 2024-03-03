@@ -1,7 +1,9 @@
 {:slug "execution-for-developers",
- :title "execution for developers",
- :readiness :wtf-is-this,
- :uuid "8eade94f-28b6-4602-bb3d-8df57e22ecc1",
- :author-url "https://teod.eu",
+ :page/uuid "8eade94f-28b6-4602-bb3d-8df57e22ecc1",
  :created "2023-05-01",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "execution for developers",
+ :lang :en,
+ :page/slug "execution-for-developers",
+ :author-url "https://teod.eu",
+ :uuid "8eade94f-28b6-4602-bb3d-8df57e22ecc1"}

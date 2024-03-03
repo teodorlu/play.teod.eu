@@ -1,7 +1,9 @@
 {:slug "jacket",
- :title "Jacket Interactive",
- :readiness :wtf-is-this,
- :uuid "8a7c967a-185e-4ade-a799-1dd70642351b",
- :author-url "https://teod.eu",
+ :page/uuid "8a7c967a-185e-4ade-a799-1dd70642351b",
  :created "2023-03-07",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Jacket Interactive",
+ :lang :en,
+ :page/slug "jacket",
+ :author-url "https://teod.eu",
+ :uuid "8a7c967a-185e-4ade-a799-1dd70642351b"}

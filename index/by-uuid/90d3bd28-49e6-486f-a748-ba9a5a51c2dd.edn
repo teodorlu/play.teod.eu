@@ -1,8 +1,10 @@
 {:slug "can-programming-be-liberated-from-the-von-neumann-style",
- :title "Can programming be liberated from the von Neumann style?",
- :readiness :wtf-is-this,
- :uuid "90d3bd28-49e6-486f-a748-ba9a5a51c2dd",
- :author-url "https://teod.eu",
+ :page/uuid "90d3bd28-49e6-486f-a748-ba9a5a51c2dd",
  :created "2023-03-27",
+ :readiness :wtf-is-this,
+ :title "Can programming be liberated from the von Neumann style?",
  :lang :en,
- :form :remote-reference}
+ :page/slug "can-programming-be-liberated-from-the-von-neumann-style",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "90d3bd28-49e6-486f-a748-ba9a5a51c2dd"}

@@ -1,7 +1,9 @@
 {:slug "spillkoding-med-litt-spilldesign",
- :title "Spillkoding med litt spilldesign",
- :readiness :wtf-is-this,
- :uuid "36901875-2032-48fe-a952-9877b88df98e",
- :author-url "https://teod.eu",
+ :page/uuid "36901875-2032-48fe-a952-9877b88df98e",
  :created "2023-05-08",
- :lang :no}
+ :readiness :wtf-is-this,
+ :title "Spillkoding med litt spilldesign",
+ :lang :no,
+ :page/slug "spillkoding-med-litt-spilldesign",
+ :author-url "https://teod.eu",
+ :uuid "36901875-2032-48fe-a952-9877b88df98e"}

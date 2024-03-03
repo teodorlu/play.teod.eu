@@ -1,7 +1,9 @@
 {:slug "review-the-interface",
- :author-url "https://teod.eu",
+ :page/uuid "41b97354-0f9e-46c6-b234-a619b04152aa",
  :created "",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Review the interface",
+ :lang :en,
+ :page/slug "review-the-interface",
+ :author-url "https://teod.eu",
  :uuid "41b97354-0f9e-46c6-b234-a619b04152aa"}

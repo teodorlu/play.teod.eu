@@ -1,7 +1,9 @@
 {:slug "build-your-own-little-memex-with-babasha",
- :title "Build Your Own Little Memex with Babashka",
- :readiness :ready-for-comments,
- :uuid "26776cc4-e64d-494b-b24c-784b2c57866d",
- :author-url "https://teod.eu",
+ :page/uuid "26776cc4-e64d-494b-b24c-784b2c57866d",
  :created "2023-06-10",
- :lang :en}
+ :readiness :ready-for-comments,
+ :title "Build Your Own Little Memex with Babashka",
+ :lang :en,
+ :page/slug "build-your-own-little-memex-with-babasha",
+ :author-url "https://teod.eu",
+ :uuid "26776cc4-e64d-494b-b24c-784b2c57866d"}

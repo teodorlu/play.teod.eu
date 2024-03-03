@@ -1,7 +1,9 @@
 {:slug "thesis-antithesis-synthesis",
- :title "Thesis, anitthesis, synthesis",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95",
  :created "2022-07-16",
- :uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Thesis, anitthesis, synthesis",
+ :lang :en,
+ :page/slug "thesis-antithesis-synthesis",
+ :author-url "https://teod.eu",
+ :uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95"}

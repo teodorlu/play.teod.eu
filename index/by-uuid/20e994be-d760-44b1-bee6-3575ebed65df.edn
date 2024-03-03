@@ -1,8 +1,10 @@
 {:slug "dtype-next",
- :title "dtype-next",
- :readiness :wtf-is-this,
- :uuid "20e994be-d760-44b1-bee6-3575ebed65df",
- :author-url "https://teod.eu",
+ :page/uuid "20e994be-d760-44b1-bee6-3575ebed65df",
  :created "2023-03-28",
+ :readiness :wtf-is-this,
+ :title "dtype-next",
  :lang :en,
- :form :remote-reference}
+ :page/slug "dtype-next",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "20e994be-d760-44b1-bee6-3575ebed65df"}

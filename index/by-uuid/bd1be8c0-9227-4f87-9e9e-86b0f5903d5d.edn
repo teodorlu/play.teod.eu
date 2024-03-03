@@ -1,9 +1,11 @@
 {:slug "strong-opinions-loosely-held-considered-harmful",
+ :page/uuid "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
+ :created "2022-12-16",
+ :readiness :wtf-is-this,
  :title
  "\"Strong opinions loosely held\" is an excuse for sloppy thinking",
- :readiness :wtf-is-this,
- :uuid "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
+ :lang :en,
+ :page/slug "strong-opinions-loosely-held-considered-harmful",
  :author-url "https://teod.eu",
- :created "2022-12-16",
- :published "2022-12-19",
- :lang :en}
+ :uuid "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
+ :published "2022-12-19"}

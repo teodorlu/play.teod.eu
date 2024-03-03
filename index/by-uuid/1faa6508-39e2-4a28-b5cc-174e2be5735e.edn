@@ -1,7 +1,9 @@
 {:slug "phenomenology-of-good-code",
- :author-url "https://teod.eu",
+ :page/uuid "1faa6508-39e2-4a28-b5cc-174e2be5735e",
  :created "2024-01-15",
- :lang :en,
  :readiness :wtf-is-this,
  :title "The Phenomenology of Good Code",
+ :lang :en,
+ :page/slug "phenomenology-of-good-code",
+ :author-url "https://teod.eu",
  :uuid "1faa6508-39e2-4a28-b5cc-174e2be5735e"}

@@ -3,4 +3,6 @@
  :form :explore,
  :readiness :wtf-is-this,
  :lang :en,
- :uuid "2e1280a4-a783-4ab7-9f5c-58a7851a8218"}
+ :uuid "2e1280a4-a783-4ab7-9f5c-58a7851a8218",
+ :page/slug "feedback-interface-implementation",
+ :page/uuid "2e1280a4-a783-4ab7-9f5c-58a7851a8218"}

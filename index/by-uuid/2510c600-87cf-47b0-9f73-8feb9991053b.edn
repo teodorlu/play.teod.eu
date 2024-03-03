@@ -1,7 +1,9 @@
 {:slug "list-of-people-who-stand-out",
- :title "List of people who stand out",
- :readiness :wtf-is-this,
- :uuid "2510c600-87cf-47b0-9f73-8feb9991053b",
- :author-url "https://teod.eu",
+ :page/uuid "2510c600-87cf-47b0-9f73-8feb9991053b",
  :created "2023-02-15",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "List of people who stand out",
+ :lang :en,
+ :page/slug "list-of-people-who-stand-out",
+ :author-url "https://teod.eu",
+ :uuid "2510c600-87cf-47b0-9f73-8feb9991053b"}

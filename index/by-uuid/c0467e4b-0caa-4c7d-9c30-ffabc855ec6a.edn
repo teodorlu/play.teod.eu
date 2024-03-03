@@ -1,9 +1,12 @@
 {:slug
  "exploring-onboarding-success-organizational-fit-and-turnover-intention-of-software-professionals",
+ :page/uuid "c0467e4b-0caa-4c7d-9c30-ffabc855ec6a",
+ :created "2022-09-27",
+ :readiness :wtf-is-this,
  :title
  "Exploring onboarding success, organizational fit, and turnover intention of software professionals",
- :readiness :wtf-is-this,
- :uuid "c0467e4b-0caa-4c7d-9c30-ffabc855ec6a",
- :created "2022-09-27",
  :lang :en,
- :form :remote-reference}
+ :page/slug
+ "exploring-onboarding-success-organizational-fit-and-turnover-intention-of-software-professionals",
+ :form :remote-reference,
+ :uuid "c0467e4b-0caa-4c7d-9c30-ffabc855ec6a"}

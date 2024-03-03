@@ -1,8 +1,10 @@
 {:slug "clojure-data-cookbook",
- :title "Clojure Data Cookbook",
- :readiness :wtf-is-this,
- :uuid "93748cdc-a42a-4d68-9094-51e610cb526f",
- :author-url "https://teod.eu",
+ :page/uuid "93748cdc-a42a-4d68-9094-51e610cb526f",
  :created "2023-05-27",
+ :readiness :wtf-is-this,
+ :title "Clojure Data Cookbook",
  :lang :en,
- :form :remote-reference}
+ :page/slug "clojure-data-cookbook",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "93748cdc-a42a-4d68-9094-51e610cb526f"}

@@ -1,8 +1,10 @@
 {:slug "elisabeth-irgens",
- :author-url "https://teod.eu",
+ :page/uuid "71D39E8D-B345-4602-95E3-1F6DDDD986D4",
  :created "2024-02-18",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Elisabeth Irgens",
+ :lang :en,
+ :page/slug "elisabeth-irgens",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "71D39E8D-B345-4602-95E3-1F6DDDD986D4"}

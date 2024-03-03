@@ -1,7 +1,9 @@
 {:slug "microtheory",
- :title "microtheory",
- :readiness :wtf-is-this,
- :uuid "2628579d-9108-4268-9fab-cf0faffb7191",
- :author-url "https://teod.eu",
+ :page/uuid "2628579d-9108-4268-9fab-cf0faffb7191",
  :created "2023-04-22",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "microtheory",
+ :lang :en,
+ :page/slug "microtheory",
+ :author-url "https://teod.eu",
+ :uuid "2628579d-9108-4268-9fab-cf0faffb7191"}

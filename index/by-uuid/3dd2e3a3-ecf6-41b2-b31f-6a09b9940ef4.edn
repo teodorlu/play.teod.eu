@@ -1,7 +1,9 @@
 {:slug "electric-clojure",
- :title "Electric Clojure",
- :readiness :wtf-is-this,
- :uuid "3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4",
+ :page/uuid "3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4",
  :created "2023-03-07",
+ :readiness :wtf-is-this,
+ :title "Electric Clojure",
  :lang :en,
- :form :remote-reference}
+ :page/slug "electric-clojure",
+ :form :remote-reference,
+ :uuid "3dd2e3a3-ecf6-41b2-b31f-6a09b9940ef4"}

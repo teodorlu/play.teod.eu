@@ -1,8 +1,10 @@
 {:slug "good-epistemology",
- :title "Good epistemology",
+ :page/uuid "91873324-e6b0-4187-a335-e4e02740938b",
+ :created "2023-03-02",
  :readiness :wtf-is-this,
  :seed {},
- :uuid "91873324-e6b0-4187-a335-e4e02740938b",
+ :title "Good epistemology",
+ :lang :en,
+ :page/slug "good-epistemology",
  :author-url "https://teod.eu",
- :created "2023-03-02",
- :lang :en}
+ :uuid "91873324-e6b0-4187-a335-e4e02740938b"}

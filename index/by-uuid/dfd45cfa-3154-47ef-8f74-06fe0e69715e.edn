@@ -1,8 +1,10 @@
 {:slug "lindy-compatibility",
- :title "lindy compatibility",
- :readiness :wtf-is-this,
- :uuid "dfd45cfa-3154-47ef-8f74-06fe0e69715e",
- :author-url "https://teod.eu",
+ :page/uuid "dfd45cfa-3154-47ef-8f74-06fe0e69715e",
  :created "2023-05-01",
+ :readiness :wtf-is-this,
+ :title "lindy compatibility",
  :lang :en,
- :form :remote-reference}
+ :page/slug "lindy-compatibility",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "dfd45cfa-3154-47ef-8f74-06fe0e69715e"}

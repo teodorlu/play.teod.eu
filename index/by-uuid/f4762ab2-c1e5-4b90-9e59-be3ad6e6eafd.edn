@@ -1,7 +1,9 @@
 {:slug "dbx",
- :title "dbx",
- :readiness :wtf-is-this,
- :uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
- :author-url "https://teod.eu",
+ :page/uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd",
  :created "2022-09-17",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "dbx",
+ :lang :en,
+ :page/slug "dbx",
+ :author-url "https://teod.eu",
+ :uuid "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd"}

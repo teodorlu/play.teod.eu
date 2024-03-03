@@ -1,7 +1,9 @@
 {:slug "bumblebee",
- :title "Bumblebee",
- :readiness :wtf-is-this,
- :uuid "7fe75ff7-4508-49be-89fd-53f52a846424",
- :author-url "https://teod.eu",
+ :page/uuid "7fe75ff7-4508-49be-89fd-53f52a846424",
  :created "2023-03-12",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Bumblebee",
+ :lang :en,
+ :page/slug "bumblebee",
+ :author-url "https://teod.eu",
+ :uuid "7fe75ff7-4508-49be-89fd-53f52a846424"}

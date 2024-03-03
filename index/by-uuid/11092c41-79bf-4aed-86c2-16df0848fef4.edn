@@ -1,7 +1,9 @@
 {:slug "babashka-pods-for-beginners",
- :title "Babashka pods for beginners",
- :readiness :wtf-is-this,
- :uuid "11092c41-79bf-4aed-86c2-16df0848fef4",
- :author-url "https://teod.eu",
+ :page/uuid "11092c41-79bf-4aed-86c2-16df0848fef4",
  :created "2022-12-29",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Babashka pods for beginners",
+ :lang :en,
+ :page/slug "babashka-pods-for-beginners",
+ :author-url "https://teod.eu",
+ :uuid "11092c41-79bf-4aed-86c2-16df0848fef4"}

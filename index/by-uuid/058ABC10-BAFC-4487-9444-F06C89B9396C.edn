@@ -1,8 +1,10 @@
 {:slug "steven-mittens",
- :author-url "https://teod.eu",
+ :page/uuid "058ABC10-BAFC-4487-9444-F06C89B9396C",
  :created "2024-02-29",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Steven Mittens",
+ :lang :en,
+ :page/slug "steven-mittens",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "058ABC10-BAFC-4487-9444-F06C89B9396C"}

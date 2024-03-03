@@ -3,4 +3,6 @@
  :uuid "93ea907e-9dcb-4c6b-af7d-d9bc22c34d57",
  :form :unknown,
  :readiness :ready-for-comments,
- :lang :en}
+ :lang :en,
+ :page/slug "aphorisms",
+ :page/uuid "93ea907e-9dcb-4c6b-af7d-d9bc22c34d57"}

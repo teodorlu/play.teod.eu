@@ -1,8 +1,10 @@
 {:slug "jack-rusher",
- :title "Jack Rusher",
- :readiness :wtf-is-this,
- :uuid "4ba42678-1667-426d-a07f-dfe96ab46bd2",
- :author-url "https://teod.eu",
+ :page/uuid "4ba42678-1667-426d-a07f-dfe96ab46bd2",
  :created "2023-04-24",
+ :readiness :wtf-is-this,
+ :title "Jack Rusher",
  :lang :en,
- :form :remote-reference}
+ :page/slug "jack-rusher",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "4ba42678-1667-426d-a07f-dfe96ab46bd2"}

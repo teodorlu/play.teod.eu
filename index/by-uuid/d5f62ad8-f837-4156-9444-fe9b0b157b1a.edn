@@ -1,8 +1,10 @@
 {:slug "henrik-lissner",
- :author-url "https://teod.eu",
+ :page/uuid "d5f62ad8-f837-4156-9444-fe9b0b157b1a",
  :created "2023-06-14",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Henrik Lissner",
+ :lang :en,
+ :page/slug "henrik-lissner",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "d5f62ad8-f837-4156-9444-fe9b0b157b1a"}

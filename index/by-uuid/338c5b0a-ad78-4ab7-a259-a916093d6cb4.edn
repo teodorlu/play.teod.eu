@@ -1,7 +1,9 @@
 {:slug "disgust-sensitivity",
- :title "disgust sensitivity",
- :readiness :wtf-is-this,
- :uuid "338c5b0a-ad78-4ab7-a259-a916093d6cb4",
- :author-url "https://teod.eu",
+ :page/uuid "338c5b0a-ad78-4ab7-a259-a916093d6cb4",
  :created "2023-03-29",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "disgust sensitivity",
+ :lang :en,
+ :page/slug "disgust-sensitivity",
+ :author-url "https://teod.eu",
+ :uuid "338c5b0a-ad78-4ab7-a259-a916093d6cb4"}

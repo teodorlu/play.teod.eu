@@ -1,8 +1,10 @@
 {:slug "software-dependencies-cause-operational-expense",
- :author-url "https://teod.eu",
+ :page/uuid "eb3f5e54-6f91-4909-9d0e-92b96db7b0ca",
  :created "2023-08-05",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Software dependencies cause operational expense",
+ :lang :en,
+ :page/slug "software-dependencies-cause-operational-expense",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "eb3f5e54-6f91-4909-9d0e-92b96db7b0ca"}

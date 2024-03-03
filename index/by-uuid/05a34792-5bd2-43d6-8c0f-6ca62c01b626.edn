@@ -1,8 +1,10 @@
 {:slug "christian-johansen",
- :author-url "https://teod.eu",
+ :page/uuid "05a34792-5bd2-43d6-8c0f-6ca62c01b626",
  :created "2023-06-06",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Christian Johansen",
+ :lang :en,
+ :page/slug "christian-johansen",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "05a34792-5bd2-43d6-8c0f-6ca62c01b626"}

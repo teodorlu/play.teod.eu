@@ -1,8 +1,10 @@
 {:slug "ward-cunningham",
- :author-url "https://teod.eu",
+ :page/uuid "40e888ea-7732-41da-8776-7f506844e7f7",
  :created "2023-06-14",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Ward Cunningham",
+ :lang :en,
+ :page/slug "ward-cunningham",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "40e888ea-7732-41da-8776-7f506844e7f7"}

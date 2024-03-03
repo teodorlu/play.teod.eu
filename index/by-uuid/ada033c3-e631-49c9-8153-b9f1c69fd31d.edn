@@ -1,7 +1,9 @@
 {:slug "prompts-for-learning",
- :title "prompts for learning",
- :readiness :ready-for-comments,
- :uuid "ada033c3-e631-49c9-8153-b9f1c69fd31d",
- :author-url "https://teod.eu",
+ :page/uuid "ada033c3-e631-49c9-8153-b9f1c69fd31d",
  :created "2023-05-01",
- :lang :en}
+ :readiness :ready-for-comments,
+ :title "prompts for learning",
+ :lang :en,
+ :page/slug "prompts-for-learning",
+ :author-url "https://teod.eu",
+ :uuid "ada033c3-e631-49c9-8153-b9f1c69fd31d"}

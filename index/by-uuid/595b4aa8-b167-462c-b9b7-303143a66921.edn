@@ -1,8 +1,10 @@
 {:slug "stop-writing-dead-programs",
- :author-url "https://teod.eu",
+ :page/uuid "595b4aa8-b167-462c-b9b7-303143a66921",
  :created "2023-06-14",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Stop Writing Dead Programs",
+ :lang :en,
+ :page/slug "stop-writing-dead-programs",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "595b4aa8-b167-462c-b9b7-303143a66921"}

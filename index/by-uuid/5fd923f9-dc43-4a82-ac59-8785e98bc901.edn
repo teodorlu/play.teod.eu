@@ -1,8 +1,10 @@
 {:slug "coachability",
- :title "coachability",
- :readiness :wtf-is-this,
- :uuid "5fd923f9-dc43-4a82-ac59-8785e98bc901",
- :author-url "https://teod.eu",
+ :page/uuid "5fd923f9-dc43-4a82-ac59-8785e98bc901",
  :created "2023-05-01",
+ :readiness :wtf-is-this,
+ :title "coachability",
  :lang :en,
- :form :remote-reference}
+ :page/slug "coachability",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "5fd923f9-dc43-4a82-ac59-8785e98bc901"}

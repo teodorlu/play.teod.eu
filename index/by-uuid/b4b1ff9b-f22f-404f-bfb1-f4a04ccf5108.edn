@@ -1,7 +1,9 @@
 {:slug "scittle",
- :title "Scittle",
- :readiness :wtf-is-this,
- :uuid "b4b1ff9b-f22f-404f-bfb1-f4a04ccf5108",
+ :page/uuid "b4b1ff9b-f22f-404f-bfb1-f4a04ccf5108",
  :created "2022-10-01",
+ :readiness :wtf-is-this,
+ :title "Scittle",
  :lang :en,
- :form :remote-reference}
+ :page/slug "scittle",
+ :form :remote-reference,
+ :uuid "b4b1ff9b-f22f-404f-bfb1-f4a04ccf5108"}

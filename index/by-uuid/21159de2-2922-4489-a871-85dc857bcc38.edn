@@ -1,7 +1,9 @@
 {:slug "fzf",
- :title "fzf",
- :readiness :wtf-is-this,
- :uuid "21159de2-2922-4489-a871-85dc857bcc38",
+ :page/uuid "21159de2-2922-4489-a871-85dc857bcc38",
  :created "2023-02-14",
+ :readiness :wtf-is-this,
+ :title "fzf",
  :lang :en,
- :form :remote-reference}
+ :page/slug "fzf",
+ :form :remote-reference,
+ :uuid "21159de2-2922-4489-a871-85dc857bcc38"}

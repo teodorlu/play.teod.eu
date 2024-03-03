@@ -1,7 +1,9 @@
 {:slug "gratitude",
- :author-url "https://teod.eu",
+ :page/uuid "564234ad-f9fd-4de6-9c74-82b4e0d4aafe",
  :created "2024-02-10",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Gratitude",
+ :lang :en,
+ :page/slug "gratitude",
+ :author-url "https://teod.eu",
  :uuid "564234ad-f9fd-4de6-9c74-82b4e0d4aafe"}

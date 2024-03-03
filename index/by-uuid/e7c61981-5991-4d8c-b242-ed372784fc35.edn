@@ -1,7 +1,9 @@
 {:slug "j-programming-language",
- :title "J (programming language)",
- :readiness :wtf-is-this,
- :uuid "e7c61981-5991-4d8c-b242-ed372784fc35",
+ :page/uuid "e7c61981-5991-4d8c-b242-ed372784fc35",
  :created "2023-03-19",
+ :readiness :wtf-is-this,
+ :title "J (programming language)",
  :lang :en,
- :form :remote-reference}
+ :page/slug "j-programming-language",
+ :form :remote-reference,
+ :uuid "e7c61981-5991-4d8c-b242-ed372784fc35"}

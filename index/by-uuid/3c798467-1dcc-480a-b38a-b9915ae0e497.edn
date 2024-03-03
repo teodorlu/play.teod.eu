@@ -1,7 +1,9 @@
 {:slug "daniel-slutsky",
- :title "Daniel Slutsky",
- :readiness :wtf-is-this,
- :uuid "3c798467-1dcc-480a-b38a-b9915ae0e497",
+ :page/uuid "3c798467-1dcc-480a-b38a-b9915ae0e497",
  :created "2022-10-23",
+ :readiness :wtf-is-this,
+ :title "Daniel Slutsky",
  :lang :en,
- :form :remote-reference}
+ :page/slug "daniel-slutsky",
+ :form :remote-reference,
+ :uuid "3c798467-1dcc-480a-b38a-b9915ae0e497"}

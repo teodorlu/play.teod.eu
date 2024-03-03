@@ -3,4 +3,6 @@
  :form :rambling,
  :readiness :forever-incomplete,
  :lang :en,
- :uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e"}
+ :uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e",
+ :page/slug "journal",
+ :page/uuid "bd776ab0-d687-4f16-b66d-d03c86de2a2e"}

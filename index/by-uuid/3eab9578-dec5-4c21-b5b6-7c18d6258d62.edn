@@ -1,7 +1,9 @@
 {:slug "the-commons",
- :title "The Commons",
- :readiness :wtf-is-this,
- :uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62",
- :author-url "https://teod.eu",
+ :page/uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62",
  :created "2022-09-03",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "The Commons",
+ :lang :en,
+ :page/slug "the-commons",
+ :author-url "https://teod.eu",
+ :uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62"}

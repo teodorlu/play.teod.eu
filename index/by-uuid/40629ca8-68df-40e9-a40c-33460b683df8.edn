@@ -1,8 +1,10 @@
 {:slug "simone-de-beauvoir",
- :title "Simone de Beauvoir",
- :readiness :wtf-is-this,
- :uuid "40629ca8-68df-40e9-a40c-33460b683df8",
- :author-url "https://teod.eu",
+ :page/uuid "40629ca8-68df-40e9-a40c-33460b683df8",
  :created "2023-05-09",
+ :readiness :wtf-is-this,
+ :title "Simone de Beauvoir",
  :lang :en,
- :form :remote-reference}
+ :page/slug "simone-de-beauvoir",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "40629ca8-68df-40e9-a40c-33460b683df8"}

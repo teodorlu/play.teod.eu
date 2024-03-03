@@ -1,7 +1,9 @@
 {:slug "curious",
- :title "Please talk to me about stuff that doesn't fit!",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "c4ddc0a1-bcc6-418d-bddb-db05968d84a2",
  :created "2022-07-18",
- :uuid "c4ddc0a1-bcc6-418d-bddb-db05968d84a2",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Please talk to me about stuff that doesn't fit!",
+ :lang :en,
+ :page/slug "curious",
+ :author-url "https://teod.eu",
+ :uuid "c4ddc0a1-bcc6-418d-bddb-db05968d84a2"}

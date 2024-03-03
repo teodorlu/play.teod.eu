@@ -1,8 +1,10 @@
 {:slug "bodil-stokke",
- :author-url "https://teod.eu",
+ :page/uuid "217c51e3-1bff-43c9-af88-bc181631e94b",
  :created "2023-06-16",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Bodil Stokke",
+ :lang :en,
+ :page/slug "bodil-stokke",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "217c51e3-1bff-43c9-af88-bc181631e94b"}

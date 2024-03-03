@@ -1,7 +1,9 @@
 {:slug "play.teod.eu-retrospective",
- :title "play.teod.eu: Rolling retrospective (deprecated)",
- :readiness :deprecated,
- :author-url "https://teod.eu",
+ :page/uuid "b722664c-d310-4908-9b57-98ffd73833c9",
  :created "2022-07-24",
- :uuid "b722664c-d310-4908-9b57-98ffd73833c9",
- :lang :en}
+ :readiness :deprecated,
+ :title "play.teod.eu: Rolling retrospective (deprecated)",
+ :lang :en,
+ :page/slug "play.teod.eu-retrospective",
+ :author-url "https://teod.eu",
+ :uuid "b722664c-d310-4908-9b57-98ffd73833c9"}

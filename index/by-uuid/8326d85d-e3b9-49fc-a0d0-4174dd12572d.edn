@@ -1,8 +1,10 @@
 {:slug "anders-haugeto",
- :title "Anders Haugeto",
- :readiness :wtf-is-this,
- :uuid "8326d85d-e3b9-49fc-a0d0-4174dd12572d",
- :author-url "https://teod.eu",
+ :page/uuid "8326d85d-e3b9-49fc-a0d0-4174dd12572d",
  :created "2022-12-22",
+ :readiness :wtf-is-this,
+ :title "Anders Haugeto",
+ :lang :en,
+ :page/slug "anders-haugeto",
+ :author-url "https://teod.eu",
  :form :remote-reference,
- :lang :en}
+ :uuid "8326d85d-e3b9-49fc-a0d0-4174dd12572d"}

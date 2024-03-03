@@ -1,7 +1,9 @@
 {:slug "dave-liepmann",
- :title "Dave Liepmann",
- :readiness :wtf-is-this,
- :uuid "b6921704-d8d9-4d82-a814-3b9ced8bee31",
+ :page/uuid "b6921704-d8d9-4d82-a814-3b9ced8bee31",
  :created "2023-03-19",
+ :readiness :wtf-is-this,
+ :title "Dave Liepmann",
  :lang :en,
- :form :remote-reference}
+ :page/slug "dave-liepmann",
+ :form :remote-reference,
+ :uuid "b6921704-d8d9-4d82-a814-3b9ced8bee31"}

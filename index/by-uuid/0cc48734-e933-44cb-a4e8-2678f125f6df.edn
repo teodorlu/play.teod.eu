@@ -1,7 +1,9 @@
 {:slug "attention-design",
- :title "attention design",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "0cc48734-e933-44cb-a4e8-2678f125f6df",
  :created "2022-07-14",
- :uuid "0cc48734-e933-44cb-a4e8-2678f125f6df",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "attention design",
+ :lang :en,
+ :page/slug "attention-design",
+ :author-url "https://teod.eu",
+ :uuid "0cc48734-e933-44cb-a4e8-2678f125f6df"}

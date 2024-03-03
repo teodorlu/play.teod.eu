@@ -1,7 +1,9 @@
 {:slug "scicloj-is-awesome",
- :title "Scicloj is awesome",
- :readiness :wtf-is-this,
- :uuid "58bbb42c-7e23-4fb3-8b7b-b46dab780550",
- :author-url "https://teod.eu",
+ :page/uuid "58bbb42c-7e23-4fb3-8b7b-b46dab780550",
  :created "2022-09-17",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Scicloj is awesome",
+ :lang :en,
+ :page/slug "scicloj-is-awesome",
+ :author-url "https://teod.eu",
+ :uuid "58bbb42c-7e23-4fb3-8b7b-b46dab780550"}

@@ -1,7 +1,9 @@
 {:slug "tech-learning-ladder",
- :title "tech learning ladder",
- :readiness :wtf-is-this,
- :uuid "2be96e32-2649-4416-956a-64cbb23a3f9e",
- :author-url "https://teod.eu",
+ :page/uuid "2be96e32-2649-4416-956a-64cbb23a3f9e",
  :created "2023-05-01",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "tech learning ladder",
+ :lang :en,
+ :page/slug "tech-learning-ladder",
+ :author-url "https://teod.eu",
+ :uuid "2be96e32-2649-4416-956a-64cbb23a3f9e"}

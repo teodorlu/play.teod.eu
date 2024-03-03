@@ -1,7 +1,9 @@
 {:slug "writing-is-fake",
- :title "Writing is fake",
- :readiness :wtf-is-this,
- :uuid "e7949444-e208-40ff-9979-5fb6852ff57c",
- :author-url "https://teod.eu",
+ :page/uuid "e7949444-e208-40ff-9979-5fb6852ff57c",
  :created "2023-02-14",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Writing is fake",
+ :lang :en,
+ :page/slug "writing-is-fake",
+ :author-url "https://teod.eu",
+ :uuid "e7949444-e208-40ff-9979-5fb6852ff57c"}

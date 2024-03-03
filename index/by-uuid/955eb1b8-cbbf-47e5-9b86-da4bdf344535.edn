@@ -1,7 +1,9 @@
 {:slug "product-owner-project-manager-product-leader",
- :title "Product owner, project manager, product leader",
- :readiness :wtf-is-this,
- :uuid "955eb1b8-cbbf-47e5-9b86-da4bdf344535",
- :author-url "https://teod.eu",
+ :page/uuid "955eb1b8-cbbf-47e5-9b86-da4bdf344535",
  :created "2023-02-03",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Product owner, project manager, product leader",
+ :lang :en,
+ :page/slug "product-owner-project-manager-product-leader",
+ :author-url "https://teod.eu",
+ :uuid "955eb1b8-cbbf-47e5-9b86-da4bdf344535"}

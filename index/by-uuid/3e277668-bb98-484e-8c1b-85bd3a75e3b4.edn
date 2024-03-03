@@ -1,7 +1,9 @@
 {:slug "charles-comstock-sketches",
- :title "Charles Comstock's sketches",
- :readiness :wtf-is-this,
- :uuid "3e277668-bb98-484e-8c1b-85bd3a75e3b4",
- :author-url "https://teod.eu",
+ :page/uuid "3e277668-bb98-484e-8c1b-85bd3a75e3b4",
  :created "2022-09-21",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Charles Comstock's sketches",
+ :lang :en,
+ :page/slug "charles-comstock-sketches",
+ :author-url "https://teod.eu",
+ :uuid "3e277668-bb98-484e-8c1b-85bd3a75e3b4"}

@@ -1,7 +1,9 @@
 {:slug "c-lang",
- :title "C (programming language)",
- :readiness :wtf-is-this,
+ :page/uuid "052c1cdc-f2fe-4ba5-b319-d0394be1e184",
  :created "2022-07-14",
- :uuid "052c1cdc-f2fe-4ba5-b319-d0394be1e184",
+ :readiness :wtf-is-this,
+ :title "C (programming language)",
  :lang :en,
- :form :remote-reference}
+ :page/slug "c-lang",
+ :form :remote-reference,
+ :uuid "052c1cdc-f2fe-4ba5-b319-d0394be1e184"}

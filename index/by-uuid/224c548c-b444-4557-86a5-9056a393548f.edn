@@ -1,7 +1,9 @@
 {:slug "teknologi-for-produkt-intro",
- :author-url "https://teod.eu",
+ :page/uuid "224c548c-b444-4557-86a5-9056a393548f",
  :created "2023-06-13",
- :lang :no,
  :readiness :ready-for-comments,
  :title "Teknologi for å bygge produkt---en introduksjon",
+ :lang :no,
+ :page/slug "teknologi-for-produkt-intro",
+ :author-url "https://teod.eu",
  :uuid "224c548c-b444-4557-86a5-9056a393548f"}

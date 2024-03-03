@@ -1,7 +1,9 @@
 {:slug "reed-hastings",
- :author-url "https://teod.eu",
+ :page/uuid "85F235DE-A4CA-4054-AECE-EAEEC844A688",
  :created "2024-02-17",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Reed Hastings",
+ :lang :en,
+ :page/slug "reed-hastings",
+ :author-url "https://teod.eu",
  :uuid "85F235DE-A4CA-4054-AECE-EAEEC844A688"}

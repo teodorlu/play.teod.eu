@@ -1,7 +1,9 @@
 {:slug "fast-feedback-wide-feedback-no-branching",
- :title "Fast feedback, wide feedback, no branching",
- :readiness :wtf-is-this,
- :uuid "a0824551-5a60-4ce0-948d-ca421313d5d1",
- :author-url "https://teod.eu",
+ :page/uuid "a0824551-5a60-4ce0-948d-ca421313d5d1",
  :created "2023-01-20",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Fast feedback, wide feedback, no branching",
+ :lang :en,
+ :page/slug "fast-feedback-wide-feedback-no-branching",
+ :author-url "https://teod.eu",
+ :uuid "a0824551-5a60-4ce0-948d-ca421313d5d1"}

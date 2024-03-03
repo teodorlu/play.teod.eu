@@ -1,7 +1,9 @@
 {:slug "nassim-taleb",
- :title "Nassim Taleb",
- :readiness :wtf-is-this,
- :uuid "a68a1144-24f0-4312-b7a4-9facfdbfc634",
+ :page/uuid "a68a1144-24f0-4312-b7a4-9facfdbfc634",
  :created "2022-11-07",
+ :readiness :wtf-is-this,
+ :title "Nassim Taleb",
  :lang :en,
- :form :remote-reference}
+ :page/slug "nassim-taleb",
+ :form :remote-reference,
+ :uuid "a68a1144-24f0-4312-b7a4-9facfdbfc634"}

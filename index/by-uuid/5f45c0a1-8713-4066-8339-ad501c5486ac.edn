@@ -1,7 +1,9 @@
 {:slug "learn-design",
- :title "I want to learn design",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "5f45c0a1-8713-4066-8339-ad501c5486ac",
  :created "2022-07-24",
- :uuid "5f45c0a1-8713-4066-8339-ad501c5486ac",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "I want to learn design",
+ :lang :en,
+ :page/slug "learn-design",
+ :author-url "https://teod.eu",
+ :uuid "5f45c0a1-8713-4066-8339-ad501c5486ac"}

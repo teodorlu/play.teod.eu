@@ -1,7 +1,9 @@
 {:slug "alex-miller",
- :title "Alex Miller",
- :readiness :wtf-is-this,
- :uuid "15708661-258b-44fe-84b2-1aaaee815060",
+ :page/uuid "15708661-258b-44fe-84b2-1aaaee815060",
  :created "2023-03-11",
+ :readiness :wtf-is-this,
+ :title "Alex Miller",
  :lang :en,
- :form :remote-reference}
+ :page/slug "alex-miller",
+ :form :remote-reference,
+ :uuid "15708661-258b-44fe-84b2-1aaaee815060"}

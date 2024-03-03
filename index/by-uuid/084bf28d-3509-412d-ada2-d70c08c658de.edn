@@ -1,7 +1,9 @@
 {:slug "elements-of-clojure",
- :title "Elements of Clojure",
- :readiness :wtf-is-this,
- :uuid "084bf28d-3509-412d-ada2-d70c08c658de",
+ :page/uuid "084bf28d-3509-412d-ada2-d70c08c658de",
  :created "2023-03-20",
+ :readiness :wtf-is-this,
+ :title "Elements of Clojure",
  :lang :en,
- :form :remote-reference}
+ :page/slug "elements-of-clojure",
+ :form :remote-reference,
+ :uuid "084bf28d-3509-412d-ada2-d70c08c658de"}

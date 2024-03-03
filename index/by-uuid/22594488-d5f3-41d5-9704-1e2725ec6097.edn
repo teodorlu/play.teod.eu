@@ -2,4 +2,6 @@
  :title "A bitemporal worldview",
  :readiness :deprecated,
  :lang :en,
- :uuid "22594488-d5f3-41d5-9704-1e2725ec6097"}
+ :uuid "22594488-d5f3-41d5-9704-1e2725ec6097",
+ :page/slug "bitemporal-worldview",
+ :page/uuid "22594488-d5f3-41d5-9704-1e2725ec6097"}

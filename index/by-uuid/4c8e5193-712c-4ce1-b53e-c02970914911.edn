@@ -1,7 +1,9 @@
 {:slug "epistemology-for-product-discovery",
- :title "Epistemology for product discovery",
- :readiness :wtf-is-this,
- :uuid "4c8e5193-712c-4ce1-b53e-c02970914911",
- :author-url "https://teod.eu",
+ :page/uuid "4c8e5193-712c-4ce1-b53e-c02970914911",
  :created "2023-03-27",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Epistemology for product discovery",
+ :lang :en,
+ :page/slug "epistemology-for-product-discovery",
+ :author-url "https://teod.eu",
+ :uuid "4c8e5193-712c-4ce1-b53e-c02970914911"}

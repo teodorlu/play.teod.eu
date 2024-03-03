@@ -1,8 +1,10 @@
 {:slug "david-schmudde",
- :author-url "https://teod.eu",
+ :page/uuid "34cb6363-5c1d-4af4-b11b-3c3cd97a1150",
  :created "2024-01-21",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "David Schmudde",
+ :lang :en,
+ :page/slug "david-schmudde",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "34cb6363-5c1d-4af4-b11b-3c3cd97a1150"}

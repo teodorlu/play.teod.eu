@@ -1,7 +1,9 @@
 {:slug "friendly-ambitious-nerd",
- :title "friendly ambitious nerd",
- :readiness :wtf-is-this,
- :uuid "57341ad1-065a-4652-979d-61887803aabf",
+ :page/uuid "57341ad1-065a-4652-979d-61887803aabf",
  :created "2022-11-07",
+ :readiness :wtf-is-this,
+ :title "friendly ambitious nerd",
  :lang :en,
- :form :remote-reference}
+ :page/slug "friendly-ambitious-nerd",
+ :form :remote-reference,
+ :uuid "57341ad1-065a-4652-979d-61887803aabf"}

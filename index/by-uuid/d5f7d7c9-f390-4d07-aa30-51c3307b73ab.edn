@@ -1,7 +1,9 @@
 {:slug "keep-your-aesthetic-playful",
- :author-url "https://teod.eu",
+ :page/uuid "d5f7d7c9-f390-4d07-aa30-51c3307b73ab",
  :created "2023-08-05",
- :lang :en,
  :readiness :wtf-is-this,
  :title "keep your aesthetic playful",
+ :lang :en,
+ :page/slug "keep-your-aesthetic-playful",
+ :author-url "https://teod.eu",
  :uuid "d5f7d7c9-f390-4d07-aa30-51c3307b73ab"}

@@ -1,7 +1,9 @@
 {:slug "katta-3b",
- :title "Katta 3B: grilling på St. Hanshaugen",
- :readiness :noindex,
- :uuid "c02c42ce-5ba4-4957-9752-95a18b120bf1",
- :author-url "https://teod.eu",
+ :page/uuid "c02c42ce-5ba4-4957-9752-95a18b120bf1",
  :created "2023-05-25",
- :lang :no}
+ :readiness :noindex,
+ :title "Katta 3B: grilling på St. Hanshaugen",
+ :lang :no,
+ :page/slug "katta-3b",
+ :author-url "https://teod.eu",
+ :uuid "c02c42ce-5ba4-4957-9752-95a18b120bf1"}

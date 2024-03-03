@@ -1,8 +1,10 @@
 {:slug "dangerous-writing-app",
- :author-url "https://teod.eu",
+ :page/uuid "5baabeb7-f920-416c-941e-edbbd156f805",
  :created "2023-06-29",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "dangerous writing app",
+ :lang :en,
+ :page/slug "dangerous-writing-app",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "5baabeb7-f920-416c-941e-edbbd156f805"}

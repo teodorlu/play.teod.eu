@@ -1,7 +1,9 @@
 {:slug "dynamic-initiative",
- :title "dynamic initiative",
- :readiness :wtf-is-this,
- :uuid "14decb6f-bf0f-41f5-9c37-97d7e4a996ac",
- :author-url "https://teod.eu",
+ :page/uuid "14decb6f-bf0f-41f5-9c37-97d7e4a996ac",
  :created "2023-03-25",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "dynamic initiative",
+ :lang :en,
+ :page/slug "dynamic-initiative",
+ :author-url "https://teod.eu",
+ :uuid "14decb6f-bf0f-41f5-9c37-97d7e4a996ac"}

@@ -1,7 +1,9 @@
 {:slug "in-a-box",
- :title "In a Box",
- :readiness :wtf-is-this,
- :uuid "ceabdfb3-9e0a-4b0b-b803-20c70db6a511",
+ :page/uuid "ceabdfb3-9e0a-4b0b-b803-20c70db6a511",
  :created "2023-03-10",
+ :readiness :wtf-is-this,
+ :title "In a Box",
  :lang :en,
- :form :remote-reference}
+ :page/slug "in-a-box",
+ :form :remote-reference,
+ :uuid "ceabdfb3-9e0a-4b0b-b803-20c70db6a511"}

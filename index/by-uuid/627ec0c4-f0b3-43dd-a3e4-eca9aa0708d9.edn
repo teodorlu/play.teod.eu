@@ -1,7 +1,9 @@
 {:slug "list-of-awesome-websites",
- :title "A list of awesome websites",
- :readiness :wtf-is-this,
- :uuid "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9",
- :author-url "https://teod.eu",
+ :page/uuid "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9",
  :created "2022-09-17",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "A list of awesome websites",
+ :lang :en,
+ :page/slug "list-of-awesome-websites",
+ :author-url "https://teod.eu",
+ :uuid "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9"}

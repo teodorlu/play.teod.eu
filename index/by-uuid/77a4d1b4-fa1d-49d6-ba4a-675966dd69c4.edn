@@ -1,8 +1,10 @@
 {:slug "tillit-kvalitet-intensjon-i-relasjoner",
+ :page/uuid "77a4d1b4-fa1d-49d6-ba4a-675966dd69c4",
+ :created "2023-01-11",
+ :readiness :wtf-is-this,
  :title
  "Tillit, kvalitet og intensjon i relasjoner: en mentalmodell for å få ting gjort",
- :readiness :wtf-is-this,
- :uuid "77a4d1b4-fa1d-49d6-ba4a-675966dd69c4",
+ :lang :no,
+ :page/slug "tillit-kvalitet-intensjon-i-relasjoner",
  :author-url "https://teod.eu",
- :created "2023-01-11",
- :lang :no}
+ :uuid "77a4d1b4-fa1d-49d6-ba4a-675966dd69c4"}

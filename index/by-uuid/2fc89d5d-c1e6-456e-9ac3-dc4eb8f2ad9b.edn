@@ -1,7 +1,9 @@
 {:slug "perception-reality",
- :title "Perception is reality. Perception is not reality.",
- :readiness :wtf-is-this,
- :uuid "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b",
- :author-url "https://teod.eu",
+ :page/uuid "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b",
  :created "2022-08-27",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Perception is reality. Perception is not reality.",
+ :lang :en,
+ :page/slug "perception-reality",
+ :author-url "https://teod.eu",
+ :uuid "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b"}

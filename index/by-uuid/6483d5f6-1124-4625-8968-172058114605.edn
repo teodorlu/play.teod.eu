@@ -1,7 +1,9 @@
 {:slug "array-programming",
- :title "Array programming",
- :readiness :wtf-is-this,
- :uuid "6483d5f6-1124-4625-8968-172058114605",
+ :page/uuid "6483d5f6-1124-4625-8968-172058114605",
  :created "2023-03-19",
+ :readiness :wtf-is-this,
+ :title "Array programming",
  :lang :en,
- :form :remote-reference}
+ :page/slug "array-programming",
+ :form :remote-reference,
+ :uuid "6483d5f6-1124-4625-8968-172058114605"}

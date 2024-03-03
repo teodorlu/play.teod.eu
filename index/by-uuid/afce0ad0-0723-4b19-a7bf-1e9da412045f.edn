@@ -1,7 +1,9 @@
 {:slug "trust-vs-evil",
- :author-url "https://teod.eu",
+ :page/uuid "afce0ad0-0723-4b19-a7bf-1e9da412045f",
  :created "2023-09-02",
- :lang :en,
  :readiness :ready-for-comments,
  :title "Trust vs Evil",
+ :lang :en,
+ :page/slug "trust-vs-evil",
+ :author-url "https://teod.eu",
  :uuid "afce0ad0-0723-4b19-a7bf-1e9da412045f"}

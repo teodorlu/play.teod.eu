@@ -1,7 +1,9 @@
 {:slug "werner-hetzog",
- :title "Werner Hetzog",
- :readiness :wtf-is-this,
- :uuid "f39b5dcb-3d95-41d7-8526-35f28083a150",
+ :page/uuid "f39b5dcb-3d95-41d7-8526-35f28083a150",
  :created "2023-02-15",
+ :readiness :wtf-is-this,
+ :title "Werner Hetzog",
  :lang :en,
- :form :remote-reference}
+ :page/slug "werner-hetzog",
+ :form :remote-reference,
+ :uuid "f39b5dcb-3d95-41d7-8526-35f28083a150"}

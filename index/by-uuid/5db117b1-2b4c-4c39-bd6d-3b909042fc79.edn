@@ -1,7 +1,9 @@
 {:slug "martin-fowler",
- :title "Martin Fowler",
- :readiness :wtf-is-this,
- :uuid "5db117b1-2b4c-4c39-bd6d-3b909042fc79",
+ :page/uuid "5db117b1-2b4c-4c39-bd6d-3b909042fc79",
  :created "2023-03-01",
+ :readiness :wtf-is-this,
+ :title "Martin Fowler",
  :lang :en,
- :form :remote-reference}
+ :page/slug "martin-fowler",
+ :form :remote-reference,
+ :uuid "5db117b1-2b4c-4c39-bd6d-3b909042fc79"}

@@ -1,7 +1,9 @@
 {:slug "steven-pressfield",
- :title "Steven Pressfield",
- :readiness :wtf-is-this,
- :uuid "c24fb740-235f-4798-aee6-a3075a45fef6",
+ :page/uuid "c24fb740-235f-4798-aee6-a3075a45fef6",
  :created "2022-11-07",
+ :readiness :wtf-is-this,
+ :title "Steven Pressfield",
  :lang :en,
- :form :remote-reference}
+ :page/slug "steven-pressfield",
+ :form :remote-reference,
+ :uuid "c24fb740-235f-4798-aee6-a3075a45fef6"}

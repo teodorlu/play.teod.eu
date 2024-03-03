@@ -3,4 +3,6 @@
  :readiness :wtf-is-this,
  :author-url "https://teod.eu",
  :uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15",
- :lang :en}
+ :lang :en,
+ :page/slug "capability-feature-assembly",
+ :page/uuid "c8131839-be8d-4ca8-8bc3-eac72cfade15"}

@@ -1,7 +1,9 @@
 {:slug "mewtwo",
- :title "Mewtwo",
- :readiness :wtf-is-this,
- :uuid "f9519bf0-beaf-4910-8ecb-d3b02c5b2727",
- :author-url "https://teod.eu",
+ :page/uuid "f9519bf0-beaf-4910-8ecb-d3b02c5b2727",
  :created "2023-03-24",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Mewtwo",
+ :lang :en,
+ :page/slug "mewtwo",
+ :author-url "https://teod.eu",
+ :uuid "f9519bf0-beaf-4910-8ecb-d3b02c5b2727"}

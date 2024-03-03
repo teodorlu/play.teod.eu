@@ -1,7 +1,9 @@
 {:slug "write-drunk-edit-sober",
- :title "Write drunk, edit sober",
- :readiness :wtf-is-this,
- :uuid "dc3b66ad-d07f-4139-98ff-796a974146ed",
- :author-url "https://teod.eu",
+ :page/uuid "dc3b66ad-d07f-4139-98ff-796a974146ed",
  :created "2023-03-04",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Write drunk, edit sober",
+ :lang :en,
+ :page/slug "write-drunk-edit-sober",
+ :author-url "https://teod.eu",
+ :uuid "dc3b66ad-d07f-4139-98ff-796a974146ed"}

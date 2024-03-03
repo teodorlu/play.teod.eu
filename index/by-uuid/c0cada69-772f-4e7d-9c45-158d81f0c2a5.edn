@@ -1,8 +1,10 @@
 {:slug "peter-stromberg",
- :title "Peter Strömberg",
- :readiness :wtf-is-this,
- :uuid "c0cada69-772f-4e7d-9c45-158d81f0c2a5",
- :author-url "https://teod.eu",
+ :page/uuid "c0cada69-772f-4e7d-9c45-158d81f0c2a5",
  :created "2023-03-27",
+ :readiness :wtf-is-this,
+ :title "Peter Strömberg",
  :lang :en,
- :form :remote-reference}
+ :page/slug "peter-stromberg",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "c0cada69-772f-4e7d-9c45-158d81f0c2a5"}

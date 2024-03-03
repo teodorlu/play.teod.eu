@@ -1,7 +1,9 @@
 {:slug "holding-ideas-so-tightly-they-suffocate",
- :title "Holding one's ideas so tightly they suffocate",
- :readiness :wtf-is-this,
- :uuid "7b5e0aae-f0f3-4efa-9966-ed79484eb86a",
- :author-url "https://teod.eu",
+ :page/uuid "7b5e0aae-f0f3-4efa-9966-ed79484eb86a",
  :created "2023-04-30",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Holding one's ideas so tightly they suffocate",
+ :lang :en,
+ :page/slug "holding-ideas-so-tightly-they-suffocate",
+ :author-url "https://teod.eu",
+ :uuid "7b5e0aae-f0f3-4efa-9966-ed79484eb86a"}

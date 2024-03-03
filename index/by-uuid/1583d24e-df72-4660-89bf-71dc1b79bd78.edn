@@ -1,7 +1,9 @@
 {:slug "impose-limitations-eliminate-variance",
- :title "Impose limitations and eliminate variance",
- :readiness :wtf-is-this,
- :uuid "1583d24e-df72-4660-89bf-71dc1b79bd78",
+ :page/uuid "1583d24e-df72-4660-89bf-71dc1b79bd78",
  :created "2022-11-03",
+ :readiness :wtf-is-this,
+ :title "Impose limitations and eliminate variance",
  :lang :en,
- :form :remote-reference}
+ :page/slug "impose-limitations-eliminate-variance",
+ :form :remote-reference,
+ :uuid "1583d24e-df72-4660-89bf-71dc1b79bd78"}

@@ -1,8 +1,10 @@
 {:slug "mark-mcgranaghan",
- :title "Mark McGranaghan",
- :readiness :wtf-is-this,
- :uuid "00cd1474-ccf6-44d2-9795-492fbd0c08c3",
- :author-url "https://teod.eu",
+ :page/uuid "00cd1474-ccf6-44d2-9795-492fbd0c08c3",
  :created "2023-03-20",
+ :readiness :wtf-is-this,
+ :title "Mark McGranaghan",
  :lang :en,
- :form :remote-reference}
+ :page/slug "mark-mcgranaghan",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "00cd1474-ccf6-44d2-9795-492fbd0c08c3"}

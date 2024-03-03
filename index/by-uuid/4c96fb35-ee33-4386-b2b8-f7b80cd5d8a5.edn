@@ -1,7 +1,9 @@
 {:slug "empowered",
- :title "Empowered",
- :readiness :wtf-is-this,
- :uuid "4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5",
+ :page/uuid "4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "Empowered",
  :lang :en,
- :form :remote-reference}
+ :page/slug "empowered",
+ :form :remote-reference,
+ :uuid "4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5"}

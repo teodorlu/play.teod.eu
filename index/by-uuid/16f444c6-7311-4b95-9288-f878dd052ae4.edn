@@ -1,7 +1,9 @@
 {:slug "sindre",
- :title "Sindre",
- :readiness :wtf-is-this,
- :uuid "16f444c6-7311-4b95-9288-f878dd052ae4",
- :author-url "https://teod.eu",
+ :page/uuid "16f444c6-7311-4b95-9288-f878dd052ae4",
  :created "2022-11-07",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Sindre",
+ :lang :en,
+ :page/slug "sindre",
+ :author-url "https://teod.eu",
+ :uuid "16f444c6-7311-4b95-9288-f878dd052ae4"}

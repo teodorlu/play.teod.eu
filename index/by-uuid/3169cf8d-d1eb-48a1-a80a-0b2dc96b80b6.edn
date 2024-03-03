@@ -1,8 +1,10 @@
 {:slug "joakim-sellevold",
- :title "Joakim Sellevold",
- :readiness :wtf-is-this,
- :uuid "3169cf8d-d1eb-48a1-a80a-0b2dc96b80b6",
- :author-url "https://teod.eu",
+ :page/uuid "3169cf8d-d1eb-48a1-a80a-0b2dc96b80b6",
  :created "2023-03-12",
+ :readiness :wtf-is-this,
+ :title "Joakim Sellevold",
  :lang :en,
- :form :remote-reference}
+ :page/slug "joakim-sellevold",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "3169cf8d-d1eb-48a1-a80a-0b2dc96b80b6"}

@@ -1,8 +1,10 @@
 {:slug "neural-network",
- :author-url "https://teod.eu",
+ :page/uuid "14d7645f-70e8-4505-9c59-c76c6aea7ff1",
  :created "2023-06-06",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "neural network",
+ :lang :en,
+ :page/slug "neural-network",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "14d7645f-70e8-4505-9c59-c76c6aea7ff1"}

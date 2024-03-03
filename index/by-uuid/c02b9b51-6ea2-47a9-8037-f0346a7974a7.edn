@@ -1,8 +1,10 @@
 {:slug "ole-jacob",
- :title "Ole Jacob",
- :readiness :wtf-is-this,
- :uuid "c02b9b51-6ea2-47a9-8037-f0346a7974a7",
- :author-url "https://teod.eu",
+ :page/uuid "c02b9b51-6ea2-47a9-8037-f0346a7974a7",
  :created "2023-05-11",
+ :readiness :wtf-is-this,
+ :title "Ole Jacob",
  :lang :en,
- :form :remote-reference}
+ :page/slug "ole-jacob",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "c02b9b51-6ea2-47a9-8037-f0346a7974a7"}

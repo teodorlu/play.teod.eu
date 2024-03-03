@@ -1,7 +1,9 @@
 {:slug "code-sandbox",
- :title "Code sandbox",
- :readiness :wtf-is-this,
- :uuid "51ce7962-1987-4b7a-888d-3226c2d4d05b",
- :author-url "https://teod.eu",
+ :page/uuid "51ce7962-1987-4b7a-888d-3226c2d4d05b",
  :created "2023-01-08",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Code sandbox",
+ :lang :en,
+ :page/slug "code-sandbox",
+ :author-url "https://teod.eu",
+ :uuid "51ce7962-1987-4b7a-888d-3226c2d4d05b"}

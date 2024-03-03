@@ -1,7 +1,9 @@
 {:slug "the-pragmatic-programmer",
- :title "The Pragmatic Programmer",
- :readiness :wtf-is-this,
- :uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
+ :page/uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "The Pragmatic Programmer",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-pragmatic-programmer",
+ :form :remote-reference,
+ :uuid "a89b6b73-bf4b-47bf-90aa-6b8bc5af93f1"}

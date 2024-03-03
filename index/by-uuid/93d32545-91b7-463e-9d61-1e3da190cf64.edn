@@ -1,7 +1,9 @@
 {:slug "shades-of-deep-green",
- :title "Shades of Deep Green",
- :readiness :wtf-is-this,
- :uuid "93d32545-91b7-463e-9d61-1e3da190cf64",
- :author-url "https://teod.eu",
+ :page/uuid "93d32545-91b7-463e-9d61-1e3da190cf64",
  :created "2022-09-10",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Shades of Deep Green",
+ :lang :en,
+ :page/slug "shades-of-deep-green",
+ :author-url "https://teod.eu",
+ :uuid "93d32545-91b7-463e-9d61-1e3da190cf64"}

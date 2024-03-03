@@ -1,7 +1,9 @@
 {:slug "interface-perception-design",
- :title "Interface, Perception, Design",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "e9a97a46-f252-4883-a311-21b20528d14d",
  :created "2022-07-18",
- :uuid "e9a97a46-f252-4883-a311-21b20528d14d",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Interface, Perception, Design",
+ :lang :en,
+ :page/slug "interface-perception-design",
+ :author-url "https://teod.eu",
+ :uuid "e9a97a46-f252-4883-a311-21b20528d14d"}

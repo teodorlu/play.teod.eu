@@ -1,7 +1,9 @@
 {:slug "play.teod.eu",
- :title "play.teod.eu",
- :readiness :wtf-is-this,
- :uuid "0c9bef25-85ef-48e8-b4fd-d60160f177ec",
+ :page/uuid "0c9bef25-85ef-48e8-b4fd-d60160f177ec",
  :created "2022-10-20",
+ :readiness :wtf-is-this,
+ :title "play.teod.eu",
  :lang :en,
- :form :remote-reference}
+ :page/slug "play.teod.eu",
+ :form :remote-reference,
+ :uuid "0c9bef25-85ef-48e8-b4fd-d60160f177ec"}

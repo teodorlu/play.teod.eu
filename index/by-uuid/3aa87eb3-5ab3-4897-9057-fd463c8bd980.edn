@@ -1,7 +1,9 @@
 {:slug "the-art-of-unix-programming",
- :title "The Art of Unix Programming",
- :readiness :wtf-is-this,
- :uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
+ :page/uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "The Art of Unix Programming",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-art-of-unix-programming",
+ :form :remote-reference,
+ :uuid "3aa87eb3-5ab3-4897-9057-fd463c8bd980"}

@@ -3,4 +3,6 @@
  :readiness :wtf-is-this,
  :author-url "https://teod.eu",
  :uuid "276c7103-9366-4326-8cfd-3c0871be3c64",
- :lang :en}
+ :lang :en,
+ :page/slug "strong-relations",
+ :page/uuid "276c7103-9366-4326-8cfd-3c0871be3c64"}

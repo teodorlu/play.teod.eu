@@ -1,7 +1,9 @@
 {:slug "freedom-to-explore-the-network",
- :author-url "https://teod.eu",
+ :page/uuid "d25f0e71-4b76-47fc-b816-f57f696fb8c6",
  :created "",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Freedom To Explore the Network",
+ :lang :en,
+ :page/slug "freedom-to-explore-the-network",
+ :author-url "https://teod.eu",
  :uuid "d25f0e71-4b76-47fc-b816-f57f696fb8c6"}

@@ -1,7 +1,9 @@
 {:slug "dark-agile",
- :title "Dark Agile",
- :readiness :wtf-is-this,
- :uuid "d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1",
+ :page/uuid "d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1",
  :created "2022-09-25",
+ :readiness :wtf-is-this,
+ :title "Dark Agile",
  :lang :en,
- :form :remote-reference}
+ :page/slug "dark-agile",
+ :form :remote-reference,
+ :uuid "d8733fcf-4d5e-4e52-ae8e-50dc5f1991d1"}

@@ -1,8 +1,10 @@
 {:slug "lessons-learned-teaching-elm-to-kids",
- :title "Lessons learned teaching Elm to kids",
- :readiness :wtf-is-this,
- :uuid "436d7df4-f986-4bff-8efa-44bf72099859",
- :author-url "https://teod.eu",
+ :page/uuid "436d7df4-f986-4bff-8efa-44bf72099859",
  :created "2023-04-30",
+ :readiness :wtf-is-this,
+ :title "Lessons learned teaching Elm to kids",
  :lang :en,
- :form :remote-reference}
+ :page/slug "lessons-learned-teaching-elm-to-kids",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "436d7df4-f986-4bff-8efa-44bf72099859"}

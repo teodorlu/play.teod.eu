@@ -1,7 +1,9 @@
 {:slug "denotational-design",
- :title "Denotational Design",
- :readiness :wtf-is-this,
- :uuid "cab02e40-98f3-4baa-b375-be8736ceb88a",
+ :page/uuid "cab02e40-98f3-4baa-b375-be8736ceb88a",
  :created "2022-10-15",
+ :readiness :wtf-is-this,
+ :title "Denotational Design",
  :lang :en,
- :form :remote-reference}
+ :page/slug "denotational-design",
+ :form :remote-reference,
+ :uuid "cab02e40-98f3-4baa-b375-be8736ceb88a"}

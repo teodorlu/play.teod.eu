@@ -1,10 +1,13 @@
 {:slug
  "finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus",
- :author-url "https://teod.eu",
+ :page/uuid "3619c8d2-f020-4e65-8e45-ca1970cdf46c",
  :created "",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title
  "Finite element implementation of lower-order strain gradient plasticity in Abaqus",
+ :lang :en,
+ :page/slug
+ "finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "3619c8d2-f020-4e65-8e45-ca1970cdf46c"}

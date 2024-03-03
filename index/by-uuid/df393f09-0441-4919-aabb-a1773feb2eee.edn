@@ -1,8 +1,10 @@
 {:slug "kristian-collin-berge",
- :title "Kristian Collin Berge",
- :readiness :wtf-is-this,
- :uuid "df393f09-0441-4919-aabb-a1773feb2eee",
- :author-url "https://teod.eu",
+ :page/uuid "df393f09-0441-4919-aabb-a1773feb2eee",
  :created "2023-03-27",
+ :readiness :wtf-is-this,
+ :title "Kristian Collin Berge",
  :lang :en,
- :form :remote-reference}
+ :page/slug "kristian-collin-berge",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "df393f09-0441-4919-aabb-a1773feb2eee"}

@@ -3,4 +3,6 @@
  :form :explore,
  :readiness :wtf-is-this,
  :lang :en,
- :uuid "5603700a-9f22-44e2-9e03-f83776e2bfe3"}
+ :uuid "5603700a-9f22-44e2-9e03-f83776e2bfe3",
+ :page/slug "narrow-waist",
+ :page/uuid "5603700a-9f22-44e2-9e03-f83776e2bfe3"}

@@ -1,7 +1,9 @@
 {:slug "polyglot-abundance",
- :title "Polyglot programming from an abundence mindset",
- :readiness :wtf-is-this,
- :uuid "499243a4-7b24-4937-8f95-066d28ae6fe0",
- :author-url "https://teod.eu",
+ :page/uuid "499243a4-7b24-4937-8f95-066d28ae6fe0",
  :created "2023-03-30",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Polyglot programming from an abundence mindset",
+ :lang :en,
+ :page/slug "polyglot-abundance",
+ :author-url "https://teod.eu",
+ :uuid "499243a4-7b24-4937-8f95-066d28ae6fe0"}

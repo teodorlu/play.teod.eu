@@ -1,7 +1,9 @@
 {:slug "unicad",
- :title "Unicad",
- :readiness :wtf-is-this,
- :uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026",
+ :page/uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026",
  :created "2022-09-20",
+ :readiness :wtf-is-this,
+ :title "Unicad",
  :lang :en,
- :form :remote-reference}
+ :page/slug "unicad",
+ :form :remote-reference,
+ :uuid "a91a46da-75f0-4a1c-8cde-5e51ad199026"}

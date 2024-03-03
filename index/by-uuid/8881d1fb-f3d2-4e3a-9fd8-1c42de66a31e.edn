@@ -1,7 +1,9 @@
 {:slug "little-memex",
- :title "little memex",
- :readiness :wtf-is-this,
- :uuid "8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e",
- :author-url "https://teod.eu",
+ :page/uuid "8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e",
  :created "2023-04-22",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "little memex",
+ :lang :en,
+ :page/slug "little-memex",
+ :author-url "https://teod.eu",
+ :uuid "8881d1fb-f3d2-4e3a-9fd8-1c42de66a31e"}

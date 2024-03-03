@@ -1,8 +1,10 @@
 {:slug "eliyahu-goldratt",
- :author-url "https://teod.eu",
+ :page/uuid "97de0013-e7d3-429e-bf06-1a4bfca5d184",
  :created "2023-08-05",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Eliyahu Goldratt",
+ :lang :en,
+ :page/slug "eliyahu-goldratt",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "97de0013-e7d3-429e-bf06-1a4bfca5d184"}

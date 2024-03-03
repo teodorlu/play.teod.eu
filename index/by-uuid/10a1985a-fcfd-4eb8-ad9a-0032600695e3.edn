@@ -1,7 +1,9 @@
 {:slug "epimetheus-project-management-inc",
- :author-url "https://teod.eu",
+ :page/uuid "10a1985a-fcfd-4eb8-ad9a-0032600695e3",
  :created "2023-04-04",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Epimetheus Project Management Inc",
+ :lang :en,
+ :page/slug "epimetheus-project-management-inc",
+ :author-url "https://teod.eu",
  :uuid "10a1985a-fcfd-4eb8-ad9a-0032600695e3"}

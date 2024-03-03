@@ -1,7 +1,9 @@
 {:slug "theres-always-a-deliverable",
- :title "there's always a deliverable",
- :readiness :wtf-is-this,
- :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
- :author-url "https://teod.eu",
+ :page/uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1",
  :created "2022-08-17",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "there's always a deliverable",
+ :lang :en,
+ :page/slug "theres-always-a-deliverable",
+ :author-url "https://teod.eu",
+ :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1"}

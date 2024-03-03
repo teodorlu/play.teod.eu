@@ -1,8 +1,10 @@
 {:slug "scicloj-libraries",
- :title "Scicloj libraries and tools",
- :readiness :wtf-is-this,
- :uuid "9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825",
- :author-url "https://teod.eu",
- :created "2022-07-30",
+ :page/uuid "9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825",
  :builder :no-op,
- :lang :en}
+ :created "2022-07-30",
+ :readiness :wtf-is-this,
+ :title "Scicloj libraries and tools",
+ :lang :en,
+ :page/slug "scicloj-libraries",
+ :author-url "https://teod.eu",
+ :uuid "9eccb2aa-fe9a-4855-b0d3-8f89cbe1d825"}

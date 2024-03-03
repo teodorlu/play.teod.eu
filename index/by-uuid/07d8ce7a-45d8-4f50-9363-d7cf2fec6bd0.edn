@@ -1,7 +1,9 @@
 {:slug "bb-install",
- :title "bb-install",
- :readiness :wtf-is-this,
- :uuid "07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0",
- :author-url "https://teod.eu",
+ :page/uuid "07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0",
  :created "2022-08-12",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "bb-install",
+ :lang :en,
+ :page/slug "bb-install",
+ :author-url "https://teod.eu",
+ :uuid "07d8ce7a-45d8-4f50-9363-d7cf2fec6bd0"}

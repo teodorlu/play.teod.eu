@@ -1,7 +1,9 @@
 {:slug "bimodal-strategies",
- :title "Bimodal strategies",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "b7446aab-c31e-4666-bf28-2728a04fd860",
  :created "2022-07-29",
- :uuid "b7446aab-c31e-4666-bf28-2728a04fd860",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Bimodal strategies",
+ :lang :en,
+ :page/slug "bimodal-strategies",
+ :author-url "https://teod.eu",
+ :uuid "b7446aab-c31e-4666-bf28-2728a04fd860"}

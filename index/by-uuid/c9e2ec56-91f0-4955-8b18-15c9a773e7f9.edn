@@ -1,7 +1,9 @@
 {:slug "formal-theory-informal-relations",
- :title "Formal theory, informal relations",
- :readiness :wtf-is-this,
- :uuid "c9e2ec56-91f0-4955-8b18-15c9a773e7f9",
- :author-url "https://teod.eu",
+ :page/uuid "c9e2ec56-91f0-4955-8b18-15c9a773e7f9",
  :created "2023-03-09",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Formal theory, informal relations",
+ :lang :en,
+ :page/slug "formal-theory-informal-relations",
+ :author-url "https://teod.eu",
+ :uuid "c9e2ec56-91f0-4955-8b18-15c9a773e7f9"}

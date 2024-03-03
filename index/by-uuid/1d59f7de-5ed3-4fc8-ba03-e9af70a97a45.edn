@@ -1,7 +1,9 @@
 {:slug "introspectvv",
- :title "introspect (book)",
- :readiness :wtf-is-this,
- :uuid "1d59f7de-5ed3-4fc8-ba03-e9af70a97a45",
+ :page/uuid "1d59f7de-5ed3-4fc8-ba03-e9af70a97a45",
  :created "2022-11-07",
+ :readiness :wtf-is-this,
+ :title "introspect (book)",
  :lang :en,
- :form :remote-reference}
+ :page/slug "introspectvv",
+ :form :remote-reference,
+ :uuid "1d59f7de-5ed3-4fc8-ba03-e9af70a97a45"}

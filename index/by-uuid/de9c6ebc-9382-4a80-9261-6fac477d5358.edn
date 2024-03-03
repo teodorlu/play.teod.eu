@@ -1,8 +1,10 @@
 {:slug "wheel-of-time",
- :author-url "https://teod.eu",
+ :page/uuid "de9c6ebc-9382-4a80-9261-6fac477d5358",
  :created "2023-08-27",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Wheel of Time",
+ :lang :en,
+ :page/slug "wheel-of-time",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "de9c6ebc-9382-4a80-9261-6fac477d5358"}

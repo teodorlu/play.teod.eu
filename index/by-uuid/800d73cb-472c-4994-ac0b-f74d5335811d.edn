@@ -1,7 +1,9 @@
 {:slug "del-det-som-er-på-kanten-av-hva-du-kan",
- :title "Del det som er på kanten av hva du kan",
- :readiness :wtf-is-this,
- :uuid "800d73cb-472c-4994-ac0b-f74d5335811d",
- :author-url "https://teod.eu",
+ :page/uuid "800d73cb-472c-4994-ac0b-f74d5335811d",
  :created "2023-04-26",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Del det som er på kanten av hva du kan",
+ :lang :en,
+ :page/slug "del-det-som-er-på-kanten-av-hva-du-kan",
+ :author-url "https://teod.eu",
+ :uuid "800d73cb-472c-4994-ac0b-f74d5335811d"}

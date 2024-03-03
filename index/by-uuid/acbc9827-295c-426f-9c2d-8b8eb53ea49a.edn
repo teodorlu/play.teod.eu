@@ -1,8 +1,10 @@
 {:slug "berlin",
- :author-url "https://teod.eu",
+ :page/uuid "acbc9827-295c-426f-9c2d-8b8eb53ea49a",
  :created "2023-06-06",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Berlin",
+ :lang :en,
+ :page/slug "berlin",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "acbc9827-295c-426f-9c2d-8b8eb53ea49a"}

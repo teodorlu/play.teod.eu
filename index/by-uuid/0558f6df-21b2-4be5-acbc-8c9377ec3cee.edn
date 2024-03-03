@@ -1,7 +1,9 @@
 {:slug "many-small-functions-bad",
- :title "When having many small functions is bad",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee",
  :created "2022-07-14",
- :uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "When having many small functions is bad",
+ :lang :en,
+ :page/slug "many-small-functions-bad",
+ :author-url "https://teod.eu",
+ :uuid "0558f6df-21b2-4be5-acbc-8c9377ec3cee"}

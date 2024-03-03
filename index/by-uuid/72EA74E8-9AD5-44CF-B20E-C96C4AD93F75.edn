@@ -1,8 +1,10 @@
 {:slug "friedrich-nietzsche",
- :author-url "https://teod.eu",
+ :page/uuid "72EA74E8-9AD5-44CF-B20E-C96C4AD93F75",
  :created "2024-02-29",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Friedrich Nietzsche",
+ :lang :en,
+ :page/slug "friedrich-nietzsche",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "72EA74E8-9AD5-44CF-B20E-C96C4AD93F75"}

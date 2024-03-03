@@ -1,7 +1,9 @@
 {:slug "outcome-orientation-or-not",
- :author-url "https://teod.eu",
+ :page/uuid "e868f48d-019d-4664-b06f-12c699f950e5",
  :created "",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Outcome orientation! Or ... not?",
+ :lang :en,
+ :page/slug "outcome-orientation-or-not",
+ :author-url "https://teod.eu",
  :uuid "e868f48d-019d-4664-b06f-12c699f950e5"}

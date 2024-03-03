@@ -1,7 +1,9 @@
 {:slug "the-bed-of-procrustes",
- :title "The Bed of Procrustes",
- :readiness :wtf-is-this,
- :uuid "d2123911-3c3b-4f38-88f3-dfaf146f02be",
+ :page/uuid "d2123911-3c3b-4f38-88f3-dfaf146f02be",
  :created "2023-03-10",
+ :readiness :wtf-is-this,
+ :title "The Bed of Procrustes",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-bed-of-procrustes",
+ :form :remote-reference,
+ :uuid "d2123911-3c3b-4f38-88f3-dfaf146f02be"}

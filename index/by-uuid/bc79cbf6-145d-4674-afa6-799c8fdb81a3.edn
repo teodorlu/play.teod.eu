@@ -1,8 +1,10 @@
 {:slug "chris-hanson",
- :author-url "https://teod.eu",
+ :page/uuid "bc79cbf6-145d-4674-afa6-799c8fdb81a3",
  :created "2023-10-29",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Chris Hanson",
+ :lang :en,
+ :page/slug "chris-hanson",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "bc79cbf6-145d-4674-afa6-799c8fdb81a3"}

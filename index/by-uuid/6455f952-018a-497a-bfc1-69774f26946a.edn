@@ -1,8 +1,10 @@
 {:slug "sam-ritchie",
- :title "Sam Ritchie",
- :readiness :wtf-is-this,
- :uuid "6455f952-018a-497a-bfc1-69774f26946a",
- :author-url "https://teod.eu",
+ :page/uuid "6455f952-018a-497a-bfc1-69774f26946a",
  :created "2023-05-27",
+ :readiness :wtf-is-this,
+ :title "Sam Ritchie",
  :lang :en,
- :form :remote-reference}
+ :page/slug "sam-ritchie",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "6455f952-018a-497a-bfc1-69774f26946a"}

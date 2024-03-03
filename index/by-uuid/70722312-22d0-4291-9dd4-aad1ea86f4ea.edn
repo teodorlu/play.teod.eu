@@ -1,7 +1,9 @@
 {:slug "enter-the-forest-at-its-darkest-point",
- :title "Enter the Forest at its Darkest Point",
- :readiness :wtf-is-this,
- :uuid "70722312-22d0-4291-9dd4-aad1ea86f4ea",
- :author-url "https://teod.eu",
+ :page/uuid "70722312-22d0-4291-9dd4-aad1ea86f4ea",
  :created "2023-02-15",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Enter the Forest at its Darkest Point",
+ :lang :en,
+ :page/slug "enter-the-forest-at-its-darkest-point",
+ :author-url "https://teod.eu",
+ :uuid "70722312-22d0-4291-9dd4-aad1ea86f4ea"}

@@ -1,7 +1,9 @@
 {:slug "learning-to-discover",
- :title "Learning to discover",
- :readiness :wtf-is-this,
- :uuid "b21e4aea-7282-45e8-83a3-2d80ecdf669b",
- :author-url "https://teod.eu",
+ :page/uuid "b21e4aea-7282-45e8-83a3-2d80ecdf669b",
  :created "2023-03-07",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Learning to discover",
+ :lang :en,
+ :page/slug "learning-to-discover",
+ :author-url "https://teod.eu",
+ :uuid "b21e4aea-7282-45e8-83a3-2d80ecdf669b"}

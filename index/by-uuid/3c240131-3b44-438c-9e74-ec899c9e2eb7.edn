@@ -1,7 +1,9 @@
 {:slug "practice-deliberately-with-journals",
- :title "Practice deliberatley with journals",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7",
  :created "2022-07-23",
- :uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Practice deliberatley with journals",
+ :lang :en,
+ :page/slug "practice-deliberately-with-journals",
+ :author-url "https://teod.eu",
+ :uuid "3c240131-3b44-438c-9e74-ec899c9e2eb7"}

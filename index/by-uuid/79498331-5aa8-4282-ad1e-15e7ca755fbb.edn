@@ -1,7 +1,9 @@
 {:slug "minimize-the-number-of-moving-pieces",
- :title "minimize the number of moving pieces",
- :readiness :wtf-is-this,
- :uuid "79498331-5aa8-4282-ad1e-15e7ca755fbb",
- :author-url "https://teod.eu",
+ :page/uuid "79498331-5aa8-4282-ad1e-15e7ca755fbb",
  :created "2023-03-10",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "minimize the number of moving pieces",
+ :lang :en,
+ :page/slug "minimize-the-number-of-moving-pieces",
+ :author-url "https://teod.eu",
+ :uuid "79498331-5aa8-4282-ad1e-15e7ca755fbb"}

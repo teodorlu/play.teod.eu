@@ -1,8 +1,10 @@
 {:slug "leonard-cohen",
- :title "Leonard Cohen",
- :readiness :wtf-is-this,
- :uuid "12d75d97-7561-40d4-8853-be233400e668",
- :author-url "https://teod.eu",
+ :page/uuid "12d75d97-7561-40d4-8853-be233400e668",
  :created "2023-03-27",
+ :readiness :wtf-is-this,
+ :title "Leonard Cohen",
  :lang :en,
- :form :remote-reference}
+ :page/slug "leonard-cohen",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "12d75d97-7561-40d4-8853-be233400e668"}

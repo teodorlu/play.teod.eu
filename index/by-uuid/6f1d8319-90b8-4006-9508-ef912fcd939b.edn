@@ -1,7 +1,9 @@
 {:slug "clojure",
- :title "Clojure",
- :readiness :wtf-is-this,
- :uuid "6f1d8319-90b8-4006-9508-ef912fcd939b",
+ :page/uuid "6f1d8319-90b8-4006-9508-ef912fcd939b",
  :created "2023-03-04",
+ :readiness :wtf-is-this,
+ :title "Clojure",
  :lang :en,
- :form :remote-reference}
+ :page/slug "clojure",
+ :form :remote-reference,
+ :uuid "6f1d8319-90b8-4006-9508-ef912fcd939b"}

@@ -1,7 +1,9 @@
 {:slug "phenomenology",
- :title "phenomenology",
- :readiness :wtf-is-this,
- :uuid "6ac830ef-cb3f-48ea-924a-5304384c4b8e",
- :author-url "https://teod.eu",
+ :page/uuid "6ac830ef-cb3f-48ea-924a-5304384c4b8e",
  :created "2022-08-27",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "phenomenology",
+ :lang :en,
+ :page/slug "phenomenology",
+ :author-url "https://teod.eu",
+ :uuid "6ac830ef-cb3f-48ea-924a-5304384c4b8e"}

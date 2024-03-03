@@ -1,8 +1,10 @@
 {:slug "rust-lang",
- :title "Rust (programming language)",
- :readiness :wtf-is-this,
- :uuid "307f5d35-7be1-4693-8378-4a0255717056",
- :author-url "https://teod.eu",
+ :page/uuid "307f5d35-7be1-4693-8378-4a0255717056",
  :created "2023-04-30",
+ :readiness :wtf-is-this,
+ :title "Rust (programming language)",
  :lang :en,
- :form :remote-reference}
+ :page/slug "rust-lang",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "307f5d35-7be1-4693-8378-4a0255717056"}

@@ -1,7 +1,9 @@
 {:slug "lost-in-specificity",
- :title "Lost in specificity",
- :readiness :wtf-is-this,
- :author-url "https://teod.eu",
+ :page/uuid "a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86",
  :created "2022-07-14",
- :uuid "a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Lost in specificity",
+ :lang :en,
+ :page/slug "lost-in-specificity",
+ :author-url "https://teod.eu",
+ :uuid "a8ba14f2-b8f8-4e0f-bb50-2702a59f3e86"}

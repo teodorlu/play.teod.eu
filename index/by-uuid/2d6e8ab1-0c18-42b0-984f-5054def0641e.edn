@@ -1,7 +1,9 @@
 {:slug "unix-pipeline-to-babashka-script",
- :title "How to port a Unix pipeline to a Babashka script",
- :readiness :wtf-is-this,
- :uuid "2d6e8ab1-0c18-42b0-984f-5054def0641e",
- :author-url "https://teod.eu",
+ :page/uuid "2d6e8ab1-0c18-42b0-984f-5054def0641e",
  :created "2023-05-06",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "How to port a Unix pipeline to a Babashka script",
+ :lang :en,
+ :page/slug "unix-pipeline-to-babashka-script",
+ :author-url "https://teod.eu",
+ :uuid "2d6e8ab1-0c18-42b0-984f-5054def0641e"}

@@ -1,7 +1,9 @@
 {:slug "teodor-school-system",
- :title "Teodor's school system",
- :readiness :wtf-is-this,
- :uuid "5679f20c-6564-4020-816d-0575c6456451",
- :author-url "https://teod.eu",
+ :page/uuid "5679f20c-6564-4020-816d-0575c6456451",
  :created "2023-05-27",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Teodor's school system",
+ :lang :en,
+ :page/slug "teodor-school-system",
+ :author-url "https://teod.eu",
+ :uuid "5679f20c-6564-4020-816d-0575c6456451"}

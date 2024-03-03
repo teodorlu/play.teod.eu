@@ -1,7 +1,9 @@
 {:slug "sterility-mess-utility",
- :title "sterility, mess and utility",
- :readiness :wtf-is-this,
- :uuid "714361dd-69f2-4ed1-ba3b-b7450d23c3a3",
- :author-url "https://teod.eu",
+ :page/uuid "714361dd-69f2-4ed1-ba3b-b7450d23c3a3",
  :created "2022-08-27",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "sterility, mess and utility",
+ :lang :en,
+ :page/slug "sterility-mess-utility",
+ :author-url "https://teod.eu",
+ :uuid "714361dd-69f2-4ed1-ba3b-b7450d23c3a3"}

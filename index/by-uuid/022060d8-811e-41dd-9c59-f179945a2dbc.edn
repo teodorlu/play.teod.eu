@@ -1,8 +1,10 @@
 {:slug "inspired",
- :author-url "https://teod.eu",
+ :page/uuid "022060d8-811e-41dd-9c59-f179945a2dbc",
  :created "2023-06-13",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Inspired",
+ :lang :en,
+ :page/slug "inspired",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "022060d8-811e-41dd-9c59-f179945a2dbc"}

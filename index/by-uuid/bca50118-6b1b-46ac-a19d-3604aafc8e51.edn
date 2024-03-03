@@ -1,7 +1,9 @@
 {:slug "oddmunds-list-of-idea-titles",
- :title "Oddmunds liste over ideer uten kropp",
- :readiness :wtf-is-this,
- :uuid "bca50118-6b1b-46ac-a19d-3604aafc8e51",
- :author-url "https://teod.eu",
+ :page/uuid "bca50118-6b1b-46ac-a19d-3604aafc8e51",
  :created "2023-01-02",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Oddmunds liste over ideer uten kropp",
+ :lang :en,
+ :page/slug "oddmunds-list-of-idea-titles",
+ :author-url "https://teod.eu",
+ :uuid "bca50118-6b1b-46ac-a19d-3604aafc8e51"}

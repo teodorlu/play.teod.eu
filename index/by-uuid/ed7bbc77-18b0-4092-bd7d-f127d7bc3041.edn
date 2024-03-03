@@ -1,7 +1,9 @@
 {:slug "programmer-cultivate-your-curiosity",
- :title "Programmer, cultivate your curiosity!",
- :readiness :wtf-is-this,
- :uuid "ed7bbc77-18b0-4092-bd7d-f127d7bc3041",
- :author-url "https://teod.eu",
+ :page/uuid "ed7bbc77-18b0-4092-bd7d-f127d7bc3041",
  :created "2023-03-03",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Programmer, cultivate your curiosity!",
+ :lang :en,
+ :page/slug "programmer-cultivate-your-curiosity",
+ :author-url "https://teod.eu",
+ :uuid "ed7bbc77-18b0-4092-bd7d-f127d7bc3041"}

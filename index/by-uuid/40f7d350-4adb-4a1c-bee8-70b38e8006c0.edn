@@ -1,7 +1,9 @@
 {:slug "extreme-ownership",
- :title "Extreme Ownership",
- :readiness :wtf-is-this,
- :uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0",
+ :page/uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "Extreme Ownership",
  :lang :en,
- :form :remote-reference}
+ :page/slug "extreme-ownership",
+ :form :remote-reference,
+ :uuid "40f7d350-4adb-4a1c-bee8-70b38e8006c0"}

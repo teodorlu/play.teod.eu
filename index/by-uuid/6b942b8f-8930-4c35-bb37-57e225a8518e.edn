@@ -1,7 +1,9 @@
 {:slug "makefile-edn",
- :title "Library: makefile-edn",
- :readiness :deprecated,
- :author-url "https://teod.eu",
+ :page/uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
  :created "2022-07-24",
- :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e",
- :lang :en}
+ :readiness :deprecated,
+ :title "Library: makefile-edn",
+ :lang :en,
+ :page/slug "makefile-edn",
+ :author-url "https://teod.eu",
+ :uuid "6b942b8f-8930-4c35-bb37-57e225a8518e"}

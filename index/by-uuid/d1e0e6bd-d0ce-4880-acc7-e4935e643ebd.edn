@@ -1,7 +1,9 @@
 {:slug "visakanv",
- :title "visa",
- :readiness :wtf-is-this,
- :uuid "d1e0e6bd-d0ce-4880-acc7-e4935e643ebd",
+ :page/uuid "d1e0e6bd-d0ce-4880-acc7-e4935e643ebd",
  :created "2022-11-07",
+ :readiness :wtf-is-this,
+ :title "visa",
  :lang :en,
- :form :remote-reference}
+ :page/slug "visakanv",
+ :form :remote-reference,
+ :uuid "d1e0e6bd-d0ce-4880-acc7-e4935e643ebd"}

@@ -1,7 +1,9 @@
 {:slug "10x-fanout",
- :title "10X fanout",
- :readiness :wtf-is-this,
- :uuid "2054721d-1574-402e-aefc-160b60ddfc45",
- :author-url "https://teod.eu",
+ :page/uuid "2054721d-1574-402e-aefc-160b60ddfc45",
  :created "2023-03-24",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "10X fanout",
+ :lang :en,
+ :page/slug "10x-fanout",
+ :author-url "https://teod.eu",
+ :uuid "2054721d-1574-402e-aefc-160b60ddfc45"}

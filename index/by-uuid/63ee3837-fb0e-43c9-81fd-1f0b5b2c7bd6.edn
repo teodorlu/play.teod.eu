@@ -1,8 +1,10 @@
 {:slug "the-ethics-of-ambiguity",
- :title "The Ethics of Ambiguity",
- :readiness :wtf-is-this,
- :uuid "63ee3837-fb0e-43c9-81fd-1f0b5b2c7bd6",
- :author-url "https://teod.eu",
+ :page/uuid "63ee3837-fb0e-43c9-81fd-1f0b5b2c7bd6",
  :created "2023-05-09",
+ :readiness :wtf-is-this,
+ :title "The Ethics of Ambiguity",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-ethics-of-ambiguity",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "63ee3837-fb0e-43c9-81fd-1f0b5b2c7bd6"}

@@ -1,7 +1,9 @@
 {:slug "the-courage-to-be-disliked",
- :title "The Courage to Be Disliked",
- :readiness :wtf-is-this,
- :uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
+ :page/uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e",
  :created "2022-09-21",
+ :readiness :wtf-is-this,
+ :title "The Courage to Be Disliked",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-courage-to-be-disliked",
+ :form :remote-reference,
+ :uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e"}

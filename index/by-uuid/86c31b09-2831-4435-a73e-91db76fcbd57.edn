@@ -1,7 +1,9 @@
 {:slug "bink",
- :title "Bink: Bookmarks are just data",
- :readiness :deprecated,
- :uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
- :author-url "https://teod.eu",
+ :page/uuid "86c31b09-2831-4435-a73e-91db76fcbd57",
  :created "2022-09-14",
- :lang :en}
+ :readiness :deprecated,
+ :title "Bink: Bookmarks are just data",
+ :lang :en,
+ :page/slug "bink",
+ :author-url "https://teod.eu",
+ :uuid "86c31b09-2831-4435-a73e-91db76fcbd57"}

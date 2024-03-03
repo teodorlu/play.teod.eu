@@ -1,7 +1,9 @@
 {:slug "good-code-good-explanation",
- :title "Good code as good explanations",
- :readiness :wtf-is-this,
- :uuid "e1354351-b206-4758-a6d7-122343aa6a7f",
- :author-url "https://teod.eu",
+ :page/uuid "e1354351-b206-4758-a6d7-122343aa6a7f",
  :created "2023-03-27",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Good code as good explanations",
+ :lang :en,
+ :page/slug "good-code-good-explanation",
+ :author-url "https://teod.eu",
+ :uuid "e1354351-b206-4758-a6d7-122343aa6a7f"}

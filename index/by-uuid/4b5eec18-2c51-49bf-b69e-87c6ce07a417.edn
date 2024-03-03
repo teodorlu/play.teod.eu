@@ -1,7 +1,9 @@
 {:slug "liste-opsjoner-presentasjoner",
- :title "Liste over opsjoner på presentasjoner",
- :readiness :wtf-is-this,
- :uuid "4b5eec18-2c51-49bf-b69e-87c6ce07a417",
- :author-url "https://teod.eu",
+ :page/uuid "4b5eec18-2c51-49bf-b69e-87c6ce07a417",
  :created "2023-02-17",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Liste over opsjoner på presentasjoner",
+ :lang :en,
+ :page/slug "liste-opsjoner-presentasjoner",
+ :author-url "https://teod.eu",
+ :uuid "4b5eec18-2c51-49bf-b69e-87c6ce07a417"}

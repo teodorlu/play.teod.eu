@@ -1,7 +1,9 @@
 {:slug "grokking-simplicity",
- :title "Grokking Simplicity",
- :readiness :wtf-is-this,
- :uuid "2dc52e4f-0604-4d33-a50c-1e8534266a47",
- :author-url "https://teod.eu",
+ :page/uuid "2dc52e4f-0604-4d33-a50c-1e8534266a47",
  :created "2022-09-21",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Grokking Simplicity",
+ :lang :en,
+ :page/slug "grokking-simplicity",
+ :author-url "https://teod.eu",
+ :uuid "2dc52e4f-0604-4d33-a50c-1e8534266a47"}

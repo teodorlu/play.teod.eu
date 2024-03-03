@@ -1,7 +1,9 @@
 {:slug "xml-on-the-web",
- :title "Working with XML on the web",
- :readiness :wtf-is-this,
- :uuid "56cfb6c9-d78c-44f2-baed-6082654be2f4",
- :author-url "https://teod.eu",
+ :page/uuid "56cfb6c9-d78c-44f2-baed-6082654be2f4",
  :created "2022-08-08",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Working with XML on the web",
+ :lang :en,
+ :page/slug "xml-on-the-web",
+ :author-url "https://teod.eu",
+ :uuid "56cfb6c9-d78c-44f2-baed-6082654be2f4"}

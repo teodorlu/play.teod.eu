@@ -1,7 +1,9 @@
 {:slug "defer-the-trust-problem",
- :title "defer the trust problem",
- :readiness :wtf-is-this,
- :uuid "79d9c6f5-7be4-4f4e-b418-321c12e8c39f",
- :author-url "https://teod.eu",
+ :page/uuid "79d9c6f5-7be4-4f4e-b418-321c12e8c39f",
  :created "2023-05-09",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "defer the trust problem",
+ :lang :en,
+ :page/slug "defer-the-trust-problem",
+ :author-url "https://teod.eu",
+ :uuid "79d9c6f5-7be4-4f4e-b418-321c12e8c39f"}

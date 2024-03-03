@@ -1,7 +1,9 @@
 {:slug "utility-is-contextual",
- :title "utility is contextual",
- :readiness :wtf-is-this,
- :uuid "31478ab4-b7bf-4c87-8dae-8adb66690571",
- :author-url "https://teod.eu",
+ :page/uuid "31478ab4-b7bf-4c87-8dae-8adb66690571",
  :created "2022-09-20",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "utility is contextual",
+ :lang :en,
+ :page/slug "utility-is-contextual",
+ :author-url "https://teod.eu",
+ :uuid "31478ab4-b7bf-4c87-8dae-8adb66690571"}

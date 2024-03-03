@@ -2,4 +2,6 @@
  :title "One Good Goal Plus Options",
  :readiness :wtf-is-this,
  :uuid "4bd41cdf-bf88-4212-9899-fb419eb2273c",
- :lang :en}
+ :lang :en,
+ :page/slug "oggpo",
+ :page/uuid "4bd41cdf-bf88-4212-9899-fb419eb2273c"}

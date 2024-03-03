@@ -1,8 +1,10 @@
 {:slug "software-design-for-flexibility",
- :author-url "https://teod.eu",
+ :page/uuid "29d152b9-9f5e-4c23-904a-f926b3d83477",
  :created "2023-06-06",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Software Design for Flexibility",
+ :lang :en,
+ :page/slug "software-design-for-flexibility",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "29d152b9-9f5e-4c23-904a-f926b3d83477"}

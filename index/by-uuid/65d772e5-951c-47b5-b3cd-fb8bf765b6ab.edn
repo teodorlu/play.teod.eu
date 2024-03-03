@@ -1,8 +1,10 @@
 {:slug "maybe-not",
- :author-url "https://teod.eu",
+ :page/uuid "65d772e5-951c-47b5-b3cd-fb8bf765b6ab",
  :created "",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Maybe Not",
+ :lang :en,
+ :page/slug "maybe-not",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "65d772e5-951c-47b5-b3cd-fb8bf765b6ab"}

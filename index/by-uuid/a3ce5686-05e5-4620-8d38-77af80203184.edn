@@ -1,8 +1,10 @@
 {:slug "trillion-dollar-coach",
- :title "Trillion Dollar Coach",
- :readiness :wtf-is-this,
- :uuid "a3ce5686-05e5-4620-8d38-77af80203184",
- :author-url "https://teod.eu",
+ :page/uuid "a3ce5686-05e5-4620-8d38-77af80203184",
  :created "2023-05-01",
+ :readiness :wtf-is-this,
+ :title "Trillion Dollar Coach",
  :lang :en,
- :form :remote-reference}
+ :page/slug "trillion-dollar-coach",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "a3ce5686-05e5-4620-8d38-77af80203184"}

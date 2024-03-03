@@ -1,8 +1,10 @@
 {:slug "the-value-of-values",
- :title "The Value of Values",
- :readiness :wtf-is-this,
- :uuid "9447cd35-15b9-49c7-b47e-537c03b48f0b",
- :author-url "https://teod.eu",
+ :page/uuid "9447cd35-15b9-49c7-b47e-537c03b48f0b",
  :created "2023-03-27",
+ :readiness :wtf-is-this,
+ :title "The Value of Values",
  :lang :en,
- :form :remote-reference}
+ :page/slug "the-value-of-values",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "9447cd35-15b9-49c7-b47e-537c03b48f0b"}

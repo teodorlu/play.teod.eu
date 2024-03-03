@@ -1,8 +1,10 @@
 {:slug "martin-kavalar",
- :author-url "https://teod.eu",
+ :page/uuid "63922b15-01b3-4a03-afe1-18c8ef0fa8f4",
  :created "2023-06-14",
- :form :remote-reference,
- :lang :en,
  :readiness :wtf-is-this,
  :title "Martin Kavalar",
+ :lang :en,
+ :page/slug "martin-kavalar",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
  :uuid "63922b15-01b3-4a03-afe1-18c8ef0fa8f4"}

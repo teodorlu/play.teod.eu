@@ -1,7 +1,9 @@
 {:slug "find-clojure-deps",
- :author-url "https://teod.eu",
+ :page/uuid "d5f0c274-36e3-4088-8c26-ce783c8dd3aa",
  :created "",
- :lang :en,
  :readiness :wtf-is-this,
  :title "Where do you find your Clojure dependencies?",
+ :lang :en,
+ :page/slug "find-clojure-deps",
+ :author-url "https://teod.eu",
  :uuid "d5f0c274-36e3-4088-8c26-ce783c8dd3aa"}

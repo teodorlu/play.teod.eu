@@ -1,7 +1,9 @@
 {:slug "antifragile",
- :title "Antifragile",
- :readiness :wtf-is-this,
- :uuid "d0c422ec-f856-44d8-b9a5-786137da06ef",
+ :page/uuid "d0c422ec-f856-44d8-b9a5-786137da06ef",
  :created "2022-11-07",
+ :readiness :wtf-is-this,
+ :title "Antifragile",
  :lang :en,
- :form :remote-reference}
+ :page/slug "antifragile",
+ :form :remote-reference,
+ :uuid "d0c422ec-f856-44d8-b9a5-786137da06ef"}

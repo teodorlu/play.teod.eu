@@ -1,7 +1,9 @@
 {:slug "charity-grace-joy",
- :title "grace, charity, joy",
- :readiness :wtf-is-this,
- :uuid "9afd4f7e-8bde-49f6-8722-fd30e9c96a50",
- :author-url "https://teod.eu",
+ :page/uuid "9afd4f7e-8bde-49f6-8722-fd30e9c96a50",
  :created "2023-04-22",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "grace, charity, joy",
+ :lang :en,
+ :page/slug "charity-grace-joy",
+ :author-url "https://teod.eu",
+ :uuid "9afd4f7e-8bde-49f6-8722-fd30e9c96a50"}

@@ -1,7 +1,9 @@
 {:slug "spaghettifabrikken",
- :title "Factorio dedicated server",
- :readiness :wtf-is-this,
- :uuid "f19dd2e4-e45e-484b-bcfb-5436e6ca1e53",
- :author-url "https://teod.eu",
+ :page/uuid "f19dd2e4-e45e-484b-bcfb-5436e6ca1e53",
  :created "2022-10-04",
- :lang :en}
+ :readiness :wtf-is-this,
+ :title "Factorio dedicated server",
+ :lang :en,
+ :page/slug "spaghettifabrikken",
+ :author-url "https://teod.eu",
+ :uuid "f19dd2e4-e45e-484b-bcfb-5436e6ca1e53"}

@@ -12,7 +12,7 @@ What if there was a portable document format we could use to share our slides---
 Enter Portable Document Format.
 Or PDF, as we often say.
 
-The [[https://en.wikipedia.org/wiki/PDF][PDF format]] was originally developed by Adobe, but became an [[https://en.wikipedia.org/wiki/International_Organization_for_Standardization][ISO]] standard in 2008.
+[[https://en.wikipedia.org/wiki/PDF][PDF]] was originally developed by Adobe, but became an [[https://en.wikipedia.org/wiki/International_Organization_for_Standardization][ISO]] standard in 2008.
 Today, most web browsers have excellent support for viewing PDFs, and operating systems often provide a good PDF reader out of the box.
 
 For both [[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]] and [[id:436d7df4-f986-4bff-8efa-44bf72099859][Lessons learned teaching Elm to kids]], I chose to write my slides in a format suited to /produce content/, export to PDF and show the PDF on the talk from a very boring PDF reader such as Firefox.

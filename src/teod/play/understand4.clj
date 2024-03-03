@@ -76,16 +76,30 @@
                  [?e :form :remote-reference]]
                db)))
 
-(->>
- (d/q '[:find [(pull ?e [:slug :title]) ...]
-        :where
-        [?e :form :remote-reference]]
-      db)
- shuffle
- (take 3))
-;; => ({:slug "c-lang", :title "C (programming language)"}
-;;     {:slug "ted-nelson", :title "Ted Nelson"}
-;;     {:slug "eric-raymond", :title "Eric Raymond"})
+#_
+^{::clerk/width :full
+  ::clerk/no-cache true}
+(clerk/caption "xx"
+ (big-table
+  (->>
+   (d/q '[:find [(pull ?e [:slug :title]) ...]
+          :where
+          [?e :form :remote-reference]]
+        db)
+   shuffle
+   )))
+
+^{::clerk/no-cache true
+  :nextjournal.clerk/auto-expand-results? true}
+(clerk/caption "Page titles"
+ (big-table
+  (->>
+   (d/q '[:find [(pull ?e [:title]) ...]
+          :where
+          [?e :form :remote-reference]]
+        db)
+   shuffle
+   )))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

@@ -15,7 +15,7 @@ Keywords:
 
 | Term                | Definition                                      | Example(s)                             |
 |---------------------+-------------------------------------------------+----------------------------------------|
-| =:form=             | What kind of page this is                       | =:remote-reference=, =:rambling=       |
+| =:form=             | What kind of page it is                         | =:remote-reference=, =:rambling=       |
 | =:rambling=         | Me rambling / appending thoughts in time        |                                        |
 | =:remote-reference= | The page is a reference to a remote text        | [[https://play.teod.eu/simple-made-easy/][Simple Made Easy]]                       |
 | =:page/authors=     | Datascript-compatible reference to authors      |                                        |

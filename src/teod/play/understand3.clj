@@ -23,8 +23,7 @@
 (defn conform-relation [page]
   (cond-> page
     (:slug page) (assoc :page/slug (:slug page))
-    (:uuid page) (assoc :page/uuid (:uuid page))
-    (:teod.play/authors page) (assoc :page/authors (:teod.play/authors page))))
+    (:uuid page) (assoc :page/uuid (:uuid page))))
 
 (defn relations []
   (->> (cli/files->relations {})

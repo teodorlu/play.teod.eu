@@ -67,4 +67,20 @@ Above, I chose some options to ensure a smooth import into Google Slides.
 - =slides/slide= :: is the image path prefix.
   One resulting image is =slides/slide-21.jpg=
 
+Here are some of the resulting files:
+
+#+begin_src shell
+$ find slides | sort | head
+slides
+slides/slide-01.jpg
+slides/slide-02.jpg
+slides/slide-03.jpg
+slides/slide-04.jpg
+slides/slide-05.jpg
+slides/slide-06.jpg
+slides/slide-07.jpg
+slides/slide-08.jpg
+slides/slide-09.jpg
+#+end_src
+
 Finally, do what you want with the images!

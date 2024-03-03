@@ -17,6 +17,7 @@
   (-> page
       (dissoc :uuid) ; we need only :page/uuid
       (dissoc :slug) ; we need only :page/slug
+      (dissoc :teod.play/authors) ; we need only :page/authors
       ))
 
 (defn relations []

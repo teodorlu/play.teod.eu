@@ -13,8 +13,15 @@ Words:
 
 Keywords:
 
-| Term                | Definition                               | Example(s)                       |
-|---------------------+------------------------------------------+----------------------------------|
-| =:form=             | What kind of page this is                | =:remote-reference=, =:rambling= |
-| =:rambling=         | Me rambling / appending thoughts in time |                                  |
-| =:remote-reference= | The page is a reference to a remote text | [[https://play.teod.eu/simple-made-easy/][Simple Made Easy]]                 |
+| Term                | Definition                                      | Example(s)                               |
+|---------------------+-------------------------------------------------+------------------------------------------|
+| =:form=             | What kind of page this is                       | =:remote-reference=, =:rambling=         |
+| =:rambling=         | Me rambling / appending thoughts in time        |                                          |
+| =:remote-reference= | The page is a reference to a remote text        | [[https://play.teod.eu/simple-made-easy/][Simple Made Easy]]                         |
+| =:page/authors=     | Datascript-compatible reference to authors      |                                          |
+| =:slug=             | Uniquely defines page at a given point in time. | =simple-made-easy=                       |
+| =:page/slug=        | Synonym for =:slug=                             |                                          |
+| =:uuid=             | Uniquely defines a page across time.            | ="3eb092bf-b847-4686-b250-fca303022782"= |
+| =:page/uuid=        | Synonym for =:uuid=                             |                                          |
+| =:title=            | Page title                                      | ="Simple Made Easy"=                     |
+| =:page/title=       | Synonym for =:title=                            |                                          |

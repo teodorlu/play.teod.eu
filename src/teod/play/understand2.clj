@@ -67,8 +67,10 @@
 ;; I've got a real datascript db.
 ;; Nice!
 
-(into {} (:teod.play/authors (d/entity db [:page/slug "simple-made-easy"])))
+^{:nextjournal.clerk/auto-expand-results? true}
+(:page/authors (d/entity db [:page/slug "simple-made-easy"]))
 
+^{:nextjournal.clerk/auto-expand-results? true}
 (into {} (d/entity db [:page/slug "simple-made-easy"]))
 
 ^{:nextjournal.clerk/auto-expand-results? true}

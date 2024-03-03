@@ -35,7 +35,6 @@
     (:slug relation) (assoc :page/slug (:slug relation))
     (:uuid relation) (assoc :page/uuid (:uuid relation))))
 
-
 (defn files->relations
   [{:keys []}]
   (->> (pages)

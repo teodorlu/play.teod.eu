@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-* Portable documents with PDF
+* PDF: a format for documents that others can read
 
 What if there was a portable document format we could use to share our slides---without assuming that the consumer of our slides has a Google account, a Microsoft Office license or a Mac with Keynote installed?
 

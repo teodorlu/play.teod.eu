@@ -69,7 +69,7 @@ Above, I chose some options to ensure a smooth import into Google Slides.
 | =slides/slide=          | is the image path prefix.               |
 
 600 pixels per inch (ppi) is good enough for me.
-With 600 ppi, I can't tell the difference between the PDF (vector graphics) and the JPEG images (high resolution raster graphics).
+With 600 ppi, I can't tell the difference between the PDF (vector graphics) and the exported JPEG images (raster graphics).
 
 Here are some of the resulting files:
 

@@ -38,10 +38,13 @@
       ))
 
 (def schema
-  {:page/slug {:db/unique :db.unique/identity}
+  {
+   :page/slug {:db/unique :db.unique/identity}
    :page/uuid {:db/unique :db.unique/identity}
    :page/authors {:db/cardinality :db.cardinality/many
-                  :db/valueType   :db.type/ref}})
+                  :db/valueType   :db.type/ref}
+
+   })
 
 (defn relations->datascript-db [rels]
   (let [conn (d/create-conn schema)]

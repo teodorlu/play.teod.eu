@@ -10,7 +10,7 @@
 What if there was a portable document format we could use to share our slides---without assuming that the consumer of our slides has a Google account, a Microsoft Office license or a Mac with Keynote installed?
 
 Enter Portable Document Format.
-Or PDF, as we often say day to day.
+Or PDF, as we often say.
 
 The [[https://en.wikipedia.org/wiki/PDF][PDF format]] was originally developed by Adobe, but became an [[https://en.wikipedia.org/wiki/International_Organization_for_Standardization][ISO]] standard in 2008.
 Today, most web browsers have excellent support for viewing PDFs, and operating systems often provide a good PDF reader out of the box.

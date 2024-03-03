@@ -83,4 +83,4 @@ slides/slide-08.jpg
 slides/slide-09.jpg
 #+end_src
 
-Finally, do what you want with the images!
+Now, do what you want with the images :)

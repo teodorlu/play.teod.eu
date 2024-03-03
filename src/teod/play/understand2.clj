@@ -25,7 +25,6 @@
        (map conform-relation)
        (sort-by :page/slug)))
 
-
 ^{::clerk/width :full}
 (big-table
  (->> (relations)
@@ -36,16 +35,6 @@
  (->> (relations)
       (filter (fn [rel]
                 (re-matches #".*Simple.*" (:title rel))))))
-
-;; I currently do not have any metadata for:
-;;
-;; - The fact that Simple Made Easy is by Rich Hickey
-;; - The fact that Simple Made Easy is a talk with a youtube link
-
-;; How about `:author/uuid` ... ?
-
-;; This is when I probably want a datascript database of my stuff.
-;; ... and I (think) I want to keep my current file storage system, just add an index.
 
 (defn grep-title [re xs]
   (filter #(re-matches re (:title %)) xs))

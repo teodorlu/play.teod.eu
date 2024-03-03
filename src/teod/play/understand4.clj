@@ -77,18 +77,15 @@
                db)))
 
 (->>
- (d/q '[:find (pull ?e [:slug :title])
+ (d/q '[:find [(pull ?e [:slug :title]) ...]
         :where
-        [?e :page/slug ?slug]
-        [?e :title ?title]
         [?e :form :remote-reference]]
       db)
  shuffle
  (take 3))
-;; =>
-;; ([{:slug "roam-research", :title "Roam Research"}]
-;;  [{:slug "j-programming-language", :title "J (programming language)"}]
-;;  [{:slug "eliyahu-goldratt", :title "Eliyahu Goldratt"}])
+;; => ({:slug "c-lang", :title "C (programming language)"}
+;;     {:slug "ted-nelson", :title "Ted Nelson"}
+;;     {:slug "eric-raymond", :title "Eric Raymond"})
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

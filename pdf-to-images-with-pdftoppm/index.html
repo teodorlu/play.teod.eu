@@ -273,26 +273,32 @@ $ pdftoppm -jpeg -r 600 teaching-kids-elm.pdf slides/slide
 </code></pre>
 <p>Above, I chose some options to ensure a smooth import into Google
 Slides.</p>
-<dl>
-<dt><code class="verbatim">-jpeg</code></dt>
-<dd>
-images are JPEGs
-</dd>
-<dt><code class="verbatim">-r 600</code></dt>
-<dd>
-image resolution is 600 points per image (good enough quality for my
-usage)
-</dd>
-<dt><code class="verbatim">teaching-kids-elm.pdf</code></dt>
-<dd>
-the input PDF
-</dd>
-<dt><code class="verbatim">slides/slide</code></dt>
-<dd>
-is the image path prefix. One resulting image is <code
-class="verbatim">slides/slide-21.jpg</code>
-</dd>
-</dl>
+<table>
+<thead>
+<tr class="header">
+<th><code class="verbatim">pdftoppm</code> argument</th>
+<th>explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code class="verbatim">-jpeg</code></td>
+<td>images are JPEGs</td>
+</tr>
+<tr class="even">
+<td><code class="verbatim">-r 600</code></td>
+<td>print resolution is 600 points per inch (good enough for me)</td>
+</tr>
+<tr class="odd">
+<td><code class="verbatim">teaching-kids-elm.pdf</code></td>
+<td>the input PDF</td>
+</tr>
+<tr class="even">
+<td><code class="verbatim">slides/slide</code></td>
+<td>is the image path prefix.</td>
+</tr>
+</tbody>
+</table>
 <p>Here are some of the resulting files:</p>
 <pre class="shell"><code>$ find slides | sort | head
 slides

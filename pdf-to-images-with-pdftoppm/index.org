@@ -61,11 +61,12 @@ $ pdftoppm -jpeg -r 600 teaching-kids-elm.pdf slides/slide
 
 Above, I chose some options to ensure a smooth import into Google Slides.
 
-- =-jpeg= :: images are JPEGs
-- =-r 600= :: image resolution is 600 points per image (good enough quality for my usage)
-- =teaching-kids-elm.pdf= :: the input PDF
-- =slides/slide= :: is the image path prefix.
-  One resulting image is =slides/slide-21.jpg=
+| =pdftoppm= argument     | explanation                                                  |
+|-------------------------+--------------------------------------------------------------|
+| =-jpeg=                 | images are JPEGs                                             |
+| =-r 600=                | print resolution is 600 points per inch (good enough for me) |
+| =teaching-kids-elm.pdf= | the input PDF                                                |
+| =slides/slide=          | is the image path prefix.                                    |
 
 Here are some of the resulting files:
 

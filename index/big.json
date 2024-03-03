@@ -1672,6 +1672,17 @@
   "author-url" : "https://teod.eu",
   "uuid" : "69978c82-f5a1-4135-9dbb-187d05606a1b"
 }, {
+  "slug" : "livereload.net",
+  "page/uuid" : "6a402fa1-2052-42cf-a31d-bec66998ae92",
+  "created" : "2024-03-03",
+  "readiness" : "wtf-is-this",
+  "title" : "livereload.net",
+  "lang" : "en",
+  "page/slug" : "livereload.net",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "6a402fa1-2052-42cf-a31d-bec66998ae92"
+}, {
   "slug" : "how-to-build-ideas",
   "page/uuid" : "6a894657-11a7-4342-aa52-4ea776558e95",
   "created" : "2022-07-30",

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 6a402fa1-2052-42cf-a31d-bec66998ae92
+:END:
+#+TITLE: livereload.net
+
+[[file:..][..]]
+
+https://livereload.net/
+
+#+begin_src
+livereload.net is a tool that provides hot-reloading for HTML, CSS, and JS, running completely in the browser, eliminating the need for complex build tooling and Node.js command line. When you save your files on your local machine they are auto-reloaded in the browser and you will see the change straight away.
+#+end_src

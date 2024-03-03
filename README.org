@@ -1,6 +1,6 @@
 #+title: play.teod.eu
 
-* Vocabulary
+** Vocabulary
 
 Words:
 

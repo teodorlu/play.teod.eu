@@ -14,9 +14,10 @@
     x))
 
 (defn conform-relation [page]
-  (cond-> page
-    (:slug page) (assoc :page/slug (:slug page))
-    (:uuid page) (assoc :page/uuid (:uuid page))))
+  (-> page
+      (dissoc :uuid) ; we need only :page/uuid
+      (dissoc :slug) ; we need only :page/slug
+      ))
 
 (defn relations []
   (->> (cli/files->relations {})
@@ -30,7 +31,8 @@
  (->> (relations)
       (take 4)))
 
-(clerk/table
+^{::clerk/width :full}
+(big-table
  (->> (relations)
       (filter (fn [rel]
                 (re-matches #".*Simple.*" (:title rel))))))
@@ -51,32 +53,6 @@
 ^{:nextjournal.clerk/auto-expand-results? true}
 (->> (relations)
      (grep-title #".*[Cc]lerk.*"))
-
-(comment
-  (->> (relations)
-       shuffle
-       first)
-  ;; =>
-  {:slug "the-commons",
-   :title "The Commons",
-   :readiness :wtf-is-this,
-   :uuid "3eab9578-dec5-4c21-b5b6-7c18d6258d62",
-   :author-url "https://teod.eu",
-   :created "2022-09-03",
-   :lang :en})
-;; observations:
-;;
-;; - `:slug` is unique
-;; - `:uuid` is unique
-;;
-;; (for a given point in time)
-;;
-;; could have opted for ns qualified keywords like
-;;
-;;     :teod.play/slug
-;;     :teod.play/uuid
-;;
-;; ... but ... I didn't!
 
 (def schema
   {:slug {:db/unique :db.unique/identity}

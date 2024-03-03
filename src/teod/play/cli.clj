@@ -30,6 +30,11 @@
        (str/split-lines)
        (map (fn [slug] {:slug slug}))))
 
+(defn conform-relation [relation]
+  (cond-> relation
+    (:slug relation) (assoc :page/slug (:slug relation))
+    (:uuid relation) (assoc :page/uuid (:uuid relation))))
+
 (defn files->relations
   "Read relations from play.edn files on disk
 
@@ -39,8 +44,25 @@
   (->> (pages)
        (map (fn [{:keys [slug] :as p}]
               (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
+       (map conform-relation)
        (map (juxt :slug identity))
        (into {})))
+
+(defn files->relations2
+  "Read relations from play.edn files on disk
+
+  :uuid-from-org - when true, try to crudely find UUIDs from index.org files.
+  "
+  [{:keys []}]
+  (into {}
+        (comp (map (fn [{:keys [slug] :as p}]
+                     (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
+              (map conform-relation)
+              (map (juxt :slug identity)))
+        (pages)))
+
+(comment
+ (assert (= (files->relations {}) (files->relations2 {}))))
 
 (defn relations->lines
   "Produce one line per page

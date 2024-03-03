@@ -48,8 +48,6 @@
     (d/transact! conn rels)
     @conn))
 
-;; breaks because "simple-made-easy" links to Rich by :uuid, which is removed from the db.
-
 (defonce db (relations->datascript-db (relations)))
 
 (comment

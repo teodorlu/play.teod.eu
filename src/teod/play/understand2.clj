@@ -79,23 +79,16 @@
 ;; ... but ... I didn't!
 
 (def schema
-  "A schema for Teodor's play.
-
-  Who plays with schemas? Better not wonder too deeply about that question."
-  {;; we already have a bunch of unqualified :slug and :uuid
-   ;; keep them for now!
-   ;; we can fixup later if we want to.
-   :slug {:db/unique :db.unique/identity}
+  {:slug {:db/unique :db.unique/identity}
    :uuid {:db/unique :db.unique/identity}
-   ;; But use namespace qualified name for new properties.
-   ;;
-   ;; NOTE. I'm not sure I _want_ this key. It's a bit ... too much.
-   ;;
-   ;; Alternatives:
-   ;;
-   ;; - `:doc/authors`
    :teod.play/authors {:db/cardinality :db.cardinality/many
-                       :db/valueType   :db.type/ref}})
+                       :db/valueType   :db.type/ref}
+
+   :page/slug {:db/unique :db.unique/identity}
+   :page/uuid {:db/unique :db.unique/identity}
+   :page/authors {:db/cardinality :db.cardinality/many
+                  :db/valueType   :db.type/ref}
+   })
 
 (defn relations->datascript-db [rels]
   (let [conn (d/create-conn schema)]
@@ -105,8 +98,6 @@
 (defonce db (relations->datascript-db (relations)))
 
 (comment
-  ;; the sole purpose of (do ,, nil) is to avoid slowdown from printing the
-  ;; whole db to the repl.
   (do (alter-var-root #'db (constantly (relations->datascript-db (relations)))) :done)
   )
 
@@ -115,33 +106,36 @@
 ;; I've got a real datascript db.
 ;; Nice!
 
-(into {} (:teod.play/authors (d/entity db [:slug "simple-made-easy"])))
+(into {} (:teod.play/authors (d/entity db [:page/slug "simple-made-easy"])))
 
-(into {} (d/entity db [:slug "simple-made-easy"]))
+(into {} (d/entity db [:page/slug "simple-made-easy"]))
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (into {}
-      (-> (d/entity db [:slug "simple-made-easy"])
-          :teod.play/authors))
+      (-> (d/entity db [:page/slug "simple-made-easy"])
+          :page/authors))
 
 ^{:nextjournal.clerk/auto-expand-results? true}
-(d/pull db '[*] [:slug "simple-made-easy"])
+(d/pull db '[*] [:page/slug "simple-made-easy"])
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (d/pull db
-        '[:db/id :slug {:teod.play/authors [*]}]
-        [:slug "simple-made-easy"])
+        '[:db/id :page/slug {:teod.play/authors [*]}]
+        [:page/slug "simple-made-easy"])
 (comment
   ;; gir:
-  {:slug "simple-made-easy",
+  {:db/id 284,
+   :page/slug "simple-made-easy",
    :teod.play/authors
-   [{:db/id 267,
+   [{:slug "rich-hickey",
+     :page/uuid "a172782b-bceb-4b44-afdf-7a2348d02970",
      :created "2023-03-10",
-     :form :remote-reference,
-     :lang :en,
      :readiness :wtf-is-this,
-     :slug "rich-hickey",
      :title "Rich Hickey",
+     :lang :en,
+     :page/slug "rich-hickey",
+     :db/id 269,
+     :form :remote-reference,
      :uuid "a172782b-bceb-4b44-afdf-7a2348d02970"}]})
 
 ;; GØY!
@@ -149,19 +143,13 @@
 ;; hvor mange dokumenter i databasen?
 
 (d/q '[:find (count ?e) .
-       :where [?e :slug ?slug]]
+       :where [?e :page/slug ?slug]]
      db)
 
 ;; per 2024-02-25, 368.
 ;; Nice!
 
-(into {}
-      (d/entity db [:slug "journal"]))
-
-
-(d/q '[:find (count ?e) .
-       :where [?e :db/id]]
-     db)
+(into {} (d/entity db [:page/slug "journal"]))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "50vh"}}])

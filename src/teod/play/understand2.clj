@@ -44,12 +44,7 @@
      (grep-title #".*[Cc]lerk.*"))
 
 (def schema
-  {:slug {:db/unique :db.unique/identity}
-   :uuid {:db/unique :db.unique/identity}
-   :teod.play/authors {:db/cardinality :db.cardinality/many
-                       :db/valueType   :db.type/ref}
-
-   :page/slug {:db/unique :db.unique/identity}
+  {:page/slug {:db/unique :db.unique/identity}
    :page/uuid {:db/unique :db.unique/identity}
    :page/authors {:db/cardinality :db.cardinality/many
                   :db/valueType   :db.type/ref}
@@ -85,25 +80,23 @@
 
 ^{:nextjournal.clerk/auto-expand-results? true}
 (d/pull db
-        '[:db/id :page/slug {:teod.play/authors [*]}]
+        '[:db/id :page/slug {:page/authors [*]}]
         [:page/slug "simple-made-easy"])
 (comment
   ;; gir:
   {:db/id 284,
-   :page/slug "simple-made-easy",
-   :teod.play/authors
-   [{:slug "rich-hickey",
-     :page/uuid "a172782b-bceb-4b44-afdf-7a2348d02970",
+   :page/authors
+   [{:db/id 269,
      :created "2023-03-10",
+     :form :remote-reference,
+     :lang :en,
      :readiness :wtf-is-this,
      :title "Rich Hickey",
-     :lang :en,
      :page/slug "rich-hickey",
-     :db/id 269,
-     :form :remote-reference,
-     :uuid "a172782b-bceb-4b44-afdf-7a2348d02970"}]})
+     :page/uuid "a172782b-bceb-4b44-afdf-7a2348d02970"}],
+   :page/slug "simple-made-easy"}
 
-;; GØY!
+  :rcf)
 
 ;; hvor mange dokumenter i databasen?
 

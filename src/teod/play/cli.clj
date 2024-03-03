@@ -35,23 +35,12 @@
 
   :uuid-from-org - when true, try to crudely find UUIDs from index.org files.
   "
-  [{:keys [uuid-from-org]}]
-  (let [enrich (fn [page]
-                 (if (and uuid-from-org (not (:builder page))) ;; only normal org thing builders please
-                   (let [uuid-found-on-org (-> (bash (str "cat " (:slug page) "/index.org | grep ID"))
-                                               (str/replace #":ID:\s+" "")
-                                               (str/split #"\s+")
-                                               first)]
-                     (if (str/blank? uuid-found-on-org)
-                       page
-                       (assoc page :uuid uuid-found-on-org)))
-                   page))]
-    (->> (pages)
-         (map (fn [{:keys [slug] :as p}]
-                (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
-         (map enrich)
-         (map (juxt :slug identity))
-         (into {}))))
+  [{:keys []}]
+  (->> (pages)
+       (map (fn [{:keys [slug] :as p}]
+              (merge p (edn/read-string (slurp (str slug "/play.edn"))))))
+       (map (juxt :slug identity))
+       (into {})))
 
 (defn relations->lines
   "Produce one line per page

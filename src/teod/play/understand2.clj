@@ -13,10 +13,17 @@
   (v/with-viewer (dissoc v/table-viewer :page-size)
     x))
 
+(defn conform-relation [page]
+  (cond-> page
+    (:slug page) (assoc :page/slug (:slug page))
+    (:uuid page) (assoc :page/uuid (:uuid page))))
+
 (defn relations []
   (->> (cli/files->relations {})
        vals
-       (sort-by :slug)))
+       (map conform-relation)
+       (sort-by :page/slug)))
+
 
 ^{::clerk/width :full}
 (big-table

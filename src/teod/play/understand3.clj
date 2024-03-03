@@ -1,6 +1,5 @@
 (ns teod.play.understand3
   (:require
-   [clojure.set :as set]
    [datascript.core :as d]
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.viewer :as v]
@@ -36,13 +35,11 @@
  (->> (relations)
       (filter (fn [page]
                 (= "simple-made-easy" (:page/slug page))))
-      (take 3)
       ))
 
 (def schema
   {:page/slug {:db/unique :db.unique/identity}
    :page/uuid {:db/unique :db.unique/identity}
-   :uuid {:db/unique :db.unique/identity}
    :page/authors {:db/cardinality :db.cardinality/many
                   :db/valueType   :db.type/ref}})
 

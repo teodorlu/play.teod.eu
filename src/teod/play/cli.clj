@@ -49,10 +49,6 @@
        (into {})))
 
 (defn files->relations2
-  "Read relations from play.edn files on disk
-
-  :uuid-from-org - when true, try to crudely find UUIDs from index.org files.
-  "
   [{:keys []}]
   (into {}
         (comp (map (fn [{:keys [slug] :as p}]
@@ -61,8 +57,32 @@
               (map (juxt :slug identity)))
         (pages)))
 
+(defn files->relations3
+  [{:keys []}]
+  (->> (pages)
+       (pmap (fn [page]
+               (-> page
+                   (merge page (edn/read-string (slurp (str (:slug page) "/play.edn"))))
+                   conform-relation)))
+       (map (juxt :slug identity))
+       (into {})))
+
 (comment
- (assert (= (files->relations {}) (files->relations2 {}))))
+  (assert (= (files->relations {})
+             (files->relations2 {})
+             (files->relations3 {})
+             ))
+
+  (time (do (files->relations {}) :done))
+  ;; => "Elapsed time: 24.371125 msecs"
+
+  (time (do (files->relations2 {}) :done))
+  ;; => "Elapsed time: 36.767125 msecs"
+
+  (time (do (files->relations3 {}) :done))
+  ;; => "Elapsed time: 24.139833 msecs"
+
+  :rcf)
 
 (defn relations->lines
   "Produce one line per page

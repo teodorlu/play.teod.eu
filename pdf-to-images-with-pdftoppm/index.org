@@ -25,6 +25,14 @@ Or perhaps in Google Slides?
 I've tried using [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]] to convert the PDF to a different slideshow format directly, but I haven't loved the experience.
 I get a new file, sure.
 But it might not be the way I want.
+Then I have to start tweaking.
+
+Can I solve my probems with tools that Pandoc provides?
+If the font is wrong, what do I do?
+What if I want to move an image around?
+What if I am only making /some/ of the slides?
+
+I've chosen to opt for an approach that gives me way more control in exchange for a bit of manual work.
 
 * Export from PDF with Poppler 🤗
 

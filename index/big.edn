@@ -777,6 +777,15 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "34cb6363-5c1d-4af4-b11b-3c3cd97a1150"}
+ {:slug "tidy-first-notes",
+  :page/uuid "356c6009-aa12-4ec7-bb31-5835ca47e31c",
+  :created "2024-03-08",
+  :readiness :wtf-is-this,
+  :title "Tidy First: notes and commentary",
+  :lang :en,
+  :page/slug "tidy-first-notes",
+  :author-url "https://teod.eu",
+  :uuid "356c6009-aa12-4ec7-bb31-5835ca47e31c"}
  {:slug
   "finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus",
   :page/uuid "3619c8d2-f020-4e65-8e45-ca1970cdf46c",
@@ -1949,6 +1958,16 @@
   :page/slug "intersection-work-play",
   :author-url "https://teod.eu",
   :uuid "842f9b9a-de98-4187-863e-3e6cf1b1814d"}
+ {:slug "tidy-first",
+  :page/uuid "84F69DED-CD12-4051-A441-BF3B99641A69",
+  :created "2024-03-08",
+  :readiness :wtf-is-this,
+  :title "Tidy First",
+  :lang :en,
+  :page/slug "tidy-first",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "84F69DED-CD12-4051-A441-BF3B99641A69"}
  {:slug "reed-hastings",
   :page/uuid "85F235DE-A4CA-4054-AECE-EAEEC844A688",
   :created "2024-02-17",
@@ -2220,6 +2239,16 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "990561a0-48e8-4a32-a225-41650ea8edda"}
+ {:slug "kent-beck",
+  :page/uuid "9A98EB07-B6D8-4A64-AB1A-4E32F8722272",
+  :created "2024-03-08",
+  :readiness :wtf-is-this,
+  :title "Kent Beck",
+  :lang :en,
+  :page/slug "kent-beck",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "9A98EB07-B6D8-4A64-AB1A-4E32F8722272"}
  {:slug "charity-grace-joy",
   :page/uuid "9afd4f7e-8bde-49f6-8722-fd30e9c96a50",
   :created "2023-04-22",

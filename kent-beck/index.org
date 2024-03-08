@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 9A98EB07-B6D8-4A64-AB1A-4E32F8722272
+:END:
+#+TITLE: Kent Beck
+
+[[file:..][..]]
+
+DRAFT

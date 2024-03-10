@@ -3431,6 +3431,16 @@
   "form" : "remote-reference",
   "uuid" : "dfd45cfa-3154-47ef-8f74-06fe0e69715e"
 }, {
+  "slug" : "how-much-is-that-second-dice-worth",
+  "page/uuid" : "e0a3dacd-a386-4127-9a9a-1ad6e5daa206",
+  "created" : "2024-03-10",
+  "readiness" : "wtf-is-this",
+  "title" : "How much is that second dice worth?",
+  "lang" : "en",
+  "page/slug" : "how-much-is-that-second-dice-worth",
+  "author-url" : "https://teod.eu",
+  "uuid" : "e0a3dacd-a386-4127-9a9a-1ad6e5daa206"
+}, {
   "slug" : "good-code-good-explanation",
   "page/uuid" : "e1354351-b206-4758-a6d7-122343aa6a7f",
   "created" : "2023-03-27",

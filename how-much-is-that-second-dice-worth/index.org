@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: e0a3dacd-a386-4127-9a9a-1ad6e5daa206
+:END:
+#+TITLE: How much is that second dice worth?
+
+[[file:..][..]]
+
+DRAFT

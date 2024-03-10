@@ -32,7 +32,7 @@ After each step, I see whether the result is what I expect.
 It's easier to move from working code to working code with good renaming support.
 I use =clojure-lsp= for this with Emacs, bound to =SPC c r=.
 With Visual Studio Code and Calva, refactor/rename is bound to =F12=.
-Visual Studio Code/Calva refactor/rename is based on =clojure-lsp= under the hood.
+Visual Studio Code/Calva refactor/rename uses =clojure-lsp= under the hood.
 
 *4. Use /slurp/ to wrap a form*.
 In Clojure, you often want to wrap an S-Expression in another.

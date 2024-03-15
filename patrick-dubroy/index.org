@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 26cf5980-b789-49a9-9418-3ac1887809fc
+:END:
+#+TITLE: Patrick Dubroy
+
+[[file:..][..]]
+
+https://dubroy.com/blog/
+|
+https://twitter.com/dubroy
+
+#+begin_quote
+I’m Patrick Dubroy, an independent software engineer and researcher based in Munich, Germany. I’m a co-creator and the current maintainer of Ohm, a user-friendly parsing toolkit for JavaScript and TypeScript.
+#+end_quote

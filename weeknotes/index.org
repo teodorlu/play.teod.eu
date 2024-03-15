@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: ac6eca3d-7b01-4656-8d0c-153c4cd729cf
+:END:
+#+TITLE: Weeknotes
+
+[[file:..][..]]
+
+The page in which I figure out whether Weeknotes (as argued for at https://doingweeknotes.com/) is something I want to do.
+
+I found the concept through [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]]'s weeknotes:
+https://github.com/pdubroy/weeknotes/blob/main/notes/2024-11.md
+
+* 2024 week 11
+Hi :)

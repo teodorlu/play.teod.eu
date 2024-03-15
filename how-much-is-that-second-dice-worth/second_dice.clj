@@ -5,6 +5,9 @@
   (:require
    [nextjournal.clerk :as clerk]))
 
+*clojure-version*
+
+
 ;; ## Rationale
 
 ;; what is the expected value of the best of two dice throws?

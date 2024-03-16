@@ -11,6 +11,10 @@ I found the concept through [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick D
 https://github.com/pdubroy/weeknotes/blob/main/notes/2024-11.md
 
 * March 11th to March 16th
+:PROPERTIES:
+:ID:       644bbb72-6c2c-4935-bad9-a5468e53f7a1
+:END:
+
 After /yet another batch of structured thinking I fail to follow up/, I decide to try again.
 
 ** Why weeknotes

@@ -2777,6 +2777,17 @@
   "form" : "remote-reference",
   "uuid" : "EC36679E-E0F0-4222-B40D-1F7FD53CC7D9"
 }, {
+  "slug" : "richard-tingstad",
+  "page/uuid" : "F27778B8-1C99-4438-B3FD-602AE258C748",
+  "created" : "2024-03-16",
+  "readiness" : "wtf-is-this",
+  "title" : "Richard Tingstad",
+  "lang" : "en",
+  "page/slug" : "richard-tingstad",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "F27778B8-1C99-4438-B3FD-602AE258C748"
+}, {
   "slug" : "erin-meyer",
   "page/uuid" : "F84FC8DF-4EF2-4565-91B2-23376C732022",
   "created" : "2024-02-17",
@@ -2933,11 +2944,12 @@
   "slug" : "weeknotes-2024",
   "page/uuid" : "ac6eca3d-7b01-4656-8d0c-153c4cd729cf",
   "created" : "2024-03-15",
-  "readiness" : "wtf-is-this",
+  "readiness" : "forever-incomplete",
   "title" : "Weeknotes 2024",
   "lang" : "en",
   "page/slug" : "weeknotes-2024",
   "author-url" : "https://teod.eu",
+  "form" : "rambling",
   "uuid" : "ac6eca3d-7b01-4656-8d0c-153c4cd729cf"
 }, {
   "slug" : "berlin",

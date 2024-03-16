@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: F27778B8-1C99-4438-B3FD-602AE258C748
+:END:
+#+TITLE: Richard Tingstad
+
+[[file:..][..]]
+
+https://github.com/tingstad/

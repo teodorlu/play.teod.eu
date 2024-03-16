@@ -7,15 +7,15 @@
 
 The page in which I figure out whether Weeknotes (as argued for at https://doingweeknotes.com/) is something I want to do.
 
-I found the concept through [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]]'s weeknotes:
-https://github.com/pdubroy/weeknotes/blob/main/notes/2024-11.md
-
 * March 11th to March 16th
 :PROPERTIES:
 :ID:       644bbb72-6c2c-4935-bad9-a5468e53f7a1
 :END:
 
-After /yet another batch of structured thinking I fail to follow up/, I decide to try again.
+After /yet another batch of structured thinking I fail to follow up/, I decide to try again with a different format, a different trigger and a different scope.
+
+I found the concept through [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]]'s weeknotes:
+https://github.com/pdubroy/weeknotes/blob/main/notes/2024-11.md
 
 ** Why weeknotes
 Weeknotes seem to hit a sweet spot.
@@ -184,3 +184,22 @@ Jørgen, Ann and Viktor continue to see problems clearly, and similarly care dee
 [[id:9A9398C9-2FB8-4758-AE12-E3B381B5E191][Thusan Arul]] and [[id:28567529-36DC-4FB7-98B7-993C80B49F8D][Magnus Reier Rushfeldt]] for picking up /my slack/ on the [[id:84F69DED-CD12-4051-A441-BF3B99641A69][Tidy First]] book club.
 
 [[id:E2AEC445-ECD1-4A09-89E9-B577EDC4B1F3][Finn Holme]] and [[id:702B0D17-E25B-4784-BF60-28965A545D30][Adrian Tofting]] for honestly, shamelessly being themselves.
+
+[[id:F27778B8-1C99-4438-B3FD-602AE258C748][Richard Tingstad]] for some really enjoyable interactions & par programming sessionds last week.
+** Short retrospective, should I do more weeknotes?
+1. I really liked the process
+2. Finding the right target audience was a bit hard.
+   I landed on writing two docs: one for my team, and one for me.
+   You're reading the one that's for me.
+3. I spent about two hours on the one for me, and about two hours for the one for my team.
+   I probably want to aim to use /less time/.
+   Four hours per week is 10 % of total spent time.
+   Probably not a sustainable amount.
+4. I've got no idea whatsoever what others are going to think about me writing this, really curious.
+   I'd appreciate it if you'd send me reactions you have.
+5. I wonder if I want to publish a link to my weeknotes on Twitter?
+   Perhaps yersss?
+
+OK, done.
+Time to get some air.
+Untill next time!

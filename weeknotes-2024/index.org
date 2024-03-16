@@ -107,7 +107,7 @@ To make some ultra-clear directives:
 
 These directives are divisive, and almost every team I've ever worked on break them at every option.
 
-Some people that /don't/ think are breaking those rules:
+Some people that I /don't/ think are breaking those rules:
 
 1. [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] (kinda obvious?
    [[id:39291BEF-2047-48E8-BA21-6CCEF5F2FF90][Hammock Driven Development]] and [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]] talk about this directly)

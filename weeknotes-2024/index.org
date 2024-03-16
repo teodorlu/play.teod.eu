@@ -123,6 +123,20 @@ Some people that /don't/ think are breaking those rules:
 But does Kent Beck himself break those rules?
 I'm guessing perhaps.
 Because he seems to be a person who /on principle/ breaks rules to learn from breaking rthose rules.
+
+"but cares about everything"?
+Yeah.
+
+1. My impression is that Kent Beck has very wide interests.
+2. That /may/ lead to him giving off more chaotic vibes than a certain situation can handle.
+3. I observe myself doing the same thing.
+   In dialogue and work, I sometimes jump to conclusions.
+   In those situations, I rely on others asking me to slow down.
+
+No value judgements here, just observing.
+Sometimes, chaotic is good.
+Sometimes, systematic is good.
+I believe in people judging how they should act for themselves!
 ** Paths not taken (yet)
 *My ultra-old (so far) failed attempt at adding SI units to [[id:CF00FC4F-2839-4A6C-B190-FE9259670CD3][Emmy]]*: https://github.com/mentat-collective/emmy/issues/46.
 I've been assigned to the issue for four years.

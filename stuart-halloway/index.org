@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: E54C0804-7AC9-4ABB-9F5B-5C0B1584030D
+:END:
+#+TITLE: Stuart Halloway
+
+[[file:..][..]]
+
+https://github.com/stuarthalloway

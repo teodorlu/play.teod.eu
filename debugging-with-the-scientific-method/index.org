@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: DC315E58-F594-42D5-9FA0-D157A2F30503
+:END:
+#+TITLE: Debugging with the Scientific Method
+
+[[file:..][..]]
+
+https://www.youtube.com/watch?v=FihU5JxmnBg
+
+by [[id:E54C0804-7AC9-4ABB-9F5B-5C0B1584030D][Stuart Halloway]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/FihU5JxmnBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

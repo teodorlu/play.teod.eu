@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: ac6eca3d-7b01-4656-8d0c-153c4cd729cf
 :END:
-#+TITLE: Weeknotes
+#+TITLE: Weeknotes 2024
 
 [[file:..][..]]
 
@@ -10,5 +10,154 @@ The page in which I figure out whether Weeknotes (as argued for at https://doing
 I found the concept through [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]]'s weeknotes:
 https://github.com/pdubroy/weeknotes/blob/main/notes/2024-11.md
 
-* 2024 week 11
-Hi :)
+* March 11th to March 16th
+After /yet another batch of structured thinking I fail to follow up/, I decide to try again.
+
+** Why weeknotes
+Weeknotes seem to hit a sweet spot.
+Once a week, I can do that.
+I can even schedule time in my calendar!
+
+** On the importance of learning from excellent people
+The only reason whatsoever I'm doing this is because I've rigged my Twitter account to follow a few highly competent people in detail.
+One of those people I (subjectively) consider to be highly competent (without ever having met the person) is [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]].
+I caught a tweet in which Patrick announced that he'd be writing weeknotes, and asked his Twitter audience whether they would find it useful.
+I found it /very interesting/.
+Utility will have to wait.
+
+** The best way to find excellent people is through trust networks.
+Step 1: pick someone who you respect and believe you have something to learn from.
+
+Step 2: observe what they do, read what they write, answer when they ask questions.
+Try to help them do things they care about.
+
+Step 3 (the recursive step): explore /who they trust/.
+But do this /slowly/.
+The recursive step will open you to get /more content/, which is a double edged blade.
+If they are great and you've read all they have written, great!
+This is exactly what you need.
+If they are actually mediocre, stop.
+Full stop!
+
+I started thinking about the importance of exploring networks of trust about a year ago, when I made the frist version of this site ([[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]]).
+That lead me to make first class support for remote references.
+Patricks's page here on my site is a remote reference.
+Technically, there's a metadata file with
+
+#+begin_src clojure
+ :form :remote-reference
+#+end_src
+
+in it, found here:
+https://github.com/teodorlu/play.teod.eu/blob/afc06c6954ee2782057b3bf6b2676a766aeb7d8a/patrick-dubroy/play.edn#L3
+
+but that's not too important.
+
+One of my main lessons from speaking at [[id:cfe0cbd0-b1cb-4aeb-9322-6694bb18e2f9][babashka-conf]] (my talk was [[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]]) was the importance of referring to sources.
+And not in a literal "how to write papers" sense, in the hypertext sense.
+With hypertext, we can refer effortlessly to sources at any point in time.
+And that is absolutely amazing.
+
+By the way, I found Patrick by reading [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]'s tweets.
+I interacted with Jack first on [[id:57221ffb-132c-4348-8ba4-5df6cff915d3][Clojureverse]].
+I engaged with the Clojure community on Clojureverse after realizing that the team I currently worked on didn't care too much about programming, and wanted to learn more.
+I found Clojure kind of randomly by watching a Youtube video about some guy doing REPL-connected Clojure programming with Emacs.
+And I found Clojure sort of by accident after finding Haskell in 2014 (I did a 148 slide presentation about Haskell in Norwegian in 2024, [[id:AE1427D5-AD4D-42B5-A971-E01E62D3D958][Haskell: hardt og godt]], in English something like "Learn Haskell the good, hard way").
+And I don't remember how I stumbled upon Haskell, other than that I thought it was absolutely amazing, and embarassing that we had spent so much time at [[id:041EBF1E-41ED-426E-957D-DB2A9860B794][NTNU]] learning Java.
+
+I digress.
+
+I encourage you to look around for the people around you that you'd like to learn something from, engage with them (take what they say seriously, ask questions if you don't think it makes sense, perhaps they will respond), then dig deeper into the rabbit hole when you've got energy.
+** On the importance of slowing down and sharing knowledge in software teams
+On my current team, we have lots of code, and very limited shared understanding of that code.
+
+I'm convinced that the right thing to do is to slow down and build shared understanding.
+
+Since joining the team, I've spent less than 5 % of my own time writing code.
+I do like writing code, so I'd like to increase that fraction over time.
+But I hate writing code that isn't needed, or code that solves the wrong problem.
+
+So, let's slow down!
+First, we build a solid shared understanding.
+Then, later on, we'll use that shared understanding as a foundation to create & capture value.
+** Kent Beck knows his shit, but cares about everything
+I had the fortune to chat briefly with [[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]] when he visited Oslo in 2023.
+He gave a talk about the importance of feeling safe to people working in [[id:A6B0A30E-7B73-44E1-A027-F1087CDD8304][Iterate AS]].
+I felt like that was a bad topic / audience match.
+Iterate is so awesome at creating a safe environment for people that I feel like we struggle with actually expecting people to do things.
+Anyway.
+
+Kent Beck ran amazing software teams in the 90s, and wrote [[id:B8C15136-516B-4753-B6AC-072640B9B99F][Extreme Programming (book)]] about the principles.
+The most important principle from that book that I had not taken with sufficient seriousness before 2023 was pair programming, and its generalization ensemble programming.
+Pairing is a ridiculously effective tool to build shared intent.
+(which is one of the pillars in my "product howto philosopy", [[id:529da36c-168f-4698-866f-bba64a5c13c5][Tillit, kvalitet og intensjon i praksis: en håndbok for produkt- og programvareutvikling]] (Norwegian)).
+
+Kent Beck knew this 30 years ago, I learned it just yet.
+And it's ... /really really weird/ to fully lean into the importance of shared intent.
+It's [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s ideas from [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]] taken to to level 9000.
+To make some ultra-clear directives:
+
+1. NEVER start writing code unless you know what problem you want to solve.
+2. NEVER start solving you problem unless you have at least two different approaches.
+3. ALWAYS share the problem and share your options before moving on.
+
+These directives are divisive, and almost every team I've ever worked on break them at every option.
+
+Some people that /don't/ think are breaking those rules:
+
+1. [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] (kinda obvious?
+   [[id:39291BEF-2047-48E8-BA21-6CCEF5F2FF90][Hammock Driven Development]] and [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]] talk about this directly)
+2. [[id:E54C0804-7AC9-4ABB-9F5B-5C0B1584030D][Stuart Halloway]], see [[id:DC315E58-F594-42D5-9FA0-D157A2F30503][Debugging with the Scientific Method]].
+3. [[id:63922b15-01b3-4a03-afe1-18c8ef0fa8f4][Martin Kavalar]] and [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]: making [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] so that we can explore options better
+4. [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] and [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]]: They've been pairing effectively for /years/.
+5. [[id:26C2B24B-CF52-4C76-B9C5-E86FA7EAF9E5][Evan Czaplicki]].
+   Deep theoretical understanding of programming and type systems, /AND/ one of the best teachers of his generation.
+   What a guy.
+6. [[id:6455f952-018a-497a-bfc1-69774f26946a][Sam Ritchie]]
+7. [[id:b726cfb2-5aff-46e7-b377-c881af59753d][Gerald Jay Sussman]]
+
+But does Kent Beck himself break those rules?
+I'm guessing perhaps.
+Because he seems to be a person who /on principle/ breaks rules to learn from breaking rthose rules.
+** Paths not taken (yet)
+*My ultra-old (so far) failed attempt at adding SI units to [[id:CF00FC4F-2839-4A6C-B190-FE9259670CD3][Emmy]]*: https://github.com/mentat-collective/emmy/issues/46.
+I've been assigned to the issue for four years.
+I've recently made (subjectively) serious progress, but I'm hitting problems:
+
+https://github.clerk.garden/teodorlu/lab/commit/5b54a0fa3e85c0ab71d2fa81d13c8acb1dad6946/src/steel_beams_si_units_clojure_multimethods/
+
+[[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] has been an essential tool to make progress.
+Perhaps the only thing I need to do is /not/ load the system from within Clerk, and instead keep the SI system and the documentation of the system separate.
+Dunno.
+Still working on this, though.
+I feel like Sam is giving us so much, and I want to give something back.
+I'm still grateful for the hour of pairing we did back in 2020, which made me realize just how much I still had to learn.
+And how interacting with generics in Emmy has opened my eyes to why Clojure has built-in polymorphic dispatch (protocols/multimethods), and why [[id:29d152b9-9f5e-4c23-904a-f926b3d83477][Software Design for Flexibility]] is an awesome book.
+
+*Helping the Clerk team debug problems*.
+I reported some problems last Sunday.
+[[id:EC36679E-E0F0-4222-B40D-1F7FD53CC7D9][Andrea Amantini]] took the trouble of digging into those problems.
+And he probably discovered that I had hit not one, but two different problems, and reported both at once.
+He asked for some follow-up (while I was in some meeting), and I haven't been able to answer yet.
+
+*Still curious about running Clojure directly in Emacs*.
+[[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] started out: https://github.com/jackrusher/scimacs.
+I /presume/ he wanted to encourage someone to try explore this further, because I /presume/ that he has many options on his hands.
+I /tried/ doing some work there, but quickly got stuck:
+
+1. I don't know C (well enough).
+2. Embedding one language into another through FFI bindings is something I find hard (subjectively).
+** Selected gratitude
+I've had the pleasure to get to work more with [[id:CDD3941A-12F8-414E-8B76-29BC5B5E8D4E][Olav Moseng]].
+Olav and [[id:CF4A09A7-23CA-4133-A556-6494359BA3C1][Ruben Sevaldson]] gratiously helped making last week's Clojure workshops happen.
+(The material for those workshops are not yet public, but I've gotten all OKs I need, and will publish, I promise!)
+
+[[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]] helps everyone from scratch as always, continuing to be a one man bulldozer army lifting us all up.
+
+[[id:96C0714D-743C-4BA3-83F9-214F5DEF36D1][Nikita Prokopov]] continutes to be a one man (slightly smaller bulldozer army --- but one that also cares deeply about design).
+
+Jørgen, Ann and Viktor continue to see problems clearly, and similarly care deeply about the people they empower to solve those probelms.
+
+[[id:9A9398C9-2FB8-4758-AE12-E3B381B5E191][Thusan Arul]] and [[id:28567529-36DC-4FB7-98B7-993C80B49F8D][Magnus Reier Rushfeldt]] for picking up /my slack/ on the [[id:84F69DED-CD12-4051-A441-BF3B99641A69][Tidy First]] book club.
+
+[[id:E2AEC445-ECD1-4A09-89E9-B577EDC4B1F3][Finn Holme]] and [[id:702B0D17-E25B-4784-BF60-28965A545D30][Adrian Tofting]] for honestly, shamelessly being themselves.

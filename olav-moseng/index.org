@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: CDD3941A-12F8-414E-8B76-29BC5B5E8D4E
+:END:
+#+TITLE: Olav Moseng
+
+[[file:..][..]]
+
+https://github.com/olavm

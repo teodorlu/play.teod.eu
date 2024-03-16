@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 39291BEF-2047-48E8-BA21-6CCEF5F2FF90
+:END:
+#+TITLE: Hammock Driven Development
+
+[[file:..][..]]
+
+https://www.youtube.com/watch?v=f84n5oFoZBc
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/f84n5oFoZBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]

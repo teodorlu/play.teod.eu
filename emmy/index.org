@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: CF00FC4F-2839-4A6C-B190-FE9259670CD3
+:END:
+#+TITLE: Emmy
+
+[[file:..][..]]
+
+https://emmy.mentat.org/
+|
+https://github.com/mentat-collective/emmy/

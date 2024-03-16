@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: B8C15136-516B-4753-B6AC-072640B9B99F
+:END:
+#+TITLE: Extreme Programming (book)
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Extreme_programming
+
+By [[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]]

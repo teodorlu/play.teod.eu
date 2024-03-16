@@ -21,3 +21,4 @@ Rich Hickey content referenced on this site:
 | [[id:73b93aeb-d61a-413d-a119-53335e73afda][Design, Composition, and Performance]] | what is design?                  | 2013 |
 | [[id:7e831e40-daa5-4714-9ba5-c9e08988ce55][Design in Practice]]                   | how to design software           | 2023 |
 | [[id:9447cd35-15b9-49c7-b47e-537c03b48f0b][The Value of Values]]                  | immutability: what, how and why  | 2012 |
+| [[id:39291BEF-2047-48E8-BA21-6CCEF5F2FF90][Hammock Driven Development]]           | perhaps think first, code later? | 2010 |

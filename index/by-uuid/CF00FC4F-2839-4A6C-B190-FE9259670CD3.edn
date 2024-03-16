@@ -1,0 +1,10 @@
+{:slug "emmy",
+ :page/uuid "CF00FC4F-2839-4A6C-B190-FE9259670CD3",
+ :created "2024-03-16",
+ :readiness :wtf-is-this,
+ :title "Emmy",
+ :lang :en,
+ :page/slug "emmy",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "CF00FC4F-2839-4A6C-B190-FE9259670CD3"}

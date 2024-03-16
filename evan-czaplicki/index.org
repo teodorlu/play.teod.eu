@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 26C2B24B-CF52-4C76-B9C5-E86FA7EAF9E5
+:END:
+#+TITLE: Evan Czaplicki
+
+[[file:..][..]]
+
+https://github.com/evancz
+
+https://twitter.com/evancz

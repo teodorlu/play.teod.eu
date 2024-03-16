@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 041EBF1E-41ED-426E-957D-DB2A9860B794
+:END:
+#+TITLE: NTNU
+
+[[file:..][..]]
+
+https://www.ntnu.no/

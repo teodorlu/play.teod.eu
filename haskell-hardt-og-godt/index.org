@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: AE1427D5-AD4D-42B5-A971-E01E62D3D958
+:END:
+#+TITLE: Haskell: hardt og godt
+
+[[file:..][..]]
+
+Slides: https://haskell-hardt-og-godt.pages.dev/#1
+
+Source: https://github.com/teodorlu/haskell-hardt-og-godt?tab=readme-ov-file
+
+An introduction to Haskell I did in 2014.

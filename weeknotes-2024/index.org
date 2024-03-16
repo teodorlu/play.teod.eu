@@ -179,7 +179,7 @@ Olav and [[id:CF4A09A7-23CA-4133-A556-6494359BA3C1][Ruben Sevaldson]] gratiously
 
 [[id:96C0714D-743C-4BA3-83F9-214F5DEF36D1][Nikita Prokopov]] continutes to be a one man (slightly smaller bulldozer army --- but one that also cares deeply about design).
 
-Jørgen, Ann and Viktor continue to see problems clearly, and similarly care deeply about the people they empower to solve those probelms.
+Jørgen, Ann and Viktor continue to see problems clearly, and similarly care deeply about the people they empower to solve those problems.
 
 [[id:9A9398C9-2FB8-4758-AE12-E3B381B5E191][Thusan Arul]] and [[id:28567529-36DC-4FB7-98B7-993C80B49F8D][Magnus Reier Rushfeldt]] for picking up /my slack/ on the [[id:84F69DED-CD12-4051-A441-BF3B99641A69][Tidy First]] book club.
 
@@ -199,6 +199,9 @@ Jørgen, Ann and Viktor continue to see problems clearly, and similarly care dee
    I'd appreciate it if you'd send me reactions you have.
 5. I wonder if I want to publish a link to my weeknotes on Twitter?
    Perhaps yersss?
+6. I have too many spelling errors in this text.
+   I need to get spell checking in Emacs working again.
+   😔
 
 OK, done.
 Time to get some air.

@@ -5,8 +5,8 @@
 
 [[file:..][..]]
 
-Slides: https://haskell-hardt-og-godt.pages.dev/#1
+Slides: https://haskell-hardt-og-godt.pages.dev/
 
-Source: https://github.com/teodorlu/haskell-hardt-og-godt?tab=readme-ov-file
+Source: https://github.com/teodorlu/haskell-hardt-og-godt
 
 An introduction to Haskell I did in 2014.

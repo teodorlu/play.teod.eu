@@ -177,7 +177,7 @@ Olav and [[id:CF4A09A7-23CA-4133-A556-6494359BA3C1][Ruben Sevaldson]] gratiously
 
 [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]] helps everyone from scratch as always, continuing to be a one man bulldozer army lifting us all up.
 
-[[id:96C0714D-743C-4BA3-83F9-214F5DEF36D1][Nikita Prokopov]] continutes to be a one man (slightly smaller bulldozer army --- but one that also cares deeply about design).
+[[id:96C0714D-743C-4BA3-83F9-214F5DEF36D1][Nikita Prokopov]] continutes to be a one man (slightly smaller) bulldozer army --- but one that cares deeply about design.
 
 Jørgen, Ann and Viktor continue to see problems clearly, and similarly care deeply about the people they empower to solve those problems.
 

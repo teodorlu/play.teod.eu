@@ -137,6 +137,11 @@ No value judgements here, just observing.
 Sometimes, chaotic is good.
 Sometimes, systematic is good.
 I believe in people judging how they should act for themselves!
+
+Also, I have to remember that I cause this exact same confusion (because I've seen it happen, and have had people comment to me that it has happened!)
+I also tend to be a bit ... rigid in my views on epistemology.
+When people mistake something subjective for something objective, I can respond a bit harshly.
+That can cuase problems.
 ** Paths not taken (yet)
 *My ultra-old (so far) failed attempt at adding SI units to [[id:CF00FC4F-2839-4A6C-B190-FE9259670CD3][Emmy]]*: https://github.com/mentat-collective/emmy/issues/46.
 I've been assigned to the issue for four years.

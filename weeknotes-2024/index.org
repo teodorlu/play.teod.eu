@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-The page in which I figure out whether Weeknotes (as argued for at https://doingweeknotes.com/) is something I want to do.
+Is Weeknotes (see https://doingweeknotes.com/) is something I want to do?
 
 * March 11th to March 16th
 :PROPERTIES:

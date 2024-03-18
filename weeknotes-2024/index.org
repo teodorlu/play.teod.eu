@@ -73,7 +73,7 @@ I digress.
 
 I encourage you to look around for the people around you that you'd like to learn something from, engage with them (take what they say seriously, ask questions if you don't think it makes sense, perhaps they will respond), then dig deeper into the rabbit hole when you've got energy.
 ** On the importance of slowing down and sharing knowledge in software teams
-On my current team, we have lots of code, and very limited shared understanding of that code.
+On my current team, we have lots of code, and limited shared understanding of that code.
 
 I'm convinced that the right thing to do is to slow down and build shared understanding.
 

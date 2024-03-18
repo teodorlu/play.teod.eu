@@ -66,7 +66,7 @@ By the way, I found Patrick by reading [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2
 I interacted with Jack first on [[id:57221ffb-132c-4348-8ba4-5df6cff915d3][Clojureverse]].
 I engaged with the Clojure community on Clojureverse after realizing that the team I currently worked on didn't care too much about programming, and wanted to learn more.
 I found Clojure kind of randomly by watching a Youtube video about some guy doing REPL-connected Clojure programming with Emacs.
-And I found Clojure sort of by accident after finding Haskell in 2014 (I did a 148 slide presentation about Haskell in Norwegian in 2024, [[id:AE1427D5-AD4D-42B5-A971-E01E62D3D958][Haskell: hardt og godt]], in English something like "Learn Haskell the good, hard way").
+And I found Clojure sort of by accident after finding Haskell in 2014 (I did a 148 slide presentation about Haskell in Norwegian in 2014, [[id:AE1427D5-AD4D-42B5-A971-E01E62D3D958][Haskell: hardt og godt]], in English something like "Learn Haskell the good, hard way").
 And I don't remember how I stumbled upon Haskell, other than that I thought it was absolutely amazing, and embarassing that we had spent so much time at [[id:041EBF1E-41ED-426E-957D-DB2A9860B794][NTNU]] learning Java.
 
 I digress.

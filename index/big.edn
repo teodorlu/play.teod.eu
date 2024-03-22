@@ -2394,6 +2394,16 @@
   :page/slug "theres-always-a-deliverable",
   :author-url "https://teod.eu",
   :uuid "9f52d562-4a06-4ea1-a461-2018fca5baf1"}
+ {:slug "designerly-ways-of-knowing",
+  :page/uuid "A4452E84-7712-44C0-AEEE-A792AB8EADD9",
+  :created "2024-03-22",
+  :readiness :wtf-is-this,
+  :title "Designerly ways of knowing",
+  :lang :en,
+  :page/slug "designerly-ways-of-knowing",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "A4452E84-7712-44C0-AEEE-A792AB8EADD9"}
  {:slug "iterate-as",
   :page/uuid "A6B0A30E-7B73-44E1-A027-F1087CDD8304",
   :created "2024-03-16",

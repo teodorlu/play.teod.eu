@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: EF4EF088-9D92-42EE-90D3-8103BA1F20ED
+:END:
+#+TITLE: Simon Wardley
+
+[[file:..][..]]
+
+https://twitter.com/swardley

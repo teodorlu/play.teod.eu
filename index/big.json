@@ -1404,6 +1404,17 @@
   "form" : "remote-reference",
   "uuid" : "5345d063-8018-4bde-8574-8ab9df27f479"
 }, {
+  "slug" : "alan-kay",
+  "page/uuid" : "539FAE92-F436-49AD-8CB7-45B95A744C12",
+  "created" : "2024-03-22",
+  "readiness" : "wtf-is-this",
+  "title" : "Alan Kay",
+  "lang" : "en",
+  "page/slug" : "alan-kay",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "539FAE92-F436-49AD-8CB7-45B95A744C12"
+}, {
   "slug" : "interaction-value-differential",
   "page/uuid" : "55261ada-7ca6-4c94-88f5-446a9b35e5c4",
   "created" : "2022-07-13",
@@ -2262,13 +2273,13 @@
   "author-url" : "https://teod.eu",
   "uuid" : "86c31b09-2831-4435-a73e-91db76fcbd57"
 }, {
-  "slug" : "oddmund",
+  "slug" : "oddmund-stromme",
   "page/uuid" : "8833ff2f-ed66-4db2-ac14-6f8eff9f70d4",
   "created" : "2023-08-05",
   "readiness" : "wtf-is-this",
   "title" : "Oddmund",
   "lang" : "en",
-  "page/slug" : "oddmund",
+  "page/slug" : "oddmund-stromme",
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "8833ff2f-ed66-4db2-ac14-6f8eff9f70d4"
@@ -2669,6 +2680,17 @@
   "form" : "remote-reference",
   "uuid" : "B8C15136-516B-4753-B6AC-072640B9B99F"
 }, {
+  "slug" : "lars-barlindhaug",
+  "page/uuid" : "BC86AE82-0612-4073-B9DF-C0A6625CBEBF",
+  "created" : "2024-03-22",
+  "readiness" : "wtf-is-this",
+  "title" : "Lars Barlindhaug",
+  "lang" : "en",
+  "page/slug" : "lars-barlindhaug",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "BC86AE82-0612-4073-B9DF-C0A6625CBEBF"
+}, {
   "slug" : "the-culture-map",
   "page/uuid" : "C75CF37B-0412-45C0-B1A4-7067B1106192",
   "created" : "2024-02-17",
@@ -2776,6 +2798,17 @@
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "EC36679E-E0F0-4222-B40D-1F7FD53CC7D9"
+}, {
+  "slug" : "simon-wardley",
+  "page/uuid" : "EF4EF088-9D92-42EE-90D3-8103BA1F20ED",
+  "created" : "2024-03-22",
+  "readiness" : "wtf-is-this",
+  "title" : "Simon Wardley",
+  "lang" : "en",
+  "page/slug" : "simon-wardley",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "EF4EF088-9D92-42EE-90D3-8103BA1F20ED"
 }, {
   "slug" : "richard-tingstad",
   "page/uuid" : "F27778B8-1C99-4438-B3FD-602AE258C748",

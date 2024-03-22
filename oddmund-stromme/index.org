@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 8833ff2f-ed66-4db2-ac14-6f8eff9f70d4
+:END:
+#+TITLE: Oddmund Strømme
+
+[[file:..][..]]
+
+https://blog.oddmundo.com/
+
+https://github.com/jraregris/

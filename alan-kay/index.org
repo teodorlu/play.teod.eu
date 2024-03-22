@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 539FAE92-F436-49AD-8CB7-45B95A744C12
+:END:
+#+TITLE: Alan Kay
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Alan_Kay

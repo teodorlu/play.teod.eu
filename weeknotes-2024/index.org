@@ -354,4 +354,4 @@ And not just "fake caring", they put their skin in the game.
 Rich Hickey paid for [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] with two years of his life.
 ** Abbreviated comments & reactions
 
-[[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]] suggests that I might want to read [[id:A4452E84-7712-44C0-AEEE-A792AB8EADD9][Designerly ways of knowing]].
+[[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]] suggests that I might want to read [[id:A4452E84-7712-44C0-AEEE-A792AB8EADD9][Designerly ways of knowing]] ([[https://twitter.com/dubroy/status/1771110663835799753][via twitter]]).

@@ -352,6 +352,6 @@ To [[id:EF4EF088-9D92-42EE-90D3-8103BA1F20ED][Simon Wardley]] and [[id:97de0013-
 To [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]], [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] and [[id:539FAE92-F436-49AD-8CB7-45B95A744C12][Alan Kay]] for caring deeply about the important problems in computing.
 And not just "fake caring", they put their skin in the game.
 Rich Hickey paid for [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] with two years of his life.
-** Abbreviated comments & reactions
+** Selected comments
 
 [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]] suggests that I might want to read [[id:A4452E84-7712-44C0-AEEE-A792AB8EADD9][Designerly ways of knowing]] ([[https://twitter.com/dubroy/status/1771110663835799753][via twitter]]).

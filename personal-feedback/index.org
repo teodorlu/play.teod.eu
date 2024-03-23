@@ -74,6 +74,13 @@ O could consider the Fana leader.
   - Can feedback work without a foundation of trust?
   - Can you tell me of a time when you've been grateful to receive feedback?
   - Are there differences between effective feedback to your leader, compared to to someone you are leading?
+- [[id:8833ff2f-ed66-4db2-ac14-6f8eff9f70d4][Oddmund Strømme]]
+  - What do you feel when you see bad code?
+  - Do you tell people when you see bad code?
+  - Can you give an example where you have given feedback that was not well received?
+    - And one where feedback was well received?
+  - Should design criticism be a part of pair programming?
+  - xxx
 ** general questions
 Can you tell me about a situation in which you got feedback that surprised you?
 

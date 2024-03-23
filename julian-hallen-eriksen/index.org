@@ -8,3 +8,7 @@
 - https://www.linkedin.com/in/julian-hallen-eriksen-66695b159/
 - https://www.instagram.com/julianone/
 - https://github.com/sichaelmott
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/eHyH_Ihku3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

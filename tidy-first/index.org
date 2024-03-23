@@ -5,4 +5,6 @@
 
 [[file:..][..]]
 
-DRAFT
+https://www.oreilly.com/library/view/tidy-first/9781098151232/
+
+A book by [[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]] on software design.

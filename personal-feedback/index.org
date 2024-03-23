@@ -20,6 +20,7 @@ Process:
    5. in english
    6. recording itself should be about 10 minutes
    7. (audio-only version would be nice)
+   8. recording will be published on youtube.
 2. do the thing
    1. Introduce the person.
       Why do I want to hear this person's opinion?
@@ -52,19 +53,27 @@ O could consider the Fana leader.
   - Imagine that you are in a project with other people, designers and developers.
     The work done by a designer is not good enough to deliver, according to your standards.
     What do you do?
+  - Can feedback spark joy?
 - *Fredrik Lien Bjørgmo*
   - In 2019 or 2020, I participated in a "design critique" where you shared some work you had done, and asked for reactions.
     - slightly intimidated --- I would not have been able to produce the same work, outside my expertise.
     - Uneducated opinions
+  - is perfection best reached alone or with someone else?
 - *Irene Solberg*
   - "teamwork like a jazz band?"
   - what do you do when the trumpetist plays sour notes?
 - *Daniel Slutsky*
   - What is the most important part of your work for the Clojure data science community?
+  - What is one thing you've done that you're proud of?
+  - How is open source community work different from working with 4 people you see every day?
 - *Ann Baekken*
   - I have walked away richer from every conversation I've had with you about people.
     Did you always care this deeply about people?
     Or can you point to a distinct point in time that caused you to open your eyes?
+- *Steinar Barstad*
+  - Can feedback work without a foundation of trust?
+  - Can you tell me of a time when you've been grateful to receive feedback?
+  - Are there differences between effective feedback to your leader, compared to to someone you are leading?
 ** general questions
 Can you tell me about a situation in which you got feedback that surprised you?
 

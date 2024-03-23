@@ -6,3 +6,5 @@
 [[file:..][..]]
 
 https://en.wikipedia.org/wiki/Eliyahu_M._Goldratt
+
+Wrote [[id:96bd0a06-d9b8-47a4-99f4-a79bd8ebd0a1][The Goal (book)]], about lean production.

@@ -1,0 +1,66 @@
+:PROPERTIES:
+:ID: 55a43bc3-7de1-44f6-8970-69970acad85e
+:END:
+#+TITLE: Personal Feedback
+
+[[file:..][..]]
+
+DRAFT
+
+* what + why
+** I'd like to have some conversations with some people about personal feedback.
+
+Process:
+
+1. Ask person if they want to participate
+   1. 1 hour total effort
+   2. remote
+   3. recorded with a Google meet
+   4. later published to youtube
+   5. in english
+   6. recording itself should be about 10 minutes
+   7. (audio-only version would be nice)
+2. do the thing
+   1. Introduce the person.
+      Why do I want to hear this person's opinion?
+      Something I've learned from the person.
+   2. ask the questions.
+      1. Either same questions for every person
+      2. Or different questions for each person.
+   3. ask them to "plug" something of theirs.
+      share something they've done, or point towards something interesting.
+
+Q: can I involve [[id:34BF8765-F2B1-47B8-AEB7-8ED64776A356][Julian Hallen Eriksen]], [[id:CDD3941A-12F8-414E-8B76-29BC5B5E8D4E][Olav Moseng]] and [[id:37FD615A-F82C-4A74-AA7F-57DA469DE2BD][Neno Mindjek]]?
+
+A: Perhaps ask J, O and N each to each nominate a person they would like to have on,
+and do the interview for that person?
+** people
+- Fredrik Lien Bjørgmo
+- Linn Eriksen
+- Ann Baekken
+- Anders Haugeto
+- Viktor Varland
+- Erik Assum
+- Daniel Slutsky
+- Steinar Barstad
+- Marcus Irgens
+- Irene Solberg
+** questions
+- *Linn Eriksen*
+  - I see you as someone who manages the balance between the quality of the work and the needs of the people in a very tasteful manner.
+  - Imagine that you are in a project with other people, designers and developers.
+    The work done by a designer is not good enough to deliver, according to your standards.
+    What do you do?
+- *Fredrik Lien Bjørgmo*
+  - In 2019 or 2020, I participated in a "design critique" where you shared some work you had done, and asked for reactions.
+    - slightly intimidated --- I would not have been able to produce the same work, outside my expertise.
+    - Uneducated opinions
+- *Irene Solberg*
+  - "teamwork like a jazz band?"
+  - what do you do when the trumpetist plays sour notes?
+- *Daniel Slutsky*
+  - What is the most important part of your work for the Clojure data science community?
+- *Ann Baekken*
+  - I have walked away richer from every conversation I've had with you about people.
+    Did you always care this deeply about people?
+    Or can you point to a distinct point in time that caused you to open your eyes?

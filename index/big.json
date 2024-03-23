@@ -896,6 +896,17 @@
   "author-url" : "https://teod.eu",
   "uuid" : "338c5b0a-ad78-4ab7-a259-a916093d6cb4"
 }, {
+  "slug" : "julian-hallen-eriksen",
+  "page/uuid" : "34BF8765-F2B1-47B8-AEB7-8ED64776A356",
+  "created" : "2024-03-23",
+  "readiness" : "wtf-is-this",
+  "title" : "Julian Hallen Eriksen",
+  "lang" : "en",
+  "page/slug" : "julian-hallen-eriksen",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "34BF8765-F2B1-47B8-AEB7-8ED64776A356"
+}, {
   "slug" : "david-schmudde",
   "page/uuid" : "34cb6363-5c1d-4af4-b11b-3c3cd97a1150",
   "created" : "2024-01-21",
@@ -947,6 +958,17 @@
   "page/slug" : "david-deutsch",
   "form" : "remote-reference",
   "uuid" : "369abfa2-8b8c-4540-958f-d0fce79f132b"
+}, {
+  "slug" : "neno-mindjek",
+  "page/uuid" : "37FD615A-F82C-4A74-AA7F-57DA469DE2BD",
+  "created" : "2024-03-23",
+  "readiness" : "wtf-is-this",
+  "title" : "Neno Mindjek",
+  "lang" : "en",
+  "page/slug" : "neno-mindjek",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "37FD615A-F82C-4A74-AA7F-57DA469DE2BD"
 }, {
   "slug" : "dont-assume-trust-build-trust",
   "page/uuid" : "37e07eec-4b5c-498a-875e-b4c4267dbfd2",
@@ -1424,6 +1446,17 @@
   "page/slug" : "interaction-value-differential",
   "author-url" : "https://teod.eu",
   "uuid" : "55261ada-7ca6-4c94-88f5-446a9b35e5c4"
+}, {
+  "slug" : "personal-feedback",
+  "page/uuid" : "55a43bc3-7de1-44f6-8970-69970acad85e",
+  "created" : "2024-03-23",
+  "readiness" : "wtf-is-this",
+  "title" : "Personal Feedback",
+  "lang" : "en",
+  "page/slug" : "personal-feedback",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "55a43bc3-7de1-44f6-8970-69970acad85e"
 }, {
   "slug" : "narrow-waist",
   "title" : "Hourglass architecture - concept capture and references",

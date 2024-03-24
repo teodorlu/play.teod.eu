@@ -5,4 +5,11 @@
 
 [[file:..][..]]
 
-DRAFT
+https://en.wikipedia.org/wiki/Kent_Beck
+
+- Wrote /Extreme Programming Explained: Embrace Change/ in 2000
+- Co-signed the agile manifesto in 2001
+- Wrote /Test-Driven Development by Example/ in 2002
+- Wrote [[id:84F69DED-CD12-4051-A441-BF3B99641A69][Tidy First?]] in 2023
+
+A central pioneer in the agile software development movement,

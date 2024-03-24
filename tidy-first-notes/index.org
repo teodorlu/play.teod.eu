@@ -1,11 +1,13 @@
 :PROPERTIES:
 :ID: 356c6009-aa12-4ec7-bb31-5835ca47e31c
 :END:
-#+TITLE: Tidy First: notes and commentary
+#+TITLE: Tidy First?: notes and commentary
 
 [[file:..][..]]
 
-I'm currently (2024-03-08) reading [[id:84F69DED-CD12-4051-A441-BF3B99641A69][Tidy First]] by [[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]] as part of a book club.
+I'm currently (2024-03-08) reading [[id:84F69DED-CD12-4051-A441-BF3B99641A69][Tidy First?]] by [[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]] as part of a book club.
 These are my notes.
 
 DRAFT
+
+(2024-03-23: not too many notes here, unfortunately!)

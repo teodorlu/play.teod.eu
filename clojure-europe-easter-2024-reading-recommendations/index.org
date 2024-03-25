@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID: 9c2c315e-3609-4b5e-b412-6b7f7f5c87bf
+:END:
+#+TITLE: Easter 2024 reading recommendations from the European Clojure community: from WW1 history to implementing logic programming in Scheme
+
+[[file:..][..]]
+
+#+begin_quote
+If you are into sci-fi and have not read them yet, I definitely recommend Dan Simmons’ Hyperion cantos.
+#+end_quote
+
+#+begin_quote
+For papers, the micro kanren paper, mini kanren thesis, and logitT paper are gems. Byrd's unified approach to solving problems (functional pearl) is a pearl :slightly_smiling_face:
+
+If you're more practically inclined, Armstrong's thesis and Hoar's CSP paper & book
+
+Pitching in with sci fi - three body problem, and haven't read it yet but it's on The List, Book Of The New Sun
+
+If you like traumatizing books, Malazan Book of The Fallen series is highly recommended
+
+Also, it's always a good day to reread Dune
+
+If you're into 40k, Ciaphas Cain or Eisenhorn series
+
+Warhammer 40k books can be fun terrible misses. I'd avoid the Horus Heresy series, but the setting is rich and engaging and is a good bed for good individual storytelling. Ciaphas Cain is light hearted and a good place to start
+#+end_quote
+
+#+begin_quote
+A very recent (for me) and very pleasing sci fi read/listen I had were the Ancillary books by Anne Leckie, starting with Ancillary Justice.
+Was quite blown away by it.
+Funny thing: I finished the 4th book in that universe today and just found this Google Talk Leckie gave about it 6 years ago: https://www.youtube.com/watch?v=sapIgYyzAYs
+
+If you like Fantasy in a historical setting (Ireland in the viking age around 900 or 1000), I enjoyed The Children of Gods and Fighting Men by Shauna Lawless
+
+And then, if you want some non-fictional and non-tech, I re-read Guns of August by Barbara W. Tuchman, a classic about the start of the first world war. First time I read it was almost 20 years ago, it hit me harder this time around and it’s really gripping. (edited)
+#+end_quote
+
+#+begin_quote
+If you’re into history, two of the best I’ve read in the past couple of decades are The Prize by Daniel Yergin - tells the story of the advent of the oil economy, and Dark Sun by Richard Rhodes - the story of the Atomic Bomb. Both great reads. Rising Sun by John toland (story of imperial Japan immediately before and during WWII) also a page turner.
+#+end_quote
+
+#+begin_quote
+- Lem’s Cyberiad for amazing sci-fi that’s also very funny.
+- Lamport’s clock sync paper https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+- History: 2nd vote for Guns of August, which feels particularly apropos right now
+#+end_quote

@@ -831,7 +831,7 @@
   :page/uuid "356c6009-aa12-4ec7-bb31-5835ca47e31c",
   :created "2024-03-08",
   :readiness :wtf-is-this,
-  :title "Tidy First: notes and commentary",
+  :title "Tidy First?: notes and commentary",
   :lang :en,
   :page/slug "tidy-first-notes",
   :author-url "https://teod.eu",
@@ -2052,7 +2052,7 @@
   :page/uuid "84F69DED-CD12-4051-A441-BF3B99641A69",
   :created "2024-03-08",
   :readiness :wtf-is-this,
-  :title "Tidy First",
+  :title "Tidy First?",
   :lang :en,
   :page/slug "tidy-first",
   :author-url "https://teod.eu",
@@ -2386,6 +2386,16 @@
   :page/slug "welcome-knowledge-worker",
   :author-url "https://teod.eu",
   :uuid "9c186247-2fe0-4c64-b2b8-5fc6dc110911"}
+ {:slug "clojure-europe-easter-2024-reading-recommendations",
+  :page/uuid "9c2c315e-3609-4b5e-b412-6b7f7f5c87bf",
+  :created "2024-03-25",
+  :readiness :wtf-is-this,
+  :title
+  "Easter 2024 reading recommendations from the European Clojure community: from WW1 history to implementing logic programming in Scheme",
+  :lang :en,
+  :page/slug "clojure-europe-easter-2024-reading-recommendations",
+  :author-url "https://teod.eu",
+  :uuid "9c2c315e-3609-4b5e-b412-6b7f7f5c87bf"}
  {:slug "support-challenge-carry",
   :page/uuid "9c67d806-b806-4c24-8c98-2e19443b9794",
   :created "2023-03-07",
@@ -2408,7 +2418,7 @@
  {:slug "software-design-implementation-balance",
   :page/uuid "9ecab926-e143-4311-ba80-221c80dc0635",
   :created "2024-03-23",
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :title
   "On the balance between design and implementation when we build software",
   :lang :en,

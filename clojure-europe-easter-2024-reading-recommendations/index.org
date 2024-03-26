@@ -13,22 +13,22 @@
 
 [[file:..][..]]
 
-I often get to spend some time reading in my easter holiday (after cross country skiing, an activity we sometimes do in Norway).
+I often get to spend some time reading in my easter holiday (after a daily dose of cross country skiing, as is the custom in Norway).
 I could have picked the next unread title on my Kindle.
 But ... how do I know that title is worth reading?
 
 I don't trust the recommendations I get from Amazon.
-Those are always similar to things I've read.
+Those are similar to things I've read.
 But I don't want to optimize for "looks the most like something I've read".
-I want something /good/ that suits me, to an extent.
+I want something /good/.
 
-To solve for this, I asked for reading recommendations.
+To solve for this, [[https://clojurians.slack.com/archives/CBJ5CGE0G/p1711268565351239][I asked for reading recommendations]].
 And I got so much more than I asked for.
 So I figured I'd collect the responses, put them into tables, and give those tables an URL.
 You're currently reading that URL!
 
 As a final note, I believe curation is valuable, and I believe curation should be done by humans.
-Ben Sless, Denis McCarty, Jack Rusher, Mario Tross and Matthias, thanks a lot for the recommendations!
+Matthias, Ben Sless, Mario Tross, Denis McCarthy and Jack Rusher: thanks a lot for your recommendations!
 
 Without further ado, here are the recommendations:
 

@@ -5,7 +5,9 @@
 
 [[file:..][..]]
 
-https://play.teod.eu/
+| Canonical URL | https://play.teod.eu/                    |
+| Source        | https://github.com/teodorlu/play.teod.eu |
+
 
 Yeah, the page on play.teod.eu on play.teod.eu.
 Kind of weird, right?

@@ -1404,23 +1404,3 @@ https://github.com/babashka/cli/blob/8ec3e9b8e60b1d37f2377b86c5c448f3938a0b7d/sr
 New code:
 
 https://github.com/teodorlu/play.teod.eu/blob/68007b1143c691ba3cf49057ef91e221e0510994/src/teod/play/cli.clj#L419-L453
-
-
-* trailing whitespace
-#+BEGIN_VERSE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#+END_VERSE

@@ -226,14 +226,10 @@ I include this list as a personal reminder.
                          "Toss them around. Light them on fire."
                          "Then watch the smoke rise!")
 
-                  (lines "I talked about how I use this page on a meetup. The recording is available:")
-
-                  (lines "#+BEGIN_EXPORT html"
-                         "<iframe class=\"youtube-video\" src=\"https://www.youtube.com/embed/JSMcK5strRo?start=616\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
-                         "#+END_EXPORT")
-
-                  (lines "Canonical URL for this page is [[https://play.teod.eu][play.teod.eu]]."
-                         "Local development URL for this page is [[http://localhost:9945/][localhost:9945]].")
+                  "** But what is it???"
+                  (lines "Okay, okay."
+                         "You're looking for the page neatly called [[https://play.teod.eu][play.teod.eu]]."
+                         ":)")
 
                   (let [blank-lines 5]
                     (str "#+BEGIN_VERSE" "\n"

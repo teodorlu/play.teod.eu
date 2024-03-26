@@ -28,7 +28,7 @@ So I figured I'd collect the responses, put them into tables, and give those tab
 You're currently reading that URL!
 
 I believe curation is valuable, and I believe curation should be done by humans.
-Matthias, Ben Sless, Mario Tross, Denis McCarthy and Jack Rusher: thanks a lot for your recommendations!
+Matthias, Ben Sless, Mario Trost, Denis McCarthy and Jack Rusher: thanks a lot for your recommendations!
 Also, this site ([[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]]) would not have existed without [[id:5345d063-8018-4bde-8574-8ab9df27f479][Babashka]] (by [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]), [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]] (by [[id:B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69][John MacFarlane]]) and [[id:5f3cf403-db0c-4d7d-8001-58ff62c343b7][Org-roam]] (by [[id:0e22690f-17f5-49cb-ac61-5305c326ee76][Jethro Kuan]]), thank you!
 
 Without further ado, here are the recommendations:

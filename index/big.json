@@ -2733,6 +2733,17 @@
   "form" : "remote-reference",
   "uuid" : "AE1427D5-AD4D-42B5-A971-E01E62D3D958"
 }, {
+  "slug" : "clojure-visual-tools-meeting-15-play.teod.eu-kindly",
+  "page/uuid" : "B1860066-312A-438D-975E-6393B140121F",
+  "created" : "2024-03-26",
+  "readiness" : "wtf-is-this",
+  "title" : "Clojure visual-tools meeting 15 - play.teod.eu, Kindly",
+  "lang" : "en",
+  "page/slug" : "clojure-visual-tools-meeting-15-play.teod.eu-kindly",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "B1860066-312A-438D-975E-6393B140121F"
+}, {
   "slug" : "john-macfarlane",
   "page/uuid" : "B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69",
   "created" : "2024-03-26",

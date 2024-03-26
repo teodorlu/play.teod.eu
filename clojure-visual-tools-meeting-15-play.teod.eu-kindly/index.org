@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: B1860066-312A-438D-975E-6393B140121F
+:END:
+#+TITLE: Clojure visual-tools meeting 15 - play.teod.eu, Kindly
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/JSMcK5strRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

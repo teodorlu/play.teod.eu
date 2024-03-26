@@ -5,9 +5,10 @@
 
 [[file:..][..]]
 
-| Canonical URL | https://play.teod.eu/                    |
-| Source        | https://github.com/teodorlu/play.teod.eu |
-
+| Canonical URL           | https://play.teod.eu/                                  |
+| Source                  | https://github.com/teodorlu/play.teod.eu               |
+| How was it made? talk 1 | [[id:26776cc4-e64d-494b-b24c-784b2c57866d][Build Your Own Little Memex with Babashka]]              |
+| How was it made? talk 2 | [[id:B1860066-312A-438D-975E-6393B140121F][Clojure visual-tools meeting 15 - play.teod.eu, Kindly]] |
 
 Yeah, the page on play.teod.eu on play.teod.eu.
 Kind of weird, right?

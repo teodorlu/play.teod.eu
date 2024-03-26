@@ -108,6 +108,31 @@ Without further ado, here are the recommendations:
 | Mario Tross    | /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy |
 | Matthias       | /Hyperion Cantos/                                                                     |     1989--1997 | Dan Simmons        | book series            | science fiction    |
 
+* Recommendation by published year
+
+| Published year | Title                                                                                 | Author             | Type                   | Genre              | Recommended by              |
+|----------------+---------------------------------------------------------------------------------------+--------------------+------------------------+--------------------+-----------------------------|
+|           1962 | /Guns of August/                                                                      | Barbara W. Tuchman | book                   | history            | Mario Tross and Jack Rusher |
+|           1965 | /The Cyberiad/                                                                        | Stanisław Lem      | short story collection | science fiction    | Jack Rusher                 |
+|           1970 | /The Rising Sun: The Decline and Fall of the Japanese Empire, 1936–1945/              | John Toland        | book                   | history            | Denis McCarthy              |
+|           1978 | /Communicating Sequential Processes/                                                  | C. A. R. Hoare     | paper                  | computer science   | Ben Sless                   |
+|           1978 | /Time, Clocks, and the Ordering of Events in a Distributed System/ [[[https://lamport.azurewebsites.net/pubs/time-clocks.pdf][pdf]]]              | Leslie Lamport     | paper                  | computer science   | Jack Rusher                 |
+|     1980--1987 | /The Book of the New Sun/                                                             | Gene Wolfe         | book series            | science fantasy    | Ben Sless                   |
+|           1985 | /Communicating Sequential Processes/                                                  | C. A. R. Hoare     | book                   | computer science   | Ben Sless                   |
+|     1989--1997 | /Hyperion Cantos/                                                                     | Dan Simmons        | book series            | science fiction    | Matthias                    |
+|           1990 | /The Prize: The Epic Quest for Oil, Money, and Power/                                 | Daniel Yergin      | book                   | history            | Denis McCarthy              |
+|           1996 | /Dark Sun: The Making of the Hydrogen Bomb/                                           | Richard Rhodes     | book                   | history            | Denis McCarthy              |
+|     2001--2018 | /Eisenhorn/                                                                           | Dan Abnett         | book series            | science fantasy    | Ben Sless                   |
+|           2003 | /Making reliable distributed systems in the presence of sodware errors/               | Joe Armstrong      | PhD thesis             | computer science   | Ben Sless                   |
+|     2003--2023 | /Ciaphas Cain/                                                                        | Alex Stewart       | book series            | science fantasy    | Ben Sless                   |
+|           2005 | /Backtracking, Interleaving, and Terminating Monad Transformers/                      | Kiselyov et al     | paper                  | computer science   | Ben Sless                   |
+|           2008 | /The Three-Body Problem/                                                              | Liu Cixin          | book                   | science fiction    | Ben Sless                   |
+|           2009 | /Relational programming in miniKanren: Techniques, applications, and implementations/ | William E. Byrd    | PhD thesis             | computer science   | Ben Sless                   |
+|           2013 | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            | Ann Leckie         | book                   | science fiction    | Mario Tross                 |
+|           2013 | /μKanren: A Minimal Functional Core for Relational Programming/                        | Hemann & Freidman  | paper                  | computer science   | Ben Sless                   |
+|           2017 | /A Unified Approach to Solving Seven Programming Problems (Functional Pearl)/         | Byrd et al         | paper                  | computer science   | Ben Sless                   |
+|           2022 | /The Children of Gods and Fighting Men/                                               | Shauna Lawless     | book                   | historical fantasy | Mario Tross                 |
+
 * Appendix: recommendations, in the order they were recommended
 
 I keep this table for myself: if new recommendations show up in the thread, can add them here and update the other tables.

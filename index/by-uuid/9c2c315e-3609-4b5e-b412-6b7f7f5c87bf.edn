@@ -1,7 +1,7 @@
 {:slug "clojure-europe-easter-2024-reading-recommendations",
  :page/uuid "9c2c315e-3609-4b5e-b412-6b7f7f5c87bf",
  :created "2024-03-25",
- :readiness :wtf-is-this,
+ :readiness :ready-for-comments,
  :title
  "Easter 2024 reading recommendations from the European Clojure community: from WW1 history to implementing logic programming in Scheme",
  :lang :en,

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69
+:END:
+#+TITLE: John MacFarlane
+
+[[file:..][..]]
+
+https://johnmacfarlane.net/

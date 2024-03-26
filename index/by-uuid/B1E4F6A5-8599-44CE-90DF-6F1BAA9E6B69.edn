@@ -1,0 +1,10 @@
+{:slug "john-macfarlane",
+ :page/uuid "B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69",
+ :created "2024-03-26",
+ :readiness :wtf-is-this,
+ :title "John MacFarlane",
+ :lang :en,
+ :page/slug "john-macfarlane",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69"}

@@ -228,7 +228,7 @@ I include this list as a personal reminder.
 
                   "** But what is it???"
                   (lines "Okay, okay."
-                         "You're looking for the page neatly called [[https://play.teod.eu][play.teod.eu]]."
+                         "You're looking for the page neatly called [[https://play.teod.eu/play.teod.eu/][play.teod.eu]]."
                          ":)")
 
                   (let [blank-lines 5]

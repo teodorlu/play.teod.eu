@@ -38,19 +38,19 @@ Without further ado, here are the recommendations:
 | Title                                                                                 | Published year | Author             | Type                   | Genre              | Recommended by              |
 |---------------------------------------------------------------------------------------+----------------+--------------------+------------------------+--------------------+-----------------------------|
 | /A Unified Approach to Solving Seven Programming Problems (Functional Pearl)/         |           2017 | Byrd et al         | paper                  | computer science   | Ben Sless                   |
-| /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | book                   | science fiction    | Mario Tross                 |
+| /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | book                   | science fiction    | Mario Trost            |
 | /Backtracking, Interleaving, and Terminating Monad Transformers/                      |           2005 | Kiselyov et al     | paper                  | computer science   | Ben Sless                   |
 | /Ciaphas Cain/                                                                        |     2003--2023 | Alex Stewart       | book series            | science fantasy    | Ben Sless                   |
 | /Communicating Sequential Processes/                                                  |           1978 | C. A. R. Hoare     | paper                  | computer science   | Ben Sless                   |
 | /Communicating Sequential Processes/                                                  |           1985 | C. A. R. Hoare     | book                   | computer science   | Ben Sless                   |
 | /Dark Sun: The Making of the Hydrogen Bomb/                                           |           1996 | Richard Rhodes     | book                   | history            | Denis McCarthy              |
 | /Eisenhorn/                                                                           |     2001--2018 | Dan Abnett         | book series            | science fantasy    | Ben Sless                   |
-| /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            | Mario Tross and Jack Rusher |
+| /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            | Mario Trost and Jack Rusher |
 | /Hyperion Cantos/                                                                     |     1989--1997 | Dan Simmons        | book series            | science fiction    | Matthias                    |
 | /Making reliable distributed systems in the presence of sodware errors/               |           2003 | Joe Armstrong      | PhD thesis             | computer science   | Ben Sless                   |
 | /Relational programming in miniKanren: Techniques, applications, and implementations/ |           2009 | William E. Byrd    | PhD thesis             | computer science   | Ben Sless                   |
 | /The Book of the New Sun/                                                             |     1980--1987 | Gene Wolfe         | book series            | science fantasy    | Ben Sless                   |
-| /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy | Mario Tross                 |
+| /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy | Mario Trost            |
 | /The Cyberiad/                                                                        |           1965 | Stanisław Lem      | short story collection | science fiction    | Jack Rusher                 |
 | /The Prize: The Epic Quest for Oil, Money, and Power/                                 |           1990 | Daniel Yergin      | book                   | history            | Denis McCarthy              |
 | /The Rising Sun: The Decline and Fall of the Japanese Empire, 1936–1945/              |           1970 | John Toland        | book                   | history            | Denis McCarthy              |
@@ -65,12 +65,12 @@ Without further ado, here are the recommendations:
 | PhD thesis             | computer science   | /Making reliable distributed systems in the presence of sodware errors/               |           2003 | Joe Armstrong      | Ben Sless                   |
 | PhD thesis             | computer science   | /Relational programming in miniKanren: Techniques, applications, and implementations/ |           2009 | William E. Byrd    | Ben Sless                   |
 | book                   | computer science   | /Communicating Sequential Processes/                                                  |           1985 | C. A. R. Hoare     | Ben Sless                   |
-| book                   | historical fantasy | /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | Mario Tross                 |
+| book                   | historical fantasy | /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | Mario Trost                 |
 | book                   | history            | /Dark Sun: The Making of the Hydrogen Bomb/                                           |           1996 | Richard Rhodes     | Denis McCarthy              |
-| book                   | history            | /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | Mario Tross and Jack Rusher |
+| book                   | history            | /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | Mario Trost and Jack Rusher |
 | book                   | history            | /The Prize: The Epic Quest for Oil, Money, and Power/                                 |           1990 | Daniel Yergin      | Denis McCarthy              |
 | book                   | history            | /The Rising Sun: The Decline and Fall of the Japanese Empire, 1936–1945/              |           1970 | John Toland        | Denis McCarthy              |
-| book                   | science fiction    | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | Mario Tross                 |
+| book                   | science fiction    | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | Mario Trost                 |
 | book                   | science fiction    | /The Three-Body Problem/                                                              |           2008 | Liu Cixin          | Ben Sless                   |
 | book series            | science fantasy    | /Ciaphas Cain/                                                                        |     2003--2023 | Alex Stewart       | Ben Sless                   |
 | book series            | science fantasy    | /Eisenhorn/                                                                           |     2001--2018 | Dan Abnett         | Ben Sless                   |
@@ -104,16 +104,16 @@ Without further ado, here are the recommendations:
 | Jack Rusher    | /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            |
 | Jack Rusher    | /The Cyberiad/                                                                        |           1965 | Stanisław Lem      | short story collection | science fiction    |
 | Jack Rusher    | /Time, Clocks, and the Ordering of Events in a Distributed System/ [[[https://lamport.azurewebsites.net/pubs/time-clocks.pdf][pdf]]]              |           1978 | Leslie Lamport     | paper                  | computer science   |
-| Mario Tross    | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | book                   | science fiction    |
-| Mario Tross    | /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            |
-| Mario Tross    | /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy |
+| Mario Trost    | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | book                   | science fiction    |
+| Mario Trost    | /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            |
+| Mario Trost    | /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy |
 | Matthias       | /Hyperion Cantos/                                                                     |     1989--1997 | Dan Simmons        | book series            | science fiction    |
 
 * Recommendation by published year
 
 | Published year | Title                                                                                 | Author             | Type                   | Genre              | Recommended by              |
 |----------------+---------------------------------------------------------------------------------------+--------------------+------------------------+--------------------+-----------------------------|
-|           1962 | /Guns of August/                                                                      | Barbara W. Tuchman | book                   | history            | Mario Tross and Jack Rusher |
+|           1962 | /Guns of August/                                                                      | Barbara W. Tuchman | book                   | history            | Mario Trost and Jack Rusher |
 |           1965 | /The Cyberiad/                                                                        | Stanisław Lem      | short story collection | science fiction    | Jack Rusher                 |
 |           1970 | /The Rising Sun: The Decline and Fall of the Japanese Empire, 1936–1945/              | John Toland        | book                   | history            | Denis McCarthy              |
 |           1978 | /Communicating Sequential Processes/                                                  | C. A. R. Hoare     | paper                  | computer science   | Ben Sless                   |
@@ -129,10 +129,10 @@ Without further ado, here are the recommendations:
 |           2005 | /Backtracking, Interleaving, and Terminating Monad Transformers/                      | Kiselyov et al     | paper                  | computer science   | Ben Sless                   |
 |           2008 | /The Three-Body Problem/                                                              | Liu Cixin          | book                   | science fiction    | Ben Sless                   |
 |           2009 | /Relational programming in miniKanren: Techniques, applications, and implementations/ | William E. Byrd    | PhD thesis             | computer science   | Ben Sless                   |
-|           2013 | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            | Ann Leckie         | book                   | science fiction    | Mario Tross                 |
+|           2013 | /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            | Ann Leckie         | book                   | science fiction    | Mario Trost                 |
 |           2013 | /μKanren: A Minimal Functional Core for Relational Programming/                        | Hemann & Freidman  | paper                  | computer science   | Ben Sless                   |
 |           2017 | /A Unified Approach to Solving Seven Programming Problems (Functional Pearl)/         | Byrd et al         | paper                  | computer science   | Ben Sless                   |
-|           2022 | /The Children of Gods and Fighting Men/                                               | Shauna Lawless     | book                   | historical fantasy | Mario Tross                 |
+|           2022 | /The Children of Gods and Fighting Men/                                               | Shauna Lawless     | book                   | historical fantasy | Mario Trost                 |
 
 * Appendix: recommendations, in the order they were recommended
 
@@ -152,11 +152,11 @@ I keep this table for myself: if new recommendations show up in the thread, can 
 | /The Book of the New Sun/                                                             |     1980--1987 | Gene Wolfe         | book series            | science fantasy    | Ben Sless                   |
 | /Ciaphas Cain/                                                                        |     2003--2023 | Alex Stewart       | book series            | science fantasy    | Ben Sless                   |
 | /Eisenhorn/                                                                           |     2001--2018 | Dan Abnett         | book series            | science fantasy    | Ben Sless                   |
-| /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | book                   | science fiction    | Mario Tross                 |
-| /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy | Mario Tross                 |
-| /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            | Mario Tross and Jack Rusher |
+| /Ancillary Justice/ [[[https://www.youtube.com/watch?v=sapIgYyzAYs][talk]]]                                                            |           2013 | Ann Leckie         | book                   | science fiction    | Mario Trost                 |
+| /The Children of Gods and Fighting Men/                                               |           2022 | Shauna Lawless     | book                   | historical fantasy | Mario Trost                 |
+| /Guns of August/                                                                      |           1962 | Barbara W. Tuchman | book                   | history            | Mario Trost and Jack Rusher |
 | /The Prize: The Epic Quest for Oil, Money, and Power/                                 |           1990 | Daniel Yergin      | book                   | history            | Denis McCarthy              |
 | /Dark Sun: The Making of the Hydrogen Bomb/                                           |           1996 | Richard Rhodes     | book                   | history            | Denis McCarthy              |
 | /The Rising Sun: The Decline and Fall of the Japanese Empire, 1936–1945/              |           1970 | John Toland        | book                   | history            | Denis McCarthy              |
 | /The Cyberiad/                                                                        |           1965 | Stanisław Lem      | short story collection | science fiction    | Jack Rusher                 |
-| /Time, Clocks, and the Ordering of Events in a Distributed System/ [[[https://lamport.azurewebsites.net/pubs/time-clocks.pdf][pdf]]]               |           1978 | Leslie Lamport     | paper                  | computer science   | Jack Rusher                 |
+| /Time, Clocks, and the Ordering of Events in a Distributed System/ [[[https://lamport.azurewebsites.net/pubs/time-clocks.pdf][pdf]]]              |           1978 | Leslie Lamport     | paper                  | computer science   | Jack Rusher                 |

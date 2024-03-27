@@ -74,11 +74,10 @@ That was where we started.
 
 We spend /so much time/ on implementation and /so little time on design/.
 And we're calling it "agile".
-# problem: this sentence does not make sense
 "Agile" as an excuse to start coding before we know what our goal is.
 If we slow down, we might get pressure to speed up.
-It's lean to do less stuff.
-But rather than cut the problems we don't care about, we solve the problems we care about badly!
+In order to speed up, we need to cut something.
+But rather than cut unimportant problems, we solve the problems badly!
 
 This is where design comes in.
 We should /know what our goal is/.

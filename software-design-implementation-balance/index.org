@@ -15,7 +15,7 @@ We're using it vaguely!
 I used to do design of steel structures and design of concrete structures.
 These days I often engage in software design.
 
-I feel like the agile movement inadvertently dragged in an assumtion that design is bad, and writing code is better.
+I feel like the agile movement inadvertently dragged in an assumption that design is bad, and writing code is better.
 I think "don't do design, write code instead" is a /really bad idea/.
 
 X: So ...
@@ -115,7 +115,7 @@ I had the chance to pair with [[id:BC86AE82-0612-4073-B9DF-C0A6625CBEBF][Lars Ba
 From Lars, I learned that it's better to organize your code into modules where each module solves a problem you care about.
 From Oddmund, I learned that I could work in smaller increments.
 
-If you /do not/ have someone you can learn pairing from on your team, watch [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]] and [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] pair from their youtube screencasts:
+If you do not have someone you can learn pairing from on your team, watch [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]] and [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] pair from their YouTube screencasts:
 https://www.parens-of-the-dead.com/
 
 X: And ... those decision matrices?

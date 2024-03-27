@@ -125,4 +125,5 @@ Then try it out with your team!
 
 -----
 
-Thank you to [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] for giving feedback on an early version of this text.
+Thank you to [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] for giving feedback on an early version of this text,
+and to Ludger Solbach and Ariel Rodrigues for [[https://clojurians.slack.com/archives/CBJ5CGE0G/p1711101378821869][practical suggestions on how to work with design]].

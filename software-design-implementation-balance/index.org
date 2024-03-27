@@ -127,3 +127,5 @@ Then try it out with your team!
 
 Thank you to [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] for giving feedback on an early version of this text,
 and to Ludger Solbach and Ariel Rodrigues for [[https://clojurians.slack.com/archives/CBJ5CGE0G/p1711101378821869][practical suggestions on how to work with design]].
+Ludger and Ariel suggested watching [[id:39291BEF-2047-48E8-BA21-6CCEF5F2FF90][Hammock Driven Development]], by Rich Hickey and
+[[https://www.youtube.com/watch?v=n7QETok5hYI][Economic Argument for Functional Programming]] by Michael Snoyman.

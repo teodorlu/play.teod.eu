@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 6e439bed-a2d9-4520-9833-a99c7d626186
+:END:
+#+TITLE: Rainbow tables: what they are, and why we salt passwords before hashing, explained with Clojure
+
+[[file:..][..]]
+
+https://github.clerk.garden/teodorlu/lab/commit/54d74943e22df66fc73fa71a97d2824d48e19788/src/rainbow_tables_2/

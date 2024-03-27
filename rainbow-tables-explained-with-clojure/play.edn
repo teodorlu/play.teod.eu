@@ -1,0 +1,8 @@
+{:author-url "https://teod.eu",
+ :created "2024-03-27",
+ :form :remote-reference,
+ :lang :en,
+ :readiness :wtf-is-this,
+ :title
+ "Rainbow tables: what they are, and why we salt passwords before hashing, explained with Clojure",
+ :uuid "6e439bed-a2d9-4520-9833-a99c7d626186"}

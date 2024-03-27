@@ -1696,6 +1696,17 @@
   :page/slug "training-collaboration-delivery",
   :author-url "https://teod.eu",
   :uuid "6da41413-063d-45d3-924b-aa2715a8855c"}
+ {:slug "rainbow-tables-explained-with-clojure",
+  :page/uuid "6e439bed-a2d9-4520-9833-a99c7d626186",
+  :created "2024-03-27",
+  :readiness :wtf-is-this,
+  :title
+  "Rainbow tables: what they are, and why we salt passwords before hashing, explained with Clojure",
+  :lang :en,
+  :page/slug "rainbow-tables-explained-with-clojure",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "6e439bed-a2d9-4520-9833-a99c7d626186"}
  {:slug "clojure",
   :page/uuid "6f1d8319-90b8-4006-9508-ef912fcd939b",
   :created "2023-03-04",

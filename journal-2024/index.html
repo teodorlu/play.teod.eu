@@ -179,7 +179,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -300,6 +300,12 @@ study group</a></li>
 <ul>
 <li><a href="#a-ui-for-updates" id="toc-a-ui-for-updates">a UI for
 updates</a></li>
+</ul></li>
+<li><a href="#section-5" id="toc-section-5">2024-03-28</a>
+<ul>
+<li><a href="#poor-performance-on-main-page"
+id="toc-poor-performance-on-main-page">Poor performance on main
+page</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -668,5 +674,24 @@ href="../datascript/">Datascript</a></li>
 <li>view, then filter, then commit</li>
 <li>REPL</li>
 </ul>
+<h2 id="section-5">2024-03-28</h2>
+<h3 id="poor-performance-on-main-page">Poor performance on main
+page</h3>
+<p>Mostly because unpgk is slow to return.</p>
+<p>Lessons:</p>
+<ul>
+<li>Don’t require JS bundles when those are not needed
+<ul>
+<li>I could implement that button without third party javascript just
+fine</li>
+<li>Or I could use Carve</li>
+<li>Or I could use something else.</li>
+</ul></li>
+<li>It’s hard to benchmark load time when Live.js is doing its thing.
+<ul>
+<li>I could disable it temporarily?</li>
+</ul></li>
+</ul>
+<p>Decision: disable livejs temporarily, rerun bench.</p>
 </body>
 </html>

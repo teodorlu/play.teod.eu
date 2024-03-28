@@ -415,3 +415,17 @@ Hat tip to CloJure & Jvm.
 - based on [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[id:EAEE3D9F-2AB6-44F0-A75A-7070A65AC9E6][Datascript]]
 - view, then filter, then commit
 - REPL
+* 2024-03-28
+** Poor performance on main page
+Mostly because unpgk is slow to return.
+
+Lessons:
+
+- Don't require JS bundles when those are not needed
+  - I could implement that button without third party javascript just fine
+  - Or I could use Carve
+  - Or I could use something else.
+- It's hard to benchmark load time when Live.js is doing its thing.
+  - I could disable it temporarily?
+
+Decision: disable livejs temporarily, rerun bench.

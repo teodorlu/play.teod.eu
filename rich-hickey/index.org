@@ -26,4 +26,5 @@ Rich Hickey content referenced on this site:
 Do you want /even more/ Rich Hickey content?
 Talles L has [[https://github.com/tallesl/Rich-Hickey-fanclub][collected links to almost all his works]].
 Matthias Nehlsen has also [[https://github.com/matthiasn/talk-transcripts][collected and transcribed Clojure-related talks]].
-(All these talks amount to very many hours of content, and you don't have to watch all of it.)
+Note: those two URLs contain /a lot/ of content.
+I'm guessing more than 100 hours of video content.

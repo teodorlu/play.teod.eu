@@ -432,7 +432,16 @@ Decision: disable livejs temporarily, rerun bench.
 * 2024-03-29
 ** a new random button!
 #+begin_export html
-<iki-hello />
+<link href="/iki/iki.css" rel="stylesheet" />
+<script type="module" src="/iki/iki.js"></script>
+#+end_export
+
+#+begin_export html
+<iki-hello>Iki hello!</iki-hello>
+#+end_export
+
+#+begin_export html
+<button is="iki-hello">Iki hello!</button>
 #+end_export
 ** On coding without a goal
 I've made [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] with a goal in mind:
@@ -446,7 +455,7 @@ That goal helps me know how to balance the amount of [[id:137588e9-7c79-4131-81c
 Rather than code to code, I code to /achieve some outside goal/!
 
 Lately, I discovered that I had 360 lower-case formatted UUIDs in my system, and 36 upper-case formatted UUIDs.
-See for instance commit [[ https://github.com/teodorlu/play.teod.eu/commit/8f62a00f908e0c276bee603ba2c6a7eb72b013af][8f62a0]].
+See for instance [[https://github.com/teodorlu/play.teod.eu/commit/8f62a00f908e0c276bee603ba2c6a7eb72b013af][commit 8f62a0]].
 This is kind of embarrassing!
 But, what do I do with it?
 Fix it?

@@ -702,7 +702,12 @@ fine</li>
 <p>Decision: disable livejs temporarily, rerun bench.</p>
 <h2 id="section-6">2024-03-29</h2>
 <h3 id="a-new-random-button">a new random button!</h3>
-<iki-hello />
+<link href="/iki/iki.css" rel="stylesheet" />
+<script type="module" src="/iki/iki.js"></script>
+
+<iki-hello>Iki hello!</iki-hello>
+
+<button is="iki-hello">Iki hello!</button>
 
 <h3 id="on-coding-without-a-goal">On coding without a goal</h3>
 <p>I’ve made <a href="../play.teod.eu/">play.teod.eu</a> with a goal in
@@ -716,10 +721,10 @@ me know how to balance the amount of <a
 href="../technical-debt/">technical debt</a> in my system. Rather than
 code to code, I code to <em>achieve some outside goal</em>!</p>
 <p>Lately, I discovered that I had 360 lower-case formatted UUIDs in my
-system, and 36 upper-case formatted UUIDs. See for instance commit <span
-class="spurious-link"
-target=" https://github.com/teodorlu/play.teod.eu/commit/8f62a00f908e0c276bee603ba2c6a7eb72b013af"><em>8f62a0</em></span>.
-This is kind of embarrassing! But, what do I do with it? Fix it?</p>
+system, and 36 upper-case formatted UUIDs. See for instance <a
+href="https://github.com/teodorlu/play.teod.eu/commit/8f62a00f908e0c276bee603ba2c6a7eb72b013af">commit
+8f62a0</a>. This is kind of embarrassing! But, what do I do with it? Fix
+it?</p>
 <p>I decided on the following:</p>
 <ol>
 <li>Change the code that <em>could</em> generate upper-case uuids to

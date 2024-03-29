@@ -17,3 +17,8 @@ pom.xml.asc
 /.cpcache
 
 /.clerk
+
+# Only for typescript
+# because I want typescript-powered LSP completions
+# 🙈
+/node_modules/

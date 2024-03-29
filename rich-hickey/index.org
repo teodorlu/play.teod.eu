@@ -24,7 +24,6 @@ Rich Hickey content referenced on this site:
 | [[id:39291BEF-2047-48E8-BA21-6CCEF5F2FF90][Hammock Driven Development]]           | perhaps think first, code later? | 2010 |
 
 Do you want /even more/ Rich Hickey content?
-Talles L has [[https://github.com/tallesl/Rich-Hickey-fanclub][collected links to almost all his works]].
+Talles L has [[https://github.com/tallesl/Rich-Hickey-fanclub][collected links to almost Rich Hickey has presented]].
 Matthias Nehlsen has also [[https://github.com/matthiasn/talk-transcripts][collected and transcribed Clojure-related talks]].
-Note: those two URLs contain /a lot/ of content.
-I'm guessing more than 100 hours of video content.
+Note: those two URLs contain /a lot/ of content, I'm estimating more than 100 hours of video.

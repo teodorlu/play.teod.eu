@@ -362,6 +362,11 @@ Allowed options:
       (println makefile)
       (spit "Makefile" (str (str/trim makefile) "\n")))))
 
+(defn generate-js-index [index]
+  (lines "export const index ="
+         (json/generate-string index {:pretty true})
+         ";"))
+
 (defn cmd-reindex
   "Create an index from page uuid to slug and title."
   [{:keys [opts]}]
@@ -390,6 +395,9 @@ Allowed options:
         (spit "index/big.edn" (with-out-str (pprint @big-index)))
         ;; write one big JSON index
         (spit "index/big.json" (json/generate-string @big-index {:pretty true}))
+        ;; write one big JSON index -- as a js module!
+        (spit "index/big.js" (generate-js-index @big-index))
+        (spit "index/big.mjs" (generate-js-index @big-index))
         ))))
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}

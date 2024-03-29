@@ -432,12 +432,7 @@ Decision: disable livejs temporarily, rerun bench.
 * 2024-03-29
 ** a new random button!
 #+begin_export html
-<link href="/iki/iki.css" rel="stylesheet" />
 <script type="module" src="/iki/iki.js"></script>
-#+end_export
-
-#+begin_export html
-<iki-hello>Iki hello!</iki-hello>
 #+end_export
 
 #+begin_export html

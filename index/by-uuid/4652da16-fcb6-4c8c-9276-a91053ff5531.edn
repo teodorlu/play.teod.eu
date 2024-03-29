@@ -1,9 +1,10 @@
 {:slug "journal-2024",
  :page/uuid "4652da16-fcb6-4c8c-9276-a91053ff5531",
  :created "2024-02-25",
- :readiness :wtf-is-this,
- :title "Personal journal, 2024",
+ :readiness :forever-incomplete,
+ :title "Journal: 2024",
  :lang :en,
  :page/slug "journal-2024",
  :author-url "https://teod.eu",
+ :form :rambling,
  :uuid "4652da16-fcb6-4c8c-9276-a91053ff5531"}

@@ -1405,3 +1405,23 @@ https://github.com/babashka/cli/blob/8ec3e9b8e60b1d37f2377b86c5c448f3938a0b7d/sr
 New code:
 
 https://github.com/teodorlu/play.teod.eu/blob/68007b1143c691ba3cf49057ef91e221e0510994/src/teod/play/cli.clj#L419-L453
+* 2024-03-29
+** I want better page load performance
+Now:
+
+1. Go to random page button is implemented as runtime interpreted ClojureScript with Scittle, /and react/.
+   Multiple dependencies that load in a weird order.
+2. Each xx
+3. On each page load, I re-download the index of all the pages.
+
+Plan:
+
+1. Use [[id:D21277C7-459A-4340-BACD-2D533380D47A][JavaScript modules]] to download page index /once/
+2. Write logic in plain javascript
+** I want a nice way to embed Clerk notebooks
+** I want to keep on using Pandoc to /parse/ org-mode, but I want my own HTML converter
+Why?
+
+1. There's a Pandoc bug where the TOC is wrong when I override an Org-mode element ID
+2. I want to learn CSS
+3. I want to fix table of contents visibility issues.

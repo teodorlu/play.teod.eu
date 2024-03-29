@@ -232,7 +232,7 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
-  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <!-- <script type="text/javascript" src="https://livejs.com/live.js" async></script> -->
   <link rel="stylesheet" href="/adjustments.css">
 
   <script type="text/javascript">
@@ -369,6 +369,20 @@ id="toc-problem-not-validating-slugs">Problem: not validating
 slugs</a></li>
 <li><a href="#build-is-broken" id="toc-build-is-broken">🐛 build is
 broken</a></li>
+</ul></li>
+<li><a href="#section-8" id="toc-section-8">2024-03-29</a>
+<ul>
+<li><a href="#i-want-better-page-load-performance"
+id="toc-i-want-better-page-load-performance">I want better page load
+performance</a></li>
+<li><a href="#i-want-a-nice-way-to-embed-clerk-notebooks"
+id="toc-i-want-a-nice-way-to-embed-clerk-notebooks">I want a nice way to
+embed Clerk notebooks</a></li>
+<li><a
+href="#i-want-to-keep-on-using-pandoc-to-parse-org-mode-but-i-want-my-own-html-converter"
+id="toc-i-want-to-keep-on-using-pandoc-to-parse-org-mode-but-i-want-my-own-html-converter">I
+want to keep on using Pandoc to <em>parse</em> org-mode, but I want my
+own HTML converter</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1142,5 +1156,35 @@ class="verbatim">:args</code> instead.</h4>
 <p>New code:</p>
 <p><a
 href="https://github.com/teodorlu/play.teod.eu/blob/68007b1143c691ba3cf49057ef91e221e0510994/src/teod/play/cli.clj#L419-L453">https://github.com/teodorlu/play.teod.eu/blob/68007b1143c691ba3cf49057ef91e221e0510994/src/teod/play/cli.clj#L419-L453</a></p>
+<h2 id="section-8">2024-03-29</h2>
+<h3 id="i-want-better-page-load-performance">I want better page load
+performance</h3>
+<p>Now:</p>
+<ol>
+<li>Go to random page button is implemented as runtime interpreted
+ClojureScript with Scittle, <em>and react</em>. Multiple dependencies
+that load in a weird order.</li>
+<li>Each xx</li>
+<li>On each page load, I re-download the index of all the pages.</li>
+</ol>
+<p>Plan:</p>
+<ol>
+<li>Use <a href="../javascript-modules/">JavaScript modules</a> to
+download page index <em>once</em></li>
+<li>Write logic in plain javascript</li>
+</ol>
+<h3 id="i-want-a-nice-way-to-embed-clerk-notebooks">I want a nice way to
+embed Clerk notebooks</h3>
+<h3
+id="i-want-to-keep-on-using-pandoc-to-parse-org-mode-but-i-want-my-own-html-converter">I
+want to keep on using Pandoc to <em>parse</em> org-mode, but I want my
+own HTML converter</h3>
+<p>Why?</p>
+<ol>
+<li>There’s a Pandoc bug where the TOC is wrong when I override an
+Org-mode element ID</li>
+<li>I want to learn CSS</li>
+<li>I want to fix table of contents visibility issues.</li>
+</ol>
 </body>
 </html>

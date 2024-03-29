@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: D21277C7-459A-4340-BACD-2D533380D47A
+:END:
+#+TITLE: JavaScript modules
+
+[[file:..][..]]
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules

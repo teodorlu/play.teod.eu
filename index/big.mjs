@@ -1214,11 +1214,12 @@ export const index =
   "slug" : "journal-2024",
   "page/uuid" : "4652da16-fcb6-4c8c-9276-a91053ff5531",
   "created" : "2024-02-25",
-  "readiness" : "wtf-is-this",
-  "title" : "Personal journal, 2024",
+  "readiness" : "forever-incomplete",
+  "title" : "Journal: 2024",
   "lang" : "en",
   "page/slug" : "journal-2024",
   "author-url" : "https://teod.eu",
+  "form" : "rambling",
   "uuid" : "4652da16-fcb6-4c8c-9276-a91053ff5531"
 }, {
   "slug" : "adam-wiggins",
@@ -2832,6 +2833,17 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "CF4A09A7-23CA-4133-A556-6494359BA3C1"
 }, {
+  "slug" : "javascript-modules",
+  "page/uuid" : "D21277C7-459A-4340-BACD-2D533380D47A",
+  "created" : "2024-03-29",
+  "readiness" : "wtf-is-this",
+  "title" : "JavaScript modules",
+  "lang" : "en",
+  "page/slug" : "javascript-modules",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "D21277C7-459A-4340-BACD-2D533380D47A"
+}, {
   "slug" : "debugging-with-the-scientific-method",
   "page/uuid" : "DC315E58-F594-42D5-9FA0-D157A2F30503",
   "created" : "2024-03-16",
@@ -3342,7 +3354,7 @@ export const index =
   "published" : "2022-12-19"
 }, {
   "slug" : "journal",
-  "title" : "Teodor's public journal",
+  "title" : "Journal: 2022--2024",
   "form" : "rambling",
   "readiness" : "forever-incomplete",
   "lang" : "en",

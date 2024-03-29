@@ -73,18 +73,6 @@
         lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
         lines (fn [& ls] (str/join "\n" (map str ls)))
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
-    (comment ;; Alternative Hiccup-like representation
-      [:fragment
-       [:paragraph "#+title: Towards an iterated game"]
-       [:paragraph
-        [:line "#+BEGIN_EXPORT html"]
-        [:line (str "<button "
-                    (words "onclick=\"goto_random_page()\""
-                           "style=\"display:block; margin: 0px auto; font-size: 16px; \"")
-                    ">"
-                    "Go to random page"
-                    "</button>")]
-        [:line "#+END_EXPORT"]]])
     (lines2
      [(paragraphs "#+title: Towards an iterated game"
 

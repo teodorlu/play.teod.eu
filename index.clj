@@ -73,12 +73,13 @@
         lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
         lines (fn [& ls] (str/join "\n" (map str ls)))
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
+
     (lines2
      [(paragraphs "#+title: Towards an iterated game"
 
                   (lines "#+BEGIN_EXPORT html"
                          (str "<button "
-                              (words "onclick=\"goto_random_page()\""
+                              (words "is=\"iki-goto-random-page\""
                                      "style=\"display:block; margin: 0px auto; font-size: 16px; \"")
                               ">"
                               "Go to random page"

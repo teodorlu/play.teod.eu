@@ -1,3 +1,5 @@
+import * as indexBig from "/index/big.js"
+
 export class IkiHello extends HTMLButtonElement {
   constructor() {
     super();
@@ -10,6 +12,11 @@ export class IkiHello extends HTMLButtonElement {
   }
 }
 
+const arrayRandNth = (array) => {
+  // https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 export class IkiGotoRandomPage extends HTMLButtonElement {
   constructor() {
     super();
@@ -17,7 +24,11 @@ export class IkiGotoRandomPage extends HTMLButtonElement {
 
   connectedCallback() {
     this.onclick = () => {
-      console.log("iki goto random page!")
+      const targetPage = arrayRandNth(
+        indexBig.index.filter(page => !page.noindex)
+      );
+      const targetHref = `/${targetPage.slug}/`;
+      window.location.href = targetHref;
     }
   }
 }

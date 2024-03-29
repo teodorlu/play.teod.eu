@@ -433,14 +433,19 @@ Decision: disable livejs temporarily, rerun bench.
 ** a new random button!
 #+begin_export html
 <script type="module">
-import {IkiHello} from "/iki/iki.js";
+import {IkiHello, IkiGotoRandomPage} from "/iki/iki.js";
 
 customElements.define("iki-hello", IkiHello, {extends: "button"});
+customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
 </script>
 #+end_export
 
 #+begin_export html
 <button is="iki-hello">Iki hello!</button>
+#+end_export
+
+#+begin_export html
+<button is="iki-goto-random-page">Iki goto random page!</button>
 #+end_export
 ** On coding without a goal
 I've made [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] with a goal in mind:

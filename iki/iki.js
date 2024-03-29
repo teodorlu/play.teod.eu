@@ -9,3 +9,15 @@ export class IkiHello extends HTMLButtonElement {
     }
   }
 }
+
+export class IkiGotoRandomPage extends HTMLButtonElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.onclick = () => {
+      console.log("iki goto random page!")
+    }
+  }
+}

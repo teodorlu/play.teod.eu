@@ -5,8 +5,8 @@
 
 [[file:..][..]]
 
-https://pandoc.org/
-| https://github.com/jgm/pandoc/
+https://pandoc.org/ |
+https://github.com/jgm/pandoc/
 
 #+begin_quote
 Pandoc dubs itself a "markup format" converter.

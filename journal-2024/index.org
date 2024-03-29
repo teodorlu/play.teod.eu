@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 4652da16-fcb6-4c8c-9276-a91053ff5531
 :END:
-#+TITLE: Personal journal, 2024
+#+TITLE: Journal: 2024
 
 [[file:..][..]]
 
@@ -429,3 +429,8 @@ Lessons:
   - I could disable it temporarily?
 
 Decision: disable livejs temporarily, rerun bench.
+* 2024-03-29
+** a new random button!
+#+begin_export html
+<iki-hello />
+#+end_export

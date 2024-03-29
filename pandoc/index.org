@@ -6,9 +6,16 @@
 [[file:..][..]]
 
 https://pandoc.org/
+| https://github.com/jgm/pandoc/
+
+#+begin_quote
+Pandoc dubs itself a "markup format" converter.
+It can take a document in one of the supported formats and convert only its markup to another format.
+Maintaining the look and feel of the document is not a priority.
+#+end_quote
 
 * 2023-03-09
-** A bug?
+** I may have found a bug in Pandoc
 No link in pandoc:
 
 #+begin_src shell :results output raw

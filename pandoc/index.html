@@ -168,7 +168,7 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
-  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <!-- <script type="text/javascript" src="https://livejs.com/live.js" async></script> -->
   <link rel="stylesheet" href="/adjustments.css">
 
   <script type="text/javascript">
@@ -210,14 +210,31 @@
 <ul>
 <li><a href="#section" id="toc-section">2023-03-09</a>
 <ul>
-<li><a href="#a-bug" id="toc-a-bug">A bug?</a></li>
+<li><a href="#i-may-have-found-a-bug-in-pandoc"
+id="toc-i-may-have-found-a-bug-in-pandoc">I may have found a bug in
+Pandoc</a></li>
 </ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
 <p><a href="https://pandoc.org/">https://pandoc.org/</a></p>
+<table>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://github.com/jgm/pandoc/">https://github.com/jgm/pandoc/</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Pandoc dubs itself a “markup format” converter. It can take a
+document in one of the supported formats and convert only its markup to
+another format. Maintaining the look and feel of the document is not a
+priority.</p>
+</blockquote>
 <h2 id="section">2023-03-09</h2>
-<h3 id="a-bug">A bug?</h3>
+<h3 id="i-may-have-found-a-bug-in-pandoc">I may have found a bug in
+Pandoc</h3>
 <p>No link in pandoc:</p>
 <pre class="shell" data-results="output raw"><code>cat &lt;&lt;EOF | pandoc --from org --to json
 visa writes in [[id:7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b][visakanv&#39;s 50yr &quot;plan&quot; for global nerd network [wip]​]]:

@@ -285,6 +285,17 @@
   "author-url" : "https://teod.eu",
   "uuid" : "12fea9ba-c435-4158-ae33-d9fc9fa45a44"
 }, {
+  "slug" : "technical-debt",
+  "page/uuid" : "137588e9-7c79-4131-81c3-97d2bdf33709",
+  "created" : "2024-03-29",
+  "readiness" : "wtf-is-this",
+  "title" : "technical debt",
+  "lang" : "en",
+  "page/slug" : "technical-debt",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "137588e9-7c79-4131-81c3-97d2bdf33709"
+}, {
   "slug" : "not-good-enough-no-fire",
   "page/uuid" : "139bfaef-5305-4f5d-89a0-f34a61bca27d",
   "created" : "2023-05-20",

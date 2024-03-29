@@ -311,6 +311,8 @@ page</a></li>
 <ul>
 <li><a href="#a-new-random-button" id="toc-a-new-random-button">a new
 random button!</a></li>
+<li><a href="#on-coding-without-a-goal"
+id="toc-on-coding-without-a-goal">On coding without a goal</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -701,5 +703,29 @@ fine</li>
 <h2 id="section-6">2024-03-29</h2>
 <h3 id="a-new-random-button">a new random button!</h3>
 <iki-hello />
+
+<h3 id="on-coding-without-a-goal">On coding without a goal</h3>
+<p>I’ve made <a href="../play.teod.eu/">play.teod.eu</a> with a goal in
+mind:</p>
+<blockquote>
+<p>Intent: bring ideas to life. Discuss, sharpen, play. Minimize the
+distance between intent and reality.</p>
+</blockquote>
+<p>Without that goal, I would have worked differently. That goal helps
+me know how to balance the amount of <a
+href="../technical-debt/">technical debt</a> in my system. Rather than
+code to code, I code to <em>achieve some outside goal</em>!</p>
+<p>Lately, I discovered that I had 360 lower-case formatted UUIDs in my
+system, and 36 upper-case formatted UUIDs. See for instance commit <span
+class="spurious-link"
+target=" https://github.com/teodorlu/play.teod.eu/commit/8f62a00f908e0c276bee603ba2c6a7eb72b013af"><em>8f62a0</em></span>.
+This is kind of embarrassing! But, what do I do with it? Fix it?</p>
+<p>I decided on the following:</p>
+<ol>
+<li>Change the code that <em>could</em> generate upper-case uuids to
+generate lower-case uuids all the time.</li>
+<li>Ensure that we actually do it right the second time around.</li>
+<li>Nothing else.</li>
+</ol>
 </body>
 </html>

@@ -434,3 +434,25 @@ Decision: disable livejs temporarily, rerun bench.
 #+begin_export html
 <iki-hello />
 #+end_export
+** On coding without a goal
+I've made [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] with a goal in mind:
+
+#+begin_quote
+Intent: bring ideas to life. Discuss, sharpen, play. Minimize the distance between intent and reality.
+#+end_quote
+
+Without that goal, I would have worked differently.
+That goal helps me know how to balance the amount of [[id:137588e9-7c79-4131-81c3-97d2bdf33709][technical debt]] in my system.
+Rather than code to code, I code to /achieve some outside goal/!
+
+Lately, I discovered that I had 360 lower-case formatted UUIDs in my system, and 36 upper-case formatted UUIDs.
+See for instance commit [[ https://github.com/teodorlu/play.teod.eu/commit/8f62a00f908e0c276bee603ba2c6a7eb72b013af][8f62a0]].
+This is kind of embarrassing!
+But, what do I do with it?
+Fix it?
+
+I decided on the following:
+
+1. Change the code that /could/ generate upper-case uuids to generate lower-case uuids all the time.
+2. Ensure that we actually do it right the second time around.
+3. Nothing else.

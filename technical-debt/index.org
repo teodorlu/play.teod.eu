@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID: 137588e9-7c79-4131-81c3-97d2bdf33709
+:END:
+#+TITLE: technical debt
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/Technical_debt |
+https://martinfowler.com/bliki/TechnicalDebt.html
+
+Coined by [[id:40e888ea-7732-41da-8776-7f506844e7f7][Ward Cunningham]] to explain how to balance building new stuff with maintaining old stuff.

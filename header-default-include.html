@@ -3,16 +3,23 @@
 <link rel="stylesheet" href="/adjustments.css">
 
 <script type="text/javascript">
- const hostCanonical = "play.teod.eu";
- const hostAlias1 = "playground.teod.eu";
- const hostLocal1 = "localhost:9945";
- if (
-     window.location.host === hostAlias1
-     // || window.location.host === hostLocal1
- ) {
-     // redirect playground.teod.eu to play.teod.eu
-     // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
-     const pathname = window.location.pathname || "";
-     window.location.replace("https://" + hostCanonical + pathname);
- }
+  const hostCanonical = "play.teod.eu";
+  const hostAlias1 = "playground.teod.eu";
+  const hostLocal1 = "localhost:9945";
+  if (
+    window.location.host === hostAlias1
+    // || window.location.host === hostLocal1
+  ) {
+    // redirect playground.teod.eu to play.teod.eu
+    // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+    const pathname = window.location.pathname || "";
+    window.location.replace("https://" + hostCanonical + pathname);
+  }
+</script>
+
+<script async type="module" src="/iki/iki.js"></script>
+<script async type="module">
+  import {IkiGotoRandomPage} from "/iki/iki.js";
+
+  customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
 </script>

@@ -179,7 +179,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -232,39 +232,30 @@
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
-  <script type="text/javascript" src="https://livejs.com/live.js" async></script>
+  <!-- <script type="text/javascript" src="https://livejs.com/live.js" async></script> -->
   <link rel="stylesheet" href="/adjustments.css">
 
   <script type="text/javascript">
-   const hostCanonical = "play.teod.eu";
-   const hostAlias1 = "playground.teod.eu";
-   const hostLocal1 = "localhost:9945";
-   if (
-       window.location.host === hostAlias1
-       // || window.location.host === hostLocal1
-   ) {
-       // redirect playground.teod.eu to play.teod.eu
-       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
-       const pathname = window.location.pathname || "";
-       window.location.replace("https://" + hostCanonical + pathname);
-   }
+    const hostCanonical = "play.teod.eu";
+    const hostAlias1 = "playground.teod.eu";
+    const hostLocal1 = "localhost:9945";
+    if (
+      window.location.host === hostAlias1
+      // || window.location.host === hostLocal1
+    ) {
+      // redirect playground.teod.eu to play.teod.eu
+      // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+      const pathname = window.location.pathname || "";
+      window.location.replace("https://" + hostCanonical + pathname);
+    }
   </script>
-  <!-- play.teod.eu/scittle/scittle-with-extras.html -->
-  <!-- shared HTML embed for scittle goodies -->
 
-  <!-- Scittle -->
-  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.js" type="application/javascript"></script>
+  <script async type="module" src="/iki/iki.js"></script>
+  <script async type="module">
+    import {IkiGotoRandomPage} from "/iki/iki.js";
 
-  <!-- React -->
-  <script defer crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-  <script defer crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-
-  <!-- Reagent and HTTP requests for Clojurescript -->
-  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.reagent.js" type="application/javascript"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/scittle@0.3.10/dist/scittle.cljs-ajax.js" type="application/javascript"></script>
-
-  <!-- Random page functionality -->
-  <script defer src="/tools/goto_random_page.cljs" type="application/x-scittle"></script>
+    customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
+  </script>
 </head>
 <body>
 <header id="title-block-header">

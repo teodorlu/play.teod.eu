@@ -1,4 +1,4 @@
-class IkiHello extends HTMLButtonElement {
+export class IkiHello extends HTMLButtonElement {
   constructor() {
     super();
   }
@@ -9,5 +9,3 @@ class IkiHello extends HTMLButtonElement {
     }
   }
 }
-
-customElements.define("iki-hello", IkiHello, {extends: "button"})

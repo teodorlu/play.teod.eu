@@ -287,7 +287,7 @@ Allowed options:
                 "|"
                 "./play.clj filter resolve-links"
                 "|"
-                "pandoc -f json -o" html-file-name "--standalone --toc -H header-default-include.html -H scittle/scittle-with-extras.html"))))
+                "pandoc -f json -o" html-file-name "--standalone --toc -H header-default-include.html"))))
 
 (defn cmd-makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts

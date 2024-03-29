@@ -304,7 +304,7 @@ Allowed options:
         play-edn (fn [target] (str target "/play.edn"))
         indent (fn [s] (str "\t" s))
         makefile (lines
-                  "# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED"
+                  "# DO NOT EDIT directly -- THIS MAKEFILE IS AUTO-GENERATED"
                   "# SEE `make makefile` TARGET"
                   ""
                   ""

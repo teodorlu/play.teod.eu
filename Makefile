@@ -1,4 +1,4 @@
-# DO NOT EDIT directly -- THIS MAKEFILE IS GENERATED
+# DO NOT EDIT directly -- THIS MAKEFILE IS AUTO-GENERATED
 # SEE `make makefile` TARGET
 
 

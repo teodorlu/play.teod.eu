@@ -703,13 +703,10 @@ fine</li>
 <h2 id="section-6">2024-03-29</h2>
 <h3 id="a-new-random-button">a new random button!</h3>
 <script type="module">
-import {IkiHello, IkiGotoRandomPage} from "/iki/iki.js";
+import {IkiGotoRandomPage} from "/iki/iki.js";
 
-customElements.define("iki-hello", IkiHello, {extends: "button"});
 customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
 </script>
-
-<button is="iki-hello">Iki hello!</button>
 
 <button is="iki-goto-random-page">Iki goto random page!</button>
 

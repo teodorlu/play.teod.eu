@@ -433,15 +433,10 @@ Decision: disable livejs temporarily, rerun bench.
 ** a new random button!
 #+begin_export html
 <script type="module">
-import {IkiHello, IkiGotoRandomPage} from "/iki/iki.js";
+import {IkiGotoRandomPage} from "/iki/iki.js";
 
-customElements.define("iki-hello", IkiHello, {extends: "button"});
 customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
 </script>
-#+end_export
-
-#+begin_export html
-<button is="iki-hello">Iki hello!</button>
 #+end_export
 
 #+begin_export html

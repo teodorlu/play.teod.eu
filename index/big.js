@@ -3025,6 +3025,17 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "a68a1144-24f0-4312-b7a4-9facfdbfc634"
 }, {
+  "slug" : "currmap-clojure-data-science-draft",
+  "page/uuid" : "a6ea19a2-4eb5-4481-beb5-8ff3c6f01756",
+  "created" : "2024-04-01",
+  "readiness" : "wtf-is-this",
+  "title" : "currmap-clojure-data-science",
+  "lang" : "en",
+  "page/slug" : "currmap-clojure-data-science-draft",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "a6ea19a2-4eb5-4481-beb5-8ff3c6f01756"
+}, {
   "slug" : "chris-nuernberger",
   "page/uuid" : "a878303d-3130-4dd3-9192-791ddd2cbbcf",
   "created" : "2023-03-19",

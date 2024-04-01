@@ -1,0 +1,12 @@
+{:entries
+ [{:path ["Programming" "Reading and writing" "Primitives"]
+   :items {:fundamentals ["work with numbers, strings and booleans"
+                          "conditionals"
+                          "sequence traversals (via loops, or recursion or other)"]}}
+  {:path ["Programming" "Reading and writing" "Strings"]
+   :items {:core ["understanding \"encoding\" (what, why)"
+                  "list basic encodings"]}}
+
+  {:path ["Programming" "Reading and writing" "Files"]
+   :items {:core ["basic file I/O"]
+           :advanced ["efficient file I/O (streaming)"]}}]}

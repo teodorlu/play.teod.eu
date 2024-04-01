@@ -355,3 +355,95 @@ Rich Hickey paid for [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] with t
 ** Selected comments
 
 [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]] suggests that I might want to read [[id:A4452E84-7712-44C0-AEEE-A792AB8EADD9][Designerly ways of knowing]] ([[https://twitter.com/dubroy/status/1771110663835799753][via twitter]]).
+* March 23rd to March 31st
+:PROPERTIES:
+:ID:       d30e10ee-29ab-4989-81c3-4e60cf449147
+:END:
+** My head is too full of thoughts, I struggle to narrow into weeknotes.
+Yup.
+I just had spent some time off.
+That was absolutely amazing.
+
+Our family has a cabin 921 meters above the ocean.
+My (now deceased) grandfather used to talk about how they used the cabin during the German occupation of Norway in World War 2.
+German soldiers had "requisitioned" clothing to stay warm.
+My grandfather never saw any of that clothing again.
+But the Germans did leave some impressively detailed maps of the area.
+I guess I should have taken a picture of that map, now?
+Too late.
+
+I love working with plaintext on my site.
+I don't love how much harder it is to include a simple image!
+
+So, all those ideas.
+A person on the internet has been taking notes in order to write their weeknotes.
+I figured I'd try.
+I'm including my weeknotes-notes, in all their messy.
+Feel free to skip that list!
+
+- Cross country skate skiing requires hip mobility
+- Two makers and their egos: Trurl and K
+- Scenes of creators, for creators: writing is not the /thing/ unless the creators are writers!
+- Knowledge is additative, direction is subtractive
+- vacation builds motivation!
+- vacation is for /wide/ discovery, the opposite of narrow focus
+- In teamwork, it matters not what any one individual knows, it's the knowledge of the group that matters.
+  - To lean effectively on the "knowledge of the group", we must know what others know
+  - "knowing what others know" is named "transitive memory systems" in literature
+  - In my arrogance, I wish it was named "/transitive/ memory systems".
+    - But that may not be the right word either.
+- dense linking vs free-form thinking
+  - I like densely linked hypertext document.
+    They smell "good like wikipedia-good".
+  - yet, when I write, I prefer writing from a place where I am /not/ considering my references.
+- theory should be built in hypertext
+- are we walking too quickly when we create software?
+
+phew.
+
+When I write, I /very often/ get myself into scope creep.
+I want to write about all the things!
+So far, timeboxing has saved my weeknotes.
+And I'm 23 minutes into my timebox.
+I wanted to stick to 30 minutes.
+Let's see how that goes.
+** Are we walking too quickly when we create software?
+According to a youtube recording of a Thoughtworks guy, people walk faster in bigger cities (until some limit).
+While that might be interesting to know, is it /good/ to walk fast?
+Should you get done as soon as you can, or should you /not/?
+
+I suspect that we should walk slower.
+
+Do fewer things, so that we can do the things we do with pride.
+
+I used to work in civil engineering.
+In that work, we had a set amount of time to finish some piece of work.
+Looking back at that experience, it was freeing.
+Yup, not stressful, freeing.
+Here is the budget we have for this task.
+Try to hit it.
+If you're way off, you may have to simplify.
+
+I do software, not civil these days.
+And I've said that estimates are bad myself.
+But I feel like we're maybe missing the point.
+
+Estimating something if you don't know what it is is silly.
+But being explicit about how much effort we want to put into something makes sense to me.
+** Trurl and Klapaucius: two makers, their egos, and their tiny scene
+Trurl makes something, and is immediately caught in a dilemma.
+If he /does/ share it with Klapaucius, Klapaucius might embarrass Trurl for its flaws, and open Trurl's imperfection to the world.
+But if he /does not/ share it, nobody will know.
+Which is worse?
+
+In [[id:f0cc1954-5570-481e-9884-a6b7edb58358][The Cyberiad]], Trurl never ceases to share with Klapaucius.
+
+The book was published in 1965, which makes me wonder how it can resemble two grumpy old developers.
+** Joy in cutting scope?
+My timebox is out!
+That's actually kind of nice.
+I can finish.
+I don't have to write about everything.
+This is not a report.
+I can actually /decide/ that this is not a report, this is some stuff I write for myself.
+And that's something I like!

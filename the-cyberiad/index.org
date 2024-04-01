@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: f0cc1954-5570-481e-9884-a6b7edb58358
+:END:
+#+TITLE: The Cyberiad
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/The_Cyberiad
+
+Book by [[id:80e81edf-6a48-48f3-8ac8-b0420c8177d5][Stanisław Lem]], released in 1965.

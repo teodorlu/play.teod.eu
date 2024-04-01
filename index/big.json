@@ -2255,6 +2255,17 @@
   "author-url" : "https://teod.eu",
   "uuid" : "800d73cb-472c-4994-ac0b-f74d5335811d"
 }, {
+  "slug" : "stanislaw-lem",
+  "page/uuid" : "80e81edf-6a48-48f3-8ac8-b0420c8177d5",
+  "created" : "2024-04-01",
+  "readiness" : "wtf-is-this",
+  "title" : "Stanisław Lem",
+  "lang" : "en",
+  "page/slug" : "stanislaw-lem",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "80e81edf-6a48-48f3-8ac8-b0420c8177d5"
+}, {
   "slug" : "eric-normand",
   "page/uuid" : "81dfcf30-e59d-4293-9000-5b29c97f90b8",
   "created" : "2023-05-29",
@@ -3028,7 +3039,7 @@
   "page/uuid" : "a6ea19a2-4eb5-4481-beb5-8ff3c6f01756",
   "created" : "2024-04-01",
   "readiness" : "wtf-is-this",
-  "title" : "currmap-clojure-data-science",
+  "title" : "currmap-clojure-data-science-draft",
   "lang" : "en",
   "page/slug" : "currmap-clojure-data-science-draft",
   "author-url" : "https://teod.eu",
@@ -4033,6 +4044,17 @@
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "efbb9f44-9a8e-436e-bf68-ff19d5bd990c"
+}, {
+  "slug" : "the-cyberiad",
+  "page/uuid" : "f0cc1954-5570-481e-9884-a6b7edb58358",
+  "created" : "2024-04-01",
+  "readiness" : "wtf-is-this",
+  "title" : "The Cyberiad",
+  "lang" : "en",
+  "page/slug" : "the-cyberiad",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "f0cc1954-5570-481e-9884-a6b7edb58358"
 }, {
   "slug" : "symmathesy",
   "page/uuid" : "f14b4cd9-75ff-4eec-814b-5de38d01a455",

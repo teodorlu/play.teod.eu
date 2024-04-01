@@ -1,8 +1,10 @@
 :PROPERTIES:
 :ID: a6ea19a2-4eb5-4481-beb5-8ff3c6f01756
 :END:
-#+TITLE: currmap-clojure-data-science
+#+TITLE: currmap-clojure-data-science-draft
 
 [[file:..][..]]
 
 DRAFT
+
+[[./currmap.html]]

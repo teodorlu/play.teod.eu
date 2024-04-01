@@ -26,9 +26,9 @@
          [:th [:strong "Advanced"]]]
         [:tr
          [:td #_ "empty table corner"]
-         [:td "(start here)"]
-         [:td "(get to here)"]
-         [:td "(don't worry about it)"]]]
+         [:td {:style {:text-align "center"}} "(start here)"]
+         [:td {:style {:text-align "center"}} "(get to here)"]
+         [:td {:style {:text-align "center"}} "(don't worry about it)"]]]
        [:tbody
         (for [entry (:entries currmap)]
           [:tr

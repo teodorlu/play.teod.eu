@@ -1,5 +1,8 @@
 {:entries
- [{:path ["Programming" "Reading and writing" "Primitives"]
+ [;; Sample data
+  ;; copied from https://currmap.clojure.camp/
+  ;; just to have somthing to look at.
+  {:path ["Programming" "Reading and writing" "Primitives"]
    :fundamentals ["work with numbers, strings and booleans"
                   "conditionals"
                   "sequence traversals (via loops, or recursion or other)"]}
@@ -9,4 +12,19 @@
 
   {:path ["Programming" "Reading and writing" "Files"]
    :core ["basic file I/O"]
-   :advanced ["efficient file I/O (streaming)"]}]}
+   :advanced ["efficient file I/O (streaming)"]}
+
+  ;; Teodor's draft -- things worth learning
+  ;; Caveat: I don't yet know what's worth learning!
+  ;; We should probably ask Kira.
+  {:path ["Load data" "Load files into dataset"]
+   :fundamentals ["Create tablecloth dataset from CSV file"
+                  "Create tablecloth dataset from JSON file"]
+   :core ["Replace nil values with defaults"
+          "Remove a selection of data"]}
+
+  {:path ["Transform data"]
+   :fundamentals ["Compute a new column from two different columns"]
+   :core ["Calculate a running average with grouping"]}
+
+  ]}

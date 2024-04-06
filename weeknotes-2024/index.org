@@ -487,7 +487,7 @@ Things I learned during the workshop:
 2. I had assumed that I should be the one doing system design
    1. That was wrong
    2. Everyone were really interested in getting good at system design
-   3. Decision: I make sure we can be proud of our large-scale system design, and try to push system work "down" where possible
+   3. Decision: I make sure we can be proud of our large-scale system design---other than that, we try do system design work together.
 
 So, this was super useful.
 

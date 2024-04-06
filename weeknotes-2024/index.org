@@ -473,7 +473,7 @@ But that's kind of abstract.
 So we did something less abstract too.
 We made a 2D map of skills and evaluated ourselves on each skill.
 
-- Two evaluations per person per skill: how comfortable are you doing $SKILL, and what are your learning ambitions for $SKILL
+- Two evaluations per person per skill: how comfortable are you doing $SKILL, and what are your learning ambitions for $SKILL.
 - UNDER NO CIRCUMSTANCES SHALL YOU COMPARE YOURSELF TO OTHER PEOPLE.
   - Just use the whole scale, disambiguate between the things you're comfortable doing and the things you don't know too well yet.
 

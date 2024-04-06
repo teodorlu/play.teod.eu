@@ -454,7 +454,7 @@ And that's something I like!
 :END:
 ** My experience of a team-building/planning workshop we did
 I'm working with two great colleagues.
-One of my colleagues pointed out that I might have some implicit expectations, and he'd like to know what they were.
+One of my colleagues pointed out that I might have some implicit expectations about how we should work together, and he'd like to know what they were.
 
 To address that, we spent two half-days together on Tuesday and Wednesday.
 

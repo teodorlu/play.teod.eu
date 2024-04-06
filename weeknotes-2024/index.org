@@ -466,8 +466,8 @@ I narrowed my expectations into:
 1. I expect us to make an effort to build trust in our team
 2. I expect us to make an effort to build shared intent in our team
 3. I expect us to make an effort to build shared sense of quality in our team
-4. I expect us to know which organizational goals we are currently working towards (OKRs)
-5. I expect us to know how what we are doing today is influencing our organizational goals (OKRs)
+4. I expect us to know which organizational goals we are currently working towards
+5. I expect us to know how what we are doing today is influencing our organizational goals
 
 But that's kind of abstract.
 So we did something specific too.

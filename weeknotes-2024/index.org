@@ -447,3 +447,96 @@ I don't have to write about everything.
 This is not a report.
 I can actually /decide/ that this is not a report, this is some stuff I write for myself.
 And that's something I like!
+
+* April 1st to April 5th
+:PROPERTIES:
+:ID:       7e22beae-29b0-4a22-8f94-b04033685a3c
+:END:
+** My experience of a team-building/planning workshop we did
+xxx
+** It's easier to build shared sense of quality than just quality
+X: What does that even mean?
+
+T: Let me give some context and explain why that statement has been useful for me.
+
+When we want to create something good, we need to engage in /creativity/.
+In [[id:747d8b1e-5048-44f0-bd97-ef9a7de2fddd][Creative Computation]], [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] describes creativity as a dual process between a generator and a filter.
+If you do not have the time to watch his presentation, here is a simplified ascii-representation of his figure:
+
+#+begin_src
+           DUAL PROCESS
+
+        /------------------\
+        |                  |
+        v                  |
+
+      Generator         Filter
+       Writer            Edtior
+       Maker             Critic
+       Creative          Discromitive
+
+        |                  ^
+        |                  |
+        \------------------/
+#+end_src
+
+(please excuse my silly arrows.)
+
+My summary of his model:
+
+1. Creativity is a dual process
+2. We make things
+3. Then we judge whether they are any good.
+
+Jack also cites [[id:72EA74E8-9AD5-44CF-B20E-C96C4AD93F75][Friedrich Nietzsche]], Ernest Hemingway and William James:
+
+#+begin_quote
+[Creativity is born] of a rare cooperation between the "Dionysian"
+spirit of ecstatic intoxication, which imbues the work with vitality
+and passion, and the "Appolonian" spirit of sober restraint, which
+tempers chaos with order and form.
+
+---Nietzsche
+#+end_quote
+
+#+begin_quote
+Write drunk, edit sober.
+
+---Hemingway
+#+end_quote
+
+#+begin_quote
+[Creativity] involves the process of blind-variation and selective-retention.
+
+---William James
+#+end_quote
+
+X: OK, OK, that's creativity.
+But where's the shared sense of quality?
+
+T: If have created something in a Dionysian (drunk) manner, building shared sense of quality with the people around you will likely force you into taking the Appolonian (sober) perspective into account.
+I wrote some code.
+I think it's amazing.
+But I'm drunk, I don't know whether it's any good yet.
+I'll quckly realize that I'm actually drunk when I'm completely unable to tell you why the code is any good.
+
+X: So, we should talk about our taste, and about whether it's any good?
+
+T: Absolutely!
+I find that rewarding, useful and fun.
+[[id:5172319f-ed46-4520-a7f2-b68359e69aca][Visakan Veerasamy]] encourages people to cultivate their taste in [[id:57341ad1-065a-4652-979d-61887803aabf][friendly ambitious nerd]].
+I think that's a good idea.
+
+X: Ok, ok.
+But what's that "shared sense of quality", then?
+How is that different from pure quality?
+
+T: Shared sense of quality is the understanding you and I build when we discuss why the code is any good!
+And we don't even have to agree that it's any good.
+Just need to build some shared understanding, shared sense.
+I gain something by knowing whether you think it's any good, you gain something by knowing whether I think it's any good.
+Win-win!
+
+X: 🤔
+Need to think on that I think.
+Perhaps try for myself to see if I agree.

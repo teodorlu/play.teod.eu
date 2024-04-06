@@ -453,8 +453,51 @@ And that's something I like!
 :ID:       7e22beae-29b0-4a22-8f94-b04033685a3c
 :END:
 ** My experience of a team-building/planning workshop we did
-xxx
-** It's easier to build shared sense of quality than just quality
+I'm working with two great colleagues.
+One of my colleagues pointed out that I might have some implicit expectations, and he'd like to know what they were.
+
+To address that, we spent two half-days together on Tuesday and Wednesday.
+
+I thought the workshop was for my co-workers, but in the end it was tremendously useful for me.
+Which was weird!
+
+I narrowed my expectations into:
+
+1. I expect us to make an effort to build trust in our team
+2. I expect us to make an effort to build shared intent in our team
+3. I expect us to make an effort to build shared sense of quality in our team
+4. I expect us to know which organizational goals we are currently working towards (OKRs)
+5. I expect us to know how what we are doing today is influencing our organizational goals (OKRs)
+
+But that's kind of abstract.
+So we did something specific too.
+We make a 2D "matrix" of skills and did a self-evaluation.
+
+- Two evaluations per person per skill: how comfortable are you doing $SKILL, and what are your learning ambitions for $SKILL
+- UNDER NO CIRCUMSTANCES SHALL YOU COMPARE YOURSELF TO OTHER PEOPLE.
+  - Just use the whole scale, disambiguate between the things you're comfortable doing and the things you don't know too well yet.
+
+Things I learned during the workshop:
+
+1. I had assumed that everyone were interested in product management (read eg [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]] by [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]])
+   1. That was wrong
+   2. I'm interested in product management, my co-workers want to focus on code now, and perhaps think product later
+   3. Decision: I take responsibility for us doing reasonable things product-wise.
+2. I had assumed that I should be the one doing system design
+   1. That was wrong
+   2. Everyone were really interested in getting good at systems design
+   3. Decision: I make sure we can be proud of our large-scale system design, and try to push system work "down" where possible
+
+So, this was super useful.
+
+We wrote the list of skills by spending 5 minutes by ourselves thinking about skills that had been relevant in previous software / product work.
+
+But why was it useful?
+What was the goal of that activity?
+
+I think the goal was to build shared sense of quality.
+And I think it's easier to build shared sense of quality that just to build quality
+** I think it's easier to build shared sense of quality than just to build quality
 X: What does that even mean?
 
 T: Let me give some context and explain why that statement has been useful for me.

@@ -464,3 +464,8 @@ I decided on the following:
 1. Change the code that /could/ generate upper-case uuids to generate lower-case uuids all the time.
 2. Ensure that we actually do it right the second time around.
 3. Nothing else.
+* 2024-04-06
+** x
+Stumbled over [[id:b966b1ff-24fc-482c-85ad-c36f78ddc17b][Eva Parish]] and her text [[https://eva-parish.squarespace.com/blog/how-i-edit][What I think about when I edit]], which I enjoyed a lot.
+
+About a skill I value, a skill where I have something to learn, and a skill I wish more people would value.

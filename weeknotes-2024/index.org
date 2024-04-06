@@ -482,7 +482,7 @@ Things I learned during the workshop:
 1. I had assumed that everyone were interested in product management
    (if you /are/ interested in product management, consider reading [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]] by [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]])
    1. That was wrong
-   2. I'm interested in product management, my co-workers want to focus on code now, and perhaps think product later
+   2. I'm interested in product management, my co-workers want to focus on code, and perhaps explore product later
    3. Decision: I take responsibility for us doing reasonable things product-wise.
 2. I had assumed that I should be the one doing system design
    1. That was wrong

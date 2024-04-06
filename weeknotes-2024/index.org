@@ -470,8 +470,8 @@ I narrowed my expectations into:
 5. I expect us to know how what we are doing today is influencing our organizational goals
 
 But that's kind of abstract.
-So we did something specific too.
-We make a 2D "matrix" of skills and did a self-evaluation.
+So we did something less abstract too.
+We made a 2D map of skills and evaluated ourselves on each skill.
 
 - Two evaluations per person per skill: how comfortable are you doing $SKILL, and what are your learning ambitions for $SKILL
 - UNDER NO CIRCUMSTANCES SHALL YOU COMPARE YOURSELF TO OTHER PEOPLE.

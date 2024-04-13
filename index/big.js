@@ -359,6 +359,16 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "1583d24e-df72-4660-89bf-71dc1b79bd78"
 }, {
+  "slug" : "open-source-wip",
+  "page/uuid" : "15db9c7a-a1d0-417a-80a9-1ef39128de59",
+  "created" : "2024-04-13",
+  "readiness" : "wtf-is-this",
+  "title" : "Open source WIP",
+  "lang" : "en",
+  "page/slug" : "open-source-wip",
+  "author-url" : "https://teod.eu",
+  "uuid" : "15db9c7a-a1d0-417a-80a9-1ef39128de59"
+}, {
   "slug" : "dustin-getz",
   "page/uuid" : "16a35298-ed54-45a9-ab95-19f5944823e5",
   "created" : "2023-05-01",

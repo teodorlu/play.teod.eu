@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID: 15db9c7a-a1d0-417a-80a9-1ef39128de59
+:END:
+#+TITLE: Open source WIP
+
+[[file:..][..]]
+
+* TODO Neil: maintain alphabetical ordering of deps
+
+I [[https://clojurians.slack.com/archives/C03KCV7TM6F/p1712056116950329][asked for this]]:
+
+#+begin_quote
+Personally, I like to keep my :deps in sorted order. One possible way of doing it, is:
+
+1. Check of existing deps is in sorted order (for example with rewrite-edn)
+2. if yes, add the new dep into the sorted order instead of at the end.
+
+Is that something you’d like to add to Neil?
+#+end_quote
+
+There's already an issue:
+
+https://github.com/borkdude/rewrite-edn/issues/18
+
+* TODO Emmy: build SI Units
+
+1. I asked for this
+2. I tried, but got stuck (I find it hard)
+
+https://github.com/mentat-collective/emmy/issues/46
+
+* TODO Clerk: help debug bugs
+
+https://clojurians.slack.com/archives/C035GRLJEP8/p1710073115576849
+
+1. At first, I thought I'd found a bug
+2. After some help from [[id:EC36679E-E0F0-4222-B40D-1F7FD53CC7D9][Andrea Amantini]], it appears I'd experienced two bugs
+3. Andrea asked about which bug I was really experiencing
+4. I said I'd help, but havent helped yet (per 2024-04-13)
+
+* DONE Report Pandoc bug
+
+https://github.com/jgm/pandoc/issues/9639

@@ -469,3 +469,8 @@ I decided on the following:
 Stumbled over [[id:b966b1ff-24fc-482c-85ad-c36f78ddc17b][Eva Parish]] and her text [[https://eva-parish.squarespace.com/blog/how-i-edit][What I think about when I edit]], which I enjoyed a lot.
 
 About a skill I value, a skill where I have something to learn, and a skill I wish more people would value.
+* 2024-04-13
+** meninger ≠ observasjoner, slutninger ≠ vurderinger
+|       | subjektiv | objektiv    |
+| liten | mening    | observasjon |
+| stor  | vurdering | slutning    |

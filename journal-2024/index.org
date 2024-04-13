@@ -482,3 +482,11 @@ About a skill I value, a skill where I have something to learn, and a skill I wi
 |       | subjective | objective   |
 | small | opinion    | observation |
 | big   | deduction  | judgment    |
+
+decided to put this table in a tweet: https://twitter.com/TeodorHeggelund/status/1779112730001125852
+
+#+begin_quote
+opinion ≠ observation, deduction ≠ judgment
+
+I think we could avoid a lot of pain if we put in a bit more effort to separate between "objective falsifiable" (let's find the facts!) and "subjective" (let's explore taste!).
+#+end_quote

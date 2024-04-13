@@ -41,6 +41,7 @@ https://clojurians.slack.com/archives/C035GRLJEP8/p1710073115576849
 3. Andrea asked about which bug I was really experiencing
 4. I said I'd help, but havent helped yet (per 2024-04-13)
 
-* DONE Report Pandoc bug
+* Completed
+** DONE Report Pandoc bug
 
 https://github.com/jgm/pandoc/issues/9639

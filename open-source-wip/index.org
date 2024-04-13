@@ -5,6 +5,9 @@
 
 [[file:..][..]]
 
+Open source tasks I want to help out on.
+See also [[id:abb67198-8b4a-4713-b705-31fb431cd177][Teodor codes]] for coding things that are more fluffy, earlier.
+
 * TODO Neil: maintain alphabetical ordering of deps
 
 I [[https://clojurians.slack.com/archives/C03KCV7TM6F/p1712056116950329][asked for this]]:

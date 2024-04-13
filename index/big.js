@@ -1138,6 +1138,17 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "407a392f-53fa-4bd5-b38c-8491d6e4ed37"
 }, {
+  "slug" : "nextjournal",
+  "page/uuid" : "40b72230-c4a9-4ce1-9e77-1d3547addc90",
+  "created" : "2024-04-13",
+  "readiness" : "wtf-is-this",
+  "title" : "Nextjournal",
+  "lang" : "en",
+  "page/slug" : "nextjournal",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "40b72230-c4a9-4ce1-9e77-1d3547addc90"
+}, {
   "slug" : "ward-cunningham",
   "page/uuid" : "40e888ea-7732-41da-8776-7f506844e7f7",
   "created" : "2023-06-14",
@@ -2266,6 +2277,17 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "800d73cb-472c-4994-ac0b-f74d5335811d"
 }, {
+  "slug" : "application.garden",
+  "page/uuid" : "807ad84e-edf9-46c9-a35c-e8fbc1c5ac66",
+  "created" : "2024-04-13",
+  "readiness" : "wtf-is-this",
+  "title" : "application.garden",
+  "lang" : "en",
+  "page/slug" : "application.garden",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "807ad84e-edf9-46c9-a35c-e8fbc1c5ac66"
+}, {
   "slug" : "stanislaw-lem",
   "page/uuid" : "80e81edf-6a48-48f3-8ac8-b0420c8177d5",
   "created" : "2024-04-01",
@@ -3126,6 +3148,17 @@ export const index =
   "page/slug" : "a-perfect-day",
   "author-url" : "https://teod.eu",
   "uuid" : "aaeb72f2-e2eb-4e51-b402-7f2d07150770"
+}, {
+  "slug" : "teodor-codes",
+  "page/uuid" : "abb67198-8b4a-4713-b705-31fb431cd177",
+  "created" : "2024-04-13",
+  "readiness" : "wtf-is-this",
+  "title" : "Teodor codes",
+  "lang" : "en",
+  "page/slug" : "teodor-codes",
+  "author-url" : "https://teod.eu",
+  "form" : "forever-incomplete",
+  "uuid" : "abb67198-8b4a-4713-b705-31fb431cd177"
 }, {
   "slug" : "weeknotes-2024",
   "page/uuid" : "ac6eca3d-7b01-4656-8d0c-153c4cd729cf",

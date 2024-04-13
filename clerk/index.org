@@ -7,4 +7,8 @@
 
 https://clerk.vision/
 
+#+begin_quote
 Literate moldable dataflow programming with [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]]
+#+end_quote
+
+by [[id:40b72230-c4a9-4ce1-9e77-1d3547addc90][Nextjournal]].

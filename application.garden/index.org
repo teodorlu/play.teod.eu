@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 807ad84e-edf9-46c9-a35c-e8fbc1c5ac66
+:END:
+#+TITLE: application.garden
+
+[[file:..][..]]
+
+https://application.garden
+
+#+begin_quote
+a platform for hosting small web applications written in Clojure
+#+end_quote
+
+by [[id:40b72230-c4a9-4ce1-9e77-1d3547addc90][Nextjournal]].

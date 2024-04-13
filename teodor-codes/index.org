@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID: abb67198-8b4a-4713-b705-31fb431cd177
+:END:
+#+TITLE: Teodor codes
+
+[[file:..][..]]
+
+Coding things I may want to pursue, and progress on each.
+
+See also [[id:15db9c7a-a1d0-417a-80a9-1ef39128de59][Open source WIP]] which is "narrower", less vague.
+
+* Rationale
+Idea:
+
+- It's useful to have some structure to guide how I spend my effort when I want to code
+- I'd like to experiment with "coding in public" / mob programming
+- I should have some collection of "interesting ideas"
+
+I believe these reasons fit well together.
+
+If I should start coding and have someone "join", there should be an explicit goal.
+Or a list of options from which we can select a goal.
+
+This document answers that need.
+* Coding goals
+** Create a live chat for [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] that runs on [[id:807ad84e-edf9-46c9-a35c-e8fbc1c5ac66][application.garden]]
+Progress: none
+** Create a small note taking system that runs on [[id:807ad84e-edf9-46c9-a35c-e8fbc1c5ac66][application.garden]]
+https://github.com/teodorlu/teodor-notes/
+
+Progress: some design notes in repo README.
+** SI units into Emmy
+Progress: started, long way to finish.
+
+- https://play.teod.eu/weeknotes-2024/#paths-not-taken-yet
+- https://github.com/mentat-collective/emmy/issues/46
+- https://github.clerk.garden/teodorlu/lab/commit/5b54a0fa3e85c0ab71d2fa81d13c8acb1dad6946/src/steel_beams_si_units_clojure_multimethods/
+** A Babashka meetup for clojure-oslo
+https://www.meetup.com/clojure-oslo/
+** A slideshow system in pure babashka
+Idea:
+
+- entrypoint script
+- from entrypoint, can navigate to next slide / previous slide / any slide (fzf)
+  - ideally single key binding, (n/p/f), where "f" is for "find"
+- each script is a standalone script.
+  we call it with babashka.process.shell, and continue when it releases control.
+  clear screen before script entry.
+** Pair programming - make =pandocjson2hiccup= together
+Goal: babashka script
+
+Well-defined task, should be possible to do something practical in 30 minutes.
+* 2024-04-13
+** Idea, creation, yey.
+I have previous "systems" for "keeping track of unknown unknowns".
+See [[id:9dfae94f-677a-49a6-bee3-98a2bb470e48][Open problems]].
+I now believe that list of problems was too wide.
+Not practical.
+I think sticking to code might be a narrower, better problem statement.
+
+My other new page [[id:15db9c7a-a1d0-417a-80a9-1ef39128de59][Open source WIP]] bears resemblemnce.

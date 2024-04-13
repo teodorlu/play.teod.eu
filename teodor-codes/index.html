@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Open source WIP</title>
+  <title>Teodor codes</title>
   <style>
     html {
       color: #1a1a1a;
@@ -196,69 +196,112 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Open source WIP</h1>
+<h1 class="title">Teodor codes</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#neil-maintain-alphabetical-ordering-of-deps"
-id="toc-neil-maintain-alphabetical-ordering-of-deps"><span
-class="todo TODO">TODO</span> Neil: maintain alphabetical ordering of
-deps</a></li>
-<li><a href="#emmy-build-si-units" id="toc-emmy-build-si-units"><span
-class="todo TODO">TODO</span> Emmy: build SI Units</a></li>
-<li><a href="#clerk-help-debug-bugs"
-id="toc-clerk-help-debug-bugs"><span class="todo TODO">TODO</span>
-Clerk: help debug bugs</a></li>
-<li><a href="#report-pandoc-bug" id="toc-report-pandoc-bug"><span
-class="done DONE">DONE</span> Report Pandoc bug</a></li>
+<li><a href="#rationale" id="toc-rationale">Rationale</a></li>
+<li><a href="#coding-goals" id="toc-coding-goals">Coding goals</a>
+<ul>
+<li><a
+href="#create-a-live-chat-for-play.teod.eu-that-runs-on-application.garden"
+id="toc-create-a-live-chat-for-play.teod.eu-that-runs-on-application.garden">Create
+a live chat for play.teod.eu that runs on application.garden</a></li>
+<li><a
+href="#create-a-small-note-taking-system-that-runs-on-application.garden"
+id="toc-create-a-small-note-taking-system-that-runs-on-application.garden">Create
+a small note taking system that runs on application.garden</a></li>
+<li><a href="#si-units-into-emmy" id="toc-si-units-into-emmy">SI units
+into Emmy</a></li>
+<li><a href="#a-babashka-meetup-for-clojure-oslo"
+id="toc-a-babashka-meetup-for-clojure-oslo">A Babashka meetup for
+clojure-oslo</a></li>
+<li><a href="#a-slideshow-system-in-pure-babashka"
+id="toc-a-slideshow-system-in-pure-babashka">A slideshow system in pure
+babashka</a></li>
+<li><a href="#pair-programming---make-pandocjson2hiccup-together"
+id="toc-pair-programming---make-pandocjson2hiccup-together">Pair
+programming - make <code class="verbatim">pandocjson2hiccup</code>
+together</a></li>
+</ul></li>
+<li><a href="#section" id="toc-section">2024-04-13</a>
+<ul>
+<li><a href="#idea-creation-yey." id="toc-idea-creation-yey.">Idea,
+creation, yey.</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
-<p>Open source tasks I want to help out on. See also <a
-href="../teodor-codes/">Teodor codes</a> for coding things that are more
-fluffy, earlier.</p>
-<h2 id="neil-maintain-alphabetical-ordering-of-deps"><span
-class="todo TODO">TODO</span> Neil: maintain alphabetical ordering of
-deps</h2>
-<p>I <a
-href="https://clojurians.slack.com/archives/C03KCV7TM6F/p1712056116950329">asked
-for this</a>:</p>
-<blockquote>
-<p>Personally, I like to keep my :deps in sorted order. One possible way
-of doing it, is:</p>
-<ol>
-<li>Check of existing deps is in sorted order (for example with
-rewrite-edn)</li>
-<li>if yes, add the new dep into the sorted order instead of at the
-end.</li>
-</ol>
-<p>Is that something you’d like to add to Neil?</p>
-</blockquote>
-<p>There’s already an issue:</p>
+<p>Coding things I may want to pursue, and progress on each.</p>
+<p>See also <a href="../open-source-wip/">Open source WIP</a> which is
+“narrower”, less vague.</p>
+<h2 id="rationale">Rationale</h2>
+<p>Idea:</p>
+<ul>
+<li>It’s useful to have some structure to guide how I spend my effort
+when I want to code</li>
+<li>I’d like to experiment with “coding in public” / mob
+programming</li>
+<li>I should have some collection of “interesting ideas”</li>
+</ul>
+<p>I believe these reasons fit well together.</p>
+<p>If I should start coding and have someone “join”, there should be an
+explicit goal. Or a list of options from which we can select a goal.</p>
+<p>This document answers that need.</p>
+<h2 id="coding-goals">Coding goals</h2>
+<h3
+id="create-a-live-chat-for-play.teod.eu-that-runs-on-application.garden">Create
+a live chat for <a href="../play.teod.eu/">play.teod.eu</a> that runs on
+<a href="../application.garden/">application.garden</a></h3>
+<p>Progress: none</p>
+<h3
+id="create-a-small-note-taking-system-that-runs-on-application.garden">Create
+a small note taking system that runs on <a
+href="../application.garden/">application.garden</a></h3>
 <p><a
-href="https://github.com/borkdude/rewrite-edn/issues/18">https://github.com/borkdude/rewrite-edn/issues/18</a></p>
-<h2 id="emmy-build-si-units"><span class="todo TODO">TODO</span> Emmy:
-build SI Units</h2>
-<ol>
-<li>I asked for this</li>
-<li>I tried, but got stuck (I find it hard)</li>
-</ol>
+href="https://github.com/teodorlu/teodor-notes/">https://github.com/teodorlu/teodor-notes/</a></p>
+<p>Progress: some design notes in repo README.</p>
+<h3 id="si-units-into-emmy">SI units into Emmy</h3>
+<p>Progress: started, long way to finish.</p>
+<ul>
+<li><a
+href="https://play.teod.eu/weeknotes-2024/#paths-not-taken-yet">https://play.teod.eu/weeknotes-2024/#paths-not-taken-yet</a></li>
+<li><a
+href="https://github.com/mentat-collective/emmy/issues/46">https://github.com/mentat-collective/emmy/issues/46</a></li>
+<li><a
+href="https://github.clerk.garden/teodorlu/lab/commit/5b54a0fa3e85c0ab71d2fa81d13c8acb1dad6946/src/steel_beams_si_units_clojure_multimethods/">https://github.clerk.garden/teodorlu/lab/commit/5b54a0fa3e85c0ab71d2fa81d13c8acb1dad6946/src/steel_beams_si_units_clojure_multimethods/</a></li>
+</ul>
+<h3 id="a-babashka-meetup-for-clojure-oslo">A Babashka meetup for
+clojure-oslo</h3>
 <p><a
-href="https://github.com/mentat-collective/emmy/issues/46">https://github.com/mentat-collective/emmy/issues/46</a></p>
-<h2 id="clerk-help-debug-bugs"><span class="todo TODO">TODO</span>
-Clerk: help debug bugs</h2>
-<p><a
-href="https://clojurians.slack.com/archives/C035GRLJEP8/p1710073115576849">https://clojurians.slack.com/archives/C035GRLJEP8/p1710073115576849</a></p>
-<ol>
-<li>At first, I thought I’d found a bug</li>
-<li>After some help from <a href="../andrea-amantini/">Andrea
-Amantini</a>, it appears I’d experienced two bugs</li>
-<li>Andrea asked about which bug I was really experiencing</li>
-<li>I said I’d help, but havent helped yet (per 2024-04-13)</li>
-</ol>
-<h2 id="report-pandoc-bug"><span class="done DONE">DONE</span> Report
-Pandoc bug</h2>
-<p><a
-href="https://github.com/jgm/pandoc/issues/9639">https://github.com/jgm/pandoc/issues/9639</a></p>
+href="https://www.meetup.com/clojure-oslo/">https://www.meetup.com/clojure-oslo/</a></p>
+<h3 id="a-slideshow-system-in-pure-babashka">A slideshow system in pure
+babashka</h3>
+<p>Idea:</p>
+<ul>
+<li>entrypoint script</li>
+<li>from entrypoint, can navigate to next slide / previous slide / any
+slide (fzf)
+<ul>
+<li>ideally single key binding, (n/p/f), where “f” is for “find”</li>
+</ul></li>
+<li>each script is a standalone script. we call it with
+babashka.process.shell, and continue when it releases control. clear
+screen before script entry.</li>
+</ul>
+<h3 id="pair-programming---make-pandocjson2hiccup-together">Pair
+programming - make <code class="verbatim">pandocjson2hiccup</code>
+together</h3>
+<p>Goal: babashka script</p>
+<p>Well-defined task, should be possible to do something practical in 30
+minutes.</p>
+<h2 id="section">2024-04-13</h2>
+<h3 id="idea-creation-yey.">Idea, creation, yey.</h3>
+<p>I have previous “systems” for “keeping track of unknown unknowns”.
+See <a href="../open-problems/">Open problems</a>. I now believe that
+list of problems was too wide. Not practical. I think sticking to code
+might be a narrower, better problem statement.</p>
+<p>My other new page <a href="../open-source-wip/">Open source WIP</a>
+bears resemblemnce.</p>
 </body>
 </html>

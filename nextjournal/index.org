@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 40b72230-c4a9-4ce1-9e77-1d3547addc90
+:END:
+#+TITLE: Nextjournal
+
+[[file:..][..]]
+
+https://nextjournal.com/about
+
+https://github.com/nextjournal/

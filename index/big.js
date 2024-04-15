@@ -1170,6 +1170,17 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "40f7d350-4adb-4a1c-bee8-70b38e8006c0"
 }, {
+  "slug" : "org-mode",
+  "page/uuid" : "41a5fb14-fe06-4b38-9c93-046554836446",
+  "created" : "2024-04-14",
+  "readiness" : "wtf-is-this",
+  "title" : "Org-mode",
+  "lang" : "en",
+  "page/slug" : "org-mode",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "41a5fb14-fe06-4b38-9c93-046554836446"
+}, {
   "slug" : "review-the-interface",
   "page/uuid" : "41b97354-0f9e-46c6-b234-a619b04152aa",
   "created" : "",

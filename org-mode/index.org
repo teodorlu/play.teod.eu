@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 41a5fb14-fe06-4b38-9c93-046554836446
+:END:
+#+TITLE: Org-mode
+
+[[file:..][..]]
+
+https://orgmode.org/
+
+#+begin_quote
+A GNU Emacs major mode for keeping notes, authoring documents, computational notebooks, literate programming, maintaining to-do lists, planning projects, and more — in a fast and effective plain text system.
+#+end_quote

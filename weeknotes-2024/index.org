@@ -590,3 +590,42 @@ To my co-workers O and BO for
 - being generally awesome
 - helping out
 - bearing with me on my weird tangents and sometimes trying out my weird ideas.
+* April 7th to April 12th
+:PROPERTIES:
+:ID:       fa0064f1-888b-4d57-9f3c-773c8d49dd6d
+:END:
+** Some self-imposed limitations for weeknotes
+[[id: d30e10ee-29ab-4989-81c3-4e60cf449147][two weeks ago]], I had a hard time writing weeknotes.
+There was too much I wanted to say, and I wasn't happy with the resulting text.
+To simplify writing weeknotes for myself, I'm imposing some limitations:
+
+- Don't write more than 3-4 headlines.
+- Prioritize writing about things that actually happened that week over things I might want to happen next week.
+- Pick at least one real thing and at least one interesting thing.
+** I've been sick! 🤒
+It started last weekend.
+I stayed in bed Monday to Wednesday, then worked from home Thursday and Friday.
+
+The most interesting part of that experience was re-watching [[https://en.wikipedia.org/wiki/Iron_Man_(2008_film)][Marvel's /Iron Man/ film from 2008]].
+Sure, it's action.
+Man gets kidnapped, put in a cave, builds himself a power source, uses that power source to power an an exoskeleton, and mounts a rocket launcher and a flamethrower.
+What's not to like?
+
+This time around, I found that I enjoyed the clips of Stark working in his basement as much or more than the clips of him shooting people or escaping fighter jets.
+
+What does it take to get that basement in practice?
+
+- Some money
+- A house with space for a basement filled with tools
+- Proficiency with mechanical engineering and "garage work"
+- Proficiency programming machines to do things.
+
+I realize that it's unlikely that I'll invent a new power source that's better than fusion, and that most likely outcome of a jet pack in use is a dead pilot.
+But the suit is not the point, it's the garage!
+And I guess we all have to start somewhere.
+** Selected gratitude
+To [[id:B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69][John MacFarlane]] for writing [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]], and maintaining it for years.
+
+The document you're reading right now is written in [[id:41a5fb14-fe06-4b38-9c93-046554836446][Org-mode]], and converted to HTML with Pandoc.
+I reported [[https://github.com/jgm/pandoc/issues/9639][a table of contents generation issue]], MacFarlane fixed the problem, and rolled out a new release.
+The table of contents now works! 😸

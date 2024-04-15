@@ -623,9 +623,15 @@ What does it take to get that basement in practice?
 I realize that it's unlikely that I'll invent a new power source that's better than fusion, and that most likely outcome of a jet pack in use is a dead pilot.
 But the suit is not the point, it's the garage!
 And I guess we all have to start somewhere.
-** Selected gratitude
-To [[id:B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69][John MacFarlane]] for writing [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]], and maintaining it for years.
+** Pandoc is a great intermediate representation for documents
+[[id:B1E4F6A5-8599-44CE-90DF-6F1BAA9E6B69][John MacFarlane]] wrote [[id:8ebac1d6-a7e8-4556-a483-a1b1c11f832d][Pandoc]], and has been  maintaining it for years.
 
 The document you're reading right now is written in [[id:41a5fb14-fe06-4b38-9c93-046554836446][Org-mode]], and converted to HTML with Pandoc.
 I reported [[https://github.com/jgm/pandoc/issues/9639][a table of contents generation issue]], MacFarlane fixed the problem, and rolled out a new release.
 The table of contents now works! 😸
+** Daniel and Kira keep on working tirelessly to make Clojure better suited for data science.
+To [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] and [[id:0d83ed00-e292-49ea-8c75-1c0b85084f43][Kira McLean]] for tirelessly working on Clojure data science.
+Kira is writing the [[id:93748cdc-a42a-4d68-9094-51e610cb526f][Clojure Data Cookbook]].
+The cookbook is meant to teach how to do common data workflows in Clojure.
+Daniel has written about his recent work in [[https://scicloj.github.io/blog/clojurists-together-project-scicloj-community-building-february-2024-update/][Scicloj February 2024 update]] and [[https://scicloj.github.io/blog/clojurists-together-project-scicloj-community-building-march-2024-update/][Scicloj March 2024 update]].
+For example, you can read [[https://scicloj.github.io/clojure-data-scrapbook/projects/geography/chicago-bikes/][a quite interesting analysis of how bikes are used in Chicago, based on a data set from a bike sharing company in Chicago]].

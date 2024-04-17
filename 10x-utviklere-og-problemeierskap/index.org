@@ -47,3 +47,9 @@ Levere kode, vente på neste gang jeg får noe å gjøre.
 - Husk at programmering ikke er hele jobben!
 - Bare fordi noen kan programmere fort, betyr det ikke at de løser problemer like fort.
 - Hvis du tar eierskap til problemer, kan du gjøre en kjempejobb selv om du har lite erfaring.
+* Kommentarer
+- irene: hvordan introdusere til nyansatte
+  - boka di: da må det kunne oppsøkes
+  - "indeks" / søkemotor
+    - kapittel-abstract
+- håvard: "lære litt av det selv, så høre teorien"

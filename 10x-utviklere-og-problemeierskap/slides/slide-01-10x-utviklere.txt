@@ -1,0 +1,15 @@
+10x-utviklere?
+
+- Folk på Internett snakker om utviklere som er ti ganger så effektive som andre utviklere
+  - Noen mener de finnes
+  - Andre mener de ikke finnes.
+- Hva betyr det egentlig at noen er "ti ganger så effektiv?"
+- Du kan bli svært effektiv /til å programmere/
+  - Utviklere former sine egne verktøy
+  - Programvare har ofte "myke" leveransekrav.
+    - Her er det en fordel, fordi vi kan utfordre dårlige krav.
+- Teodors meninger:
+  - I internett-diskusjonene er "effektiv" definert vagt.
+    Betyr det antall linjer kode?
+    Betyr det fornøyde kunder?
+    Betyr det antall kroner i kassa?

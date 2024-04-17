@@ -9,7 +9,7 @@
 - Hva er "10x-utviklere"?
 - Hva er "problemeierskap"?
 - Jeg har sett noen som programmerer veldig mye fortere enn meg.
-* 10x-utviklere?
+* "10x-utviklere"?
 - Folk på Internett snakker om utviklere som er ti ganger så effektive som andre utviklere
   - Noen mener de finnes
   - Andre mener de ikke finnes.
@@ -38,8 +38,8 @@ Levere kode, vente på neste gang jeg får noe å gjøre.
 - Jeg kan veldig lett skrive så mye kode som mulig.
   - Da kan jeg lage teknisk gjeld kjempefort!
 - Hvilket problem løser vi nå?
-* Problemeierskap reduserer forskjellene mellom utviklere
-- Kode-biten kan gå veldig fort.
+* Problemeierskap reduserer forskjeller mellom utviklere
+- Noen utviklere kan programmere veldig fort
 - Problemeierskap krever et fullt menneske!
 * Så hvis du ikke føler at du er effektiv,
 - Husk at programmering ikke er hele jobben!

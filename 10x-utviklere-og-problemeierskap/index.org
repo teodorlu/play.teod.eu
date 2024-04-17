@@ -23,6 +23,8 @@
     Betyr det antall linjer kode?
     Betyr det fornøyde kunder?
     Betyr det antall kroner i kassa?
+
+Hegel: tese, antitese, syntese.
 * Ikke problemeierskap
 Levere kode, vente på neste gang jeg får noe å gjøre.
 * Problemeierskap

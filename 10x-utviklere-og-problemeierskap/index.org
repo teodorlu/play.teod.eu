@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID: 7119812a-aec7-4286-979e-34f92b3299ab
+:END:
+#+TITLE: 10x-utviklere og problemeierskap
+
+[[file:..][..]]
+
+* Agenda
+- Hva er "10x-utviklere"?
+- Hva er "problemeierskap"?
+- Jeg har sett noen som programmerer veldig mye fortere enn meg.
+* 10x-utviklere?
+- Folk på Internett snakker om utviklere som er ti ganger så effektive som andre utviklere
+  - Noen mener de finnes
+  - Andre mener de ikke finnes.
+- Hva betyr det egentlig at noen er "ti ganger så effektiv?"
+- Du kan bli svært effektiv /til å programmere/
+  - Utviklere former sine egne verktøy
+  - Programvare har ofte "myke" leveransekrav.
+    - Her er det en fordel, fordi vi kan utfordre dårlige krav.
+- Teodors meninger:
+  - I internett-diskusjonene er "effektiv" definert vagt.
+    Betyr det antall linjer kode?
+    Betyr det fornøyde kunder?
+    Betyr det antall kroner i kassa?
+* Ikke problemeierskap
+Levere kode, vente på neste gang jeg får noe å gjøre.
+* Problemeierskap
+1. Jeg gjør en innsats for å sette seg inn i kontekst.
+2. Jeg tar ansvar for et veldefinert problem.
+3. Jeg drive progresjon mot å løse problemet.
+* "det finnes utviklere som koder raskere enn meg"
+- Noen utviklere programmerer fort.
+  Jeg programmerer tregere.
+  Betyr det at jeg ikke er god nok?
+- Det krever trening å bli god til å programmere.
+* Å programmere fort er ikke nødvedigvis effektivt
+- Jeg kan veldig lett skrive så mye kode som mulig.
+  - Da kan jeg lage teknisk gjeld kjempefort!
+- Hvilket problem løser vi nå?
+* Problemeierskap reduserer forskjellene mellom utviklere
+- Kode-biten kan gå veldig fort.
+- Problemeierskap krever et fullt menneske!
+* Så hvis du ikke føler at du er effektiv,
+- Husk at programmering ikke er hele jobben!
+- Bare fordi noen kan programmere fort, betyr det ikke at de løser problemer like fort.
+- Hvis du tar eierskap til problemer, kan du gjøre en kjempejobb selv om du har lite erfaring.

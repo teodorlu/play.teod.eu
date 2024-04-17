@@ -1,6 +1,7 @@
-10x-utviklere?
+"10x-utviklere"?
 
-- Folk på Internett snakker om utviklere som er ti ganger så effektive som andre utviklere
+- Folk på Internett snakker om utviklere som er ti ganger så effektive som andre
+  utviklere
   - Noen mener de finnes
   - Andre mener de ikke finnes.
 - Hva betyr det egentlig at noen er "ti ganger så effektiv?"

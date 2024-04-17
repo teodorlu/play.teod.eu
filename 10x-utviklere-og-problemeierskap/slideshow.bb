@@ -13,10 +13,10 @@
 
 (defn -main []
   (doseq [f (slide-files)]
-    (println (slurp f))
-    (read-line)
     (dotimes [_ 50]
-      (println))))
+      (println))
+    (println (slurp f))
+    (read-line)))
 
 (when (= *file* (System/getProperty "babashka.file"))
   (apply -main *command-line-args*))

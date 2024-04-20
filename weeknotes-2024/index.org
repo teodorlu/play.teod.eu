@@ -635,3 +635,40 @@ Kira is writing the [[id:93748cdc-a42a-4d68-9094-51e610cb526f][Clojure Data Cook
 The cookbook is meant to teach how to do common data workflows in Clojure.
 Daniel has written about his recent work in [[https://scicloj.github.io/blog/clojurists-together-project-scicloj-community-building-february-2024-update/][Scicloj February 2024 update]] and [[https://scicloj.github.io/blog/clojurists-together-project-scicloj-community-building-march-2024-update/][Scicloj March 2024 update]].
 For example, you can read [[https://scicloj.github.io/clojure-data-scrapbook/projects/geography/chicago-bikes/][a quite interesting analysis of how bikes are used in Chicago, based on a data set from a bike sharing company in Chicago]].
+* April 15th---April 19th
+:PROPERTIES:
+:ID:       56595d9e-193b-4eb2-97ab-44c96caa4be9
+:END:
+** Problem ownership reduces the difference between junior and senior software developers
+If we focus only on the speed someone can write code, the difference between an inexperienced programmer and an experienced programmer is large.
+If we derive our value as team members from the speed in which we write code, that can suck!
+I'm saying this because I've been on a team where I felt that my contributions were slow, and it sucked.
+
+A few years later, I feel that my mindset has shifted to a healthier mindset.
+Code does not equate to value, and software development is more than programming.
+
+I believe problem ownership is important.
+Lack of problem ownership is to write code, then wait for someone to assign more work.
+Problem ownership is to make an effort to learn the context, commit to work on some well-defined problem, then push for progress solving that problem.
+
+When we emphasize problem ownership over writing code, I claim that the difference between the value produced by an experienced programmer and the value produced by an inexperienced programmer reduces.
+
+So if you're an inexperienced programmer and observe some of your co-workers solving problems super-fast, know code-writing-speed does not equate to value.
+And you can probably make a good positive impact as long as you take some problem you're working on seriously, and try to solve that problem.
+
+(based on a Norwegian lightning talk I gave on Wednesday: [[id:7119812a-aec7-4286-979e-34f92b3299ab][10x-utviklere og problemeierskap]])
+** I introduced weeknotes in my organization
+I'm doing programming work on a team of 7 people.
+That team of 7 people is one of about 10 product teams in the organization I work.
+Yesterday, I asked my team for thooughts about what was important during that week, and published weeknotes.
+I followed the advice on https://doingweeknotes.com/ quite exactly, I created one channel =#myteam-weeknotes-notes= for collecting thoughts about what was important this week, and =#weeknotes= for publishing weeknotes.
+I didn't ask for permission, but I asked whether anyone wanted me to /not publish/ weeknotes.
+
+I was absolutely floored by the contributions I got from my team.
+Each contribution crisply explained a few things we had been working on that week.
+I though I knew what people had been working on, but those few sentences from a few team members were super-helpful for me.
+
+Sharing the weeknotes with the rest of the organization got a few thumbs-ups---
+but I'll refrain from claiming success when I've seen actual positive effects "reflect back".
+Examples of that could be some person in the organization getting in touch with us based on something we'we written,
+either to ask us for help on something, or provide something helpful for us.

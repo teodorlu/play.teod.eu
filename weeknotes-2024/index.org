@@ -630,7 +630,7 @@ The document you're reading right now is written in [[id:41a5fb14-fe06-4b38-9c93
 I reported [[https://github.com/jgm/pandoc/issues/9639][a table of contents generation issue]], MacFarlane fixed the problem, and rolled out a new release.
 The table of contents now works! 😸
 ** Daniel and Kira keep on working tirelessly to make Clojure better suited for data science.
-To [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] and [[id:0d83ed00-e292-49ea-8c75-1c0b85084f43][Kira McLean]] for tirelessly working on Clojure data science.
+I'm grataful for [[id:3c798467-1dcc-480a-b38a-b9915ae0e497][Daniel Slutsky]] and [[id:0d83ed00-e292-49ea-8c75-1c0b85084f43][Kira McLean]]'s tireless work on Clojure data science.
 Kira is writing the [[id:93748cdc-a42a-4d68-9094-51e610cb526f][Clojure Data Cookbook]].
 The cookbook is meant to teach how to do common data workflows in Clojure.
 Daniel has written about his recent work in [[https://scicloj.github.io/blog/clojurists-together-project-scicloj-community-building-february-2024-update/][Scicloj February 2024 update]] and [[https://scicloj.github.io/blog/clojurists-together-project-scicloj-community-building-march-2024-update/][Scicloj March 2024 update]].

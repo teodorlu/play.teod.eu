@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: c033672e-0b76-4db4-817b-0f9e4ff2ba06
+:END:
+#+TITLE: Transformed (book)
+
+[[file:..][..]]
+
+https://www.svpg.com/books/transformed-moving-to-the-product-operating-model/
+
+By [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]].

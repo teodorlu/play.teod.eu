@@ -2451,7 +2451,7 @@ export const index =
   "page/uuid" : "8e5e3b4a-65ee-464c-a6ee-f36eb1fce831",
   "created" : "2024-04-22",
   "readiness" : "wtf-is-this",
-  "title" : "Thoughts on books",
+  "title" : "Opinions on books",
   "lang" : "en",
   "page/slug" : "books",
   "author-url" : "https://teod.eu",

@@ -5,6 +5,14 @@
 
 [[file:..][..]]
 
+#+begin_export html
+<style>
+    body {
+      max-width: 100% !important;
+    }
+</style>
+#+end_export
+
 Thoughts on books + rating according to [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][precise, general, novel]].
 
 | book               | thought                                                           | precise | general | novel | live | judged date |

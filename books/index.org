@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-| book      | thought     |
-|-----------+-------------|
-| [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]] | really good |
-
+| book      | precise | general | novel | live |       date |
+|-----------+---------+---------+-------+------+------------|
+| [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]] |     0.8 |     0.9 |  0.99 |  0.9 | 2024-04-22 |
+| [[id:022060d8-811e-41dd-9c59-f179945a2dbc][Inspired]]  |         |         |       |      |            |

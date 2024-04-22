@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID: 9fa58782-ddf2-4723-a485-203f485079ef
+:END:
+#+TITLE: Loved (book)
+
+[[file:..][..]]
+
+https://medium.com/@martinalj/introduction-of-loved-how-to-rethink-marketing-for-tech-products-70f8e7dc3589
+
+https://www.svpg.com/introducing-loved/
+
+Not by [[id:45f5cc28-79f9-4a88-930f-06f77e727479][Marty Cagan]], but by Martina Lauchengco, who works at Silicon Valley Product Group.
+

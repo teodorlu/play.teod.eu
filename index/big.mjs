@@ -2798,6 +2798,17 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "9f52d562-4a06-4ea1-a461-2018fca5baf1"
 }, {
+  "slug" : "loved-book",
+  "page/uuid" : "9fa58782-ddf2-4723-a485-203f485079ef",
+  "created" : "2024-04-22",
+  "readiness" : "wtf-is-this",
+  "title" : "Loved (book)",
+  "lang" : "en",
+  "page/slug" : "loved-book",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "9fa58782-ddf2-4723-a485-203f485079ef"
+}, {
   "slug" : "designerly-ways-of-knowing",
   "page/uuid" : "A4452E84-7712-44C0-AEEE-A792AB8EADD9",
   "created" : "2024-03-22",

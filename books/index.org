@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: 8e5e3b4a-65ee-464c-a6ee-f36eb1fce831
+:END:
+#+TITLE: Thoughts on books
+
+| book      | thought     |
+|-----------+-------------|
+| [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]] | really good |
+
+[[file:..][..]]
+
+DRAFT

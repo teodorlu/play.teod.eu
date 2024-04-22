@@ -31,3 +31,5 @@ Programs I'm missing with my memex:
 
 - a program to list the books
 - a program to
+** a program to list the books
+let's fire up a clojure REPL with clerk --- and see where we end up.

@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 8e5e3b4a-65ee-464c-a6ee-f36eb1fce831
 :END:
-#+TITLE: Thoughts on books
+#+TITLE: Opinions on books
 
 [[file:..][..]]
 
@@ -15,9 +15,19 @@
 
 Thoughts on books + rating according to [[id:91a1d66d-2132-4acf-994a-e0bec32e8c6a][precise, general, novel]].
 
-| book               | opinion                                                    | precise | general | novel | live | judged date |
+| book               | judgment                                                          | precise | general | novel | live | judged date |
 |--------------------+-------------------------------------------------------------------+---------+---------+-------+------+-------------|
 | [[id:4c96fb35-ee33-4386-b2b8-f7b80cd5d8a5][Empowered]]          | Loved it when I first read                                        |     0.8 |     0.9 |  0.99 |  0.9 |  2024-04-22 |
 | [[id:022060d8-811e-41dd-9c59-f179945a2dbc][Inspired]]           | Kind of the same as Empowered                                     |         |         |       |      |  2024-04-22 |
 | [[id:9fa58782-ddf2-4723-a485-203f485079ef][Loved (book)]]       | A serious take on product marketing                               |         |         |       |      |  2024-04-22 |
 | [[id:c033672e-0b76-4db4-817b-0f9e4ff2ba06][Transformed (book)]] | A serious take on the challenges of introducing product discovery |         |         |       |      |  2024-04-22 |
+
+* 2024-04-22
+** next steps?
+I want to quickly judge all the books I've referred to on my site!
+That would be super exiting.
+
+Programs I'm missing with my memex:
+
+- a program to list the books
+- a program to

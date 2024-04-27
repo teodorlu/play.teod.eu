@@ -672,7 +672,10 @@ Sharing the weeknotes with the rest of the organization got a few thumbs-ups---
 but I'll refrain from claiming success when I've seen actual positive effects "reflect back".
 Examples of that could be some person in the organization getting in touch with us based on something we'we written,
 either to ask us for help on something, or provide something helpful for us.
-* z
+* April 22nd---April 26th
+:PROPERTIES:
+:ID:       e0a1f8b5-b664-45e8-8643-1944d2808676
+:END:
 ** Yet Another Take At Memexes
 In 1945, [[id:5b65c3e9-2c3c-4718-96ea-12fee228e1c4][Vannevar Bush]] wrote [[id:9517b312-9e2b-49b5-9346-4ccb038f9d13][As We May Think]] about a device that aids human thought.
 Over the years, this idea has infected many minds---mine included.

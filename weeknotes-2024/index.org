@@ -672,3 +672,6 @@ Sharing the weeknotes with the rest of the organization got a few thumbs-ups---
 but I'll refrain from claiming success when I've seen actual positive effects "reflect back".
 Examples of that could be some person in the organization getting in touch with us based on something we'we written,
 either to ask us for help on something, or provide something helpful for us.
+* z
+** Memexes Yet Again
+** A stab at Test && Commit || Revert for Clojure

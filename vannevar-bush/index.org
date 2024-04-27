@@ -6,3 +6,5 @@
 [[file:..][..]]
 
 https://en.wikipedia.org/wiki/Vannevar_Bush
+
+Wrote [[id:9517b312-9e2b-49b5-9346-4ccb038f9d13][As We May Think]].

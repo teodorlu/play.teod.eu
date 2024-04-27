@@ -2370,6 +2370,16 @@
   :page/slug "the-courage-to-be-disliked",
   :form :remote-reference,
   :uuid "9488732f-7ab4-4ad9-8fd5-c5c22238636e"}
+ {:slug "as-we-may-think",
+  :page/uuid "9517b312-9e2b-49b5-9346-4ccb038f9d13",
+  :created "2024-04-27",
+  :readiness :wtf-is-this,
+  :title "As We May Think",
+  :lang :en,
+  :page/slug "as-we-may-think",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "9517b312-9e2b-49b5-9346-4ccb038f9d13"}
  {:slug "product-owner-project-manager-product-leader",
   :page/uuid "955eb1b8-cbbf-47e5-9b86-da4bdf344535",
   :created "2023-02-03",

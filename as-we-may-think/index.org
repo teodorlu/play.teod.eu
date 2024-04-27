@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 9517b312-9e2b-49b5-9346-4ccb038f9d13
+:END:
+#+TITLE: As We May Think
+
+[[file:..][..]]
+
+https://en.wikipedia.org/wiki/As_We_May_Think
+
+A 1945 essay by [[id:5b65c3e9-2c3c-4718-96ea-12fee228e1c4][Vannevar Bush]] about a device to aid thinking.

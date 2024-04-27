@@ -711,7 +711,7 @@ Very nicely timed, [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] shar
 Bret Victor suggests that instead of having research goals, one might want to build a little world in which one lives to do the work.
 The world is the work.
 
-If we manage to use the Memex for thinking, we might be encourage to keep on working on the Memex.
+If we manage to live inside the Memex, we might be encouraged to keep up work on the Memex.
 ** A stab at Test && Commit || Revert for Clojure
 A cool colleague of mine invited to do mob programming last week.
 I had a great time.

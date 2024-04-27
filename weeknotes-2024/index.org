@@ -725,8 +725,8 @@ But I'd also like the state to be visible.
 Interactive programming with Clojure can get invisible if the state of the REPL drifts from the state of the files on disk.
 I think the combination of two technologies can alleviate that mental overhead: [[id:f18ada06-6b4d-4b67-aa38-706bacfc654c][test && commit || revert]] (TCR) and [[id:c9d8b834-efdb-481a-b6f6-4f9419c51c8a][clj-reload]].
 
-1. clj-reload will keep files in sync with the REPL
-2. TCR will keep people's mental models in sync.
+1. TCR will keep people's mental models in sync.
+2. clj-reload will keep files in sync with the REPL
 
 I've used TCR with [[id:fa743cc8-7c40-4092-b685-496db87664f6][Elm (programming language)]].
 It helped me think in smaller steps, and get progress faster.

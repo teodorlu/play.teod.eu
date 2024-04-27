@@ -1156,6 +1156,13 @@ href="../clj-reload/">clj-reload</a>.</p>
 <li>TCR will keep people’s mental models in sync.</li>
 <li>clj-reload will keep files in sync with the REPL</li>
 </ol>
+<p>A way to do TCR is to keep a file watcher running that on every
+save,</p>
+<ol>
+<li>Runs the tests</li>
+<li>Commits the tests if the tests are passing</li>
+<li>Otherwise reverts the code.</li>
+</ol>
 <p>I’ve used TCR with <a href="../elm-lang/">Elm (programming
 language)</a>. It helped me think in smaller steps, and get progress
 faster. With Elm, I used the compiler (type checker) as the

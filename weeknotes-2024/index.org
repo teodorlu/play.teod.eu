@@ -728,6 +728,12 @@ I think the combination of two technologies can alleviate that mental overhead: 
 1. TCR will keep people's mental models in sync.
 2. clj-reload will keep files in sync with the REPL
 
+A way to do TCR is to keep a file watcher running that on every save,
+
+1. Runs the tests
+2. Commits the tests if the tests are passing
+3. Otherwise reverts the code.
+
 I've used TCR with [[id:fa743cc8-7c40-4092-b685-496db87664f6][Elm (programming language)]].
 It helped me think in smaller steps, and get progress faster.
 With Elm, I used the compiler (type checker) as the /test/ step of TCR.

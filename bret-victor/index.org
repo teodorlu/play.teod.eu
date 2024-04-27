@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 00f83e62-617d-48d4-be92-e9dab6e473ec
+:END:
+#+TITLE: Bret Victor
+
+[[file:..][..]]
+
+https://worrydream.com/
+
+A programmer, designer and researchers doing (in my opinion) some quite amazing work.

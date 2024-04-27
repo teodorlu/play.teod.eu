@@ -373,11 +373,14 @@ weeknotes in my organization</a></li>
 </ul></li>
 <li><a href="#z" id="toc-z">z</a>
 <ul>
-<li><a href="#memexes-yet-again" id="toc-memexes-yet-again">Memexes Yet
-Again</a></li>
+<li><a href="#yet-another-take-at-memexes"
+id="toc-yet-another-take-at-memexes">Yet Another Take At
+Memexes</a></li>
 <li><a href="#a-stab-at-test-commit-revert-for-clojure"
 id="toc-a-stab-at-test-commit-revert-for-clojure">A stab at Test
 &amp;&amp; Commit || Revert for Clojure</a></li>
+<li><a href="#how-far-can-you-go" id="toc-how-far-can-you-go">How far
+can you go?</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -1100,8 +1103,82 @@ in the organization getting in touch with us based on something we’we
 written, either to ask us for help on something, or provide something
 helpful for us.</p>
 <h2 id="z">z</h2>
-<h3 id="memexes-yet-again">Memexes Yet Again</h3>
+<h3 id="yet-another-take-at-memexes">Yet Another Take At Memexes</h3>
+<p>In 1945, <a href="../vannevar-bush/">Vannevar Bush</a> wrote <a
+href="../as-we-may-think/">As We May Think</a> about a device that aids
+human thought. Over the years, this idea has infected many minds—mine
+included.</p>
+<p>It started for real when I made the first version of <a
+href="../play.teod.eu/">play.teod.eu</a>, the site you’re reading now.
+My site works great for me. But:</p>
+<ol>
+<li>It can’t be used without reading an intricate manual, and that
+manual does not yet exist.</li>
+<li>It can’t be used without a Unix machine with an Emacs installation.
+(As you may imagine, there’s no mobile support)</li>
+<li>It supports files in Git as it’s only source for information.</li>
+</ol>
+<p>These limitations prohibit certain forms of communication.</p>
+<p>I want a system that can supplant my website, Twitter, Wikipedia,
+Roam Research and Basecamp. I want great hypertext support. I want
+user-extensible text formats. I want user-extensible text editors. And I
+want to support editing files as text files.</p>
+<p>I <em>think</em> I’ve got a design in mind that makes this
+possible.</p>
+<p>But what’s step 1?</p>
+<p>I’ve asked some colleagues if they’re interested. We’ll see how it
+goes. A nearby goal is to use this Memex to share our experience eating
+at local food places. That information is currently scattered around
+other places. Perhaps it’ll work, perhaps not.</p>
+<p>Very nicely timed, <a href="../jack-rusher/">Jack Rusher</a> shared a
+video from <a href="../bret-victor/">Bret Victor</a>: <a
+href="../boostrapping-research-and-dynamicland-dec-2019/">Bootstrapping
+Research &amp; Dynamicland, Dec 2019</a>. Bret Victor suggests that
+instead of having research goals, one might want to build a little world
+in which one lives to do the work. The world is the work.</p>
+<p>If we manage to use the Memex for thinking, we might be encourage to
+keep on working on the Memex.</p>
 <h3 id="a-stab-at-test-commit-revert-for-clojure">A stab at Test
 &amp;&amp; Commit || Revert for Clojure</h3>
+<p>A cool colleague of mine invited to do mob programming last week. I
+had a great time. But I fear that we didn’t get anything done during the
+coding. We wrote a lot of code, and didn’t run any of it.</p>
+<p>It got me thinking about how I’d like to do mob programming.</p>
+<p>I’d like to use Clojure, because I like programming in Clojure. But
+I’d also like the state to be visible. Interactive programming with
+Clojure can get invisible if the state of the REPL drifts from the state
+of the files on disk. I think the combination of two technologies can
+alleviate that mental overhead: <a href="../test-commit-revert/">test
+&amp;&amp; commit || revert</a> (TCR) and <a
+href="../clj-reload/">clj-reload</a>.</p>
+<ol>
+<li>clj-reload will keep files in sync with the REPL</li>
+<li>TCR will keep people’s mental models in sync.</li>
+</ol>
+<p>I’ve used TCR with <a href="../elm-lang/">Elm (programming
+language)</a>. It helped me think in smaller steps, and get progress
+faster. With Elm, I used the compiler (type checker) as the
+<em>test</em> step of TCR. A cold-start compile took less than 100
+ms.</p>
+<p>In Clojure, I don’t want to cold-start the JVM in order to run the
+tests.</p>
+<p>My hypothesis is that we can still use TCR by embedding the TCR loop
+into the running program. Rather than</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ./tcr.sh</span></code></pre></div>
+<p>in a terminal, we run</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>user&gt; (tcr)</span></code></pre></div>
+<p>in a REPL.</p>
+<p>We’ll see if this works out.</p>
+<h3 id="how-far-can-you-go">How far can you go?</h3>
+<p>TCR pushes batch size down. I’d like to push impact up. Let’s not
+stop at a commit on a branch. Let’s deploy the live application with
+live data.</p>
+<p>I think this could work with mob-programming and TCR; then
+automatically deploy to production.</p>
+<p>(note: this is a less ambitious version of what <a
+href="../bret-victor/">Bret Victor</a> already is doing with <a
+href="../dynamicland/">Dynamicland</a>)</p>
 </body>
 </html>

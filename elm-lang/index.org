@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: fa743cc8-7c40-4092-b685-496db87664f6
+:END:
+#+TITLE: Elm (programming language)
+
+[[file:..][..]]
+
+https://elm-lang.org/

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 0961baac-ed2c-4613-9506-2e2f4564f5f6
+:END:
+#+TITLE: Dynamicland
+
+[[file:..][..]]
+
+https://dynamicland.org/

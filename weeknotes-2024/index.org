@@ -673,5 +673,87 @@ but I'll refrain from claiming success when I've seen actual positive effects "r
 Examples of that could be some person in the organization getting in touch with us based on something we'we written,
 either to ask us for help on something, or provide something helpful for us.
 * z
-** Memexes Yet Again
+** Yet Another Take At Memexes
+In 1945, [[id:5b65c3e9-2c3c-4718-96ea-12fee228e1c4][Vannevar Bush]] wrote [[id:9517b312-9e2b-49b5-9346-4ccb038f9d13][As We May Think]] about a device that aids human thought.
+Over the years, this idea has infected many minds---mine included.
+
+It started for real when I made the first version of [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]], the site you're reading now.
+My site works great for me.
+But:
+
+1. It can't be used without reading an intricate manual, and that manual does not yet exist.
+2. It can't be used without a Unix machine with an Emacs installation.
+   (As you may imagine, there's no mobile support)
+3. It supports files in Git as it's only source for information.
+
+These limitations prohibit certain forms of communication.
+
+I want a system that can supplant my website, Twitter, Wikipedia, Roam Research and Basecamp.
+I want great hypertext support.
+I want user-extensible text formats.
+I want user-extensible text editors.
+And I want to support editing files as text files.
+
+I /think/ I've got a design in mind that makes this possible.
+
+But what's step 1?
+
+I've asked some colleagues if they're interested.
+We'll see how it goes.
+A nearby goal is to use this Memex to share our experience eating at local food places.
+That information is currently scattered around other places.
+Perhaps it'll work, perhaps not.
+
+Very nicely timed, [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] shared a video from [[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]]: [[id:dc085ab8-5e71-45f8-b5d6-71d178179cd7][Bootstrapping Research & Dynamicland, Dec 2019]].
+Bret Victor suggests that instead of having research goals, one might want to build a little world in which one lives to do the work.
+The world is the work.
+
+If we manage to use the Memex for thinking, we might be encourage to keep on working on the Memex.
 ** A stab at Test && Commit || Revert for Clojure
+A cool colleague of mine invited to do mob programming last week.
+I had a great time.
+But I fear that we didn't get anything done during the coding.
+We wrote a lot of code, and didn't run any of it.
+
+It got me thinking about how I'd like to do mob programming.
+
+I'd like to use Clojure, because I like programming in Clojure.
+But I'd also like the state to be visible.
+Interactive programming with Clojure can get invisible if the state of the REPL drifts from the state of the files on disk.
+I think the combination of two technologies can alleviate that mental overhead: [[id:f18ada06-6b4d-4b67-aa38-706bacfc654c][test && commit || revert]] (TCR) and [[id:c9d8b834-efdb-481a-b6f6-4f9419c51c8a][clj-reload]].
+
+1. clj-reload will keep files in sync with the REPL
+2. TCR will keep people's mental models in sync.
+
+I've used TCR with [[id:fa743cc8-7c40-4092-b685-496db87664f6][Elm (programming language)]].
+It helped me think in smaller steps, and get progress faster.
+With Elm, I used the compiler (type checker) as the /test/ step of TCR.
+A cold-start compile took less than 100 ms.
+
+In Clojure, I don't want to cold-start the JVM in order to run the tests.
+
+My hypothesis is that we can still use TCR by embedding the TCR loop into the running program.
+Rather than
+
+#+begin_src bash
+$ ./tcr.sh
+#+end_src
+
+in a terminal, we run
+
+#+begin_src clojure
+user> (tcr)
+#+end_src
+
+in a REPL.
+
+We'll see if this works out.
+** How far can you go?
+TCR pushes batch size down.
+I'd like to push impact up.
+Let's not stop at a commit on a branch.
+Let's deploy the live application with live data.
+
+I think this could work with mob-programming and TCR; then automatically deploy to production.
+
+(note: this is a less ambitious version of what [[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]] already is doing with [[id:0961baac-ed2c-4613-9506-2e2f4564f5f6][Dynamicland]])

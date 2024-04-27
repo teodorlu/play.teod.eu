@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: dc085ab8-5e71-45f8-b5d6-71d178179cd7
+:END:
+#+TITLE: Bootstrapping Research & Dynamicland, Dec 2019
+
+[[file:..][..]]
+
+[[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]] about effective research through the creation of a microworld in which one may live.
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/eJm44LJDU44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export

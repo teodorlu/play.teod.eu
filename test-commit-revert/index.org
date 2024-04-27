@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: f18ada06-6b4d-4b67-aa38-706bacfc654c
+:END:
+#+TITLE: test && commit || revert
+
+[[file:..][..]]
+
+https://medium.com/@barlindhaug/how-to-test-commit-revert-e850cd6e2520
+
+https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html

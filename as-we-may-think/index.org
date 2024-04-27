@@ -5,6 +5,8 @@
 
 [[file:..][..]]
 
+https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
+
 https://en.wikipedia.org/wiki/As_We_May_Think
 
 A 1945 essay by [[id:5b65c3e9-2c3c-4718-96ea-12fee228e1c4][Vannevar Bush]] about a device to aid thinking.

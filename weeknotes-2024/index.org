@@ -806,7 +806,7 @@ So, I think a next step I want is something I can use with a few trusted friends
 ** Making new things from scratch versus leaning on things others have made
 Let's say you want to make your own little microworld.
 Should you start from zero?
-Or should you base your stuff on things other people have made?
+Or should you make your thing based on things other people have made?
 
 Here's my take:
 

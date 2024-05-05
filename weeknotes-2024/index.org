@@ -7,7 +7,7 @@
 
 Is Weeknotes (see https://doingweeknotes.com/) is something I want to do?
 
-* March 11th to March 16th
+* March 11th---March 16th
 :PROPERTIES:
 :ID:       644bbb72-6c2c-4935-bad9-a5468e53f7a1
 :END:
@@ -206,7 +206,7 @@ Jørgen, Ann and Viktor continue to see problems clearly, and similarly care dee
 OK, done.
 Time to get some air.
 Untill next time!
-* March 17th to 22nd
+* March 17th---March 22nd
 :PROPERTIES:
 :ID:       0f8fef13-4cd3-447c-a80d-4f050e99bbd7
 :END:
@@ -355,7 +355,7 @@ Rich Hickey paid for [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]] with t
 ** Selected comments
 
 [[id:26cf5980-b789-49a9-9418-3ac1887809fc][Patrick Dubroy]] suggests that I might want to read [[id:A4452E84-7712-44C0-AEEE-A792AB8EADD9][Designerly ways of knowing]] ([[https://twitter.com/dubroy/status/1771110663835799753][via twitter]]).
-* March 23rd to March 31st
+* March 23rd---March 31st
 :PROPERTIES:
 :ID:       d30e10ee-29ab-4989-81c3-4e60cf449147
 :END:
@@ -448,7 +448,7 @@ This is not a report.
 I can actually /decide/ that this is not a report, this is some stuff I write for myself.
 And that's something I like!
 
-* April 1st to April 5th
+* April 1st---April 5th
 :PROPERTIES:
 :ID:       7e22beae-29b0-4a22-8f94-b04033685a3c
 :END:
@@ -590,7 +590,7 @@ To my co-workers O and BO for
 - being generally awesome
 - helping out
 - bearing with me on my weird tangents and sometimes trying out my weird ideas.
-* April 7th to April 12th
+* April 7th---April 12th
 :PROPERTIES:
 :ID:       fa0064f1-888b-4d57-9f3c-773c8d49dd6d
 :END:

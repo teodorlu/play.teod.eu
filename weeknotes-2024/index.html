@@ -383,6 +383,21 @@ id="toc-a-stab-at-test-commit-revert-for-clojure">A stab at Test
 <li><a href="#how-far-can-you-go" id="toc-how-far-can-you-go">How far
 can you go?</a></li>
 </ul></li>
+<li><a href="#another" id="toc-another">ANOTHER</a>
+<ul>
+<li><a
+href="#distraction-over-engineering-or-curiosity-can-one-tell-the-difference"
+id="toc-distraction-over-engineering-or-curiosity-can-one-tell-the-difference">Distraction,
+over-engineering or curiosity, can one tell the difference?</a></li>
+<li><a href="#privacy-is-required-for-safe-exploration"
+id="toc-privacy-is-required-for-safe-exploration">Privacy is required
+for safe exploration</a></li>
+<li><a
+href="#making-new-things-from-scratch-versus-leaning-on-things-others-have-made"
+id="toc-making-new-things-from-scratch-versus-leaning-on-things-others-have-made">Making
+new things from scratch versus leaning on things others have
+made</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -1188,5 +1203,80 @@ automatically deploy to production.</p>
 <p>(note: this is a less ambitious version of what <a
 href="../bret-victor/">Bret Victor</a> already is doing with <a
 href="../dynamicland/">Dynamicland</a>)</p>
+<h2 id="another">ANOTHER</h2>
+<h3
+id="distraction-over-engineering-or-curiosity-can-one-tell-the-difference">Distraction,
+over-engineering or curiosity, can one tell the difference?</h3>
+<p>This is going to be yet another “writing about the practice of
+writing” pieces. I’m having a bit of a hard time getting into the habit
+of writing weeknotes. But I’ve decided to be consistent over great, so
+I’m putting aside half an hour for writing weeknotes, starting at
+2024-05-05 11:18.</p>
+<p>I quickly realized that in order to write weeknotes I can be proud
+of, I need to get better at taking notes during the week. Otherwise,
+I’ve forgotten all the things I <em>wanted</em> to bring up in
+weeknotes.</p>
+<p>So, I should use samsung notes, right? Something simple? Or perhaps
+something more advanced, like <a href="../roam-research/">Roam
+Research</a>, since that’s a note taking app I enjoy using?</p>
+<p>Nope. I have to make something from scratch. I enjoy having agency
+over the tools I use. That lets me optimize for my global workflow.
+Also, I just really enjoy being able to design systems, not just use
+systems others have made.</p>
+<p>So I made an app. You can try it at <a
+href="https://weeknotes-notes.apps.garden/">https://weeknotes-notes.apps.garden/</a>.
+Just beware everything is public, the page lists all weeknotes ever
+written (from you, me, and anyone else). The source is public too, <a
+href="https://github.com/teodorlu/weeknotes-notes">https://github.com/teodorlu/weeknotes-notes</a>.</p>
+<h3 id="privacy-is-required-for-safe-exploration">Privacy is required
+for safe exploration</h3>
+<p>So I wrote my own weeknotes app, assuming privacy is irrelevant. I
+quickly realized that this assumption was wrong. Privacy is relevant! I
+want to keep my own stuff private. Or share the thing with just a few
+trusted friends.</p>
+<p>Then, we can create a small world where we interact with rules
+different from the rest of the Internet. (<a href="../bret-victor/">Bret
+Victor</a> gives an interesting perspective on “research as the creation
+of microworlds” in <a
+href="../boostrapping-research-and-dynamicland-dec-2019/">Bootstrapping
+Research &amp; Dynamicland, Dec 2019</a>).</p>
+<p>So, I think a next step I want is something I can use with a few
+trusted friends.</p>
+<h3
+id="making-new-things-from-scratch-versus-leaning-on-things-others-have-made">Making
+new things from scratch versus leaning on things others have made</h3>
+<p>Let’s say you want to make your own little microworld. Should you
+start from zero? Or should you base your stuff on things other people
+have made?</p>
+<p>Here’s my take:</p>
+<ul>
+<li><strong>Beware of inheriting too many assumptions</strong>. If you
+start out using a hyper-specialized tool, you might end up doing the
+same things that others commonly do with that tool. If you start out
+with <em>Create React App</em>, you might end up creating a React app,
+then designing the rest of your system to work with that app.</li>
+<li><strong>See how far you can get with zero dependencies</strong>. If
+you’re wring an HTTP API with Go, you don’t really need dependencies.
+That leaves you in control of the whole thing. If you use vanilla
+Javascript with zero dependencies, you don’t have a build step, and your
+code can be used from anywhere. Trying the path of zero dependencies
+route lets you know how far you can get on your own. That act builds
+courage and confidence in your own skills, and respect for the tools you
+may end up using.</li>
+<li>Then <strong>learn from how others choose to approach
+problems</strong>. I made a tiny app for taking notes for writing
+weeknotes (<a
+href="https://weeknotes-notes.apps.garden/">https://weeknotes-notes.apps.garden/</a>,
+<a
+href="https://github.com/teodorlu/weeknotes-notes">https://github.com/teodorlu/weeknotes-notes</a>).
+It has zero CSS, no login, and no database. The note storage is a folder
+on disk. I now want to try using a database, and using a system for
+login. Because I know <em>why</em> I want those tools. I’m not
+collecting tools that look shiny, I see how far I get with my current
+toolbox first, and <em>only then</em> move on to more advanced tools
+others have made.</li>
+</ul>
+<p>In other words, I think you should do both. Try making it from
+scratch. And try using tools others have made.</p>
 </body>
 </html>

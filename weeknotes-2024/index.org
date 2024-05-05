@@ -766,3 +766,64 @@ Let's deploy the live application with live data.
 I think this could work with mob-programming and TCR; then automatically deploy to production.
 
 (note: this is a less ambitious version of what [[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]] already is doing with [[id:0961baac-ed2c-4613-9506-2e2f4564f5f6][Dynamicland]])
+* ANOTHER
+** Distraction, over-engineering or curiosity, can one tell the difference?
+This is going to be yet another "writing about the practice of writing" pieces.
+I'm having a bit of a hard time getting into the habit of writing weeknotes.
+But I've decided to be consistent over great, so I'm putting aside half an hour for writing weeknotes, starting at 2024-05-05 11:18.
+
+I quickly realized that in order to write weeknotes I can be proud of, I need to get better at taking notes during the week.
+Otherwise, I've forgotten all the things I /wanted/ to bring up in weeknotes.
+
+So, I should use samsung notes, right?
+Something simple?
+Or perhaps something more advanced, like [[id:ea364f64-1662-411d-a52e-5aa552ce45e4][Roam Research]], since that's a note taking app I enjoy using?
+
+Nope.
+I have to make something from scratch.
+I enjoy having agency over the tools I use.
+That lets me optimize for my global workflow.
+Also, I just really enjoy being able to design systems, not just use systems others have made.
+
+So I made an app.
+You can try it at https://weeknotes-notes.apps.garden/.
+Just beware everything is public, the page lists all weeknotes ever written (from you, me, and anyone else).
+The source is public too, https://github.com/teodorlu/weeknotes-notes.
+** Privacy is required for safe exploration
+So I wrote my own weeknotes app, assuming privacy is irrelevant.
+I quickly realized that this assumption was wrong.
+Privacy is relevant!
+I want to keep my own stuff private.
+Or share the thing with just a few trusted friends.
+
+Then, we can create a small world where we interact with rules different from the rest of the Internet.
+([[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]] gives an interesting perspective on "research as the creation of microworlds" in [[id:dc085ab8-5e71-45f8-b5d6-71d178179cd7][Bootstrapping Research & Dynamicland, Dec 2019]]).
+
+So, I think a next step I want is something I can use with a few trusted friends.
+** Making new things from scratch versus leaning on things others have made
+Let's say you want to make your own little microworld.
+Should you start from zero?
+Or should you base your stuff on things other people have made?
+
+Here's my take:
+
+- *Beware of inheriting too many assumptions*.
+  If you start out using a hyper-specialized tool, you might end up doing the same things that others commonly do with that tool.
+  If you start out with /Create React App/, you might end up creating a React app, then designing the rest of your system to work with that app.
+- *See how far you can get with zero dependencies*.
+  If you're wring an HTTP API with Go, you don't really need dependencies.
+  That leaves you in control of the whole thing.
+  If you use vanilla Javascript with zero dependencies, you don't have a build step, and your code can be used from anywhere.
+  Trying the path of zero dependencies route lets you know how far you can get on your own.
+  That act builds courage and confidence in your own skills, and respect for the tools you may end up using.
+- Then *learn from how others choose to approach problems*.
+  I made a tiny app for taking notes for writing weeknotes (https://weeknotes-notes.apps.garden/, https://github.com/teodorlu/weeknotes-notes).
+  It has zero CSS, no login, and no database.
+  The note storage is a folder on disk.
+  I now want to try using a database, and using a system for login.
+  Because I know /why/ I want those tools.
+  I'm not collecting tools that look shiny, I see how far I get with my current toolbox first, and /only then/ move on to more advanced tools others have made.
+
+In other words, I think you should do both.
+Try making it from scratch.
+And try using tools others have made.

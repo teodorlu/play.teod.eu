@@ -766,7 +766,10 @@ Let's deploy the live application with live data.
 I think this could work with mob-programming and TCR; then automatically deploy to production.
 
 (note: this is a less ambitious version of what [[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]] already is doing with [[id:0961baac-ed2c-4613-9506-2e2f4564f5f6][Dynamicland]])
-* ANOTHER
+* April 29th---May 5th
+:PROPERTIES:
+:ID:       74a2eb7f-5fed-44b1-aba0-7a4952309749
+:END:
 ** Distraction, over-engineering or curiosity, can one tell the difference?
 This is going to be yet another "writing about the practice of writing" pieces.
 I'm having a bit of a hard time getting into the habit of writing weeknotes.

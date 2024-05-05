@@ -803,7 +803,7 @@ Then, we can create a small world where we interact with rules different from th
 ([[id:00f83e62-617d-48d4-be92-e9dab6e473ec][Bret Victor]] gives an interesting perspective on "research as the creation of microworlds" in [[id:dc085ab8-5e71-45f8-b5d6-71d178179cd7][Bootstrapping Research & Dynamicland, Dec 2019]]).
 
 So, I think a next step I want is something I can use with a few trusted friends.
-** Make things from scratch or use tols others have made?
+** Make things from scratch or use tools others have made?
 Let's say you want to make your own little microworld.
 Should you start from zero?
 Or should you make your thing based on things other people have made?

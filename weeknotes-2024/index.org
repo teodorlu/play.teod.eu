@@ -198,7 +198,7 @@ Jørgen, Ann and Viktor continue to see problems clearly, and similarly care dee
 4. I've got no idea whatsoever what others are going to think about me writing this, really curious.
    I'd appreciate it if you'd send me reactions you have.
 5. I wonder if I want to publish a link to my weeknotes on Twitter?
-   Perhaps yersss?
+   Perhaps yes?
 6. I have too many spelling errors in this text.
    I need to get spell checking in Emacs working again.
    😔
@@ -215,7 +215,7 @@ Untill next time!
 Every day that passes, I cherish my chances to learn from /great people/.
 They are out there!
 They might just be ... hard to find.
-And /who/ you should be learning from is intimitely related to /what your goals are/.
+And /who/ you should be learning from is intimately related to /what your goals are/.
 Those I enjoy learning from may not be the right people for you to learn from.
 
 ** On the balance between design and implementation when we build software
@@ -830,3 +830,21 @@ Here's my take:
 In other words, I think you should do both.
 Try making it from scratch.
 And try using tools others have made.
+** When creativity dwindles, duty and discipline can pick up the slack
+This week I also (almost) didn't write weeknotes because I didn't know what to say.
+Which means I shouldn't write weeknotes, right?
+The muse has left me, and the though of writing does not fill me with joy?
+
+No!
+
+That is not what I promised myself when I started to write weeknotes.
+From my first weeknote:
+
+#+begin_quote
+Weeknotes seem to hit a sweet spot.
+Once a week, I can do that.
+I can even schedule time in my calendar!
+#+end_quote
+
+My duty is not to write great weeknotes.
+My duty is to /sit down and do the work/ so that at one point, the weeknotes might be better than when I first started out.

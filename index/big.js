@@ -730,6 +730,16 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "2be96e32-2649-4416-956a-64cbb23a3f9e"
 }, {
+  "slug" : "retrospective-questions",
+  "page/uuid" : "2c0f985a-954a-4592-a25c-19a8502414e3",
+  "created" : "2024-05-24",
+  "readiness" : "wtf-is-this",
+  "title" : "retrospective questions",
+  "lang" : "en",
+  "page/slug" : "retrospective-questions",
+  "author-url" : "https://teod.eu",
+  "uuid" : "2c0f985a-954a-4592-a25c-19a8502414e3"
+}, {
   "slug" : "document-transform-pandoc-clojure",
   "page/uuid" : "2c53f531-afdd-4efb-becd-f5d2f220b5ab",
   "created" : "2022-07-15",

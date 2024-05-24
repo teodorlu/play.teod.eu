@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: 2c0f985a-954a-4592-a25c-19a8502414e3
+:END:
+#+TITLE: retrospective questions
+
+[[file:..][..]]
+
+From Llewellyn Falco:
+
+#+begin_quote
+I usually start with the 1st layer: PETTDLES
+
+- pattern
+- emotions
+- tools
+- team
+- domain
+- language
+- events
+- surprises
+
+Then ask for observations. I do the grouping based on what is said
+#+end_quote
+
+Source: https://x.com/LlewellynFalco/status/1793822522070151677?t=zb7PKsBCZSCIZ1O-hSMrDQ
+
+Context:
+I like doing retrospectives, but asking "what's good and what's bad?" isn't giving me as good results as I'd like.

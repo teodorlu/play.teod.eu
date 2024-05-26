@@ -874,6 +874,9 @@ Problems?
 - I don't have too many exciting /creative endeavors/ to write about.
   I'd like more weeknotes about "I made something" and fewer weeknotes about "I've been thinking about something".
 * May 6th---May 26th
+:PROPERTIES:
+:ID:       60c090e6-bda9-427b-8b52-8f7370283e60
+:END:
 ** Pain on Steel
 #+begin_verse
 PAIN ON STEEL

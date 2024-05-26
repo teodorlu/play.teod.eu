@@ -513,3 +513,4 @@ This is a text I'd like to write about what I've learned from [[id:7688bf50-5c2c
   What, exactly, are you doing to cause this error?
 
 - embodied :: he's there, not off in his white tower.
+  He discusses reality, not hypotheticals

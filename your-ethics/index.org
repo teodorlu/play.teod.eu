@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: c030f65d-8a17-47b0-8cee-c46bf6daf936
+:END:
+#+TITLE: Your Ethics
+
+[[file:..][..]]
+
+#+begin_verse
+YOUR ETHICS
+
+You tried following their ethics. It worked, until it did not.
+Where did their ethics come from? There was no single source.
+What is right? You have started finding your answers.
+#+end_verse
+
+—Teodor, 2024-05-26

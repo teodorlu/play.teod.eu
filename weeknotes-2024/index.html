@@ -400,6 +400,21 @@ creativity dwindles, duty and discipline can pick up the slack</a></li>
 <li><a href="#weeknotes-retrospective"
 id="toc-weeknotes-retrospective">Weeknotes retrospective</a></li>
 </ul></li>
+<li><a href="#may-6thmay-26th" id="toc-may-6thmay-26th">May 6th—May
+26th</a>
+<ul>
+<li><a href="#pain-on-steel" id="toc-pain-on-steel">Pain on
+Steel</a></li>
+<li><a href="#your-ethics" id="toc-your-ethics">Your Ethics</a></li>
+<li><a href="#meetups-tribes-and-growing-together"
+id="toc-meetups-tribes-and-growing-together">Meetups, tribes and growing
+together</a></li>
+<li><a
+href="#mob-programming-a-babashka-script-with-the-norwegian-clojure-community-christian-johansen-and-peter-strömberg"
+id="toc-mob-programming-a-babashka-script-with-the-norwegian-clojure-community-christian-johansen-and-peter-strömberg">Mob-programming
+a Babashka script with the Norwegian Clojure community, Christian
+Johansen and Peter Strömberg</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -1334,5 +1349,144 @@ everything I write for myself.</li>
 about. I’d like more weeknotes about “I made something” and fewer
 weeknotes about “I’ve been thinking about something”.</li>
 </ul>
+<h2 id="may-6thmay-26th">May 6th—May 26th</h2>
+<h3 id="pain-on-steel">Pain on Steel</h3>
+<div class="line-block">PAIN ON STEEL<br />
+<br />
+Pain washes over steel. The surface is sleek, hard. It holds.<br />
+Dawn comes. Light supplants darkness.<br />
+I can see. I se the pain, the steel, the story. It will be okay.</div>
+<p>—Teodor, 2024-05</p>
+<p>Canonical page: <a href="../pain-on-steel/">Pain on Steel</a>.</p>
+<h3 id="your-ethics">Your Ethics</h3>
+<div class="line-block">YOUR ETHICS<br />
+<br />
+You tried following their ethics. It worked, until it did not.<br />
+Where did their ethics come from? There was no single source.<br />
+What is right? You have started finding your answers.</div>
+<p>—Teodor, 2024-05</p>
+<p>Canonical page: <a href="../your-ethics/">Your Ethics</a>.</p>
+<h3 id="meetups-tribes-and-growing-together">Meetups, tribes and growing
+together</h3>
+<p>I had a terrific experience organizing a Clojure Norway meetup for
+learning <a href="../babashka/">Babashka</a>. The meetup was in-person
+and there is no recording. But I about things I learned in Norwegian on
+Mikrobloggeriet: <a
+href="https://mikrobloggeriet.no/olorm/olorm-56/">OLORM-56: Dit og
+tilbake igjen—TDD, TCR fra en REPL og tilbake til TDD</a>. I might write
+an English version, but that is not for now.</p>
+<p>We did the following:</p>
+<ol>
+<li>I explained what Babashka is.</li>
+<li>I provided some examples for using <a
+href="https://github.com/babashka/fs">babasha/fs</a>, <a
+href="https://github.com/babashka/process">babashka/process</a> and <a
+href="https://github.com/babashka/cli">babashka/cli</a>, three libraries
+that make shell scripting with Clojure a joyful experience.</li>
+<li>Emil Bengtsson showed a babashka-powered tool for working remotely
+with Docker containers, which used <a
+href="https://github.com/lispyclouds/bblgum">lispyclouds/bblgum</a> for
+the UI</li>
+<li>We mob-programmed a Babashka script for converting <a
+href="../pandoc/">Pandoc</a> JSON to <a
+href="../hiccup/">Hiccup</a>.</li>
+</ol>
+<p>I had a great time. We learned something together, and we got to know
+each other.</p>
+<p>My jaw dropped when <a href="../peter-stromberg/">Peter Strömberg</a>
+decided to travel from Stockholm to Oslo to attend the meetup, and we
+got to chat. I feel like Peter has internalized something important
+about how people can work together in great teams, but I’m unable to
+articulate what it is.</p>
+<h3
+id="mob-programming-a-babashka-script-with-the-norwegian-clojure-community-christian-johansen-and-peter-strömberg">Mob-programming
+a Babashka script with the Norwegian Clojure community, <a
+href="../christian-johansen/">Christian Johansen</a> and <a
+href="../peter-stromberg/">Peter Strömberg</a></h3>
+<p>I recently mob-programmed a Babashka script with Norwegian Clojure
+programmers. In advance, I had asked Christian Johansen and Peter
+Strömberg for help. I’m so happy I asked for their help, and I’m super
+happy with the result.</p>
+<p>Here are some observations:</p>
+<ol>
+<li><p>Christian took lead on design &amp; instruction. He led us into a
+shallow implementation driven by unit tests.</p></li>
+<li><p>Peter took more of a back-seat role.</p></li>
+<li><p>We digressed into a discussion of dispatch and polymorphism in
+Clojure. Our implementation was one big case statement. Multimethods
+were proposed as an alternative. We continued with a single <code
+class="verbatim">case</code>, under the argument that it was easy to
+work with. The whole implementation is contained in one place
+(cohesion), and redefinition from a REPL is easy. No dangling <code
+class="verbatim">defmethods</code> in other places. We were able to do
+this because we were not writing a library, and did not require library
+consumers to extend our functionality.</p>
+<p>The result of the whole mob programming session can be read in one
+commit: <a
+href="https://github.com/teodorlu/pandocir/commit/13475492accd6de0b682ed677bbf9969e04d47ec">https://github.com/teodorlu/pandocir/commit/13475492accd6de0b682ed677bbf9969e04d47ec</a></p>
+<p>I’ll embed the gist here. First, the tests. We wrote the tests
+first.</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">deftest</span><span class="fu"> space-test</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">is</span> (<span class="kw">=</span> <span class="st">&quot; &quot;</span> (pandoc2hiccup/pandoc-block-&gt;hiccup {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}))))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>(<span class="bu">deftest</span><span class="fu"> string-test</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">is</span> (<span class="kw">=</span> <span class="st">&quot;there&quot;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>         (pandoc2hiccup/pandoc-block-&gt;hiccup {<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;there&quot;</span>}))))</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>(<span class="bu">deftest</span><span class="fu"> emph-test</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">is</span> (<span class="kw">=</span> [<span class="at">:em</span> <span class="st">&quot;there&quot;</span>]</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>         (pandoc2hiccup/pandoc-block-&gt;hiccup</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>          {<span class="at">:t</span> <span class="st">&quot;Emph&quot;</span>, <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;there&quot;</span>}]}))))</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>(<span class="bu">deftest</span><span class="fu"> para-test</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">is</span> (<span class="kw">=</span> [<span class="at">:p</span> <span class="st">&quot;hi,&quot;</span> <span class="st">&quot; &quot;</span> [<span class="at">:em</span> <span class="st">&quot;there&quot;</span>] <span class="st">&quot;!&quot;</span>]</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>         (pandoc2hiccup/pandoc-block-&gt;hiccup</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>          {<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">:c</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>           [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;hi,&quot;</span>}</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>            {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>}</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>            {<span class="at">:t</span> <span class="st">&quot;Emph&quot;</span>, <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;there&quot;</span>}]}</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>            {<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;!&quot;</span>}]}))))</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>(<span class="bu">deftest</span><span class="fu"> hiccup-test</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">is</span> (<span class="kw">=</span> &#39;([<span class="at">:p</span> <span class="st">&quot;hei&quot;</span>] [<span class="at">:p</span> <span class="st">&quot;oslo&quot;</span> <span class="st">&quot; &quot;</span> <span class="st">&quot;clojure&quot;</span>])</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>         (pandoc2hiccup/pandoc-&gt;hiccup</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>          {<span class="at">:pandoc-api-version</span> [<span class="dv">1</span> <span class="dv">23</span> <span class="dv">1</span>],</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>           <span class="at">:meta</span> {},</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>           <span class="at">:blocks</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>           [{<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>, <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;hei&quot;</span>}]}</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>            {<span class="at">:t</span> <span class="st">&quot;Para&quot;</span>,</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>             <span class="at">:c</span> [{<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;oslo&quot;</span>} {<span class="at">:t</span> <span class="st">&quot;Space&quot;</span>} {<span class="at">:t</span> <span class="st">&quot;Str&quot;</span>, <span class="at">:c</span> <span class="st">&quot;clojure&quot;</span>}]}]}))))</span></code></pre></div>
+<p>Then, the implementation. After writing <code
+class="verbatim">space-test</code>, we extended <code
+class="verbatim">pandoc-block-&gt;hiccup</code> to work for that
+test.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> pandoc-block-&gt;hiccup </span>[{<span class="at">:keys</span> [t c]}]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">case</span> t</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Space&quot;</span> <span class="st">&quot; &quot;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Str&quot;</span> c</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Emph&quot;</span> (<span class="kw">into</span> [<span class="at">:em</span>] (<span class="kw">map</span> pandoc-block-&gt;hiccup c))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Para&quot;</span> (<span class="kw">into</span> [<span class="at">:p</span>] (<span class="kw">map</span> pandoc-block-&gt;hiccup c))))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> pandoc-&gt;hiccup </span>[{<span class="at">:keys</span> [blocks]}]</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">map</span> pandoc-block-&gt;hiccup blocks))</span></code></pre></div>
+<p>I was baffled by how short &amp; clear the implementation and tests
+were.</p></li>
+<li><p>I’ve been thinking too much top down. Peter reflected that he
+often thinks “middle-down”. But let’s keep advanced moode for later.</p>
+<p><strong>do: represent your core as data, work in the REPL</strong>.
+What is your core? You want to make that easy to work on. Don’t sit
+looking at a web browser. That gives you only a very narrow view into
+what the code does, and you can’t use the REPL properly.</p>
+<p><strong>don’t: write long functions that do too much</strong>. Those
+functions can’t be tested. Split up your code, and it will help you.</p>
+<p><strong>don’t: arbitrarily split your implementation into multiple
+pieces</strong>. We could have made separate functions for converting
+space, trings, emphasis and paragraphs into hiccup. But that’s not
+really units of code we want to test. Our unit is a pandoc data block,
+and a hiccup data block.</p></li>
+</ol>
 </body>
 </html>

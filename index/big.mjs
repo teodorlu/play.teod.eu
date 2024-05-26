@@ -4301,6 +4301,17 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "f4762ab2-c1e5-4b90-9e59-be3ad6e6eafd"
 }, {
+  "slug" : "hiccup",
+  "page/uuid" : "f71372c2-8795-49ef-9755-4356cb07a83d",
+  "created" : "2024-05-26",
+  "readiness" : "wtf-is-this",
+  "title" : "Hiccup",
+  "lang" : "en",
+  "page/slug" : "hiccup",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "f71372c2-8795-49ef-9755-4356cb07a83d"
+}, {
   "slug" : "tools",
   "page/uuid" : "f71dae68-f21c-4a6c-a7b5-56272c57c185",
   "created" : "2022-10-01",

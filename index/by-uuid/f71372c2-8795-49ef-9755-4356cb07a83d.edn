@@ -1,0 +1,10 @@
+{:slug "hiccup",
+ :page/uuid "f71372c2-8795-49ef-9755-4356cb07a83d",
+ :created "2024-05-26",
+ :readiness :wtf-is-this,
+ :title "Hiccup",
+ :lang :en,
+ :page/slug "hiccup",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "f71372c2-8795-49ef-9755-4356cb07a83d"}

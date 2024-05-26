@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: f71372c2-8795-49ef-9755-4356cb07a83d
+:END:
+#+TITLE: Hiccup
+
+[[file:..][..]]
+
+https://github.com/weavejester/hiccup
+
+A way to work with HTML as pure Clojure data.
+
+#+begin_src clojure
+[:ul [:li "apples"] [:li "oranges"]]
+#+end_src
+
+turns into
+
+#+begin_src html
+<ul><li>apples</li><li>oranges</li></ul>
+#+end_src
+
+in HTML.
+
+Hiccup lets us work with HTML as data.
+Data is easier to manipulate than strings or external mutable state.

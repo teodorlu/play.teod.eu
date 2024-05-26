@@ -492,6 +492,10 @@ I think we could avoid a lot of pain if we put in a bit more effort to separate 
 #+end_quote
 * 2024-05-26
 ** Pragmatism, encouragement and helpfulness embodied: on working with Michiel
+:PROPERTIES:
+:ID:       32e6e516-8137-4c4c-b5aa-53ce27a4e5f8
+:END:
+
 This is a text I'd like to write about what I've learned from [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]].
 
 - pragmatism :: he ships.

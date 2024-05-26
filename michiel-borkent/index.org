@@ -6,3 +6,8 @@
 [[file:..][..]]
 
 https://www.michielborkent.nl/
+
+I've learned a lot from Michiel, and I should probably write about that at some time.
+Here's a start:
+
+[[https://play.teod.eu/journal-2024/#32e6e516-8137-4c4c-b5aa-53ce27a4e5f8][Pragmatism, encouragement and helpfulness embodied: on working with Michiel]]

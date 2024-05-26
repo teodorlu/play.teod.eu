@@ -1013,3 +1013,34 @@ Here are some observations:
    We could have made separate functions for converting space, trings, emphasis and paragraphs into hiccup.
    But that's not really units of code we want to test.
    Our unit is a pandoc data block, and a hiccup data block.
+** [[id:3aad72b0-3fc1-422c-aab5-5c900974013a][Llewellyn Falco]]-inspired retrospective questions
+I've become a fan of protospectives and retrospective.
+In a protospetive, I ask people what they want to achieve during the next hour or two of collaboration.
+In a retrospective, I've asked people for good and bad things the last hour or two.
+
+Falco does retrospectives differently.
+He asks for topic-oriented observations, not value judgements.
+
+I think topic-oriented observations is better than value judgements.
+I think they are easier to provide, and more relevant to share.
+Judgment is hard.
+Observation is easier, and often truer.
+
+This is his full quote:
+
+#+begin_quote
+I usually start with the 1st layer: PETTDLES
+
+- pattern
+- emotions
+- tools
+- team
+- domain
+- language
+- events
+- surprises
+
+Then ask for observations. I do the grouping based on what is said
+#+end_quote
+
+I'd like to try this in my next retrospective.

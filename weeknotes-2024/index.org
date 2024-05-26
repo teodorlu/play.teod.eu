@@ -999,20 +999,28 @@ Here are some observations:
    Peter reflected that he often thinks "middle-down".
    But let's keep advanced moode for later.
 
-   *do: represent your core as data, work in the REPL*.
+5. *do: represent your core as data, work in the REPL*.
    What is your core?
    You want to make that easy to work on.
    Don't sit looking at a web browser.
    That gives you only a very narrow view into what the code does, and you can't use the REPL properly.
 
-   *don't: write long functions that do too much*.
+6. *don't: write long functions that do too much*.
    Those functions can't be tested.
    Split up your code, and it will help you.
 
-   *don't: arbitrarily split your implementation into multiple pieces*.
+7. *don't: arbitrarily split your implementation into multiple pieces*.
    We could have made separate functions for converting space, trings, emphasis and paragraphs into hiccup.
    But that's not really units of code we want to test.
    Our unit is a pandoc data block, and a hiccup data block.
+
+8. *do: get to the point*.
+   I spent more time introducing everything than I could have.
+   It was my job to /have a plan/.
+   I could have shown the plan, then followed the plan.
+   No need to repeatedly shove the plan down everyone's throats.
+   Instead, show the plan, then follow the plan.
+   I probably wouldn't have seen this without discussions with [[id:c0cada69-772f-4e7d-9c45-158d81f0c2a5][Peter Strömberg]] after the meetup.
 ** [[id:3aad72b0-3fc1-422c-aab5-5c900974013a][Llewellyn Falco]]-inspired retrospective questions
 I've become a fan of protospectives and retrospective.
 In a protospetive, I ask people what they want to achieve during the next hour or two of collaboration.

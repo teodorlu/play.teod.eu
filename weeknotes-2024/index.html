@@ -1478,18 +1478,28 @@ class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb6-1"><a 
 <p>I was baffled by how short &amp; clear the implementation and tests
 were.</p></li>
 <li><p>I’ve been thinking too much top down. Peter reflected that he
-often thinks “middle-down”. But let’s keep advanced moode for later.</p>
-<p><strong>do: represent your core as data, work in the REPL</strong>.
-What is your core? You want to make that easy to work on. Don’t sit
-looking at a web browser. That gives you only a very narrow view into
-what the code does, and you can’t use the REPL properly.</p>
-<p><strong>don’t: write long functions that do too much</strong>. Those
-functions can’t be tested. Split up your code, and it will help you.</p>
-<p><strong>don’t: arbitrarily split your implementation into multiple
-pieces</strong>. We could have made separate functions for converting
-space, trings, emphasis and paragraphs into hiccup. But that’s not
-really units of code we want to test. Our unit is a pandoc data block,
-and a hiccup data block.</p></li>
+often thinks “middle-down”. But let’s keep advanced moode for
+later.</p></li>
+<li><p><strong>do: represent your core as data, work in the
+REPL</strong>. What is your core? You want to make that easy to work on.
+Don’t sit looking at a web browser. That gives you only a very narrow
+view into what the code does, and you can’t use the REPL
+properly.</p></li>
+<li><p><strong>don’t: write long functions that do too much</strong>.
+Those functions can’t be tested. Split up your code, and it will help
+you.</p></li>
+<li><p><strong>don’t: arbitrarily split your implementation into
+multiple pieces</strong>. We could have made separate functions for
+converting space, trings, emphasis and paragraphs into hiccup. But
+that’s not really units of code we want to test. Our unit is a pandoc
+data block, and a hiccup data block.</p></li>
+<li><p><strong>do: get to the point</strong>. I spent more time
+introducing everything than I could have. It was my job to <em>have a
+plan</em>. I could have shown the plan, then followed the plan. No need
+to repeatedly shove the plan down everyone’s throats. Instead, show the
+plan, then follow the plan. I probably wouldn’t have seen this without
+discussions with <a href="../peter-stromberg/">Peter Strömberg</a> after
+the meetup.</p></li>
 </ol>
 <h3 id="llewellyn-falco-inspired-retrospective-questions"><a
 href="../llewellyn-falco/">Llewellyn Falco</a>-inspired retrospective

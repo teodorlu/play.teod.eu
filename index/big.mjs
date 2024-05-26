@@ -3569,7 +3569,7 @@ export const index =
   "slug" : "your-ethics",
   "page/uuid" : "c030f65d-8a17-47b0-8cee-c46bf6daf936",
   "created" : "2024-05-26",
-  "readiness" : "wtf-is-this",
+  "readiness" : "ready-for-comments",
   "title" : "Your Ethics",
   "lang" : "en",
   "page/slug" : "your-ethics",
@@ -3778,6 +3778,16 @@ export const index =
   "lang" : "en",
   "page/slug" : "narrow-statements",
   "page/uuid" : "cd48d901-8e1b-4d10-9b5a-76002e426dc0"
+}, {
+  "slug" : "pain-on-steel",
+  "page/uuid" : "ce22160b-013d-46e6-913b-a3d8c1ee6852",
+  "created" : "2024-05-26",
+  "readiness" : "wtf-is-this",
+  "title" : "Pain on Steel",
+  "lang" : "en",
+  "page/slug" : "pain-on-steel",
+  "author-url" : "https://teod.eu",
+  "uuid" : "ce22160b-013d-46e6-913b-a3d8c1ee6852"
 }, {
   "slug" : "in-a-box",
   "page/uuid" : "ceabdfb3-9e0a-4b0b-b803-20c70db6a511",

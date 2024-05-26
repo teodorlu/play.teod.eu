@@ -490,3 +490,22 @@ opinion ≠ observation, deduction ≠ judgment
 
 I think we could avoid a lot of pain if we put in a bit more effort to separate between "objective falsifiable" (let's find the facts!) and "subjective" (let's explore taste!).
 #+end_quote
+* 2024-05-26
+** Pragmatism, encouragement and helpfulness embodied: on working with Michiel
+This is a text I'd like to write about what I've learned from [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]].
+
+- pragmatism :: he ships.
+  He does not require perfection.
+  But he does require making an effort to work in the right direction.
+
+- enouragement :: he encourages those around him.
+  Problems are soluable, and we can do this together.
+
+- helpfulness :: he helps people achieve what they want.
+  He does not super-impose his on goals & designs on others.
+
+- clarity :: he asks those he works with for clarity.
+  What are you actually trying to achieve?
+  What, exactly, are you doing to cause this error?
+
+- embodied :: he's there, not off in his white tower.

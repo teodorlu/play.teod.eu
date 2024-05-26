@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 3aad72b0-3fc1-422c-aab5-5c900974013a
+:END:
+#+TITLE: Llewellyn Falco
+
+[[file:..][..]]
+
+https://x.com/LlewellynFalco | http://llewellynfalco.blogspot.com/ | https://www.youtube.com/user/isidoreus/videos
+
+My impression of Llewellyn Falco:
+
+1. He understands deeply how people can work effectively together with code
+2. He's a great teacher
+3. He understands retrospectives deeply
+
+[[id:2c0f985a-954a-4592-a25c-19a8502414e3][retrospective questions]] is copied from Llewellyn's suggestions.

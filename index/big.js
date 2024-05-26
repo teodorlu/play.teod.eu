@@ -1076,6 +1076,17 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "3aa87eb3-5ab3-4897-9057-fd463c8bd980"
 }, {
+  "slug" : "llewellyn-falco",
+  "page/uuid" : "3aad72b0-3fc1-422c-aab5-5c900974013a",
+  "created" : "2024-05-26",
+  "readiness" : "wtf-is-this",
+  "title" : "Llewellyn Falco",
+  "lang" : "en",
+  "page/slug" : "llewellyn-falco",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "3aad72b0-3fc1-422c-aab5-5c900974013a"
+}, {
   "slug" : "practice-deliberately-with-journals",
   "page/uuid" : "3c240131-3b44-438c-9e74-ec899c9e2eb7",
   "created" : "2022-07-23",

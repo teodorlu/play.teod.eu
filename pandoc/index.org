@@ -6,7 +6,8 @@
 [[file:..][..]]
 
 https://pandoc.org/ |
-https://github.com/jgm/pandoc/
+https://github.com/jgm/pandoc/ |
+https://en.wikipedia.org/wiki/Pandoc
 
 #+begin_quote
 Pandoc dubs itself a "markup format" converter.

@@ -11,7 +11,7 @@ Here are seven pieces of advice to make your first steps into Clojure less painf
 *1. Never break parenthesis balance*.
 In block oriented languages like Java, Go and Javascript, you can often open a bunch of {, ( and [s, and ask your editor to "fix your mess".
 In Clojure, this leads to a complete clusterfuck.
-If you open a parenthesis without closing it, you can suddenly no longer evaluate expressions, because your file /does not end/
+If you open a parenthesis without closing it, you can suddenly no longer evaluate expressions, because your file /does not end/.
 
 /My practice/: keep parentheses balanced at all times.
 Learn some editor key bindings to make this nice.

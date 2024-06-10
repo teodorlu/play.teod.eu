@@ -59,7 +59,7 @@ Expand selection helps us do this.
 Put your cursor on the =(= before /first/, and run expand selection.
 Then you can copy or cut the whole thing!
 
-Expand selection is also a great thing to use in other langauges.
+Expand selection is also a great thing to use in other languages.
 To the best of my knowledge, the feature appeared first in Intellij IDEA.
 Then [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]] implemented an Emacs package:
 https://github.com/magnars/expand-region.el

@@ -53,10 +53,11 @@ Or you may have encountered something subjectively bad, due to a difference of a
 In that case, seeking understanding might be more helpful than finding an outlet for your anger.
 
 I'd like to argue that the statement "I don't understand it, therefore it's bad" is bad from an epistemic point of view: it mixes up the subjective with the objective.
-"I don't understand it" is subjective, and "It's bad" is an objective claim.
-Note: just because "It's bad" is an objective /claim/, doesn't meen it's correct, objective claims can be falsified.
+"I don't understand it" describes your subjective experience.
+"It's bad" is an objective claim, generalized broadly from your experience.
+What if the thing you're trying to learn is essentially hard, and requires real effort to learn?
 
-Instead, consider splitting the two.
+Consider splitting your understanding from the objective quality of the thing.
 It's perfectly fine to not understand things!
 Lean into that.
 When you know you don't understand something, that's the first step to understanding it.

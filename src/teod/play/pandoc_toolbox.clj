@@ -1,7 +1,6 @@
 (ns teod.play.pandoc-toolbox
   (:require [clojure.walk]))
 
-
 ;; teod/pandoc-toolbox lets you work with Pandoc JSON as plain Clojure data.
 ;;
 ;; The JSON is exported directly from upstream Haskell types with the Aeson JSON

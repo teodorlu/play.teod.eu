@@ -178,13 +178,11 @@
 
 (defn cmd-random-page [{:keys [opts]}]
   (if (:dry-run opts)
-    (do
-      ;; dry run is mostly for dev
-      (pprint (->> (files->relations {})
-                   vals
-                   (remove #(= :remote-reference
-                               (:form %)))
-                   (take 5))))
+    (pprint (->> (files->relations {})
+                 vals
+                 (remove #(= :remote-reference
+                             (:form %)))
+                 (take 5)))
     (let [n (or (:n opts) 1)]
       (println
        (str/join "\n"

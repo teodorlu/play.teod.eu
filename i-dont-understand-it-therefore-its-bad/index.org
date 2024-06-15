@@ -65,7 +65,7 @@ Perhaps you can ask someone to explain the thing you don't understand.
 My experience is that people are often happy to help you learn new things.
 Claiming that the thing they made is bad, or that they are bad might annoy them rather than help your relationship.
 
-#+begin_quote
+#+begin_verse
 If you can keep your head when all about you
     Are losing theirs and blaming it on you;
 If you can trust yourself when all men doubt you,
@@ -76,6 +76,6 @@ Or being hated don't give way to hating,
     And yet don't look too good, nor talk too wise;
 
 ([[https://en.wikipedia.org/wiki/If%E2%80%94][Rudyard Kipling]])
-#+end_quote
+#+end_verse
 
 ---Teodor, 2024-06-15

@@ -13,7 +13,7 @@
 ;; relations example
 ;;
 ;; page id -> page metadata
-{"emacs" {:slug "emacs"
+ {"emacs" {:slug "emacs"
           :title "(Doom) Emacs learning journal"
           :form :rambling
           :readiness :in-progress}
@@ -444,15 +444,14 @@ Usage:
                       (when (fs/regular-file? path)
                         (edn/read-string (slurp path)))))
           uuid->slug (fn [uuid] (:slug (by-uuid uuid)))
-          replace-link (fn [x]
-                         (if (pandoc/link? x)
-                           (let [link x
-                                 uuid (last (str/split (pandoc/link-target link) #":"))
+          replace-link (fn [node]
+                         (if (pandoc/link? node)
+                           (let [uuid (last (str/split (pandoc/link-target node) #":"))
                                  slug (uuid->slug uuid)]
                              (if slug
-                               (assoc-in link pandoc/link-target-path (str "../" slug "/"))
-                               link))
-                           x))
+                               (assoc-in node pandoc/link-target-path (str "../" slug "/"))
+                               node))
+                           node))
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println (json/generate-string resolved)))))
 

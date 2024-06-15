@@ -196,8 +196,6 @@
                       (take n)
                       (map :slug)))))))
 
-(defn infer-created [] #_ TODO)
-
 (defn cmd-create-page [{:keys [opts]}]
   (let [slug (:slug opts)
         title (or (:title opts) slug)

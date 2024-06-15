@@ -112,30 +112,33 @@
           (with-out-str
             (pprint (dissoc page :slug))))))
 
-(defn page-index-org [{:keys [title trailing-blank-lines uuid]}]
-  (str/join "\n"
-            (concat
-             ;; Link for org-roam
-             (when uuid
-               [":PROPERTIES:"
-                (str ":ID: " uuid)
-                ":END:"])
+(defn page-index-org [{:keys [title trailing-blank-lines uuid body]}]
+  (let [body (or body "DRAFT")]
+    (str/join "\n"
+              (concat
+               ;; Link for org-roam
+               (when uuid
+                 [":PROPERTIES:"
+                  (str ":ID: " uuid)
+                  ":END:"])
 
-             ;; Header, title, link up
-             [(str "#+TITLE: " title)
-              ""
-              "[[file:..][..]]
+               ;; Header, title, link up
+               [(str "#+TITLE: " title)
+                ""
+                "[[file:..][..]]"
+                ""
+                (str/trim body)
+                ""]
 
-DRAFT
-"
-              ]
+               ;; Trailing whitespace.
+               (when trailing-blank-lines
+                 (concat ["#+begin_verse"]
+                         (repeat trailing-blank-lines "")
+                         ["#+end_verse"
+                          ""]))))))
 
-             ;; Trailing whitespace.
-             (when trailing-blank-lines
-               (concat ["#+begin_verse"]
-                       (repeat trailing-blank-lines "")
-                       ["#+end_verse"
-                        ""])))))
+#_ (page-index-org {:title "The Lollercoasters"
+                    :body "The Best Band Ever"})
 
 (def relations-config
   {:sources {:files files->relations

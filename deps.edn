@@ -1,16 +1,16 @@
 {:paths ["src"]
- :deps {babashka/fs {:mvn/version "0.5.21"},
-        babashka/process {:mvn/version "0.5.22"},
-        cheshire/cheshire {:mvn/version "5.13.0"},
-        hiccup/hiccup {:mvn/version "2.0.0-RC1"},
-        org.babashka/cli {:mvn/version "0.8.59"},
-        org.babashka/http-client {:mvn/version "0.4.19"},
-        org.clojure/clojure {:mvn/version "1.11.3"},
-        org.flatland/ordered {:mvn/version "1.15.12"},
+ :deps {babashka/fs {:mvn/version "0.5.21"}
+        babashka/process {:mvn/version "0.5.22"}
+        cheshire/cheshire {:mvn/version "5.13.0"}
+        hiccup/hiccup {:mvn/version "2.0.0-RC1"}
+        org.babashka/cli {:mvn/version "0.8.59"}
+        org.babashka/http-client {:mvn/version "0.4.19"}
+        org.clojure/clojure {:mvn/version "1.11.3"}
+        org.flatland/ordered {:mvn/version "1.15.12"}
 
         ;; Extra deps
-        datascript/datascript {:mvn/version "1.6.5"}, ;; To query over my content
-        io.github.nextjournal/clerk {:mvn/version "0.16.1016"},
+        datascript/datascript {:mvn/version "1.6.5"}
+        io.github.nextjournal/clerk {:mvn/version "0.16.1016"}
         io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}}
  :aliases
  {:test

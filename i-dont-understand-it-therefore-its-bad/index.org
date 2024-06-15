@@ -25,13 +25,13 @@ But don't stop there.
 Create a mob!
 Start a movement!
 Protest against the government, find somebody to blame!
-
 When life gives you lemons, don't make lemonade.
 [[https://www.youtube.com/watch?v=ELkgiJD9KuM][Get]] [[https://www.youtube.com/watch?v=pdFAW9q7MW8][mad]]!
 
 Or?
 
 It appears that subjective experience and objective reality is not exactly the same thing.
+
 Subjective experiences are real, but real in the sense that the feeling is real, not in the sense that the opinions that follow the feeling are objectively true.
 
 To disambiguate between the subjective and the objective, I'd like to defer to [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
@@ -43,7 +43,7 @@ Beauty has both a subjective and objective part. Human aesthetic judgment is a c
 
 Our knowledge of the nature of objective beauty is still primitive. We cannot reliably distinguish between subjective and objective beauty, certainly not by just looking. Things that meet aesthetic preferences built into our brains or instilled by culture look just as beautiful to us as those that are objectively beautiful.
 
-[[https://www.nature.com/articles/526S16a][Interview with David Deutsch, Nature, october 2015]]
+[[https://www.nature.com/articles/526S16a][Interview with David Deutsch, Nature, October 2015]]
 #+end_quote
 
 You may have encountered something objectively bad.

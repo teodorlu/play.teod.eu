@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-Read a Github README.
+You're reading a Github README.
 It doesn't get you started in five minutes.
 It doesn't solve your problem exactly.
 Therefore it's bad!

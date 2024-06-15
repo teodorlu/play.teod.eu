@@ -9,11 +9,6 @@
   (.format (java.time.format.DateTimeFormatter/ofPattern "yyyy-MM-dd")
            (java.time.LocalDateTime/now)))
 
-(defn lol []
-  (let [n (Math/floor (inc  (rand 10)))]
-    (apply str "l"
-           (repeat n "ol"))))
-
 (defn git-infer-created-date [f]
   (let [proc-handle (shell {:out :string :continue true}
                            "git log --pretty=\"format:%cs\""

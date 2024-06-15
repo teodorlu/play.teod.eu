@@ -258,8 +258,7 @@ Allowed options:
                                :lang lang})
               page-meta (if (:form opts) (assoc page-meta :form (:form opts))
                             page-meta)
-              play-file-content (with-out-str (pprint page-meta))
-              ]
+              play-file-content (with-out-str (pprint page-meta))]
           (if (:dry-run opts)
             (fake-spit play-file play-file-content)
             (spit play-file play-file-content)))
@@ -457,19 +456,13 @@ Usage:
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println (json/generate-string resolved)))))
 
-(defn lol [{:keys [_opts]}]
-  (println (play/lol)))
-
 (def dispatch-table
-  [
-   {:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
+  [{:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn cmd-filter :cmds-opts [:resolve-links]}
-   {:cmds ["lol"] :fn lol}
    {:cmds ["makefile"] :fn cmd-makefile}
    {:cmds ["random-page"] :fn cmd-random-page}
    {:cmds ["reindex"] :fn cmd-reindex}
-   {:cmds ["relations"] :fn cmd-relations}
-   ])
+   {:cmds ["relations"] :fn cmd-relations}])
 
 (defn print-subcommands [{}]
   (println "usage: ./play.clj COMMAND")

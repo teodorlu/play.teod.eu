@@ -43,7 +43,7 @@ Beauty has both a subjective and objective part. Human aesthetic judgment is a c
 
 Our knowledge of the nature of objective beauty is still primitive. We cannot reliably distinguish between subjective and objective beauty, certainly not by just looking. Things that meet aesthetic preferences built into our brains or instilled by culture look just as beautiful to us as those that are objectively beautiful.
 
-([[https://www.nature.com/articles/526S16a][source]])
+[[https://www.nature.com/articles/526S16a][Interview with David Deutsch, Nature, october 2015]]
 #+end_quote
 
 You may have encountered something objectively bad, causing your anger.

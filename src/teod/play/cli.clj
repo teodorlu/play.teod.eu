@@ -13,7 +13,7 @@
 ;; relations example
 ;;
 ;; page id -> page metadata
- {"emacs" {:slug "emacs"
+{"emacs" {:slug "emacs"
           :title "(Doom) Emacs learning journal"
           :form :rambling
           :readiness :in-progress}

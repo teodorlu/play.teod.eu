@@ -14,6 +14,8 @@ Therefore it's bad!
 Do not go gentle into that good night,
 Old age should burn and rave at close of day;
 Rage, rage against the dying of the light.
+
+([[https://en.wikipedia.org/wiki/Do_not_go_gentle_into_that_good_night][Dylan Thomas]])
 #+end_verse
 
 Don't hesitate, put that rage on Twitter!

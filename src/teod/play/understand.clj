@@ -6,7 +6,6 @@
   {:nextjournal.clerk/toc true}
   (:require
    [teod.play.cli :as cli]
-   [teod.play.api :as api]
    [eu.teod.clerk-utils :as hammertime]
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.viewer :as v]

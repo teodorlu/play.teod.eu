@@ -30,7 +30,7 @@ Or?
 It appears that subjective experience and objective reality is not exactly the same thing.
 Subjective experiences are real, but real in the sense that the feeling is real, not in the sense that the opinions that follow the feeling are objectively true.
 
-To clarify the distinction between the subjective and the objective, I'd like to quote [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] in order to skip the issue:
+To clarify the distinction between the subjective and the objective, I'd like to quote [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]], then skip the issue.
 
 #+begin_quote
 *If beauty is objective, why is there so much variation in what people consider beautiful?*

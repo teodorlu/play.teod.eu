@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID: 1c0e1a22-1fa6-426f-a87c-bbc838f19c2e
+:END:
+#+TITLE: I don't understand it, therefore it's bad
+
+[[file:..][..]]
+
+Read a Github README.
+It doesn't get you started in five minutes.
+It doesn't solve your problem exactly.
+Therefore it's bad!
+
+#+begin_verse
+Do not go gentle into that good night,
+Old age should burn and rave at close of day;
+Rage, rage against the dying of the light.
+#+end_verse
+
+Don't hesitate, put that rage on Twitter!
+But don't stop there.
+Create a mob!
+Start a movement!
+Protest against the government, find somebody to blame!
+
+When life gives you lemons, don't make lemonade.
+[[https://www.youtube.com/watch?v=ELkgiJD9KuM][Get mad!]]
+
+Or?
+
+It appears that subjective experience and objective reality is not exactly the same thing.
+Subjective experiences are real, but real in the sense that the feeling is real, not in the sense that the opinions that follow the feeling are objectively true.
+
+To clarify the distinction between the subjective and the objective, I'd like to quote [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]] in order to skip the issue:
+
+#+begin_quote
+*If beauty is objective, why is there so much variation in what people consider beautiful?*
+
+Beauty has both a subjective and objective part. Human aesthetic judgment is a complicated mixture of genetic, cultural and objective factors. If you look at paintings from centuries ago, you will find that the women tend to be considerably heavier than what we now consider to be ideal. That can be neither objective nor genetic, so it must be cultural. Our preference for symmetry is probably related to our preference for healthy mates — many diseases and deformities make people less symmetrical. So that one could be genetic.
+
+Our knowledge of the nature of objective beauty is still primitive. We cannot reliably distinguish between subjective and objective beauty, certainly not by just looking. Things that meet aesthetic preferences built into our brains or instilled by culture look just as beautiful to us as those that are objectively beautiful.
+
+([[https://www.nature.com/articles/526S16a][source]])
+#+end_quote
+
+I'd like to argue that the statement "I don't understand it, therefore it's bad" is bad from an epistemic point of view: it mixes up the subjective with the objective.
+"I don't understand it" is subjective, and "It's bad" is subjective.
+
+Instead, consider splitting the two.
+It's perfectly fine to not understand things!
+Lean into that.
+When you know you don't understand something, that's the first step to understanding it.
+But don't try to skip over the learning process.
+First try to clarify what you're not understanding.
+What are you trying to achieve?
+What did you try to do to reach your goal?
+Then what happened?
+
+Perhaps you can ask someone to explain the thing you don't understand.
+My experience is that people are often happy to help you learn new things.
+Claiming that the thing they made is bad, or that they are bad might annoy them rather than help your relationship.

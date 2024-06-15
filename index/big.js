@@ -462,6 +462,16 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "1b275a74-df8e-4ef7-a401-4f04283ef68e"
 }, {
+  "slug" : "i-dont-understand-it-therefore-its-bad",
+  "page/uuid" : "1c0e1a22-1fa6-426f-a87c-bbc838f19c2e",
+  "created" : "2024-06-15",
+  "readiness" : "wtf-is-this",
+  "title" : "I don't understand it, therefore it's bad",
+  "lang" : "en",
+  "page/slug" : "i-dont-understand-it-therefore-its-bad",
+  "author-url" : "https://teod.eu",
+  "uuid" : "1c0e1a22-1fa6-426f-a87c-bbc838f19c2e"
+}, {
   "slug" : "golang",
   "page/uuid" : "1c80cee5-af85-45ca-9b54-47e297eaa4d9",
   "created" : "2023-04-30",

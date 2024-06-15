@@ -46,7 +46,8 @@ You may have encountered something objectively bad, causing your anger.
 Or you may have encountered something subjectively bad, due to a difference of aesthetic preference.
 
 I'd like to argue that the statement "I don't understand it, therefore it's bad" is bad from an epistemic point of view: it mixes up the subjective with the objective.
-"I don't understand it" is subjective, and "It's bad" is subjective.
+"I don't understand it" is subjective, and "It's bad" is an objective claim.
+Note: just because "It's bad" is an objective /claim/, doesn't meen it's correct, objective claims can be falsified.
 
 Instead, consider splitting the two.
 It's perfectly fine to not understand things!

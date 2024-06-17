@@ -112,17 +112,12 @@ I'm eager to find out.
 
 —Teodor 2024-06-17
 
-PS. It's okay to not know things.
-It's perfectly okay.
-I do /not/ want to discourage people from exploring what they don't know.
-But I don't think disguising not knowing things for "theory" is an effective strategy for learning.
-
-PPS. My notion for theory is stolen from [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
+PS. My notion for theory is stolen from [[id:369abfa2-8b8c-4540-958f-d0fce79f132b][David Deutsch]].
 I whole-heartedly recommend reading his book [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]].
 This guy is great at explaining things, knows quantum physics in depth and knows epistemology in depth.
 He's a person worth learning from.
 
-PPPS. Design documents and tests can be the foundation for your theory for your codebase.
+PPS. Design documents and tests can be the foundation for your theory for your codebase.
 They can help explain.
 But if you start out by assuming they are useless, they will become useless.
 If you intend to explain the codebase in the README and with tests, you need to use the README and use the tests in practice.

@@ -49,7 +49,7 @@ I propose the following:
   All other things being equal, a theory with larger reach than a different theory is better.
 
 - *A good theory is hard to vary*.
-  If you can change arbitrary parts of your theory, and it still /holds/, the theory is too big.
+  If you can change arbitrary parts of your theory, and the theory /still holds/, the theory is too big.
   Something can probably be removed.
   And removing that thing will make the theory /better/.
 

@@ -1,0 +1,7 @@
+{:author-url "https://teod.eu",
+ :created "2024-06-17",
+ :lang :en,
+ :readiness :wtf-is-this,
+ :title
+ "Featherweight static analysis in Clojure: using Clj-kondo and Babashka",
+ :uuid "556c05ca-fe6f-49b3-99cb-90c4f5ecf9f4"}

@@ -1,7 +1,7 @@
 {:slug "i-dont-understand-it-therefore-its-bad",
  :page/uuid "1c0e1a22-1fa6-426f-a87c-bbc838f19c2e",
  :created "2024-06-15",
- :readiness :wtf-is-this,
+ :readiness :ready-for-comments,
  :title "I don't understand it, therefore it's bad",
  :lang :en,
  :page/slug "i-dont-understand-it-therefore-its-bad",

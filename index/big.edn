@@ -419,7 +419,7 @@
  {:slug "i-dont-understand-it-therefore-its-bad",
   :page/uuid "1c0e1a22-1fa6-426f-a87c-bbc838f19c2e",
   :created "2024-06-15",
-  :readiness :wtf-is-this,
+  :readiness :ready-for-comments,
   :title "I don't understand it, therefore it's bad",
   :lang :en,
   :page/slug "i-dont-understand-it-therefore-its-bad",
@@ -1406,6 +1406,17 @@
   :page/slug "interaction-value-differential",
   :author-url "https://teod.eu",
   :uuid "55261ada-7ca6-4c94-88f5-446a9b35e5c4"}
+ {:slug "featherweight-static-analysis-clojure-clj-kondo-babashka",
+  :page/uuid "556c05ca-fe6f-49b3-99cb-90c4f5ecf9f4",
+  :created "2024-06-17",
+  :readiness :wtf-is-this,
+  :title
+  "Featherweight static analysis in Clojure: using Clj-kondo and Babashka",
+  :lang :en,
+  :page/slug
+  "featherweight-static-analysis-clojure-clj-kondo-babashka",
+  :author-url "https://teod.eu",
+  :uuid "556c05ca-fe6f-49b3-99cb-90c4f5ecf9f4"}
  {:slug "personal-feedback",
   :page/uuid "55a43bc3-7de1-44f6-8970-69970acad85e",
   :created "2024-03-23",
@@ -3397,8 +3408,8 @@
  {:slug "in-theory-it-makes-sense-in-practice-it-works",
   :page/uuid "c9bc1684-88b0-444b-9d45-2c9cef27d0c5",
   :created "2024-06-17",
-  :readiness :wtf-is-this,
-  :title "In theory, it makes sense, in practice, it works",
+  :readiness :ready-for-comments,
+  :title "In theory, it makes sense; in practice, it works",
   :lang :en,
   :page/slug "in-theory-it-makes-sense-in-practice-it-works",
   :author-url "https://teod.eu",

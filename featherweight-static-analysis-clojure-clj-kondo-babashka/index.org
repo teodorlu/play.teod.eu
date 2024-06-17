@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: 556c05ca-fe6f-49b3-99cb-90c4f5ecf9f4
+:END:
+#+TITLE: Featherweight static analysis in Clojure: using Clj-kondo and Babashka
+
+[[file:..][..]]
+
+I was wondering how hard it would be to roll my own solution to figure out which of my Clojure namespaces do side effects.

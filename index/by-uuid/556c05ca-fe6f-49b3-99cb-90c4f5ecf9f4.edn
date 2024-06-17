@@ -1,0 +1,10 @@
+{:slug "featherweight-static-analysis-clojure-clj-kondo-babashka",
+ :page/uuid "556c05ca-fe6f-49b3-99cb-90c4f5ecf9f4",
+ :created "2024-06-17",
+ :readiness :wtf-is-this,
+ :title
+ "Featherweight static analysis in Clojure: using Clj-kondo and Babashka",
+ :lang :en,
+ :page/slug "featherweight-static-analysis-clojure-clj-kondo-babashka",
+ :author-url "https://teod.eu",
+ :uuid "556c05ca-fe6f-49b3-99cb-90c4f5ecf9f4"}

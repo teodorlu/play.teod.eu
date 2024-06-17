@@ -29,6 +29,9 @@ We have other words to denote uncertainty!
 - "I want to try this"
 - "I think this solves your problem"
 
+It's perfectly fine, very common and super useful to make the things you don't understand explicit.
+You move unknown unknowns to known unknowns.
+
 * Theory provides explanations, has reach and is hard to vary
 
 So if theory is /not/ "practice that doesn't work", what is theory?

@@ -28,6 +28,7 @@ We have other words to denote uncertainty!
 - "I think this might work"
 - "I want to try this"
 - "I think this solves your problem"
+- "My hypothesis is that when we do X, we will observe Y"
 
 It's perfectly fine, very common and super useful to make the things you don't understand explicit.
 Saying "I don't know how SQLite works" names the problem, and makes it easier to understand SQLite later.

@@ -35,7 +35,7 @@ You've now moved turned an unknown unknown into a known unknown.
 
 * Good theory explains things well, has wide reach and is hard to vary
 
-So if theory is /not/ "practice that doesn't work", what is theory?
+So if theory is /not/ "things that don't work in practice", what is theory?
 
 I propose the following:
 

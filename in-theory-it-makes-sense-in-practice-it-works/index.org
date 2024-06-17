@@ -30,7 +30,7 @@ We have other words to denote uncertainty!
 - "I think this solves your problem"
 
 It's perfectly fine, very common and super useful to make the things you don't understand explicit.
-Saying "I don't know how sqlite works" names the problem, and makes it easier to understand later.
+Saying "I don't know how SQLite works" names the problem, and makes it easier to understand SQLite later.
 You've now moved turned an unknown unknown into a known unknown.
 
 * Theory provides explanations, has reach and is hard to vary

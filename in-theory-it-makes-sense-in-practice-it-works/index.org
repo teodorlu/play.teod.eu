@@ -117,7 +117,7 @@ From what we know about Rome's population in 200BC we could estimate a required 
 Aqueducts were built, and still stand.
 In the middle ages, engineers understood how effective arch shapes for building build cathedrals.
 Today, we have [[https://en.wikipedia.org/wiki/Continuum_mechanics][continuum mechanics]], a theory that explains arches, and more.
-Continuum mechanics lets us simulate the behavior of our arch, and observe the structural response before we build our arc:
+Continuum mechanics lets us simulate the behavior of our arch, and observe the structural response before we build our arch:
 
 #+begin_export html
 <iframe class="youtube-video" src="https://www.youtube.com/embed/kGxmiCDU1SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

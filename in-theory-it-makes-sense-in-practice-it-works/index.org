@@ -83,6 +83,26 @@ Makes things easier to understand.
 
 Sometimes you can even apply known theory and known terminology that somebody else made.
 
+* Which theory?
+
+Back to the source of our frustration:
+
+#+begin_quote
+In theory, this should work.
+#+end_quote
+
+So, which theory???
+
+Theories make things clear by making things /explicit/.
+If you /do/ want to talk about theory, at least let others know /which theory/ you are referring to.
+Because there are infinitely many to pick from, and possibly not obvious to others which one you meant.
+
+Or, you can choose to /not/ talk about theory!
+That is perfectly fine.
+"My goal is to display the current time in the CET timezone.
+Can you help me achive that?"
+No theory required to ask that question!
+
 * Good goals, then good practice, then good theory
 
 - If you don't know where you're going, perhaps you should work on your goals.

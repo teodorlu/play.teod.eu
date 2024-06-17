@@ -114,9 +114,9 @@ No theory required to ask that question!
 Cities need water.
 From what we know about Rome's population in 200BC we could estimate a required water supply.
 Aqueducts were built, and still stand.
-In the middle ages, engineers understood how effective arc shapes for building build cathedrals.
+In the middle ages, engineers understood how effective arch shapes for building build cathedrals.
 Today, we have [[https://en.wikipedia.org/wiki/Continuum_mechanics][continuum mechanics]], a theory that explains arches, and more.
-Continuum mechanics lets us simulate the behavior of our arc, and observe the structural response before we build our arc:
+Continuum mechanics lets us simulate the behavior of our arch, and observe the structural response before we build our arc:
 
 #+begin_export html
 <iframe class="youtube-video" src="https://www.youtube.com/embed/kGxmiCDU1SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -3742,6 +3742,16 @@
   "form" : "remote-reference",
   "uuid" : "c977d38f-8c20-4650-8da7-b922d5a4b252"
 }, {
+  "slug" : "in-theory-it-makes-sense-in-practice-it-works",
+  "page/uuid" : "c9bc1684-88b0-444b-9d45-2c9cef27d0c5",
+  "created" : "2024-06-17",
+  "readiness" : "wtf-is-this",
+  "title" : "In theory, it makes sense, in practice, it works",
+  "lang" : "en",
+  "page/slug" : "in-theory-it-makes-sense-in-practice-it-works",
+  "author-url" : "https://teod.eu",
+  "uuid" : "c9bc1684-88b0-444b-9d45-2c9cef27d0c5"
+}, {
   "slug" : "clj-reload",
   "page/uuid" : "c9d8b834-efdb-481a-b6f6-4f9419c51c8a",
   "created" : "2024-04-27",

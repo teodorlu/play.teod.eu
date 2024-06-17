@@ -91,7 +91,7 @@ Cities need water.
 From what we know about Rome's population in 200BC it would be possible to estimate a required water supply.
 Aqueducts were built, and still stand, they worked.
 In the middle ages, engineers understood how weight should be distributed in an arc in order to build cathedrals.
-Today, we have continuum mechanics, a theory that explains arches, and more.
+Today, we have [[https://en.wikipedia.org/wiki/Continuum_mechanics][continuum mechanics]], a theory that explains arches, and more.
 
 Software engineering is a young field.
 We don't yet agree on our shared foundation.

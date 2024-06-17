@@ -107,7 +107,7 @@ No theory required to ask that question!
 * Good goals, then good practice, then good theory
 
 - If you don't know where you're going, perhaps you should work on your goals.
-- If you aren't getting to where you want to get, perhaps you should work on your theory.
+- If you aren't getting to where you want to get, perhaps you should work on your practice.
 - If you don't know what you're doing, perhaps you should work on your theory.
 
 * Goals, practice and theory in civil engineering and software engineering

@@ -29,7 +29,7 @@ Answer "Why do I find this worthwhile?" and "Where is this applicable?".
 6 - Consider modeling /all possible states/ as one data type.
 Fewer edge cases are easier to manage.
 
-7 - When "How does X work?", consider how your documentation can be improved.
+7 - When "How does X work?" is asked, consider how your documentation can be improved.
 
 8 - Don't require hierarchy to be equal to legibility.
 You will risk creating a [[https://en.wikipedia.org/wiki/The_Bed_of_Procrustes][Bed of Procrustes]].

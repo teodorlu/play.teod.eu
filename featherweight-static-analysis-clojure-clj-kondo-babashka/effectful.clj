@@ -31,26 +31,27 @@
 
 ;; We don't care about cljs, so we'll skip references to cljs.core.
 
-(defn cljs-ref? [reference]
-  (#{"cljs.core"} (some-> reference :to namespace)))
+(defn symbol-from-cljs-core? [sym]
+  (#{"cljs.core"} (some-> sym namespace)))
 
-(->> (kondo-analysis-references ana)
-     (into #{})         ; remove duplicates
-     (remove cljs-ref?) ; we don't care about clojurescript for now
-     count)
-;; => 189
+(defn kondo-analysis-local-usages [kondo-analysis]
+  (->> kondo-analysis
+       :var-usages
+       (map (fn [{:keys [from to name]}]
+              {:from-ns from :to (symbol (clojure.core/name to)
+                                         (clojure.core/name name))}))
+       (remove (comp symbol-from-cljs-core? :to)) ; ignore cljs for now
+       (group-by :from-ns)
+       (map (fn [[from-ns matches]]
+              [from-ns (->> matches
+                            (map :to)
+                            (filter some?)
+                            (into (sorted-set)))]))
+       (into (sorted-map))))
 
-(->> (kondo-analysis-references ana)
-     (into #{})
-     (remove cljs-ref?))
+(kondo-analysis-local-usages ana)
 
-(count
- (kondo-analysis-references ana))
-;; => 958
-
-(count (remove cljs-ref? (kondo-analysis-references ana)))
-
-(defn -main [& args]
+(defn -main [& _args]
   ;; MAIN TO DO STUFF
   )
 

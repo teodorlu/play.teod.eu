@@ -26,16 +26,16 @@
        (map conform-relation)
        (sort-by :page/slug)))
 
-^{::clerk/width :full}
-(big-table
- (->> (relations)
-      (take 4)))
+^{::clerk/viewer big-table
+  ::clerk/width :full}
+(->> (relations)
+     (take 4))
 
-^{::clerk/width :full}
-(big-table
- (->> (relations)
-      (filter (fn [rel]
-                (re-matches #".*Simple.*" (:title rel))))))
+^{::clerk/viewer big-table
+  ::clerk/width :full}
+(->> (relations)
+     (filter (fn [rel]
+               (re-matches #".*Simple.*" (:title rel)))))
 
 (defn grep-title [re xs]
   (filter #(re-matches re (:title %)) xs))

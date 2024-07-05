@@ -22,10 +22,7 @@
     @conn))
 
 (do (defonce db (relations->datascript-db (relations))) nil)
-
-(comment
-  (do (alter-var-root #'db (constantly (relations->datascript-db (relations)))) :done)
-  :rcf)
+#_ (do (alter-var-root #'db (constantly (relations->datascript-db (relations)))) :done)
 
 (d/q '[:find (count ?e) .
        :where [?e :page/slug ?slug]]

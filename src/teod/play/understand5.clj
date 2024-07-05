@@ -47,7 +47,8 @@
     x))
 
 ^{::clerk/no-cache true
-  :nextjournal.clerk/auto-expand-results? true}
+  :nextjournal.clerk/auto-expand-results? true
+  ::clerk/width :full}
 (clerk/caption "Page titles"
  (big-table
   (->>

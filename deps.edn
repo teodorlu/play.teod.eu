@@ -9,7 +9,7 @@
         org.flatland/ordered {:mvn/version "1.15.12"}
 
         ;; Extra deps
-        datascript/datascript {:mvn/version "1.6.5"}
+        datascript/datascript {:mvn/version "1.7.2"}
         io.github.nextjournal/clerk {:mvn/version "0.16.1016"}
         io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}}
  :aliases

@@ -2,8 +2,9 @@
  :created "2024-07-06",
  :lang :en,
  :builder :no-op,
- :readiness :wtf-is-this,
- :page/authors [[:page/uuid "CF4A09A7-23CA-4133-A556-6494359BA3C1" #_ "Ruben"]
-                [:page/uuid "1a915a34-7a98-498c-914a-70c2ecf47afc" #_ "og Teodor"]],
+ :readiness :ready-for-comments,
+ :page/authors
+ [[:page/uuid "CF4A09A7-23CA-4133-A556-6494359BA3C1"]
+  [:page/uuid "1a915a34-7a98-498c-914a-70c2ecf47afc"]],
  :title "Easy, explicit parallellism with =pipeline-blocking=",
  :uuid "add9c8b3-ba7a-4206-929e-cdf71847028c"}

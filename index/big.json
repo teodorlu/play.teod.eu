@@ -21,6 +21,16 @@
   "form" : "remote-reference",
   "uuid" : "00f83e62-617d-48d4-be92-e9dab6e473ec"
 }, {
+  "slug" : "less-stuff",
+  "page/uuid" : "012144d2-d253-49bd-bad6-c1bbd2084acc",
+  "created" : "2024-07-06",
+  "readiness" : "wtf-is-this",
+  "title" : "Less stuff",
+  "lang" : "en",
+  "page/slug" : "less-stuff",
+  "author-url" : "https://teod.eu",
+  "uuid" : "012144d2-d253-49bd-bad6-c1bbd2084acc"
+}, {
   "slug" : "inspired",
   "page/uuid" : "022060d8-811e-41dd-9c59-f179945a2dbc",
   "created" : "2023-06-13",
@@ -3330,6 +3340,7 @@
   "uuid" : "add61309-25d3-418d-8a9b-542915198e53"
 }, {
   "slug" : "clojure-easy-parallellism-with-pipeline-blocking",
+  "page/authors" : [ [ "page/uuid", "CF4A09A7-23CA-4133-A556-6494359BA3C1" ], [ "page/uuid", "1a915a34-7a98-498c-914a-70c2ecf47afc" ] ],
   "page/uuid" : "add9c8b3-ba7a-4206-929e-cdf71847028c",
   "created" : "2024-07-06",
   "readiness" : "wtf-is-this",

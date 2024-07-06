@@ -3329,6 +3329,16 @@
   "form" : "remote-reference",
   "uuid" : "add61309-25d3-418d-8a9b-542915198e53"
 }, {
+  "slug" : "clojure-easy-parallellism-with-pipeline-blocking",
+  "page/uuid" : "add9c8b3-ba7a-4206-929e-cdf71847028c",
+  "created" : "2024-07-06",
+  "readiness" : "wtf-is-this",
+  "title" : "Easy, explicit parallellism with =pipeline-blocking=",
+  "lang" : "en",
+  "page/slug" : "clojure-easy-parallellism-with-pipeline-blocking",
+  "author-url" : "https://teod.eu",
+  "uuid" : "add9c8b3-ba7a-4206-929e-cdf71847028c"
+}, {
   "slug" : "trust-vs-evil",
   "page/uuid" : "afce0ad0-0723-4b19-a7bf-1e9da412045f",
   "created" : "2023-09-02",

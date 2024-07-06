@@ -28,6 +28,8 @@
        :where [?e :page/slug ?slug]]
      db)
 
+;; **Simple made easy**
+
 ^{:nextjournal.clerk/auto-expand-results? true}
 (into {} (d/entity db [:page/slug "simple-made-easy"]))
 
@@ -37,6 +39,27 @@
        [?e :form :remote-reference]]
      db)
 
+;; **Rich Hickey**
+
+^{:nextjournal.clerk/auto-expand-results? true}
+(into {} (d/entity db [:page/slug "rich-hickey"]))
+
+^{:nextjournal.clerk/auto-expand-results? true}
+(keys (d/entity db [:page/slug "rich-hickey"]))
+
+;; list all?
+
+(d/q '[:find ?e ?a
+       :where [?e ?a [:page/slug "rich-hickey"]]]
+     db)
+
+;; **things rich has written**
+
+(:page/_authors (d/entity db [:page/slug "rich-hickey"]))
+
+(d/q '[:find ?e ?a
+       :where [?e ?a [:page/slug "rich-hickey"]]]
+     db)
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn big-table [x]

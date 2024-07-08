@@ -94,9 +94,7 @@
     (doseq [l recent-lines]
       (prn l))))
 
-(defn relations->pretty
-  [rels]
-  (pprint rels))
+(def relations->pretty pprint)
 
 (defn lines->relations
   "Relations from lines on stdin"

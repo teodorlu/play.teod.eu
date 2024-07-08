@@ -28,10 +28,7 @@
   (let [frl-str (str frl)
         full {"butlast" butlast "first" first "last" last "rest" rest}
         short {\b butlast \f first \l last \r rest}
-        ending (cond (str/ends-with? frl-str "butlast") "butlast"
-                     (str/ends-with? frl-str "first") "first"
-                     (str/ends-with? frl-str "last") "last"
-                     (str/ends-with? frl-str "rest") "rest")]
+        ending (first (filter (partial str/ends-with? frl-str) (keys full)))]
     (assert (contains? full ending))
     (let [frl-rest (subs frl-str 0 (- (count frl-str) (count ending)))]
       (println frl-rest)

@@ -297,29 +297,29 @@ processes</li>
 <p>We’re going to focus on four signals:</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Signal</th>
 <th>Name</th>
 <th>Effect</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>SIGHUP</td>
 <td>Reload configuration (hack!)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2</td>
 <td>SIGINT</td>
 <td>Terminate process, allow for cleanup</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>9</td>
 <td>SIGKILL</td>
 <td>Terminate immediately - no cleanup</td>
 </tr>
-<tr class="even">
+<tr>
 <td>15</td>
 <td>SIGTERM</td>
 <td>Terminate process, allow for cleanup</td>
@@ -330,7 +330,7 @@ processes</li>
 longer list.</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Signal</th>
 <th>Name</th>
 <th>Default Action</th>
@@ -338,187 +338,187 @@ longer list.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>SIGHUP</td>
 <td>terminate process</td>
 <td>terminal line hangup</td>
 </tr>
-<tr class="even">
+<tr>
 <td>2</td>
 <td>SIGINT</td>
 <td>terminate process</td>
 <td>interrupt program</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>3</td>
 <td>SIGQUIT</td>
 <td>create core image</td>
 <td>quit program</td>
 </tr>
-<tr class="even">
+<tr>
 <td>4</td>
 <td>SIGILL</td>
 <td>create core image</td>
 <td>illegal instruction</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>5</td>
 <td>SIGTRAP</td>
 <td>create core image</td>
 <td>trace trap</td>
 </tr>
-<tr class="even">
+<tr>
 <td>6</td>
 <td>SIGABRT</td>
 <td>create core image</td>
 <td>abort program (formerly SIGIOT)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>7</td>
 <td>SIGEMT</td>
 <td>create core image</td>
 <td>emulate instruction executed</td>
 </tr>
-<tr class="even">
+<tr>
 <td>8</td>
 <td>SIGFPE</td>
 <td>create core image</td>
 <td>floating-point exception</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>9</td>
 <td>SIGKILL</td>
 <td>terminate process</td>
 <td>kill program</td>
 </tr>
-<tr class="even">
+<tr>
 <td>10</td>
 <td>SIGBUS</td>
 <td>create core image</td>
 <td>bus error</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>11</td>
 <td>SIGSEGV</td>
 <td>create core image</td>
 <td>segmentation violation</td>
 </tr>
-<tr class="even">
+<tr>
 <td>12</td>
 <td>SIGSYS</td>
 <td>create core image</td>
 <td>non-existent system call invoked</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>13</td>
 <td>SIGPIPE</td>
 <td>terminate process</td>
 <td>write on a pipe with no reader</td>
 </tr>
-<tr class="even">
+<tr>
 <td>14</td>
 <td>SIGALRM</td>
 <td>terminate process</td>
 <td>real-time timer expired</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>15</td>
 <td>SIGTERM</td>
 <td>terminate process</td>
 <td>software termination signal</td>
 </tr>
-<tr class="even">
+<tr>
 <td>16</td>
 <td>SIGURG</td>
 <td>discard signal</td>
 <td>urgent condition present on socket</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>17</td>
 <td>SIGSTOP</td>
 <td>stop process</td>
 <td>stop (cannot be caught or ignored)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>18</td>
 <td>SIGTSTP</td>
 <td>stop process</td>
 <td>stop signal generated from keyboard</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>19</td>
 <td>SIGCONT</td>
 <td>discard signal</td>
 <td>continue after stop</td>
 </tr>
-<tr class="even">
+<tr>
 <td>20</td>
 <td>SIGCHLD</td>
 <td>discard signal</td>
 <td>child status has changed</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>21</td>
 <td>SIGTTIN</td>
 <td>stop process</td>
 <td>background read attempted from control terminal</td>
 </tr>
-<tr class="even">
+<tr>
 <td>22</td>
 <td>SIGTTOU</td>
 <td>stop process</td>
 <td>background write attempted to control terminal</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>23</td>
 <td>SIGIO</td>
 <td>discard signal</td>
 <td>I/O is possible on a descriptor (see fcntl(2))</td>
 </tr>
-<tr class="even">
+<tr>
 <td>24</td>
 <td>SIGXCPU</td>
 <td>terminate process</td>
 <td>cpu time limit exceeded (see setrlimit(2))</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>25</td>
 <td>SIGXFSZ</td>
 <td>terminate process</td>
 <td>file size limit exceeded (see setrlimit(2))</td>
 </tr>
-<tr class="even">
+<tr>
 <td>26</td>
 <td>SIGVTALRM</td>
 <td>terminate process</td>
 <td>virtual time alarm (see setitimer(2))</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>27</td>
 <td>SIGPROF</td>
 <td>terminate process</td>
 <td>profiling timer alarm (see setitimer(2))</td>
 </tr>
-<tr class="even">
+<tr>
 <td>28</td>
 <td>SIGWINCH</td>
 <td>discard signal</td>
 <td>Window size change</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>29</td>
 <td>SIGINFO</td>
 <td>discard signal</td>
 <td>status request from keyboard</td>
 </tr>
-<tr class="even">
+<tr>
 <td>30</td>
 <td>SIGUSR1</td>
 <td>terminate process</td>
 <td>User defined signal 1</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>31</td>
 <td>SIGUSR2</td>
 <td>terminate process</td>
@@ -530,11 +530,11 @@ longer list.</p>
 processes</h2>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code class="verbatim">ps</code></td>
 <td>Show some running processes</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code class="verbatim">ps aux</code></td>
 <td>Show lots of running processes</td>
 </tr>

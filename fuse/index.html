@@ -266,7 +266,7 @@ DEFINITIONS.</p>
 <p>My definitions:</p>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code class="verbatim">MyProgram</code></td>
 <td>my program providing the virtual filesystem</td>
 </tr>
@@ -275,26 +275,26 @@ DEFINITIONS.</p>
 <p>Manual definitions:</p>
 <table>
 <tbody>
-<tr class="odd">
+<tr>
 <td>FUSE</td>
 <td>kernel thing. Responds to “create file”, forwards requests to <code
 class="verbatim">MyProgram</code></td>
 </tr>
-<tr class="even">
+<tr>
 <td>filesystem</td>
 <td><code class="verbatim">MyProgram</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>libfuse</td>
 <td>shared library. Makes writing <code
 class="verbatim">MyProgram</code> easy (or just possible)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>filesystem owner</td>
 <td>The Unix user running <code class="verbatim">MyProgram</code>, and
 later mounting it with <code class="verbatim">fusermount3</code></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>client</td>
 <td>A program that writes files, reads files, etc, from the virtual file
 system</td>

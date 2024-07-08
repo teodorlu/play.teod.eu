@@ -26,8 +26,8 @@
   [frl]
   (assert (symbol? frl))
   (let [frl-str (str frl)
-        full {"first" first "last" last "rest" rest "butlast" butlast}
-        short {\f first \l last \r rest \b butlast}
+        full {"butlast" butlast "first" first "last" last "rest" rest}
+        short {\b butlast \f first \l last \r rest}
         ending (cond (str/ends-with? frl-str "butlast") "butlast"
                      (str/ends-with? frl-str "first") "first"
                      (str/ends-with? frl-str "last") "last"

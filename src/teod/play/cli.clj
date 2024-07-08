@@ -12,7 +12,7 @@
 
 ;; relations example
 ;;
-;; page id -> page metadata
+;; page slug -> page metadata
 {"emacs" {:slug "emacs"
           :title "(Doom) Emacs learning journal"
           :form :rambling

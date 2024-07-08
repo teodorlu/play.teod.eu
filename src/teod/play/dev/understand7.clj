@@ -1,4 +1,4 @@
-(ns teod.play.understand7
+(ns teod.play.dev.understand7
   (:require
    [nextjournal.clerk]
    [nextjournal.clerk.viewer :as v]))

@@ -1,6 +1,6 @@
 ;; # Understanding remote references and authorship
 
-(ns teod.play.understand4
+(ns teod.play.dev.understand4
   (:require
    [datascript.core :as d]
    [nextjournal.clerk :as clerk]

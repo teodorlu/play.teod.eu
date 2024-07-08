@@ -1,4 +1,4 @@
-(ns teod.play.understand3
+(ns teod.play.dev.understand3
   (:require
    [datascript.core :as d]
    [nextjournal.clerk :as clerk]

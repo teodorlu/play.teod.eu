@@ -2,7 +2,7 @@
 ;;
 ;; Let's fix that.
 
-(ns teod.play.understand
+(ns teod.play.dev.understand
   {:nextjournal.clerk/toc true}
   (:require
    [teod.play.cli :as cli]

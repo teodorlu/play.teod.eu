@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 721f1533-5741-46d2-9b29-7166b7e630ef
 :END:
-#+TITLE: Mirroring emotions
+#+TITLE: mirroring emotions
 
 [[file:..][..]]
 

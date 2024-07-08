@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID: 721f1533-5741-46d2-9b29-7166b7e630ef
+:END:
+#+TITLE: Mirroring emotions
+
+[[file:..][..]]
+
+Back in 2012 or 2023 I got the following advice for job interviews:
+
+#+begin_quote
+Mirror the actions of the interviewer
+#+end_quote
+
+I found it super weird.
+Who does that?
+Is this a ... trick to manipulate those I'm talking to into thinking I'm ... something I'm not?
+Isn't that bad?
+
+I think there's a possible positive interpretation as well, one of charity and willingness.
+
+Am I willing to adapt to my environment?
+If yes, that's going to happen in part by mirroring actions.
+If I'm willing to copy some behavior, I'm willing to cooperate (to some extent).
+
+But what's the point of mirroring actions?
+Learning can be one.
+Children mirror behavior from others to learn, parents, other children, characters on screens.
+In some cases, mirroring is required to learn something, especially when learning practice.
+Theory makes sense, but you can't judge practice on whether it makes sense; good practice /works/.
+See [[id:c9bc1684-88b0-444b-9d45-2c9cef27d0c5][In theory, it makes sense; in practice, it works]] for a longer exploration.
+
+What about emotions?
+I think mirrored emotions are more interesting than mirrored actions.
+Actions are at the surface, emotions are below the surface.
+I think trust between two humans is correlated with mirrored emotions—though I don't have any evidence to back that up.
+
+Mirrored emotions interest me, because they speak to something beyond pure logic.
+You can't think yourself into a trust-based relationship with someone.
+Trust cannot be completely understood as something rational.
+There's more to it.

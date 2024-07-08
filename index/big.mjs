@@ -2097,6 +2097,16 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "71D39E8D-B345-4602-95E3-1F6DDDD986D4"
 }, {
+  "slug" : "mirroring-emotions",
+  "page/uuid" : "721f1533-5741-46d2-9b29-7166b7e630ef",
+  "created" : "2024-07-08",
+  "readiness" : "wtf-is-this",
+  "title" : "Mirroring emotions",
+  "lang" : "en",
+  "page/slug" : "mirroring-emotions",
+  "author-url" : "https://teod.eu",
+  "uuid" : "721f1533-5741-46d2-9b29-7166b7e630ef"
+}, {
   "slug" : "teodor-heggelund",
   "page/uuid" : "72328026-a75f-4c81-a434-a8fcba97b7bd",
   "created" : "",

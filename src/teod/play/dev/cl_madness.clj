@@ -67,3 +67,17 @@
              ((gen-frl 'last) l))))
 
 (comp ~@(map {\a first \d rest} "ad"))
+
+(def butfirst rest)
+
+(sort (butfirst '([10 pære] [3 eple] [4 banan] [2 nadia])))
+
+(->> '([10 pære] [3 eple] [4 banan] [2 nadia])
+     #_
+     (map (fn [[tall ting]]
+            [ting tall]))
+     (map (comp vec reverse))
+     sort)
+
+
+vec

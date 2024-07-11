@@ -48,8 +48,15 @@
        (map add-category)
        (sort-by :title)))
 
-(defn org-link [{:keys [name href]}]
-  (str "[[" href "][" name "]]"))
+(defn org-link
+  "Takes a map with :page/href and :page/name, returns an org-mode formatted link.
+
+  Supports unqualified keywords (:href and :name) for backwards compatibility."
+  [page]
+  (let [href (or (:page/href page) (:href page))
+        name (or (:page/title page) (:page/name page) (:name page))]
+    (when (and href name)
+      (str "[[" href "][" name "]]"))))
 
 (defn page-link
   "Link to a page on play.teod.eu"
@@ -120,23 +127,36 @@
                          (for [page (reverse (sort-by :created (filter (comp some? :created ) ready-for-comments)))]
                            (str "- " (page-link-with-date page)))))]
 
-     [(paragraphs "** Other people's idea playgrounds"
-                  (lines
-                   "Ideas are best shared!"
-                   "Some choose to share ideas in public."
-                   "I think that's good.")
+     [(paragraphs "** Other people's sites"
+                  (lines "Some people choose to share what they believe on the Internet."
+                         "I appreciate that!")
                   "In alphabetical order:")]
-     (for [{:keys [name href]}
-           (sort-by :name
-                    [; people I know, somewhat
-                     {:name "Sindre's Random Ramblings" :href "https://play.sindre.me/"}
-                     {:name "Kevin's WikiBlog" :href "https://kevin.stravers.net/"}
-                     {:name "blog.oddmundo.com" :href "https://blog.oddmundo.com/"}
-
+     (for [site
+           (sort-by #(or (:page/name %) (:name %))
+                    [; people I know to some extent
+                     {:page/name "Sindre's Random Ramblings"
+                      :page/href "https://play.sindre.me/"}
+                     {:page/name "Kevin's WikiBlog"
+                      :page/href "https://kevin.stravers.net/"
+                      :site/reference-article {:page/title "SimpleLinearLists"
+                                               :page/href "https://kevin.stravers.net/SimpleLinearLists"}}
+                     {:page/name "blog.oddmundo.com"
+                      :page/href "https://blog.oddmundo.com/"
+                      :site/reference-article {:page/title "test && commit || revert ; pending"
+                                               :page/href "https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html"}}
                      ; other people
-                     {}
+                     {:page/name "Marc's blog"
+                      :page/href "https://brooker.co.za/blog/"}
+                     {:page/name "Yossi Kreinin's blog archive"
+                      :page/href "https://yosefk.com/blog/"
+                      :site/reference-article {:page/title "Advantages of incompetent management"
+                                               :page/href "https://yosefk.com/blog/advantages-of-incompetent-management.html"}}
+                     {:page/name "danluu.com"
+                      :page/href "https://danluu.com"}
                      ])]
-       (str "- " (org-link {:name name :href href}) " (off-site link)"))
+       (str "- " (org-link site) " (off-site link)"
+            (when (:site/reference-article site)
+              (str ". " "Reference article: " (org-link (:site/reference-article site))))))
 
      (when (seq forever-incomplete)
        [(paragraphs "** Forever incomplete"

@@ -1425,3 +1425,20 @@ Why?
 1. There's a Pandoc bug where the TOC is wrong when I override an Org-mode element ID
 2. I want to learn CSS
 3. I want to fix table of contents visibility issues.
+* 2024-07-11
+** Multiple interfaces
+Per 2024-07-11, I have three ways of doing things on play.teod.eu:
+
+1. Via the Emacs interface
+2. Via the CLI
+3. Via the Clojure interface
+
+Multiple interfaces is nice, but subtle differences in the three interfaces is not so nice.
+Namely:
+
+1. I need to maintain different mental models about all three interfaces
+2. Differences between the three interfaces make it harder to get things done without introducing new problems
+
+Why?
+I feel a certain friction when I want to change things now.
+I lean on the fact that it "works" as it is now.

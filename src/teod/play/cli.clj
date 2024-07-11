@@ -8,7 +8,8 @@
    [clojure.pprint :refer [pprint]]
    [clojure.string :as str]
    [teod.play.api :as play]
-   [teod.play.pandoc-toolbox :as pandoc]))
+   [teod.play.pandoc-toolbox :as pandoc]
+   [tplay.index]))
 
 ;; relations example
 ;;
@@ -364,7 +365,9 @@ Allowed options:
          ";"))
 
 (defn cmd-reindex
-  "Create an index from page uuid to slug and title."
+  "Create an index from page uuid to slug and title.
+
+  Not to be confused with `cmd-index`, which produces an index.html file."
   [{:keys [opts]}]
   (let [{:keys [dry-run]} opts
         uuid-index (->> (files->relations {})
@@ -449,13 +452,22 @@ Usage:
           resolved (pandoc/filter-body-postwalk pandoc-json replace-link)]
       (println (json/generate-string resolved)))))
 
+(defn cmd-index
+  "Produces the index.html file for play.teod.eu"
+  [_opts+args]
+  (if (= (System/getenv "ALT")
+         "1")
+    (tplay.index/alt)
+    (tplay.index/main)))
+
 (def dispatch-table
   [{:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn cmd-filter :cmds-opts [:resolve-links]}
    {:cmds ["makefile"] :fn cmd-makefile}
    {:cmds ["random-page"] :fn cmd-random-page}
    {:cmds ["reindex"] :fn cmd-reindex}
-   {:cmds ["relations"] :fn cmd-relations}])
+   {:cmds ["relations"] :fn cmd-relations}
+   {:cmds ["index"] :fn cmd-index}])
 
 (defn print-subcommands [{}]
   (println "usage: ./play.clj COMMAND")

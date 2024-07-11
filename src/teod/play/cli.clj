@@ -568,4 +568,50 @@ Usage:
              map])
   ;; => (true true true true true true true true true)
 
+  (get-in {:name "Oddmund"} [:name])
+  ;; => "Oddmund"
+
+  ;; :((( - det hadde vært gøy om dette gikk.
+  (get-in {:name "Oddmund"} [(fn [_] "LOL")])
+  ;; => nil
+
+  ;; MEN vi kan bruke threading i stedet.
+
+  (let [myfn (fn [_] "LOL")]
+    (-> {:name "Oddmund"} myfn))
+  ;; => "LOL"
+
+  (-> {:name "Oddmund"} :name str/upper-case)
+  ;; => "ODDMUND"
+
+  (macroexpand '(-> {:name "Oddmund"} :name str/upper-case))
+  ;; => (str/upper-case (:name {:name "Oddmund"}))
+
+  ;; gangetabell
+  (->> (range 10)
+       (mapcat (fn [a] (map (fn [b] [a b]) (range 10))))
+       (map (fn [[a b]]
+              (list '* a b '=> (* a b))))
+       ;; gir 100 uttrykk, henter ut fire for å holde det kort
+       ;; men fire tilfeldige
+       shuffle
+       (take 4)
+       )
+  ;; => ((* 9 6 => 54) (* 4 4 => 16) (* 8 4 => 32) (* 6 1 => 6))
+
+  (->> (for [a (range 10)
+             b (range 10)]
+         (list '* a b '=> (* a b)))
+       shuffle
+       (take 4))
+  ;; => ((* 6 1 => 6) (* 4 2 => 8) (* 9 2 => 18) (* 5 8 => 40))
+
+  (->> (range 10)
+       (mapcat #(vector %1 %2) (range 10)))
+
+  (-> {:name "Oddmund" :strength "strong"} vals)
+  ;; => ("Oddmund" "strong")
+
+
+
   :rcf)

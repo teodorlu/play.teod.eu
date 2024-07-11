@@ -507,6 +507,8 @@ Usage:
 
 (comment
   ;; chat med oddmund
+  ;;
+  ;; kan sikkert slettes.
 
   (defrecord Person [name age])
 

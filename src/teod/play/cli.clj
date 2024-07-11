@@ -308,11 +308,11 @@ Allowed options:
 
                   "# Generate target for root index"
                   ;; TODO root index also depends on all the play.edn files found
-                  (str/join " " (concat ["index.html:" "index.clj"]
+                  (str/join " " (concat ["index.html:"]
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))
-                  "\t./index.clj"
+                  "\t./play.clj index"
                   ""
                   ""
 
@@ -504,3 +504,32 @@ Usage:
  ;; How to run:
  ;;
  ;;   ./play.clj relations :from :files :to :lines
+
+(comment
+  ;; chat med oddmund
+
+  (defrecord Person [name age])
+
+  (into {} (Person. "john" 27))
+  ;; => {:name "john", :age 27}
+
+  (:name (Person. "john" 27))
+  ;; => "john"
+
+  (.name (Person. "john" 27))
+  ;; => "john"
+
+  (update-in (Person. "john" 27)
+             [:age]
+             inc)
+  ;; => {:name "john", :age 28}
+
+  (update (Person. "john" 27) :age inc)
+  ;; => {:name "john", :age 28}
+
+  assoc-in get-in update-in
+
+  ((juxt identity inc) 27)
+  ;; => [27 28]
+
+  :rcf)

@@ -532,4 +532,42 @@ Usage:
   ((juxt identity inc) 27)
   ;; => [27 28]
 
+
+  (get-in {:age 27}
+          [#(:age %)])
+  ;; => nil
+
+  (get-in {:age 27}
+          [:age])
+  ;; => 27
+
+  (:age {:age 27})
+  ;; => 27
+
+  (map :age [{:age 27} {:age 28}])
+  ;; => (27 28)
+
+
+  ;; DET ER MANGE TING SOM ER FUNKSJONER!
+
+  (ifn? #(+ %))
+  ;; => true
+
+  ;; Siden `ifn?` er en funksjon, kan vi sjekke med `map`.
+
+  (map ifn? [:name ; nøkkelord er funksjoner
+             {:name "Oddmund"} ; maps er funksjoner
+             #{:name :age} ; sets er funksjoner
+             ["Oddmund" "Teodor"] ; vektorer er funksjoner
+             ; ... og funksjoner er funksjoner.
+             #(+ % 1)
+             inc
+             #(map inc %)
+             (fn [x] (* 10 x))
+             map])
+  ;; => (true true true true true true true true true)
+
+
+
+
   :rcf)

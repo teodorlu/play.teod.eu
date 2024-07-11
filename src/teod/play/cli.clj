@@ -534,7 +534,6 @@ Usage:
   ((juxt identity inc) 27)
   ;; => [27 28]
 
-
   (get-in {:age 27}
           [#(:age %)])
   ;; => nil
@@ -568,8 +567,5 @@ Usage:
              (fn [x] (* 10 x))
              map])
   ;; => (true true true true true true true true true)
-
-
-
 
   :rcf)

@@ -10,7 +10,7 @@
    [clojure.pprint :refer [pprint]]
    [clojure.repl]
    [clojure.string :as str]
-   [teod.play.api :as play]
+   [tplay.api :as play]
    [teod.play.pandoc-toolbox :as pandoc]
    [tplay.index]))
 

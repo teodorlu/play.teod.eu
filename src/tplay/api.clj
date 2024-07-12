@@ -1,4 +1,4 @@
-(ns teod.play.api
+(ns tplay.api
   (:require
    [babashka.fs :as fs]
    [babashka.process :refer [shell]]

@@ -1,7 +1,7 @@
 (ns teod.play.cli-test
   (:require
    [clojure.test :refer [deftest is]]
-   [teod.play.cli :as play.cli]))
+   [tplay.cli :as play.cli]))
 
 (deftest words-test
   (is (= "i am the walrus"

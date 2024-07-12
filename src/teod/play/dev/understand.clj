@@ -5,7 +5,7 @@
 (ns teod.play.dev.understand
   {:nextjournal.clerk/toc true}
   (:require
-   [teod.play.cli :as cli]
+   [tplay.cli :as cli]
    [eu.teod.clerk-utils :as hammertime]
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.viewer :as v]

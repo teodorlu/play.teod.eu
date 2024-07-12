@@ -3,7 +3,7 @@
    [datascript.core :as d]
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.viewer :as v]
-   [teod.play.cli :as cli]))
+   [tplay.cli :as cli]))
 
 (defn big-table [x]
   (v/with-viewer (dissoc v/table-viewer :page-size)

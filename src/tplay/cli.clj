@@ -1,9 +1,10 @@
-(ns teod.play.cli
+(ns tplay.cli
   (:require
    [babashka.cli :as cli]
    [babashka.fs :as fs]
    [cheshire.core :as json]
    [clojure.edn :as edn]
+   [clojure.java.classpath]
    [clojure.java.io :as io]
    [clojure.java.shell]
    [clojure.pprint :refer [pprint]]
@@ -11,8 +12,7 @@
    [clojure.string :as str]
    [teod.play.api :as play]
    [teod.play.pandoc-toolbox :as pandoc]
-   [tplay.index]
-   [clojure.java.classpath]))
+   [tplay.index]))
 
 (defn infer-ns-file
   "Try to find a Clojure file for a namespace (as symbol)

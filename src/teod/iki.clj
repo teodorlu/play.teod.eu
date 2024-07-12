@@ -1,7 +1,7 @@
 (ns teod.iki
   (:require
    [datascript.core :as d]
-   [teod.play.cli :as cli]))
+   [tplay.cli :as cli]))
 
 (def datascript-schema
   {:page/slug {:db/unique :db.unique/identity}

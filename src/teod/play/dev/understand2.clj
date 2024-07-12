@@ -2,7 +2,7 @@
   (:require
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.viewer :as v]
-   [teod.play.cli :as cli]
+   [tplay.cli :as cli]
    [datascript.core :as d]))
 
 (set! *print-namespace-maps* false)

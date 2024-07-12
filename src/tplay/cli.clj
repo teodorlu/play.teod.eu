@@ -11,7 +11,7 @@
    [clojure.repl]
    [clojure.string :as str]
    [tplay.api :as play]
-   [teod.play.pandoc-toolbox :as pandoc]
+   [tplay.pandoc-toolbox :as pandoc]
    [tplay.index]))
 
 (defn infer-ns-file

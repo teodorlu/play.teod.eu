@@ -1,4 +1,4 @@
-(ns teod.play.pandoc-toolbox
+(ns tplay.pandoc-toolbox
   (:require [clojure.walk]))
 
 ;; teod/pandoc-toolbox lets you work with Pandoc JSON as plain Clojure data.

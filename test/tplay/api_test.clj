@@ -1,4 +1,4 @@
-(ns teod.play.api-test
+(ns tplay.api-test
   (:require
    [clojure.test :refer [deftest is]]
    [tplay.api :as play]))

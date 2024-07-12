@@ -1,11 +1,11 @@
-(ns tplay.index)
-
-(require '[clojure.string :as str]
-         '[babashka.process :as p]
-         '[babashka.fs :as fs]
-         '[clojure.java.shell :refer [sh]]
-         '[clojure.pprint :refer [pprint]]
-         '[clojure.edn :as edn])
+(ns tplay.index
+  (:require
+   [clojure.string :as str]
+   [babashka.process :as p]
+   [babashka.fs :as fs]
+   [clojure.java.shell :refer [sh]]
+   [clojure.pprint :refer [pprint]]
+   [clojure.edn :as edn]))
 
 (defn bash [cmd]
   (-> (sh "bash" "-c" cmd)

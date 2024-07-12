@@ -4,12 +4,29 @@
    [babashka.fs :as fs]
    [cheshire.core :as json]
    [clojure.edn :as edn]
+   [clojure.java.io :as io]
    [clojure.java.shell]
    [clojure.pprint :refer [pprint]]
+   [clojure.repl]
    [clojure.string :as str]
    [teod.play.api :as play]
    [teod.play.pandoc-toolbox :as pandoc]
-   [tplay.index]))
+   [tplay.index]
+   [clojure.java.classpath]))
+
+(defn infer-ns-file
+  "Try to find a Clojure file for a namespace (as symbol)
+
+  (infer-ns-file 'tplay.index)
+  ;; => \"src/tplay/index.clj\""
+  [ns-sym]
+  (let [guessed-path-on-classpath (str (-> ns-sym str (.. (replace \- \_) (replace \. \/))) ".clj")
+        guessed-file (io/resource guessed-path-on-classpath)]
+    (when (and (fs/exists? guessed-file)
+               (fs/regular-file? guessed-file))
+      (str (fs/relativize (fs/absolutize ".") guessed-file)))))
+
+#_(infer-ns-file 'tplay.index)
 
 ;; relations example
 ;;
@@ -41,7 +58,7 @@
   (->> (pages)
        (pmap (fn [page]
                (-> page
-                   (merge page (edn/read-string (slurp (str (:slug page) "/play.edn"))))
+                   (merge (edn/read-string (slurp (str (:slug page) "/play.edn"))))
                    conform-relation)))
        (map (juxt :slug identity))
        (into {})))
@@ -309,6 +326,8 @@ Allowed options:
                   "# Generate target for root index"
                   ;; TODO root index also depends on all the play.edn files found
                   (str/join " " (concat ["index.html:"]
+                                        (let [index-builder-file (infer-ns-file 'tplay.index)]
+                                          (when index-builder-file [index-builder-file]))
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))

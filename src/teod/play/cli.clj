@@ -20,11 +20,12 @@
   (infer-ns-file 'tplay.index)
   ;; => \"src/tplay/index.clj\""
   [ns-sym]
-  (let [guessed-path-on-classpath (str (-> ns-sym str (.. (replace \- \_) (replace \. \/))) ".clj")
-        guessed-file (io/resource guessed-path-on-classpath)]
-    (when (and (fs/exists? guessed-file)
-               (fs/regular-file? guessed-file))
-      (str (fs/relativize (fs/absolutize ".") guessed-file)))))
+  (when-let [f (->> [".clj" ".cljc"]
+                    (map #(str (-> ns-sym str (.. (replace \- \_) (replace \. \/))) %))
+                    (map io/resource)
+                    (filter #(and (fs/exists? %) (fs/regular-file? %)))
+                    first)]
+    (str (fs/relativize (fs/absolutize ".") f))))
 
 #_(infer-ns-file 'tplay.index)
 

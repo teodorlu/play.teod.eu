@@ -374,9 +374,6 @@
 
 ^{:nextjournal.clerk/visibility {:result :hide :code :hide}}
 (comment
-  (clerk/build! {:paths ["src/easy_parallellism_with_pipeline_blocking.clj"]
-                 :out-path "."})
-
+  (clerk/build! {:paths [(fs/file-name *file*)] :out-path "."})
   (clerk/clear-cache!)
-
   :rcf)

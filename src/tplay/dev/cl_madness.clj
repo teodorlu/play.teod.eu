@@ -1,4 +1,4 @@
-(ns teod.play.dev.cl-madness
+(ns tplay.dev.cl-madness
   (:require
     [clojure.string :as str]))
 

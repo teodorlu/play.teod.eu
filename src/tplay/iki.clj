@@ -1,4 +1,4 @@
-(ns teod.iki
+(ns tplay.iki
   (:require
    [datascript.core :as d]
    [tplay.cli :as cli]))

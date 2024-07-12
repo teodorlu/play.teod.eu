@@ -2,7 +2,7 @@
   (:require
    [clojure.string :as str]
    [datascript.core :as d]
-   [teod.iki :as iki]))
+   [tplay.iki :as iki]))
 
 (def db (iki/datascript-db))
 

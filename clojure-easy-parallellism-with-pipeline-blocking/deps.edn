@@ -1,4 +1,4 @@
-{:paths ["src"]
+{:paths ["."]
  :deps {babashka/fs {:mvn/version "0.5.21"}
         io.github.nextjournal/clerk {:mvn/version "0.16.1016"}
         org.clojure/core.async {:mvn/version "1.6.681"}}}

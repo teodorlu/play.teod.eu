@@ -375,10 +375,9 @@
 
 ^{:nextjournal.clerk/visibility {:result :hide :code :hide}}
 (comment
-  ;; Alternative deployment via Teodor's personal website
-  (clerk/build! {:paths ["easy_parallellism_with_pipeline_blocking.clj"]
+  (clerk/build! {:paths ["src/easy_parallellism_with_pipeline_blocking.clj"]
                  :out-path "."})
 
-  :rcf)
+  (clerk/clear-cache!)
 
-#_(clerk/clear-cache!)
+  :rcf)

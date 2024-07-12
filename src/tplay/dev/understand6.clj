@@ -1,4 +1,4 @@
-(ns teod.play.dev.understand6
+(ns tplay.dev.understand6
   (:require
    [clojure.string :as str]
    [datascript.core :as d]

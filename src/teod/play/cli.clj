@@ -18,7 +18,11 @@
   "Try to find a Clojure file for a namespace (as symbol)
 
   (infer-ns-file 'tplay.index)
-  ;; => \"src/tplay/index.clj\""
+  ;; => \"src/tplay/index.clj\"
+
+  For namespaces that can't be matched to files, nil is returned. This happens
+  when the source is inside a .jar file, or when a file providing the namespace
+  cannot be found."
   [ns-sym]
   (when-let [f (->> [".clj" ".cljc"]
                     (map #(str (-> ns-sym str (.. (replace \- \_) (replace \. \/))) %))

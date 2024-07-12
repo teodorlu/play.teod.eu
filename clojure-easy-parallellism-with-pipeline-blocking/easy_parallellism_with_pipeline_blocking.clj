@@ -5,8 +5,7 @@
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (do
   (require 'nextjournal.clerk)
-  (nextjournal.clerk/html [:a {:data-ignore-anchor-click true
-                               :href ".."} ".."]))
+  (nextjournal.clerk/html [:a {:data-ignore-anchor-click true :href ".."} ".."]))
 
 ;; # Easy, explicit parallellism with `pipeline-blocking`
 ;;

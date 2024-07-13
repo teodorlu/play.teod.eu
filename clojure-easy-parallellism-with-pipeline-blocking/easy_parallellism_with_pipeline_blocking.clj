@@ -7,6 +7,7 @@
 (do
   (require 'nextjournal.clerk)
   (nextjournal.clerk/html [:a {:data-ignore-anchor-click true :href ".."} ".."]))
+
 ;; # Easy, explicit parallellism with `pipeline-blocking`
 ;;
 ;; If you want a `map` to go faster, you could use `pmap`.
@@ -173,57 +174,6 @@
 ;; indicates that core.async parallelism is derived from the number of processors on the system:
 
 (+ 2 (.. Runtime getRuntime availableProcessors))
-
-;; ## Transducers: a quick detour
-
-;; To understand `clojure.core.async/pipeline-blocking`, you'll need a basic understanding of transducers.
-
-;; Clojure makes it neat to thread code operating on sequences.
-
-(time
-  (->> (range 1000000)
-       (map (partial * 101))
-       (filter odd?)
-       count))
-;; => {:value 500000, :duration-ms 38}
-
-(time
-  (count (into []
-               (comp (map (partial * 101))
-                     (filter odd?))
-               (range 1000000))))
-;; => {:value 500000, :duration-ms 37}
-
-(time
-  (transduce (comp (map (partial * 101))
-                   (filter odd?))
-             (fn [current-count & args]
-               (+ current-count (count args)))
-             0
-             (range 1000000)))
-;; => {:value 500000, :duration-ms 33}
-
-(time
-  (transduce (map (partial * 101))
-             (fn [current-count & args]
-               (+ current-count (count (filter odd? args))))
-             0
-             (range 1000000)))
-;; => {:value 500000, :duration-ms 164}
-
-(defn odd-counting-reducer-fn
-  ([current-count] current-count)
-  ([current-count extra]
-   (if (odd? extra)
-     (inc current-count)
-     current-count)))
-
-(time
-  (transduce (map (partial * 101))
-             odd-counting-reducer-fn
-             0
-             (range 1000000)))
-;; => {:value 500000, :duration-ms 27}
 
 ;; ## User-controlled parallellism with `clojure.core.async/pipeline-blocking`
 

@@ -1,6 +1,7 @@
 ^{:nextjournal.clerk/visibility {:code :hide :result :hide}}
 (ns easy-parallellism-with-pipeline-blocking
-  {:nextjournal.clerk/toc true})
+  {:nextjournal.clerk/toc :collapsed}
+  (:refer-clojure :exclude [time]))
 
 ^{:nextjournal.clerk/visibility {:code :hide}}
 (do

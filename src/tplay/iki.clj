@@ -1,6 +1,5 @@
 (ns tplay.iki
   (:require
-   [babashka.fs :as fs]
    [datascript.core :as d]
    [tplay.cli :as cli]))
 

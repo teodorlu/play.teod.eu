@@ -22,8 +22,7 @@
 (defn pages-raw []
   (->> (bash "ls **/index.html | grep -v '^index.html$' | sort | sed 's|/index.html||g'")
        (str/split-lines)
-       (map (fn [id]
-              {:id id}))))
+       (map (fn [id] {:id id}))))
 
 (defn category [{:keys [lang readiness form] :as page}]
   (cond

@@ -60,8 +60,21 @@
   [{:keys [id title] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
 
-(defn org-img [image-path]
-  (str "[[file:" image-path "]]"))
+(defn lines [& lines]
+  (str/join "\n" (filter some? lines)))
+
+#_ (lines "a" "b" nil "" "" "c")
+
+(defn org-img
+  ([image-file]
+   (org-img image-file {}))
+  ([image-file {:keys [caption name]}]
+   (assert image-file)
+   (lines (when caption (str "#+CAPTION: " caption))
+          (when name (str "#+NAME: " name))
+          (str "[[file:" image-file "]]"))))
+
+#_(org-img "./map.webp")
 
 (defn page-link-with-date [{:keys [created published] :as page}]
   (let [date-str (when-let [date (or published created)]

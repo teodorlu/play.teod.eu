@@ -120,7 +120,7 @@
                   (sentences "Intent: bring ideas to life."
                              "Discuss, sharpen, play."
                              "Minimize the distance between intent and reality.")
-                  (sentences "Process: Aim intent towards curiosity --- explore --- refactor towards orthogonality."
+                  (sentences "Process: Aim intent towards curiosity---explore---refactor towards orthogonality."
                              "Embrace remix culture."
                              "Legibility is a partially provided affordance, not a design constraint.")
                   (sentences "Status: work in progress, plenty of rough edges."

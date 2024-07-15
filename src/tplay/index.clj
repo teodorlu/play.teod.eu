@@ -60,12 +60,15 @@
   [{:keys [id title] :as _page}]
   (str "[[file:./" id "/][" (or title id) "]]"))
 
+(defn org-img [image-path]
+  (str "[[file:" image-path "]]"))
+
 (defn page-link-with-date [{:keys [created published] :as page}]
   (let [date-str (when-let [date (or published created)]
                    (str " (" date ")"))]
     (str (page-link page) (or date-str ""))))
 
-(defn org-markup [{:keys [pages]}]
+(defn index-org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian
                 wtf-is-this wtf-is-this-norwegian
                 other forever-incomplete
@@ -92,6 +95,12 @@
 
                   (lines "#+BEGIN_VERSE"
                          ""
+                         ""
+                         "#+END_VERSE")
+
+                  (org-img "./map.webp")
+
+                  (lines "#+BEGIN_VERSE"
                          ""
                          "#+END_VERSE")
 
@@ -262,4 +271,4 @@ I include this list as a personal reminder.
 (defn main []
   (spit "index.html" (slurp (:out
                              @(p/process '[pandoc --from org+smart -H header-default-include.html --to html --standalone]
-                                         {:in (org-markup {:pages (pages)})})))))
+                                         {:in (index-org-markup {:pages (pages)})})))))

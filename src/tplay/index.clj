@@ -7,8 +7,7 @@
    [clojure.edn :as edn]))
 
 (defn bash [cmd]
-  (-> (sh "bash" "-c" cmd)
-      :out))
+  (-> (sh "bash" "-c" cmd) :out))
 
 (defn lookup-meta [{:keys [id] :as page}]
   (if (fs/exists? (str id "/play.edn"))

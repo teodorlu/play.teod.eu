@@ -1,5 +1,6 @@
 (ns tplay.iki
   (:require
+   [babashka.fs :as fs]
    [datascript.core :as d]
    [tplay.cli :as cli]))
 
@@ -16,3 +17,15 @@
         conn (d/create-conn datascript-schema)]
     (d/transact! conn rels)
     @conn))
+
+(comment
+  (def initial [4000 3000])
+  (def factor (/ 576 (first initial)))
+
+  (map (partial * factor) initial)
+  ;; => (576N 432N)
+
+  (map (partial * 2 factor) initial)
+  ;; => (1152N 864N)
+
+  :rcf)

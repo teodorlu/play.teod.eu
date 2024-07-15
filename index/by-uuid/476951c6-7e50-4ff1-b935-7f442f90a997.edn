@@ -1,0 +1,10 @@
+{:slug "nadia",
+ :page/uuid "476951c6-7e50-4ff1-b935-7f442f90a997",
+ :created "2024-07-15",
+ :readiness :wtf-is-this,
+ :title "Nadia",
+ :lang :en,
+ :page/slug "nadia",
+ :author-url "https://teod.eu",
+ :form :remote-reference,
+ :uuid "476951c6-7e50-4ff1-b935-7f442f90a997"}

@@ -1,8 +1,8 @@
-*.org
+/*.org
     Content-Type: text/plain; charset=utf-8
-*.clj
+/*.clj
     Content-Type: text/plain; charset=utf-8
-*.edn
+/*.edn
     Content-Type: text/plain; charset=utf-8
 
 /*

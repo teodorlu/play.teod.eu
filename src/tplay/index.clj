@@ -4,7 +4,6 @@
    [babashka.process :as p]
    [babashka.fs :as fs]
    [clojure.java.shell :refer [sh]]
-   [clojure.pprint :refer [pprint]]
    [clojure.edn :as edn]))
 
 (defn bash [cmd]
@@ -250,15 +249,6 @@ I include this list as a personal reminder.
                          (apply str (repeat blank-lines "\n"))
                          "#+END_VERSE" "\n")))])))
 
-;; For development:
-;;
-;;   export ALT=1
-;;   watchexec -c -- ./index.clj
-;;
-;; For prod:
-;;
-;;   ./index.clj
-
 (defn alt
   "Feel free to change this to whatever during dev.
 
@@ -267,29 +257,11 @@ I include this list as a personal reminder.
   (let [r (->> (pages)
                (filter (fn [page]
                          (= (:form page) :remote-reference)))
-               #_
-               (map :form)
-               (take 5)
-               #_
-               (group-by :category)
-               #_
-               (keys))]
+               (take 5))]
     (doseq [rr r]
-      (prn rr))
-    #_
-    (pprint r))
-
-  #_#_
-  (println (org-markup {:pages (pages)}))
-  (prn (System/getenv "ALT")))
+      (prn rr))))
 
 (defn main []
   (spit "index.html" (slurp (:out
                              @(p/process '[pandoc --from org+smart -H header-default-include.html --to html --standalone]
                                          {:in (org-markup {:pages (pages)})})))))
-
-#_
-(if (= (System/getenv "ALT")
-       "1")
-  (alt)
-  (main))

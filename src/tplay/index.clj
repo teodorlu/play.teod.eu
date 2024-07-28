@@ -95,7 +95,7 @@
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
 
     (lines2
-     [(paragraphs "#+title: Towards an iterated game"
+     [(paragraphs "#+title: Towards an iterated game 🩵"
 
                   (lines "#+BEGIN_EXPORT html"
                          (str "<button "

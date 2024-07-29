@@ -5,7 +5,8 @@
    [babashka.fs :as fs]
    [clojure.java.shell :refer [sh]]
    [clojure.edn :as edn]
-   [hiccup2.core :as hiccup]))
+   [hiccup2.core :as hiccup]
+   [tplay.go :as go]))
 
 (defn bash [cmd]
   (-> (sh "bash" "-c" cmd) :out))
@@ -122,19 +123,43 @@
                   #_
                   (org-img "./map.webp")
 
-                  "I'm currently exploring some design options, feel free to skip them."
+                  (paragraphs
+                   "I'm currently exploring some design options, feel free to skip them."
+                   (org-export "html"
+                               (hiccup/html
+                                   [:div {:style {}}
+                                    (go/principles-component go/theme-other-brighter
+                                                             {:section-style/overrides go/section-style-left-adjust
+                                                              :container-style/overrides {:padding "2rem"}})]))
+                   (org-export "html"
+                               (hiccup/html
+                                   [:div {:style {}}
+                                    (go/principles-component go/theme-main
+                                                             {:section-style/overrides go/section-style-left-adjust
+                                                              :container-style/overrides {:padding "2rem"}})]))
+                   (org-export "html"
+                               (hiccup/html
+                                   [:div {:style {}}
+                                    (go/principles-component go/theme-bw
+                                                             {:section-style/overrides go/section-style-left-adjust
+                                                              :container-style/overrides {:padding "2rem"}})]))
+                   "Design experiment over. We resume our regularly scheduled on-the-web rambling.")
 
-                  (let [base "https://go.teod.eu"
-                        suffixes ["" "/other4" "/other6"]]
-                    (apply paragraphs
-                           (map (fn [suf]
-                                  (org-export "html"
-                                              (hiccup/html [:iframe {:width "100%" :src (str base suf)
-                                                                     :style {:border 0
-                                                                             :height "22rem"}}])))
-                                suffixes)))
+                  #_
+                  (paragraphs
+                   "I'm currently exploring some design options, feel free to skip them."
 
-                  "Design experiment over. We resume our regularly scheduled on-the-web rambling."
+                   (let [base "https://go.teod.eu"
+                         suffixes ["" "/other4" "/other6"]]
+                     (apply paragraphs
+                            (map (fn [suf]
+                                   (org-export "html"
+                                               (hiccup/html [:iframe {:width "100%" :src (str base suf)
+                                                                      :style {:border 0
+                                                                              :height "22rem"}}])))
+                                 suffixes)))
+
+                   "Design experiment over. We resume our regularly scheduled on-the-web rambling.")
 
                   (lines "#+BEGIN_VERSE"
                          ""

@@ -331,8 +331,12 @@ Allowed options:
                   "# Generate target for root index"
                   ;; TODO root index also depends on all the play.edn files found
                   (str/join " " (concat ["index.html:"]
-                                        (let [index-builder-file (infer-ns-file 'tplay.index)]
-                                          (when index-builder-file [index-builder-file]))
+                                        ;; tplay.index and tplay.go are (per 2024-07-29) hardcoded makefile deps.
+                                        ;; They may get out of sync!
+                                        (when-let [index-builder-file (infer-ns-file 'tplay.index)]
+                                          [index-builder-file])
+                                        (when-let [index-builder-file (infer-ns-file 'tplay.go)]
+                                          [index-builder-file])
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))

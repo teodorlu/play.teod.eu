@@ -13,7 +13,8 @@
 ;; If you want a `map` to go faster, you could use `pmap`.
 ;; But what if you need more control than `pmap` can give you?
 ;; What if your problem is memory constrained?
-;; Read on to discover your options!
+;;
+;; `clojure.core.async/pipeline-blocking` may be what you need.
 
 ^{:nextjournal.clerk/visibility {:result :hide}}
 (do
@@ -24,7 +25,8 @@
    '[babashka.fs :as fs]))
 
 ;; `pipeline-blocking` is from `clojure.core.async`.
-;; And we're going to make our own way to time our code.
+;; We're going to make our own function to time our code, so we don't want `clojure.core/time`.
+;; `babashka.fs` is a pure convenience, and can be ignored when reading this text.
 
 ;; ## A slow operation and a timer
 ;;

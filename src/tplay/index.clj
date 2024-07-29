@@ -4,7 +4,8 @@
    [babashka.process :as p]
    [babashka.fs :as fs]
    [clojure.java.shell :refer [sh]]
-   [clojure.edn :as edn]))
+   [clojure.edn :as edn]
+   [hiccup2.core :as hiccup]))
 
 (defn bash [cmd]
   (-> (sh "bash" "-c" cmd) :out))
@@ -81,6 +82,13 @@
                    (str " (" date ")"))]
     (str (page-link page) (or date-str ""))))
 
+(defn org-export [tag body]
+  (str/join "\n" [(str "#+BEGIN_EXPORT " tag)
+                  body
+                  "#+END_EXPORT "]))
+
+#_ (println (org-export "html" (hiccup/html [:pre "Hellooo"])))
+
 (defn index-org-markup [{:keys [pages]}]
   (let [{:keys [ready-for-comments norwegian
                 wtf-is-this wtf-is-this-norwegian
@@ -111,7 +119,22 @@
                          ""
                          "#+END_VERSE")
 
+                  #_
                   (org-img "./map.webp")
+
+                  "I'm currently exploring some design options, feel free to skip them."
+
+                  (let [base "https://go.teod.eu"
+                        suffixes ["" "/other4" "/other6"]]
+                    (apply paragraphs
+                           (map (fn [suf]
+                                  (org-export "html"
+                                              (hiccup/html [:iframe {:width "100%" :src (str base suf)
+                                                                     :style {:border 0
+                                                                             :height "22rem"}}])))
+                                suffixes)))
+
+                  "Design experiment over. We resume our regularly scheduled on-the-web rambling."
 
                   (lines "#+BEGIN_VERSE"
                          ""
@@ -152,7 +175,7 @@
                   "In alphabetical order:")]
      (for [site
            (sort-by #(or (:page/name %) (:name %))
-                    [; people I know to some extent
+                    [                   ; people I know to some extent
                      {:page/name "Sindre's Random Ramblings"
                       :page/href "https://play.sindre.me/"}
                      {:page/name "Kevin's WikiBlog"
@@ -163,7 +186,7 @@
                       :page/href "https://blog.oddmundo.com/"
                       :site/reference-article {:page/title "test && commit || revert ; pending"
                                                :page/href "https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html"}}
-                     ; other people
+                                        ; other people
                      {:page/name "Marc's blog"
                       :page/href "https://brooker.co.za/blog/"}
                      {:page/name "Yossi Kreinin's blog archive"

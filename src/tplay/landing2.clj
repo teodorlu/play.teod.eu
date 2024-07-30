@@ -2,12 +2,12 @@
   (:require
    [clojure.string :as str]
    [hiccup2.core :as hiccup]
-   [babashka.fs :as fs]))
+   [babashka.fs :as fs]
+   [tplay.landing2-assets :as assets]))
 
 ;; Goal: try replacing the *content* on the landing page with hand-written hiccup and inline styles.
 
-;; Perhaps add a bit of color.
-
+;; A tint of color.
 
 (def bright-green "hsl(124, 100%, 88%)")
 (def brighter-green "hsl(122.67 89% 94%)")
@@ -15,7 +15,6 @@
 (def greyish "hsl(108, 5%, 40%);")
 (def bright-blue "rgb(109 219 253)")
 (def dark-blue "rgb(0, 91, 119)")
-(def crimson "hsl(19, 100%, 44%)")
 
 (defn valid-theme? [theme]
   (every? #(contains? theme %)
@@ -49,6 +48,7 @@
   {:text-indent "3em hanging"})
 
 (defn principles-component
+  "Display some principles worthy of being top front."
   ([theme]
    (principles-component theme {}))
   ([theme opts]
@@ -80,23 +80,26 @@
               (str/upper-case principle-core)]
         " " principle-extras])]]))
 
-(defn principles-page
-  ([title theme]
-   (principles-page title theme {}))
-  ([title theme opts]
+(defn pandoc-component [])
+
+(defn page
+  ([theme]
+   (page theme {}))
+  ([theme opts]
    (assert (valid-theme? theme))
    [:html {:lang "en"
            :style {:height "100%"}}
     [:head
-     [:title title]
+     [:title "landing 🌊"]
      [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
-     [:meta {:charset "utf-8"}]]
+     [:meta {:charset "utf-8"}]
+     assets/favicon-link
+     assets/pandoc-css-link]
     [:body {:style {:width "100%"
                     :height "100%"
                     :margin 0}}
      (principles-component theme opts)
-     [:p [:strong "Towards an iterated game!"]]
-     ]]))
+     [:p [:strong "Towards an iterated game!"]]]]))
 
 ;; Setup from automatically building the HTML file when this file (buffer) is
 ;; evaluated. Set !autobuild to true, then evaluate buffer.
@@ -110,8 +113,7 @@
   (fs/create-dirs "landing2")
   (spit "landing2/index.html"
         (hiccup/html (hiccup/raw "<!DOCTYPE html>")
-          (principles-page "landing 2 🧟"
-                           theme-other-brighter)))
+          (page theme-other-brighter)))
   ::build-complete)
 
 (when @!autobuild

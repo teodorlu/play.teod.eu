@@ -115,10 +115,8 @@
                               "</button>")
                          "#+END_EXPORT")
 
-                  (lines "#+BEGIN_VERSE"
-                         ""
-                         ""
-                         "#+END_VERSE")
+                  (org-export "html"
+                              (hiccup/html [:div {:style {:height "2rem"}}]))
 
                   (org-export "html"
                               (hiccup/html
@@ -126,10 +124,6 @@
                                    (go/principles-component go/theme-other-brighter
                                                             {:section-style/overrides go/section-style-left-adjust
                                                              :container-style/overrides {:padding "2rem"}})]))
-
-                  (lines "#+BEGIN_VERSE"
-                         ""
-                         "#+END_VERSE")
 
                   (sentences "Intent: bring ideas to life."
                              "Discuss, sharpen, play."
@@ -141,10 +135,7 @@
                              "But you're /very/ much welcome to have a look around!")
                   (str "Most content on this site is authored by Teodor Heggelund"
                        " (" (org-link {:href "https://teod.eu" :name "https://teod.eu"}) ")"
-                       ".")
-
-                  #_:newline
-                  #_"he's not using 100 % paredit!!! :o")]
+                       "."))]
      [""]
 
      [(paragraphs "** Content that's ready for the eyes of others"

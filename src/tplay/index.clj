@@ -107,12 +107,12 @@
      [(paragraphs "#+title: Towards an iterated game 🩵"
 
                   (org-export "html"
-                              (str "<button "
-                                   (words "is=\"iki-goto-random-page\""
-                                          "style=\"display:block; margin: 0px auto; font-size: 16px; \"")
-                                   ">"
-                                   "Go to random page"
-                                   "</button>"))
+                              (hiccup/html [:button
+                                            {:is "iki-goto-random-page"
+                                             :style {:display :block
+                                                     :margin "0px auto"
+                                                     :font-size "16px"}}
+                                            "Go to random page"]))
 
                   (org-export "html"
                               (hiccup/html [:div {:style {:height "2rem"}}]))

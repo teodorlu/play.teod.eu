@@ -80,7 +80,61 @@
               (str/upper-case principle-core)]
         " " principle-extras])]]))
 
-(defn pandoc-component [])
+(defn spaced
+  "Put a space (\" \") betwee the items"
+  [& items]
+  (interpose " " items))
+
+(def todo [:p {:style {:opacity "0.67"}} [:em "TODO"]])
+
+(defn pandoc-component []
+  [:div.pandoc-vertical
+   [:div.pandoc-indented
+    [:header#title-block-header
+     [:h1.title "Towards an iterated game 🩵"]]
+    [:button {:is :iki-goto-random-page
+              :style {:display :block
+                      :font-size "16px"
+                      :margin "0px auto"}}
+     "Go to random page"]
+    [:div {:style {:height "2rem"}}]
+    [:p (spaced "Intent: bring ideas to life."
+                "Discuss, sharpen, play."
+                "Minimize distance between intent and reality.")]
+    [:p (spaced "Process: aim intent towards curiosity—explore—refactor towards orthogonality."
+                "Embrace remix culture."
+                "Legibility is a partially provided affordance, not a design constraint.")]
+    [:p (spaced "Status: work in progress, plenty of rough edges."
+                "But you're" [:emph "very"] "much welcome to have a look around!")]
+    [:p (spaced "Most content on this site is authored by Teodor Heggelund"
+                (list "(" [:a {:href "https://teod.eu"} "https://teod.eu"] ")"))]
+    [:h2 "Content that's ready for the eyes of others"]
+    todo
+    [:h2 "Other people's sites"]
+    todo
+    [:h2 "Forever incomplete"]
+    todo
+    [:h2 "Norwegian content"]
+    todo
+    [:h2 "Seeds, drafts and vague ideas, feel free to skip."]
+    todo
+    [:h2 "Seeds, drafts and vague ideas in Norwegian, feel free to skip."]
+    todo
+    [:h2 "Remote references"]
+    todo
+    [:h2 "Uncategorized"]
+    todo
+    [:h2 "Deprecated"]
+    todo
+    [:h2 "Efforts at “writing things down together” commonly fail because:"]
+    todo
+    [:h2 "What is this?"]
+    todo
+    [:h2 "Then, what is this " [:em "for"] "?"]
+    todo
+    [:h2 "But what is it???"]
+    todo
+    [:div {:style {:height "96px"}}]]])
 
 (defn page
   ([theme]
@@ -99,7 +153,7 @@
                     :height "100%"
                     :margin 0}}
      (principles-component theme opts)
-     [:p [:strong "Towards an iterated game!"]]]]))
+     (pandoc-component)]]))
 
 ;; Setup from automatically building the HTML file when this file (buffer) is
 ;; evaluated. Set !autobuild to true, then evaluate buffer.

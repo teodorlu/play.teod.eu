@@ -53,7 +53,8 @@
    (principles-component theme {}))
   ([theme opts]
    (assert (valid-theme? theme))
-   [:div {:style (merge {:height "100%" :margin 0
+   [:div {:style (merge {:height "100%"
+                         :margin 0
                          :font-size "1.8rem"
                          :padding-left "1rem"
                          :padding-right "1rem"
@@ -90,31 +91,12 @@
      [:title title]
      [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
      [:meta {:charset "utf-8"}]]
-    [:body {:style {:height "100%"
-                    :margin 0
-                    :font-size "1.8rem"
-                    :padding-left "1rem"
-                    :padding-right "1rem"
-                    :background-color (:theme/secondary-color theme)
-                    :font-family "serif"}}
-     [:section {:style (merge {:height "100%"
-                               :display :flex
-                               :flex-direction :column
-                               :gap "2rem"
-                               :justify-content :center
-                               :line-height "100%"
-                               :color (:theme/primary-color theme)}
-                              (:section-style/overrides opts section-style-center))}
-      (for [[principle-core principle-extras]
-            (partition 2 ["Balance." "Body ↔ Mind ↔ Emotions."
-                          "Habits for action" "get you started."
-                          "Creation & curiosity" "over consumption & passivity."
-                          "Techne ≠ episteme." "Not the same thing."
-                          "Rest or focus?" (str "Search for balance."
-                                                " Body ↔ Mind ↔ Emotions.")])]
-        [:div [:span {:style {:color (:theme/emphasis theme )}}
-               (str/upper-case principle-core)]
-         " " principle-extras])]]]))
+    [:body {:style {:width "100%"
+                    :height "100%"
+                    :margin 0}}
+     (principles-component theme opts)
+     [:p [:strong "Towards an iterated game!"]]
+     ]]))
 
 ;; Setup from automatically building the HTML file when this file (buffer) is
 ;; evaluated. Set !autobuild to true, then evaluate buffer.

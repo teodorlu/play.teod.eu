@@ -222,7 +222,7 @@
   (fs/create-dirs "landing2")
   (spit "landing2/index.html"
         (hiccup/html (hiccup/raw "<!DOCTYPE html>")
-          (index-page (tplay.index/pages) theme-other-brighter)))
+          (index-page (tplay.index/pages) theme-main)))
   ::build-complete)
 
 (when @!autobuild

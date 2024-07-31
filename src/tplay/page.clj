@@ -1,8 +1,8 @@
-(ns tplay.page)
+(ns tplay.page
+  "Entity model for pages
 
-;; The entity model for pages is currently a bit of a mess.
-;;
-;; This namespace contains that mess.
+  For use _specifically_ to patch over the fact that I've been inconsistent with
+  the data.")
 
 (defn published-or-created [page]
   (or (:published page)

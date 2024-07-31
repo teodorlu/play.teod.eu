@@ -96,8 +96,8 @@
 
 (defn category2 [{:keys [lang readiness form] :as page}]
   (cond
-    (= readiness :noindex)                        :page-category/noindex       ;; don't link to this at all
-    (= readiness :deprecated)                     :page-category/deprecated ;; nothing to see here
+    (= readiness :noindex)                        :page-category/noindex
+    (= readiness :deprecated)                     :page-category/deprecated
     (= form :remote-reference)                    :page-category/remote-reference
     (and (= readiness :wtf-is-this) (= lang :no)) :page-category/wtf-is-this-norwegian
     (= lang :no)                                  :page-category/norwegian

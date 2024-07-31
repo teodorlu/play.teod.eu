@@ -3,7 +3,10 @@
    [clojure.string :as str]
    [hiccup2.core :as hiccup]
    [babashka.fs :as fs]
-   [tplay.landing2-assets :as assets]))
+   [tplay.landing2-assets :as assets]
+   [tplay.index]
+   [clojure.pprint]
+   [tplay.page :as page]))
 
 ;; Goal: try replacing the *content* on the landing page with hand-written hiccup and inline styles.
 
@@ -87,59 +90,111 @@
 
 (def todo [:p {:style {:opacity "0.67"}} [:em "TODO"]])
 
-(defn pandoc-component []
-  [:div.pandoc-vertical
-   [:div.pandoc-indented
-    [:header#title-block-header
-     [:h1.title "Towards an iterated game 🩵"]]
-    [:button {:is :iki-goto-random-page
-              :style {:display :block
-                      :font-size "16px"
-                      :margin "0px auto"}}
-     "Go to random page"]
-    [:div {:style {:height "2rem"}}]
-    [:p (spaced "Intent: bring ideas to life."
-                "Discuss, sharpen, play."
-                "Minimize distance between intent and reality.")]
-    [:p (spaced "Process: aim intent towards curiosity—explore—refactor towards orthogonality."
-                "Embrace remix culture."
-                "Legibility is a partially provided affordance, not a design constraint.")]
-    [:p (spaced "Status: work in progress, plenty of rough edges."
-                "But you're" [:emph "very"] "much welcome to have a look around!")]
-    [:p (spaced "Most content on this site is authored by Teodor Heggelund"
-                (list "(" [:a {:href "https://teod.eu"} "https://teod.eu"] ")"))]
-    [:h2 "Content that's ready for the eyes of others"]
-    todo
-    [:h2 "Other people's sites"]
-    todo
-    [:h2 "Forever incomplete"]
-    todo
-    [:h2 "Norwegian content"]
-    todo
-    [:h2 "Seeds, drafts and vague ideas, feel free to skip."]
-    todo
-    [:h2 "Seeds, drafts and vague ideas in Norwegian, feel free to skip."]
-    todo
-    [:h2 "Remote references"]
-    todo
-    [:h2 "Uncategorized"]
-    todo
-    [:h2 "Deprecated"]
-    todo
-    [:h2 "Efforts at “writing things down together” commonly fail because:"]
-    todo
-    [:h2 "What is this?"]
-    todo
-    [:h2 "Then, what is this " [:em "for"] "?"]
-    todo
-    [:h2 "But what is it???"]
-    todo
-    [:div {:style {:height "96px"}}]]])
+(defn pprn [x]
+  (with-out-str
+    (clojure.pprint/pprint x)))
 
-(defn page
-  ([theme]
-   (page theme {}))
-  ([theme opts]
+(defn category2 [{:keys [lang readiness form] :as page}]
+  (cond
+    (= readiness :noindex)                        :page-category/noindex       ;; don't link to this at all
+    (= readiness :deprecated)                     :page-category/deprecated ;; nothing to see here
+    (= form :remote-reference)                    :page-category/remote-reference
+    (and (= readiness :wtf-is-this) (= lang :no)) :page-category/wtf-is-this-norwegian
+    (= lang :no)                                  :page-category/norwegian
+    (= readiness :ready-for-comments)             :page-category/ready-for-comments
+    (= readiness :wtf-is-this)                    :page-category/wtf-is-this
+    (= readiness :forever-incomplete)             :page-category/forever-incomplete
+    :else :other))
+
+(defn slug [page]
+  (or (:page/slug page)
+      (:id page)))
+
+(defn pandoc-component [subpages]
+  (let [subpages-by-category (group-by category2 subpages)]
+    [:div.pandoc-vertical
+     [:div.pandoc-indented
+      [:header#title-block-header
+       [:h1.title "Towards an iterated game 🩵"]]
+      [:button {:is :iki-goto-random-page
+                :style {:display :block
+                        :font-size "16px"
+                        :margin "0px auto"}}
+       "Go to random page"]
+      [:div {:style {:height "2rem"}}]
+      [:p (spaced "Intent: bring ideas to life."
+                  "Discuss, sharpen, play."
+                  "Minimize distance between intent and reality.")]
+      [:p (spaced "Process: aim intent towards curiosity—explore—refactor towards orthogonality."
+                  "Embrace remix culture."
+                  "Legibility is a partially provided affordance, not a design constraint.")]
+      [:p (spaced "Status: work in progress, plenty of rough edges."
+                  "But you're" [:emph "very"] "much welcome to have a look around!")]
+      [:p (spaced "Most content on this site is authored by Teodor Heggelund"
+                  (list "(" [:a {:href "https://teod.eu"} "https://teod.eu"] ")"))]
+      (when-let [ready-for-comments (:page-category/ready-for-comments subpages-by-category)]
+        (list
+         [:h2 "Content that's ready for the eyes of others"]
+         (when-let [timeless (seq (->> ready-for-comments
+                                       (remove :created)
+                                       (sort-by :title)))]
+           (list
+            [:p "Things I believe:"]
+            [:ul
+             (for [p timeless]
+               [:li [:a {:href (page/link p)}
+                     (page/title p)]])]))
+         (when-let [timestamped (seq (->> ready-for-comments
+                                          (filter page/published-or-created)
+                                          (sort-by page/published-or-created)
+                                          reverse))]
+           (list
+            [:p "Things I've written:"]
+            [:ul
+             (for [p timestamped]
+               (list
+                [:li [:a {:href (page/link p)}
+                      (page/title p)]
+                 " (" (page/published-or-created p) ")"]
+
+                )
+               )]
+
+            #_
+            (map #(vector :pre (pprn %)) timestamped)))))
+      [:h2 "Other people's sites"]
+      todo
+      [:h2 "Forever incomplete"]
+      todo
+      [:h2 "Norwegian content"]
+      todo
+      [:h2 "Seeds, drafts and vague ideas, feel free to skip."]
+      todo
+      [:h2 "Seeds, drafts and vague ideas in Norwegian, feel free to skip."]
+      todo
+      [:h2 "Remote references"]
+      todo
+      [:h2 "Uncategorized"]
+      todo
+      [:h2 "Deprecated"]
+      todo
+      [:h2 "Efforts at “writing things down together” commonly fail because:"]
+      todo
+      [:h2 "What is this?"]
+      todo
+      [:h2 "Then, what is this " [:em "for"] "?"]
+      todo
+      [:h2 "But what is it???"]
+      todo
+      [:div {:style {:height "96px"}}]]]))
+
+#_ (index-page [] theme-main)
+#_ (index-page theme-main)
+
+(defn index-page
+  ([subpages theme]
+   (index-page subpages theme {}))
+  ([subpages theme opts]
    (assert (valid-theme? theme))
    [:html {:lang "en"
            :style {:height "100%"}}
@@ -153,7 +208,7 @@
                     :height "100%"
                     :margin 0}}
      (principles-component theme opts)
-     (pandoc-component)]]))
+     (pandoc-component subpages)]]))
 
 ;; Setup from automatically building the HTML file when this file (buffer) is
 ;; evaluated. Set !autobuild to true, then evaluate buffer.
@@ -167,7 +222,7 @@
   (fs/create-dirs "landing2")
   (spit "landing2/index.html"
         (hiccup/html (hiccup/raw "<!DOCTYPE html>")
-          (page theme-other-brighter)))
+          (index-page (tplay.index/pages) theme-other-brighter)))
   ::build-complete)
 
 (when @!autobuild

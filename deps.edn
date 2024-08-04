@@ -11,7 +11,9 @@
         ;; Extra deps
         datascript/datascript {:mvn/version "1.7.2"}
         io.github.nextjournal/clerk {:mvn/version "0.16.1016"}
-        io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}}
+        io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}
+        io.github.teodorlu/pandocir {:git/url "https://github.com/teodorlu/pandocir"
+                                     :git/sha "93de817b87925298f3477e073334d5b3c54474ab"}}
  :aliases
  {:test
   {:extra-paths ["test"]}

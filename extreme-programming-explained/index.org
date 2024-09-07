@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 1bb82385-120d-46a8-9391-18f860093c84
+:END:
+#+TITLE: Extreme Programming Explained
+
+[[file:..][..]]
+
+https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/
+
+By [[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]] and Cynthia Andres.

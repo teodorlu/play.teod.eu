@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID: fc785354-a104-46fb-a8b3-ef9329c80cbc
+:END:
+#+TITLE: Effective programming practice is best learned from experts
+
+[[file:..][..]]
+
+I've searched for the skills to write great code for years.
+And for years, I searched /the wrong way/.
+I looked for a single, correct answer, when I should have been looking for /who/ to learn from.
+
+*My journey towards learning programming started with a theory-centric programming education*.
+I learned a lot about what things /are/.
+Programming languages.
+Functions.
+Types.
+Databases.
+Memory.
+What things /are/ is great to know.
+But how you do solve your actual problems in practice?
+Effective practice is harder to teach than a selection of relevant theory.
+
+*Learning practice requires a goal-oriented context*.
+Where answering a series of "what is"-questions can teach theory, it falls short for practice.
+To learn to ride a bike, you'll want a bike, somewhere to try riding that bike, and someone who has ridden a bike before.
+To learn programming practice, you'll want a system you can change, a goal for changing that system, and someone who has programmed before.
+/Pair programming/ provides a goal oriented context, and if you're pairing with an expert, you're in luck.
+[[id:9A98EB07-B6D8-4A64-AB1A-4E32F8722272][Kent Beck]] advocates for writing all production code in [[id:1bb82385-120d-46a8-9391-18f860093c84][Extreme Programming Explained]], second edition:
+
+#+begin_quote
+Write all production programs with two people sitting at one machine.
+Set up the machine so that the partners can sit comfortably side-by-side.
+Move the keyboard and mouse back and forth so you are comfortable while you are typing.
+Pair programming is a dialog between two people simultaneously programming (and analyzing and designing and testing) and trying to program better.
+#+end_quote
+
+*Lessons learned from Michiel Borkent and Christian Johansen*.
+TODO.
+
+*References:*
+
+- You can learn a lot by asking for help in an effective manner.
+  I wrote my thoughts on asking for help in 2022: [[id:55261ada-7ca6-4c94-88f5-446a9b35e5c4][How to ask experts for help]]
+- [[id:2fa8665d-ba3e-4442-b82c-4e1d92780d61][Naval Ravikant]] talks about effective practice as /specific knowledge/.
+  He shares his view on specific knowledge in [[https://nav.al/specific-knowledge][Arm Yourself With Specific Knowledge]]
+  and [[https://nav.al/creative-technical][Specific Knowledge Is Highly Creative or Technical]].
+  Note: where Ravikant believes specific knowledge can't be taught, I believe it can.
+  It's just harder to teach than theory.
+  And I'm gonna try!
+
+* draft
+*How does it feel when you're learning effectively?*
+
+*How does it feel to program with an expert?*
+
+*Learning programming from [[id:7688bf50-5c2c-49b2-9efc-fcf21a539af4][Michiel Borkent]]*
+
+*learning programming from [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]]*

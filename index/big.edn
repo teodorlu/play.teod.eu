@@ -425,6 +425,16 @@
   :page/slug "2022-10-clerk-workshop",
   :author-url "https://teod.eu",
   :uuid "1b275a74-df8e-4ef7-a401-4f04283ef68e"}
+ {:slug "extreme-programming-explained",
+  :page/uuid "1bb82385-120d-46a8-9391-18f860093c84",
+  :created "2024-09-07",
+  :readiness :wtf-is-this,
+  :title "Extreme Programming Explained",
+  :lang :en,
+  :page/slug "extreme-programming-explained",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "1bb82385-120d-46a8-9391-18f860093c84"}
  {:slug "i-dont-understand-it-therefore-its-bad",
   :page/uuid "1c0e1a22-1fa6-426f-a87c-bbc838f19c2e",
   :created "2024-06-15",
@@ -748,6 +758,16 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "2f4431a2-1534-4855-a639-725fea288095"}
+ {:slug "naval-ravikant",
+  :page/uuid "2fa8665d-ba3e-4442-b82c-4e1d92780d61",
+  :created "2024-09-07",
+  :readiness :wtf-is-this,
+  :title "Naval Ravikant",
+  :lang :en,
+  :page/slug "naval-ravikant",
+  :author-url "https://teod.eu",
+  :form :remote-reference,
+  :uuid "2fa8665d-ba3e-4442-b82c-4e1d92780d61"}
  {:slug "perception-reality",
   :page/uuid "2fc89d5d-c1e6-456e-9ac3-dc4eb8f2ad9b",
   :created "2022-08-27",
@@ -4053,6 +4073,16 @@
   :page/slug "thesis-antithesis-synthesis",
   :author-url "https://teod.eu",
   :uuid "fb582b97-d921-4e46-a21e-f8fb41b35a95"}
+ {:slug "effective-programming-practice-is-best-learned-from-experts",
+  :page/uuid "fc785354-a104-46fb-a8b3-ef9329c80cbc",
+  :created "2024-09-07",
+  :readiness :wtf-is-this,
+  :title "Great programming practice is best learned from experts",
+  :lang :en,
+  :page/slug
+  "effective-programming-practice-is-best-learned-from-experts",
+  :author-url "https://teod.eu",
+  :uuid "fc785354-a104-46fb-a8b3-ef9329c80cbc"}
  {:slug "understanding-datafy-nav",
   :page/uuid "ffe69f24-6817-4330-96a6-f0d2598cbd14",
   :created "2023-02-14",

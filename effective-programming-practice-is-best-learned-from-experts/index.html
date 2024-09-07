@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Effective programming practice is best learned from experts</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+    const hostCanonical = "play.teod.eu";
+    const hostAlias1 = "playground.teod.eu";
+    const hostLocal1 = "localhost:9945";
+    if (
+      window.location.host === hostAlias1
+      // || window.location.host === hostLocal1
+    ) {
+      // redirect playground.teod.eu to play.teod.eu
+      // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+      const pathname = window.location.pathname || "";
+      window.location.replace("https://" + hostCanonical + pathname);
+    }
+  </script>
+
+  <script async type="module" src="/index/big.js"></script>
+  <script async type="module" src="/iki/iki.js"></script>
+  <script async type="module">
+    import {IkiGotoRandomPage} from "/iki/iki.js";
+
+    customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
+  </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Effective programming practice is best learned from
+experts</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#draft" id="toc-draft">draft</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<p>I’ve searched for the skills to write great code for years. And for
+years, I searched <em>the wrong way</em>. I looked for a single, correct
+answer, when I should have been looking for <em>who</em> to learn
+from.</p>
+<p><strong>My journey towards learning programming started with a
+theory-centric programming education</strong>. I learned a lot about
+what things <em>are</em>. Programming languages. Functions. Types.
+Databases. Memory. What things <em>are</em> is great to know. But how
+you do solve your actual problems in practice? Effective practice is
+harder to teach than a selection of relevant theory.</p>
+<p><strong>Learning practice requires a goal-oriented context</strong>.
+Where answering a series of “what is”-questions can teach theory, it
+falls short for practice. To learn to ride a bike, you’ll want a bike,
+somewhere to try riding that bike, and someone who has ridden a bike
+before. To learn programming practice, you’ll want a system you can
+change, a goal for changing that system, and someone who has programmed
+before. <em>Pair programming</em> provides a goal oriented context, and
+if you’re pairing with an expert, you’re in luck. <a
+href="../kent-beck/">Kent Beck</a> advocates for writing all production
+code in <a href="../extreme-programming-explained/">Extreme Programming
+Explained</a>, second edition:</p>
+<blockquote>
+<p>Write all production programs with two people sitting at one machine.
+Set up the machine so that the partners can sit comfortably
+side-by-side. Move the keyboard and mouse back and forth so you are
+comfortable while you are typing. Pair programming is a dialog between
+two people simultaneously programming (and analyzing and designing and
+testing) and trying to program better.</p>
+</blockquote>
+<p><strong>Lessons learned from Michiel Borkent and Christian
+Johansen</strong>. TODO.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li>You can learn a lot by asking for help in an effective manner. I
+wrote my thoughts on asking for help in 2022: <a
+href="../interaction-value-differential/">How to ask experts for
+help</a></li>
+<li><a href="../naval-ravikant/">Naval Ravikant</a> talks about
+effective practice as <em>specific knowledge</em>. He shares his view on
+specific knowledge in <a href="https://nav.al/specific-knowledge">Arm
+Yourself With Specific Knowledge</a> and <a
+href="https://nav.al/creative-technical">Specific Knowledge Is Highly
+Creative or Technical</a>. Note: where Ravikant believes specific
+knowledge can’t be taught, I believe it can. It’s just harder to teach
+than theory. And I’m gonna try!</li>
+</ul>
+<h2 id="draft">draft</h2>
+<p><strong>How does it feel when you’re learning
+effectively?</strong></p>
+<p><strong>How does it feel to program with an expert?</strong></p>
+<p><strong>Learning programming from <a
+href="../michiel-borkent/">Michiel Borkent</a></strong></p>
+<p><strong>learning programming from <a
+href="../christian-johansen/">Christian Johansen</a></strong></p>
+</body>
+</html>

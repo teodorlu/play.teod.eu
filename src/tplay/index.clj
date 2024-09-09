@@ -120,7 +120,7 @@
                   (org-export "html"
                               (hiccup/html
                                   [:div {:style {}}
-                                   (go/principles-component go/theme-other-brighter
+                                   (go/principles-component go/theme-main
                                                             {:section-style/overrides go/section-style-left-adjust
                                                              :container-style/overrides {:padding "2rem"}})]))
 

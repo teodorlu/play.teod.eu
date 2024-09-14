@@ -333,10 +333,8 @@ Allowed options:
                   (str/join " " (concat ["index.html:"]
                                         ;; tplay.index and tplay.go are (per 2024-07-29) hardcoded makefile deps.
                                         ;; They may get out of sync!
-                                        (when-let [index-builder-file (infer-ns-file 'tplay.index)]
-                                          [index-builder-file])
-                                        (when-let [index-builder-file (infer-ns-file 'tplay.go)]
-                                          [index-builder-file])
+                                        (some-> 'tplay.index infer-ns-file vector)
+                                        (some-> 'tplay.go infer-ns-file vector)
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))

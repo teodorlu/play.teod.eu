@@ -325,6 +325,12 @@ deduction ≠ judgment</a></li>
 id="toc-32e6e516-8137-4c4c-b5aa-53ce27a4e5f8">Pragmatism, encouragement
 and helpfulness embodied: on working with Michiel</a></li>
 </ul></li>
+<li><a href="#section-10" id="toc-section-10">2024-09-14</a>
+<ul>
+<li><a href="#supporting-full-width-elements-on-my-site"
+id="toc-supporting-full-width-elements-on-my-site">Supporting full-width
+elements on my site</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -834,5 +840,26 @@ he’s there, not off in his white tower. He discusses reality, not
 hypotheticals
 </dd>
 </dl>
+<h2 id="section-10">2024-09-14</h2>
+<h3 id="supporting-full-width-elements-on-my-site">Supporting full-width
+elements on my site</h3>
+<p><strong>Context</strong>. I want full width elements on my site.
+&lt;body&gt; width is currently controlled by Pandoc’s CSS rules, where
+the &lt;body&gt; has a margin.</p>
+<p><strong>Problem</strong>. &lt;body&gt; CSS margin prevents
+&lt;body&gt; child elements from having full width.</p>
+<p><strong>Proposed solution: ditch Pandoc’s CSS</strong>. Take control
+of the CSS, and delete the rule we don’t want.</p>
+<p><strong>Proposed solution: override the &lt;body&gt; CSS
+rule</strong>.</p>
+<ol>
+<li>Reset the &lt;body&gt; margin back to zero with an <code
+class="verbatim">!important</code> rule</li>
+<li>Re-apply the &lt;body&gt; margin with rules applied to
+&lt;body&gt;’s children (with <code class="verbatim">body &gt; *</code>
+rules)</li>
+<li>Then override that rule with specific <code
+class="verbatim">body &gt; .my-exception</code> rules.</li>
+</ol>
 </body>
 </html>

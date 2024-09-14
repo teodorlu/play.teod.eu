@@ -514,3 +514,20 @@ This is a text I'd like to write about what I've learned from [[id:7688bf50-5c2c
 
 - embodied :: he's there, not off in his white tower.
   He discusses reality, not hypotheticals
+* 2024-09-14
+** Supporting full-width elements on my site
+*Context*.
+I want full width elements on my site.
+<body> width is currently controlled by Pandoc's CSS rules, where the <body> has a margin.
+
+*Problem*.
+<body> CSS margin prevents <body> child elements from having full width.
+
+*Proposed solution: ditch Pandoc's CSS*.
+Take control of the CSS, and delete the rule we don't want.
+
+*Proposed solution: override the <body> CSS rule*.
+
+1. Reset the <body> margin back to zero with an =!important= rule
+2. Re-apply the <body> margin with rules applied to <body>'s children (with =body > *= rules)
+3. Then override that rule with specific =body > .my-exception= rules.

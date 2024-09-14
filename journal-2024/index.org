@@ -531,3 +531,25 @@ Take control of the CSS, and delete the rule we don't want.
 1. Reset the <body> margin back to zero with an =!important= rule
 2. Re-apply the <body> margin with rules applied to <body>'s children (with =body > *= rules)
 3. Then override that rule with specific =body > .my-exception= rules.
+*** Attempting to override the <body> CSS rule
+Parts of it worked nicely, but not all of it.
+Here's my attempt:
+
+https://github.com/teodorlu/play.teod.eu/commit/c1b8aa0d31b13b65d45b0024b6a897dae9b3b7f3
+
+So, what didn't work out?
+
+1. Behavior on small screen sizes broke.
+   I got margins that I couldn't get rid of.
+
+What assumptions were wrong?
+
+1. That this was just a matter of changing the body width.
+   Several CSS rules are at play here.
+
+Lessons learned?
+
+1. I probably want to control CSS from the bottom up myself.
+2. I could keep the <meta> tags from Pandoc if I want to.
+
+This would mean avoiding --standalone.

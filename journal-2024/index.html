@@ -861,5 +861,26 @@ rules)</li>
 <li>Then override that rule with specific <code
 class="verbatim">body &gt; .my-exception</code> rules.</li>
 </ol>
+<h4 id="attempting-to-override-the-body-css-rule">Attempting to override
+the &lt;body&gt; CSS rule</h4>
+<p>Parts of it worked nicely, but not all of it. Here’s my attempt:</p>
+<p><a
+href="https://github.com/teodorlu/play.teod.eu/commit/c1b8aa0d31b13b65d45b0024b6a897dae9b3b7f3">https://github.com/teodorlu/play.teod.eu/commit/c1b8aa0d31b13b65d45b0024b6a897dae9b3b7f3</a></p>
+<p>So, what didn’t work out?</p>
+<ol>
+<li>Behavior on small screen sizes broke. I got margins that I couldn’t
+get rid of.</li>
+</ol>
+<p>What assumptions were wrong?</p>
+<ol>
+<li>That this was just a matter of changing the body width. Several CSS
+rules are at play here.</li>
+</ol>
+<p>Lessons learned?</p>
+<ol>
+<li>I probably want to control CSS from the bottom up myself.</li>
+<li>I could keep the &lt;meta&gt; tags from Pandoc if I want to.</li>
+</ol>
+<p>This would mean avoiding –standalone.</p>
 </body>
 </html>

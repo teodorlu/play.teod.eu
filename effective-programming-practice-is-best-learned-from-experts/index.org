@@ -5,6 +5,48 @@
 
 [[file:..][..]]
 
+* Draft 3
+** Blurb
+What is great code?
+
+That question drove me to find functional programming, later Clojure.
+One aspect I was missing in my persuit, was the importance of learning programming practice from great programmers.
+
+Read on to find more questions, and why my pursuit of great code makes me excited about the Babashka in Practice workshop during Heart of Clojure in 5 days.
+** Text
+#+begin_src markdown
+# Which software practitioners are you learning from?
+
+In your journey towards writing great code, are you finding your own path?
+Or do you have someone to learn from?
+
+## On the misconception that theory is all there is.
+
+I had the chance to learn a nice pile of theory during my university education.
+A mix of math, physics and programming gave me tools I now appreciate having.
+My emphasis on theory had a funny effect on how I approached programming: I kept searching for theoretical integrity.
+In part, I'm super happy for that.
+It lead me to find functional programming, and the Clojure community in particular.
+What a gem.
+
+It also lead me to emphasize theory over practice.
+To want questions to have hard true/false answers.
+For there to be one right way.
+If a theory isn't legible, it's bad.
+Practice is a different matter; it's not all legible, and it's not all intuitive.
+
+## Practice is harder to learn than theory when you don't have access to good practitioners
+
+Theory fits in a book, in a paper or in a blog post.
+Practice may not.
+
+
+## Pair programming for learning practice
+
+## Michiel Borkent and Christian Johansen: two software practitioners worth learning from
+#+end_src
+* Draft 2
+
 I've searched for the skills to write great code for years.
 And for years, I searched /the wrong way/.
 I looked for a single, correct answer, when I should have been looking for /who/ to learn from.
@@ -57,7 +99,7 @@ TODO.
   It's just harder to teach than theory.
   And I'm gonna try!
 
-* draft
+* draft 1
 *How does it feel when you're learning effectively?*
 
 *How does it feel to program with an expert?*

@@ -266,6 +266,17 @@
   "form" : "remote-reference",
   "uuid" : "0e22690f-17f5-49cb-ac61-5305c326ee76"
 }, {
+  "slug" : "sandewall78",
+  "page/uuid" : "10832edb-0cd2-4f46-abef-b94d3ce0a20f",
+  "created" : "2024-09-14",
+  "readiness" : "wtf-is-this",
+  "title" : "Programming in an Interactive Environment: the Lisp Experience",
+  "lang" : "en",
+  "page/slug" : "sandewall78",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "10832edb-0cd2-4f46-abef-b94d3ce0a20f"
+}, {
   "slug" : "epimetheus-project-management-inc",
   "page/uuid" : "10a1985a-fcfd-4eb8-ad9a-0032600695e3",
   "created" : "2023-04-04",

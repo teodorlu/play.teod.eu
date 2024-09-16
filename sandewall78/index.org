@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 10832edb-0cd2-4f46-abef-b94d3ce0a20f
+:END:
+#+TITLE: Programming in an Interactive Environment: the Lisp Experience
+
+[[file:..][..]]
+
+https://dl.acm.org/doi/10.1145/356715.356719
+
+By Erik Sandewall

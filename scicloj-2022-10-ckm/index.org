@@ -5,6 +5,10 @@
 
 [[file:..][..]]
 
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/JSMcK5strRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
 How can we best learn together?
 What does "learning together" look like on the web?
 

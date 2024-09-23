@@ -40,7 +40,6 @@ Practice is a different matter; it's not all legible, and it's not all intuitive
 Theory fits in a book, in a paper or in a blog post.
 Practice may not.
 
-
 ## Pair programming for learning practice
 
 ## Michiel Borkent and Christian Johansen: two software practitioners worth learning from

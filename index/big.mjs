@@ -2375,6 +2375,17 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b"
 }, {
+  "slug" : "heart-of-clojure",
+  "page/uuid" : "7dc3c7ee-6d1b-4c43-a20d-5f78d7cf198a",
+  "created" : "2024-09-20",
+  "readiness" : "wtf-is-this",
+  "title" : "Heart of Clojure",
+  "lang" : "en",
+  "page/slug" : "heart-of-clojure",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "7dc3c7ee-6d1b-4c43-a20d-5f78d7cf198a"
+}, {
   "slug" : "oggpow",
   "page/uuid" : "7e70b878-1ef2-4ab6-885b-727eb557213d",
   "created" : "2022-09-12",
@@ -2778,6 +2789,16 @@ export const index =
   "page/slug" : "product-owner-project-manager-product-leader",
   "author-url" : "https://teod.eu",
   "uuid" : "955eb1b8-cbbf-47e5-9b86-da4bdf344535"
+}, {
+  "slug" : "from-theory-to-practice-then-connection",
+  "page/uuid" : "9637ecbd-54a5-4659-b662-6f8e3eb922c8",
+  "created" : "2024-09-20",
+  "readiness" : "wtf-is-this",
+  "title" : "From Theory to Practice, then Connection",
+  "lang" : "en",
+  "page/slug" : "from-theory-to-practice-then-connection",
+  "author-url" : "https://teod.eu",
+  "uuid" : "9637ecbd-54a5-4659-b662-6f8e3eb922c8"
 }, {
   "slug" : "tonsky",
   "page/uuid" : "96C0714D-743C-4BA3-83F9-214F5DEF36D1",

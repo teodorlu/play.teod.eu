@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: 7dc3c7ee-6d1b-4c43-a20d-5f78d7cf198a
+:END:
+#+TITLE: Heart of Clojure
+
+[[file:..][..]]
+
+Heart of Clojure 2024 website: https://2024.heartofclojure.eu/
+
+A Clojure conference where people are front and center.

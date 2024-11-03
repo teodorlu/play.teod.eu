@@ -6,3 +6,5 @@
 [[file:..][..]]
 
 https://cjohansen.no/
+
+Christian likes data.

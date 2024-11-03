@@ -6,3 +6,5 @@
 [[file:..][..]]
 
 https://twitter.com/magnars | https://github.com/magnars/
+
+Magnar likes funcional core, imperative shell.

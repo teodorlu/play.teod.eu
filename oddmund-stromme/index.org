@@ -5,6 +5,6 @@
 
 [[file:..][..]]
 
-https://blog.oddmundo.com/
+https://blog.oddmundo.com/ | https://github.com/jraregris/
 
-https://github.com/jraregris/
+Oddmund introduced me to pair programming, and [[id:3aad72b0-3fc1-422c-aab5-5c900974013a][Llewellyn Falco]]'s take on pair programming: [[https://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html][Llewellyn's strong-style pairing]].

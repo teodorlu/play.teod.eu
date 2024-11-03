@@ -1,3 +1,5 @@
 {:title "An interactive Clojure journey",
  :readiness :wtf-is-this,
- :lang :en}
+ :lang :en
+ :uuid "001be893-8060-4d30-a703-c50084c1c513"
+ :page/uuid "001be893-8060-4d30-a703-c50084c1c513"}

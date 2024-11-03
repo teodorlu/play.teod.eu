@@ -1,4 +1,6 @@
 #+title: Modeling knowledge with RDF
+:ID: 28ce78bd-d153-4911-bca4-eaf61d8d0715
+
 
 [[./..][..]]
 

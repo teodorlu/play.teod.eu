@@ -1,4 +1,5 @@
 #+title: How to grow knowledge together
+:ID: 62841e17-4233-418d-a824-d3f2b7e40878
 
 [[./..][..]]
 

@@ -1,4 +1,5 @@
 #+title: Good software architecture
+:ID: bdf30a1a-33ee-4f76-a97a-9d8825fdfcb3
 
 [[./..][..]]
 

@@ -1,4 +1,7 @@
 #+TITLE: MAKSIMAL OPSJONALITET
+:ID: 356cbc37-6db3-4e23-9966-7959bd98c12a
+
+
 
 # *-* fill-column: 70 *-*
 

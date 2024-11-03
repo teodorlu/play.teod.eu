@@ -1,1 +1,5 @@
-{:title "FUSE", :readiness :wtf-is-this, :lang :en}
+{:title "FUSE",
+ :lang :en,
+ :readiness :wtf-is-this,
+ :uuid "37b9a070-0a5c-4be9-beb2-3eee5ff2ee08",
+ :page/uuid "37b9a070-0a5c-4be9-beb2-3eee5ff2ee08"}

@@ -11,8 +11,8 @@
    [clojure.repl]
    [clojure.string :as str]
    [tplay.api :as play]
-   [tplay.pandoc-toolbox :as pandoc]
-   [tplay.index]))
+   [tplay.index]
+   [tplay.pandoc-toolbox :as pandoc]))
 
 (defn infer-ns-file
   "Try to find a Clojure file for a namespace (as symbol)
@@ -133,6 +133,19 @@
           (with-out-str
             (pprint (dissoc page :slug))))))
 
+(defn relations->links [relations]
+  (doseq [link
+          (->> relations
+               (map val)
+               (map (fn [relation]
+                      (str "[[id:" (:page/uuid relation) "]"
+                           "[" (or (:title relation)
+                                   (:page/slug relation))
+                           "]]"))))]
+    (println link)))
+
+#_(-> (files->relations {}) relations->links)
+
 (defn page-index-org [{:keys [title trailing-blank-lines uuid body]}]
   (let [body (or body "DRAFT")]
     (str/join "\n"
@@ -188,7 +201,8 @@
                  :lines2 relations->lines2
                  :lines+recent relations->lines+recent
                  :pretty relations->pretty
-                 :files relations->files}
+                 :files relations->files
+                 :links relations->links}
         {:keys [from to]} opts
         input-is-valid (and (contains? sources from)
                             (contains? targets to))]

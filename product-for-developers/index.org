@@ -1,6 +1,7 @@
 #+title: Product discovery for software developers
+:PROPERTIES:
 :ID: cda89d19-741f-488f-b312-c92572547279
-
+:END:
 
 [[./..][..]]
 

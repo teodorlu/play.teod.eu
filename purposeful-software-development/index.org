@@ -1,5 +1,7 @@
 #+title: Purposeful Software Development
+:PROPERTIES:
 :ID: 767f57ab-6595-45a8-8689-2c65999a0506
+:END:
 
 [[./..][..]]
 

@@ -40,4 +40,4 @@ Also, it breaks our "social-processional coding contract": new concepts shall be
 Do the simplest thing possible.
 In technology, in product, in life.
 
-Teodor
+Teodor, 2024-11-03

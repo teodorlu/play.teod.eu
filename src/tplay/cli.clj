@@ -2,6 +2,7 @@
   (:require
    [babashka.cli :as cli]
    [babashka.fs :as fs]
+   [babashka.process :as p]
    [cheshire.core :as json]
    [clojure.edn :as edn]
    [clojure.java.classpath]
@@ -42,14 +43,21 @@
           :readiness :in-progress}
  "feedback-design-impl" {:title "Feedback loops, API design and how stuff works"}}
 
-(defn bash [cmd]
-  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd))))
+(def this-repo-toplevel
+  (some->
+   (:out (p/shell {:out :string
+                   :dir (str (fs/parent *file*))}
+                  "git rev-parse --show-toplevel"))
+   str/trim))
+
+(defn bash-project-root [cmd]
+  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd :dir this-repo-toplevel))))
 
 (defn words [& args] (str/join " " (map str args)))
 (defn lines [& args] (str/join "\n" (map str args)))
 
 (defn pages []
-  (->> (bash "ls **/play.edn | sed 's|/play.edn||g'")
+  (->> (bash-project-root "ls **/play.edn | sed 's|/play.edn||g'")
        (str/split-lines)
        (map (fn [slug] {:slug slug}))))
 
@@ -63,10 +71,12 @@
   (->> (pages)
        (pmap (fn [page]
                (-> page
-                   (merge (edn/read-string (slurp (str (:slug page) "/play.edn"))))
+                   (merge (edn/read-string (slurp (str (fs/file this-repo-toplevel (:slug page) "play.edn")))))
                    conform-relation)))
        (map (juxt :slug identity))
        (into {})))
+
+#_ (files->relations {})
 
 (defn relations->lines
   "Produce one line per page
@@ -297,7 +307,7 @@ Allowed options:
         ;; Regenerate the makefile since we've added a new target
         (if (:dry-run opts)
           (fake-bash "./play.clj makefile")
-          (bash "./play.clj makefile")))
+          (bash-project-root "./play.clj makefile")))
 
       nil)))
 

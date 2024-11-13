@@ -21,6 +21,7 @@ Three events crashed into each other, becoming one.
 In the fall of 2020, I was paring on an Elm codebase with [[id:8833ff2f-ed66-4db2-ac14-6f8eff9f70d4][Oddmund]].
 I was planning ahead, preparing the code for changes to come.
 Oddmund asked "Why not change the code when the changes come?".
+
 In September 2024, I attended [[id:7dc3c7ee-6d1b-4c43-a20d-5f78d7cf198a][Heart of Clojure]].
 Loved the conference.
 I attended a workshop on [[id:807ad84e-edf9-46c9-a35c-e8fbc1c5ac66][application.garden]].
@@ -29,6 +30,7 @@ The workshop was about writing a simplest possible web app that does something r
 One of [[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]]'s remarks stuck with me:
 "You might as well /try/ to do the simplest thing possible when you're starting out.
  Complexity will come for you soon enough."
+
 The last three weeks, I've had the opportunity to pair with [[id:05a34792-5bd2-43d6-8c0f-6ca62c01b626][Christian Johansen]] and [[id:6d36df4a-c172-460d-a9cf-8e6ee5d386c8][Magnar Sveen]].
 Christian and Magnar practice pair programming, continuous delivery and testing rigorously.
 Commits rarely live on a developer's machine for more than a couple of hours before being rolled into production.

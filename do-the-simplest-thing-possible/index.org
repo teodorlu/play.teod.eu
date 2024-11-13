@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: ef835eb0-e607-4a81-984c-0ee3410042df
 :END:
-#+TITLE: Do the simplest thing possible
+#+TITLE: Do the simplest thing possible!
 
 [[file:..][..]]
 

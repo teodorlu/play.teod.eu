@@ -1,4 +1,4 @@
-{:paths ["src"]
+{:paths ["."]
  :deps {io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
         org.clj-commons/hickory {:mvn/version "0.7.5"}
         no.cjohansen/lookup {:mvn/version "2024.11.03"}

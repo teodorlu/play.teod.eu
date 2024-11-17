@@ -59,7 +59,7 @@
                    :page/slug (fs/file-name page-dir))))))
 
 (defn load-pages [root]
-  (->> (fs/glob root "**/play.edn")
+  (->> (fs/glob (fs/canonicalize root) "**/play.edn")
        (map fs/parent)
        (map load-page)
        (filter some?)))
@@ -86,6 +86,8 @@
   (def ROOT (-> (p/shell {:out :string} "git rev-parse --show-toplevel")
                 :out str/trim))
   (def DB (db (load-pages ROOT)))
+
+  (load-pages "..")
 
   (into {} (d/entity DB [:page/slug "rich-hickey"]))
 

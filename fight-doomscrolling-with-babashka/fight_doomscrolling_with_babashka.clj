@@ -78,7 +78,8 @@
 
 ;; ## The Babashka script
 
-;; But where does Babashka come in?
+;; But where does [Babashka] come in?
+;; [Babashka]: https://babashka.org/
 ;;
 ;; To actually replace doomscrolling with an alternative habit, the alternative habit needs to be _near_.
 ;; Today, we'll use a CLI script for this.

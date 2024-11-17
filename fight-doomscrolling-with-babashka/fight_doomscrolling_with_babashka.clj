@@ -79,11 +79,12 @@
 ;; ## The Babashka script
 
 ;; But where does [Babashka] come in?
-;; [Babashka]: https://babashka.org/
 ;;
 ;; To actually replace doomscrolling with an alternative habit, the alternative habit needs to be _near_.
 ;; Today, we'll use a CLI script for this.
-;; Except for how to open a URL with Clojure, you've already seen the whole script, so I'll show it all in one go.
+;; Except for how to open a URL with Clojure, you've already seen all the code.
+;;
+;; [Babashka]: https://babashka.org/
 
 (clerk/code (slurp "bretroulette.bb"))
 

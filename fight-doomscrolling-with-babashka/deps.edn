@@ -2,4 +2,8 @@
  :deps {io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
         org.clj-commons/hickory {:mvn/version "0.7.5"}
         no.cjohansen/lookup {:mvn/version "2024.11.03"}
-        io.github.teodorlu/play.teod.eu {:local/root ".."}}}
+        io.github.teodorlu/play.teod.eu {:local/root ".."}
+
+        org.clojure/java.classpath {:mvn/version "1.1.0"}
+
+        ,,}}

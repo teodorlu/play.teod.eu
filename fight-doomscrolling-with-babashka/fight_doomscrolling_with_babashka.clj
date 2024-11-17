@@ -30,7 +30,7 @@
 
 (def bret-victor (d/entity db [:page/slug "bret-victor"]))
 
-;; ## Bret Victor's references
+;; ## Discovering Bret Victor's references
 
 {:nextjournal.clerk/visibility {:code :hide :result :show}}
 (clerk/html [:p {:style {:margin 0}}

@@ -1,4 +1,4 @@
-;; # Fight doomscrolling with Babashka
+;; # Fight Doomscrolling with Babashka
 ;;
 ;; Endlessly consuming dopamin packets from companies that sell your attention supposedly rots your brain.
 ;; What can you do instead?

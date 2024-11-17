@@ -1,0 +1,10 @@
+{:slug "dots",
+ :page/uuid "b3aee932-2f9d-40b5-b2fa-72d622c8c513",
+ :builder :no-op,
+ :created "2022-07-24",
+ :readiness :wtf-is-this,
+ :title "dots",
+ :lang :en,
+ :page/slug "dots",
+ :author-url "https://teod.eu",
+ :uuid "b3aee932-2f9d-40b5-b2fa-72d622c8c513"}

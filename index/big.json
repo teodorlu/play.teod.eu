@@ -1,4 +1,12 @@
 [ {
+  "slug" : "clojure-interactive",
+  "title" : "An interactive Clojure journey",
+  "readiness" : "wtf-is-this",
+  "lang" : "en",
+  "uuid" : "001be893-8060-4d30-a703-c50084c1c513",
+  "page/uuid" : "001be893-8060-4d30-a703-c50084c1c513",
+  "page/slug" : "clojure-interactive"
+}, {
   "slug" : "mark-mcgranaghan",
   "page/uuid" : "00cd1474-ccf6-44d2-9795-492fbd0c08c3",
   "created" : "2023-03-20",
@@ -233,6 +241,15 @@
   "page/slug" : "attention-design",
   "author-url" : "https://teod.eu",
   "uuid" : "0cc48734-e933-44cb-a4e8-2678f125f6df"
+}, {
+  "slug" : "orthogonality-enables-optionality",
+  "title" : "Orthogonality enables optionality",
+  "form" : "article",
+  "readiness" : "wtf-is-this",
+  "lang" : "en",
+  "uuid" : "0ccc689a-8802-4854-8042-0ecb9e839f92",
+  "page/uuid" : "0ccc689a-8802-4854-8042-0ecb9e839f92",
+  "page/slug" : "orthogonality-enables-optionality"
 }, {
   "slug" : "kira-mclean",
   "page/uuid" : "0d83ed00-e292-49ea-8c75-1c0b85084f43",
@@ -750,6 +767,14 @@
   "form" : "remote-reference",
   "uuid" : "28567529-36DC-4FB7-98B7-993C80B49F8D"
 }, {
+  "slug" : "rdf-intro",
+  "title" : "Modeling knowledge with RDF",
+  "readiness" : "wtf-is-this",
+  "lang" : "en",
+  "uuid" : "28ce78bd-d153-4911-bca4-eaf61d8d0715",
+  "page/uuid" : "28ce78bd-d153-4911-bca4-eaf61d8d0715",
+  "page/slug" : "rdf-intro"
+}, {
   "slug" : "software-design-for-flexibility",
   "page/uuid" : "29d152b9-9f5e-4c23-904a-f926b3d83477",
   "created" : "2023-06-06",
@@ -1045,6 +1070,15 @@
   "author-url" : "https://teod.eu",
   "uuid" : "356c6009-aa12-4ec7-bb31-5835ca47e31c"
 }, {
+  "slug" : "maksimal-opsjonalitet",
+  "title" : "MAKSIMAL OPSJONALITET",
+  "lang" : "no",
+  "form" : "presentation",
+  "readiness" : "ready-for-comments",
+  "uuid" : "356cbc37-6db3-4e23-9966-7959bd98c12a",
+  "page/uuid" : "356cbc37-6db3-4e23-9966-7959bd98c12a",
+  "page/slug" : "maksimal-opsjonalitet"
+}, {
   "slug" : "finite-element-implementation-of-lower-order-strain-gradient-plasticity-in-abaqus",
   "page/uuid" : "3619c8d2-f020-4e65-8e45-ca1970cdf46c",
   "created" : "",
@@ -1086,6 +1120,14 @@
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "37FD615A-F82C-4A74-AA7F-57DA469DE2BD"
+}, {
+  "slug" : "fuse",
+  "title" : "FUSE",
+  "lang" : "en",
+  "readiness" : "wtf-is-this",
+  "uuid" : "37b9a070-0a5c-4be9-beb2-3eee5ff2ee08",
+  "page/uuid" : "37b9a070-0a5c-4be9-beb2-3eee5ff2ee08",
+  "page/slug" : "fuse"
 }, {
   "slug" : "dont-assume-trust-build-trust",
   "page/uuid" : "37e07eec-4b5c-498a-875e-b4c4267dbfd2",
@@ -1723,6 +1765,15 @@
   "form" : "remote-reference",
   "uuid" : "575419ac-17d8-4b5a-b060-10aecd6fee78"
 }, {
+  "slug" : "discover-difference",
+  "title" : "Discover the difference",
+  "readiness" : "wtf-is-this",
+  "author-url" : "https://teod.eu",
+  "lang" : "en",
+  "uuid" : "57b71ae8-5038-40cd-b239-9e82c3bf9d74",
+  "page/uuid" : "57b71ae8-5038-40cd-b239-9e82c3bf9d74",
+  "page/slug" : "discover-difference"
+}, {
   "slug" : "ikke-anta-tillit-bygg-tillit",
   "page/uuid" : "584e220e-be74-4079-94a9-a565624325fb",
   "created" : "2023-05-26",
@@ -1888,6 +1939,14 @@
   "page/slug" : "list-of-awesome-websites",
   "author-url" : "https://teod.eu",
   "uuid" : "627ec0c4-f0b3-43dd-a3e4-eca9aa0708d9"
+}, {
+  "slug" : "grow-knowlege-together",
+  "title" : "How to grow knowledge together",
+  "readiness" : "wtf-is-this",
+  "lang" : "en",
+  "uuid" : "62841e17-4233-418d-a824-d3f2b7e40878",
+  "page/uuid" : "62841e17-4233-418d-a824-d3f2b7e40878",
+  "page/slug" : "grow-knowlege-together"
 }, {
   "slug" : "martin-kavalar",
   "page/uuid" : "63922b15-01b3-4a03-afe1-18c8ef0fa8f4",
@@ -2205,6 +2264,15 @@
   "form" : "remote-reference",
   "uuid" : "75b85720-093b-4b0c-91fb-d6ad79c47e0c"
 }, {
+  "slug" : "purposeful-software-development",
+  "title" : "Purposeful Software Development",
+  "readiness" : "wtf-is-this",
+  "author-url" : "https://teod.eu",
+  "lang" : "en",
+  "uuid" : "767f57ab-6595-45a8-8689-2c65999a0506",
+  "page/uuid" : "767f57ab-6595-45a8-8689-2c65999a0506",
+  "page/slug" : "purposeful-software-development"
+}, {
   "slug" : "michiel-borkent",
   "page/uuid" : "7688bf50-5c2c-49b2-9efc-fcf21a539af4",
   "created" : "2023-06-06",
@@ -2425,6 +2493,15 @@
   "page/slug" : "watchexec-make-dev",
   "author-url" : "https://teod.eu",
   "uuid" : "7ec7b6b8-9341-43c0-bd05-b11fb89f2475"
+}, {
+  "slug" : "heterarchies",
+  "title" : "Opt-in hierarchies",
+  "form" : "explore",
+  "readiness" : "wtf-is-this",
+  "lang" : "en",
+  "uuid" : "7f046861-5fbb-41c3-8db2-ba0b975fb42d",
+  "page/uuid" : "7f046861-5fbb-41c3-8db2-ba0b975fb42d",
+  "page/slug" : "heterarchies"
 }, {
   "slug" : "bumblebee",
   "page/uuid" : "7fe75ff7-4508-49be-89fd-53f52a846424",
@@ -3360,6 +3437,15 @@
   "author-url" : "https://teod.eu",
   "uuid" : "aaeb72f2-e2eb-4e51-b402-7f2d07150770"
 }, {
+  "slug" : "inspiration-howto",
+  "title" : "inspiration-howto",
+  "readiness" : "wtf-is-this",
+  "author-url" : "https://teod.eu",
+  "lang" : "en",
+  "uuid" : "ab7b4c09-ee68-4df5-b665-c96b90964129",
+  "page/uuid" : "ab7b4c09-ee68-4df5-b665-c96b90964129",
+  "page/slug" : "inspiration-howto"
+}, {
   "slug" : "teodor-codes",
   "page/uuid" : "abb67198-8b4a-4713-b705-31fb431cd177",
   "created" : "2024-04-13",
@@ -3445,6 +3531,17 @@
   "page/slug" : "learning-to-discover",
   "author-url" : "https://teod.eu",
   "uuid" : "b21e4aea-7282-45e8-83a3-2d80ecdf669b"
+}, {
+  "slug" : "dots",
+  "page/uuid" : "b3aee932-2f9d-40b5-b2fa-72d622c8c513",
+  "builder" : "no-op",
+  "created" : "2022-07-24",
+  "readiness" : "wtf-is-this",
+  "title" : "dots",
+  "lang" : "en",
+  "page/slug" : "dots",
+  "author-url" : "https://teod.eu",
+  "uuid" : "b3aee932-2f9d-40b5-b2fa-72d622c8c513"
 }, {
   "slug" : "scittle",
   "page/uuid" : "b4b1ff9b-f22f-404f-bfb1-f4a04ccf5108",
@@ -3569,6 +3666,15 @@
   "form" : "remote-reference",
   "uuid" : "b7518497-f161-498b-a670-c74ba7e8b4b4"
 }, {
+  "slug" : "wip",
+  "title" : "Let the play.teod.eu WIP simmer",
+  "readiness" : "wtf-is-this",
+  "author-url" : "https://teod.eu",
+  "lang" : "en",
+  "uuid" : "b78901ce-58cc-4c99-a2bd-1a6f38d35eda",
+  "page/uuid" : "b78901ce-58cc-4c99-a2bd-1a6f38d35eda",
+  "page/slug" : "wip"
+}, {
   "slug" : "sqlite",
   "page/uuid" : "b79cec4e-13d3-451c-9577-dad732c31438",
   "created" : "2023-05-01",
@@ -3682,6 +3788,15 @@
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "bdbed0b8-b25c-4ad3-9c7c-c50215eddc77"
+}, {
+  "slug" : "software-architecture",
+  "title" : "software-architecture",
+  "readiness" : "wtf-is-this",
+  "author-url" : "https://teod.eu",
+  "lang" : "en",
+  "uuid" : "bdf30a1a-33ee-4f76-a97a-9d8825fdfcb3",
+  "page/uuid" : "bdf30a1a-33ee-4f76-a97a-9d8825fdfcb3",
+  "page/slug" : "software-architecture"
 }, {
   "slug" : "ole-jacob",
   "page/uuid" : "c02b9b51-6ea2-47a9-8037-f0346a7974a7",
@@ -3926,6 +4041,15 @@
   "lang" : "en",
   "page/slug" : "narrow-statements",
   "page/uuid" : "cd48d901-8e1b-4d10-9b5a-76002e426dc0"
+}, {
+  "slug" : "product-for-developers",
+  "title" : "Product discovery for software developers",
+  "form" : "article",
+  "readiness" : "wtf-is-this",
+  "lang" : "en",
+  "uuid" : "cda89d19-741f-488f-b312-c92572547279",
+  "page/uuid" : "cda89d19-741f-488f-b312-c92572547279",
+  "page/slug" : "product-for-developers"
 }, {
   "slug" : "pain-on-steel",
   "page/uuid" : "ce22160b-013d-46e6-913b-a3d8c1ee6852",
@@ -4374,6 +4498,16 @@
   "page/slug" : "programmer-cultivate-your-curiosity",
   "author-url" : "https://teod.eu",
   "uuid" : "ed7bbc77-18b0-4092-bd7d-f127d7bc3041"
+}, {
+  "slug" : "do-the-simplest-thing-possible",
+  "page/uuid" : "ef835eb0-e607-4a81-984c-0ee3410042df",
+  "created" : "2024-11-03",
+  "readiness" : "ready-for-comments",
+  "title" : "Do the simplest thing possible!",
+  "lang" : "en",
+  "page/slug" : "do-the-simplest-thing-possible",
+  "author-url" : "https://teod.eu",
+  "uuid" : "ef835eb0-e607-4a81-984c-0ee3410042df"
 }, {
   "slug" : "growth-mindset",
   "page/uuid" : "efbb9f44-9a8e-436e-bf68-ff19d5bd990c",

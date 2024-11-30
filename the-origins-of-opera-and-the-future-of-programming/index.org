@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 #+begin_export html
-<iframe class="youtube-video" src="https://www.youtube.com/embed/pPKemLH5y5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/pEQj7fy-Htg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+end_export
 
 By [[id:cf8109c8-bed4-4b1c-bcff-a84e576d4043][Jessica Kerr]].

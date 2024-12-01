@@ -1,6 +1,11 @@
+;; # Advent of Code: Day 1
+
 (ns day1
+  {:nextjournal.clerk/toc true}
   (:require [clojure.string :as str]
             [nextjournal.clerk :as clerk]))
+
+;; ## Part 1
 
 (def example-input
   "
@@ -48,7 +53,27 @@
            (solve (slurp "input/day1.txt")))
         "Avoid regressions when refactoring!")
 
+;; Started at 15:55
+;;
 ;; Finished at 16:29
+
+;; ## Part 2
+;;
+;; Started at 19:13
+
+(defn solve-part2 [problem]
+  (let [[left right] (parse problem)
+        right-counts (frequencies right)]
+    (reduce +
+            (for [num left]
+              (* num (get right-counts num 0))))))
+
+(assert (= 31 (solve-part2 example-input)))
+
+(assert (= 24941624
+           (solve-part2 (slurp "input/day1.txt"))))
+
+;; Finished at 19:17
 
 ^{::clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "40vh"}}])

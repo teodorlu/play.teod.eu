@@ -1,0 +1,8 @@
+{:paths ["."]
+ :deps {io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+        io.github.teodorlu/play.teod.eu {:local/root ".."}
+        babashka/fs {:mvn/version "0.5.22"}
+
+        no.cjohansen/clj-nats {:git/url "https://github.com/cjohansen/clj-nats"
+                               :git/sha "6491ef29d55022673eb878178489f49631ec55e8"}
+        ,,}}

@@ -2867,6 +2867,16 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "955eb1b8-cbbf-47e5-9b86-da4bdf344535"
 }, {
+  "slug" : "near-instant-module-tests-with-a-single-keypress",
+  "page/uuid" : "95be2b0d-ddda-4e64-8460-a56ee60f6008",
+  "created" : "2024-11-30",
+  "readiness" : "wtf-is-this",
+  "title" : "Near-instant Module Tests with a Single Keypress",
+  "lang" : "en",
+  "page/slug" : "near-instant-module-tests-with-a-single-keypress",
+  "author-url" : "https://teod.eu",
+  "uuid" : "95be2b0d-ddda-4e64-8460-a56ee60f6008"
+}, {
   "slug" : "from-theory-to-practice-then-connection",
   "page/uuid" : "9637ecbd-54a5-4659-b662-6f8e3eb922c8",
   "created" : "2024-09-20",
@@ -3368,6 +3378,16 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "a6ea19a2-4eb5-4481-beb5-8ff3c6f01756"
 }, {
+  "slug" : "aoc2024",
+  "page/uuid" : "a7b4dfaa-f5c9-43a1-ba08-a849c4049058",
+  "created" : "2024-12-01",
+  "readiness" : "wtf-is-this",
+  "title" : "Age of Code 2024",
+  "lang" : "en",
+  "page/slug" : "aoc2024",
+  "author-url" : "https://teod.eu",
+  "uuid" : "a7b4dfaa-f5c9-43a1-ba08-a849c4049058"
+}, {
   "slug" : "chris-nuernberger",
   "page/uuid" : "a878303d-3130-4dd3-9192-791ddd2cbbcf",
   "created" : "2023-03-19",
@@ -3717,6 +3737,17 @@ export const index =
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "b966b1ff-24fc-482c-85ad-c36f78ddc17b"
+}, {
+  "slug" : "fight-doomscrolling-with-babashka",
+  "page/uuid" : "b9de9ff6-e085-4084-a5a9-ab787293ebe2",
+  "builder" : "no-op",
+  "created" : "2024-11-17",
+  "readiness" : "ready-for-comments",
+  "title" : "Fight Doomscrolling with Babashka",
+  "lang" : "en",
+  "page/slug" : "fight-doomscrolling-with-babashka",
+  "author-url" : "https://teod.eu",
+  "uuid" : "b9de9ff6-e085-4084-a5a9-ab787293ebe2"
 }, {
   "slug" : "discussion-wishlist",
   "page/uuid" : "bac1204a-183a-4210-ae93-b4cee2fd1b03",

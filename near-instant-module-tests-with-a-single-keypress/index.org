@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: 95be2b0d-ddda-4e64-8460-a56ee60f6008
+:END:
+#+TITLE: Near-instant Module Tests with a Single Keypress
+
+[[file:..][..]]
+
+Six weeks ago, I started working for the Norwegian Safety REF with Christian Johansen REF and Magnar Sveen REF.
+I feel fortunate to be in this situation: I like working with resourceful pepople, and I believe I have a lot to learn from Christian and Magnar.
+You may know Christian and Magnar from zombie-clj REF, a Clojure(Script) screencast where they make a game from scratch.
+
+Learning means discovering what other peoeple do and believe that you don't know, do or pay attention to.
+The one part of Christian and Magnar's development workflow that has had the largest impact on my own thinking is near-instant module tests with a single keypress.
+
+Watching zombie-clj videos

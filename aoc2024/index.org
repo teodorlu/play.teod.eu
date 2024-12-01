@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: a7b4dfaa-f5c9-43a1-ba08-a849c4049058
+:END:
+#+TITLE: Age of Code 2024
+
+[[file:..][..]]
+
+DRAFT

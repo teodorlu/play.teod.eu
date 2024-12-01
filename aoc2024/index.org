@@ -5,4 +5,13 @@
 
 [[file:..][..]]
 
-DRAFT
+I figured I wanted to participate in Advent of Code this year.
+But I want to do it /my way/.
+So, what's my way?
+
+1. I want to solve days in Clojure with Clerk first.
+2. Then I /maybe/ want to try solve the same task with Zig.
+3. And I want to time how long time i spend on each.
+
+*The timer*.
+An EDN file should be all that's needed, right?

@@ -75,7 +75,29 @@
 
 (assert (= 2 (solve-part1 (parse example-input))))
 
-(solve-part1 (parse (slurp "input/day2.txt")))
+(assert (= 383 (solve-part1 (parse (slurp "input/day2.txt")))))
+
+;; ## Part 2
+
+(defn safe-variants [elements]
+  (concat [elements]
+          (for [remove-at (range 0 (count elements))]
+            (concat
+             (take remove-at elements)
+             (drop (inc remove-at) elements)))))
+
+(assert (= (safe-variants '(1 2 3))
+           '((1 2 3) (2 3) (1 3) (1 2))))
+
+(defn safe2? [numbers]
+  (some safe? (safe-variants numbers)))
+
+(defn solve-part2 [rows]
+  (count (filter safe2? rows)))
+
+(assert (= 4 (solve-part2 (parse example-input))))
+
+(assert (= 436 (solve-part2 (parse (slurp "input/day2.txt")))))
 
 ^{::clerk/visibility {:code :hide}}
 (clerk/html [:div {:style {:height "40vh"}}])

@@ -1,3 +1,6 @@
 /.cpcache
 /.clerk
 /.nrepl-port
+
+# Must ignore task input, per Advent of Code regulations.
+/input

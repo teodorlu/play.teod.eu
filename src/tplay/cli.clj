@@ -311,6 +311,61 @@ Allowed options:
 
       nil)))
 
+(defn default-page-opts []
+  {:readiness :wtf-is-this
+   :uuid (str (random-uuid))
+   :author-url "https://teod.eu"
+   :created (play/today-str)
+   :lang :en})
+
+(defn spit-when-not-exists [f content]
+  (when-not (fs/exists? f)
+    (spit f content)))
+
+(mod 187 10)
+
+(defn cmd-create-clerk-page
+  "Create a Clerk-based page
+
+  Jumpstarts a new page tailored to making the page with Clerk. The page is its
+  own little Clojure project, and also provides the metadata required for
+  playing nicely with the rest of play.teod.eu - including indexing and makefile
+  target generation."
+  [opts+args]
+  (let [user-provided-opts (select-keys (:opts opts+args)
+                                        [:author-url :created :lang :readiness :slug :title :uuid])
+        clean-opts (into (sorted-map) (merge (default-page-opts) user-provided-opts))
+        {:keys [slug]} clean-opts]
+    (assert slug "Cannot create a page without a slug!")
+    (fs/create-dirs slug)
+    (spit-when-not-exists (fs/file slug "play.edn")
+                          (with-out-str (pprint (assoc clean-opts :builder :no-op))))
+    (spit-when-not-exists (fs/file slug ".projectile") "")
+    (spit-when-not-exists (fs/file slug "deps.edn")
+                          (with-out-str (pprint
+                                         '{:paths ["."]
+                                           :deps {io.github.teodorlu/play.teod.eu {:local/root ".."}}})))
+    (spit-when-not-exists (fs/file slug ".gitignore")
+                          (str/join "\n" ["/.clerk" "/.cpcache" "/.nrepl-port"]))
+    (let [clojure-file-path (fs/file slug (str (str/replace slug #"-" "_") ".clj"))]
+      (spit-when-not-exists clojure-file-path
+                            (str/join "\n\n"
+                                      (filter some?
+                                              [(when-let [title (:title clean-opts)]
+                                                 (str ";; # " title))
+                                               `(~'ns ~(symbol slug))
+                                               "^{:nextjournal.clerk/visibility {:code :hide :result :hide}}"
+                                               (with-out-str
+                                                 (clojure.pprint/with-pprint-dispatch
+                                                   (pprint
+                                                    '(comment
+                                                       ((requiring-resolve 'nextjournal.clerk/serve!) {:browse true})
+                                                       ((requiring-resolve 'clojure.repl.deps/sync-deps))
+                                                       (clerk/build! {:paths [(fs/file-name *file*)] :out-path "."})
+                                                       (clerk/clear-cache!)))))]))))
+    ;; Finally, the makefile must be regenerated.
+    (bash-project-root "./play.clj makefile")))
+
 (defn builder [rel]
   (:builder rel :pandoc-page))
 
@@ -513,8 +568,22 @@ Usage:
     (tplay.index/alt)
     (tplay.index/main)))
 
+(defn indent-lines [s indent]
+  (let [indent-str (apply str (repeat indent \space))]
+    (->> s str/split-lines (map (partial str indent-str)) (str/join "\n"))))
+
+(defn pprint-indent [x indent]
+  (println (indent-lines (with-out-str (pprint x)) indent)))
+
+(defn cli-error-fn [failure-info]
+  (println "Error parsing CLI arguments")
+  (println)
+  (pprint-indent failure-info 2)
+  (System/exit 1))
+
 (def dispatch-table
   [{:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
+   {:cmds ["create-clerk-page"] :fn cmd-create-clerk-page :spec {:slug {:require true} :title {:require true}} :error-fn cli-error-fn}
    {:cmds ["filter"] :fn cmd-filter :cmds-opts [:resolve-links]}
    {:cmds ["makefile"] :fn cmd-makefile}
    {:cmds ["random-page"] :fn cmd-random-page}
@@ -531,22 +600,23 @@ Usage:
                   (str/join " " cmds)))))
 
 (defn main [& args]
-  (cli/dispatch (concat dispatch-table
-                        [{:cmds ["help"] :fn print-subcommands}
-                         {:cmds [] :fn print-subcommands}])
-                args
-                {:coerce {;; relations
-                          :from :keyword    ; page relation format
-                          :to :keyword      ; page relation format
-                          :dry-run :boolean
-                          ;; page
-                          :title :string    ; Page title
-                          :n :long          ; Count - eg random page count
-                          :uuid :string     ; UUID for me and Org-roam
-                          :lang :keyword    ; Article language, :en or :no
-                          ;; filter
-                          :resolve-links :boolean
-                          }}))
+  (binding [*print-namespace-maps* false]
+    (cli/dispatch (concat dispatch-table
+                          [{:cmds ["help"] :fn print-subcommands}
+                           {:cmds [] :fn print-subcommands}])
+                  args
+                  {:coerce {               ;; relations
+                            :from :keyword ; page relation format
+                            :to :keyword   ; page relation format
+                            :dry-run :boolean
+                            ;; page
+                            :title :string ; Page title
+                            :n :long       ; Count - eg random page count
+                            :uuid :string  ; UUID for me and Org-roam
+                            :lang :keyword ; Article language, :en or :no
+                            ;; filter
+                            :resolve-links :boolean
+                            }})))
 
 (when (= *file* (System/getProperty "babashka.file"))
   (apply main *command-line-args*))

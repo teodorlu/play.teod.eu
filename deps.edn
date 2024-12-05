@@ -1,16 +1,16 @@
 {:paths ["src"]
- :deps {babashka/fs {:mvn/version "0.5.21"}
+ :deps {babashka/fs {:mvn/version "0.5.23"}
         babashka/process {:mvn/version "0.5.22"}
         cheshire/cheshire {:mvn/version "5.13.0"}
         hiccup/hiccup {:mvn/version "2.0.0-RC1"}
-        org.babashka/cli {:mvn/version "0.8.60"}
-        org.babashka/http-client {:mvn/version "0.4.19"}
-        org.clojure/clojure {:mvn/version "1.11.4"}
+        org.babashka/cli {:mvn/version "0.8.61"}
+        org.babashka/http-client {:mvn/version "0.4.22"}
+        org.clojure/clojure {:mvn/version "1.12.0"}
         org.flatland/ordered {:mvn/version "1.15.12"}
 
         ;; Extra deps
         datascript/datascript {:mvn/version "1.7.3"}
-        io.github.nextjournal/clerk {:mvn/version "0.16.1016"}
+        io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
         io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}
         io.github.teodorlu/pandocir {:git/url "https://github.com/teodorlu/pandocir"
                                      :git/sha "91f7ec2765b7ba3891fec3069b7fbc2e4177ff9a"}}

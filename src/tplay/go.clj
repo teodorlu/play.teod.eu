@@ -1,7 +1,6 @@
 (ns tplay.go
   (:require
-   [clojure.string :as str]
-   [hiccup2.core :as hiccup]))
+   [clojure.string :as str]))
 
 (def bright-green "hsl(124, 100%, 88%)")
 (def brighter-green "hsl(122.67 89% 94%)")

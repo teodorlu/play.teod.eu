@@ -1,10 +1,10 @@
 (ns tplay.index
   (:require
-   [clojure.string :as str]
-   [babashka.process :as p]
    [babashka.fs :as fs]
-   [clojure.java.shell :refer [sh]]
+   [babashka.process :as p]
    [clojure.edn :as edn]
+   [clojure.java.shell :refer [sh]]
+   [clojure.string :as str]
    [hiccup2.core :as hiccup]
    [tplay.go :as go]))
 

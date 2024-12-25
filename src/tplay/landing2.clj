@@ -1,11 +1,11 @@
 (ns tplay.landing2
   (:require
+   [babashka.fs :as fs]
+   [clojure.pprint]
    [clojure.string :as str]
    [hiccup2.core :as hiccup]
-   [babashka.fs :as fs]
-   [tplay.landing2-assets :as assets]
    [tplay.index]
-   [clojure.pprint]
+   [tplay.landing2-assets :as assets]
    [tplay.page :as page]))
 
 ;; Goal: try replacing the *content* on the landing page with hand-written hiccup and inline styles.

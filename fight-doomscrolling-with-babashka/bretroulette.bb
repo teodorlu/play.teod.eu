@@ -23,5 +23,8 @@
 (println "Visiting reference:" (lookup/get-text ref-anchor))
 
 (require 'clojure.java.browse)
-(defn resolve-url [url] (str refs-url url))
+
+(defn resolve-url [url]
+  (str refs-url url))
+
 (clojure.java.browse/browse-url (-> ref-anchor lookup/attrs :href resolve-url))

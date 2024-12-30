@@ -6,7 +6,8 @@
    [clojure.java.shell :refer [sh]]
    [clojure.string :as str]
    [hiccup2.core :as hiccup]
-   [tplay.go :as go]))
+   [tplay.go :as go]
+   [tplay.nopandoc.landing :as landing]))
 
 (defn bash [cmd]
   (-> (sh "bash" "-c" cmd) :out))
@@ -274,3 +275,9 @@ I include this list as a personal reminder.
   (spit "index.html" (slurp (:out
                              @(p/process '[pandoc --from org+smart -H header-default-include.html --to html --standalone]
                                          {:in (index-org-markup {:pages (find-pages)})})))))
+
+(defn main2 []
+  (spit "index.html"
+        (str "<!DOCTYPE html>"
+             (hiccup2.core/html {}
+               (landing/handler {:the-pages (find-pages)})))))

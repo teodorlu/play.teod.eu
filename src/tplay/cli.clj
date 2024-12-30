@@ -564,7 +564,7 @@ Usage:
 (defn cmd-index
   "Produces the index.html file for play.teod.eu"
   [_opts+args]
-  (tplay.index/main))
+  (tplay.index/main2))
 
 (defn indent-lines [s indent]
   (let [indent-str (apply str (repeat indent \space))]

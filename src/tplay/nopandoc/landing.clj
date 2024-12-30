@@ -2,7 +2,7 @@
   (:require
    [clojure.pprint]
    [clojure.string :as str]
-   [tplay.index]
+   [hiccup2.core]
    [tplay.nopandoc.other-people :as other-people]
    [tplay.page :as page]))
 
@@ -206,14 +206,29 @@
          "play.teod.eu"] "."]]
       [:div {:style {:height "16vh"}}]]]))
 
+(def index-headers
+  (list
+   [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
+   [:meta {:charset "utf-8"}]
+
+   [:link {:rel "icon" :type "image/x-icon" :href "/green.png"}]
+   [:script {:async true :type "module" :src "/index/big.js"}]
+   [:script {:async true :type "module" :src "/iki/iki.js"}]
+   [:script {:async true :type "module"}
+    (hiccup2.core/raw
+     "
+import {IkiGotoRandomPage} from \"/iki/iki.js\";
+customElements.define(\"iki-goto-random-page\", IkiGotoRandomPage, {extends: \"button\"});
+")]
+   ))
+
 (defn index-page [subpages theme]
   (when-not (valid-theme? theme)
     (throw (ex-info "invalid theme" {:theme theme})))
   [:html {:lang "en" :style {:height "100%"}}
    [:head
-    [:title "landing 🌊"]
-    [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
-    [:meta {:charset "utf-8"}]]
+    [:title "Towards an iterated game 🌊"]
+    index-headers]
    [:body {:style {:width "100%" :height "100%" :margin 0}}
     (principles-component theme)
     (pandoc-component subpages)]])

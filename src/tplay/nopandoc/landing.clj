@@ -204,18 +204,14 @@
        [:p "I include this list as a personal reminder."]]
       [:section
        [:h2 "What is this?"]
-       [:p "Good question! What this /is/ is perhaps less useful than what this is " [:em "for"] "."]]
-      [:section
-       [:h2 "Then, what is this " [:em "for"] "?"]
+       [:p "Good question! What this " [:em "is"] " is perhaps less useful than what this is " [:em "for"] "."]
+       [:p "Then, what is this " [:em "for"] "?"]
        [:p (spaced "It's for playing with ideas."
                    "Good ones, but mostly bad ones."
                    "Toss them around. Light them on fire."
-                   "Then watch the smoke rise!")]]
-      [:section
-       [:h2 "But what is it???"]
-       [:p "You're looking for the page describing this site, "
-        [:a {:href "/play.teod.eu/"}
-         "play.teod.eu"] "."]]
+                   "Then watch the smoke rise!")]
+       [:p "“What this is” is in flux."
+        " See " [:a {:href "/play.teod.eu/"} "play.teod.eu"] " for discussion."]]
       [:div {:style {:height "16vh"}}]]]))
 
 (defn index-page [subpages theme]
@@ -238,7 +234,8 @@
       "
 import {IkiGotoRandomPage} from \"/iki/iki.js\";
 customElements.define(\"iki-goto-random-page\", IkiGotoRandomPage, {extends: \"button\"});
-")]
+"
+      )]
     ]
    [:body {:style {:width "100%" :height "100%" :margin 0}}
     (principles-banner theme)

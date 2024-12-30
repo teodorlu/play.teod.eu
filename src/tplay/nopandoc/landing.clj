@@ -192,10 +192,10 @@
        [:ol
         (map (partial into [:li])
              ["We put things prematurely into large hierarchies that collapse"
-              "The inability to critique the hierarchy itself --- and iterate on the hierarchy"
+              "The inability to critique the hierarchy itself—and iterate on the hierarchy"
               "The inability to have separate hierarchies"
-              "More abstractly --- we need a /fractal/ structure, not a hierarchical one"
-              "Unclear content authority --- whose content is this? Who is responsible?"
+              "More abstractly—we need a /fractal/ structure, not a hierarchical one"
+              "Unclear content authority—whose content is this? Who is responsible?"
               "Mixing good stuff and bad stuff makes the good stuff hard to find"
               "It's hard to find any good stuff whatsoever"
               "It's hard to find anything that's not on the front page"

@@ -46,7 +46,7 @@
        (map add-category)
        (sort-by :title)))
 
-(defn main2 []
+(defn main []
   (spit "index.html"
         (str "<!DOCTYPE html>"
              (hiccup2.core/html {}

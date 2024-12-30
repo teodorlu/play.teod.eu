@@ -36,13 +36,6 @@
    {:kind ::fn
     :fn #'tplay.nopandoc.landing/handler}})
 
-
-(-> (render-cssfile "/tplay.css")
-    :body
-    slurp)
-
-(slurp "tplay.css")
-
 (defn render [{:keys [the-pages]}
               {:as page :keys [kind]}]
   (case kind

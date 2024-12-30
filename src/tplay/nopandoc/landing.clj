@@ -17,14 +17,35 @@
   (every? #(contains? theme %)
           [:theme/primary-color
            :theme/secondary-color
-           :theme/unobtrusive
-           :theme/emphasis]))
+           :theme/unobtrusive-color
+           :theme/emphasis-color]))
 
 (def theme-main
   {:theme/primary-color bright-green
    :theme/secondary-color blackish
-   :theme/unobtrusive greyish
-   :theme/emphasis bright-blue})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color bright-blue})
+
+(defn linkroll [theme tplay-root tgo-root]
+  [:div {:style {:css.prop/font-size "1.2rem"
+                 :css.prop/margin-top "1em"
+                 :css.prop/color (:theme/unobtrusive-color theme)}}
+   (interpose
+    " · "
+    (for [{:keys [href text]} [{:href tplay-root
+                                :text "play.teod.eu"}
+                               {:href tgo-root
+                                :text "go.teod.eu"}
+                               {:href (str tgo-root "/bretroulette")
+                                :text "Bret Roulette"}]]
+      [:a {:href href
+           :style {:css.prop/color (:theme/unobtrusive-color theme)}}
+       text]))])
+
+(defn linkroll-from-tplay [theme]
+  (linkroll theme "" "https://go.teod.eu"))
+
+#_(view-links theme-main)
 
 (defn principles-banner
   [theme]
@@ -47,12 +68,12 @@
           (partition 2 ["Balance." "Body ↔ Mind ↔ Emotions."
                         "Habits for action" "get you started."
                         "Creation & curiosity" "over consumption & passivity."
-                        "Techne ≠ episteme." "Not the same thing."
                         "Rest or focus?" (str "Search for balance."
                                               " Body ↔ Mind ↔ Emotions.")])]
-      [:div [:span {:style {:color (:theme/emphasis theme )}}
+      [:div [:span {:style {:color (:theme/emphasis-color theme )}}
              (str/upper-case principle-core)]
-       " " principle-extras])]])
+       " " principle-extras])
+    (linkroll-from-tplay theme)]])
 
 (defn spaced [& items] (interpose " " items))
 
@@ -203,10 +224,10 @@
     (throw (ex-info "invalid theme" {:theme theme})))
   [:html {:lang "en" :style {:height "100%"}}
    [:head
+    [:meta {:charset "utf-8"}]
     [:title "Towards an iterated game 🌊"]
     [:title "Towards an iterated game 🌊"]
     [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
-    [:meta {:charset "utf-8"}]
 
     [:link {:rel "icon" :type "image/x-icon" :href "/green.png"}]
     [:link {:rel "stylesheet" :href "/tplay.css"}]
@@ -226,3 +247,11 @@ customElements.define(\"iki-goto-random-page\", IkiGotoRandomPage, {extends: \"b
 
 (defn handler [{:keys [the-pages]}]
   (index-page the-pages theme-main))
+
+(comment
+  ;; Changing this handler may require regenerating index.html.
+  (do
+    (require '[babashka.process :as p])
+    (p/shell "rm index.html")
+    (p/shell "make index.html"))
+  )

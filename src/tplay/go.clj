@@ -14,38 +14,38 @@
   (every? #(contains? theme %)
           [:theme/primary-color
            :theme/secondary-color
-           :theme/unobtrusive
-           :theme/emphasis]))
+           :theme/unobtrusive-color
+           :theme/emphasis-color]))
 
 (def theme-main
   {:theme/primary-color bright-green
    :theme/secondary-color blackish
-   :theme/unobtrusive greyish
-   :theme/emphasis bright-blue})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color bright-blue})
 
 (def theme-other
   {:theme/primary-color blackish
    :theme/secondary-color bright-green
-   :theme/unobtrusive greyish
-   :theme/emphasis crimson})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color crimson})
 
 (def theme-other-crimson
   {:theme/primary-color blackish
    :theme/secondary-color brighter-green
-   :theme/unobtrusive greyish
-   :theme/emphasis crimson})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color crimson})
 
 (def theme-other-brighter
   {:theme/primary-color blackish
    :theme/secondary-color brighter-green
-   :theme/unobtrusive greyish
-   :theme/emphasis dark-blue})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color dark-blue})
 
 (def theme-bw
   {:theme/primary-color "rgba(0, 0, 0, 80%)"
    :theme/secondary-color "rgba(0, 0, 0, 0%)"
-   :theme/unobtrusive "rgba(0, 0, 0, 60%)"
-   :theme/emphasis "rgba(0, 0, 0, 100%)"})
+   :theme/unobtrusive-color "rgba(0, 0, 0, 60%)"
+   :theme/emphasis-color "rgba(0, 0, 0, 100%)"})
 
 (assert (every? valid-theme? [theme-main theme-other theme-other-crimson]))
 
@@ -86,7 +86,7 @@
                          #_#_"Techne ≠ episteme." "Not the same thing."
                          "Rest or focus?" (str "Search for balance."
                                                " Body ↔ Mind ↔ Emotions.")])]
-       [:div [:span {:style {:color (:theme/emphasis theme )}}
+       [:div [:span {:style {:color (:theme/emphasis-color theme )}}
               (str/upper-case principle-core)]
         " " principle-extras])]]))
 
@@ -121,7 +121,7 @@
                           #_#_"Techne ≠ episteme." "Not the same thing."
                           "Rest or focus?" (str "Search for balance."
                                                 " Body ↔ Mind ↔ Emotions.")])]
-        [:div [:span {:style {:color (:theme/emphasis theme )}}
+        [:div [:span {:style {:color (:theme/emphasis-color theme )}}
                (str/upper-case principle-core)]
          " " principle-extras])]]]))
 

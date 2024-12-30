@@ -23,20 +23,20 @@
   (every? #(contains? theme %)
           [:theme/primary-color
            :theme/secondary-color
-           :theme/unobtrusive
-           :theme/emphasis]))
+           :theme/unobtrusive-color
+           :theme/emphasis-color]))
 
 (def theme-main
   {:theme/primary-color bright-green
    :theme/secondary-color blackish
-   :theme/unobtrusive greyish
-   :theme/emphasis bright-blue})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color bright-blue})
 
 (def theme-other-brighter
   {:theme/primary-color blackish
    :theme/secondary-color brighter-green
-   :theme/unobtrusive greyish
-   :theme/emphasis dark-blue})
+   :theme/unobtrusive-color greyish
+   :theme/emphasis-color dark-blue})
 
 (assert (every? valid-theme? [theme-main theme-other-brighter]))
 
@@ -79,7 +79,7 @@
                          "Techne ≠ episteme." "Not the same thing."
                          "Rest or focus?" (str "Search for balance."
                                                " Body ↔ Mind ↔ Emotions.")])]
-       [:div [:span {:style {:color (:theme/emphasis theme )}}
+       [:div [:span {:style {:color (:theme/emphasis-color theme )}}
               (str/upper-case principle-core)]
         " " principle-extras])]]))
 

@@ -26,7 +26,7 @@
    :theme/unobtrusive greyish
    :theme/emphasis bright-blue})
 
-(defn principles-component
+(defn principles-banner
   [theme]
   (assert (valid-theme? theme))
   [:div {:style {:height "100%"
@@ -56,14 +56,6 @@
 
 (defn spaced [& items] (interpose " " items))
 
-(def todo [:p {:style {:opacity "0.67"}} [:em "TODO"]])
-
-(defn pprint-str [x]
-  (with-out-str (clojure.pprint/pprint x)))
-
-(defn todo-convert [code]
-  [:pre [:code (pprint-str code)]])
-
 (defn category [{:keys [lang readiness form]}]
   (cond
     (= readiness :noindex)                        :page-category/noindex
@@ -86,7 +78,7 @@
         (when (:created page)
           (str " (" (:created page) ")"))))
 
-(defn pandoc-component [subpages]
+(defn content-index [subpages]
   (let [by-category (group-by category subpages)]
     [:div.pandoc-vertical
      [:div.pandoc-indented
@@ -178,7 +170,7 @@
       [:section
        [:h2 "Efforts at “writing things down together” commonly fail because:"]
        [:ol
-        (map #(into [:li %])
+        (map (partial into [:li])
              ["We put things prematurely into large hierarchies that collapse"
               "The inability to critique the hierarchy itself --- and iterate on the hierarchy"
               "The inability to have separate hierarchies"
@@ -206,32 +198,31 @@
          "play.teod.eu"] "."]]
       [:div {:style {:height "16vh"}}]]]))
 
-(def index-headers
-  (list
-   [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
-   [:meta {:charset "utf-8"}]
-
-   [:link {:rel "icon" :type "image/x-icon" :href "/green.png"}]
-   [:script {:async true :type "module" :src "/index/big.js"}]
-   [:script {:async true :type "module" :src "/iki/iki.js"}]
-   [:script {:async true :type "module"}
-    (hiccup2.core/raw
-     "
-import {IkiGotoRandomPage} from \"/iki/iki.js\";
-customElements.define(\"iki-goto-random-page\", IkiGotoRandomPage, {extends: \"button\"});
-")]
-   ))
-
 (defn index-page [subpages theme]
   (when-not (valid-theme? theme)
     (throw (ex-info "invalid theme" {:theme theme})))
   [:html {:lang "en" :style {:height "100%"}}
    [:head
     [:title "Towards an iterated game 🌊"]
-    index-headers]
+    [:title "Towards an iterated game 🌊"]
+    [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
+    [:meta {:charset "utf-8"}]
+
+    [:link {:rel "icon" :type "image/x-icon" :href "/green.png"}]
+    [:link {:rel "stylesheet" :href "/tplay.css"}]
+
+    [:script {:async true :type "module" :src "/index/big.js"}]
+    [:script {:async true :type "module" :src "/iki/iki.js"}]
+    [:script {:async true :type "module"}
+     (hiccup2.core/raw
+      "
+import {IkiGotoRandomPage} from \"/iki/iki.js\";
+customElements.define(\"iki-goto-random-page\", IkiGotoRandomPage, {extends: \"button\"});
+")]
+    ]
    [:body {:style {:width "100%" :height "100%" :margin 0}}
-    (principles-component theme)
-    (pandoc-component subpages)]])
+    (principles-banner theme)
+    (content-index subpages)]])
 
 (defn handler [{:keys [the-pages]}]
   (index-page the-pages theme-main))

@@ -18,19 +18,36 @@
    :headers {"Content-Type" "text/html"}
    :body (io/file path)})
 
+(defn render-cssfile [path]
+  {:status 200
+   :headers {"Content-Type" "text/css"}
+   :body (io/file path)})
+
 (def the-pages
   {"/old"
    {:kind ::htmlfile
     :htmlfile "index.html"}
 
+   "/tplay.css"
+   {:kind ::cssfile
+    :cssfile "tplay.css"}
+
    "/landing3"
    {:kind ::fn
     :fn #'tplay.nopandoc.landing/handler}})
+
+
+(-> (render-cssfile "/tplay.css")
+    :body
+    slurp)
+
+(slurp "tplay.css")
 
 (defn render [{:keys [the-pages]}
               {:as page :keys [kind]}]
   (case kind
     ::htmlfile (render-htmlfile (:htmlfile page))
+    ::cssfile (render-cssfile (:cssfile page))
     ::fn ((:fn page) {:the-pages the-pages})
     {:status 500
      :body (str "Unsupported kind: " kind)}))

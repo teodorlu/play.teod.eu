@@ -1061,16 +1061,6 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "3535df8d-0fb3-40b7-ada4-347339284151"
 }, {
-  "slug" : "tidy-first-notes",
-  "page/uuid" : "356c6009-aa12-4ec7-bb31-5835ca47e31c",
-  "created" : "2024-03-08",
-  "readiness" : "wtf-is-this",
-  "title" : "Tidy First?: notes and commentary",
-  "lang" : "en",
-  "page/slug" : "tidy-first-notes",
-  "author-url" : "https://teod.eu",
-  "uuid" : "356c6009-aa12-4ec7-bb31-5835ca47e31c"
-}, {
   "slug" : "maksimal-opsjonalitet",
   "title" : "MAKSIMAL OPSJONALITET",
   "lang" : "no",
@@ -2437,7 +2427,7 @@ export const index =
   "page/uuid" : "7d7ef8e9-9312-4cbe-9fc9-12ff7bda489b",
   "created" : "2023-03-09",
   "readiness" : "wtf-is-this",
-  "title" : "visakanv's 50yr \"plan\" for global nerd network (wip)",
+  "title" : "visakanv's 50yr “plan” for global nerd network (wip)",
   "lang" : "en",
   "page/slug" : "visakanvs-50-yr-plan-for-global-nerd-network-wip",
   "form" : "remote-reference",

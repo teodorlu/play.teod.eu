@@ -404,11 +404,13 @@ Allowed options:
         indent (fn [s] (str "\t" s))
         makefile (lines
                   "# DO NOT EDIT directly -- THIS MAKEFILE IS AUTO-GENERATED"
-                  "# SEE `make makefile` TARGET"
+                  "# REGENERATE THIS MAKEFILE WITH"
+                  "#"
+                  "#     ./play.clj makefile"
                   ""
                   ""
 
-                  "# Generate target for root index"
+                  "# Root index"
                   ;; TODO root index also depends on all the play.edn files found
                   (str/join " " (concat ["index.html:"]
                                         (some-> 'tplay.nopandoc infer-ns-file vector)
@@ -421,7 +423,7 @@ Allowed options:
                   ""
                   ""
 
-                  "# Generate target for 404"
+                  "# 404"
                   "404.html: 404.org"
                   (indent
                    "pandoc --from=org+smart -i 404.org -t json | cat | pandoc -f json -o 404.html --standalone -H header-default-include.html -H scittle/scittle-with-extras.html")
@@ -429,29 +431,8 @@ Allowed options:
 
                   ""
                   ""
-                  "# Generate target for each page"
-                  (str/join "\n\n"
-                            (for [t targets]
-                              ;; Here's the pandoc command I'd like for some pages:
-                              (makefile-entry t)))
-                  ""
-                  ""
-
-
-                  "# Note: generating the makefile with the makefile is sometimes problematic."
-                  ".PHONY: makefile"
-                  "makefile:"
-                  "\t./play.clj makefile"
-                  ""
-                  ""
-
-                  "# Rengenerate the index"
-                  "# Note: we don't remove the makefile, as that gets us ... stuck."
-                  "#       we also regenerate the metadata index."
-                  ".PHONY: clean"
-                  "clean:"
-                  "\trm -f index.html"
-                  "\t./play.clj reindex"
+                  "# Each page"
+                  (str/join "\n\n" (map makefile-entry targets))
                   ""
                   ""
 
@@ -506,6 +487,12 @@ Allowed options:
         (spit "index/big.js" (generate-js-index @big-index))
         (spit "index/big.mjs" (generate-js-index @big-index))
         ))))
+
+(defn cmd-clean [_opts]
+  (fs/delete-if-exists "index.html")
+  (cmd-reindex {})
+  (cmd-makefile {})
+  (p/shell "make"))
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn dbg
@@ -579,14 +566,15 @@ Usage:
   (System/exit 1))
 
 (def dispatch-table
-  [{:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
+  [{:cmds ["clean"] :fn cmd-clean}
    {:cmds ["create-clerk-page"] :fn cmd-create-clerk-page :spec {:slug {:require true} :title {:require true}} :error-fn cli-error-fn}
+   {:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
    {:cmds ["filter"] :fn cmd-filter :cmds-opts [:resolve-links]}
+   {:cmds ["index"] :fn cmd-index}
    {:cmds ["makefile"] :fn cmd-makefile}
    {:cmds ["random-page"] :fn cmd-random-page}
    {:cmds ["reindex"] :fn cmd-reindex}
-   {:cmds ["relations"] :fn cmd-relations}
-   {:cmds ["index"] :fn cmd-index}])
+   {:cmds ["relations"] :fn cmd-relations}])
 
 (defn print-subcommands [{}]
   (println "usage: ./play.clj COMMAND")

@@ -13,7 +13,8 @@
 (def refs-url "https://worrydream.com/refs/")
 
 (def ref-anchor
-  (->> (slurp "https://worrydream.com/refs/")
+  (->> refs-url
+       slurp
        hickory/parse
        hickory/as-hiccup
        (lookup/select :a)

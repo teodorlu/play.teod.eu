@@ -121,7 +121,6 @@
                   "But you're" [:emph "very"] "much welcome to have a look around!")]
       [:p (spaced "Most content on this site is authored by Teodor Heggelund"
                   (list "(" [:a {:href "https://teod.eu"} "https://teod.eu"] ")"))]
-      [:p "hello"]
       (when-let [ready-for-comments (:page-category/ready-for-comments by-category)]
         (list
          [:h2 "Content that's ready for the eyes of others"]

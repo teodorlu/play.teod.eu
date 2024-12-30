@@ -411,10 +411,9 @@ Allowed options:
                   "# Generate target for root index"
                   ;; TODO root index also depends on all the play.edn files found
                   (str/join " " (concat ["index.html:"]
-                                        ;; tplay.index and tplay.go are (per 2024-07-29) hardcoded makefile deps.
-                                        ;; They may get out of sync!
-                                        (some-> 'tplay.index infer-ns-file vector)
-                                        (some-> 'tplay.go infer-ns-file vector)
+                                        (some-> 'tplay.nopandoc infer-ns-file vector)
+                                        (some-> 'tplay.nopandoc.landing infer-ns-file vector)
+                                        (some-> 'tplay.nopandoc.other-people infer-ns-file vector)
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))

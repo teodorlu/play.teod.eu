@@ -381,6 +381,11 @@ own HTML converter</a></li>
 <li><a href="#multiple-interfaces" id="toc-multiple-interfaces">Multiple
 interfaces</a></li>
 </ul></li>
+<li><a href="#section-10" id="toc-section-10">2024-12-30</a>
+<ul>
+<li><a href="#worklog" id="toc-worklog">Worklog</a></li>
+</ul></li>
+<li><a href="#end" id="toc-end">END</a></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -1202,5 +1207,25 @@ things done without introducing new problems</li>
 </ol>
 <p>Why? I feel a certain friction when I want to change things now. I
 lean on the fact that it “works” as it is now.</p>
+<h2 id="section-10">2024-12-30</h2>
+<h3 id="worklog">Worklog</h3>
+<p>I’ve done some big changes.</p>
+<ol>
+<li>The banner on play.teod.eu (tplay) is now identical to the banner on
+go.teod.eu (tgo)</li>
+<li>There’s cross linking between tplay and tgo</li>
+<li>The front page on tplay no longer uses pandoc.</li>
+</ol>
+<p>When I made these changes, I noticed a few things.</p>
+<ol>
+<li>The information model of the code for tplay is not cohesive.
+Different code in different places does vastly different things.</li>
+<li>Before, every page was an org-mode file. Now, more and more pages
+are turned into HTML generated from raw Clojure, possibly with Clerk in
+the mix.</li>
+<li>The dependencies for pages generated from Clojure processes don’t
+fit well with the makefile.</li>
+</ol>
+<h2 id="end">END</h2>
 </body>
 </html>

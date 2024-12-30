@@ -1442,3 +1442,19 @@ Namely:
 Why?
 I feel a certain friction when I want to change things now.
 I lean on the fact that it "works" as it is now.
+* 2024-12-30
+** Worklog
+I've done some big changes.
+
+1. The banner on play.teod.eu (tplay) is now identical to the banner on go.teod.eu (tgo)
+2. There's cross linking between tplay and tgo
+3. The front page on tplay no longer uses pandoc.
+
+When I made these changes, I noticed a few things.
+
+1. The information model of the code for tplay is not cohesive.
+   Different code in different places does vastly different things.
+2. Before, every page was an org-mode file.
+   Now, more and more pages are turned into HTML generated from raw Clojure, possibly with Clerk in the mix.
+3. The dependencies for pages generated from Clojure processes don't fit well with the makefile.
+* END

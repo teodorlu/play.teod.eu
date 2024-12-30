@@ -415,6 +415,35 @@ Hat tip to CloJure & Jvm.
 - based on [[id:9799d27f-49d0-414a-bb94-f611588fc85c][Clerk]] and [[id:EAEE3D9F-2AB6-44F0-A75A-7070A65AC9E6][Datascript]]
 - view, then filter, then commit
 - REPL
+* 2024-03-24
+** I asked [[id:8638f5d6-bc22-4f10-a457-ab388c22128b][Clojurians Slack]] for reading recommendations
+Thread:
+https://clojurians.slack.com/archives/CBJ5CGE0G/p1711268565351239
+
+Summarized:
+
+"looking for books or papers?"
+Both I guess? I'm not a heavy reader (yet).
+
+Recommendation: Hyperion cantos (by Dan Simmons).
+
+Papers:
+
+- the micro kanren paper
+- mini kanren thesis
+- logitT paper are gems
+- Byrd's unified approach to solving problems (functional pearl) is a pearl 🙂
+- If you're more practically inclined
+  - Armstrong's thesis
+  - Hoare's CSP paper & book
+
+Three Body Problem, Book Of The New Sun.
+Malazan Book of The Fallen.
+Dune.
+
+From 40k, consider Ciaphas Cain or Eisenhorn.
+Elric of Melniboné.
+
 * 2024-03-28
 ** Poor performance on main page
 Mostly because unpgk is slow to return.

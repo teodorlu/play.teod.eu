@@ -2305,15 +2305,6 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "80e81edf-6a48-48f3-8ac8-b0420c8177d5"}
- {:slug "index2",
-  :page/uuid "8188ff51-c576-4645-b48a-78e26027bcf9",
-  :created "2024-12-25",
-  :readiness :wtf-is-this,
-  :title "index2",
-  :lang :en,
-  :page/slug "index2",
-  :author-url "https://teod.eu",
-  :uuid "8188ff51-c576-4645-b48a-78e26027bcf9"}
  {:slug "eric-normand",
   :page/uuid "81dfcf30-e59d-4293-9000-5b29c97f90b8",
   :created "2023-05-29",

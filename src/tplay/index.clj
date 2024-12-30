@@ -40,7 +40,7 @@
 (defn add-category [page]
   (assoc page :category (category page)))
 
-(defn pages []
+(defn find-pages []
   (->> (pages-raw)
        (map lookup-meta)
        (map add-defaults)
@@ -52,8 +52,8 @@
 
   Supports unqualified keywords (:href and :name) for backwards compatibility."
   [page]
-  (let [href (or (:page/href page) (:href page))
-        name (or (:page/title page) (:page/name page) (:name page))]
+  (let [href (or (:site/href page) (:href page))
+        name (or (:page/title page) (:site/name page) (:name page))]
     (when (and href name)
       (str "[[" href "][" name "]]"))))
 
@@ -98,11 +98,9 @@
                 deprecated]}
         (group-by :category pages)
         sentences (fn [& ss] (str/join " " ss))
-        words sentences
         lines2 (fn [& ls] (str/join "\n" (apply concat ls)))
         lines (fn [& ls] (str/join "\n" (map str ls)))
         paragraphs (fn [& ps] (str/join "\n\n" ps))]
-
     (lines2
      [(paragraphs "#+title: Towards an iterated game 🩵"
 
@@ -155,27 +153,27 @@
                          "I appreciate that!")
                   "In alphabetical order:")]
      (for [site
-           (sort-by #(or (:page/name %) (:name %))
+           (sort-by #(or (:site/name %) (:name %))
                     [                   ; people I know to some extent
-                     {:page/name "Sindre's Random Ramblings"
-                      :page/href "https://play.sindre.me/"}
-                     {:page/name "Kevin's WikiBlog"
-                      :page/href "https://kevin.stravers.net/"
+                     {:site/name "Sindre's Random Ramblings"
+                      :site/href "https://play.sindre.me/"}
+                     {:site/name "Kevin's WikiBlog"
+                      :site/href "https://kevin.stravers.net/"
                       :site/reference-article {:page/title "SimpleLinearLists"
-                                               :page/href "https://kevin.stravers.net/SimpleLinearLists"}}
-                     {:page/name "blog.oddmundo.com"
-                      :page/href "https://blog.oddmundo.com/"
+                                               :site/href "https://kevin.stravers.net/SimpleLinearLists"}}
+                     {:site/name "blog.oddmundo.com"
+                      :site/href "https://blog.oddmundo.com/"
                       :site/reference-article {:page/title "test && commit || revert ; pending"
-                                               :page/href "https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html"}}
+                                               :site/href "https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html"}}
                                         ; other people
-                     {:page/name "Marc's blog"
-                      :page/href "https://brooker.co.za/blog/"}
-                     {:page/name "Yossi Kreinin's blog archive"
-                      :page/href "https://yosefk.com/blog/"
+                     {:site/name "Marc's blog"
+                      :site/href "https://brooker.co.za/blog/"}
+                     {:site/name "Yossi Kreinin's blog archive"
+                      :site/href "https://yosefk.com/blog/"
                       :site/reference-article {:page/title "Advantages of incompetent management"
-                                               :page/href "https://yosefk.com/blog/advantages-of-incompetent-management.html"}}
-                     {:page/name "danluu.com"
-                      :page/href "https://danluu.com"}
+                                               :site/href "https://yosefk.com/blog/advantages-of-incompetent-management.html"}}
+                     {:site/name "danluu.com"
+                      :site/href "https://danluu.com"}
                      ])]
        (str "- " (org-link site) " (off-site link)"
             (when (:site/reference-article site)
@@ -193,7 +191,6 @@
       ""
       "Not everybody speaks Norwegian. But some do!"
       ""]
-     ;; (for [page norwegian] (str "- " (page-link page)))
      [(apply lines
              (for [page (reverse (sort-by :created norwegian))]
                (str "- " (page-link-with-date page))))]
@@ -273,19 +270,7 @@ I include this list as a personal reminder.
                          (apply str (repeat blank-lines "\n"))
                          "#+END_VERSE" "\n")))])))
 
-(defn alt
-  "Feel free to change this to whatever during dev.
-
-  Functions should be modularized / parameterized to allow for reasonable experience in dev."
-  []
-  (let [r (->> (pages)
-               (filter (fn [page]
-                         (= (:form page) :remote-reference)))
-               (take 5))]
-    (doseq [rr r]
-      (prn rr))))
-
 (defn main []
   (spit "index.html" (slurp (:out
                              @(p/process '[pandoc --from org+smart -H header-default-include.html --to html --standalone]
-                                         {:in (index-org-markup {:pages (pages)})})))))
+                                         {:in (index-org-markup {:pages (find-pages)})})))))

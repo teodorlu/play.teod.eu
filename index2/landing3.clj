@@ -1,11 +1,8 @@
-(ns tplay.landing2
+(ns landing3
   (:require
-   [babashka.fs :as fs]
    [clojure.pprint]
    [clojure.string :as str]
-   [hiccup2.core :as hiccup]
    [tplay.index]
-   [tplay.landing2-assets :as assets]
    [tplay.page :as page]))
 
 ;; Goal: try replacing the *content* on the landing page with hand-written hiccup and inline styles.
@@ -51,7 +48,6 @@
   {:text-indent "3em hanging"})
 
 (defn principles-component
-  "Display some principles worthy of being top front."
   ([theme]
    (principles-component theme {}))
   ([theme opts]
@@ -83,18 +79,14 @@
               (str/upper-case principle-core)]
         " " principle-extras])]]))
 
-(defn spaced
-  "Put a space (\" \") betwee the items"
-  [& items]
-  (interpose " " items))
+(defn spaced [& items] (interpose " " items))
 
 (def todo [:p {:style {:opacity "0.67"}} [:em "TODO"]])
 
 (defn pprn [x]
-  (with-out-str
-    (clojure.pprint/pprint x)))
+  (with-out-str (clojure.pprint/pprint x)))
 
-(defn category2 [{:keys [lang readiness form] :as page}]
+(defn category2 [{:keys [lang readiness form]}]
   (cond
     (= readiness :noindex)                        :page-category/noindex
     (= readiness :deprecated)                     :page-category/deprecated
@@ -155,13 +147,7 @@
                (list
                 [:li [:a {:href (page/link p)}
                       (page/title p)]
-                 " (" (page/published-or-created p) ")"]
-
-                )
-               )]
-
-            #_
-            (map #(vector :pre (pprn %)) timestamped)))))
+                 " (" (page/published-or-created p) ")"]))]))))
       [:h2 "Other people's sites"]
       todo
       [:h2 "Forever incomplete"]
@@ -188,9 +174,6 @@
       todo
       [:div {:style {:height "96px"}}]]]))
 
-#_ (index-page [] theme-main)
-#_ (index-page theme-main)
-
 (defn index-page
   ([subpages theme]
    (index-page subpages theme {}))
@@ -201,30 +184,9 @@
     [:head
      [:title "landing 🌊"]
      [:meta {:name "viewport" :content "width=device-width,initial-scale=1"}]
-     [:meta {:charset "utf-8"}]
-     assets/favicon-link
-     assets/pandoc-css-link]
+     [:meta {:charset "utf-8"}]]
     [:body {:style {:width "100%"
                     :height "100%"
                     :margin 0}}
      (principles-component theme opts)
      (pandoc-component subpages)]]))
-
-;; Setup from automatically building the HTML file when this file (buffer) is
-;; evaluated. Set !autobuild to true, then evaluate buffer.
-
-(defonce !autobuild (atom false))
-
-#_(reset! !autobuild true)
-#_(deref !autobuild)
-
-(defn build []
-  (fs/create-dirs "landing2")
-  (spit "landing2/index.html"
-        (hiccup/html {}
-          (hiccup/raw "<!DOCTYPE html>")
-          (index-page (tplay.index/find-pages) theme-main)))
-  ::build-complete)
-
-(when @!autobuild
-  (build))

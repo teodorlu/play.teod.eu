@@ -1,4 +1,5 @@
 {:paths ["src"]
+ ;; By default, src/ should run on JVM Clojure and Babashka.
  :deps {babashka/fs {:mvn/version "0.5.23"}
         babashka/process {:mvn/version "0.5.22"}
         cheshire/cheshire {:mvn/version "5.13.0"}
@@ -14,4 +15,8 @@
         io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}
         io.github.teodorlu/pandocir {:git/url "https://github.com/teodorlu/pandocir"
                                      :git/sha "91f7ec2765b7ba3891fec3069b7fbc2e4177ff9a"}}
- :aliases {:dev {:extra-paths ["test"]}}}
+ :aliases {;; We develop on a JVM.
+           :dev {:extra-paths ["dev" "test"]
+                 :extra-deps {http-kit/http-kit {:mvn/version "2.8.0"}
+                              lambdaisland/kaocha {:mvn/version "1.87.1366"}}}
+           }}

@@ -132,28 +132,3 @@
                          title-suffix)
                     theme
                     opts)))
-
-(defn page-index [req]
-  (page req "" theme-main
-        {:section-style/overrides section-style-left-adjust}))
-
-(defn page-other [req]
-  (page req " other" theme-other))
-
-(defn page-other2 [req]
-  (page req " other 2" theme-other-crimson))
-
-(defn page-other3 [req]
-  (page req " other 3" theme-other-brighter))
-
-(defn page-other4 [req]
-  (page req " other 4" theme-other-brighter
-        {:section-style/overrides section-style-left-adjust}))
-
-(defn page-other5 [req]
-  (page req " other 5" theme-other-brighter
-        {:section-style/overrides section-style-paragraph-indented-text}))
-
-(defn page-other6 [req]
-  (page req " other 6" theme-bw
-        {:section-style/overrides section-style-left-adjust}))

@@ -451,6 +451,16 @@
   :page/slug "2022-10-clerk-workshop",
   :author-url "https://teod.eu",
   :uuid "1b275a74-df8e-4ef7-a401-4f04283ef68e"}
+ {:slug "journal-2025",
+  :page/uuid "1b3e99bd-67c7-48b0-a06a-2c7ade326121",
+  :created "2025-01-18",
+  :readiness :wtf-is-this,
+  :title "Journal 2025",
+  :lang :en,
+  :page/slug "journal-2025",
+  :author-url "https://teod.eu",
+  :form :journal,
+  :uuid "1b3e99bd-67c7-48b0-a06a-2c7ade326121"}
  {:slug "extreme-programming-explained",
   :page/uuid "1bb82385-120d-46a8-9391-18f860093c84",
   :created "2024-09-07",

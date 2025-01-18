@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID: 1b3e99bd-67c7-48b0-a06a-2c7ade326121
+:END:
+#+TITLE: Journal 2025
+
+[[file:..][..]]
+
+* 2025-01-18
+** Memex-assistert kunnskapsarbeid for å bygge gode teorier
+Terminologi:
+
+- Memex
+- Kunnskapsarbeid
+- Teori
+- God teori

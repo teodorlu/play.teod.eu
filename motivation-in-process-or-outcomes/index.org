@@ -1,0 +1,219 @@
+:PROPERTIES:
+:ID: 77ff8579-acc1-4c35-b4df-d6ba9354815e
+:END:
+#+TITLE: Finding motivation in process or outcomes
+
+[[file:..][..]]
+
+Over the last few years, I've done a lot of things I'm proud of, but I feel like it's been too much at the same time.
+The last two weeks, I've been on the other side of the spectrum.
+I /don't/ have too much to do.
+I /can/ do the things I should in a reasonable pace.
+
+A part of me stuttered.
+Shouldn't there be more stuff going on?
+Shouldn't I be busier?
+
+I've made a conscious effort to calm this tendency.
+Not having too much is /fine/.
+
+This experience got me asking /why/.
+
+I have a few things I'd like to achieve.
+I have goals I want to reach.
+Outcomes to accomplish.
+Over time, however, I don't think accomplishing outcomes should be the only motivating factor: I need to find meaning in the process too
+The way there.
+The path we're going; the path we're making for ourselves.
+
+Which is where I'm at right now.
+A part of me keeps pushing for ambition.
+Just do it!
+Or, more realistically, "Just start that other initiative too!".
+Because the drive is to /start/.
+And when we ruthlessly follow the drive to /just start/, we risk /not finishing/.
+
+Counterintuitively, for me, it's easier to finish things when I don't hold the goal so tightly in mind.
+I can give myself room to think /after/ I've done a piece of work.
+Reflect on its impact.
+Tweak it a bit.
+
+Another piece of the lesson is working with great people.
+I'm currently working with great people.
+That gives me room to breathe.
+It /will be okay/ if I don't push with all my weight all week.
+I can trust the others to do their part.
+I can contribute to their stated goals.
+Sit in the back seat, pay attention to what the others are doing.
+
+I've written about [[id:71725fe3-fa18-4a69-9429-6fc306ce9368][learning to play support]] before.
+Sometimes it's better to aim to be helpful than try run the show.
+The core of this is what I wanted to convey in [[id:9c67d806-b806-4c24-8c98-2e19443b9794][support, challenge, carry]].
+Support is to help, to challenge is to pull intent apart for analysis, and to carry is to create intent.
+I do believe that in the best teams, the carry changes over time.
+
+I write the following in /support, challenge, carry/:
+
+#+begin_quote
+*dynamic initiative*.
+Who should carry?
+That depends on who knows the territory better -- what we're doing now, and where we're going.
+As a team forms, its [[id:587fd857-1f93-4b59-935a-7681e5129665][turst, shared sense of quality, and shared intent]] will improve.
+That lowers switching costs.
+Questions & framings that needs to be explicit early on takes hold in a shared understanding.
+With lower switching cost, it makes sense to move the initiative around.
+When the switching cost reaches zero, we want the player with the best map to lead.
+But can we reach "perfection"?
+No.
+I don't believe that's possible.
+There will /always/ be information asymmetry.
+The reason is plain: information asymmetry gives teams leverage.
+Different people want different things.
+
+Not: /perfect dynamic initiative/.
+But: /shared understaning, charity and team willingness to support, challenge and carry/.
+#+end_quote
+
+I still believe that a dynamic initiative is the best solution for a team.
+
+So perhaps this is all ego?
+Or mostly ego, and a tinge of me wanting to keep carry-skills I've built from going dull?
+
+I do believe our current direction is exactly where we need to go.
+I am happy with the two last weeks of work, even if my contributions weren't essential for what we got done.
+And I am even more happy with the fact that our work doesn't stink of stressful reactions to every irrelevant movement of nearby leaves.
+After all, our team doubled in size a month ago, and we probably will have to make an effort to find a rhythm that works for us.
+
+One model I've seen referenced is [[https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development][Tuckman's stages of group development]].
+From the Wikipedia page:
+
+#+begin_quote
+The forming–storming–norming–performing model of group development was first
+proposed by Bruce Tuckman in 1965,[1] who said that these phases are all
+necessary and inevitable in order for a team to grow, face up to challenges,
+tackle problems, find solutions, plan work, and deliver results. He suggested
+that these inevitable phases were critical to team growth and development. This
+series of developmental stages has become known as the Tuckman Ladder.
+
+Tuckman hypothesized that along with these factors, interpersonal relationships
+and task activity would enhance the four-stage model that he first proposed as
+needed to successfully navigate and create an effective group function.[2]
+#+end_quote
+
+It's not entirely clear to me what differentiates the phases from each other.
+What, exactly, is forming, storming, norming and performing?
+Here's a brief summary of the Wikipedia page:
+
+- forming :: the team and its objective is defined.
+  Members behave independently, but try to make good impressions.
+
+  #+begin_quote
+  To grow from this stage to the next, each member must relinquish the comfort of non-threatening topics and risk the possibility of conflict.
+  #+end_quote
+
+- storming :: x
+
+  - gain trust
+
+  - voice opinions
+
+  - hierarchy, status & power
+
+  - suspicion, fear and anxiety
+
+  - Wikipedia includes this passage:
+
+    #+begin_quote
+    In this stage "participants form opinions about the character and integrity
+    of the other participants and feel compelled to voice these opinions if they
+    find someone shirking responsibility or attempting to dominate. Sometimes
+    participants question the actions or decision of the leader as the
+    expedition grows harder"
+    #+end_quote
+
+    ... which I (quite frankly) find America-centric.
+    At least, this does not reflect anything I've seen in Norway.
+
+    The quote is indeed from an American book: /Leadership the Outward Bound Way: Becoming a Better Leader in the Workplace, in the Wilderness, and in Your Community/, published by "Outward Bound USA", with a foreword from Jimmy Carter.
+
+    (... and now, I (quite surprisingly, if you ask me) feel the need to read just that book.
+    Its table of contents.
+    I digress.
+    Let's dig in!
+    Digressions is what this page is for.)
+
+    - **Outline for Leadership the Outward Bound Way** - with some comments of my own interspaced /in italics/.
+      - part I: leadership fundamentals
+        - Chapter 1. Why learn leadership from Outward Bound?
+          - /I suspect this is mostly a tale of bragging? Why we should trust these guys, a list of famous stuff they've done, etc./
+        - Chapter 2. Becoming a leader.
+          - /Curious about this one. I expect some storytelling? Probably interesting./.
+        - Chapter 3. Communicating effectively.
+          - /Important skill! But clarity (or effectiveness) is not everything./
+        - Chapter 4. Building trust, building a team.
+          - /Oh my, this is the chapter I want to read. I feel echoes from my own frame of reference. Would love to find similarities and differences./
+        - Chapter 5. Taking Risks and Making Decisions
+          - /You've got me now! More interesting./
+        - Chapter 6. Finding Courage, Overcoming Fear
+          - /😁. That's my face of anticipation./
+      - part II: taking leadership into the outdoors
+        - /expeditions and stuff, not relevant right now/
+      - part III: taking leadership into your professional life
+        - Chapter 10. Team Building in the Workplace
+        - Chapter 11. Workplace communication skills
+        - Chapter 12. Managing change in the workplace
+      - part IV. taking leadership into your community
+        - Chapter 13. Serving others as a Community Leader
+        - Chapter 14. Leading a Volunteer Organization
+        - Chapter 15. Leading Youth in Your Community
+        - Chapter 16. Leading Your Community in the Political Arena
+
+    - Unfortunately, this book is not available on Kindle.
+      Bah.
+      Not sure if I'm bought in to the degree that I want a paper copy.
+      Maybe I can get hold of a PDF.
+
+- norming :: relative to forming, it appears that people are getting to know each other a bit more now.
+  Again quoting the Wikipedia page:
+
+  #+begin_quote
+  "Resolved disagreements and personality clashes result in greater intimacy, and a spirit of co-operation emerges."[3]
+  [...]
+  In this stage, all team members take responsibility and have the ambition to work for the success of the team's goals.
+  They start tolerating the whims and fancies of the other team members.
+  #+end_quote
+
+  "all team members take responsibility" and "tolerating the whims and fancies" sounds a bit silly, but sure.
+  Sounds like people getting to know each other.
+
+- /interlude/ - on one hand I find it nice that people write about people dynamics like this.
+  On the other hand it feels wrong; reducing people to recipies.
+  "This is the recipie for your team".
+  Bleh.
+
+- performing :: "stuff works, people focus on achieving goals, etc".
+
+Overall, I found the distinction between forming, storming and norming a bit intersting.
+
+- forming: set the right scope, set the right flock of people together.
+- storming: people notice that they are all a bit different.
+- norming: people find ways to work together, accounting for those differences.
+
+-----
+
+Phew, that was some detour.
+So which phase are we in?
+We /have been formed/ and the wheels aren't turning with butter smoothness yet.
+So storming or norming, which one is it?
+That's a little bit hard to say.
+I know some people better than others.
+I think maybe "gain trust and voice opinions" best describe us.
+In that case, storming.
+
+So, as a final piece of parting advice for myself - perhaps let the stormy waters clash for a bit, and pay attention?
+See where we end up.
+
+Talk to ya later,
+Teodor
+
+(February 2025)

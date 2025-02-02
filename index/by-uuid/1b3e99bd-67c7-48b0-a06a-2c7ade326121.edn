@@ -1,10 +1,10 @@
 {:slug "journal-2025",
  :page/uuid "1b3e99bd-67c7-48b0-a06a-2c7ade326121",
  :created "2025-01-18",
- :readiness :wtf-is-this,
+ :readiness :forever-incomplete,
  :title "Journal 2025",
  :lang :en,
  :page/slug "journal-2025",
  :author-url "https://teod.eu",
- :form :journal,
+ :form :rambling,
  :uuid "1b3e99bd-67c7-48b0-a06a-2c7ade326121"}

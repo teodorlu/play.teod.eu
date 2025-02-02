@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Finding motivation in process or outcomes</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+    const hostCanonical = "play.teod.eu";
+    const hostAlias1 = "playground.teod.eu";
+    const hostLocal1 = "localhost:9945";
+    if (
+      window.location.host === hostAlias1
+      // || window.location.host === hostLocal1
+    ) {
+      // redirect playground.teod.eu to play.teod.eu
+      // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+      const pathname = window.location.pathname || "";
+      window.location.replace("https://" + hostCanonical + pathname);
+    }
+  </script>
+
+  <script async type="module" src="/index/big.js"></script>
+  <script async type="module" src="/iki/iki.js"></script>
+  <script async type="module">
+    import {IkiGotoRandomPage} from "/iki/iki.js";
+
+    customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
+  </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Finding motivation in process or outcomes</h1>
+</header>
+<p><a href="..">..</a></p>
+<p>Over the last few years, I’ve done a lot of things I’m proud of, but
+I feel like it’s been too much at the same time. The last two weeks,
+I’ve been on the other side of the spectrum. I <em>don’t</em> have too
+much to do. I <em>can</em> do the things I should in a reasonable
+pace.</p>
+<p>A part of me stuttered. Shouldn’t there be more stuff going on?
+Shouldn’t I be busier?</p>
+<p>I’ve made a conscious effort to calm this tendency. Not having too
+much is <em>fine</em>.</p>
+<p>This experience got me asking <em>why</em>.</p>
+<p>I have a few things I’d like to achieve. I have goals I want to
+reach. Outcomes to accomplish. Over time, however, I don’t think
+accomplishing outcomes should be the only motivating factor: I need to
+find meaning in the process too The way there. The path we’re going; the
+path we’re making for ourselves.</p>
+<p>Which is where I’m at right now. A part of me keeps pushing for
+ambition. Just do it! Or, more realistically, “Just start that other
+initiative too!”. Because the drive is to <em>start</em>. And when we
+ruthlessly follow the drive to <em>just start</em>, we risk <em>not
+finishing</em>.</p>
+<p>Counterintuitively, for me, it’s easier to finish things when I don’t
+hold the goal so tightly in mind. I can give myself room to think
+<em>after</em> I’ve done a piece of work. Reflect on its impact. Tweak
+it a bit.</p>
+<p>Another piece of the lesson is working with great people. I’m
+currently working with great people. That gives me room to breathe. It
+<em>will be okay</em> if I don’t push with all my weight all week. I can
+trust the others to do their part. I can contribute to their stated
+goals. Sit in the back seat, pay attention to what the others are
+doing.</p>
+<p>I’ve written about <a href="../learning-to-play-support/">learning to
+play support</a> before. Sometimes it’s better to aim to be helpful than
+try run the show. The core of this is what I wanted to convey in <a
+href="../support-challenge-carry/">support, challenge, carry</a>.
+Support is to help, to challenge is to pull intent apart for analysis,
+and to carry is to create intent. I do believe that in the best teams,
+the carry changes over time.</p>
+<p>I write the following in <em>support, challenge, carry</em>:</p>
+<blockquote>
+<p><strong>dynamic initiative</strong>. Who should carry? That depends
+on who knows the territory better – what we’re doing now, and where
+we’re going. As a team forms, its <a
+href="../trust-quality-intent/">turst, shared sense of quality, and
+shared intent</a> will improve. That lowers switching costs. Questions
+&amp; framings that needs to be explicit early on takes hold in a shared
+understanding. With lower switching cost, it makes sense to move the
+initiative around. When the switching cost reaches zero, we want the
+player with the best map to lead. But can we reach “perfection”? No. I
+don’t believe that’s possible. There will <em>always</em> be information
+asymmetry. The reason is plain: information asymmetry gives teams
+leverage. Different people want different things.</p>
+<p>Not: <em>perfect dynamic initiative</em>. But: <em>shared
+understaning, charity and team willingness to support, challenge and
+carry</em>.</p>
+</blockquote>
+<p>I still believe that a dynamic initiative is the best solution for a
+team.</p>
+<p>So perhaps this is all ego? Or mostly ego, and a tinge of me wanting
+to keep carry-skills I’ve built from going dull?</p>
+<p>I do believe our current direction is exactly where we need to go. I
+am happy with the two last weeks of work, even if my contributions
+weren’t essential for what we got done. And I am even more happy with
+the fact that our work doesn’t stink of stressful reactions to every
+irrelevant movement of nearby leaves. After all, our team doubled in
+size a month ago, and we probably will have to make an effort to find a
+rhythm that works for us.</p>
+<p>One model I’ve seen referenced is <a
+href="https://en.wikipedia.org/wiki/Tuckman&#39;s_stages_of_group_development">Tuckman’s
+stages of group development</a>. From the Wikipedia page:</p>
+<blockquote>
+<p>The forming–storming–norming–performing model of group development
+was first proposed by Bruce Tuckman in 1965,[1] who said that these
+phases are all necessary and inevitable in order for a team to grow,
+face up to challenges, tackle problems, find solutions, plan work, and
+deliver results. He suggested that these inevitable phases were critical
+to team growth and development. This series of developmental stages has
+become known as the Tuckman Ladder.</p>
+<p>Tuckman hypothesized that along with these factors, interpersonal
+relationships and task activity would enhance the four-stage model that
+he first proposed as needed to successfully navigate and create an
+effective group function.[2]</p>
+</blockquote>
+<p>It’s not entirely clear to me what differentiates the phases from
+each other. What, exactly, is forming, storming, norming and performing?
+Here’s a brief summary of the Wikipedia page:</p>
+<dl>
+<dt>forming</dt>
+<dd>
+<p>the team and its objective is defined. Members behave independently,
+but try to make good impressions.</p>
+<blockquote>
+<p>To grow from this stage to the next, each member must relinquish the
+comfort of non-threatening topics and risk the possibility of
+conflict.</p>
+</blockquote>
+</dd>
+<dt>storming</dt>
+<dd>
+<p>x</p>
+<ul>
+<li><p>gain trust</p></li>
+<li><p>voice opinions</p></li>
+<li><p>hierarchy, status &amp; power</p></li>
+<li><p>suspicion, fear and anxiety</p></li>
+<li><p>Wikipedia includes this passage:</p>
+<blockquote>
+<p>In this stage “participants form opinions about the character and
+integrity of the other participants and feel compelled to voice these
+opinions if they find someone shirking responsibility or attempting to
+dominate. Sometimes participants question the actions or decision of the
+leader as the expedition grows harder”</p>
+</blockquote>
+<p>… which I (quite frankly) find America-centric. At least, this does
+not reflect anything I’ve seen in Norway.</p>
+<p>The quote is indeed from an American book: <em>Leadership the Outward
+Bound Way: Becoming a Better Leader in the Workplace, in the Wilderness,
+and in Your Community</em>, published by “Outward Bound USA”, with a
+foreword from Jimmy Carter.</p>
+<p>(… and now, I (quite surprisingly, if you ask me) feel the need to
+read just that book. Its table of contents. I digress. Let’s dig in!
+Digressions is what this page is for.)</p>
+<ul>
+<li><strong><strong>Outline for Leadership the Outward Bound
+Way</strong></strong> - with some comments of my own interspaced <em>in
+italics</em>.
+<ul>
+<li>part I: leadership fundamentals
+<ul>
+<li>Chapter 1. Why learn leadership from Outward Bound?
+<ul>
+<li><em>I suspect this is mostly a tale of bragging? Why we should trust
+these guys, a list of famous stuff they’ve done, etc.</em></li>
+</ul></li>
+<li>Chapter 2. Becoming a leader.
+<ul>
+<li><em>Curious about this one. I expect some storytelling? Probably
+interesting.</em>.</li>
+</ul></li>
+<li>Chapter 3. Communicating effectively.
+<ul>
+<li><em>Important skill! But clarity (or effectiveness) is not
+everything.</em></li>
+</ul></li>
+<li>Chapter 4. Building trust, building a team.
+<ul>
+<li><em>Oh my, this is the chapter I want to read. I feel echoes from my
+own frame of reference. Would love to find similarities and
+differences.</em></li>
+</ul></li>
+<li>Chapter 5. Taking Risks and Making Decisions
+<ul>
+<li><em>You’ve got me now! More interesting.</em></li>
+</ul></li>
+<li>Chapter 6. Finding Courage, Overcoming Fear
+<ul>
+<li><em>😁. That’s my face of anticipation.</em></li>
+</ul></li>
+</ul></li>
+<li>part II: taking leadership into the outdoors
+<ul>
+<li><em>expeditions and stuff, not relevant right now</em></li>
+</ul></li>
+<li>part III: taking leadership into your professional life
+<ul>
+<li>Chapter 10. Team Building in the Workplace</li>
+<li>Chapter 11. Workplace communication skills</li>
+<li>Chapter 12. Managing change in the workplace</li>
+</ul></li>
+<li>part IV. taking leadership into your community
+<ul>
+<li>Chapter 13. Serving others as a Community Leader</li>
+<li>Chapter 14. Leading a Volunteer Organization</li>
+<li>Chapter 15. Leading Youth in Your Community</li>
+<li>Chapter 16. Leading Your Community in the Political Arena</li>
+</ul></li>
+</ul></li>
+<li>Unfortunately, this book is not available on Kindle. Bah. Not sure
+if I’m bought in to the degree that I want a paper copy. Maybe I can get
+hold of a PDF.</li>
+</ul></li>
+</ul>
+</dd>
+<dt>norming</dt>
+<dd>
+<p>relative to forming, it appears that people are getting to know each
+other a bit more now. Again quoting the Wikipedia page:</p>
+<blockquote>
+<p>“Resolved disagreements and personality clashes result in greater
+intimacy, and a spirit of co-operation emerges.”[3] […] In this stage,
+all team members take responsibility and have the ambition to work for
+the success of the team’s goals. They start tolerating the whims and
+fancies of the other team members.</p>
+</blockquote>
+<p>“all team members take responsibility” and “tolerating the whims and
+fancies” sounds a bit silly, but sure. Sounds like people getting to
+know each other.</p>
+</dd>
+</dl>
+<ul>
+<li><p><em>interlude</em> - on one hand I find it nice that people write
+about people dynamics like this. On the other hand it feels wrong;
+reducing people to recipies. “This is the recipie for your team”.
+Bleh.</p></li>
+<li><p>performing :: “stuff works, people focus on achieving goals,
+etc”.</p></li>
+</ul>
+<p>Overall, I found the distinction between forming, storming and
+norming a bit intersting.</p>
+<ul>
+<li>forming: set the right scope, set the right flock of people
+together.</li>
+<li>storming: people notice that they are all a bit different.</li>
+<li>norming: people find ways to work together, accounting for those
+differences.</li>
+</ul>
+<hr />
+<p>Phew, that was some detour. So which phase are we in? We <em>have
+been formed</em> and the wheels aren’t turning with butter smoothness
+yet. So storming or norming, which one is it? That’s a little bit hard
+to say. I know some people better than others. I think maybe “gain trust
+and voice opinions” best describe us. In that case, storming.</p>
+<p>So, as a final piece of parting advice for myself - perhaps let the
+stormy waters clash for a bit, and pay attention? See where we end
+up.</p>
+<p>Talk to ya later, Teodor</p>
+<p>(February 2025)</p>
+</body>
+</html>

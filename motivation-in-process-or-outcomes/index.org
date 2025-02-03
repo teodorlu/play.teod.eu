@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID: 77ff8579-acc1-4c35-b4df-d6ba9354815e
 :END:
-#+TITLE: Finding motivation in process or outcomes
+#+TITLE: Finding motivation: in outcomes or through process?
 
 [[file:..][..]]
 

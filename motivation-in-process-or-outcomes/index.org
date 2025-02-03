@@ -111,15 +111,9 @@ Here's a brief summary of the Wikipedia page:
   To grow from this stage to the next, each member must relinquish the comfort of non-threatening topics and risk the possibility of conflict.
   #+end_quote
 
-- storming :: x
-
-  - gain trust
-
-  - voice opinions
-
-  - hierarchy, status & power
-
-  - suspicion, fear and anxiety
+- storming :: the people on the team start getting used to each other.
+  Trust is built, opinions voiced.
+  The first decisions are made.
 
   - Wikipedia includes this passage:
 

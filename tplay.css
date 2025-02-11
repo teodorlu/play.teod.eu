@@ -1,16 +1,23 @@
-/*
+/************************************************************
+ * NOVEL CSS
+ */
 
-This style sheet has been adapted from Pandoc (pandoc.org)
+@view-transition {
+    navigation: auto;
+}
 
-Rather than styling html and body elements directly, we introduce opt-in wrappers.
-With this change, we can use Pandoc styled elements alongside elements meant *not* to be styled by pandoc.
-
-We make two changes:
-
-  .pandoc-vertical instead of html
-  .pandoc-indented instead of body.
-
-*/
+/************************************************************
+ * ADAPTED FROM PANDOC
+ *
+ * https://pandoc.org/
+ *
+ * The original Pandoc style sheet styles the <html> and <body> elements
+ * directly. We avoid styling head and body by introducing two classes:
+ *
+ *   .pandoc-vertical instead of html
+ *   .pandoc-indented instead of body.
+ *
+ */
 
 /* The old <html> element */
 .pandoc-vertical {

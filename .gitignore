@@ -22,3 +22,6 @@ pom.xml.asc
 # because I want typescript-powered LSP completions
 # 🙈
 /node_modules/
+
+**/.lsp/.cache
+**/.clj-kondo/.cache

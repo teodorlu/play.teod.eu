@@ -720,6 +720,16 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "29d152b9-9f5e-4c23-904a-f926b3d83477"}
+ {:slug "sufficient-unto-the-day-is-the-evil-thereof",
+  :page/uuid "2abb9f61-1598-4121-9786-69ac555e1a38",
+  :created "2025-02-15",
+  :readiness :wtf-is-this,
+  :title "Sufficient for the day is the evil thereof",
+  :lang :en,
+  :page/slug "sufficient-unto-the-day-is-the-evil-thereof",
+  :author-url "https://teod.eu",
+  :form :personal,
+  :uuid "2abb9f61-1598-4121-9786-69ac555e1a38"}
  {:slug "tech-learning-ladder",
   :page/uuid "2be96e32-2649-4416-956a-64cbb23a3f9e",
   :created "2023-05-01",

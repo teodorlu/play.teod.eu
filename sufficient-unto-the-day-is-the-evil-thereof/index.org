@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID: 2abb9f61-1598-4121-9786-69ac555e1a38
+:END:
+#+TITLE: Sufficient unto the day is the evil thereof
+
+[[file:..][..]]
+
+I tend to chase the "why" quite deeply.
+I don't just want a "do this, do that".
+That's a source of strength at times, other times a source of stress.
+
+Certain things need to get done, and don't need to be analyzed to death before starting out.
+In those cases, flow might be more valuable than intent.
+Get going, do the first step.
+Then consider the next.
+
+I think the goal here is to somehow pick/balance intent and flow.
+And I don't think there's a conclusive answer to that.
+Experience will help, and making sure both flow and intent get some room will help.
+
+I find this verse helpful to break out of paralysis, and allow for flow to enter:
+
+#+begin_quote
+Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself.
+Sufficient unto the day is the evil thereof.
+
+(Matthew 6:34, https://en.wikipedia.org/wiki/Matthew_6:34)
+#+end_quote
+
+We don't have to solve for everything today.
+I don't have to solve for everything today.
+I can't, actually.
+What I /can/ do is accept my limitations, and work within those.
+
+And I find it funny that I'm writing this down.
+Analysing the limitations of limitations, in order to bring flow.
+Yet, I did /just do it/ in the sense that I just sat down to write this.
+
+https://go.teod.eu/ was meant to be my tool for starting the day without worrying too much about the next.
+I thought I could visit it daily to read the content.
+But ... i don't really find it interesting, because there's just consumption in re-reading the same things each morning.
+Perhaps if I could change things without reaching for a computer, I'd use it more.
+But then I'd need a sort of UI.
+I already have my weeknotes, so there's a live example already.
+
+I think the following makes sense:
+
+1. The goal is a balance between deep intent and flow.
+   Sometimes you really need to know the why.
+   Other times you'll need to start moving.
+2. Both deep intent and flow have potentially amazing second order effects.
+   Deep intent enables introspection.
+   Intent can analyze intent; intent can break out of wrong intent.
+   Flow both produces the thing, and increases the skill of producing the thing.
+   Even if you made the wrong thing, the skill you built making the wrong thing will be useful afterwards.
+3. Put nonzero amounts of intent and flow into your day.
+   Zero intent means you have no idea where you're going.
+   Zero flow means you aren't going anywhere.
+   You need both a goal and a means of getting there, and the skills to set a goal and get there.
+
+And give yourself some grace.
+Sufficient unto the day is the evil thereof.
+You may fail today, and you can't avoid failing today.
+Accept that; then make the best move you see.

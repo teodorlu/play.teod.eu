@@ -60,7 +60,7 @@
    [:section [:h1 "1. Mål: Kontinuerlig leveranse"]]
 
    [:section
-    [:img {:src "/kontinuerlig.png"}]
+    [:img {:src "kontinuerlig.png"}]
     [:p [:a {:href "https://parenteser.mattilsynet.io/hvordan-levere-kontinuerlig/"}
          "https://parenteser.mattilsynet.io/hvordan-levere-kontinuerlig/"]]]
 
@@ -69,14 +69,22 @@
     [:em "hva snakker vi om når vi snakker om kodekvalitet?"]
     ]
 
+   [:section
+    [:em "hvorfor definere kodekvalitet?"]
+    [:br]
+    [:h1 "Delt forståelse av kodekvalitet på teamet gir fundament for samarbeid i kodebasen"]]
+
+   [:section
+    [:em "ok, la oss forsøke å definere kodekvalitet."]]
+
    (kvalitet-brahet 0)
    (kvalitet-brahet 1)
 
    (kvalitet-karakteristikk 0)
    (kvalitet-karakteristikk 1)
 
-   [:section [:h1 "2.1 Våre kvaliteter på god kode"]
-    [:p [:em "et forsøk på å være konkret"]]
+   [:section [:h1 "2.1 Våre karakteristikker på god kode"]
+    [:p "Vi er enige om at:"]
     ;; med eksempler
     [:ul
      [:li "God kode er så enkel som mulig" #_ "den direkte løsningen er ofte bedre"]
@@ -103,9 +111,9 @@
     ]
 
    [:section [:h1 "2.4 Kodestil og kodekvalitet"]
-    [:p "forskjellige ting!"]
+    [:p "ikke helt samme ting!"]
     [:ul
-     [:li "kodestil er overfladisk, kodekvalitet er dypere"]
+     [:li "kodestil er den konkrete overflaten, kodekvaliten ligger dypere"]
      [:li "delt kodestil unngår omformatering av kode."]]]
 
    [:section [:h1 "3. Team Mats praksis"]]
@@ -125,6 +133,8 @@
 
    [:section [:h1 "3.2 Parprogrammering"] #_ "Teodor"
     "🤗"]
+   [:section [:h1 "Fra en meetup i Mai 2024"]
+    [:em "Teodor, Christian og Peter Strömberg parprogrammerer"]]
    [:section [:h1 "Kodekvaliteter 🌀 parprogrammering"]
     ;; CSS-en for tabeller imponerte ikke, jeg går for <pre>.
     [:pre {:style {:text-align "start"}}
@@ -134,7 +144,7 @@ kvalitet                     | under parprogrammering
 God kode bærer intensjon     | arena for å spørre hvorfor
 God kode blir bedre over tid | husker bedre intensjonen sammen
 ")]
-]
+    ]
    [:section [:h1 "Opplevelsen av parprogrammering"]
     [:ul
      [:li (quote-str "den triveligste delen av jobben")]
@@ -146,6 +156,10 @@ God kode blir bedre over tid | husker bedre intensjonen sammen
     "👨‍💻👩‍💻📲🖥️📦🌐"]
 
    [:section [:h1 "3.4 Tester"] #_ "Teodor"]
+   [:section [:h1 "Fra en meetup i Mai 2024"]
+    [:p [:em "bruk tester til å drive implementasjonen, sammen!"]]
+    [:p [:em "tester gjør intensjonen eksplisitt - dette er neste steg!"]]
+    ]
    [:section [:h1 "Kodekvaliteter 🌀 tester"]
     [:pre {:style {:text-align "start"}}
      (str/trim "
@@ -183,7 +197,28 @@ God kode bærer intensjon       | testene gir forventet oppførsel
    [:section [:img {:src "cloc-fc-hl.png"}]]
    [:section [:img {:src "cloc-fc-pct.png"}]]
 
-   [:section [:h1 "4 Oppsummering"] #_ "Teodor, 2 min"]
+   [:section [:em "4 Oppsummering"] #_ "Teodor, 2 min"
+    ;; forslag
+    [:h1 "kontinuerlig leveranse, parprogrammering og tester"]
+    [:p "sikrer"]
+    [:h1 "arbeidsglede, god kode og gode produkter"]
+    [:p "for oss som jobber på Team mat."]
+    [:footer
+     [:small {:style {:font-size "20px"}}
+      "Presentasjonen er laget med "
+      [:a {:href "https://github.com/chr15m/scittle-tiny-slides"
+           :target "_BLANK"}
+       "Scittle Tiny Slides"]
+      ", av Chris McCormick"]]
+    ]
+
+   #_#_#_#_
+   ;; Forslag til ny konklusjon
+   [:section [:h1 "Teodors oppsummering"]
+    [:p "kontinuerlig leveranse, parprogrammering og tester sikrer"
+     " arbeidsglede, god kode og gode produkter"]
+    ]
+
    [:section [:h1 "4.1 Hvorfor er kodekvalitet viktig?"]
     [:ul
      [:li "levere raskt"]
@@ -207,13 +242,7 @@ God kode bærer intensjon       | testene gir forventet oppførsel
      [:li "bærer intensjon"]
      ]
 
-    [:footer
-     [:small {:style {:font-size "20px"}}
-      "Presentasjonen er laget med "
-      [:a {:href "https://github.com/chr15m/scittle-tiny-slides"
-           :target "_BLANK"}
-       "Scittle Tiny Slides"]
-      ", av Chris McCormick"]]]
+    ]
 
    #_
    [:section

@@ -1,5 +1,7 @@
-{:tasks
- {:requires ([babashka.fs :as fs])
+{:paths ["."]
+ :tasks
+ {:requires ([babashka.fs :as fs]
+             [publish])
   setup {:doc "Initial setup"
          :task
          (when-not (fs/exists? "node_modules")
@@ -9,4 +11,7 @@
   dev {:doc "Preview slides"
        :depends [setup]
        :task
-       (shell "npx josh")}}}
+       (shell "npx josh")}
+  publish {:doc "Deploy to https://play.teod.eu/kodekvalitet-2025-03"
+           :task
+           (publish/publish!)}}}

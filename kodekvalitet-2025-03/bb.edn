@@ -1,0 +1,12 @@
+{:tasks
+ {:requires ([babashka.fs :as fs])
+  setup {:doc "Initial setup"
+         :task
+         (when-not (fs/exists? "node_modules")
+           (println "node_modules not found, running `npm install` ...")
+           (shell "npm install")
+           (println "Done installing NPM deps."))}
+  dev {:doc "Preview slides"
+       :depends [setup]
+       :task
+       (shell "npx josh")}}}

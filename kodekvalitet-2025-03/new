@@ -1,0 +1,53 @@
+Kodekvalitet
+
+**quality** (noun)
+
+*level of excellence*
+
+> This school is well-known for having teachers of high quality.
+
+> Quality of life is usually determined by health, education, and income.
+
+"brahet"
+
+
+
+
+
+
+
+
+
+**quality** (noun)
+
+*Something that differentiates a thing or person*
+
+> One of the qualities of pure iron is that it does not rust easily.
+
+> While being impulsive can be great for artists, it is not a desirable quality for engineers.
+
+> Security, stability, and efficiency are good qualities of an operating system.
+
+"karakteristikk"
+
+
+
+
+
+
+
+
+
+[:section [:h1 "2.3 Kodestil og kodekvalitet"]
+    [:p "Symptomer på at kodestil er et problem:"]
+    [:ul
+     [:li "Vi skriver samme snutt kode " (quote-str "fram og tilbake")]
+     [:li "Vi snakker om " (quote-str "Teodor sin kode")
+      " og " (quote-str "Christian sin kode")
+      ]]
+    [:p "Tiltak"
+     [:ul
+      [:li "Felles kodestil i kodebasen"]
+      [:li "Fokuser på karakteristikker for kodekvalitet i review, ikke kodestil"]]
+     ]
+    ]

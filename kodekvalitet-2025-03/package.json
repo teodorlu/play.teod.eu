@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cljs-josh": "^0.0.6"
+  }
+}

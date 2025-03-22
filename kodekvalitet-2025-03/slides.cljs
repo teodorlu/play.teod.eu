@@ -84,6 +84,33 @@
    (kvalitet-karakteristikk 1)
 
    [:section [:h1 "2.1 Våre karakteristikker på god kode"]
+    ]
+
+   [:section [:h1 "2.1 Våre karakteristikker på god kode"]
+    [:p "Vi er enige om at:"]
+    ;; med eksempler
+    [:ul
+     [:li "God kode er så enkel som mulig" #_ "den direkte løsningen er ofte bedre"]
+    ]]
+
+   [:section [:h1 "2.1 Våre karakteristikker på god kode"]
+    [:p "Vi er enige om at:"]
+    ;; med eksempler
+    [:ul
+     [:li "God kode er så enkel som mulig" #_ "den direkte løsningen er ofte bedre"]
+     [:li "God kode blir ferdig: mindre churn"]
+    ]]
+
+   [:section [:h1 "2.1 Våre karakteristikker på god kode"]
+    [:p "Vi er enige om at:"]
+    ;; med eksempler
+    [:ul
+     [:li "God kode er så enkel som mulig" #_ "den direkte løsningen er ofte bedre"]
+     [:li "God kode blir ferdig: mindre churn"]
+     [:li "God kode blir bedre over tid"]
+]]
+
+   [:section [:h1 "2.1 Våre karakteristikker på god kode"]
     [:p "Vi er enige om at:"]
     ;; med eksempler
     [:ul
@@ -91,6 +118,30 @@
      [:li "God kode blir ferdig: mindre churn"]
      [:li "God kode blir bedre over tid"]
      [:li "God kode bærer intensjon" #_ "svarer på hvorfor"]]]
+
+   [:section [:h1 "2.2 Opplevd kodekvalitet"]
+    [:p "selv om vi ikke klarer å si hva god kode " [:em "er i sin essens"]
+     ", kan vi si noe om hvordan vi opplever å jobbe med god kode:"]
+]
+
+   [:section [:h1 "2.2 Opplevd kodekvalitet"]
+    [:p "selv om vi ikke klarer å si hva god kode " [:em "er i sin essens"]
+     ", kan vi si noe om hvordan vi opplever å jobbe med god kode:"]
+    [:ul
+     [:li "det er lett å endre produktet"]
+     ]
+
+    ]
+
+   [:section [:h1 "2.2 Opplevd kodekvalitet"]
+    [:p "selv om vi ikke klarer å si hva god kode " [:em "er i sin essens"]
+     ", kan vi si noe om hvordan vi opplever å jobbe med god kode:"]
+    [:ul
+     [:li "det er lett å endre produktet"]
+     [:li "produktet kan leveres kontinuerlig"]
+
+     ]
+]
 
    [:section [:h1 "2.2 Opplevd kodekvalitet"]
     [:p "selv om vi ikke klarer å si hva god kode " [:em "er i sin essens"]

@@ -217,7 +217,7 @@
 (defn index-page [subpages theme]
   (when-not (valid-theme? theme)
     (throw (ex-info "invalid theme" {:theme theme})))
-  [:html {:lang "en" :style {:height "100%"}}
+  [:html {:lang "en" :style {:height "88.5%"}}
    [:head
     [:meta {:charset "utf-8"}]
     [:title "Towards an iterated game 🌊"]

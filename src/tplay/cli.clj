@@ -438,7 +438,7 @@ Allowed options:
 
                   "# Regenerate everything"
                   ".PHONY: ultraclean"
-                  "ultraclean: clean"
+                  "ultraclean:"
                   (str "\t"
                        "rm -f "
                        ;; Here's a pandoc command I'd like for some pages

@@ -1,0 +1,4 @@
+{:paths ["."]
+ :deps {cnuernber/dtype-next {:mvn/version "10.131"}
+        io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+        scicloj/tablecloth {:mvn/version "7.042"}}}

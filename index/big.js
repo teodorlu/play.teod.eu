@@ -801,8 +801,8 @@ export const index =
   "slug" : "sufficient-unto-the-day-is-the-evil-thereof",
   "page/uuid" : "2abb9f61-1598-4121-9786-69ac555e1a38",
   "created" : "2025-02-15",
-  "readiness" : "wtf-is-this",
-  "title" : "Sufficient for the day is the evil thereof",
+  "readiness" : "ready-for-comments",
+  "title" : "Sufficient onto the day is the evil thereof",
   "lang" : "en",
   "page/slug" : "sufficient-unto-the-day-is-the-evil-thereof",
   "author-url" : "https://teod.eu",
@@ -1265,6 +1265,17 @@ export const index =
   "page/slug" : "simple-made-easy",
   "form" : "remote-reference",
   "uuid" : "3eb092bf-b847-4686-b250-fca303022782"
+}, {
+  "slug" : "estimating-pi-with-dtype-next-and-clojure-vectors",
+  "page/uuid" : "3eef00ee-2883-4d02-a527-96017f0e6b27",
+  "builder" : "no-op",
+  "created" : "2025-02-23",
+  "readiness" : "wtf-is-this",
+  "title" : "Estimating Pi with dtype-next and Clojure vectors",
+  "lang" : "en",
+  "page/slug" : "estimating-pi-with-dtype-next-and-clojure-vectors",
+  "author-url" : "https://teod.eu",
+  "uuid" : "3eef00ee-2883-4d02-a527-96017f0e6b27"
 }, {
   "slug" : "arne-brasseur",
   "page/uuid" : "3f4cbc3b-c4cc-411a-8e4e-83baa42a2cb3",

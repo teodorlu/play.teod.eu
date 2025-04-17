@@ -25,3 +25,4 @@ pom.xml.asc
 
 **/.lsp/.cache
 **/.clj-kondo/.cache
+**/.clerk/cache

@@ -23,7 +23,7 @@ Why, you ask?
 A source of friction for Elm usage was the  walls of Elm's typed garden.
 
 Browser APIs like HTML and SVG mapped neatly to typed functional interfaces, and got great bindings in [[https://package.elm-lang.org/packages/elm/html/latest/][elm/html]] and [[https://package.elm-lang.org/packages/elm/svg/latest/][elm/svg]].
-Less pure parts of the browser like [[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API][Canvas]] and [[https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio][Audio]] didn't get the same love, and programmers had to resort to [[https://guide.elm-lang.org/interop/ports][ports]].
+Less pure browser APIs like [[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API][Canvas]] and [[https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio][Audio]] didn't get the same love, and programmers had to resort to [[https://guide.elm-lang.org/interop/ports][ports]].
 
 2025 Elm's core ideas back to life in /[[https://replicant.fun/][Replicant]]/ — The Elm Architecture rediscovered and reimagined, this time not suffering from the typed garden walls.
 
@@ -46,7 +46,7 @@ Look at this beauty:
 The Elm Architecture - avoid pitfalls & keep the code workable.
 Effects - great code & great productivity as long as you can and will stay within the typed garden.
 
-* 2025: The Elm Architecture makes it to Clojurescript
+* 2025: The Elm Architecture in Clojurescript with Replicant
 
 For nine, long years, I've  longed to return to the simplicity and beauty that Elm brought to the table. Here's the counter, again:
 
@@ -65,10 +65,31 @@ In 2025, we can do the same in Clojurescript:
 (defn counter (count) ,,,)
 #+end_src
 
-The astute reader will notice that we can see the mutation happen in the Clojurescript counter. swap!s on the state atom are explicit.
-Elm changes (updates) the state, only from the shadows.
+The astute reader will notice explicit mutation in Clojurescript, and the absent of such explicit mutation in Elm.
+In Clojurescript, we =swap!= on a state atom.
+In Elm, however, the state changes are tacit.
 
-* The performance argument for component local state in React
+* Types: to help the developer write code, and to inform system design
+
+Elm is typed, Clojurescript is not.
+I'd like to highlight two advantages of Elm's types:
+
+- Better developer experience through helpful error messages.
+
+- The system design through clear communication contract between system
+  components.
+
+** Types & Replicant
+
+- Swap typed values for namespaced attributes
+- Keep the clear communication contract between system components - avoid
+  backchannels.
+  - → immutable data!
+
+https://worrydream.com/refs/Moseley_2006_-_Out_of_the_Tar_Pit.pdf
+
+
+* Component local state: necessary for performance?
 
 Should we do a new VDOM comparison and re-render each time the user moves the
 cursor? Maybe not. We can avoid those extra re-renders in React with component
@@ -97,22 +118,28 @@ translate component argument changes as Coeffects into imperative Mapbox
 function calls, and listen to events (effects) from Mapbox, translate to data,
 and pass the data to Replicant.
 
-* Beyond The Elm Architecture: extensible imperative machinery, DOM tree as data, events as data and UI code that runs on the frontend and the server
+* Beyond The Elm Architecture: what Replicant brings to the table
 
-TODO
+** Extensible imperative machinery
 
-* The "Clojure doesn't have types, so I can't write large systems in it" argument
+Beyond The Elm Architecture: extensible imperative machinery, DOM tree as data,
+events as data and UI code that runs on the frontend and the server
 
-Compared to The Elm Architecture, Replicant does take one thing away: the cozy error messages from type mismatchces in your code.
+** HTML as data
 
-Elm's type advantage is actually of two parts:
+Elm treats DOM nodes as a type, =HTML.Html=.
+Replicant treats DOM nodes as data structure, vectors, lists and maps.
 
-- The developer experience advantage: When you do write code with type mismatches, you get
+Leverage: tests.
+Example: tree seq.
 
-- The system design advantage: You establish a clear contract between the components of your system.
+** Events as data
 
-The explicit advantage is amazing and quite unique to typed functional languages. Elm, Rust and Haskell all have compilers that can give great feedback before the code has ever run.
+auto-serialization
 
-The implicit
+Leverage: auto-serialization, tests.
+Example: collect all events for debugging.
 
-TODO
+** UI functions can run on the backend too
+
+Leverage: no browser needed for unit-testing UI functions

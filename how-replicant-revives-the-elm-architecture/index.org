@@ -1,0 +1,118 @@
+:PROPERTIES:
+:ID: c1ef458f-8de2-4a1f-8ac0-df84ac01eff4
+:END:
+#+TITLE: Pure functions are back on the menu: how Replicant revives the Elm Architecture
+
+[[file:..][..]]
+
+#+begin_export html
+<div style="background-color: black; color: yellow; padding: 1rem">
+<p style="margin-top:0">
+This article is currently a <strong style="color: rgb(109 219 253)">DRAFT UNDER REVIEW</strong>.
+Please do not share the link with other people quite yet.
+</p>
+<p style="margin-bottom:0">
+Sections, words and references may be missing.
+</p>
+</div>
+#+end_export
+
+Elm was and is an amazings way to write user interfaces that run on web browsers.
+Today, those interfaces are more commonyl written with React and Typescript.
+Why, you ask?
+A source of friction for Elm usage was the  walls of Elm's typed garden.
+
+Browser APIs like HTML and SVG mapped neatly to typed functional interfaces, and got great bindings in [[https://package.elm-lang.org/packages/elm/html/latest/][elm/html]] and [[https://package.elm-lang.org/packages/elm/svg/latest/][elm/svg]].
+Less pure parts of the browser like [[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API][Canvas]] and [[https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio][Audio]] didn't get the same love, and programmers had to resort to [[https://guide.elm-lang.org/interop/ports][ports]].
+
+2025 Elm's core ideas back to life in /[[https://replicant.fun/][Replicant]]/ — The Elm Architecture rediscovered and reimagined, this time not suffering from the typed garden walls.
+
+As a React/Typescript dev, you may find ideas to steal that let you worry less about hooks, and test more of your code.
+As a Clojure(script) dev, you may gain a new hammer you already know how to use (functions returning hiccup), with more emphasis on data than what you might otherwise build with Reagent.
+
+Before we dig into Replicant's innovative ideas, I'm going for a detour down memory lane - my joyful experience of finding Elm.
+
+* 2016: Discovering The Zen of Purely Functional UI with Elm
+
+Focus - get the UI done.
+
+Look at this beauty:
+
+#+begin_src elm
+-- App.elm
+-- ....
+#+end_src
+
+The Elm Architecture - avoid pitfalls & keep the code workable.
+Effects - great code & great productivity as long as you can and will stay within the typed garden.
+
+* 2025: The Elm Architecture makes it to Clojurescript
+
+For nine, long years, I've  longed to return to the simplicity and beauty that Elm brought to the table. Here's the counter, again:
+
+#+begin_src elm
+-- App.elm
+-- ....
+#+end_src
+
+In 2025, we can do the same in Clojurescript:
+
+#+begin_src clojure
+;; init.cljs
+(replicant.render ,,,,)
+
+;; ui.cljc
+(defn counter (count) ,,,)
+#+end_src
+
+The astute reader will notice that we can see the mutation happen in the Clojurescript counter. swap!s on the state atom are explicit.
+Elm changes (updates) the state, only from the shadows.
+
+* The performance argument for component local state in React
+
+Should we do a new VDOM comparison and re-render each time the user moves the
+cursor? Maybe not. We can avoid those extra re-renders in React with component
+local state, and signal changes to the rest of the app when we're ready.
+
+So it's impossible to have a pure UI if we need performance like this, right?
+
+No!
+
+We can gain this exact benefit and keep our lovely Elm Architecture. Enter
+Replicant Aliases. Under the hood, a browser textbox has a value. We apply our
+events as data trick, and tada, the UI is pure again:
+
+#+begin_src clojure
+  [:textarea {:on {:change [:set-user-name]}}]
+#+end_src
+
+Our job as imperative machinery-programmers becomes to write "the textarea we
+need". The "textarea we need" could be a declarative interface to Mapbox (which
+exists), or a declarative interface to CodeMirror (which per 2025-04-18 does not
+exist, I think).
+
+The Replicant Alias for Mapbox adapts Mapbox's imperative API to play nicely
+with an otherwise Purely functional UI. For the FP nerds out there, we need to
+translate component argument changes as Coeffects into imperative Mapbox
+function calls, and listen to events (effects) from Mapbox, translate to data,
+and pass the data to Replicant.
+
+* Beyond The Elm Architecture: extensible imperative machinery, DOM tree as data, events as data and UI code that runs on the frontend and the server
+
+TODO
+
+* The "Clojure doesn't have types, so I can't write large systems in it" argument
+
+Compared to The Elm Architecture, Replicant does take one thing away: the cozy error messages from type mismatchces in your code.
+
+Elm's type advantage is actually of two parts:
+
+- The developer experience advantage: When you do write code with type mismatches, you get
+
+- The system design advantage: You establish a clear contract between the components of your system.
+
+The explicit advantage is amazing and quite unique to typed functional languages. Elm, Rust and Haskell all have compilers that can give great feedback before the code has ever run.
+
+The implicit
+
+TODO

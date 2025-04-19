@@ -1,1 +1,5 @@
-{:deps {eu.teod/play {:local/root "."}}}
+{:deps
+ {eu.teod/play {:local/root "."}}
+ :tasks
+ {clean (shell "./play.clj clean")
+  make (shell "make")}}

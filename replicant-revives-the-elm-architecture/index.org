@@ -82,7 +82,12 @@ For nine, long years, I've  longed to return to the simplicity and beauty that E
 -- ....
 #+end_src
 
-In 2025, we can do the same in Clojurescript:
+And here, in 2025, I'm delighted to say that purely functional user interfaces are back on the menu!
+
+#+CAPTION: Looks like purely functional user interfaces are back on the menu, boys!
+[[./meats-back-on-the-menu-boys.jpg]]
+
+Here's the same browser, in Clojurescript with Replicant:
 
 #+begin_src clojure
 ;; init.cljs
@@ -106,7 +111,6 @@ It may be out of scope for one text.
 </p>
 </div>
 #+end_export
-
 
 ** Extensible imperative machinery
 

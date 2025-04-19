@@ -6,7 +6,7 @@
 [[file:..][..]]
 
 #+begin_export html
-<div style="background-color: black; color: yellow; padding: 1rem">
+<div style="background-color: black; color: hsl(61.8, 100%, 61.6%); padding: 1rem">
 <p style="margin-top:0">
 This article is currently a <strong style="color: rgb(109 219 253)">DRAFT UNDER REVIEW</strong>.
 Please do not share the link with other people quite yet.
@@ -34,7 +34,7 @@ As a Clojure(script) dev, you may gain a new hammer you already know how to use 
 
 Before we dig into Replicant's innovative ideas, I'm going for a detour down memory lane - my joyful experience of finding Elm.
 
-* 2016: Discovering The Zen of Purely Functional UI with Elm
+* The Zen of Purely Functional UI with Elm
 
 Focus - get the UI done.
 
@@ -51,7 +51,7 @@ Effects - great code & great productivity as long as you can and will stay withi
 * What could Elm have been?
 
 Thinking back on Elm fills me with a certain melancholy.
-It was an amazing improvement on the tools at the time, and the tools that would follow it.
+Elm was an improvement on its predecessors and its successors.
 
 #+begin_export html
 <iframe class="youtube-video"
@@ -73,7 +73,7 @@ But open source funding is hard, and the big infrastructure players tend to capt
 I'm grateful to Evan and the rest of the Elm team for the effort they put in.
 You all helped me learn programming, user interfaces, pure functions, type systems and teaching.
 
-* 2025: The Elm Architecture in Clojurescript with Replicant
+* How Replicant revives The Elm Architecture
 
 For nine, long years, I've  longed to return to the simplicity and beauty that Elm brought to the table. Here's the counter, again:
 
@@ -97,6 +97,16 @@ In Clojurescript, we =swap!= on a state atom.
 In Elm, however, the state changes are tacit.
 
 * Beyond The Elm Architecture: what Replicant brings to the table
+
+#+begin_export html
+<div style="background-color: black; color: rgb(109 219 253); padding: 1rem">
+<p style="margin-top:0; margin-bottom:0">
+I want to describe how Replicant improves upon The Elm Architecture, but I'm not sure how to do it.
+It may be out of scope for one text.
+</p>
+</div>
+#+end_export
+
 
 ** Extensible imperative machinery
 
@@ -122,6 +132,15 @@ Example: collect all events for debugging.
 
 Leverage: no browser needed for unit-testing UI functions
 * Sections that don't quite fit into the flow (yet)
+
+#+begin_export html
+<div style="background-color: black; color: rgb(109 219 253); padding: 1rem">
+<p style="margin-top:0; margin-bottom:0">
+A "collection box" for things I wanted to write, but don't fit (yet).
+Could be removed, or put into the text somewhere.
+</p>
+</div>
+#+end_export
 
 ** Types: to help the developer write code, and to inform system design
 

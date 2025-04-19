@@ -3936,13 +3936,13 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "c0cada69-772f-4e7d-9c45-158d81f0c2a5"
 }, {
-  "slug" : "how-replicant-revives-the-elm-architecture",
+  "slug" : "replicant-revives-the-elm-architecture",
   "page/uuid" : "c1ef458f-8de2-4a1f-8ac0-df84ac01eff4",
   "created" : "2025-04-18",
   "readiness" : "wtf-is-this",
   "title" : "Pure functions are back on the menu: how Replicant revives the Elm Architecture",
   "lang" : "en",
-  "page/slug" : "how-replicant-revives-the-elm-architecture",
+  "page/slug" : "replicant-revives-the-elm-architecture",
   "author-url" : "https://teod.eu",
   "uuid" : "c1ef458f-8de2-4a1f-8ac0-df84ac01eff4"
 }, {

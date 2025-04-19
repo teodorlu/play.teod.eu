@@ -269,20 +269,11 @@ revives the Elm Architecture</h1>
 <li><a href="#discovering-the-zen-of-purely-functional-ui-with-elm"
 id="toc-discovering-the-zen-of-purely-functional-ui-with-elm">2016:
 Discovering The Zen of Purely Functional UI with Elm</a></li>
+<li><a href="#what-could-elm-have-been"
+id="toc-what-could-elm-have-been">What could Elm have been?</a></li>
 <li><a href="#the-elm-architecture-in-clojurescript-with-replicant"
 id="toc-the-elm-architecture-in-clojurescript-with-replicant">2025: The
 Elm Architecture in Clojurescript with Replicant</a></li>
-<li><a
-href="#types-to-help-the-developer-write-code-and-to-inform-system-design"
-id="toc-types-to-help-the-developer-write-code-and-to-inform-system-design">Types:
-to help the developer write code, and to inform system design</a>
-<ul>
-<li><a href="#types-replicant" id="toc-types-replicant">Types &amp;
-Replicant</a></li>
-</ul></li>
-<li><a href="#component-local-state-necessary-for-performance"
-id="toc-component-local-state-necessary-for-performance">Component local
-state: necessary for performance?</a></li>
 <li><a
 href="#beyond-the-elm-architecture-what-replicant-brings-to-the-table"
 id="toc-beyond-the-elm-architecture-what-replicant-brings-to-the-table">Beyond
@@ -298,6 +289,18 @@ data</a></li>
 id="toc-ui-functions-can-run-on-the-backend-too">UI functions can run on
 the backend too</a></li>
 </ul></li>
+<li><a href="#sections-that-dont-quite-fit-into-the-flow-yet"
+id="toc-sections-that-dont-quite-fit-into-the-flow-yet">Sections that
+don’t quite fit into the flow (yet)</a>
+<ul>
+<li><a
+href="#types-to-help-the-developer-write-code-and-to-inform-system-design"
+id="toc-types-to-help-the-developer-write-code-and-to-inform-system-design">Types:
+to help the developer write code, and to inform system design</a></li>
+<li><a href="#component-local-state-necessary-for-performance"
+id="toc-component-local-state-necessary-for-performance">Component local
+state: necessary for performance?</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -308,6 +311,8 @@ Please do not share the link with other people quite yet.
 </p>
 <p style="margin-bottom:0">
 Sections, words and references may be missing.
+Formulations may be weak, vague or conflicting.
+Words may suffer from severe misspellings and other misuse.
 </p>
 </div>
 
@@ -347,6 +352,26 @@ class="sourceCode elm"><code class="sourceCode elm"><span id="cb1-1"><a href="#c
 <p>The Elm Architecture - avoid pitfalls &amp; keep the code workable.
 Effects - great code &amp; great productivity as long as you can and
 will stay within the typed garden.</p>
+<h2 id="what-could-elm-have-been">What could Elm have been?</h2>
+<p>Thinking back on Elm fills me with a certain melancholy. It was an
+amazing improvement on the tools at the time, and the tools that would
+follow it.</p>
+<iframe class="youtube-video"
+        src="https://www.youtube.com/embed/tJV_-5nciN0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+
+<p>I wish Evan could have gotten the funding to finish what he started.
+But open source funding is hard, and the big infrastructure players tend
+to capture the value.</p>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/XZ3w_jec1v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p>I’m grateful to Evan and the rest of the Elm team for the effort they
+put in. You all helped me learn programming, user interfaces, pure
+functions, type systems and teaching.</p>
 <h2 id="the-elm-architecture-in-clojurescript-with-replicant">2025: The
 Elm Architecture in Clojurescript with Replicant</h2>
 <p>For nine, long years, I’ve longed to return to the simplicity and
@@ -366,8 +391,30 @@ the absent of such explicit mutation in Elm. In Clojurescript, we <code
 class="verbatim">swap!</code> on a state atom. In Elm, however, the
 state changes are tacit.</p>
 <h2
+id="beyond-the-elm-architecture-what-replicant-brings-to-the-table">Beyond
+The Elm Architecture: what Replicant brings to the table</h2>
+<h3 id="extensible-imperative-machinery">Extensible imperative
+machinery</h3>
+<p>Beyond The Elm Architecture: extensible imperative machinery, DOM
+tree as data, events as data and UI code that runs on the frontend and
+the server</p>
+<h3 id="html-as-data">HTML as data</h3>
+<p>Elm treats DOM nodes as a type, <code
+class="verbatim">HTML.Html</code>. Replicant treats DOM nodes as data
+structure, vectors, lists and maps.</p>
+<p>Leverage: tests. Example: tree seq.</p>
+<h3 id="events-as-data">Events as data</h3>
+<p>auto-serialization</p>
+<p>Leverage: auto-serialization, tests. Example: collect all events for
+debugging.</p>
+<h3 id="ui-functions-can-run-on-the-backend-too">UI functions can run on
+the backend too</h3>
+<p>Leverage: no browser needed for unit-testing UI functions</p>
+<h2 id="sections-that-dont-quite-fit-into-the-flow-yet">Sections that
+don’t quite fit into the flow (yet)</h2>
+<h3
 id="types-to-help-the-developer-write-code-and-to-inform-system-design">Types:
-to help the developer write code, and to inform system design</h2>
+to help the developer write code, and to inform system design</h3>
 <p>Elm is typed, Clojurescript is not. I’d like to highlight two
 advantages of Elm’s types:</p>
 <ul>
@@ -376,7 +423,7 @@ messages.</p></li>
 <li><p>The system design through clear communication contract between
 system components.</p></li>
 </ul>
-<h3 id="types-replicant">Types &amp; Replicant</h3>
+<h4 id="types-repliant">Types &amp; Repliant</h4>
 <ul>
 <li>Swap typed values for namespaced attributes</li>
 <li>Keep the clear communication contract between system components -
@@ -387,8 +434,8 @@ avoid backchannels.
 </ul>
 <p><a
 href="https://worrydream.com/refs/Moseley_2006_-_Out_of_the_Tar_Pit.pdf">https://worrydream.com/refs/Moseley_2006_-_Out_of_the_Tar_Pit.pdf</a></p>
-<h2 id="component-local-state-necessary-for-performance">Component local
-state: necessary for performance?</h2>
+<h3 id="component-local-state-necessary-for-performance">Component local
+state: necessary for performance?</h3>
 <p>Should we do a new VDOM comparison and re-render each time the user
 moves the cursor? Maybe not. We can avoid those extra re-renders in
 React with component local state, and signal changes to the rest of the
@@ -410,25 +457,5 @@ nicely with an otherwise Purely functional UI. For the FP nerds out
 there, we need to translate component argument changes as Coeffects into
 imperative Mapbox function calls, and listen to events (effects) from
 Mapbox, translate to data, and pass the data to Replicant.</p>
-<h2
-id="beyond-the-elm-architecture-what-replicant-brings-to-the-table">Beyond
-The Elm Architecture: what Replicant brings to the table</h2>
-<h3 id="extensible-imperative-machinery">Extensible imperative
-machinery</h3>
-<p>Beyond The Elm Architecture: extensible imperative machinery, DOM
-tree as data, events as data and UI code that runs on the frontend and
-the server</p>
-<h3 id="html-as-data">HTML as data</h3>
-<p>Elm treats DOM nodes as a type, <code
-class="verbatim">HTML.Html</code>. Replicant treats DOM nodes as data
-structure, vectors, lists and maps.</p>
-<p>Leverage: tests. Example: tree seq.</p>
-<h3 id="events-as-data">Events as data</h3>
-<p>auto-serialization</p>
-<p>Leverage: auto-serialization, tests. Example: collect all events for
-debugging.</p>
-<h3 id="ui-functions-can-run-on-the-backend-too">UI functions can run on
-the backend too</h3>
-<p>Leverage: no browser needed for unit-testing UI functions</p>
 </body>
 </html>

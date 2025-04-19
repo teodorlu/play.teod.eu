@@ -13,6 +13,8 @@ Please do not share the link with other people quite yet.
 </p>
 <p style="margin-bottom:0">
 Sections, words and references may be missing.
+Formulations may be weak, vague or conflicting.
+Words may suffer from severe misspellings and other misuse.
 </p>
 </div>
 #+end_export
@@ -46,6 +48,31 @@ Look at this beauty:
 The Elm Architecture - avoid pitfalls & keep the code workable.
 Effects - great code & great productivity as long as you can and will stay within the typed garden.
 
+* What could Elm have been?
+
+Thinking back on Elm fills me with a certain melancholy.
+It was an amazing improvement on the tools at the time, and the tools that would follow it.
+
+#+begin_export html
+<iframe class="youtube-video"
+        src="https://www.youtube.com/embed/tJV_-5nciN0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+#+end_export
+
+I wish Evan could have gotten the funding to finish what he started.
+But open source funding is hard, and the big infrastructure players tend to capture the value.
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/XZ3w_jec1v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+I'm grateful to Evan and the rest of the Elm team for the effort they put in.
+You all helped me learn programming, user interfaces, pure functions, type systems and teaching.
+
 * 2025: The Elm Architecture in Clojurescript with Replicant
 
 For nine, long years, I've  longed to return to the simplicity and beauty that Elm brought to the table. Here's the counter, again:
@@ -69,7 +96,34 @@ The astute reader will notice explicit mutation in Clojurescript, and the absent
 In Clojurescript, we =swap!= on a state atom.
 In Elm, however, the state changes are tacit.
 
-* Types: to help the developer write code, and to inform system design
+* Beyond The Elm Architecture: what Replicant brings to the table
+
+** Extensible imperative machinery
+
+Beyond The Elm Architecture: extensible imperative machinery, DOM tree as data,
+events as data and UI code that runs on the frontend and the server
+
+** HTML as data
+
+Elm treats DOM nodes as a type, =HTML.Html=.
+Replicant treats DOM nodes as data structure, vectors, lists and maps.
+
+Leverage: tests.
+Example: tree seq.
+
+** Events as data
+
+auto-serialization
+
+Leverage: auto-serialization, tests.
+Example: collect all events for debugging.
+
+** UI functions can run on the backend too
+
+Leverage: no browser needed for unit-testing UI functions
+* Sections that don't quite fit into the flow (yet)
+
+** Types: to help the developer write code, and to inform system design
 
 Elm is typed, Clojurescript is not.
 I'd like to highlight two advantages of Elm's types:
@@ -79,7 +133,7 @@ I'd like to highlight two advantages of Elm's types:
 - The system design through clear communication contract between system
   components.
 
-** Types & Replicant
+*** Types & Repliant
 
 - Swap typed values for namespaced attributes
 - Keep the clear communication contract between system components - avoid
@@ -89,7 +143,7 @@ I'd like to highlight two advantages of Elm's types:
 https://worrydream.com/refs/Moseley_2006_-_Out_of_the_Tar_Pit.pdf
 
 
-* Component local state: necessary for performance?
+** Component local state: necessary for performance?
 
 Should we do a new VDOM comparison and re-render each time the user moves the
 cursor? Maybe not. We can avoid those extra re-renders in React with component
@@ -117,29 +171,3 @@ with an otherwise Purely functional UI. For the FP nerds out there, we need to
 translate component argument changes as Coeffects into imperative Mapbox
 function calls, and listen to events (effects) from Mapbox, translate to data,
 and pass the data to Replicant.
-
-* Beyond The Elm Architecture: what Replicant brings to the table
-
-** Extensible imperative machinery
-
-Beyond The Elm Architecture: extensible imperative machinery, DOM tree as data,
-events as data and UI code that runs on the frontend and the server
-
-** HTML as data
-
-Elm treats DOM nodes as a type, =HTML.Html=.
-Replicant treats DOM nodes as data structure, vectors, lists and maps.
-
-Leverage: tests.
-Example: tree seq.
-
-** Events as data
-
-auto-serialization
-
-Leverage: auto-serialization, tests.
-Example: collect all events for debugging.
-
-** UI functions can run on the backend too
-
-Leverage: no browser needed for unit-testing UI functions

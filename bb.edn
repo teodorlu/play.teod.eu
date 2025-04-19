@@ -1,5 +1,9 @@
 {:deps
  {eu.teod/play {:local/root "."}}
  :tasks
- {clean (shell "./play.clj clean")
-  make (shell "make")}}
+ {:requires ([tplay.devenv :refer [tmux-multi]])
+  clean (shell "./play.clj clean")
+  make (shell "make")
+  watchmake (shell "bash" "-c" "rg --files | entr -rc make")
+  preview (shell "npx live-server")
+  dev (tmux-multi "tplay" ["bb watchmake" "bb preview"])}}

@@ -131,7 +131,7 @@ Example: collect all events for debugging.
 ** UI functions can run on the backend too
 
 Leverage: no browser needed for unit-testing UI functions
-* Sections that don't quite fit into the flow (yet)
+* Sections that maybe should be included
 
 #+begin_export html
 <div style="background-color: black; color: rgb(109 219 253); padding: 1rem">

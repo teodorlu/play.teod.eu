@@ -4,6 +4,6 @@
  {:requires ([tplay.devenv :refer [tmux-multi]])
   clean (shell "./play.clj clean")
   make (shell "make")
-  watchmake (shell "bash" "-c" "rg --files | entr -rc make")
+  watchmake (shell "bash" "-c" "while true; do rg --files | entr -drc make; done")
   preview (shell "npx live-server")
   dev (tmux-multi "tplay" ["bb watchmake" "bb preview"])}}

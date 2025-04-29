@@ -29,3 +29,139 @@ Når vi lager abstraksjoner, er vi ute etter presisjon, ikke detaljer.
 Hvis vi tvinger oss selv til å kun snakke om detaljene, kommer vi oss aldri opp.
 ** La oss ikke drive med conveyance for imformasjon vi ikke trenger å sende rundt
 I Matnyttig-koden
+
+* 2025-04-29
+** Three modes of creation: goal consistent, flow driven and WIP reduction
+
+The strategic decisions should be *goal consistent*.
+If you wanna go somewhere, you need to make sure that target is reachable.
+And it won't be unless you make sure it is.
+
+When *driven by flow*, you build speed and turn where you can go the fastest.
+Intuition takes the front seat, analysis can wait.
+See how fast you can go.
+
+*Reducing WIP* is the maintenance you need to enable spurts of wild charge.
+Clean it up.
+Make it consistent.
+** Embracing human-computer interaction: how my programming style has changed
+
+Looking back on how I first approached programming, I can't help but laugh.
+It was my first year of university, and we had two math courses and a programming course.
+I did exercises in all three courses the same way:
+
+1. Write down the problem
+2. Think
+3. Write down the solution, and check it step by step.
+
+My first two mandatory programming exercises went smoothly.
+Write the code, check it, hand it in.
+
+On the third, I got stuck, and asked a teaching assistant.
+His first question left me flabbergasted.
+"What happens when you run your code?"
+I thought that was a very stupid question to ask.
+"There's no use in running it. It's not done! I have to write the rest first."
+
+Luckily, he persisted, and I /did/ run the code as I'd written it.
+We were using MATLAB, and after I'd run my code I could look at the values of my variables.
+That was kind of useful!
+
+-----
+
+Programming /can/ be viewed as working with formulas.
+
+1. First, translate the formula to computer language
+2. Next, check the formula
+3. Finally, execute the formula.
+
+Modern programming languages have gotten better at checking the formulas with static analysis.
+
+A different view of programming is that programming is two parallel tasks:
+
+1. To solve a problem
+2. ... and to simultaneously build system that lets you interact with the problem and the solution.
+
+I enjoy this style of interactive programming much more than the formula-oriented one.
+It feels more /alive/.
+
+I recently spent some time exploring [[https://nats.io/][NATS]]' wire protocol.
+But where should I start?
+I choose to start in a way that would let me interact.
+The official [[https://docs.nats.io/reference/reference-protocols/nats-protocol-demo][protocol demo]] was absolutely great for this!
+
+First, connect to the demo server with =telnet=.
+
+#+begin_src
+  telnet demo.nats.io 4222
+#+end_src
+
+You should see the server identifying itself with an =INFO= message:
+
+#+begin_src text
+  Trying 107.170.221.32...
+  Connected to demo.nats.io.
+  Escape character is '^]'.
+  INFO {"server_id":"NCXMJZYQEWUDJFLYLSTTE745I2WUNCVG3LJJ3NRKSFJXEG6RGK7753DJ","version":"2.0.0","proto":1,"go":"go1.11.10","host":"0.0.0.0","port":4222,"max_payload":1048576,"client_id":5089}
+#+end_src
+
+Then, send =CONNECT {}=:
+
+#+begin_src text
+  CONNECT {}
+#+end_src
+
+You should get an OK message back:
+
+#+begin_src text
+  +OK
+#+end_src
+
+Finally, when the server wants to know if you're still there (=PING=), answer (=PONG=):
+
+#+begin_src text
+  PING
+  PONG
+#+end_src
+
+That's it!
+That's all!
+
+I then wanted to translate what I'd learned into Clojure code using java sockets.
+Starting small, let's try to connect:
+
+#+begin_src clojure
+  (import '(java.net Socket))
+  (let [socket (Socket. "demo.nats.io" 4222)
+        cleanup #(.close socket)]
+    (try
+      :lol
+      (finally (cleanup))))
+  ;; => :lol
+#+end_src
+
+Nice!
+
+I aim to take very small steps, and make sure I can run an expression to see if my assumptions still hold.
+
+Next, I want to get the =INFO= message.
+
+#+begin_src clojure
+  (import '(java.io InputStreamReader BufferedReader)
+          '(java.net Socket))
+  (let [socket (Socket. "demo.nats.io" 4222)
+        reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))
+        cleanup #(do (.close reader)
+                     (.close socket))]
+    (try
+      (.readLine reader)
+      (finally (cleanup))))
+  ;; => "INFO {\"server_id\":\"NDIESIZS7MWBAOM2BVC3YLEGJLGFMZYVO23OIYB7WUF5736JWKND5TKQ\",\"server_name\":\"us-south-nats-demo\",\"version\":\"2.11.2\",\"proto\":1,\"git_commit\":\"55efd1d\",\"go\":\"go1.24.2\",\"host\":\"0.0.0.0\",\"port\":4222,\"headers\":true,\"tls_available\":true,\"max_payload\":1048576,\"jetstream\":true,\"client_id\":7640,\"client_ip\":\"89.8.1.56\",\"nonce\":\"QmdtypKmZykViYY\",\"xkey\":\"XCGB5DG4FLF6EA566VUEPSSHY4GLNKHEX4VYQD3SLZRZU4KUHWSQ2PHH\"} "
+#+end_src
+
+Yay!
+Finding the right classes and methods from  =java.io= og =java.net= took a bit of time, but taking super-small steps kept me grounded and focused.
+"Many More Much Smaller Steps", [[https://www.geepawhill.org/series/many-more-much-smaller-steps/][says GeePaw Hill]].
+Smaller steps give smaller errors, and we can correct our course quickly.
+
+Now, let's send the =CONNECT {}= and see if we can get an =+OK= back.

@@ -166,6 +166,71 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
@@ -217,6 +282,19 @@ id="toc-la-oss-ikke-drive-med-conveyance-for-imformasjon-vi-ikke-trenger-å-send
 oss ikke drive med conveyance for imformasjon vi ikke trenger å sende
 rundt</a></li>
 </ul></li>
+<li><a href="#section-2" id="toc-section-2">2025-04-29</a>
+<ul>
+<li><a
+href="#three-modes-of-creation-goal-consistent-flow-driven-and-wip-reduction"
+id="toc-three-modes-of-creation-goal-consistent-flow-driven-and-wip-reduction">Three
+modes of creation: goal consistent, flow driven and WIP
+reduction</a></li>
+<li><a
+href="#embracing-human-computer-interaction-how-my-programming-style-has-changed"
+id="toc-embracing-human-computer-interaction-how-my-programming-style-has-changed">Embracing
+human-computer interaction: how my programming style has
+changed</a></li>
+</ul></li>
 </ul>
 </nav>
 <p><a href="..">..</a></p>
@@ -249,5 +327,122 @@ id="la-oss-ikke-drive-med-conveyance-for-imformasjon-vi-ikke-trenger-å-sende-ru
 oss ikke drive med conveyance for imformasjon vi ikke trenger å sende
 rundt</h3>
 <p>I Matnyttig-koden</p>
+<h2 id="section-2">2025-04-29</h2>
+<h3
+id="three-modes-of-creation-goal-consistent-flow-driven-and-wip-reduction">Three
+modes of creation: goal consistent, flow driven and WIP reduction</h3>
+<p>The strategic decisions should be <strong>goal consistent</strong>.
+If you wanna go somewhere, you need to make sure that target is
+reachable. And it won’t be unless you make sure it is.</p>
+<p>When <strong>driven by flow</strong>, you build speed and turn where
+you can go the fastest. Intuition takes the front seat, analysis can
+wait. See how fast you can go.</p>
+<p><strong>Reducing WIP</strong> is the maintenance you need to enable
+spurts of wild charge. Clean it up. Make it consistent.</p>
+<h3
+id="embracing-human-computer-interaction-how-my-programming-style-has-changed">Embracing
+human-computer interaction: how my programming style has changed</h3>
+<p>Looking back on how I first approached programming, I can’t help but
+laugh. It was my first year of university, and we had two math courses
+and a programming course. I did exercises in all three courses the same
+way:</p>
+<ol>
+<li>Write down the problem</li>
+<li>Think</li>
+<li>Write down the solution, and check it step by step.</li>
+</ol>
+<p>My first two mandatory programming exercises went smoothly. Write the
+code, check it, hand it in.</p>
+<p>On the third, I got stuck, and asked a teaching assistant. His first
+question left me flabbergasted. “What happens when you run your code?” I
+thought that was a very stupid question to ask. “There’s no use in
+running it. It’s not done! I have to write the rest first.”</p>
+<p>Luckily, he persisted, and I <em>did</em> run the code as I’d written
+it. We were using MATLAB, and after I’d run my code I could look at the
+values of my variables. That was kind of useful!</p>
+<hr />
+<p>Programming <em>can</em> be viewed as working with formulas.</p>
+<ol>
+<li>First, translate the formula to computer language</li>
+<li>Next, check the formula</li>
+<li>Finally, execute the formula.</li>
+</ol>
+<p>Modern programming languages have gotten better at checking the
+formulas with static analysis.</p>
+<p>A different view of programming is that programming is two parallel
+tasks:</p>
+<ol>
+<li>To solve a problem</li>
+<li>… and to simultaneously build system that lets you interact with the
+problem and the solution.</li>
+</ol>
+<p>I enjoy this style of interactive programming much more than the
+formula-oriented one. It feels more <em>alive</em>.</p>
+<p>I recently spent some time exploring <a
+href="https://nats.io/">NATS</a>’ wire protocol. But where should I
+start? I choose to start in a way that would let me interact. The
+official <a
+href="https://docs.nats.io/reference/reference-protocols/nats-protocol-demo">protocol
+demo</a> was absolutely great for this!</p>
+<p>First, connect to the demo server with <code
+class="verbatim">telnet</code>.</p>
+<pre><code>telnet demo.nats.io 4222
+</code></pre>
+<p>You should see the server identifying itself with an <code
+class="verbatim">INFO</code> message:</p>
+<pre class="text"><code>Trying 107.170.221.32...
+Connected to demo.nats.io.
+Escape character is &#39;^]&#39;.
+INFO {&quot;server_id&quot;:&quot;NCXMJZYQEWUDJFLYLSTTE745I2WUNCVG3LJJ3NRKSFJXEG6RGK7753DJ&quot;,&quot;version&quot;:&quot;2.0.0&quot;,&quot;proto&quot;:1,&quot;go&quot;:&quot;go1.11.10&quot;,&quot;host&quot;:&quot;0.0.0.0&quot;,&quot;port&quot;:4222,&quot;max_payload&quot;:1048576,&quot;client_id&quot;:5089}
+</code></pre>
+<p>Then, send <code class="verbatim">CONNECT {}</code>:</p>
+<pre class="text"><code>CONNECT {}
+</code></pre>
+<p>You should get an OK message back:</p>
+<pre class="text"><code>+OK
+</code></pre>
+<p>Finally, when the server wants to know if you’re still there (<code
+class="verbatim">PING</code>), answer (<code
+class="verbatim">PONG</code>):</p>
+<pre class="text"><code>PING
+PONG
+</code></pre>
+<p>That’s it! That’s all!</p>
+<p>I then wanted to translate what I’d learned into Clojure code using
+java sockets. Starting small, let’s try to connect:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">import</span> &#39;(java.net Socket))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [socket (Socket. <span class="st">&quot;demo.nats.io&quot;</span> <span class="dv">4222</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>      cleanup #(.close socket)]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">:lol</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">finally</span> (cleanup))))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; :lol</span></span></code></pre></div>
+<p>Nice!</p>
+<p>I aim to take very small steps, and make sure I can run an expression
+to see if my assumptions still hold.</p>
+<p>Next, I want to get the <code class="verbatim">INFO</code>
+message.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">import</span> &#39;(java.io InputStreamReader BufferedReader)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>        &#39;(java.net Socket))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [socket (Socket. <span class="st">&quot;demo.nats.io&quot;</span> <span class="dv">4222</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>      reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>      cleanup #(<span class="kw">do</span> (.close reader)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>                   (.close socket))]</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    (.readLine reader)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">finally</span> (cleanup))))</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; &quot;INFO {\&quot;server_id\&quot;:\&quot;NDIESIZS7MWBAOM2BVC3YLEGJLGFMZYVO23OIYB7WUF5736JWKND5TKQ\&quot;,\&quot;server_name\&quot;:\&quot;us-south-nats-demo\&quot;,\&quot;version\&quot;:\&quot;2.11.2\&quot;,\&quot;proto\&quot;:1,\&quot;git_commit\&quot;:\&quot;55efd1d\&quot;,\&quot;go\&quot;:\&quot;go1.24.2\&quot;,\&quot;host\&quot;:\&quot;0.0.0.0\&quot;,\&quot;port\&quot;:4222,\&quot;headers\&quot;:true,\&quot;tls_available\&quot;:true,\&quot;max_payload\&quot;:1048576,\&quot;jetstream\&quot;:true,\&quot;client_id\&quot;:7640,\&quot;client_ip\&quot;:\&quot;89.8.1.56\&quot;,\&quot;nonce\&quot;:\&quot;QmdtypKmZykViYY\&quot;,\&quot;xkey\&quot;:\&quot;XCGB5DG4FLF6EA566VUEPSSHY4GLNKHEX4VYQD3SLZRZU4KUHWSQ2PHH\&quot;} &quot;</span></span></code></pre></div>
+<p>Yay! Finding the right classes and methods from <code
+class="verbatim">java.io</code> og <code
+class="verbatim">java.net</code> took a bit of time, but taking
+super-small steps kept me grounded and focused. “Many More Much Smaller
+Steps”, <a
+href="https://www.geepawhill.org/series/many-more-much-smaller-steps/">says
+GeePaw Hill</a>. Smaller steps give smaller errors, and we can correct
+our course quickly.</p>
+<p>Now, let’s send the <code class="verbatim">CONNECT {}</code> and see
+if we can get an <code class="verbatim">+OK</code> back.</p>
 </body>
 </html>

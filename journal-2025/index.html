@@ -444,5 +444,77 @@ GeePaw Hill</a>. Smaller steps give smaller errors, and we can correct
 our course quickly.</p>
 <p>Now, let’s send the <code class="verbatim">CONNECT {}</code> and see
 if we can get an <code class="verbatim">+OK</code> back.</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">import</span> &#39;(java.io DataOutputStream InputStreamReader BufferedReader)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>        &#39;(java.net Socket))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [socket (Socket. <span class="st">&quot;demo.nats.io&quot;</span> <span class="dv">4222</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>      reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      writer (DataOutputStream. (.getOutputStream socket))</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      cleanup #(<span class="kw">do</span> (.close reader)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>                   (.close socket))]</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">assert</span> (str/starts-with? (.readLine reader) <span class="st">&quot;INFO&quot;</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;Expect INFO message from NATS server&quot;</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    (.writeBytes writer <span class="st">&quot;CONNECT {}</span><span class="sc">\r\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    (.<span class="kw">flush</span> writer)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    (.readLine reader)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">finally</span> (cleanup))))</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; &quot;+OK&quot;</span></span></code></pre></div>
+<p>What we expect! I add asserts to force early errors if I break code I
+got working earlier.</p>
+<p>Now, time for the <code class="verbatim">PING</code> and <code
+class="verbatim">PONG</code>. These involve waiting, so they are a bit
+tricky. First, I want to see if I can get any <code
+class="verbatim">PING</code> whatsoever out of my system.</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">import</span> &#39;(java.io DataOutputStream InputStreamReader BufferedReader)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>        &#39;(java.net Socket))</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [socket (Socket. <span class="st">&quot;demo.nats.io&quot;</span> <span class="dv">4222</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>      reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>      writer (DataOutputStream. (.getOutputStream socket))</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>      cleanup #(<span class="kw">do</span> (.close reader)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>                   (.close socket))]</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">assert</span> (str/starts-with? (.readLine reader) <span class="st">&quot;INFO&quot;</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;Expect INFO message from NATS server&quot;</span>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    (.writeBytes writer <span class="st">&quot;CONNECT {}</span><span class="sc">\r\n</span><span class="st">&quot;</span>)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    (.<span class="kw">flush</span> writer)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">assert</span> (<span class="kw">=</span> (.readLine reader) <span class="st">&quot;+OK&quot;</span>))</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    (.readLine reader)</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">finally</span> (cleanup))))</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; &quot;PING&quot;</span></span></code></pre></div>
+<p>Fantastic! Interactive programming sure is a great way to provide a
+daily dose of dopamine.</p>
+<p>Now things get a bit tricky. We want to wait a total of 3 seconds,
+and print all the readLines we got. Why is that tricky?</p>
+<p><em>We don’t know in advance how many readLines we need to
+make</em>.</p>
+<p>🤔</p>
+<p>Reading the BufferedReader docs, we find the <a
+href="https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#ready--">.ready</a>
+method. Awesome!</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>(<span class="kw">import</span> &#39;(java.io DataOutputStream InputStreamReader BufferedReader)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>        &#39;(java.net Socket))</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>(<span class="kw">let</span> [socket (Socket. <span class="st">&quot;demo.nats.io&quot;</span> <span class="dv">4222</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>      reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>      writer (DataOutputStream. (.getOutputStream socket))</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>      cleanup #(<span class="kw">do</span> (.close reader)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>                   (.close socket))]</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">try</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">assert</span> (str/starts-with? (.readLine reader) <span class="st">&quot;INFO&quot;</span>)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;Expect INFO message from NATS server&quot;</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    (.writeBytes writer <span class="st">&quot;CONNECT {}</span><span class="sc">\r\n</span><span class="st">&quot;</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    (.<span class="kw">flush</span> writer)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">assert</span> (<span class="kw">=</span> (.readLine reader) <span class="st">&quot;+OK&quot;</span>))</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    (Thread/sleep <span class="dv">3000</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">let</span> [lines (<span class="kw">atom</span> [])]</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">loop</span> []</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        (<span class="kw">if</span> (.ready reader)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>          (<span class="kw">do</span> (<span class="kw">swap!</span> lines <span class="kw">conj</span> (.readLine reader))</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>              (<span class="kw">recur</span>))</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>          <span class="at">@lines</span>)))</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">finally</span> (cleanup))))</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="co">;; =&gt; [&quot;PING&quot;]</span></span></code></pre></div>
 </body>
 </html>

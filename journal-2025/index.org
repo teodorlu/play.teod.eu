@@ -165,3 +165,86 @@ Finding the right classes and methods from  =java.io= og =java.net= took a bit o
 Smaller steps give smaller errors, and we can correct our course quickly.
 
 Now, let's send the =CONNECT {}= and see if we can get an =+OK= back.
+
+#+begin_src clojure
+  (import '(java.io DataOutputStream InputStreamReader BufferedReader)
+          '(java.net Socket))
+  (let [socket (Socket. "demo.nats.io" 4222)
+        reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))
+        writer (DataOutputStream. (.getOutputStream socket))
+        cleanup #(do (.close reader)
+                     (.close socket))]
+    (try
+      (assert (str/starts-with? (.readLine reader) "INFO")
+              "Expect INFO message from NATS server")
+      (.writeBytes writer "CONNECT {}\r\n")
+      (.flush writer)
+      (.readLine reader)
+      (finally (cleanup))))
+  ;; => "+OK"
+#+end_src
+
+What we expect!
+I add asserts to force early errors if I break code I got working earlier.
+
+Now, time for the =PING= and =PONG=.
+These involve waiting, so they are a bit tricky.
+First, I want to see if I can get any =PING= whatsoever out of my system.
+
+#+begin_src clojure
+  (import '(java.io DataOutputStream InputStreamReader BufferedReader)
+          '(java.net Socket))
+  (let [socket (Socket. "demo.nats.io" 4222)
+        reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))
+        writer (DataOutputStream. (.getOutputStream socket))
+        cleanup #(do (.close reader)
+                     (.close socket))]
+    (try
+      (assert (str/starts-with? (.readLine reader) "INFO")
+              "Expect INFO message from NATS server")
+      (.writeBytes writer "CONNECT {}\r\n")
+      (.flush writer)
+      (assert (= (.readLine reader) "+OK"))
+      (.readLine reader)
+      (finally (cleanup))))
+  ;; => "PING"
+#+end_src
+
+Fantastic!
+Interactive programming sure is a great way to provide a daily dose of dopamine.
+
+Now things get a bit tricky.
+We want to wait a total of 3 seconds, and print all the readLines we got.
+Why is that tricky?
+
+/We don't know in advance how many readLines we need to make/.
+
+🤔
+
+Reading the BufferedReader docs, we find the [[https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#ready--][.ready]] method.
+Awesome!
+
+#+begin_src clojure
+  (import '(java.io DataOutputStream InputStreamReader BufferedReader)
+          '(java.net Socket))
+  (let [socket (Socket. "demo.nats.io" 4222)
+        reader (BufferedReader. (InputStreamReader. (.getInputStream socket)))
+        writer (DataOutputStream. (.getOutputStream socket))
+        cleanup #(do (.close reader)
+                     (.close socket))]
+    (try
+      (assert (str/starts-with? (.readLine reader) "INFO")
+              "Expect INFO message from NATS server")
+      (.writeBytes writer "CONNECT {}\r\n")
+      (.flush writer)
+      (assert (= (.readLine reader) "+OK"))
+      (Thread/sleep 3000)
+      (let [lines (atom [])]
+        (loop []
+          (if (.ready reader)
+            (do (swap! lines conj (.readLine reader))
+                (recur))
+            @lines)))
+      (finally (cleanup))))
+  ;; => ["PING"]
+#+end_src

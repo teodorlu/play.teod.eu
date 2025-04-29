@@ -24,7 +24,6 @@
 
 (require 'clojure.java.browse)
 
-(defn resolve-url [url]
-  (str refs-url url))
+(def resolve-url #(str refs-url %))
 
 (clojure.java.browse/browse-url (-> ref-anchor lookup/attrs :href resolve-url))

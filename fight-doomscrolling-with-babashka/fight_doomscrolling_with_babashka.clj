@@ -7,12 +7,12 @@
 
 (ns fight-doomscrolling-with-babashka
   (:require
-   [lookup.core :as lookup]
-   [hickory.core :as hickory]
-   [tplay.db :as db]
-   [datascript.core :as d]
    [babashka.fs :as fs]
-   [nextjournal.clerk :as clerk]))
+   [datascript.core :as d]
+   [hickory.core :as hickory]
+   [lookup.core :as lookup]
+   [nextjournal.clerk :as clerk]
+   [tplay.db :as db]))
 
 (do
   (def db (tplay.db/db (tplay.db/load-pages "..")))
@@ -86,6 +86,7 @@
 ;;
 ;; [Babashka]: https://babashka.org/
 
+^::clerk/no-cache
 (clerk/code (slurp "bretroulette.bb"))
 
 ;; Want to try?

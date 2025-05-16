@@ -51,3 +51,7 @@
         (str "<!DOCTYPE html>"
              (hiccup2.core/html {}
                (landing/handler {:the-pages (find-pages)})))))
+
+(defonce rebuild? false)
+(when rebuild? (main))
+#_(def rebuild? true)

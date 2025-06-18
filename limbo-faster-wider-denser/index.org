@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID: 50c37438-b2ed-4236-bca2-ca87061d53f7
+:END:
+#+TITLE: Limbo: Faster, Wider, Denser — or How I Argued With Kent Beck and Learned Something
+
+[[file:..][..]]
+
+DRAFT
+
+In limbo, you make the bar smaller, then smaller again.
+For feedback loops, feedback width and feedback density also matter — but those can be reframed in terms of bite-sizing the wide, dense feedback.
+
+XP - pair programming, continuous deliver, test-driven development – still relevant.

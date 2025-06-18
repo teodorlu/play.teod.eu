@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID: 9ac5fc10-6611-46fc-8f4f-867ed118c5ed
+:END:
+#+TITLE: Support, Challenge, Carry 2
+
+[[file:..][..]]
+
+DRAFT
+
+This is why, every day, you should choose to play Team Fortress 2 Medic, League of Legends Ashe or Scientist.
+
+Creative work is hard: there's no good playbook, and infinite ways to perform badly.
+Let me share one such failure.
+
+The year was 2020, and I was on my first serious software contracting job.
+Our code base was a big pile of Java (Spring), I was going to hook up something to a content management system (I no longer remember what), and did not know where nor how to begin.
+The pile of Java was slow to start.
+In contrast, I could run some tests in less than a minute — so let's start with tests.
+I had no good way of running the whole thing, so I drove the implementation with tests.
+Driving the implementation with tests meant I make writing tests easy, and make the code testable.
+That took more time than I had imagined.
+No prior experience with Spring didn't help.
+
+What was my failure?
+I failed to realize I should have played Team Fortress 2 Medic.
+Watch 10 seconds from this youtube clip (sound not required):
+
+YOUTUBE VIDEO - MEDIC FOLLOWS SOLDIER AROUND
+
+The medic anticipates the soldier's intent.
+Are we retreating or attacking?
+Are there enemies in front or behind?
+Stick to healing range, keep healing, and if you have the time, heal some allies too.
+
+| the | Team Fortress 2 Medic | supports the plan |
+
+A team of all medics suporting each other is funny, but looses to a well-balanced team.
+In typical 6v6 team composition, two soldiers and one demoman "drive" pushes.
+In League of Legends parlance, this is called /a carry/.
+If your Ashe gets some nice experience and gold early, the late game can look like this:
+
+YOUTUBE VIDEO - ASHE DOMINATES EVERYTHING
+
+---
+
+Critic
+Scientist
+
+Eliminate vagueness
+-> enable falsification
+-> falsify the bad stuff
+
+In short, cut away everything that is not david.
+
+PICTURE OF DAVID, MICHELANGELO
+
+---
+
+CONCLUSION
+
+There are no playbooks in creative work.
+But starting with no plans AT ALL when you lack experience, claiming that because there are no playbooks that quality is entirely subjective is bullshit, and is going to be bad for you.
+So here's a frame of mind you can consider.

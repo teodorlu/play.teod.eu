@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Support, Challenge, Carry 2</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+    const hostCanonical = "play.teod.eu";
+    const hostAlias1 = "playground.teod.eu";
+    const hostLocal1 = "localhost:9945";
+    if (
+      window.location.host === hostAlias1
+      // || window.location.host === hostLocal1
+    ) {
+      // redirect playground.teod.eu to play.teod.eu
+      // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+      const pathname = window.location.pathname || "";
+      window.location.replace("https://" + hostCanonical + pathname);
+    }
+  </script>
+
+  <script async type="module" src="/index/big.js"></script>
+  <script async type="module" src="/iki/iki.js"></script>
+  <script async type="module">
+    import {IkiGotoRandomPage} from "/iki/iki.js";
+
+    customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
+  </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Support, Challenge, Carry 2</h1>
+</header>
+<p><a href="..">..</a></p>
+<p>DRAFT</p>
+<p>This is why, every day, you should choose to play Team Fortress 2
+Medic, League of Legends Ashe or Scientist.</p>
+<p>Creative work is hard: there’s no good playbook, and infinite ways to
+perform badly. Let me share one such failure.</p>
+<p>The year was 2020, and I was on my first serious software contracting
+job. Our code base was a big pile of Java (Spring), I was going to hook
+up something to a content management system (I no longer remember what),
+and did not know where nor how to begin. The pile of Java was slow to
+start. In contrast, I could run some tests in less than a minute — so
+let’s start with tests. I had no good way of running the whole thing, so
+I drove the implementation with tests. Driving the implementation with
+tests meant I make writing tests easy, and make the code testable. That
+took more time than I had imagined. No prior experience with Spring
+didn’t help.</p>
+<p>What was my failure? I failed to realize I should have played Team
+Fortress 2 Medic. Watch 10 seconds from this youtube clip (sound not
+required):</p>
+<p>YOUTUBE VIDEO - MEDIC FOLLOWS SOLDIER AROUND</p>
+<p>The medic anticipates the soldier’s intent. Are we retreating or
+attacking? Are there enemies in front or behind? Stick to healing range,
+keep healing, and if you have the time, heal some allies too.</p>
+<table>
+<tbody>
+<tr>
+<td>the</td>
+<td>Team Fortress 2 Medic</td>
+<td>supports the plan</td>
+</tr>
+</tbody>
+</table>
+<p>A team of all medics suporting each other is funny, but looses to a
+well-balanced team. In typical 6v6 team composition, two soldiers and
+one demoman “drive” pushes. In League of Legends parlance, this is
+called <em>a carry</em>. If your Ashe gets some nice experience and gold
+early, the late game can look like this:</p>
+<p>YOUTUBE VIDEO - ASHE DOMINATES EVERYTHING</p>
+<p>—</p>
+<p>Critic Scientist</p>
+<p>Eliminate vagueness -&gt; enable falsification -&gt; falsify the bad
+stuff</p>
+<p>In short, cut away everything that is not david.</p>
+<p>PICTURE OF DAVID, MICHELANGELO</p>
+<p>—</p>
+<p>CONCLUSION</p>
+<p>There are no playbooks in creative work. But starting with no plans
+AT ALL when you lack experience, claiming that because there are no
+playbooks that quality is entirely subjective is bullshit, and is going
+to be bad for you. So here’s a frame of mind you can consider.</p>
+</body>
+</html>

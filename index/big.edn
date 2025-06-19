@@ -1439,6 +1439,16 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "4f080a65-bb30-4d08-8d37-db878dd852b3"}
+ {:slug "limbo-faster-wider-denser",
+  :page/uuid "50c37438-b2ed-4236-bca2-ca87061d53f7",
+  :created "2025-06-18",
+  :readiness :wtf-is-this,
+  :title
+  "Limbo: Faster, Wider, Denser — or How I Argued With Kent Beck and Learned Something",
+  :lang :en,
+  :page/slug "limbo-faster-wider-denser",
+  :author-url "https://teod.eu",
+  :uuid "50c37438-b2ed-4236-bca2-ca87061d53f7"}
  {:slug "visakan-veerasamy",
   :page/uuid "5172319f-ed46-4520-a7f2-b68359e69aca",
   :created "2023-06-06",
@@ -2712,6 +2722,15 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "9A98EB07-B6D8-4A64-AB1A-4E32F8722272"}
+ {:slug "support-challenge-carry-2",
+  :page/uuid "9ac5fc10-6611-46fc-8f4f-867ed118c5ed",
+  :created "2025-06-18",
+  :readiness :wtf-is-this,
+  :title "Support, Challenge, Carry 2",
+  :lang :en,
+  :page/slug "support-challenge-carry-2",
+  :author-url "https://teod.eu",
+  :uuid "9ac5fc10-6611-46fc-8f4f-867ed118c5ed"}
  {:slug "charity-grace-joy",
   :page/uuid "9afd4f7e-8bde-49f6-8722-fd30e9c96a50",
   :created "2023-04-22",
@@ -4111,6 +4130,17 @@
   :author-url "https://teod.eu",
   :form :remote-reference,
   :uuid "ea364f64-1662-411d-a52e-5aa552ce45e4"}
+ {:slug "powerful-abstractions-are-conceptually-far-from-applications",
+  :page/uuid "ea546554-616a-4b9e-b4c2-037e5eea9492",
+  :created "2025-06-19",
+  :readiness :wtf-is-this,
+  :title
+  "Powerful abstractions are conceptually far from applications",
+  :lang :en,
+  :page/slug
+  "powerful-abstractions-are-conceptually-far-from-applications",
+  :author-url "https://teod.eu",
+  :uuid "ea546554-616a-4b9e-b4c2-037e5eea9492"}
  {:slug "ziglang",
   :page/uuid "ea79b414-3a73-404d-8ee5-2d37ff53de10",
   :created "2023-06-20",

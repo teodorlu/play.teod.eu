@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: ea546554-616a-4b9e-b4c2-037e5eea9492
+:END:
+#+TITLE: Powerful abstractions are conceptually far from applications
+
+[[file:..][..]]
+
+Good abstraction is hard - but here's a clear statement.
+
+If you read your code and can't tell the usage of abstractions apart from the abstractions themselves, the abstractions are bad.
+
+Good abstractions are conceptually far from their applications.
+The code using the abstraction is doing something completely different than what the abstraction cares about.
+
+Sure, your code should /do something/.
+But the domain of your problems is /not/ the domain of your abstractions.
+
+Make strata.

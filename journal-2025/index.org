@@ -248,3 +248,18 @@ Awesome!
       (finally (cleanup))))
   ;; => ["PING"]
 #+end_src
+
+* 2025-06-20
+** how to get better at Clojure programming: interactive tecniques and simple systems
+
+# the conundrum: you have to make stuff to practice, and it ain't gonna be simple.
+- "create bad art"
+- "then strive to create less bad art over time"
+- "create bad art book?"
+
+# first, let's define "good".
+- "the good teams that deploy all the time" - see tki-håndbok
+- Jack Rusher extracting Hugo content from
+
+# watch good practicioners and try to do the same thing
+- "don't focus on the dead stuff"

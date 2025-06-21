@@ -1,0 +1,2 @@
+{:paths ["."],
+ :deps {io.github.teodorlu/play.teod.eu {:local/root ".."}}}

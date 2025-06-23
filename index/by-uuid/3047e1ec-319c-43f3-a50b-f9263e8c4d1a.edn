@@ -1,0 +1,11 @@
+{:slug "clerk-explain-idea",
+ :page/uuid "3047e1ec-319c-43f3-a50b-f9263e8c4d1a",
+ :builder :no-op,
+ :created "2025-06-21",
+ :readiness :wtf-is-this,
+ :title
+ "clerk/explain — what if I can discover Clerk functionality interactively?",
+ :lang :en,
+ :page/slug "clerk-explain-idea",
+ :author-url "https://teod.eu",
+ :uuid "3047e1ec-319c-43f3-a50b-f9263e8c4d1a"}

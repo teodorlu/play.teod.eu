@@ -460,6 +460,16 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "16f444c6-7311-4b95-9288-f878dd052ae4"
 }, {
+  "slug" : "perception-and-rebirth",
+  "page/uuid" : "16fed09c-a16c-4226-912e-286ea6702b77",
+  "created" : "2025-06-23",
+  "readiness" : "wtf-is-this",
+  "title" : "Downfall?: blinding perception and killing rebirth, a programmer's tale",
+  "lang" : "en",
+  "page/slug" : "perception-and-rebirth",
+  "author-url" : "https://teod.eu",
+  "uuid" : "16fed09c-a16c-4226-912e-286ea6702b77"
+}, {
   "slug" : "stuttaford-systems-thinking",
   "page/uuid" : "19f57a28-d65e-4fea-b623-70de022056a2",
   "created" : "2023-01-08",
@@ -929,6 +939,17 @@ export const index =
   "page/slug" : "knowledge-playlist",
   "author-url" : "https://teod.eu",
   "uuid" : "30253e9f-4247-4a36-8876-b2a7402d2e1e"
+}, {
+  "slug" : "clerk-explain-idea",
+  "page/uuid" : "3047e1ec-319c-43f3-a50b-f9263e8c4d1a",
+  "builder" : "no-op",
+  "created" : "2025-06-21",
+  "readiness" : "wtf-is-this",
+  "title" : "clerk/explain — what if I can discover Clerk functionality interactively?",
+  "lang" : "en",
+  "page/slug" : "clerk-explain-idea",
+  "author-url" : "https://teod.eu",
+  "uuid" : "3047e1ec-319c-43f3-a50b-f9263e8c4d1a"
 }, {
   "slug" : "rust-lang",
   "page/uuid" : "307f5d35-7be1-4693-8378-4a0255717056",
@@ -3853,6 +3874,17 @@ export const index =
   "author-url" : "https://teod.eu",
   "uuid" : "bd1be8c0-9227-4f87-9e9e-86b0f5903d5d",
   "published" : "2022-12-19"
+}, {
+  "slug" : "nextjournal-markdown-a-first-look",
+  "page/uuid" : "bd6ef3c5-e5f9-4cca-9443-f2ffbbc41c24",
+  "builder" : "no-op",
+  "created" : "2025-06-20",
+  "readiness" : "wtf-is-this",
+  "title" : "Nextjournal Markdown: A First Look",
+  "lang" : "en",
+  "page/slug" : "nextjournal-markdown-a-first-look",
+  "author-url" : "https://teod.eu",
+  "uuid" : "bd6ef3c5-e5f9-4cca-9443-f2ffbbc41c24"
 }, {
   "slug" : "journal",
   "title" : "Journal: 2022--2024",

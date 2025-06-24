@@ -73,6 +73,22 @@
       [:div [:span {:style {:color (:theme/emphasis-color theme )}}
              (str/upper-case principle-core)]
        " " principle-extras])
+    [:div {:style {:css.prop/font-size "1.2rem"
+                   :css.prop/margin-top "1em"
+                   :css.prop/color (:theme/unobtrusive-color theme)}}
+     [:em "The unexamined life is not worth living."]
+     #_
+     (interpose
+      " · "
+      (for [{:keys [href text]} [{:href tplay-root
+                                  :text "play.teod.eu"}
+                                 {:href tgo-root
+                                  :text "go.teod.eu"}
+                                 {:href (str tgo-root "/bretroulette")
+                                  :text "Bret Roulette"}]]
+        [:a {:href href
+             :style {:css.prop/color (:theme/unobtrusive-color theme)}}
+         text]))]
     (linkroll-from-tplay theme)]])
 
 (defn spaced [& items] (interpose " " items))

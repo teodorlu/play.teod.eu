@@ -47,6 +47,9 @@
 
 #_(view-links theme-main)
 
+(defn orange-link [target text]
+  [:a {:href target :style {:css.prop/color "hsl(20 83.3% 76%)"}} text])
+
 (defn principles-banner
   [theme]
   (assert (valid-theme? theme))
@@ -77,18 +80,9 @@
                    :css.prop/margin-top "1em"
                    :css.prop/color (:theme/unobtrusive-color theme)}}
      [:em "The unexamined life is not worth living."]
-     #_
-     (interpose
-      " · "
-      (for [{:keys [href text]} [{:href tplay-root
-                                  :text "play.teod.eu"}
-                                 {:href tgo-root
-                                  :text "go.teod.eu"}
-                                 {:href (str tgo-root "/bretroulette")
-                                  :text "Bret Roulette"}]]
-        [:a {:href href
-             :style {:css.prop/color (:theme/unobtrusive-color theme)}}
-         text]))]
+     [:br]
+     [:em "One must imagine Sisyphus LOL-ing"]
+     [:span " (" (orange-link "#" "Visakan") ")."]]
     (linkroll-from-tplay theme)]])
 
 (defn spaced [& items] (interpose " " items))

@@ -50,6 +50,9 @@
 (defn orange-link [target text]
   [:a {:href target :style {:css.prop/color "hsl(20 83.3% 76%)"}} text])
 
+(def one-must-imagine-sisyphus-lol-ing-href
+  "https://medium.com/@visakanv/one-must-imagine-sisyphus-lol-ing-565f2bad0340")
+
 (defn principles-banner
   [theme]
   (assert (valid-theme? theme))
@@ -82,7 +85,7 @@
      [:em "The unexamined life is not worth living."]
      [:br]
      [:em "One must imagine Sisyphus LOL-ing"]
-     [:span " (" (orange-link "#" "Visakan") ")."]]
+     [:span " (" (orange-link one-must-imagine-sisyphus-lol-ing-href "Visakan") ")."]]
     (linkroll-from-tplay theme)]])
 
 (defn spaced [& items] (interpose " " items))

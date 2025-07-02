@@ -272,3 +272,9 @@ Awesome!
 I think I maybe just want files in a folder - but if it's just files, I want a nice, working backup.
 
 How can I get those files archived and synced into my Nextcloud?
+
+* 2025-07-02
+** Onto the day
+- Move stack.apps.garden to stack.teod.eu
+- Try out Neanderthal on Mac silicon
+  - Does it run on application.garden?

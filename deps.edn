@@ -1,22 +1,22 @@
 {:paths ["src"]
  ;; Most of src/ runs on Babashka and a JVM, some pages are JVM only.
- :deps {babashka/fs {:mvn/version "0.5.23"}
-        babashka/process {:mvn/version "0.5.22"}
-        cheshire/cheshire {:mvn/version "5.13.0"}
-        hiccup/hiccup {:mvn/version "2.0.0-RC1"}
-        org.babashka/cli {:mvn/version "0.8.62"}
-        org.babashka/http-client {:mvn/version "0.4.22"}
+ :deps {babashka/fs {:mvn/version "0.5.26"}
+        babashka/process {:mvn/version "0.6.23"}
+        cheshire/cheshire {:mvn/version "6.0.0"}
+        hiccup/hiccup {:mvn/version "2.0.0"}
+        org.babashka/cli {:mvn/version "0.8.66"}
+        org.babashka/http-client {:mvn/version "0.4.23"}
         org.clojure/clojure {:mvn/version "1.12.0"}
         org.flatland/ordered {:mvn/version "1.15.12"}
 
         ;; Extra deps
-        datascript/datascript {:mvn/version "1.7.3"}
-        io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+        datascript/datascript {:mvn/version "1.7.5"}
+        io.github.nextjournal/clerk {:mvn/version "0.18.1150"}
         io.github.teodorlu/clerk-hammertime {:git/url "https://github.com/teodorlu/clerk-hammertime", :git/sha "99ced05b6c376ecd6b0057739c9c37a484cf4d21"}
         io.github.teodorlu/pandocir {:git/url "https://github.com/teodorlu/pandocir"
-                                     :git/sha "91f7ec2765b7ba3891fec3069b7fbc2e4177ff9a"}}
+                                     :git/sha "4455e29eb59021bd92613f1afe63da673692d259"}}
  :aliases {;; We develop on a JVM.
            :dev {:extra-paths ["test"]
                  :extra-deps {http-kit/http-kit {:mvn/version "2.8.0"}
-                              lambdaisland/kaocha {:mvn/version "1.87.1366"}}}
+                              lambdaisland/kaocha {:mvn/version "1.91.1392"}}}
            }}

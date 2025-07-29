@@ -323,8 +323,6 @@ Allowed options:
   (when-not (fs/exists? f)
     (spit f content)))
 
-(mod 187 10)
-
 (defn cmd-create-clerk-page
   "Create a Clerk-based page
 

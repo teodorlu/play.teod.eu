@@ -321,7 +321,7 @@ Allowed options:
 
 (defn spit-when-not-exists [f content]
   (when-not (fs/exists? f)
-    (spit f content)))
+    (spit (fs/file f) content)))
 
 (defn cmd-create-clerk-page
   "Create a Clerk-based page

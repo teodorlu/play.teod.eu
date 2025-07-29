@@ -1,7 +1,7 @@
 {:author-url "https://teod.eu",
  :builder :no-op,
  :created "2025-07-29",
- :lang :en,
+ :lang :no,
  :readiness :wtf-is-this,
  :slug "datanotasjon-for-tall-med-enhet",
  :title "Datanotasjon for tall med enhet",

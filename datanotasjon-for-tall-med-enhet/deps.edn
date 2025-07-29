@@ -1,0 +1,4 @@
+{:paths ["."],
+ :deps {io.github.teodorlu/munit {:local/root "../../munit"}
+        io.github.teodorlu/play.teod.eu {:local/root ".."}
+        org.scicloj/noj {:mvn/version "2-beta18"}}}

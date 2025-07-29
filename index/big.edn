@@ -740,6 +740,16 @@
   :author-url "https://teod.eu",
   :form :personal,
   :uuid "2abb9f61-1598-4121-9786-69ac555e1a38"}
+ {:slug "datanotasjon-for-tall-med-enhet",
+  :page/uuid "2bb67451-0550-49dd-bfc8-a5f6ee6f95e9",
+  :builder :no-op,
+  :created "2025-07-29",
+  :readiness :wtf-is-this,
+  :title "Datanotasjon for tall med enhet",
+  :lang :en,
+  :page/slug "datanotasjon-for-tall-med-enhet",
+  :author-url "https://teod.eu",
+  :uuid "2bb67451-0550-49dd-bfc8-a5f6ee6f95e9"}
  {:slug "tech-learning-ladder",
   :page/uuid "2be96e32-2649-4416-956a-64cbb23a3f9e",
   :created "2023-05-01",

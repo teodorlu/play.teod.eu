@@ -24,7 +24,7 @@
        (str/split-lines)
        (map (fn [id] {:id id}))))
 
-(defn category [{:keys [lang readiness form] :as page}]
+(defn category [{:as page :keys [lang readiness form]}]
   (cond
     (= readiness :noindex) :noindex       ;; don't link to this at all
     (= readiness :deprecated) :deprecated ;; nothing to see here

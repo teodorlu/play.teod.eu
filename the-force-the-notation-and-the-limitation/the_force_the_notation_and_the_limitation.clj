@@ -111,8 +111,6 @@
 ;;
 ;; I found I preferred Tablecloth datasets, array programming is just too
 ;; useful.
-((requiring-resolve 'clojure.java.browse/browse-url) "http://localhost:1972/")
-
 ;; so ... are we stuck? *, /, +, - must be controlled by *either* munit or
 ;; Tablecloth?
 
@@ -129,4 +127,19 @@
 
 (comment
   ((requiring-resolve 'clojure.repl.deps/sync-deps))
+  (require '[babashka.fs :as fs])
+
+  ;; Publish HTML via Clay
+  (def base-name (fs/strip-ext (fs/file-name *file*)))
+  (def clay-html-file (fs/file "docs" (str base-name ".html")))
+  (def clay-extras (fs/file "docs" (str base-name "_files")))
+
+  (do (fs/delete-if-exists "index.html")
+      (fs/copy clay-html-file "index.html")
+
+      (fs/delete-tree (str base-name "_files"))
+      (fs/copy-tree clay-extras (str base-name "_files")))
+
+  (fs/exists? clay-html-file)
+  (fs/exists? clay-extras)
   )

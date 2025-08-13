@@ -1,6 +1,3 @@
-;; # The force, the notation and the limitation
-;; *a tale of unit systems in three parts*
-
 (ns the-force-the-notation-and-the-limitation
   (:refer-clojure :exclude [* / + -])
   (:require [munit.prefix :refer [k M]]
@@ -18,6 +15,17 @@
     [sym & body]
     `(do (def ~sym ~@body) ~sym)))
 
+(kind/hiccup
+ [:div
+  [:hr]
+  [:h1 "The force, the notation and the limitation"]
+  [:em "a tale of unit systems in three parts"]
+  [:hr]
+  [:ul
+   [:li "Part 1: What is 17 MN, really?"]
+   [:li "Part 2: A data notation for numbers with units."]
+   [:li "Part 3: Layered operators?"]]])
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; PART 1
 (kind/hiccup [:div [:h2 "The force: What is 17 MN, really?"]
@@ -25,7 +33,9 @@
 
 (img "https://parenteser.mattilsynet.io/images/b539436d879e/the-hub.jpg")
 
-(defshow MN [M kg m {s -2}])
+(def N [kg m {s -2}])
+
+(defshow MN (* M N))
 
 (defshow F (* 17 MN))
 

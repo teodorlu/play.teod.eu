@@ -50,8 +50,79 @@
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" rel="stylesheet" type="text/css" />
 <title>Clay</title></head><body data-spy="scroll" data-target="#toc" style="margin:auto;">
 <script src="the_force_the_notation_and_the_limitation_files/html-default0.js" type="text/javascript"></script><script src="the_force_the_notation_and_the_limitation_files/html-default1.js" type="text/javascript"></script><script src="the_force_the_notation_and_the_limitation_files/katex2.js" type="text/javascript"></script>
-<div class="container"><div class="row"><div class="col-sm-12"><div><div><div style="margin:15px;"><div><h1 id="the-force,-the-notation-and-the-limitation">The force, the notation and the limitation</h1><p><em>a tale of unit systems in three parts</em></p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(ns the-force-the-notation-and-the-limitation)</code></pre></div></div><div style="margin:15px;"><div><h2 id="the-force:-what-is-17-mn,-really?">The force: What is 17 MN, really?</h2><h2 id="the-notation:-numbers-with-units-as-data">The notation: Numbers with units as data</h2><h2 id="the-limitation:-who-owns-the-operator?">The limitation: who owns the operator?</h2></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">130</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">130
-</code></pre></div></div><div style="margin:15px;"><div style="background-color:grey;height:2px;width:100%;"></div></div><div style="margin:15px;"><div><pre><small><small>source: the-force-the-notation-and-the-limitation/the_force_the_notation_and_the_limitation.clj</small></small></pre></div></div></div></div></div></div></div><script type="text/javascript">/*!
+<div class="container"><div class="row"><div class="col-sm-12"><div><div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(ns the-force-the-notation-and-the-limitation
+  (:refer-clojure :exclude [* / + -])
+  (:require [munit.prefix :refer [k M]]
+            [munit.si :refer [kg m s]]
+            [munit.units :refer [* /]]
+            [scicloj.kindly.v4.kind :as kind]))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(do
+  ;; setup
+  (set! *print-namespace-maps* false)
+  (defn img [src] (kind/hiccup [:img {:style {:max-width &quot;80vw&quot;} :src src}]))
+  (defmacro defshow
+    &quot;def, but also show the result in Clay&quot;
+    {:clj-kondo/lint-as &apos;clojure.core/def}
+    [sym &amp; body]
+    `(do (def ~sym ~@body) ~sym)))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">#&apos;the-force-the-notation-and-the-limitation/defshow
+</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(kind/hiccup
+ [:div
+  [:hr]
+  [:h1 &quot;The force, the notation and the limitation&quot;]
+  [:em &quot;a tale of unit systems in three parts&quot;]
+  [:hr]
+  [:ul
+   [:li &quot;Part 1: What is 17 MN, really?&quot;]
+   [:li &quot;Part 2: A data notation for numbers with units.&quot;]
+   [:li &quot;Part 3: Layered operators?&quot;]]])</code></pre></div></div><div style="margin:15px;"><div><hr><h1>The force, the notation and the limitation</h1><em>a tale of unit systems in three parts</em><hr><ul><li>Part 1: What is 17 MN, really?</li><li>Part 2: A data notation for numbers with units.</li><li>Part 3: Layered operators?</li></ul></div></div><div style="margin:15px;"><div><p>PART 1</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(kind/hiccup [:div [:h2 &quot;The force: What is 17 MN, really?&quot;]
+              [:em &quot;is it much?&quot;]])</code></pre></div></div><div style="margin:15px;"><div><h2>The force: What is 17 MN, really?</h2><em>is it much?</em></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(img &quot;https://parenteser.mattilsynet.io/images/b539436d879e/the-hub.jpg&quot;)</code></pre></div></div><div style="margin:15px;"><img src="https://parenteser.mattilsynet.io/images/b539436d879e/the-hub.jpg" style="max-width:80vw;"></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def N [kg m {s -2}])</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(defshow MN (* M N))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[1000000 kg m {s -2}]
+</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(defshow F (* 17 MN))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[17000000 kg m {s -2}]
+</code></pre></div></div><div style="margin:15px;"><div><p>How many Volkswagen ID.4s must we stack to get a weight of 17 MN? Let's find out.</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def t (* 1000 kg))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(defshow vw-id4-mass (* 1.8 t {:cars/vw-id.4 -1}))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[1800.0 kg {:cars/vw-id.4 -1}]
+</code></pre></div></div><div style="margin:15px;"><div><p>"1.8 tonnes per volgswagen id 4"</p><p>First, we need to translate 1.8 tonnes (mass) into weight (newtons).</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def g &quot;Approximate free-fall accelleration on earth&apos;s surface&quot;
+  [9.81 m {s -2}])</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(defshow vw-id4-weight (* vw-id4-mass g))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[17658.0 kg m {:cars/vw-id.4 -1, s -2}]
+</code></pre></div></div><div style="margin:15px;"><div><p>Now, divide!</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(defshow id4s (/ [17 MN] vw-id4-weight))</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[962.736436742553 :cars/vw-id.4]
+</code></pre></div></div><div style="margin:15px;"><div><p>In other words - we must stack 962 Volkswagen ID.4s to get the same load.</p><p>PART 2</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(kind/hiccup [:div [:h2 &quot;The notation: Numbers with units as data&quot;]
+              [:em &quot;numbers, symbols, keywords, maps and vectors&quot;]])</code></pre></div></div><div style="margin:15px;"><div><h2>The notation: Numbers with units as data</h2><em>numbers, symbols, keywords, maps and vectors</em></div></div><div style="margin:15px;"><div><p>For HTML:</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">[:p &quot;The force is &quot; [:strong &quot;17 MN&quot;] &quot;!&quot;]</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[:p &quot;The force is &quot; [:strong &quot;17 MN&quot;] &quot;!&quot;]
+</code></pre></div></div><div style="margin:15px;"><div><p>For HTTP:</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">{:request-method :get
+ :uri &quot;/the-force&quot;}</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">{:request-method :get, :uri &quot;/the-force&quot;}
+</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">{:status 200
+ :headers {&quot;Content-Type&quot; &quot;text/plain&quot;}
+ :body &quot;17 MN&quot;}</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">{:status 200, :headers {&quot;Content-Type&quot; &quot;text/plain&quot;}, :body &quot;17 MN&quot;}
+</code></pre></div></div><div style="margin:15px;"><div><p>For numbers with units:</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def munit-examples
+  [
+
+   ;; plain numbers are unitless
+   17 18 3.14 77
+
+   ;; symbols and keywords are base units
+   &apos;m &apos;s &apos;kg :cars/vw-id.4
+
+   ;; vectors imply multiplication
+   [17 MN] [40075.017 k m]
+
+   ;; maps specify base unit exponents
+   [9.81 &apos;kg &apos;m {&apos;s -2}]
+
+   ])</code></pre></div></div><div style="margin:15px;"><div><p>PART 3</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(kind/hiccup [:div [:h2 &quot;The limitation: who owns the operator?&quot;]
+              [:em &quot;... or can we have layered operators?&quot;]])</code></pre></div></div><div style="margin:15px;"><div><h2>The limitation: who owns the operator?</h2><em>... or can we have layered operators?</em></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def EUR &apos;EUR)</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def NOK &apos;NOK)</code></pre></div></div><div style="margin:15px;"><div><p>Currencies is a good match for units, right?</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(def NOK-per-EUR-2025-07-25
+  [11.8995 {NOK 1 EUR -1}])</code></pre></div></div><div style="margin:15px;"><div><p>43 EUR to NOK</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(* [43 &apos;EUR] NOK-per-EUR-2025-07-25)</code></pre></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure printed-clojure">[511.6785 NOK]
+</code></pre></div></div><div style="margin:15px;"><div><p>... buuut no! Not really!</p><p>I found I preferred Tablecloth datasets, array programming is just too useful. so ... are we stuck? *, /, +, - must be controlled by <em>either</em> munit or Tablecloth?</p><p>Not really.</p><p>In Software Design for Flexibility (2021), Chris Hanson and Gerald Jay Sussman propose <em>layered arithmetic</em>.</p><p>Sneak peak:</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(img &quot;https://play.teod.eu/the-force-the-notation-and-the-limitation/sdf2.jpg&quot;)</code></pre></div></div><div style="margin:15px;"><img src="https://play.teod.eu/the-force-the-notation-and-the-limitation/sdf2.jpg" style="max-width:80vw;"></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(img &quot;https://play.teod.eu/the-force-the-notation-and-the-limitation/sdf1.jpg&quot;)</code></pre></div></div><div style="margin:15px;"><img src="https://play.teod.eu/the-force-the-notation-and-the-limitation/sdf1.jpg" style="max-width:80vw;"></div><div style="margin:15px;"><div><p>Thank you :)</p></div></div><div style="margin:15px;"><div><pre><code class="sourceCode language-clojure source-clojure bg-light">(comment
+  ((requiring-resolve &apos;clojure.repl.deps/sync-deps))
+  (require &apos;[babashka.fs :as fs])
+
+  ;; Publish HTML via Clay
+  (def base-name (fs/strip-ext (fs/file-name *file*)))
+  (def clay-html-file (fs/file &quot;docs&quot; (str base-name &quot;.html&quot;)))
+  (def clay-extras (fs/file &quot;docs&quot; (str base-name &quot;_files&quot;)))
+
+  (do (fs/delete-if-exists &quot;index.html&quot;)
+      (fs/copy clay-html-file &quot;index.html&quot;)
+
+      (fs/delete-tree (str base-name &quot;_files&quot;))
+      (fs/copy-tree clay-extras (str base-name &quot;_files&quot;)))
+
+  (fs/exists? clay-html-file)
+  (fs/exists? clay-extras)
+  )</code></pre></div></div><div style="margin:15px;"><div style="background-color:grey;height:2px;width:100%;"></div></div><div style="margin:15px;"><div><pre><small><small>source: the-force-the-notation-and-the-limitation/the_force_the_notation_and_the_limitation.clj</small></small></pre></div></div></div></div></div></div></div><script type="text/javascript">/*!
   Highlight.js v11.9.0 (git: b7ec4bfafc)
   (c) 2006-2023 undefined and other contributors
   License: BSD-3-Clause

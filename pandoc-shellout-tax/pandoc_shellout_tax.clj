@@ -1,6 +1,7 @@
 ;; # Performance tax for shelling out to Pandoc
 
 (ns pandoc-shellout-tax
+  {:nextjournal.clerk/toc true}
   (:require
    [babashka.fs :as fs]
    [babashka.process :as p]
@@ -9,6 +10,8 @@
    [nextjournal.clerk :as clerk]
    [pandoc]
    [tplay.api :as tplay]))
+
+;; ## Measurement
 
 ;; All relations might be powered by org files.
 
@@ -58,6 +61,8 @@
   ;; re-measure
   (future (spit "measurements.edn" (mapv measure org-files)))
   )
+
+;; ## Results
 
 ^{::clerk/budget nil ::clerk/auto-expand-results? true
   ::clerk/page-size nil}

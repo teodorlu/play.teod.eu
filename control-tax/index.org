@@ -12,3 +12,7 @@
 * Intent control
 Jay author Jonathan blow on fragmented intent in open source:
 because work is distributed among many minds, it's harder to get a cohesive vision (intent) for the future.
+* Replace control with trust in order to remove the control tax
+When we trust each other, we trust that others mean us well, and that their intents are worth pursuing.
+That trust lets us drop our guard to the end that we don't need to uphold that control.
+We don't have to pay the control tax.

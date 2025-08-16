@@ -17,8 +17,11 @@
       (-> proc-handle :out str/split-lines sort first))))
 
 
-(defn page-slugs []
-  (map (fn [play-edn] (str (fs/parent play-edn))) (fs/glob "." "*/play.edn")))
+(defn page-slugs
+  ([] (page-slugs "."))
+  ([root]
+   (->> (fs/glob root "*/play.edn")
+        (map (fn [play-edn] (str (fs/parent play-edn)))))))
 
 (defn slug->meta-file-path [slug]
   (str slug "/play.edn"))
@@ -28,12 +31,13 @@
 
   returns a map from slug to relation.
   "
-  []
-  (->> (page-slugs)
-       (map (fn [slug] (merge {:slug slug}
-                              (edn/read-string (slurp (slug->meta-file-path slug))))))
-       (map (juxt :slug identity))
-       (into {})))
+  ([] (files->relations "."))
+  ([root]
+   (->> (page-slugs root)
+        (map (fn [slug] (merge {:slug slug}
+                               (edn/read-string (slurp (slug->meta-file-path slug))))))
+        (map (juxt :slug identity))
+        (into {}))))
 
 (defn files->relations2
   "Read relations from play.edn files on disk

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 73762bea-6d45-44e3-ab72-d211401daef9
+:END:
+#+TITLE: The Control Tax
+
+[[file:..][..]]
+
+* Resource control
+- Taxing use of the commons in order to maintain the commons
+- Adding controlled interchange layers in order to measure and tax - pricing
+  requires measurement, measurement requires control.
+* Intent control
+Jay author Jonathan blow on fragmented intent in open source:
+because work is distributed among many minds, it's harder to get a cohesive vision (intent) for the future.

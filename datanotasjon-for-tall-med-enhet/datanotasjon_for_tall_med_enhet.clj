@@ -1,7 +1,4 @@
 ;; # Datanotasjon for tall med enhet
-
-
-
 ;; Når byggingeniører spør seg selv om de stoler på en beregning, ser ikke ingeniøren på uttrykk etter hverandre og ser om alt stemmer.
 ;; Intuisjon spiller en mye større rolle.
 ;; Hva ville dette tallet blitt hvis vi gjorde en haug med forenklinger?
@@ -29,46 +26,105 @@
 ;; Men jeg synes vi bør ha verktøy som helper oss med sånt.
 ;; Og for oss utviklere, er enhetssystemer ekstra gøyalt - fordi det går *fort* å lage en liten verktøykasse for det.
 ;; Akkurat Clojure er svært godt egnet:
-;; - infiks-operatorer som + og / er ikke spesielle ting vi ikke får røre
-;; - og vi har interaktiv programmering!
-
+;;
+;; - +, -, * og / er vanlige funksjoner, ikke urørlige infiks-operatorer.
+;;   Det betyr at kan lage våre egne funksjoner for aritmetikk, og bruke våre i stedet for Clojure sine.
+;; - Og vi har interaktiv programmering!
+;;   Da kan enhetene hjelpe oss hvert steg på veien.
+;;
 ;; La oss ta personbilene på nytt - denne gangen med enheter.
 
 (ns datanotasjon-for-tall-med-enhet
   (:refer-clojure :exclude [* / + -])
-  (:require [babashka.fs :as fs]
-            [clojure.string :as str]
-            [munit.prefix :refer [k M]]
+  (:require [munit.prefix :refer [k M]]
             [munit.si :refer [kg m s]]
-            [munit.units :refer [* / measure-in]]
-            [nextjournal.clerk :as clerk]))
+            [munit.units :refer [* / measure-in]]))
 
-(def t (* 1000 kg))
-(def personbil-masse [1 t])
+(defmacro defshow
+  "definer, så returner det som ble definert
+
+  (bittelitt hjelp for å lage eksempler til å dele med andre)"
+  {:clj-kondo/lint-as 'clojure.core/def}
+  [sym & body]
+  `(do (def ~sym ~@body) ~sym))
+
+(defshow t (* 1000 kg))
+;; => [1000 kg]
+
+t
+;; => [1000 kg]
+
+
+
+(def personbil-masse "Ett tonn per personbil"
+  [1 t {'personbiler -1}])
+
+k
+;; => 1000
+M
+;; => 1000000
 
 (def N [kg m {s -2}])
 (def kN [k N])
 (def MN [M N])
 
-(def ^{:doc "omtrentlig tyndeaksellerasjon i Norge"}
-  g [9.8 m {s -2}])
+(def g "omtrentlig tyndeaksellerasjon i Norge"
+  [9.8 m {s -2}])
 
-(def personbil-tyngekraft (* personbil-masse g))
+(defshow personbil-tyngekraft (* personbil-masse g))
+;; => [9800.0 kg m {s -2}]
+
 (def stor-søylelast [17 MN])
-(def ekvivalente-personbiler (/ stor-søylelast personbil-tyngekraft))
+(defshow ekvivalente-personbiler (/ stor-søylelast personbil-tyngekraft))
+;; => [1734.6938775510205 personbiler]
 
-ekvivalente-personbiler
+;; Med g som 9.8 i stedet for 10.0, fikk vi litt flere personbiler - som
+;; forventet, litt mindre last per personbil.
 
-;; Med g som 9.8 i stedet for 10.0, fikk vi litt flere personbiler - som forventet, litt mindre last per personbil.
+;; Men hva betyr det egentlig at enhetene "går opp"?
+;; Når du skal svare på et sprøsmål med fysikk, bør du vite hvilken enhet resultatet skal ha.
+;; "Antall personbiler" måles ikke i Newton eller meter, antall er enhetsløst.
+;;
+;; Først, la oss komprimere regnestykket om ekvivalente personbiler.
 
-(require '[scicloj.clay.v2.api :as clay])
+(/ [17 MN]
+   (* [1 t] g))
 
-clay/make!
+;; Flott, fremdeles enhetsløst.
 
-scicloj.clay.v2.api/make!
+;; Hva om vi glemmer å multiplisere med personbil-vekten med tyngdeaksellerasjonen?
 
+(/ [17 MN]
+   [1 t])
+
+;; Det ble et tall med enhet!
+;; For å være sikker på at et tall er i enheten du forventer, har vi `measure-in`.
+;; Putt inn tall og forventet enhet, få ut størrelsen gitt den enheten, eller kast feil.
+
+(measure-in (/ [17 MN]
+               (* [1 t] g))
+            1)
+
+;; `1` er enhetsløst.
+
+;; Hva om vi putter inn antallet personbiler som ble regnet feil?
+
+(defmacro expect-ex
+  "En liten hjelpe-makro for å få se feildata i stedet for å krasje HTML-bygget"
+  [& body]
+  `(try ~@body (catch Exception e# [(ex-message e#) (ex-data e#)])))
+
+(expect-ex
+ (measure-in (/ [17 MN]
+                [1 t])
+             1))
+
+;; ## Appendix: hjelpekode til å publisere på nett.
 
 (comment
+  (require '[nextjournal.clerk :as clerk]
+           '[babashka.fs :as fs])
+
   ;; Clerk build
   ((requiring-resolve 'nextjournal.clerk/serve!) {:browse true})
   ((requiring-resolve 'clojure.repl.deps/sync-deps))
@@ -76,7 +132,11 @@ scicloj.clay.v2.api/make!
   (clerk/clear-cache!))
 
 (comment
-  ;; Clay build
+  ;; Clay build steps:
+  ;;
+  ;;  - M-x clay-start
+  ;;  - M-x clay-start
+  ;;  - Run REPL code below.
   (def base-name (fs/strip-ext (fs/file-name *file*)))
   (def clay-html-file (fs/file "docs" (str base-name ".html")))
   (def clay-extras (fs/file "docs" (str base-name "_files")))

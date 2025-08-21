@@ -287,7 +287,8 @@ Allowed options:
                                                  :uuid uuid})]
           (if (:dry-run opts)
             (fake-spit org-file org-file-contents)
-            (spit org-file org-file-contents))))
+            (do (prn :created org-file)
+                (spit org-file org-file-contents)))))
 
       ;; Play file
       (when-not (fs/exists? play-file)

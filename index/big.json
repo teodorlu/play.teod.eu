@@ -635,6 +635,17 @@
   "form" : "remote-reference",
   "uuid" : "21159de2-2922-4489-a871-85dc857bcc38"
 }, {
+  "slug" : "the-force-the-notation-and-the-limitation",
+  "page/uuid" : "215a33cc-0293-4e0e-bdc5-56dd8ed0da7b",
+  "builder" : "no-op",
+  "created" : "2025-08-08",
+  "readiness" : "wtf-is-this",
+  "title" : "The force, the notation and the limitation",
+  "lang" : "en",
+  "page/slug" : "the-force-the-notation-and-the-limitation",
+  "author-url" : "https://teod.eu",
+  "uuid" : "215a33cc-0293-4e0e-bdc5-56dd8ed0da7b"
+}, {
   "slug" : "bodil-stokke",
   "page/uuid" : "217c51e3-1bff-43c9-af88-bc181631e94b",
   "created" : "2023-06-16",
@@ -2296,6 +2307,16 @@
   "form" : "remote-reference",
   "uuid" : "72EA74E8-9AD5-44CF-B20E-C96C4AD93F75"
 }, {
+  "slug" : "control-tax",
+  "page/uuid" : "73762bea-6d45-44e3-ab72-d211401daef9",
+  "created" : "2025-08-16",
+  "readiness" : "wtf-is-this",
+  "title" : "The Control Tax",
+  "lang" : "en",
+  "page/slug" : "control-tax",
+  "author-url" : "https://teod.eu",
+  "uuid" : "73762bea-6d45-44e3-ab72-d211401daef9"
+}, {
   "slug" : "design-composition-performance",
   "page/uuid" : "73b93aeb-d61a-413d-a119-53335e73afda",
   "created" : "2023-05-29",
@@ -3770,6 +3791,17 @@
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "b7518497-f161-498b-a670-c74ba7e8b4b4"
+}, {
+  "slug" : "pandoc-shellout-tax",
+  "page/uuid" : "b783bdb2-2083-4cde-b4f6-eb3659580c9b",
+  "builder" : "no-op",
+  "created" : "2025-08-16",
+  "readiness" : "wtf-is-this",
+  "title" : "Performance tax for shelling out to Pandoc",
+  "lang" : "en",
+  "page/slug" : "pandoc-shellout-tax",
+  "author-url" : "https://teod.eu",
+  "uuid" : "b783bdb2-2083-4cde-b4f6-eb3659580c9b"
 }, {
   "slug" : "wip",
   "title" : "Let the play.teod.eu WIP simmer",

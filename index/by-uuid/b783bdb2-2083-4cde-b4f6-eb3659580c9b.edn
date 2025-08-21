@@ -1,0 +1,10 @@
+{:slug "pandoc-shellout-tax",
+ :page/uuid "b783bdb2-2083-4cde-b4f6-eb3659580c9b",
+ :builder :no-op,
+ :created "2025-08-16",
+ :readiness :wtf-is-this,
+ :title "Performance tax for shelling out to Pandoc",
+ :lang :en,
+ :page/slug "pandoc-shellout-tax",
+ :author-url "https://teod.eu",
+ :uuid "b783bdb2-2083-4cde-b4f6-eb3659580c9b"}

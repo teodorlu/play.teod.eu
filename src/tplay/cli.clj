@@ -338,6 +338,7 @@ Allowed options:
         {:keys [slug]} clean-opts]
     (assert slug "Cannot create a page without a slug!")
     (fs/create-dirs slug)
+    (prn :created-dir slug)
     (spit-when-not-exists (fs/file slug "play.edn")
                           (with-out-str (pprint (assoc clean-opts :builder :no-op))))
     (spit-when-not-exists (fs/file slug ".projectile") "")

@@ -79,13 +79,6 @@
       [:div [:span {:style {:color (:theme/emphasis-color theme )}}
              (str/upper-case principle-core)]
        " " principle-extras])
-    [:div {:style {:css.prop/font-size "1.2rem"
-                   :css.prop/margin-top "1em"
-                   :css.prop/color (:theme/unobtrusive-color theme)}}
-     [:em "The unexamined life is not worth living."]
-     [:br]
-     [:em "One must imagine Sisyphus LOL-ing"]
-     [:span " (" (orange-link one-must-imagine-sisyphus-lol-ing-href "Visakan") ")."]]
     (linkroll-from-tplay theme)]])
 
 (defn spaced [& items] (interpose " " items))

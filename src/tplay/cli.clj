@@ -406,7 +406,7 @@ Allowed options:
                   "# DO NOT EDIT directly -- THIS MAKEFILE IS AUTO-GENERATED"
                   "# REGENERATE THIS MAKEFILE WITH"
                   "#"
-                  "#     ./play.clj makefile"
+                  "#     ./tplay.clj makefile"
                   ""
                   ""
 
@@ -419,7 +419,7 @@ Allowed options:
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))
-                  "\t./play.clj index"
+                  "\t./tplay.clj index"
                   ""
                   ""
 

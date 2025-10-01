@@ -641,26 +641,39 @@ Usage:
 
 (declare nprint)
 
-(defn nprint-coll [data opts]
+
+
+(defn nprint-coll [coll opts]
   (let [fallback-fn (get opts :fallback-fn nprint-default-fallback)]
-    (cond (vector? data) (str "[" (str/join " " (map #(nprint % opts) data)) "]")
-          (list? data) (str "(" (str/join " " (map #(nprint % opts) data)) ")")
-          (set? data) (str "#{" (str/join " " (map #(nprint % opts) data)) "}")
-          (map? data) (str "{" (str/join " "
-                                         (map (fn [[k v]] (str (nprint k opts) " " (nprint v opts)))
-                                              data))
+    (cond (vector? coll) (str "[" (str/join " " coll) "]")
+          (list? coll) (str "(" (str/join " " coll) ")")
+          (set? coll) (str "#{" (str/join " " coll) "}")
+          (map? coll) (str "{" (str/join " "
+                                         (map (fn [[kstr vstr]]
+                                                (str kstr " " vstr))
+                                              coll))
                            "}")
-          :else (fallback-fn data))))
+          :else (fallback-fn coll))))
 
 (def maxlen 40)
 
-(defn preprint [data opts]
-  (if (coll? data)
-    (let [printed (nprint-coll data opts)]
-      (if (< maxlen (count printed))
-        data
-        printed))
-    (nprint-prim data opts)))
+(defn nprint-pre [data opts]
+  (cond
+    ;; What a can of footguns!
+    (map-entry? data) data
+    (coll? data) (let [printed (nprint-coll data opts)]
+                   (if (< maxlen (count printed))
+                     data
+                     printed))
+    :else (nprint-prim data opts)))
+
+(defn nprint-indent
+  [data indent]
+  (if (string? data) data
+      (str "["
+           (str/join (str "\n" (apply str (repeat (+ indent 1) " ")))
+                     data)
+           "]")))
 
 (defn nprint
   "A nice enough printer
@@ -693,15 +706,5 @@ Usage:
   - At that point, we *signa"
   ([data] (nprint data {}))
   ([data opts]
-   (comment
-     (->> data
-          (postwalk #(preprint % data) data)
-          (nprint-indent)))
-   (if (coll? data)
-     (nprint-coll data opts)
-     (nprint-prim data opts))))
-
-(comment
-  (->> data
-       (postwalk #(preprint % data))
-       ))
+   (-> (postwalk #(nprint-pre % opts) data)
+       (nprint-indent 0))))

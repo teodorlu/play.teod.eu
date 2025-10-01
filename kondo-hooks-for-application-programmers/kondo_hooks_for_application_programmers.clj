@@ -1,11 +1,6 @@
 ^{:nextjournal.clerk/visibility {:code :fold :result :hide}}
 (ns kondo-hooks-for-application-programmers
-  {:nextjournal.clerk/toc true
-   :clj-kondo/config
-   '{:hooks
-     {:analyze-call
-      {kondo-hooks-for-application-programmers/defgrinning
-       kondo-hooks-for-application-programmers/defgrinning-hook}}}}
+  {:nextjournal.clerk/toc true}
   (:require [clojure.string :as str]))
 
 ;; # CLJ-Kondo hooks for application programmers

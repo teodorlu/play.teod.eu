@@ -1,0 +1,3 @@
+{:hooks
+ {:analyze-call
+  {kondo-hooks-for-application-programmers/defgrinning hooks/defgrinning-hook}}}

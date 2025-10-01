@@ -11,6 +11,7 @@
    [clojure.pprint :refer [pprint]]
    [clojure.repl]
    [clojure.string :as str]
+   [clojure.walk :refer [postwalk]]
    [tplay.api :as play]
    [tplay.index]
    [tplay.pandoc-toolbox :as pandoc]))
@@ -609,3 +610,98 @@ Usage:
  ;; How to run:
  ;;
  ;;   ./play.clj relations :from :files :to :lines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(defrecord Printed [s])
+
+(defn nprint-default-fallback [data]
+  (str "[:nprint/unsupported " (pr-str (type data)) "]"))
+
+(defn nprint-prim
+  [data opts]
+  (let [fallback-fn (get opts :fallback-fn nprint-default-fallback)]
+    (cond (number? data) (pr-str data)
+          (string? data) (pr-str data)
+          (keyword? data) (pr-str data)
+          (symbol? data) (pr-str data)
+          :else (fallback-fn data))))
+
+(declare nprint)
+
+(defn nprint-coll [data opts]
+  (let [fallback-fn (get opts :fallback-fn nprint-default-fallback)]
+    (cond (vector? data) (str "[" (str/join " " (map #(nprint % opts) data)) "]")
+          (list? data) (str "(" (str/join " " (map #(nprint % opts) data)) ")")
+          (set? data) (str "#{" (str/join " " (map #(nprint % opts) data)) "}")
+          (map? data) (str "{" (str/join " "
+                                         (map (fn [[k v]] (str (nprint k opts) " " (nprint v opts)))
+                                              data))
+                           "}")
+          :else (fallback-fn data))))
+
+(def maxlen 40)
+
+(defn preprint [data opts]
+  (if (coll? data)
+    (let [printed (nprint-coll data opts)]
+      (if (< maxlen (count printed))
+        data
+        printed))
+    (nprint-prim data opts)))
+
+(defn nprint
+  "A nice enough printer
+
+  Faster and less elegant than pprint. Strips commas, and avoids map namespace
+  syntax. Babashka compatible.
+
+  ---
+
+  Strategy:
+  - Start from the inside
+  - Try print everything on one line
+  - When that line exceeds a width of 40, switch strategy to everything on its
+    own line.
+
+  Implementation: Postwalk prepare then indented print.
+
+  Postwalk prepare:
+  - Print inner nodes on one line untill printed lengths start exceeding 40 columns
+  - At that point, leave the node.
+
+  Indented print:
+  - After the postwalk prepare, we're guaranteed that:
+    - All primitive nodes have been printed
+    - ... and all non-wrapping collection nodes have been printed.
+  - Therefore, we can \"indent all the time\".
+
+  - Postwalk with path.
+  - We print inner nodes untill printed strings start wrapping 40 columns
+  - At that point, we *signa"
+  ([data] (nprint data {}))
+  ([data opts]
+   (comment
+     (->> data
+          (postwalk #(preprint % data) data)
+          (nprint-indent)))
+   (if (coll? data)
+     (nprint-coll data opts)
+     (nprint-prim data opts))))
+
+(comment
+  (->> data
+       (postwalk #(preprint % data))
+       ))

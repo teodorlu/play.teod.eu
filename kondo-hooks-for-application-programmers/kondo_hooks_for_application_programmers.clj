@@ -1,7 +1,7 @@
 ^{:nextjournal.clerk/visibility {:code :fold :result :hide}}
 (ns kondo-hooks-for-application-programmers
   {:nextjournal.clerk/toc true}
-  (:require [clojure.string :as str]))
+  (:require [clj-kondo.hooks-api :as hooks]))
 
 ;; # CLJ-Kondo hooks for application programmers
 
@@ -29,7 +29,7 @@
 
 {:nextjournal.clerk/visibility {:code :show :result :show}}
 
-;; Your REPL knows the `for` macro.
+;; Your REPL knows it.
 
 (doc for)
 
@@ -41,7 +41,8 @@
 
 (doc i-laugh-at-your-two-parameters)
 
-;; `doc` works. Let's take a slightly bigger example.
+;; `doc` knows it.
+;; Next example.
 
 (defmacro deflaughing
   [sym & body]
@@ -56,7 +57,7 @@
 
 (capture-out (macroexpand '(deflaughing the-number-after-one-and-two (+ 1 2))))
 
-;; *But Kondo does not understand your macro!*
+;; But CLJ-Kondo does not understand your macro!
 
 (deflaughing laugh-all-you-want (+ 1 2))
 
@@ -70,9 +71,8 @@
 
 ;; ## Kondo analyze hooks
 ;;
-;; Hooks!
-;; The source of truth for their usage is [doc/hooks.md] in the Kondo repo.
-;; Lets try those hooks.
+;; Kondo can be taught to know new macros through hooks.
+;; Their reference is [doc/hooks.md] (in the Kondo repo).
 ;;
 ;; [doc/hooks.md]: https://github.com/clj-kondo/clj-kondo/blob/master/doc/hooks.md
 
@@ -97,6 +97,10 @@
 
 (read-string (str node))
 
+;; which does the same as the built-in `sexpr`.
+
+(hooks/sexpr node)
+
 ;; Okay, nice.
 ;; How do we build support for our new macro?
 ;; The API docs give us a clue:
@@ -120,42 +124,25 @@
 
 ;; Then a hook!
 
-(defn defgrinning-hook [{:keys [node]}]
-  (let [[_defgrinning sym & body] (:children node)]
-    (when-not sym
-      (throw (ex-info "No sym provided, you silly person!" {:sym sym :body body})))
-    (when-not (= sym (symbol "☢"))
-      (throw (ex-info "Radioactivity disallowed, it does not cause grinning!"
-                      {:sym sym :body body})))
+;; The hooks documentation specifies that hooks must live in the .clj-kondo directory, so we do just that.
 
-    {:node (hooks/list-node (list*
-                             (hooks/token-node 'def)
-                             (hooks/token-node sym)
-                             body))}))
+(clerk/code (slurp ".clj-kondo/hooks.clj"))
 
-;; I'm going to cheat a bit here, because I've already "installed" this hook in
-;; my namespace declaration.
+;; We hook up the hook with config binding macro var to hook var.
 
-^{:nextjournal.clerk/visibility {:code :fold :result :show} :nextjournal.clerk/no-cache true}
-(clerk/caption "Beware, a listing of code, outside of top-down flow"
-               (clerk/code
-                (->> (slurp *file*)
-                     (str/split-lines)
-                     (take 9)
-                     (str/join "\n"))))
+(clerk/code (slurp ".clj-kondo/config.edn"))
 
 (defgrinning x "it's fine ...")
 
-
-
-
+x
 
 ^{:nextjournal.clerk/visibility {:code :hide :result :show}}
 (clerk/html [:div {:style {:height "30vh"}}])
 
 ^{:nextjournal.clerk/visibility {:code :hide :result :hide}}
 (comment
- ((requiring-resolve 'nextjournal.clerk/serve!) {:browse true})
+  ((requiring-resolve 'nextjournal.clerk/serve!) {:browse true})
+  ((requiring-resolve 'nextjournal.clerk/serve!) {})
  ((requiring-resolve 'clojure.repl.deps/sync-deps))
  (clerk/build! {:paths [((requiring-resolve 'babashka.fs/file-name) *file*)], :out-path "."})
  (clerk/clear-cache!)

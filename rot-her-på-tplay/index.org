@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID: 94b925c9-eac4-42c2-b3e4-519ffede64f7
+:END:
+#+TITLE: Rot på Tplay
+
+[[file:..][..]]
+
+Det knaker i veggene her på Tplay.
+
+Jeg fant akkurat en solid feil.
+Feilen forhindret bygg av nye HTML-filer.
+Effekten av feilen var liten, fordi jeg kun bygger ny HTML når jeg jobber med siden, men alikevel, jeg har en lekse å ta med meg.
+
+1. Du må rydde før det blir alt for rotete.
+2. Rot er når du ikke har holdt det enkelt.
+
+** Du må rydde før det blir alt for rotete
+Jobb på Tplay er tungt for tiden, systemet er vanskelig å endre.
+Hovedkilden til det problemet er at jeg har mange prosesser som er orkestrert utenom koden.
+
+Flyten når man lager en ny side er sånn:
+
+1. =./tplay.clj create-page :slug rot-på-tplay :title "Rot på Tplay"=
+   lager filene =rot-på-tplay/index.org= og =rot-på-tplay/tplay.edn=
+2. =./tplay.clj makefile=
+   regenererer =Makefile=
+3. =make= lager alle de små HTML-filene og én stor HTML-fil etterpå.
+
+Konkrete problemer:
+
+- =:title= lagres dobbelt i Org-dokumentet og i metadata-filen.
+  Jeg bør heller lagre det kun i Org-dokumentet, og synkronisere derfra.
+- Mange prosesser
+- Implisitte avhengigheter mellom prosessene
+- Dårlig feilrapportering i enkeltsteg
+
+Sluttresultattet er at mesteparten av ting jeg kunne tenke meg å gjøre ikke er mulig å få til på én dag, og da blir det ikke gjort.
+
+** Rot er når du ikke har holdt det enkelt
+[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] sier følgende om programvareutvikling:
+
+1. Du må holde det enkelt, ellers går det til helvete
+2. For å holde det enkelt, må du gjøre det enkelt å holde det enkelt
+
+Det er i alle fall hva jeg leser fra [[https://play.teod.eu/simple-made-easy/][Simple Made Easy]].

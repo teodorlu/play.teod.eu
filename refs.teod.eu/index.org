@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: d3effe35-507a-42fc-8993-b464db2cccb1
+:END:
+#+TITLE: refs.teod.eu
+
+[[file:..][..]]
+
+play.teod.eu is awesome for its everything dump-nature.
+... but it fragments, and can thus not present unity.
+In fact, it screams of difference and uniqueness.
+
+refs.teod.eu could be the opposite: Core values, by term / theme.
+
+Built with bbmemex.
+
+- Instant rebuilds
+- bb/JVM compatibility

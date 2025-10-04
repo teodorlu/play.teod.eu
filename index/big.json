@@ -324,6 +324,16 @@
   "author-url" : "https://teod.eu",
   "uuid" : "11b5047d-6174-4c81-bc2f-bb212941f409"
 }, {
+  "slug" : "en-ting-av-gange-tilstede",
+  "page/uuid" : "1289a56a-d2ea-42df-8b16-3dfd4dcc5bf6",
+  "created" : "2025-10-03",
+  "readiness" : "wtf-is-this",
+  "title" : "Én ting av gangen, tilstede",
+  "lang" : "en",
+  "page/slug" : "en-ting-av-gange-tilstede",
+  "author-url" : "https://teod.eu",
+  "uuid" : "1289a56a-d2ea-42df-8b16-3dfd4dcc5bf6"
+}, {
   "slug" : "leonard-cohen",
   "page/uuid" : "12d75d97-7561-40d4-8853-be233400e668",
   "created" : "2023-03-27",
@@ -2768,6 +2778,17 @@
   "author-url" : "https://teod.eu",
   "uuid" : "8a7c967a-185e-4ade-a799-1dd70642351b"
 }, {
+  "slug" : "information-at-hand",
+  "page/uuid" : "8dcc19de-de21-4eaf-b7ac-d49b9b1004f2",
+  "builder" : "no-op",
+  "created" : "2025-08-21",
+  "readiness" : "wtf-is-this",
+  "title" : "Keeping relevant information at hand",
+  "lang" : "en",
+  "page/slug" : "information-at-hand",
+  "author-url" : "https://teod.eu",
+  "uuid" : "8dcc19de-de21-4eaf-b7ac-d49b9b1004f2"
+}, {
   "slug" : "books",
   "page/uuid" : "8e5e3b4a-65ee-464c-a6ee-f36eb1fce831",
   "created" : "2024-04-22",
@@ -4594,6 +4615,17 @@
   "author-url" : "https://teod.eu",
   "uuid" : "e868f48d-019d-4664-b06f-12c699f950e5"
 }, {
+  "slug" : "hypermedia-driven-interfaces-in-babashka",
+  "page/uuid" : "e8f57251-e7d0-47f8-8048-1eefb630249e",
+  "builder" : "no-op",
+  "created" : "2025-09-06",
+  "readiness" : "wtf-is-this",
+  "title" : "Hypermedia-driven interfaces in Babashka",
+  "lang" : "en",
+  "page/slug" : "hypermedia-driven-interfaces-in-babashka",
+  "author-url" : "https://teod.eu",
+  "uuid" : "e8f57251-e7d0-47f8-8048-1eefb630249e"
+}, {
   "slug" : "interface-perception-design",
   "page/uuid" : "e9a97a46-f252-4883-a311-21b20528d14d",
   "created" : "2022-07-18",
@@ -4741,6 +4773,17 @@
   "page/slug" : "spaghettifabrikken",
   "author-url" : "https://teod.eu",
   "uuid" : "f19dd2e4-e45e-484b-bcfb-5436e6ca1e53"
+}, {
+  "slug" : "kondo-hooks-for-application-programmers",
+  "page/uuid" : "f31674d1-63f8-4e1e-8aa0-38698ab53602",
+  "builder" : "no-op",
+  "created" : "2025-10-01",
+  "readiness" : "wtf-is-this",
+  "title" : "CLJ-Kondo hooks for application programmers",
+  "lang" : "en",
+  "page/slug" : "kondo-hooks-for-application-programmers",
+  "author-url" : "https://teod.eu",
+  "uuid" : "f31674d1-63f8-4e1e-8aa0-38698ab53602"
 }, {
   "slug" : "werner-hetzog",
   "page/uuid" : "f39b5dcb-3d95-41d7-8526-35f28083a150",

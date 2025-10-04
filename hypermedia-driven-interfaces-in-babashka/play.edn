@@ -1,0 +1,8 @@
+{:author-url "https://teod.eu",
+ :builder :no-op,
+ :created "2025-09-06",
+ :lang :en,
+ :readiness :wtf-is-this,
+ :slug "hypermedia-driven-interfaces-in-babashka",
+ :title "Hypermedia-driven interfaces in Babashka",
+ :uuid "e8f57251-e7d0-47f8-8048-1eefb630249e"}

@@ -101,12 +101,12 @@
 
   Example: how many WTF-pages do we have?
 
-    ./play.clj relations :from files :to lines2 | grep -i \":readiness :wtf\" | wc -l
+    ./tplay.clj relations :from files :to lines2 | grep -i \":readiness :wtf\" | wc -l
     30
 
   Example: how many non-WTF-pages do we have?
 
-    ./play.clj relations :from files :to lines2 | grep :readiness | grep -v \":readiness :wtf\" | wc -l
+    ./tplay.clj relations :from files :to lines2 | grep :readiness | grep -v \":readiness :wtf\" | wc -l
     9
   "
   [rels]
@@ -119,7 +119,7 @@
 
   Example: list recently created pages, with page ID and created date:
 
-    ./play.clj relations :from files :to lines+recent | ./play.clj relations :from lines :to lines2 | grep :created
+    ./tplay.clj relations :from files :to lines+recent | ./tplay.clj relations :from lines :to lines2 | grep :created
   "
   [rels]
   (let [recent-lines (->> (vals rels)
@@ -197,7 +197,7 @@
 
 (defn relations-helptext []
   (let [helptext (lines
-                  "usage: ./play.clj relations :from SOURCE :to TARGET"
+                  "usage: ./tplay.clj relations :from SOURCE :to TARGET"
                   ""
                   "valid sources:"
                   (str "  " (apply words (keys (:sources relations-config))))
@@ -262,7 +262,7 @@
         helptext (str/trim "
 Usage:
 
-  ./play.clj create-page [:slug] SLUG [OPT...]
+  ./tplay.clj create-page [:slug] SLUG [OPT...]
 
 Allowed options:
 
@@ -309,8 +309,8 @@ Allowed options:
 
         ;; Regenerate the makefile since we've added a new target
         (if (:dry-run opts)
-          (fake-bash "./play.clj makefile")
-          (bash-project-root "./play.clj makefile")))
+          (fake-bash "./tplay.clj makefile")
+          (bash-project-root "./tplay.clj makefile")))
 
       nil)))
 
@@ -366,7 +366,7 @@ Allowed options:
                                                        (clerk/build! {:paths [(fs/file-name *file*)] :out-path "."})
                                                        (clerk/clear-cache!)))))]))))
     ;; Finally, the makefile must be regenerated.
-    (bash-project-root "./play.clj makefile")))
+    (bash-project-root "./tplay.clj makefile")))
 
 (defn builder [rel]
   (:builder rel :pandoc-page))
@@ -385,7 +385,7 @@ Allowed options:
          "\n\t"
          (words "pandoc -s --shift-heading-level-by=1 --from=org+smart -i" org-file-name "-t json"
                 "|"
-                "./play.clj filter resolve-links"
+                "./tplay.clj filter resolve-links"
                 "|"
                 "pandoc -f json -o" html-file-name "--standalone --toc -H header-default-include.html"))))
 
@@ -520,13 +520,13 @@ Allowed options:
 
   Example usage:
 
-    ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json"
+    ./tplay.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json"
   [{:as cmd-opts}]
   (when (:h (:opts cmd-opts))
     (println (str/trim "
 Usage:
 
-  ./play.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
+  ./tplay.clj filter resolve-links < ../pandoc-toolbox/pandoc-examples/link.json
       "))
     (System/exit 0))
   (when (contains? (set (:args cmd-opts))
@@ -578,7 +578,7 @@ Usage:
    {:cmds ["relations"] :fn cmd-relations}])
 
 (defn print-subcommands [{}]
-  (println "usage: ./play.clj COMMAND")
+  (println "usage: ./tplay.clj COMMAND")
   (println "")
   (println "Available commands:")
   (doseq [{:keys [cmds]} dispatch-table]
@@ -609,7 +609,7 @@ Usage:
 
  ;; How to run:
  ;;
- ;;   ./play.clj relations :from :files :to :lines
+ ;;   ./tplay.clj relations :from :files :to :lines
 
 
 
@@ -625,7 +625,7 @@ Usage:
 
 
 
-(defrecord Printed [s])
+
 
 (defn nprint-default-fallback [data]
   (str "[:nprint/unsupported " (pr-str (type data)) "]"))
@@ -640,8 +640,6 @@ Usage:
           :else (fallback-fn data))))
 
 (declare nprint)
-
-
 
 (defn nprint-coll [coll opts]
   (let [fallback-fn (get opts :fallback-fn nprint-default-fallback)]
@@ -676,10 +674,10 @@ Usage:
            "]")))
 
 (defn nprint
-  "A nice enough printer
+  "Print data neatly
 
   Faster and less elegant than pprint. Strips commas, and avoids map namespace
-  syntax. Babashka compatible.
+  syntax. Runs on Babashka.
 
   ---
 

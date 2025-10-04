@@ -5,6 +5,14 @@
 
 [[file:..][..]]
 
+| refs       | an UI and tool for references                      |
+| refs-store | Git repo of PDFs and the like, on Cloudflare Pages |
+
+- Bret :: collection of references from Bret Victor.
+- Strangeloop :: all published Strangeloop videos.
+
+* details
+
 play.teod.eu is awesome for its everything dump-nature.
 ... but it fragments, and can thus not present unity.
 In fact, it screams of difference and uniqueness.

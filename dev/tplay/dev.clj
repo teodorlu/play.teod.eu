@@ -45,8 +45,9 @@
 ;; -----------------------------------------------------------------------------
 
 (defn preview! []
-  (start! :system/live-server)
-  (Thread/sleep 1000) ; I'm sorry.
+  (when-not (:system/live-server @system)
+    (start! :system/live-server)
+    (Thread/sleep 1000)) ; I'm sorry.
   (browse-url (str "http://localhost:" (:port live-server-opts))))
 
 (comment ;; s-:

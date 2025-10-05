@@ -242,6 +242,23 @@ import {IkiGotoRandomPage} from \"/iki/iki.js\";
 customElements.define(\"iki-goto-random-page\", IkiGotoRandomPage, {extends: \"button\"});
 "
       )]
+    [:script {:async true :type "module"}
+     (hiccup2.core/raw "
+  const hostCanonical = 'play.teod.eu';
+  const hostAlias1 = 'playground.teod.eu';
+  const hostLocal1 = 'localhost:9945';
+  if (
+    window.location.host === hostAlias1
+    // || window.location.host === hostLocal1
+  ) {
+    // redirect playground.teod.eu to play.teod.eu
+    // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+    const pathname = window.location.pathname || '';
+    window.location.replace('https://' + hostCanonical + pathname);
+  }
+")
+     ]
+
     ]
    [:body {:style {:width "100%" :height "100%" :margin 0}}
     (principles-banner theme)

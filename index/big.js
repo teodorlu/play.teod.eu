@@ -2963,6 +2963,16 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "9488732f-7ab4-4ad9-8fd5-c5c22238636e"
 }, {
+  "slug" : "rot-her-på-tplay",
+  "page/uuid" : "94b925c9-eac4-42c2-b3e4-519ffede64f7",
+  "created" : "2025-10-03",
+  "readiness" : "wtf-is-this",
+  "title" : "Rot på Tplay",
+  "lang" : "en",
+  "page/slug" : "rot-her-på-tplay",
+  "author-url" : "https://teod.eu",
+  "uuid" : "94b925c9-eac4-42c2-b3e4-519ffede64f7"
+}, {
   "slug" : "as-we-may-think",
   "page/uuid" : "9517b312-9e2b-49b5-9346-4ccb038f9d13",
   "created" : "2024-04-27",
@@ -4354,6 +4364,16 @@ export const index =
   "page/slug" : "graph-navigators",
   "author-url" : "https://teod.eu",
   "uuid" : "d3ec67c4-e88f-4d18-81b6-08ae54ab784a"
+}, {
+  "slug" : "refs.teod.eu",
+  "page/uuid" : "d3effe35-507a-42fc-8993-b464db2cccb1",
+  "created" : "2025-10-03",
+  "readiness" : "wtf-is-this",
+  "title" : "refs.teod.eu",
+  "lang" : "en",
+  "page/slug" : "refs.teod.eu",
+  "author-url" : "https://teod.eu",
+  "uuid" : "d3effe35-507a-42fc-8993-b464db2cccb1"
 }, {
   "slug" : "find-clojure-deps",
   "page/uuid" : "d5f0c274-36e3-4088-8c26-ce783c8dd3aa",

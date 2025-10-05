@@ -23,8 +23,7 @@
   ;; => \"src/tplay/index.clj\"
 
   For namespaces that can't be matched to files, nil is returned. This happens
-  when the source is inside a .jar file, or when a file providing the namespace
-  cannot be found."
+  for code in .jar files."
   [ns-sym]
   (when-let [f (->> [".clj" ".cljc"]
                     (map #(str (-> ns-sym str (.. (replace \- \_) (replace \. \/))) %))

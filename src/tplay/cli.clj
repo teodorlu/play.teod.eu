@@ -235,7 +235,7 @@
 
 (defn cmd-create-page [{:keys [opts]}]
   (let [slug (:slug opts)
-        title (or (:title opts) slug)
+        title (:title opts)
         uuid (or (:uuid opts) (str (random-uuid)))
         lang (or (:lang opts) :en)
         valid-opts? (and slug title uuid lang)
@@ -269,7 +269,8 @@ Allowed options:
     (when (not valid-opts?)
       (println helptext)
       (System/exit 1))
-    (assert slug "Page slug is required.")
+    (assert slug)
+    (assert title)
     (let [org-file (str slug "/index.org")
           play-file (str slug "/play.edn")]
       (fs/create-dirs slug)

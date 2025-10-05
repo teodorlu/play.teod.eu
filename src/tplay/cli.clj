@@ -487,24 +487,6 @@ Allowed options:
   (cmd-makefile {})
   (p/shell "make"))
 
-#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
-(defn dbg
-  "Debug a value only when run with verbose
-
-  I typically include calls to dbg only when I need them. Usage requires setting
-  an environment variable to opts into verbose mode."
-  [& args]
-  (when (not (nil? (System/getenv "EU_TEOD_PLAY_VERBOSE")))
-    (binding [*out* *err*]
-      (cond
-        (zero? (count args))
-        nil ;; no-op
-        (= 1 (count args))
-        (pprint (first args)) ;; raw pprint on arg
-        :else
-        (pprint args) ;; pprint the seq
-        ))))
-
 (defn cmd-filter
   "Apply play.teod.eu filters.
 

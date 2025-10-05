@@ -1047,6 +1047,16 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "32703cee-4d48-46f7-b87a-31eb89f46e84"
 }, {
+  "slug" : "serial-focus",
+  "page/uuid" : "32aef0d5-4e6e-4890-bd4d-37b3dbc50e75",
+  "created" : "2025-10-05",
+  "readiness" : "wtf-is-this",
+  "title" : "Serial Focus",
+  "lang" : "en",
+  "page/slug" : "serial-focus",
+  "author-url" : "https://teod.eu",
+  "uuid" : "32aef0d5-4e6e-4890-bd4d-37b3dbc50e75"
+}, {
   "slug" : "terminalen-motorsag",
   "builds" : [ {
     "build/type" : "index-org-2-html"

@@ -562,8 +562,8 @@ Usage:
 (def dispatch-table
   [{:cmds ["clean"] :fn cmd-clean}
    {:cmds ["create-clerk-page"] :fn cmd-create-clerk-page :spec {:slug {:require true} :title {:require true}} :error-fn cli-error-fn}
-   {:cmds ["create-page"] :fn cmd-create-page :cmds-opts [:slug]}
-   {:cmds ["filter"] :fn cmd-filter :cmds-opts [:resolve-links]}
+   {:cmds ["create-page"] :fn cmd-create-page :args->opts [:slug]}
+   {:cmds ["filter"] :fn cmd-filter :args->opts [:resolve-links]}
    {:cmds ["index"] :fn cmd-index}
    {:cmds ["makefile"] :fn cmd-makefile}
    {:cmds ["random-page"] :fn cmd-random-page}

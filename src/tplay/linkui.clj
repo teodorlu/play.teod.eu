@@ -1,11 +1,15 @@
 (ns tplay.linkui
   "Some functions to call with babashka -x to create UIs"
-  (:require [tplay.api :as tplay]))
+  (:require [babashka.process :as p]
+            [clojure.string :as str]
+            [tplay.api :as tplay]))
 
 (def relations (tplay/files->relations2))
+
 (def title-> (->> relations
                   (map (juxt :title identity))
                   (into (sorted-map))))
+#_(->> title-> vals shuffle (take 5))
 
 (defn ^:export page-titles [_]
   (doseq [title (keys title->)]
@@ -14,13 +18,31 @@
 (defn ->link [{:keys [title uuid]}]
   (str "[[" title "][id:" uuid "]]"))
 
+(def title->link (comp ->link title->))
+
 (defn ^:export title-to-link [{:keys [title]}]
-  (println (-> title title-> ->link)))
+  (println (title->link title)))
+
+(defn fzf-select [options]
+  (some-> (p/shell {:in (str/join "\n" (map str options))
+                    :out :string}
+                   "fzf")
+          :out
+          str/split-lines
+          first))
+
+;; bb -x tplay.linkui/fzf
+(defn ^:export fzf
+  [_]
+  (println
+   (-> (keys title->)
+       fzf-select
+       title->link)))
 
 (comment
-  (->> title-> vals shuffle (take 5))
 
-  ;; Use from Emacs Lisp (requires s.el):
+  ;; Emacs UI for inserting links (requires s.el)
+  ;; Must be reader-commented to prevent Clojure syntax errors.
   #_
   (defun tplay-link ()
     "Insert link to a different page"

@@ -35,22 +35,15 @@
 
 #_(infer-ns-file 'tplay.index)
 
-;; relations example
-;;
-;; page slug -> page metadata
-{"emacs" {:slug "emacs"
-          :title "(Doom) Emacs learning journal"
-          :form :rambling
-          :readiness :in-progress}
- "feedback-design-impl" {:title "Feedback loops, API design and how stuff works"}}
-
 (def this-repo-toplevel
-  (delay
-    (some->
-     (:out (p/shell {:out :string
-                     :dir (str (fs/parent *file*))}
-                    "git rev-parse --show-toplevel"))
-     str/trim)))
+  (let [file *file*]
+    (delay
+      (some->
+       (p/shell {:out :string
+                 :dir (str (fs/parent file))}
+                "git rev-parse --show-toplevel")
+       :out
+       str/trim))))
 
 (defn bash-project-root [cmd]
   (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd :dir @this-repo-toplevel))))

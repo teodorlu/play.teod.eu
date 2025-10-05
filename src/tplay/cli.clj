@@ -481,7 +481,7 @@ Allowed options:
         (spit "index/big.mjs" (generate-js-index @big-index))
         ))))
 
-(defn cmd-clean [_opts]
+(defn cmd-clean [_]
   (fs/delete-if-exists "index.html")
   (cmd-reindex {})
   (cmd-makefile {})
@@ -524,7 +524,7 @@ Usage:
 
 (defn cmd-index
   "Produces the index.html file for play.teod.eu"
-  [_opts+args]
+  [_]
   (tplay.index/main))
 
 (defn indent-lines [s indent]

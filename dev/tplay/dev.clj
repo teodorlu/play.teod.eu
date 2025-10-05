@@ -2,11 +2,29 @@
   "In-REPL dev environment"
   (:require
    [babashka.process :as p]
+   [clojure.java.browse :refer [browse-url]]
+   [clojure.string :as str]
    [nextjournal.clerk :as clerk]
    [nextjournal.clerk.webserver :as clerk-server]))
 
+;; -----------------------------------------------------------------------------
+;;           LIVE SERVER
+;; -----------------------------------------------------------------------------
+
+(def live-server-opts {:port 3000})
+(def live-server-command
+  (str/join " " ["npx live-server"
+                 "--no-browser"
+                 (str "--port=" (:port live-server-opts))]))
+
+
+
+;; -----------------------------------------------------------------------------
+;;           LIFETIME CONTROL
+;; -----------------------------------------------------------------------------
+
 (def lifetimectl
-  {:system/live-server {:start #(p/process "npx live-server --port=3000")
+  {:system/live-server {:start #(p/process live-server-command)
                         :stop p/destroy}})
 
 (defonce system (atom nil))
@@ -22,10 +40,20 @@
   (stop! k)
   (swap! system assoc k ((get-in lifetimectl [k :start]))))
 
-;; Lifetime controls
+;; -----------------------------------------------------------------------------
+;;           REPL UI
+;; -----------------------------------------------------------------------------
+
+(defn preview! []
+  (start! :system/live-server)
+  (Thread/sleep 500) ; I'm sorry.
+  (browse-url (str "http://localhost:" (:port live-server-opts))))
+
 (comment ;; s-:
   (start! :system/live-server)
   (stop! :system/live-server)
+
+  (preview!)
 
   (clerk/serve! {})
   (clerk/halt!)

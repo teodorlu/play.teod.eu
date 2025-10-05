@@ -1,0 +1,31 @@
+/* Kødd med alternativ stilsetting
+
+Jeg sitter litt fast. Liker ikke det Pandoc gir meg ut av boksen, og sliter med
+å lage noe bedre. På https://go.teod.eu/ ser det ganske bra ut, men det er
+liksom lettere å stilsette noe når man allerede vet hva innholdet skal være, og
+ikke må lage et generelt tema for generelle dokumenter.
+
+Nåvel - dette er en start!
+*/
+
+:root {
+    --black: black;
+    --white: white;
+    --blue: rgb(109 219 253);
+    --green: hsl(124, 100%, 88%);
+    --yellowish: hsl(84.2, 100%, 88.8%);
+    --greenish: hsl(122.5, 100%, 95.3%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--blue);
+}
+
+a {
+    color: var(--blue);
+}
+
+body {
+    color: var(--greenish);
+    background-color: var(--black);
+}

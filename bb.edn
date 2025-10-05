@@ -1,9 +1,19 @@
+;; Writing environment
+;; Launch terminal, write. No JVM necessary.
 {:deps
  {eu.teod/play {:local/root "."}}
  :tasks
- {:requires ([tplay.devenv :refer [tmux-multi]])
+ {:requires ([tplay.devenv :refer [tmux-multi]]
+             [tplay.cli])
+  ;; Writing tasks
+  ;; (launches processes)
   clean (shell "./play.clj clean")
+  dev (tmux-multi "tplay" ["bb watchmake" "bb preview"])
   make (shell "make")
-  watchmake (shell "bash" "-c" "while true; do rg --files | entr -drc make; done")
   preview (shell "npx live-server")
-  dev (tmux-multi "tplay" ["bb watchmake" "bb preview"])}}
+  watchmake (shell "bash" "-c" "while true; do rg --files | entr -drc make; done")
+
+  ;; Custom CLI
+  cli (apply tplay.cli/main *command-line-args*)
+
+  }}

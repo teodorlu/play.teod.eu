@@ -1,4 +1,5 @@
 (ns tplay.dev
+  "In-REPL dev environment"
   (:require
    [babashka.process :as p]
    [nextjournal.clerk :as clerk]

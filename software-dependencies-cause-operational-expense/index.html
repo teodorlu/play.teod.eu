@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Software dependencies cause operational expense</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
       background-color: #fdfdfd;
@@ -172,17 +175,17 @@
   <link rel="stylesheet" href="/adjustments.css">
 
   <script type="text/javascript">
-    const hostCanonical = "play.teod.eu";
-    const hostAlias1 = "playground.teod.eu";
-    const hostLocal1 = "localhost:9945";
+    const hostCanonical = 'play.teod.eu';
+    const hostAlias1 = 'playground.teod.eu';
+    const hostLocal1 = 'localhost:9945';
     if (
       window.location.host === hostAlias1
       // || window.location.host === hostLocal1
     ) {
       // redirect playground.teod.eu to play.teod.eu
       // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
-      const pathname = window.location.pathname || "";
-      window.location.replace("https://" + hostCanonical + pathname);
+      const pathname = window.location.pathname || '';
+      window.location.replace('https://' + hostCanonical + pathname);
     }
   </script>
 

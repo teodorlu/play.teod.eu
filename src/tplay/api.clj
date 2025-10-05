@@ -49,3 +49,11 @@
        sort
        (map (fn [slug] (merge {:slug slug}
                               (edn/read-string (slurp (slug->meta-file-path slug))))))))
+
+(comment
+  (def relations (files->relations2))
+  (->> relations
+       (keep :readiness)
+       (into (sorted-set)))
+
+  )

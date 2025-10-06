@@ -18,8 +18,6 @@ walrus"
 
 (deftype RandomShit [y])
 
-(nprint (RandomShit. 123))
-
 (deftest nprint-test
 
   (testing "primitives"
@@ -50,13 +48,15 @@ walrus"
            (-> '{:a 1 b 2 "c" :lol/haha}
                nprint edn/read-string))))
 
-  (testing "indents"
-    (is (= "[1\n 2]" (nprint-indent ["1" "2"] 0)))
+  (testing "print-indent always indents"
+    (is (= "[1\n 2]" (nprint-indent ["1" "2"] 0))))
 
+  (testing "nprint starts indenting when lines would exceed 40 characters"
     (is
-     (str/includes? (nprint ["a very long string"
-                             "an another quite long one."])
-                    "\n")))
+     (str/includes? (nprint ["the headbands were green"
+                             "brighly, radioactively, green"
+                             "not something you'd bring to the forest."])
+                    "\n ")))
 
   ;; TODO more collection types
   ;; TODO nested collections

@@ -16,7 +16,7 @@
     (println title)))
 
 (defn ->link [{:keys [title uuid]}]
-  (str "[[" title "][id:" uuid "]]"))
+  (str "[[id:" uuid "][" title "]]"))
 
 (def title->link (comp ->link title->))
 

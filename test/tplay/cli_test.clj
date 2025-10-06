@@ -3,7 +3,6 @@
    [clojure.edn :as edn]
    [clojure.string :as str]
    [clojure.test :refer [deftest is testing]]
-   [clojure.walk :refer [postwalk]]
    [tplay.cli :refer [nprint nprint-indent]]))
 
 (deftest words-test
@@ -19,9 +18,13 @@ walrus"
 
 (deftype RandomShit [y])
 
+(nprint (RandomShit. 123))
+
 (deftest nprint-test
 
   (testing "primitives"
+    (is (= (pr-str "hei\t, du\n! \"lol\".")
+           (nprint "hei\t, du\n! \"lol\".")))
     (is (= "1" (nprint 1)))
     (is (= "[:nprint/unsupported tplay.cli_test.RandomShit]" (nprint (RandomShit. 42))))
     (is (= "\"hei\"" (nprint "hei")))
@@ -54,5 +57,8 @@ walrus"
      (str/includes? (nprint ["a very long string"
                              "an another quite long one."])
                     "\n")))
+
+  ;; TODO more collection types
+  ;; TODO nested collections
 
   )

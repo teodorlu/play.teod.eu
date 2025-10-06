@@ -601,6 +601,25 @@ Usage:
 
 
 
+(defn nprint-string
+  "A slightly faster pr-str for strings (22 % when I measured)"
+  {:benchmark-code (quote ;; (quote) not ' so you can run benchmark with eval-last-sexp.
+                    (let [s "hei\t, du\n! \"lol\"."]
+                      (println "pr-str:")
+                      (time (dotimes [_ 1000000] (pr-str s)))
+                      (println "nprint-string:")
+                      (time (dotimes [_ 1000000] (nprint-string s)))))}
+  [s]
+  (str \"
+       (str/escape s
+                   {\newline "\\n"
+                    \tab  "\\t"
+                    \return "\\r"
+                    \" "\\\""
+                    \\  "\\\\"
+                    \formfeed "\\f"
+                    \backspace "\\b"})
+       \"))
 
 (defn nprint-default-fallback [data]
   (str "[:nprint/unsupported " (pr-str (type data)) "]"))
@@ -608,10 +627,10 @@ Usage:
 (defn nprint-prim
   [data opts]
   (let [fallback-fn (get opts :fallback-fn nprint-default-fallback)]
-    (cond (number? data) (pr-str data)
-          (string? data) (pr-str data)
-          (keyword? data) (pr-str data)
-          (symbol? data) (pr-str data)
+    (cond (number? data) (str data)
+          (string? data) (nprint-string data)
+          (keyword? data) (str data)
+          (symbol? data) (str data)
           :else (fallback-fn data))))
 
 (declare nprint)
@@ -665,18 +684,14 @@ Usage:
   Implementation: Postwalk prepare then indented print.
 
   Postwalk prepare:
-  - Print inner nodes on one line untill printed lengths start exceeding 40 columns
+  - Print inner nodes on one line until printed lengths start exceeding 40 columns
   - At that point, leave the node.
 
   Indented print:
   - After the postwalk prepare, we're guaranteed that:
     - All primitive nodes have been printed
     - ... and all non-wrapping collection nodes have been printed.
-  - Therefore, we can \"indent all the time\".
-
-  - Postwalk with path.
-  - We print inner nodes untill printed strings start wrapping 40 columns
-  - At that point, we *signa"
+  - Therefore, we can \"indent all the time\"."
   ([data] (nprint data {}))
   ([data opts]
    (-> (postwalk #(nprint-pre % opts) data)

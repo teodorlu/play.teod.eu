@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID: 86a0ea22-e0a5-4682-a840-4afab9b78b0f
+:END:
+#+TITLE: Computing, Learning, Designing, Researching
+
+[[file:..][..]]
+
+* gasping for air
+
+You've held your breath for almost a minute.
+It's time to breathe.
+You stayed still at the bottom of the pool to avoid movement.
+It was about time when you were finally able to fill your lungs with beautiful, tasty air.
+
+That's my feeling this week.
+I presented at a conference last week, and it felt like I'd been holding my breath.
+I slept a lot the following weekend, and feel like I'm seeing things in a different light this week.
+Everything is lighter.
+
+* driven to create
+
+That's the time my brain goes for deep whys, and this why is “Computing, Learning, Designing, Researching”.
+Why write here and on [[id:32703cee-4d48-46f7-b87a-31eb89f46e84][mikrobloggeriet.no]]?
+To compute, to learn, to design and to research.
+Why make [[id:dfbb5115-dec8-47ef-b504-343f8f9364eb][Munit]] and present on [[id:bf425a46-0084-48bd-9a4f-c9083170b51b][Macroexpand 2025 Noj]]?
+To compute, to learn, to design and to research.
+
+For me, this is creativity!
+
+| /computation/ | the essence of digital tool-building            |
+| /learning/    | increase your capabilities                      |
+| /designing/   | postition your creations in the world with care |
+| /researching/ | aim to create and explain new knowledge         |
+
+* endless exploration on the web
+
+The modern web is a fantastic tool to compute, learn, design and research.
+Your web-powered computations can immediately reach the whole world.
+You can learn from others.
+You can share with care.
+You can work out things you don't quite yet know, and when the stars align, write that understanding down.
+
+I made a point early on that [[id:0c9bef25-85ef-48e8-b4fd-d60160f177ec][play.teod.eu]] was a place of exploration.
+Now, I feel like everything is just exploration.
+There's so much stuff!
+And the things are all different in nature.
+If I were to start over, I think categorizing in terms of computing, learning, designing and reseraching would be helpful.
+
+* motivated to create
+
+To me, computing, learning, designing and researching feels like play.
+If we can play seriously with one of those pillars, I can find some motivation.
+But we have to slow down the pace.
+No pushing to finish everything quickly.
+That kills the fun for me the same way rushing through Borderlands without paying attention killed the fun for me (in [[id:32aef0d5-4e6e-4890-bd4d-37b3dbc50e75][Serial Focus]]).
+
+Slowly enough to enjoy the scenery, feel the grass and trigger adrenaline instead of cortisol.
+We want "I got on the roller coaster!" or "I jumped from high up!"-fun, not the pain of being dragged into something we cannot know.
+
+The bigger the group, the harder this is.
+How do we make the experience nice for everyone?
+
+I don't have an answer on how to do this, but I'm hoping this text can be a start.

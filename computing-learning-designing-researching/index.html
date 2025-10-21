@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Computing, Learning, Designing, Researching</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+    const hostCanonical = 'play.teod.eu';
+    const hostAlias1 = 'playground.teod.eu';
+    const hostLocal1 = 'localhost:9945';
+    if (
+      window.location.host === hostAlias1
+      // || window.location.host === hostLocal1
+    ) {
+      // redirect playground.teod.eu to play.teod.eu
+      // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+      const pathname = window.location.pathname || '';
+      window.location.replace('https://' + hostCanonical + pathname);
+    }
+  </script>
+
+  <script async type="module" src="/index/big.js"></script>
+  <script async type="module" src="/iki/iki.js"></script>
+  <script async type="module">
+    import {IkiGotoRandomPage} from "/iki/iki.js";
+
+    customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
+  </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Computing, Learning, Designing, Researching</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#gasping-for-air" id="toc-gasping-for-air">gasping for
+air</a></li>
+<li><a href="#driven-to-create" id="toc-driven-to-create">driven to
+create</a></li>
+<li><a href="#endless-exploration-on-the-web"
+id="toc-endless-exploration-on-the-web">endless exploration on the
+web</a></li>
+<li><a href="#motivated-to-create"
+id="toc-motivated-to-create">motivated to create</a></li>
+</ul>
+</nav>
+<p><a href="..">..</a></p>
+<h2 id="gasping-for-air">gasping for air</h2>
+<p>You’ve held your breath for almost a minute. It’s time to breathe.
+You stayed still at the bottom of the pool to avoid movement. It was
+about time when you were finally able to fill your lungs with beautiful,
+tasty air.</p>
+<p>That’s my feeling this week. I presented at a conference last week,
+and it felt like I’d been holding my breath. I slept a lot the following
+weekend, and feel like I’m seeing things in a different light this week.
+Everything is lighter.</p>
+<h2 id="driven-to-create">driven to create</h2>
+<p>That’s the time my brain goes for deep whys, and this why is
+“Computing, Learning, Designing, Researching”. Why write here and on <a
+href="../mikrobloggeriet.no/">mikrobloggeriet.no</a>? To compute, to
+learn, to design and to research. Why make <a
+href="id:dfbb5115-dec8-47ef-b504-343f8f9364eb">Munit</a> and present on
+<a href="id:bf425a46-0084-48bd-9a4f-c9083170b51b">Macroexpand 2025
+Noj</a>? To compute, to learn, to design and to research.</p>
+<p>For me, this is creativity!</p>
+<table>
+<tbody>
+<tr>
+<td><em>computation</em></td>
+<td>the essence of digital tool-building</td>
+</tr>
+<tr>
+<td><em>learning</em></td>
+<td>increase your capabilities</td>
+</tr>
+<tr>
+<td><em>designing</em></td>
+<td>postition your creations in the world with care</td>
+</tr>
+<tr>
+<td><em>researching</em></td>
+<td>aim to create and explain new knowledge</td>
+</tr>
+</tbody>
+</table>
+<h2 id="endless-exploration-on-the-web">endless exploration on the
+web</h2>
+<p>The modern web is a fantastic tool to compute, learn, design and
+research. Your web-powered computations can immediately reach the whole
+world. You can learn from others. You can share with care. You can work
+out things you don’t quite yet know, and when the stars align, write
+that understanding down.</p>
+<p>I made a point early on that <a
+href="../play.teod.eu/">play.teod.eu</a> was a place of exploration.
+Now, I feel like everything is just exploration. There’s so much stuff!
+And the things are all different in nature. If I were to start over, I
+think categorizing in terms of computing, learning, designing and
+reseraching would be helpful.</p>
+<h2 id="motivated-to-create">motivated to create</h2>
+<p>To me, computing, learning, designing and researching feels like
+play. If we can play seriously with one of those pillars, I can find
+some motivation. But we have to slow down the pace. No pushing to finish
+everything quickly. That kills the fun for me the same way rushing
+through Borderlands without paying attention killed the fun for me (in
+<a href="../serial-focus/">Serial Focus</a>).</p>
+<p>Slowly enough to enjoy the scenery, feel the grass and trigger
+adrenaline instead of cortisol. We want “I got on the roller coaster!”
+or “I jumped from high up!”-fun, not the pain of being dragged into
+something we cannot know.</p>
+<p>The bigger the group, the harder this is. How do we make the
+experience nice for everyone?</p>
+<p>I don’t have an answer on how to do this, but I’m hoping this text
+can be a start.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID: bf425a46-0084-48bd-9a4f-c9083170b51b
+:END:
+#+TITLE: Macroexpand 2025 Noj
+
+[[file:..][..]]
+
+https://scicloj.github.io/macroexpand-2025/macroexpand_noj.html
+
+A Clojure conference for growing Clojure's Noj toolkit for data science.

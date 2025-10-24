@@ -352,10 +352,14 @@ Allowed options:
                                                "^{:nextjournal.clerk/visibility {:code :hide :result :hide}}"
                                                (with-out-str
                                                  (clojure.pprint/with-pprint-dispatch
+                                                   clojure.pprint/code-dispatch
                                                    (pprint
                                                     '(comment
-                                                       ((requiring-resolve 'nextjournal.clerk/serve!) {:browse true})
-                                                       ((requiring-resolve 'clojure.repl.deps/sync-deps))
+                                                       (require '[clojure.repl.deps]
+                                                                '[nextjournal.clerk :as clerk]
+                                                                '[babashka.fs :as fs])
+                                                       (clerk/serve! {:browse true})
+                                                       (clojure.repl.deps/sync-deps)
                                                        (clerk/build! {:paths [(fs/file-name *file*)] :out-path "."})
                                                        (clerk/clear-cache!)))))]))))
     ;; Finally, the makefile must be regenerated.

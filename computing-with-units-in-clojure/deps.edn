@@ -1,0 +1,11 @@
+{:paths ["."],
+ :deps {org.scicloj/clay {;; :mvn/version "2.0.0"
+
+                          ;; instead of the stable version, use a forked Clay
+                          ;; less visual clutter when intended focus is
+                          ;; presented slides.
+                          :git/sha "e5d684a7c348bab1d39c2a9c74c58711ff6d3a30"
+                          :git/url "https://github.com/teodorlu/clay"}
+        io.github.teodorlu/munit {:git/url "https://github.com/teodorlu/munit"
+                                  :git/sha "c25ce2091da179a66f94779c1b7ba1198d985469"}
+        org.scicloj/noj {:mvn/version "2-beta18"}}}

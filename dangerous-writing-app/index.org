@@ -5,7 +5,7 @@
 
 [[file:..][..]]
 
-https://www.squibler.io/dangerous-writing-prompt-app/write?limit=5&type=minutes
+https://www.squibler.io/dangerous-writing-prompt-app
 
 An app that deletes your text if you stop writing.
 Great to fight writer's block.

@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 5fa16a34-62a8-4e84-82d0-03bcb183f8fb
+:END:
+#+TITLE: Just in time vs DONE
+
+[[file:..][..]]
+
+Or /pipeline versus science/.
+
+Theory of Constraints dictates that we should:
+
+1. maximize throughput,
+2. minimizing inventory
+3. ... and minimize operational expense.
+
+Science dictates that we should obtain knowledge in our bones, and make it our own.
+
+The two lenses conflict.
+In the factory mindset, /inventory/ is bad, and should be minimized.
+In the scientific mindset, knowledge is the goal, and (inventoried) bad explanations is the intermediate step before knowledge.
+
+*make a mess, then clean it up*.
+We can let the two lenses coexist by aiming for the factory to grow over time.
+The factory produces goods, but we must simultaneously support the growth of knowledge.
+When the bad explanations solidify into knowledge, we jump from the just in time /minimize inventory/ mindset to considering the problem /solved/.
+The knowledge is no longer inventory.
+It is part of our foundation.

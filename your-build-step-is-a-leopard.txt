@@ -1,0 +1,31 @@
+Your Build Step is a Leopard
+
+[Douglas Adams Quote]
+
+The fear of the leopard inhibits your movement.
+It directly reduces your agility.
+Therefore, when not required, it's bad!
+
+# Simplicity as abscence of suprise / Simplicity as abscense of leopards
+
+Surprising requirements: this first, then that
+Why?
+
+Do this, otherwise other thing won't work.
+Why??
+
+Oh, this can only be executed in the context of PLACE
+Why???
+
+Oh, and now you're in the wrong build step.
+The princess generation is in the meta-build-step!
+Why????
+
+For my love of Douglas Adams and Franz Kafka, why do we inflict this upon ourselves?
+
+As Kafka suggests, it is not out of malice.
+It is accidental.
+And it is our job as software designers to *not* [let the code rot].
+Instead, we must reify and improve the explanations of our code.
+
+[let the code rot]: https://explaining.software/archive/complexity-as-entropy/

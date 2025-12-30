@@ -1,10 +1,18 @@
 Your Build Step is a Leopard
 
+Alternative title: is your build step a leopard?
+
 [Douglas Adams Quote]
 
 The fear of the leopard inhibits your movement.
 It directly reduces your agility.
 Therefore, when not required, it's bad!
+
+[Jack Rusher Leopards in the Source Code reference]
+
+Leopards jump-scaring you are a source of surprise.
+That surprise violently grabs attention from your sorely limited attention budget.
+When jump-scared, you are not calmly ready for challenge, you merely react.
 
 # Simplicity as abscence of suprise / Simplicity as abscense of leopards
 

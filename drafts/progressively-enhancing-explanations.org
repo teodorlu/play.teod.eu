@@ -1,0 +1,16 @@
+#+TITLE: Progressively enhancing explanations
+
+I finally found an anchor for how to write a README.
+The README should supply progressively enhancing explanations.
+
+After reading the first sentence, you know whether this thing is in the ballpark of something you're interested in.
+The first paragraph narrows that understanding, now you can give a clearer yes/no answer.
+If yes, what follows should specialize the value proposition into something you can use.
+Dependency coordinates and a small example.
+
+Whereas the beginning of a REAME must /briefly/ explain the core idea, the rest can afford more content.
+Structure headings by reader interest, and they may do the progressive explanation enhancement on their own.
+Does this heading matter to me?
+Yes/no?
+Read or not read.
+There is no try.

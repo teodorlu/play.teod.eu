@@ -11,8 +11,7 @@ And it's gonna be great!
 Should you share or not?
 If you share, you know some parts of your library are going to be rough.
 And once you've commited to an API, you [[https://lkml.org/lkml/2012/12/23/75][shouldn't break userspace]].
-Or, in Rich Hickey's words
-[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s [[https://youtu.be/oyLBGkS5ICk?t=2466][words]],
+Or, in [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s [[https://youtu.be/oyLBGkS5ICk?t=2466][words]],
  "Breaking changes are broken. It is just a terrible idea. Don't do it."
 Not sharing can be equally bad. Your idea may perish!
 It gets no nourishment, no sun, no light.

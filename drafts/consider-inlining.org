@@ -9,7 +9,10 @@ And it's gonna be great!
 Should you share or not?
 If you share, you know some parts of your library are going to be rough.
 And once you've commited to an API, you [[https://lkml.org/lkml/2012/12/23/75][shouldn't break userspace]].
-If you don't share, your idea may well perish!
+Or, in Rich Hickey's words
+[[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]'s [[https://youtu.be/oyLBGkS5ICk?t=2466][words]],
+ "Breaking changes are broken. It is just a terrible idea. Don't do it."
+Not sharing can be equally bad. Your idea may perish!
 It gets no nourishment, no sun, no light.
 No love.
 If you /do/ share, your library may grow into a tool used by millions!
@@ -35,3 +38,12 @@ We have a final option that I rarely see taken:
 /We can encourage our users to consider in-lining/.
 
 This option is especially great when we write a library to infuse an ecosystem with an idea, rather than to obtain a long-term commitment for maintaining other people's code bases.
+
+Dear library authors.
+When you don't want to create and maintain a big thing, consider encouraging your users to inline your tool.
+Your users may learn, and they won't demand updates and features from you.
+
+Dear users,
+*Consider in-lining*!
+It's a great learning experience.
+And you'll understand your code /as a whole/, not just the parts you see because it's in your source directory, and not hidden behind dependency coordinates.

@@ -1,0 +1,37 @@
+#+TITLE: Consider in-lining
+
+As programmers, our death by dependency hell stems from our lack of knowledge of what our dependencies do, and our lack of hesitance adding dependencies.
+What should we do instead?
+
+Please follow me into a brief journey of library development.
+You got this mad idea that might work.
+And it's gonna be great!
+Should you share or not?
+If you share, you know some parts of your library are going to be rough.
+And once you've commited to an API, you [[https://lkml.org/lkml/2012/12/23/75][shouldn't break userspace]].
+If you don't share, your idea may well perish!
+It gets no nourishment, no sun, no light.
+No love.
+If you /do/ share, your library may grow into a tool used by millions!
+And you'll be stuck as the responsible party for all the sharp edges.
+
+This loose/loose choice is a false dichotomy.
+You have a third option: /don't allow scope creep/.
+The seedling of an idea /can/ grow, but it can happen separately from the library it consumes.
+As a library author, you can encourage your users to consider in-lining.
+As a library consumer, you can read that README, and /not/ immediately add the dependency.
+Instead, grab a coffee.
+Consider the problem at hand.
+And instead of adding the dependency, consider in-lining some code.
+
+As library authors, we can choose to write in-line friendly libraries:
+
+1. Minimize library dependencies
+2. Keep the code brief
+3. Keep the code explicit.
+
+We have a final option that I rarely see taken:
+
+/We can encourage our users to consider in-lining/.
+
+This option is especially great when we write a library to infuse an ecosystem with an idea, rather than to obtain a long-term commitment for maintaining other people's code bases.

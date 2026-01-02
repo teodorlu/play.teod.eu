@@ -1,5 +1,7 @@
 #+TITLE: Progressively enhancing explanations
 
+[[file:..][..]]
+
 I finally found an anchor for how to write a README.
 The README should supply progressively enhancing explanations.
 

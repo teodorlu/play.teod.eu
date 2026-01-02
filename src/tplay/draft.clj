@@ -39,14 +39,15 @@
   (fs/delete file))
 
 (comment
-  (mapv str (fs/list-dir "drafts"))
+  ;; Undraft one
+  (def file "drafts/progressively-enhancing-explanations.org")
+  (effectuate-undraft file (merge (default-meta)
+                                  (meta-from-draft file)))
 
-  (do (def file "drafts/progressively-enhancing-explanations.org")
-      (effectuate-undraft file (merge (default-meta)
-                                      (meta-from-draft file))))
-
-
-  (fs/delete-tree file "consider-inlining")
-
+  ;; Undraft all
+  (def drafts (mapv str (fs/list-dir "drafts")))
+  (doseq [draft drafts]
+    (effectuate-undraft draft (merge (default-meta)
+                                     (meta-from-draft file))))
 
   )

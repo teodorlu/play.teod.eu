@@ -1,5 +1,6 @@
 (ns tplay.draft
-  (:require [babashka.fs :as fs]))
+  (:require [babashka.fs :as fs]
+            [babashka.process :as p]))
 
 (defn find-org-title [s]
   (some-> (re-find #"(?m)^#\+TITLE:\s*(.+)$" s)
@@ -49,5 +50,9 @@
   (doseq [draft drafts]
     (effectuate-undraft draft (merge (default-meta)
                                      (meta-from-draft file))))
+
+  ;; Make HTML
+  (do (p/shell "bb cli makefile")
+      (p/shell "make"))
 
   )

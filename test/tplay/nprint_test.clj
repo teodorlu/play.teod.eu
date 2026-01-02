@@ -1,5 +1,6 @@
 (ns tplay.nprint-test
-  (:require [clojure.string :as str]
+  (:require [clojure.edn :as edn]
+            [clojure.string :as str]
             [clojure.test :refer [deftest is testing]]
             [tplay.nprint :as nprint :refer [nprint nprint-indent]]))
 
@@ -11,7 +12,7 @@
     (is (= (pr-str "hei\t, du\n! \"lol\".")
            (nprint "hei\t, du\n! \"lol\".")))
     (is (= "1" (nprint 1)))
-    (is (= "[:nprint/unsupported tplay.cli_test.RandomShit]" (nprint (RandomShit. 42))))
+    (is (= (pr-str [:nprint/unsupported `RandomShit]) (nprint (RandomShit. 42))))
     (is (= "\"hei\"" (nprint "hei")))
     (is (= ":x" (nprint :x)))
     (is (= ":goodstuff/cake" (nprint :goodstuff/cake)))
@@ -27,7 +28,7 @@
                nprint edn/read-string))))
 
   (testing "maps"
-    (tplay.cli/nprint-coll {"x" "x"} {})
+    (nprint/nprint-coll {"x" "x"} {})
 
     (is (= "{\"x\" \"x\"}"
            (nprint {"x" "x"})))

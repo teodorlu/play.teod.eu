@@ -40,17 +40,13 @@
 
 (comment
   (mapv str (fs/list-dir "drafts"))
-  ;; => ["drafts/consider-inlining.org"
-  ;;     "drafts/progressively-enhancing-explanations.org"]
 
-  (do (def file "drafts/consider-inlining.org")
+  (do (def file "drafts/progressively-enhancing-explanations.org")
       (effectuate-undraft file (merge (default-meta)
                                       (meta-from-draft file))))
 
-  (fs/delete-tree "consider-inlining")
 
+  (fs/delete-tree file "consider-inlining")
 
-  (fs/copy "drafts/consider-inlining.org" "2.org")
-  (fs/delete "2.org")
 
   )

@@ -3,17 +3,14 @@
             [babashka.process :as p]))
 
 (defn find-org-title [s]
-  (some-> (re-find #"(?m)^#\+TITLE:\s*(.+)$" s)
-          second))
+  (some-> (re-find #"(?m)^#\+TITLE:\s*(.+)$" s) second))
 
 (defn find-slug [file]
   (fs/strip-ext (fs/file-name file)))
 
 (defn assure [msg f & args]
   (when-not (apply f args)
-    (throw (ex-info (str "Problem: " msg)
-                    {:msg msg
-                     :expr (cons f args)}))))
+    (throw (ex-info (str "Problem: " msg) {:msg msg :expr (cons f args)}))))
 
 (defn meta-from-draft [file]
   (assure "Draft exists" #'fs/exists? file)

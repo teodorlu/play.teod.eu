@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: db969a2d-996c-4594-ab41-1446507f5f90
+:END:
+#+TITLE: Terran webdev: grounded tools for interactive web
+
+[[file:..][..]]
+
+Keep it simple while you can.
+Complexity will catch up sooner or later.
+
+Today, we will explore keeping deployment simple (just files), while also keeping dev simple (just evaluation).
+
+Do less.
+Gain speed, loose drag.
+
+This directory contains a text file and a generated index.html.
+Deployment is an index.html copy.
+Development is not just evaluation.
+Let's make that happen.

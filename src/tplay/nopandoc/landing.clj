@@ -155,10 +155,10 @@
       [:ul
        (for [site (sort-by :site/name other-people/sites)]
          [:li [:a {:href (:site/href site)} (:site/name site)]
-          (when-let [{:as r :keys [href title]}
+          (when-let [{:keys [href title]}
                      (:site/reference-article site)]
             (list ". Reference article: "
-                  [:a {:href href} title (:title r)]
+                  [:a {:href href} title]
                   " (off-site link)."))])]
       (when-let [incomplete (:page-category/forever-incomplete by-category)]
         [:section

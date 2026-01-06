@@ -30,7 +30,7 @@
 
    {:site/name "Et sted for design og kreativitet (Niklas Håkonsen)"
     :site/href "https://www.niklashakonsen.no/"
-    :site/reference-article {:title "https://www.niklashakonsen.no/post/kreativ-i-tomrommet"
-                             :href "Kreativ i tomrommet"}}
+    :site/reference-article {:title "Kreativ i tomrommet"
+                             :href "https://www.niklashakonsen.no/post/kreativ-i-tomrommet"}}
 
    #_=])

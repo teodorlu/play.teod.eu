@@ -24,5 +24,13 @@
     :site/href "https://yosefk.com/blog/"
     :site/reference-article {:title "Advantages of incompetent management"
                              :href "https://yosefk.com/blog/advantages-of-incompetent-management.html"}}
+
    {:site/name "danluu.com"
-    :site/href "https://danluu.com"}])
+    :site/href "https://danluu.com"}
+
+   {:site/name "Et sted for design og kreativitet (Niklas Håkonsen)"
+    :site/href "https://www.niklashakonsen.no/"
+    :site/reference-article {:title "https://www.niklashakonsen.no/post/kreativ-i-tomrommet"
+                             :href "Kreativ i tomrommet"}}
+
+   #_=])

@@ -16,6 +16,4 @@
   (terra.instance/start! #'handler {:port 7777})
   (terra.instance/browse!)
 
-  (require '[babashka.http-client :as http-client])
-
   )

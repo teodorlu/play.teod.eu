@@ -1,0 +1,19 @@
+#+TITLE: Effort asymmetry on the web
+
+As the web fills with noise, us web individuals get used to it.
+It creeps into our actions.
+The entities we're chatting with, are they humans or spambots?
+Suddenly, we're treating humans as spambots.
+
+Open source is thankless work.
+Sure, you may be successful enough to get some Internet likes, but those likes don't pay rent.
+Those likes don't let you grow your tool used by thousands into something that can sustain itself.
+Those likes can't hire people to help you make your thing.
+
+The least we can do is treat open source maintainers with dignity.
+Don't squander their time.
+Try to see it from their side.
+Say thank you.
+
+To all the open source maintainers in the world, I salute you.
+Thank you for your work.

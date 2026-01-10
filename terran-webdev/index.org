@@ -17,3 +17,14 @@ This directory contains a text file and a generated index.html.
 Deployment is an index.html copy.
 Development is not just evaluation.
 Let's make that happen.
+
+* 2026-01-10
+
+| working | asset server for HTML and other resources. |
+| gap     | html watch & html reloads                  |
+
+How to notify on reload?
+Ideas:
+
+- 5 px bottom bar that animates from heavy green to translucent, then disappears.
+  Ideally: a moving radial-blurred "ball".

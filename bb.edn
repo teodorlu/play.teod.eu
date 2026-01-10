@@ -13,6 +13,9 @@
   preview (shell "npx live-server")
   watchmake (shell "bash" "-c" "while true; do rg --files | entr -drc make; done")
 
+  ;; Tests
+  kaocha (clojure "-M:dev -m kaocha.runner")
+
   ;; Custom CLI
   cli (apply tplay.cli/main *command-line-args*)
 

@@ -3,4 +3,5 @@
  [{:id :tplay
    :test-paths ["test"]}
   {:id :terra
-   :test-paths ["../../teodorlu/terra/test"]}]}
+   :test-paths ["../../teodorlu/terra/test"]}]
+ :plugins [:noyoda.plugin/swap-actual-and-expected]}

@@ -17,15 +17,17 @@
                                      :git/sha "cc135ab5dcde1e39abcdd174028847d8721f9d76"}
 
         }
- :aliases {;; We develop on a JVM.
-           :dev
-           {:extra-paths ["test"]
-            :extra-deps
-            {http-kit/http-kit {:mvn/version "2.8.1"}
-             lambdaisland/kaocha {:mvn/version "1.91.1392"}
-             kaocha-noyoda/kaocha-noyoda {:mvn/version "2019-06-03"}
+ :aliases
+ {:test
+  {:extra-paths ["test"]
+   :extra-deps
+   {lambdaisland/kaocha {:mvn/version "1.91.1392"}
+    kaocha-noyoda/kaocha-noyoda {:mvn/version "2019-06-03"}}}
+  :dev
+  {:extra-deps
+   {http-kit/http-kit {:mvn/version "2.8.1"}
 
-             ;; TERRAN
-             io.github.teodorlu/terra {:local/root "../../teodorlu/terra"}
-             }}
-           }}
+    ;; TERRAN
+    io.github.teodorlu/terra {:local/root "../../teodorlu/terra"}
+    }}
+  }}

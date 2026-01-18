@@ -63,8 +63,9 @@
 
 (defn find-english-ready-for-coments [index]
   (->> index
-       (filter
-               #(and (english? %) (ready-for-comments? %)))
+       (filter #(and (english? %)
+                     (ready-for-comments? %)
+                     (:created %)))
        (sort-by :created)
        (reverse)))
 

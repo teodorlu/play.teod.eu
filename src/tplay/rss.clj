@@ -33,12 +33,15 @@
 (defn doc->item [{:as doc
                   :keys [title author-url slug uuid
                          created]}]
-  [:item
-   [:title title]
-   [:author (get author-url->author author-url author-url)]
-   [:link (str "https://play.teod.eu/" slug "/")]
-   [:guid uuid]
-   [:pubDate created]])
+  (let [href (str "https://play.teod.eu/" slug "/")]
+    [:item
+     [:title title]
+     [:author (get author-url->author author-url author-url)]
+     [:link href]
+     [:guid uuid]
+     [:pubDate created]
+     [:description (str "Read on the website: " href)]
+     ]))
 
 (defn english-ready-for-comments [docs]
   ;; <!-- inspired by Artyom Bologov (https://aartaka.me/rss.xml). Thank you! -->

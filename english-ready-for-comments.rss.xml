@@ -3,7 +3,7 @@
     <title>Towards an iterated game | English</title>
     <link>https://play.teod.eu/</link>
     <guid>https://play.teod.eu/english-ready-for-comments</guid>
-    <pubDate>2026-01-18T10:33:56.531634Z</pubDate>
+    <pubDate>2026-01-18T17:40:41.819729Z</pubDate>
     <description>Bring ideas to life. Discuss, sharpen, play. Minimize distance between intent and reality.</description>
     <docs>https://www.rssboard.org/rss-specification</docs>
     <item>
@@ -12,6 +12,7 @@
       <link>https://play.teod.eu/effort-asymmetry/</link>
       <guid>ae2b3bcd-87d2-4594-bf70-213afa5ebf68</guid>
       <pubDate>2026-01-10</pubDate>
+      <description>Read on the website: https://play.teod.eu/effort-asymmetry/</description>
     </item>
     <item>
       <title>Progressively enhancing explanations</title>
@@ -19,6 +20,7 @@
       <link>https://play.teod.eu/progressively-enhancing-explanations/</link>
       <guid>0797cf8c-6401-4e40-9219-73f52336e107</guid>
       <pubDate>2026-01-02</pubDate>
+      <description>Read on the website: https://play.teod.eu/progressively-enhancing-explanations/</description>
     </item>
     <item>
       <title>Consider in-lining</title>
@@ -26,6 +28,7 @@
       <link>https://play.teod.eu/consider-inlining/</link>
       <guid>03c6e62a-91a6-470f-94d8-77e43554c20e</guid>
       <pubDate>2026-01-02</pubDate>
+      <description>Read on the website: https://play.teod.eu/consider-inlining/</description>
     </item>
     <item>
       <title>Serial Focus</title>
@@ -33,6 +36,7 @@
       <link>https://play.teod.eu/serial-focus/</link>
       <guid>32aef0d5-4e6e-4890-bd4d-37b3dbc50e75</guid>
       <pubDate>2025-10-05</pubDate>
+      <description>Read on the website: https://play.teod.eu/serial-focus/</description>
     </item>
     <item>
       <title>Sufficient onto the day is the evil thereof</title>
@@ -40,6 +44,7 @@
       <link>https://play.teod.eu/sufficient-unto-the-day-is-the-evil-thereof/</link>
       <guid>2abb9f61-1598-4121-9786-69ac555e1a38</guid>
       <pubDate>2025-02-15</pubDate>
+      <description>Read on the website: https://play.teod.eu/sufficient-unto-the-day-is-the-evil-thereof/</description>
     </item>
     <item>
       <title>Finding motivation: in outcomes or in process?</title>
@@ -47,6 +52,7 @@
       <link>https://play.teod.eu/motivation-in-process-or-outcomes/</link>
       <guid>77ff8579-acc1-4c35-b4df-d6ba9354815e</guid>
       <pubDate>2025-02-02</pubDate>
+      <description>Read on the website: https://play.teod.eu/motivation-in-process-or-outcomes/</description>
     </item>
     <item>
       <title>Fight Doomscrolling with Babashka</title>
@@ -54,6 +60,7 @@
       <link>https://play.teod.eu/fight-doomscrolling-with-babashka/</link>
       <guid>b9de9ff6-e085-4084-a5a9-ab787293ebe2</guid>
       <pubDate>2024-11-17</pubDate>
+      <description>Read on the website: https://play.teod.eu/fight-doomscrolling-with-babashka/</description>
     </item>
     <item>
       <title>Do the simplest thing possible!</title>
@@ -61,6 +68,7 @@
       <link>https://play.teod.eu/do-the-simplest-thing-possible/</link>
       <guid>ef835eb0-e607-4a81-984c-0ee3410042df</guid>
       <pubDate>2024-11-03</pubDate>
+      <description>Read on the website: https://play.teod.eu/do-the-simplest-thing-possible/</description>
     </item>
     <item>
       <title>Easy, explicit parallellism with =pipeline-blocking=</title>
@@ -68,6 +76,7 @@
       <link>https://play.teod.eu/clojure-easy-parallellism-with-pipeline-blocking/</link>
       <guid>add9c8b3-ba7a-4206-929e-cdf71847028c</guid>
       <pubDate>2024-07-06</pubDate>
+      <description>Read on the website: https://play.teod.eu/clojure-easy-parallellism-with-pipeline-blocking/</description>
     </item>
     <item>
       <title>Less stuff</title>
@@ -75,6 +84,7 @@
       <link>https://play.teod.eu/less-stuff/</link>
       <guid>012144d2-d253-49bd-bad6-c1bbd2084acc</guid>
       <pubDate>2024-07-06</pubDate>
+      <description>Read on the website: https://play.teod.eu/less-stuff/</description>
     </item>
     <item>
       <title>In theory, it makes sense; in practice, it works</title>
@@ -82,6 +92,7 @@
       <link>https://play.teod.eu/in-theory-it-makes-sense-in-practice-it-works/</link>
       <guid>c9bc1684-88b0-444b-9d45-2c9cef27d0c5</guid>
       <pubDate>2024-06-17</pubDate>
+      <description>Read on the website: https://play.teod.eu/in-theory-it-makes-sense-in-practice-it-works/</description>
     </item>
     <item>
       <title>I don't understand it, therefore it's bad</title>
@@ -89,6 +100,7 @@
       <link>https://play.teod.eu/i-dont-understand-it-therefore-its-bad/</link>
       <guid>1c0e1a22-1fa6-426f-a87c-bbc838f19c2e</guid>
       <pubDate>2024-06-15</pubDate>
+      <description>Read on the website: https://play.teod.eu/i-dont-understand-it-therefore-its-bad/</description>
     </item>
     <item>
       <title>Pain on Steel</title>
@@ -96,6 +108,7 @@
       <link>https://play.teod.eu/pain-on-steel/</link>
       <guid>ce22160b-013d-46e6-913b-a3d8c1ee6852</guid>
       <pubDate>2024-05-26</pubDate>
+      <description>Read on the website: https://play.teod.eu/pain-on-steel/</description>
     </item>
     <item>
       <title>Your Ethics</title>
@@ -103,6 +116,7 @@
       <link>https://play.teod.eu/your-ethics/</link>
       <guid>c030f65d-8a17-47b0-8cee-c46bf6daf936</guid>
       <pubDate>2024-05-26</pubDate>
+      <description>Read on the website: https://play.teod.eu/your-ethics/</description>
     </item>
     <item>
       <title>Easter 2024 reading recommendations from the European Clojure community: from WW1 history to implementing logic programming in Scheme</title>
@@ -110,6 +124,7 @@
       <link>https://play.teod.eu/clojure-europe-easter-2024-reading-recommendations/</link>
       <guid>9c2c315e-3609-4b5e-b412-6b7f7f5c87bf</guid>
       <pubDate>2024-03-25</pubDate>
+      <description>Read on the website: https://play.teod.eu/clojure-europe-easter-2024-reading-recommendations/</description>
     </item>
     <item>
       <title>On the balance between design and implementation when we build software</title>
@@ -117,6 +132,7 @@
       <link>https://play.teod.eu/software-design-implementation-balance/</link>
       <guid>9ecab926-e143-4311-ba80-221c80dc0635</guid>
       <pubDate>2024-03-23</pubDate>
+      <description>Read on the website: https://play.teod.eu/software-design-implementation-balance/</description>
     </item>
     <item>
       <title>PDF to images with pdftoppm</title>
@@ -124,6 +140,7 @@
       <link>https://play.teod.eu/pdf-to-images-with-pdftoppm/</link>
       <guid>e74abe0f-9dcb-42f3-9912-95c1362d3443</guid>
       <pubDate>2024-03-03</pubDate>
+      <description>Read on the website: https://play.teod.eu/pdf-to-images-with-pdftoppm/</description>
     </item>
     <item>
       <title>Trust vs Evil</title>
@@ -131,6 +148,7 @@
       <link>https://play.teod.eu/trust-vs-evil/</link>
       <guid>afce0ad0-0723-4b19-a7bf-1e9da412045f</guid>
       <pubDate>2023-09-02</pubDate>
+      <description>Read on the website: https://play.teod.eu/trust-vs-evil/</description>
     </item>
     <item>
       <title>Seven reasons you should write shit down</title>
@@ -138,6 +156,7 @@
       <link>https://play.teod.eu/write-shit-down-reasons/</link>
       <guid>52f0ba07-7748-400d-910e-2ec833c17800</guid>
       <pubDate>2023-06-29</pubDate>
+      <description>Read on the website: https://play.teod.eu/write-shit-down-reasons/</description>
     </item>
     <item>
       <title>Build Your Own Little Memex with Babashka</title>
@@ -145,6 +164,7 @@
       <link>https://play.teod.eu/build-your-own-little-memex-with-babasha/</link>
       <guid>26776cc4-e64d-494b-b24c-784b2c57866d</guid>
       <pubDate>2023-06-10</pubDate>
+      <description>Read on the website: https://play.teod.eu/build-your-own-little-memex-with-babasha/</description>
     </item>
     <item>
       <title>prompts for learning</title>
@@ -152,6 +172,7 @@
       <link>https://play.teod.eu/prompts-for-learning/</link>
       <guid>ada033c3-e631-49c9-8153-b9f1c69fd31d</guid>
       <pubDate>2023-05-01</pubDate>
+      <description>Read on the website: https://play.teod.eu/prompts-for-learning/</description>
     </item>
     <item>
       <title>Why Lisp? Because it forces the s-expression narrow waist down everyone's throats</title>
@@ -159,6 +180,7 @@
       <link>https://play.teod.eu/lisp-narrow-waist/</link>
       <guid>b632d12b-2fee-4e29-a7a6-56ae2e0ade55</guid>
       <pubDate>2023-03-04</pubDate>
+      <description>Read on the website: https://play.teod.eu/lisp-narrow-waist/</description>
     </item>
     <item>
       <title>Welcome, knowledge worker!</title>
@@ -166,6 +188,7 @@
       <link>https://play.teod.eu/welcome-knowledge-worker/</link>
       <guid>9c186247-2fe0-4c64-b2b8-5fc6dc110911</guid>
       <pubDate>2022-09-21</pubDate>
+      <description>Read on the website: https://play.teod.eu/welcome-knowledge-worker/</description>
     </item>
     <item>
       <title>a good intersection between work and play</title>
@@ -173,6 +196,7 @@
       <link>https://play.teod.eu/intersection-work-play/</link>
       <guid>842f9b9a-de98-4187-863e-3e6cf1b1814d</guid>
       <pubDate>2022-09-20</pubDate>
+      <description>Read on the website: https://play.teod.eu/intersection-work-play/</description>
     </item>
     <item>
       <title>Recursive document transformations with Pandoc and Clojure</title>
@@ -180,6 +204,7 @@
       <link>https://play.teod.eu/document-transform-pandoc-clojure/</link>
       <guid>2c53f531-afdd-4efb-becd-f5d2f220b5ab</guid>
       <pubDate>2022-07-15</pubDate>
+      <description>Read on the website: https://play.teod.eu/document-transform-pandoc-clojure/</description>
     </item>
     <item>
       <title>How to ask experts for help</title>
@@ -187,6 +212,7 @@
       <link>https://play.teod.eu/interaction-value-differential/</link>
       <guid>55261ada-7ca6-4c94-88f5-446a9b35e5c4</guid>
       <pubDate>2022-07-13</pubDate>
+      <description>Read on the website: https://play.teod.eu/interaction-value-differential/</description>
     </item>
     <item>
       <title>Aphorisms</title>
@@ -194,6 +220,7 @@
       <link>https://play.teod.eu/aphorisms/</link>
       <guid>93ea907e-9dcb-4c6b-af7d-d9bc22c34d57</guid>
       <pubDate/>
+      <description>Read on the website: https://play.teod.eu/aphorisms/</description>
     </item>
   </channel>
 </rss>

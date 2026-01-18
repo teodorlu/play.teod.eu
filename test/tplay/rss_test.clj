@@ -19,6 +19,7 @@
           [:link "https://play.teod.eu/effort-asymmetry/"]
           [:guid "ae2b3bcd-87d2-4594-bf70-213afa5ebf68"]
           [:pubDate "2026-01-10"]
+          [:description "Read on the website: https://play.teod.eu/effort-asymmetry/"]
           ])))
 
 ;;    <item>

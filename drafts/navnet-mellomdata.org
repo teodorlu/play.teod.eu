@@ -1,0 +1,11 @@
+mellomdata - intermediate representations
+
+eksempel på mellomdata
+(???)
+
+navning av mellomdata
+"justering"
+"filtre"
+
+stor kjerne, lite skall: mye kode jobber på mellomdata, lite kode effektuerer / koeffektuerer
+ingen/liten kjerne, stort skall: effektuering overalt!

@@ -1,6 +1,7 @@
+#+TITLE: in purrsuit
+#+begin_verse
 find your purrsuit.
   let play and intent be your perspective on life.
-
 science is great explanations.
 reduce clutter.
 reduce noise.
@@ -36,3 +37,4 @@ but experience is richer together.
   move in formation.
   or move in chaotic joy.
     then enjoy.
+#+end_verse

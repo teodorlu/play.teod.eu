@@ -16,8 +16,7 @@
   (assure "Draft exists" #'fs/exists? file)
   (let [title (-> file slurp find-org-title)
         slug (find-slug file)]
-    {:file file
-     :title title
+    {:title title
      :slug slug}))
 
 (defn default-meta []
@@ -37,16 +36,16 @@
   (fs/delete file))
 
 (comment
-  ;; Undraft one
-  (def file "drafts/progressively-enhancing-explanations.org")
-  (effectuate-undraft file (merge (default-meta)
-                                  (meta-from-draft file)))
+  ;; one
+  (let [file (fs/file "drafts/in-purrsuit.org")]
+    (effectuate-undraft file
+                        (merge (default-meta) (meta-from-draft file))))
 
-  ;; Undraft all
+  ;; all
   (def drafts (mapv str (fs/list-dir "drafts")))
   (doseq [draft drafts]
     (effectuate-undraft draft (merge (default-meta)
-                                     (meta-from-draft file))))
+                                     (meta-from-draft draft))))
 
   ;; Make HTML
   (do (p/shell "bb cli makefile")

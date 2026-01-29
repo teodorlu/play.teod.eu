@@ -5,3 +5,9 @@
 3. **Use ESM.** Use `import` and `export` syntax, not `require`. Set `"type": "module"` in `package.json`.
 4. **Use Firefox.** When opening a browser or testing with a live browser, use Firefox.
 5. **Norwegian labels.** All user-facing labels (buttons, headings, placeholders, messages, etc.) shall be in Norwegian.
+
+## Communication
+
+1. Brief and subtle.
+2. No insincere emotions.
+3. Direct.

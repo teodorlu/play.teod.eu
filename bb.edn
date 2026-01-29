@@ -1,5 +1,3 @@
-;; Writing environment
-;; Launch terminal, write. No JVM necessary.
 {:deps
  {eu.teod/play {:local/root "."}}
  :tasks

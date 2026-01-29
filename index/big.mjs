@@ -4052,6 +4052,17 @@ export const index =
   "page/uuid" : "bdf30a1a-33ee-4f76-a97a-9d8825fdfcb3",
   "page/slug" : "software-architecture"
 }, {
+  "slug" : "this-is-not-a-clojure-talk",
+  "page/uuid" : "be129dcf-a666-4e77-b236-bef8fa46a65a",
+  "created" : "2026-01-29",
+  "readiness" : "wtf-is-this",
+  "title" : "This is not a Clojure talk",
+  "lang" : "en",
+  "page/slug" : "this-is-not-a-clojure-talk",
+  "author-url" : "https://teod.eu",
+  "form" : "remote-reference",
+  "uuid" : "be129dcf-a666-4e77-b236-bef8fa46a65a"
+}, {
   "slug" : "macroexpand-2025-noj",
   "page/uuid" : "bf425a46-0084-48bd-9a4f-c9083170b51b",
   "created" : "2025-10-21",
@@ -4509,6 +4520,16 @@ export const index =
   "page/slug" : "terran-webdev",
   "author-url" : "https://teod.eu",
   "uuid" : "db969a2d-996c-4594-ab41-1446507f5f90"
+}, {
+  "slug" : "in-purrsuit",
+  "page/uuid" : "dbf93a23-bea0-4547-8c51-e1e7edc0ac12",
+  "created" : "2026-01-26",
+  "readiness" : "ready-for-comments",
+  "title" : "in purrsuit",
+  "lang" : "en",
+  "page/slug" : "in-purrsuit",
+  "author-url" : "https://teod.eu",
+  "uuid" : "dbf93a23-bea0-4547-8c51-e1e7edc0ac12"
 }, {
   "slug" : "bootstrapping-research-and-dynamicland-dec-2019",
   "page/uuid" : "dc085ab8-5e71-45f8-b5d6-71d178179cd7",

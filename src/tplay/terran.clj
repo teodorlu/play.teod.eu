@@ -13,6 +13,8 @@
 
 (comment
 
+  terra.assetwatch/!last-response
+
   (terra.instance/start! #'handler {:port 7777})
   (terra.instance/browse!)
 

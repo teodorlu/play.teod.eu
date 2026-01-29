@@ -13,3 +13,4 @@ Presentations:
   Touches on the interaction between "fuzzy" disciplines (art, design) and "rigid" disciplines (science, engineering), suggesting that they may be more connected than one might thing.
 - [[id:595b4aa8-b167-462c-b9b7-303143a66921][Stop Writing Dead Programs]]: Argues that interactivity should be built into the systems we create.
   That [[id:7b2fd2a1-c3c7-467c-bcf4-ad5760652e2b][interactive programming]] is an under-appreciated way of developing programs.
+- [[id:be129dcf-a666-4e77-b236-bef8fa46a65a][This is not a Clojure talk]] (2025): techniques, principles and values for working interactively with [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]].

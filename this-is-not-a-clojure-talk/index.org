@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID: be129dcf-a666-4e77-b236-bef8fa46a65a
+:END:
+#+TITLE: This is not a Clojure talk
+
+[[file:..][..]]
+
+#+begin_export html
+<iframe class="youtube-video" src="https://www.youtube.com/embed/i_dUvhEIGBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+[[id:4ba42678-1667-426d-a07f-dfe96ab46bd2][Jack Rusher]] demonstrates techniques, values and principles for working interactively with [[id:6f1d8319-90b8-4006-9508-ef912fcd939b][Clojure]].

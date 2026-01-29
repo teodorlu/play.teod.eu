@@ -1,0 +1,36 @@
+/* Deep green palette for knus-skrivesperren */
+
+:root {
+    /* Base greens - deep forest tones */
+    --color-green-900: #1a2e24;    /* Darkest - near black-green */
+    --color-green-800: #243d32;    /* Deep forest */
+    --color-green-700: #2e4d40;    /* Dark moss */
+    --color-green-600: #3d5c4a;    /* Muted sage */
+    --color-green-500: #4a6b57;    /* Mid forest */
+
+    /* Light greens - soft, muted tints */
+    --color-green-200: #c8d9cf;    /* Soft sage */
+    --color-green-100: #dce8e0;    /* Pale mint */
+    --color-green-50:  #eef4f0;    /* Near white-green */
+
+    /* Semantic mappings */
+    --bg-primary: var(--color-green-50);
+    --bg-secondary: var(--color-green-100);
+    --bg-success: var(--color-green-200);
+    --bg-input: linear-gradient(135deg, var(--color-green-50) 0%, var(--color-green-200) 100%);
+    --bg-input-success: linear-gradient(135deg, var(--color-green-200) 0%, var(--color-green-100) 100%);
+
+    --text-primary: var(--color-green-900);
+    --text-secondary: var(--color-green-700);
+    --text-muted: var(--color-green-600);
+    --text-on-dark: var(--color-green-50);
+
+    --btn-primary: var(--color-green-700);
+    --btn-primary-hover: var(--color-green-800);
+    --btn-secondary: var(--color-green-600);
+    --btn-secondary-hover: var(--color-green-700);
+    --btn-danger: #8b4d4d;         /* Muted red, not screaming */
+    --btn-danger-hover: #7a4040;
+
+    --border-default: var(--color-green-200);
+}

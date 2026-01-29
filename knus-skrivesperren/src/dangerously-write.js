@@ -1,3 +1,5 @@
+const STORAGE_KEY = 'knus-skrivesperren-arkiv';
+
 export class DangerouslyWrite extends HTMLElement {
     constructor() {
         super();
@@ -10,6 +12,29 @@ export class DangerouslyWrite extends HTMLElement {
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
         this.hasSucceeded = false;
+    }
+
+    getArchiveEntries() {
+        try {
+            const data = localStorage.getItem(STORAGE_KEY);
+            return data ? JSON.parse(data) : [];
+        } catch {
+            return [];
+        }
+    }
+
+    saveToArchive(text, durationMs) {
+        const entries = this.getArchiveEntries();
+        entries.push({
+            text,
+            timestamp: new Date().toISOString(),
+            durationMs
+        });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+    }
+
+    hasArchiveEntries() {
+        return this.getArchiveEntries().length > 0;
     }
 
     connectedCallback() {
@@ -31,6 +56,19 @@ export class DangerouslyWrite extends HTMLElement {
 
         // Get elapsed time display element
         this.elapsedDisplay = this.shadowRoot.querySelector('#elapsed-time');
+
+        // Archive buttons
+        this.startArchiveButton = this.shadowRoot.querySelector('#start-archive-button');
+        this.successArchiveButton = this.shadowRoot.querySelector('#success-archive-button');
+        this.backButton = this.shadowRoot.querySelector('#back-button');
+        this.archiveEntriesContainer = this.shadowRoot.querySelector('#archive-entries');
+
+        this.startArchiveButton.addEventListener('click', this.showArchive.bind(this));
+        this.successArchiveButton.addEventListener('click', this.showArchive.bind(this));
+        this.backButton.addEventListener('click', this.hideArchive.bind(this));
+
+        // Update archive button visibility on start screen
+        this.updateStartArchiveButtonVisibility();
     }
 
     startWriting() {
@@ -87,7 +125,7 @@ export class DangerouslyWrite extends HTMLElement {
     reset() {
         this.inputElement.value = '';
         this.inputElement.classList.remove('blurred');
-        this.containerElement.classList.remove('game-over', 'success', 'writing');
+        this.containerElement.classList.remove('game-over', 'success', 'writing', 'archive');
         this.containerElement.classList.add('start-screen');
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
@@ -95,6 +133,77 @@ export class DangerouslyWrite extends HTMLElement {
         this.stopElapsedTimer();
         this.sessionStartTime = null;
         this.elapsedDisplay.textContent = '00:00';
+        this.updateStartArchiveButtonVisibility();
+    }
+
+    updateStartArchiveButtonVisibility() {
+        if (this.hasArchiveEntries()) {
+            this.startArchiveButton.classList.remove('hidden');
+        } else {
+            this.startArchiveButton.classList.add('hidden');
+        }
+    }
+
+    showArchive() {
+        this.renderArchiveEntries();
+        this.containerElement.classList.remove('start-screen', 'writing', 'game-over', 'success');
+        this.containerElement.classList.add('archive');
+    }
+
+    hideArchive() {
+        this.containerElement.classList.remove('archive');
+        this.containerElement.classList.add('start-screen');
+        this.updateStartArchiveButtonVisibility();
+    }
+
+    formatDate(isoString) {
+        const date = new Date(isoString);
+        return date.toLocaleString('nb-NO', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    }
+
+    formatDuration(ms) {
+        const minutes = Math.floor(ms / 60000);
+        const seconds = Math.floor((ms % 60000) / 1000);
+        if (minutes > 0 && seconds > 0) {
+            return `${minutes} min ${seconds} sek`;
+        } else if (minutes > 0) {
+            return `${minutes} min`;
+        } else {
+            return `${seconds} sek`;
+        }
+    }
+
+    renderArchiveEntries() {
+        const entries = this.getArchiveEntries();
+
+        if (entries.length === 0) {
+            this.archiveEntriesContainer.innerHTML = '<p class="empty-archive">ingen lagrede tekster ennå</p>';
+            return;
+        }
+
+        // Show newest first
+        const reversedEntries = [...entries].reverse();
+
+        this.archiveEntriesContainer.innerHTML = reversedEntries.map(entry => `
+            <div class="archive-entry">
+                <div class="archive-entry-header">
+                    ${this.formatDate(entry.timestamp)} • ${this.formatDuration(entry.durationMs)}
+                </div>
+                <div class="archive-entry-text">${this.escapeHtml(entry.text)}</div>
+            </div>
+        `).join('');
+    }
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
 
     handleInput() {
@@ -123,6 +232,7 @@ export class DangerouslyWrite extends HTMLElement {
         // Check for success (30 seconds of writing)
         if (totalWritingTime >= this.successThreshold) {
             this.hasSucceeded = true;
+            this.saveToArchive(this.inputElement.value, this.successThreshold);
             this.inputElement.classList.remove('blurred');
             this.inputElement.style.transition = 'none';
             void this.inputElement.offsetWidth;
@@ -178,7 +288,7 @@ export class DangerouslyWrite extends HTMLElement {
                     min-height: 100px; /* Minimum useful height */
                     border: none;
                     outline: none;
-                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                    background: var(--bg-input);
                     padding: 1rem;
                     font-size: 1rem;
                     resize: none;
@@ -220,21 +330,22 @@ export class DangerouslyWrite extends HTMLElement {
                     display: block;
                 }
                 .container.success textarea {
-                    background: linear-gradient(135deg, #d4edda 0%, #a8e6cf 100%);
+                    background: var(--bg-input-success);
                     filter: blur(0);
                 }
                 h2 {
                     margin-bottom: 1rem;
-                    color: #333;
+                    color: var(--text-primary);
                 }
                 button {
                     padding: 0.5rem 1rem;
                     font-size: 1rem;
                     cursor: pointer;
-                    background: #ff4d4d;
-                    color: white;
+                    background: var(--btn-danger);
+                    color: var(--text-on-dark);
                     border: none;
                     border-radius: 4px;
+                    margin: 0.25rem;
                 }
                 .start-screen-content {
                     display: none;
@@ -260,33 +371,96 @@ export class DangerouslyWrite extends HTMLElement {
                     padding: 0.5rem;
                     font-size: 1.2rem;
                     text-align: center;
-                    border: 2px solid #ccc;
+                    border: 2px solid var(--border-default);
                     border-radius: 4px;
                     margin: 0 0.25rem;
                 }
                 #start-button {
-                    background: #4CAF50;
+                    background: var(--btn-primary);
                     padding: 0.75rem 2rem;
                     font-size: 1.2rem;
                     margin-top: 1rem;
                 }
                 #start-button:hover {
-                    background: #45a049;
+                    background: var(--btn-primary-hover);
                 }
                 .duration-label {
                     font-size: 1.1rem;
-                    color: #333;
+                    color: var(--text-primary);
                 }
                 .elapsed-time {
                     text-align: center;
                     font-size: 1.5rem;
                     font-family: monospace;
-                    color: #666;
+                    color: var(--text-muted);
                     padding: 0.5rem;
                     flex-shrink: 0;
                 }
                 .container.start-screen .elapsed-time {
                     display: none;
+                }
+                .archive-button {
+                    background: var(--btn-secondary);
+                    margin-top: 1rem;
+                }
+                .archive-button:hover {
+                    background: var(--btn-secondary-hover);
+                }
+                .archive-button.hidden {
+                    display: none;
+                }
+                .archive-content {
+                    display: none;
+                    padding: 1rem;
+                    overflow-y: auto;
+                    flex-grow: 1;
+                }
+                .container.archive .archive-content {
+                    display: block;
+                }
+                .container.archive textarea,
+                .container.archive .message,
+                .container.archive .success-message,
+                .container.archive .start-screen-content,
+                .container.archive .elapsed-time {
+                    display: none;
+                }
+                .archive-entry {
+                    background: var(--bg-input);
+                    border-radius: 8px;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .archive-entry-header {
+                    font-size: 0.85rem;
+                    color: var(--text-muted);
+                    margin-bottom: 0.5rem;
+                }
+                .archive-entry-text {
+                    white-space: pre-wrap;
+                    font-family: sans-serif;
+                    font-size: 0.95rem;
+                    color: var(--text-primary);
+                }
+                .archive-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                }
+                .archive-header h2 {
+                    margin: 0;
+                }
+                .back-button {
+                    background: var(--btn-secondary);
+                }
+                .back-button:hover {
+                    background: var(--btn-secondary-hover);
+                }
+                .empty-archive {
+                    text-align: center;
+                    color: var(--text-muted);
+                    padding: 2rem;
                 }
             </style>
             <div class="container start-screen">
@@ -298,6 +472,8 @@ export class DangerouslyWrite extends HTMLElement {
                         <input type="number" id="duration-seconds" value="0" min="0" max="59"> sek
                     </p>
                     <button id="start-button">start</button>
+                    <br>
+                    <button class="archive-button" id="start-archive-button">vis arkiv</button>
                 </div>
                 <textarea placeholder="skriv her..."></textarea>
                 <div class="elapsed-time" id="elapsed-time">00:00</div>
@@ -308,6 +484,14 @@ export class DangerouslyWrite extends HTMLElement {
                 <div class="success-message">
                     <h2>skrivesperre knust.</h2>
                     <button class="reset-button">start på nytt</button>
+                    <button class="archive-button" id="success-archive-button">vis arkiv</button>
+                </div>
+                <div class="archive-content">
+                    <div class="archive-header">
+                        <h2>arkiv</h2>
+                        <button class="back-button" id="back-button">tilbake</button>
+                    </div>
+                    <div id="archive-entries"></div>
                 </div>
             </div>
         `;

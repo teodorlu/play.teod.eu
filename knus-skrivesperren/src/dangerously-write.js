@@ -51,11 +51,10 @@ export class DangerouslyWrite extends HTMLElement {
         this.inputElement.value = '';
         this.inputElement.classList.remove('blurred');
 
-        // Start elapsed time tracking
-        this.sessionStartTime = Date.now();
-        this.updateElapsedDisplay();
+        // Reset elapsed time display (timer starts on first keystroke)
+        this.sessionStartTime = null;
+        this.elapsedDisplay.textContent = '00:00';
         clearInterval(this.elapsedInterval);
-        this.elapsedInterval = setInterval(() => this.updateElapsedDisplay(), 1000);
 
         // Show writing screen
         this.containerElement.classList.remove('start-screen', 'game-over', 'success');
@@ -109,6 +108,12 @@ export class DangerouslyWrite extends HTMLElement {
         // Track writing time
         if (this.writingStartTime === null) {
             this.writingStartTime = Date.now();
+            // Start elapsed timer on first keystroke
+            if (this.sessionStartTime === null) {
+                this.sessionStartTime = Date.now();
+                this.updateElapsedDisplay();
+                this.elapsedInterval = setInterval(() => this.updateElapsedDisplay(), 1000);
+            }
         }
 
         // Calculate total writing time
@@ -286,24 +291,23 @@ export class DangerouslyWrite extends HTMLElement {
             </style>
             <div class="container start-screen">
                 <div class="start-screen-content">
-                    <h2>Knus skrivesperren</h2>
+                    <h2>knus skrivesperren</h2>
                     <p class="duration-label">
-                        Skriv i 
+                        skriv i 
                         <input type="number" id="duration-minutes" value="5" min="0" max="60"> min
                         <input type="number" id="duration-seconds" value="0" min="0" max="59"> sek
                     </p>
-                    <button id="start-button">Start</button>
+                    <button id="start-button">start</button>
                 </div>
-                <textarea placeholder="Skriv her..."></textarea>
+                <textarea placeholder="skriv her..."></textarea>
                 <div class="elapsed-time" id="elapsed-time">00:00</div>
                 <div class="message">
-                    <h2>Teksten din er borte</h2>
-                    <button class="reset-button">Skriv på nytt</button>
+                    <h2>skrivesperren lever</h2>
+                    <button class="reset-button">skriv på nytt</button>
                 </div>
                 <div class="success-message">
-                    <h2>Skrivesperre knust.</h2>
-                    <p>Du har skrevet i måltiden. Teksten din er trygg.</p>
-                    <button class="reset-button">Start på nytt</button>
+                    <h2>skrivesperre knust.</h2>
+                    <button class="reset-button">start på nytt</button>
                 </div>
             </div>
         `;

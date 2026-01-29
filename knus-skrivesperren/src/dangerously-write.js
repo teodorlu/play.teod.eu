@@ -164,11 +164,13 @@ export class DangerouslyWrite extends HTMLElement {
                     width: 100%;
                     height: 100%;
                     position: relative;
+                    display: flex;
+                    flex-direction: column;
                 }
                 textarea {
                     width: 100%;
-                    height: 100%;
-                    min-height: 200px; /* Minimum useful height */
+                    flex-grow: 1;
+                    min-height: 100px; /* Minimum useful height */
                     border: none;
                     outline: none;
                     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -276,7 +278,7 @@ export class DangerouslyWrite extends HTMLElement {
                     font-family: monospace;
                     color: #666;
                     padding: 0.5rem;
-                    margin-top: 0.5rem;
+                    flex-shrink: 0;
                 }
                 .container.start-screen .elapsed-time {
                     display: none;

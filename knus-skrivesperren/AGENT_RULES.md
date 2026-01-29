@@ -6,6 +6,7 @@
 4. **Use Firefox.** When opening a browser or testing with a live browser, use Firefox.
 5. **Norwegian labels.** All user-facing labels (buttons, headings, placeholders, messages, etc.) shall be in Norwegian.
 6. **Tidy after edits.** Always tidy surrounding code after making edits.
+7. **Relative links only.** `knus-skrivesperren` is served in a subfolder, not at `/`. All resource links must be relative (never start with `/`).
 
 ## Communication
 

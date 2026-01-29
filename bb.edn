@@ -4,19 +4,20 @@
  {eu.teod/play {:local/root "."}}
  :tasks
  {:requires ([tplay.devenv :refer [tmux-multi]]
-             [tplay.cli])
-  ;; Writing tasks
-  ;; (launches processes)
-  clean (shell "./play.clj clean")
+             [tplay.cli :refer [main]])
+
+  clean (main "clean")
+  create-clerk-page (main "create-clerk-page")
+  create-page (main "create-page")
   dev (tmux-multi "tplay" ["bb watchmake" "bb preview"])
-  make (shell "make")
-  preview (shell "npx live-server")
-  watchmake (shell "bash" "-c" "while true; do rg --files | entr -drc make; done")
-
-  ;; Tests
+  filter (main "filter")
+  index (main "index")
   kaocha (clojure "-M:test -m kaocha.runner")
-
-  ;; Custom CLI
-  cli (apply tplay.cli/main *command-line-args*)
+  make (shell "make")
+  makefile (main "makefile")
+  live-server (shell "npx live-server")
+  random-page (main "random-page")
+  reindex (main "reindex")
+  relations (main "relations")
 
   }}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "start": "live-server --browser=firefox"
+    "start": "live-server --browser=firefox --mount=/knus-skrivesperren:. --open=/knus-skrivesperren/"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knus skrivesperren</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+            height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Knus skrivesperren</h1>
+
+    <dangerously-write timeout="5000"></dangerously-write>
+
+    <script type="module" src="./src/dangerously-write.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+{:lint-as {terra.hiccup-test/detest clojure.test/deftest}}

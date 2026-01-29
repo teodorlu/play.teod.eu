@@ -286,9 +286,10 @@ export class DangerouslyWrite extends HTMLElement {
                     width: 100%;
                     flex-grow: 1;
                     min-height: 100px; /* Minimum useful height */
-                    border: none;
+                    border: 2px solid var(--border-input);
                     outline: none;
-                    background: var(--bg-input);
+                    background: var(--bg-transparent);
+                    color: var(--text-input);
                     padding: 1rem;
                     font-size: 1rem;
                     resize: none;
@@ -392,7 +393,7 @@ export class DangerouslyWrite extends HTMLElement {
                     text-align: center;
                     font-size: 1.5rem;
                     font-family: monospace;
-                    color: var(--text-muted);
+                    color: var(--text-timer);
                     padding: 0.5rem;
                     flex-shrink: 0;
                 }
@@ -468,10 +469,10 @@ export class DangerouslyWrite extends HTMLElement {
                     <h2>knus skrivesperren</h2>
                     <p class="duration-label">
                         skriv i 
-                        <input type="number" id="duration-minutes" value="5" min="0" max="60"> min
-                        <input type="number" id="duration-seconds" value="0" min="0" max="59"> sek
+                        <input type="number" id="duration-minutes" value="5" min="0" max="60" autofocus tabindex="1"> min
+                        <input type="number" id="duration-seconds" value="0" min="0" max="59" tabindex="2"> sek
                     </p>
-                    <button id="start-button">start</button>
+                    <button id="start-button" tabindex="3">start</button>
                     <br>
                     <button class="archive-button" id="start-archive-button">vis arkiv</button>
                 </div>

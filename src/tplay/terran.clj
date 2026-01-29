@@ -3,7 +3,8 @@
   (:require [terra.assetwatch]
             [terra.instance]))
 
-(terra.assetwatch/watch! ".")
+(defonce watch-once
+  (terra.assetwatch/watch! "."))
 
 (defonce !last-req (atom nil))
 

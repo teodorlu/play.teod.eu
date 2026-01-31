@@ -403,6 +403,9 @@ export class DangerouslyWrite extends HTMLElement {
                 }
                 .failure-message {
                     display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.5rem;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -415,10 +418,13 @@ export class DangerouslyWrite extends HTMLElement {
                     display: none;
                 }
                 .container.game-over .failure-message {
-                    display: block;
+                    display: flex;
                 }
                 .success-message {
                     display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.5rem;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -427,7 +433,7 @@ export class DangerouslyWrite extends HTMLElement {
                     width: 100%;
                 }
                 .container.success .success-message {
-                    display: block;
+                    display: flex;
                 }
                 .container.success textarea {
                     background: transparent;

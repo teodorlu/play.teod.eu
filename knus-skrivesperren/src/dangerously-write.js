@@ -277,6 +277,8 @@ export class DangerouslyWrite extends HTMLElement {
                 }
                 .container {
                     width: 100%;
+                    max-width: 65ch;
+                    margin: 0 auto;
                     height: 100%;
                     position: relative;
                     display: flex;
@@ -285,19 +287,20 @@ export class DangerouslyWrite extends HTMLElement {
                 textarea {
                     width: 100%;
                     flex-grow: 1;
-                    min-height: 100px; /* Minimum useful height */
-                    border: 2px solid var(--border-input);
+                    min-height: 100px;
+                    border: none;
                     outline: none;
-                    background: var(--bg-transparent);
+                    background: transparent;
                     color: var(--text-input);
-                    padding: 1rem;
-                    font-size: 1rem;
+                    padding: 1rem 0;
+                    font-size: 1.1rem;
+                    line-height: 1.4;
                     resize: none;
                     box-sizing: border-box;
-                    border-radius: 8px;
+                    border-radius: 0;
                     transition: filter 5s ease-in;
                     filter: blur(0);
-                    font-family: sans-serif;
+                    font-family: Georgia, 'Times New Roman', serif;
                     display: block;
                 }
                 textarea.blurred {
@@ -331,7 +334,7 @@ export class DangerouslyWrite extends HTMLElement {
                     display: block;
                 }
                 .container.success textarea {
-                    background: var(--bg-input-success);
+                    background: transparent;
                     filter: blur(0);
                 }
                 h2 {
@@ -479,7 +482,7 @@ export class DangerouslyWrite extends HTMLElement {
                 <textarea placeholder="skriv her..."></textarea>
                 <div class="elapsed-time" id="elapsed-time">00:00</div>
                 <div class="message">
-                    <h2>skrivesperren lever</h2>
+                    <h2>skrivesperren vedvarer</h2>
                     <button class="reset-button">skriv på nytt</button>
                 </div>
                 <div class="success-message">

@@ -13,6 +13,11 @@
     --color-green-500: #4a6b57;
     /* Mid forest */
 
+    /* Bright blue accent */
+    --color-blue-500: #3b82f6;
+    --color-blue-600: #2563eb;
+    --color-blue-700: #1d4ed8;
+
     /* Light greens - soft, muted tints */
     --color-green-200: #c8d9cf;
     /* Soft sage */
@@ -35,8 +40,11 @@
 
     --btn-primary: var(--color-green-700);
     --btn-primary-hover: var(--color-green-800);
-    --btn-secondary: var(--color-green-600);
-    --btn-secondary-hover: var(--color-green-700);
+    --btn-secondary: var(--color-blue-500);
+    --btn-secondary-hover: var(--color-blue-600);
+    --btn-accent: var(--color-blue-500);
+    --btn-accent-hover: var(--color-blue-600);
+    --btn-accent-selected: var(--color-blue-700);
     --btn-danger: #8b4d4d;
     /* Muted red, not screaming */
     --btn-danger-hover: #7a4040;

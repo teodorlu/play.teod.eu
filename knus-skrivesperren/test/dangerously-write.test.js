@@ -26,6 +26,9 @@ test('DangerouslyWrite: clears text after timeout', (t, done) => {
     element.timeout = 10; // Override for speed
     document.body.appendChild(element); // Trigger connectedCallback
 
+    // Start writing view directly (hash navigation doesn't work in JSDOM)
+    element.startWritingView();
+
     // Wait for render
     const textarea = element.shadowRoot.querySelector('textarea');
     assert.ok(textarea, 'Textarea should be rendered');
@@ -41,9 +44,13 @@ test('DangerouslyWrite: clears text after timeout', (t, done) => {
         assert.ok(container.classList.contains('game-over'), 'Should be in game over state');
         // display: none check is flaky in JSDOM dependent on how styles are registered
 
-        // Reset
-        const button = element.shadowRoot.querySelector('button');
+        // Reset button click - need to use reset-button class
+        const button = element.shadowRoot.querySelector('.reset-button');
         button.click();
+
+        // After reset, navigation goes to start screen via hash change
+        // In JSDOM, we need to manually trigger the start screen state
+        element.returnToStart();
 
         assert.ok(!container.classList.contains('game-over'), 'Should leave game over state');
         assert.strictEqual(textarea.value, '', 'Text should be cleared after reset');
@@ -56,6 +63,9 @@ test('DangerouslyWrite: resets timer on new input', (t, done) => {
     const element = document.createElement('dangerously-write');
     element.timeout = 20;
     document.body.appendChild(element);
+
+    // Start writing view directly
+    element.startWritingView();
 
     const textarea = element.shadowRoot.querySelector('textarea');
 
@@ -84,6 +94,9 @@ test('DangerouslyWrite: unblurs text when user continues typing', (t, done) => {
     const element = document.createElement('dangerously-write');
     element.timeout = 50;
     document.body.appendChild(element);
+
+    // Start writing view directly
+    element.startWritingView();
 
     const textarea = element.shadowRoot.querySelector('textarea');
 
@@ -203,8 +216,8 @@ test('Storage: success saves text to archive', (t, done) => {
     element.timeout = 100; // Prevent game-over during test
     document.body.appendChild(element);
 
-    // Start writing session (this reads from inputs and may reset threshold)
-    element.startWriting();
+    // Start writing session directly (hash navigation doesn't work in JSDOM)
+    element.startWritingView();
     // Override threshold after start
     element.successThreshold = 10;
 

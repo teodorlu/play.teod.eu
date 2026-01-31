@@ -41,11 +41,30 @@ export class DangerouslyWrite extends HTMLElement {
         this.render();
         this.containerElement = this.shadowRoot.querySelector('.container');
         this.inputElement = this.shadowRoot.querySelector('textarea');
-        this.durationMinutesInput = this.shadowRoot.querySelector('#duration-minutes');
-        this.durationSecondsInput = this.shadowRoot.querySelector('#duration-seconds');
+        this.selectedDurationSeconds = 300; // Default: 5 minutes (300 seconds)
         this.startButton = this.shadowRoot.querySelector('#start-button');
+        this.durationDisplay = this.shadowRoot.querySelector('.duration-display');
+        this.durationOptions = this.shadowRoot.querySelector('.duration-options');
+        this.durationText = this.shadowRoot.querySelector('.duration-text');
+        this.editButton = this.shadowRoot.querySelector('.edit-button');
 
         this.inputElement.addEventListener('input', this.handleInput.bind(this));
+
+        // Edit button shows duration options
+        this.editButton.addEventListener('click', () => {
+            this.durationDisplay.classList.add('hidden');
+            this.durationOptions.classList.remove('hidden');
+        });
+
+        // Duration button event delegation
+        this.shadowRoot.querySelectorAll('.duration-button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const seconds = parseInt(e.target.dataset.seconds, 10);
+                const label = e.target.textContent;
+                this.selectDuration(seconds, label);
+            });
+        });
+
         this.startButton.addEventListener('click', this.startWriting.bind(this));
 
         // Attach reset handler to reset buttons
@@ -81,15 +100,8 @@ export class DangerouslyWrite extends HTMLElement {
     }
 
     startWritingView() {
-        // Get duration from inputs (minutes and seconds), convert to milliseconds
-        const durationMinutes = parseInt(this.durationMinutesInput.value, 10) || 0;
-        const durationSeconds = parseInt(this.durationSecondsInput.value, 10) || 0;
-        this.successThreshold = (durationMinutes * 60 + durationSeconds) * 1000;
-
-        // Ensure at least some time
-        if (this.successThreshold < 1000) {
-            this.successThreshold = 5 * 60 * 1000; // Default to 5 minutes
-        }
+        // Use selected duration (in seconds), convert to milliseconds
+        this.successThreshold = this.selectedDurationSeconds * 1000;
 
         // Reset state
         this.writingStartTime = null;
@@ -149,6 +161,14 @@ export class DangerouslyWrite extends HTMLElement {
         } else {
             this.startArchiveButton.classList.add('hidden');
         }
+    }
+
+    selectDuration(seconds, label) {
+        this.selectedDurationSeconds = seconds;
+        // Update display text and hide options
+        this.durationText.textContent = `Skriv i ${label}`;
+        this.durationOptions.classList.add('hidden');
+        this.durationDisplay.classList.remove('hidden');
     }
 
     handleHashChange() {
@@ -404,27 +424,75 @@ export class DangerouslyWrite extends HTMLElement {
                 .container.writing .start-screen-content {
                     display: none;
                 }
-                #duration-input {
-                    width: 60px;
-                    padding: 0.5rem;
-                    font-size: 1.2rem;
-                    text-align: center;
-                    border: 2px solid var(--border-default);
-                    border-radius: 4px;
-                    margin: 0 0.25rem;
+                .duration-button {
+                    background: transparent;
+                    border: 2px solid var(--btn-accent);
+                    color: var(--btn-accent);
+                    padding: 0.5rem 1rem;
+                    font-size: 1rem;
+                }
+                .duration-button:hover {
+                    background: var(--btn-accent);
+                    color: var(--text-on-dark);
+                }
+                .duration-button.selected {
+                    background: var(--btn-accent-selected);
+                    border-color: var(--btn-accent-selected);
+                    color: var(--text-on-dark);
                 }
                 #start-button {
                     background: var(--btn-primary);
-                    padding: 0.75rem 2rem;
-                    font-size: 1.2rem;
-                    margin-top: 1rem;
+                    padding: 1rem 3rem;
+                    font-size: 1.4rem;
+                    margin-top: 1.5rem;
                 }
                 #start-button:hover {
                     background: var(--btn-primary-hover);
                 }
-                .duration-label {
-                    font-size: 1.1rem;
+                .duration-display {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                .duration-display.hidden {
+                    display: none;
+                }
+                .duration-text {
                     color: var(--text-primary);
+                    font-size: 1.1rem;
+                }
+                .edit-button {
+                    background: transparent;
+                    border: none;
+                    padding: 0.25rem;
+                    cursor: pointer;
+                    color: var(--btn-accent);
+                    display: flex;
+                    align-items: center;
+                }
+                .edit-button:hover {
+                    color: var(--btn-accent-hover);
+                }
+                .edit-button img {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+                .duration-options {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                .duration-options.hidden {
+                    display: none;
+                }
+                .duration-label {
+                    color: var(--text-primary);
+                    font-size: 1rem;
+                    margin-right: 0.25rem;
                 }
                 .elapsed-time {
                     text-align: center;
@@ -504,12 +572,19 @@ export class DangerouslyWrite extends HTMLElement {
             <div class="container start-screen">
                 <div class="start-screen-content">
                     <h2>knus skrivesperren</h2>
-                    <p class="duration-label">
-                        skriv i 
-                        <input type="number" id="duration-minutes" value="5" min="0" max="60" autofocus tabindex="1"> min
-                        <input type="number" id="duration-seconds" value="0" min="0" max="59" tabindex="2"> sek
-                    </p>
-                    <button id="start-button" tabindex="3">start</button>
+                    <div class="duration-display">
+                        <span class="duration-text">Skriv i 5 min</span>
+                        <button class="edit-button" tabindex="1" aria-label="Endre varighet">
+                            <img src="./icons/pencil-simple.svg" alt="Rediger">
+                        </button>
+                    </div>
+                    <div class="duration-options hidden">
+                        <span class="duration-label">skriv i:</span>
+                        <button class="duration-button" data-seconds="5" tabindex="1">5 sek</button>
+                        <button class="duration-button" data-seconds="60" tabindex="2">1 min</button>
+                        <button class="duration-button" data-seconds="300" tabindex="3">5 min</button>
+                    </div>
+                    <button id="start-button" tabindex="4">start</button>
                     <br>
                     <button class="archive-button" id="start-archive-button">vis arkiv</button>
                 </div>

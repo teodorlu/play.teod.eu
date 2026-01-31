@@ -7,3 +7,4 @@
 5. **Norwegian labels.** All user-facing labels (buttons, headings, placeholders, messages, etc.) shall be in Norwegian.
 6. **Tidy after edits.** Always tidy surrounding code after making edits.
 7. **Relative links only.** `knus-skrivesperren` is served in a subfolder, not at `/`. All resource links must be relative (never start with `/`).
+8. **Quantity + unit formatting.** Always add a space between quantity and unit (e.g., `5 sek`, `10 min`). Use full unit names (`sek`, `min`), not single-letter abbreviations (`s`, `m`).

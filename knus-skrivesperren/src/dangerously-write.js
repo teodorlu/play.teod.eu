@@ -392,7 +392,7 @@ export class DangerouslyWrite extends HTMLElement {
                     filter: blur(0);
                 }
                 h2 {
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                     color: var(--text-primary);
                 }
                 button {
@@ -444,7 +444,7 @@ export class DangerouslyWrite extends HTMLElement {
                     background: var(--btn-primary);
                     padding: 1rem 3rem;
                     font-size: 1.4rem;
-                    margin-top: 1.5rem;
+                    margin-top: 0.5rem;
                 }
                 #start-button:hover {
                     background: var(--btn-primary-hover);
@@ -454,7 +454,7 @@ export class DangerouslyWrite extends HTMLElement {
                     align-items: center;
                     justify-content: center;
                     gap: 0.5rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
                 }
                 .duration-display.hidden {
                     display: none;

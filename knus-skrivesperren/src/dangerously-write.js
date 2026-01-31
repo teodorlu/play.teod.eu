@@ -387,21 +387,21 @@ export class DangerouslyWrite extends HTMLElement {
                 textarea.blurred {
                     filter: blur(10px);
                 }
-                .message {
+                .failure-message {
                     display: none;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 1.5rem;
-                    flex-grow: 1;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     text-align: center;
+                    width: 100%;
                 }
                 .container.game-over textarea,
                 .container.game-over .elapsed-time {
                     display: none;
                 }
-                .container.game-over .message {
-                    display: flex;
+                .container.game-over .failure-message {
+                    display: block;
                 }
                 .success-message {
                     display: none;
@@ -444,7 +444,7 @@ export class DangerouslyWrite extends HTMLElement {
                     display: flex;
                 }
                 .container.start-screen textarea,
-                .container.start-screen .message,
+                .container.start-screen .failure-message,
                 .container.start-screen .success-message {
                     display: none;
                 }
@@ -552,7 +552,7 @@ export class DangerouslyWrite extends HTMLElement {
                     display: flex;
                 }
                 .container.archive textarea,
-                .container.archive .message,
+                .container.archive .failure-message,
                 .container.archive .success-message,
                 .container.archive .start-screen-content,
                 .container.archive .elapsed-time {
@@ -621,7 +621,7 @@ export class DangerouslyWrite extends HTMLElement {
                 </div>
                 <textarea placeholder="skriv her..."></textarea>
                 <div class="elapsed-time" id="elapsed-time">00:00</div>
-                <div class="message">
+                <div class="failure-message">
                     <h2>skrivesperren vedvarer</h2>
                     <button class="reset-button">skriv på nytt</button>
                 </div>

@@ -275,3 +275,74 @@ test('Duration: uses default when no saved duration', () => {
     assert.strictEqual(element.selectedDurationSeconds, 300); // Default 5 minutes
     assert.strictEqual(element.durationText.textContent, 'Skriv i 5 min');
 });
+
+// --- Hash Navigation Tests ---
+
+test('Hash Navigation: showSuccessView sets correct state', () => {
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    element.showSuccessView();
+
+    const container = element.shadowRoot.querySelector('.container');
+    assert.ok(container.classList.contains('success'), 'Container should have success class');
+    assert.ok(!container.classList.contains('start-screen'), 'Should not have start-screen class');
+    assert.ok(!container.classList.contains('writing'), 'Should not have writing class');
+    assert.ok(!container.classList.contains('game-over'), 'Should not have game-over class');
+});
+
+test('Hash Navigation: showFailureView sets correct state', () => {
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    element.showFailureView();
+
+    const container = element.shadowRoot.querySelector('.container');
+    assert.ok(container.classList.contains('game-over'), 'Container should have game-over class');
+    assert.ok(!container.classList.contains('start-screen'), 'Should not have start-screen class');
+    assert.ok(!container.classList.contains('writing'), 'Should not have writing class');
+    assert.ok(!container.classList.contains('success'), 'Should not have success class');
+});
+
+test('Hash Navigation: showArchiveView sets correct state', () => {
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    element.showArchiveView();
+
+    const container = element.shadowRoot.querySelector('.container');
+    assert.ok(container.classList.contains('archive'), 'Container should have archive class');
+    assert.ok(!container.classList.contains('start-screen'), 'Should not have start-screen class');
+    assert.ok(!container.classList.contains('writing'), 'Should not have writing class');
+});
+
+test('Hash Navigation: returnToStart clears success/failure states', () => {
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    // First set success state
+    element.showSuccessView();
+    const container = element.shadowRoot.querySelector('.container');
+    assert.ok(container.classList.contains('success'), 'Should be in success state');
+
+    // Return to start
+    element.returnToStart();
+    assert.ok(container.classList.contains('start-screen'), 'Should be in start-screen state');
+    assert.ok(!container.classList.contains('success'), 'Should not have success class');
+    assert.ok(!container.classList.contains('game-over'), 'Should not have game-over class');
+});
+
+test('Hash Navigation: returnToStart clears failure state', () => {
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    // First set failure state
+    element.showFailureView();
+    const container = element.shadowRoot.querySelector('.container');
+    assert.ok(container.classList.contains('game-over'), 'Should be in game-over state');
+
+    // Return to start
+    element.returnToStart();
+    assert.ok(container.classList.contains('start-screen'), 'Should be in start-screen state');
+    assert.ok(!container.classList.contains('game-over'), 'Should not have game-over class');
+});

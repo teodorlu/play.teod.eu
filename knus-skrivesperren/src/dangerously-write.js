@@ -204,6 +204,10 @@ export class DangerouslyWrite extends HTMLElement {
             this.showArchiveView();
         } else if (hash === '#skriv') {
             this.startWritingView();
+        } else if (hash === '#knust') {
+            this.showSuccessView();
+        } else if (hash === '#vedvarer') {
+            this.showFailureView();
         } else {
             // No hash or unknown hash - return to start screen
             this.returnToStart();
@@ -230,6 +234,16 @@ export class DangerouslyWrite extends HTMLElement {
         this.renderArchiveEntries();
         this.containerElement.classList.remove('start-screen', 'writing', 'game-over', 'success');
         this.containerElement.classList.add('archive');
+    }
+
+    showSuccessView() {
+        this.containerElement.classList.remove('start-screen', 'writing', 'game-over', 'archive');
+        this.containerElement.classList.add('success');
+    }
+
+    showFailureView() {
+        this.containerElement.classList.remove('start-screen', 'writing', 'success', 'archive');
+        this.containerElement.classList.add('game-over');
     }
 
     hideArchive() {
@@ -317,8 +331,8 @@ export class DangerouslyWrite extends HTMLElement {
             this.inputElement.classList.remove('blurred');
             this.inputElement.style.transition = 'none';
             void this.inputElement.offsetWidth;
-            this.containerElement.classList.add('success');
             this.stopElapsedTimer();
+            window.location.hash = 'knust';
             return;
         }
 
@@ -341,8 +355,8 @@ export class DangerouslyWrite extends HTMLElement {
                     this.accumulatedWritingTime += Date.now() - this.writingStartTime;
                     this.writingStartTime = null;
                 }
-                this.containerElement.classList.add('game-over');
                 this.stopElapsedTimer();
+                window.location.hash = 'vedvarer';
             }, this.timeout);
         }
     }

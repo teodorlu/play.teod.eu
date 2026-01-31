@@ -41,7 +41,6 @@ export class DangerouslyWrite extends HTMLElement {
         this.render();
         this.containerElement = this.shadowRoot.querySelector('.container');
         this.inputElement = this.shadowRoot.querySelector('textarea');
-        this.messageElement = this.shadowRoot.querySelector('.message');
         this.durationMinutesInput = this.shadowRoot.querySelector('#duration-minutes');
         this.durationSecondsInput = this.shadowRoot.querySelector('#duration-seconds');
         this.startButton = this.shadowRoot.querySelector('#start-button');
@@ -127,24 +126,21 @@ export class DangerouslyWrite extends HTMLElement {
         if (this.inputElement) {
             this.inputElement.removeEventListener('input', this.handleInput.bind(this));
         }
-        if (this.buttonElement) {
-            this.buttonElement.removeEventListener('click', this.reset.bind(this));
-        }
         window.removeEventListener('hashchange', this.handleHashChange);
     }
 
     reset() {
+        // Clear value and state
         this.inputElement.value = '';
         this.inputElement.classList.remove('blurred');
-        this.containerElement.classList.remove('game-over', 'success', 'writing', 'archive');
-        this.containerElement.classList.add('start-screen');
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
         this.hasSucceeded = false;
-        this.stopElapsedTimer();
         this.sessionStartTime = null;
         this.elapsedDisplay.textContent = '00:00';
-        this.updateStartArchiveButtonVisibility();
+
+        // Navigate back to start (this will clear timers via returnToStart)
+        window.location.hash = '';
     }
 
     updateStartArchiveButtonVisibility() {
@@ -190,15 +186,8 @@ export class DangerouslyWrite extends HTMLElement {
     }
 
     hideArchive() {
-        // Clear hash, which triggers hashchange -> hideArchiveView
-        history.pushState(null, '', window.location.pathname);
-        this.hideArchiveView();
-    }
-
-    hideArchiveView() {
-        this.containerElement.classList.remove('archive');
-        this.containerElement.classList.add('start-screen');
-        this.updateStartArchiveButtonVisibility();
+        // Clear hash, which triggers hashchange -> returnToStart
+        window.location.hash = '';
     }
 
     formatDate(isoString) {
@@ -281,7 +270,7 @@ export class DangerouslyWrite extends HTMLElement {
             this.inputElement.classList.remove('blurred');
             this.inputElement.style.transition = 'none';
             void this.inputElement.offsetWidth;
-            this.shadowRoot.querySelector('.container').classList.add('success');
+            this.containerElement.classList.add('success');
             this.stopElapsedTimer();
             return;
         }
@@ -305,7 +294,7 @@ export class DangerouslyWrite extends HTMLElement {
                     this.accumulatedWritingTime += Date.now() - this.writingStartTime;
                     this.writingStartTime = null;
                 }
-                this.shadowRoot.querySelector('.container').classList.add('game-over');
+                this.containerElement.classList.add('game-over');
                 this.stopElapsedTimer();
             }, this.timeout);
         }

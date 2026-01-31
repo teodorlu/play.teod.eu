@@ -389,18 +389,19 @@ export class DangerouslyWrite extends HTMLElement {
                 }
                 .message {
                     display: none;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    flex-grow: 1;
                     text-align: center;
-                    width: 100%;
                 }
-                .container.game-over textarea {
+                .container.game-over textarea,
+                .container.game-over .elapsed-time {
                     display: none;
                 }
                 .container.game-over .message {
-                    display: block;
+                    display: flex;
                 }
                 .success-message {
                     display: none;
@@ -419,7 +420,7 @@ export class DangerouslyWrite extends HTMLElement {
                     filter: blur(0);
                 }
                 h2 {
-                    margin-bottom: 1.5rem;
+                    margin: 0;
                     color: var(--text-primary);
                 }
                 button {
@@ -430,15 +431,17 @@ export class DangerouslyWrite extends HTMLElement {
                     color: var(--text-on-dark);
                     border: none;
                     border-radius: 4px;
-                    margin: 0.25rem;
                 }
                 .start-screen-content {
                     display: none;
-                    text-align: center;
-                    padding: 2rem;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    flex-grow: 1;
                 }
                 .container.start-screen .start-screen-content {
-                    display: block;
+                    display: flex;
                 }
                 .container.start-screen textarea,
                 .container.start-screen .message,
@@ -471,7 +474,6 @@ export class DangerouslyWrite extends HTMLElement {
                     background: var(--btn-primary);
                     padding: 1rem 3rem;
                     font-size: 1.4rem;
-                    margin-top: 0.5rem;
                 }
                 #start-button:hover {
                     background: var(--btn-primary-hover);
@@ -481,7 +483,6 @@ export class DangerouslyWrite extends HTMLElement {
                     align-items: center;
                     justify-content: center;
                     gap: 0.5rem;
-                    margin-bottom: 0.5rem;
                 }
                 .duration-display.hidden {
                     display: none;
@@ -511,7 +512,6 @@ export class DangerouslyWrite extends HTMLElement {
                     align-items: center;
                     justify-content: center;
                     gap: 0.5rem;
-                    margin-bottom: 1rem;
                 }
                 .duration-options.hidden {
                     display: none;
@@ -519,7 +519,6 @@ export class DangerouslyWrite extends HTMLElement {
                 .duration-label {
                     color: var(--text-primary);
                     font-size: 1rem;
-                    margin-right: 0.25rem;
                 }
                 .elapsed-time {
                     text-align: center;
@@ -534,7 +533,6 @@ export class DangerouslyWrite extends HTMLElement {
                 }
                 .archive-button {
                     background: var(--btn-secondary);
-                    margin-top: 1rem;
                 }
                 .archive-button:hover {
                     background: var(--btn-secondary-hover);
@@ -544,12 +542,14 @@ export class DangerouslyWrite extends HTMLElement {
                 }
                 .archive-content {
                     display: none;
-                    padding: 1rem;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    padding: 1rem 0;
                     overflow-y: auto;
                     flex-grow: 1;
                 }
                 .container.archive .archive-content {
-                    display: block;
+                    display: flex;
                 }
                 .container.archive textarea,
                 .container.archive .message,
@@ -558,16 +558,22 @@ export class DangerouslyWrite extends HTMLElement {
                 .container.archive .elapsed-time {
                     display: none;
                 }
+                .archive-entries {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6rem;
+                }
                 .archive-entry {
                     background: var(--bg-input);
                     border-radius: 8px;
                     padding: 1rem;
-                    margin-bottom: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem;
                 }
                 .archive-entry-header {
                     font-size: 0.85rem;
                     color: var(--text-muted);
-                    margin-bottom: 0.5rem;
                 }
                 .archive-entry-text {
                     white-space: pre-wrap;
@@ -579,7 +585,6 @@ export class DangerouslyWrite extends HTMLElement {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 1rem;
                 }
                 .archive-header h2 {
                     margin: 0;
@@ -612,7 +617,6 @@ export class DangerouslyWrite extends HTMLElement {
                         <button class="duration-button" data-seconds="300" tabindex="3">5 min</button>
                     </div>
                     <button id="start-button" tabindex="4">start</button>
-                    <br>
                     <button class="archive-button" id="start-archive-button">vis arkiv</button>
                 </div>
                 <textarea placeholder="skriv her..."></textarea>
@@ -631,7 +635,7 @@ export class DangerouslyWrite extends HTMLElement {
                         <h2>arkiv</h2>
                         <button class="back-button" id="back-button">tilbake</button>
                     </div>
-                    <div id="archive-entries"></div>
+                    <div id="archive-entries" class="archive-entries"></div>
                 </div>
             </div>
         `;

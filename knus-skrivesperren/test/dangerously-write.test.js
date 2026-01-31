@@ -242,3 +242,36 @@ test('Storage: success saves text to archive', (t, done) => {
         done();
     }, 15);
 });
+
+test('Duration: saves selected duration to localStorage', () => {
+    localStorage.clear();
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    // Select 1 minute duration
+    element.selectDuration(60, '1 min');
+
+    const saved = JSON.parse(localStorage.getItem('knus-skrivesperren-duration'));
+    assert.strictEqual(saved.seconds, 60);
+    assert.strictEqual(saved.label, '1 min');
+});
+
+test('Duration: loads saved duration on init', () => {
+    localStorage.clear();
+    localStorage.setItem('knus-skrivesperren-duration', JSON.stringify({ seconds: 5, label: '5 sek' }));
+
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    assert.strictEqual(element.selectedDurationSeconds, 5);
+    assert.strictEqual(element.durationText.textContent, 'Skriv i 5 sek');
+});
+
+test('Duration: uses default when no saved duration', () => {
+    localStorage.clear();
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    assert.strictEqual(element.selectedDurationSeconds, 300); // Default 5 minutes
+    assert.strictEqual(element.durationText.textContent, 'Skriv i 5 min');
+});

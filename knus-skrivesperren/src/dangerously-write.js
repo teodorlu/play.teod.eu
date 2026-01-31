@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'knus-skrivesperren-arkiv';
+const DURATION_STORAGE_KEY = 'knus-skrivesperren-duration';
 
 export class DangerouslyWrite extends HTMLElement {
     constructor() {
@@ -47,6 +48,9 @@ export class DangerouslyWrite extends HTMLElement {
         this.durationOptions = this.shadowRoot.querySelector('.duration-options');
         this.durationText = this.shadowRoot.querySelector('.duration-text');
         this.editButton = this.shadowRoot.querySelector('.edit-button');
+
+        // Load saved duration from localStorage
+        this.loadSavedDuration();
 
         this.inputElement.addEventListener('input', this.handleInput.bind(this));
 
@@ -163,8 +167,31 @@ export class DangerouslyWrite extends HTMLElement {
         }
     }
 
+    loadSavedDuration() {
+        try {
+            const saved = localStorage.getItem(DURATION_STORAGE_KEY);
+            if (saved) {
+                const { seconds, label } = JSON.parse(saved);
+                this.selectedDurationSeconds = seconds;
+                this.durationText.textContent = `Skriv i ${label}`;
+            }
+        } catch {
+            // Use default if loading fails
+        }
+    }
+
+    saveDuration(seconds, label) {
+        try {
+            localStorage.setItem(DURATION_STORAGE_KEY, JSON.stringify({ seconds, label }));
+        } catch {
+            // Ignore storage errors
+        }
+    }
+
     selectDuration(seconds, label) {
         this.selectedDurationSeconds = seconds;
+        // Persist selection
+        this.saveDuration(seconds, label);
         // Update display text and hide options
         this.durationText.textContent = `Skriv i ${label}`;
         this.durationOptions.classList.add('hidden');

@@ -9,3 +9,4 @@
 7. **Relative links only.** `knus-skrivesperren` is served in a subfolder, not at `/`. All resource links must be relative (never start with `/`).
 8. **Quantity + unit formatting.** Always add a space between quantity and unit (e.g., `5 sek`, `10 min`). Use full unit names (`sek`, `min`), not single-letter abbreviations (`s`, `m`).
 9. **Commit message format.** Prefix commit messages with `knus skrivesperren: ` (not `feat:`, `fix:`, etc.). This folder is part of a larger repo, so commit messages should reflect that context.
+10. **No automatic commits.** Only commit when the user explicitly asks. Do not bundle commits with other commands.

@@ -69,9 +69,19 @@ export class DangerouslyWrite extends HTMLElement {
 
         // Update archive button visibility on start screen
         this.updateStartArchiveButtonVisibility();
+
+        // Hash-based navigation for browser back/forward
+        this.handleHashChange = this.handleHashChange.bind(this);
+        window.addEventListener('hashchange', this.handleHashChange);
+        this.handleHashChange(); // Initialize from current hash
     }
 
     startWriting() {
+        // Update hash for browser navigation
+        window.location.hash = 'skriv';
+    }
+
+    startWritingView() {
         // Get duration from inputs (minutes and seconds), convert to milliseconds
         const durationMinutes = parseInt(this.durationMinutesInput.value, 10) || 0;
         const durationSeconds = parseInt(this.durationSecondsInput.value, 10) || 0;
@@ -120,6 +130,7 @@ export class DangerouslyWrite extends HTMLElement {
         if (this.buttonElement) {
             this.buttonElement.removeEventListener('click', this.reset.bind(this));
         }
+        window.removeEventListener('hashchange', this.handleHashChange);
     }
 
     reset() {
@@ -144,13 +155,47 @@ export class DangerouslyWrite extends HTMLElement {
         }
     }
 
+    handleHashChange() {
+        const hash = window.location.hash;
+        if (hash === '#arkiv') {
+            this.showArchiveView();
+        } else if (hash === '#skriv') {
+            this.startWritingView();
+        } else {
+            // No hash or unknown hash - return to start screen
+            this.returnToStart();
+        }
+    }
+
+    returnToStart() {
+        // Stop any active timers
+        clearTimeout(this.timer);
+        this.stopElapsedTimer();
+
+        // Reset to start screen
+        this.containerElement.classList.remove('archive', 'writing', 'game-over', 'success');
+        this.containerElement.classList.add('start-screen');
+        this.updateStartArchiveButtonVisibility();
+    }
+
     showArchive() {
+        // Update hash, which triggers hashchange -> showArchiveView
+        window.location.hash = 'arkiv';
+    }
+
+    showArchiveView() {
         this.renderArchiveEntries();
         this.containerElement.classList.remove('start-screen', 'writing', 'game-over', 'success');
         this.containerElement.classList.add('archive');
     }
 
     hideArchive() {
+        // Clear hash, which triggers hashchange -> hideArchiveView
+        history.pushState(null, '', window.location.pathname);
+        this.hideArchiveView();
+    }
+
+    hideArchiveView() {
         this.containerElement.classList.remove('archive');
         this.containerElement.classList.add('start-screen');
         this.updateStartArchiveButtonVisibility();

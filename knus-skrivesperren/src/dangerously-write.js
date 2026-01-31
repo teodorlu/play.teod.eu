@@ -460,7 +460,8 @@ export class DangerouslyWrite extends HTMLElement {
                     display: none;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-start;
+                    padding-top: 4rem;
                     gap: 1.5rem;
                     flex-grow: 1;
                 }

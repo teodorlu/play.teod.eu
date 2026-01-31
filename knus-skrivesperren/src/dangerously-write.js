@@ -7,7 +7,7 @@ export class DangerouslyWrite extends HTMLElement {
         this.timer = null;
         this.elapsedInterval = null;
         this.sessionStartTime = null;
-        this.timeout = 5000;
+        this.timeout = 6000; // 1s grace period + 5s blur
         this.successThreshold = 30000; // 30 seconds to win
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
@@ -298,7 +298,7 @@ export class DangerouslyWrite extends HTMLElement {
                     resize: none;
                     box-sizing: border-box;
                     border-radius: 0;
-                    transition: filter 5s ease-in;
+                    transition: filter 5s ease-in 1s;
                     filter: blur(0);
                     font-family: Georgia, 'Times New Roman', serif;
                     display: block;

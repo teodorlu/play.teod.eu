@@ -447,10 +447,14 @@ export class DangerouslyWrite extends HTMLElement {
                     padding: 0.5rem 1rem;
                     font-size: 1rem;
                     cursor: pointer;
-                    background: var(--btn-danger);
+                    background: var(--btn-primary);
                     color: var(--text-on-dark);
-                    border: none;
+                    border: 2px solid var(--btn-primary);
                     border-radius: 4px;
+                }
+                button:hover {
+                    background: var(--btn-primary-hover);
+                    border-color: var(--btn-primary-hover);
                 }
                 .start-screen-content {
                     display: none;
@@ -552,10 +556,13 @@ export class DangerouslyWrite extends HTMLElement {
                     display: none;
                 }
                 .archive-button {
-                    background: var(--btn-secondary);
+                    background: transparent;
+                    border: 2px solid var(--btn-secondary);
+                    color: var(--btn-secondary);
                 }
                 .archive-button:hover {
-                    background: var(--btn-secondary-hover);
+                    background: var(--btn-secondary);
+                    color: var(--text-on-dark);
                 }
                 .archive-button.hidden {
                     display: none;
@@ -610,10 +617,13 @@ export class DangerouslyWrite extends HTMLElement {
                     margin: 0;
                 }
                 .back-button {
-                    background: var(--btn-secondary);
+                    background: transparent;
+                    border: 2px solid var(--btn-secondary);
+                    color: var(--btn-secondary);
                 }
                 .back-button:hover {
-                    background: var(--btn-secondary-hover);
+                    background: var(--btn-secondary);
+                    color: var(--text-on-dark);
                 }
                 .empty-archive {
                     text-align: center;

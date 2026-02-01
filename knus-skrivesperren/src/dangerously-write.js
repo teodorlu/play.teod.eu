@@ -298,9 +298,8 @@ export class DangerouslyWrite extends HTMLElement {
             <div class="archive-entry">
                 <div class="archive-entry-header">
                     <span>${this.formatDate(entry.timestamp)} • ${this.formatDuration(entry.durationMs)}</span>
-                    <button class="copy-button archive-copy-button" data-index="${reversedEntries.length - 1 - index}">
+                    <button class="copy-button archive-copy-button" data-index="${reversedEntries.length - 1 - index}" aria-label="Kopier">
                         <img src="./icons/copy.svg" alt="">
-                        kopier
                     </button>
                 </div>
                 <div class="archive-entry-text">${this.escapeHtml(entry.text)}</div>

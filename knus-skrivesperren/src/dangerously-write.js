@@ -89,6 +89,10 @@ export class DangerouslyWrite extends HTMLElement {
         this.successArchiveButton.addEventListener('click', this.showArchive.bind(this));
         this.backButton.addEventListener('click', this.hideArchive.bind(this));
 
+        // Copy button
+        this.copyButton = this.shadowRoot.querySelector('#copy-button');
+        this.copyButton.addEventListener('click', this.copyText.bind(this));
+
         // Update archive button visibility on start screen
         this.updateStartArchiveButtonVisibility();
 
@@ -260,6 +264,11 @@ export class DangerouslyWrite extends HTMLElement {
             hour: '2-digit',
             minute: '2-digit'
         });
+    }
+
+    copyText() {
+        const text = this.inputElement.value;
+        navigator.clipboard.writeText(text);
     }
 
     formatDuration(ms) {
@@ -438,6 +447,26 @@ export class DangerouslyWrite extends HTMLElement {
                 .container.success textarea {
                     background: transparent;
                     filter: blur(0);
+                }
+                .success-actions {
+                    display: flex;
+                    gap: 1rem;
+                }
+                .copy-button {
+                    background: transparent;
+                    border: 2px solid var(--btn-secondary);
+                    color: var(--btn-secondary);
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                .copy-button:hover {
+                    background: var(--btn-secondary);
+                    color: var(--text-on-dark);
+                }
+                .copy-button img {
+                    width: 1rem;
+                    height: 1rem;
                 }
                 h2 {
                     margin: 0;
@@ -659,7 +688,13 @@ export class DangerouslyWrite extends HTMLElement {
                 <div class="success-message">
                     <h2>skrivesperre knust.</h2>
                     <button class="reset-button">start på nytt</button>
-                    <button class="archive-button" id="success-archive-button">vis arkiv</button>
+                    <div class="success-actions">
+                        <button class="copy-button" id="copy-button">
+                            <img src="./icons/copy.svg" alt="">
+                            kopier
+                        </button>
+                        <button class="archive-button" id="success-archive-button">vis arkiv</button>
+                    </div>
                 </div>
                 <div class="archive-content">
                     <div class="archive-header">

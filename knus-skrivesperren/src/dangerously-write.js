@@ -294,14 +294,27 @@ export class DangerouslyWrite extends HTMLElement {
         // Show newest first
         const reversedEntries = [...entries].reverse();
 
-        this.archiveEntriesContainer.innerHTML = reversedEntries.map(entry => `
+        this.archiveEntriesContainer.innerHTML = reversedEntries.map((entry, index) => `
             <div class="archive-entry">
                 <div class="archive-entry-header">
-                    ${this.formatDate(entry.timestamp)} • ${this.formatDuration(entry.durationMs)}
+                    <span>${this.formatDate(entry.timestamp)} • ${this.formatDuration(entry.durationMs)}</span>
+                    <button class="copy-button archive-copy-button" data-index="${reversedEntries.length - 1 - index}">
+                        <img src="./icons/copy.svg" alt="">
+                        kopier
+                    </button>
                 </div>
                 <div class="archive-entry-text">${this.escapeHtml(entry.text)}</div>
             </div>
         `).join('');
+
+        // Add event listeners for copy buttons
+        this.archiveEntriesContainer.querySelectorAll('.archive-copy-button').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const index = parseInt(e.currentTarget.dataset.index);
+                const text = entries[index].text;
+                navigator.clipboard.writeText(text);
+            });
+        });
     }
 
     escapeHtml(text) {
@@ -629,6 +642,9 @@ export class DangerouslyWrite extends HTMLElement {
                     gap: 0.4rem;
                 }
                 .archive-entry-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     font-size: 0.85rem;
                     color: var(--text-muted);
                 }

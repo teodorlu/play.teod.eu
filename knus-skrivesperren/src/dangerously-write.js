@@ -1,4 +1,6 @@
 import './knus-duration-picker.js';
+import './knus-archive-entry.js';
+import './knus-timer.js';
 
 const STORAGE_KEY = 'knus-skrivesperren-arkiv';
 
@@ -7,8 +9,6 @@ export class DangerouslyWrite extends HTMLElement {
         super();
         this.attachShadow({ mode: 'open' });
         this.timer = null;
-        this.elapsedInterval = null;
-        this.sessionStartTime = null;
         this.timeout = 6000; // 1s grace period + 5s blur
         this.successThreshold = 30000; // 30 seconds to win
         this.writingStartTime = null;
@@ -65,8 +65,8 @@ export class DangerouslyWrite extends HTMLElement {
             btn.addEventListener('click', this.reset.bind(this));
         });
 
-        // Get elapsed time display element
-        this.elapsedDisplay = this.shadowRoot.querySelector('#elapsed-time');
+        // Get timer component
+        this.elapsedTimer = this.shadowRoot.querySelector('#elapsed-timer');
 
         // Archive buttons
         this.startArchiveButton = this.shadowRoot.querySelector('#start-archive-button');
@@ -107,10 +107,8 @@ export class DangerouslyWrite extends HTMLElement {
         this.inputElement.value = '';
         this.inputElement.classList.remove('blurred');
 
-        // Reset elapsed time display (timer starts on first keystroke)
-        this.sessionStartTime = null;
-        this.elapsedDisplay.textContent = '00:00';
-        clearInterval(this.elapsedInterval);
+        // Reset timer (starts on first keystroke)
+        this.elapsedTimer.reset();
 
         // Show writing screen
         this.containerElement.classList.remove('start-screen', 'game-over', 'success');
@@ -118,18 +116,7 @@ export class DangerouslyWrite extends HTMLElement {
         this.inputElement.focus();
     }
 
-    updateElapsedDisplay() {
-        if (!this.sessionStartTime) return;
-        const elapsed = Date.now() - this.sessionStartTime;
-        const minutes = Math.floor(elapsed / 60000);
-        const seconds = Math.floor((elapsed % 60000) / 1000);
-        this.elapsedDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-    }
 
-    stopElapsedTimer() {
-        clearInterval(this.elapsedInterval);
-        this.elapsedInterval = null;
-    }
 
     disconnectedCallback() {
         if (this.inputElement) {
@@ -145,8 +132,7 @@ export class DangerouslyWrite extends HTMLElement {
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
         this.hasSucceeded = false;
-        this.sessionStartTime = null;
-        this.elapsedDisplay.textContent = '00:00';
+        this.elapsedTimer.reset();
 
         // Navigate back to start (this will clear timers via returnToStart)
         window.location.hash = '';
@@ -179,7 +165,7 @@ export class DangerouslyWrite extends HTMLElement {
     returnToStart() {
         // Stop any active timers
         clearTimeout(this.timer);
-        this.stopElapsedTimer();
+        this.elapsedTimer.stop();
 
         // Reset to start screen
         this.containerElement.classList.remove('archive', 'writing', 'game-over', 'success');
@@ -213,32 +199,9 @@ export class DangerouslyWrite extends HTMLElement {
         window.location.hash = '';
     }
 
-    formatDate(isoString) {
-        const date = new Date(isoString);
-        return date.toLocaleString('nb-NO', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-    }
-
     copyText() {
         const text = this.inputElement.value;
         navigator.clipboard.writeText(text);
-    }
-
-    formatDuration(ms) {
-        const minutes = Math.floor(ms / 60000);
-        const seconds = Math.floor((ms % 60000) / 1000);
-        if (minutes > 0 && seconds > 0) {
-            return `${minutes} min ${seconds} sek`;
-        } else if (minutes > 0) {
-            return `${minutes} min`;
-        } else {
-            return `${seconds} sek`;
-        }
     }
 
     renderArchiveEntries() {
@@ -252,26 +215,13 @@ export class DangerouslyWrite extends HTMLElement {
         // Show newest first
         const reversedEntries = [...entries].reverse();
 
-        this.archiveEntriesContainer.innerHTML = reversedEntries.map((entry, index) => `
-            <div class="archive-entry">
-                <div class="archive-entry-header">
-                    <span>${this.formatDate(entry.timestamp)} • ${this.formatDuration(entry.durationMs)}</span>
-                    <button class="copy-button archive-copy-button" data-index="${reversedEntries.length - 1 - index}" aria-label="Kopier">
-                        <img src="./icons/copy.svg" alt="">
-                    </button>
-                </div>
-                <div class="archive-entry-text">${this.escapeHtml(entry.text)}</div>
-            </div>
+        this.archiveEntriesContainer.innerHTML = reversedEntries.map(entry => `
+            <knus-archive-entry
+                timestamp="${entry.timestamp}"
+                duration-ms="${entry.durationMs}"
+                text="${this.escapeHtml(entry.text).replace(/"/g, '&quot;')}"
+            ></knus-archive-entry>
         `).join('');
-
-        // Add event listeners for copy buttons
-        this.archiveEntriesContainer.querySelectorAll('.archive-copy-button').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const index = parseInt(e.currentTarget.dataset.index);
-                const text = entries[index].text;
-                navigator.clipboard.writeText(text);
-            });
-        });
     }
 
     escapeHtml(text) {
@@ -291,12 +241,8 @@ export class DangerouslyWrite extends HTMLElement {
         // Track writing time
         if (this.writingStartTime === null) {
             this.writingStartTime = Date.now();
-            // Start elapsed timer on first keystroke
-            if (this.sessionStartTime === null) {
-                this.sessionStartTime = Date.now();
-                this.updateElapsedDisplay();
-                this.elapsedInterval = setInterval(() => this.updateElapsedDisplay(), 1000);
-            }
+            // Start timer on first keystroke
+            this.elapsedTimer.start();
         }
 
         // Calculate total writing time
@@ -310,7 +256,7 @@ export class DangerouslyWrite extends HTMLElement {
             this.inputElement.classList.remove('blurred');
             this.inputElement.style.transition = 'none';
             void this.inputElement.offsetWidth;
-            this.stopElapsedTimer();
+            this.elapsedTimer.stop();
             window.location.hash = 'knust';
             return;
         }
@@ -334,7 +280,7 @@ export class DangerouslyWrite extends HTMLElement {
                     this.accumulatedWritingTime += Date.now() - this.writingStartTime;
                     this.writingStartTime = null;
                 }
-                this.stopElapsedTimer();
+                this.elapsedTimer.stop();
                 window.location.hash = 'vedvarer';
             }, this.timeout);
         }
@@ -600,7 +546,7 @@ export class DangerouslyWrite extends HTMLElement {
                     <button class="archive-button" id="start-archive-button">vis arkiv</button>
                 </div>
                 <textarea placeholder="skriv her..."></textarea>
-                <div class="elapsed-time" id="elapsed-time">00:00</div>
+                <knus-timer id="elapsed-timer" class="elapsed-time"></knus-timer>
                 <div class="failure-message">
                     <h2>skrivesperren vedvarer</h2>
                     <button class="reset-button">skriv på nytt</button>

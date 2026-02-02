@@ -177,30 +177,6 @@ test('Storage: hasArchiveEntries returns true when entries exist', () => {
     assert.strictEqual(element.hasArchiveEntries(), true);
 });
 
-test('Storage: formatDuration handles minutes only', () => {
-    const element = document.createElement('dangerously-write');
-    document.body.appendChild(element);
-
-    assert.strictEqual(element.formatDuration(120000), '2 min');
-    assert.strictEqual(element.formatDuration(300000), '5 min');
-});
-
-test('Storage: formatDuration handles seconds only', () => {
-    const element = document.createElement('dangerously-write');
-    document.body.appendChild(element);
-
-    assert.strictEqual(element.formatDuration(30000), '30 sek');
-    assert.strictEqual(element.formatDuration(5000), '5 sek');
-});
-
-test('Storage: formatDuration handles minutes and seconds', () => {
-    const element = document.createElement('dangerously-write');
-    document.body.appendChild(element);
-
-    assert.strictEqual(element.formatDuration(90000), '1 min 30 sek');
-    assert.strictEqual(element.formatDuration(185000), '3 min 5 sek');
-});
-
 test('Storage: escapeHtml escapes special characters', () => {
     const element = document.createElement('dangerously-write');
     document.body.appendChild(element);

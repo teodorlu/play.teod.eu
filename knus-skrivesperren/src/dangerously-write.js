@@ -1,5 +1,6 @@
+import './knus-duration-picker.js';
+
 const STORAGE_KEY = 'knus-skrivesperren-arkiv';
-const DURATION_STORAGE_KEY = 'knus-skrivesperren-duration';
 
 export class DangerouslyWrite extends HTMLElement {
     constructor() {
@@ -44,30 +45,18 @@ export class DangerouslyWrite extends HTMLElement {
         this.inputElement = this.shadowRoot.querySelector('textarea');
         this.selectedDurationSeconds = 300; // Default: 5 minutes (300 seconds)
         this.startButton = this.shadowRoot.querySelector('#start-button');
-        this.durationDisplay = this.shadowRoot.querySelector('.duration-display');
-        this.durationOptions = this.shadowRoot.querySelector('.duration-options');
-        this.durationText = this.shadowRoot.querySelector('.duration-text');
-        this.editButton = this.shadowRoot.querySelector('.edit-button');
+        this.durationPicker = this.shadowRoot.querySelector('#duration-picker');
 
-        // Load saved duration from localStorage
-        this.loadSavedDuration();
+        // Sync with duration picker value
+        this.durationPicker.addEventListener('change', (e) => {
+            this.selectedDurationSeconds = e.detail.seconds;
+        });
+        // Initialize from picker's current value
+        if (this.durationPicker.value) {
+            this.selectedDurationSeconds = this.durationPicker.value;
+        }
 
         this.inputElement.addEventListener('input', this.handleInput.bind(this));
-
-        // Edit button shows duration options
-        this.editButton.addEventListener('click', () => {
-            this.durationDisplay.classList.add('hidden');
-            this.durationOptions.classList.remove('hidden');
-        });
-
-        // Duration button event delegation
-        this.shadowRoot.querySelectorAll('.duration-button').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const seconds = parseInt(e.target.dataset.seconds, 10);
-                const label = e.target.textContent;
-                this.selectDuration(seconds, label);
-            });
-        });
 
         this.startButton.addEventListener('click', this.startWriting.bind(this));
 
@@ -169,37 +158,6 @@ export class DangerouslyWrite extends HTMLElement {
         } else {
             this.startArchiveButton.classList.add('hidden');
         }
-    }
-
-    loadSavedDuration() {
-        try {
-            const saved = localStorage.getItem(DURATION_STORAGE_KEY);
-            if (saved) {
-                const { seconds, label } = JSON.parse(saved);
-                this.selectedDurationSeconds = seconds;
-                this.durationText.textContent = `Skriv i ${label}`;
-            }
-        } catch {
-            // Use default if loading fails
-        }
-    }
-
-    saveDuration(seconds, label) {
-        try {
-            localStorage.setItem(DURATION_STORAGE_KEY, JSON.stringify({ seconds, label }));
-        } catch {
-            // Ignore storage errors
-        }
-    }
-
-    selectDuration(seconds, label) {
-        this.selectedDurationSeconds = seconds;
-        // Persist selection
-        this.saveDuration(seconds, label);
-        // Update display text and hide options
-        this.durationText.textContent = `Skriv i ${label}`;
-        this.durationOptions.classList.add('hidden');
-        this.durationDisplay.classList.remove('hidden');
     }
 
     handleHashChange() {
@@ -544,48 +502,6 @@ export class DangerouslyWrite extends HTMLElement {
                 #start-button:hover {
                     background: var(--btn-primary-hover);
                 }
-                .duration-display {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0.5rem;
-                }
-                .duration-display.hidden {
-                    display: none;
-                }
-                .duration-text {
-                    color: var(--text-primary);
-                    font-size: 1.1rem;
-                }
-                .edit-button {
-                    background: transparent;
-                    border: none;
-                    padding: 0.25rem;
-                    cursor: pointer;
-                    color: var(--btn-accent);
-                    display: flex;
-                    align-items: center;
-                }
-                .edit-button:hover {
-                    color: var(--btn-accent-hover);
-                }
-                .edit-button img {
-                    width: 1.2rem;
-                    height: 1.2rem;
-                }
-                .duration-options {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 0.5rem;
-                }
-                .duration-options.hidden {
-                    display: none;
-                }
-                .duration-label {
-                    color: var(--text-primary);
-                    font-size: 1rem;
-                }
                 .elapsed-time {
                     text-align: center;
                     font-size: 1.5rem;
@@ -679,18 +595,7 @@ export class DangerouslyWrite extends HTMLElement {
             <div class="container start-screen">
                 <div class="start-screen-content">
                     <h2>knus skrivesperren</h2>
-                    <div class="duration-display">
-                        <span class="duration-text">Skriv i 5 min</span>
-                        <button class="edit-button" tabindex="1" aria-label="Endre varighet">
-                            <img src="./icons/pencil-simple.svg" alt="Rediger">
-                        </button>
-                    </div>
-                    <div class="duration-options hidden">
-                        <span class="duration-label">skriv i:</span>
-                        <button class="duration-button" data-seconds="5" tabindex="1">5 sek</button>
-                        <button class="duration-button" data-seconds="60" tabindex="2">1 min</button>
-                        <button class="duration-button" data-seconds="300" tabindex="3">5 min</button>
-                    </div>
+                    <knus-duration-picker id="duration-picker"></knus-duration-picker>
                     <button id="start-button" tabindex="4">start</button>
                     <button class="archive-button" id="start-archive-button">vis arkiv</button>
                 </div>

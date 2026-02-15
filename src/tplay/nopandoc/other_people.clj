@@ -17,6 +17,11 @@
    {:site/name "magnars"
     :site/href "https://magnars.com/"}
 
+   {:site/name "Mathive Thoughts"
+    :site/href "https://mathivethoughts.no/"
+    :site/reference-article {:title "Følg dopamin-hitsene"
+                             :href "https://mathivethoughts.no/blog-posts/folg-dopamin-hitsene/"}}
+
    ;; other people
    {:site/name "Marc's blog"
     :site/href "https://brooker.co.za/blog/"}

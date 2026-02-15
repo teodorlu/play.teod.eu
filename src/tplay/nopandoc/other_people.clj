@@ -43,4 +43,15 @@
     :site/reference-article {:title "A clean start for the web"
                              :href "https://macwright.com/2020/08/22/clean-starts-for-the-web"}}
 
+
+   {:site/name "Wikiblogarden (Lu Wilson)"
+    :site/href "https://www.todepond.com/wikiblogarden/"
+    :site/reference-article {:title "Just"
+                             :href "https://www.todepond.com/wikiblogarden/better-computing/just/"}}
+
+   {:site/name "Jack Rusher: Multidisciplined"
+    :site/href "https://jackrusher.com/"
+    :site/reference-article {:title "Leopards in the Source Code"
+                             :href "https://jackrusher.com/journal/leopards-in-the-source-code.html"}}
+
    #_=])

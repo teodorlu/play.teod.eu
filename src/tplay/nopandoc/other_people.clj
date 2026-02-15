@@ -33,4 +33,9 @@
     :site/reference-article {:title "Kreativ i tomrommet"
                              :href "https://www.niklashakonsen.no/post/kreativ-i-tomrommet"}}
 
+   {:site/name "macwright.com (Tom MacWright)"
+    :site/href "https://macwright.com/"
+    :site/reference-article {:title "A clean start for the web"
+                             :href "https://macwright.com/2020/08/22/clean-starts-for-the-web"}}
+
    #_=])

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Overkjørt av BankID</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="/green.png">
+  <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
+  <link rel="stylesheet" href="/adjustments.css">
+
+  <script type="text/javascript">
+    const hostCanonical = 'play.teod.eu';
+    const hostAlias1 = 'playground.teod.eu';
+    const hostLocal1 = 'localhost:9945';
+    if (
+      window.location.host === hostAlias1
+      // || window.location.host === hostLocal1
+    ) {
+      // redirect playground.teod.eu to play.teod.eu
+      // redirect playground.teod.eu/aphorisms to play.teod.eu/aphorisms
+      const pathname = window.location.pathname || '';
+      window.location.replace('https://' + hostCanonical + pathname);
+    }
+  </script>
+
+  <script async type="module" src="/index/big.js"></script>
+  <script async type="module" src="/iki/iki.js"></script>
+  <script async type="module">
+    import {IkiGotoRandomPage} from "/iki/iki.js";
+
+    customElements.define("iki-goto-random-page", IkiGotoRandomPage, {extends: "button"});
+  </script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Overkjørt av BankID</h1>
+</header>
+<p>En vakker dag i oktober i fjor hadde jeg plutselig plukket opp
+mobilen og satt på en video <strong>uten at jeg kunne huske å ha tatt
+beslutningen</strong>.</p>
+<p>Jeg hadde tidligere innbilt meg at distraksjon fra telefoner var et
+andre-problem. Det gjaldt ikke meg, jeg bare valgte å gjøre lure ting!
+Det var bare tull, problemet gjaldt meg også.</p>
+<p>Jeg lot impulsiviteten få ta over, og kjøpte meg ny mobiltelefon.
+Minimal Phone 1. Svart-hvit skjerm som er nydelig å lese bøker på, men
+håpløs til oppmerksomhetstyveri. Det verste som kan skje er at folk gir
+meg en <strong>for spennende</strong> tekst. Det kan jeg leve med.</p>
+<p>Nå har jeg brukt telefonen i noen måneder. Og hvordan har det gått?
+Har det blitt masse krøll?</p>
+<p>… egentlig … ikke?</p>
+<p>Apper har fungert. Jeg har kunnet ringe folk og sende meldinger. Gå
+på nett. Installere ting fra Play Store — fordi telefonen kjører vanlig
+Android. Bruke Firefox.</p>
+<p>Det et grovt sett to grunner til å ikke velge vanlig iPhone eller
+vanlig Android i dag: personvern og oppmerksomhet. Min Minimal Phone
+kjører vanlig Android, så jeg er fortsatt prisgitt Google. Dessverre.
+Men oppmerksomheten min kan jeg ta tilbake.</p>
+<p>Eller kanskje ikke. I disse dager <a
+href="https://www.nettavisen.no/nyheter/bankid-appen-med-nye-krav-na-ma-du-bekrefte-identiteten-din/s/5-95-2922150\">https://www.nettavisen.no/nyheter/bankid-appen-med-nye-krav-na-ma-du-bekrefte-identiteten-din/s/5-95-2922150\</a>[ruller
+BankID ut økt krav om identifikasjon]]! Det kravet traff meg
+nettopp.</p>
+<ol>
+<li>Jeg fikk et push-varsel.</li>
+<li>Så ble jeg bedt om å scanne passet mitt.</li>
+<li><strong>Deretter</strong> ble jeg bedt om å plassere fjeset mitt så
+telefonen min kan ta bilde av fjeset.</li>
+</ol>
+<p>Jeg skal <strong>la være</strong> å diskutere personvernsaspektet med
+alt dette nå.</p>
+<p>Fordi det som skjedde var at prosessen tryna. “Du har det enten for
+lyst eller for mørkt i rommet ditt”. Merk: ikke beskjed om rommet er for
+lyst, eller om rommet er for mørkt, bare … noe.</p>
+<p>Ålreit, jeg justerer. Mer lys! Mindre lys! Prøv igjen. På dette
+tidspunktet har jeg kastet vekk … et kvarter? Er dette tid jeg får
+igjen? Til sammenlikning, BankID har ikke engang en E-post-adresse for å
+<strong>ta kontakt</strong> på nettsiden sin.</p>
+<p>Jeg prøver igjen og igjen, med samme resultat. Galskap? Eller har
+Kafkas noveller blitt sannhet?</p>
+<p>Jeg kan <strong>spekulere</strong> i at luringene hos BankID har
+prøvd appen sin i en iPhone og på en Samsung. Det funka, vi går videre!
+Hva om man har en annen mobiltelefon? Kankje en mobiltelefon med
+dårligere kamera?</p>
+<p>Dette gjør meg ganske enkelt sint. Og BankIDs tid er for dyrebar, de
+kan man ikke ta kontakt med. Fordi <a
+href="https://www.nordea.no/privat/vare-produkter/nettbank-og-mobilbank/bankid.html">Nordeas
+nettsider</a> kan informere om at Nordeas kodebrikker er for “For deg
+som ikke kan bruke smarttelefon eller nettbrett, Jobber offshore, Eller
+er svaksynt”.</p>
+<p>Jeg kan bare konkludere,</p>
+<ul>
+<li>Det er beleilig for norsk ganske-stor-tech å prioritere sin egen tid
+over forbrukerenes</li>
+<li>Det innebærer å dytte forbrukerene inn i hendende på amerikansk
+megastor-tech.</li>
+</ul>
+<p>Personlig mening? Forkastelig. Pinlig. Jeg har gjennom livet mitt
+pleid å være stolt av å være norsk. Vi har et samfunn der vi stoler på
+hverandre. Der vi kan stole på staten. Der vi kan stole på
+institusjonene. Fordi vi gjør ting rett. Er det sånn fremdeles? Jeg
+begynner å lure.</p>
+<p>Vil du føle deg <strong>mer arg</strong>? Robin Heggelund Hansen vil
+også ha personvern, men det går visst ikke når han også vil betale for
+ting. Han har skrevet <a
+href="https://www.kode24.no/artikkel/ikke-mulig-a-bruke-vipps-og-samtidig-vaere-fri-fra-amerikansk-big-tech/255391">selv
+på Kode24</a>, og journalist Hanne Østli Jakobsen i Morgenbladet har <a
+href="https://www.morgenbladet.no/samfunn/jakten-pa-en-fri-snill-og-akkurat-passe-dum-telefon/10187656">fulgt
+opp og stilt noen poengterte spørsmål</a> til folk som faktisk kan fikse
+dette. Men det er litt dyrt å ikke bruke Google og Apple, så da må vi
+bruke Google og Apple.</p>
+</body>
+</html>

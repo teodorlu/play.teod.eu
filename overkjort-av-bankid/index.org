@@ -1,0 +1,53 @@
+#+TITLE: Overkjørt av BankID
+
+En vakker dag i oktober i fjor hadde jeg plutselig plukket opp mobilen og satt på en video *uten at jeg kunne huske å ha tatt beslutningen*.
+
+Jeg hadde tidligere innbilt meg at distraksjon fra telefoner var et andre-problem. Det gjaldt ikke meg, jeg bare valgte å gjøre lure ting! Det var bare tull, problemet gjaldt meg også.
+
+Jeg lot impulsiviteten få ta over, og kjøpte meg ny mobiltelefon. Minimal Phone 1. Svart-hvit skjerm som er nydelig å lese bøker på, men håpløs til oppmerksomhetstyveri. Det verste som kan skje er at folk gir meg en *for spennende* tekst. Det kan jeg leve med.
+
+Nå har jeg brukt telefonen i noen måneder. Og hvordan har det gått? Har det blitt masse krøll?
+
+… egentlig … ikke?
+
+Apper har fungert. Jeg har kunnet ringe folk og sende meldinger. Gå på nett. Installere ting fra Play Store — fordi telefonen kjører vanlig Android. Bruke Firefox.
+
+Det et grovt sett to grunner til å ikke velge vanlig iPhone eller vanlig Android i dag: personvern og oppmerksomhet. Min Minimal Phone kjører vanlig Android, så jeg er fortsatt prisgitt Google. Dessverre. Men oppmerksomheten min kan jeg ta tilbake.
+
+Eller kanskje ikke. I disse dager [[https://www.nettavisen.no/nyheter/bankid-appen-med-nye-krav-na-ma-du-bekrefte-identiteten-din/s/5-95-2922150\]][ruller BankID ut økt krav om identifikasjon]]! Det kravet traff meg nettopp.
+
+1. Jeg fikk et push-varsel.
+2. Så ble jeg bedt om å scanne passet mitt.
+3. *Deretter* ble jeg bedt om å plassere fjeset mitt så telefonen min kan ta bilde av fjeset.
+
+Jeg skal *la være* å diskutere personvernsaspektet med alt dette nå.
+
+Fordi det som skjedde var at prosessen tryna. "Du har det enten for lyst eller for mørkt i rommet ditt". Merk: ikke beskjed om rommet er for lyst, eller om rommet er for mørkt, bare … noe.
+
+Ålreit, jeg justerer. Mer lys! Mindre lys! Prøv igjen. På dette tidspunktet har jeg kastet vekk … et kvarter? Er dette tid jeg får igjen? Til sammenlikning, BankID har ikke engang en E-post-adresse for å *ta kontakt* på nettsiden sin.
+
+Jeg prøver igjen og igjen, med samme resultat. Galskap? Eller har Kafkas noveller blitt sannhet?
+
+Jeg kan *spekulere* i at luringene hos BankID har prøvd appen sin i en iPhone og på en Samsung. Det funka, vi går videre! Hva om man har en annen mobiltelefon? Kankje en mobiltelefon med dårligere kamera?
+
+Dette gjør meg ganske enkelt sint. Og BankIDs tid er for dyrebar, de kan man ikke ta kontakt med.
+Fordi [[https://www.nordea.no/privat/vare-produkter/nettbank-og-mobilbank/bankid.html][Nordeas nettsider]] kan informere om at Nordeas kodebrikker er for "For deg som ikke kan bruke smarttelefon eller nettbrett, Jobber offshore, Eller er svaksynt".
+
+Jeg kan bare konkludere,
+
+- Det er beleilig for norsk ganske-stor-tech å prioritere sin egen tid over forbrukerenes
+- Det innebærer å dytte forbrukerene inn i hendende på amerikansk megastor-tech.
+
+Personlig mening? Forkastelig. Pinlig.
+Jeg har gjennom livet mitt pleid å være stolt av å være norsk.
+Vi har et samfunn der vi stoler på hverandre.
+Der vi kan stole på staten.
+Der vi kan stole på institusjonene.
+Fordi vi gjør ting rett.
+Er det sånn fremdeles?
+Jeg begynner å lure.
+
+Vil du føle deg *mer arg*?
+Robin Heggelund Hansen vil også ha personvern, men det går visst ikke når han også vil betale for ting.
+Han har skrevet [[https://www.kode24.no/artikkel/ikke-mulig-a-bruke-vipps-og-samtidig-vaere-fri-fra-amerikansk-big-tech/255391][selv på Kode24]], og journalist Hanne Østli Jakobsen i Morgenbladet har [[https://www.morgenbladet.no/samfunn/jakten-pa-en-fri-snill-og-akkurat-passe-dum-telefon/10187656][fulgt opp og stilt noen poengterte spørsmål]] til folk som faktisk kan fikse dette.
+Men det er litt dyrt å ikke bruke Google og Apple, så da må vi bruke Google og Apple.

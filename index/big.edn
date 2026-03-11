@@ -816,6 +816,15 @@
   :page/slug "document-transform-pandoc-clojure",
   :author-url "https://teod.eu",
   :uuid "2c53f531-afdd-4efb-becd-f5d2f220b5ab"}
+ {:slug "the-toil-eliminator",
+  :page/uuid "2c617481-68a5-4406-b640-77289a0ae4e9",
+  :created "2026-03-11",
+  :readiness :ready-for-comments,
+  :title "the toiL eLiMinator",
+  :lang :en,
+  :page/slug "the-toil-eliminator",
+  :author-url "https://teod.eu",
+  :uuid "2c617481-68a5-4406-b640-77289a0ae4e9"}
  {:slug "kosekoding",
   :page/uuid "2d60ee76-a193-46fd-a07b-838af66cfcd6",
   :created "2022-08-16",

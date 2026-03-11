@@ -14,7 +14,7 @@ Apper har fungert. Jeg har kunnet ringe folk og sende meldinger. Gå på nett. I
 
 Det et grovt sett to grunner til å ikke velge vanlig iPhone eller vanlig Android i dag: personvern og oppmerksomhet. Min Minimal Phone kjører vanlig Android, så jeg er fortsatt prisgitt Google. Dessverre. Men oppmerksomheten min kan jeg ta tilbake.
 
-Eller kanskje ikke. I disse dager [[https://www.nettavisen.no/nyheter/bankid-appen-med-nye-krav-na-ma-du-bekrefte-identiteten-din/s/5-95-2922150\]][ruller BankID ut økt krav om identifikasjon]]! Det kravet traff meg nettopp.
+Eller kanskje ikke. I disse dager [[https://www.nettavisen.no/nyheter/bankid-appen-med-nye-krav-na-ma-du-bekrefte-identiteten-din/s/5-95-2922150][ruller BankID ut økt krav om identifikasjon]]! Det kravet traff meg nettopp.
 
 1. Jeg fikk et push-varsel.
 2. Så ble jeg bedt om å scanne passet mitt.

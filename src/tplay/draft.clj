@@ -37,7 +37,7 @@
 
 (comment
   ;; one
-  (let [file (fs/file "drafts/in-purrsuit.org")]
+  (let [file (fs/file "drafts/the-toil-eliminator.org")]
     (effectuate-undraft file
                         (merge (default-meta) (meta-from-draft file))))
 

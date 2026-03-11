@@ -1,37 +1,68 @@
 #+TITLE: the toiL eLiMinator
 
-Let's say you've got a statistical machine that can be instructed vaguely in natural language and controlled tightly in its use of tools. The machine's linguistic understanding has been trained, and it knows a lot of natural language.
+Let's say you've got a statistical machine that can be instructed vaguely in
+natural language and controlled tightly in its use of tools. The machine's
+linguistic understanding has been trained, and it knows a lot of natural
+language.
 
-Can it be creative? Does it understand context? Can it produce something that's better than all the texts it's read?
+Can it be creative? Does it understand context? Can it produce something that's
+better than all the texts it's read?
 
-Writers write. They read, but they write. They write about what lies beyond what they've read. They write because they have a conviction to create.
+Writers write. They read, but they write. They write about what lies beyond what
+they've read. They write because they have a conviction to create.
 
-Reading does not make you write. Most people read. Some choose to pick longer texts as part of what they have read.
+Reading does not make you write. Most people read. Some choose to pick longer
+texts as part of what they have read.
 
-People engage differently with what they have read. We can refer to the opinion of others, and argue that the heaviest voice should rule.
+People engage differently with what they have read. We can refer to the opinion
+of others, and argue that the heaviest voice should rule.
 
-In the middle ages, the heaviest voice in Europe was the church. We trusted the church, and got a shared world image.
+In the middle ages, the heaviest voice in Europe was the church. We trusted the
+church, and got a shared world image.
 
-That world image had certain beliefs built in. God created man in his image. Got placed man at the center. Curiously religions were created by man, hence Man also created God. Then Man struck Man in the Head and said My God Shall Also Be Your God. Then we had war, and then we maybe had peace.
+That world image had certain beliefs built in. God created man in his image. Got
+placed man at the center. Curiously, religions were created by man, hence Man
+also created God. Then Man struck Man in the Head and said My God Shall Also Be
+Your God. Then we had war, and then we maybe had peace.
 
-We did not get science. In science, argument from authority is *not sufficient*. Instead, we argue about which explanation best explains reality. Thus we had physics, and could explain what we already did in civil engineering worked when we built bridges. Physics soon gave us better explanations in engineering disciplines, and we got mechanical engineering, chemical engineering and aeronautical engineering.
+We did not get science. In science, argument from authority is *not sufficient*.
+Instead, we argue about which explanation best explains reality. Thus we had
+physics, and could explain what we already did in civil engineering worked when
+we built bridges. Physics soon gave us better explanations in engineering
+disciplines, and we got mechanical engineering, chemical engineering and
+aeronautical engineering.
 
 In neither case, Man struck God in the Head with a belief of Engineering.
 
-Statistical machines that can be instructed vaguely in natural language, controlled in its use of tools and trained on a corpus of existing texts is not God. And hitting another Man in the Head with a Fake God is, as it was in the middle ages, a bad way to discuss explanations of reality.
+Statistical machines that can be instructed vaguely in natural language,
+controlled in its use of tools and trained on a corpus of existing texts is not
+God. And hitting another Man in the Head with a Fake God is, as it was in the
+middle ages, a bad way to discuss explanations of reality.
 
-Machines eliminate toil. Assembly lines in factories eliminated toil and errors in our first mass produced cars. We now have controlled production of ships, planes, computers and bicycles.
+Machines eliminate toil. Assembly lines in factories eliminated toil and errors
+in our first mass produced cars. We now have controlled production of ships,
+planes, computers and bicycles.
 
-Engineering and science is our foundation. Good foundations are reiliable, and a enable exploration. For foundations to be reliable and enable exploration, we must understand them.
+Engineering and science is our foundation. Good foundations are reiliable, and a
+enable exploration. For foundations to be reliable and enable exploration, we
+must understand them.
 
-We build understanding in our communication. Hitting thy fellow Man in the Head with Gods (fake or real), does not build explanations.
+We build understanding in our communication. Hitting thy fellow Man in the Head
+with Gods (fake or real), does not build explanations.
 
-Engineering and science can solve problems. But only if we also understand problems. So, which problem are we trying to solve?
+Engineering and science can solve problems. But only if we also understand
+problems. So, which problem are we trying to solve?
 
-Motivation can come from problems. I am motivated to solve this problem. Do you want to help?
+Motivation can come from problems. I am motivated to solve this problem. Do you
+want to help?
 
-Motivation can also come from tools. This tool is really nice, have to tried using it? But when sharing a tool with your fellow man, you must also give your fellow man a problem. Is this sharp rock on the edge of a stick used for cutting roots? Or shall it be thrown at a mammal we wish to eat?
+Motivation can also come from tools. This tool is really nice, have to tried
+using it? But when sharing a tool with your fellow man, you must also give your
+fellow man a problem. Is this sharp rock on the edge of a stick used for cutting
+roots? Or shall it be thrown at a mammal we wish to eat?
 
 Vague tool centrism doesn't get us anywhere.
 
-Go forth, fellow man. May you wield your explanations and tools to great effect when you wrestle with problems. May you use your tools to approperiately eliminate toil.
+Go forth, fellow man. May you wield your explanations and tools to great effect
+when you wrestle with problems. May you use your tools to approperiately
+eliminate toil.

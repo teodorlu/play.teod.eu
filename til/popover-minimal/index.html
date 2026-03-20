@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu + Popover example</title>
+  <style>
+    #actions-btn {
+      anchor-name: --actions-btn;
+    }
+    #actions-menu {
+      position-anchor: --actions-btn;
+      inset: unset;
+      top: anchor(bottom);
+      left: anchor(left);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<button id="actions-btn" popovertarget="actions-menu">Actions ▾</button>
+
+<menu id="actions-menu" popover>
+  <li><button onclick="alert('Edit')">Edit</button></li>
+  <li><button onclick="alert('Duplicate')">Duplicate</button></li>
+  <li><button onclick="alert('Delete')">Delete</button></li>
+</menu>
+
+</body>
+</html>

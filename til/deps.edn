@@ -1,0 +1,10 @@
+{:paths ["src" "test"]
+ :deps {babashka/fs {:mvn/version "0.5.31"}
+        com.datomic/peer {:mvn/version "1.0.7491"}
+        dev.data-star.clojure/http-kit {:mvn/version "1.0.0-RC8"}
+        dev.data-star.clojure/sdk {:mvn/version "1.0.0-RC8"}
+        http-kit/http-kit {:mvn/version "2.8.1"}
+        io.github.nextjournal/markdown {:mvn/version "0.7.222"}
+        io.github.tonsky/clj-reload {:mvn/version "1.0.0"}
+        lambdaisland/kaocha {:mvn/version "1.91.1392"}
+        no.cjohansen/replicant {:mvn/version "2025.12.1"}}}

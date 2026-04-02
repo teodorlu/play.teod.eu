@@ -262,6 +262,8 @@ Allowed options:
       (println helptext)
       (System/exit 0))
     (when (not valid-opts?)
+      (println "invalid opts!")
+      (prn "opts:" {:slug slug :title title :uuid uuid :lang lang})
       (println helptext)
       (System/exit 1))
     (assert slug)

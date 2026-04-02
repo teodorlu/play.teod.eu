@@ -37,9 +37,10 @@
 
 (comment
   ;; one
-  (let [file (fs/file "drafts/the-toil-eliminator.org")]
+  (let [file (fs/file "drafts/overkjort-av-bankid.org")]
     (effectuate-undraft file
-                        (merge (default-meta) (meta-from-draft file))))
+                        (merge (default-meta)
+                               (meta-from-draft file))))
 
   ;; all
   (def drafts (mapv str (fs/list-dir "drafts")))

@@ -40,7 +40,7 @@
 (def this-repo-toplevel (delay (find-toplevel)))
 
 (defn bash-project-root [cmd]
-  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd :dir (find-toplevel)))))
+  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd :dir "."))))
 
 (defn words [& args] (str/join " " (map str args)))
 (defn lines [& args] (str/join "\n" (map str args)))

@@ -385,7 +385,9 @@ Allowed options:
                 "|"
                 "pandoc -f json -o" html-file-name "--standalone --toc -H header-default-include.html"))))
 
-;; (cmd-makefile {})
+(comment
+  (cmd-makefile {})
+  )
 
 (defn cmd-makefile [{:keys [opts]}]
   (let [{:keys [dry-run]} opts

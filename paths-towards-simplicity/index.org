@@ -65,7 +65,7 @@ Theory exists abstracted from practice.
 Judging whether a theory is useful requires interpretation.
 But not all that is useful is theory.
 
-I've been meddling with Datastar in Clojure for more than six months, and I'm confliced.
+I've been meddling with Datastar in Clojure for more than six months, and I'm conflicted.
 I want to make something simple and beautiful.
 But I can't just /see/ that beautiful result.
 I've tried!

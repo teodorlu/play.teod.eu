@@ -34,18 +34,13 @@
 
 #_(infer-ns-file 'tplay.index)
 
-(def this-repo-toplevel
-  (let [file *file*]
-    (delay
-      (some->
-       (p/shell {:out :string
-                 :dir (str (fs/parent file))}
-                "git rev-parse --show-toplevel")
-       :out
-       str/trim))))
+(defn find-toplevel []
+  (fs/absolutize "."))
+
+(def this-repo-toplevel (delay (find-toplevel)))
 
 (defn bash-project-root [cmd]
-  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd :dir @this-repo-toplevel))))
+  (str/trim (:out (clojure.java.shell/sh "bash" "-c" cmd :dir (find-toplevel)))))
 
 (defn words [& args] (str/join " " (map str args)))
 (defn lines [& args] (str/join "\n" (map str args)))

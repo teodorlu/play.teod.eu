@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID: bdcd7cc6-9165-4e0f-9a8a-58608e1280ac
+:END:
+#+TITLE: Paths toward simplicity
+
+[[file:..][..]]
+
+The easiest way to create a non-simple system is to not understand the problem
+when starting to write the solution.
+
+Rather than become a theory of that problem, the system becomes the history
+taken towards solving that problem. It documents every path, every side-path and
+every intersection taken.
+
+A Jack Rusher tweet suggests "when creating something new, create it off to the
+side".
+
+We /do/ need to create solutions in order to understand problems. However, we
+can choose /not/ to set the early solutions in stone, and make our system depend
+on their flaws. If we choose to create the new thing separately, we can choose
+which lesson to take from it. Did we just need the problem understanding? Or can
+we take the solution?
+
+By being explicit in how we increase the weight of the system, we avoid
+accidental weight, accidental complexity.
+
+This slower form of system building aims to /keep/ a system simple rather than
+refactor the system towards simplicity.
+
+But there's still a tension. We need to get started! We need to get version one
+off the ground! How shall we manage that?
+
+In short, we can either
+
+1. first encode bad theories of problems, then fix them
+
+    This is the technical debt → refactor pattern
+
+2. or first aim to understand problems, then, later, choose which parts of our understanding to set in stone.
+
+    This is the explore → understand → engineer pattern
+
+I feel torn between the two.
+The desire to make it good gets the better of me.
+I want to make it really good!
+But there's also plain implementation work.
+
+Anyway, we've got two options,
+- Make it work, then make it simple
+- Only add simple pieces.
+
+Choose either, but please choose explicitly.

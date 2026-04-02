@@ -4042,6 +4042,16 @@ export const index =
   "form" : "remote-reference",
   "uuid" : "bdbed0b8-b25c-4ad3-9c7c-c50215eddc77"
 }, {
+  "slug" : "paths-towards-simplicity",
+  "page/uuid" : "bdcd7cc6-9165-4e0f-9a8a-58608e1280ac",
+  "created" : "2026-04-02",
+  "readiness" : "wtf-is-this",
+  "title" : "Paths toward simplicity",
+  "lang" : "en",
+  "page/slug" : "paths-towards-simplicity",
+  "author-url" : "https://teod.eu",
+  "uuid" : "bdcd7cc6-9165-4e0f-9a8a-58608e1280ac"
+}, {
   "slug" : "software-architecture",
   "title" : "software-architecture",
   "readiness" : "wtf-is-this",
@@ -4843,6 +4853,16 @@ export const index =
   "page/slug" : "programmer-cultivate-your-curiosity",
   "author-url" : "https://teod.eu",
   "uuid" : "ed7bbc77-18b0-4092-bd7d-f127d7bc3041"
+}, {
+  "slug" : "overkjort-av-bankid",
+  "page/uuid" : "ef4f6891-9f9e-40c6-8a50-ff2f24dfa8cb",
+  "created" : "2026-03-11",
+  "readiness" : "ready-for-comments",
+  "title" : "Overkjørt av BankID",
+  "lang" : "no",
+  "page/slug" : "overkjort-av-bankid",
+  "author-url" : "https://teod.eu",
+  "uuid" : "ef4f6891-9f9e-40c6-8a50-ff2f24dfa8cb"
 }, {
   "slug" : "do-the-simplest-thing-possible",
   "page/uuid" : "ef835eb0-e607-4a81-984c-0ee3410042df",

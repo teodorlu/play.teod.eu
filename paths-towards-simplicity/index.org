@@ -49,7 +49,7 @@ Anyway, we've got two options,
 
 Choose either, but please choose explicitly.
 
-** Elusive simplicity
+* Elusive simplicity
 
 I prefer simplicity from the start, but simplicity is hard.
 Stopping, pondering.
@@ -164,7 +164,7 @@ The router (http request handler) and the command handler are the rest of this n
 
 , which I'd say isn't too bad.
 
-** Pragmatic simplicity
+* Pragmatic simplicity
 
 Simplicity is good, but not always the answer.
 Building theory is part of knowledge work.
@@ -175,7 +175,7 @@ Exploration is messy.
 But exploration teaches us things we don't know.
 It exposes us to new skills we may learn.
 
-** Towards better movement on solid foundations
+* Towards better movement on solid foundations
 
 Because, in the end, you can't derive an "ought" from an "is".
 Yeah, it's simple, but how ought you spend your time?

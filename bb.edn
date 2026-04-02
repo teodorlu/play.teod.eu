@@ -6,7 +6,7 @@
 
   clean (main "clean")
   create-clerk-page (main "create-clerk-page")
-  create-page (main "create-page")
+  create-page (apply main "create-page" *command-line-args*)
   dev (tmux-multi "tplay" ["bb watchmake" "bb preview"])
   filter (main "filter")
   index (main "index")

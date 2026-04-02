@@ -169,6 +169,71 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="icon" type="image/x-icon" href="/green.png">
   <!-- <script type="text/javascript" src="/livejs.com/live.js" async></script> -->
@@ -201,6 +266,17 @@
 <header id="title-block-header">
 <h1 class="title">Paths toward simplicity</h1>
 </header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#elusive-simplicity" id="toc-elusive-simplicity">Elusive
+simplicity</a></li>
+<li><a href="#pragmatic-simplicity"
+id="toc-pragmatic-simplicity">Pragmatic simplicity</a></li>
+<li><a href="#towards-better-movement-on-solid-foundations"
+id="toc-towards-better-movement-on-solid-foundations">Towards better
+movement on solid foundations</a></li>
+</ul>
+</nav>
 <p><a href="..">..</a></p>
 <p>The easiest way to create a non-simple system is to not understand
 the problem when starting to write the solution.</p>
@@ -222,13 +298,11 @@ simple rather than refactor the system towards simplicity.</p>
 <p>But there’s still a tension. We need to get started! We need to get
 version one off the ground! How shall we manage that?</p>
 <p>In short, we can either</p>
-<ol>
-<li><p>first encode bad theories of problems, then fix them</p>
-<p>This is the technical debt → refactor pattern</p></li>
-<li><p>or first aim to understand problems, then, later, choose which
-parts of our understanding to set in stone.</p>
-<p>This is the explore → understand → engineer pattern</p></li>
-</ol>
+<p><strong>first encode bad theories of problems, then fix
+them</strong>. This is the technical debt → refactor pattern.</p>
+<p>or <strong>first aim to understand problems, then, later, choose
+which parts of our understanding to set in stone</strong>. This is the
+explore → understand → engineer pattern.</p>
 <p>I feel torn between the two. The desire to make it good gets the
 better of me. I want to make it really good! But there’s also plain
 implementation work.</p>
@@ -238,5 +312,105 @@ implementation work.</p>
 <li>Only add simple pieces.</li>
 </ul>
 <p>Choose either, but please choose explicitly.</p>
+<h3 id="elusive-simplicity">Elusive simplicity</h3>
+<p>I prefer simplicity from the start, but simplicity is hard. Stopping,
+pondering. Seeing that I add complexity, coupling and inessential
+details. It pains me! The critic judges, and prevents me from
+finishing.</p>
+<p>We can live in ideals, or live in reality. Not finishing is not good.
+Not landing on something real is not good.</p>
+<p>Theory exists abstracted from practice. Judging whether a theory is
+useful requires interpretation. But not all that is useful is
+theory.</p>
+<p>I’ve been meddling with Datastar in Clojure for more than six months,
+and I’m confliced. I want to make something simple and beautiful. But I
+can’t just <em>see</em> that beautiful result. I’ve tried! I’ve caught
+glimpses of it, but not seen its whole. That’s where I am right now. I
+have a start. It’s data driven and REPL friendly, but incomplete. It
+lacks machinery.</p>
+<p>Perhaps that’s just it. I’ve experienced, and found aspects of the
+good theory. Now, it’s time to put the theory to the side and build
+machinery. Deliver.</p>
+<p>To deliver, constraints are helpful. Part of the difficulty is how to
+make multi-page setups REPL friendly. And I <em>have</em> chosen to
+delay the multi page part. Just make the single page work! Just append
+details to the router, for now. Just append details to the html body,
+for now.</p>
+<p>The index page as been subject to details-appending already. Have a
+look;</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> index-page </span>[]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  (hiccup/html5 {}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    [<span class="at">:head</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>     [<span class="at">:title</span> <span class="st">&quot;Steinars tekster&quot;</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>     [<span class="at">:meta</span> {<span class="at">:charset</span> <span class="st">&quot;utf-8&quot;</span>}]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>     (assets/id-&gt;hiccup <span class="at">:assets.css/vars</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>     (assets/id-&gt;hiccup <span class="at">:assets.css/style</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>     (assets/id-&gt;hiccup <span class="at">:assets.js/datastar</span>)]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    [<span class="at">:body</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>     [<span class="at">:h1</span> <span class="st">&quot;Steinars tekster&quot;</span>]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>     [<span class="at">:p</span> <span class="st">&quot;Å være er å lære.&quot;</span>]</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>     [<span class="at">:count-control</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      [<span class="at">:div</span> [<span class="at">:button</span> (commands/on-click <span class="at">:commands/dec</span>) <span class="st">&quot;dec&quot;</span>]]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      [<span class="at">:div</span> (<span class="kw">str</span> <span class="at">@!count</span>)]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      [<span class="at">:div</span> [<span class="at">:button</span> (commands/on-click <span class="at">:commands/inc</span>) <span class="st">&quot;inc&quot;</span>]]]]))</span></code></pre></div>
+<p>It does not have a single responsibility!</p>
+<ol>
+<li>It converts hiccup to a html string</li>
+<li>It loads its assets</li>
+<li>It presents the UI</li>
+<li>And it sets up overarching HTML structure.</li>
+</ol>
+<p>It does it all! And my judgement? Just add more stuff. Heh. What a
+world.</p>
+<p><strong>but</strong> there’s only one. Only one page. So there’s no
+cluttering of assumption-tentacles all around the code base.</p>
+<p>In that sense, it <em>is</em> off to the side. Referenced only one
+place, from the router. The router (http request handler) and the
+command handler are the rest of this namespace,</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode clojure"><code class="sourceCode clojure"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> handle-cmd </span>[cmd _req]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">case</span> (<span class="at">:kind</span> cmd)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">:commands/dec</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">swap!</span> !count <span class="kw">dec</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">:commands/inc</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">swap!</span> !count <span class="kw">inc</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="va">nil</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  {<span class="at">:status</span> <span class="dv">202</span>})</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>(<span class="bu">defn</span><span class="fu"> handle-req </span>[req]</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  (<span class="kw">let</span> [{<span class="at">:keys</span> [uri request-method]} req]</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    (<span class="kw">cond</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">=</span> uri <span class="st">&quot;/&quot;</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      {<span class="at">:status</span> <span class="dv">200</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">:headers</span> {<span class="st">&quot;Content-Type&quot;</span> <span class="st">&quot;text/html; charset=utf-8&quot;</span>}</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">:body</span> (index-page)}</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">contains?</span> assets/by-uri uri)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>      (assets/serve (assets/by-uri uri))</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      (<span class="kw">and</span> (<span class="kw">=</span> request-method <span class="at">:post</span>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>           (<span class="kw">contains?</span> commands/by-uri uri))</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      (handle-cmd (commands/by-uri uri) req)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      <span class="at">:else</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      {<span class="at">:status</span> <span class="dv">405</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>       <span class="at">:body</span> <span class="st">&quot;Not found&quot;</span>})))</span></code></pre></div>
+<p>, which I’d say isn’t too bad.</p>
+<h3 id="pragmatic-simplicity">Pragmatic simplicity</h3>
+<p>Simplicity is good, but not always the answer. Building theory is
+part of knowledge work. Sometimes it’s the right way to spend time.</p>
+<p>But we still need to explore. Exploration is messy. But exploration
+teaches us things we don’t know. It exposes us to new skills we may
+learn.</p>
+<h3 id="towards-better-movement-on-solid-foundations">Towards better
+movement on solid foundations</h3>
+<p>Because, in the end, you can’t derive an “ought” from an “is”. Yeah,
+it’s simple, but how ought you spend your time? Simplicity is not the
+end. Simplicity is the beginning of your next move. Simplicity is <a
+href="../the-beginning-of-infinity/">The Beginning of Infinity</a>.</p>
 </body>
 </html>

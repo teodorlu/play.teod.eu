@@ -32,13 +32,11 @@ off the ground! How shall we manage that?
 
 In short, we can either
 
-1. first encode bad theories of problems, then fix them
+*first encode bad theories of problems, then fix them*.
+This is the technical debt → refactor pattern.
 
-    This is the technical debt → refactor pattern
-
-2. or first aim to understand problems, then, later, choose which parts of our understanding to set in stone.
-
-    This is the explore → understand → engineer pattern
+or *first aim to understand problems, then, later, choose which parts of our understanding to set in stone*.
+This is the explore → understand → engineer pattern.
 
 I feel torn between the two.
 The desire to make it good gets the better of me.
@@ -50,3 +48,137 @@ Anyway, we've got two options,
 - Only add simple pieces.
 
 Choose either, but please choose explicitly.
+
+** Elusive simplicity
+
+I prefer simplicity from the start, but simplicity is hard.
+Stopping, pondering.
+Seeing that I add complexity, coupling and inessential details.
+It pains me!
+The critic judges, and prevents me from finishing.
+
+We can live in ideals, or live in reality.
+Not finishing is not good.
+Not landing on something real is not good.
+
+Theory exists abstracted from practice.
+Judging whether a theory is useful requires interpretation.
+But not all that is useful is theory.
+
+I've been meddling with Datastar in Clojure for more than six months, and I'm confliced.
+I want to make something simple and beautiful.
+But I can't just /see/ that beautiful result.
+I've tried!
+I've caught glimpses of it, but not seen its whole.
+That's where I am right now.
+I have a start.
+It's data driven and REPL friendly, but incomplete.
+It lacks machinery.
+
+Perhaps that's just it.
+I've experienced, and found aspects of the good theory.
+Now, it's time to put the theory to the side and build machinery.
+Deliver.
+
+To deliver, constraints are helpful.
+Part of the difficulty is how to make multi-page setups REPL friendly.
+And I /have/ chosen to delay the multi page part.
+Just make the single page work!
+Just append details to the router, for now.
+Just append details to the html body, for now.
+
+The index page as been subject to details-appending already.
+Have a look;
+
+#+begin_src clojure
+  (defn index-page []
+    (hiccup/html5 {}
+      [:head
+       [:title "Steinars tekster"]
+       [:meta {:charset "utf-8"}]
+       (assets/id->hiccup :assets.css/vars)
+       (assets/id->hiccup :assets.css/style)
+       (assets/id->hiccup :assets.js/datastar)]
+      [:body
+       [:h1 "Steinars tekster"]
+       [:p "Å være er å lære."]
+       [:count-control
+        [:div [:button (commands/on-click :commands/dec) "dec"]]
+        [:div (str @!count)]
+        [:div [:button (commands/on-click :commands/inc) "inc"]]]]))
+#+end_src
+
+It does not have a single responsibility!
+
+1. It converts hiccup to a html string
+2. It loads its assets
+3. It presents the UI
+4. And it sets up overarching HTML structure.
+
+It does it all!
+And my judgement?
+Just add more stuff.
+Heh.
+What a world.
+
+*but* there's only one.
+Only one page.
+So there's no cluttering of assumption-tentacles all around the code base.
+
+In that sense, it /is/ off to the side.
+Referenced only one place, from the router.
+The router (http request handler) and the command handler are the rest of this namespace,
+
+#+begin_src clojure
+  (defn handle-cmd [cmd _req]
+    (case (:kind cmd)
+
+      :commands/dec
+      (swap! !count dec)
+
+      :commands/inc
+      (swap! !count inc)
+
+      nil)
+    {:status 202})
+
+  (defn handle-req [req]
+    (let [{:keys [uri request-method]} req]
+      (cond
+        (= uri "/")
+        {:status 200
+         :headers {"Content-Type" "text/html; charset=utf-8"}
+         :body (index-page)}
+
+        (contains? assets/by-uri uri)
+        (assets/serve (assets/by-uri uri))
+
+        (and (= request-method :post)
+             (contains? commands/by-uri uri))
+        (handle-cmd (commands/by-uri uri) req)
+
+        :else
+        {:status 405
+         :body "Not found"})))
+#+end_src
+
+, which I'd say isn't too bad.
+
+** Pragmatic simplicity
+
+Simplicity is good, but not always the answer.
+Building theory is part of knowledge work.
+Sometimes it's the right way to spend time.
+
+But we still need to explore.
+Exploration is messy.
+But exploration teaches us things we don't know.
+It exposes us to new skills we may learn.
+
+** Towards better movement on solid foundations
+
+Because, in the end, you can't derive an "ought" from an "is".
+Yeah, it's simple, but how ought you spend your time?
+Simplicity is not the end.
+Simplicity is the beginning of your next move.
+Simplicity is [[id:dde82bbc-e4c8-49c0-b577-dba0cba0bdf7][The Beginning of Infinity]].

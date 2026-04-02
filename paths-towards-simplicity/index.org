@@ -158,7 +158,7 @@ The router (http request handler) and the command handler are the rest of this n
         (handle-cmd (commands/by-uri uri) req)
 
         :else
-        {:status 405
+        {:status 404
          :body "Not found"})))
 #+end_src
 

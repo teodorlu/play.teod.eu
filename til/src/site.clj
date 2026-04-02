@@ -1,25 +1,31 @@
 (ns site
   (:require
    [babashka.fs :as fs]
+   [clojure.string :as str]
    [pages.command-palette]
    [pages.index]
    [pages.popover-minimal]
+   [pages.table-in-table]
+   [pages.table-in-table-2]
    [replicant.string]))
 
 (def files
-  {"index.html"                   #'pages.index/render
-   "command-palette/index.html"   #'pages.command-palette/render
-   "popover-minimal/index.html"   #'pages.popover-minimal/render})
+  {"index.html" #'pages.index/render
+   "command-palette/index.html" #'pages.command-palette/render
+   "popover-minimal/index.html" #'pages.popover-minimal/render
+   "table-in-table/index.html" #'pages.table-in-table/render
+   "table-in-table-2/index.html" #'pages.table-in-table-2/render})
 
-(defn pagify
-  "Given [file render-fn], return route entries for preview.
-   index.html files also get a directory route."
-  [[file render-fn]]
-  (let [path (str "/" file)]
-    (if (.endsWith file "index.html")
-      [[path render-fn]
-       [(subs path 0 (- (count path) (count "index.html"))) render-fn]]
-      [[path render-fn]])))
+(def strip-index-html #(str/replace % #"index.html$" ""))
+
+(defn pagify [[file render-fn]]
+  ;; Ensure GET / finds index.html and such
+  (->> (if (str/ends-with? file "index.html")
+         [[file render-fn]
+          [(strip-index-html file) render-fn]]
+         [[file render-fn]])
+       (map (fn [[file render-fn]]
+              [(str "/" file) render-fn]))))
 
 (def pages
   (->> files
@@ -38,3 +44,10 @@
        (fs/create-dirs (fs/parent out))
        (spit out (str "<!DOCTYPE html>\n"
                       (replicant.string/render (render))))))))
+
+(comment
+  (require 'preview)
+  (preview/handler {:site/pages pages
+                    :request-method :get
+                    :uri "/"})
+  )

@@ -1,4 +1,4 @@
-{:paths ["src" "test"]
+{:paths ["src" "test" "dev"]
  :deps {babashka/fs {:mvn/version "0.5.31"}
         com.datomic/peer {:mvn/version "1.0.7491"}
         dev.data-star.clojure/http-kit {:mvn/version "1.0.0-RC8"}

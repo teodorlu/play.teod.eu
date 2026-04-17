@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="list-view">
+      <div class="list-header">
+        <h1 id="list-title">Writer</h1>
+        <div id="list-page-nav"></div>
+      </div>
+      <ul id="doc-list"></ul>
+      <p id="empty-state" style="display:none">No documents yet.</p>
+      <button id="new-doc-btn">+ New document</button>
+      <div id="experiment-links" class="list-subtle-links" aria-label="Heading experiments"></div>
+    </div>
+
+    <div id="editor-view">
+      <button id="back-btn">← All documents</button>
+      <input id="doc-title-input" type="text" placeholder="Untitled" autocomplete="off" spellcheck="true" />
+      <div id="editor-toolbar">
+        <button id="insert-image-btn" type="button">Insert image</button>
+        <span class="editor-toolbar-note">Local only. Stored in this browser. Shortcut: Cmd/Ctrl+Shift+I</span>
+        <input id="insert-image-input" type="file" accept="image/*" hidden />
+      </div>
+      <div id="editor"></div>
+    </div>
+
+    <div id="experiment-view">
+      <button id="exp-back-btn">← All documents</button>
+      <div id="exp-nav" class="exp-nav"></div>
+      <h2 id="exp-title" class="exp-title"></h2>
+      <p id="exp-desc" class="exp-desc"></p>
+      <div id="exp-editor"></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

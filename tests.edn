@@ -1,7 +1,5 @@
 #kaocha/v1
 {:tests
  [{:id :tplay
-   :test-paths ["test"]}
-  {:id :terra
-   :test-paths ["../../teodorlu/terra/test"]}]
+   :test-paths ["test"]}]
  :plugins [:noyoda.plugin/swap-actual-and-expected]}

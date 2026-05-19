@@ -4045,7 +4045,7 @@ export const index =
   "slug" : "paths-towards-simplicity",
   "page/uuid" : "bdcd7cc6-9165-4e0f-9a8a-58608e1280ac",
   "created" : "2026-04-02",
-  "readiness" : "wtf-is-this",
+  "readiness" : "ready-for-comments",
   "title" : "Paths toward simplicity",
   "lang" : "en",
   "page/slug" : "paths-towards-simplicity",
@@ -4519,16 +4519,6 @@ export const index =
   "author-url" : "https://teod.eu",
   "form" : "remote-reference",
   "uuid" : "d8c14c54-5295-41c6-ac41-ecd4fcd718fe"
-}, {
-  "slug" : "terran-webdev",
-  "page/uuid" : "db969a2d-996c-4594-ab41-1446507f5f90",
-  "created" : "2026-01-06",
-  "readiness" : "wtf-is-this",
-  "title" : "Terran webdev: grounded tools for interactive web",
-  "lang" : "en",
-  "page/slug" : "terran-webdev",
-  "author-url" : "https://teod.eu",
-  "uuid" : "db969a2d-996c-4594-ab41-1446507f5f90"
 }, {
   "slug" : "in-purrsuit",
   "page/uuid" : "dbf93a23-bea0-4547-8c51-e1e7edc0ac12",

@@ -1,5 +1,4 @@
 (ns tplay.devenv
-  "Kjør et lokalt miljø med with Datomic, NATS, Shadow-CLJS og Clojure med tmux."
   (:require
    [babashka.fs :as fs]
    [babashka.process :as p]))

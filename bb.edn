@@ -12,7 +12,6 @@
   index (main "index")
   kaocha (clojure "-M:test -m kaocha.runner")
   make (shell "make")
-  makefile (tplay.cli/cmd-makefile {})
   live-server (shell "npx live-server")
   random-page (main "random-page")
   reindex (main "reindex")

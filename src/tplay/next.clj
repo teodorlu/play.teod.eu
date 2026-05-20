@@ -47,3 +47,15 @@
   ;;
   ;; Remove before add.
   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Problem statement
+;;
+;; I don't have total control of attributes in use. Each page has an EDN file
+;; with some stuff in it. But are the keys qualified? Unqualified? What is the
+;; semantics for each key?
+
+(comment
+  ;; I designed and built play.teod.eu before I'd used Datomic in anger. So I
+  ;; lacked experience with modeling information in Clojure.
+  )

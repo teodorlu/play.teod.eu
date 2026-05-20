@@ -14,7 +14,8 @@
    [clojure.walk :refer [postwalk]]
    [tplay.api :as play]
    [tplay.index]
-   [tplay.pandoc-toolbox :as pandoc]))
+   [tplay.pandoc-toolbox :as pandoc]
+   [tplay.landing]))
 
 (defn infer-ns-file
   "Try to find a Clojure file for a namespace (as symbol)
@@ -414,9 +415,7 @@ Allowed options:
                   "# Root index"
                   ;; TODO root index also depends on all the play.edn files found
                   (str/join " " (concat ["index.html:"]
-                                        (some-> 'tplay.nopandoc infer-ns-file vector)
-                                        (some-> 'tplay.nopandoc.landing infer-ns-file vector)
-                                        (some-> 'tplay.nopandoc.other-people infer-ns-file vector)
+                                        (some-> 'tplay.landing infer-ns-file vector)
                                         (map html targets)
                                         (map play-edn targets)
                                         (list "404.html" "header-default-include.html")))

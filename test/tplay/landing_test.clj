@@ -1,9 +1,9 @@
-(ns tplay.nopandoc.landing-test
+(ns tplay.landing-test
   (:require
    [clojure.set :as set]
    [clojure.test :refer [deftest is testing]]
    [tplay.index]
-   [tplay.nopandoc.landing :as landing]))
+   [tplay.landing :as landing]))
 
 (def the-pages (tplay.index/find-pages))
 

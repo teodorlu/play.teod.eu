@@ -5,7 +5,7 @@
    [clojure.java.shell :refer [sh]]
    [clojure.string :as str]
    [hiccup2.core :as hiccup]
-   [tplay.nopandoc.landing :as landing]))
+   [tplay.landing :as landing]))
 
 (defn bash [cmd]
   (-> (sh "bash" "-c" cmd) :out))

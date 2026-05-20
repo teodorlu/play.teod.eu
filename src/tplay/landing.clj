@@ -1,4 +1,4 @@
-(ns tplay.nopandoc.landing
+(ns tplay.landing
   (:require
    [clojure.pprint]
    [clojure.string :as str]

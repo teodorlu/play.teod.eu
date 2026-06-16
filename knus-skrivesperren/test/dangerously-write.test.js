@@ -140,10 +140,40 @@ test('Storage: saveToArchive stores entry with correct format', () => {
 
     const entries = element.getArchiveEntries();
     assert.strictEqual(entries.length, 1);
+    assert.ok(entries[0].id, 'Archive entry should have an id');
     assert.strictEqual(entries[0].text, 'test text');
     assert.strictEqual(entries[0].durationMs, 300000);
     assert.ok(entries[0].timestamp.match(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/),
         'Timestamp should be ISO format');
+});
+
+test('Storage: updateArchiveEntryText updates matching entry', () => {
+    localStorage.clear();
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    const id = element.saveToArchive('first version', 60000);
+
+    assert.strictEqual(element.updateArchiveEntryText(id, 'second version'), true);
+
+    const entries = element.getArchiveEntries();
+    assert.strictEqual(entries.length, 1);
+    assert.strictEqual(entries[0].id, id);
+    assert.strictEqual(entries[0].text, 'second version');
+});
+
+test('Storage: updateArchiveEntryText returns false for missing entry', () => {
+    localStorage.clear();
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    element.saveToArchive('unchanged', 60000);
+
+    assert.strictEqual(element.updateArchiveEntryText('missing', 'changed'), false);
+
+    const entries = element.getArchiveEntries();
+    assert.strictEqual(entries.length, 1);
+    assert.strictEqual(entries[0].text, 'unchanged');
 });
 
 test('Storage: saveToArchive appends to existing entries', () => {
@@ -217,6 +247,54 @@ test('Storage: success saves text to archive', (t, done) => {
 
         done();
     }, 15);
+});
+
+test('Continue: success screen has continue writing button', () => {
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    const button = element.shadowRoot.querySelector('#continue-button');
+    assert.ok(button, 'Continue writing button should exist');
+    assert.ok(button.classList.contains('archive-button'), 'Continue writing button should be secondary');
+    assert.strictEqual(button.textContent.trim(), 'fortsett skrivingen');
+});
+
+test('Continue: continues from successful text', () => {
+    localStorage.clear();
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    const textarea = element.shadowRoot.querySelector('textarea');
+    textarea.value = 'ferdig tekst';
+    element.currentArchiveEntryId = element.saveToArchive(textarea.value, 60000);
+    element.showSuccessView();
+
+    element.continueWriting();
+
+    const container = element.shadowRoot.querySelector('.container');
+    assert.ok(container.classList.contains('writing'), 'Should return to writing state');
+    assert.ok(!container.classList.contains('success'), 'Should leave success state');
+    assert.strictEqual(textarea.value, 'ferdig tekst');
+    assert.strictEqual(element.continuingArchiveEntryId, element.currentArchiveEntryId);
+});
+
+test('Continue: blur updates the same archive entry', () => {
+    localStorage.clear();
+    const element = document.createElement('dangerously-write');
+    document.body.appendChild(element);
+
+    const textarea = element.shadowRoot.querySelector('textarea');
+    textarea.value = 'første tekst';
+    element.currentArchiveEntryId = element.saveToArchive(textarea.value, 60000);
+    element.continueWriting();
+
+    textarea.value = 'første tekst, mer tekst';
+    textarea.dispatchEvent(new dom.window.Event('blur'));
+
+    const entries = element.getArchiveEntries();
+    assert.strictEqual(entries.length, 1, 'Should not create another archive entry');
+    assert.strictEqual(entries[0].id, element.currentArchiveEntryId);
+    assert.strictEqual(entries[0].text, 'første tekst, mer tekst');
 });
 
 test('Duration: parent syncs with duration picker value on init', () => {

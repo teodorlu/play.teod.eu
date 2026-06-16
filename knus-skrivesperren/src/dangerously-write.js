@@ -14,6 +14,10 @@ export class DangerouslyWrite extends HTMLElement {
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
         this.hasSucceeded = false;
+        this.currentArchiveEntryId = null;
+        this.continuingArchiveEntryId = null;
+        this.handleInput = this.handleInput.bind(this);
+        this.handleTextareaBlur = this.handleTextareaBlur.bind(this);
     }
 
     getArchiveEntries() {
@@ -27,12 +31,35 @@ export class DangerouslyWrite extends HTMLElement {
 
     saveToArchive(text, durationMs) {
         const entries = this.getArchiveEntries();
+        const id = this.createArchiveEntryId();
         entries.push({
+            id,
             text,
             timestamp: new Date().toISOString(),
             durationMs
         });
         localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+        return id;
+    }
+
+    createArchiveEntryId() {
+        return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    }
+
+    updateArchiveEntryText(id, text) {
+        const entries = this.getArchiveEntries();
+        const entryIndex = entries.findIndex(entry => entry.id === id);
+
+        if (entryIndex === -1) {
+            return false;
+        }
+
+        entries[entryIndex] = {
+            ...entries[entryIndex],
+            text
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+        return true;
     }
 
     hasArchiveEntries() {
@@ -56,7 +83,8 @@ export class DangerouslyWrite extends HTMLElement {
             this.selectedDurationSeconds = this.durationPicker.value;
         }
 
-        this.inputElement.addEventListener('input', this.handleInput.bind(this));
+        this.inputElement.addEventListener('input', this.handleInput);
+        this.inputElement.addEventListener('blur', this.handleTextareaBlur);
 
         this.startButton.addEventListener('click', this.startWriting.bind(this));
 
@@ -82,6 +110,9 @@ export class DangerouslyWrite extends HTMLElement {
         this.copyButton = this.shadowRoot.querySelector('#copy-button');
         this.copyButton.addEventListener('click', this.copyText.bind(this));
 
+        this.continueButton = this.shadowRoot.querySelector('#continue-button');
+        this.continueButton.addEventListener('click', this.continueWriting.bind(this));
+
         // Update archive button visibility on start screen
         this.updateStartArchiveButtonVisibility();
 
@@ -97,15 +128,22 @@ export class DangerouslyWrite extends HTMLElement {
     }
 
     startWritingView() {
+        const isContinuing = this.continuingArchiveEntryId !== null;
+        const currentText = this.inputElement.value;
+
         // Use selected duration (in seconds), convert to milliseconds
         this.successThreshold = this.selectedDurationSeconds * 1000;
 
         // Reset state
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
-        this.hasSucceeded = false;
-        this.inputElement.value = '';
+        this.hasSucceeded = isContinuing;
+        this.inputElement.value = isContinuing ? currentText : '';
         this.inputElement.classList.remove('blurred');
+
+        if (!isContinuing) {
+            this.currentArchiveEntryId = null;
+        }
 
         // Reset timer (starts on first keystroke)
         this.elapsedTimer.reset();
@@ -120,7 +158,8 @@ export class DangerouslyWrite extends HTMLElement {
 
     disconnectedCallback() {
         if (this.inputElement) {
-            this.inputElement.removeEventListener('input', this.handleInput.bind(this));
+            this.inputElement.removeEventListener('input', this.handleInput);
+            this.inputElement.removeEventListener('blur', this.handleTextareaBlur);
         }
         window.removeEventListener('hashchange', this.handleHashChange);
     }
@@ -132,6 +171,8 @@ export class DangerouslyWrite extends HTMLElement {
         this.writingStartTime = null;
         this.accumulatedWritingTime = 0;
         this.hasSucceeded = false;
+        this.currentArchiveEntryId = null;
+        this.continuingArchiveEntryId = null;
         this.elapsedTimer.reset();
 
         // Navigate back to start (this will clear timers via returnToStart)
@@ -166,6 +207,8 @@ export class DangerouslyWrite extends HTMLElement {
         // Stop any active timers
         clearTimeout(this.timer);
         this.elapsedTimer.stop();
+        this.currentArchiveEntryId = null;
+        this.continuingArchiveEntryId = null;
 
         // Reset to start screen
         this.containerElement.classList.remove('archive', 'writing', 'game-over', 'success');
@@ -202,6 +245,24 @@ export class DangerouslyWrite extends HTMLElement {
     copyText() {
         const text = this.inputElement.value;
         navigator.clipboard.writeText(text);
+    }
+
+    continueWriting() {
+        if (this.currentArchiveEntryId === null) {
+            return;
+        }
+
+        this.continuingArchiveEntryId = this.currentArchiveEntryId;
+        window.location.hash = 'skriv';
+        this.startWritingView();
+    }
+
+    handleTextareaBlur() {
+        if (this.continuingArchiveEntryId === null) {
+            return;
+        }
+
+        this.updateArchiveEntryText(this.continuingArchiveEntryId, this.inputElement.value);
     }
 
     renderArchiveEntries() {
@@ -252,7 +313,7 @@ export class DangerouslyWrite extends HTMLElement {
         // Check for success (30 seconds of writing)
         if (totalWritingTime >= this.successThreshold) {
             this.hasSucceeded = true;
-            this.saveToArchive(this.inputElement.value, this.successThreshold);
+            this.currentArchiveEntryId = this.saveToArchive(this.inputElement.value, this.successThreshold);
             this.inputElement.classList.remove('blurred');
             this.inputElement.style.transition = 'none';
             void this.inputElement.offsetWidth;
@@ -366,6 +427,8 @@ export class DangerouslyWrite extends HTMLElement {
                 }
                 .success-actions {
                     display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
                     gap: 1rem;
                 }
                 .copy-button {
@@ -555,6 +618,7 @@ export class DangerouslyWrite extends HTMLElement {
                     <h2>skrivesperre knust.</h2>
                     <button class="reset-button">start på nytt</button>
                     <div class="success-actions">
+                        <button class="archive-button" id="continue-button">fortsett skrivingen</button>
                         <button class="copy-button" id="copy-button">
                             <img src="./icons/copy.svg" alt="">
                             kopier

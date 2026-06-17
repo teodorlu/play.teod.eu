@@ -3,11 +3,13 @@
    [babashka.fs :as fs]
    [babashka.process :refer [shell]]
    [clojure.edn :as edn]
-   [clojure.string :as str]))
+   [clojure.string :as str])
+  (:import (java.time.format DateTimeFormatter)))
+
+(def isodate (DateTimeFormatter/ofPattern "yyyy-MM-dd"))
 
 (defn today-str []
-  (.format (java.time.format.DateTimeFormatter/ofPattern "yyyy-MM-dd")
-           (java.time.LocalDateTime/now)))
+  (DateTimeFormatter/.format isodate (java.time.LocalDateTime/now)))
 
 (defn git-infer-created-date [f]
   (let [proc-handle (shell {:out :string :err :discard :continue true}

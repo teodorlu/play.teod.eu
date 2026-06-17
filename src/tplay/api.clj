@@ -10,7 +10,7 @@
            (java.time.LocalDateTime/now)))
 
 (defn git-infer-created-date [f]
-  (let [proc-handle (shell {:out :string :continue true}
+  (let [proc-handle (shell {:out :string :err :discard :continue true}
                            "git log --pretty=\"format:%cs\""
                            (str (fs/absolutize f)))]
     (when (= 0 (:exit proc-handle))

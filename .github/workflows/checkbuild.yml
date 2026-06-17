@@ -17,6 +17,6 @@ jobs:
         uses: nikeee/setup-pandoc@v1
 
       - name: Download test deps
-        run: clojure -A:test -e :test-deps-downloaded
+        run: clojure -A:dev -e :test-deps-downloaded
       - name: Run tests
-        run: clojure -M:test -m kaocha.runner
+        run: clojure -M:dev -m kaocha.runner

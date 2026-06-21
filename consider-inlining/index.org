@@ -51,6 +51,6 @@ And you'll understand your code /as a whole/, not just the parts you see because
 
 /postscript/.
 I recently shared [[https://github.com/teodorlu/bb-timemachine][an idea]] for how to travel in time with Git, delivered as 50 lines of code.
-I almost /didn't/ publish, because there's enough libraries, you know?
-But I figured that I valued the idea enough to share.
-And when I can encourage users to consider in-lining, I can sleep soundly.
+I almost didn't publish. There's enough libraries, you know?
+But I shared, because I think the idea has value.
+And when I can encourage users to consider in-lining, I can sleep soundly too.

@@ -11,4 +11,4 @@ https://www.youtube.com/watch?v=f84n5oFoZBc
 <iframe class="youtube-video" src="https://www.youtube.com/embed/f84n5oFoZBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+end_export
 
-By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]]
+By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] (2010). [[https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/HammockDrivenDev.md][Transcript]].

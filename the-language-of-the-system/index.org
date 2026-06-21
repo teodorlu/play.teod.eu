@@ -10,4 +10,4 @@
 #+end_export
 
 
-By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] (2012).
+By [[id:a172782b-bceb-4b44-afdf-7a2348d02970][Rich Hickey]] (2012). [[https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/LanguageSystem.md][Transcript]].

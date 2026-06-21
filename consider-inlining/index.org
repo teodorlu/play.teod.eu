@@ -2,7 +2,7 @@
 
 [[file:..][..]]
 
-As programmers, our death by dependency hell stems from our lack of knowledge of what our dependencies do, and our lack of hesitance adding dependencies.
+As programmers, our death by dependency hell stems from our lack of knowledge of what our dependencies do, and our lack of reluctance to add more.
 What should we do instead?
 
 Please follow me into a brief journey of library development.

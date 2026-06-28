@@ -29,6 +29,11 @@
     :site/reference-article {:title "Følg dopamin-hitsene"
                              :href "https://mathivethoughts.no/blog-posts/folg-dopamin-hitsene/"}}
 
+   {:site/name "Julian Hallen Eriksen"
+    :site/href "https://corporatejules.com/"
+    :site/reference-article {:title "Talking to creators"
+                             :href "https://corporatejules.com/texts/Talking%20to%20creators/"}}
+
    ;; other people
    {:site/name "Marc's blog"
     :site/href "https://brooker.co.za/blog/"}
